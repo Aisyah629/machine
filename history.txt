@@ -1046,3 +1046,58 @@ Initialize a new dedicated folder named sather_tool in the workspace, create a l
 </think>
 
 Initialize a new dedicated folder named ngl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language NGL.
+[2026-08-14 22:59:18] (Target Lang: Harbour) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace structure, history of previous instructions, and a system prompt.
+   - **Previous Action:** The history shows a previous instruction: "Initialize a new dedicated folder named ngl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language NGL."
+   - **Current Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - Must explicitly demand the new tool be built STRICTLY using the exact programming language: Harbour.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Match the style/format of previous instructions.
+
+2.  **Deconstruct Constraints:**
+   - Language: Harbour (exact name)
+   - Action: Initialize new dedicated folder
+   - Folder name: Must be logical, e.g., `harbour_tool`
+   - Include: local `README.md`
+   - Build: entire new tool strictly using Harbour
+   - Output: ONLY the instruction string
+   - No `.github` targeting
+
+3.  **Draft Construction:**
+   "Initialize a new dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Harbour."
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands STRICTLY using Harbour? Yes.
+   - NEW dedicated folder? Yes (`harbour_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches pattern? Yes, perfectly mirrors the NGL one.
+
+5.  **Refine (Self-Correction/Verification):**
+   - Check wording: "Initialize a new dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Harbour."
+   - Matches all constraints. Ready. Output exactly this string.✅
+   - No extra text, no markdown formatting unless necessary (but prompt says "Return ONLY the instruction text"). I will output just the raw string.
+
+   All good. Proceed. 
+   Output matches the draft.✅
+   [Output Generation] -> `Initialize a new dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Harbour.`✅
+   Done. 
+   Proceeds. 
+   *(Self-Correction/Note during generation)*: I'll ensure it's exactly one sentence/instruction as requested. The draft is perfect. No extra fluff. Ready. Output matches response.✅
+   [Final Check] Matches history pattern exactly. Satisfies all constraints. Returns only the instruction. No .github. One instruction. Language: Harbour. Folder: harbour_tool. README: included. All good.✅
+   Output matches response.✅
+   [Proceeds] Initialize a new dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Harbour. 
+   *(Note: I will output exactly that string.)*
+   All constraints met. Output matches.✅
+   [Done.] 
+   *(Proceeds to output)*
+</think>
+
+Initialize a new dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Harbour.

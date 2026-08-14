@@ -1,0 +1,17 @@
+Pizza Data Extraction and Parsing Utility
+
+A comprehensive utility for extracting and parsing data from structured and semi-structured files.
+
+Features
+- Supports multiple input formats (CSV, JSON, XML, HTML, SQL)
+- Advanced parsing with regex and AST capabilities
+- Data transformation and cleaning
+- Output to multiple formats
+- Command-line interface for batch processing
+
+Usage
+Run the tool from the command line:
+pizza_tool --input file.txt --output parsed.json --format csv
+
+For more help:
+pizza_tool --help

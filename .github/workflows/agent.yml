@@ -1,4 +1,4 @@
-name: Autonomous AI Software Engineer
+name: Autonomous AI Badge Farmer
 
 on:
   workflow_dispatch:
@@ -10,20 +10,25 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Run Autonomous Engineering Loop
         env:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set +e
           URL="https://ai.tioo.eu.org/v1/chat/completions"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
           if [ ! -f history.txt ]; then
-            echo "Initialization: Ultimate Polyglot system boot (Dynamic Raw Extraction)." > history.txt
+            echo "Initialization: Ultimate Polyglot system boot (Badge Farmer Mode)." > history.txt
           fi
           if [ ! -f README.md ]; then
             echo "# Autonomous AI Ultimate Polyglot Knowledgebase" > README.md
@@ -43,6 +48,10 @@ jobs:
           
           for i in {1..6}
           do
+            # Pastikan selalu berada di branch main dan mendapatkan data terbaru
+            git checkout main
+            git pull origin main || true
+            
             HISTORY_CONTEXT=$(tail -n 20 history.txt | tr '\n' ' ')
             README_CONTEXT=$(tail -n 30 README.md | tr '\n' ' ')
             DIR_STRUCTURE=$(find . -maxdepth 4 -not -path '*/\.git/*' -not -path '*/\.github/*' | sort | tr '\n' ' | ')
@@ -109,6 +118,10 @@ jobs:
             RAW_JSON=$(echo "$NEW_CONTENT_RESP" | jq -r '.choices[0].message.content // empty' 2>/dev/null | perl -0777 -pe 's/<think>.*?<\/think>\s*//gs')
             
             if echo "$RAW_JSON" | jq -e . >/dev/null 2>&1; then
+              # Buat branch baru untuk tugas ini
+              BRANCH_NAME="ai-update-$(date +'%s')-$RANDOM"
+              git checkout -b "$BRANCH_NAME"
+              
               FILE_COUNT=$(echo "$RAW_JSON" | jq '.files | length' 2>/dev/null || echo "0")
               for (( j=0; j<$FILE_COUNT; j++ )); do
                 FILEPATH=$(echo "$RAW_JSON" | jq -r ".files[$j].filepath // empty")
@@ -127,9 +140,22 @@ jobs:
                   fi
                 fi
               done
+              
               git add history.txt README.md
-              git commit -m "feat(ai): autonomous polyglot update for $FILE_COUNT files [$(date +'%H:%M:%S')]" -m "Co-authored-by: BOTCAHX <tioclkp02@gmail.com>" || true
-              git push || true
+              
+              # Jika ada perubahan (ada file yang dicommit)
+              if git commit -m "feat(ai): autonomous update via PR for $FILE_COUNT files [$(date +'%H:%M:%S')]" -m "Co-authored-by: BOTCAHX <tioclkp02@gmail.com>"; then
+                # Push branch ke origin
+                git push -u origin "$BRANCH_NAME"
+                
+                # Buka Pull Request otomatis via GitHub CLI
+                gh pr create --title "feat(ai): autonomous polyglot update ($RANDOM_LANG)" --body "Automated tool creation using $RANDOM_LANG. This PR is auto-generated and merged by AI." --base main --head "$BRANCH_NAME"
+                
+                # Merge PR saat itu juga & hapus branch bekasnya
+                gh pr merge "$BRANCH_NAME" --merge --delete-branch
+                
+                echo "Successfully merged PR for $BRANCH_NAME!"
+              fi
             fi
             sleep 30
           done

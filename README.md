@@ -8,3 +8,5 @@ Training Machine
 - Created/Updated module: `fsharp_tool` (See `fsharp_tool/README.md` for details)
 
 - Created/Updated module: `etoys_tool` (See `etoys_tool/README.md` for details)
+
+- Created/Updated module: `ttcn_tool` (See `ttcn_tool/README.md` for details)

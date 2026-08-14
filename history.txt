@@ -518,3 +518,40 @@ This matches all requirements perfectly.
 </think>
 
 Initialize a new dedicated folder named xotcl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language XOTcl.
+[2026-08-14 22:09:51] (Target Lang: TXL) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Must explicitly demand the new tool be built STRICTLY using the exact programming language: TXL.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The workspace contains various tool folders (actionscript_tool, cg_core, etoys_tool, fsharp_tool, oriel_tool, ttcn_tool, xotcl_tool, xotcl_tool). The history shows a pattern of adding tools for specific languages. The last action was adding `xotcl_tool`. The next logical step is adding another tool.
+
+2.  **Drafting the Instruction:**
+    *   *Language:* TXL.
+    *   *Folder Name:* Needs to be dedicated. Following the pattern of `language_tool` or similar, `txl_tool` seems appropriate.
+    *   *README:* Must mention creating `README.md` inside the folder.
+    *   *Draft 1:* Initialize a new dedicated folder named txl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language TXL.
+
+3.  **Reviewing against Constraints:**
+    *   *Exactly 1 instruction?* Yes. The draft is a single sentence/instruction.
+    *   *STRICTLY using TXL?* Yes ("...strictly using the exact programming language TXL.").
+    *   *NEW dedicated folder?* Yes ("...named txl_tool...").
+    *   *README.md?* Yes ("...create a local README.md inside it...").
+    *   *ONLY instruction text?* Yes.
+    *   *No .github?* Yes.
+    *   *Logical follow-up?* Yes. The history shows a sequence of adding tools. `xotcl_tool` was added. `txl_tool` continues this pattern.
+    *   *Language matches prompt requirement?* Prompt asked for TXL. Draft uses TXL.
+
+4.  **Final Polish:**
+    *   Text: `Initialize a new dedicated folder named txl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language TXL.`
+    *   Check for hidden errors: "txl_tool" matches the pattern of existing folders like `xotcl_tool`, `actionscript_tool`. "TXL" is the requested language. README is mentioned. Folder is new. No .github. Text is clean.
+
+5.  **Output Construction:**
+    *   Result: `Initialize a new dedicated folder named txl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language TXL.`
+
+This matches all requirements.
+</think>
+
+Initialize a new dedicated folder named txl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language TXL.

@@ -866,3 +866,35 @@ Initialize a new dedicated folder named goo_tool in the workspace, create a loca
 </think>
 
 Initialize a new dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Yorick.
+[2026-08-14 22:38:28] (Target Lang: Orc) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using the programming language `Orc`.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Explicitly instruct to create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+
+2.  **Drafting the Instruction:**
+    *   *Base structure:* "Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language [Language]."
+    *   *Language:* `Orc`.
+    *   *Folder Name:* Based on the language `Orc`, the folder should likely be `orc_tool`. This follows the pattern of `actionscript_tool`, `cyclone_tool`, etc., seen in the history (though the history is context, the pattern suggests consistency).
+    *   *Draft Text:* "Initialize a new dedicated folder named orc_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Orc."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes. It's a single sentence/command.
+    *   *Explicitly demand STRICTLY using Orc?* Yes ("strictly using the exact programming language Orc").
+    *   *NEW dedicated folder?* Yes ("Initialize a new dedicated folder named orc_tool").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes. No markdown blocks, no explanations.
+    *   *NEVER target .github?* Yes. The instruction targets `orc_tool`, not `.github`.
+
+4.  **Final Polish:**
+    *   Result: `Initialize a new dedicated folder named orc_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Orc.`
+
+5.  **Output Generation:**
+    *   Output the result string.
+</think>
+
+Initialize a new dedicated folder named orc_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Orc.

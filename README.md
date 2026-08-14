@@ -26,3 +26,5 @@ Training Machine
 - Created/Updated module: `vhdl_tool` (See `vhdl_tool/README.md` for details)
 
 - Created/Updated module: `yorick_tool` (See `yorick_tool/README.md` for details)
+
+- Created/Updated module: `orc_tool` (See `orc_tool/README.md` for details)

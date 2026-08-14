@@ -42,3 +42,5 @@ Training Machine
 - Created/Updated module: `autocoder_tool` (See `autocoder_tool/README.md` for details)
 
 - Created/Updated module: `znotation_tool` (See `znotation_tool/README.md` for details)
+
+- Created/Updated module: `c_engine_tool` (See `c_engine_tool/README.md` for details)

@@ -555,3 +555,53 @@ This matches all requirements.
 </think>
 
 Initialize a new dedicated folder named txl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language TXL.
+[2026-08-14 22:10:44] (Target Lang: UCSD Pascal) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Goal:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraint 1:** Strictly demand the use of the exact programming language: UCSD Pascal.
+    *   **Constraint 2:** If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   **Constraint 3:** Create a local README.md inside the new folder.
+    *   **Constraint 4:** Return ONLY the instruction text.
+    *   **Constraint 5:** NEVER target the `.github` directory.
+    *   **Context:** The workspace contains a history of tool directories (`actionscript_tool`, `cg_core`, `etoys_tool`, `fsharp_tool`, `oriel_tool`, `ttcn_tool`, `txl_tool`, `xotcl_tool`). The user wants a new tool.
+
+2.  **Determine the Tool Name and Folder:**
+    *   Looking at existing names: `actionscript_tool`, `etoys_tool`, `fsharp_tool`, `oriel_tool`, `ttcn_tool`, `txl_tool`, `xotcl_tool`.
+    *   The new language is "UCSD Pascal".
+    *   Possible folder names: `ucsd_pascal_tool`, `pascal_tool`, `ucsd_pascal_tool`. `ucsd_pascal_tool` fits the pattern best (language_name_tool).
+
+3.  **Draft the Instruction:**
+    *   *Draft 1:* Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language UCSD Pascal.
+    *   *Check against constraints:*
+        *   Exactly 1 instruction? Yes.
+        *   Strictly using UCSD Pascal? Yes.
+        *   New dedicated folder? Yes (`ucsd_pascal_tool`).
+        *   README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   No .github? Yes.
+        *   Logical follow-up? Yes, adds another language tool following the existing pattern.
+
+4.  **Refine the Text:**
+    *   "Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language UCSD Pascal."
+
+5.  **Final Verification:**
+    *   Does it match the prompt's specific wording requirement? "Explicitly demand that the new tool be built STRICTLY using this exact programming language: UCSD Pascal." -> My draft says "strictly using the exact programming language UCSD Pascal." This is compliant.
+    *   "Explicitly instruct to place it in a NEW dedicated folder" -> "Initialize a new dedicated folder named ucsd_pascal_tool". Compliant.
+    *   "Create a local README.md" -> "create a local README.md inside it". Compliant.
+    *   "Return ONLY the instruction text." -> Output will be just the sentence.
+
+6.  **Construct Final Output:**
+    Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language UCSD Pascal.
+
+7.  **Double Check against "Hidden Errors" (Simulation):**
+    *   `ucsd_pascal_tool` is a valid name following the pattern.
+    *   `UCSD Pascal` is the requested language.
+    *   `README.md` is requested.
+    *   No `.github`.
+    *   Text is clean.
+
+This looks solid. I will output the drafted instruction.
+</think>
+
+Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language UCSD Pascal.

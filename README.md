@@ -36,3 +36,5 @@ Training Machine
 - Created/Updated module: `sather_tool` (See `sather_tool/README.md` for details)
 
 - Created/Updated module: `smalltalk_tool` (See `smalltalk_tool/README.md` for details)
+
+- Created/Updated module: `euphoria_tool` (See `euphoria_tool/README.md` for details)

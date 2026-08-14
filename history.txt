@@ -126,3 +126,73 @@ Initialize a new dedicated folder named `orc_network_sim` in the workspace, popu
 </think>
 
 Initialize a new dedicated folder named `oriel_tool` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Oriel.
+[2026-08-14 21:56:33] (Target Lang: Cg) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace structure and a history log showing a previous step where an AI generated an instruction to create a folder named `oriel_tool`, a README.md, and build a tool strictly using the programming language "Oriel".
+   - **Current Task:** Generate exactly 1 logical follow-up instruction.
+   - **Mandatory Constraints:**
+     - MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: Cg.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+     - Explicitly instruct to create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Deconstruct Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Just one string/sentence.
+   - "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cg." -> Must include "strictly using the exact programming language Cg" or similar wording.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Must specify a new folder name and create a README.md inside it.
+   - "Return ONLY the instruction text." -> No extra text, no explanations, just the instruction.
+   - "NEVER target the .github directory." -> Avoid mentioning `.github`.
+
+3.  **Draft Construction:**
+   Initialize a new dedicated folder named `cg_dev_tool` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cg.
+
+4.  **Check Against Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands strict use of "Cg"? Yes ("strictly using the exact programming language Cg").
+   - New dedicated folder? Yes (`cg_dev_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes, not mentioned.
+   - Logical follow-up? Yes, continues the pattern of setting up a new tool with a specific language.
+
+   The draft matches all constraints perfectly. I will output exactly this string.
+
+   One minor adjustment to match the exact phrasing style from the prompt if needed, but the prompt says "Return ONLY the instruction text." I'll stick to a clear, direct instruction.
+
+   Draft: Initialize a new dedicated folder named `cg_toolkit` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cg.
+
+   All constraints met. Output matches draft.✅
+   Proceed. 
+   Self-Correction/Refinement during thought: 
+   The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cg. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will ensure the exact wording matches the constraint closely.
+   "Initialize a new dedicated folder named `cg_core` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cg."
+   This is solid. Output matches exactly.✅
+   Proceeds. 
+   Output Generation. 
+   [Output]: Initialize a new dedicated folder named `cg_core` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cg. 
+   (Note: I'll make sure it's exactly one line/sentence as requested, with no extra text.) 
+   All good. 
+   *Self-Correction/Verification during generation prep*: 
+   Check constraint: "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cg." -> My draft says "strictly using the exact programming language Cg." This matches.
+   Check constraint: "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> My draft says "Initialize a new dedicated folder named `cg_core` in the workspace, create a local README.md inside it". Matches.
+   Check constraint: "Return ONLY the instruction text." -> I will output just the sentence.
+   Check constraint: "NEVER target the .github directory." -> Not mentioned.
+   Ready.✅
+   Output matches draft. 
+   [Proceeds] -> Output generation. 
+   `Initialize a new dedicated folder named cg_core in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cg.` (using backticks for folder name as per standard markdown, but plain text is fine too. I'll stick to the exact phrasing style).
+   Final string: Initialize a new dedicated folder named `cg_core` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cg.✅
+   Output matches. 
+   [Done.] 
+   *Self-Correction/Note during thought*: The prompt says "Return ONLY the instruction text." I will output exactly that string without any markdown formatting that might be construed as extra text, though markdown is usually fine. I'll just output the raw text.
+   "Initialize a new dedicated folder named `cg_core` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cg."
+   Perfect.✅
+   Output Generation. 
+   [Output Generation] -> *Proceeds*
+   *(Done.)*
+</think>
+
+Initialize a new dedicated folder named `cg_core` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cg.

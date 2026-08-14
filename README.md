@@ -46,3 +46,5 @@ Training Machine
 - Created/Updated module: `c_engine_tool` (See `c_engine_tool/README.md` for details)
 
 - Created/Updated module: `tie_tool` (See `tie_tool/README.md` for details)
+
+- Created/Updated module: `comal_tool` (See `comal_tool/README.md` for details)

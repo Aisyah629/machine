@@ -1,0 +1,54 @@
+COMMENT  Structured Programming & Data Manipulation Utility in COMAL
+COMMENT  This program demonstrates structured control flow, arrays,
+COMMENT  and functions typical of the COMAL language.
+
+CONST  MAX_SIZE  10
+
+PROCEDURE  SortAndDisplay
+  VAR  arr(MAX_SIZE)  OF  INTEGER
+  VAR  i, j, temp  OF  INTEGER
+  
+  INITIALIZE  arr  FROM  [5, 2, 9, 1, 5, 6, 3, 8, 4, 7]
+  
+  COMMENT  Bubble sort implementation using structured constructs
+  FOR  i  FROM  1  TO  MAX_SIZE  -  1
+    FOR  j  FROM  1  TO  MAX_SIZE  -  i
+      IF  arr[j]  >  arr[j+1]
+        temp  :=  arr[j]
+        arr[j]  :=  arr[j+1]
+        arr[j+1]  :=  temp
+      ENDIF
+    ENDFOR
+  ENDFOR
+  
+  COMMENT  Display sorted array
+  WRITE "Sorted Array:"
+  FOR  i  FROM  1  TO  MAX_SIZE
+    WRITE  arr[i]
+  ENDFOR
+
+ENDPROCEDURE
+
+PROCEDURE  CalculateMean
+  VAR  arr(MAX_SIZE)  OF  INTEGER
+  VAR  sum, mean  OF  INTEGER
+  VAR  i  OF  INTEGER
+  
+  INITIALIZE  arr  FROM  [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+  sum  :=  0
+  
+  COMMENT  Calculate sum
+  FOR  i  FROM  1  TO  MAX_SIZE
+    sum  :=  sum  +  arr[i]
+  ENDFOR
+  
+  mean  :=  sum  /  MAX_SIZE
+  WRITE "Mean Value: "  mean
+
+ENDPROCEDURE
+
+BEGIN
+  CALL  SortAndDisplay
+  WRITE  ""
+  CALL  CalculateMean
+END

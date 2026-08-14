@@ -14,3 +14,5 @@ Training Machine
 - Created/Updated module: `actionscript_tool` (See `actionscript_tool/README.md` for details)
 
 - Created/Updated module: `xotcl_tool` (See `xotcl_tool/README.md` for details)
+
+- Created/Updated module: `qalb_tool` (See `qalb_tool/README.md` for details)

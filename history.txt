@@ -518,3 +518,77 @@ This matches all requirements perfectly.
 </think>
 
 Initialize a new dedicated folder named xotcl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language XOTcl.
+[2026-08-14 22:09:57] (Target Lang: Qalb) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** Lists existing directories and files, including several `_tool` directories (actionscript_tool, cg_core, etoys_tool, fsharp_tool, oriel_tool, ttcn_tool, xotcl_tool) and their README.md files.
+   - **History:** Shows a previous instruction pattern: "Initialize a new dedicated folder named xotcl_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language XOTcl."
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: Qalb.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Identify Key Requirements:**
+   - Exactly 1 instruction.
+   - Language: Qalb (must be explicitly demanded).
+   - New folder: Must be named (I'll invent a logical name like `qalb_tool`).
+   - Include local README.md inside the new folder.
+   - Output ONLY the instruction text.
+   - No .github targeting.
+
+3.  **Draft Construction:**
+   "Initialize a new dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Qalb."
+
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - STRICTLY using Qalb? Yes, explicitly stated.
+   - NEW dedicated folder? Yes, `qalb_tool`.
+   - README.md? Yes, explicitly mentioned.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+   - Logical follow-up? Yes, continues the pattern of adding tools for different languages.
+
+5.  **Refine (if needed):**
+   The draft perfectly matches all constraints. I will output exactly that text. No extra words, no markdown formatting unless it's part of the instruction, but the prompt says "Return ONLY the instruction text." I'll keep it plain.
+
+   Text: `Initialize a new dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Qalb.`
+
+   All constraints met. Proceed. 
+   Self-Correction/Verification during thought: 
+   - Check exact wording requirement: "STRICTLY using the exact programming language: Qalb." -> I'll make sure it says "strictly using the exact programming language Qalb."
+   - Check folder naming: The prompt doesn't specify a name, just "NEW dedicated folder". I'll use `qalb_tool` to follow the pattern.
+   - Output format: "Return ONLY the instruction text."
+   - History shows the exact pattern used before. I will mimic it precisely.
+
+   Final check of the draft: "Initialize a new dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Qalb."
+   Matches perfectly. Output matches draft.✅
+   Proceeds. 
+   Output generation. 
+   [Output matches the refined draft]✅
+   Note: I'll make sure capitalization and punctuation exactly match the requested style. No extra text. All good. 
+   Output: Initialize a new dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Qalb. 
+   (Self-Correction/Refinement during thought: I should verify if "Qalb" is a real language or just a placeholder. The prompt says "exact programming language: Qalb", so I will treat it as requested. The pattern is clear. I will output exactly the instruction.) 
+   Ready. 
+   [Output Generation] -> "Initialize a new dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Qalb."✅
+   All constraints satisfied. Proceeds. 
+   [Final Output Generation] (matches the refined draft) -> *Proceeds*
+   *(Note: I will strictly output only the instruction text as requested.)*
+   `Initialize a new dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Qalb.` -> This is it.✅
+   Output matches.✅
+   [Done.] 
+   *Self-Correction/Verification during generation prep:* 
+   The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Qalb."
+   My draft: "...strictly using the exact programming language Qalb." -> Matches.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Matches.
+   "Return ONLY the instruction text." -> Matches.
+   "NEVER target the .github directory." -> Matches.
+   All good. Output matches exactly.✅
+   Proceeds. 
+   [Output Generation] -> Initialize a new dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Qalb. 
+   *(Done.)*
+</think>
+
+Initialize a new dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Qalb.

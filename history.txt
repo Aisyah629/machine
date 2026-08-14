@@ -196,3 +196,75 @@ Initialize a new dedicated folder named `oriel_tool` in the workspace, create a 
 </think>
 
 Initialize a new dedicated folder named `cg_core` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cg.
+[2026-08-14 21:57:27] (Target Lang: MIIS) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** `.git`, `.github`, `README.md`, `cg_core`, `cg_core/README.md`, `history.txt`, `instruction.txt`, `oriel_tool`, `oriel_tool/README.md`
+   - **History:** Shows a previous turn where the AI generated an instruction about creating a `cg_core` folder/tool in Cg. It verified constraints.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIIS. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints to enforce in output:**
+     - Exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: `MIIS`.
+     - If building a new tool (which it is, per context), explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+
+2.  **Deconstruct Constraints & Requirements:**
+   - *Logical follow-up:* Needs to continue the pattern of creating tools/folders in the workspace.
+   - *Language:* Must explicitly say "STRICTLY using this exact programming language: MIIS" or similar exact phrasing.
+   - *Folder/README:* Must instruct to place it in a NEW dedicated folder and create a local README.md.
+   - *Output format:* ONLY the instruction text. No extra words, no markdown explanations, just the raw instruction string.
+   - *Negative constraint:* Do not mention `.github`.
+
+3.  **Draft Generation (Mental):**
+   Initialize a new dedicated folder named `oriel_tool` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.
+   *Wait*, the workspace already has `oriel_tool`. The prompt says "place it in a NEW dedicated folder". I should use a new name, or just say "a new dedicated folder named [name]". Let's pick a plausible name like `nexus_tool` or `quantum_engine`, or just follow the pattern: `Initialize a new dedicated folder named miis_core in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.`
+   Let's check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand language MIIS? Yes.
+   - New dedicated folder + local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never target .github? Yes, not mentioned.
+   - Logical follow-up? Yes, continues the tool creation pattern.
+
+   Refining to match the exact phrasing style from the prompt/history if needed, but keeping it direct:
+   `Initialize a new dedicated folder named miis_core in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.`
+
+   Let's verify against constraints:
+   - "explicitly demand that the new tool be built STRICTLY using this exact programming language: MIIS." -> I will use the exact phrase "STRICTLY using the exact programming language MIIS." or similar. The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIIS."
+   - I'll craft it carefully to match: `Initialize a new dedicated folder named miis_engine in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.`
+
+   Check workspace state: Already has `cg_core`, `oriel_tool`. Next logical step is another tool/folder. I'll use `miis_tool` or `nexus_core`. Let's stick to `miis_tool` for clarity.
+
+   Draft: `Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.`
+
+   Does it meet "explicitly demand... STRICTLY using this exact programming language: MIIS"? Yes.
+   Does it meet "place it in a NEW dedicated folder and create a local README.md"? Yes.
+   Returns ONLY the instruction text? Yes.
+   Never targets .github? Yes.
+
+   One minor adjustment to ensure it strictly matches the prompt's wording requirement: "explicitly demand that the new tool be built STRICTLY using this exact programming language: MIIS." I will embed that exact phrasing or close to it.
+   "Initialize a new dedicated folder named miis_service in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using the exact programming language MIIS."
+
+   This matches perfectly. I will output just that string. No extra text. No markdown formatting if possible, but the prompt history used backticks. I'll stick to plain text or minimal markdown as appropriate. The prompt says "Return ONLY the instruction text." I'll output exactly the sentence.
+
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIIS. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   I will produce:
+   Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using the exact programming language MIIS.
+
+   All constraints met. Proceeds. 
+   Output matches exactly.✅
+   [Output Generation] -> *Proceeds*
+   *(Done.)*
+   *(Self-Correction/Refinement during thought)*: I should make sure the phrasing closely mirrors the historical example for consistency: "Initialize a new dedicated folder named `miis_tool` in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS." The prompt says "STRICTLY" in caps in the constraint, but the historical example used lowercase. I'll keep it as "strictly" or match the exact capitalization if needed. I'll stick to lowercase "strictly" as in the history, or I'll just use exactly what fits naturally. The constraint says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIIS." I'll just write it clearly.
+
+   Final string: Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.
+   Ready.✅
+   Output matches.✅
+   [Proceeds] -> Output generation. 
+   *(Done.)*
+</think>
+
+Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.

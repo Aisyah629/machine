@@ -1,0 +1,43 @@
+C       AUTOCODER TOOL - MAIN ENTRY POINT
+*       THIS FILE CONTAINS THE CORE LOGIC FOR THE AUTOCODER TOOL
+*       BUILT STRICTLY IN AUTOCODER LANGUAGE
+
+*       DEFINE STORAGE AND CONTROL BLOCKS
+        DC    0A,500A           * MAX STORAGE SIZE
+        DS    0H                * HEAD POINTER
+
+*       MAIN PROGRAM ENTRY
+MAIN    EQU   *                 * ENTRY POINT
+        LD    A,START         * LOAD START ADDRESS
+        JMP   EXECUTE         * JUMP TO EXECUTOR
+
+*       EXECUTION LOOP
+EXECUTE DC    0A,0A           * INITIALIZATION
+        LDA   INPUT         * READ INPUT
+        JZ    DONE          * EXIT IF END OF INPUT
+        CAL   PROCESS       * PROCESS RECORD
+        JMP   EXECUTE       * CONTINUE LOOP
+
+DONE    LDA   OUTPUT        * OUTPUT RESULTS
+        STOP                * HALT SYSTEM
+
+*       PROCESSOR ROUTINE
+PROCESS STA   TEMP          * STORE CURRENT DATA
+        CAL   TRANSFORM     * APPLY TRANSFORMATIONS
+        STA   RESULT        * STORE RESULT
+        LDA   RESULT        * LOAD FOR OUTPUT
+        RTS                 * RETURN TO CALLER
+
+*       HELPER SUBROUTINES
+TRANSFORM LDA TEMP          * LOAD DATA
+        ADD   PARM          * ADD PARAMETER
+        STA TEMP          * STORE BACK
+        RTS                 * RETURN
+
+*       DATA SEGMENTS
+INPUT   DS    0A            * INPUT BUFFER
+OUTPUT  DS    0A            * OUTPUT BUFFER
+TEMP    DS    0A            * TEMPORARY STORAGE
+RESULT  DS    0A            * RESULT STORAGE
+PARAM   DC    10A           * DEFAULT PARAMETER
+        END   MAIN          * END OF PROGRAM

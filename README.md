@@ -40,3 +40,5 @@ Training Machine
 - Created/Updated module: `euphoria_tool` (See `euphoria_tool/README.md` for details)
 
 - Created/Updated module: `autocoder_tool` (See `autocoder_tool/README.md` for details)
+
+- Created/Updated module: `znotation_tool` (See `znotation_tool/README.md` for details)

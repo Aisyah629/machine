@@ -605,3 +605,44 @@ This looks solid. I will output the drafted instruction.
 </think>
 
 Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language UCSD Pascal.
+[2026-08-14 22:11:32] (Target Lang: Cyclone) Thinking Process:
+
+1.  **Deconstruct the User's Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand the new tool be built STRICTLY using "Cyclone".
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint: Create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+
+2.  **Analyze the Context/History:**
+    *   The history shows a sequence of instructions for creating tools for various languages (actionscript, c#, etoys, fsharp, oriel, ttcn, txl, ucsd_pascal).
+    *   The last instruction generated was for `ucsd_pascal_tool`.
+    *   The current request is for `Cyclone`.
+
+3.  **Draft the Instruction:**
+    *   *Folder Name:* Following the pattern `language_tool`, the folder should be `cyclone_tool`.
+    *   *Language:* Cyclone.
+    *   *Structure:*
+        *   "Initialize a new dedicated folder named cyclone_tool..."
+        *   "...create a local README.md inside it..."
+        *   "...build the entire new tool strictly using the exact programming language Cyclone."
+
+4.  **Refine the Text:**
+    *   Draft: Initialize a new dedicated folder named cyclone_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cyclone.
+    *   *Check against constraints:*
+        *   "Explicitly demand... STRICTLY using... Cyclone"? Yes ("strictly using the exact programming language Cyclone").
+        *   "NEW dedicated folder"? Yes ("new dedicated folder named cyclone_tool").
+        *   "Local README.md"? Yes ("create a local README.md inside it").
+        *   "ONLY the instruction text"? Yes.
+        *   "NEVER target .github"? Yes (text doesn't mention .github).
+        *   "Exactly 1 logical follow-up"? Yes.
+
+5.  **Final Output Construction:**
+    *   Result: Initialize a new dedicated folder named cyclone_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cyclone.
+
+6.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a new dedicated folder named cyclone_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cyclone.`
+</think>
+
+Initialize a new dedicated folder named cyclone_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cyclone.

@@ -1,0 +1,80 @@
+;; SLIP Script for Data Processing
+;; A utility to process and transform data records
+
+;; Define constants
+(define-constant MAX_RECORDS 1000)
+(define-constant DEFAULT_INPUT_FILE "data.csv")
+(define-constant DEFAULT_OUTPUT_FILE "processed_data.csv")
+
+;; Data structure definition
+(define-record DataRecord
+  (field id :type integer)
+  (field name :type string)
+  (field value :type float)
+  (field timestamp :type string))
+
+;; Load data from CSV file
+(load-csv "data.csv")
+
+;; Function to normalize data values
+(defun normalize-values (records)
+  "Normalize all values in the record list to a 0-1 scale"
+  (let ((min-val (apply min (mapcar (lambda (r) (field-value r)) records)))
+        (max-val (apply max (mapcar (lambda (r) (field-value r)) records)))
+        (range (- max-val min-val)))
+    (mapcar (lambda (r)
+              (setf (field-value r) (/ (- (field-value r) min-val) range)))
+            records)))
+
+;; Function to filter records by timestamp
+(defun filter-by-timestamp (records timestamp)
+  "Filter records to include only those after the given timestamp"
+  (remove-if-not (lambda (r) (>= (string->timestamp (field-timestamp r))
+                                 (string->timestamp timestamp)))
+                 records))
+
+;; Function to aggregate data by name
+(defun aggregate-by-name (records)
+  "Calculate average value for each unique name"
+  (let ((aggregated (make-hash-table :test #'equal)))
+    (dolist (record records)
+      (let ((name (field-name record))
+            (value (field-value record)))
+        (when (gethash name aggregated)
+          (let ((current (gethash name aggregated)))
+            (incf (car current) value)
+            (incf (cdr current))))
+        (setf (gethash name aggregated) (cons value 1))))
+    (mapcar (lambda (entry)
+              (let ((sum (car entry))
+                    (count (cdr entry)))
+                (make-data-record :id 0
+                                  :name (car entry)
+                                  :value (/ sum count)
+                                  :timestamp "")))
+            (hash-table-entries aggregated))))
+
+;; Main processing pipeline
+(defun process-data (input-file output-file)
+  "Main function to load, process, and save data"
+  (let ((raw-data (load-csv input-file)))
+    (when (> (length raw-data) MAX_RECORDS)
+      (warn "Data exceeds maximum records limit"))
+    
+    ;; Step 1: Filter by timestamp
+    (let ((filtered (filter-by-timestamp raw-data "2023-01-01")))
+      
+      ;; Step 2: Normalize values
+      (let ((normalized (normalize-values filtered)))
+        
+        ;; Step 3: Aggregate by name
+        (let ((aggregated (aggregate-by-name normalized)))
+          
+          ;; Step 4: Save to output file
+          (save-csv aggregated output-file)
+          (format t "Processing complete. Results saved to ~A~A~A~A~A~A~A~A~A~A" output-file))))))
+
+;; Execute the main function
+(process-data DEFAULT_INPUT_FILE DEFAULT_OUTPUT_FILE)
+
+;; End of SLIP script

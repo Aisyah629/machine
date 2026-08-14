@@ -24,3 +24,5 @@ Training Machine
 - Created/Updated module: `datalog_tool` (See `datalog_tool/README.md` for details)
 
 - Created/Updated module: `vhdl_tool` (See `vhdl_tool/README.md` for details)
+
+- Created/Updated module: `yorick_tool` (See `yorick_tool/README.md` for details)

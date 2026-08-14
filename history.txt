@@ -268,3 +268,39 @@ Initialize a new dedicated folder named `cg_core` in the workspace, create a loc
 </think>
 
 Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.
+[2026-08-14 22:00:59] (Target Lang: ABSYS) Thinking Process:
+
+1.  **Deconstruct the Prompt:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using the exact programming language: ABSYS.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a "History" snippet which seems to be an example or a simulation of the AI's previous internal monologue and output. The output in the history is: "Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS."
+    *   Current Task: The user wants me to generate the instruction based on the current constraints (ABSYS), following the pattern of the history.
+
+2.  **Draft the Instruction:**
+    *   *Structure based on history:* "Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language [language]."
+    *   *Language:* ABSYS.
+    *   *Folder Name:* The history used `miis_tool`. A logical name for ABSYS would be `abys_tool` or `abys`. The history pattern suggests `language_tool`. Let's use `abys_tool`.
+    *   *Draft:* Initialize a new dedicated folder named abys_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ABSYS.
+
+3.  **Check Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Explicitly demand STRICTLY using ABSYS?* The draft says "strictly using the exact programming language ABSYS." The constraint asks for "STRICTLY" (caps) in the demand, or just that the demand must be strict. The constraint says "You MUST explicitly demand... STRICTLY...". Looking at the history, the output used "strictly" (lowercase). The constraint text provided by the user in the *current* prompt has "STRICTLY" in caps. However, the instruction is *to the builder*. The output should likely mirror the style. The constraint "explicitly demand... STRICTLY" usually means the text must contain the word "strictly" or convey that strictness. The history output used lowercase. I will use lowercase to match the style of the "logical follow-up" pattern established, unless the caps are a trap. Usually, in these prompts, the output format matches the few-shot example. The few-shot example has "strictly". The current prompt has "STRICTLY". This might be a noise artifact or a style shift. Given the history shows the output is the instruction text, and the history output has lowercase, I'll output lowercase "strictly" to be safe, or I'll follow the capitalization of the constraint if the constraint implies the output must match the caps. Re-reading: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ABSYS." This is an instruction to me. The output should be the instruction text. If I write "strictly", it satisfies the demand. If I write "STRICTLY", it also satisfies it. The history suggests the AI's output is "Initialize... strictly...". I'll stick to "strictly" as it's the proven pattern, but I must ensure the language is ABSYS.
+    *   *Result:* "Initialize a new dedicated folder named abys_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ABSYS."
+    *   *New dedicated folder?* Yes ("abys_tool").
+    *   *Local README.md?* Yes.
+    *   *ONLY instruction text?* Yes.
+    *   *NEVER target .github?* Yes.
+
+4.  **Final Polish:**
+    *   Text: `Initialize a new dedicated folder named abys_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ABSYS.`
+    *   Does it match the "miis_tool" pattern? Yes. `miis_tool` -> `abys_tool`.
+    *   Result looks solid.
+
+5.  **Output Generation:**
+    *   `Initialize a new dedicated folder named abys_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ABSYS.`
+</think>
+
+Initialize a new dedicated folder named abys_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ABSYS.

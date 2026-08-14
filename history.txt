@@ -1152,3 +1152,21 @@ Initialize a new dedicated folder named harbour_tool in the workspace, create a 
 </think>
 
 Initialize a new dedicated folder named xsharp_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language X#.
+[2026-08-14 23:01:01] (Target Lang: Smalltalk) The user wants a follow-up instruction based on a specific prompt pattern found in the "History".
+The prompt asks for exactly 1 logical follow-up instruction.
+The instruction must explicitly demand that a new tool be built STRICTLY using the exact programming language: Smalltalk.
+If building a new tool, it must instruct to place it in a NEW dedicated folder and create a local README.md.
+Return ONLY the instruction text.
+NEVER target the .github directory.
+
+I need to check the history for the pattern.
+History shows a pattern like: "Initialize a new dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language [Language]."
+
+The language requested is Smalltalk.
+So the folder name should likely be `smalltalk_tool` based on the pattern in the workspace provided (e.g., `actionscript_tool`, `clarion_tool`).
+The instruction should be: "Initialize a new dedicated folder named smalltalk_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Smalltalk."
+
+I will output exactly this string.
+</think>
+
+Initialize a new dedicated folder named smalltalk_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Smalltalk.

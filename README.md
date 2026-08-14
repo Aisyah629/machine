@@ -28,3 +28,5 @@ Training Machine
 - Created/Updated module: `yorick_tool` (See `yorick_tool/README.md` for details)
 
 - Created/Updated module: `orc_tool` (See `orc_tool/README.md` for details)
+
+- Created/Updated module: `api_client_tool` (See `api_client_tool/README.md` for details)

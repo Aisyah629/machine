@@ -20,3 +20,5 @@ Training Machine
 - Created/Updated module: `ucsd_pascal_tool` (See `ucsd_pascal_tool/README.md` for details)
 
 - Created/Updated module: `cyclone_tool` (See `cyclone_tool/README.md` for details)
+
+- Created/Updated module: `datalog_tool` (See `datalog_tool/README.md` for details)

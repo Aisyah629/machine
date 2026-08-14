@@ -646,3 +646,62 @@ Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, creat
 </think>
 
 Initialize a new dedicated folder named cyclone_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Cyclone.
+[2026-08-14 22:12:26] (Target Lang: Datalog) The user wants me to generate exactly 1 logical follow-up instruction.
+The instruction must:
+1. Explicitly demand that the new tool be built STRICTLY using the exact programming language: Datalog.
+2. If building a new tool (which the context implies: "build the entire new tool..."), explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. NEVER target the .github directory.
+5. Base it on the provided history and workspace.
+
+Looking at the history:
+It shows a previous instruction about "cyclone_tool" built strictly using Cyclone.
+The current instruction should be a logical follow-up, likely creating another language-specific tool folder, but this time strictly using Datalog.
+The workspace already contains `./cyclone_tool/`, `./actionscript_tool/`, etc.
+The prompt says: "You are an Autonomous AI. Workspace: ... History: ... Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Datalog. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+So I need to construct a sentence that follows the pattern:
+"Initialize a new dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Datalog."
+
+I'll use a sensible name, like `datalog_tool`.
+Check constraints:
+- Exactly 1 logical follow-up instruction.
+- Explicitly demand STRICTLY using Datalog.
+- NEW dedicated folder.
+- Local README.md.
+- ONLY the instruction text.
+- NEVER target .github.
+
+Draft: Initialize a new dedicated folder named datalog_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Datalog.
+
+Matches constraints perfectly. I will output exactly that text.
+Double check constraints: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Covered.
+"Return ONLY the instruction text." -> Covered.
+"NEVER target the .github directory." -> Covered.
+"strictly using the exact programming language: Datalog." -> Covered.
+
+All good. Output matches draft.✅
+Proceed. 
+Output: `Initialize a new dedicated folder named datalog_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Datalog.`
+Wait, should I mention a specific tool name? The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder...". I'll just use `datalog_tool` as it fits the pattern.
+Ready. 
+Output matches exactly.✅
+Proceeds. 
+[Self-Correction/Verification during thought]
+Check prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Datalog."
+Check prompt: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+Check prompt: "Return ONLY the instruction text. NEVER target the .github directory."
+All constraints met. I will generate the exact string.
+Output: Initialize a new dedicated folder named datalog_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Datalog.
+Done. 
+Proceeds. 
+Output Generation. 
+(Note: The history shows a pattern of generating these instructions. I will follow it exactly.) 
+Final Output Generation. 
+`Initialize a new dedicated folder named datalog_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Datalog.`
+Matches perfectly.✅
+Done. 
+[Output Generation] -> *Proceeds*
+</think>
+
+Initialize a new dedicated folder named datalog_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Datalog.

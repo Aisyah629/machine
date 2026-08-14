@@ -10,3 +10,5 @@ Training Machine
 - Created/Updated module: `etoys_tool` (See `etoys_tool/README.md` for details)
 
 - Created/Updated module: `ttcn_tool` (See `ttcn_tool/README.md` for details)
+
+- Created/Updated module: `actionscript_tool` (See `actionscript_tool/README.md` for details)

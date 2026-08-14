@@ -446,3 +446,38 @@ Initialize a new dedicated folder named etoys_tool in the workspace, create a lo
 </think>
 
 Initialize a new dedicated folder named ttcn_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language TTCN.
+[2026-08-14 22:08:09] (Target Lang: ActionScript) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using "ActionScript".
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md in that folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Context: History shows a pattern. The user provided a history entry where the AI generated an instruction for `ttcn_tool` using TTCN. The structure of that instruction was: "Initialize a new dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language [language]."
+
+2.  **Draft the Instruction:**
+    *   Pattern: `Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ActionScript.`
+    *   *Self-Correction on `folder_name`*: The prompt doesn't specify the folder name, just "NEW dedicated folder". However, looking at the history, the folder name usually matches the tool concept or is arbitrary. The prompt asks to "Generate exactly 1 logical follow-up instruction." It doesn't specify the tool name. Usually, in these prompt injection/few-shot scenarios, the model needs to invent a plausible tool name or follow the pattern. The history shows `etoys_tool`, `fsharp_tool`, `oriel_tool`, `ttcn_tool`. The pattern suggests `tool_name_tool` or similar. However, the constraint is to generate the instruction text. Since the prompt doesn't give a target name, I should probably pick a name or use a generic placeholder? No, the example output in the history shows specific names (`ttcn_tool`). The instruction text itself *contains* the name. The AI is generating the instruction. The AI usually creates a new name based on the language or a theme. Given the language is ActionScript, a likely tool name would be `actionscript_tool` or similar.
+    *   *Refinement*: The prompt asks for "ActionScript". Following the pattern `etoys_tool`, `fsharp_tool`, `ttcn_tool`, the folder name should likely be `actionscript_tool`.
+    *   *Drafting*: `Initialize a new dedicated folder named actionscript_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ActionScript.`
+
+3.  **Verify Constraints:**
+    *   *ActionScript mentioned?* Yes ("...strictly using the exact programming language ActionScript.").
+    *   *NEW dedicated folder?* Yes ("...named actionscript_tool...").
+    *   *README.md?* Yes ("...create a local README.md...").
+    *   *ONLY instruction text?* Yes.
+    *   *No .github?* Yes.
+    *   *Logical follow-up?* Yes, continues the pattern of creating tools for different languages.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Initialize a new dedicated folder named actionscript_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ActionScript.`
+
+5.  **Final Output Construction:**
+    *   The output should be exactly that string.
+
+Result: `Initialize a new dedicated folder named actionscript_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ActionScript.`
+</think>
+
+Initialize a new dedicated folder named actionscript_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language ActionScript.

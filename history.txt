@@ -268,3 +268,63 @@ Initialize a new dedicated folder named `cg_core` in the workspace, create a loc
 </think>
 
 Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.
+[2026-08-14 22:02:43] (Target Lang: Racket) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** Lists some files/dirs (`.git`, `.github`, `README.md`, `cg_core`, `history.txt`, `instruction.txt`, `oriel_tool`)
+   - **History:** Shows a previous turn where the AI generated a follow-up instruction with specific constraints. The history includes the AI's internal reasoning and a final output string.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Racket. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate *exactly 1* logical follow-up instruction.
+   - MUST explicitly demand the new tool be built *STRICTLY* using the exact programming language: *Racket*.
+   - If building a new tool, instruct to place it in a *NEW dedicated folder*.
+   - Instruct to create a *local README.md*.
+   - Return *ONLY* the instruction text.
+   - *NEVER* target the `.github` directory.
+
+3.  **Formulate Output (Internal Draft):**
+   Initialize a new dedicated folder named racket_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Racket.
+
+4.  **Check Constraints against Draft:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands built STRICTLY using Racket? Yes. ("strictly using the exact programming language Racket")
+   - New dedicated folder? Yes. ("Initialize a new dedicated folder named racket_tool")
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes, not mentioned.
+   - Matches style/format from history? The history shows: "Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS."
+   - I'll adjust capitalization of "strictly" to match the prompt's emphasis if needed, but the prompt says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Racket." I'll keep it lowercase "strictly" as in the history, or I can capitalize it to be safe. The prompt says "STRICTLY" in caps, but I'll follow the exact phrasing pattern. I'll stick to lowercase "strictly" as it reads naturally, but I'll make sure it explicitly demands it. Actually, the prompt says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Racket." I will just output the exact instruction text.
+
+   Draft: Initialize a new dedicated folder named racket_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Racket.
+
+   Let's verify against constraints:
+   - "exactly 1 logical follow-up instruction" -> Check.
+   - "explicitly demand that the new tool be built STRICTLY using this exact programming language: Racket" -> Check.
+   - "place it in a NEW dedicated folder and create a local README.md" -> Check.
+   - "Return ONLY the instruction text" -> Check.
+   - "NEVER target the .github directory" -> Check.
+
+   The output should be just the string. No extra text.
+
+   One minor thing: The prompt says "STRICTLY" in caps. I'll capitalize it in the output to be perfectly compliant with "explicitly demand... STRICTLY". Actually, the constraint says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Racket." I'll just write it naturally but ensure the demand is clear. I'll stick to the exact phrasing pattern from the history but replace MIIS with Racket and adjust the folder name.
+
+   "Initialize a new dedicated folder named racket_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Racket."
+
+   This matches perfectly. I will output exactly this. No extra words. Ready.✅
+   Output matches constraints. Proceeds.✅
+   Output Generation. -> *Proceeds* -> Output: Initialize a new dedicated folder named racket_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Racket.
+   Self-Correction/Verification during thought: The prompt says "STRICTLY" in caps. I'll capitalize it in the output to be safe: "...build the entire new tool STRICTLY using the exact programming language Racket." Actually, the historical example used lowercase. I'll stick to lowercase as it's standard, but the constraint says "STRICTLY". I'll just follow the exact wording pattern. I'll output exactly: Initialize a new dedicated folder named racket_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Racket.
+   All constraints met. Proceeds. Output matches exactly.✅
+   Final string matches.✅
+   [Proceeds] -> Output generation.✅
+   *(Done.)* 
+   Output: Initialize a new dedicated folder named racket_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Racket. 
+   (Note: I will ensure absolutely no extra text is generated, as per "Return ONLY the instruction text.")
+   All good.✅
+   Output matches.✅
+   Proceeds.✅
+</think>
+
+Initialize a new dedicated folder named racket_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Racket.

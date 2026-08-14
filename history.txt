@@ -2142,3 +2142,37 @@ Initialize a new dedicated folder named ambienttalk_tool in the workspace, creat
 </think>
 
 Initialize a new dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc to implement a structured programming or data manipulation utility.
+[2026-08-14 23:57:19] (Target Lang: ORCA/Modula-2) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using `ORCA/Modula-2`.
+    *   Constraint 2: If building a new tool (which is implied by the context of previous instructions and the nature of "follow-up"), explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a list of files and a history snippet showing a pattern for generating instructions. The history shows an instruction for `rc_tool`. The current request asks for a follow-up for a new language/tool.
+
+2.  **Draft the Instruction:**
+    *   *Pattern from History:* "Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [language] to implement a [description]."
+    *   *Target Language:* `ORCA/Modula-2`.
+    *   *Folder Name:* Needs to be a dedicated folder. Common convention based on previous history (`c_engine_tool`, `clarion_tool`, etc.) suggests `[name]_tool`. So, `orca_modula2_tool` or `orca_tool` or `modula2_tool`. Since the language is "ORCA/Modula-2", a reasonable folder name is `orca_modula2_tool` or just `orca_tool`. Let's use `orca_tool` for simplicity and consistency with short names, or `modula2_tool`. "ORCA/Modula-2" often refers to ORCA/M2. Let's stick to `orca_tool` as a safe bet for the folder name, or `orca_modula2_tool`. Looking at `c_engine_tool`, `alf_tool`, it seems folder names can vary. I'll choose `orca_tool` to keep it clean, or `modula2_tool`. The prompt says "ORCA/Modula-2". I'll use `orca_tool` as the folder name for the instruction generation.
+    *   *Drafting:* "Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2 to implement a structured programming or data manipulation utility."
+    *   *Refinement based on constraints:*
+        *   "Initialize a new dedicated folder named orca_tool..." -> Check.
+        *   "...create a local README.md inside it..." -> Check.
+        *   "...build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2..." -> Check.
+        *   "to implement a structured programming or data manipulation utility." -> This part was in the history pattern. The user didn't explicitly forbid this, and it makes the instruction logical. I'll include it.
+
+3.  **Final Polish (Mental Representation of Output):**
+    *   Text: Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2 to implement a structured programming or data manipulation utility.
+    *   *Check against "NEVER target .github":* The text does not mention `.github`. Check.
+    *   *Check against "Return ONLY instruction text":* The output should be just the string. Check.
+    *   *Check against "Exactly 1 instruction":* The draft is one sentence/instruction. Check.
+
+4.  **Result Construction:**
+    *   `Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2 to implement a structured programming or data manipulation utility.`
+
+This matches all criteria.
+</think>
+
+Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2 to implement a structured programming or data manipulation utility.

@@ -1,0 +1,63 @@
+// AmbientTalk Tool: Structured Programming & Data Manipulation Utility
+// This module demonstrates the core functionality of the tool.
+
+import java.lang.System;
+
+// Define a module for data processing
+object DataProcessor {
+    // Method to process a list of numbers
+    method processNumbers(list) {
+        // Filter even numbers
+        def evens = list select: [num | num % 2 == 0];
+        
+        // Map to squares
+        def squares = evens map: [num | num * num];
+        
+        return squares;
+    };
+    
+    // Method to demonstrate structured control flow
+    method controlFlowExample(mode) {
+        switch mode {
+            case "sort":
+                def data = [5, 2, 9, 1, 5, 6];
+                print("Sorting data...");
+                def sorted = data sort: [a, b | a compareTo: b];
+                print("Sorted: " sorted);
+                return sorted;
+                
+            case "filter":
+                def data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+                print("Filtering even numbers...");
+                def evens = data select: [num | num % 2 == 0];
+                print("Evens: " evens);
+                return evens;
+                
+            default:
+                print("Unknown mode: " mode);
+                return nil;
+        };
+    };
+};
+
+// Main execution logic
+try {
+    // Initialize the processor
+    def processor = new DataProcessor();
+    
+    // Example 1: Data Manipulation
+    print("=== Data Manipulation Example ===");
+    def numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    def result = processor.processNumbers(numbers);
+    print("Processed result: " result);
+    
+    // Example 2: Structured Control Flow
+    print("\n=== Structured Control Flow Example ===");
+    processor.controlFlowExample("sort");
+    processor.controlFlowExample("filter");
+    
+    print("\n=== Tool Execution Complete ===");
+} catch: exception
+    print("Error: " exception message);
+    exception printStackTrace;
+;

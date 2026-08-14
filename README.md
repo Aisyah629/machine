@@ -54,3 +54,5 @@ Training Machine
 - Created/Updated module: `data_processing_tool` (See `data_processing_tool/README.md` for details)
 
 - Created/Updated module: `gamemonkey_tool` (See `gamemonkey_tool/README.md` for details)
+
+- Created/Updated module: `ambienttalk_tool` (See `ambienttalk_tool/README.md` for details)

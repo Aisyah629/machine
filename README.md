@@ -12,3 +12,5 @@ Training Machine
 - Created/Updated module: `ttcn_tool` (See `ttcn_tool/README.md` for details)
 
 - Created/Updated module: `actionscript_tool` (See `actionscript_tool/README.md` for details)
+
+- Created/Updated module: `xotcl_tool` (See `xotcl_tool/README.md` for details)

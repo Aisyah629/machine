@@ -268,3 +268,63 @@ Initialize a new dedicated folder named `cg_core` in the workspace, create a loc
 </think>
 
 Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.
+[2026-08-14 21:58:30] (Target Lang: OCaml) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** Lists files/dirs: `.git`, `.github`, `README.md`, `cg_core`, `cg_core/README.md`, `history.txt`, `instruction.txt`, `oriel_tool`, `oriel_tool/README.md`
+   - **History/Context:** Shows a previous interaction where the AI generated a follow-up instruction for a tool using "MIIS" language, placed in `miis_tool` with a `README.md`.
+   - **Current Prompt Constraint:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OCaml. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: OCaml.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+   - Create a local README.md inside that new folder.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+
+3.  **Formulate Response (Mental Draft):**
+   Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language OCaml.
+
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using OCaml? Yes. ("strictly using the exact programming language OCaml")
+   - Place in NEW dedicated folder? Yes. ("Initialize a new dedicated folder named ocaml_tool in the workspace")
+   - Create local README.md? Yes. ("create a local README.md inside it")
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes, completely ignored.
+   - Matches historical format/style? Yes.
+
+5.  **Refine (if needed):**
+   The prompt says "STRICTLY" in caps in the constraint, but I can just write it naturally as requested. I'll match the exact phrasing style from the history but adapt to OCaml.
+   "Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language OCaml."
+
+   All constraints met. Output matches exactly. Proceeds.✅
+   I will output just the instruction text as requested.✅
+   Ready.✅
+   Output generation.✅
+   *(Done.)*
+   Output: Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language OCaml.✅
+   (Self-Correction/Verification during thought: The prompt says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OCaml." I'll make sure the word STRICTLY or "strictly" is clearly present. The phrasing matches the history perfectly. I will output exactly that.)
+   Final string: Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language OCaml.
+   Proceeds.✅
+   Output matches.✅
+   [Proceeds] -> Output generation.
+   *(Done.)*
+   *(Output matches exactly.)*
+   [Final Check]
+   - 1 instruction? Yes.
+   - Language: OCaml? Yes.
+   - Strictly mentioned? Yes.
+   - New folder? Yes.
+   - README.md? Yes.
+   - Only text? Yes.
+   - No .github? Yes.
+   All good.✅
+   Output matches.✅
+   [Proceeds] -> Output generation.
+   *(Done.)*
+</think>
+
+Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language OCaml.

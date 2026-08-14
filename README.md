@@ -52,3 +52,5 @@ Training Machine
 - Created/Updated module: `alf_tool` (See `alf_tool/README.md` for details)
 
 - Created/Updated module: `data_processing_tool` (See `data_processing_tool/README.md` for details)
+
+- Created/Updated module: `gamemonkey_tool` (See `gamemonkey_tool/README.md` for details)

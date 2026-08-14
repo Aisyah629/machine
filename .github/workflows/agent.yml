@@ -1,0 +1,135 @@
+name: Autonomous AI Software Engineer
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  auto-develop:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Autonomous Engineering Loop
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+        run: |
+          set +e
+          URL="https://ai.tioo.eu.org/v1/chat/completions"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [ ! -f history.txt ]; then
+            echo "Initialization: Ultimate Polyglot system boot (Dynamic Raw Extraction)." > history.txt
+          fi
+          if [ ! -f README.md ]; then
+            echo "# Autonomous AI Ultimate Polyglot Knowledgebase" > README.md
+          fi
+          
+          curl -s "https://gist.githubusercontent.com/calvinfroedge/defeb8fc6cdc0068e172/raw/7904b2504827f6f4883df0299a2bf51accbe9dab/languages.json" > /tmp/languages.json
+          
+          TOPICS=(
+            "Develop a data extraction or parsing utility."
+            "Implement a complex mathematical or cryptographic algorithm."
+            "Create an interactive diagnostic or visualization tool."
+            "Build a robust data transfer or API interaction script."
+            "Write a low-level memory management or network protocol simulator."
+            "Design an automated dataset cleaning or text formatting tool."
+            "Create a self-healing tool to handle edge cases and errors."
+          )
+          
+          for i in {1..6}
+          do
+            HISTORY_CONTEXT=$(tail -n 20 history.txt | tr '\n' ' ')
+            README_CONTEXT=$(tail -n 30 README.md | tr '\n' ' ')
+            DIR_STRUCTURE=$(find . -maxdepth 4 -not -path '*/\.git/*' -not -path '*/\.github/*' | sort | tr '\n' ' | ')
+            
+            RANDOM_LANG=$(cat /tmp/languages.json | sed 's/","/\n/g' | tr -d '[]"' | shuf -n 1)
+            
+            RESET_CHANCE=$((RANDOM % 5))
+            if [ $RESET_CHANCE -eq 0 ]; then
+              RANDOM_TOPIC="${TOPICS[$RANDOM % ${#TOPICS[@]}]}"
+              GENERATED_PROMPT="Focus entirely on this new objective: '$RANDOM_TOPIC'. You MUST write functional code for this task strictly using this programming language: $RANDOM_LANG. Workspace: $DIR_STRUCTURE."
+            else
+              PROMPT_PAYLOAD=$(jq -n \
+                --arg model "Qwen3.6-35B-A3B-FP8" \
+                --arg history "$HISTORY_CONTEXT" \
+                --arg dirs "$DIR_STRUCTURE" \
+                --arg lang "$RANDOM_LANG" \
+                '{
+                  model: $model,
+                  messages: [
+                    {
+                      role: "user",
+                      content: ("You are an Autonomous AI. Workspace:\n" + $dirs + "\n\nHistory:\n" + $history + "\n\nGenerate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: " + $lang + ". If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory.")
+                    }
+                  ]
+                }')
+              NEW_PROMPT_RESP=$(curl -s -X POST "$URL" \
+                -H "Authorization: Bearer $OPENAI_KEY" \
+                -H "Content-Type: application/json" \
+                -d "$PROMPT_PAYLOAD")
+              GENERATED_PROMPT=$(echo "$NEW_PROMPT_RESP" | jq -r '.choices[0].message.content // empty' 2>/dev/null | perl -0777 -pe 's/<think>.*?<\/think>\s*//gs' || echo "")
+            fi
+            
+            if [ -z "$GENERATED_PROMPT" ]; then
+              GENERATED_PROMPT="Create a new utility for data processing in a new folder. You MUST write it strictly in $RANDOM_LANG. Include a local README.md."
+            fi
+            
+            echo "[$(date +'%Y-%m-%d %H:%M:%S')] (Target Lang: $RANDOM_LANG) $GENERATED_PROMPT" >> history.txt
+            
+            CONTENT_PAYLOAD=$(jq -n \
+              --arg model "Qwen3.6-35B-A3B-FP8" \
+              --arg prompt "$GENERATED_PROMPT" \
+              --arg dirs "$DIR_STRUCTURE" \
+              --arg lang "$RANDOM_LANG" \
+              '{
+                model: $model,
+                response_format: { type: "json_object" },
+                messages: [
+                  {
+                    role: "system",
+                    content: ("You are an elite Autonomous AI Polyglot Software Engineer. Workspace: " + $dirs + ". You MUST NEVER create or modify files inside the .github directory. You MUST strictly write the code in the exact programming language requested: " + $lang + ". Whenever you create a tool, you MUST generate a README.md file INSIDE that specific folder. You MUST respond strictly in valid JSON format containing a single key \"files\" which is an ARRAY of objects. Each object must have exactly two keys: \n1. \"filepath\": The relative path. \n2. \"content\": The raw, functional code or markdown text. Do NOT wrap content in markdown code blocks.")
+                  },
+                  {
+                    role: "user",
+                    content: ("Execute task:\n" + $prompt)
+                  }
+                ]
+              }')
+              
+            NEW_CONTENT_RESP=$(curl -s -X POST "$URL" \
+              -H "Authorization: Bearer $OPENAI_KEY" \
+              -H "Content-Type: application/json" \
+              -d "$CONTENT_PAYLOAD")
+              
+            RAW_JSON=$(echo "$NEW_CONTENT_RESP" | jq -r '.choices[0].message.content // empty' 2>/dev/null | perl -0777 -pe 's/<think>.*?<\/think>\s*//gs')
+            
+            if echo "$RAW_JSON" | jq -e . >/dev/null 2>&1; then
+              FILE_COUNT=$(echo "$RAW_JSON" | jq '.files | length' 2>/dev/null || echo "0")
+              for (( j=0; j<$FILE_COUNT; j++ )); do
+                FILEPATH=$(echo "$RAW_JSON" | jq -r ".files[$j].filepath // empty")
+                CODE_CONTENT=$(echo "$RAW_JSON" | jq -r ".files[$j].content // empty")
+                if [ -n "$FILEPATH" ] && [ -n "$CODE_CONTENT" ] && [ "$FILEPATH" != "null" ] && [ "$CODE_CONTENT" != "null" ]; then
+                  if [[ "$FILEPATH" == *.github* ]]; then
+                    echo "Blocked .github modification."
+                  else
+                    DIRNAME=$(dirname "$FILEPATH")
+                    mkdir -p "$DIRNAME"
+                    echo "$CODE_CONTENT" > "$FILEPATH"
+                    if [[ "$FILEPATH" == *README.md* && "$FILEPATH" != "README.md" ]]; then
+                      echo -e "\n- Created/Updated module: \`$DIRNAME\` (See \`$FILEPATH\` for details)" >> README.md
+                    fi
+                    git add "$FILEPATH"
+                  fi
+                fi
+              done
+              git add history.txt README.md
+              git commit -m "feat(ai): autonomous polyglot update for $FILE_COUNT files [$(date +'%H:%M:%S')]" -m "Co-authored-by: BOTCAHX <tioclkp02@gmail.com>" || true
+              git push || true
+            fi
+            sleep 30
+          done

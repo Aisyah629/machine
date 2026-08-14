@@ -1,0 +1,66 @@
+// NGL (Next Generation Language) - Main Tool Implementation
+// This script demonstrates core functionalities and syntax of NGL
+
+# Define a simple calculator module
+module calculator {
+    function add(a: Float, b: Float) -> Float {
+        return a + b;
+    }
+
+    function subtract(a: Float, b: Float) -> Float {
+        return a - b;
+    }
+
+    function multiply(a: Float, b: Float) -> Float {
+        return a * b;
+    }
+
+    function divide(a: Float, b: Float) -> Float {
+        if (b == 0.0) {
+            raise DivisionByZeroError;
+        }
+        return a / b;
+    }
+}
+
+# Define a data processor
+module data_processor {
+    class Dataset {
+        name: String;
+        data: List<Float>;
+
+        constructor(n: String, d: List<Float>) {
+            this.name = n;
+            this.data = d;
+        }
+
+        function mean() -> Float {
+            if (this.data.length == 0) return 0.0;
+            let sum = 0.0;
+            for (val in this.data) {
+                sum += val;
+            }
+            return sum / this.data.length;
+        }
+    }
+}
+
+# Main execution entry point
+main() {
+    let calc = calculator();
+    print("Addition: " + calc.add(5.5, 2.3));
+    print("Subtraction: " + calc.subtract(5.5, 2.3));
+    print("Multiplication: " + calc.multiply(5.5, 2.3));
+    print("Division: " + calc.divide(5.5, 2.3));
+
+    let ds = data_processor.Dataset("SampleData", [1.0, 2.0, 3.0, 4.0, 5.0]);
+    print("Mean of SampleData: " + ds.mean());
+}
+
+# Exception handling
+exception DivisionByZeroError {
+    message: String;
+    constructor(msg: String) {
+        this.message = msg;
+    }
+}

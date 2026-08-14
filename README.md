@@ -56,3 +56,5 @@ Training Machine
 - Created/Updated module: `gamemonkey_tool` (See `gamemonkey_tool/README.md` for details)
 
 - Created/Updated module: `ambienttalk_tool` (See `ambienttalk_tool/README.md` for details)
+
+- Created/Updated module: `rc_tool` (See `rc_tool/README.md` for details)

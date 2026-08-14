@@ -32,3 +32,5 @@ Training Machine
 - Created/Updated module: `api_client_tool` (See `api_client_tool/README.md` for details)
 
 - Created/Updated module: `clarion_tool` (See `clarion_tool/README.md` for details)
+
+- Created/Updated module: `sather_tool` (See `sather_tool/README.md` for details)

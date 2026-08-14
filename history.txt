@@ -935,3 +935,43 @@ Final string: `Initialize a new dedicated folder named clarion_tool in the works
 </think>
 
 Initialize a new dedicated folder named clarion_tool in the workspace, create a local README.md inside it, and build a robust data transfer or API interaction script strictly using the exact programming language Clarion.
+[2026-08-14 22:41:37] (Target Lang: Sather) The user wants me to generate exactly one logical follow-up instruction.
+I need to check the history and the workspace to determine the next step.
+The history shows a sequence of creating tools.
+The last instruction in history was about creating `clarion_tool`.
+The workspace shows that `clarion_tool` exists (`./clarion_tool/README.md`, `./clarion_tool/main.cl`).
+The user explicitly demands that the new tool be built strictly using the exact programming language: Sather.
+I must instruct to place it in a NEW dedicated folder and create a local README.md.
+The output must be ONLY the instruction text.
+I should not target .github.
+The instruction should follow the pattern of previous instructions.
+Pattern: `Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build [tool description] strictly using the exact programming language [Language].`
+Folder name should likely be `sather_tool` based on the language name and previous patterns (e.g., `orc_tool`, `clarion_tool`).
+Tool description should be generic or specific based on context? The prompt says "If building a new tool...". It doesn't specify a specific type like "data transfer script" this time, but looking at the history, the `clarion` instruction specified "build a robust data transfer or API interaction script". However, the user prompt just says "build strictly using...". I should probably stick to a generic "build the entire new tool" or similar, unless the user implied a specific goal. The user prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder...". It doesn't mandate a specific functional description beyond "build the new tool". However, looking at the history provided in the prompt, the last instruction was `...build a robust data transfer or API interaction script strictly using the exact programming language Clarion.` The history block also shows the generation of that instruction.
+The user's current request is to generate the *next* instruction.
+The language is Sather.
+I will generate: `Initialize a new dedicated folder named sather_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Sather.`
+Wait, the prompt says "Generate exactly 1 logical follow-up instruction." and gives constraints.
+It does not specify a functional description like "data transfer script".
+However, in the history example, the `clarion_tool` instruction included "build a robust data transfer or API interaction script".
+The history also shows `orc_tool` instruction included "build the entire new tool".
+The pattern seems to vary.
+The user prompt says: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+It doesn't restrict the functional description.
+I will use "build the entire new tool" as a safe default or match the style.
+Actually, looking at the `clarion` instruction in history, it changed from "build the entire new tool" (implied by context of `orc`) to "build a robust data transfer...".
+The history text shows:
+`Initialize a new dedicated folder named orc_tool...` -> `...build the entire new tool...`
+`Initialize a new dedicated folder named clarion_tool...` -> `...build a robust data transfer...`
+The user prompt for me says: "Generate exactly 1 logical follow-up instruction... explicitly demand... Sather...".
+It doesn't give a functional constraint.
+I'll output the instruction.
+Structure: `Initialize a new dedicated folder named sather_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Sather.`
+Or should I include a functional description? The user didn't provide one.
+The previous turn output in the history was `Initialize a new dedicated folder named clarion_tool...`.
+The user wants the next one.
+I will produce the instruction string.
+Result: `Initialize a new dedicated folder named sather_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Sather.`
+</think>
+
+Initialize a new dedicated folder named sather_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Sather.

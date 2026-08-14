@@ -268,3 +268,68 @@ Initialize a new dedicated folder named `cg_core` in the workspace, create a loc
 </think>
 
 Initialize a new dedicated folder named miis_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language MIIS.
+[2026-08-14 22:01:51] (Target Lang: Simulink) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Input Workspace:** Standard repository structure (`.git`, `.github`, `README.md`, `cg_core`, `oriel_tool`, etc.).
+    *   **Role:** Autonomous AI.
+    *   **Goal:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraint 1:** Explicitly demand the new tool be built *STRICTLY* using the exact programming language: `Simulink`.
+    *   **Constraint 2:** If building a new tool, instruct to place it in a *NEW dedicated folder*.
+    *   **Constraint 3:** Instruct to create a local `README.md` inside that folder.
+    *   **Constraint 4:** Return *ONLY* the instruction text.
+    *   **Constraint 5:** *NEVER* target the `.github` directory.
+    *   **Context:** The previous turn involved `miis_tool`. This is a follow-up.
+
+2.  **Drafting the Instruction:**
+    *   *Action:* Create a new tool.
+    *   *Location:* New dedicated folder (needs a name, e.g., `simulink_tool`).
+    *   *Documentation:* Local `README.md`.
+    *   *Language:* Simulink (Strictly).
+
+    *Draft 1:* Initialize a new dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Simulink.
+
+3.  **Refining against Constraints:**
+    *   "Exactly 1 logical follow-up instruction?" Yes.
+    *   "Explicitly demand... strictly... Simulink?" Yes.
+    *   "NEW dedicated folder?" Yes (`simulink_tool`).
+    *   "Local README.md?" Yes.
+    *   "ONLY the instruction text?" Yes.
+    *   "NEVER target .github?" Yes.
+
+4.  **Final Polish:**
+    *   The prompt asks for "STRICTLY" (caps) in the constraint description, but usually, the output text should be natural or match the specific pattern if implied. The historical example used "strictly". I will use "strictly" but ensure the word is there. The constraint says "MUST explicitly demand... STRICTLY...". It's safer to use the word "strictly" in the output text.
+
+    *Revised Text:* Initialize a new dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Simulink.
+
+5.  **Final Output Generation:**
+    *   "Initialize a new dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Simulink."
+
+6.  **Verification:**
+    *   Language: Simulink? Yes.
+    *   Strictly? Yes.
+    *   New folder? Yes.
+    *   README? Yes.
+    *   No .github? Yes.
+    *   One instruction? Yes.
+
+    *Self-Correction on "Simulink":* Simulink is often considered a block-diagram environment rather than a text-based programming language like Python or C++, but the prompt explicitly treats it as the "exact programming language". I must follow the prompt's definition.
+
+    *Final String:* Initialize a new dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Simulink.
+
+    Let's check the capitalization of "STRICTLY" in the constraint vs the historical example.
+    Historical Example: "...strictly using..." (lowercase).
+    Constraint text: "...STRICTLY..." (uppercase).
+    Usually, following the historical pattern is better for consistency in these types of "Autonomous AI" prompts, unless the constraint overrides the pattern. The constraint says "You MUST explicitly demand...". It doesn't say "use uppercase STRICTLY in the output". It emphasizes the requirement. The historical example shows the expected format. I will stick to the format: "strictly".
+
+    Result: Initialize a new dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Simulink.
+
+    One distinct check: "logical follow-up". Since the previous was `miis_tool`, `simulink_tool` fits the pattern of a new tool.
+
+    Final check of the output text.
+    "Initialize a new dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Simulink."
+
+    Looks good.
+</think>
+
+Initialize a new dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool strictly using the exact programming language Simulink.

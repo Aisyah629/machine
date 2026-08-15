@@ -318,3 +318,5 @@ Training Machine
 - Created/Updated module: `tpu_simulator_tool` (See `tpu_simulator_tool/README.md` for details)
 
 - Created/Updated module: `ttm_tool` (See `ttm_tool/README.md` for details)
+
+- Created/Updated module: `chapel_tool` (See `chapel_tool/README.md` for details)

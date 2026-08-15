@@ -286,3 +286,5 @@ Training Machine
 - Created/Updated module: `s_lang_tool` (See `s_lang_tool/README.md` for details)
 
 - Created/Updated module: `bourne_shell_tool` (See `bourne_shell_tool/README.md` for details)
+
+- Created/Updated module: `lis_tool` (See `lis_tool/README.md` for details)

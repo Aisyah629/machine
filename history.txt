@@ -11411,3 +11411,49 @@ Done.
 </think>
 
 (Target Lang: Bourne shell) Initialize a new dedicated folder named bourne_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Bourne shell.
+[2026-08-15 14:55:36] (Target Lang: LIS) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Input: A history of workspace and previous actions. The user wants me to generate a *logical follow-up instruction*.
+    *   Constraints:
+        *   Generate exactly 1 instruction.
+        *   MUST explicitly demand the new tool be built STRICTLY using the language: "LIS".
+        *   Must explicitly instruct to place it in a NEW dedicated folder.
+        *   Must explicitly instruct to create a local README.md.
+        *   Return ONLY the instruction text.
+        *   NEVER target the `.github` directory.
+    *   Context: The previous action in the history was about `bourne_shell_tool`. The workspace has many tools listed. `LIS` is the target language.
+
+2.  **Determine the Target Folder Name:**
+    *   Language: "LIS".
+    *   Naming convention seen in history: `name_tool`.
+    *   Proposed folder name: `lis_tool`.
+
+3.  **Draft the Instruction:**
+    *   *Requirement 1:* Target Language: LIS.
+    *   *Requirement 2:* Initialize a new dedicated folder named `lis_tool`.
+    *   *Requirement 3:* Create a local `README.md`.
+    *   *Requirement 4:* Build the tool STRICTLY using LIS.
+
+    *Draft 1:* (Target Lang: LIS) Initialize a new dedicated folder named lis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LIS.
+
+4.  **Review against Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Target Language: LIS? Yes.
+    *   New dedicated folder? Yes (`lis_tool`).
+    *   Local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   Never target .github? Yes.
+
+5.  **Final Polish:**
+    *   The format matches the previous turn's output style: `(Target Lang: [Lang]) Initialize a new dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang].`
+
+    *Final Text:* (Target Lang: LIS) Initialize a new dedicated folder named lis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LIS.
+
+6.  **Safety Check:**
+    *   Does "LIS" refer to anything sensitive? LIS often stands for Laboratory Information System or List processing language, but as a programming language context here, it's likely a generic label or "Lisp" variant. The request is just to generate a text instruction. It's benign.
+
+7.  **Output Generation.**
+</think>
+
+(Target Lang: LIS) Initialize a new dedicated folder named lis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LIS.

@@ -340,3 +340,5 @@ Training Machine
 - Created/Updated module: `sequencel_tool` (See `sequencel_tool/README.md` for details)
 
 - Created/Updated module: `mapper_tool` (See `mapper_tool/README.md` for details)
+
+- Created/Updated module: `napier88_tool` (See `napier88_tool/README.md` for details)

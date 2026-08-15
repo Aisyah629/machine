@@ -1,0 +1,13 @@
+; OmniMark Tool - Main Script
+; This script demonstrates basic OmniMark functionality for the tool.
+
+define pattern = "<greeting> %string" doing
+    output "Hello, %string! Welcome to OmniMark Tool."
+    
+define pattern = "<farewell> %string" doing
+    output "Goodbye, %string. See you next time."
+    
+define pattern = "<status> %string" doing
+    output "Status of %string: Active"
+    
+process input with patterns

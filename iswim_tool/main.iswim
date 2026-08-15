@@ -1,0 +1,48 @@
+/**
+ * ISWIM Tool - main.iswim
+ * A functional programming environment focused on combinatory logic theory
+ * and symbolic computation frameworks.
+ */
+
+/*
+ * ISWIM (Programming Language For Mathematics) Syntax Simulation
+ * This script demonstrates basic combinatory logic and lambda calculus concepts.
+ */
+
+// Define basic combinators
+let
+    // S combinator: S x y z = x z (y z)
+    S = lambda x . lambda y . lambda z . x z (y z);
+
+    // K combinator: K x y = x
+    K = lambda x . lambda y . x;
+
+    // I combinator (identity): I x = x, defined as K K
+    I = K K;
+
+    // Apply a function to an argument
+    apply = lambda f . lambda x . f x;
+
+    // Example reduction
+    // Let's try to simplify I x
+    // I x = (K K) x = K x = x
+
+    // Define a simple expression
+    expr1 = apply I 42;
+    expr2 = apply (apply K 1) 2;
+
+    // Output results
+    print "I 42 = ";
+    print expr1;
+
+    print "K 1 2 = ";
+    print expr2;
+
+    // Test S combinator: S K K x = K x (K x) = x
+    S_KK = apply (apply S K) K;
+    expr3 = apply S_KK 99;
+
+    print "S K K 99 = ";
+    print expr3;
+
+end;

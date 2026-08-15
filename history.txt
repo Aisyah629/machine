@@ -6276,3 +6276,68 @@ Output matches response. Proceeds.
 </think>
 
 (Target Lang: Visual Basic .NET) Initialize a new dedicated folder named vbnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Basic .NET to develop a comprehensive desktop application framework with advanced UI rendering and enterprise-level database connectivity capabilities.
+[2026-08-15 09:06:19] (Target Lang: Visual Fortran) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a workspace listing (directories/files).
+   - History shows a previous instruction for `vbnet_tool` targeting Visual Basic .NET.
+   - The user's prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Fortran. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - Constraints:
+     - Exactly 1 logical follow-up instruction.
+     - MUST explicitly demand strict use of "Visual Fortran".
+     - Must instruct to place it in a NEW dedicated folder.
+     - Must instruct to create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target `.github`.
+     - Context: The workspace already has `vbnet_tool` created. This is a follow-up for a new tool.
+
+2.  **Identify Key Requirements for the Output:**
+   - Format: Similar to the history example, but tailored to the new constraints.
+   - Language: Visual Fortran
+   - Folder: `fortran_tool` (or similar, but should be a new dedicated folder)
+   - File: `README.md` inside that folder
+   - Description/Purpose: Needs to be a logical follow-up tool. Could be something like "a high-performance numerical computing and scientific simulation framework" to match Fortran's strengths.
+   - Must explicitly state: "STRICTLY using this exact programming language: Visual Fortran" (Note: "Visual Fortran" is a bit of a misnomer since Fortran is typically just Fortran, but I must follow the prompt's exact wording demand).
+   - Output format: Only the instruction text, no extra markdown or conversational filler.
+
+3.  **Draft Construction:**
+   `(Target Lang: Visual Fortran) Initialize a new dedicated folder named fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran to develop a high-performance numerical computing and scientific simulation framework with optimized matrix operations and legacy HPC integration capabilities.`
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand strict use of "Visual Fortran"? Yes: "...build the entire new tool STRICTLY using this exact programming language: Visual Fortran..."
+   - New dedicated folder? Yes: `fortran_tool`
+   - Create local README.md? Yes: "...create a local README.md inside it..."
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Logical follow-up? Yes, continues the pattern of creating domain-specific tools in new folders.
+
+   All constraints met. I will output exactly the drafted string. No extra text. Ensure formatting matches the prompt's style. The prompt says "Return ONLY the instruction text." so I will just output the raw string.
+
+   One minor thing: The prompt says "Visual Fortran". I'll keep that exact phrase as requested.
+   I'll make sure it's a single paragraph/sentence as requested.
+
+   Draft: `(Target Lang: Visual Fortran) Initialize a new dedicated folder named fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran to develop a high-performance numerical computing and scientific simulation framework with optimized matrix operations and legacy HPC integration capabilities.`
+
+   Matches all criteria. Proceeds.✅
+   Output matches exactly. No extra text.✅
+   Ready. 
+   Output generation. 
+   [Self-Correction/Verification during thought]
+   Wait, let's verify the exact wording from the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Fortran."
+   My draft includes: "...build the entire new tool STRICTLY using this exact programming language: Visual Fortran to develop..."
+   This matches perfectly.
+   The prompt also says: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   My draft includes: "Initialize a new dedicated folder named fortran_tool in the workspace, create a local README.md inside it..."
+   Matches perfectly.
+   "Return ONLY the instruction text. NEVER target the .github directory."
+   Matches.
+   I will output exactly the drafted string.✅
+   Proceeds. 
+   Output: `(Target Lang: Visual Fortran) Initialize a new dedicated folder named fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran to develop a high-performance numerical computing and scientific simulation framework with optimized matrix operations and legacy HPC integration capabilities.` 
+   All good. 
+   [Final Output Generation] -> Output matches draft.✅
+   *(Done.)*
+</think>
+
+(Target Lang: Visual Fortran) Initialize a new dedicated folder named fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran to develop a high-performance numerical computing and scientific simulation framework with optimized matrix operations and legacy HPC integration capabilities.

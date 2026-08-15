@@ -17391,3 +17391,47 @@ Initialize a NEW dedicated folder named spin_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named alef_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alef.
+[2026-08-15 22:47:19] (Target Lang: ALGOL 58) The user wants a follow-up instruction based on a specific format.
+The instruction must demand building a new tool using the language ALGOL 58.
+It must specify placing it in a NEW dedicated folder and creating a local README.md.
+The output must be ONLY the instruction text.
+It must NOT target .github.
+
+Language: ALGOL 58.
+Folder name: `algol58_tool` seems appropriate based on the pattern `language_tool` seen in the workspace list (e.g., `ada_tool`, `bcpl_tool`).
+Check workspace list: `./algol58_tool` exists?
+Looking at the list: `./algol58_tool` exists.
+Wait, the instruction says "Generate exactly 1 logical follow-up instruction."
+Usually, these prompts imply generating a *new* instruction for a *new* tool, or repeating a pattern for a different language.
+However, the prompt says "If building a new tool...".
+The previous turn was about `alef_tool`.
+The current language is ALGOL 58.
+The workspace list shows `./algol58_tool` exists.
+If the tool already exists, should I still generate the instruction to build it?
+The prompt pattern usually implies generating the instruction text that *would* be used to create the tool.
+Looking at the history, it says "Constraint: NEW dedicated folder? Yes...".
+This implies the instruction *is* to create it. Even if the workspace list shows it, the task is to generate the *instruction text* that describes the creation of the tool.
+The instruction text is the target.
+So I will generate the text.
+
+Structure:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+
+Language: ALGOL 58.
+Folder name: `algol58_tool`.
+
+Result:
+Initialize a NEW dedicated folder named algol58_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALGOL 58.
+
+Check constraints:
+- Return ONLY the instruction text? Yes.
+- NEVER target .github? Yes.
+- Build strictly using ALGOL 58? Yes.
+- NEW dedicated folder? Yes.
+- Local README.md? Yes.
+
+Output:
+Initialize a NEW dedicated folder named algol58_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALGOL 58.
+</think>
+
+Initialize a NEW dedicated folder named algol58_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALGOL 58.

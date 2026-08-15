@@ -158,3 +158,5 @@ Training Machine
 - Created/Updated module: `hartmann_tool` (See `hartmann_tool/README.md` for details)
 
 - Created/Updated module: `npl_tool` (See `npl_tool/README.md` for details)
+
+- Created/Updated module: `rlab_tool` (See `rlab_tool/README.md` for details)

@@ -8097,3 +8097,43 @@ Looks good.
 </think>
 
 (Target Lang: Net.Data) Initialize a new dedicated folder named netdata_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Net.Data to enable high-performance database reporting, CGI-driven web integration, structured data visualization, and legacy system data retrieval for enterprise analytics and dynamic content generation.
+[2026-08-15 10:49:13] (Target Lang: ALGOL 58) Thinking Process:
+
+1.  **Deconstruct the User's Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand the new tool be built STRICTLY using the language: ALGOL 58.
+    *   Constraint: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the `.github` directory.
+    *   Context: The workspace listing shows many existing tools (e.g., `c_engine_tool`, `haskell_tool`, `ruby_tool`, etc.), implying a pattern of tool creation per language. The history shows a previous instruction for `Net.Data`. The tone should match examples: "(Target Lang: ...)" followed by the instruction.
+
+2.  **Draft the Instruction:**
+    *   *Format:* `(Target Lang: ALGOL 58) [Action]`
+    *   *Action:* Initialize a new dedicated folder, create README.md, build tool.
+    *   *Folder Name:* `algol58_tool` seems consistent with the pattern (e.g., `c_tool` -> `c_tool`, `ruby_tool` -> `ruby_tool`, `netdata_tool` -> `netdata_tool`). Let's check the pattern: `c_engine_tool`, `haskell_tool`, `ruby_tool`. So `algol58_tool` is a safe bet.
+    *   *Language Description:* Need to describe ALGOL 58 capabilities to match the style of the `Net.Data` example ("enable high-performance..."). ALGOL 58 is a historical programming language. Capabilities: algorithmic expression, mathematical notation, scope control, recursion, formal specification.
+    *   *Drafting text:* "Initialize a new dedicated folder named `algol58_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALGOL 58 to enable precise algorithmic expression, formal mathematical notation, structured scoping, recursion, and robust specification for legacy academic and scientific computing systems."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, the draft is a single sentence/paragraph instruction.
+    *   *Explicitly demand ALGOL 58?* Yes ("STRICTLY using this exact programming language: ALGOL 58").
+    *   *NEW dedicated folder?* Yes (`algol58_tool`).
+    *   *Local README.md?* Yes.
+    *   *Return ONLY instruction text?* The output should be just the text string.
+    *   *Never target `.github`?* The instruction targets `algol58_tool` and workspace, not `.github`.
+    *   *Tone match?* Matches the `Net.Data` example structure.
+        *   Example: `(Target Lang: Net.Data) Initialize a new dedicated folder named netdata_tool... build... STRICTLY... Net.Data to enable...`
+        *   Draft: `(Target Lang: ALGOL 58) Initialize a new dedicated folder named algol58_tool... build... STRICTLY... ALGOL 58 to enable...`
+        *   Result: Good match.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   `(Target Lang: ALGOL 58) Initialize a new dedicated folder named algol58_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALGOL 58 to enable precise algorithmic expression, formal mathematical notation, structured scoping, recursion, and robust specification for legacy academic and scientific computing systems.`
+
+5.  **Final Output Construction:**
+    *   Just the text.
+    *   Result: `(Target Lang: ALGOL 58) Initialize a new dedicated folder named algol58_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALGOL 58 to enable precise algorithmic expression, formal mathematical notation, structured scoping, recursion, and robust specification for legacy academic and scientific computing systems.`
+
+This looks solid.
+</think>
+
+(Target Lang: ALGOL 58) Initialize a new dedicated folder named algol58_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALGOL 58 to enable precise algorithmic expression, formal mathematical notation, structured scoping, recursion, and robust specification for legacy academic and scientific computing systems.

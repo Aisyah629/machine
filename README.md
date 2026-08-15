@@ -470,3 +470,5 @@ Training Machine
 - Created/Updated module: `super_talk_tool` (See `super_talk_tool/README.md` for details)
 
 - Created/Updated module: `pcastl_tool` (See `pcastl_tool/README.md` for details)
+
+- Created/Updated module: `epigram_tool` (See `epigram_tool/README.md` for details)

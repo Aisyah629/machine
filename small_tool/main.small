@@ -1,0 +1,43 @@
+;; Main execution module for small_tool
+;; Language: SMALL
+
+(defpackage :small-tool)
+(use-package :small-tool)
+
+(defclass config-parser ()
+  ((data :accessor config-data :initarg :data :initform nil)
+   (schema :accessor config-schema :initarg :schema :initform nil)
+   (status :accessor config-status :initarg :status :initform 'uninitialized)))
+
+(defmethod initialize-parser ((parser config-parser) path)
+  ;; Initialize parser with a configuration path
+  (setf (config-status parser) 'initialized)
+  (print (format nil "[SMALL] Parser initialized at path: ~a" path))
+  parser)
+
+(defmethod parse-config ((parser config-parser))
+  ;; Simulate parsing logic
+  (if (eq (config-status parser) 'initialized)
+      (progn
+        (setf (config-status parser) 'parsed)
+        (print "[SMALL] Configuration parsed successfully.")
+        t)
+      (progn
+        (print "[SMALL] Error: Parser not initialized.")
+        nil)))
+
+(defmethod get-value ((parser config-parser) key)
+  ;; Retrieve a value by key
+  (if (eq (config-status parser) 'parsed)
+      (format nil "Value for ~a" key)
+      "Value not found"))
+
+(defun main ()
+  ;; Entry point
+  (let ((parser (make-instance 'config-parser)))
+    (initialize-parser parser "/default/config")
+    (parse-config parser)
+    (print (get-value parser "app_name"))
+    (print "[SMALL] Execution complete.")))
+
+(main)

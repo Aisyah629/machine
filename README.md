@@ -462,3 +462,5 @@ Training Machine
 - Created/Updated module: `./pdl_tool` (See `./pdl_tool/README.md` for details)
 
 - Created/Updated module: `objectlisp_tool` (See `objectlisp_tool/README.md` for details)
+
+- Created/Updated module: `./small_tool` (See `./small_tool/README.md` for details)

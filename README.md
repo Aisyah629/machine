@@ -440,3 +440,5 @@ Training Machine
 - Created/Updated module: `picolisp_tool` (See `picolisp_tool/README.md` for details)
 
 - Created/Updated module: `pli_tool` (See `pli_tool/README.md` for details)
+
+- Created/Updated module: `tpu_tool` (See `tpu_tool/README.md` for details)

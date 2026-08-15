@@ -1,42 +1,39 @@
-// TPU Tool: main.tpu
-// Built strictly using TPU programming primitives for deep learning acceleration.
+// TPU Tool - Main Source File
+// Language: TPU
+// Purpose: Demonstrates a functional tool built strictly in TPU.
 
-import tpu_core;
-import tensor_ops;
-import hbm_allocator;
+BEGIN TPU_TOOL
 
-// Configuration constants
-const int BATCH_SIZE = 1024;
-const int TENSOR_DIM = 4096;
-const int PIPELINE_DEPTH = 4;
+    // Define tensor dimensions for demonstration
+    DEFINE INPUT_TENSOR AS TENSOR[F32][32, 32]
+    DEFINE WEIGHT_TENSOR AS TENSOR[F32][16, 32]
+    DEFINE OUTPUT_TENSOR AS TENSOR[F32][32, 16]
 
-// Main execution block
-void main() {
-    // Initialize TPU hardware context
-    tpu_core::init(DEVICE_ID_0);
-    
-    // Allocate High Bandwidth Memory (HBM) buffers for input/output
-    hbm_allocator::allocate_buffer('input_tensor', BATCH_SIZE * TENSOR_DIM);
-    hbm_allocator::allocate_buffer('output_tensor', BATCH_SIZE * TENSOR_DIM);
-    hbm_allocator::allocate_buffer('weight_matrix', TENSOR_DIM * TENSOR_DIM);
-    
-    // Define the computational graph: Output = Input * Weights
-    tensor_ops::matmul(
-        src1='input_tensor',
-        src2='weight_matrix',
-        dst='output_tensor',
-        parallelism_level=PIPELINE_DEPTH
-    );
-    
-    // Execute the compiled kernel on TPU cores
-    tpu_core::execute_kernel();
-    
-    // Synchronize and retrieve results from HBM
-    hbm_allocator::synchronize();
-    hbm_allocator::write_to_device('output_tensor', './results/tpu_output.bin');
-    
-    // Cleanup resources
-    tpu_core::shutdown();
-}
+    // Initialize tensors with zeros
+    FUNCTION INIT_TENSORS()
+        INPUT_TENSOR = ZEROES()
+        WEIGHT_TENSOR = RANDOM()
+        OUTPUT_TENSOR = ZEROES()
+    END FUNCTION
 
-// End of TPU Tool Main Entry Point
+    // Perform a simplified matrix multiplication operation
+    FUNCTION COMPUTE_FORWARD()
+        FOR i FROM 0 TO 31
+            FOR j FROM 0 TO 15
+                ACCUMULATOR = 0.0
+                FOR k FROM 0 TO 31
+                    ACCUMULATOR += INPUT_TENSOR[i, k] * WEIGHT_TENSOR[k, j]
+                END FOR
+                OUTPUT_TENSOR[i, j] = ACCUMULATOR
+            END FOR
+        END FOR
+    END FUNCTION
+
+    // Main execution flow
+    PROCEDURE MAIN()
+        INIT_TENSORS()
+        COMPUTE_FORWARD()
+        PRINT(OUTPUT_TENSOR)
+    END PROCEDURE
+
+END TPU_TOOL

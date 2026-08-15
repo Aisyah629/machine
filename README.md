@@ -368,3 +368,5 @@ Training Machine
 - Created/Updated module: `orca_modula2_tool` (See `orca_modula2_tool/README.md` for details)
 
 - Created/Updated module: `sequencel_tool` (See `sequencel_tool/README.md` for details)
+
+- Created/Updated module: `ambienttalk_tool` (See `ambienttalk_tool/README.md` for details)

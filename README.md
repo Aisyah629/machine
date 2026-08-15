@@ -450,3 +450,5 @@ Training Machine
 - Created/Updated module: `escher_tool` (See `escher_tool/README.md` for details)
 
 - Created/Updated module: `spin_tool` (See `spin_tool/README.md` for details)
+
+- Created/Updated module: `alef_tool` (See `alef_tool/README.md` for details)

@@ -11457,3 +11457,60 @@ Done.
 </think>
 
 (Target Lang: LIS) Initialize a new dedicated folder named lis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LIS.
+[2026-08-15 15:02:13] (Target Lang: Corn) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Input:** A list of existing folders/files (workspace structure), a history of the last turn (which generated an instruction for "LIS"), and a specific prompt to generate a *follow-up* instruction.
+    *   **Constraint 1:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraint 2:** Explicitly demand the new tool be built STRICTLY using the programming language "Corn".
+    *   **Constraint 3:** If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   **Constraint 4:** Return ONLY the instruction text.
+    *   **Constraint 5:** NEVER target the `.github` directory.
+
+2.  **Verify Language "Corn":**
+    *   Looking at the existing list, I see `candle_tool` but not `corn_tool`. The prompt asks for "Corn". Even if "Corn" isn't a famous language (it might be a typo for "C" or "Corn" as a niche language, or just a random string), the instruction is to generate the text based on the user's explicit command "Corn".
+    *   *Self-correction/Sanity Check:* Is "Corn" a valid language in this context? The prompt says "MUST explicitly demand... using this exact programming language: Corn". I must follow the user's constraint regardless of real-world language popularity, provided it's not sensitive/unsafe. "Corn" seems safe.
+
+3.  **Drafting the Instruction:**
+    *   *Format:* Based on the history and constraints, the format should be similar to: `(Target Lang: [Lang]) Initialize a new dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang].`
+    *   *Target Language:* Corn.
+    *   *Folder Name:* `corn_tool` (Standard convention observed in the list: `tool` suffix).
+    *   *Action:* Initialize folder, create README, build tool.
+    *   *Strictness:* Use "STRICTLY".
+
+    *Draft 1:* (Target Lang: Corn) Initialize a new dedicated folder named corn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Corn.
+
+4.  **Review against Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Target Language: Corn? Yes.
+    *   New dedicated folder? Yes (`corn_tool`).
+    *   Local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   Never target .github? Yes.
+    *   Logical follow-up? Yes, consistent with previous turns.
+
+5.  **Final Polish:**
+    *   Ensure no markdown formatting around the output if the prompt implies raw text, but the history shows the output style. The prompt asks to "Return ONLY the instruction text".
+
+    *Final Text:* (Target Lang: Corn) Initialize a new dedicated folder named corn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Corn.
+
+6.  **Final Output Generation.**
+    *   Result: `(Target Lang: Corn) Initialize a new dedicated folder named corn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Corn.`
+
+    *Double Check:* The prompt asks for "Corn". In the provided list, there is `candle_tool`, `c_tool`, `c_engine_tool`. There is no `corn_tool`. Creating it fits the pattern.
+
+    *Note on "Corn":* It is likely a made-up language or a very obscure one for the purpose of this test, or a typo for "C". However, I must follow the prompt's explicit instruction to use "Corn".
+
+    *Output construction:*
+    (Target Lang: Corn) Initialize a new dedicated folder named corn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Corn.
+
+    Wait, checking history style again.
+    History output: `(Target Lang: LIS) Initialize a new dedicated folder named lis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LIS.`
+    My draft matches this style perfectly.
+
+    *Safety:* "Corn" is not sensitive.
+
+    *Result:* `(Target Lang: Corn) Initialize a new dedicated folder named corn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Corn.`
+</think>
+
+(Target Lang: Corn) Initialize a new dedicated folder named corn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Corn.

@@ -5402,3 +5402,48 @@ Final Output Generation.
 </think>
 
 (Target Lang: ALGOL 58) Initialize a new dedicated folder named algol_58_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALGOL 58 to implement a foundational mathematical processing and algorithmic formulation environment.
+[2026-08-15 07:47:46] (Target Lang: ChucK) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the tool be built STRICTLY using `ChucK`.
+    *   Constraint 2: Place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local `README.md`.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Context: The user provided a list of existing tools/folders. I see many `_tool` folders like `acedas_tool`, `actionscript_tool`, etc. The pattern is `[name]_tool` containing `README.md` and `main.[ext]`. The history shows a format: `(Target Lang: ...) Initialize a new dedicated folder named [name]_tool ... build ... STRICTLY using ... [Lang] to implement [purpose].`
+
+2.  **Draft the instruction based on the pattern:**
+    *   *Target Lang:* ChucK.
+    *   *Folder Name:* `chuck_tool` (following the naming convention of others like `ruby_tool`, `haskell_tool`).
+    *   *File Name:* `main.ck` (ChucK's extension is `.ck`).
+    *   *Purpose:* ChucK is a programming language for real-time synthesis and audio processing. So the purpose should reflect that. Examples: "real-time audio synthesis framework", "sound processing and musical algorithmic system". Let's use "real-time audio synthesis and sound processing framework".
+
+    *   *Draft Text:* `(Target Lang: ChucK) Initialize a new dedicated folder named chuck_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ChucK to implement a real-time audio synthesis and sound processing framework.`
+
+3.  **Check against constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *STRICTLY using ChucK?* Yes ("STRICTLY using this exact programming language: ChucK").
+    *   *NEW dedicated folder?* Yes ("new dedicated folder named chuck_tool").
+    *   *Local README.md?* Yes ("create a local README.md").
+    *   *Return ONLY instruction text?* Yes (Output will be just the string).
+    *   *NEVER target .github?* Yes (Folder is `chuck_tool`, not `.github`).
+    *   *Logical follow-up?* Yes, adding a ChucK tool is logical given the list contains tools for many other languages.
+
+4.  **Refine the wording for style consistency with history:**
+    *   History examples:
+        *   `...implement a foundational numerical calculation and logical reasoning system.`
+        *   `...implement a dynamic user interface and reactive graphical application framework.`
+    *   My draft: `...implement a real-time audio synthesis and sound processing framework.`
+    *   This matches the style well.
+
+5.  **Final Output Construction:**
+    *   Result: `(Target Lang: ChucK) Initialize a new dedicated folder named chuck_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ChucK to implement a real-time audio synthesis and sound processing framework.`
+
+6.  **Final Polish (Mental Representation of Output):**
+    *   `(Target Lang: ChucK) Initialize a new dedicated folder named chuck_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ChucK to implement a real-time audio synthesis and sound processing framework.`
+
+This looks correct and robust.
+</think>
+
+(Target Lang: ChucK) Initialize a new dedicated folder named chuck_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ChucK to implement a real-time audio synthesis and sound processing framework.

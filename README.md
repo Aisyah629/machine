@@ -114,3 +114,5 @@ Training Machine
 - Created/Updated module: `candle_tool` (See `candle_tool/README.md` for details)
 
 - Created/Updated module: `self_tool` (See `self_tool/README.md` for details)
+
+- Created/Updated module: `max_tool` (See `max_tool/README.md` for details)

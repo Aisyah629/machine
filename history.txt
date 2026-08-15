@@ -13527,3 +13527,32 @@ Initialize a new dedicated folder named ksh_tool in the workspace, create a loca
 </think>
 
 Initialize a new dedicated folder named opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL.
+[2026-08-15 17:42:30] (Target Lang: CLIST) The user wants a follow-up instruction for an Autonomous AI.
+Constraints:
+1. Generate exactly 1 logical follow-up instruction.
+2. MUST explicitly demand the new tool be built STRICTLY using this exact programming language: CLIST.
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+6. Match the structure of previous examples in the history (e.g., "Initialize a new dedicated folder named ...").
+
+Drafting the instruction:
+"Initialize a new dedicated folder named clist_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CLIST."
+
+Checking constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demands CLIST? Yes.
+- Instructs to place in NEW dedicated folder? Yes (`clist_tool`).
+- Instructs to create local README.md? Yes.
+- Returns ONLY the instruction text? Yes.
+- Does not target .github? Yes.
+
+The draft matches the pattern exactly. I will output just the sentence.
+One minor check: The prompt history shows examples like "Initialize a new dedicated folder named opencl_tool...". I will follow that exact phrasing style.
+
+Final text: Initialize a new dedicated folder named clist_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CLIST.
+Ready. 
+Output matches exactly.✅
+</think>
+
+Initialize a new dedicated folder named clist_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CLIST.

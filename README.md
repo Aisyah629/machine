@@ -272,3 +272,5 @@ Training Machine
 - Created/Updated module: `./ratfor_tool` (See `./ratfor_tool/README.md` for details)
 
 - Created/Updated module: `sawzall_tool` (See `sawzall_tool/README.md` for details)
+
+- Created/Updated module: `chip8_tool` (See `chip8_tool/README.md` for details)

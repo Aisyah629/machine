@@ -474,3 +474,5 @@ Training Machine
 - Created/Updated module: `epigram_tool` (See `epigram_tool/README.md` for details)
 
 - Created/Updated module: `synccharts_tool` (See `synccharts_tool/README.md` for details)
+
+- Created/Updated module: `clojure_tool` (See `clojure_tool/README.md` for details)

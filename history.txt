@@ -11833,3 +11833,20 @@ Ready.
 </think>
 
 (Target Lang: NSIS) Initialize a new dedicated folder named nsis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NSIS.
+[2026-08-15 15:29:22] (Target Lang: Zeno) The user wants exactly one logical follow-up instruction for a hypothetical "Zeno" tool.
+I need to generate the string `(Target Lang: Zeno) Initialize a new dedicated folder named zeno_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Zeno.`
+Checking constraints:
+- Target language: Zeno.
+- New folder: zeno_tool.
+- Create README.md inside it.
+- Build tool STRICTLY using Zeno.
+- Return ONLY the instruction text.
+- Do not target .github.
+- Exactly 1 logical follow-up instruction.
+
+Draft: `(Target Lang: Zeno) Initialize a new dedicated folder named zeno_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Zeno.`
+Matches perfectly. No extra text. Proceeds. 
+Output exactly matches draft.✅
+</think>
+
+(Target Lang: Zeno) Initialize a new dedicated folder named zeno_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Zeno.

@@ -1,18 +1,19 @@
 # Unicon Tool
 
-This directory contains the Unicon Tool, a dedicated application for advanced text processing, string manipulation, and pattern matching utilizing the Unicon programming language.
+This tool is built using the Unicon programming language. Unicon is a general-purpose programming language that extends Icon's expressive power with features like generators, choice points, and explicit failure.
 
 ## Features
 
-- High-performance string processing
-- Complex pattern matching capabilities
-- Text analysis and extraction
-- Structured data parsing
+- **Expressive Syntax**: Unicon provides a rich set of built-in functions and expressions.
+- **Generators**: Allows for efficient handling of sequences and lists.
+- **Failure-Driven Execution**: Uniquely leverages the concept of failure for control flow.
+- **Cross-Platform**: Unicon programs can run on various operating systems.
 
 ## Usage
 
-Run the tool using the Unicon interpreter:
+To run the tool, ensure you have the Unicon interpreter installed. Execute the main script using the Unicon interpreter:
 
 ```bash
-icon main.icn
+uic main.icn -o unicon_tool
+./unicon_tool
 ```

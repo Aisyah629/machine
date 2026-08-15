@@ -16206,3 +16206,47 @@ Initialize a NEW dedicated folder named sed_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named znotation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Z notation.
+[2026-08-15 21:15:03] (Target Lang: Umple) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using "Umple".
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a list of files (workspace structure). I see many `*_tool` directories, each containing a `README.md` and a main file (e.g., `./c_engine_tool/main.c`, `./fortress_tool/main.f`). The pattern suggests a collection of tools for different languages.
+    *   Output Format: The user wants "exactly 1 logical follow-up instruction". The example output in the prompt shows: `Initialize a NEW dedicated folder named znotation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Z notation.`
+
+2.  **Draft the Instruction:**
+    *   Language: Umple.
+    *   Action: Initialize a NEW dedicated folder.
+    *   Naming: Needs a name. The pattern is `language_tool`. So `umple_tool`.
+    *   Files: `README.md` inside the folder.
+    *   Construction: Build the tool STRICTLY using Umple.
+    *   Draft 1: `Initialize a NEW dedicated folder named umple_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Umple.`
+
+3.  **Verify Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Explicitly demand "Umple"?* Yes ("STRICTLY using this exact programming language: Umple").
+    *   *NEW dedicated folder?* Yes ("NEW dedicated folder named umple_tool").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* The output should be the text of the instruction.
+    *   *NEVER target .github?* The instruction doesn't mention `.github`. It targets `umple_tool` and `README.md`. This is safe.
+    *   *Logical follow-up?* Given the workspace has many tools (Z notation was the previous one in the example, now we switch to Umple), creating a tool for Umple fits the pattern of the workspace. It's logical.
+
+4.  **Refine the Output Text:**
+    *   Comparison with the example format: `Initialize a NEW dedicated folder named znotation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Z notation.`
+    *   My Draft: `Initialize a NEW dedicated folder named umple_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Umple.`
+    *   This matches the structure perfectly.
+    *   "Umple" capitalization: The prompt says "Umple". I should use "Umple".
+    *   Folder name: `umple_tool` follows the pattern `./umple_tool`.
+    *   Result: `Initialize a NEW dedicated folder named umple_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Umple.`
+
+5.  **Final Polish:**
+    *   Result string: `Initialize a NEW dedicated folder named umple_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Umple.`
+    *   No markdown, no extra text, just the instruction.
+
+This thought structure covers all constraints, checks against the pattern, drafts the content, verifies against negative constraints, compares with the example format, and produces the final string.
+</think>
+
+Initialize a NEW dedicated folder named umple_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Umple.

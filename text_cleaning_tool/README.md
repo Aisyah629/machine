@@ -1,33 +1,25 @@
 # Text Cleaning Tool
 
-This tool provides automated dataset cleaning and text formatting capabilities.
-
-It leverages SPARK (Ada with Design by Contract) for high-assurance processing, ensuring data integrity and correctness through formal verification.
+This tool is designed to automate the cleaning and formatting of text data.
 
 ## Features
 
-- Remove leading/trailing whitespace
-- Normalize internal whitespace sequences
-- Remove special characters (configurable)
-- Convert case (upper/lower)
-- Deduplicate lines
+- Remove extra whitespace
+- Normalize line breaks
+- Convert text to lowercase
+- Trim leading/trailing whitespace
 
 ## Usage
 
-Compile the `main.adb` file with an ADA/SPARK compiler (e.g., GNAT).
+Run the Elm application using the Elm compiler.
 
 ```bash
-gnatmake main.adb
-./main
+elm-reactor
 ```
 
-## Design by Contract
+Open the generated HTML file or run the application via the Elm reactor.
 
-This implementation uses SPARK contracts to guarantee:
-- Input array bounds validity
-- Output array bounds safety
-- Character set verification
+## Files
 
-## License
-
-MIT License
+- `main.elm`: The Elm source code for the text cleaning tool.
+- `README.md`: This file.

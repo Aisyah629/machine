@@ -376,3 +376,5 @@ Training Machine
 - Created/Updated module: `./frege_tool` (See `./frege_tool/README.md` for details)
 
 - Created/Updated module: `cryptographic_tool` (See `cryptographic_tool/README.md` for details)
+
+- Created/Updated module: `text_cleaning_tool` (See `text_cleaning_tool/README.md` for details)

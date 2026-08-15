@@ -1,0 +1,79 @@
+procedure main(args)
+    write("Unicon Data Mining & Pattern Matching Engine")
+    
+    \ Initialize default datasets
+    data := !create([
+        ["User1", "admin", 25, "active"],
+        ["User2", "guest", 30, "inactive"],
+        ["User3", "user", 22, "active"],
+        ["User4", "mod", 28, "active"]
+    ])
+    
+    // Example 1: Pattern Matching with Records
+    pattern := {"User" 1-9}
+    match_pattern(data, pattern)
+    
+    // Example 2: String Processing
+    text := "The Unicon programming language is very powerful for text processing!"
+    write("\nProcessing Text: " || text)
+    process_text(text)
+    
+    // Example 3: List Transformation
+    original := [10, 20, 30, 40, 50]
+    write("\nOriginal List: " || original)
+    transformed := transform_list(original)
+    write("Transformed List: " || transformed)
+
+    write("\nEngine execution completed.")
+end
+
+procedure match_pattern(dataset, pattern)
+    // Pattern matching engine to filter records based on a specific pattern
+    result := []
+    for record in dataset do {
+        if record[1] =~ pattern then {
+            insert(result, record)
+        }
+    }
+    write("\nMatches found for pattern '" || pattern || "':")
+    if !&null(result) then {
+        for match in result do {
+            write("  -> " || match[1])
+        }
+    } else {
+        write("  No matches found.")
+    }
+end
+
+procedure process_text(input_string)
+    // Text processing engine performing basic extraction and analysis
+    write("  Words found: " || words(input_string))
+    
+    // Search for specific patterns within the string
+    p := pattern("[A-Za-z]+[pP]rocess")
+    if matches(p, input_string) then {
+        write("  Found keyword match: 'process'")
+    }
+    
+    // Convert to lowercase for normalized processing
+    normalized := lower(input_string)
+    write("  Normalized text: " || normalized)
+end
+
+procedure transform_list(input_list)
+    // Data transformation engine
+    // Filters out odd numbers and squares the remaining even numbers
+    result := []
+    for number in input_list do {
+        if number % 2 == 0 then {
+            insert(result, number ^ 2)
+        }
+    }
+    return result
+end
+
+procedure insert(list, item)
+    // Manual insertion to simulate list extension if needed (though Unicon has append)
+    list := list || [item]
+    return list
+end

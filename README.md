@@ -330,3 +330,5 @@ Training Machine
 - Created/Updated module: `./eiffel_tool` (See `./eiffel_tool/README.md` for details)
 
 - Created/Updated module: `newlisp_tool` (See `newlisp_tool/README.md` for details)
+
+- Created/Updated module: `./pilot_tool` (See `./pilot_tool/README.md` for details)

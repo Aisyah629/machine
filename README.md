@@ -76,3 +76,5 @@ Training Machine
 - Created/Updated module: `rapira_tool` (See `rapira_tool/README.md` for details)
 
 - Created/Updated module: `pascal_tool` (See `pascal_tool/README.md` for details)
+
+- Created/Updated module: `acedas_tool` (See `acedas_tool/README.md` for details)

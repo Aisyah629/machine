@@ -68,3 +68,5 @@ Training Machine
 - Created/Updated module: `synccharts_tool` (See `synccharts_tool/README.md` for details)
 
 - Created/Updated module: `miva_script_tool` (See `miva_script_tool/README.md` for details)
+
+- Created/Updated module: `pikt_tool` (See `pikt_tool/README.md` for details)

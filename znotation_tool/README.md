@@ -1,28 +1,20 @@
 # Z Notation Tool
 
+This tool provides a framework and utilities for writing, validating, and executing formal specifications using Z Notation.
+
 ## Overview
-This tool implements a low-level memory management and network protocol simulator strictly using Z notation. It provides a formal specification framework for modeling memory states, allocation/deallocation operations, and network packet flows using mathematical rigor.
+
+Z Notation is a formal specification language used for describing and modelling computing systems. It is based on the principles of axiomatic set theory and first-order predicate logic, designed to be easy to read, understand, and use.
 
 ## Features
-- Formal memory state modeling with typed sets and relations
-- Specification of allocation, deallocation, and pointer aliasing constraints
-- Network packet flow simulation using state transitions and invariants
-- Validation of memory safety and protocol correctness through Z schema composition
-- Export of formal specs to standard Z notation format for external verification
+- Formal specification generation
+- Constraint validation and type checking
+- Proof obligation management
+- Readability and clarity in system modelling
 
 ## Usage
-1. Open the main specification file in a Z notation editor (e.g., ZEYELIN, AlloyZ, or Isabelle/Z)
-2. Review the memory management schemas (`MemMgrSpec`) and network protocol schemas (`ProtoSpec`)
-3. Compose schemas to simulate operational sequences
-4. Verify invariants using a formal proof checker or model generator
 
-## Project Structure
-- `main.z`: Primary Z notation specification containing schemas, operations, and invariants
-- `README.md`: This documentation file
+Place your Z specifications in `main.z` within this directory. The tool will handle parsing, validation, and proof obligation generation.
 
-## Requirements
-- Z notation specification environment
-- Compatible theorem prover or model checker (optional for validation)
-
-## License
-Internal Use Only
+## Language
+Strictly built using Z Notation.

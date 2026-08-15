@@ -1,0 +1,62 @@
+/* 
+  Z Notation Tool 
+  Language: Z Notation
+  Purpose: Formal specification framework for system modelling and validation
+*/
+
+[USER, SYSTEM, STATE]
+
+schema SystemState
+  variables :
+    currentUser : ? USER
+    systemState : { init, running, paused, shutdown }
+    errorLog : ℙ MSG
+
+  invariant :
+    systemState ∈ { init, running, paused, shutdown } ∧
+    errorLog ⊆ ℙ MSG ∧
+    ¬ (currentUser = nil ∧ systemState = running)
+
+
+schema EnterInit
+  Δ SystemState
+  /
+  systemState' = init
+  currentUser' = nil
+
+
+schema EnterRunning
+  Δ SystemState
+  /
+  systemState' = running
+  currentUser' ∈ USER
+
+
+schema EnterPaused
+  Δ SystemState
+  /
+  systemState' = paused
+
+
+schema EnterShutdown
+  Δ SystemState
+  /
+  systemState' = shutdown
+
+
+/* Proof Obligations & Validation Logic Placeholder */
+/* This section would contain the formal definitions for state transitions,
+   invariant preservation, and refinement mappings as required by Z Notation standards. */
+
+/* Operational Semantics Definition */
+OpSystemTransition ≜ EnterInit ∪ EnterRunning ∪ EnterPaused ∪ EnterShutdown
+
+/* Data Extraction & Analysis Schema */
+schema DataAnalysis
+  inputs : ℙ INPUT
+  outputs : ℙ OUTPUT
+  /
+  inputs ⊆ domain(INPUT) ∧
+  outputs ⊆ range(OUTPUT)
+
+/* End of Z Notation Specification */

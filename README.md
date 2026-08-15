@@ -334,3 +334,5 @@ Training Machine
 - Created/Updated module: `./pilot_tool` (See `./pilot_tool/README.md` for details)
 
 - Created/Updated module: `adenine_tool` (See `adenine_tool/README.md` for details)
+
+- Created/Updated module: `rlab_tool` (See `rlab_tool/README.md` for details)

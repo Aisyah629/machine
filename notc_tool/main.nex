@@ -1,0 +1,69 @@
+/*
+ * notc_tool - Low-level Systems Programming Environment
+ * Language: Not eXactly C
+ * 
+ * This program demonstrates manual memory management and hardware abstraction.
+ */
+
+// Import standard libraries for I/O and memory management
+import "std/io";
+import "std/mem";
+
+// Define a simple struct for hardware registers
+struct HardwareRegister {
+    int address;
+    volatile int* value;
+};
+
+// Manual memory management functions
+void* custom_malloc(size_t size) {
+    void* ptr = mem_alloc(size);
+    if (ptr == NULL) {
+        io_println("Error: Memory allocation failed.");
+        return NULL;
+    }
+    return ptr;
+}
+
+void custom_free(void* ptr) {
+    if (ptr != NULL) {
+        mem_free(ptr);
+    }
+}
+
+// Hardware abstraction function
+void init_hardware(HardwareRegister* reg, int addr) {
+    reg->address = addr;
+    reg->value = (volatile int*)addr;
+}
+
+int main() {
+    io_println("Initializing Not eXactly C Tool...");
+    
+    // Manual memory allocation
+    HardwareRegister* my_reg = (HardwareRegister*)custom_malloc(sizeof(HardwareRegister));
+    
+    if (my_reg != NULL) {
+        // Initialize hardware register
+        init_hardware(my_reg, 0x1000);
+        
+        io_println("Hardware register initialized at address: 0x1000");
+        
+        // Simulate writing to hardware register
+        *my_reg->value = 0xDEAD;
+        io_println("Value written to register: 0xDEAD");
+        
+        // Simulate reading from hardware register
+        int read_value = *my_reg->value;
+        io_println("Value read from register: 0x", read_value);
+        
+        // Manual memory deallocation
+        custom_free(my_reg);
+        io_println("Memory freed successfully.");
+    } else {
+        io_println("Failed to allocate memory for hardware register.");
+    }
+    
+    io_println("Not eXactly C Tool execution complete.");
+    return 0;
+}

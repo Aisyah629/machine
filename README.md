@@ -170,3 +170,5 @@ Training Machine
 - Created/Updated module: `vbnet_tool` (See `vbnet_tool/README.md` for details)
 
 - Created/Updated module: `iswim_tool` (See `iswim_tool/README.md` for details)
+
+- Created/Updated module: `notc_tool` (See `notc_tool/README.md` for details)

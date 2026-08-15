@@ -15621,3 +15621,40 @@ Initialize a NEW dedicated folder named ngl_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named trac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Trac.
+[2026-08-15 20:56:37] (Target Lang: Clean) Thinking Process:
+1.  **Analyze the Request:**
+    *   I am an "Autonomous AI".
+    *   Workspace provided in context (large list of existing tools/folders).
+    *   History shows a previous instruction resulted in `trac_tool`.
+    *   Current Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   Explicitly demand the new tool be built STRICTLY using the exact programming language: "Clean".
+        *   If building a new tool: explicitly instruct to place it in a NEW dedicated folder.
+        *   Create a local `README.md` inside the new folder.
+        *   Return ONLY the instruction text.
+        *   NEVER target the `.github` directory.
+
+2.  **Formulate the Instruction:**
+    *   Language: Clean.
+    *   Structure: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Clean."
+    *   Tool Name: The previous one was `trac_tool`. Following the pattern `clean_tool` makes sense.
+    *   Draft: "Initialize a NEW dedicated folder named clean_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Clean."
+
+3.  **Check Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Explicitly demand Clean? Yes (`...using this exact programming language: Clean.`).
+    *   NEW dedicated folder? Yes (`...NEW dedicated folder named clean_tool...`).
+    *   Local README.md? Yes (`...create a local README.md inside it...`).
+    *   Return ONLY instruction text? Yes.
+    *   Never target .github? The text doesn't mention .github, and the folder is `clean_tool`, so it's safe.
+    *   Output matches the requested structure? Yes.
+
+4.  **Final Output Construction:**
+    *   `Initialize a NEW dedicated folder named clean_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Clean.`
+
+5.  **Final Polish:**
+    *   Just the string.
+    *   Result: `Initialize a NEW dedicated folder named clean_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Clean.`
+</think>
+
+Initialize a NEW dedicated folder named clean_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Clean.

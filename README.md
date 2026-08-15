@@ -342,3 +342,5 @@ Training Machine
 - Created/Updated module: `mapper_tool` (See `mapper_tool/README.md` for details)
 
 - Created/Updated module: `napier88_tool` (See `napier88_tool/README.md` for details)
+
+- Created/Updated module: `opencl_tool` (See `opencl_tool/README.md` for details)

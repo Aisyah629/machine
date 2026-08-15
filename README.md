@@ -228,3 +228,5 @@ Training Machine
 - Created/Updated module: `unicon_tool` (See `unicon_tool/README.md` for details)
 
 - Created/Updated module: `jako_tool` (See `jako_tool/README.md` for details)
+
+- Created/Updated module: `nu_tool` (See `nu_tool/README.md` for details)

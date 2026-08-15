@@ -7500,3 +7500,59 @@ Result looks solid.
 </think>
 
 (Target Lang: T) Initialize a new dedicated folder named t_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T to enable template-based generic system design and type-safe programming.
+[2026-08-15 10:06:04] (Target Lang: OCaml) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** Lists many existing tool directories (e.g., `acedas_tool`, `actionscript_tool`, `c_engine_tool`, etc.), each with a `README.md` and a `main.<ext>` file.
+   - **History:** Shows a previous instruction format and generation pattern. The pattern is: `(Target Lang: {Lang}) Initialize a new dedicated folder named {lang}_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: {Lang} to enable [Purpose].`
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - MUST explicitly demand that the new tool be built STRICTLY using OCaml.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Follow the established format/style from the history.
+
+2.  **Deconstruct Constraints & Format:**
+   - Format: `(Target Lang: OCaml) Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OCaml to enable [Purpose].`
+   - Need to invent a purpose for OCaml that fits the style (e.g., "functional programming paradigm, memory-safe systems design, and formal verification support").
+   - Check constraints: Returns ONLY the instruction text. No extra words. Matches format. Targets OCaml. New folder `ocaml_tool`. Local `README.md`. Explicit demand for OCaml. Purpose included. No `.github`.
+
+3.  **Draft Generation:**
+   `(Target Lang: OCaml) Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OCaml to enable functional programming paradigm, memory-safe systems design, and formal verification support.`
+
+4.  **Verify against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using OCaml? Yes.
+   - Place in NEW dedicated folder & create local README.md? Yes (`ocaml_tool`, `README.md`).
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches history format? Yes.
+
+   All constraints met. Output matches exactly. I will produce just the instruction string.✅
+   One minor check: The history shows the pattern `(Target Lang: T) Initialize a new dedicated folder named t_tool...`. I'll follow that exactly.
+   Draft: `(Target Lang: OCaml) Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OCaml to enable functional programming paradigm, memory-safe systems design, and formal verification support.`
+   Ready.✅
+   Output matches draft.✅
+   Proceed. 
+   Note: I'll make sure there's absolutely no extra text, as instructed: "Return ONLY the instruction text."
+   Output generation. 
+   `[Done]`
+   *Self-Correction/Refinement during thought*: 
+   Check exact wording of constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OCaml."
+   My draft says: `...build the entire new tool STRICTLY using this exact programming language: OCaml to enable...` -> matches.
+   Check folder naming: `ocaml_tool` matches pattern `{lang}_tool`.
+   All good. Output matches draft exactly.✅
+   Proceeds. 
+   Output: `(Target Lang: OCaml) Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OCaml to enable functional programming paradigm, memory-safe systems design, and formal verification support.` 
+   (Note: I'll keep it tight and exactly as requested.) 
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OCaml. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints satisfied. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> `(Target Lang: OCaml) Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OCaml to enable functional programming paradigm, memory-safe systems design, and formal verification support.` 
+   (Note: I will output exactly this string.) 
+   Done. 
+   [Output Generation] (Proceeds)
+</think>
+
+(Target Lang: OCaml) Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OCaml to enable functional programming paradigm, memory-safe systems design, and formal verification support.

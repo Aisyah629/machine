@@ -234,3 +234,5 @@ Training Machine
 - Created/Updated module: `cola_tool` (See `cola_tool/README.md` for details)
 
 - Created/Updated module: `tal_tool` (See `tal_tool/README.md` for details)
+
+- Created/Updated module: `xc_tool` (See `xc_tool/README.md` for details)

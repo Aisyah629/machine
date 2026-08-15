@@ -84,3 +84,5 @@ Training Machine
 - Created/Updated module: `splus_tool` (See `splus_tool/README.md` for details)
 
 - Created/Updated module: `asharp_dotnet_tool` (See `asharp_dotnet_tool/README.md` for details)
+
+- Created/Updated module: `ease_tool` (See `ease_tool/README.md` for details)

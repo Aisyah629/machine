@@ -374,3 +374,5 @@ Training Machine
 - Created/Updated module: `self_healing_tool` (See `self_healing_tool/README.md` for details)
 
 - Created/Updated module: `./frege_tool` (See `./frege_tool/README.md` for details)
+
+- Created/Updated module: `cryptographic_tool` (See `cryptographic_tool/README.md` for details)

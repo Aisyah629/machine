@@ -17493,3 +17493,50 @@ Initialize a NEW dedicated folder named algol58_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named pict_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pict.
+[2026-08-15 22:49:21] (Target Lang: Kixtart) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Input History/Context:** The user provided a list of existing directories/files in a workspace, followed by a "Self-Correction/Refinement during thought" block that seems to be part of a previous turn or prompt generation process. It ends with an instruction: `Initialize a NEW dedicated folder named pict_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pict.`
+   - **Current Request:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Kixtart. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: Kixtart.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+
+3.  **Formulate Instruction:**
+   - I need to follow the pattern from the prompt's history: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+   - Language specified: Kixtart
+   - Tool name convention: Usually `[language]_tool` or similar. I'll use `kixtart_tool`.
+   - Draft: Initialize a NEW dedicated folder named kixtart_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kixtart.
+   - Check constraints:
+     - Exactly 1 instruction? Yes.
+     - Explicitly demands Kixtart? Yes.
+     - Explicitly instructs NEW dedicated folder and local README.md? Yes.
+     - ONLY instruction text? Yes.
+     - Never targets .github? Yes, it's not mentioned.
+   - Matches pattern exactly.
+
+4.  **Final Output Generation:**
+   - Just the drafted string. No extra text, no quotes, no markdown formatting unless necessary (but the prompt says "Return ONLY the instruction text").
+   - String: `Initialize a NEW dedicated folder named kixtart_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kixtart.`
+
+   Double-checking constraints: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Kixtart." -> Checked.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   "Return ONLY the instruction text." -> Checked.
+   "NEVER target the .github directory." -> Checked.
+
+   All good. Output matches exactly.✅
+   Proceeds. 
+   Output: Initialize a NEW dedicated folder named kixtart_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kixtart. 
+   (Self-Correction/Verification during thought: The prompt says "Kixtart". I will use that exact casing. The folder name follows the pattern `./kixtart_tool`. The instruction matches the requested format perfectly.)✅
+   Ready.✅
+   Output matches draft.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named kixtart_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kixtart.

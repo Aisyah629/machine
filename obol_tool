@@ -1,0 +1,145 @@
+# Obol Tool
+
+Obol is a high-level programming language designed for declarative programming and concurrent systems.
+
+## Overview
+This tool implements a low-level memory management and network protocol simulator using Obol.
+
+## Usage
+```obol
+-- Main program for memory management and network protocol simulator
+include "obol_stdlib.ob"
+
+type Packet = {
+    source: int,
+    destination: int,
+    payload: array of byte,
+    checksum: int
+}
+
+type MemoryBlock = {
+    address: int,
+    size: int,
+    data: array of byte,
+    is_free: boolean
+}
+
+type MemoryManager = {
+    blocks: array of MemoryBlock,
+    total_memory: int,
+    used_memory: int
+}
+
+type NetworkStack = {
+    buffer: array of Packet,
+    buffer_size: int,
+    current_index: int
+}
+
+function calculate_checksum(packet: Packet): int {
+    var checksum: int = 0
+    for i from 0 to length(packet.payload) - 1 do
+        checksum = checksum + packet.payload[i]
+    checksum = checksum + packet.source + packet.destination
+    return checksum mod 256
+}
+
+function create_packet(source: int, destination: int, payload: array of byte): Packet {
+    var packet: Packet
+    packet.source = source
+    packet.destination = destination
+    packet.payload = payload
+    packet.checksum = calculate_checksum(packet)
+    return packet
+}
+
+function memory_init(manager: MemoryManager, total_memory: int): void {
+    manager.total_memory = total_memory
+    manager.used_memory = 0
+    manager.blocks[0].address = 0
+    manager.blocks[0].size = total_memory
+    manager.blocks[0].is_free = true
+    manager.blocks[0].data = null
+}
+
+function allocate_memory(manager: MemoryManager, size: int): int {
+    for i from 0 to length(manager.blocks) - 1 do
+        if manager.blocks[i].is_free and manager.blocks[i].size >= size then
+            manager.blocks[i].size = manager.blocks[i].size - size
+            manager.blocks[i].data = new array of byte(size)
+            return manager.blocks[i].address
+        fi
+    next i
+    return -1
+}
+
+function free_memory(manager: MemoryManager, address: int): void {
+    for i from 0 to length(manager.blocks) - 1 do
+        if manager.blocks[i].address = address and not manager.blocks[i].is_free then
+            manager.blocks[i].is_free = true
+            manager.used_memory = manager.used_memory - manager.blocks[i].size
+            merge_blocks(manager, i)
+            return
+        fi
+    next i
+}
+
+function merge_blocks(manager: MemoryManager, index: int): void {
+    if index < length(manager.blocks) - 1 then
+        if manager.blocks[index + 1].is_free then
+            manager.blocks[index].size = manager.blocks[index].size + manager.blocks[index + 1].size
+            manager.blocks[index].data = null
+            for i from index + 1 to length(manager.blocks) - 2 do
+                manager.blocks[i] = manager.blocks[i + 1]
+            next i
+        fi
+    fi
+}
+
+function network_init(stack: NetworkStack, size: int): void {
+    stack.buffer_size = size
+    stack.current_index = 0
+}
+
+function send_packet(stack: NetworkStack, packet: Packet): void {
+    if stack.current_index < stack.buffer_size then
+        stack.buffer[stack.current_index] = packet
+        stack.current_index = stack.current_index + 1
+    fi
+}
+
+function receive_packet(stack: NetworkStack): Packet {
+    if stack.current_index > 0 then
+        stack.current_index = stack.current_index - 1
+        return stack.buffer[stack.current_index]
+    fi
+    return create_packet(0, 0, null)
+}
+
+function main(): void {
+    var manager: MemoryManager
+    var stack: NetworkStack
+    var packet: Packet
+    var address: int
+
+    memory_init(manager, 1024)
+    network_init(stack, 100)
+
+    address = allocate_memory(manager, 64)
+    if address >= 0 then
+        print("Allocated memory at address: " + address)
+    fi
+
+    packet = create_packet(1, 2, array of byte(64))
+    send_packet(stack, packet)
+    print("Packet sent with checksum: " + packet.checksum)
+
+    var received_packet: Packet = receive_packet(stack)
+    print("Received packet from source: " + received_packet.source + " to destination: " + received_packet.destination)
+
+    free_memory(manager, address)
+    print("Memory freed at address: " + address)
+}
+
+main()
+```

@@ -78,3 +78,5 @@ Training Machine
 - Created/Updated module: `pascal_tool` (See `pascal_tool/README.md` for details)
 
 - Created/Updated module: `acedas_tool` (See `acedas_tool/README.md` for details)
+
+- Created/Updated module: `livescript_tool` (See `livescript_tool/README.md` for details)

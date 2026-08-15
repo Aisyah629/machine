@@ -1,0 +1,70 @@
+; OPS5 Data Extraction and Parsing Utility
+
+; Global Working Memory Structure
+global
+  input-data
+  extracted-data
+  error-log
+
+; Initialize Working Memory
+initialize
+  =>
+  (global input-data (load "data.txt"))
+  (global extracted-data ())
+  (global error-log ())
+  (print "OPS5 Data Extraction Utility Initialized")
+)
+
+; Rule 1: Parse Email Addresses
+rule parse-email
+  (global input-data &data &rest)
+  (pattern &data "@")
+  =>
+  (print "Found email pattern")
+  (global extracted-data (append extracted-data (extract-email data)))
+)
+
+; Rule 2: Parse Phone Numbers
+rule parse-phone
+  (global input-data &data &rest)
+  (pattern &data "(")
+  =>
+  (print "Found phone pattern")
+  (global extracted-data (append extracted-data (extract-phone data)))
+)
+
+; Rule 3: Handle Parsing Errors
+rule log-error
+  (global input-data &data &rest)
+  (pattern &data "unknown")
+  =>
+  (print "Unknown pattern encountered")
+  (global error-log (append error-log (list data)))
+)
+
+; Rule 4: Complete Extraction
+rule extraction-complete
+  (global input-data ())
+  =>
+  (print "Extraction complete")
+  (print extracted-data)
+  (exit)
+)
+
+; Helper Functions (OPS5 doesn't have built-in functions, so we simulate them)
+; In a real OPS5 implementation, you'd use the interpreter's API
+; For demonstration, we assume these functions exist
+
+; Extract email from data
+function extract-email(data)
+  ; Implementation would use regex-like pattern matching
+  ; For OPS5, this would be done through pattern matching rules
+  (list "email:" data)
+)
+
+; Extract phone from data
+function extract-phone(data)
+  ; Implementation would use regex-like pattern matching
+  ; For OPS5, this would be done through pattern matching rules
+  (list "phone:" data)
+)

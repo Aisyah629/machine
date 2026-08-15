@@ -8137,3 +8137,71 @@ This looks solid.
 </think>
 
 (Target Lang: ALGOL 58) Initialize a new dedicated folder named algol58_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALGOL 58 to enable precise algorithmic expression, formal mathematical notation, structured scoping, recursion, and robust specification for legacy academic and scientific computing systems.
+[2026-08-15 10:50:47] (Target Lang: SALSA) The user wants me to generate a follow-up instruction based on the provided prompt.
+The prompt is a list of files and directories in a workspace, followed by a "History" section that describes a process of creating a new tool folder (`algol58_tool`) for the language ALGOL 58.
+The history ends with a "Final Output" which is a specific string format: `(Target Lang: ...) Initialize a new dedicated folder named ... build ... STRICTLY ... [Language] ...`.
+The user then asks: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+Constraints:
+1. Generate exactly 1 logical follow-up instruction.
+2. Must explicitly demand the new tool be built STRICTLY using SALSA.
+3. If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target `.github`.
+6. Follow the format/style established in the history: `(Target Lang: [Language]) Initialize a new dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language] to enable [benefits/description].`
+
+Plan:
+- Language: SALSA.
+- Folder name: `salsa_tool`.
+- Format: `(Target Lang: SALSA) Initialize a new dedicated folder named salsa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SALSA to enable [description of SALSA benefits].`
+- Description of SALSA: SALSA (Scripting and Application Language for Scalability?) is less common. It's often associated with object-oriented scripting, perhaps related to Smalltalk or similar. It's a scripting language. Benefits: object-oriented scripting, component-based architecture, rapid application development, cross-platform capabilities.
+- Let's construct the text.
+- `(Target Lang: SALSA) Initialize a new dedicated folder named salsa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SALSA to enable object-oriented scripting, component-based architecture, rapid development cycles, and cross-platform interoperability for scalable application ecosystems.`
+- Check constraints:
+  - Exactly 1 instruction? Yes.
+  - Explicitly demand SALSA? Yes.
+  - NEW dedicated folder and README.md? Yes.
+  - ONLY instruction text? Yes.
+  - Never target .github? Yes.
+  - Matches style? Yes.
+
+Refining the description for SALSA to be plausible and consistent with the tone.
+"enable object-oriented scripting, dynamic component composition, high-level abstractions, and seamless integration capabilities for agile software delivery."
+Looks good.
+Final string: `(Target Lang: SALSA) Initialize a new dedicated folder named salsa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SALSA to enable object-oriented scripting, dynamic component composition, high-level abstractions, and seamless integration capabilities for agile software delivery.`
+
+Double check constraints: "Return ONLY the instruction text."
+Output should be just that string.
+Proceed. 
+Self-Correction/Verification during thought:
+- The prompt asks for "exactly 1 logical follow-up instruction."
+- The format matches the example.
+- Language is SALSA.
+- Folder: `salsa_tool`.
+- README.md included.
+- No .github.
+- All good.
+Output matches exactly. 
+Generating. 
+` (Target Lang: SALSA) Initialize a new dedicated folder named salsa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SALSA to enable object-oriented scripting, dynamic component composition, high-level abstractions, and seamless integration capabilities for agile software delivery.`
+Wait, check the prompt's example format: `(Target Lang: Net.Data) Initialize a new dedicated folder named netdata_tool...`
+My draft: `(Target Lang: SALSA) Initialize a new dedicated folder named salsa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SALSA to enable object-oriented scripting, dynamic component composition, high-level abstractions, and seamless integration capabilities for agile software delivery.`
+Matches perfectly.
+Ready. 
+Output matches request.✅
+Proceeds. 
+Output Generation. 
+`(Target Lang: SALSA) Initialize a new dedicated folder named salsa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SALSA to enable object-oriented scripting, dynamic component composition, high-level abstractions, and seamless integration capabilities for agile software delivery.` 
+(Self-Correction/Note during generation: I will ensure the exact formatting matches the prompt's request for "ONLY the instruction text".)
+All constraints met. Output matches. 
+Proceeds. 
+[Output Generation] -> `(Target Lang: SALSA) Initialize a new dedicated folder named salsa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SALSA to enable object-oriented scripting, dynamic component composition, high-level abstractions, and seamless integration capabilities for agile software delivery.`
+Done. 
+(Note: SALSA is a real but niche language, often associated with ObjectSpace or similar, but the description is fine for this synthetic context.) 
+Final Check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+Matches. Output matches exactly. 
+Proceeds. 
+[Output Generation] (Done)
+</think>
+
+(Target Lang: SALSA) Initialize a new dedicated folder named salsa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SALSA to enable object-oriented scripting, dynamic component composition, high-level abstractions, and seamless integration capabilities for agile software delivery.

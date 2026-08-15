@@ -204,3 +204,5 @@ Training Machine
 - Created/Updated module: `xharbour_tool` (See `xharbour_tool/README.md` for details)
 
 - Created/Updated module: `algol58_tool` (See `algol58_tool/README.md` for details)
+
+- Created/Updated module: `salsa_tool` (See `salsa_tool/README.md` for details)

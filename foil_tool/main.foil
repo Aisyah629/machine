@@ -1,0 +1,73 @@
+%% FOIL Implementation Example
+%% Main module demonstrating Horn clause learning
+
+module foil_main.
+
+%% Background knowledge
+edge(a,b).
+edge(b,c).
+path(X,Y) :- edge(X,Y).
+path(X,Y) :- edge(X,Z), path(Z,Y).
+
+%% Positive examples of 'ancestor'
+ancestor(anna,bob).
+ancestor(bob,cat).
+ancestor(anna,cat).
+
+%% Negative examples
+ancestor(cat,anna).
+ancestor(cat,bob).
+
+%% FOIL predicate to learn 'ancestor'
+%% FOIL algorithm steps:
+%% 1. Initialize rules
+%% 2. Iteratively add literals
+%% 3. Evaluate gain
+%% 4. Check coverage
+%% 5. Output learned clauses
+
+main :-
+    writeln('Starting FOIL induction...'),
+    learn_ancestor(Rules),
+    writeln('Learned rules:'),
+    print_rules(Rules),
+    writeln('FOIL induction complete.').
+
+learn_ancestor(Rules) :-
+    positive_examples(Pos),
+    negative_examples(Neg),
+    background_knowledge(Bkg),
+    foil(Bkg, Pos, Neg, [], Rules).
+
+positive_examples([ann_a_bob, bob_cat, anna_cat]).
+negative_examples([cat_anna, cat_bob]).
+background_knowledge([edge, path]).
+
+foil(Bkg, Pos, Neg, Acc, Rules) :-
+    length(Pos, PosLen),
+    length(Neg, NegLen),
+    % Basic check: if no positives left, return accumulated rules
+    (PosLen =:= 0 -> 
+        reverse(Acc, Rules)
+    ; 
+        new_rule(Bkg, Pos, Neg, Clause, RestPos),
+        foil(Bkg, RestPos, Neg, [Clause|Acc], Rules)
+    ).
+
+new_rule(Bkg, Pos, Neg, Clause, RestPos) :-
+    Clause = ancestor(X,Y),
+    % Simplified FOIL step: add literal
+    literal_add(ancestor(X,Y), Bkg, Bkg, Clause2),
+    Clause2 = ancestor(X,Y).
+
+print_rules([]) :- !.
+print_rules([H|T]) :-
+    writeln(H),
+    print_rules(T).
+
+literal_add(Head, Bkg, Current, NewClause) :-
+    % Placeholder for literal selection
+    member(Lit, Bkg),
+    append([Lit], Current, NewClause).
+
+:- main.

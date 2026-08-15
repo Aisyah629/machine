@@ -3772,3 +3772,43 @@ This matches all constraints.
 </think>
 
 (Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.
+[2026-08-15 04:59:42] (Target Lang: Processing) The user wants me to generate a follow-up instruction based on a specific pattern.
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built strictly using the programming language: `Processing`.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local `README.md` inside the new folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Input Context: The user provided a list of workspace files and a history log showing a previous instruction for `mdl_tool`. The history log seems to be "simulated" or just context, but the core task is to generate the *next* instruction following the constraints.
+
+2.  **Formulate the Instruction:**
+    *   Language: Processing.
+    *   Action: Initialize a new dedicated folder named `processing_tool` (following the pattern of other tools like `mdl_tool`, `c_engine_tool`, etc., in the file list).
+    *   Create: `README.md` inside `processing_tool`.
+    *   Build: The entire tool using Processing.
+    *   Purpose: The prompt doesn't specify a purpose for this tool, just the constraints. I should probably add a generic but plausible purpose like "data visualization utility" or "interactive art generation system" to make it a "logical follow-up", though the constraints don't strictly require a specific purpose text, just the folder, README, and language constraints. Looking at the example in the history: "implement a robust symbolic computation and automated proof verification utility." This suggests adding a description of what the tool does is part of the pattern. I'll add a generic description for a Processing tool.
+    *   Drafting text: `(Target Lang: Processing) Initialize a new dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing to implement an interactive data visualization and generative art utility.`
+    *   Refining based on constraints:
+        *   "STRICTLY using this exact programming language: Processing" -> Included.
+        *   "NEW dedicated folder" -> `processing_tool`.
+        *   "create a local README.md" -> Included.
+        *   "Return ONLY the instruction text." -> Output should be just the string.
+        *   "NEVER target the .github directory." -> Checked.
+
+3.  **Final Polish:**
+    *   Result: `(Target Lang: Processing) Initialize a new dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing to implement an interactive data visualization and generative art utility.`
+    *   The prompt asks for "Return ONLY the instruction text."
+    *   The output should be the string itself.
+
+4.  **Comparison with History Pattern:**
+    *   History example: `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.`
+    *   My result: `(Target Lang: Processing) Initialize a new dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing to implement an interactive data visualization and generative art utility.`
+    *   This matches the pattern perfectly.
+
+5.  **Output Construction:**
+    *   Just the text string. No markdown code blocks unless implied by "Return ONLY the instruction text" which usually means raw text, but often LLM outputs benefit from just the text. The constraint "Return ONLY the instruction text" usually implies the response body should be the instruction and nothing else.
+    *   Result: `(Target Lang: Processing) Initialize a new dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing to implement an interactive data visualization and generative art utility.`
+</think>
+
+(Target Lang: Processing) Initialize a new dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing to implement an interactive data visualization and generative art utility.

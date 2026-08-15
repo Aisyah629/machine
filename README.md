@@ -238,3 +238,5 @@ Training Machine
 - Created/Updated module: `xc_tool` (See `xc_tool/README.md` for details)
 
 - Created/Updated module: `ppl_tool` (See `ppl_tool/README.md` for details)
+
+- Created/Updated module: `acc_tool` (See `acc_tool/README.md` for details)

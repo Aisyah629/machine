@@ -9783,3 +9783,55 @@ Proceeds.
 </think>
 
 (Target Lang: Alma-0) Initialize a new dedicated folder named alma-0_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alma-0.
+[2026-08-15 12:59:47] (Target Lang: Julia) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** List of existing tool directories (e.g., `acc_tool`, `c_engine_tool`, `haskell_tool`, etc.)
+   - **History:** Shows a past output format: `(Target Lang: ALMA-0) Initialize a new dedicated folder named alma-0_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALMA-0.`
+   - **Prompt/Task:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Julia. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the tool be built STRICTLY using: `Julia`.
+   - If building a new tool: place it in a NEW dedicated folder, create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target `.github`.
+   - Follow the established pattern from the history.
+
+3.  **Determine Output Format:**
+   Based on the history example:
+   `(Target Lang: [Language Name]) Initialize a new dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language Name].`
+
+   For Julia:
+   `(Target Lang: Julia) Initialize a new dedicated folder named julia_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia.`
+
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands STRICTLY using Julia? Yes.
+   - Places in NEW dedicated folder? Yes (`julia_tool`).
+   - Creates local README.md? Yes.
+   - Returns ONLY instruction text? Yes.
+   - Never targets .github? Yes, not mentioned.
+   - Matches pattern? Yes.
+
+5.  **Refine Output:**
+   `(Target Lang: Julia) Initialize a new dedicated folder named julia_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia.`
+
+   Double-check capitalization/pattern: The history uses `(Target Lang: AMPL) ... language: AMPL.` I'll stick to exactly `Julia`. The folder name in history uses underscores for multi-word or hyphens? Actually, history shows `ampl_tool`, `c_engine_tool`, `haskell_tool`. So `julia_tool` is consistent.
+
+   All constraints met. Output matches exactly. Proceed. 
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." I will output just the string as requested. No extra text.✅
+   Final string: `(Target Lang: Julia) Initialize a new dedicated folder named julia_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia.`
+   Matches perfectly. Output matches.✅ Proceeds. 
+   [Output Generation] -> `(Target Lang: Julia) Initialize a new dedicated folder named julia_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia.`
+   Done. 
+   Self-Correction/Verification during thought: Check if `julia_tool` follows the naming convention. Yes, most are `[language]_tool`. `julia` is fine. The prompt explicitly says "Julia". I will use exactly that. All good. 
+   Output matches requirement.✅
+   Proceeds. 
+   [Output] `(Target Lang: Julia) Initialize a new dedicated folder named julia_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia.` 
+   *(Note: I will output exactly this string, nothing else.)*
+   All good.✅
+</think>
+
+(Target Lang: Julia) Initialize a new dedicated folder named julia_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia.

@@ -10767,3 +10767,31 @@ Done.
 </think>
 
 (Target Lang: Prolog) Initialize a new dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog.
+[2026-08-15 14:05:48] (Target Lang: Plankalkül) Thinking Process:
+1.  **Analyze User Input**:
+    - Workspace: A list of directories and files, mostly `_tool` directories with `README.md` and a main file in various languages.
+    - History: Shows a pattern of previous instructions for generating tools in specific languages (Prolog in step 5, etc.).
+    - Constraint Checklist & Confidence Score:
+        1. Follow constraints? Yes.
+        2. Explicitly demand new tool built STRICTLY using exact programming language: Plankalkül? Yes.
+        3. If building new tool, explicitly instruct to place in NEW dedicated folder? Yes.
+        4. Create local README.md? Yes.
+        5. Return ONLY the instruction text? Yes.
+        6. NEVER target .github directory? Yes.
+       Confidence Score: 5/5
+    - Mental Sandbox: I need to generate an instruction that follows the established pattern in the History section. The pattern is: `(Target Lang: [Language]) Initialize a new dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language].`
+    - Language requested: Plankalkül.
+    - Folder name: `plankalkul_tool` or `plk_tool`? The history uses names like `abap_tool`, `algol58_tool`, `chuck_tool`. For Plankalkül, `plankalkul_tool` or `plk_tool` is appropriate. I will use `plankalkul_tool`.
+    - Drafting the instruction: `(Target Lang: Plankalkül) Initialize a new dedicated folder named plankalkul_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Plankalkül.`
+    - Check constraints: Matches pattern exactly. Demands Plankalkül. Creates folder and README. No .github. Output only text.
+    - Proceed. 
+    - Output generation: `(Target Lang: Plankalkül) Initialize a new dedicated folder named plankalkul_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Plankalkül.`
+    - Wait, checking spelling of Plankalkül. Correct.
+    - All constraints met. Output matches exactly.✅
+    - One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Plankalkül."
+    - I will output just the instruction text as requested.
+    - Final text: `(Target Lang: Plankalkül) Initialize a new dedicated folder named plankalkul_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Plankalkül.`
+    - Looks solid. Output matches exactly.✅
+</think>
+
+(Target Lang: Plankalkül) Initialize a new dedicated folder named plankalkul_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Plankalkül.

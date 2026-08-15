@@ -350,3 +350,5 @@ Training Machine
 - Created/Updated module: `gnu_e_tool` (See `gnu_e_tool/README.md` for details)
 
 - Created/Updated module: `data_processing_tool` (See `data_processing_tool/README.md` for details)
+
+- Created/Updated module: `ispf_diagnostic_tool` (See `ispf_diagnostic_tool/README.md` for details)

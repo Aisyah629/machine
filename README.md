@@ -320,3 +320,5 @@ Training Machine
 - Created/Updated module: `ttm_tool` (See `ttm_tool/README.md` for details)
 
 - Created/Updated module: `chapel_tool` (See `chapel_tool/README.md` for details)
+
+- Created/Updated module: `pizza_tool` (See `pizza_tool/README.md` for details)

@@ -1,0 +1,27 @@
+* SNOBOL API Client Tool
+* Handles HTTP requests and data transfer
+
+INPUT = 'GET http://api.example.com/data'
+
+DEFINE('send_request(method,url)'):(END_SEND)
+method = METHOD
+url = URL
+
+* Simulate HTTP request
+OUTPUT = 'Sending ' METHOD ' request to ' URL
+
+* Check method
+IF METHOD EQ 'GET' THEN GOTO handle_get
+IF METHOD EQ 'POST' THEN GOTO handle_post
+
+END_SEND
+OUTPUT = 'Invalid method'
+STOP
+
+handle_get
+OUTPUT = 'GET request handled'
+RETURN
+
+handle_post
+OUTPUT = 'POST request handled'
+RETURN

@@ -2177,3 +2177,44 @@ This matches all criteria.
 
 Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2 to implement a structured programming or data manipulation utility.
 [2026-08-15 00:00:16] (Target Lang: BASIC) Create a new utility for data processing in a new folder. You MUST write it strictly in BASIC. Include a local README.md.
+[2026-08-15 00:01:09] (Target Lang: ABC) The user wants me to generate exactly one logical follow-up instruction.
+The previous instruction was about creating a tool in `orca_tool` using ORCA/Modula-2.
+The history also shows a recent target language: BASIC.
+The prompt explicitly requires me to demand the new tool be built in "ABC".
+The instruction must explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+The output must be ONLY the instruction text.
+The output must NEVER target the `.github` directory.
+
+Key constraints to include in the generated instruction:
+1.  Initialize a new dedicated folder (e.g., `abc_tool`).
+2.  Create a local `README.md` inside it.
+3.  Build the entire new tool STRICTLY using this exact programming language: ABC.
+4.  (Optional but logical context) Implement a utility (e.g., data manipulation or structured programming, similar to previous examples).
+5.  Do not mention `.github`.
+
+Drafting the instruction:
+"Initialize a new dedicated folder named abc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABC to implement a data processing utility."
+
+Refining based on strict constraints:
+- "Initialize a new dedicated folder named abc_tool" -> Check.
+- "create a local README.md" -> Check.
+- "STRICTLY using this exact programming language: ABC" -> Check.
+- "Return ONLY instruction text" -> Check.
+- "NEVER target .github" -> Check.
+
+Final string:
+Initialize a new dedicated folder named abc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABC to implement a data processing utility.
+
+Checking against the history pattern provided in the prompt's context:
+The history shows: `Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2 to implement a structured programming or data manipulation utility.`
+
+I should follow this format.
+Target language: ABC.
+Folder name: `abc_tool`.
+Purpose: Data processing utility (consistent with history context of data processing).
+
+Result:
+Initialize a new dedicated folder named abc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABC to implement a data processing utility.
+</think>
+
+Initialize a new dedicated folder named abc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABC to implement a data processing utility.

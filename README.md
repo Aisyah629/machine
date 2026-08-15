@@ -460,3 +460,5 @@ Training Machine
 - Created/Updated module: `./hc_shell_memory_manager_tool` (See `./hc_shell_memory_manager_tool/README.md` for details)
 
 - Created/Updated module: `./pdl_tool` (See `./pdl_tool/README.md` for details)
+
+- Created/Updated module: `objectlisp_tool` (See `objectlisp_tool/README.md` for details)

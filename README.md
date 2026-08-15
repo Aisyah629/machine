@@ -182,3 +182,5 @@ Training Machine
 - Created/Updated module: `api_client_tool` (See `api_client_tool/README.md` for details)
 
 - Created/Updated module: `tpu_tool` (See `tpu_tool/README.md` for details)
+
+- Created/Updated module: `redcode_tool` (See `redcode_tool/README.md` for details)

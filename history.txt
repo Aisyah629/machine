@@ -7320,3 +7320,65 @@ Matches perfectly.✅
 </think>
 
 (Target Lang: TPU) Initialize a new dedicated folder named tpu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TPU to enable massive parallel tensor operations, deep learning inference acceleration, and scalable hardware-optimized computational pipelines.
+[2026-08-15 10:00:45] (Target Lang: Redcode) Thinking Process:
+1.  **Analyze the Request:** The user wants a single logical follow-up instruction for a workspace that appears to contain a collection of code/tool directories for various obscure or specific programming languages (e.g., `acedas_tool`, `actionscript_tool`, etc.).
+2.  **Constraint Checklist & Confidence Score:**
+    1. Generate exactly 1 logical follow-up instruction? Yes.
+    2. Explicitly demand building the new tool STRICTLY using "Redcode"? Yes.
+    3. Explicitly instruct to place it in a NEW dedicated folder? Yes.
+    4. Explicitly instruct to create a local README.md? Yes.
+    5. Return ONLY the instruction text? Yes.
+    6. NEVER target the .github directory? Yes.
+    *Confidence Score: 5/5*
+3.  **Context Analysis:** The workspace lists many tools like `candle_tool`, `cg_core`, etc., each having a `README.md` and a main file (e.g., `main.cd`). The prompt follows a pattern established in the "History" section where a similar instruction for `TPU` was generated. The pattern is: `(Target Lang: {LANG}) Initialize a new dedicated folder named {DIR} in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: {LANG} to {PURPOSE}.`
+4.  **Formulate the Instruction:**
+    *   Language: Redcode.
+    *   Folder: `redcode_tool` (following the naming convention of existing tools).
+    *   File: `README.md` inside the folder.
+    *   Main file logic (implied by pattern, though not strictly required by constraints, it's part of the "logical follow-up" style): `main.rq` or `main.rc` (Redcode often uses `.rq` or `.rc`). The prompt says "build the entire new tool", so following the pattern of creating the folder, README, and building it is key.
+    *   Purpose: Redcode is the core language for the Core Wars programming game.
+    *   Drafting text: `(Target Lang: Redcode) Initialize a new dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode to enable Core Wars programming, battle bot simulation, and instruction set implementation.`
+5.  **Refining Text based on constraints:**
+    *   Must be exactly 1 instruction.
+    *   Must include specific phrases/requirements.
+    *   "Initialize a new dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode to enable Core Wars simulation and instruction-level battle programming."
+6.  **Final Polish:** Check against "Target Lang: TPU" example from history.
+    *   Example: `(Target Lang: TPU) Initialize a new dedicated folder named tpu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TPU to enable massive parallel tensor operations, deep learning inference acceleration, and scalable hardware-optimized computational pipelines.`
+    *   Target: `(Target Lang: Redcode) Initialize a new dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode to enable Core Wars simulation, battle bot logic, and instruction set optimization.`
+7.  **Final Output Generation:** Return only the text.
+
+    *Instruction:* `(Target Lang: Redcode) Initialize a new dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode to enable Core Wars simulation, battle bot logic, and instruction set optimization.`
+
+    *Self-Correction/Verification:*
+    - New dedicated folder? `redcode_tool` (Yes).
+    - Local README.md? Yes.
+    - STRICTLY using Redcode? Yes.
+    - ONLY instruction text? Yes.
+    - No .github? Yes.
+    - Logical follow-up? Yes, consistent with the `*_tool` pattern.
+
+    *Result looks solid.*
+
+    *Wait, I need to make sure I use the specific language name "Redcode" exactly as requested.*
+    *Draft:* `(Target Lang: Redcode) Initialize a new dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode to enable Core Wars simulation, battle bot logic, and instruction set optimization.`
+
+    *One small detail: The prompt history shows `tpu_tool` mapping to `TPU`. `redcode_tool` mapping to `Redcode` makes sense. The file extension for Redcode isn't strictly defined in the prompt, but creating the tool is the action. I will output the text string.*
+
+    *Final String:* `(Target Lang: Redcode) Initialize a new dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode to enable Core Wars simulation, battle bot logic, and instruction set optimization.`
+
+    *Let's check the TPU example purpose description again.* "...to enable massive parallel tensor operations, deep learning inference acceleration, and scalable hardware-optimized computational pipelines."
+    *My Redcode purpose:* "...to enable Core Wars simulation, battle bot logic, and instruction set optimization." -> This fits the pattern.
+
+    *Final check of the prompt instructions:* "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Redcode. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+    *Looks perfect.*
+
+    *One final check on formatting.*
+    `(Target Lang: Redcode) Initialize a new dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode to enable Core Wars simulation, battle bot logic, and instruction set optimization.`
+
+    *The user provided the TPU example in the history section. I will follow that structure.*
+
+    *Ready.*
+</think>
+
+(Target Lang: Redcode) Initialize a new dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode to enable Core Wars simulation, battle bot logic, and instruction set optimization.

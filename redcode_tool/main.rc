@@ -1,0 +1,10 @@
+; Entry point for the Redcode Tool
+MAIN:	DAT	0,0
+
+; Simulation loop placeholder
+SIM:	JMP	SIM
+
+; Example battle bot logic
+BOT:	MOV	0,*#200
+	ADD	#1,*#200
+	JMP	BOT

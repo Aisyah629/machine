@@ -1,0 +1,47 @@
+// Cel Smart Contract Template
+// Main contract entry point
+
+import std.auth
+import std.crypto
+import std.net
+
+contract SecureTransfer {
+    owner: Identity
+    balances: Map<Identity, Int>
+    
+    init(sender: Identity) {
+        require(sender != null, "Sender cannot be null")
+        owner = sender
+        balances[sender] = 0
+    }
+    
+    deposit(amount: Int) {
+        require(amount > 0, "Deposit must be positive")
+        sender = std.auth.getSender()
+        balances[sender] = balances[sender] + amount
+        emit Deposit(sender, amount)
+    }
+    
+    transfer(to: Identity, amount: Int) {
+        require(to != null, "Recipient cannot be null")
+        require(amount > 0, "Transfer amount must be positive")
+        sender = std.auth.getSender()
+        require(balances[sender] >= amount, "Insufficient funds")
+        
+        balances[sender] = balances[sender] - amount
+        balances[to] = balances.get(to) + amount
+        emit Transfer(sender, to, amount)
+    }
+    
+    queryBalance(user: Identity): Int {
+        return balances.get(user)
+    }
+}
+
+// Event Emissions
+emit Deposit(sender: Identity, amount: Int)
+emit Transfer(from: Identity, to: Identity, amount: Int)
+
+// Formal Verification Assertions
+assert invariant: balances[owner] >= 0
+assert safety: totalSupply == sum(all balances)

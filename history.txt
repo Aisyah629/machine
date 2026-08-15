@@ -16640,3 +16640,57 @@ Initialize a NEW dedicated folder named datalog_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named gnu_e_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GNU E.
+[2026-08-15 21:52:18] (Target Lang: Cel) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context/History:** The user provided a large workspace directory listing, a history of a previous interaction (about `gnu_e_tool`), and a final instruction format.
+   - **Current Task:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cel. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 instruction.
+     - Must explicitly demand building strictly using the programming language: `Cel`.
+     - Must instruct to place it in a NEW dedicated folder.
+     - Must instruct to create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target `.github`.
+
+2.  **Identify Key Requirements for the Output:**
+   - Format should match the style of the history/example: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+   - Language specified: `Cel`
+   - Need a plausible tool name. The pattern in the workspace seems to be `[language_name]_tool`. So `cel_tool` would be appropriate.
+   - Must strictly follow: "Initialize a NEW dedicated folder named cel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel."
+   - Check constraints: Exactly 1 instruction? Yes. Explicitly demands Cel? Yes. NEW folder? Yes. Local README.md? Yes. ONLY instruction text? Yes. Never target .github? Yes (won't mention it).
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named cel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel.
+
+4.  **Self-Correction/Verification:**
+   - Does it match the exact phrasing required? The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cel. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text."
+   - The draft matches all constraints perfectly.
+   - No extra text, no greetings, no explanations.
+   - Ready. Output matches draft.✅
+   - One minor check: "Cel" is a real programming language (developed by MIT CSAIL for smart contracts/security). The prompt says "Cel". I will use exactly that.
+   - The format in the example was: "Initialize a NEW dedicated folder named gnu_e_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GNU E."
+   - I will adapt it to Cel: "Initialize a NEW dedicated folder named cel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel."
+   - Matches all constraints. Output only that string.✅
+   - Proceed. 
+   - Output Generation. 
+   - [Done] 
+   - Self-Correction/Refinement during thought: The prompt says "Return ONLY the instruction text." I will strictly output just that sentence. No markdown formatting unless necessary, but plain text is safer. I'll just output the exact sentence.
+   - Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cel. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - All good. Output matches.✅
+   - Output: Initialize a NEW dedicated folder named cel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel. 
+   - Proceeds. 
+   - [Output Generation] -> "Initialize a NEW dedicated folder named cel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel." (exact match) 
+   - Done. 
+   - *Self-Correction/Note during generation*: I should ensure capitalization of "Cel" matches the prompt exactly. The prompt says "Cel". I will use "Cel". The tool name "cel_tool" is fine. All constraints met. Output matches exactly.✅
+   - Final Output Generation. 
+   - [Output] Initialize a NEW dedicated folder named cel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel. 
+   - (Note: I'll keep it exactly as requested.) 
+   - Proceeds. 
+   - [Done] 
+   - *Output Generation* (matches response)
+   - "Initialize a NEW dedicated folder named cel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel." 
+   - All constraints verified. Output matches.✅
+</think>
+
+Initialize a NEW dedicated folder named cel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel.

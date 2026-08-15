@@ -1,0 +1,169 @@
+-- LISA API Client Tool
+-- Robust data transfer and API interaction script
+
+module api_client
+
+import std::net
+import std::json
+import std::http
+
+-- Configuration constants
+const API_BASE_URL := "https://api.example.com"
+const API_TIMEOUT := 30
+const API_RETRIES := 3
+
+-- Data structures for API response
+struct ApiResponse {
+    status_code: int
+    data: json_object
+    headers: map<string, string>
+    error: string
+}
+
+-- Class for API Client
+class ApiClient {
+    -- Private fields
+    base_url: string
+    auth_token: string
+    timeout: int
+    max_retries: int
+
+    -- Constructor
+    constructor(url: string, token: string, timeout_val: int, retries: int) {
+        this.base_url := url
+        this.auth_token := token
+        this.timeout := timeout_val
+        this.max_retries := retries
+    }
+
+    -- Method to build full URL
+    method build_url(path: string) -> string {
+        if (path.starts_with("/")) {
+            return this.base_url + path
+        }
+        return this.base_url + "/" + path
+    }
+
+    -- Method to make a GET request with retry logic
+    method get_resource(endpoint: string) -> ApiResponse {
+        var response := ApiResponse{0, {}, {}, ""}
+        var url := this.build_url(endpoint)
+        var attempt := 0
+
+        while (attempt < this.max_retries) {
+            attempt := attempt + 1
+            print("Attempting GET request to " + url + " (Attempt " + attempt + ")")
+
+            try {
+                var result := http::get(url, {
+                    "Authorization": "Bearer " + this.auth_token,
+                    "Accept": "application/json"
+                })
+
+                response.status_code := result.status_code
+                response.headers := result.headers
+                
+                if (result.status_code >= 200 && result.status_code < 300) {
+                    response.data := json::parse(result.body)
+                } else {
+                    response.error := "HTTP Error: " + result.status_code.to_string()
+                }
+                
+                break
+            } catch (exception e) {
+                response.error := "Request failed: " + e.message
+                print("Error: " + response.error)
+                if (attempt < this.max_retries) {
+                    sleep(1) -- Wait before retrying
+                }
+            }
+        }
+        
+        return response
+    }
+
+    -- Method to make a POST request with retry logic
+    method post_resource(endpoint: string, payload: json_object) -> ApiResponse {
+        var response := ApiResponse{0, {}, {}, ""}
+        var url := this.build_url(endpoint)
+        var attempt := 0
+
+        while (attempt < this.max_retries) {
+            attempt := attempt + 1
+            print("Attempting POST request to " + url + " (Attempt " + attempt + ")")
+
+            try {
+                var json_body := json::to_string(payload)
+                var result := http::post(url, {
+                    "Authorization": "Bearer " + this.auth_token,
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                }, json_body)
+
+                response.status_code := result.status_code
+                response.headers := result.headers
+                
+                if (result.status_code >= 200 && result.status_code < 300) {
+                    response.data := json::parse(result.body)
+                } else {
+                    response.error := "HTTP Error: " + result.status_code.to_string()
+                }
+                
+                break
+            } catch (exception e) {
+                response.error := "Request failed: " + e.message
+                print("Error: " + response.error)
+                if (attempt < this.max_retries) {
+                    sleep(1) -- Wait before retrying
+                }
+            }
+        }
+        
+        return response
+    }
+}
+
+-- Main execution function
+function main() {
+    print("LISA API Client Tool Started")
+    
+    -- Initialize API client
+    var client := ApiClient(
+        API_BASE_URL,
+        "your-auth-token-here",
+        API_TIMEOUT,
+        API_RETRIES
+    )
+    
+    -- Example: Fetch user data
+    print("\nFetching user data...")
+    var user_response := client.get_resource("/users/123")
+    
+    if (user_response.error == "") {
+        print("Success! Data: " + json::to_string(user_response.data))
+    } else {
+        print("Failed: " + user_response.error)
+    }
+    
+    -- Example: Create a new resource
+    print("\nCreating new resource...")
+    var new_resource := json_object {
+        "name": "Test Resource",
+        "value": 42
+    }
+    
+    var create_response := client.post_resource("/resources", new_resource)
+    
+    if (create_response.error == "") {
+        print("Success! Created: " + json::to_string(create_response.data))
+    } else {
+        print("Failed: " + create_response.error)
+    }
+    
+    print("\nLISA API Client Tool Finished")
+}
+
+-- Run main if script is executed directly
+if (current_file == "main.lisa") {
+    main()
+}

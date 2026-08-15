@@ -446,3 +446,5 @@ Training Machine
 - Created/Updated module: `hlsl_tool` (See `hlsl_tool/README.md` for details)
 
 - Created/Updated module: `pl360_tool` (See `pl360_tool/README.md` for details)
+
+- Created/Updated module: `escher_tool` (See `escher_tool/README.md` for details)

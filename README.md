@@ -254,3 +254,5 @@ Training Machine
 - Created/Updated module: `foil_tool` (See `foil_tool/README.md` for details)
 
 - Created/Updated module: `stackless_python_tool` (See `stackless_python_tool/README.md` for details)
+
+- Created/Updated module: `visual_fortran_tool` (See `visual_fortran_tool/README.md` for details)

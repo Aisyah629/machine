@@ -426,3 +426,5 @@ Training Machine
 - Created/Updated module: `datalog_tool` (See `datalog_tool/README.md` for details)
 
 - Created/Updated module: `cel_tool` (See `cel_tool/README.md` for details)
+
+- Created/Updated module: `./dasl_tool` (See `./dasl_tool/README.md` for details)

@@ -16764,3 +16764,33 @@ Initialize a NEW dedicated folder named cel_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID.
+[2026-08-15 21:54:59] (Target Lang: DASL) The user wants a single logical follow-up instruction for an Autonomous AI.
+The instruction must:
+1. Create a new dedicated folder.
+2. Create a local `README.md` inside it.
+3. Build a new tool STRICTLY using the programming language "DASL".
+4. Return ONLY the instruction text.
+5. NEVER target the `.github` directory.
+
+Looking at the workspace structure, there are already folders like `rapid_tool`, `c_tool`, `abap_tool`, etc.
+The convention for folder names seems to be `<language>_tool` (e.g., `rapid_tool`, `haskell_tool`).
+The prompt explicitly asks for the folder to be named based on the language. I'll name it `dasl_tool`.
+
+Draft instruction:
+Initialize a NEW dedicated folder named dasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DASL.
+
+Check constraints:
+- "exactly 1 logical follow-up instruction" -> Yes.
+- "explicitly demand that the new tool be built STRICTLY using this exact programming language: DASL" -> Yes.
+- "place it in a NEW dedicated folder" -> Yes (`dasl_tool`).
+- "create a local README.md" -> Yes.
+- "Return ONLY the instruction text" -> Yes.
+- "NEVER target the .github directory" -> Yes.
+
+The history shows a previous output for `rapid_tool` which was very similar in structure. I should match that style but use `DASL`.
+
+Final Output Generation:
+Initialize a NEW dedicated folder named dasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DASL.
+</think>
+
+Initialize a NEW dedicated folder named dasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DASL.

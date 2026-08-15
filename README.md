@@ -252,3 +252,5 @@ Training Machine
 - Created/Updated module: `neko_tool` (See `neko_tool/README.md` for details)
 
 - Created/Updated module: `foil_tool` (See `foil_tool/README.md` for details)
+
+- Created/Updated module: `stackless_python_tool` (See `stackless_python_tool/README.md` for details)

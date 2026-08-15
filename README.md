@@ -294,3 +294,5 @@ Training Machine
 - Created/Updated module: `ada_tool` (See `ada_tool/README.md` for details)
 
 - Created/Updated module: `uniface_tool` (See `uniface_tool/README.md` for details)
+
+- Created/Updated module: `nsis_tool` (See `nsis_tool/README.md` for details)

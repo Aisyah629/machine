@@ -9337,3 +9337,42 @@ This matches all requirements.
 </think>
 
 (Target Lang: NU) Initialize a new dedicated folder named nu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NU.
+[2026-08-15 11:56:01] (Target Lang: G-code) Thinking Process:
+1.  **Analyze the Request:**
+    *   Input: A list of existing tool directories/files in a workspace.
+    *   History: Shows a pattern of generating instructions for new tools in dedicated folders with README.md files, strictly using specific languages. The last entry is about `nu_tool` using `NU`.
+    *   Task: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   Target language: G-code.
+        *   If building a new tool: NEW dedicated folder + local README.md.
+        *   Format: Match history (implied: concise, explicit language demand).
+        *   Output: ONLY the instruction text.
+        *   Negative constraint: NEVER target `.github`.
+        *   Output format from example: `(Target Lang: G-code) Initialize a new dedicated folder named gcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: G-code.` (Note: The language name in parens should likely match the target, i.e., G-code, though the prompt says "Target language Nu?" in history, for G-code I will use "G-code" or similar. The prompt asks for "Target Lang: G-code").
+        *   Wait, looking at the history pattern: `(Target Lang: NU) ...` followed by the instruction. The user wants me to *return ONLY the instruction text*. The example output in the prompt ends with `(Target Lang: NU) Initialize...`. Wait, the prompt says "Return ONLY the instruction text." and shows the history ending with `(Target Lang: NU) Initialize...`. Usually, "instruction text" implies the sentence itself, or the line including the tag. Given the strict instruction "Return ONLY the instruction text", I will provide the formatted string.
+
+2.  **Drafting the Instruction:**
+    *   Language: G-code.
+    *   Folder: `gcode_tool` (consistent naming convention: `{lang}_tool`).
+    *   Action: Initialize folder, create README.md, build tool STRICTLY using G-code.
+    *   Result: `(Target Lang: G-code) Initialize a new dedicated folder named gcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: G-code.`
+
+3.  **Final Polish:**
+    *   Check constraints: Exactly 1 instruction? Yes. Target G-code? Yes. New folder? Yes. README.md? Yes. STRICTLY G-code? Yes. No .github? Yes.
+    *   Result matches desired pattern.
+
+4.  **Final Output Construction:**
+    *   `(Target Lang: G-code) Initialize a new dedicated folder named gcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: G-code.`
+    *   Double check "Return ONLY the instruction text." The output should be just that string.
+
+    *Self-Correction/Verification during thought:*
+    The prompt asks for "Generate exactly 1 logical follow-up instruction." and "Return ONLY the instruction text."
+    The example output in the prompt description is: `(Target Lang: NU) Initialize...`
+    So I will return exactly that format.
+
+    Draft: `(Target Lang: G-code) Initialize a new dedicated folder named gcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: G-code.`
+
+    Looks solid.
+</think>
+
+(Target Lang: G-code) Initialize a new dedicated folder named gcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: G-code.

@@ -1,9 +1,9 @@
-PROGRAM Main
-  IMPORT StdIO
-  
-  PROCEDURE main()
-    PRINT "Hello from Jako Tool!"
-  END PROCEDURE
-  
-  CALL main()
-END PROGRAM
+# This is a sample Jako program
+
+# Declare variables
+int main = 0
+string output = "Hello from Jako!"
+
+# Main execution block
+main = 1
+return output

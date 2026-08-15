@@ -418,3 +418,5 @@ Training Machine
 - Created/Updated module: `act_iii_tool` (See `act_iii_tool/README.md` for details)
 
 - Created/Updated module: `bcpl_tool` (See `bcpl_tool/README.md` for details)
+
+- Created/Updated module: `hlsl_tool` (See `hlsl_tool/README.md` for details)

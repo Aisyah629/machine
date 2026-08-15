@@ -16408,3 +16408,55 @@ Output the draft.
 </think>
 
 Initialize a NEW dedicated folder named bcpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BCPL.
+[2026-08-15 21:35:39] (Target Lang: HLSL) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Demand the new tool be built STRICTLY using language `HLSL`.
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a long list of existing tools/folders, ending with `bcpl_tool`. The user also provided a "History" snippet showing a previous step where `bcpl_tool` was created. The user wants a "logical follow-up".
+
+2.  **Determine the "Logical Follow-up":**
+    *   The history shows `bcpl_tool` was just requested.
+    *   The current prompt asks for a follow-up with `HLSL`.
+    *   A logical follow-up usually continues the pattern. The pattern is creating tools for specific languages.
+    *   So, the instruction should be about creating an `hlsl_tool`.
+
+3.  **Draft the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL.
+    *   *Check Constraints:*
+        *   Language: HLSL? Yes.
+        *   New folder: `hlsl_tool`? Yes.
+        *   Local README: Yes.
+        *   Only text: Yes (the draft is text).
+        *   No `.github`: Yes.
+        *   Exactly 1 instruction: Yes.
+        *   Logical follow-up: Yes, creates another tool in the same ecosystem.
+
+4.  **Refine based on "Format of previous examples":**
+    *   The user's prompt includes a "Draft" and "Output the draft" pattern in the history block:
+        *   `Draft: Initialize a NEW dedicated folder named bcpl_tool...`
+        *   `Output the draft.`
+        *   Result: `Initialize a NEW dedicated folder named bcpl_tool...`
+    *   The user asks for "Return ONLY the instruction text".
+    *   The output should be the instruction string itself.
+    *   Result: `Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL.`
+
+5.  **Final Polish:**
+    *   The text looks solid. It matches the style of the BCPL example provided in the context (capitalized "NEW", "STRICTLY", explicit language name, explicit folder name, explicit README mention).
+    *   Output: `Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL.`
+
+6.  **Final Verification:**
+    *   Contains "HLSL"? Yes.
+    *   Contains "NEW dedicated folder"? Yes.
+    *   Contains "local README.md"? Yes.
+    *   Contains "hlsl_tool"? Yes (implied by "logical follow-up" and standard pattern, though the prompt asks for the instruction text, the instruction text must define the folder. The prompt asks to "Generate... instruction", so the instruction text defines the folder `hlsl_tool`).
+    *   No `.github`? Yes.
+    *   Only text? Yes.
+
+This matches all requirements.
+</think>
+
+Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL.

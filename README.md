@@ -188,3 +188,5 @@ Training Machine
 - Created/Updated module: `wolfram_tool` (See `wolfram_tool/README.md` for details)
 
 - Created/Updated module: `oxygene_tool` (See `oxygene_tool/README.md` for details)
+
+- Created/Updated module: `t_tool` (See `t_tool/README.md` for details)

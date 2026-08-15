@@ -1,0 +1,25 @@
+Component Main
+    Entity entity_example
+        Datafield df_name as P$VARCHAR(50)
+        Datafield df_status as P$CHAR(1)
+        Datafield df_date_created as P$DATETIME
+
+        Method handle_input
+            $if $getstatus() >= 0 then
+                $update(entity_example)
+                $endif
+        Endmethod
+
+        Method handle_create
+            $create(entity_example)
+            df_status = 'N'
+            df_date_created = $date($time(0, 1))
+            $update(entity_example)
+        Endmethod
+    Endentity
+
+    Method main
+        $create(entity_example)
+        $display('New record created')
+    Endmethod
+Endcomponent

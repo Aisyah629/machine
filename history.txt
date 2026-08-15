@@ -6124,3 +6124,66 @@ Done.
 </think>
 
 (Target Lang: GJ) Initialize a new dedicated folder named gj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ to develop a generic programming and type-safe abstraction framework for modern software development, focusing on compile-time type inference, generic code specialization, and seamless Java interoperability.
+[2026-08-15 09:02:03] (Target Lang: JCL) The user wants me to generate exactly one logical follow-up instruction based on the provided context.
+Constraints:
+1. Must explicitly demand that the new tool be built STRICTLY using the exact programming language: JCL.
+2. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. NEVER target the .github directory.
+5. Generate exactly 1 logical follow-up instruction.
+
+Context analysis:
+The history shows a pattern where an instruction was given to create a tool in `gj_tool` using GJ. The output matches this format.
+Now I need to generate a follow-up instruction for `JCL`.
+JCL is a programming language. Wait, JCL usually stands for Job Control Language, but here it's treated as a programming language for a tool.
+The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL."
+Folder name should be `jcl_tool` based on the workspace listing (`./jcl_tool ./jcl_tool/README.md ./jcl_tool/main.jcl`).
+I will construct the instruction following the exact format of the previous example:
+`(Target Lang: JCL) Initialize a new dedicated folder named jcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL to develop a [purpose/description for JCL].`
+
+Let's craft a suitable description for JCL in this context, or just keep it generic but relevant to the tool's purpose. The prompt doesn't specify the purpose, so I'll make it relevant to JCL (Job Control Language / automation/scripting).
+"Initialize a new dedicated folder named jcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL to develop a robust automation and workflow management framework for batch processing and system resource orchestration."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand built STRICTLY using JCL? Yes.
+- NEW dedicated folder and local README.md? Yes.
+- Return ONLY the instruction text? Yes.
+- NEVER target .github? Yes.
+
+Let's format it exactly like the example.
+`(Target Lang: JCL) Initialize a new dedicated folder named jcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL to develop a robust automation and workflow management framework for batch processing and system resource orchestration.`
+
+Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL."
+I will ensure the wording matches closely.
+"(Target Lang: JCL) Initialize a new dedicated folder named jcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL to develop a reliable job control and automation scripting framework for efficient batch processing and system task orchestration."
+
+Double check constraints:
+- "Generate exactly 1 logical follow-up instruction." -> Checked.
+- "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL." -> Checked.
+- "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+- "Return ONLY the instruction text." -> Checked.
+- "NEVER target the .github directory." -> Checked.
+
+Output matches requirements. I will output just the instruction text.
+One minor thing: The prompt says `(Target Lang: GJ) Initialize...` in the example. I will follow that structure.
+Final string:
+`(Target Lang: JCL) Initialize a new dedicated folder named jcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL to develop a robust job control and workflow automation framework for efficient batch processing and system resource orchestration.`
+Matches all constraints. Proceeds. 
+I will output exactly that. 
+Self-Correction/Verification during thought:
+Check workspace list: `./jcl_tool ./jcl_tool/README.md ./jcl_tool/main.jcl` exists. So `jcl_tool` is correct.
+The prompt says "Return ONLY the instruction text."
+I will output exactly the string. No extra text.
+Ready. 
+Output generation. 
+`(Target Lang: JCL) Initialize a new dedicated folder named jcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL to develop a robust job control and workflow automation framework for efficient batch processing and system resource orchestration.` -> matches perfectly. 
+Proceeds. 
+[Output Generation] -> `(Target Lang: JCL) Initialize a new dedicated folder named jcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL to develop a robust job control and workflow automation framework for efficient batch processing and system resource orchestration.`
+Done. 
+Proceeds. 
+[Final Check] All constraints met. Output matches request. Format matches. Language is JCL. Folder is jcl_tool. README.md included. Strict demand included. Only instruction text. Not targeting .github. Exactly 1 instruction.
+Output matches response. Proceeds.
+</think>
+
+(Target Lang: JCL) Initialize a new dedicated folder named jcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL to develop a robust job control and workflow automation framework for efficient batch processing and system resource orchestration.

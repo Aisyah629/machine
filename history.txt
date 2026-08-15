@@ -13975,3 +13975,52 @@ Initialize a NEW dedicated folder named fl_tool in the workspace, create a local
 </think>
 
 Initialize a NEW dedicated folder named tacpol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TACPOL.
+[2026-08-15 18:48:08] (Target Lang: Snowball) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace listing with many tool directories, each containing a README.md and a main file. There's a history section showing previous interactions where the AI generated instructions for new tools.
+   - **Current Task:** The user explicitly says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Snowball. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:** 
+     - Exactly 1 instruction.
+     - Must explicitly demand the new tool be built STRICTLY using the exact programming language: Snowball.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Format should match previous examples (concise, direct).
+
+2.  **Deconstruct Constraints & Requirements:**
+   - Language: Snowball
+   - Action: Initialize a NEW dedicated folder, create a local README.md, build the entire new tool.
+   - Strictness: "STRICTLY using this exact programming language: Snowball."
+   - Output format: ONLY the instruction text. No extra words, no markdown formatting (based on previous examples, though markdown isn't strictly forbidden, it's safer to just output raw text as requested).
+   - Negative constraint: Do not target `.github`.
+
+3.  **Draft Generation:**
+   Initialize a NEW dedicated folder named snowball_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball.
+
+4.  **Verify against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands new tool be built STRICTLY using Snowball? Yes.
+   - Instructs to place in a NEW dedicated folder and create a local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches style? Yes, identical to previous examples but with "snowball_tool" and "Snowball".
+
+   One minor check: The prompt says "Snowball" (capitalized). I will use exactly "Snowball". The folder name should logically be "snowball_tool" to match the pattern (e.g., `tacpol_tool`). I'll stick with `snowball_tool`.
+
+   Draft: Initialize a NEW dedicated folder named snowball_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball.
+
+   All constraints met. Output matches exactly. Proceed. 
+   I will output just the string as requested. No extra text.✅
+   Final check of the prompt: "Return ONLY the instruction text." -> I will provide exactly that.
+   Output matches requirement.✅ Proceeds. 
+   Generating response. 
+   [Output]: Initialize a NEW dedicated folder named snowball_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball. 
+   (Self-Correction/Refinement during thought: I should ensure the casing matches the prompt exactly: "Snowball". The folder name "snowball_tool" follows the pattern. The text is ready.)✅
+   Output matches.✅ Proceeds. 
+   [Final Output Generation] -> Initialize a NEW dedicated folder named snowball_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball. 
+   (Note: I will output exactly this string.) 
+   All good.✅
+</think>
+
+Initialize a NEW dedicated folder named snowball_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball.

@@ -4911,3 +4911,45 @@ Final string: "(Target Lang: Unicon) Initialize a new dedicated folder named uni
 </think>
 
 (Target Lang: Unicon) Initialize a new dedicated folder named unicon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Unicon to implement a text processing and string manipulation utility.
+[2026-08-15 06:51:10] (Target Lang: Agora) The user wants me to generate a follow-up instruction based on the provided prompt.
+The prompt requires the instruction to be about building a new tool using the programming language "Agora".
+The instruction must:
+1. Be exactly 1 logical follow-up instruction.
+2. Explicitly demand strict usage of the "Agora" programming language.
+3. If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target the .github directory.
+
+Looking at the history provided:
+`unicon_tool` exists in the workspace list (./unicon_tool, ./unicon_tool/README.md, ./unicon_tool/main.icn).
+The user's prompt history shows a draft for `unicon_tool` and the final string.
+Now I need to generate a *new* instruction for `Agora` language.
+The target language is Agora.
+I should create a new folder, e.g., `agora_tool`.
+I need to include a README.md inside it.
+I need to build a tool using Agora.
+The output must be the instruction text only.
+
+Structure of the instruction:
+(Target Lang: Agora) Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agora to [brief description].
+
+Let's choose a description. Maybe "a code analysis and refactoring assistant".
+Folder name: `agora_tool`.
+
+Draft: (Target Lang: Agora) Initialize a new dedicated folder named agora_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agora to implement a code analysis and refactoring assistant.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand strict usage of Agora? Yes.
+- Place in NEW dedicated folder? Yes.
+- Create local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target .github? Yes.
+
+The output should be just the instruction string.
+I will verify the language name "Agora". The prompt says "Agora". I will use that.
+The instruction matches the style of the examples.
+Final output generation.
+</think>
+
+(Target Lang: Agora) Initialize a new dedicated folder named agora_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agora to implement a code analysis and refactoring assistant.

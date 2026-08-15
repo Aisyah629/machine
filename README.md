@@ -128,3 +128,5 @@ Training Machine
 - Created/Updated module: `unicon_tool` (See `unicon_tool/README.md` for details)
 
 - Created/Updated module: `orc_tool` (See `orc_tool/README.md` for details)
+
+- Created/Updated module: `agora_tool` (See `agora_tool/README.md` for details)

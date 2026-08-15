@@ -282,3 +282,5 @@ Training Machine
 - Created/Updated module: `./jplusplus_tool` (See `./jplusplus_tool/README.md` for details)
 
 - Created/Updated module: `mohol_tool` (See `mohol_tool/README.md` for details)
+
+- Created/Updated module: `s_lang_tool` (See `s_lang_tool/README.md` for details)

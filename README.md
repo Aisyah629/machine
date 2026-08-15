@@ -262,3 +262,5 @@ Training Machine
 - Created/Updated module: `sac_tool` (See `sac_tool/README.md` for details)
 
 - Created/Updated module: `rapid_tool` (See `rapid_tool/README.md` for details)
+
+- Created/Updated module: `prolog_tool` (See `prolog_tool/README.md` for details)

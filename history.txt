@@ -10718,3 +10718,52 @@ Done.
 </think>
 
 (Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID.
+[2026-08-15 14:04:53] (Target Lang: Prolog) Thinking Process:
+
+1.  **Analyze the User's Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: The new tool must be built STRICTLY using the programming language: `Prolog`.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a `NEW dedicated folder` and create a local `README.md`.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the `.github` directory.
+    *   Context: The user provides a list of existing folders (tools) and a "History" of previous actions. The history shows a pattern of creating tool directories (e.g., `rapid_tool`) with specific constraints.
+    *   Specific Trigger: The user *must* explicitly demand `Prolog` in the output.
+
+2.  **Check Existing Workspace State:**
+    *   Scanning the provided file list for `prolog_tool` or `prolog`:
+        *   ... `pdl_tool` ... `phrogram_tool` ... `pikt_tool` ... `pizza_tool` ... `ppl_tool` ... `protel_tool` ... `rapid_tool` ... `rapira_tool` ... `rc_tool` ... `redcode_tool` ... `rlab_tool` ...
+    *   Result: `prolog_tool` does *not* exist in the current workspace list.
+
+3.  **Formulate the Instruction:**
+    *   Language: Prolog.
+    *   Action: Initialize a new dedicated folder named `prolog_tool`.
+    *   Action: Create a local `README.md` inside it.
+    *   Action: Build the tool strictly using Prolog.
+    *   Negative Constraint: Do not target `.github`.
+
+    *Draft 1:* `(Target Lang: Prolog) Initialize a new dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog.`
+
+4.  **Refine and Format:**
+    *   The prompt asks to return *only* the instruction text.
+    *   The prompt example in the "History" section shows the format: `(Target Lang: [LANG]) Initialize a new dedicated folder named [FOLDER] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG].`
+
+5.  **Final Polish:**
+    *   Language: Prolog.
+    *   Folder: `prolog_tool`.
+    *   Text: `(Target Lang: Prolog) Initialize a new dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog.`
+
+6.  **Final Verification:**
+    *   "Return ONLY the instruction text." -> Yes.
+    *   "Explicitly demand... Prolog" -> Yes.
+    *   "New dedicated folder... README.md" -> Yes.
+    *   "Never target .github" -> Yes.
+
+    The output looks correct based on the patterns observed in the History section.
+
+    *Self-Correction during drafting:* Wait, I see `ppl_tool`, `protel_tool`, `rapid_tool`, `rapira_tool`. Prolog is definitely missing.
+
+    *Output Construction:*
+    `(Target Lang: Prolog) Initialize a new dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog.`
+</think>
+
+(Target Lang: Prolog) Initialize a new dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog.

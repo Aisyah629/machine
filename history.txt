@@ -8361,3 +8361,30 @@ Result looks good.
 </think>
 
 (Target Lang: PCASTL) Initialize a new dedicated folder named pcastl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PCASTL to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.
+[2026-08-15 11:04:25] (Target Lang: CL) The user wants me to generate exactly one logical follow-up instruction based on the provided context.
+The instruction must demand building a new tool using the exact programming language "CL".
+If building a new tool, it must be placed in a NEW dedicated folder and a local README.md must be created.
+The output should contain ONLY the instruction text.
+I should NOT target the .github directory.
+
+Looking at the history, the previous output was:
+`(Target Lang: PCASTL) Initialize a new dedicated folder named pcastl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PCASTL to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+
+So I will follow this pattern but change the language to CL and the folder name to `cl_tool`.
+
+I need to describe CL (Common LISP / Constraint Language? Probably Common Lisp or similar, but the prompt says "exact programming language: CL"). I will use the style of the previous message.
+
+Draft:
+`(Target Lang: CL) Initialize a new dedicated folder named cl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CL to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+
+I need to make sure it matches the requested format strictly.
+The prompt says: "Generate exactly 1 logical follow-up instruction."
+"You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CL."
+"Return ONLY the instruction text."
+
+Result:
+(Target Lang: CL) Initialize a new dedicated folder named cl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CL to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.
+No markdown. Just the string.
+</think>
+
+(Target Lang: CL) Initialize a new dedicated folder named cl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CL to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.

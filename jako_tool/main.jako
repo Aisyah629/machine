@@ -1,0 +1,9 @@
+PROGRAM Main
+  IMPORT StdIO
+  
+  PROCEDURE main()
+    PRINT "Hello from Jako Tool!"
+  END PROCEDURE
+  
+  CALL main()
+END PROGRAM

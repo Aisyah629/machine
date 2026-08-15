@@ -1,0 +1,78 @@
+public class OrderProcess {
+  
+  Order order;
+  Inventory inventory;
+  Customer customer;
+  
+  // Association with multiplicity 1 to many
+  order *-- 1 Customer
+  
+  // Association with multiplicity many to many
+  OrderItem items *-- * Inventory
+  
+  // Attributes
+  date orderedDate;
+  boolean shipped;
+  string trackingNumber;
+  
+  // Operations
+  
+  processOrder() {
+    validateOrder();
+    reserveInventory();
+    confirmOrder();
+    shipOrder();
+  }
+  
+  private validateOrder() {
+    if (customer == null) {
+      throw new IllegalArgumentException("Customer required");
+    }
+    if (items.isEmpty()) {
+      throw new IllegalArgumentException("Order must contain items");
+    }
+  }
+  
+  private reserveInventory() {
+    for (OrderItem item in items) {
+      inventory.reserve(item.quantity);
+    }
+  }
+  
+  private confirmOrder() {
+    order.status = "CONFIRMED";
+    orderedDate = System.now();
+  }
+  
+  private shipOrder() {
+    shipped = true;
+    trackingNumber = generateTrackingNumber();
+  }
+  
+  private generateTrackingNumber() {
+    return "TRACK-" + System.currentTimeMillis();
+  }
+  
+  cancelOrder() {
+    if (shipped) {
+      throw new IllegalStateException("Cannot cancel shipped order");
+    }
+    releaseInventory();
+    order.status = "CANCELLED";
+  }
+  
+  private releaseInventory() {
+    for (OrderItem item in items) {
+      inventory.release(item.quantity);
+    }
+  }
+  
+  getOrderStatus() {
+    return {
+      status: order.status,
+      orderedDate: orderedDate,
+      shipped: shipped,
+      trackingNumber: trackingNumber
+    };
+  }
+}

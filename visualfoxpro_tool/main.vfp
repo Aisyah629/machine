@@ -1,0 +1,11 @@
+&& main.vfp
+&& A simple Visual FoxPro program to demonstrate basic functionality
+
+PROCEDURE Main
+    ? 'Hello from Visual FoxPro!'
+    ? 'This is a sample tool created in Visual FoxPro.'
+    ? 'Press any key to exit...'
+    INKEY(0)
+ENDPROC
+
+MAIN

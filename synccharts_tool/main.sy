@@ -1,0 +1,40 @@
+" Main Entry Point for SyncCharts Data Visualization Utility
+import std.io
+import std.charts
+
+function main() {
+    // Initialize a new chart context
+    var chart = new Chart(640, 480, "Data Visualization Utility");
+    
+    // Generate sample data for demonstration
+    var dataPoints = [10, 24, 36, 40, 55, 68, 72, 80, 90, 100];
+    
+    // Create a line chart
+    var lineSeries = new LineSeries("Sample Data", dataPoints);
+    chart.addSeries(lineSeries);
+    
+    // Set axis labels
+    chart.setXYLabels("Time (ms)", "Value");
+    
+    // Render the chart
+    print("Rendering chart...");
+    chart.render();
+    
+    // Save the chart to disk
+    chart.save("output_chart.sy.png");
+    print("Chart saved to output_chart.sy.png");
+    
+    // Interactive loop for real-time updates (simulated)
+    for (i = 0; i < 5; i++) {
+        sleep(1000);
+        var newVal = Math.random() * 100;
+        lineSeries.addPoint(newVal);
+        chart.update();
+        print("Updated with new value: " + newVal);
+    }
+    
+    print("Visualization complete.");
+}
+
+// Start the application
+main();

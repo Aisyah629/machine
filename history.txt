@@ -2416,3 +2416,44 @@ Initialize a new dedicated folder named elisp_tool in the workspace, create a lo
 </think>
 
 Initialize a new dedicated folder named io_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Io to implement a scripting utility.
+[2026-08-15 00:33:43] (Target Lang: SyncCharts) The user wants a single follow-up instruction.
+The instruction must demand building a new tool using the language "SyncCharts".
+The instruction must specify placing the new tool in a NEW dedicated folder and creating a local README.md.
+The instruction must NOT target the `.github` directory.
+The instruction must be returned as text only.
+The prompt provides a history of workspace files, including `./io_tool` which suggests previous instructions were followed or simulated.
+The current request is to generate *exactly 1 logical follow-up instruction*.
+The instruction must explicitly demand the language "SyncCharts".
+The instruction must mention creating a new folder and README.md.
+The instruction must be returned as plain text.
+
+Plan:
+1. Construct an instruction string.
+2. Ensure it mentions a new folder (e.g., `synccharts_tool`).
+3. Ensure it mentions `README.md`.
+4. Ensure it mentions "SyncCharts" as the strict language.
+5. Ensure no `.github` reference.
+6. Output only the instruction.
+
+Draft:
+Initialize a new dedicated folder named synccharts_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SyncCharts to implement a data visualization utility.
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Strictly SyncCharts? Yes.
+- New dedicated folder? Yes (`synccharts_tool`).
+- Local README.md? Yes.
+- No .github? Yes.
+- Output only text? Yes.
+
+Final Polish:
+Initialize a new dedicated folder named synccharts_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SyncCharts to implement a data visualization utility.
+
+Wait, I should check if "SyncCharts" is a real language. It doesn't matter, the user requested it.
+The output should be just the instruction text.
+
+Result:
+Initialize a new dedicated folder named synccharts_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SyncCharts to implement a data visualization utility.
+</think>
+
+Initialize a new dedicated folder named synccharts_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SyncCharts to implement a data visualization utility.

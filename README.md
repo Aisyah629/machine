@@ -64,3 +64,5 @@ Training Machine
 - Created/Updated module: `jsharp_tool` (See `jsharp_tool/README.md` for details)
 
 - Created/Updated module: `io_tool` (See `io_tool/README.md` for details)
+
+- Created/Updated module: `synccharts_tool` (See `synccharts_tool/README.md` for details)

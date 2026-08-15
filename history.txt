@@ -4498,3 +4498,48 @@ Output Generation.
 </think>
 
 (Target Lang: Self) Initialize a new dedicated folder named self_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Self to implement a dynamic prototyping tool.
+[2026-08-15 05:47:18] (Target Lang: Max) Thinking Process:
+
+1.  **Deconstruct the user's input:**
+    *   Context: The user provides a list of files/directories (workspace listing), a history of a previous interaction, and a specific instruction format.
+    *   History snippet: Shows a pattern of output `(Target Lang: LangName) Initialize a new dedicated folder named tool_name... build... using... language: LangName...`.
+    *   Current Instruction: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Max. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+    *   Goal: Create a string that matches the pattern established in the history but uses "Max" as the language and follows the constraints.
+
+2.  **Draft the instruction based on constraints:**
+    *   *Constraint:* Language must be "Max".
+    *   *Constraint:* Must be a "logical follow-up instruction". Looking at the history, the previous instruction was about `self_tool` using `Self`. A logical follow-up might be another tool in the same ecosystem or a variation. The history shows a list of tools like `acedas_tool`, `actionscript_tool`, etc. A logical follow-up could be `max_tool` using `Max`. Or perhaps a tool related to the previous one? The history doesn't show a strong dependency, just a list. The safest bet for a "logical follow-up" in this context (likely a prompt injection test or a structured generation task) is to generate a similar request for a new tool, following the format.
+    *   *Format Analysis:*
+        *   History Output: `(Target Lang: Self) Initialize a new dedicated folder named self_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Self to implement a dynamic prototyping tool.`
+        *   Pattern: `(Target Lang: <LANG>) Initialize a new dedicated folder named <FOLDER> in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: <LANG> to implement a <PURPOSE>.`
+    *   *Applying "Max":*
+        *   Lang: Max.
+        *   Folder: `max_tool` (consistent with naming convention `tool_name_tool`).
+        *   Purpose: Needs a purpose. The previous one was "dynamic prototyping tool". I should invent a plausible purpose or keep it generic. The prompt asks for a "logical follow-up". In the absence of specific domain knowledge about what "Max" does (Max/MSP? Maxima? Max? (the language)?), I should generate a purpose that fits a "tool". Maybe "mathematical computing tool" or "multimedia tool" or just a generic description. However, looking at the history, the purposes vary: "dynamic prototyping", etc. Since I am generating the instruction, I have freedom to define the purpose as long as the structure holds. A common purpose for "Max" (assuming Maxima or Max/MSP) might be symbolic computation or audio processing. But to be safe and "logical" within the pattern, I can just pick a valid purpose string. Let's look at `self_tool`: "dynamic prototyping tool". `self_tool` corresponds to `Self`. `max_tool` could be "symbolic algebra tool" or "multimedia programming tool". I'll choose something neutral and plausible like "symbolic computation tool" or "mathematical analysis tool". Or just "a new tool". The prompt asks to "build the entire new tool... to implement a...". I need to fill that slot.
+        *   *Refinement on "Logical Follow-up":* Sometimes "logical follow-up" implies building *another* tool. The prompt says "Generate exactly 1 logical follow-up instruction." This usually means the output should be the instruction text for the next step.
+        *   *Drafting:* `(Target Lang: Max) Initialize a new dedicated folder named max_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Max to implement a symbolic computation tool.`
+        *   *Check constraints:*
+        *   Language: Max? Yes.
+        *   New dedicated folder? `max_tool`. Yes.
+        *   README.md? Yes.
+        *   Strictly using language? Yes.
+        *   Return ONLY instruction text? Yes.
+        *   Never target .github? Yes.
+        *   Structure matches history? Yes.
+
+3.  **Final Polish (Mental Representation of Output):**
+    *   Result: `(Target Lang: Max) Initialize a new dedicated folder named max_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Max to implement a symbolic computation tool.`
+    *   *Wait, check "Max" language ambiguity.* The user asked for "Max". The history has "Self". The pattern is `(Target Lang: Self) ... language: Self ...`.
+    *   So the output must be `(Target Lang: Max) ... language: Max ...`.
+    *   The folder name should probably be `max_tool` to match `self_tool`.
+    *   The purpose can be arbitrary but should be grammatically correct. "symbolic computation tool" is good. Or "multimedia programming tool". I'll stick with "symbolic computation tool" as it's a common association with names like Max/Maxima, or just "a generic tool". The prompt doesn't restrict the purpose. I'll use "symbolic computation tool" as a reasonable filler.
+    *   *Result String:* `(Target Lang: Max) Initialize a new dedicated folder named max_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Max to implement a symbolic computation tool.`
+
+4.  **Final Output Construction:**
+    *   The user requested "Return ONLY the instruction text."
+    *   Output: `(Target Lang: Max) Initialize a new dedicated folder named max_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Max to implement a symbolic computation tool.`
+
+This matches all constraints.
+</think>
+
+(Target Lang: Max) Initialize a new dedicated folder named max_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Max to implement a symbolic computation tool.

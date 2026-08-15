@@ -448,3 +448,5 @@ Training Machine
 - Created/Updated module: `pl360_tool` (See `pl360_tool/README.md` for details)
 
 - Created/Updated module: `escher_tool` (See `escher_tool/README.md` for details)
+
+- Created/Updated module: `spin_tool` (See `spin_tool/README.md` for details)

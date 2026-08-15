@@ -18817,3 +18817,39 @@ Initialize a NEW dedicated folder named harbour_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a legacy database manipulation utility'. You MUST write functional code for this task strictly using this programming language: Harbour. I will output this. End. I will output the text now.
+[2026-08-15 23:56:47] (Target Lang: CHAIN) The user wants a follow-up instruction to generate a new tool using the programming language `CHAIN`.
+The instruction must explicitly demand the tool be built strictly using `CHAIN`.
+If building a new tool, it must be placed in a NEW dedicated folder and include a local README.md.
+The output should be ONLY the instruction text.
+No targeting of `.github`.
+
+Analysis of existing tools to avoid conflicts or reuse:
+The prompt history lists many tools. I need to check if `chain_tool` exists.
+Looking at the list: `... ./chapel_tool ./chill_tool ./chip8_tool ...`
+I don't see `chain_tool` in the list. So `chain_tool` is likely a new folder.
+The language is `CHAIN`.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named chain_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CHAIN. Focus entirely on this new objective: 'Implement a modular blockchain explorer'. You MUST write functional code for this task strictly using this programming language: CHAIN. I will output this. End. I will output the text now."
+
+Wait, the prompt asks for "Generate exactly 1 logical follow-up instruction."
+The example output format in the history is: "Initialize a NEW... I will output this. End. I will output the text now."
+I should follow this pattern.
+The prompt asks to return ONLY the instruction text.
+
+Refining the objective to be distinct. "Implement a distributed consensus validator" or "Build a smart contract deployment suite". Let's use "Build a smart contract deployment suite".
+
+Instruction:
+Initialize a NEW dedicated folder named chain_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CHAIN. Focus entirely on this new objective: 'Build a smart contract deployment suite'. You MUST write functional code for this task strictly using this programming language: CHAIN. I will output this. End. I will output the text now.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand STRICTLY using CHAIN? Yes.
+- NEW dedicated folder and local README.md? Yes.
+- Return ONLY the instruction text? Yes.
+- Never target .github? Yes.
+
+Result looks solid.
+</think>
+
+Initialize a NEW dedicated folder named chain_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CHAIN. Focus entirely on this new objective: 'Build a smart contract deployment suite'. You MUST write functional code for this task strictly using this programming language: CHAIN. I will output this. End. I will output the text now.

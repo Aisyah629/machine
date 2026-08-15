@@ -4620,3 +4620,71 @@ The output should be just the instruction string.
 </think>
 
 (Target Lang: Converge) Initialize a new dedicated folder named converge_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Converge to implement a functional simulation or data processing tool.
+[2026-08-15 06:02:21] (Target Lang: Haskell) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Goal:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraint 1:** The user's history implies a pattern of creating tools in specific folders with `README.md` files.
+    *   **Constraint 2:** The instruction must explicitly demand that the new tool be built **STRICTLY** using the programming language: **Haskell**.
+    *   **Constraint 3:** If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local `README.md`.
+    *   **Constraint 4:** Return **ONLY** the instruction text.
+    *   **Constraint 5:** **NEVER** target the `.github` directory.
+    *   **Context:** The user provided a list of existing folders and files. I see `./haskell_tool` is *not* in the list (I see `./haskell_tool` is missing from the provided list of directories like `./actionscript_tool`, `./c_engine_tool`, etc., although there is `./candle_tool`, `./clarion_tool`, etc. Wait, let me check the list carefully for Haskell.
+        *   List scan: `... ./hartmann_pipeline_tool ... ./imp_tool ... ./io_tool ...`
+        *   I don't see `./haskell_tool` in the provided list. So creating a new one is valid.
+
+2.  **Drafting the Instruction:**
+    *   *Objective:* Create a tool for Haskell.
+    *   *Language:* Haskell.
+    *   *Folder Name:* `haskell_tool` (standard naming convention seen in other examples like `./c_engine_tool`).
+    *   *Requirement:* New dedicated folder, `README.md` inside, `STRICTLY` Haskell.
+    *   *Functionality:* Haskell is good for formal verification, list processing, or web backends. Let's stick to a generic but useful objective like "formal verification" or "data processing". Let's look at the previous turn example in the prompt: "simulation or data analysis". Haskell fits "type-safe data processing" well.
+    *   *Draft:* `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell to implement a type-safe data processing utility.`
+
+3.  **Refining against Constraints:**
+    *   *Strictly Haskell?* Yes.
+    *   *New Folder?* Yes (`haskell_tool`).
+    *   *README?* Yes.
+    *   *Only instruction text?* Yes.
+    *   *No .github?* Yes.
+
+4.  **Final Polish:**
+    `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell to implement a type-safe list processing or data transformation utility.`
+
+    *Self-Correction on Folder Name:* The user's history lists many tools. It's safer to stick to the pattern `./haskell_tool`.
+    *Self-Correction on "STRICTLY":* The prompt asks to explicitly demand the new tool be built **STRICTLY** using Haskell.
+
+    *Final String:* `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell to implement a functional list processing utility.`
+
+5.  **Output Generation:** Just the string.
+
+    *Check against history again:*
+    The history shows: `(Target Lang: Converge) ...`
+    So the format should likely match: `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell to implement a [objective].`
+
+    Objective choice: "high-performance list processing" or "functional data transformation". Let's go with "functional data transformation".
+
+    *Result:* `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell to implement a functional data transformation utility.`
+
+    Wait, the user's prompt actually *contained* the history example in the text block: `(Target Lang: Converge) Initialize a new dedicated folder named converge_tool...`.
+    Wait, looking closely at the provided text block in the prompt:
+    `History: ... (Target Lang: Converge) Initialize a new dedicated folder named converge_tool ...`
+    Then the prompt asks: `Generate exactly 1 logical follow-up instruction. ... Explicitly demand ... STRICTLY using this exact programming language: Haskell.`
+
+    So the output must follow the format of the history but with Haskell.
+
+    Final check of the text:
+    `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell to implement a high-level data processing utility.`
+
+    Let's make sure I don't hallucinate a folder that already exists.
+    List scan for `haskell_tool`:
+    `./candle_tool`, `./cg_core`, `./clarion_tool`, `./comal_tool`, `./converge_tool`...
+    It is NOT in the list.
+    So `haskell_tool` is safe.
+
+    Final Result Construction.
+
+    `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell to implement a type-safe functional programming utility.`
+</think>
+
+(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell to implement a type-safe functional data transformation utility.

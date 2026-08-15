@@ -1,12 +1,23 @@
 # Frege Tool
 
 ## Overview
-This tool provides a dedicated environment for developing, testing, and executing software strictly using the Frege programming language.
+The `frege_tool` is a dedicated environment for executing and managing programs written in Frege, a functional programming language for the Java Virtual Machine (JVM).
 
-## Features
-- Strict adherence to Frege language syntax and semantics.
-- Integrated development and execution environment.
-- Localized documentation and configuration.
+## Purpose
+This tool provides a standardized way to compile, run, and debug Frege source code within this workspace. It serves as a sandbox for functional programming concepts, type inference, and seamless Java interop.
 
 ## Usage
-Refer to the main source file for implementation details. Run the tool according to standard Frege project conventions.
+- Place your Frege source files (`.fr`) in this directory.
+- Refer to the main entry point `main.fr` for initialization logic.
+- Use standard JVM tooling or Frege-specific compilers to execute the code.
+
+## Technical Details
+- **Language**: Frege
+- **Extension**: `.fr`
+- **Runtime**: JVM (Java Virtual Machine)
+- **Compatibility**: Java 8+ (or compatible JVM environments)
+
+## Constraints & Guidelines
+- Strict adherence to functional programming paradigms.
+- Leverage Frege's type system and pattern matching.
+- Ensure all code compiles cleanly against the latest Frege compiler version.

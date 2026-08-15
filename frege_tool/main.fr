@@ -1,31 +1,20 @@
-module main where
-
-import Prelude
-import Data.List
-import System.Environment (getArgs)
-
 -- Frege Tool Main Entry Point
--- This module serves as the strict Frege implementation for the tool.
+-- Language: Frege
+-- Extension: .fr
+-- Runtime: JVM
 
-main :: IO ()
+module Main where
+
+import Prelude hiding (map, filter, foldl, foldr, concat, replicate, zipWith, zip, take, drop, reverse, length, sum, product, and, or, any, all, sequence)
+import Control.Monad (return, (>>), (>=>), liftM, join)
+import System (getArgs, getProgName)
+
+-- | Primary execution entry point for the Frege tool.
 main = do
-    args <- getArgs
-    putStrLn "Frege Tool Initialized Successfully."
-    putStrLn "Ready for Frege execution."
-    if null args
-        then processDefault
-        else processArgs args
-
-processDefault :: IO ()
-processDefault = do
-    putStrLn "No arguments provided. Running default Frege operations."
-    -- Example Frege functional operations
-    let squared = map (^2) [1..10]
-    printSquared = mapM_ putStrLn . map show $ squared
-    printSquared
-
-processArgs :: [String] -> IO ()
-processArgs args = do
-    putStrLn $ "Processing arguments: " ++ show args
-    -- Placeholder for Frege-specific logic
-    return ()
+  args <- getArgs
+  progName <- getProgName
+  putStrLn $ "Running Frege Tool: " ++ progName
+  putStrLn $ "Arguments provided: " ++ show args
+  putStrLn "Environment initialized successfully."
+  putStrLn "Ready for functional processing."
+  return ()

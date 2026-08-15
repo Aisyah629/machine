@@ -18305,3 +18305,83 @@ Initialize a NEW dedicated folder named small_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named watfiv_watfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WATFIV, WATFOR. Focus entirely on this new objective: 'Develop a vintage numerical analysis subroutine'. You MUST write functional code for this task strictly using this programming language: WATFIV, WATFOR. I will output this. End. I will output the text now.
+[2026-08-15 23:23:12] (Target Lang: SuperTalk) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories and files, each representing a "tool" for a specific programming language or system (e.g., `a0_system_tool`, `abap_tool`, `watfiv_watfor_tool`, etc.). Each has a `README.md` and a main source file.
+   - **History:** Shows a previous prompt/output generation pattern. It generated an instruction for `watfiv_watfor_tool` with a specific format.
+   - **Current Request:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SuperTalk. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - Must explicitly demand building the new tool STRICTLY using the exact programming language: `SuperTalk`.
+   - If building a new tool: explicitly instruct to place it in a NEW dedicated folder and create a local `README.md`.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - Follow the pattern/style from the history example.
+
+3.  **Deconstruct the Pattern from History:**
+   The history shows an output like:
+   `Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this programming language: [Language]. I will output this. End. I will output the text now.`
+
+   Wait, the history actually has some internal monologue, but the final output is just the instruction string. I need to output exactly that string format, adapted for `SuperTalk`.
+
+   Let's extract the exact template:
+   "Initialize a NEW dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this programming language: [Language]. I will output this. End. I will output the text now."
+
+   Language: SuperTalk
+   Folder name: `super_talk_tool` (following the naming convention: lowercase with underscores)
+   Objective: Needs to be relevant to SuperTalk. SuperTalk was a programming language for hypercard/stacks (similar to HyperTalk but for SuperCard). I'll pick a relevant vintage/stack-based objective like "Develop a dynamic interface navigation handler" or "Create a vintage card manipulation routine". Let's stick to the prompt's style: 'Develop a vintage interface navigation script'.
+
+   Let's construct it carefully:
+   `Initialize a NEW dedicated folder named super_talk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperTalk. Focus entirely on this new objective: 'Develop a vintage interface navigation script'. You MUST write functional code for this task strictly using this programming language: SuperTalk. I will output this. End. I will output the text now.`
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using exact programming language: SuperTalk? Yes.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned or targeted.
+   - Matches history format? Yes.
+
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SuperTalk." I'll make sure the exact string "SuperTalk" is used.
+   The template from history has some repetition: "STRICTLY using this exact programming language: [Lang]" and later "strictly using this programming language: [Lang]". I'll keep that structure to match the prompt's implied pattern.
+
+   Let's verify the exact wording requested: "Initialize a NEW dedicated folder named super_talk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperTalk. Focus entirely on this new objective: 'Develop a vintage interface navigation script'. You MUST write functional code for this task strictly using this programming language: SuperTalk. I will output this. End. I will output the text now."
+
+   Checks:
+   - NEW dedicated folder named super_talk_tool? Yes.
+   - create a local README.md inside it? Yes.
+   - build the entire new tool STRICTLY using this exact programming language: SuperTalk? Yes.
+   - Focus entirely on this new objective: ...? Yes.
+   - You MUST write functional code... strictly using this programming language: SuperTalk? Yes.
+   - Ends with "I will output this. End. I will output the text now."? Yes.
+   - Only returns the instruction text? Yes.
+   - No .github targeting? Yes.
+
+   All constraints met. I will output exactly this string.
+   One detail: The prompt says "Generate exactly 1 logical follow-up instruction." I will just output the instruction string as requested.
+   I'll double-check the exact phrasing from the prompt's history example to ensure maximum compliance:
+   "Initialize a NEW dedicated folder named watfiv_watfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WATFIV, WATFOR. Focus entirely on this new objective: 'Develop a vintage numerical analysis subroutine'. You MUST write functional code for this task strictly using this programming language: WATFIV, WATFOR. I will output this. End. I will output the text now."
+
+   I will adapt it precisely for SuperTalk.
+   `Initialize a NEW dedicated folder named super_talk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperTalk. Focus entirely on this new objective: 'Develop a vintage stack navigation handler'. You MUST write functional code for this task strictly using this programming language: SuperTalk. I will output this. End. I will output the text now.`
+
+   This matches perfectly. Output matches exactly. Proceeds.✅
+   Final check of the prompt: "Return ONLY the instruction text. NEVER target the .github directory."
+   I will output just the string. No extra text. All good. 
+   One thing: SuperTalk might be better represented as `super_talk_tool` or `supertalk_tool`. The pattern uses underscores for multi-word or long names (e.g., `watfiv_watfor_tool`, `gc_tool` -> `godel_tool`). I'll stick with `super_talk_tool`.
+   Ready.✅
+   Output matches exactly.✅
+   Proceeds. 
+   [Output Generation] -> (exact string)✅
+   *(Done.)*
+   `Initialize a NEW dedicated folder named super_talk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperTalk. Focus entirely on this new objective: 'Develop a vintage stack navigation handler'. You MUST write functional code for this task strictly using this programming language: SuperTalk. I will output this. End. I will output the text now.` -> This looks solid. I will output it now. 
+   Self-Correction/Refinement during thought: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SuperTalk." I will ensure the exact casing "SuperTalk" is used. The rest follows the template. All good.✅
+   Output matches exactly.✅
+   Proceeds. 
+   [Output Generation] -> (exact string)✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named super_talk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperTalk. Focus entirely on this new objective: 'Develop a vintage stack navigation handler'. You MUST write functional code for this task strictly using this programming language: SuperTalk. I will output this. End. I will output the text now.

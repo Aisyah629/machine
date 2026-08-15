@@ -1,0 +1,13 @@
+TAL: TAL
+; This is a tool implemented strictly in TAL.
+; It demonstrates basic TAL syntax for initialization.
+
+BEGIN
+  MAIN: PROCEDURE OPTIONS(MAIN);
+
+  BEGIN
+    ; Initialize variables
+    PUT LIST('TAL Tool Initialized Successfully');
+    ; Add further logic here using TAL constructs
+  END MAIN;
+END TAL;

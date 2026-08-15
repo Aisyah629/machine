@@ -400,3 +400,5 @@ Training Machine
 - Created/Updated module: `./data_extraction_tool` (See `./data_extraction_tool/README.md` for details)
 
 - Created/Updated module: `trac_tool` (See `trac_tool/README.md` for details)
+
+- Created/Updated module: `ngl_tool` (See `ngl_tool/README.md` for details)

@@ -452,3 +452,5 @@ Training Machine
 - Created/Updated module: `spin_tool` (See `spin_tool/README.md` for details)
 
 - Created/Updated module: `alef_tool` (See `alef_tool/README.md` for details)
+
+- Created/Updated module: `algol58_tool` (See `algol58_tool/README.md` for details)

@@ -4813,3 +4813,42 @@ The output should be just the instruction string.
 </think>
 
 (Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement a distributed consensus protocol simulator.
+[2026-08-15 06:05:49] (Target Lang: Unicon) The user wants a follow-up instruction for an Autonomous AI workspace.
+The workspace contains various tool directories.
+The history shows a pattern: "Initialize a new dedicated folder named [language]_tool ... create a local README.md ... build the entire new tool STRICTLY using this exact programming language: [Language] to implement [Description]."
+The user provided a specific language for this turn: Unicon.
+The user wants exactly 1 logical follow-up instruction.
+The instruction must demand the new tool be built strictly using Unicon.
+It must instruct to place it in a NEW dedicated folder (implied naming convention: unicon_tool based on history).
+It must instruct to create a local README.md.
+The output must be ONLY the instruction text.
+Never target .github.
+
+Drafting the instruction:
+"(Target Lang: Unicon) Initialize a new dedicated folder named unicon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Unicon to implement a data mining and pattern matching engine."
+
+Checking constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand tool built strictly using Unicon? Yes.
+- Place in NEW dedicated folder? Yes (`unicon_tool`).
+- Create local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target .github? Yes.
+
+The description part "data mining and pattern matching engine" is a good fit for Unicon, known for string processing and pattern matching. I could also use something generic like "text processing utility" or "graph traversal application". The history examples used specific descriptions. I'll stick to a plausible description for Unicon.
+
+Result: `(Target Lang: Unicon) Initialize a new dedicated folder named unicon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Unicon to implement a graph traversal and pathfinding application.`
+
+Wait, looking at the previous output in the thought trace, the format seems to be `(Target Lang: X) ...`.
+I should output exactly that string.
+The prompt asks for "exactly 1 logical follow-up instruction".
+The output should be the text of that instruction.
+The user provided "Unicon" as the target language.
+The folder name should likely be `unicon_tool`.
+
+Final text: `(Target Lang: Unicon) Initialize a new dedicated folder named unicon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Unicon to implement a graph traversal and pathfinding application.`
+This matches the pattern.
+I will generate this text.
+</think>
+
+(Target Lang: Unicon) Initialize a new dedicated folder named unicon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Unicon to implement a graph traversal and pathfinding application.

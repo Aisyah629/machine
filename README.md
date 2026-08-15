@@ -134,3 +134,5 @@ Training Machine
 - Created/Updated module: `chill_tool` (See `chill_tool/README.md` for details)
 
 - Created/Updated module: `./ucsd_pascal_tool` (See `./ucsd_pascal_tool/README.md` for details)
+
+- Created/Updated module: `pdl_tool` (See `pdl_tool/README.md` for details)

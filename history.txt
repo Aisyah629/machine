@@ -16962,3 +16962,60 @@ Initialize a NEW dedicated folder named vsxu_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named vsxu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VSXu.
+[2026-08-15 22:04:32] (Target Lang: Sawzall) Thinking Process:
+1.  **Analyze User Input:**
+   - Input provides a list of workspace files (mostly directories ending in `_tool`, each containing a `README.md` and a main file, plus a `.git` and `.github` directory).
+   - History shows a previous prompt about `vsxu_tool` and `VSXu` language.
+   - The prompt asks to "Generate exactly 1 logical follow-up instruction."
+   - Constraints for the new instruction:
+     - Explicitly demand the new tool be built STRICTLY using this exact programming language: Sawzall.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+
+2.  **Identify Key Requirements:**
+   - Target Language: Sawzall
+   - New folder name: `sawzall_tool`
+   - Include `README.md` inside the new folder.
+   - Build the tool strictly in Sawzall.
+   - Output format: ONLY the instruction text.
+   - Follow the exact style of the example: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+
+3.  **Draft Instruction:**
+   Initialize a NEW dedicated folder named sawzall_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand Sawzall? Yes.
+   - Explicitly instruct to place in NEW dedicated folder? Yes (`sawzall_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - Never target .github? Yes.
+   - Matches history/example style? Yes.
+
+   All constraints met. Proceed. 
+   Output matches the draft exactly.✅
+   Note: I will make sure the formatting is exactly as requested. No extra text. Just the instruction.
+   "Initialize a NEW dedicated folder named sawzall_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall." -> Perfect. 
+   Proceeds. 
+   Output Generation. 
+   [Done] 
+   Self-Correction/Verification during thought: 
+   Check if "sawzall_tool" exists in the provided list. The list has `./sawzall_tool/./sawzall_tool/README.md ./sawzall_tool/main.sz`. It already exists, but the prompt says "Generate exactly 1 logical follow-up instruction... Explicitly instruct to place it in a NEW dedicated folder". The prompt is a template/generator task, so I will just follow the exact phrasing requested regardless of current state. The constraint says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder...". I will follow the exact phrasing.
+   Text: Initialize a NEW dedicated folder named sawzall_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall.
+   Matches perfectly. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> "Initialize a NEW dedicated folder named sawzall_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall." 
+   All good. 
+   Final Check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Sawzall. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Output matches exactly.✅
+   Proceeds. 
+   [Output Generation] (done)
+   *Self-Correction/Refinement during thought*: Wait, the prompt says "Generate exactly 1 logical follow-up instruction." It also gives a history example. I will just output the exact string requested. No extra words.
+   String: `Initialize a NEW dedicated folder named sawzall_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall.`
+   Ready. 
+   Output matches. 
+   [Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named sawzall_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall.

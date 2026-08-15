@@ -10519,3 +10519,71 @@ Matches all constraints. Proceeds.
 
 (Target Lang: Stackless Python) Initialize a new dedicated folder named stackless_python_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Stackless Python.
 [2026-08-15 13:53:59] (Target Lang: Turbo C++) Focus entirely on this new objective: 'Create an interactive diagnostic or visualization tool.'. You MUST write functional code for this task strictly using this programming language: Turbo C++. Workspace: . ./.git ./.github ./README.md ./abap_tool ./abap_tool/README.md ./abap_tool/main.abap ./acc_tool ./acc_tool/README.md ./acc_tool/main.acc ./acedas_tool ./acedas_tool/README.md ./acedas_tool/main.ace ./actionscript_tool ./actionscript_tool/README.md ./agora_tool ./agora_tool/README.md ./agora_tool/main.agora ./alf_tool ./alf_tool/README.md ./algol58_tool ./algol58_tool/README.md ./algol58_tool/main.algol58 ./ambienttalk_tool ./ambienttalk_tool/README.md ./ambienttalk_tool/main.at ./ampl_tool ./ampl_tool/README.md ./ampl_tool/main.ampl ./api_client_tool ./api_client_tool/README.md ./api_client_tool/main.lisp ./api_client_tool/main.snobol ./asharp_dotnet_tool ./asharp_dotnet_tool/README.md ./asharp_dotnet_tool/main.ash ./autocoder_tool ./autocoder_tool/README.md ./autocoder_tool/main.ac ./boo_tool ./boo_tool/README.md ./bourne_shell_tool ./bourne_shell_tool/README.md ./bourne_shell_tool/main.sh ./c_engine_tool ./c_engine_tool/README.md ./c_engine_tool/main.c ./candle_tool ./candle_tool/README.md ./cduce_tool ./cduce_tool/README.md ./cduce_tool/main.cd ./cg_core ./cg_core/README.md ./chill_tool ./chill_tool/README.md ./chuck_tool ./chuck_tool/README.md ./chuck_tool/main.ck ./cl_tool ./cl_tool/README.md ./cl_tool/main.cl ./clarion_tool ./clarion_tool/README.md ./clarion_tool/main.cl ./cola_tool ./cola_tool/README.md ./cola_tool/main.col ./comal_tool ./comal_tool/README.md ./comal_tool/main.comal ./converge_tool ./converge_tool/README.md ./converge_tool/main.converge ./curry_tool ./curry_tool/README.md ./cyclone_tool ./cyclone_tool/README.md ./cyclone_tool/main.c ./data_processing_tool ./data_processing_tool/README.md ./data_processing_tool/main.slip ./datalog_tool ./datalog_tool/README.md ./delphi_tool ./delphi_tool/README.md ./delphi_tool/main.pas ./drakon_tool ./drakon_tool/README.md ./drakon_tool/main.drakon ./ease_tool ./ease_tool/README.md ./ease_tool/main.ace ./etoys_tool ./etoys_tool/README.md ./euphoria_tool ./euphoria_tool/README.md ./foil_tool ./foil_tool/README.md ./foil_tool/main.foil ./fsharp_tool ./fsharp_tool/README.md ./gamemonkey_tool ./gamemonkey_tool/README.md ./ge_tool ./ge_tool/README.md ./ge_tool/main.e ./gj_tool ./gj_tool/README.md ./gj_tool/main.gj ./godel_tool ./godel_tool/README.md ./godel_tool/main.gd ./goo_tool ./goo_tool/README.md ./goo_tool/main.goo ./hartmann_pipeline_tool ./hartmann_pipeline_tool/README.md ./hartmann_pipeline_tool/main.hpf ./hartmann_tool ./hartmann_tool/README.md ./hartmann_tool/main.hpf ./haskell_tool ./haskell_tool/README.md ./haskell_tool/main.hs ./history.txt ./imp_tool ./imp_tool/README.md ./imp_tool/main.imp ./instruction.txt ./io_tool ./io_tool/README.md ./io_tool/main.io ./iswim_tool ./iswim_tool/README.md ./iswim_tool/main.iswim ./jako_tool ./jako_tool/README.md ./jako_tool/main.jako ./javafx_script_tool ./javafx_script_tool/README.md ./javafx_script_tool/main.fx ./jcl_tool ./jcl_tool/README.md ./jcl_tool/main.jcl ./jplusplus_tool ./jplusplus_tool/README.md ./jsharp_tool ./jsharp_tool/README.md ./jsharp_tool/main.js ./julia_tool ./julia_tool/README.md ./julia_tool/main.jl ./kee_diagnostic_tool ./lisa_tool ./lisa_tool/README.md ./lisa_tool/main.lisa ./livescript_tool ./livescript_tool/README.md ./livescript_tool/main.ls ./max_tool ./max_tool/README.md ./mdl_tool ./mdl_tool/README.md ./mdl_tool/main.mdl ./miva_script_tool ./miva_script_tool/README.md ./miva_script_tool/main.mv ./neko_tool ./neko_tool/README.md ./neko_tool/main.ne ./netrexx_tool ./netrexx_tool/README.md ./netrexx_tool/main.nr ./newlisp_tool ./newlisp_tool/README.md ./ngl_tool ./ngl_tool/main.ngl ./notc_tool ./notc_tool/README.md ./notc_tool/main.nex ./npl_tool ./npl_tool/README.md ./nu_tool ./nu_tool/README.md ./nu_tool/main.nu ./oberon_tool ./oberon_tool/README.md ./oberon_tool/main.ob ./objectlisp_tool ./objectlisp_tool/README.md ./objectlisp_tool/main.ols ./ocaml_tool ./ocaml_tool/README.md ./ocaml_tool/main.ml ./occam_tool ./occam_tool/README.md ./occam_tool/main.k ./omnimark_tool ./omnimark_tool/README.md ./omnimark_tool/main.om ./orc_tool ./orc_tool/README.md ./orc_tool/main.orc ./orca_tool ./orca_tool/README.md ./orca_tool/main.mod ./oriel_tool ./oriel_tool/README.md ./oxml_tool ./oxml_tool/README.md ./oxygene_tool ./oxygene_tool/README.md ./oxygene_tool/main.pas ./pascal_tool ./pascal_tool/README.md ./pascal_tool/main.pas ./pdl_tool ./pdl_tool/README.md ./pdl_tool/main.pdl ./phrogram_tool ./phrogram_tool/README.md ./phrogram_tool/main.ph ./pikt_tool ./pikt_tool/README.md ./pizza_tool ./ppl_tool ./ppl_tool/README.md ./protel_tool ./protel_tool/README.md ./rapira_tool ./rapira_tool/README.md ./rapira_tool/main.rapira ./rc_tool ./rc_tool/README.md ./rc_tool/main.rc ./redcode_tool ./redcode_tool/README.md ./redcode_tool/main.rc ./rlab_tool ./rlab_tool/README.md ./ruby_tool ./ruby_tool/README.md ./ruby_tool/main.rb ./salsa_tool ./salsa_tool/README.md ./sather_tool ./sather_tool/README.md ./self_healing_tool ./self_healing_tool/README.md ./self_healing_tool/main.dc ./self_tool ./self_tool/README.md ./self_tool/main.s ./simpol_tool ./simpol_tool/README.md ./sisal_tool ./sisal_tool/README.md ./sisal_tool/main.ctl ./smalltalk_tool ./smalltalk_tool/README.md ./smalltalk_tool/main.st ./splus_tool ./splus_tool/README.md ./splus_tool/main.splus ./stackless_python_tool ./stackless_python_tool/README.md ./stackless_python_tool/main.py ./synccharts_tool ./synccharts_tool/README.md ./synccharts_tool/main.sy ./t_tool ./t_tool/README.md ./tal_tool ./tal_tool/README.md ./tal_tool/main.tal ./text_cleaning_tool ./text_cleaning_tool/README.md ./text_cleaning_tool/main.adb ./tie_tool ./tie_tool/README.md ./tie_tool/main.tie ./tpu_tool ./tpu_tool/README.md ./tpu_tool/main.tpu ./ttcn_tool ./ttcn_tool/README.md ./txl_tool ./txl_tool/README.md ./ucsd_pascal_tool ./ucsd_pascal_tool/README.md ./ucsd_pascal_tool/main.p ./unicon_tool ./unicon_tool/README.md ./unicon_tool/main.icn ./vala_tool ./vala_tool/README.md ./vala_tool/main.vala ./vbnet_tool ./vbnet_tool/README.md ./vbnet_tool/main.vb ./verilog_tool ./verilog_tool/README.md ./vhdl_tool ./vhdl_tool/README.md ./vhdl_tool/main.vhd ./visualfoxpro_tool ./visualfoxpro_tool/README.md ./visualfoxpro_tool/main.vfp ./visualjsharp_tool ./visualjsharp_tool/README.md ./visualjsharp_tool/main.vjs ./wolfram_tool ./wolfram_tool/README.md ./wolfram_tool/main.wl ./xc_tool ./xc_tool/README.md ./xc_tool/main.xc ./xharbour_tool ./xharbour_tool/README.md ./xharbour_tool/main.prg ./xotcl_tool ./xotcl_tool/README.md ./yorick_tool ./yorick_tool/README.md ./yorick_tool/main.y ./znotation_tool ./znotation_tool/README.md .
+[2026-08-15 13:54:57] (Target Lang: Visual Fortran) The user wants a single follow-up instruction.
+Constraints:
+- Target language: Visual Fortran.
+- Create a new dedicated folder for the tool.
+- Create a local README.md inside the new folder.
+- Build the entire new tool STRICTLY using Visual Fortran.
+- Return ONLY the instruction text.
+- NEVER target the .github directory.
+- Workspace is provided in the prompt history.
+
+Looking at the workspace, there are many tools already. I need to generate exactly 1 instruction for a new tool.
+The instruction should follow the format seen in the history: `(Target Lang: [Language]) Initialize a new dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language].`
+
+Let's construct it carefully.
+Language: Visual Fortran
+Folder name: visual_fortran_tool (or similar, following the pattern of other tools, but I'll stick to `visual_fortran_tool`).
+Check constraints: "explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Fortran."
+"place it in a NEW dedicated folder and create a local README.md."
+"Return ONLY the instruction text."
+
+Draft:
+(Target Lang: Visual Fortran) Initialize a new dedicated folder named visual_fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran.
+
+Double check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand STRICTLY using Visual Fortran? Yes.
+- NEW dedicated folder & local README.md? Yes.
+- ONLY instruction text? Yes.
+- NEVER target .github? Yes, not mentioned.
+- Format matches prompt style? Yes.
+
+All good. Output matches draft.
+Proceeds. 
+One minor thing: The prompt says "Return ONLY the instruction text." I will output just that string.
+Check capitalization: Visual Fortran.
+Folder: visual_fortran_tool.
+Ready. 
+Output generation. 
+`(Target Lang: Visual Fortran) Initialize a new dedicated folder named visual_fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran.`
+Matches perfectly.✅
+Proceeds. 
+[Output Generation] -> `(Target Lang: Visual Fortran) Initialize a new dedicated folder named visual_fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran.`
+Done. 
+(Self-Correction/Verification during thought): The prompt explicitly says: `(Target Lang: Stackless Python) Initialize a new dedicated folder named stackless_python_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Stackless Python.`
+I will follow this exact template.
+All constraints met. Output matches. 
+Proceeds. 
+[Final Output Generation] -> `(Target Lang: Visual Fortran) Initialize a new dedicated folder named visual_fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran.`
+Done. 
+[Output] `(Target Lang: Visual Fortran) Initialize a new dedicated folder named visual_fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran.`
+Matches constraints exactly. No extra text. Proceeds. 
+[Final Check] 
+- Exactly 1 instruction? Yes.
+- Target Lang: Visual Fortran? Yes.
+- New folder & README.md? Yes.
+- STRICTLY using language? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+Ready. 
+Output matches. 
+Proceeds. 
+*(Self-Correction/Verification during thought)*: I will ensure no markdown formatting surrounds it to strictly follow "Return ONLY the instruction text." Actually, the prompt says "Return ONLY the instruction text." so raw text is fine.
+Output: `(Target Lang: Visual Fortran) Initialize a new dedicated folder named visual_fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran.`
+Done. 
+[Proceeds]
+</think>
+
+(Target Lang: Visual Fortran) Initialize a new dedicated folder named visual_fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran.

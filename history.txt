@@ -8966,3 +8966,56 @@ Result: `(Target Lang: OmniMark) Initialize a new dedicated folder named omnimar
 </think>
 
 (Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.
+[2026-08-15 11:40:43] (Target Lang: Chef) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of existing tool directories (e.g., `./acedas_tool`, `./haskell_tool`, etc.) and files. I notice `./haskell_tool` already exists in the workspace list.
+   - **History:** Contains a previous instruction/output that matches the format requested: `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.`
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Chef. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: Chef.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Format should match the pattern from history: `(Target Lang: <Language>) Initialize a new dedicated folder named <folder_name> in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: <Language>.`
+
+3.  **Check Existing Workspace:**
+   - The workspace list includes `./chef_tool`? Let's scan the list... I don't see `chef_tool` explicitly listed, but I see many others. Actually, the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". I'll follow the exact phrasing requested regardless of whether it exists or not, as the prompt gives a template pattern.
+   - Wait, looking at the history, the format is very specific: `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.`
+   - I will adapt this to Chef.
+
+4.  **Draft Generation:**
+   `(Target Lang: Chef) Initialize a new dedicated folder named chef_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Chef.`
+
+5.  **Verify Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands built STRICTLY using Chef? Yes.
+   - Instructs to place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - Never target .github? Yes, it doesn't mention it.
+   - Matches the exact requested format/pattern? Yes.
+
+   All constraints met. Output matches exactly. Proceed. 
+   One minor check: The prompt says "Return ONLY the instruction text." I will output just the drafted string. No extra text.✅
+   Draft: `(Target Lang: Chef) Initialize a new dedicated folder named chef_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Chef.`
+   Ready.✅
+   Output matches constraint. Proceeds. 
+   [Output Generation] -> `(Target Lang: Chef) Initialize a new dedicated folder named chef_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Chef.`
+   (Self-Correction/Verification during thought): The prompt history shows a very specific structure. I will strictly follow it. All good.✅
+   Output matches.✅
+   Proceeds.✅
+   [Final Check]: The prompt says "Return ONLY the instruction text." I will output exactly that. No markdown, no extra words.
+   `(Target Lang: Chef) Initialize a new dedicated folder named chef_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Chef.` -> Matches perfectly.✅
+   Done. 
+   Output Generation. 
+   [Output] `(Target Lang: Chef) Initialize a new dedicated folder named chef_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Chef.` 
+   (Note: I'll make sure there's absolutely no extra text, as instructed.)✅
+   Proceeds.✅
+   [Final Output Generation] -> `(Target Lang: Chef) Initialize a new dedicated folder named chef_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Chef.`✅
+   All constraints satisfied. Output is ready.✅
+   *(Done.)*
+</think>
+
+(Target Lang: Chef) Initialize a new dedicated folder named chef_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Chef.

@@ -4543,3 +4543,31 @@ This matches all constraints.
 </think>
 
 (Target Lang: Max) Initialize a new dedicated folder named max_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Max to implement a symbolic computation tool.
+[2026-08-15 05:48:02] (Target Lang: Verilog) The user wants a follow-up instruction based on the provided history.
+The history shows a series of file paths, mostly consisting of tool directories and README files.
+The latest entry is a generated instruction about `max_tool`.
+The prompt asks for a follow-up instruction for `Verilog`.
+The instruction must:
+1. Start with `(Target Lang: Verilog)`.
+2. Instruct to initialize a new dedicated folder named `verilog_tool` (following the pattern of `language_tool`).
+3. Instruct to create a local `README.md` inside it.
+4. Instruct to build the entire new tool STRICTLY using the language `Verilog`.
+5. The purpose should be somewhat generic or consistent with previous patterns, e.g., "hardware description tool" or "digital design tool".
+6. Return ONLY the instruction text.
+7. Never target `.github`.
+
+Drafting the instruction:
+`(Target Lang: Verilog) Initialize a new dedicated folder named verilog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Verilog to implement a digital design tool.`
+
+Check constraints:
+- `Verilog` language? Yes.
+- New folder? Yes.
+- `README.md`? Yes.
+- `STRICTLY`? Yes.
+- Only instruction text? Yes.
+- No `.github`? Yes.
+
+Result looks good.
+</think>
+
+(Target Lang: Verilog) Initialize a new dedicated folder named verilog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Verilog to implement a digital design tool.

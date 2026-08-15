@@ -10669,3 +10669,52 @@ Done.
 </think>
 
 (Target Lang: SA-C) Initialize a new dedicated folder named sac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SA-C.
+[2026-08-15 14:03:55] (Target Lang: RAPID) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of existing tool directories (e.g., `abap_tool`, `acc_tool`, etc.)
+   - **History:** Shows a previous interaction where the AI generated an instruction for `SA-C`. The output matches the format: `(Target Lang: SA-C) Initialize a new dedicated folder named sac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SA-C.`
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: RAPID. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using `RAPID`.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - Format should match the history/example: `(Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID.`
+
+3.  **Formulate Instruction:**
+   - Target language: RAPID
+   - Folder name: `rapid_tool` (following the pattern `_tool`)
+   - Requirements: new dedicated folder, local README.md, build strictly using RAPID.
+   - Structure: `(Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID.`
+
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands strictly using RAPID? Yes.
+   - Explicitly instructs new folder & README.md? Yes.
+   - Returns ONLY instruction text? Yes.
+   - Never targets .github? Yes.
+   - Matches format? Yes.
+
+   All constraints met. I will output exactly the formulated string. No extra text, no markdown. Just the raw instruction as requested.
+   One minor thing: The prompt says "Return ONLY the instruction text." I will ensure no markdown formatting surrounds it, as per the history's self-correction note, though the prompt itself doesn't explicitly forbid markdown, it's safer to just output raw text.
+
+   Final string: `(Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID.`
+
+   Proceeds.✅
+   Output matches exactly.✅
+   Ready. 
+   Output generation. 
+   [Self-Correction/Verification during thought]: I'll double-check the exact wording from the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: RAPID. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   The formulated string matches all requirements perfectly. I will output it now. 
+   Output: `(Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID.`✅
+   All good. 
+   Proceeds. 
+   [Output Generation] -> `(Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID.`
+   *(Done.)*
+</think>
+
+(Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID.

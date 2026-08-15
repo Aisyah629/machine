@@ -206,3 +206,5 @@ Training Machine
 - Created/Updated module: `algol58_tool` (See `algol58_tool/README.md` for details)
 
 - Created/Updated module: `salsa_tool` (See `salsa_tool/README.md` for details)
+
+- Created/Updated module: `godel_tool` (See `godel_tool/README.md` for details)

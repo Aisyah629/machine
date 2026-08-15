@@ -1,0 +1,15 @@
+DEFINE nial_program
+
+FUNCTIONS
+    process_data INPUT x
+        RESULT y
+        y := SORT x
+        y := SUM y
+        RETURN y
+    END
+
+BEGIN
+    data := 1 2 3 4 5
+    result := process_data data
+    PRINT "Processed Result:" result
+END

@@ -12383,3 +12383,46 @@ Proceeds.
 </think>
 
 Initialize a new dedicated folder named maxscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript.
+[2026-08-15 15:59:25] (Target Lang: ML) The user wants me to generate a single follow-up instruction.
+The instruction must:
+1. Explicitly demand building a new tool strictly using ML.
+2. Instruct to create a new dedicated folder.
+3. Instruct to create a local README.md inside it.
+4. Return ONLY the instruction text.
+5. Never target the .github directory.
+
+Constraints from the prompt:
+- Generate exactly 1 logical follow-up instruction.
+- Explicitly demand ML.
+- If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+- Return ONLY the instruction text.
+- NEVER target the .github directory.
+
+Draft instruction:
+Initialize a new dedicated folder named ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ML.
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demands ML? Yes.
+- NEW dedicated folder? Yes (`ml_tool`).
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- Never targets .github? Yes.
+- Returns ONLY the instruction text. Yes.
+
+The format matches the example provided in the prompt.
+"Initialize a new dedicated folder named ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ML."
+
+Ready. Output matches exactly.✅
+Proceeds. 
+Output Generation. 
+[Output] -> Initialize a new dedicated folder named ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ML.
+Done. 
+Self-Correction/Refinement during thought: I will ensure the casing of "ML" matches the prompt exactly. It does.
+All constraints satisfied. Output matches. Proceeds.
+[Output] Initialize a new dedicated folder named ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ML.
+Done. 
+Proceeds.✅
+</think>
+
+Initialize a new dedicated folder named ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ML.

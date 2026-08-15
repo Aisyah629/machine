@@ -142,3 +142,5 @@ Training Machine
 - Created/Updated module: `cduce_tool` (See `cduce_tool/README.md` for details)
 
 - Created/Updated module: `javafx_script_tool` (See `javafx_script_tool/README.md` for details)
+
+- Created/Updated module: `chuck_tool` (See `chuck_tool/README.md` for details)

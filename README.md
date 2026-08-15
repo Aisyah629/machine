@@ -60,3 +60,5 @@ Training Machine
 - Created/Updated module: `rc_tool` (See `rc_tool/README.md` for details)
 
 - Created/Updated module: `orca_tool` (See `orca_tool/README.md` for details)
+
+- Created/Updated module: `jsharp_tool` (See `jsharp_tool/README.md` for details)

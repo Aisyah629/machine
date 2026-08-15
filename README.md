@@ -244,3 +244,5 @@ Training Machine
 - Created/Updated module: `ampl_tool` (See `ampl_tool/README.md` for details)
 
 - Created/Updated module: `julia_tool` (See `julia_tool/README.md` for details)
+
+- Created/Updated module: `abap_tool` (See `abap_tool/README.md` for details)

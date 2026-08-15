@@ -1,0 +1,31 @@
+CODE
+    Text:=[12, 13];
+    CrLf := 9;
+    
+    func Text, CrLf;
+        external;
+    
+    proc Main();
+        code
+        Text("Initializing XPL0 Tool...");
+        Text(CrLf);
+        Text("Core utility module loaded successfully.");
+        Text(CrLf);
+        
+        ; Example: Demonstrate basic system operations
+        Text("Running diagnostic check... ");
+        Text("OK");
+        Text(CrLf);
+        
+        ; Example: Simple arithmetic validation
+        let val := 100 + 25;
+        Text("Validation sum: ");
+        Text(OutI(val));
+        Text(CrLf);
+        
+        Text("XPL0 Tool execution complete.");
+        Text(CrLf);
+        ; Return control to OS
+    end Main;
+    
+    Main();

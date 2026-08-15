@@ -394,3 +394,5 @@ Training Machine
 - Created/Updated module: `ibm_basic_assembly_tool` (See `ibm_basic_assembly_tool/README.md` for details)
 
 - Created/Updated module: `forth_tool` (See `forth_tool/README.md` for details)
+
+- Created/Updated module: `id_tool` (See `id_tool/README.md` for details)

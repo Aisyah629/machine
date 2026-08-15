@@ -1,0 +1,16 @@
+main = 
+{
+    // Example SequenceL code
+    // SequenceL is a functional programming language designed for parallel computation.
+    // This placeholder represents the entry point for the SequenceL tool.
+
+    // Define a simple function to demonstrate functionality
+    double = (x => 2 * x);
+    
+    // Apply the function to a list of numbers
+    numbers = [1, 2, 3, 4, 5];
+    result = double(numbers);
+    
+    // Return the result
+    result;
+}

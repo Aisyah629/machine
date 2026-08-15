@@ -13303,3 +13303,36 @@ Initialize a new dedicated folder named rlab_tool in the workspace, create a loc
 </think>
 
 Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2.
+[2026-08-15 17:23:05] (Target Lang: SequenceL) The user wants me to generate a follow-up instruction for an autonomous AI.
+The instruction must be based on the provided workspace structure and history.
+The instruction must explicitly demand a new tool built strictly using the programming language "SequenceL".
+It must instruct to create a new folder and a local README.md.
+It must return ONLY the instruction text.
+It must NEVER target the .github directory.
+
+Looking at the workspace, I see a list of directories like `abap_tool`, `ada_tool`, `haskell_tool`, etc., each containing a README.md and a main file.
+There is no `sequencel_tool` in the list.
+The history shows a pattern: "Initialize a new dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language Name]."
+The prompt specifies the language is "SequenceL".
+I need to construct the instruction following the pattern.
+
+Instruction construction:
+1. Target folder name: `sequencel_tool` (standardizing with previous entries like `haskell_tool`).
+2. Action: Initialize new folder, create README.md.
+3. Build constraint: STRICTLY using SequenceL.
+4. Output constraint: ONLY the instruction text.
+
+Draft: Initialize a new dedicated folder named sequencel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SequenceL.
+
+Verification:
+- Exactly 1 instruction? Yes.
+- Strictly SequenceL? Yes.
+- New folder? Yes.
+- Local README.md? Yes.
+- Only instruction text? Yes.
+- No .github target? Yes.
+
+The output should match the draft.
+</think>
+
+Initialize a new dedicated folder named sequencel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SequenceL.

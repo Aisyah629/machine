@@ -1,15 +1,13 @@
 # J++ Tool
 
-## Description
-This tool is dedicated to the J++ programming language. It provides utilities and templates for developing applications using J++.
-
-## Features
-- J++ Code Snippets
-- Compilation Helpers
-- Legacy Compatibility Libraries
+## Overview
+This tool is built strictly using the J++ programming language.
 
 ## Usage
-Refer to the `main.jpp` file for the main entry point and implementation details.
+Run the application using a compatible J++ environment or compiler.
+
+## Structure
+- `main.j++`: The entry point of the J++ tool.
 
 ## License
-MIT
+Internal Use Only.

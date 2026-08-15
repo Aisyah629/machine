@@ -384,3 +384,5 @@ Training Machine
 - Created/Updated module: `alice_tool` (See `alice_tool/README.md` for details)
 
 - Created/Updated module: `s2_tool` (See `s2_tool/README.md` for details)
+
+- Created/Updated module: `opa_tool` (See `opa_tool/README.md` for details)

@@ -6392,3 +6392,32 @@ The draft looks good.
 </think>
 
 (Target Lang: Not eXactly C) Initialize a new dedicated folder named notc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Not eXactly C to develop a low-level systems programming environment focused on manual memory management and hardware abstraction layers.
+[2026-08-15 09:26:10] (Target Lang: Visual Objects) The user wants me to generate a follow-up instruction based on the provided history and workspace.
+The instruction must demand the creation of a new tool built strictly using "Visual Objects".
+It must specify a new folder (e.g., `vo_tool` or similar) and a local `README.md`.
+The instruction should follow the pattern of the previous example: "(Target Lang: Language) Instruction text..."
+I must output only the instruction text.
+
+Constraints check:
+- Target Lang: Visual Objects
+- Strictly using: Visual Objects
+- New folder: yes (e.g., `vo_tool`)
+- Local README.md: yes
+- Only instruction text: yes
+- No .github: yes
+
+Drafting:
+(Target Lang: Visual Objects) Initialize a new dedicated folder named vo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects to develop a GUI-based enterprise application framework focused on rapid development and object-oriented design.
+
+Review against constraints:
+- "Target Lang: Visual Objects" - Included.
+- "STRICTLY using this exact programming language: Visual Objects" - Included.
+- "new dedicated folder" - Included.
+- "create a local README.md" - Included.
+- "Return ONLY the instruction text" - Yes.
+- "NEVER target the .github directory" - Checked, not included.
+
+The draft looks good.
+</think>
+
+(Target Lang: Visual Objects) Initialize a new dedicated folder named vo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects to develop a GUI-based enterprise application framework focused on rapid development and object-oriented design.

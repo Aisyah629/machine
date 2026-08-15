@@ -11027,3 +11027,52 @@ Done.
 </think>
 
 (Target Lang: Plankalkül) Initialize a new dedicated folder named plankalkul_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Plankalkül.
+[2026-08-15 14:34:11] (Target Lang: Lingo) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a file tree (which seems to be a list of existing tool directories, many named `*_tool` with a `README.md` and a `main.*` file, plus some history/constraints).
+   - **History:** Shows a pattern of generating a specific instruction string: `(Target Lang: <Language>) Initialize a new dedicated folder named <folder_name> in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: <Language>.`
+   - **Constraint:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lingo. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Key Requirements:**
+     - Generate exactly 1 instruction.
+     - Language: Lingo.
+     - Folder name: Must follow the pattern `<language>_tool` -> `lingo_tool`.
+     - Include: create local README.md inside it.
+     - Include: build strictly using Lingo.
+     - Return ONLY the instruction text.
+     - NEVER target .github.
+     - Match the format from the history.
+
+2.  **Deconstruct the Pattern:**
+   The exact string to generate is:
+   `(Target Lang: Lingo) Initialize a new dedicated folder named lingo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lingo.`
+
+3.  **Verify Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Language explicitly demanded? Yes, "Lingo".
+   - New dedicated folder? Yes, "lingo_tool".
+   - Local README.md? Yes.
+   - Build strictly using Lingo? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned, complies.
+   - Format matches history? Yes, exactly matches the template.
+
+4.  **Construct Output:**
+   `(Target Lang: Lingo) Initialize a new dedicated folder named lingo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lingo.`
+
+   Check against history format:
+   History shows: `(Target Lang: Plankalkül) Initialize a new dedicated folder named plankalkul_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Plankalkül.`
+   My constructed string matches perfectly, just replacing Plankalkül with Lingo and plankalkul_tool with lingo_tool.
+
+   All constraints met. Output matches request. Proceed.✅
+   Output matches exactly.✅ Proceeds.✅ Final Output Generation.✅
+   *(Done)*
+   Output: `(Target Lang: Lingo) Initialize a new dedicated folder named lingo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lingo.`
+   Self-Correction/Note during generation: I'll make sure there's absolutely no extra text, as instructed. Just the string.
+   Output matches exactly.✅
+   Proceeds.✅
+   Final Output Generation.✅
+   *(Done)*
+</think>
+
+(Target Lang: Lingo) Initialize a new dedicated folder named lingo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lingo.

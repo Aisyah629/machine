@@ -326,3 +326,5 @@ Training Machine
 - Created/Updated module: `bliss_tool` (See `bliss_tool/README.md` for details)
 
 - Created/Updated module: `felix_tool` (See `felix_tool/README.md` for details)
+
+- Created/Updated module: `./eiffel_tool` (See `./eiffel_tool/README.md` for details)

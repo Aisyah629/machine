@@ -278,3 +278,5 @@ Training Machine
 - Created/Updated module: `plankalkul_tool` (See `plankalkul_tool/README.md` for details)
 
 - Created/Updated module: `lingo_tool` (See `lingo_tool/README.md` for details)
+
+- Created/Updated module: `./jplusplus_tool` (See `./jplusplus_tool/README.md` for details)

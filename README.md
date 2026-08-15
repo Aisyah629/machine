@@ -328,3 +328,5 @@ Training Machine
 - Created/Updated module: `felix_tool` (See `felix_tool/README.md` for details)
 
 - Created/Updated module: `./eiffel_tool` (See `./eiffel_tool/README.md` for details)
+
+- Created/Updated module: `newlisp_tool` (See `newlisp_tool/README.md` for details)

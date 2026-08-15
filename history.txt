@@ -13242,3 +13242,64 @@ Final string: "Initialize a new dedicated folder named rlab_tool in the workspac
 </think>
 
 Initialize a new dedicated folder named rlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rlab.
+[2026-08-15 17:06:35] (Target Lang: ORCA/Modula-2) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace file structure and a history of an instruction pattern.
+   - **Pattern in History:** "Initialize a new dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language Name]."
+   - **Constraints:** 
+     - Follows pattern? Yes.
+     - Mentions dedicated folder? Yes.
+     - Mentions README.md? Yes.
+     - Explicitly demands strict use of "[Language Name]"? Yes.
+     - Returns ONLY instruction text? Yes.
+     - Does not target .github? Yes.
+   - **Current Task:** Generate exactly 1 logical follow-up instruction.
+   - **Mandatory Requirement:** MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ORCA/Modula-2.
+   - **Additional Requirements for New Tool:** Place it in a NEW dedicated folder, create a local README.md.
+   - **Output Constraint:** Return ONLY the instruction text. NEVER target .github.
+
+2.  **Identify Key Elements for the New Instruction:**
+   - Folder name: Needs to follow the pattern `[tool_name]_tool`. The language is "ORCA/Modula-2". A logical tool name could be "orca_tool".
+   - README: Must be created locally inside the folder.
+   - Language: "ORCA/Modula-2" (must be explicitly demanded as STRICT).
+   - Format: Match the exact pattern from the history.
+   - Output: ONLY the instruction string.
+
+3.  **Draft Construction:**
+   "Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2."
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands strict use of "ORCA/Modula-2"? Yes.
+   - Places it in a NEW dedicated folder? Yes (`orca_tool`).
+   - Creates a local README.md? Yes.
+   - Returns ONLY the instruction text? Yes.
+   - Does not target .github? Yes.
+   - Follows the exact pattern? Yes.
+
+   The draft matches all constraints perfectly.
+
+5.  **Final Output Generation:** (Just the string, as requested)
+   "Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2."✅
+   No extra text, exactly as specified.👇🏼
+   I will output exactly that string. 
+   Self-Correction/Refinement during thought: 
+   Wait, the prompt says "ORCA/Modula-2". I should keep it exactly as requested. The pattern uses `[Language Name]`. I'll use `ORCA/Modula-2`.
+   The prompt says: "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ORCA/Modula-2."
+   I will construct: "Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2."
+   Checks out. Output matches exactly.✅
+   Proceed. 
+   Output Generation. 
+   [Output matches the final string]✅
+   Note: I'll make sure there's absolutely no extra text, as instructed: "Return ONLY the instruction text." and "NEVER target the .github directory." (Already checked). All good. 
+   Output: Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2. 
+   [Done.] 
+   *Self-Correction/Verification during generation prep*: 
+   The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ORCA/Modula-2."
+   I will output exactly that sentence. No quotes. No extra text. Matches the history pattern perfectly. Ready. 
+   Output matches response.✅
+   [Proceeds]
+</think>
+
+Initialize a new dedicated folder named orca_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ORCA/Modula-2.

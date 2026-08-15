@@ -1,0 +1,112 @@
+// Metacard RSA Implementation
+// Implements RSA (Rivest–Shamir–Adleman) public-key cryptosystem
+
+namespace cryptographic_tool
+
+// Helper function: Compute (base^exp) % mod using modular exponentiation
+public function mod_exp(base, exp, mod) {
+    result = 1
+    base = base % mod
+    while (exp > 0) {
+        if (exp % 2 == 1) {
+            result = (result * base) % mod
+        }
+        exp = exp / 2
+        base = (base * base) % mod
+    }
+    return result
+}
+
+// Helper function: Extended Euclidean Algorithm to find modular inverse
+public function extended_gcd(a, b) {
+    if (a == 0) {
+        return (b, 0, 1)
+    }
+    (gcd, x1, y1) = extended_gcd(b % a, a)
+    x = y1 - (b / a) * x1
+    y = x1
+    return (gcd, x, y)
+}
+
+// Helper function: Generate random prime number in range [2, max_value]
+public function generate_random_prime(max_value) {
+    // Placeholder for random prime generation
+    // In a real implementation, this would use a robust prime testing algorithm
+    // For demonstration purposes, we assume a simple function exists
+    return random_prime_in_range(max_value)
+}
+
+// RSA Key Generation
+public function rsa_generate_keypair(prime1, prime2) {
+    n = prime1 * prime2
+    phi = (prime1 - 1) * (prime2 - 1)
+
+    // Choose public exponent e such that 1 < e < phi and gcd(e, phi) = 1
+    e = 65537 // Commonly used public exponent
+    gcd_result = gcd(e, phi)
+    if (gcd_result != 1) {
+        error "Public exponent e must be coprime with phi(n)"
+    }
+
+    // Calculate private exponent d using modular inverse
+    (_, d, _) = extended_gcd(e, phi)
+    d = d % phi
+    if (d < 0) {
+        d = d + phi
+    }
+
+    public_key = (e, n)
+    private_key = (d, n)
+    return (public_key, private_key)
+}
+
+// RSA Encryption
+public function rsa_encrypt(message, public_key) {
+    (e, n) = public_key
+    if (message >= n) {
+        error "Message must be smaller than n"
+    }
+    ciphertext = mod_exp(message, e, n)
+    return ciphertext
+}
+
+// RSA Decryption
+public function rsa_decrypt(ciphertext, private_key) {
+    (d, n) = private_key
+    plaintext = mod_exp(ciphertext, d, n)
+    return plaintext
+}
+
+// Main function to demonstrate RSA encryption and decryption
+public function main() {
+    // Example usage
+    p = 61 // Prime number 1
+    q = 53 // Prime number 2
+
+    // Generate key pair
+    (public_key, private_key) = rsa_generate_keypair(p, q)
+    println "Public Key: " + public_key
+    println "Private Key: " + private_key
+
+    // Message to encrypt
+    message = 7 // Example message
+    println "Original Message: " + message
+
+    // Encrypt the message
+    encrypted_message = rsa_encrypt(message, public_key)
+    println "Encrypted Message: " + encrypted_message
+
+    // Decrypt the message
+    decrypted_message = rsa_decrypt(encrypted_message, private_key)
+    println "Decrypted Message: " + decrypted_message
+
+    // Verify correctness
+    if (message == decrypted_message) {
+        println "RSA encryption and decryption successful."
+    } else {
+        error "Decryption did not match original message."
+    }
+}
+
+// Run the main function
+main()

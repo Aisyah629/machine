@@ -268,3 +268,5 @@ Training Machine
 - Created/Updated module: `plankalkul_tool` (See `plankalkul_tool/README.md` for details)
 
 - Created/Updated module: `rsl_tool` (See `rsl_tool/README.md` for details)
+
+- Created/Updated module: `./ratfor_tool` (See `./ratfor_tool/README.md` for details)

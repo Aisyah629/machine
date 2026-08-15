@@ -2765,3 +2765,82 @@ Final polish:
 </think>
 
 [2026-10-25 10:15:00] (Target Lang: PLANC) Initialize a new dedicated folder named planc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PLANC to implement a data processing utility.
+[2026-08-15 02:55:19] (Target Lang: Rapira) The user wants a follow-up instruction.
+The instruction must:
+1. Be exactly 1 logical follow-up.
+2. Explicitly demand the new tool be built STRICTLY using the programming language: Rapira.
+3. If building a new tool (which is implied by the context of adding new tools to the workspace), place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the `.github` directory.
+6. Match the output format shown in the prompt's context/timestamp style (though the user says "Return ONLY the instruction text", the example shows `[Timestamp] ...`). I need to check the "Output matches request" section carefully.
+   - Example output: `[2026-10-25 08:30:00] (Target Lang: Hartmann pipelines)...`
+   - The user says "Return ONLY the instruction text."
+   - Usually, in these simulations, the "instruction text" includes the metadata prefix because the system parses it. The prompt history shows inputs starting with timestamps.
+   - I will generate a timestamp. The previous one was likely around 10:15:00 based on the self-correction in the prompt block, or I can just use a sequential one. Let's use `[2026-10-25 10:20:00]`.
+   - Target language: Rapira.
+   - Folder: `rapira_tool`.
+   - Task: Build a tool. The language is Rapira. What does the tool do? The previous one was "data processing utility". I can choose a different task, like "code analysis" or "web scraping", or just generic "utility". The prompt doesn't specify the tool's function, just the language and structure. I'll pick a function like "code generation assistant" or "file manager" to keep it distinct. Let's go with "code refactoring assistant".
+
+Constraint check:
+- "STRICTLY using this exact programming language: Rapira" -> Included.
+- "NEW dedicated folder" -> `rapira_tool`.
+- "local README.md" -> Included.
+- "Return ONLY the instruction text" -> No conversational filler.
+- "NEVER target the .github directory" -> I won't mention `.github`.
+
+Drafting the instruction:
+`[2026-10-25 10:20:00] (Target Lang: Rapira) Initialize a new dedicated folder named rapira_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira to implement a code refactoring assistant.`
+
+Refining based on "logical follow-up":
+The previous instruction was for `planc_tool`. The user provided an example of `planc_tool` instruction in the text. The user asks for *one* follow-up.
+The instruction should follow the format: `[Timestamp] (Target Lang: Rapira) Initialize a new dedicated folder named rapira_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira to implement [Function].`
+
+I will use a timestamp slightly after the one in the prompt's thought block to maintain continuity. The prompt block ends with `10:15:00`. I'll use `10:20:00`.
+
+Final check of the text:
+`[2026-10-25 10:20:00] (Target Lang: Rapira) Initialize a new dedicated folder named rapira_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira to implement a syntax highlighting engine.`
+
+Wait, the prompt says "Return ONLY the instruction text."
+The user provided example output in the prompt text: `[2026-10-25 08:30:00] ...`.
+I will output the string starting with the timestamp.
+
+One more check on "Rapira". Rapira is a language? There's a "Rapira" language or maybe it's a typo for "Raptor"? The user says "Rapira". I must use "Rapira" exactly.
+Folder name: `rapira_tool`.
+Task: I can invent one. "network monitoring tool".
+
+Let's construct the final string.
+`[2026-10-25 10:25:00] (Target Lang: Rapira) Initialize a new dedicated folder named rapira_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira to implement a network monitoring tool.`
+
+The prompt asks for "logical follow-up". The previous one was PLANC data processing. Rapira is a good next step.
+The format must be strict.
+Output: `[2026-10-25 10:25:00] (Target Lang: Rapira) Initialize a new dedicated folder named rapira_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira to implement a network monitoring tool.`
+
+I will use the timestamp `10:25:00`.
+
+One detail: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+My draft does this.
+"NEVER target the .github directory."
+My draft does not mention `.github`.
+"Return ONLY the instruction text."
+I will return only the string.
+
+Result:
+`[2026-10-25 10:25:00] (Target Lang: Rapira) Initialize a new dedicated folder named rapira_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira to implement a network monitoring tool.`
+
+The prompt history shows `[2026-10-25 09:15:00]`. The thought block mentions `10:15:00`. I'll stick to the sequence. `10:25:00` is safe.
+
+Double check language name: Rapira.
+Double check folder name: rapira_tool.
+Double check constraint: "STRICTLY using this exact programming language: Rapira". Included.
+
+The user prompt ends with: "Return ONLY the instruction text. NEVER target the .github directory."
+So I just output the line.
+
+One thought: The prompt includes a long thought process ending with `10:15:00`. The user wants the *next* instruction.
+So `10:20:00` or `10:25:00` is appropriate.
+
+Final string: `[2026-10-25 10:25:00] (Target Lang: Rapira) Initialize a new dedicated folder named rapira_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira to implement a network monitoring tool.`
+This looks correct.
+</think>
+
+[2026-10-25 10:25:00] (Target Lang: Rapira) Initialize a new dedicated folder named rapira_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira to implement a network monitoring tool.

@@ -72,3 +72,5 @@ Training Machine
 - Created/Updated module: `pikt_tool` (See `pikt_tool/README.md` for details)
 
 - Created/Updated module: `hartmann_pipeline_tool` (See `hartmann_pipeline_tool/README.md` for details)
+
+- Created/Updated module: `rapira_tool` (See `rapira_tool/README.md` for details)

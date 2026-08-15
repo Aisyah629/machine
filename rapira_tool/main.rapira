@@ -1,0 +1,107 @@
+" Rapira Network Monitoring Tool
+
+import net;
+import sys;
+import io;
+
+// Global configuration for the monitoring tool
+global config = {
+  'host': 'localhost',
+  'port': 8080,
+  'interval': 5.0, // seconds
+  'timeout': 10.0  // seconds
+};
+
+// Class representing a network node
+node Node {
+  string ip;
+  int port;
+  bool is_online;
+  float latency;
+
+  constructor(ip: string, port: int) {
+    this.ip = ip;
+    this.port = port;
+    this.is_online = false;
+    this.latency = 0.0;
+  }
+
+  method ping() -> bool {
+    try {
+      var start_time = sys.now();
+      var socket = net.tcp_client(this.ip, this.port, config.timeout);
+      if socket.is_valid() {
+        socket.close();
+        var end_time = sys.now();
+        this.latency = (end_time - start_time) * 1000; // in milliseconds
+        this.is_online = true;
+        return true;
+      } else {
+        this.is_online = false;
+        return false;
+      }
+    } catch (net.Error e) {
+      io.print("Network Error: " + e.message);
+      this.is_online = false;
+      return false;
+    }
+  }
+}
+
+// Class representing the network monitor
+class NetworkMonitor {
+  private list<Node> nodes;
+
+  constructor() {
+    this.nodes = [];
+  }
+
+  method add_node(ip: string, port: int) {
+    var new_node = new Node(ip, port);
+    this.nodes.push(new_node);
+    io.print("Added node: " + ip + ":" + port);
+  }
+
+  method run_monitoring_cycle() {
+    io.print("\n--- Starting Monitoring Cycle ---");
+    for node in this.nodes {
+      var status = "Offline";
+      if node.ping() {
+        status = "Online";
+      }
+      io.print("Node " + node.ip + ":" + node.port + " is " + status + " (Latency: " + node.latency + "ms)");
+    }
+    io.print("--- End of Monitoring Cycle ---\n");
+  }
+
+  method get_status_summary() -> string {
+    var online_count = 0;
+    var total_count = this.nodes.length;
+    
+    for node in this.nodes {
+      if node.is_online {
+        online_count += 1;
+      }
+    }
+    
+    return "Status: " + online_count + "/" + total_count + " nodes online";
+  }
+}
+
+// Main execution logic
+function main() {
+  var monitor = new NetworkMonitor();
+  
+  // Add some default nodes for demonstration
+  monitor.add_node('127.0.0.1', 80);
+  monitor.add_node('127.0.0.1', 443);
+  
+  // Run the monitoring
+  monitor.run_monitoring_cycle();
+  
+  // Print summary
+  io.print(monitor.get_status_summary());
+}
+
+// Entry point
+main();

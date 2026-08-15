@@ -130,3 +130,5 @@ Training Machine
 - Created/Updated module: `orc_tool` (See `orc_tool/README.md` for details)
 
 - Created/Updated module: `agora_tool` (See `agora_tool/README.md` for details)
+
+- Created/Updated module: `chill_tool` (See `chill_tool/README.md` for details)

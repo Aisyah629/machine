@@ -1,0 +1,13 @@
+LET START()eval {
+define "OUTPUT" "!"
+
+// Write a simple Hello World program to demonstrate functionality
+let message = "Hello from BCPL!"
+
+// Output the message
+outputstr(message)
+outputln()
+
+// Exit
+exit(0)
+}

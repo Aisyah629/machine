@@ -16384,3 +16384,27 @@ Initialize a NEW dedicated folder named act_iii_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named natural_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NATURAL.
+[2026-08-15 21:34:45] (Target Lang: BCPL) The user wants a single instruction string.
+The instruction must:
+1. Ask to initialize a NEW folder named `bcpl_tool`.
+2. Create a local `README.md` inside it.
+3. Build the tool strictly using the language `BCPL`.
+4. Follow the format of previous examples.
+5. Return ONLY the instruction text.
+6. Not target `.github`.
+
+Draft:
+Initialize a NEW dedicated folder named bcpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BCPL.
+
+Check constraints:
+- New folder: `bcpl_tool`. Yes.
+- Local README: Yes.
+- Language: `BCPL`. Yes.
+- Format: Matches pattern. Yes.
+- Only text: Yes.
+- No `.github`: Yes.
+
+Output the draft.
+</think>
+
+Initialize a NEW dedicated folder named bcpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BCPL.

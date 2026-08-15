@@ -472,3 +472,5 @@ Training Machine
 - Created/Updated module: `pcastl_tool` (See `pcastl_tool/README.md` for details)
 
 - Created/Updated module: `epigram_tool` (See `epigram_tool/README.md` for details)
+
+- Created/Updated module: `synccharts_tool` (See `synccharts_tool/README.md` for details)

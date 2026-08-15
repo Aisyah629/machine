@@ -3655,3 +3655,41 @@ Matches.✅
 </think>
 
 (Target Lang: Visual J#) Initialize a new dedicated folder named visualjsharp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual J# to implement a functional object-oriented scripting utility.
+[2026-08-15 04:57:20] (Target Lang: Lisaac) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using "Lisaac".
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md inside the new folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The history shows a pattern of generating instructions for various tools (e.g., `visualjsharp_tool`, `livescript_tool`, etc.) based on specific languages. The prompt provides a workspace list showing many existing tools. The user wants a *new* instruction for "Lisaac".
+
+2.  **Drafting the Instruction:**
+    *   *Folder Name:* Following the pattern `language_tool`, it should be `lisaac_tool`.
+    *   *Action:* Initialize new folder, create README.md, build tool.
+    *   *Language:* Lisaac.
+    *   *Functionality:* The history examples often suggest a generic utility or specific functionality. Since no specific functionality is mandated beyond "logical follow-up", I can choose a functional description consistent with Lisaac (object-oriented language known for static typing and safety). A "functional object-oriented scripting utility" or "static analysis tool" fits well. Looking at the previous example in the history (`visualjsharp_tool` -> "functional object-oriented scripting utility"), I can reuse a similar descriptor or create a plausible one. "A static analysis and memory safety verification utility" seems appropriate for Lisaac, but the prompt doesn't restrict the utility type, just the language. I'll stick to a robust description.
+    *   *Draft 1:* `(Target Lang: Lisaac) Initialize a new dedicated folder named lisaac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lisaac to implement a robust static analysis and memory safety verification utility.`
+
+3.  **Refining against Constraints:**
+    *   *Constraint 1 (Language):* "STRICTLY using this exact programming language: Lisaac." -> Present.
+    *   *Constraint 2 (New Folder):* "Initialize a new dedicated folder named lisaac_tool" -> Present.
+    *   *Constraint 3 (README.md):* "create a local README.md inside it" -> Present.
+    *   *Constraint 4 (Only text):* The output should be just the string. -> Will ensure output format matches.
+    *   *Constraint 5 (No .github):* Not mentioned in draft. -> Satisfied.
+    *   *Structure:* The history shows `(Target Lang: Language) ...`. I should include this prefix for consistency with the "logical follow-up" style implied by the history examples.
+
+4.  **Final Polish:**
+    *   Result: `(Target Lang: Lisaac) Initialize a new dedicated folder named lisaac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lisaac to implement a robust static analysis and memory safety verification utility.`
+    *   *Check against "Logical Follow-up":* The workspace has `livescript_tool`. Adding `lisaac_tool` is logical in the context of a diverse set of tools.
+    *   *Check against "Return ONLY instruction text":* The output must be the string itself.
+
+5.  **Final Output Construction:**
+    *   `(Target Lang: Lisaac) Initialize a new dedicated folder named lisaac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lisaac to implement a robust static analysis and memory safety verification utility.`
+
+This matches all constraints.
+</think>
+
+(Target Lang: Lisaac) Initialize a new dedicated folder named lisaac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lisaac to implement a robust static analysis and memory safety verification utility.

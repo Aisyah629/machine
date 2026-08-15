@@ -1,0 +1,69 @@
+-- Main Lingo Script Entry Point
+-- This script strictly implements the tool using Lingo syntax
+
+-- Define a custom actor member class for state management
+on new me
+  myState = "initialized"
+  myValue = 0
+  myCounter = 0
+  return me
+end
+
+-- Initialize the tool context
+on initialize me
+  myState = "active"
+  myValue = 100
+  myCounter = 0
+  sprite(1).member = member("blank")
+  sprite(1).foreColor = rgb(0,0,255)
+  sprite(1).backColor = rgb(255,255,255)
+  sprite(1).rect = rect(50,50,200,150)
+  sprite(1).visible = TRUE
+  sprite(1).text = "Lingo Tool Active"
+  trace("Tool initialized successfully")
+end
+
+-- Execute core processing cycle
+on process me
+  if myState = "active" then
+    myCounter = myCounter + 1
+    myValue = myValue - (myCounter mod 7)
+    if myValue < 0 then myValue = 0
+    sprite(2).text = string("Counter: " & myCounter)
+    sprite(3).text = string("Value: " & myValue)
+    if myCounter = 50 then
+      myState = "complete"
+      trace("Processing complete")
+    end if
+  end if
+end
+
+-- Clean up resources and reset state
+on cleanup me
+  myState = "stopped"
+  sprite(1).visible = FALSE
+  sprite(2).visible = FALSE
+  sprite(3).visible = FALSE
+  trace("Tool cleaned up")
+end
+
+-- Main execution dispatcher
+on runTool me
+  initialize(me)
+  repeat while myState = "active"
+    process(me)
+    wait(0)
+  end repeat
+  cleanup(me)
+end
+
+-- Entry point for external calls
+on beginSprite me
+  runTool(me)
+end
+
+on endSprite me
+  if myState <> "stopped" then
+    cleanup(me)
+  end if
+end

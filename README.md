@@ -276,3 +276,5 @@ Training Machine
 - Created/Updated module: `chip8_tool` (See `chip8_tool/README.md` for details)
 
 - Created/Updated module: `plankalkul_tool` (See `plankalkul_tool/README.md` for details)
+
+- Created/Updated module: `lingo_tool` (See `lingo_tool/README.md` for details)

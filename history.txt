@@ -7728,3 +7728,61 @@ Output matches the draft.✅
 </think>
 
 (Target Lang: VHDL) Initialize a new dedicated folder named vhdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VHDL to enable precise digital circuit design, hardware simulation, FPGA development, and rigorous timing verification for robust system-on-chip architecture and hardware description modeling.
+[2026-08-15 10:28:41] (Target Lang: dBase) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a workspace listing containing many tool directories (e.g., `vhdl_tool`, `c_engine_tool`, `haskell_tool`, etc.).
+   - The history shows a pattern: The user wants me to generate exactly 1 logical follow-up instruction.
+   - The constraint is explicit: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: dBase."
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - The format from the history example is: `(Target Lang: [Language]) Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language] to enable [purpose/benefits related to the language].`
+
+2.  **Identify Key Constraints:**
+   - Language: dBase
+   - Folder name: `dbase_tool` (following the pattern of other tools)
+   - Must create a local `README.md` inside it
+   - Must explicitly demand building the tool STRICTLY using dBase
+   - Must return ONLY the instruction text
+   - Must NOT target `.github`
+   - Format should match the provided example/style
+
+3.  **Draft Construction:**
+   `(Target Lang: dBase) Initialize a new dedicated folder named dbase_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: dBase to enable robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions.`
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand new tool built STRICTLY using dBase? Yes.
+   - Instruct to place in NEW dedicated folder? Yes (`dbase_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches style? Yes.
+
+5.  **Refine (Self-Correction/Verification during drafting):**
+   - Check language: dBase (note capitalization as requested: "dBase")
+   - Check format: `(Target Lang: dBase) Initialize a new dedicated folder named dbase_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: dBase to enable...`
+   - Purpose clause: "to enable robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions." (Matches the style of the VHDL example)
+   - All constraints met. Output matches exactly. Proceeds.
+
+   Final string: `(Target Lang: dBase) Initialize a new dedicated folder named dbase_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: dBase to enable robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions.`
+
+   Ready. Output matches request.✅
+   Note: I will ensure the output is exactly the instruction text, nothing else. No markdown formatting around it unless necessary, but the prompt says "Return ONLY the instruction text." I'll output it exactly as drafted.✅
+   One minor check: The prompt says "dBase" with that exact casing. I'll keep it.
+   All good.👇🏼
+   Output generation. 
+   `(Target Lang: dBase) Initialize a new dedicated folder named dbase_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: dBase to enable robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions.`✅
+   Proceeds. 
+   [Output Generation] -> matches exactly.✅
+   Done. 
+   *Self-Correction/Note during thought*: Wait, the prompt history shows the exact output format. I will just output the string exactly. No extra text. All constraints verified.✅
+   Final Output Generation. 
+   `(Target Lang: dBase) Initialize a new dedicated folder named dbase_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: dBase to enable robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions.` -> Proceeds.✅
+   [Output] -> `(Target Lang: dBase) Initialize a new dedicated folder named dbase_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: dBase to enable robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions.`
+   Done. 
+   *(Proceeds to output)*
+</think>
+
+(Target Lang: dBase) Initialize a new dedicated folder named dbase_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: dBase to enable robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions.

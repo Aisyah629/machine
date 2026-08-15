@@ -9582,3 +9582,34 @@ All good.
 </think>
 
 (Target Lang: PPL) Initialize a new dedicated folder named ppl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PPL.
+[2026-08-15 12:14:48] (Target Lang: Legoscript) The user wants a single logical follow-up instruction.
+The instruction must demand building a new tool using the language "Legoscript".
+If building a new tool, it must instruct to place it in a NEW dedicated folder and create a local README.md.
+Return ONLY the instruction text.
+The format observed in the history is: `(Target Lang: <Language>) Initialize a new dedicated folder named <folder_name>_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: <Language>.`
+
+Target Language: Legoscript.
+Folder name: legoscript_tool.
+Folder path: ./legoscript_tool.
+Main file: main.legoscript (or similar, usually matches the folder name and lang).
+
+Draft: `(Target Lang: Legoscript) Initialize a new dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript.`
+
+Check constraints:
+- Explicitly demand language "Legoscript". Yes.
+- NEW dedicated folder `legoscript_tool`. Yes.
+- Local README.md. Yes.
+- ONLY instruction text. Yes.
+- No `.github`. Yes.
+
+Result matches the template.
+Output matches the requested format.
+Proceed. 
+Note: "Legoscript" might be a made-up or less common language, but I must follow the prompt exactly.
+The template string is consistent with previous examples.
+Final Output Generation. 
+`(Target Lang: Legoscript) Initialize a new dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript.`
+Matches perfectly.✅
+</think>
+
+(Target Lang: Legoscript) Initialize a new dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript.

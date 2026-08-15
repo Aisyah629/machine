@@ -7463,3 +7463,40 @@ Check constraints:
 </think>
 
 (Target Lang: Oxygene) Initialize a new dedicated folder named oxygene_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oxygene to enable advanced .NET development and cross-platform compilation.
+[2026-08-15 10:04:25] (Target Lang: T) The user wants me to generate a follow-up instruction for a specific programming language, denoted as "T".
+Looking at the provided workspace list, I see many tools already listed.
+I need to check if a tool for language "T" already exists.
+Scanning the list:
+`./t_tool` is not in the list.
+I see `./tie_tool`, `./tti_tool` is not there, `./txl_tool`, `./tcl_tool` is not there.
+Wait, let's look closer.
+`./t_tool` -> Not found.
+`./tcl_tool` -> Not found.
+`./ttcn_tool` -> Found.
+`./tie_tool` -> Found.
+`./txl_tool` -> Found.
+`./t_tool` -> Not found.
+The language "T" is likely referring to a language starting with T or named T.
+Common languages starting with T: Tcl, TypeScript, Talon, Turing, etc.
+However, the prompt asks for language "T".
+If "T" is the exact name, I should check for `t_tool`.
+It's not in the list.
+The instruction format requires: `(Target Lang: {Lang}) Initialize a new dedicated folder named {lang}_tool...`
+So I should generate: `(Target Lang: T) Initialize a new dedicated folder named t_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T to enable [Purpose].`
+I need to invent a purpose for "T". "T" could be Turing, or just a placeholder. I'll assume "T" refers to a hypothetical or less common language "T", or I can interpret "T" as a specific language if I knew one.
+Given the pattern, the user provides the language name. Here it is "T".
+I will use "T" as the language name.
+Purpose ideas: "template metaprogramming and generic system design" or "concise scripting and rapid prototyping".
+Let's use "template-based generic system design and type-safe programming".
+Instruction: `(Target Lang: T) Initialize a new dedicated folder named t_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T to enable template-based generic system design and type-safe programming.`
+Check constraints:
+- Return ONLY the instruction text.
+- NEVER target .github.
+- New folder `t_tool`.
+- Local `README.md`.
+- Explicit demand for language `T`.
+- Purpose phrase included.
+Result looks solid.
+</think>
+
+(Target Lang: T) Initialize a new dedicated folder named t_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T to enable template-based generic system design and type-safe programming.

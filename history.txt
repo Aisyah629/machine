@@ -2458,3 +2458,51 @@ Initialize a new dedicated folder named synccharts_tool in the workspace, create
 
 Initialize a new dedicated folder named synccharts_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SyncCharts to implement a data visualization utility.
 [2026-08-15 01:57:57] (Target Lang: PILOT) Create a new utility for data processing in a new folder. You MUST write it strictly in PILOT. Include a local README.md.
+[2026-08-15 02:00:42] (Target Lang: MIVA Script) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Target Language: MIVA Script.
+    *   Action: Build a new tool.
+    *   Constraints:
+        *   New dedicated folder.
+        *   Local README.md.
+        *   Strictly MIVA Script.
+        *   NO `.github` directory.
+        *   Output ONLY the instruction text.
+        *   Format: `[Timestamp] (Target Lang: MIVA Script) ...` based on the history pattern.
+
+2.  **Analyze History Pattern:**
+    *   The history shows a sequence of instructions.
+    *   Last entry: `[2026-08-15 01:57:57] (Target Lang: PILOT) Create a new utility for data processing in a new folder. You MUST write it strictly in PILOT. Include a local README.md.`
+    *   The user wants a follow-up instruction.
+    *   The user explicitly demands: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+3.  **Draft the Instruction:**
+    *   *Timestamp:* I need a timestamp. The history ends at `2026-08-15 01:57:57`. A logical follow-up would be a few seconds or minutes later. Let's use `2026-08-15 01:58:02` or just `2026-08-15 01:58:00`. Usually, these prompts expect a slightly incremented timestamp. Let's go with `2026-08-15 01:58:03`.
+    *   *Header:* `(Target Lang: MIVA Script)` is requested by the prompt structure ("Target Lang: PILOT" in history implies this format).
+    *   *Body:* "Create a new tool ... in a new folder ... strictly MIVA Script ... README.md."
+    *   *Refinement:* "Initialize a new dedicated folder named miva_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIVA Script to implement a web application helper."
+    *   *Check Constraints:*
+        *   1 instruction? Yes.
+        *   Strictly MIVA Script? Yes ("STRICTLY using this exact programming language: MIVA Script").
+        *   New dedicated folder? Yes ("new dedicated folder named miva_script_tool").
+        *   Local README.md? Yes ("create a local README.md inside it").
+        *   No .github? Yes (Folder name is `miva_script_tool`, no mention of `.github`).
+        *   Output only text? Yes.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   `[2026-08-15 01:58:03] (Target Lang: MIVA Script) Initialize a new dedicated folder named miva_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIVA Script to implement a web application helper.`
+
+5.  **Review against "Return ONLY the instruction text":**
+    *   The output should be just the string drafted above.
+    *   No markdown code blocks unless the user asked, but "Return ONLY the instruction text" usually means raw text. However, looking at the prompt structure, it's often better to output just the text line.
+    *   Result: `[2026-08-15 01:58:03] (Target Lang: MIVA Script) Initialize a new dedicated folder named miva_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIVA Script to implement a web application helper.`
+
+6.  **Final Output Construction:**
+    *   `[2026-08-15 01:58:03] (Target Lang: MIVA Script) Initialize a new dedicated folder named miva_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIVA Script to implement a web application helper.`
+
+This matches all constraints.
+</think>
+
+[2026-08-15 01:58:03] (Target Lang: MIVA Script) Initialize a new dedicated folder named miva_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIVA Script to implement a web application helper.

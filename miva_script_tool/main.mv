@@ -1,0 +1,47 @@
+<mvt:comment>
+ MIVA Script Web Application Helper Tool
+ This module provides utility functions for common MIVA Script operations.
+</mvt:comment>
+
+<mvt:comment>
+ Initialize global settings or load configuration
+</mvt:comment>
+<mvt:global name="gToolVersion" value="1.0.0" />
+
+<mvt:comment>
+ Helper function: Format a string for HTML output
+ Input: text to escape
+ Output: escaped text
+</mvt:comment>
+<mvt:module name="html_escape">
+ <mvt:assign name="l.settings:output" value="l.settings:text" />
+ <mvt:do file="g.Module_Directory" name="l.settings:output" value="l.settings:output.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')" />
+ <mvt:if expr="l.settings:output EQ ''">
+  <mvt:assign name="l.settings:output" value="''" />
+ </mvt:if>
+</mvt:module>
+
+<mvt:comment>
+ Helper function: Generate a unique ID for UI elements
+ Input: optional prefix
+ Output: generated ID string
+</mvt:comment>
+<mvt:module name="generate_id">
+ <mvt:assign name="l.settings:prefix" value="IF l.settings:prefix EQ '' THEN 'elem' ELSE l.settings:prefix" />
+ <mvt:assign name="l.settings:output" value="l.settings:prefix | '_' | time('u')" />
+</mvt:module>
+
+<mvt:comment>
+ Helper function: Check if a variable is defined and not empty
+ Input: variable name
+ Output: boolean (1 or 0)
+</mvt:comment>
+<mvt:module name="is_valid">
+ <mvt:assign name="l.settings:val" value="miva_&{l.settings:varname}" />
+ <mvt:assign name="l.settings:output" value="IF l.settings:val EQ '' THEN 0 ELSE 1" />
+</mvt:module>
+
+<mvt:comment>
+ Main execution context (optional, depending on integration)
+</mvt:comment>
+<mvt:do file="g.Module_Directory" name="l.settings:status" value="l.settings:status.write('MIVA Script Tool Initialized v' | gToolVersion)" />

@@ -7786,3 +7786,71 @@ Output matches the draft.✅
 </think>
 
 (Target Lang: dBase) Initialize a new dedicated folder named dbase_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: dBase to enable robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions.
+[2026-08-15 10:30:11] (Target Lang: o:XML) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of tool directories (e.g., `acedas_tool`, `actionscript_tool`, `agora_tool`, etc.) with their respective `README.md` and main files (e.g., `main.ace`, `main.agora`). The structure is consistent: `./<tool_name>_tool/README.md` and `./<tool_name>_tool/main.<ext>`.
+   - **History:** Shows a previous prompt/format: `(Target Lang: dBase) Initialize a new dedicated folder named dbase_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: dBase to enable robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions.`
+   - **Current Instruction:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: o:XML. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Key Constraints:**
+     - Exactly 1 logical follow-up instruction.
+     - Must explicitly demand the new tool be built STRICTLY using `o:XML`.
+     - Must instruct to place it in a NEW dedicated folder and create a local `README.md`.
+     - Return ONLY the instruction text.
+     - NEVER target `.github`.
+     - Format should match the historical style: `(Target Lang: <Lang>) Initialize...`
+
+2.  **Deconstruct Requirements:**
+   - Language: `o:XML`
+   - Folder name: Needs to be something logical, e.g., `oxml_tool` (following the pattern `.<tool>_tool`)
+   - Structure: `./oxml_tool/` containing `README.md` and `main.oxtml` or similar (the prompt says "o:XML", so I'll stick to `oxml_tool` for the folder, and maybe `main.oxm` or just follow the pattern). The prompt says "built STRICTLY using this exact programming language: o:XML".
+   - Purpose/Description: Needs to fit the pattern of enabling "robust database management, efficient data querying, rapid application development, and legacy system integration for reliable data-driven software solutions." I should adapt this slightly or keep the exact phrasing if it fits, but the prompt says "logical follow-up instruction", so I can adapt the benefits to match o:XML (e.g., structured data interchange, semantic web compatibility, etc.). However, to be safe and match the exact style, I'll keep the structure very similar but adjust the language name and maybe tweak the benefits slightly to be logical for o:XML, or just reuse the exact same benefit phrasing if it's allowed. The prompt says "logical follow-up instruction", so I'll make it sound professional and consistent.
+   - Constraint Check: "Return ONLY the instruction text." "NEVER target the .github directory."
+
+3.  **Draft Construction:**
+   `(Target Lang: o:XML) Initialize a new dedicated folder named oxml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: o:XML to enable structured data interchange, semantic web compatibility, rapid application development, and legacy system integration for reliable data-driven software solutions.`
+
+   Let's check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using `o:XML`? Yes.
+   - Place in NEW dedicated folder? Yes (`oxml_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches history style? Yes.
+
+   One minor adjustment: The prompt says "o:XML". I'll keep it exactly as `o:XML`. The folder name `oxml_tool` follows the pattern. I'll make sure the phrasing is tight.
+
+   Draft: `(Target Lang: o:XML) Initialize a new dedicated folder named oxml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: o:XML to enable structured data interchange, semantic web compatibility, rapid application development, and legacy system integration for reliable data-driven software solutions.`
+
+   Check against constraints:
+   - "Generate exactly 1 logical follow-up instruction." -> Check.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: o:XML." -> Check.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Check.
+   - "Return ONLY the instruction text." -> Check.
+   - "NEVER target the .github directory." -> Check.
+
+   The draft looks solid. I will output exactly that string. No extra text. No markdown formatting unless necessary, but the prompt says "Return ONLY the instruction text." I'll just output the raw string.
+
+   One thing: The prompt history shows the exact output format. I will output exactly the drafted string.
+   Let's verify the folder naming convention from the workspace: `./<name>_tool/`. So `oxml_tool` is perfect.
+   Language: `o:XML`
+   Text: `(Target Lang: o:XML) Initialize a new dedicated folder named oxml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: o:XML to enable structured data interchange, semantic web compatibility, rapid application development, and legacy system integration for reliable data-driven software solutions.`
+
+   All constraints met. Proceeds. 
+   Output matches exactly.✅
+   Ready. 
+   Output generation. 
+   *(Self-Correction/Refinement during thought)*: I should ensure the exact casing "o:XML" is preserved. The prompt says "o:XML". I'll keep it. The rest is standard. I will output just the string.
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: o:XML. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> `(Target Lang: o:XML) Initialize a new dedicated folder named oxml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: o:XML to enable structured data interchange, semantic web compatibility, rapid application development, and legacy system integration for reliable data-driven software solutions.`
+   Done. 
+   *Self-Correction/Note during thought*: Wait, the prompt history shows the exact output format. I will just output the string exactly. No extra text. All constraints verified.✅
+   Final Output Generation. -> Proceeds.✅
+   [Output] -> `(Target Lang: o:XML) Initialize a new dedicated folder named oxml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: o:XML to enable structured data interchange, semantic web compatibility, rapid application development, and legacy system integration for reliable data-driven software solutions.`
+   Done. *(Proceeds to output)*
+</think>
+
+(Target Lang: o:XML) Initialize a new dedicated folder named oxml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: o:XML to enable structured data interchange, semantic web compatibility, rapid application development, and legacy system integration for reliable data-driven software solutions.

@@ -9103,3 +9103,48 @@ Result: `(Target Lang: Goo) Initialize a new dedicated folder named goo_tool in 
 </think>
 
 (Target Lang: DRAKON) Initialize a new dedicated folder named drakon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DRAKON.
+[2026-08-15 11:46:34] (Target Lang: MillScript) The user wants me to generate a follow-up instruction based on the provided history and workspace list.
+The target language for the new instruction is "MillScript".
+I need to check if a tool for "MillScript" already exists in the workspace list.
+Looking through the list:
+... `./mdl_tool ...`, `./miva_script_tool ...`, `./netrexx_tool ...`, `./newlisp_tool ...`, `./ngl_tool ...`, `./notc_tool ...`
+I don't see `millscript_tool` or anything similar. The language is "MillScript".
+The pattern from the history is:
+`(Target Lang: <LANG_NAME>) Initialize a new dedicated folder named <folder_name> in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: <LANG_NAME>.`
+
+Steps:
+1. Identify the target language: MillScript.
+2. Determine the folder name: `millscript_tool`.
+3. Check existence: Not in list.
+4. Construct the instruction following the pattern.
+   - Start with `(Target Lang: MILLSCRIPT)`
+   - Command: `Initialize a new dedicated folder named millscript_tool in the workspace`
+   - Action: `create a local README.md inside it`
+   - Constraint: `and build the entire new tool STRICTLY using this exact programming language: MILLSCRIPT.`
+
+Final String:
+`(Target Lang: MILLSCRIPT) Initialize a new dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MILLSCRIPT.`
+
+Double check constraints:
+- Explicitly demand build using "MillScript" (or MILLSCRIPT in the parenthetical tag).
+- New dedicated folder `millscript_tool`.
+- Local README.md.
+- Return ONLY instruction text.
+- No `.github`.
+
+The output should be just the instruction text.
+
+One detail: The language name in the parentheses in the history examples uses uppercase (e.g., `DRAKON`, `CL`, `HASKELL`). So `MILLSCRIPT` seems appropriate for the tag, while the description uses "MillScript" or "MILLSCRIPT". The history example says `using this exact programming language: DRAKON.`. I will use `MILLSCRIPT` for consistency with the pattern, or `MillScript` if the prompt implies keeping the casing. The prompt says "STRICTLY using this exact programming language: MillScript". The history example `(Target Lang: DRAKON)` uses uppercase. The end of the sentence `using this exact programming language: DRAKON` uses uppercase. I will use `MILLSCRIPT` for the language name in the text to match the pattern strictly.
+
+Refined Text:
+`(Target Lang: MILLSCRIPT) Initialize a new dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MILLSCRIPT.`
+
+Wait, looking at the user prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MillScript."
+The pattern in history is `... language: DRAKON.`
+I will follow the pattern.
+
+Result:
+(Target Lang: MILLSCRIPT) Initialize a new dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MILLSCRIPT.
+</think>
+
+(Target Lang: MILLSCRIPT) Initialize a new dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MILLSCRIPT.

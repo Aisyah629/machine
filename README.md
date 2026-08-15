@@ -194,3 +194,5 @@ Training Machine
 - Created/Updated module: `ocaml_tool` (See `ocaml_tool/README.md` for details)
 
 - Created/Updated module: `occam_tool` (See `occam_tool/README.md` for details)
+
+- Created/Updated module: `phrogram_tool` (See `phrogram_tool/README.md` for details)

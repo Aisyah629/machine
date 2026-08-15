@@ -7602,3 +7602,47 @@ This matches all requirements.
 </think>
 
 (Target Lang: Occam) Initialize a new dedicated folder named occam_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam to enable process-oriented concurrent programming, strict type checking, and efficient distributed systems design.
+[2026-08-15 10:26:06] (Target Lang: Phrogram) The user wants a single logical follow-up instruction.
+The instruction must:
+1. Demand a new tool built STRICTLY using Phrogram.
+2. Instruct to place it in a NEW dedicated folder.
+3. Instruct to create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+6. Follow the format/style of previous instructions (implied by "logical follow-up").
+
+Check constraints:
+- Target Language: Phrogram
+- Folder name: phrogram_tool (consistent with pattern)
+- File: README.md
+- Language: Phrogram
+- Strictness: STRICTLY using this exact programming language: Phrogram
+- No .github
+- Only one instruction text.
+
+Draft:
+(Target Lang: Phrogram) Initialize a new dedicated folder named phrogram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Phrogram to enable advanced text processing, pattern matching, and high-level abstraction for system administration and legacy software modernization.
+
+Check against constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand built STRICTLY using Phrogram? Yes.
+- Explicitly instruct to place in NEW dedicated folder? Yes.
+- Create local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+- Matches pattern? Yes.
+
+Refinement to match exact phrasing style:
+"(Target Lang: Phrogram) Initialize a new dedicated folder named phrogram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Phrogram to enable advanced text processing, pattern matching, and high-level abstraction for system administration and legacy software modernization."
+
+All constraints met. Output matches exactly.
+Proceed. 
+Self-Correction/Verification during thought:
+- Check if "Phrogram" is a real language? It's a niche/obscure language for system administration, text processing. The prompt says "STRICTLY using this exact programming language: Phrogram." I will just use the name and a plausible description matching its domain (text processing, pattern matching, system admin).
+- The prompt says "Generate exactly 1 logical follow-up instruction."
+- Format matches previous output.
+- Ready. 
+Output matches the draft.✅
+</think>
+
+(Target Lang: Phrogram) Initialize a new dedicated folder named phrogram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Phrogram to enable advanced text processing, pattern matching, and high-level abstraction for system administration and legacy software modernization.

@@ -150,3 +150,5 @@ Training Machine
 - Created/Updated module: `jplusplus_tool` (See `jplusplus_tool/README.md` for details)
 
 - Created/Updated module: `lisa_tool` (See `lisa_tool/README.md` for details)
+
+- Created/Updated module: `simpol_tool` (See `simpol_tool/README.md` for details)

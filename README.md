@@ -186,3 +186,5 @@ Training Machine
 - Created/Updated module: `redcode_tool` (See `redcode_tool/README.md` for details)
 
 - Created/Updated module: `wolfram_tool` (See `wolfram_tool/README.md` for details)
+
+- Created/Updated module: `oxygene_tool` (See `oxygene_tool/README.md` for details)

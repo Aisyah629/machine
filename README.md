@@ -360,3 +360,5 @@ Training Machine
 - Created/Updated module: `pawn_tool` (See `pawn_tool/README.md` for details)
 
 - Created/Updated module: `fortress_tool` (See `fortress_tool/README.md` for details)
+
+- Created/Updated module: `plm_tool` (See `plm_tool/README.md` for details)

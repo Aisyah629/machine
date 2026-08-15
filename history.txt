@@ -12642,3 +12642,40 @@ Initialize a new dedicated folder named modelica_tool in the workspace, create a
 </think>
 
 Initialize a new dedicated folder named cl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CL.
+[2026-08-15 16:19:10] (Target Lang: ChucK) Thinking (simulated):
+1.  **Analyze the Request:**
+    *   Goal: Generate 1 logical follow-up instruction.
+    *   Constraint 1: Language must be STRICTLY "ChucK".
+    *   Constraint 2: New tool must be in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md in that folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target `.github`.
+    *   Context: History shows previous instructions followed this pattern exactly. Example: `Initialize a new dedicated folder named cl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CL.`
+
+2.  **Draft the Instruction:**
+    *   *Action:* Initialize a new dedicated folder.
+    *   *Folder Name:* `chuck_tool`.
+    *   *Location:* `in the workspace`.
+    *   *File:* `create a local README.md inside it`.
+    *   *Build:* `build the entire new tool STRICTLY using this exact programming language: ChucK`.
+
+3.  **Construct Sentence:**
+    *   "Initialize a new dedicated folder named chuck_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ChucK."
+
+4.  **Verify Constraints:**
+    *   1 instruction? Yes.
+    *   Language "ChucK"? Yes.
+    *   New folder? Yes.
+    *   README.md? Yes.
+    *   Only instruction text? Yes.
+    *   No `.github`? Yes.
+
+5.  **Final Output:**
+    *   `Initialize a new dedicated folder named chuck_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ChucK.`
+
+6.  **Result:**
+    *   Matches history format.
+    *   Ready.
+</think>
+
+Initialize a new dedicated folder named chuck_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ChucK.

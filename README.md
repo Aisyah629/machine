@@ -466,3 +466,5 @@ Training Machine
 - Created/Updated module: `./small_tool` (See `./small_tool/README.md` for details)
 
 - Created/Updated module: `watfiv_watfor_tool` (See `watfiv_watfor_tool/README.md` for details)
+
+- Created/Updated module: `super_talk_tool` (See `super_talk_tool/README.md` for details)

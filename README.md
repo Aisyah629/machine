@@ -222,3 +222,5 @@ Training Machine
 - Created/Updated module: `./goo_tool` (See `./goo_tool/README.md` for details)
 
 - Created/Updated module: `drakon_tool` (See `drakon_tool/README.md` for details)
+
+- Created/Updated module: `bourne_shell_tool` (See `bourne_shell_tool/README.md` for details)

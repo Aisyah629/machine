@@ -9148,3 +9148,63 @@ Result:
 </think>
 
 (Target Lang: MILLSCRIPT) Initialize a new dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MILLSCRIPT.
+[2026-08-15 11:48:10] (Target Lang: Bourne shell) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand the new tool be built STRICTLY using the exact programming language: Bourne shell.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Output Format: Return ONLY the instruction text. NEVER target the .github directory.
+    *   Context: The user provided a list of existing tools and a history showing a pattern for generating instructions.
+    *   Pattern Analysis from History:
+        *   History example: `(Target Lang: MILLSCRIPT) Initialize a new dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MILLSCRIPT.`
+        *   Structure: `(Target Lang: LANG_NAME) Instruction text...`
+        *   Language Name casing: The history shows `MILLSCRIPT` (uppercase) in the target tag and in the sentence "using this exact programming language: MILLSCRIPT". The user prompt mentions "MillScript" but the history pattern strongly suggests uppercase is the norm for consistency. I should follow the pattern `MILLSCRIPT`.
+        *   Target Language: Bourne shell.
+        *   Folder Name: Based on the pattern, if the language is "Bourne shell", the folder name might be `bourne_shell_tool` or `sh_tool` or `bourne_tool`. Looking at existing tools in the list: `bash_tool`, `ash_tool`, etc. The pattern usually derives the folder name from the tool name. The prompt asks for "Bourne shell". A reasonable folder name would be `bourne_shell_tool` or `sh_tool`. However, looking at `bash_tool` in the list, it suggests `bash_tool` exists. The instruction should probably use a distinct name. `bourne_shell_tool` seems safe and follows the `millscript_tool` pattern.
+        *   Instruction Text: "Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG_UPPER]."
+
+2.  **Draft the Instruction:**
+    *   Target Lang: `BOURNE_SHELL` or `BOURNE`? The language is "Bourne shell". Often abbreviated `sh`. However, the pattern `millscript_tool` suggests using the descriptive name. Let's look at `actionscript_tool`, `algol58_tool`. These use the full name. So `bourne_shell_tool` is appropriate.
+    *   Language in text: `BOURNE SHELL`? Or `BOURNE`? History: `DRAKON`. `MILLSCRIPT`. These are single words or acronyms. "Bourne shell" is two words. The pattern might treat it as `BOURNE` or `BOURNE_SHELL`. Given `millscript` became `MILLSCRIPT`, and `DRAKON` is one word, I need to decide how to format "Bourne shell".
+        *   Option A: `BOURNE SHELL`.
+        *   Option B: `BOURNE`.
+        *   Option C: `SH`.
+        *   The prompt asks for "Bourne shell". The pattern uses the exact language name. If the language is "Bourne shell", the tag might be `BOURNE_SHELL` or `BOURNE SHELL`. The history example `(Target Lang: DRAKON)` suggests the tag matches the case-insensitive version of the language. `MILLSCRIPT` is `millscript`. `DRAKON` is `drakon`.
+        *   So `BOURNE SHELL` seems correct for the text and tag. Or `BOURNE_SHELL`. Let's check `action_script_tool`? No, `actionscript_tool`. `algol58_tool`.
+        *   If I look at `actionscript_tool`, the language is ActionScript.
+        *   If I look at `jcl_tool`, language is JCL.
+        *   For Bourne shell, `bourne_shell_tool` is likely the folder.
+        *   Text: `... language: BOURNE SHELL.`
+        *   Tag: `(Target Lang: BOURNE SHELL)`.
+        *   Wait, the history example has `(Target Lang: MILLSCRIPT)`. `millscript` -> `MILLSCRIPT`.
+        *   `Bourne shell` -> `BOURNE SHELL`? Or `BOURNE_SHELL`? Usually, these prompts treat spaces as separators or underscores. The safest bet following the visual pattern of `MILLSCRIPT` is to uppercase the words. `BOURNE SHELL`.
+        *   Resulting Instruction: `(Target Lang: BOURNE SHELL) Initialize a new dedicated folder named bourne_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BOURNE SHELL.`
+
+3.  **Refine Folder Name:**
+    *   `bourne_shell_tool` vs `sh_tool`.
+    *   History: `millscript_tool`.
+    *   If the language is "MillScript", folder is `millscript_tool`.
+    *   If language is "Bourne shell", folder is `bourne_shell_tool`.
+    *   This seems consistent.
+
+4.  **Final Polish:**
+    *   Text: `(Target Lang: BOURNE SHELL) Initialize a new dedicated folder named bourne_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BOURNE SHELL.`
+    *   Check constraints:
+        *   Exactly 1 instruction? Yes.
+        *   Explicitly demand Bourne shell? Yes (`BOURNE SHELL`).
+        *   New dedicated folder? Yes (`bourne_shell_tool`).
+        *   Local README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   No `.github`? Yes.
+        *   Uppercase pattern? Yes (`BOURNE SHELL`).
+
+5.  **Output Generation:**
+    *   `(Target Lang: BOURNE SHELL) Initialize a new dedicated folder named bourne_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BOURNE SHELL.`
+
+    *   *Self-Correction on Language Name:* The prompt asks for "Bourne shell". Is the language name "Bourne shell" or "Sh"? Usually "Bourne shell". The history example uses `MILLSCRIPT`. `millscript` -> `MILLSCRIPT`. `Bourne shell` -> `BOURNE SHELL`. This looks robust.
+    *   *Folder Name Check:* `bourne_shell_tool`. Is there a `sh_tool`? The list has `ash_tool` (Ash). `bourne_shell_tool` is distinct. Good.
+    *   *Result matches pattern.*
+</think>
+
+(Target Lang: BOURNE SHELL) Initialize a new dedicated folder named bourne_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BOURNE SHELL.

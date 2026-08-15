@@ -8058,3 +8058,42 @@ Proceeds.
 </think>
 
 (Target Lang: TECO) Initialize a new dedicated folder named teco_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TECO to enable efficient text manipulation, macro-driven automation, system configuration management, and legacy mainframe integration for enterprise administration and historical computing preservation.
+[2026-08-15 10:48:18] (Target Lang: Net.Data) The user wants a follow-up instruction to generate a tool using the programming language "Net.Data".
+The instruction must:
+1. Demand the tool be built using Net.Data.
+2. Create a new dedicated folder (e.g., `netdata_tool`).
+3. Create a local `README.md` inside the folder.
+4. Return ONLY the instruction text.
+5. Never target the `.github` directory.
+
+Context: The workspace contains many tools like `acedas_tool`, `agora_tool`, `c_engine_tool`, etc. Each has a `README.md` and a `main.<ext>` file.
+The instruction should follow the pattern of previous instructions seen in the history (e.g., "Initialize a new dedicated folder named... create a local README.md... build the entire new tool STRICTLY using...").
+
+Language: Net.Data.
+Folder name: `netdata_tool`.
+File extension usually associated with Net.Data might be `.nd` or `.netdata`, but the prompt doesn't specify the extension, just the language. I'll assume a standard naming convention based on the pattern, perhaps `main.nd` or just focus on the language requirement. The prompt asks to build using the language, so I will specify the language.
+
+Purpose of Net.Data: Net.Data is a reporting tool for generating HTML/CGI reports from relational databases (often associated with IBM iSeries/AS/400). It's used for database reporting, web integration, and data presentation.
+
+Drafting the instruction:
+"(Target Lang: Net.Data) Initialize a new dedicated folder named netdata_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Net.Data to enable high-performance database reporting, CGI-driven web integration, structured data visualization, and legacy system data retrieval for enterprise analytics and dynamic content generation."
+
+Checking constraints:
+- 1 logical follow-up instruction? Yes.
+- Explicitly demand Net.Data? Yes.
+- New dedicated folder? Yes (`netdata_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target `.github`? Yes.
+
+Refinement: Ensure the tone matches the examples.
+Examples: "(Target Lang: ...)" followed by the instruction.
+The output should just be the text.
+
+Final String:
+(Target Lang: Net.Data) Initialize a new dedicated folder named netdata_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Net.Data to enable high-performance database reporting, CGI-driven web integration, structured data visualization, and legacy system data retrieval for enterprise analytics and dynamic content generation.
+
+Looks good.
+</think>
+
+(Target Lang: Net.Data) Initialize a new dedicated folder named netdata_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Net.Data to enable high-performance database reporting, CGI-driven web integration, structured data visualization, and legacy system data retrieval for enterprise analytics and dynamic content generation.

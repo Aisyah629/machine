@@ -110,3 +110,5 @@ Training Machine
 - Created/Updated module: `newlisp_tool` (See `newlisp_tool/README.md` for details)
 
 - Created/Updated module: `jcl_tool` (See `jcl_tool/README.md` for details)
+
+- Created/Updated module: `candle_tool` (See `candle_tool/README.md` for details)

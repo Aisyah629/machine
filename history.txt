@@ -4391,3 +4391,36 @@ Final String:
 </think>
 
 (Target Lang: JCL) Initialize a new dedicated folder named jcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL to implement a mainframe job control and batch processing utility.
+[2026-08-15 05:44:59] (Target Lang: Candle) The user wants a single logical follow-up instruction.
+Target language: Candle.
+Constraints:
+- Demand building a new tool strictly using Candle.
+- Instruct to place it in a NEW dedicated folder.
+- Instruct to create a local README.md inside it.
+- Return ONLY the instruction text.
+- NEVER target the .github directory.
+
+I need to construct an instruction that fits these constraints.
+Example structure: `(Target Lang: Candle) Initialize a new dedicated folder named candle_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Candle to implement [description].`
+
+Let's pick a plausible description for Candle. Candle is often used for distributed systems or simulation, but I'll just give a generic description like "a distributed system simulation and testing framework." or something similar. Actually, Candle is a language for specifying and verifying distributed algorithms. I'll stick to something generic like "a distributed algorithm verification tool."
+
+Draft: `(Target Lang: Candle) Initialize a new dedicated folder named candle_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Candle to implement a distributed algorithm verification tool.`
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand building strictly using Candle? Yes.
+- NEW dedicated folder? Yes.
+- Create local README.md? Yes.
+- Return ONLY the instruction text? Yes.
+- NEVER target .github? Yes.
+
+All constraints met. I will output exactly the drafted string.
+I'll format it exactly as requested.
+`(Target Lang: Candle) Initialize a new dedicated folder named candle_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Candle to implement a distributed algorithm verification tool.`
+Matches the pattern from the history. Done. 
+Proceeding. 
+Output matches exactly.✅
+</think>
+
+(Target Lang: Candle) Initialize a new dedicated folder named candle_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Candle to implement a distributed algorithm verification tool.

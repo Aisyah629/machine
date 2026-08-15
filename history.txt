@@ -8462,3 +8462,34 @@ No markdown. Just the string.
 </think>
 
 (Target Lang: Trac) Initialize a new dedicated folder named trac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Trac to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.
+[2026-08-15 11:07:46] (Target Lang: Constraint Handling Rules) The user wants a single follow-up instruction for a new tool.
+The programming language must be "Constraint Handling Rules".
+The folder must be named "constraint_handling_rules_tool" (based on the naming convention of other tools in the list, though the prompt says "place it in a NEW dedicated folder", usually implying a name derived from the language).
+The instruction must request creating a local README.md.
+The instruction must request building the tool STRICTLY using "Constraint Handling Rules".
+The output must be ONLY the instruction text.
+The language name in the prompt is "Constraint Handling Rules".
+Looking at the workspace list, folders seem to be named like `{language}_tool` or similar.
+For "Constraint Handling Rules", a likely folder name would be `chr_tool` or `constraint_handling_rules_tool`.
+Looking at the list, there isn't a `chr_tool`.
+I should use a descriptive name. `chr_tool` is common for CHR.
+Or `constraint_handling_rules_tool`.
+The prompt doesn't specify the folder name, just "NEW dedicated folder".
+I'll use `chr_tool` as it matches the brevity of others like `cl_tool`, `c_engine_tool`.
+Or `constraint_handling_rules_tool` to be explicit.
+Let's check the pattern in the history/output. The output is `(Target Lang: {Lang}) Initialize a new dedicated folder named {folder} in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: {Lang} to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+The language is "Constraint Handling Rules".
+I need to fill in the template.
+Target Lang: Constraint Handling Rules.
+Folder: `chr_tool` or `constraint_handling_rules_tool`.
+I'll use `chr_tool` for consistency with the list (e.g., `cl_tool`, `cg_core`).
+Wait, `chr_tool` is not in the list, so it's new.
+Instruction: `(Target Lang: Constraint Handling Rules) Initialize a new dedicated folder named chr_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Constraint Handling Rules to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+This matches the format.
+Result matches constraints.
+Output only the instruction.
+No markdown.
+Done.
+</think>
+
+(Target Lang: Constraint Handling Rules) Initialize a new dedicated folder named chr_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Constraint Handling Rules to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.

@@ -1,0 +1,29 @@
+; LYaPAS - A Simple Scripting Language
+; Main entry point for the LYaPAS tool
+
+PRINT("Welcome to LYaPAS Tool!\n")
+PRINT("This is a placeholder script demonstrating LYaPAS functionality.\n")
+
+; Example variable assignment
+SET x = 10
+SET y = 20
+
+; Basic arithmetic
+SET sum = x + y
+PRINT("Sum of x and y is: ")
+PRINT(sum)
+
+; Conditional statement
+IF sum > 15 THEN
+    PRINT("The sum is greater than 15.")
+ELSE
+    PRINT("The sum is not greater than 15.")
+END
+
+; Loop example
+FOR i FROM 1 TO 5 DO
+    PRINT("Iteration: ")
+    PRINT(i)
+END
+
+PRINT("LyPAS tool execution completed successfully.")

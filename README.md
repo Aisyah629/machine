@@ -432,3 +432,5 @@ Training Machine
 - Created/Updated module: `maya_tool` (See `maya_tool/README.md` for details)
 
 - Created/Updated module: `hla_tool` (See `hla_tool/README.md` for details)
+
+- Created/Updated module: `lyapas_tool` (See `lyapas_tool/README.md` for details)

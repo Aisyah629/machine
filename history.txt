@@ -16899,3 +16899,35 @@ Result: Initialize a NEW dedicated folder named hla_tool in the workspace, creat
 </think>
 
 Initialize a NEW dedicated folder named hla_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: High Level Assembly.
+[2026-08-15 22:02:50] (Target Lang: LYaPAS) The user wants a follow-up instruction based on the provided workspace history and context.
+The workspace contains many directories, each ending in `_tool`, representing different programming language tools.
+The history shows a pattern of generating instructions to create a new tool in a dedicated folder using a specific language.
+The current request asks to generate an instruction to build a new tool STRICTLY using the programming language "LYaPAS".
+The language is "LYaPAS".
+I need to follow the established format: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+The language name is "LYaPAS".
+The folder name should be descriptive. Looking at the list, `lisp_tool` exists, `lis_tool` exists. `lyapas_tool` seems appropriate.
+Let's check the constraints:
+- Output exactly 1 logical follow-up instruction.
+- Explicitly demand the tool be built STRICTLY using "LYaPAS".
+- Instruct to place it in a NEW dedicated folder.
+- Instruct to create a local README.md.
+- Return ONLY the instruction text.
+- NEVER target the `.github` directory.
+- Based on the pattern, the folder name should be `lyapas_tool`.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named lyapas_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LYaPAS."
+
+Checking against constraints:
+- "LYaPAS" included? Yes.
+- "NEW dedicated folder" included? Yes.
+- "README.md" included? Yes.
+- Only instruction text? Yes.
+- No `.github`? Yes.
+- Logical follow-up? Yes, consistent with history.
+
+Result matches the draft.
+</think>
+
+Initialize a NEW dedicated folder named lyapas_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LYaPAS.

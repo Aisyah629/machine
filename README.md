@@ -316,3 +316,5 @@ Training Machine
 - Created/Updated module: `xsb_tool` (See `xsb_tool/README.md` for details)
 
 - Created/Updated module: `tpu_simulator_tool` (See `tpu_simulator_tool/README.md` for details)
+
+- Created/Updated module: `ttm_tool` (See `ttm_tool/README.md` for details)

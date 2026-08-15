@@ -398,3 +398,5 @@ Training Machine
 - Created/Updated module: `id_tool` (See `id_tool/README.md` for details)
 
 - Created/Updated module: `./data_extraction_tool` (See `./data_extraction_tool/README.md` for details)
+
+- Created/Updated module: `trac_tool` (See `trac_tool/README.md` for details)

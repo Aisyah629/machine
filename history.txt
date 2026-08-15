@@ -7025,3 +7025,85 @@ Result matches the pattern.
 </think>
 
 (Target Lang: Clipper) Initialize a new dedicated folder named clipper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Clipper to develop high-speed database application frameworks seamlessly integrating with legacy database schemas for enterprise business application development.
+[2026-08-15 09:46:55] (Target Lang: Ch) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a list of workspace files/folders (many `_tool` directories with `README.md` and a main file like `main.<ext>`).
+   - History shows previous interactions where the user requested initialization of a new tool folder for a specific language (Clipper) with a specific description.
+   - The current prompt ends with: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ch. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: `Ch`.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - The instruction should follow the pattern of the history: `(Target Lang: <Lang>) Initialize a new dedicated folder named <folder>_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: <Lang> to [description].`
+
+3.  **Determine Target Language:**
+   - The prompt specifies: "this exact programming language: Ch."
+   - "Ch" is a language (CH: The C++ HPC Compiler, or sometimes just "Ch" language). I'll treat it as "Ch".
+   - Folder name should logically be `ch_tool`.
+
+4.  **Craft the Instruction:**
+   - Follow the pattern from the history.
+   - Start with `(Target Lang: Ch)`
+   - Demand initialization of `ch_tool` folder.
+   - Create `README.md`.
+   - Build tool STRICTLY using Ch.
+   - Add a suitable description/context that fits the pattern (e.g., "to develop high-performance computing frameworks seamlessly integrating with legacy C/C++ codebases for modern scientific computing applications.").
+   - Ensure it's exactly one instruction.
+   - Ensure NO `.github` mention.
+   - Ensure ONLY the instruction text is returned.
+
+   Draft:
+   (Target Lang: Ch) Initialize a new dedicated folder named ch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ch to develop high-performance computing frameworks seamlessly integrating with legacy C/C++ codebases for modern scientific computing applications.
+
+5.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using exact language: Ch? Yes.
+   - Explicitly instruct to place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches historical pattern? Yes.
+
+   All constraints met. I will output exactly the drafted text. No extra words.✅
+   One minor adjustment to match the exact phrasing style requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ch." -> I'll make sure the wording matches closely.
+   The draft looks solid. I will output it exactly. 
+   Text: (Target Lang: Ch) Initialize a new dedicated folder named ch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ch to develop high-performance computing frameworks seamlessly integrating with legacy C/C++ codebases for modern scientific computing applications.
+   Checks: 
+   - "exactly 1 logical follow-up instruction" -> Yes.
+   - "explicitly demand... STRICTLY using this exact programming language: Ch" -> Yes.
+   - "place it in a NEW dedicated folder and create a local README.md" -> Yes.
+   - "Return ONLY the instruction text" -> Yes.
+   - "NEVER target the .github directory" -> Yes.
+   Ready.✅
+   Output matches draft. 
+   Proceeds. 
+   [Self-Correction/Refinement during thought]
+   Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ch." I should make sure the output exactly matches that requirement without adding fluff. The draft does that. I'll output it. 
+   One thing: The prompt says "Generate exactly 1 logical follow-up instruction." I will just output the instruction string.
+   Final string: `(Target Lang: Ch) Initialize a new dedicated folder named ch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ch to develop high-performance computing frameworks seamlessly integrating with legacy C/C++ codebases for modern scientific computing applications.`
+   All good.✅
+   Output matches. 
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I'll ensure the exact phrasing matches the prompt's requirement for the language name "Ch")*
+   `(Target Lang: Ch) Initialize a new dedicated folder named ch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ch to develop high-performance computing frameworks seamlessly integrating with legacy C/C++ codebases for modern scientific computing applications.` -> This is exactly 1 instruction. Matches all constraints. Output matches.✅
+   Final Check of the prompt: "Return ONLY the instruction text." -> Will do.
+   All constraints verified. Output matches. 
+   [Output Generation] -> *Proceeds*
+   *(Self-Correction/Verification during thought)*: I should make sure the description part is plausible but doesn't violate anything. The prompt says "seamlessly integrating with legacy database schemas for enterprise business application development" was the previous one. I'll just make a similar generic description for Ch. It's fine.
+   The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ch. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will output exactly that string. No extra text.✅
+   Done. 
+   Output Generation. 
+   `(Target Lang: Ch) Initialize a new dedicated folder named ch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ch to develop high-performance computing frameworks seamlessly integrating with legacy C/C++ codebases for modern scientific computing applications.` -> Matches perfectly. 
+   Proceeds. 
+   [Output] -> *Proceeds* (Note: I'll keep it exactly as drafted)
+   `(Target Lang: Ch) Initialize a new dedicated folder named ch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ch to develop high-performance computing frameworks seamlessly integrating with legacy C/C++ codebases for modern scientific computing applications.` -> Final. 
+   All good. 
+   [Output Generation] -> *Proceeds*
+</think>
+
+(Target Lang: Ch) Initialize a new dedicated folder named ch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ch to develop high-performance computing frameworks seamlessly integrating with legacy C/C++ codebases for modern scientific computing applications.

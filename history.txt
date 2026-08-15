@@ -5222,3 +5222,38 @@ I will generate the string.
 </think>
 
 (Target Lang: Converge) Initialize a new dedicated folder named converge_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Converge to implement a parallel computation and distributed task framework.
+[2026-08-15 07:23:32] (Target Lang: CDuce) The user wants a follow-up instruction for an Autonomous AI.
+The context involves a workspace with many directories for different programming language tools.
+The prompt asks to generate a follow-up instruction.
+The instruction must:
+1. Demand creation of a new tool.
+2. Use the programming language "CDuce".
+3. Be placed in a NEW dedicated folder (likely `cduce_tool`).
+4. Create a local README.md.
+5. Build the tool strictly using CDuce.
+6. Describe the purpose (generic or relevant to CDuce, e.g., "formal specification and type system research").
+7. Format: `(Target Lang: LanguageName) Initialize a new dedicated folder named folder_name in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LanguageName to implement ...`
+8. Return ONLY the instruction text.
+9. Do not target .github.
+
+CDuce is a programming language for the manipulation of semi-structured data, often used in formal verification. A suitable description could be "formal data manipulation and type-safe processing workflows."
+
+Constructing the instruction:
+`Initialize a new dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce to implement a formal data processing and type-safe verification system.`
+
+Let's refine the description to sound a bit more natural in the template. The previous example used "structured algorithmic workflow and procedural documentation system." for PDL. For CDuce, "formal specification and type-driven data transformation" fits well.
+
+Resulting string: `(Target Lang: CDuce) Initialize a new dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce to implement a formal specification and type-driven data transformation system.`
+
+Double-check constraints:
+- 1 logical follow-up instruction? Yes.
+- Explicitly demand CDuce? Yes.
+- NEW dedicated folder? Yes (`cduce_tool`).
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+
+Final Output Generation.
+</think>
+
+(Target Lang: CDuce) Initialize a new dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce to implement a formal specification and type-driven data transformation system.

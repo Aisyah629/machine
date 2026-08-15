@@ -138,3 +138,5 @@ Training Machine
 - Created/Updated module: `pdl_tool` (See `pdl_tool/README.md` for details)
 
 - Created/Updated module: `converge_tool` (See `converge_tool/README.md` for details)
+
+- Created/Updated module: `cduce_tool` (See `cduce_tool/README.md` for details)

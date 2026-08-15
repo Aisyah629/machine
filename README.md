@@ -478,3 +478,5 @@ Training Machine
 - Created/Updated module: `clojure_tool` (See `clojure_tool/README.md` for details)
 
 - Created/Updated module: `text_cleaning_tool` (See `text_cleaning_tool/README.md` for details)
+
+- Created/Updated module: `executable_uml_tool` (See `executable_uml_tool/README.md` for details)

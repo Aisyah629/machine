@@ -4768,3 +4768,48 @@ The output should be just the instruction string.
 </think>
 
 (Target Lang: PROTEL) Initialize a new dedicated folder named protel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PROTEL to implement a schematic capture and routing utility.
+[2026-08-15 06:04:37] (Target Lang: QPL) Thinking Process:
+
+1.  **Deconstruct the User's Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Demand the new tool be built STRICTLY using the exact programming language: QPL.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a "History" snippet showing a previous interaction where a tool for "PROTEL" was generated. The pattern seems to be `(Target Lang: LANG) Initialize a new dedicated folder named lang_tool..., create a local README.md..., and build the entire new tool STRICTLY using this exact programming language: LANG...`.
+    *   Output Format: The user wants the output to be just the instruction string.
+
+2.  **Draft the Instruction:**
+    *   *Language:* QPL.
+    *   *Folder Name:* Based on the pattern `protel_tool`, the new folder should likely be `qpl_tool`.
+    *   *Action:* Initialize folder, create README.md, build tool.
+    *   *Functionality:* The previous one was "schematic capture and routing utility". A logical follow-up might be different, or I can keep the structure. The prompt doesn't specify the functionality of the QPL tool, just the language and folder constraints. However, "logical follow-up" implies it should fit the theme. The theme seems to be a collection of tools for various obscure languages. I should probably invent a plausible functionality or keep it generic but specific enough. Looking at the pattern `(Target Lang: PROTEL) Initialize...`, I should follow this structure.
+    *   *Drafting:* `(Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement [Functionality].`
+    *   *Refining Functionality:* Since the user didn't specify functionality, I should probably define one that sounds appropriate or just complete the template. The previous example had "schematic capture and routing utility". I'll pick something generic or distinct. Maybe "a logic simulation environment" or "a rapid application development framework". Let's go with something that sounds like a tool description. `(Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement a database query optimization engine.` Or better, just follow the syntax of the history example closely. The history example is the "gold standard" for the format.
+    *   *Final Text Construction:* `(Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement a high-performance data serialization library.` (I'll pick a plausible description).
+    *   *Check Constraints:*
+        *   QPL mentioned? Yes.
+        *   STRICTLY using QPL? Yes.
+        *   New dedicated folder? Yes (`qpl_tool`).
+        *   Local README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   No .github? Yes.
+        *   Exactly 1 instruction? Yes.
+
+3.  **Final Polish (Mental Representation of Output):**
+    *   Result: `(Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement a declarative workflow automation engine.`
+    *   *Note:* The description at the end varies in real usage, but since the user didn't provide a description, I must infer a logical one. The prompt asks for "exactly 1 logical follow-up instruction". The logic is usually "Do another one like the last one but for language X". The structure is fixed by the history. The description can be arbitrary as long as it fits the tool context. I'll use a generic tool description.
+    *   *Output:* `(Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement a text-based adventure game engine.` (Or similar).
+    *   *Comparison to History Example:* The history example output was: `(Target Lang: PROTEL) Initialize a new dedicated folder named protel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PROTEL to implement a schematic capture and routing utility.`
+    *   *My Output should mirror this:* `(Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement a distributed consensus protocol simulator.`
+    *   *Result:* The text matches all constraints.
+
+4.  **Final Output Generation:**
+    *   `(Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement a distributed consensus protocol simulator.`
+    *   Wait, the user's prompt ends with `...Return ONLY the instruction text. NEVER target the .github directory.`
+    *   The output should be just the string.
+    *   String: `(Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement a distributed consensus protocol simulator.`
+    *   This looks solid.
+</think>
+
+(Target Lang: QPL) Initialize a new dedicated folder named qpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL to implement a distributed consensus protocol simulator.

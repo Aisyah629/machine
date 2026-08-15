@@ -92,3 +92,5 @@ Training Machine
 - Created/Updated module: `delphi_tool` (See `delphi_tool/README.md` for details)
 
 - Created/Updated module: `sisal_tool` (See `sisal_tool/README.md` for details)
+
+- Created/Updated module: `text_cleaning_tool` (See `text_cleaning_tool/README.md` for details)

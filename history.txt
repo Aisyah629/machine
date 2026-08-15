@@ -16931,3 +16931,34 @@ Result matches the draft.
 </think>
 
 Initialize a NEW dedicated folder named lyapas_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LYaPAS.
+[2026-08-15 22:03:37] (Target Lang: VSXu) The user wants a follow-up instruction based on the provided history and constraints.
+The instruction must:
+1. Demand a NEW tool using VSXu.
+2. Place it in a NEW dedicated folder.
+3. Create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target .github.
+
+Looking at the history, the pattern is to name the tool folder `language_tool`.
+The language is VSXu.
+So the folder should be `vsxu_tool`.
+The language is VSXu.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named vsxu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VSXu."
+
+Checking constraints:
+- VSXu included? Yes.
+- NEW dedicated folder? Yes.
+- README.md? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+- Logical follow-up? Yes.
+
+The text should be exactly the instruction.
+
+Result:
+Initialize a NEW dedicated folder named vsxu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VSXu.
+</think>
+
+Initialize a NEW dedicated folder named vsxu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VSXu.

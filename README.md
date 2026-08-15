@@ -146,3 +146,5 @@ Training Machine
 - Created/Updated module: `chuck_tool` (See `chuck_tool/README.md` for details)
 
 - Created/Updated module: `xc_tool` (See `xc_tool/README.md` for details)
+
+- Created/Updated module: `jplusplus_tool` (See `jplusplus_tool/README.md` for details)

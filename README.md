@@ -118,3 +118,5 @@ Training Machine
 - Created/Updated module: `max_tool` (See `max_tool/README.md` for details)
 
 - Created/Updated module: `verilog_tool` (See `verilog_tool/README.md` for details)
+
+- Created/Updated module: `converge_tool` (See `converge_tool/README.md` for details)

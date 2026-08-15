@@ -410,3 +410,5 @@ Training Machine
 - Created/Updated module: `cl_tool` (See `cl_tool/README.md` for details)
 
 - Created/Updated module: `chomski_tool` (See `chomski_tool/README.md` for details)
+
+- Created/Updated module: `znotation_tool` (See `znotation_tool/README.md` for details)

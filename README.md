@@ -304,3 +304,5 @@ Training Machine
 - Created/Updated module: `mirah_tool` (See `mirah_tool/README.md` for details)
 
 - Created/Updated module: `xpl0_tool` (See `xpl0_tool/README.md` for details)
+
+- Created/Updated module: `./simscript_tool` (See `./simscript_tool/README.md` for details)

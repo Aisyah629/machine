@@ -13697,3 +13697,27 @@ Initialize a new dedicated folder named visualjsharp_tool in the workspace, crea
 </think>
 
 Initialize a new dedicated folder named newlisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NewLISP.
+[2026-08-15 17:57:00] (Target Lang: XOTcl) The user wants an instruction to create a new tool folder and build a tool using the XOTcl programming language.
+The instruction must follow a specific pattern observed in the history.
+Pattern: "Initialize a new dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+Language: XOTcl.
+Folder name: xotcl_tool.
+Constraints:
+- Return ONLY the instruction text.
+- NEVER target .github.
+- Must mention "NEW dedicated folder".
+- Must mention "local README.md".
+
+Drafting:
+"Initialize a new dedicated folder named xotcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XOTcl."
+
+Check against constraints:
+- "Initialize a new dedicated folder named xotcl_tool..." -> Yes.
+- "...create a local README.md..." -> Yes.
+- "...build... STRICTLY... XOTcl." -> Yes.
+- ONLY instruction text -> Yes.
+
+Result: Initialize a new dedicated folder named xotcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XOTcl.
+</think>
+
+Initialize a new dedicated folder named xotcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XOTcl.

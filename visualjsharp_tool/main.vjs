@@ -1,0 +1,134 @@
+// Visual J# Cross-Platform Scripting Utility
+// Main entry point for the scripting engine
+
+using System;
+using System.Collections;
+using System.IO;
+
+public class ScriptingEngine
+{
+    private static Hashtable variables = new Hashtable();
+    
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Visual J# Cross-Platform Scripting Utility v1.0");
+        Console.WriteLine("Type 'help' for commands or 'exit' to quit.");
+        
+        string input = "";
+        while (input != "exit")
+        {
+            Console.Write("> ");
+            input = Console.ReadLine().Trim().ToLower();
+            ProcessCommand(input);
+        }
+    }
+    
+    private static void ProcessCommand(string cmd)
+    {
+        if (cmd.Length == 0) return;
+        
+        string[] parts = cmd.Split(new char[]{' '}, 2);
+        string command = parts[0];
+        string argument = (parts.Length > 1) ? parts[1] : "";
+        
+        switch (command)
+        {
+            case "help":
+                Console.WriteLine("Commands: help, var, get, eval, exit");
+                break;
+            case "var":
+                AssignVariable(argument);
+                break;
+            case "get":
+                RetrieveVariable(argument);
+                break;
+            case "eval":
+                EvaluateExpression(argument);
+                break;
+            case "exit":
+                Environment.Exit(0);
+                break;
+            default:
+                Console.WriteLine("Unknown command. Type 'help' for available commands.");
+                break;
+        }
+    }
+    
+    private static void AssignVariable(string assignment)
+    {
+        int eqIndex = assignment.IndexOf('=');
+        if (eqIndex == -1)
+        {
+            Console.WriteLine("Invalid variable assignment. Use: var name=value");
+            return;
+        }
+        
+        string name = assignment.Substring(0, eqIndex).Trim();
+        string value = assignment.Substring(eqIndex + 1).Trim();
+        
+        // Remove quotes if present
+        if ((value.StartsWith("\"") && value.EndsWith("\"")) || 
+            (value.StartsWith("'") && value.EndsWith("'")))
+        {
+            value = value.Substring(1, value.Length - 2);
+        }
+        
+        variables[name] = value;
+        Console.WriteLine("Variable '{0}' set to '{1}'.", name, value);
+    }
+    
+    private static void RetrieveVariable(string name)
+    {
+        if (variables.ContainsKey(name))
+        {
+            Console.WriteLine("{0} = {1}", name, variables[name]);
+        }
+        else
+        {
+            Console.WriteLine("Variable '{0}' not found.", name);
+        }
+    }
+    
+    private static void EvaluateExpression(string expr)
+    {
+        try
+        {
+            // Simple numeric evaluation
+            string cleaned = expr.Replace(" ", "");
+            double result;
+            
+            // Support basic arithmetic
+            if (cleaned.Contains("+"))
+            {
+                string[] ops = cleaned.Split('+');
+                result = double.Parse(ops[0]) + double.Parse(ops[1]);
+            }
+            else if (cleaned.Contains("-"))
+            {
+                string[] ops = cleaned.Split('-');
+                result = double.Parse(ops[0]) - double.Parse(ops[1]);
+            }
+            else if (cleaned.Contains("*"))
+            {
+                string[] ops = cleaned.Split('*');
+                result = double.Parse(ops[0]) * double.Parse(ops[1]);
+            }
+            else if (cleaned.Contains("/"))
+            {
+                string[] ops = cleaned.Split('/');
+                result = double.Parse(ops[0]) / double.Parse(ops[1]);
+            }
+            else
+            {
+                // Try to parse as a number directly
+                result = double.Parse(cleaned);
+            }
+            
+            Console.WriteLine("Result: {0}", result);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Evaluation error: {0}", ex.Message);
+        }
+    }
+}

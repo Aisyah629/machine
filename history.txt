@@ -14024,3 +14024,29 @@ Initialize a NEW dedicated folder named tacpol_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named snowball_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball.
+[2026-08-15 18:49:05] (Target Lang: Pawn) Thinking Process:
+1.  **Analyze the User**: The user wants a follow-up instruction for an Autonomous AI. The output must follow the format of previous instructions (though no previous examples are shown, the style is implied: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language].")
+2.  **Constraints**:
+    *   Exactly 1 logical follow-up instruction.
+    *   Explicitly demand: "build the entire new tool STRICTLY using this exact programming language: Pawn."
+    *   If building a new tool: place in a NEW dedicated folder, create a local README.md.
+    *   Return ONLY the instruction text.
+    *   NEVER target the `.github` directory.
+3.  **Drafting the Instruction**:
+    *   Folder name: `pawn_tool` (following the pattern `[language]_tool` seen in the list: `python_tool`, `c_tool`, etc.)
+    *   Language: `Pawn`
+    *   Text: "Initialize a NEW dedicated folder named pawn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pawn."
+4.  **Review**:
+    *   1 instruction? Yes.
+    *   Language is Pawn? Yes.
+    *   New folder? Yes (`pawn_tool`).
+    *   README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   No `.github`? Yes.
+5.  **Final Output Generation**: Match the drafted text.
+    "Initialize a NEW dedicated folder named pawn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pawn." (Case of language matches prompt "Pawn").
+    Wait, the prompt says "return ONLY the instruction text."
+    Done.
+</think>
+
+Initialize a NEW dedicated folder named pawn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pawn.

@@ -1,0 +1,10 @@
+% XSB Tool Main Script
+% This is a logic programming tool written in XSB.
+
+:- module(main, [start/0]).
+
+:- export start/0.
+
+start :-
+    write('XSB Tool Initialized.\n'),
+    writeln('Logic programming environment ready.').

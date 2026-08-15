@@ -6341,3 +6341,28 @@ Output matches response. Proceeds.
 </think>
 
 (Target Lang: Visual Fortran) Initialize a new dedicated folder named fortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Fortran to develop a high-performance numerical computing and scientific simulation framework with optimized matrix operations and legacy HPC integration capabilities.
+[2026-08-15 09:07:27] (Target Lang: ISWIM) The user wants a single logical follow-up instruction based on the provided history and workspace.
+The instruction must:
+- Demand building a new tool using ISWIM language.
+- Specify creating a new folder and local README.md.
+- Return ONLY the instruction text.
+- Avoid targeting .github.
+
+From the history, the previous instruction was about creating a Visual Fortran tool. The follow-up should be distinct and logical in the context of a multi-language tool repository. It should specify the folder name, language, and purpose.
+
+I will draft an instruction for an ISWIM tool, perhaps focusing on its theoretical/combinatory logic nature.
+
+Draft: `(Target Lang: ISWIM) Initialize a new dedicated folder named iswim_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ISWIM to develop a functional programming environment focused on combinatory logic theory and symbolic computation frameworks.`
+
+Check constraints:
+- New tool? Yes.
+- Strictly ISWIM? Yes.
+- New folder? Yes (iswim_tool).
+- Local README.md? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+
+The draft looks solid. I will output it exactly.
+</think>
+
+(Target Lang: ISWIM) Initialize a new dedicated folder named iswim_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ISWIM to develop a functional programming environment focused on combinatory logic theory and symbolic computation frameworks.

@@ -168,3 +168,5 @@ Training Machine
 - Created/Updated module: `gj_tool` (See `gj_tool/README.md` for details)
 
 - Created/Updated module: `vbnet_tool` (See `vbnet_tool/README.md` for details)
+
+- Created/Updated module: `iswim_tool` (See `iswim_tool/README.md` for details)

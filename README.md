@@ -82,3 +82,5 @@ Training Machine
 - Created/Updated module: `livescript_tool` (See `livescript_tool/README.md` for details)
 
 - Created/Updated module: `splus_tool` (See `splus_tool/README.md` for details)
+
+- Created/Updated module: `asharp_dotnet_tool` (See `asharp_dotnet_tool/README.md` for details)

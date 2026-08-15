@@ -13336,3 +13336,74 @@ The output should match the draft.
 </think>
 
 Initialize a new dedicated folder named sequencel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SequenceL.
+[2026-08-15 17:24:19] (Target Lang: MAPPER) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace directory listing containing many tool folders (e.g., `haskell_tool`, `abap_tool`, etc.), each with a `README.md` and a main source file (e.g., `main.hs`, `main.abap`).
+   - **History:** Shows a previous instruction to create `sequencel_tool` using SequenceL. The output matches the draft.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MAPPER. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using the programming language: MAPPER.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+   - Explicitly instruct to create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+
+3.  **Formulate the Instruction:**
+   - Target: New folder for MAPPER tool. Let's name it `mapper_tool` (following the existing naming convention).
+   - Action: Initialize new folder, create README.md, build tool.
+   - Language constraint: STRICTLY using MAPPER.
+   - Structure: Follow the pattern from the history draft: "Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]."
+   - Check constraints: Exactly 1 instruction? Yes. Explicitly demands MAPPER? Yes. New dedicated folder? Yes. Local README.md? Yes. Only instruction text? Yes. No .github? Yes.
+
+   Draft: Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER.
+
+4.  **Verify against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using MAPPER? Yes.
+   - Place in NEW dedicated folder? Yes (`mapper_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches style of previous outputs? Yes.
+
+   All constraints met. Output matches draft. Proceed. 
+   One minor check: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MAPPER." I will ensure the wording matches closely.
+   Draft: Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER.
+   This is perfect. Output matches exactly.✅
+   I will generate only that text. 
+   Self-Correction/Refinement during thought: 
+   Should I add verification steps like in the history? The prompt says "Generate exactly 1 logical follow-up instruction." and the history shows a draft with verification, but the final output in the history was just the instruction text: "Initialize a new dedicated folder named sequencel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SequenceL." 
+   The prompt says "Return ONLY the instruction text." So I will output just the instruction sentence.
+
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MAPPER. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   Output matches draft. Proceed. 
+   Output: Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER.✅
+   All good. 
+   Generating response. 
+   [Output Generation] -> "Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER." (exactly as drafted) 
+   Matches all constraints. No extra text. Done. 
+   [Self-Correction/Verification during generation prep]
+   Wait, let's verify the exact wording constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MAPPER."
+   My draft: "...build the entire new tool STRICTLY using this exact programming language: MAPPER." -> Matches.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Matches.
+   "Return ONLY the instruction text." -> Matches.
+   All good.✅
+   Output matches exactly. 
+   Proceeds. 
+   [Final Output Generation] -> Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. 
+   (Note: I'll make sure capitalization and punctuation match the requirement exactly.) 
+   Ready. 
+   [Output] -> Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. 
+   [Done.] 
+   *(Self-Correction/Refinement during thought)*: I should ensure the folder name follows the existing pattern exactly: `mapper_tool`. The prompt says "NEW dedicated folder", so `mapper_tool` is appropriate. The instruction is exactly one sentence. It contains all required phrases. It outputs only the instruction. All constraints satisfied.✅
+   Output matches.✅
+   Proceeds. 
+   [Final Text] Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. 
+   *(Done.)*
+</think>
+
+Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER.

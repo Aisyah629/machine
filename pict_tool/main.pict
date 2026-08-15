@@ -1,0 +1,25 @@
+@begin
+  @class PictCore
+
+  @method initialize
+    System.out.println("Pict Tool Initialized Successfully");
+    return true;
+  @end
+
+  @method processTask: input
+    @if input not null then
+      @do
+        // Execute primary logic using Pict's native constructs
+        System.out.println("Processing task: " + input.toString());
+        @return "Task completed successfully.";
+      @end
+    @else
+      @return "No input provided for processing.";
+    @endif
+  @end
+
+  @method execute
+    @call self.initialize();
+    @call self.processTask("Default Execution");
+  @end
+@end

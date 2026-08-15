@@ -428,3 +428,5 @@ Training Machine
 - Created/Updated module: `cel_tool` (See `cel_tool/README.md` for details)
 
 - Created/Updated module: `./dasl_tool` (See `./dasl_tool/README.md` for details)
+
+- Created/Updated module: `maya_tool` (See `maya_tool/README.md` for details)

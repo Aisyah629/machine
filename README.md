@@ -218,3 +218,5 @@ Training Machine
 - Created/Updated module: `curry_tool` (See `curry_tool/README.md` for details)
 
 - Created/Updated module: `omnimark_tool` (See `omnimark_tool/README.md` for details)
+
+- Created/Updated module: `./goo_tool` (See `./goo_tool/README.md` for details)

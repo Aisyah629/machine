@@ -1,0 +1,32 @@
+// main.goo - Simple Goo Script
+
+// This script demonstrates basic functionality of the Goo language
+
+// Define a function to add two numbers
+function add(a, b) {
+    return a + b;
+}
+
+// Define a function to greet
+function greet(name) {
+    print("Hello, " + name + "!");
+}
+
+// Main execution
+function main() {
+    // Call greet function
+    greet("Goo User");
+    
+    // Calculate and print sum
+    let sum = add(5, 10);
+    print("The sum of 5 and 10 is: " + sum);
+    
+    // Demonstrate dynamic typing
+    let dynamic_var = "This is a string";
+    print(dynamic_var);
+    dynamic_var = 42; // Change type to integer
+    print("Dynamic variable is now: " + dynamic_var);
+}
+
+// Execute main function
+main();

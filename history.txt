@@ -9019,3 +9019,45 @@ Result: `(Target Lang: OmniMark) Initialize a new dedicated folder named omnimar
 </think>
 
 (Target Lang: Chef) Initialize a new dedicated folder named chef_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Chef.
+[2026-08-15 11:42:16] (Target Lang: Goo) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Context:** The user provides a large file list representing various programming language tools (directories like `./c_engine_tool`, `./haskell_tool`, etc., each with a `README.md` and a main file like `main.c`, `main.hs`).
+    *   **History:** Shows a "Draft" process where the AI simulated a thought process to output a specific instruction for a "Chef" language tool.
+    *   **Current Task:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraints:**
+        *   Explicitly demand the tool be built STRICTLY using the language: **Goo**.
+        *   If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+        *   Explicitly instruct to create a local `README.md`.
+        *   Return ONLY the instruction text.
+        *   NEVER target the `.github` directory.
+    *   **Format:** Similar to the history example: `(Target Lang: [Lang]) [Action]`
+
+2.  **Identify the Target Language:**
+    *   The prompt explicitly states: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Goo."
+
+3.  **Construct the Instruction:**
+    *   *Target Language:* Goo
+    *   *Action:* Initialize a new dedicated folder, create README.md, build the tool.
+    *   *Drafting:* `(Target Lang: Goo) Initialize a new dedicated folder named goo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Goo.`
+
+4.  **Verify Constraints:**
+    *   Follow-up instruction? Yes.
+    *   Language: Goo? Yes.
+    *   New dedicated folder? Yes (`goo_tool`).
+    *   Local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   No `.github`? Yes.
+
+5.  **Final Polish:**
+    *   `(Target Lang: Goo) Initialize a new dedicated folder named goo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Goo.`
+
+6.  **Output Generation:**
+    *   Just the text string.
+
+**(Self-Correction during drafting):** Ensure the language name is exactly "Goo" as requested. Ensure the folder name is logical, like `goo_tool` based on the file list pattern.
+
+Result: `(Target Lang: Goo) Initialize a new dedicated folder named goo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Goo.`
+</think>
+
+(Target Lang: Goo) Initialize a new dedicated folder named goo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Goo.

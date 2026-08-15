@@ -364,3 +364,5 @@ Training Machine
 - Created/Updated module: `plm_tool` (See `plm_tool/README.md` for details)
 
 - Created/Updated module: `ffp_tool` (See `ffp_tool/README.md` for details)
+
+- Created/Updated module: `orca_modula2_tool` (See `orca_modula2_tool/README.md` for details)

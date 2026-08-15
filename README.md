@@ -266,3 +266,5 @@ Training Machine
 - Created/Updated module: `prolog_tool` (See `prolog_tool/README.md` for details)
 
 - Created/Updated module: `plankalkul_tool` (See `plankalkul_tool/README.md` for details)
+
+- Created/Updated module: `rsl_tool` (See `rsl_tool/README.md` for details)

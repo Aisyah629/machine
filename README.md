@@ -438,3 +438,5 @@ Training Machine
 - Created/Updated module: `vsxu_tool` (See `vsxu_tool/README.md` for details)
 
 - Created/Updated module: `picolisp_tool` (See `picolisp_tool/README.md` for details)
+
+- Created/Updated module: `pli_tool` (See `pli_tool/README.md` for details)

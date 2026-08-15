@@ -1,14 +1,9 @@
-# TIE Tool
+# TIE Text Processing Tool\n\n## Overview\nThis tool is built using the **TIE** (Text Information Extractor) scripting language. It provides functionality for manipulating text strings, performing replacements, and processing input data.\n
 
-This directory contains the **TIE Tool**, a text templating and string processing utility built STRICTLY using the TIE programming language.
+## Features\n- **Text Replacement**: Replaces specific patterns within a string.\n- **String Splitting**: Divides text into tokens based on a delimiter.\n- **Pattern Matching**: Basic support for identifying substrings (via replacement logic).\n
 
-## Features
-- Advanced text templating
-- String manipulation
-- Pattern matching and replacement
+## Usage\n1. Save the script as `main.tie`.\n2. Run using the TIE interpreter: `tie main.tie`\n
 
-## Usage
-To execute the tool, run the main entry point script within this directory using the TIE runtime.
+## Example Output\n```\nHello new world, this is an new example\nHello\nnew\nworld,\nthis\nis\nan\nnew\nexample\n```\n
 
-## License
-This project is open source and available under the MIT License.
+## Language\nThis tool is strictly written in **TIE**.

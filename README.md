@@ -354,3 +354,5 @@ Training Machine
 - Created/Updated module: `ispf_diagnostic_tool` (See `ispf_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `fl_tool` (See `fl_tool/README.md` for details)
+
+- Created/Updated module: `tacpol_tool` (See `tacpol_tool/README.md` for details)

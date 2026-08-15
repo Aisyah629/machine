@@ -420,3 +420,5 @@ Training Machine
 - Created/Updated module: `bcpl_tool` (See `bcpl_tool/README.md` for details)
 
 - Created/Updated module: `hlsl_tool` (See `hlsl_tool/README.md` for details)
+
+- Created/Updated module: `max_tool` (See `max_tool/README.md` for details)

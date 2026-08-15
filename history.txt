@@ -16460,3 +16460,28 @@ This matches all requirements.
 </think>
 
 Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL.
+[2026-08-15 21:36:30] (Target Lang: Max) The user wants a single logical follow-up instruction based on a specific pattern.
+The pattern involves creating a new tool in a new folder.
+The new tool must use the programming language "Max".
+The instruction must explicitly mention "NEW dedicated folder", "local README.md", and "STRICTLY using this exact programming language: Max".
+The output must be ONLY the instruction text.
+No `.github` targeting.
+The output should be similar in style to the previous instruction provided in the context.
+The previous instruction was: `Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL.`
+So the new instruction should follow this structure but for "Max".
+Target folder name could be `max_tool`.
+Language: Max.
+Result: `Initialize a NEW dedicated folder named max_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Max.`
+Check constraints:
+- Only instruction text? Yes.
+- New folder? Yes.
+- Local README.md? Yes.
+- Language Max? Yes.
+- No .github? Yes.
+- Logical follow-up? Yes, continues the pattern of creating tools.
+- Language is "Max".
+- Output is just the text.
+Looks good.
+</think>
+
+Initialize a NEW dedicated folder named max_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Max.

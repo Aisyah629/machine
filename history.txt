@@ -8232,3 +8232,60 @@ Result looks good.
 </think>
 
 (Target Lang: Gödel) Initialize a new dedicated folder named godel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Gödel to enable declarative programming, logical inference, constraint solving, and robust symbolic reasoning for formal verification and AI applications.
+[2026-08-15 11:01:20] (Target Lang: Oberon) Thinking Process:
+1.  **Analyze User Input:** The user provides a list of workspace directories, a history entry showing a previous instruction for "Gödel", and a specific request: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Oberon. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - Must explicitly demand the new tool be built STRICTLY using Oberon.
+   - Must instruct to place it in a NEW dedicated folder.
+   - Must instruct to create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target `.github`.
+   - Follow the established pattern from history: `(Target Lang: [Language]) Initialize a new dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language] to enable [description].`
+3.  **Formulate Description for Oberon:** Oberon is an imperative programming language, known for simplicity, system programming, operating system development, and reliability. I need a brief, relevant description matching the style: "system programming, reliable software development, and minimalist design for robust low-level applications."
+   Draft description: `(Target Lang: Oberon) Initialize a new dedicated folder named oberon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oberon to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using Oberon? Yes.
+   - Place in NEW dedicated folder? Yes (`oberon_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target `.github`? Yes.
+   - Format matches pattern? Yes.
+5.  **Refine Output:** Ensure it strictly follows the requested pattern and contains nothing else.
+   `(Target Lang: Oberon) Initialize a new dedicated folder named oberon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oberon to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+   Check against constraints: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Oberon." -> Included.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Included.
+   "Return ONLY the instruction text." -> Will output just that string.
+   All good. Proceed. 
+   One minor thing: I will make sure the phrasing exactly matches the requested style. The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Oberon. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will output exactly the instruction text formatted as requested.
+   Text: `(Target Lang: Oberon) Initialize a new dedicated folder named oberon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oberon to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+   Matches perfectly. Ready. 
+   Self-Correction/Verification during thought: 
+   The prompt says "Generate exactly 1 logical follow-up instruction." I will just output the instruction string. No extra words.
+   Structure matches history exactly.
+   Language is Oberon.
+   Folder is oberon_tool.
+   README.md is included.
+   Constraint check: "STRICTLY using this exact programming language: Oberon" -> checked.
+   All constraints met. Output matches request.✅
+   Proceeds. 
+   Output Generation. 
+   `(Target Lang: Oberon) Initialize a new dedicated folder named oberon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oberon to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.` -> matches exactly.✅
+   Final Check of the prompt: "Return ONLY the instruction text." -> I will output just that. No markdown formatting if possible, or just the raw text. I'll stick to raw text to be safe. Actually, the prompt examples use parentheses. I will follow that.
+   Done. 
+   Output Generation. 
+   `(Target Lang: Oberon) Initialize a new dedicated folder named oberon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oberon to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.` -> matches. 
+   Proceeds. 
+   [Output Generation] -> `(Target Lang: Oberon) Initialize a new dedicated folder named oberon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oberon to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.` -> exactly matches request.✅
+   All steps verified. Output matches.✅
+   [Final Output Generation] (Proceeds)
+   *(Self-Correction/Refinement during thought)*: I should ensure the exact phrasing matches the prompt's requirement: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Oberon." The draft does this. I will output exactly that string. No extra text. All good. 
+   Output matches.✅
+   [Done] 
+   `(Target Lang: Oberon) Initialize a new dedicated folder named oberon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oberon to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.` -> ready. 
+   [Output Generation] (Proceeds)
+</think>
+
+(Target Lang: Oberon) Initialize a new dedicated folder named oberon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oberon to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.

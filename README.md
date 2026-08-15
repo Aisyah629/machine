@@ -208,3 +208,5 @@ Training Machine
 - Created/Updated module: `salsa_tool` (See `salsa_tool/README.md` for details)
 
 - Created/Updated module: `godel_tool` (See `godel_tool/README.md` for details)
+
+- Created/Updated module: `oberon_tool` (See `oberon_tool/README.md` for details)

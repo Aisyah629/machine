@@ -1,0 +1,37 @@
+MODULE Main;
+
+IMPORT Oberon, Out;
+
+VAR
+  version: ARRAY 32 OF CHAR;
+  initialized: BOOLEAN;
+
+PROCEDURE Initialize*; 
+BEGIN
+  version := "Oberon Tool v1.0";
+  initialized := TRUE;
+  Out.String(version);
+  Out.Ln;
+  Out.String("System initialized successfully.");
+  Out.Ln;
+END Initialize;
+
+PROCEDURE ProcessData*;
+VAR
+  result: INTEGER;
+BEGIN
+  IF initialized THEN
+    result := 42; { Placeholder for actual data processing logic }
+    Out.String("Processing complete. Result: ");
+    Out.Int(result, 0);
+    Out.Ln;
+  ELSE
+    Out.String("Error: System not initialized.");
+    Out.Ln;
+  END;
+END ProcessData;
+
+BEGIN
+  Initialize;
+  ProcessData;
+END Main.

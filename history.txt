@@ -8894,3 +8894,75 @@ Result: `(Target Lang: OmniMark) Initialize a new dedicated folder named omnimar
 </think>
 
 (Target Lang: OmniMark) Initialize a new dedicated folder named omnimark_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OmniMark.
+[2026-08-15 11:39:41] (Target Lang: Haskell) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a file tree (workspace listing) and a history of instructions (specifically, instruction 4 and 5).
+   - **Constraints from Prompt:**
+     - Generate exactly 1 logical follow-up instruction.
+     - Explicitly demand the new tool be built STRICTLY using the exact programming language: **Haskell**.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+   - **Format Style:** Based on the history, the expected output format is a single sentence/paragraph starting with something like `(Target Lang: [Language]) Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language].`
+
+2.  **Identify Key Requirements:**
+   - Target Language: Haskell
+   - Folder Name: `haskell_tool` (based on the pattern in the file tree and prompt)
+   - Must include: Initialize folder, create README.md, build tool strictly in Haskell.
+   - Must NOT target `.github`.
+   - Output ONLY the instruction text.
+   - Exactly 1 follow-up instruction.
+
+3.  **Draft Construction:**
+   `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.`
+
+4.  **Verify against Constraints:**
+   - Exactly 1 logical follow-up? Yes.
+   - Strictly use OmniMark? Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Haskell." The prompt's example history mentioned OmniMark, but the actual instruction to me overrides that: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Haskell."
+   - Place in NEW dedicated folder? Yes (`haskell_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches style? Yes.
+
+   The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Haskell."
+   I will construct the instruction exactly as requested.
+
+   Draft: `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.`
+
+   Check against the exact wording style from history:
+   History shows: `(Target Lang: OmniMark) Initialize a new dedicated folder named omnimark_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OmniMark.`
+   My draft matches perfectly, just swapping OmniMark for Haskell and the folder name accordingly.
+
+5.  **Final Output Generation:** (Just the instruction text as requested)
+   `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.`
+   All constraints met. Output matches exactly.✅
+   Proceed. 
+   Self-Correction/Refinement during thought: The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Haskell." It doesn't ask for any extra text. I will output exactly the drafted string.✅
+   Output matches requirement.✅
+   Ready. 
+   Output Generation. 
+   `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.` -> matches perfectly. 
+   Proceeds. 
+   [Output Generation] -> `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.`✅
+   (Note: I'll make sure there's absolutely no extra text, as instructed: "Return ONLY the instruction text.") 
+   All good. 
+   Output matches.✅
+   [Done.] 
+   *Self-Correction/Verification during generation prep*: 
+   Check the exact prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Haskell."
+   The prompt also says: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   My draft covers all of this.
+   Final string: `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.`
+   Matches perfectly. Output matches constraint. Proceeds. 
+   [Output Generation] -> `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.` 
+   Done. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Haskell. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints satisfied. Output is ready.✅
+   [Output Generation] (Proceeds)
+   `(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.`
+   *(Done.)*
+</think>
+
+(Target Lang: Haskell) Initialize a new dedicated folder named haskell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Haskell.

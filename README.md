@@ -306,3 +306,5 @@ Training Machine
 - Created/Updated module: `xpl0_tool` (See `xpl0_tool/README.md` for details)
 
 - Created/Updated module: `./simscript_tool` (See `./simscript_tool/README.md` for details)
+
+- Created/Updated module: `rex_tool` (See `rex_tool/README.md` for details)

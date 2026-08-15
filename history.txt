@@ -12250,3 +12250,61 @@ Output matches constraints.✅ Proceeds.
 </think>
 
 (Target Lang: Oriel) Initialize a new dedicated folder named oriel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oriel.
+[2026-08-15 15:57:32] (Target Lang: rex) The user wants exactly 1 logical follow-up instruction based on a specific pattern and constraints.
+Target language: rex.
+Constraint: Build a new tool in a NEW dedicated folder.
+Constraint: Create a local README.md inside it.
+Constraint: STRICTLY use the exact programming language: rex.
+Constraint: Return ONLY the instruction text.
+Constraint: NEVER target the .github directory.
+Pattern from history: `(Target Lang: [Language]) Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language].`
+
+Let's construct it.
+Language: rex
+Folder name: `rex_tool` (based on existing convention like `oriel_tool`, `ruby_tool`, etc.)
+Check history pattern: `(Target Lang: Oriel) Initialize a new dedicated folder named oriel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oriel.`
+
+Construct instruction:
+`(Target Lang: rex) Initialize a new dedicated folder named rex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rex.`
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand strictly use rex? Yes.
+- Place in NEW dedicated folder? Yes (`rex_tool`).
+- Create local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+Matches perfectly.
+Output matches exactly.
+Ready. 
+Proceed. 
+Output: `(Target Lang: rex) Initialize a new dedicated folder named rex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rex.`
+Check workspace list for `rex_tool`: It's not there, but the prompt says "Generate exactly 1 logical follow-up instruction" and implies creating it. The prompt is a few-shot/pattern completion. I will output the string.
+Done. 
+Output matches exactly. 
+Proceeds. 
+(Self-Correction/Refinement during thought)
+Wait, the prompt says "Generate exactly 1 logical follow-up instruction." It might expect exactly that string.
+The pattern is clear. I will just output the string.
+No extra text.
+Done. 
+Output: `(Target Lang: rex) Initialize a new dedicated folder named rex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rex.`
+Matches constraints.
+Proceeds. 
+[Final Check]
+Target: rex
+Folder: rex_tool
+Readme: yes
+Strict: yes
+Only text: yes
+Not .github: yes
+Matches exactly.
+Output generation. 
+`(Target Lang: rex) Initialize a new dedicated folder named rex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rex.`
+Done. 
+Proceeds. 
+[Output Generation] -> *Proceeds*
+</think>
+
+(Target Lang: rex) Initialize a new dedicated folder named rex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rex.

@@ -296,3 +296,5 @@ Training Machine
 - Created/Updated module: `uniface_tool` (See `uniface_tool/README.md` for details)
 
 - Created/Updated module: `nsis_tool` (See `nsis_tool/README.md` for details)
+
+- Created/Updated module: `zeno_tool` (See `zeno_tool/README.md` for details)

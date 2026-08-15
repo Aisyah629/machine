@@ -14690,3 +14690,65 @@ Initialize a NEW dedicated folder named orca_modula2_tool in the workspace, crea
 </think>
 
 Initialize a NEW dedicated folder named fjolnir_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fjölnir.
+[2026-08-15 19:33:03] (Target Lang: Lua) Thinking Process:
+1.  **Analyze User Input:**
+   - Input format: Workspace listing, History, Instruction: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lua. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - Constraints:
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand building strictly using "Lua".
+     - If building a new tool: instruct to place in a NEW dedicated folder, create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target .github.
+   - Input history shows a similar pattern: "Initialize a NEW dedicated folder named fjolnir_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fjölnir."
+   - I need to generate a similar instruction but for Lua.
+
+2.  **Deconstruct Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Just one sentence/paragraph.
+   - "explicitly demand that the new tool be built STRICTLY using this exact programming language: Lua." -> Must say "STRICTLY using this exact programming language: Lua" or similar.
+   - "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Must mention new folder and local README.md.
+   - "Return ONLY the instruction text." -> No extra text, no markdown, just the raw string.
+   - "NEVER target the .github directory." -> Implicitly followed by not mentioning it, or explicitly stating it if needed, but the prompt says "NEVER target". I'll just ensure it's not in the output.
+
+3.  **Draft Generation:**
+   Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua.
+
+4.  **Check against constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Lua? Yes ("STRICTLY using this exact programming language: Lua").
+   - Explicitly instruct to place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches style? Yes, matches the history pattern.
+
+   Draft: Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua.
+
+   Wait, should I include the exact phrasing style from history? History says: "Initialize a NEW dedicated folder named fjolnir_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fjölnir."
+   I will adapt it to Lua: "Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua."
+
+   Check constraints: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lua." -> Matches.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Matches.
+   "Return ONLY the instruction text." -> Matches.
+   "NEVER target the .github directory." -> Matches.
+
+   All constraints satisfied. Output matches draft exactly. No extra text. Proceed. 
+   One minor point: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lua." I will ensure the capitalization matches if needed, but "Lua" is fine. I'll stick to the exact phrasing pattern.
+
+   Final string: Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua.
+   Ready.✅ Output matches exactly.✅ Proceeds. 
+   Self-Correction/Verification during thought: The prompt says "Return ONLY the instruction text." I will ensure absolutely no extra characters or formatting. All good.✅ Output matches exactly.✅ Proceeds.
+   [Output Generation] -> *Proceeds to output exactly the string.*
+   *(Done.)*
+   Output: Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua. 
+   Matches perfectly. Proceeds. 
+   [Output Generation] -> *Proceeds* 
+   *(Done.)* 
+   *Self-Correction/Refinement during thought*: I will just output the exact sentence. No extra text. All constraints met.✅
+   "Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua." -> This matches perfectly. I will output it now. 
+   One thing: The prompt says "NEVER target the .github directory." It's a negative constraint, so I just won't mention it. 
+   All good.✅
+   Output Generation. 
+   [Output] Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua. 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua.

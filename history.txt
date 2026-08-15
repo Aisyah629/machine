@@ -5447,3 +5447,48 @@ This looks correct and robust.
 </think>
 
 (Target Lang: ChucK) Initialize a new dedicated folder named chuck_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ChucK to implement a real-time audio synthesis and sound processing framework.
+[2026-08-15 07:48:52] (Target Lang: Erlang) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand the new tool be built STRICTLY using Erlang.
+    *   Constraint: If building a new tool, place in a NEW dedicated folder, create local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target `.github`.
+
+2.  **Analyze the Workspace/History Context:**
+    *   The workspace list shows many language-specific tool folders (e.g., `actionscript_tool`, `agora_tool`, `c_engine_tool`, `chuck_tool`, `delphi_tool`, `fsharp_tool`, `haskell_tool`, `ruby_tool`, `smalltalk_tool`, `verilog_tool`, `vhdl_tool`, etc.).
+    *   `chuck_tool` already exists in the list (`./chuck_tool ./chuck_tool/README.md ...`).
+    *   The user wants an Erlang tool.
+    *   I need to check if `erlang_tool` exists. Scanning the list... `./erlang_tool` is NOT in the list. `./euphoria_tool` exists, `./ease_tool` exists, but no `erlang_tool`.
+    *   So, this is a new tool creation.
+
+3.  **Draft the Instruction:**
+    *   *Subject:* Erlang.
+    *   *Action:* Initialize new folder, create README, build tool.
+    *   *Folder Name Convention:* Based on others (`ruby_tool`, `fsharp_tool`), the folder should likely be `erlang_tool`.
+    *   *Language Constraint:* "STRICTLY using this exact programming language: Erlang".
+    *   *Purpose:* Need a purpose description. Looking at the style of the history and existing descriptions, it should be functional. Erlang is known for concurrency, fault tolerance, distributed systems. A good description would be "a highly concurrent and fault-tolerant distributed system framework" or similar. The history examples use phrases like "real-time audio synthesis", "foundational numerical calculation". I'll use a description consistent with Erlang's strengths.
+    *   *Drafting text:* `(Target Lang: Erlang) Initialize a new dedicated folder named erlang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Erlang to implement a highly concurrent and fault-tolerant distributed system framework.`
+
+4.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Logical follow-up?* Yes, adds Erlang to the collection of tools.
+    *   *Explicitly demand Erlang?* Yes ("STRICTLY using this exact programming language: Erlang").
+    *   *New dedicated folder?* Yes ("Initialize a new dedicated folder named erlang_tool").
+    *   *Create local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes, the output will be just the text.
+    *   *Never target .github?* Yes, targeting `erlang_tool`.
+
+5.  **Final Polish (Mental Representation):**
+    *   `(Target Lang: Erlang) Initialize a new dedicated folder named erlang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Erlang to implement a highly concurrent and fault-tolerant distributed system framework.`
+
+    *   *Check for "logical follow-up" nuance:* The prompt asks for "logical follow-up". The previous item in the history was about `chuck_tool`. Adding `erlang_tool` is a logical step of expanding the language coverage. The structure matches the example `(Target Lang: ChucK)...`.
+
+    *   *Result matches structure:* `(Target Lang: Erlang) Initialize a new dedicated folder named erlang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Erlang to implement a highly concurrent and fault-tolerant distributed system framework.`
+
+6.  **Final Output Generation:**
+    *   Output: `(Target Lang: Erlang) Initialize a new dedicated folder named erlang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Erlang to implement a highly concurrent and fault-tolerant distributed system framework.`
+</think>
+
+(Target Lang: Erlang) Initialize a new dedicated folder named erlang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Erlang to implement a highly concurrent and fault-tolerant distributed system framework.

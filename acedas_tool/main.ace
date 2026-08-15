@@ -1,0 +1,37 @@
+#ace_dasl_script
+
+function validateData(schema, data) {
+    if (data === null || data === undefined) {
+        throw new ValidationError("Input data is empty or null.");
+    }
+
+    for (const key in schema) {
+        if (!(key in data)) {
+            throw new ValidationError(`Missing required field: ${key}`);
+        }
+        if (typeof data[key] !== schema[key].type) {
+            throw new ValidationError(`Type mismatch for field ${key}. Expected ${schema[key].type}, got ${typeof data[key]}`);
+        }
+    }
+    return true;
+}
+
+class ValidationError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "ValidationError";
+    }
+}
+
+# Execution block
+const testSchema = { name: { type: "string" }, age: { type: "number" } };
+const testData = { name: "Alice", age: 30 };
+
+try {
+    const result = validateData(testSchema, testData);
+    console.log(`Validation passed: ${result}`);
+} catch (err) {
+    console.error(`Validation failed: ${err.message}`);
+}
+
+# End of script

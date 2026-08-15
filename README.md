@@ -380,3 +380,5 @@ Training Machine
 - Created/Updated module: `text_cleaning_tool` (See `text_cleaning_tool/README.md` for details)
 
 - Created/Updated module: `nial_tool` (See `nial_tool/README.md` for details)
+
+- Created/Updated module: `alice_tool` (See `alice_tool/README.md` for details)

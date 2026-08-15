@@ -1,0 +1,82 @@
+// Ease Tool - Functional Data Transformation and Processing Pipeline Utility
+
+// Define data types
+list of int -> data_stream;
+map of string -> any -> config_map;
+
+// Function to initialize the pipeline
+init_pipeline(config) -> {
+    print("Initializing Ease Data Processing Pipeline...\n");
+    let pipeline_config = config;
+    return pipeline_config;
+}
+
+// Function to apply a transformation function to a data stream
+apply_transformation(data_stream, transform_func) -> {
+    let result_stream = [];
+    for (element in data_stream) {
+        result_stream.append(transform_func(element));
+    }
+    return result_stream;
+}
+
+// Function to filter data based on a predicate
+filter_data(data_stream, predicate_func) -> {
+    let filtered_stream = [];
+    for (element in data_stream) {
+        if (predicate_func(element)) {
+            filtered_stream.append(element);
+        }
+    }
+    return filtered_stream;
+}
+
+// Function to reduce a data stream to a single value
+reduce_data(data_stream, reduce_func, initial_value) -> {
+    let accumulator = initial_value;
+    for (element in data_stream) {
+        accumulator = reduce_func(accumulator, element);
+    }
+    return accumulator;
+}
+
+// Main execution
+main() -> {
+    // Initialize pipeline with a default configuration
+    let default_config = map of string -> any;
+    default_config["verbose"] = true;
+    let config = init_pipeline(default_config);
+    
+    // Sample data stream
+    let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    
+    // Define transformations
+    let double_element = (x) -> x * 2;
+    
+    // Define a filter predicate
+    let is_even = (x) -> (x % 2 == 0);
+    
+    // Define a reducer
+    let add_together = (acc, x) -> acc + x;
+    
+    // Process the data stream
+    let transformed_data = apply_transformation(data, double_element);
+    print("Transformed Data: ");
+    for (element in transformed_data) {
+        print(element);
+    }
+    
+    let filtered_data = filter_data(transformed_data, is_even);
+    print("\nFiltered (Even) Data: ");
+    for (element in filtered_data) {
+        print(element);
+    }
+    
+    let reduced_result = reduce_data(transformed_data, add_together, 0);
+    print("\nReduced Sum: ", reduced_result);
+    
+    print("\nPipeline execution completed successfully.");
+}
+
+// Start the application
+main();

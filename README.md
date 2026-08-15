@@ -144,3 +144,5 @@ Training Machine
 - Created/Updated module: `javafx_script_tool` (See `javafx_script_tool/README.md` for details)
 
 - Created/Updated module: `chuck_tool` (See `chuck_tool/README.md` for details)
+
+- Created/Updated module: `xc_tool` (See `xc_tool/README.md` for details)

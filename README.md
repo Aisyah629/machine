@@ -232,3 +232,5 @@ Training Machine
 - Created/Updated module: `nu_tool` (See `nu_tool/README.md` for details)
 
 - Created/Updated module: `cola_tool` (See `cola_tool/README.md` for details)
+
+- Created/Updated module: `tal_tool` (See `tal_tool/README.md` for details)

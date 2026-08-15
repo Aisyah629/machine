@@ -1,0 +1,75 @@
+# Main Data Processing Pipeline Configuration
+# Language: Hartmann Pipelines
+# Version: 1.0.0
+
+// Pipeline Definition: Core Data Transformation
+PIPELINE "data_transform" {
+
+    // Source Stage: Ingest raw input data
+    SOURCE "raw_input" TYPE "file_stream" {
+        path = "/data/input_stream.dat"
+        format = "json_lines"
+        schema_validation = true
+    }
+
+    // Transformation Stage 1: Normalize & Parse
+    TRANSFORM "normalize" TYPE "mapper" {
+        input = "raw_input"
+        mapping = {
+            id = ".id"
+            timestamp = ".date"
+            value = ".metric_value"
+        }
+        filter = "is_defined(value)"
+    }
+
+    // Transformation Stage 2: Enrich with Context
+    TRANSFORM "enrich" TYPE "join" {
+        left = "normalize"
+        right = "lookup_table" TYPE "static_dataset" {
+            path = "/data/context_enrichment.csv"
+        }
+        on = "id"
+        join_type = "inner"
+        merge_policy = "prefer_source"
+    }
+
+    // Transformation Stage 3: Aggregate Metrics
+    AGGREGATE "rollup" TYPE "window" {
+        input = "enrich"
+        group_by = "id"
+        window = "1h"
+        metrics = {
+            avg_value = "AVG(value)"
+            max_value = "MAX(value)"
+            count = "COUNT(*)"
+        }
+    }
+
+    // Sink Stage: Output processed results
+    SINK "processed_output" TYPE "destination" {
+        input = "rollup"
+        target = "/data/output_stream.dat"
+        format = "csv"
+        flush_interval = "10s"
+    }
+}
+
+// Execution Configuration
+CONFIG {
+    parallelism = 4
+    retry_policy = "exponential_backoff"
+    max_retries = 3
+    log_level = "INFO"
+    checkpointing = true
+    checkpoint_interval = "1m"
+}
+
+// Validation & Error Handling Rules
+RULES {
+    ON "null_value_detected" DO "log_warning_and_skip"
+    ON "schema_mismatch" DO "fail_pipeline"
+    ON "source_timeout" DO "retry_once"
+}
+
+// End of Pipeline Definition

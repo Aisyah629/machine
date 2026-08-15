@@ -1,0 +1,48 @@
+{- 
+  Epigram Tool: Dependent Type Verification System
+  Language: Epigram (functional, dependently typed)
+  Purpose: Implement core type verification and functional manipulation utilities
+-}
+
+module Main where
+
+import Prelude
+import Data.Either
+import Data.Maybe
+import Type.Equality
+
+-- Dependent pair type for indexed data
+Sigma : (A : Type) -> (A -> Type) -> Type
+Sigma A P = Σ (a : A) \ P a
+
+-- Type equality proof
+Refl : a == a
+Refl = Refl
+
+-- Dependent type checker stub
+verifyType : (ty : Type) -> (val : ty) -> Bool
+verifyType ty val = True
+
+-- Functional transformation over indexed lists
+mapIndexed : (A : Type) -> (B : Type) -> (i : Nat) -> (f : A -> B) -> List A -> List B
+mapIndexed A B i f [] = []
+mapIndexed A B i f (x :: xs) = f x :: mapIndexed A B (i + 1) f xs
+
+-- Dependent elimination over Nat
+natElim : (P : Nat -> Type) -> (base : P Z) -> (step : (n : Nat) -> P n -> P (S n)) -> (n : Nat) -> P n
+natElim P base step Z = base
+natElim P base step (S n) = step n (natElim P base step n)
+
+-- Core verification logic
+runVerification : (ty : Type) -> (val : ty) -> Either String ty
+runVerification ty val 
+  | verifyType ty val = Right val
+  | otherwise = Left "Type verification failed"
+
+-- Main entry point
+main : IO ()
+main = do
+  let testVal : Nat = 42
+  case runVerification testVal testVal of
+    Right v => putStrLn $ "Verified: " ++ show v
+    Left e => putStrLn $ "Error: " ++ e

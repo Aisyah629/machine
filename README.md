@@ -202,3 +202,5 @@ Training Machine
 - Created/Updated module: `oxml_tool` (See `oxml_tool/README.md` for details)
 
 - Created/Updated module: `xharbour_tool` (See `xharbour_tool/README.md` for details)
+
+- Created/Updated module: `algol58_tool` (See `algol58_tool/README.md` for details)

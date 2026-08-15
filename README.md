@@ -324,3 +324,5 @@ Training Machine
 - Created/Updated module: `pizza_tool` (See `pizza_tool/README.md` for details)
 
 - Created/Updated module: `bliss_tool` (See `bliss_tool/README.md` for details)
+
+- Created/Updated module: `felix_tool` (See `felix_tool/README.md` for details)

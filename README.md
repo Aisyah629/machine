@@ -86,3 +86,5 @@ Training Machine
 - Created/Updated module: `asharp_dotnet_tool` (See `asharp_dotnet_tool/README.md` for details)
 
 - Created/Updated module: `ease_tool` (See `ease_tool/README.md` for details)
+
+- Created/Updated module: `self_healing_tool` (See `self_healing_tool/README.md` for details)

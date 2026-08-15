@@ -13407,3 +13407,33 @@ Initialize a new dedicated folder named sequencel_tool in the workspace, create 
 </think>
 
 Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER.
+[2026-08-15 17:25:43] (Target Lang: Napier88) The user wants a follow-up instruction for building a new tool.
+The instruction must follow the pattern established in the prompt and the previous turn.
+Constraint 1: Explicitly demand the new tool be built using the exact programming language: Napier88.
+Constraint 2: Instruct to place it in a NEW dedicated folder.
+Constraint 3: Instruct to create a local README.md.
+Constraint 4: Return ONLY the instruction text.
+Constraint 5: NEVER target the .github directory.
+Constraint 6: Generate exactly 1 logical follow-up instruction.
+
+Looking at the previous turn's output:
+"Initialize a new dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER."
+
+I should mimic this structure but change the folder name and language.
+Folder name convention: `napier88_tool`.
+Language: `Napier88`.
+
+Draft:
+Initialize a new dedicated folder named napier88_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Napier88.
+
+Check constraints:
+- Explicitly demand `Napier88`? Yes.
+- NEW dedicated folder? Yes (`napier88_tool`).
+- Create local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target `.github`? Yes.
+
+Result looks solid.
+</think>
+
+Initialize a new dedicated folder named napier88_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Napier88.

@@ -3034,3 +3034,45 @@ This looks correct.
 </think>
 
 [2026-10-25 10:32:00] (Target Lang: LiveScript) Initialize a new dedicated folder named livescript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LiveScript to implement a functional programming utility.
+[2026-08-15 03:32:02] (Target Lang: RAPID) The user wants a single logical follow-up instruction based on the provided workspace history and current state.
+The history shows a pattern of creating tool folders with a specific structure:
+1.  Folder name: `{language}_tool`
+2.  Inside folder: `README.md`
+3.  Inside folder: `main.{ext}` (usually)
+4.  The instruction format includes a timestamp, target language, and a request to initialize the folder, create the README, and build the tool strictly using the target language.
+5.  The last entry was for `LiveScript`.
+6.  The current request asks for a tool in `RAPID`.
+
+Analyzing the request:
+- Target Language: RAPID.
+- Action: Initialize a new dedicated folder.
+- Folder Name: Must follow the pattern `rapira_tool`? No, the request says "RAPID". Looking at the history, folder names are often lowercase or camelCase variants of the language, e.e., `livescript_tool`, `smalltalk_tool`. For `RAPID`, it might be `rapid_tool`.
+- Check existing folders: I see `rapira_tool`. `rapira` is a language. `RAPID` is the language for ABB robots. There is no `rapid_tool` folder yet.
+- Constraint: "NEVER target the .github directory."
+- Constraint: "Return ONLY the instruction text."
+- Constraint: "Explicitly demand that the new tool be built STRICTLY using this exact programming language: RAPID."
+- Constraint: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+
+Drafting the instruction:
+- Timestamp: Next logical time after `10:32:00` is `10:33:00`. Date remains `2026-10-25`.
+- Structure: `[Timestamp] (Target Lang: RAPID) Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID to implement [goal].`
+- Folder Name: `rapid_tool`.
+- Goal: The examples often have a small description like "implement a functional programming utility" or "implement a...". Since RAPID is for robotics, maybe "implement a robot motion control utility"? However, the previous instructions in the history often had generic or specific goals. The user's prompt doesn't specify a goal for the RAPID tool, but the pattern implies one. Looking at the `LiveScript` example in the history: "implement a functional programming utility". The prompt asks for "exactly 1 logical follow-up instruction". The user's prompt text at the end says "Generate exactly 1 logical follow-up instruction...". It doesn't specify the goal. I should probably follow the pattern of the last instruction. The last instruction had "implement a functional programming utility". For RAPID, a generic goal might be safer or I can invent a plausible one consistent with RAPID. RAPID is structured text for robots. A utility for trajectory generation or robot control makes sense. However, to be safe and consistent with the "logic" of the history which might be just creating tools for the sake of the toolset, I might just say "implement a robot automation utility". Or I can look at the `rapira_tool` in the list. `rapira` is similar to RAPID. Maybe the user is confusing them? No, RAPID is distinct.
+- Result: `[2026-10-25 10:33:00] (Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID to implement a robot control utility.`
+- Wait, checking the `rapira_tool` in the workspace list. It exists. `RAPID` is the language for ABB robots. `RAPIRA` is a different language. The request is for `RAPID`.
+- The folder name should be `rapid_tool`.
+- The text must contain "STRICTLY using this exact programming language: RAPID".
+- The text must mention `rapid_tool` and `README.md`.
+- No `.github`.
+- Output only the string.
+
+Final Polish:
+`[2026-10-25 10:33:00] (Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID to implement a robot manipulation utility.`
+I'll use a generic goal like "robot manipulation utility" or "robotic automation utility". The previous one was "functional programming utility". I'll use "robotic automation utility".
+Timestamp progression: `10:32:00` -> `10:33:00`.
+Folder: `rapid_tool`.
+Language: `RAPID`.
+Structure matches history.
+</think>
+
+[2026-10-25 10:33:00] (Target Lang: RAPID) Initialize a new dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID to implement a robotic automation utility.

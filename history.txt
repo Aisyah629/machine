@@ -2506,3 +2506,47 @@ This matches all constraints.
 </think>
 
 [2026-08-15 01:58:03] (Target Lang: MIVA Script) Initialize a new dedicated folder named miva_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIVA Script to implement a web application helper.
+[2026-08-15 02:02:58] (Target Lang: Mouse) The user wants a follow-up instruction for an Autonomous AI.
+The context involves a workspace with many directories for different programming language tools.
+The prompt asks to generate *exactly 1 logical follow-up instruction*.
+The constraints are:
+- Explicitly demand the new tool be built using the language "Mouse".
+- If building a new tool (which is implied by "new dedicated folder"), place it in a NEW dedicated folder and create a local README.md.
+- Return ONLY the instruction text.
+- NEVER target the `.github` directory.
+- The format of the output should likely match the history examples, which seem to follow a pattern like `[timestamp] (Target Lang: LANG) Instruction text.`
+- The history shows a format: `[2026-08-15 01:58:03] (Target Lang: MIVA Script) Initialize a new dedicated folder named miva_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIVA Script to implement a web application helper.`
+- The current request asks for the language "Mouse".
+- The instruction should probably ask to initialize a folder named `mouse_tool` or similar, given the pattern of `name_tool`.
+- The instruction should mention creating a local README.md.
+- The instruction should mention building the tool using "Mouse".
+- The instruction should not target `.github`.
+- Return ONLY the text.
+
+Drafting the instruction:
+`[2026-10-27 12:00:00] (Target Lang: Mouse) Initialize a new dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse to implement a logic puzzle solver.`
+- Need to check timestamp format. The history uses `2026-08-15...`. I can use a placeholder or current time, but usually, these prompts expect a simulation of a timestamp. The prompt asks to generate the instruction text. I'll use a generic timestamp or the one from the history context if appropriate, or just a valid ISO format. The prompt doesn't specify the timestamp, but the history shows it. I'll use a timestamp similar to the context or a generic one. Let's look at the history again. The history ends with `miva_script_tool`. The timestamp in the history is `2026-08-15 01:58:03`. I'll use a slightly later time or just a reasonable timestamp.
+- "Mouse" is the language.
+- "mouse_tool" seems like the folder name based on `miva_script_tool`.
+- "local README.md" is required.
+- "STRICTLY using this exact programming language: Mouse".
+- "Return ONLY the instruction text".
+
+Result:
+`[2026-10-24 10:30:00] (Target Lang: Mouse) Initialize a new dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse to implement a logic puzzle solver.`
+- I should verify the "Mouse" language. Mouse is a real programming language (functional, stack-based).
+- The structure matches the required output.
+- No `.github` mentioned.
+- Only one instruction.
+- Text only.
+
+Final polish:
+`[2026-10-24 14:22:10] (Target Lang: Mouse) Initialize a new dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse to implement a functional logic calculator.`
+- Folder name `mouse_tool` follows the pattern `language_tool`.
+- README.md included.
+- Language Mouse included.
+- "STRICTLY" keyword included.
+- Return only text.
+</think>
+
+[2026-10-24 14:22:10] (Target Lang: Mouse) Initialize a new dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse to implement a functional logic calculator.

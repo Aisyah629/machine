@@ -444,3 +444,5 @@ Training Machine
 - Created/Updated module: `tpu_tool` (See `tpu_tool/README.md` for details)
 
 - Created/Updated module: `hlsl_tool` (See `hlsl_tool/README.md` for details)
+
+- Created/Updated module: `pl360_tool` (See `pl360_tool/README.md` for details)

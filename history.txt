@@ -17210,3 +17210,41 @@ Initialize a NEW dedicated folder named tpu_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL.
+[2026-08-15 22:32:26] (Target Lang: PL360) The user wants a single logical follow-up instruction.
+The instruction must demand building a new tool strictly using the PL360 programming language.
+The instruction must explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+The instruction must NOT target the .github directory.
+The output should be ONLY the instruction text.
+
+Looking at the workspace structure, I see many tool folders like `hlsl_tool`, `c_tool`, `ada_tool`, etc. I need to create a new one for PL360.
+PL360 is a language for IBM System/360.
+I need to generate the text: "Initialize a NEW dedicated folder named pl360_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360."
+
+I will double-check constraints:
+- "Generate exactly 1 logical follow-up instruction." -> Yes.
+- "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL360." -> Yes.
+- "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Yes.
+- "Return ONLY the instruction text." -> Yes.
+- "NEVER target the .github directory." -> Yes.
+
+The format should be plain text.
+
+Result: Initialize a NEW dedicated folder named pl360_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360.
+
+Wait, check the prompt again. "Initialize a NEW dedicated folder named hlsl_tool..." was the example in history.
+The prompt asks for PL360.
+So "Initialize a NEW dedicated folder named pl360_tool..."
+I should ensure the folder name matches the pattern of others (e.g., `hlsl_tool`). So `pl360_tool` is appropriate.
+
+Final check of the output string:
+"Initialize a NEW dedicated folder named pl360_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360."
+
+Looks good.
+I will output just that string.
+No extra text.
+No markdown formatting if possible, or just the raw text as requested ("Return ONLY the instruction text").
+The prompt says "Return ONLY the instruction text."
+I will provide the exact string.
+</think>
+
+Initialize a NEW dedicated folder named pl360_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360.

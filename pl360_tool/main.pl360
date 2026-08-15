@@ -1,0 +1,37 @@
+      OPTION  MAIN=TRUE,  SETAM=512K,  LIST=NO,  SRC=NO
+
+      START   PL360_TOOL
+
+      *       PL360 MAINLINE
+      *       This program serves as the entry point for the PL360 tool.
+      *       It initializes registers, sets up the environment, and
+      *       begins execution of the provided logic.
+
+PL360_TOOL  EQU   0
+
+      LR    R12,R15       * Set up Register 12 as a pointer
+      USING PL360_TOOL,R12
+      LA    R15,PL360_TOOL * Load address of tool
+      B     EXECUTE_TOOL  * Branch to execution routine
+
+EXECUTE_TOOL
+      *       Initialize general purpose registers
+      *       R0-R3: Working registers
+      *       R12: Pointer register
+      *       R15: Address register
+
+      LR    R0,R0         * Clear R0
+      LR    R1,R0         * Clear R1
+      LR    R2,R0         * Clear R2
+
+      *       Call main logic subroutine
+      B     MAIN_LOGIC
+
+MAIN_LOGIC
+      *       Perform core tool operations here
+      *       Example: Process input, manipulate data
+
+      XR    R0,R0         * Return code 0
+      BR    R14           * Return to caller
+
+END

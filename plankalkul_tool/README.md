@@ -1,9 +1,12 @@
 # Plankalkül Tool
 
-## Overview
-This tool implements a basic interpreter and execution environment for Plankalkül, the first high-level programming language.
+This directory contains the Plankalkül programming environment and tools.
+Plankalkül was one of the earliest high-level programming languages, conceived by Konrad Zuse in the mid-1940s.
 
-## Features
-- Supports core Plankalkül syntax and operations.
-- Provides an execution engine for Plankalkül programs.
-- Simple command-line interface for program evaluation.
+## Contents
+- Main execution logic in Plankalkül
+- Compiler/interpreter stubs
+- Example programs
+
+## Usage
+Initialize and run Plankalkül programs within this environment.

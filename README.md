@@ -274,3 +274,5 @@ Training Machine
 - Created/Updated module: `sawzall_tool` (See `sawzall_tool/README.md` for details)
 
 - Created/Updated module: `chip8_tool` (See `chip8_tool/README.md` for details)
+
+- Created/Updated module: `plankalkul_tool` (See `plankalkul_tool/README.md` for details)

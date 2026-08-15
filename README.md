@@ -174,3 +174,5 @@ Training Machine
 - Created/Updated module: `notc_tool` (See `notc_tool/README.md` for details)
 
 - Created/Updated module: `ge_tool` (See `ge_tool/README.md` for details)
+
+- Created/Updated module: `sisal_tool` (See `sisal_tool/README.md` for details)

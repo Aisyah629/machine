@@ -6464,3 +6464,39 @@ Output generation.
 </think>
 
 (Target Lang: GNU E) Initialize a new dedicated folder named ge_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GNU E to develop a high-performance functional programming environment featuring expressive syntax and powerful metaprogramming capabilities.
+[2026-08-15 09:28:24] (Target Lang: SISAL) The user wants a follow-up instruction based on a simulated history of tool generation.
+The history mentions `vo_tool` was processed, and the last output was for `ge_tool` (GNU E).
+The current instruction must demand a new tool built using SISAL.
+SISAL stands for Strictly Integer Set And List Language.
+The instruction should:
+1.  Be a logical follow-up. Since the history seems to be generating a list of tools, another tool is logical.
+2.  Demand building the tool strictly using SISAL.
+3.  Instruct to create a NEW dedicated folder.
+4.  Instruct to create a local README.md.
+5.  Return ONLY the instruction text.
+6.  Never target .github.
+
+Drafting the instruction:
+Target Language: SISAL.
+Folder name idea: `sisal_tool`.
+Description: High-performance dataflow programming language often used for numerical computations and parallel processing.
+Structure: `(Target Lang: SISAL) Initialize a new dedicated folder named sisal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SISAL to develop a [description].`
+
+Description for SISAL: SISAL is a functional language designed for numerical computations and parallel processing. It emphasizes dataflow.
+Refined description: "to develop a robust numerical computing and parallel processing environment leveraging a strict functional dataflow paradigm."
+
+Final Text Construction:
+(Target Lang: SISAL) Initialize a new dedicated folder named sisal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SISAL to develop a robust numerical computing and parallel processing environment leveraging a strict functional dataflow paradigm.
+
+Check constraints:
+- Logical follow-up? Yes, another tool.
+- Language SISAL? Yes.
+- New dedicated folder? Yes (`sisal_tool`).
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- Never target .github? Yes.
+
+Result matches the pattern.
+</think>
+
+(Target Lang: SISAL) Initialize a new dedicated folder named sisal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SISAL to develop a robust numerical computing and parallel processing environment leveraging a strict functional dataflow paradigm.

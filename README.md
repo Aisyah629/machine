@@ -152,3 +152,5 @@ Training Machine
 - Created/Updated module: `lisa_tool` (See `lisa_tool/README.md` for details)
 
 - Created/Updated module: `simpol_tool` (See `simpol_tool/README.md` for details)
+
+- Created/Updated module: `objectlisp_tool` (See `objectlisp_tool/README.md` for details)

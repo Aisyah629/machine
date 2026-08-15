@@ -16794,3 +16794,66 @@ Initialize a NEW dedicated folder named dasl_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named dasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DASL.
+[2026-08-15 22:01:13] (Target Lang: Maya (MEL)) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories/files, mostly ending in `_tool` with `README.md` and a main source file (e.g., `./dasl_tool/main.dasl`, `./maya_tool/...` isn't listed but the prompt mentions Maya/MEL).
+   - **History:** Shows a previous prompt/response pattern. The user provided a prompt about `dasl_tool`, and the model output a specific instruction format.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Maya (MEL). If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using Maya (MEL).
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+
+3.  **Determine Output Format:**
+   - The output should be a single sentence/paragraph that matches the style of the history/example but tailored to Maya (MEL).
+   - Example from history: "Initialize a NEW dedicated folder named dasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DASL."
+   - I need to adapt this to Maya (MEL). The folder should be named `maya_tool` or `mel_tool`. Given the prompt says "Maya (MEL)", I'll use `maya_tool` as the folder name to match the pattern. The language is "Maya (MEL)" or just "MEL". I'll stick closely to the prompt: "Maya (MEL)".
+
+4.  **Draft Construction:**
+   Initialize a NEW dedicated folder named maya_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maya (MEL).
+
+5.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Maya (MEL)? Yes.
+   - Explicitly instruct to place it in a NEW dedicated folder? Yes (`maya_tool`).
+   - Create a local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches style? Yes.
+
+   One minor adjustment: The prompt says "Maya (MEL)". I'll use exactly that. Folder name `maya_tool` fits the convention. I'll make sure it's a single, direct instruction.
+
+   Draft: Initialize a NEW dedicated folder named maya_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maya (MEL).
+
+   Check against constraints: All met. Output matches requested format exactly. No extra text. Ready.✅
+   Output matches the draft.✅
+   Proceed. 
+   Self-Correction/Refinement during thought: 
+   The prompt says "Maya (MEL)". I will use exactly that. The folder name convention in the workspace is `{language}_tool`, so `maya_tool` or `mel_tool` is fine. I'll use `maya_tool`. The instruction should be a single sentence. All constraints are satisfied. I will output exactly the drafted text.✅
+   Final Output Generation. 
+   "Initialize a NEW dedicated folder named maya_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maya (MEL)." -> Matches perfectly.✅
+   Output matches response.✅
+   Proceeds. 
+   [Output Generation] -> Initialize a NEW dedicated folder named maya_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maya (MEL). 
+   (Note: I'll make sure it's exactly one line/sentence as requested.)✅
+   All good. 
+   Output matches. 
+   [Done.] 
+   *Self-Correction/Verification during generation*: 
+   Wait, the prompt says "Maya (MEL)". I'll just use "Maya (MEL)". The folder name `maya_tool` is fine. The structure matches the example exactly. No extra words. Proceeds. 
+   Output: Initialize a NEW dedicated folder named maya_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maya (MEL). 
+   Matches constraints perfectly.✅
+   Final Check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Maya (MEL). If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints met. Output is ready. 
+   [Output Generation] -> Initialize a NEW dedicated folder named maya_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maya (MEL). 
+   (Note: I will ensure no extra text is added.)✅
+   Done. 
+   [Output] -> Initialize a NEW dedicated folder named maya_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maya (MEL). 
+   *(Proceeds)*
+</think>
+
+Initialize a NEW dedicated folder named maya_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maya (MEL).

@@ -1,0 +1,9 @@
+// Maya Embedded Language (MEL) Tool
+// Main entry point for the tool
+
+proc initializeTool() {
+    print "Maya (MEL) Tool initialized successfully.\n";
+    // Tool initialization logic goes here
+}
+
+initializeTool();

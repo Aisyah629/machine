@@ -1,0 +1,33 @@
+// PL/M Tool Implementation
+// This file serves as the core module for the PL/M tool workspace.
+
+        DECLARE I FIXED BINARY;
+        DECLARE J FIXED BINARY;
+        DECLARE C CHARACTER(1);
+        DECLARE STR CHARACTER(20);
+
+        BEGIN
+            /* Initialize standard output header */
+            PUT LIST('PL/M Tool Initialized.');
+            PUT SKIP;
+
+            /* Simulate a basic logic loop typical of PL/M */
+            I = 0;
+            DO J = 1 TO 5;
+                I = I + 1;
+                PUT LIST('Iteration: ', I);
+            END;
+
+            /* String handling example */
+            STR = 'HELLO WORLD    ';
+            C = ' '; /* Trim trailing spaces for display */
+            DO WHILE C = ' ';
+                STR = STR(1:LENGTH(STR)-1);
+                IF LENGTH(STR) = 0 THEN LEAVE;
+                C = STR(1:1);
+            END;
+            PUT LIST('Trimmed String: ', STR);
+
+            /* Terminate program */
+            STOP;
+        END;

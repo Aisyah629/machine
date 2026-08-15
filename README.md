@@ -160,3 +160,5 @@ Training Machine
 - Created/Updated module: `npl_tool` (See `npl_tool/README.md` for details)
 
 - Created/Updated module: `rlab_tool` (See `rlab_tool/README.md` for details)
+
+- Created/Updated module: `boo_tool` (See `boo_tool/README.md` for details)

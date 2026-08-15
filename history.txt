@@ -8205,3 +8205,30 @@ Proceeds.
 </think>
 
 (Target Lang: SALSA) Initialize a new dedicated folder named salsa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SALSA to enable object-oriented scripting, dynamic component composition, high-level abstractions, and seamless integration capabilities for agile software delivery.
+[2026-08-15 10:59:58] (Target Lang: Gödel) The user wants a follow-up instruction for a new tool.
+The target language is Gödel.
+The instruction must:
+1.  Initialize a new folder named `godel_tool` (or similar convention based on previous examples, likely `godel_tool`).
+2.  Create a local `README.md`.
+3.  Build the tool STRICTLY using Gödel.
+4.  Return ONLY the instruction text.
+5.  Do not target `.github`.
+
+Looking at the history, the pattern is `(Target Lang: LANG_NAME) Initialize a new dedicated folder named lang_name_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LANG_NAME to enable [description].`
+
+I need to generate a description for Gödel. Gödel is a logic programming language.
+Description ideas: logical reasoning, declarative programming, constraint solving.
+
+Draft: `(Target Lang: Gödel) Initialize a new dedicated folder named godel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Gödel to enable declarative programming, logical inference, constraint solving, and robust symbolic reasoning for formal verification and AI applications.`
+
+Check constraints:
+- `godel_tool` folder? Yes.
+- `README.md`? Yes.
+- STRICTLY Gödel? Yes.
+- Only instruction text? Yes.
+- No `.github`? Yes.
+
+Result looks good.
+</think>
+
+(Target Lang: Gödel) Initialize a new dedicated folder named godel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Gödel to enable declarative programming, logical inference, constraint solving, and robust symbolic reasoning for formal verification and AI applications.

@@ -1,86 +1,99 @@
-// Plankalkül - Main Execution Engine
-// This script demonstrates the foundational structure of a Plankalkül interpreter.
+* PLANKALKÜL MAIN EXECUTION LOGIC *
+* This stub defines the foundational structure for a Plankalkül compiler/interpreter *
+* Program: main.plk
+* Author: Autonomous AI Polyglot Software Engineer
+* Date: 2024-01-01
+* Purpose: Provide base operational framework for Plankalkül program execution
 
-DEFINE INPUT_FILE = "program.plk"
-DEFINE OUTPUT_FILE = "output.txt"
+* GLOBAL DEFINITIONS
+GLOBAL VARIABLES:
+  INPUT_BUFFER : ARRAY [0..1023] OF FLOAT
+  OUTPUT_BUFFER : ARRAY [0..1023] OF FLOAT
+  STACK_POINTER : INT
+  PROGRAM_COUNTER : INT
+  ERROR_FLAG : BOOL
+  ERROR_CODE : INT
+  MEMORY : ARRAY [0..65535] OF FLOAT
+  LABEL_MAP : TABLE OF INT
+  INSTRUCTION_SET : ARRAY [0..99] OF OPERATION
 
-// Define constants for instruction types
-DEFINE OP_ADD = 1
-DEFINE OP_SUB = 2
-DEFINE OP_MUL = 3
-DEFINE OP_DIV = 4
+* OPERATION DEFINITIONS
+DEFINE OPERATION TYPE:
+  TYPE OP_CODE : INT
+  TYPE ARG1 : FLOAT
+  TYPE ARG2 : FLOAT
+  TYPE RESULT : FLOAT
+END_DEFINE
 
-// Data structures for Plankalkül variables and arrays
-DEFINE MAX_ARRAY_SIZE = 100
+* MEMORY MANAGEMENT FUNCTIONS
+FUNCTION LOAD_ADDRESS(address: INT) -> FLOAT
+  RETURN MEMORY[address]
+END_FUNCTION
 
-// Initialize the execution environment
-PROCEDURE init_environment()
-    SET memory_size = 0
-    SET instruction_pointer = 0
-    SET stack_pointer = 0
-END PROCEDURE
+FUNCTION STORE_ADDRESS(address: INT, value: FLOAT)
+  MEMORY[address] := value
+END_FUNCTION
 
-// Load the program from a file
-PROCEDURE load_program(filename)
-    OPEN input_file FOR READ
-    SET input_file = filename
-    PROGRAM = READ_ALL(input_file)
-    CLOSE input_file
-END PROCEDURE
+* INSTRUCTION DECODER
+FUNCTION DECODE_INSTRUCTION(opcode: INT, arg1: FLOAT, arg2: FLOAT) -> OPERATION
+  DECLARE op : OPERATION
+  op.OP_CODE := opcode
+  op.ARG1 := arg1
+  op.ARG2 := arg2
+  op.RESULT := 0.0
+  CASE opcode OF
+    10: op.RESULT := op.ARG1 + op.ARG2;  * ADD
+    11: op.RESULT := op.ARG1 - op.ARG2;  * SUB
+    12: op.RESULT := op.ARG1 * op.ARG2;  * MUL
+    13: op.RESULT := op.ARG1 / op.ARG2;  * DIV
+    20: op.RESULT := op.ARG1 + 1.0;      * INC
+    21: op.RESULT := op.ARG1 - 1.0;      * DEC
+    30: op.RESULT := -op.ARG1;           * NEG
+    40: op.RESULT := op.ARG1 * op.ARG1;  * SQUARED
+    41: op.RESULT := SQRT(op.ARG1);      * SQUAREROOT
+    42: op.RESULT := EXP(op.ARG1);       * EXPONENT
+    43: op.RESULT := LN(op.ARG1);        * LOG
+    50: op.RESULT := SIN(op.ARG1);       * SIN
+    51: op.RESULT := COS(op.ARG1);       * COS
+    52: op.RESULT := TAN(op.ARG1);       * TAN
+    60: op.RESULT := ASIN(op.ARG1);      * ARCSIN
+    61: op.RESULT := ACOS(op.ARG1);      * ARCCOS
+    62: op.RESULT := ATAN(op.ARG1);      * ARCTAN
+    70: op.RESULT := op.ARG1 + op.ARG2;  * MIN
+    71: op.RESULT := op.ARG1 - op.ARG2;  * MAX
+    80: op.RESULT := op.ARG1 MOD 10;     * ROUND
+    90: op.RESULT := op.ARG1 / 10.0;     * SHIFT DECIMAL
+  ELSE:
+    ERROR_FLAG := TRUE
+    ERROR_CODE := opcode
+  END_CASE
+  RETURN op
+END_FUNCTION
 
-// Parse the program into instructions
-PROCEDURE parse_program()
-    TOKENS = SPLIT(PROGRAM, " ")
-    INSTRUCTION_LIST = EMPTY_LIST
-    FOR EACH token IN TOKENS
-        IF token IS AN OPCODE
-            ADD token TO INSTRUCTION_LIST
-        ELSE IF token IS A NUMBER
-            ADD (NUMBER, token) TO INSTRUCTION_LIST
-        END IF
-    END FOR
-END PROCEDURE
+* EXECUTION ENGINE
+PROCEDURE EXECUTE_PROGRAM
+  PROGRAM_COUNTER := 0
+  ERROR_FLAG := FALSE
+  WHILE NOT ERROR_FLAG AND PROGRAM_COUNTER < 65536 DO
+    DECLARE current_op : OPERATION
+    DECLARE addr1 : INT
+    DECLARE addr2 : INT
+    addr1 := LOAD_ADDRESS(PROGRAM_COUNTER + 1)
+    addr2 := LOAD_ADDRESS(PROGRAM_COUNTER + 2)
+    current_op := DECODE_INSTRUCTION(LOAD_ADDRESS(addr1), LOAD_ADDRESS(addr2), 0.0)
+    STORE_ADDRESS(LOAD_ADDRESS(addr1), current_op.RESULT)
+    PROGRAM_COUNTER := PROGRAM_COUNTER + 3
+  END_WHILE
+END_PROCEDURE
 
-// Execute a single instruction
-PROCEDURE execute_instruction(instruction)
-    SWITCH instruction.type
-        CASE OP_ADD
-            VALUE1 = POP_STACK()
-            VALUE2 = POP_STACK()
-            RESULT = VALUE1 + VALUE2
-            PUSH_STACK(RESULT)
-        CASE OP_SUB
-            VALUE1 = POP_STACK()
-            VALUE2 = POP_STACK()
-            RESULT = VALUE2 - VALUE1
-            PUSH_STACK(RESULT)
-        CASE OP_MUL
-            VALUE1 = POP_STACK()
-            VALUE2 = POP_STACK()
-            RESULT = VALUE1 * VALUE2
-            PUSH_STACK(RESULT)
-        CASE OP_DIV
-            VALUE1 = POP_STACK()
-            VALUE2 = POP_STACK()
-            RESULT = VALUE2 / VALUE1
-            PUSH_STACK(RESULT)
-    END SWITCH
-END PROCEDURE
+* MAIN ENTRY POINT
+PROCEDURE MAIN
+  INITIALIZE_STACK
+  LOAD_PROGRAM_TO_MEMORY
+  EXECUTE_PROGRAM
+  DISPLAY_OUTPUT_BUFFER
+  HALT_SYSTEM
+END_PROCEDURE
 
-// Main execution loop
-PROCEDURE run_program()
-    INIT_ENVIRONMENT()
-    LOAD_PROGRAM(INPUT_FILE)
-    PARSE_PROGRAM()
-    WHILE instruction_pointer < LENGTH(INSTRUCTION_LIST)
-        CURRENT_INSTRUCTION = INSTRUCTION_LIST[instruction_pointer]
-        EXECUTE_INSTRUCTION(CURRENT_INSTRUCTION)
-        INCREMENT instruction_pointer
-    END WHILE
-    DISPLAY RESULT ON STACK
-END PROCEDURE
-
-// Start the program
-MAIN()
-    RUN_PROGRAM()
-END MAIN
+MAIN
+* END OF PLANKALKÜL MAIN EXECUTION LOGIC

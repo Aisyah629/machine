@@ -346,3 +346,5 @@ Training Machine
 - Created/Updated module: `opencl_tool` (See `opencl_tool/README.md` for details)
 
 - Created/Updated module: `clist_tool` (See `clist_tool/README.md` for details)
+
+- Created/Updated module: `gnu_e_tool` (See `gnu_e_tool/README.md` for details)

@@ -422,3 +422,5 @@ Training Machine
 - Created/Updated module: `hlsl_tool` (See `hlsl_tool/README.md` for details)
 
 - Created/Updated module: `max_tool` (See `max_tool/README.md` for details)
+
+- Created/Updated module: `datalog_tool` (See `datalog_tool/README.md` for details)

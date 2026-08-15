@@ -1,16 +1,11 @@
-# Datalog Tool
+## Datalog Tool
 
-This tool is built strictly using the exact programming language Datalog.
-
-## Purpose
-
-A dedicated environment for exploring and executing logic-based Datalog queries and rules within the workspace structure.
+This tool executes Datalog programs.
 
 ## Usage
 
-To run the Datalog tool, navigate to this folder and execute the appropriate Datalog engine or interpreter configured for the workspace.
+Run the tool and provide your Datalog code.
 
-## Constraints
+## Files
 
-- Built strictly in Datalog.
-- Operates independently in its own dedicated folder.
+- main.dl: The main Datalog program file.

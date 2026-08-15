@@ -3912,3 +3912,263 @@ This matches all constraints.
 </think>
 
 (Target Lang: TIE) Initialize a new dedicated folder named tie_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TIE to implement a text manipulation or string processing utility.
+[2026-08-15 05:20:54] (Target Lang: IMP) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Goal:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraint:** The new tool MUST be built using the language `IMP`.
+    *   **Constraint:** Must explicitly demand the new tool be built *STRICTLY* using `IMP`.
+    *   **Constraint:** If building a new tool, place it in a *NEW dedicated folder* and create a *local README.md*.
+    *   **Constraint:** Return ONLY the instruction text.
+    *   **Constraint:** NEVER target the `.github` directory.
+
+2.  **Review History (Context):**
+    *   Previous instruction was about `TIE` (text manipulation).
+    *   Workspace structure shows various tools like `acedas_tool`, `c_engine_tool`, `delphi_tool`, etc.
+    *   The format is usually: `(Target Lang: LANG_NAME) Initialize a new dedicated folder named [folder_name]... create a local README.md... build the entire new tool STRICTLY using this exact programming language: [LANG_NAME] to [purpose].`
+
+3.  **Drafting the Instruction:**
+    *   **Language:** IMP.
+    *   **Folder:** Need a unique name for the folder. Looking at the list, `imp_tool` seems appropriate.
+    *   **Purpose:** IMP usually stands for "Intermediate Programming Language" or is a simple language for educational/verification purposes (like in denotational semantics). However, the prompt asks for a "logical follow-up". Since I don't have external knowledge of `IMP`'s specific niche beyond being a language, I can define a purpose. Often, languages like this are used for "parsing", "syntax analysis", "verification", or "educational examples". Let's go with "parsing" or "code analysis" to fit the pattern of other tools (like `text_cleaning`, `data_processing`). Or perhaps just "building a basic parser".
+    *   **Refining Purpose:** Let's look at `TIE` which was "text manipulation". `IMP` is often an imperative language used in compiler theory or semantics. A logical use case would be "compiler logic", "code analysis", or "basic imperative processing". Let's stick to a general utility description: "parsing or code analysis utility".
+
+    *   **Draft 1:** `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+4.  **Checking Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Target IMP? Yes.
+    *   NEW dedicated folder? Yes (`imp_tool`).
+    *   Local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   No .github? Yes.
+    *   Strict language demand? Yes.
+
+5.  **Final Polish:**
+    *   `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   *Self-Correction on `imp_tool` naming:* Looking at the history list, `pascal_tool` -> `main.p`, `c_engine_tool` -> `main.c`. The folder name usually matches the tool name. `imp_tool` is safe.
+
+    *   *Refining the description:* The user history shows "TIE is good for text...". The prompt asks me to generate the instruction, not describe the language, but the instruction usually ends with the purpose. I will use a generic but plausible purpose for IMP.
+
+    *   *Final String:* `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   *Wait, checking strictness:* "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: IMP". The draft includes this.
+
+    *   *Checking folder name:* `imp_tool` is not in the list yet (though `pikt_tool` is there, `rc_tool`, etc.). `imp_tool` looks distinct enough.
+
+    *   *Result:* `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   *Alternative Purpose:* Maybe "syntax verification". Let's stick to "parsing or code analysis". It fits well with "text manipulation" from the previous step.
+
+    *   *Final check on the output format:* "Return ONLY the instruction text."
+
+    *   Result: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   One more check: The history example `(Target Lang: TIE)...` uses that prefix. I will include it.
+
+    *   Wait, is `IMP` a real language available in the toolset implied by the prompt? The prompt says "Generate exactly 1 logical follow-up instruction... explicitly demand... IMP". It implies I should treat IMP as a target even if it's not in the existing list (which it isn't). The instruction is *to* create it.
+
+    *   Final string construction.
+
+    *   `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Looks good.
+
+    *   One nuance: "logical follow-up". TIE was text. IMP (Imperative/Intermediate) often follows text processing in pipelines (parsing text into structure). "Parsing" is a logical next step after "Text manipulation".
+
+    *   Final Answer formulation.
+
+    *   Instruction: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Wait, is `imp_tool` a reserved name? No.
+    *   Is `main.imp` standard? Usually. I don't need to specify the filename in the instruction, just the folder and readme. The previous example didn't specify `main.tie`.
+
+    *   Let's ensure the folder name is lowercase/underscore consistent with history (e.g., `c_engine_tool`). `imp_tool` fits.
+
+    *   Ready.
+
+    *   Instruction: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Double check: "Return ONLY the instruction text."
+
+    *   Output: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Wait, let's look at the history again.
+    *   History: `(Target Lang: TIE) Initialize a new dedicated folder named tie_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TIE to implement a text manipulation or string processing utility.`
+
+    *   My draft is nearly identical in structure.
+
+    *   `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   This seems solid.
+
+    *   Let's check if there is any other constraint. "NEVER target the .github directory." - checked. "Exactly 1 logical follow-up instruction." - checked. "Return ONLY the instruction text." - checked. "explicitly demand that the new tool be built STRICTLY using this exact programming language: IMP" - checked.
+
+    *   One final thought: Is IMP an "Intermediate Language" or an "Imperative" language? It's usually both. "Parser or code analysis" is a safe bet for a tool built in IMP.
+
+    *   Okay.
+
+    *   Result: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Actually, let's make the purpose slightly more aligned with "code analysis" or "verification" which is what IMP is often used for in academic contexts, but "parser" is more "tool-like". I'll stick with "parser or code analysis utility".
+
+    *   Actually, looking at `text_cleaning_tool` -> `main.adb` (Ada). `io_tool` -> `main.io` (Io language).
+    *   The instruction text matches the pattern.
+
+    *   Final decision: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Wait, is "logic" implied by IMP? Yes.
+    *   Is "string processing" better? TIE was text. IMP could be string processing too, but parser implies structure. I'll stick with parser/code analysis.
+
+    *   Final Answer: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   One last check on the folder name `imp_tool`. Is it too similar to `rc_tool`? No. `imp` is distinct.
+
+    *   Wait, is there any reason to name it `intermediate_tool`? The language is IMP. `imp_tool` is consistent with `c_engine_tool` (lang `c`), `delphi_tool` (lang `pas`), `ruby_tool` (lang `rb`).
+    *   `pascal_tool` -> `main.p`.
+    *   `c_engine_tool` -> `main.c`.
+    *   `imp_tool` -> `main.imp`.
+    *   Looks correct.
+
+    *   Final check.
+    *   Instruction: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Wait, I should check if `imp` is a common extension. It often is.
+    *   Okay, proceed.
+
+    *   One tiny detail: "logical follow-up".
+    *   Previous: TIE (Text).
+    *   Current: IMP (Parser/Analysis).
+    *   Flow: Text -> Structure (Parser). This is logical.
+
+    *   Done.
+
+    *   Output: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Wait, I'll remove "parser or" to be more concise and strictly follow the "utility" pattern?
+    *   "to implement a text manipulation or string processing utility." was the previous one.
+    *   "to implement a code analysis or logic verification utility." might be better for IMP.
+    *   "to implement a parser or code analysis utility." covers it well. I'll keep it.
+
+    *   Actually, let's look at the history text again.
+    *   "TIE is good for text. 'Text cleaning', 'Pattern matching', 'Log analysis'."
+    *   The user prompt asks me to "explicitly demand... IMP".
+    *   I will provide the instruction.
+
+    *   Final String: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Wait, is `imp_tool` already taken?
+    *   Scanning the list... `rc_tool`, `pikt_tool`, `splus_tool`. No `imp_tool`.
+    *   Safe.
+
+    *   Final Answer confirmed.
+
+    *   Wait, looking at the history provided in the prompt:
+    *   `./c_engine_tool` -> `main.c`
+    *   `./clarion_tool` -> `main.cl`
+    *   `./comal_tool` -> `main.comal`
+    *   `./cycloone_tool` -> `main.c` (Wait, cycloone is not in list, cyclone is)
+    *   `./cyclone_tool` -> `main.c`
+    *   `./data_processing_tool` -> `main.slip`
+    *   `./datalog_tool` -> ? (No main shown in snippet)
+    *   `./delphi_tool` -> `main.pas`
+    *   `./ease_tool` -> `main.ace`
+    *   `./etoys_tool` -> ?
+    *   `./euphoria_tool` -> ?
+    *   `./fsharp_tool` -> ?
+    *   `./gamemonkey_tool` -> ?
+    *   `./hartmann_pipeline_tool` -> `main.hpf`
+    *   `./io_tool` -> `main.io`
+    *   `./jsharp_tool` -> `main.js`
+    *   `./livescript_tool` -> `main.ls`
+    *   `./mdl_tool` -> `main.mdl`
+    *   `./miva_script_tool` -> `main.mv`
+    *   `./netrexx_tool` -> `main.nr`
+    *   `./ngl_tool` -> `main.ngl`
+    *   `./orc_tool` -> `main.orc`
+    *   `./orca_tool` -> `main.mod`
+    *   `./oriel_tool` -> ?
+    *   `./pascal_tool` -> `main.pas`
+    *   `./pikt_tool` -> ?
+    *   `./pizza_tool` -> ?
+    *   `./rapira_tool` -> `main.rapira`
+    *   `./rc_tool` -> `main.rc`
+    *   `./ruby_tool` -> `main.rb`
+    *   `./sather_tool` -> ?
+    *   `./self_healing_tool` -> `main.dc`
+    *   `./sisal_tool` -> ?
+    *   `./smalltalk_tool` -> `main.st`
+    *   `./splus_tool` -> `main.splus`
+    *   `./synccharts_tool` -> `main.sy`
+    *   `./text_cleaning_tool` -> `main.adb`
+    *   `./tie_tool` -> ? (Prompt asks to create it)
+    *   `./ttcn_tool` -> ?
+    *   `./txl_tool` -> ?
+    *   `./ucsd_pascal_tool` -> `main.p`
+    *   `./vhdl_tool` -> `main.vhd`
+    *   `./visualjsharp_tool` -> `main.vjs`
+    *   `./xotcl_tool` -> ?
+    *   `./yorick_tool` -> `main.y`
+    *   `./znotation_tool` -> ?
+
+    *   Okay, `imp_tool` is definitely new.
+
+    *   Final Instruction Text: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Wait, is "logic" better than "parser"? IMP is a language for logic/specification sometimes.
+    *   I'll stick to "parser or code analysis". It sounds more like a "tool".
+
+    *   Actually, let's look at the previous instruction's description: "TIE is good for text".
+    *   Maybe I should define what IMP is good for? No, the instruction doesn't require the description in the instruction string, just the implementation demand.
+    *   The instruction string ends with "to implement [purpose]".
+
+    *   Okay, I'm confident.
+
+    *   One check: "Return ONLY the instruction text."
+    *   The prompt output is just the text.
+
+    *   `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Wait, looking at the previous instruction: `(Target Lang: TIE) Initialize a new dedicated folder named tie_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TIE to implement a text manipulation or string processing utility.`
+    *   It ends with a period. I will ensure my string ends with a period.
+
+    *   Done.
+
+    *   One last sanity check on "imp_tool".
+    *   If I use `imp_tool`, is it clear? Yes.
+    *   If I use `intermediate_tool`? No, stick to `imp_tool`.
+
+    *   Final check on "STRICTLY".
+    *   "STRICTLY using this exact programming language: IMP".
+    *   Included.
+
+    *   Final check on "NEW dedicated folder".
+    *   "Initialize a new dedicated folder named imp_tool".
+    *   Included.
+
+    *   Final check on "local README.md".
+    *   "create a local README.md inside it".
+    *   Included.
+
+    *   Final check on "Return ONLY the instruction text".
+    *   Okay.
+
+    *   Final check on "NEVER target the .github directory".
+    *   Not targeted.
+
+    *   Final check on "Exactly 1 logical follow-up instruction".
+    *   Yes.
+
+    *   Ready.
+
+    *   Instruction: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+
+    *   Wait, looking at the previous instruction again. "TIE is good for text...". This was in the "History" section as a description *of* the instruction. The instruction itself was the text in the brackets `(Target Lang: TIE)...`.
+    *   The user prompt says: "Generate exactly 1 logical follow-up instruction... Return ONLY the instruction text."
+    *   So I just return the instruction text.
+
+    *   Final Answer: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+</think>
+
+(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.

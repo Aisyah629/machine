@@ -7556,3 +7556,49 @@ Result looks solid.
 </think>
 
 (Target Lang: OCaml) Initialize a new dedicated folder named ocaml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OCaml to enable functional programming paradigm, memory-safe systems design, and formal verification support.
+[2026-08-15 10:07:24] (Target Lang: occam) Thinking Process:
+
+1.  **Deconstruct the user's prompt:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: MUST explicitly demand the new tool be built STRICTLY using this exact programming language: `occam`.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local `README.md` inside that new folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+
+2.  **Evaluate constraints against the requested language:**
+    *   Language: `occam`.
+    *   Folder naming convention: Usually `{lang}_tool`. So, `occam_tool`.
+    *   File naming convention: Usually `main.occam` or `main.k` (Occam often uses `.k`). Looking at the history/workspace list, I see patterns like `main.c`, `main.py` (implied), `main.ml` (OCaml), etc. Occam usually results in `.k` files. However, the prompt asks for the instruction text, not the file list. The instruction should probably mention the language and the folder.
+    *   Result: Folder `occam_tool`, file `README.md`, Language `occam`.
+
+3.  **Draft the instruction:**
+    *   *Draft 1:* `(Target Lang: Occam) Initialize a new dedicated folder named occam_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam to enable process-oriented concurrent programming, strict type checking, and efficient distributed systems design.`
+    *   *Review against constraints:*
+        *   "Initialize a new dedicated folder named occam_tool": Yes.
+        *   "create a local README.md inside it": Yes.
+        *   "build the entire new tool STRICTLY using this exact programming language: occam": Yes.
+        *   "Return ONLY the instruction text": Yes.
+        *   "NEVER target .github": Yes.
+        *   "Logical follow-up": The previous instruction in the history was for OCaml. This follows the pattern.
+
+4.  **Refine wording based on "STRICTLY" and "exact wording":**
+    *   The user emphasized "STRICTLY" and "exact programming language".
+    *   Draft 1 includes `STRICTLY` and `occam`.
+    *   Result: `(Target Lang: Occam) Initialize a new dedicated folder named occam_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam to enable process-oriented concurrent programming, strict type checking, and efficient distributed systems design.`
+
+5.  **Final Polish (Mental Output Construction):**
+    *   Text: `(Target Lang: Occam) Initialize a new dedicated folder named occam_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam to enable process-oriented concurrent programming, strict type checking, and efficient distributed systems design.`
+    *   Check for `.github`: None.
+    *   Check for only one instruction: Yes.
+    *   Check for `occam`: Yes.
+    *   Check for `occam_tool`: Yes.
+    *   Check for `README.md`: Yes.
+
+6.  **Final Output:**
+    *   `(Target Lang: Occam) Initialize a new dedicated folder named occam_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam to enable process-oriented concurrent programming, strict type checking, and efficient distributed systems design.`
+
+This matches all requirements.
+</think>
+
+(Target Lang: Occam) Initialize a new dedicated folder named occam_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam to enable process-oriented concurrent programming, strict type checking, and efficient distributed systems design.

@@ -192,3 +192,5 @@ Training Machine
 - Created/Updated module: `t_tool` (See `t_tool/README.md` for details)
 
 - Created/Updated module: `ocaml_tool` (See `ocaml_tool/README.md` for details)
+
+- Created/Updated module: `occam_tool` (See `occam_tool/README.md` for details)

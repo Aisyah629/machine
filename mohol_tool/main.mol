@@ -1,0 +1,13 @@
+// Mohol Script: main.mol
+// A simple demonstration of Mohol syntax and execution flow.
+
+MOHOL_ENTRY_POINT
+declare main
+
+function main():
+    print "Hello from Mohol!"
+    print "This is a tool built strictly using Mohol."
+    return 0
+end
+
+main()

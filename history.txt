@@ -3693,3 +3693,82 @@ This matches all constraints.
 </think>
 
 (Target Lang: Lisaac) Initialize a new dedicated folder named lisaac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lisaac to implement a robust static analysis and memory safety verification utility.
+[2026-08-15 04:58:29] (Target Lang: MDL) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Current Workspace:** A list of directories and files, mostly language-specific tools (`*_tool`) with `README.md` and a main file (e.g., `main.c`, `main.pas`, `main.st`).
+   - **History:** Shows a pattern of generating instructions prefixed with `(Target Lang: [Language])` followed by a command to initialize a new folder, create a README.md, and build a tool strictly in that language for a specific purpose. The history explicitly mentions constraints like "STRICTLY using this exact programming language: Lisaac", "Initialize a new dedicated folder named lisaac_tool", "create a local README.md inside it", etc.
+   - **Prompt Requirement:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MDL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Exactly 1 instruction.
+   - Language: MDL (Must be explicitly demanded: "STRICTLY using this exact programming language: MDL").
+   - New tool placement: NEW dedicated folder.
+   - Must create a local README.md inside it.
+   - Return ONLY the instruction text.
+   - Never target .github.
+   - Follow the pattern/style from history: `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement [specific functionality].`
+
+3.  **Determine Functionality/Purpose:**
+   - Need a plausible, distinct functionality for an MDL tool. MDL (Machine Description Language) is often used in compiler development (like GnuCOBOL's COBOL compiler) or hardware description, but historically it's a dialect of Lisp used for compiler optimization. I'll frame it around "compiler optimization passes and intermediate representation analysis" or "symbolic math evaluation and automated proof verification". Let's go with "automated symbolic computation and mathematical theorem verification utility" to sound robust and distinct.
+   - Actually, to keep it consistent with the pattern, I'll just pick a clear, professional purpose: "implement a robust symbolic computation and automated proof verification utility."
+
+4.  **Draft Construction:**
+   `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.`
+
+5.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands MDL? Yes ("STRICTLY using this exact programming language: MDL").
+   - New dedicated folder? Yes ("mdl_tool").
+   - Local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   - Matches history style? Yes.
+
+   All constraints met. I will output exactly the drafted string. No extra text.
+   One minor adjustment: Ensure the exact phrasing matches the prompt's requirement for strictness: "STRICTLY using this exact programming language: MDL". The draft has it.
+   I'll verify the exact wording from the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MDL."
+   The draft: `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.`
+   Matches perfectly. Output matches exactly.✅
+   Proceed. 
+   Output generation. 
+   `[Output]` `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.`
+   Wait, let's double check the exact prompt requirement: "Return ONLY the instruction text. NEVER target the .github directory."
+   All good. I will output just that string.✅
+   One thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MDL." I've included that.
+   I'll produce exactly that. 
+   Final check of the draft against constraints:
+   - 1 logical follow-up instruction? Yes.
+   - Explicitly demand MDL? Yes.
+   - New dedicated folder? Yes.
+   - Local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   Ready. 
+   Output matches draft.✅
+   [Proceeds] 
+   *(Self-Correction/Refinement during thought)*: 
+   I should make sure the functionality described is plausible but generic enough. "robust symbolic computation and automated proof verification utility" is fine. The prompt doesn't specify the functionality, just the constraints. I'll stick with it.
+   The output will be exactly the string. No markdown, no extra text. Just the raw instruction.
+   `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.`
+   Matches perfectly. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.` 
+   All constraints verified. Output matches request.✅
+   *(Note: I will ensure no extra whitespace or formatting is added.)*
+   Done. 
+   [Output] `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.` 
+   *(Self-Correction/Verification during generation prep)*: The prompt says "Return ONLY the instruction text." I will output exactly that. No extra newlines. All good. 
+   Proceeds. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MDL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Matches. Output matches.✅
+   [Output Generation] -> `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.` 
+   Done. 
+   [Output] (Proceeds)
+   *(Note: I'll make sure the formatting exactly matches the requested string without any markdown formatting, as per "Return ONLY the instruction text.")*
+   All set. 
+   [Output Generation] -> `(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.`
+   *(Done.)*
+</think>
+
+(Target Lang: MDL) Initialize a new dedicated folder named mdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL to implement a robust symbolic computation and automated proof verification utility.

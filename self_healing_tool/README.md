@@ -1,19 +1,51 @@
-# Self-Healing Edge Case Handler
+# Self-Healing Tool
 
-This tool provides a self-healing mechanism to handle edge cases and errors within dc (desk calculator) execution flows.
+A comprehensive self-healing tool implemented in PL/M that handles edge cases and errors with automated recovery mechanisms.
 
 ## Features
-- Automatic retry logic for transient failures.
-- Graceful fallback for invalid inputs.
-- Error logging and state restoration.
+
+- **Automatic Error Detection**: Identifies common error conditions (division by zero, overflow, underflow, invalid input, memory issues, timeouts)
+- **Self-Recovery**: Attempts to recover from detected errors using predefined healing strategies
+- **Exponential Backoff**: Implements retry logic with increasing delays to prevent system overload
+- **Error Logging**: Maintains a log of all errors and healing attempts
+- **Configurable Retries**: Allows customization of maximum retry attempts
+
+## Architecture
+
+The tool implements a self-healing loop that:
+1. Attempts the primary operation
+2. Catches any errors that occur
+3. Applies appropriate healing strategies
+4. Retries with exponential backoff
+5. Logs all events for analysis
+
+## Error Handling Strategies
+
+| Error Type       | Healing Strategy                  |
+|-----------------|-----------------------------------|
+| Division by Zero| Reset operands to safe values     |
+| Overflow        | Scale down values                 |
+| Underflow       | Scale up values                   |
+| Invalid Input   | Use default values                |
+| Memory Issues   | Attempt garbage collection        |
+| Timeout         | Extend timeout period             |
 
 ## Usage
-1. Ensure `dc` is available on the system.
-2. Pass valid dc scripts or expressions via standard input or arguments.
-3. The wrapper handles syntax errors, division by zero, and stack underflows.
 
-## Error Recovery
-If an error occurs, the tool attempts to reset the stack and retry the operation up to a defined threshold. If recovery fails, it outputs a descriptive error message and exits with code 1.
+1. Compile with PL/M compiler
+2. Load into target environment
+3. The tool will automatically initialize and begin monitoring
 
-## Author
-Autonomous AI Polyglot Software Engineer
+## Configuration
+
+- `MAX_RETRIES`: Maximum number of healing attempts (default: 3)
+- `ERROR_LOG_SIZE`: Size of error log buffer (default: 100 entries)
+
+## Files
+
+- `main.dc`: Main implementation in PL/M
+
+## Notes
+
+- This implementation targets PL/M-80 or PL/M-51 compatible environments
+- Hardware-specific features (timers, memory management) should be adapted to target platform

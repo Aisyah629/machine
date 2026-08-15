@@ -18385,3 +18385,34 @@ Initialize a NEW dedicated folder named watfiv_watfor_tool in the workspace, cre
 </think>
 
 Initialize a NEW dedicated folder named super_talk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperTalk. Focus entirely on this new objective: 'Develop a vintage stack navigation handler'. You MUST write functional code for this task strictly using this programming language: SuperTalk. I will output this. End. I will output the text now.
+[2026-08-15 23:24:05] (Target Lang: PCASTL) Thinking (Process) for the next instruction:
+
+1.  **Analyze the Goal**: The user wants 1 logical follow-up instruction.
+2.  **Constraint**: The instruction must explicitly demand the use of the programming language "PCASTL".
+3.  **Constraint**: If building a new tool, it must be in a NEW dedicated folder with a local README.md.
+4.  **Constraint**: Return ONLY the instruction text. Never target `.github`.
+5.  **Context from History**:
+    *   History shows a pattern: `Initialize a NEW dedicated folder named {tool_name}_tool...`.
+    *   The last step was `super_talk_tool` with language `SuperTalk`.
+    *   The prompt asks for a *logical follow-up*. "PCASTL" suggests a new tool.
+    *   I need to invent a folder name. Following the pattern, `{tool_name}_tool` is standard. "pascal_tool", "pascal_tool" exists. "pcastl_tool" seems appropriate.
+    *   Objective: Needs to be a new objective. The previous was "Develop a vintage stack navigation handler". Something related to PCASTL. PCASTL might stand for "Parallel Computer Algebra System..." or similar, or it could be a fictional/obscure language in this context. Since it's a "tool" repository, maybe "Develop a parallel symbolic computation module" or "Implement a matrix transformation utility". Let's go with something generic but sounding technical like "Implement a parallel data transformation engine". Or just "Develop a parallel computation module". Let's stick to the pattern "Develop a..."
+    *   Drafting the text: `Initialize a NEW dedicated folder named pcastl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PCASTL. Focus entirely on this new objective: 'Implement a parallel computation module'. You MUST write functional code for this task strictly using this programming language: PCASTL. I will output this. End. I will output the text now.`
+
+6.  **Review against constraints**:
+    *   1 logical follow-up? Yes.
+    *   Explicitly demand PCASTL? Yes (`...programming language: PCASTL. You MUST... programming language: PCASTL.`).
+    *   NEW dedicated folder? Yes (`pcastl_tool`).
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   No .github? Yes.
+
+7.  **Refinement**: The previous output ended with a block of text and a check. The user output in the history was a single string. The output should be that string.
+
+    String: `Initialize a NEW dedicated folder named pcastl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PCASTL. Focus entirely on this new objective: 'Implement a parallel computation module'. You MUST write functional code for this task strictly using this programming language: PCASTL. I will output this. End. I will output the text now.`
+
+8.  **Final Polish**: Ensure exact casing of PCASTL.
+    Result: `Initialize a NEW dedicated folder named pcastl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PCASTL. Focus entirely on this new objective: 'Implement a parallel computation module'. You MUST write functional code for this task strictly using this programming language: PCASTL. I will output this. End. I will output the text now.`
+</think>
+
+Initialize a NEW dedicated folder named pcastl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PCASTL. Focus entirely on this new objective: 'Implement a parallel computation module'. You MUST write functional code for this task strictly using this programming language: PCASTL. I will output this. End. I will output the text now.

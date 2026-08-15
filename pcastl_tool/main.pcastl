@@ -1,0 +1,53 @@
+// PCASTL Program: Parallel Computation Module
+// This program demonstrates basic parallel computation using PCASTL.
+
+// Import necessary libraries
+import com.pcastl.parallel;
+import com.pcastl.math;
+
+// Define the main function
+function main() {
+  // Initialize the parallel environment
+  parallel.init();
+
+  // Define the range of computation
+  int start = 0;
+  int end = 100;
+  int num_workers = 4;
+
+  // Initialize an array to store results
+  int[] results = new int[num_workers];
+
+  // Create and start parallel threads
+  for (int i = 0; i < num_workers; i++) {
+    int chunk_size = (end - start) / num_workers;
+    int thread_start = start + i * chunk_size;
+    int thread_end = (i == num_workers - 1) ? end : thread_start + chunk_size;
+
+    // Launch a thread for each worker
+    parallel.run(new ThreadFunction(thread_start, thread_end, results, i));
+  }
+
+  // Wait for all threads to complete
+  parallel.join();
+
+  // Aggregate and print results
+  int total_sum = 0;
+  for (int i = 0; i < num_workers; i++) {
+    total_sum += results[i];
+  }
+  console.print("Total Sum: ");
+  console.print(total_sum);
+}
+
+// Thread function to compute sum of a chunk
+function ThreadFunction(start, end, results, index) {
+  int sum = 0;
+  for (int i = start; i < end; i++) {
+    sum += i;
+  }
+  results[index] = sum;
+}
+
+// Initialize the console
+console.init();

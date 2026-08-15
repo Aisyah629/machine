@@ -100,3 +100,5 @@ Training Machine
 - Created/Updated module: `visualjsharp_tool` (See `visualjsharp_tool/README.md` for details)
 
 - Created/Updated module: `mdl_tool` (See `mdl_tool/README.md` for details)
+
+- Created/Updated module: `ruby_tool` (See `ruby_tool/README.md` for details)

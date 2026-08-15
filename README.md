@@ -178,3 +178,5 @@ Training Machine
 - Created/Updated module: `sisal_tool` (See `sisal_tool/README.md` for details)
 
 - Created/Updated module: `vala_tool` (See `vala_tool/README.md` for details)
+
+- Created/Updated module: `api_client_tool` (See `api_client_tool/README.md` for details)

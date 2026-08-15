@@ -4172,3 +4172,55 @@ This matches all constraints.
 </think>
 
 (Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.
+[2026-08-15 05:21:51] (Target Lang: BCPL) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built STRICTLY using the language: BCPL.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provides a list of files/directories (workspace state) and a history of previous interactions. The history shows the model previously generated an instruction for `imp_tool` using `IMP`. The current prompt asks for a follow-up instruction for `BCPL`.
+
+2.  **Review Workspace State (from provided text):**
+    *   `./imp_tool` exists with `main.imp`.
+    *   `./bcpl_tool` does *not* exist in the list.
+    *   This confirms I should create a new folder, likely named `bcpl_tool`.
+
+3.  **Draft the Instruction:**
+    *   *Language:* BCPL.
+    *   *Action:* Initialize new folder, create README, build tool.
+    *   *Target Name:* `bcpl_tool`.
+    *   *Structure:* Follow the pattern seen in history: `(Target Lang: [LANG]) [Action]...`
+    *   *Draft:* `(Target Lang: BCPL) Initialize a new dedicated folder named bcpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BCPL.`
+
+4.  **Refine based on Constraints:**
+    *   "Return ONLY the instruction text." -> Output the draft.
+    *   "Never target .github" -> Draft mentions `bcpl_tool`, safe.
+    *   "New dedicated folder" -> `bcpl_tool` is new.
+    *   "Local README.md" -> Included in draft.
+    *   "STRICTLY using BCPL" -> Included in draft.
+
+5.  **Final Polish:**
+    *   The pattern in the history `(Target Lang: IMP)...` suggests the output format should match that specific syntax or be a clear instruction block.
+    *   Result: `(Target Lang: BCPL) Initialize a new dedicated folder named bcpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BCPL.`
+
+6.  **Final Output Generation:**
+    *   Just the string.
+    *   `(Target Lang: BCPL) Initialize a new dedicated folder named bcpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BCPL.`
+    *   Wait, let's look at the example in the prompt history.
+    *   Example: `(Target Lang: IMP) Initialize a new dedicated folder named imp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IMP to implement a parser or code analysis utility.`
+    *   The prompt asks for "exactly 1 logical follow-up instruction".
+    *   The prompt explicitly demands: "STRICTLY using this exact programming language: BCPL".
+    *   I will include the implementation detail (parser/utility) as implied by the previous examples in the history, or just keep it generic if the constraint doesn't force a specific type. The constraint says "implement a parser or code analysis utility" in the example, but the current prompt just says "Generate exactly 1 logical follow-up instruction... MUST explicitly demand... BCPL".
+    *   To be safe and consistent with the "logical follow-up" style seen in history, adding a specific task like "parser" makes sense, or just following the exact structure of the previous turn.
+    *   Previous turn: `...implement a parser or code analysis utility.`
+    *   Current prompt constraints: "MUST explicitly demand... BCPL".
+    *   Result: `(Target Lang: BCPL) Initialize a new dedicated folder named bcpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BCPL to implement a parser or code analysis utility.`
+    *   This looks complete and follows the pattern.
+
+    *   *Self-Correction on "Return ONLY":* The output should be just the text string, no markdown code blocks if possible, or just the raw text as requested by "Return ONLY the instruction text". The example output in the history shows just the text.
+
+    *   Final String: `(Target Lang: BCPL) Initialize a new dedicated folder named bcpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BCPL to implement a parser or code analysis utility.`
+</think>
+
+(Target Lang: BCPL) Initialize a new dedicated folder named bcpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BCPL to implement a parser or code analysis utility.

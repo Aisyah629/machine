@@ -388,3 +388,5 @@ Training Machine
 - Created/Updated module: `opa_tool` (See `opa_tool/README.md` for details)
 
 - Created/Updated module: `frege_tool` (See `frege_tool/README.md` for details)
+
+- Created/Updated module: `gdl_tool` (See `gdl_tool/README.md` for details)

@@ -1,0 +1,85 @@
+// GJ Tool Implementation
+// Language: GJ
+
+package gj_tool;
+
+import java.lang.reflect.*;
+import java.util.*;
+
+public class Main {
+
+    // GJ-style Generics
+    // GJ (Generic Java) was a prototype that introduced generics to Java before they were officially adopted.
+    
+    // A generic class demonstrating type-safe abstractions
+    public class Container<T> {
+        private T value;
+
+        public Container(T value) {
+            this.value = value;
+        }
+
+        public T get() {
+            return value;
+        }
+
+        public void set(T value) {
+            this.value = value;
+        }
+    }
+
+    public static void main(String[] args) {
+        // Demonstrate generic type safety and compile-time inference
+        Main main = new Main();
+        
+        // Instantiate a Container with String
+        Container<String> stringContainer = main.new Container<String>("Hello from GJ!");
+        System.out.println(stringContainer.get());
+
+        // Instantiate a Container with Integer
+        Container<Integer> intContainer = main.new Container<Integer>(42);
+        System.out.println(intContainer.get());
+
+        // Demonstrate interoperability and reflection
+        demonstrateInteroperability();
+        
+        System.out.println("GJ Tool executed successfully.");
+    }
+
+    private static void demonstrateInteroperability() {
+        // Using standard Java collections to show interoperability
+        List<String> list = new ArrayList<String>();
+        list.add("GJ");
+        list.add("Java");
+        list.add("Interoperability");
+        
+        for (String item : list) {
+            System.out.println("Interoperable Item: " + item);
+        }
+        
+        // Demonstrate generic method
+        String result = processList(list);
+        System.out.println("Processed: " + result);
+    }
+
+    // Generic method demonstrating compile-time type inference
+    public static <T> T processList(List<T> input) {
+        if (input == null || input.isEmpty()) {
+            return null;
+        }
+        // Return the last element as a demonstration of generic handling
+        return input.get(input.size() - 1);
+    }
+
+    // A generic interface to show type-safe abstractions
+    public interface Processor<T> {
+        T process(T data);
+    }
+
+    // Implementation of the interface for strings
+    public class StringProcessor implements Processor<String> {
+        public String process(String data) {
+            return data.toUpperCase();
+        }
+    }
+}

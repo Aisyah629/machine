@@ -164,3 +164,5 @@ Training Machine
 - Created/Updated module: `boo_tool` (See `boo_tool/README.md` for details)
 
 - Created/Updated module: `data_processing_tool` (See `data_processing_tool/README.md` for details)
+
+- Created/Updated module: `gj_tool` (See `gj_tool/README.md` for details)

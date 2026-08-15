@@ -1,0 +1,87 @@
+// Lynx Diagnostic Tool - Interactive System Monitor
+import std/io
+import std/math
+import std/array
+
+type SystemStat {
+  timestamp: int
+  cpu_usage: float
+  memory_used: float
+  memory_total: float
+  disk_io: float
+  network_rx: float
+  network_tx: float
+}
+
+type GraphPoint {
+  x: int
+  y: float
+}
+
+function format_number(num: float) -> string {
+  return std::math::format(num, 2)
+}
+
+function generate_sample_stats(count: int) -> array[SystemStat] {
+  stats := new array[SystemStat](count)
+  for i from 0 to count-1 {
+    stat := SystemStat()
+    stat.timestamp = i
+    stat.cpu_usage = 50.0 + std::math::random() * 50.0
+    stat.memory_used = 1024.0 + std::math::random() * 2048.0
+    stat.memory_total = 8192.0
+    stat.disk_io = std::math::random() * 100.0
+    stat.network_rx = std::math::random() * 1000.0
+    stat.network_tx = std::math::random() * 500.0
+    stats[i] = stat
+  }
+  return stats
+}
+
+function render_bar(value: float, max: float, width: int) -> string {
+  filled_width := int(value / max * width)
+  bar := ""
+  for j from 0 to width-1 {
+    if j < filled_width {
+      bar += "█"
+    } else {
+      bar += "░"
+    }
+  }
+  return bar
+}
+
+function main() {
+  std::io::stdout::println("Lynx Diagnostic Tool")
+  std::io::stdout::println("==================")
+  std::io::stdout::println("Generating system statistics...")
+  
+  stats := generate_sample_stats(20)
+  
+  std::io::stdout::println("\nCPU Usage (0-100%):")
+  for stat in stats {
+    std::io::stdout::println(format_number(stat.cpu_usage) + "% " + render_bar(stat.cpu_usage, 100.0, 30))
+  }
+  
+  std::io::stdout::println("\nMemory Usage (0-8192MB):")
+  for stat in stats {
+    std::io::stdout::println(format_number(stat.memory_used) + "MB " + render_bar(stat.memory_used, stat.memory_total, 30))
+  }
+  
+  std::io::stdout::println("\nDisk I/O (0-100%):")
+  for stat in stats {
+    std::io::stdout::println(format_number(stat.disk_io) + "% " + render_bar(stat.disk_io, 100.0, 30))
+  }
+  
+  std::io::stdout::println("\nNetwork RX (0-1000Mbps):")
+  for stat in stats {
+    std::io::stdout::println(format_number(stat.network_rx) + "Mbps " + render_bar(stat.network_rx, 1000.0, 30))
+  }
+  
+  std::io::stdout::println("\nNetwork TX (0-500Mbps):")
+  for stat in stats {
+    std::io::stdout::println(format_number(stat.network_tx) + "Mbps " + render_bar(stat.network_tx, 500.0, 30))
+  }
+  
+  std::io::stdout::println("\nDiagnostic complete.")
+}

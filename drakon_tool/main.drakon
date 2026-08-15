@@ -1,0 +1,39 @@
+;; Drakon Tool Main File
+;; Language: DRAKON
+;; This file represents a simple program to generate and validate DRAKON charts.
+
+PROGRAM DrakonTool
+
+BEGIN
+
+  ;; Initialize the Drakon engine
+  VAR engine : DrakonEngine;
+  ENGINE_INIT(engine);
+
+  ;; Load the user input
+  VAR input : String;
+  INPUT("Enter logic description: ", input);
+
+  ;; Parse the input into a Drakon chart
+  VAR chart : Chart;
+  CHART_PARSE(chart, input);
+
+  ;; Validate the chart
+  VAR isValid : Boolean;
+  CHART_VALIDATE(chart, isValid);
+
+  IF NOT(isValid) THEN
+    OUTPUT("Invalid chart structure.");
+  ELSE
+    ;; Generate the code
+    VAR code : String;
+    CODE_GENERATE(code, chart);
+    OUTPUT("Generated DRAKON code:");
+    OUTPUT(code);
+  ENDIF;
+
+  ;; Cleanup
+  ENGINE_CLEANUP(engine);
+
+END
+;; End of DrakonTool

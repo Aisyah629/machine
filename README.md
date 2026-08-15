@@ -80,3 +80,5 @@ Training Machine
 - Created/Updated module: `acedas_tool` (See `acedas_tool/README.md` for details)
 
 - Created/Updated module: `livescript_tool` (See `livescript_tool/README.md` for details)
+
+- Created/Updated module: `splus_tool` (See `splus_tool/README.md` for details)

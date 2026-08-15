@@ -1,0 +1,27 @@
+// main.splus
+// Statistical Data Processing Utility
+
+// Initialize environment
+main <- function() {
+    cat("S-PLUS Statistical Data Processing Utility\n")
+    
+    // Example data
+    data <- data.frame(
+        x = c(1, 2, 3, 4, 5),
+        y = c(2, 4, 5, 4, 5)
+    )
+    
+    // Basic statistics
+    cat("\nData Summary:\n")
+    print(summary(data))
+    
+    // Linear model
+    cat("\nFitting Linear Model:\n")
+    model <- lm(y ~ x, data = data)
+    print(summary(model))
+    
+    cat("\nProcessing complete.\n")
+}
+
+// Execute main function
+main()

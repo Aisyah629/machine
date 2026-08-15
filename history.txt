@@ -18230,3 +18230,78 @@ Initialize a NEW dedicated folder named objectlisp_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named small_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SMALL. Focus entirely on this new objective: 'Implement a lightweight configuration parser'. You MUST write functional code for this task strictly using this programming language: SMALL. I will output this. End. I will output the text now.
+[2026-08-15 23:21:48] (Target Lang: WATFIV, WATFOR) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** Long list of directories/files, mostly `*_tool` folders with `README.md` and a main source file (e.g., `./c_tool/README.md`, `./c_tool/main.c`). There's already a `./small_tool` directory mentioned in the workspace list, but the prompt asks for a *new* instruction.
+   - **History:** Shows a few examples of generated instructions in a specific format/style. They all follow a pattern:
+     "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write functional code for this task strictly using this programming language: [LANG]. I will output this. End. I will output the text now."
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - MUST explicitly demand the new tool be built STRICTLY using this exact programming language: WATFIV, WATFOR.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Match the style/cadence from the history/examples.
+
+2.  **Deconstruct Constraints:**
+   - Language: `WATFIV, WATFOR` (I need to phrase it exactly as requested: "WATFIV, WATFOR")
+   - Folder: NEW dedicated folder (I'll name it something consistent with the pattern, e.g., `watfiv_watfor_tool` or just follow the pattern `watfiv_tool` but the prompt says "WATFIV, WATFOR". I'll use `watfiv_watfor_tool` to be safe, or just `watfiv_tool`. Actually, the prompt says "strictly using this exact programming language: WATFIV, WATFOR". I'll stick to the exact phrase in the language slot.)
+   - Folder name: I'll use `watfiv_tool` or `watfiv_watfor_tool`. Let's go with `watfiv_watfor_tool` to match the dual language hint, or just `watfiv_tool`. The prompt says "strictly using this exact programming language: WATFIV, WATFOR". I'll just use `watfiv_watfor_tool` as the folder name to be precise, or `watfiv_tool`. Actually, the pattern is `[name]_tool`. I'll use `watfiv_watfor_tool`.
+   - Structure: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WATFIV, WATFOR. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write functional code for this task strictly using this programming language: WATFIV, WATFOR. I will output this. End. I will output the text now."
+   - Check constraints: "Return ONLY the instruction text." "NEVER target the .github directory." "MUST explicitly demand... STRICTLY using this exact programming language: WATFIV, WATFOR."
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named watfiv_watfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WATFIV, WATFOR. Focus entirely on this new objective: 'Implement a legacy scientific computation module'. You MUST write functional code for this task strictly using this programming language: WATFIV, WATFOR. I will output this. End. I will output the text now.
+
+   Let's verify against constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using exact programming language: WATFIV, WATFOR? Yes.
+   - Place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches style/cadence? Yes, exactly matches the prompt's examples.
+
+   One minor thing: The prompt says "WATFIV, WATFOR". I'll keep it exactly as requested. The folder name can be `watfiv_tool` to keep it simple and consistent with the `_tool` suffix pattern, or `watfiv_watfor_tool`. I'll go with `watfiv_watfor_tool` to reflect the dual name, or just `watfiv_tool`. Actually, the prompt says "programming language: WATFIV, WATFOR". I'll stick to `watfiv_watfor_tool`.
+
+   Let's check the exact wording from the prompt's examples:
+   "Initialize a NEW dedicated folder named small_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SMALL. Focus entirely on this new objective: 'Implement a lightweight configuration parser'. You MUST write functional code for this task strictly using this programming language: SMALL. I will output this. End. I will output the text now."
+
+   I will replicate this structure exactly, substituting the required elements.
+
+   Draft:
+   Initialize a NEW dedicated folder named watfiv_watfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WATFIV, WATFOR. Focus entirely on this new objective: 'Develop a vintage numerical analysis subroutine'. You MUST write functional code for this task strictly using this programming language: WATFIV, WATFOR. I will output this. End. I will output the text now.
+
+   Checks:
+   - 1 instruction? Yes.
+   - Language: WATFIV, WATFOR (exact match)
+   - NEW folder + README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+   - Matches style? Yes.
+
+   All constraints met. Output matches exactly. Proceeds. 
+   One detail: The prompt says "WATFIV, WATFOR". I'll keep the comma and space as requested. The folder name will be `watfiv_watfor_tool`. Objective can be anything functional/vintage related. All good.
+   Output matches draft.✅
+   Proceeds. 
+   [Output Generation] -> "Initialize a NEW dedicated folder named watfiv_watfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WATFIV, WATFOR. Focus entirely on this new objective: 'Develop a vintage numerical analysis subroutine'. You MUST write functional code for this task strictly using this programming language: WATFIV, WATFOR. I will output this. End. I will output the text now." 
+   Wait, let's verify if the prompt wants exactly the phrase "WATFIV, WATFOR" or just one of them. It says "WATFIV, WATFOR". I will use it exactly.
+   All good. Output matches.✅
+   Final check of the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: WATFIV, WATFOR." -> I will include it exactly.
+   Ready.✅
+   Output matches exactly.✅
+   [Proceeds] -> *Output Generation*
+   "Initialize a NEW dedicated folder named watfiv_watfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WATFIV, WATFOR. Focus entirely on this new objective: 'Develop a vintage numerical analysis subroutine'. You MUST write functional code for this task strictly using this programming language: WATFIV, WATFOR. I will output this. End. I will output the text now." 
+   (Self-Correction/Verification during thought): I should ensure the formatting matches the example exactly, with no extra text. The prompt says "Return ONLY the instruction text." I will output just that string. All constraints satisfied.✅
+   Output Generation.✅
+   [Done]
+   *(Note: I'll output exactly the string without quotes as per the prompt's examples which just output the raw text)*
+   Actually, looking at the prompt's history, it shows the output generation directly. I will just output the raw instruction text.
+   Final string: Initialize a NEW dedicated folder named watfiv_watfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WATFIV, WATFOR. Focus entirely on this new objective: 'Develop a vintage numerical analysis subroutine'. You MUST write functional code for this task strictly using this programming language: WATFIV, WATFOR. I will output this. End. I will output the text now.
+   Matches perfectly. Proceeds. 
+   [Output Generation] -> (exact string)✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named watfiv_watfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WATFIV, WATFOR. Focus entirely on this new objective: 'Develop a vintage numerical analysis subroutine'. You MUST write functional code for this task strictly using this programming language: WATFIV, WATFOR. I will output this. End. I will output the text now.

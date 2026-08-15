@@ -464,3 +464,5 @@ Training Machine
 - Created/Updated module: `objectlisp_tool` (See `objectlisp_tool/README.md` for details)
 
 - Created/Updated module: `./small_tool` (See `./small_tool/README.md` for details)
+
+- Created/Updated module: `watfiv_watfor_tool` (See `watfiv_watfor_tool/README.md` for details)

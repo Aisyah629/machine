@@ -1,0 +1,18 @@
+; CHIP-8 Main Program
+; Simple instruction set example
+; Registers V0-VF, Memory, Stack, and Timing registers are used.
+
+; Initial setup
+    LD    R0, 0      ; Initialize R0 to 0
+    LD    R1, 10     ; Initialize R1 to 10
+    LD    R2, 0      ; Initialize R2 to 0
+
+; Loop: R2 = R2 + R1
+LOOP:
+    ADD   R2, R1     ; R2 += R1
+    INC   R0         ; R0++
+    CMP   R0, 10     ; Compare R0 with 10
+    BNE   LOOP       ; Branch to LOOP if not equal
+
+; End program
+    HALT

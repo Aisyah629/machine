@@ -156,3 +156,5 @@ Training Machine
 - Created/Updated module: `objectlisp_tool` (See `objectlisp_tool/README.md` for details)
 
 - Created/Updated module: `hartmann_tool` (See `hartmann_tool/README.md` for details)
+
+- Created/Updated module: `npl_tool` (See `npl_tool/README.md` for details)

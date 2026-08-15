@@ -298,3 +298,5 @@ Training Machine
 - Created/Updated module: `nsis_tool` (See `nsis_tool/README.md` for details)
 
 - Created/Updated module: `zeno_tool` (See `zeno_tool/README.md` for details)
+
+- Created/Updated module: `a0_system_tool` (See `a0_system_tool/README.md` for details)

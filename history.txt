@@ -15155,3 +15155,41 @@ Initialize a NEW dedicated folder named opa_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named frege_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Frege.
+[2026-08-15 20:02:08] (Target Lang: GDL) Thinking (Process):
+1.  **Analyze User Input**:
+    - Context: Autonomous AI, Workspace list provided. History shows a pattern of generating tool folder instructions.
+    - History Output: "Initialize a NEW dedicated folder named frege_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Frege."
+    - Current Prompt/Task: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GDL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+2.  **Constraints Check**:
+    - Exactly 1 logical follow-up instruction.
+    - MUST explicitly demand the new tool be built STRICTLY using "GDL".
+    - If building a new tool: place in NEW dedicated folder, create local README.md.
+    - Return ONLY the instruction text.
+    - NEVER target .github directory.
+3.  **Formulate Output**:
+    - Need a string that matches the pattern of the history but targets "GDL".
+    - Pattern: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GDL."
+    - What should the tool name be? GDL is the language. Usually, these prompts use `language + _tool`. So `gdl_tool`.
+    - Draft: `Initialize a NEW dedicated folder named gdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GDL.`
+    - Check constraints: Exactly 1 instruction? Yes. Demands GDL? Yes. NEW folder? Yes. Local README? Yes. ONLY instruction text? Yes. No .github? Yes.
+4.  **Final Output Generation**:
+    - Just the string. No backticks, no extra text.
+    - "Initialize a NEW dedicated folder named gdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GDL."
+    - Matches history format perfectly.
+    - Done. 
+    - Wait, checking the exact wording of the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GDL."
+    - I will output exactly that string. No extra characters.
+    - Ready. 
+    - Output: `Initialize a NEW dedicated folder named gdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GDL.` (without backticks)
+    - Double check constraint: "Return ONLY the instruction text." -> I will just output the text.
+    - All good.✅
+    - Proceeds. 
+    - Output Generation. 
+    - `Initialize a NEW dedicated folder named gdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GDL.` (Plain text)
+    - Actually, the prompt says "Generate exactly 1 logical follow-up instruction." I will just provide the instruction string.
+    - Done. 
+    - Output matches requirement. 
+    - [Proceeds]
+</think>
+
+Initialize a NEW dedicated folder named gdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GDL.

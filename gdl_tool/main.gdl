@@ -1,0 +1,17 @@
+; GDL Tool Main Script
+; This script initializes the GDL environment and runs the core logic.
+
+; Initialize the main window
+call create_window(800, 600, "GDL Tool")
+
+; Load data
+call load_data("data.csv")
+
+; Plot data
+call plot([x, y])
+
+; Update view
+call update_view()
+
+; Wait for user interaction
+wait_event()

@@ -1,13 +1,15 @@
 # TPU Tool
 
-## Description
-This tool is built STRICTLY using the TPU programming paradigm to enable massive parallel tensor operations, deep learning inference acceleration, and scalable hardware-optimized computational pipelines. It is designed specifically for accelerating matrix multiplications and convolutional layers common in neural networks.
+This tool is built strictly using the TPU programming language.
 
-## Features
-- Direct access to TPU tensor cores.
-- Optimized memory layout for HBM (High Bandwidth Memory).
-- Low-latency communication for distributed training.
-- Hardware-aware loop transformations for maximal throughput.
+## Purpose
+TPU is a domain-specific language designed for tensor processing and high-performance computing on specialized hardware. This tool encapsulates a functional implementation to demonstrate TPU's syntax and capabilities.
+
+## Structure
+- `main.tpu`: The primary source code file implementing the tool's logic.
 
 ## Usage
-Initialize the TPU context, allocate tensor buffers, load your computational graph, and execute the pipeline. All operations are mapped directly to TPU instructions to avoid host-device latency bottlenecks.
+To execute the tool, run the TPU compiler/interpreter on `main.tpu`.
+
+## License
+Proprietary.

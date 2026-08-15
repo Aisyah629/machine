@@ -17109,3 +17109,37 @@ Initialize a NEW dedicated folder named picolisp_tool in the workspace, create a
 </think>
 
 Initialize a NEW dedicated folder named pli_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL/I.
+[2026-08-15 22:27:47] (Target Lang: TPU) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built STRICTLY using the programming language: TPU.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md in that folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The user provided a workspace list showing existing tools like `c_tool`, `abap_tool`, etc. It also shows `tpu_tool` already exists in the list (`./tpu_tool`, `./tpu_tool/README.md`, `./tpu_tool/main.tpu`).
+    *   *Self-Correction/Refinement based on "New Tool":* The prompt asks to "build the entire new tool". Usually, when a follow-up is generated, it implies creating a *new* instance or following a pattern. However, `tpu_tool` exists.
+    *   *Interpretation of "Logical Follow-up":* In these types of prompts, a "logical follow-up" often means continuing the pattern of the history. The history shows creating a `pli_tool`. The prompt asks for a tool built with TPU. If `tpu_tool` exists, creating it again might be redundant or the instruction should be to create it anyway (idempotent) or the model should treat the request as creating a tool *named* TPU regardless of existence, or perhaps the "New dedicated folder" implies a fresh start.
+    *   *Crucial Check:* The prompt says "Initialize a NEW dedicated folder...". Even if `tpu_tool` exists in the list, the instruction should probably follow the format of creating the tool. However, looking at the history, the previous turn created `pli_tool`. The current request asks for TPU. The output should be the instruction text.
+    *   *Drafting the Instruction:* "Initialize a NEW dedicated folder named tpu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TPU."
+    *   *Review against Constraints:*
+        *   Exactly 1 logical follow-up? The output is a single instruction string.
+        *   Strictly TPU? Yes ("STRICTLY using this exact programming language: TPU").
+        *   New dedicated folder? Yes ("NEW dedicated folder named tpu_tool").
+        *   Create README.md? Yes.
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+    *   *Result:* "Initialize a NEW dedicated folder named tpu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TPU."
+
+2.  **Final Polish:**
+    *   The text matches the pattern of the history examples (e.g., `pli_tool` generation).
+    *   The language is TPU.
+    *   The folder is `tpu_tool`.
+    *   Output is just the text.
+
+3.  **Final Output Construction:**
+    *   `Initialize a NEW dedicated folder named tpu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TPU.`
+</think>
+
+Initialize a NEW dedicated folder named tpu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TPU.

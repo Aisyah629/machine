@@ -1,0 +1,24 @@
+// Sawzall tool main logic
+// This script demonstrates basic Sawzall syntax and data processing capabilities.
+
+import "math";
+
+input line : string;
+
+// Define a simple aggregator to count occurrences of a pattern
+aggregator count_lines : count of 1;
+
+// Define an aggregator to compute average length of strings
+aggregator avg_line_length : avg of length(line);
+
+// Process the input
+if line matches "^\\d+$" {
+  count_lines++;
+  avg_line_length++ length(line);
+}
+
+// Output the results
+output {  
+  "Total lines matched": count_lines,  
+  "Average length": avg_line_length
+}

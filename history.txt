@@ -11586,3 +11586,44 @@ Done.
 </think>
 
 (Target Lang: Jako) Initialize a new dedicated folder named jako_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Jako.
+[2026-08-15 15:05:02] (Target Lang: Ada) The user wants a single logical follow-up instruction based on the provided workspace history and a specific constraint.
+
+**Constraints:**
+1. Generate exactly 1 logical follow-up instruction.
+2. Explicitly demand that the new tool be built STRICTLY using the programming language: Ada.
+3. If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+6. The instruction should follow the pattern seen in the history (e.g., `(Target Lang: ...)`).
+
+**Context:**
+The user provided a list of directories, suggesting a repository of various programming language tools.
+The history shows a pattern of initializing tool folders for specific languages.
+The last entry in the history is `Jako`.
+The user now asks to generate an instruction for `Ada`.
+
+**Drafting the Instruction:**
+Target Language: Ada
+Folder Name: ada_tool (based on naming conventions in the workspace list, e.g., `acc_tool`, `c_engine_tool`, `pascal_tool`)
+File to create: `README.md` inside the new folder.
+Language requirement: STRICTLY Ada.
+
+**Instruction Text:**
+`(Target Lang: Ada) Initialize a new dedicated folder named ada_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ada.`
+
+**Verification:**
+- Exactly 1 instruction? Yes.
+- Language: Ada? Yes.
+- New dedicated folder? Yes (`ada_tool`).
+- Local README.md? Yes.
+- Only instruction text? Yes.
+- No .github targeting? Yes.
+- Format matches history? Yes.
+
+**Final Output:**
+(Target Lang: Ada) Initialize a new dedicated folder named ada_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ada.
+
+I will output exactly that string.
+</think>
+
+(Target Lang: Ada) Initialize a new dedicated folder named ada_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ada.

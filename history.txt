@@ -7225,3 +7225,46 @@ Result matches the pattern.
 </think>
 
 (Target Lang: L# .NET) Initialize a new dedicated folder named lsharp_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: L# .NET to design high-performance functional systems with deep .NET ecosystem integration and advanced concurrency support.
+[2026-08-15 09:50:39] (Target Lang: MATLAB) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate 1 logical follow-up instruction.
+    *   Constraint: Must demand a new tool built STRICTLY using MATLAB.
+    *   Constraint: New tool must be in a NEW dedicated folder.
+    *   Constraint: Must create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target .github.
+    *   Context: The workspace has many language-specific tools (asharp_dotnet_tool, c_engine_tool, etc.). The history shows a pattern of adding folders, READMEs, and specific language instructions. The last item in the history was `lsharp_dotnet_tool`.
+    *   Output Format: Similar to previous outputs: `(Target Lang: MATLAB) Initialize...` or just the instruction text. The prompt asks to "Return ONLY the instruction text." Looking at the example output in the prompt `(Target Lang: L# .NET) Initialize...`, the format seems to be `(Target Lang: LANG_NAME) Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LANG_NAME to [description].`
+
+2.  **Determine the Folder Name:**
+    *   Language: MATLAB.
+    *   Existing patterns: `ruby_tool`, `c_engine_tool`, `asharp_dotnet_tool`.
+    *   Likely name: `matlab_tool` or `matlab_script_tool`. `matlab_tool` is concise and fits the pattern of `ruby_tool`, `pascal_tool`, etc.
+
+3.  **Draft the Instruction:**
+    *   Start: `(Target Lang: MATLAB)`
+    *   Action: `Initialize a new dedicated folder named matlab_tool in the workspace`
+    *   Action: `create a local README.md inside it`
+    *   Action: `and build the entire new tool STRICTLY using this exact programming language: MATLAB`
+    *   Description (Logical follow-up/Description of purpose): MATLAB is known for matrix operations, numerical analysis, simulation, and data visualization.
+    *   Draft Description: `to perform advanced numerical analysis, matrix computation, and scientific simulation with robust data visualization capabilities.`
+    *   Full Draft: `(Target Lang: MATLAB) Initialize a new dedicated folder named matlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB to perform advanced numerical analysis, matrix computation, and scientific simulation with robust data visualization capabilities.`
+
+4.  **Review Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Strictly MATLAB? Yes.
+    *   New dedicated folder? Yes (`matlab_tool`).
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   No .github? Yes.
+    *   Logical follow-up? Yes, adds MATLAB to the diverse set of tools.
+
+5.  **Final Polish:**
+    *   Result: `(Target Lang: MATLAB) Initialize a new dedicated folder named matlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB to enable high-efficiency numerical computing, algorithm prototyping, and comprehensive data analysis workflows.`
+    *   This matches the style and constraints perfectly.
+
+6.  **Construct Output:**
+    *   `(Target Lang: MATLAB) Initialize a new dedicated folder named matlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB to enable high-efficiency numerical computing, algorithm prototyping, and comprehensive data analysis workflows.`
+</think>
+
+(Target Lang: MATLAB) Initialize a new dedicated folder named matlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB to enable high-efficiency numerical computing, algorithm prototyping, and comprehensive data analysis workflows.

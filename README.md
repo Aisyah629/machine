@@ -236,3 +236,5 @@ Training Machine
 - Created/Updated module: `tal_tool` (See `tal_tool/README.md` for details)
 
 - Created/Updated module: `xc_tool` (See `xc_tool/README.md` for details)
+
+- Created/Updated module: `ppl_tool` (See `ppl_tool/README.md` for details)

@@ -9529,3 +9529,56 @@ All good.
 </think>
 
 (Target Lang: XC) Initialize a new dedicated folder named xc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XC.
+[2026-08-15 12:13:59] (Target Lang: PPL) Thinking Process:
+1.  **Analyze User Input:** The user provided a large workspace list (simulated), a history snippet showing a previous interaction about `xc_tool`, and a specific prompt instruction: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PPL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - Explicitly demand the tool be built STRICTLY using the exact programming language: PPL.
+   - If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Implicit from pattern: Target Lang format like `(Target Lang: PPL) ...`
+3.  **Draft Construction:**
+   Need to formulate a single instruction string that meets all constraints.
+   Structure: `(Target Lang: PPL) Initialize a new dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PPL.`
+   Wait, what should the tool be named? The prompt doesn't specify a name, but usually, it's `[language]_tool`. I'll use `ppl_tool`.
+   Let's check the exact wording from the prompt's example: `(Target Lang: XC) Initialize a new dedicated folder named xc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XC.`
+   I will adapt this to PPL.
+   Draft: `(Target Lang: PPL) Initialize a new dedicated folder named ppl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PPL.`
+4.  **Verify Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand STRICTLY using PPL? Yes.
+   - New dedicated folder and local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   - Matches format? Yes.
+   All constraints met. Output matches draft.✅
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." and "Return ONLY the instruction text." I will output just the drafted string.
+   Let's double check the exact phrasing requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PPL."
+   Draft: `(Target Lang: PPL) Initialize a new dedicated folder named ppl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PPL.`
+   Matches perfectly. Proceeds. 
+   Output matches draft exactly. No extra text.✅
+   Self-Correction/Refinement during thought: Should I include the exact phrasing from the prompt's example? Yes, it's standard for this benchmark/prompt style.
+   Final string: `(Target Lang: PPL) Initialize a new dedicated folder named ppl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PPL.`
+   Checks: 1 instruction? Yes. Demands PPL strictly? Yes. New folder & README? Yes. Only instruction text? Yes. No .github? Yes.
+   Ready. 
+   Output Generation. 
+   [Output] `(Target Lang: PPL) Initialize a new dedicated folder named ppl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PPL.`✅
+   Note: The prompt history shows `(Target Lang: XC) Initialize a new dedicated folder named xc_tool...`. I will follow that exact template. All good. 
+   Proceeds. 
+   [Output Generation] -> `(Target Lang: PPL) Initialize a new dedicated folder named ppl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PPL.` 
+   (Self-Correction/Verification during generation prep)
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction." It might be safer to just output the exact template string.
+   I will output exactly that. No extra words.✅
+   Final Check of the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PPL." -> Included.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Included.
+   "Return ONLY the instruction text." -> Will do.
+   "NEVER target the .github directory." -> Will do.
+   All set. 
+   Output matches exactly. 
+   Proceeds. 
+   [Output Generation] `(Target Lang: PPL) Initialize a new dedicated folder named ppl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PPL.`
+   *(Done.)*
+</think>
+
+(Target Lang: PPL) Initialize a new dedicated folder named ppl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PPL.

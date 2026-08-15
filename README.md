@@ -308,3 +308,5 @@ Training Machine
 - Created/Updated module: `./simscript_tool` (See `./simscript_tool/README.md` for details)
 
 - Created/Updated module: `rex_tool` (See `rex_tool/README.md` for details)
+
+- Created/Updated module: `maxscript_tool` (See `maxscript_tool/README.md` for details)

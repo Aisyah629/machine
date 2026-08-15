@@ -12308,3 +12308,78 @@ Proceeds.
 </think>
 
 (Target Lang: rex) Initialize a new dedicated folder named rex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rex.
+[2026-08-15 15:58:31] (Target Lang: MaxScript) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace structure with many tool directories, each containing a README.md and a main source file. The history shows a previous command targeting `rex_tool` and `rex` language.
+   - **Current Command:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MaxScript. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using `MaxScript`.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+
+2.  **Identify Key Requirements:**
+   - Target language: MaxScript
+   - New folder name: Must be dedicated to MaxScript, e.g., `maxscript_tool`
+   - Must include creating a local README.md
+   - Must be strict: "STRICTLY using this exact programming language: MaxScript"
+   - Output format: ONLY the instruction text, nothing else.
+   - Do not mention `.github`.
+
+3.  **Draft Construction:**
+   "Initialize a new dedicated folder named maxscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript."
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands MaxScript? Yes.
+   - Places in NEW dedicated folder? Yes (`maxscript_tool`).
+   - Creates local README.md? Yes.
+   - Returns ONLY instruction text? Yes.
+   - Never targets `.github`? Yes.
+   - Matches style of previous examples? Yes, follows the pattern `(Target Lang: maxscript) Initialize a new dedicated folder named maxscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript.`
+
+   I will format it exactly as requested, matching the prompt's structure. The prompt says "Return ONLY the instruction text." I'll output just the instruction.
+
+   Let's refine it to exactly match the required phrasing pattern if needed, but the core requirement is clear.
+   "Initialize a new dedicated folder named maxscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript."
+
+   Check: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MaxScript." -> The draft includes this.
+   Check: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> The draft includes this.
+   Check: "Return ONLY the instruction text." -> I will output just that string.
+
+   All constraints met. Proceed. 
+   One minor thing: The prompt says "STRICTLY using this exact programming language: MaxScript." I'll make sure the capitalization matches. The tool folder convention in the workspace is `*_tool`, so `maxscript_tool` fits.
+
+   Final text: `Initialize a new dedicated folder named maxscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript.`
+   Matches perfectly. Output matches request.✅
+   I will output exactly that. 
+   Self-Correction/Verification during thought: 
+   The prompt says "Generate exactly 1 logical follow-up instruction." and gives constraints. I will just output the instruction string as requested. No extra text. All good. 
+   Output matches draft.✅
+   Proceeds. 
+   [Output Generation] -> `Initialize a new dedicated folder named maxscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript.`
+   Done. 
+   [Final Check] 
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands MaxScript? Yes.
+   - NEW dedicated folder? Yes (`maxscript_tool`).
+   - Local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never targets .github? Yes.
+   All constraints satisfied. Output matches. 
+   Proceeds. 
+   [Output] -> `Initialize a new dedicated folder named maxscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript.` 
+   (Note: I'll keep it exactly as drafted.) 
+   Ready. 
+   [Output Generation] (Proceeds) -> *Output matches exactly* ✅
+   *(Self-Correction/Refinement during thought)*: Wait, the prompt says "Return ONLY the instruction text." I will strictly follow that. No extra words. The draft is exactly one sentence/instruction. It's good.
+   One detail: The prompt says "STRICTLY using this exact programming language: MaxScript." I will ensure the casing matches. "MaxScript" is correct.
+   All good.✅
+   Output matches. 
+   `[Output]` Initialize a new dedicated folder named maxscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript. 
+   *(Done.)*
+</think>
+
+Initialize a new dedicated folder named maxscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript.

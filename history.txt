@@ -8388,3 +8388,77 @@ No markdown. Just the string.
 </think>
 
 (Target Lang: CL) Initialize a new dedicated folder named cl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CL to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.
+[2026-08-15 11:06:18] (Target Lang: Trac) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace directory structure containing many tool directories (e.g., `acedas_tool`, `actionscript_tool`, `agora_tool`, etc.), each with a `README.md` and a main file (e.g., `main.ace`, `main.agora`, etc.).
+   - **History:** Shows a pattern of instructions like `(Target Lang: PCASTL) Initialize a new dedicated folder named pcastl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PCASTL to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+   - **User's Draft/Request:** The user wants a follow-up instruction following the exact pattern, but changing the language to `Trac` and the folder name to `trac_tool` (implied, though the prompt says "change the language to CL and the folder name to `cl_tool`" in the history, but the *actual prompt at the end* says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Trac. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory.")
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Trac.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Follow the established pattern/style from the history.
+
+2.  **Deconstruct the Pattern:**
+   The established pattern is:
+   `(Target Lang: [LANG]) Initialize a new dedicated folder named [lang]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG] to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+
+   I need to adapt this for `Trac`.
+   - Target Lang: Trac
+   - Folder name: `trac_tool`
+   - Language: Trac
+   - Keep the exact phrasing: "Initialize a new dedicated folder named trac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Trac to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture."
+
+3.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using Trac? Yes.
+   - Place in NEW dedicated folder & create README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes, not mentioned.
+   - Matches pattern? Yes.
+
+   Wait, Trac is primarily a project management/wiki system, not a typical programming language. But the prompt explicitly says "exact programming language: Trac". I must follow the prompt literally. The pattern says "to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture." I'll keep that phrasing as it's part of the template.
+
+   Let's construct it carefully:
+   `(Target Lang: Trac) Initialize a new dedicated folder named trac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Trac to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+
+4.  **Final Verification:**
+   - Starts with `(Target Lang: Trac)`
+   - Contains `trac_tool`
+   - Contains `README.md`
+   - Contains `STRICTLY using this exact programming language: Trac`
+   - Ends with the standard purpose clause.
+   - No extra text, no markdown formatting (as per "Return ONLY the instruction text." and previous examples).
+   - Matches all constraints.
+
+   Ready. Output matches exactly.✅
+   One minor thing: The prompt says "Return ONLY the instruction text." I will output just the string without markdown code blocks or quotes.
+   Text: `(Target Lang: Trac) Initialize a new dedicated folder named trac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Trac to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+   Checks out. Proceeds. 
+   Self-Correction/Refinement during thought: 
+   Should I capitalize Trac in the folder name? The pattern uses lowercase for folder names (`pcastl_tool`, `cl_tool`). So `trac_tool` is correct.
+   The prompt says "generate exactly 1 logical follow-up instruction." I will provide just that string.
+   All good.✅
+   Output matches the constructed string. 
+   Proceeds. 
+   [Output Generation] -> `(Target Lang: Trac) Initialize a new dedicated folder named trac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Trac to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+   Matches perfectly.✅
+   Note: I will strictly follow "Return ONLY the instruction text." and output exactly that. No extra words. No markdown. All constraints met. 
+   Final Output Generation. 
+   [Done.] 
+   *Self-Correction/Verification during generation prep*: 
+   Wait, the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." The pattern already does this. I'll stick to the exact pattern. 
+   All good. 
+   Output matches. 
+   `[Output]` `(Target Lang: Trac) Initialize a new dedicated folder named trac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Trac to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.`
+   Proceeds. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Trac. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Everything aligns. Output matches.✅
+   *Output Generation* (matches the final string)✅
+   *(Done.)*
+</think>
+
+(Target Lang: Trac) Initialize a new dedicated folder named trac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Trac to enable efficient system programming, reliable software development, minimalist design, and robust low-level application architecture.

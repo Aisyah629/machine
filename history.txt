@@ -9277,3 +9277,22 @@ Result:
 </think>
 
 (Target Lang: UNICON) Initialize a new dedicated folder named unicon_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: UNICON.
+[2026-08-15 11:54:12] (Target Lang: Jako) The user wants a follow-up instruction to be generated.
+The instruction must follow specific constraints:
+1.  Target language: Jako.
+2.  Create a new dedicated folder: `jako_tool`.
+3.  Create a local `README.md`.
+4.  Build the tool STRICTLY using the language Jako.
+5.  Return ONLY the instruction text.
+6.  NEVER target `.github`.
+7.  Context: This is a follow-up to a previous instruction about Unicon. The workspace has many existing tool folders.
+8.  Format: `(Target Lang: [LANG]) [INSTRUCTION]`.
+9.  Language format: The history shows `UNICON`, `BOURNE SHELL`. So `JAKO` should be used.
+10. Constraint Check: "New dedicated folder" -> `jako_tool`. "Local README.md" -> `./jako_tool/README.md`. "STRICTLY using... Jako" -> Yes.
+11. Result construction: `(Target Lang: JAKO) Initialize a new dedicated folder named jako_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JAKO.`
+12. Output: Just the text. No conversational filler.
+
+Result: `(Target Lang: JAKO) Initialize a new dedicated folder named jako_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JAKO.`
+</think>
+
+(Target Lang: JAKO) Initialize a new dedicated folder named jako_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JAKO.

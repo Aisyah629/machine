@@ -5812,3 +5812,44 @@ Output generation.
 </think>
 
 (Target Lang: Object Lisp) Initialize a new dedicated folder named objectlisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Object Lisp to develop a robust object-oriented framework for dynamic data processing and system automation.
+[2026-08-15 08:37:29] (Target Lang: Hartmann pipelines) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using "Hartmann pipelines".
+    *   Constraint 2: If building a new tool, place in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: Looking at the workspace history, there's already a `./hartmann_pipeline_tool` directory with `README.md` and `main.hpf`. The user wants a *new* tool. The previous turn output mentions `objectlisp_tool`, which exists in the list (`./objectlisp_tool`). This suggests the pattern is to create new tools even if similar ones exist, or the user is iterating on a list. The instruction asks for a "NEW dedicated folder".
+    *   Target Language: "Hartmann pipelines".
+
+2.  **Draft the Instruction:**
+    *   *Template:* `(Target Lang: Hartmann pipelines) Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines to [purpose].`
+    *   *Folder Name:* Needs to be unique. `hartmann_pipeline_tool` exists. `hartmann_tool` exists? The list shows `./hartmann_pipeline_tool`. `./hartmann_tool` is not explicitly listed in the snippet, but `hartmann_pipeline_tool` is. To be safe and "NEW", I should pick a distinct name. Maybe `hartmann_flow_tool` or `hartman_pipeline_tool` (typo check) or just `hartmann_next_tool`. The prompt doesn't specify the name, so I have freedom, but it must be a valid folder name. Let's use `hartmann_advanced_tool` or `hartmann_core_tool`. `hartmann_tool` seems like a safe bet if it's not in the list. Scanning the list: `./hartmann_pipeline_tool` is there. `./hartmann_tool` is NOT there. So `hartmann_tool` is a good candidate for a new folder.
+    *   *Language Phrase:* "STRICTLY using this exact programming language: Hartmann pipelines".
+    *   *Purpose:* "to develop a robust object-oriented framework..." was in the previous example. I should generate a logical purpose. Maybe "to streamline automated data transformation workflows".
+    *   *Resulting Text:* `(Target Lang: Hartmann pipelines) Initialize a new dedicated folder named hartmann_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines to develop a robust object-oriented framework for dynamic data processing and system automation.`
+    *   *Refinement:* The prompt asks for "logical follow-up". If the previous one was `objectlisp_tool`, a follow-up could be related, but the constraints are the main driver. The instruction format usually follows the pattern: `(Target Lang: <Lang>) Initialize a new dedicated folder named <name> in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: <Lang> to <purpose>.`
+    *   *Check Constraints:*
+        *   "STRICTLY using this exact programming language: Hartmann pipelines"? Yes.
+        *   "NEW dedicated folder"? Yes (`hartmann_tool` is new relative to the list).
+        *   "create a local README.md"? Yes.
+        *   "Return ONLY the instruction text"? Yes.
+        *   "NEVER target .github"? Yes.
+        *   "Generate exactly 1"? Yes.
+
+3.  **Final Polish (Mental Representation of Output):**
+    *   Text: `(Target Lang: Hartmann pipelines) Initialize a new dedicated folder named hartmann_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines to develop a comprehensive pipeline management system for high-performance data orchestration and real-time automation.`
+    *   *Wait, let's check the folder name again.* The list has `./hartmann_pipeline_tool`. If I use `hartmann_tool`, it's distinct. Good.
+    *   *Language Name Check:* The prompt says "Hartmann pipelines". I must use that exact string in the demand.
+    *   *Output String:* `(Target Lang: Hartmann pipelines) Initialize a new dedicated folder named hartmann_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines to develop a comprehensive pipeline management system for high-performance data orchestration and real-time automation.`
+
+4.  **Final Review against "Return ONLY the instruction text":**
+    *   No markdown blocks? The prompt usually implies raw text or just the string. The example output in the thought trace shows `(Target Lang: ...)` followed by text. The user asked "Return ONLY the instruction text".
+    *   Result: `(Target Lang: Hartmann pipelines) Initialize a new dedicated folder named hartmann_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines to develop a comprehensive pipeline management system for high-performance data orchestration and real-time automation.`
+
+This looks solid.
+</think>
+
+(Target Lang: Hartmann pipelines) Initialize a new dedicated folder named hartmann_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines to develop a comprehensive pipeline management system for high-performance data orchestration and real-time automation.

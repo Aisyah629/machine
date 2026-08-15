@@ -1,0 +1,44 @@
+// Hartmann Pipeline Main Script
+// Language: Hartmann Pipelines
+
+module main;
+
+import std::io;
+import std::data;
+import std::pipeline;
+
+/**
+ * Main entry point for the Hartmann Tool pipeline.
+ * Initializes the data processing environment and executes the core workflow.
+ */
+function main() {
+    // Initialize the pipeline context
+    var context = pipeline.init();
+
+    // Define the data source
+    var source = data.load("input.dat");
+
+    // Apply transformations
+    var transformed = context.transform(source, [
+        pipeline.filter(>0),
+        pipeline.map(x -> x * 2),
+        pipeline.reduce(sum)
+    ]);
+
+    // Output the result
+    io.println("Processing complete. Result: " + transformed);
+
+    // Cleanup and finalize
+    context.finalize();
+}
+
+/**
+ * Helper function to calculate the sum of a list.
+ */
+function sum(list) {
+    var total = 0;
+    for (var item in list) {
+        total += item;
+    }
+    return total;
+}

@@ -1,59 +1,69 @@
-START PROGRAM PDL_Workflow_Engine
+"RECORD extraction_record
+    FIELD 1: STRING (100) : field_1
+    FIELD 2: STRING (100) : field_2
+    FIELD 3: STRING (100) : field_3
+END_RECORD
 
-DEFINE global_config AS STRUCTURE
-  ENABLE_DEBUG : BOOLEAN
-  MAX_ITERATIONS : INTEGER
-  OUTPUT_FORMAT : STRING
-END DEFINE
+GLOBAL delimiter_char = \",\"
+GLOBAL input_filename = \"input_data.txt\"
 
-GLOBAL global_config INITIALIZED AS {TRUE, 1000, "STANDARD"}
+PROCEDURE main()
+    LOCAL file_handle : INTEGER
+    LOCAL raw_line : STRING (200)
+    LOCAL extracted_data : RECORD extraction_record
 
-PROCEDURE Initialize_System()
-  PRINT "Initializing PDL Workflow Engine..."
-  SET global_config.MAX_ITERATIONS TO 1000
-  RETURN
-END PROCEDURE
+    PRINT \"Starting PDL Data Extraction Utility...\"
 
-PROCEDURE Process_Workflow(input_data : DATA_STRUCTURE) AS RESULT
-  DECLARE local_counter AS INTEGER DEFAULT 0
-  DECLARE local_result AS DATA_STRUCTURE
+    OPEN input_filename FOR INPUT AS file_handle
+    IF file_handle = -1 THEN
+        PRINT \"Error: Unable to open input file.\"
+        STOP
+    END_IF
 
-  WHILE local_counter < global_config.MAX_ITERATIONS DO
-    IF input_data IS NULL THEN
-      RETURN ERROR_NULL_INPUT
-    END IF
+    READLINE file_handle INTO raw_line
+    WHILE NOT EOF(file_handle) DO
+        CALL parse_line(raw_line, extracted_data)
+        CALL process_record(extracted_data)
+        READLINE file_handle INTO raw_line
+    END_WHILE
 
-    IF local_counter MODULO 2 EQUALS 0 THEN
-      PROCESS input_data WITH PARALLEL_THREAD
-    ELSE
-      PROCESS input_data WITH SEQUENTIAL_LOGIC
-    END IF
+    CLOSE file_handle
+    PRINT \"Extraction complete.\"
+END_PROCEDURE
 
-    UPDATE local_counter BY 1
-  END WHILE
+PROCEDURE parse_line(line : STRING, OUT data : RECORD extraction_record)
+    LOCAL pos : INTEGER
+    LOCAL field_start : INTEGER
+    LOCAL field_content : STRING (100)
 
-  SET local_result TO FINALIZE(input_data)
-  RETURN local_result
-END PROCEDURE
+    pos = 1
+    CALL extract_field(line, pos, data.field_1)
+    CALL extract_field(line, pos, data.field_2)
+    CALL extract_field(line, pos, data.field_3)
+END_PROCEDURE
 
-PROCEDURE Validate_Configuration()
-  IF global_config.ENABLE_DEBUG EQUALS TRUE THEN
-    PRINT "Debug Mode Active"
-  END IF
+PROCEDURE extract_field(input : STRING, INOUT cursor : INTEGER, OUT field_val : STRING)
+    LOCAL char_code : INTEGER
+    LOCAL current_char : STRING (1)
 
-  CASE global_config.OUTPUT_FORMAT OF
-    "STANDARD": PRINT "Using Standard Output Format"
-    "VERBOSE": PRINT "Using Verbose Output Format"
-    OTHERWISE: PRINT "Unknown Format, Defaulting to Standard"
-  END CASE
+    field_val = \"\"
+    WHILE cursor <= LENGTH(input) DO
+        current_char = SUBSTRING(input, cursor, 1)
+        char_code = ASC(current_char)
 
-  RETURN
-END PROCEDURE
+        IF char_code = ASC(delimiter_char) THEN
+            cursor = cursor + 1
+            EXIT
+        ELSE
+            field_val = field_val + current_char
+            cursor = cursor + 1
+        END_IF
+    END_WHILE
+END_PROCEDURE
 
-MAIN EXECUTION SEQUENCE
-  CALL Initialize_System()
-  CALL Validate_Configuration()
-  ASSIGN workflow_input TO GENERATE_DEFAULT_DATA()
-  ASSIGN output_data TO Process_Workflow(workflow_input)
-  PRINT output_data
-END MAIN
+PROCEDURE process_record(data : RECORD extraction_record)
+    PRINT \"Extracted Field 1: \" + data.field_1
+    PRINT \"Extracted Field 2: \" + data.field_2
+    PRINT \"Extracted Field 3: \" + data.field_3
+END_PROCEDURE
+"

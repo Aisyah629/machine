@@ -270,3 +270,5 @@ Training Machine
 - Created/Updated module: `rsl_tool` (See `rsl_tool/README.md` for details)
 
 - Created/Updated module: `./ratfor_tool` (See `./ratfor_tool/README.md` for details)
+
+- Created/Updated module: `sawzall_tool` (See `sawzall_tool/README.md` for details)

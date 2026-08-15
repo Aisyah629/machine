@@ -5079,3 +5079,56 @@ This looks good. It's concise, follows the pattern, and meets all constraints.
 </think>
 
 (Target Lang: JavaScript) Initialize a new dedicated folder named javascript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JavaScript to implement a modular backend framework and utility library.
+[2026-08-15 07:19:03] (Target Lang: UCSD Pascal) The user wants a follow-up instruction for a new tool.
+The target language is UCSD Pascal.
+The instruction must demand the tool be built STRICTLY using UCSD Pascal.
+If building a new tool, it must be placed in a NEW dedicated folder and have a local README.md.
+The output should be ONLY the instruction text.
+The target `.github` directory must not be targeted.
+The previous context shows examples of tool folders like `ucsd_pascal_tool` already existing in the workspace list?
+Looking at the workspace list:
+`./ucsd_pascal_tool`
+`./ucsd_pascal_tool/README.md`
+`./ucsd_pascal_tool/main.p`
+The workspace list shows `ucsd_pascal_tool` already exists.
+The instruction format is `(Target Lang: <Lang>) ...`.
+The user's prompt says "Generate exactly 1 logical follow-up instruction."
+The constraints are:
+- "Generate exactly 1 logical follow-up instruction."
+- "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: UCSD Pascal."
+- "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+- "Return ONLY the instruction text."
+- "NEVER target the .github directory."
+
+Even though `ucsd_pascal_tool` exists in the workspace list, the prompt asks for a "logical follow-up instruction". Usually, in these scenarios, the model should generate the instruction as if it were a new request or a modification, or perhaps the workspace list is just context and the instruction is the output. However, the prompt says "If building a new tool...". If the tool exists, building a "new" tool with the same name might be redundant, but the instruction template usually asks to initialize the folder. The prompt asks for a "logical follow-up".
+Looking at the history, the previous instruction was for `javascript_tool`. The workspace list contains `ucsd_pascal_tool`.
+If the instruction is to build `ucsd_pascal_tool`, and it already exists, the instruction might still be valid if the goal is to create/update the tool.
+However, often the pattern implies the instruction is the action to be taken.
+The instruction should be: `(Target Lang: UCSD Pascal) Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: UCSD Pascal to ...`
+The description of the tool's functionality is optional but usually included for completeness based on the example `(Target Lang: JavaScript) ... to implement a modular backend framework and utility library.`
+The example shows a description. I should include a description.
+The constraint is "Return ONLY the instruction text."
+So the output should be just the string.
+
+Draft:
+(Target Lang: UCSD Pascal) Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: UCSD Pascal to implement a system configuration and data management suite.
+
+Check constraints:
+- 1 instruction? Yes.
+- STRICTLY using UCSD Pascal? Yes.
+- NEW dedicated folder? Yes.
+- local README.md? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+- Language matches UCSD Pascal? Yes.
+- Folder name matches pattern? `ucsd_pascal_tool` matches `ucsd_pascal_tool`.
+
+Result looks solid.
+I will generate the instruction text.
+The description part "to implement..." can be generic or specific. The example had a specific description. I'll add a plausible description.
+"to implement a robust application control structure and compilation pipeline." fits Pascal well.
+Or just follow the structure.
+Final text: (Target Lang: UCSD Pascal) Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: UCSD Pascal to implement a robust application control structure and compilation pipeline.
+</think>
+
+(Target Lang: UCSD Pascal) Initialize a new dedicated folder named ucsd_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: UCSD Pascal to implement a robust application control structure and compilation pipeline.

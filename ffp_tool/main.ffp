@@ -1,0 +1,17 @@
+;; FFP (Functional Finite Programming) Main Implementation
+;; Entry point for the FFP tool
+
+(defmodule main)
+
+(import :stdio)
+
+(defn factorial [n]
+  (if (= n 0)
+      1
+      (* n (factorial (- n 1)))))
+
+(defn main []
+  (print "FFP Tool Initialized")
+  (print (string "Factorial of 5 is: " (factorial 5))))
+
+(main)

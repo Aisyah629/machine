@@ -9376,3 +9376,31 @@ This matches all requirements.
 </think>
 
 (Target Lang: G-code) Initialize a new dedicated folder named gcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: G-code.
+[2026-08-15 11:56:55] (Target Lang: Cola) The user wants a single follow-up instruction.
+The instruction must target a new tool.
+The target programming language is "Cola".
+The instruction must demand the tool be built strictly using "Cola".
+If building a new tool, it must be in a new dedicated folder and include a local README.md.
+The output should be ONLY the instruction text.
+The output format matches the example: `(Target Lang: Cola) ...`
+No `.github` targeting.
+The instruction should be logical following the previous context, though the context seems to be a list of tools. The previous tool was G-code, but the user is now asking for Cola. The instruction should be standalone as a follow-up.
+The format is `(Target Lang: {Lang}) {Action}`.
+Action: Initialize a new dedicated folder named `{tool_name}` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cola.
+Tool name: `cola_tool`.
+Result: `(Target Lang: Cola) Initialize a new dedicated folder named cola_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cola.`
+Check constraints:
+1.  Exactly 1 instruction? Yes.
+2.  Target Cola? Yes.
+3.  New folder? Yes (`cola_tool`).
+4.  README.md? Yes.
+5.  STRICTLY Cola? Yes.
+6.  No .github? Yes.
+7.  Return ONLY instruction text? Yes.
+Final string construction.
+`(Target Lang: Cola) Initialize a new dedicated folder named cola_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cola.`
+Matches pattern.
+Ready.
+</think>
+
+(Target Lang: Cola) Initialize a new dedicated folder named cola_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cola.

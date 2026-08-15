@@ -230,3 +230,5 @@ Training Machine
 - Created/Updated module: `jako_tool` (See `jako_tool/README.md` for details)
 
 - Created/Updated module: `nu_tool` (See `nu_tool/README.md` for details)
+
+- Created/Updated module: `cola_tool` (See `cola_tool/README.md` for details)

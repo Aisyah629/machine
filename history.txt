@@ -12182,3 +12182,33 @@ Output matches constraints.✅ Proceeds.
 </think>
 
 (Target Lang: SIMSCRIPT) Initialize a new dedicated folder named simscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIMSCRIPT.
+[2026-08-15 15:48:57] (Target Lang: VSXu) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Demand the new tool be built STRICTLY using VSXu.
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+
+2.  **Drafting the Instruction:**
+    *   *Keywords to include:* "VSXu", "STRICTLY", "new tool", "new dedicated folder", "local README.md", "instruction text only".
+    *   *Structure:* Usually, these instructions follow a pattern like "(Target Lang: VSXu) Initialize a new dedicated folder named [folder_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VSXu."
+    *   *Folder Name:* Looking at the pattern in the workspace list, folders are named `..._tool`. So for VSXu, it should likely be `vsxu_tool`.
+    *   *Draft 1:* "(Target Lang: VSXu) Initialize a new dedicated folder named vsxu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VSXu."
+
+3.  **Reviewing against Constraints:**
+    *   *Constraint 1:* Built STRICTLY using VSXu? Yes ("STRICTLY using this exact programming language: VSXu").
+    *   *Constraint 2:* New dedicated folder? Yes ("Initialize a new dedicated folder named vsxu_tool"). Local README.md? Yes ("create a local README.md inside it").
+    *   *Constraint 3:* Return ONLY instruction text? Yes. No extra chatter.
+    *   *Constraint 4:* NEVER target .github? Yes. The instruction mentions vsxu_tool, not .github.
+    *   *Constraint 5 (Implicit in "logical follow-up"):* The previous instruction was for SIMSCRIPT. This is for VSXu. This fits the pattern of generating a sequence of tool creation instructions.
+
+4.  **Final Polish:**
+    *   Result: `(Target Lang: VSXu) Initialize a new dedicated folder named vsxu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VSXu.`
+
+5.  **Output Generation:**
+    *   Output matches the drafted string.
+</think>
+
+(Target Lang: VSXu) Initialize a new dedicated folder named vsxu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VSXu.

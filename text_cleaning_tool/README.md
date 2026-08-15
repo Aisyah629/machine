@@ -1,25 +1,18 @@
-# Text Cleaning Tool
+# Text Cleaning Tool (Stateflow)
 
-This tool is designed to automate the cleaning and formatting of text data.
+This tool implements a state-machine driven text cleaning and formatting pipeline using Simulink Stateflow semantics.
 
-## Features
+## Purpose
+- Automate dataset cleaning tasks via state transitions.
+- Standardize text formatting through a multi-stage processing pipeline.
 
-- Remove extra whitespace
-- Normalize line breaks
-- Convert text to lowercase
-- Trim leading/trailing whitespace
+## Stages
+1. **Preprocess**: Initial data ingestion and format detection.
+2. **Trimming**: Removal of leading/trailing whitespace.
+3. **Normalizing**: Standardization of line endings and character encoding.
+4. **Final**: Output generation and readiness for export.
 
-## Usage
-
-Run the Elm application using the Elm compiler.
-
-```bash
-elm-reactor
-```
-
-Open the generated HTML file or run the application via the Elm reactor.
-
-## Files
-
-- `main.elm`: The Elm source code for the text cleaning tool.
-- `README.md`: This file.
+## How to Use
+- Define input data triggers the 'DataReceived' event.
+- Monitor state transitions in the Stateflow chart to track cleaning progress.
+- Request export via 'ExportRequested' event to retrieve clean text.

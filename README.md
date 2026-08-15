@@ -358,3 +358,5 @@ Training Machine
 - Created/Updated module: `tacpol_tool` (See `tacpol_tool/README.md` for details)
 
 - Created/Updated module: `pawn_tool` (See `pawn_tool/README.md` for details)
+
+- Created/Updated module: `fortress_tool` (See `fortress_tool/README.md` for details)

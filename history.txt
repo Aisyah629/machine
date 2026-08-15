@@ -5853,3 +5853,38 @@ This looks solid.
 </think>
 
 (Target Lang: Hartmann pipelines) Initialize a new dedicated folder named hartmann_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines to develop a comprehensive pipeline management system for high-performance data orchestration and real-time automation.
+[2026-08-15 08:38:35] (Target Lang: JAL) The user wants a single logical follow-up instruction based on the provided context and history.
+The instruction must:
+1. Demand the new tool be built strictly using the programming language "JAL".
+2. Instruct to place it in a NEW dedicated folder.
+3. Instruct to create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target the `.github` directory.
+
+From the history, the last instruction generated was:
+`(Target Lang: Hartmann pipelines) Initialize a new dedicated folder named hartmann_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines to develop a comprehensive pipeline management system for high-performance data orchestration and real-time automation.`
+
+The workspace shows a `hartmann_tool` folder already exists.
+The user wants a *new* instruction using "JAL".
+I need to choose a unique folder name for JAL. Looking at the list, there is no `jal_tool`.
+I should use `jal_tool` as the folder name.
+The output format should follow the pattern: `(Target Lang: [Language]) Initialize a new dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language] to develop [description].`
+
+Let's draft the description for JAL. JAL is often used for microcontroller programming. A suitable description might be "develop a robust embedded systems controller for precise hardware interaction and low-level device management."
+Or "develop a sophisticated microcontroller interface for efficient sensor data acquisition and actuator control."
+
+Let's refine the instruction text.
+`Initialize a new dedicated folder named jal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JAL to develop a robust embedded systems controller for precise hardware interaction and low-level device management.`
+
+Check constraints:
+- STRICTLY using "JAL"? Yes.
+- NEW dedicated folder? Yes (`jal_tool`).
+- Create local README.md? Yes.
+- ONLY instruction text? Yes.
+- Never target .github? Yes.
+
+Result:
+(Target Lang: JAL) Initialize a new dedicated folder named jal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JAL to develop a robust embedded systems controller for precise hardware interaction and low-level device management.
+</think>
+
+(Target Lang: JAL) Initialize a new dedicated folder named jal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JAL to develop a robust embedded systems controller for precise hardware interaction and low-level device management.

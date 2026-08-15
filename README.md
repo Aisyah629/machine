@@ -390,3 +390,5 @@ Training Machine
 - Created/Updated module: `frege_tool` (See `frege_tool/README.md` for details)
 
 - Created/Updated module: `gdl_tool` (See `gdl_tool/README.md` for details)
+
+- Created/Updated module: `ibm_basic_assembly_tool` (See `ibm_basic_assembly_tool/README.md` for details)

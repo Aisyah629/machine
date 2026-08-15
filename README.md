@@ -88,3 +88,5 @@ Training Machine
 - Created/Updated module: `ease_tool` (See `ease_tool/README.md` for details)
 
 - Created/Updated module: `self_healing_tool` (See `self_healing_tool/README.md` for details)
+
+- Created/Updated module: `delphi_tool` (See `delphi_tool/README.md` for details)

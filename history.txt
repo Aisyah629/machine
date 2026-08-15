@@ -5208,3 +5208,17 @@ Final text: (Target Lang: UCSD Pascal) Initialize a new dedicated folder named u
 </think>
 
 (Target Lang: PDL) Initialize a new dedicated folder named pdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PDL to implement a structured algorithmic workflow and procedural documentation system.
+[2026-08-15 07:21:28] (Target Lang: Converge) The user wants me to generate a follow-up instruction based on the provided prompt and history.
+The instruction must demand the creation of a new tool using the programming language "Converge".
+The tool should be placed in a new folder `converge_tool` and include a `README.md`.
+The instruction should follow the pattern of the previous example: `(Target Lang: LanguageName) Initialize a new dedicated folder named folder_name in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LanguageName to implement ...`
+The language is "Converge". The folder name is `converge_tool`. The description can be generic or relevant to Converge (e.g., "Concurrent Programming Language"). The previous example used "PDL to implement a structured algorithmic workflow and procedural documentation system." I should provide a similar description for Converge. Converge is a high-level parallel programming language. A good description might be "Converge to implement a parallel computation and distributed task framework."
+The output must be ONLY the instruction text.
+No targeting of .github.
+The format should match the example exactly.
+Result: `(Target Lang: Converge) Initialize a new dedicated folder named converge_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Converge to implement a parallel computation and distributed task framework.`
+Wait, checking the language "Converge". It's a real language. The description should fit. "Concurrent execution and distributed processing capabilities." is good.
+I will generate the string.
+</think>
+
+(Target Lang: Converge) Initialize a new dedicated folder named converge_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Converge to implement a parallel computation and distributed task framework.

@@ -7382,3 +7382,25 @@ Matches perfectly.✅
 </think>
 
 (Target Lang: Redcode) Initialize a new dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode to enable Core Wars simulation, battle bot logic, and instruction set optimization.
+[2026-08-15 10:01:46] (Target Lang: Wolfram) The user wants a follow-up instruction for a new tool.
+The target language is `Wolfram`.
+I need to create a folder named `wolfram_tool`.
+I need to create a `README.md` inside that folder.
+I need to build the tool strictly using `Wolfram`.
+The purpose should relate to `Wolfram`'s capabilities, such as symbolic computation, knowledge base querying, or mathematical analysis.
+The format should match the examples in the history.
+Example format: `(Target Lang: {Lang}) Initialize a new dedicated folder named {folder_name} in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: {Lang} to enable {purpose}.`
+Purpose for Wolfram: "symbolic computation, knowledge base querying, and algorithmic logic optimization".
+Folder name: `wolfram_tool`.
+Result: `(Target Lang: Wolfram) Initialize a new dedicated folder named wolfram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Wolfram to enable symbolic computation, knowledge base querying, and algorithmic logic optimization.`
+Check constraints:
+- 1 instruction? Yes.
+- Explicitly demand Wolfram? Yes.
+- New folder `wolfram_tool`? Yes.
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target `.github`? Yes.
+- No extra text? Yes.
+</think>
+
+(Target Lang: Wolfram) Initialize a new dedicated folder named wolfram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Wolfram to enable symbolic computation, knowledge base querying, and algorithmic logic optimization.

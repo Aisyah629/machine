@@ -120,3 +120,5 @@ Training Machine
 - Created/Updated module: `verilog_tool` (See `verilog_tool/README.md` for details)
 
 - Created/Updated module: `converge_tool` (See `converge_tool/README.md` for details)
+
+- Created/Updated module: `haskell_tool` (See `haskell_tool/README.md` for details)

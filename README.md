@@ -302,3 +302,5 @@ Training Machine
 - Created/Updated module: `a0_system_tool` (See `a0_system_tool/README.md` for details)
 
 - Created/Updated module: `mirah_tool` (See `mirah_tool/README.md` for details)
+
+- Created/Updated module: `xpl0_tool` (See `xpl0_tool/README.md` for details)

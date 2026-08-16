@@ -886,3 +886,5 @@ Training Machine
 - Created/Updated module: `ici_tool` (See `ici_tool/README.md` for details)
 
 - Created/Updated module: `simula_tool` (See `simula_tool/README.md` for details)
+
+- Created/Updated module: `processing_tool` (See `processing_tool/README.md` for details)

@@ -36328,3 +36328,47 @@ Initialize a NEW dedicated folder named simula_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named george_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GEORGE. Focus entirely on this new objective: 'Develop a GEORGE-based utility for advanced computational mathematics and symbolic logic processing'. You MUST write code for this task strictly using this programming language: GEORGE.
+[2026-08-16 23:15:45] (Target Lang: Processing) Thinking Process:
+1.  **Analyze the User Input:**
+    -   Workspace: A massive list of existing tools/folders (`.github` explicitly mentioned as a non-target in the prompt's history/constraints, though the workspace list shows `.github`).
+    -   History: Shows a previous instruction format for creating a new tool (`george_tool`) using a specific language (`GEORGE`) with a specific objective and strict language constraint.
+    -   Task: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Processing. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+    -   Constraints:
+        -   Exactly 1 logical follow-up instruction.
+        -   MUST explicitly demand the new tool is built STRICTLY using `Processing`.
+        -   If building a new tool (which is implied by "follow-up instruction" in this context of tool creation), explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+        -   Return ONLY the instruction text. No markdown, no extra text.
+        -   NEVER target `.github`.
+
+2.  **Deconstruct the Required Instruction Format:**
+    -   Based on the history example, the instruction should follow a pattern: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this programming language: [Language]."
+    -   Language: `Processing`
+    -   Tool Name: Needs to be `processing_tool` (matching the naming convention in the workspace like `bash_tool`, `c_tool`, etc., though `processing_tool` doesn't exist in the list, so it's a new one).
+    -   Objective: Needs to be relevant to Processing. Example: "Develop a Processing-based tool for real-time visual data simulation and interactive generative art rendering."
+    -   Structure: "Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this programming language: Processing."
+
+3.  **Draft the Instruction:**
+    Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: 'Develop a Processing-based utility for real-time visual data simulation and interactive generative art rendering'. You MUST write code for this task strictly using this programming language: Processing.
+
+4.  **Check Constraints:**
+    -   Exactly 1 instruction? Yes.
+    -   Logical follow-up? Yes, follows the tool creation pattern.
+    -   Explicitly demand built STRICTLY using Processing? Yes ("STRICTLY using this exact programming language: Processing" and "strictly using this programming language: Processing").
+    -   NEW dedicated folder and local README.md? Yes ("Initialize a NEW dedicated folder named processing_tool... create a local README.md").
+    -   Return ONLY instruction text? Yes.
+    -   NEVER target .github? Yes, not mentioned.
+    -   No markdown? Yes.
+
+5.  **Refine Output:**
+    Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: 'Develop a Processing-based utility for real-time visual data simulation and interactive generative art rendering'. You MUST write code for this task strictly using this programming language: Processing.
+
+    Double-checking exact phrasing against the prompt's history example to ensure maximum compliance:
+    History example: "Initialize a NEW dedicated folder named george_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GEORGE. Focus entirely on this new objective: 'Develop a GEORGE-based utility for advanced computational mathematics and symbolic logic processing'. You MUST write code for this task strictly using this programming language: GEORGE."
+    My draft matches this pattern perfectly.
+
+    Final text: Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: 'Develop a Processing-based utility for real-time visual data simulation and interactive generative art rendering'. You MUST write code for this task strictly using this programming language: Processing.
+
+    Ready. Output matches exactly. No extra text. Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: 'Develop a Processing-based utility for real-time visual data simulation and interactive generative art rendering'. You MUST write code for this task strictly using this programming language: Processing.

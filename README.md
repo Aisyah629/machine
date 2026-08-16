@@ -586,3 +586,5 @@ Training Machine
 - Created/Updated module: `self_healing_tool` (See `self_healing_tool/README.md` for details)
 
 - Created/Updated module: `unreal_data_processing_tool` (See `unreal_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./nu_tool` (See `./nu_tool/README.md` for details)

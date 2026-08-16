@@ -33209,3 +33209,58 @@ Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named spitbol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPITBOL. Focus entirely on this new objective: 'Develop a high-performance string pattern matching and text transformation engine for advanced data parsing and log analysis.'. You MUST write code for this task strictly using this programming language: SPITBOL.
+[2026-08-16 21:10:44] (Target Lang: S/SL) The user wants me to generate a follow-up instruction based on the provided history and context.
+The context shows a workspace with many tools/folders. The history shows a recent action: `Initialize a NEW dedicated folder named spitbol_tool...` using SPITBOL.
+The user prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: S/SL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+So I need to construct an instruction that matches the format of the previous ones but specifies the language as S/SL, a new folder name (e.g., `s_sl_tool`), and a plausible objective.
+Looking at the workspace list, I see `./s_sl_tool ./s_sl_tool/README.md ./s_sl_tool/main.s`. So `s_sl_tool` already exists in the workspace, but the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder...". I can just follow the template.
+
+Template from history:
+`Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write code for this task strictly using this programming language: [LANG].`
+
+I will substitute:
+tool_name: `s_sl_tool`
+LANG: `S/SL`
+OBJECTIVE: Something appropriate for S/SL (which is a scientific/statistical programming language, or maybe just generic data analysis since S/SL is often associated with statistical analysis). Let's say: 'Develop a robust statistical data analysis and scientific computing framework for quantitative modeling and hypothesis testing.'
+
+Let's check the exact wording from the prompt's example:
+`Initialize a NEW dedicated folder named spitbol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPITBOL. Focus entirely on this new objective: 'Develop a high-performance string pattern matching and text transformation engine for advanced data parsing and log analysis.'. You MUST write code for this task strictly using this programming language: SPITBOL.`
+
+I will follow this structure exactly.
+Language: S/SL
+Folder: s_sl_tool
+Objective: 'Develop a robust statistical data analysis and scientific computing framework for quantitative modeling and hypothesis testing.'
+
+Constructing the string:
+Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Develop a robust statistical data analysis and scientific computing framework for quantitative modeling and hypothesis testing.'. You MUST write code for this task strictly using this programming language: S/SL.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction.
+- Explicitly demand S/SL.
+- NEW dedicated folder + local README.md.
+- Return ONLY the instruction text.
+- NEVER target .github.
+- Matches pattern.
+
+All good. Output matches exactly.
+One minor thing: S/SL is sometimes written as S/SL or SL/S. I'll stick to S/SL as requested.
+The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: S/SL."
+I will generate exactly the text.
+Ready. 
+Output matches the constructed string.✅
+Proceeds. 
+[Output Generation] -> *Proceeds* (done)
+*(Note: I will output exactly the text string without any extra formatting or markdown to strictly comply with "Return ONLY the instruction text.")*
+All good.
+[Output] -> `Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Develop a robust statistical data analysis and scientific computing framework for quantitative modeling and hypothesis testing.'. You MUST write code for this task strictly using this programming language: S/SL.`
+Done. 
+(Self-Correction/Verification during thought)
+Wait, let's verify the exact wording of the prompt's requirement: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: S/SL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+The prompt also shows the history output format. I will just output the instruction string.
+Everything aligns.
+Output matches.✅
+Proceeds.
+</think>
+
+Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Develop a robust statistical data analysis and scientific computing framework for quantitative modeling and hypothesis testing.'. You MUST write code for this task strictly using this programming language: S/SL.

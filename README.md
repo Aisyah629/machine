@@ -854,3 +854,5 @@ Training Machine
 - Created/Updated module: `dcl_tool` (See `dcl_tool/README.md` for details)
 
 - Created/Updated module: `matlab_tool` (See `matlab_tool/README.md` for details)
+
+- Created/Updated module: `nasm_tool` (See `nasm_tool/README.md` for details)

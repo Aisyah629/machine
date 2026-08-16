@@ -578,3 +578,5 @@ Training Machine
 - Created/Updated module: `e_sharp_tool` (See `e_sharp_tool/README.md` for details)
 
 - Created/Updated module: `chr_tool` (See `chr_tool/README.md` for details)
+
+- Created/Updated module: `islisp_tool` (See `islisp_tool/README.md` for details)

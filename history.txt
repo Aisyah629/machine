@@ -22793,3 +22793,32 @@ This looks solid.
 </think>
 
 Initialize a NEW dedicated folder named visual_prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Prolog. Focus entirely on this new objective: 'Construct a sophisticated knowledge base management system with bidirectional reasoning and automated theorem proving capabilities'. You MUST write functional code for this task strictly using this exact programming language: Visual Prolog.
+[2026-08-16 08:48:45] (Target Lang: ISLISP) The user wants a follow-up instruction for creating a new tool.
+The instruction must demand building the tool using the programming language `ISLISP`.
+It must explicitly instruct to place it in a `NEW dedicated folder` and create a `local README.md`.
+It must return `ONLY` the instruction text.
+It must `NEVER` target the `.github` directory.
+
+Pattern from history:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+
+Language: ISLISP.
+Folder name: `islisp_tool` seems consistent with the naming convention of other tools in the workspace list (e.g., `a0_system_tool`, `abap_tool`, etc.).
+Objective: Needs to be relevant to ISLISP. ISLISP is a Lisp dialect for object-oriented programming. A good objective might be an object-oriented framework or a symbolic math system. Let's choose "Implement an object-oriented framework with dynamic dispatch and multiple inheritance support" as it fits ISLISP well.
+
+Draft:
+Initialize a NEW dedicated folder named islisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ISLISP. Focus entirely on this new objective: 'Implement an object-oriented framework with dynamic dispatch and multiple inheritance support'. You MUST write functional code for this task strictly using this exact programming language: ISLISP.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand tool built STRICTLY using ISLISP? Yes.
+- NEW dedicated folder? Yes (`islisp_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+Final Text:
+Initialize a NEW dedicated folder named islisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ISLISP. Focus entirely on this new objective: 'Implement an object-oriented framework with dynamic dispatch and multiple inheritance support'. You MUST write functional code for this task strictly using this exact programming language: ISLISP.
+</think>
+
+Initialize a NEW dedicated folder named islisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ISLISP. Focus entirely on this new objective: 'Implement an object-oriented framework with dynamic dispatch and multiple inheritance support'. You MUST write functional code for this task strictly using this exact programming language: ISLISP.

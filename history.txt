@@ -23202,3 +23202,75 @@ Initialize a NEW dedicated folder named mumps_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named nu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Nu. Focus entirely on this new objective: 'Develop a concurrent task scheduler with real-time resource monitoring'. You MUST write functional code for this task strictly using this exact programming language: Nu.
+[2026-08-16 09:22:55] (Target Lang: XL) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a large list of files/directories in a workspace (mostly tool directories with README.md and main files for various programming languages/tools).
+   - There's a "History" section showing a previous interaction where the AI generated an instruction for a "Nu" language tool. The history shows the AI's internal thought process and the final output string.
+   - The actual prompt at the end says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: XL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: XL.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+
+3.  **Determine Output Format:**
+   - The output should be a single string/instruction matching the pattern from the history, but adapted for the language "XL" and a new objective.
+   - The history shows the exact format used: "Initialize a NEW dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+   - I need to follow this exact structure but replace "Nu" with "XL" and pick a reasonable objective, or keep the structure generic but specific to the constraints.
+   - The prompt says "Return ONLY the instruction text." So I will output exactly that string.
+
+4.  **Draft Construction:**
+   "Initialize a NEW dedicated folder named xl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XL. Focus entirely on this new objective: 'Develop a distributed data processing pipeline with automated fault tolerance'. You MUST write functional code for this task strictly using this exact programming language: XL."
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using exact programming language: XL? Yes.
+   - Place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches history style? Yes.
+
+   I will refine it to exactly match the requested phrasing pattern from the prompt/history.
+   Prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: XL."
+   I'll ensure that exact phrase or very close to it is included. The history used: "STRICTLY using this exact programming language: Nu." I'll use "XL".
+
+   Let's construct it carefully:
+   "Initialize a NEW dedicated folder named xl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XL. Focus entirely on this new objective: 'Implement a high-performance cryptographic hash engine with multi-threaded block processing'. You MUST write functional code for this task strictly using this exact programming language: XL."
+
+   Check against constraints:
+   - Exactly 1 instruction? Yes.
+   - STRICTLY using XL? Yes.
+   - NEW dedicated folder & README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+
+   All constraints met. I will output exactly this string. No extra text, no markdown formatting unless necessary, but the prompt says "Return ONLY the instruction text." I'll just output the raw string.
+
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: XL." I'll make sure the phrasing aligns perfectly.
+   "Initialize a NEW dedicated folder named xl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XL. Focus entirely on this new objective: 'Develop a concurrent task scheduler with real-time resource monitoring'. You MUST write functional code for this task strictly using this exact programming language: XL."
+   I'll stick with the drafted version. It's solid.
+   Proceeds. 
+   Output matches exactly.✅
+   [Final Check]
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand new tool built STRICTLY using XL? Yes.
+   - Place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Workspace context provided but irrelevant to output format. All good.
+   Output matches.✅
+   Proceeds. 
+   *Self-Correction/Verification during thought*: I should make sure the output is exactly one line/string as requested, without any extra conversational filler. The prompt says "Return ONLY the instruction text." I will output just the string.
+   Final string: "Initialize a NEW dedicated folder named xl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XL. Focus entirely on this new objective: 'Develop a distributed data aggregation system with automated load balancing'. You MUST write functional code for this task strictly using this exact programming language: XL."
+   Matches all constraints. Ready. 
+   Output Generation. 
+   *(Proceeds)* -> *Outputs the exact string*
+   "Initialize a NEW dedicated folder named xl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XL. Focus entirely on this new objective: 'Develop a distributed data aggregation system with automated load balancing'. You MUST write functional code for this task strictly using this exact programming language: XL." 
+   All good.✅
+   [Output Generation] -> *Proceeds* ✅
+</think>
+
+Initialize a NEW dedicated folder named xl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XL. Focus entirely on this new objective: 'Develop a distributed data aggregation system with automated load balancing'. You MUST write functional code for this task strictly using this exact programming language: XL.

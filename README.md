@@ -818,3 +818,5 @@ Training Machine
 - Created/Updated module: `lc3_tool` (See `lc3_tool/README.md` for details)
 
 - Created/Updated module: `wyvern_tool` (See `wyvern_tool/README.md` for details)
+
+- Created/Updated module: `tcl_tool` (See `tcl_tool/README.md` for details)

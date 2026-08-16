@@ -33396,3 +33396,55 @@ Initialize a NEW dedicated folder named fsharp_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named joss_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JOSS. Focus entirely on this new objective: 'Develop a robust symbolic computation and interactive query processing framework for academic and research-oriented data modeling.'. You MUST write code for this task strictly using this programming language: JOSS.
+[2026-08-16 21:32:25] (Target Lang: SML) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provided a long list of directories/files in the workspace (mostly tool folders with README.md and a main file).
+   - There's a "History" section containing a previous interaction/output, which seems to be a meta-discussion about generating an instruction for `joss_tool` using JOSS language.
+   - The final prompt is: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SML. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using SML.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - The instruction should logically follow from the context (though the context is mostly just a list of tools and a previous meta-instruction about JOSS). I need to create a fresh instruction for a new tool using SML.
+
+3.  **Formulate Instruction:**
+   - Structure based on previous examples: `Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write code for this task strictly using this programming language: [LANGUAGE].`
+   - Language: SML (Standard ML)
+   - Tool name: sml_tool
+   - Objective: Needs to be relevant to SML (functional programming, type inference, theorem proving, compiler design, etc.). Let's go with: "Develop a robust functional programming environment with advanced type inference and theorem proving capabilities for formal verification and compiler construction."
+   - Draft: `Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Develop a robust functional programming environment with advanced type inference and theorem proving capabilities for formal verification and compiler construction.'. You MUST write code for this task strictly using this programming language: SML.`
+
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using SML? Yes.
+   - Place in NEW dedicated folder & create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Logical follow-up? Fits the pattern of the prompt's history/workspace structure.
+
+   The draft matches all constraints perfectly. I will output exactly that string. No extra text, no markdown formatting if possible, or just the raw text as requested. The prompt says "Return ONLY the instruction text."
+
+   Let's refine slightly to match the exact phrasing style of the prompt's example:
+   `Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Develop a robust functional programming environment with advanced type inference and theorem proving capabilities for formal verification and compiler construction.'. You MUST write code for this task strictly using this programming language: SML.`
+
+   All constraints met. Proceeds.✅
+   Output matches requirement.✅
+   [Output Generation] -> *Proceeds* (done)
+   *(Self-Correction/Verification during thought)*: I'll double-check the exact wording requirement: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SML." -> Covered.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Covered.
+   "Return ONLY the instruction text." -> Covered.
+   "NEVER target the .github directory." -> Covered.
+   The output is ready.✅
+   Output matches.✅ Proceeds.
+   [Final Output Generation] -> *Proceeds* (done)
+   [Output] -> `Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Develop a robust functional programming environment with advanced type inference and theorem proving capabilities for formal verification and compiler construction.'. You MUST write code for this task strictly using this programming language: SML.`
+   *(Done.)*
+   All good. I will output exactly this string.✅
+   [Output Generation] -> *Proceeds* (done)
+</think>
+
+Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Develop a robust functional programming environment with advanced type inference and theorem proving capabilities for formal verification and compiler construction.'. You MUST write code for this task strictly using this programming language: SML.

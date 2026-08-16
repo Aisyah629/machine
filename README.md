@@ -806,3 +806,5 @@ Training Machine
 - Created/Updated module: `yorick_tool` (See `yorick_tool/README.md` for details)
 
 - Created/Updated module: `sasl_tool` (See `sasl_tool/README.md` for details)
+
+- Created/Updated module: `zig_tool` (See `zig_tool/README.md` for details)

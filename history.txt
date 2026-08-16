@@ -24555,3 +24555,171 @@ Initialize a NEW dedicated folder named bliss_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named xpath_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPath. Focus entirely on this new objective: 'Develop a robust XML data extraction and transformation utility leveraging XPath query compilation and node-set processing capabilities'. You MUST write functional code for this task strictly using this exact programming language: XPath.
+[2026-08-16 10:48:44] (Target Lang: MillScript) Thinking Process:
+1.  **Analyze the Request**:
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Mandatory Requirement 1: Explicitly demand the new tool be built strictly using the exact programming language: "MillScript".
+    *   Mandatory Requirement 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a list of existing tools (a massive list of various languages/tools), but the core task is just to generate the next instruction string based on "MillScript".
+
+2.  **Drafting the Instruction**:
+    *   *Structure*: Follow the pattern established in the example: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+    *   *Language*: MillScript.
+    *   *Tool Name*: millscript_tool.
+    *   *Objective*: Need a plausible objective for a "MillScript" tool. Since "MillScript" isn't a widely known standard language (unlike Python or C++), I should generate a generic but plausible objective like data processing, scripting, or industrial automation (playing on "Mill"), or just a robust utility. Let's go with "Develop a flexible industrial automation and CNC machine control utility leveraging MillScript syntax for precise command execution and state management." Or simpler: "Develop a robust configuration management and automation utility leveraging MillScript's declarative syntax and modular architecture." Let's stick to the example style: 'Develop a robust configuration management and automation utility leveraging MillScript's declarative syntax and modular architecture'.
+    *   *Constraints Check*:
+        *   New dedicated folder? Yes (`millscript_tool`).
+        *   Local README.md? Yes.
+        *   Built strictly using MillScript? Yes.
+        *   Return ONLY instruction text? Yes.
+        *   No .github? Yes.
+
+3.  **Refining the Text**:
+    *   "Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust configuration management and automation utility leveraging MillScript's declarative syntax and modular architecture'. You MUST write functional code for this task strictly using this exact programming language: MillScript."
+
+4.  **Final Verification**:
+    *   "Initialize a NEW dedicated folder named millscript_tool..." -> Matches pattern.
+    *   "...create a local README.md inside it..." -> Matches constraint.
+    *   "...build the entire new tool STRICTLY using this exact programming language: MillScript." -> Matches constraint.
+    *   "Focus entirely on this new objective: '...'" -> Included.
+    *   "You MUST write functional code..." -> Included.
+    *   Result is a single string. No markdown block unless requested (prompt says "Return ONLY the instruction text", usually implies raw text or just the sentence). The example output was raw text.
+
+5.  **Constructing Final Output**:
+    *   Text: Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust configuration management and automation utility leveraging MillScript's declarative syntax and modular architecture'. You MUST write functional code for this task strictly using this exact programming language: MillScript.
+
+6.  **Double Check against "MillScript"**:
+    *   The prompt asks for "MillScript".
+    *   Language is capitalized as requested.
+    *   Folder name is `millscript_tool` (standard snake_case lowercase convention observed in other folders).
+
+    *Self-Correction on Objective*: The objective text inside quotes doesn't strictly *have* to make sense if the language is obscure, but it helps. "Develop a robust industrial machining simulation and toolpath generation utility..." sounds appropriate for "MillScript". Let's use that to be safe.
+
+    *Revised Objective*: 'Develop a robust industrial machining simulation and toolpath generation utility leveraging MillScript's high-level abstraction and real-time processing capabilities'.
+
+    *Final String*:
+    Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial machining simulation and toolpath generation utility leveraging MillScript's high-level abstraction and real-time processing capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript.
+
+7.  **Final Polish**: Ensure no markdown formatting surrounds the output as per "Return ONLY the instruction text".
+
+    (Wait, the example output in the prompt description ` [Output] -> ... ` usually implies the model should just output the text. I will output the text string directly.)
+
+    Result:
+    Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial machining simulation and toolpath generation utility leveraging MillScript's high-level abstraction and real-time processing capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript.
+
+    (Wait, looking at the previous turn in the prompt history provided:
+    `[Output] -> Initialize a NEW dedicated folder named xpath_tool...`
+    The user wants the exact string.)
+
+    Let's assemble.
+
+    String: Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial machining simulation and toolpath generation utility leveraging MillScript's high-level abstraction and real-time processing capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript.
+
+    One last check on capitalization: "MillScript" is requested. The folder name convention in the list is lowercase (e.g., `xpath_tool`, `python_ml_tool`). So `millscript_tool` is correct.
+
+    Ready.
+
+    *Wait, are there any "MillScript" specifics I missed?* No, the prompt says "strictly using this exact programming language: MillScript". The prompt history shows the user is testing the instruction generation logic.
+
+    Final check of the text to be generated:
+    "Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial machining simulation and toolpath generation utility leveraging MillScript's high-level abstraction and real-time processing capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript."
+
+    Looks perfect.
+
+    Wait, the user prompt ends with: `Generate exactly 1 logical follow-up instruction...`
+    The output should be the instruction itself.
+
+    Let's produce it.
+
+    One minor detail: "Develop a robust configuration management..." vs "Develop a robust industrial machining simulation...". Since "Mill" implies machining/cnc in many contexts, the machining one is safer for a generated objective.
+
+    Final string confirmed.
+
+    Outputting...
+    Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial machining simulation and toolpath generation utility leveraging MillScript's high-level abstraction and real-time processing capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript.
+
+    Actually, looking at the list, most tools have a main file `main.ext`. The instruction doesn't need to specify the file name, just the folder and README as per the prompt's explicit requirements ("explicitly instruct to place it in a NEW dedicated folder and create a local README.md").
+
+    The prompt requires:
+    1. NEW dedicated folder.
+    2. Local README.md.
+    3. Strictly using MillScript.
+    4. Logical follow-up instruction.
+
+    The drafted text covers all these.
+
+    Let's go.
+
+    One very subtle check: "strictly using this exact programming language: MillScript."
+    The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MillScript."
+
+    Okay. The draft is ready.
+    "Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial machining simulation and toolpath generation utility leveraging MillScript's high-level abstraction and real-time processing capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript."
+
+    Double check spellings. "MillScript". Correct. "millscript_tool". Correct. "README.md". Correct.
+    Done.
+
+    Wait, I should check if "MillScript" is a real thing or if I should invent the context. It's likely a hypothetical or obscure one, or the user just picked a random name. The objective should fit the name. "Industrial machining" fits "Mill". "Script" implies scripting. So "Machining simulation..." is good.
+
+    Final text.
+    Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial machining simulation and toolpath generation utility leveraging MillScript's high-level abstraction and real-time processing capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript.
+
+    Wait, I might want to make the objective slightly more generic just in case "MillScript" refers to something else (e.g. "Mill" as in a data mill). But "Machining" is the strongest collocate. Or "Industrial Automation". I'll stick to machining or "Manufacturing Automation". Let's use "industrial automation". It's safer.
+    Revised Objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MillScript's declarative syntax and high-performance execution capabilities'.
+    This feels solid.
+
+    Let's write it.
+
+    Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MillScript's declarative syntax and high-performance execution capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript.
+
+    Wait, the prompt example used "Develop a robust XML data extraction...".
+    I will stick to "Develop a robust industrial automation and CNC machine control utility leveraging MillScript's declarative syntax and high-performance execution capabilities".
+
+    Final decision made.
+
+    One last thought: "Return ONLY the instruction text."
+    I will output just the text.
+
+    Final check of the text content to ensure no typos.
+    "Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MillScript's declarative syntax and high-performance execution capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript."
+
+    Looks good.
+
+    Wait, I'll check the "history" provided. The user provided a huge list of existing tools. The "MillScript" tool is not in the list (I searched for "millscript" and found nothing). This confirms I am generating a *new* tool as requested.
+
+    Okay, proceeding.
+
+    (Self-correction: Is "MillScript" a typo for "Mill"? No, it's capitalized and specific. Treat it as a proper noun language name.)
+
+    Result is ready.
+    Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MillScript's declarative syntax and high-performance execution capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript.
+
+    Wait, checking capitalization of language in the prompt vs text.
+    Prompt: "MillScript".
+    Text: "MillScript".
+    Match.
+
+    Checking capitalization of "STRICTLY".
+    Prompt: "STRICTLY".
+    Text: "STRICTLY".
+    Match.
+
+    Checking "NEW".
+    Prompt: "NEW".
+    Text: "NEW".
+    Match.
+
+    Everything seems aligned.
+
+    One final verification of the folder name.
+    In the prompt list: `./xpath_tool`, `./python_ml_tool`, `./c_tool`.
+    They are lowercase snake_case.
+    So `millscript_tool` is the correct folder name.
+
+    All good.
+    End of thought process.
+</think>
+
+Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MillScript's declarative syntax and high-performance execution capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript.

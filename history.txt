@@ -28072,3 +28072,118 @@ Done.
 </think>
 
 Initialize a NEW dedicated folder named goal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOAL. Focus entirely on this new objective: 'Implement a multi-criteria optimization solver for complex scheduling and resource allocation'. You MUST write code for this task strictly using this exact programming language: GOAL.
+[2026-08-16 15:30:12] (Target Lang: S/SL) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Context: The user provided a long list of existing tools/directories in the workspace, followed by a "History" section showing a previous turn where the AI generated an instruction for `goal_tool`.
+    *   Current Task: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   Language: S/SL (Source: `./s_sl_tool` exists in the list, implying it's a valid context language, though the prompt says "S/SL").
+        *   Action: Build a *new* tool.
+        *   Directory: NEW dedicated folder (must follow naming convention `tool_name_tool` based on history and existing list).
+        *   File: Create a local `README.md`.
+        *   Content: Strictly use the exact programming language: S/SL.
+        *   Objective: Implicitly, I need to invent a suitable objective for S/SL or keep it generic but relevant, or look at the previous turn's objective style ("Implement a..."). The prompt doesn't specify a *new* objective in the "S/SL" request, just "Follow-up instruction". However, looking at the pattern in the History, the user provides the *previous* output as context, and now asks for a *new* instruction. Wait, the prompt ends with: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: S/SL...".
+    *   Observation: The user wants me to act as the Autonomous AI generating the *next* step. The previous step was `goal_tool`. The new step must use `S/SL`.
+
+2.  **Determine the Naming Convention:**
+    *   Existing list: `s_lang_tool`, `s_sl_tool` (Note: `s_sl_tool` exists in the list provided in the prompt context: `./s_sl_tool ./s_sl_tool/README.md ./s_sl_tool/main.s`).
+    *   Wait, the prompt says: "If building a new tool...".
+    *   Let's check the existing list for `s_sl_tool`. It exists. `./s_sl_tool`.
+    *   If the tool *already exists*, should I build a "new" one? The instruction says "If building a new tool".
+    *   However, usually, in these "Autonomous AI" prompts, the AI creates a *new* folder named `{language}_tool`.
+    *   Language: S/SL.
+    *   Folder Name: `s_sl_tool`? Or maybe `s_sl_tool` is the *target* folder name based on the pattern `name_tool`.
+    *   Looking at the history example: "Initialize a NEW dedicated folder named `obj2_tool`... language: OBJ2". (Note: `obj2_tool` existed in the list `./obj2_tool`). This suggests the "Autonomous AI" often selects a language that might already have a folder or simply names the folder based on the language.
+    *   *Self-Correction*: The prompt says "Initialize a NEW dedicated folder...". If `s_sl_tool` already exists, I should probably name it `s_sl_tool` anyway because that's the standard convention in this workspace for that language. Or, strictly speaking, if it's a "new tool", maybe I shouldn't overwrite an existing one?
+    *   *Refinement*: Looking at the `History` provided in the prompt:
+        *   Input: "... `./obj2_tool` ... "
+        *   Output (History): "Initialize a NEW dedicated folder named `obj2_tool`..."
+        *   This implies the AI repeats the creation instruction even if it's already there, or simply follows the strict instruction pattern.
+        *   The prompt asks for a follow-up. The previous one was `goal_tool`.
+        *   The new instruction must use `S/SL`.
+        *   Folder name convention: `s_sl_tool`.
+    *   Let's check the Objective. The prompt doesn't specify an objective for the S/SL instruction, just "logical follow-up". I should invent one similar to the previous ones ("Implement a...").
+    *   Language characteristics (S/SL): S/SL is a language often associated with algorithmic mathematics and parallel processing (S/SL: "S/SL" often stands for specific scientific languages).
+    *   Objective Idea: "Implement a parallel matrix manipulation and algorithmic solving environment for mathematical computations."
+
+3.  **Drafting the Instruction:**
+    *   *Draft 1*: Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a parallel algorithmic environment for matrix manipulation and mathematical solving'. You MUST write code for this task strictly using this exact programming language: S/SL.
+    *   *Verification*:
+        *   Folder: `s_sl_tool`.
+        *   Language: `S/SL`.
+        *   Objective: "Implement a parallel algorithmic environment..."
+        *   Strictness: "STRICTLY", "MUST write code".
+
+4.  **Refining based on the "History" pattern:**
+    *   The prompt history shows the previous output. The current request is the *prompt* to generate the next text.
+    *   The prompt explicitly says: "Generate exactly 1 logical follow-up instruction."
+    *   Constraints: "STRICTLY using this exact programming language: S/SL".
+    *   I need to formulate the text.
+
+    *   *Text*: Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a high-performance parallel computing environment for complex mathematical transformations and simulations'. You MUST write code for this task strictly using this exact programming language: S/SL.
+
+5.  **Final Polish:**
+    *   Check constraints: "NEVER target the .github directory." (Checked, not doing that).
+    *   Check constraints: "Return ONLY the instruction text."
+
+    *   *Re-reading the "S/SL" context*: The file list includes `./s_sl_tool`. This reinforces that `s_sl_tool` is the correct folder name for the language S/SL in this workspace's ontology.
+
+    *   *Objective Selection*: The prompt doesn't specify *what* objective to use for S/SL, just that it must be a "logical follow-up". I will pick a plausible objective for S/SL (Scientific/Math language).
+
+    *   *Final String Construction*:
+        "Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a robust parallel processing framework for advanced mathematical simulations and data analytics'. You MUST write code for this task strictly using this exact programming language: S/SL."
+
+    *   *Note on "S/SL"*: The slash might need to be careful with file systems, but the history shows `obj2_tool` (no slash issues there). `s_sl_tool` is in the list, so it's safe. The language name is "S/SL".
+
+    *   *Wait, looking at the previous turn in the history*:
+        "Initialize a NEW dedicated folder named goal_tool... language: GOAL..."
+        Then the user asks for "S/SL".
+        So I just generate the S/SL one.
+
+6.  **Final Output Generation**:
+    Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a robust parallel computing framework for advanced mathematical modeling and simulation'. You MUST write code for this task strictly using this exact programming language: S/SL.
+
+    *Self-Correction*: Ensure the objective makes sense for S/SL (Scientific Language). Yes, math modeling/simulation fits perfectly.
+
+    *Double Check against "Return ONLY the instruction text"*: Yes.
+
+    *Double Check against "NEVER target .github"*: Yes.
+
+    *Double Check against "exact programming language: S/SL"*: Yes.
+
+    *Double Check "NEW dedicated folder"*: Yes, `s_sl_tool` (matches the existing naming scheme in the provided list, ensuring consistency even if the tool exists in the context list, the instruction demands a NEW folder creation, which might imply a reset or just following the protocol).
+
+    *One small detail*: The prompt history shows: "My draft: 'Initialize a NEW dedicated folder named goal_tool...'" This confirms the format.
+
+    Let's write the response.
+
+    Objective: "Implement a high-throughput parallel execution engine for complex algorithmic simulations and numerical analysis".
+
+    Result:
+    Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a high-throughput parallel execution engine for complex algorithmic simulations and numerical analysis'. You MUST write code for this task strictly using this exact programming language: S/SL.
+
+    Wait, `s_sl_tool` is in the input list. `./s_sl_tool`.
+    The prompt says "Initialize a NEW dedicated folder named s_sl_tool".
+    In the history example, the user chose `obj2_tool` which was also in the list `./obj2_tool`.
+    So repeating the folder name `s_sl_tool` is correct behavior for this "Autonomous AI" persona, regardless of existence in the provided file list (which might be the *current* state, but the instruction is for the *next* step).
+
+    Final check of the specific language name: "S/SL".
+    The text should contain "S/SL".
+
+    Final text ready.
+
+    One distinct detail: The prompt includes `./s_lang_tool` and `./s_sl_tool`. `s_sl_tool` is the one matching "S/SL".
+
+    Resulting text:
+    Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a parallel algorithmic framework for advanced mathematical modeling and simulation'. You MUST write code for this task strictly using this exact programming language: S/SL.
+
+    Actually, looking at the previous turn: "Implement a multi-criteria optimization solver..."
+    I will choose a distinct but related objective for S/SL.
+
+    "Implement a parallel algorithmic framework for advanced mathematical modeling and simulation" sounds good.
+
+    Let's go.
+</think>
+
+Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a parallel algorithmic framework for advanced mathematical modeling and simulation'. You MUST write code for this task strictly using this exact programming language: S/SL.

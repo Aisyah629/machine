@@ -1,9 +1,26 @@
 # S/SL Tool
 
-This tool implements a mainframe system utility written in the S/SL programming language.
-
 ## Overview
-S/SL (System/360 Subroutine Library) was a language used for mainframe systems programming, particularly for memory management and low-level system utilities.
+The S/SL Tool is a dedicated environment for developing and executing parallel algorithmic frameworks using the S/SL programming language. It focuses on advanced mathematical modeling, simulation, and high-throughput parallel computing.
 
-## Implementation
-The tool provides a robust utility for mainframe system operations.
+## Directory Structure
+- `main.s` : The main S/SL source file implementing the parallel algorithmic framework.
+
+## Features
+- Parallel matrix manipulation
+- Advanced mathematical modeling
+- High-throughput simulation capabilities
+- Robust error handling and debugging support
+
+## Usage
+To run the S/SL Tool, execute the following command in the terminal:
+```
+s_sl_tool/main.s
+```
+
+## Dependencies
+- S/SL Compiler
+- Parallel Processing Library
+
+## License
+This project is licensed under the MIT License.

@@ -21765,3 +21765,38 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named linoleum_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Linoleum. Focus entirely on this new objective: 'Architect a decentralized mesh networking protocol and secure peer-to-peer communication system using Linoleum'. You MUST write functional code for this task strictly using this exact programming language: Linoleum.
+[2026-08-16 07:00:03] (Target Lang: Tom) The user wants exactly one logical follow-up instruction based on the previous context.
+The previous context was about creating a `linoleum_tool` in the workspace with a `README.md` and functional code using the language "Linoleum".
+However, the *current* prompt says:
+"Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Tom. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+So I need to generate an instruction that creates a `tom_tool` folder, a `README.md` inside it, and uses the programming language "Tom".
+The instruction should follow the pattern of the previous one but for the language "Tom" and a plausible objective.
+The language is "Tom". (Could be a reference to "Tom" programming language or just a placeholder. I will stick to "Tom").
+I will formulate the instruction exactly as requested.
+
+"Initialize a NEW dedicated folder named tom_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Tom. Focus entirely on this new objective: 'Design a high-performance text processing and pattern matching engine using Tom'. You MUST write functional code for this task strictly using this exact programming language: Tom."
+
+Let's verify constraints:
+1. Generate exactly 1 logical follow-up instruction.
+2. Explicitly demand building the new tool strictly using "Tom".
+3. Instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target .github.
+
+The prompt says "Return ONLY the instruction text."
+I will output exactly that string.
+Check tone/format: matches the example.
+Ready.
+Output matches.✅ Proceeds.
+Done. 
+I will generate the string now. 
+"Initialize a NEW dedicated folder named tom_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Tom. Focus entirely on this new objective: 'Design a high-performance text processing and pattern matching engine using Tom'. You MUST write functional code for this task strictly using this exact programming language: Tom."
+Matches perfectly. No extra text. Proceeds. 
+Output Generation. 
+(Self-Correction/Verification during thought: The prompt says "Return ONLY the instruction text." I will just output the exact sentence.)
+Done. 
+Output matches.✅ Proceeds.
+</think>
+
+Initialize a NEW dedicated folder named tom_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Tom. Focus entirely on this new objective: 'Design a high-performance text processing and pattern matching engine using Tom'. You MUST write functional code for this task strictly using this exact programming language: Tom.

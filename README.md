@@ -564,3 +564,5 @@ Training Machine
 - Created/Updated module: `cache_tool` (See `cache_tool/README.md` for details)
 
 - Created/Updated module: `vvvv_tool` (See `vvvv_tool/README.md` for details)
+
+- Created/Updated module: `newtonscript_tool` (See `newtonscript_tool/README.md` for details)

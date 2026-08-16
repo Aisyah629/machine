@@ -762,3 +762,5 @@ Training Machine
 - Created/Updated module: `fortran_solver_tool` (See `fortran_solver_tool/README.md` for details)
 
 - Created/Updated module: `logtalk_tool` (See `logtalk_tool/README.md` for details)
+
+- Created/Updated module: `./executable_uml_tool` (See `./executable_uml_tool/README.md` for details)

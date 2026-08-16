@@ -1,24 +1,22 @@
-# Executable UML Tool
+# Executable UML (xUML) Self-Healing Tool
 
-This tool is designed for workflow orchestration using Executable UML (xEUML).
-
-## Purpose
-The executable_uml_tool provides a framework for defining, simulating, and executing workflow models. It leverages the formal semantics of Executable UML to ensure that the workflows are rigorously defined and can be automatically translated into executable code or run within an xEUML runtime environment.
+## Overview
+This tool implements a self-healing mechanism within the Executable UML (xUML) framework. It is designed to detect edge cases and runtime errors, monitor system health, and automatically apply corrective actions to restore normal operation. The tool leverages xUML's strong typing, state-based modeling, and event-driven architecture to ensure robust error handling.
 
 ## Features
-- **Workflow Definition**: Define complex workflows using xEUML syntax.
-- **Simulation**: Simulate workflow execution to verify logic and catch errors early.
-- **Orchestration**: Orchestrate multi-step processes by chaining state transitions and events.
+- **Error Detection**: Continuously monitors for exceptions and invalid states.
+- **Self-Healing Actions**: Applies predefined recovery strategies.
+- **State Management**: Maintains system state to track healing progress.
+- **Logging**: Records all healing actions for audit and analysis.
 
 ## Usage
-To use this tool, place your `.xuml` files in this directory and run the interpreter as specified in the project documentation.
+1. Implement the `SelfHealingController` to oversee healing activities.
+2. Use `ErrorDetector` to identify and classify errors.
+3. Define recovery actions in `RecoveryActions`.
+4. Integrate with `HealthMonitor` to trigger healing processes.
 
-## Language
-Executable UML (xEUML)
-
-## Directory Structure
-- `main.xuml`: The main workflow orchestration script.
-- `README.md`: This file.
+## Author
+Autonomous AI Polyglot Software Engineer
 
 ## License
-MIT License
+MIT

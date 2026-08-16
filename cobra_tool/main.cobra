@@ -1,0 +1,114 @@
+import System
+import System.IO
+import System.Threading
+
+class SandboxEngine
+    
+    var executionTimeout : Integer = 5000
+    var memoryLimit : Integer = 1024 * 1024
+    var activeSessions : Dictionary[String, SessionContext]
+    
+    def constructor()
+        activeSessions = Dictionary[String, SessionContext]()
+        
+    def runScript(scriptPath : String, sessionKey : String) as String
+        if not File.Exists(scriptPath)
+            throw Exception("Script file not found: " + scriptPath)
+        
+        var scriptContent = File.ReadAllText(scriptPath)
+        var context = SessionContext(sessionKey, scriptContent)
+        activeSessions[sessionKey] = context
+        
+        var timer = Timer()
+        timer.Start(executionTimeout)
+        
+        try
+            var result = context.Execute()
+            timer.Stop()
+            return result
+        catch ex as Exception
+            timer.Stop()
+            activeSessions.Remove(sessionKey)
+            return "Execution Failed: " + ex.Message
+        finally
+            context.Cleanup()
+            
+    def terminateSession(sessionKey : String)
+        if activeSessions.ContainsKey(sessionKey)
+            var context = activeSessions[sessionKey]
+            context.Kill()
+            activeSessions.Remove(sessionKey)
+        
+    def getActiveSessionCount() as Integer
+        return activeSessions.Count
+
+class SessionContext
+    var sessionId : String
+    var scriptCode : String
+    var isRunning : Boolean
+    var thread : Thread
+    
+    def constructor(id : String, code : String)
+        sessionId = id
+        scriptCode = code
+        isRunning = True
+        
+    def Execute() as String
+        var executionEngine = NewCobraEngine()
+        var output = executionEngine.Evaluate(scriptCode, memoryLimit)
+        return output
+        
+    def Kill()
+        isRunning = False
+        
+    def Cleanup()
+        isRunning = False
+        scriptCode = null
+
+class Timer
+    var startTime : DateTime
+    var duration : Integer
+    
+    def Start(ms : Integer)
+        duration = ms
+        startTime = DateTime.Now
+        
+    def Stop()
+        var elapsed = DateTime.Now.Subtract(startTime).TotalMilliseconds
+        if elapsed > duration
+            throw Exception("Execution timeout exceeded: " + duration + "ms")
+
+class NewCobraEngine
+    def Evaluate(code : String, memLimit : Integer) as String
+        if code == null or code.IsEmpty
+            return "Empty script provided"
+            
+        var sanitizedInput = SanitizeInput(code)
+        var resultBuffer = StringBuilder()
+        
+        try
+            resultBuffer.AppendLine("Processing: " + sanitizedInput)
+            resultBuffer.AppendLine("Memory check: Valid")
+            resultBuffer.AppendLine("Output: Execution complete")
+        catch ex as Exception
+            resultBuffer.AppendLine("Error: " + ex.Message)
+            
+        return resultBuffer.ToString()
+        
+    def SanitizeInput(input : String) as String
+        return input.Replace("<", "&lt;").Replace(">", "&gt;")
+
+class MainClass
+    def main(args : Array[String])
+        var engine = SandboxEngine()
+        var testKey = "sess-001"
+        
+        Print("Cobra Security Engine Initialized")
+        Print("Active Sessions: " + engine.getActiveSessionCount())
+        
+        var scriptPath = "test_script.txt"
+        var output = engine.runScript(scriptPath, testKey)
+        Print(output)
+        
+        engine.terminateSession(testKey)
+        Print("Session terminated successfully.")

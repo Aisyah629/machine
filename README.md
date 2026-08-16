@@ -620,3 +620,5 @@ Training Machine
 - Created/Updated module: `xpath_tool` (See `xpath_tool/README.md` for details)
 
 - Created/Updated module: `prolog_reasoning_engine_tool` (See `prolog_reasoning_engine_tool/README.md` for details)
+
+- Created/Updated module: `xquery_data_query_tool` (See `xquery_data_query_tool/README.md` for details)

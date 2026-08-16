@@ -1,0 +1,55 @@
+PROGRAM JOSS_DataModeling_Tool
+  
+  % This program implements a symbolic computation and interactive query processing framework
+  % for academic and research-oriented data modeling using JOSS syntax.
+  
+  IMPORT IO, SYM_MATH, QUERY_ENGINE
+  
+  DECLARE
+    SYMBOL_TABLE TABLE OF SYMBOL
+    QUERY_BUFFER BUFFER OF STRING
+    QUERY_RESULT TABLE OF RECORD
+      ID INTEGER
+      EXPRESSION STRING
+      VALUE FLOAT
+    END_RECORD
+  END_DECLARE
+
+  INIT_SYSTEM:
+    % Initialize symbolic mathematics engine
+    SYM_MATH.INIT(LEVEL = HIGH_PRECISION)
+    % Initialize query engine with default academic dataset
+    QUERY_ENGINE.LOAD_DATASET("/data/academic_records.csv")
+    PRINT "JOSS Data Modeling Tool Initialized."
+  END_INIT_SYSTEM
+
+  PROCESS_INPUT:
+    % Read interactive query from stdin
+    PRINT "Enter Query: "
+    INPUT QUERY_BUFFER
+    
+    % Parse query into symbolic expression
+    IF QUERY_BUFFER.EQUALS("QUIT") THEN
+      PRINT "Shutting down JOSS Tool."
+      HALT
+    END_IF
+    
+    % Execute query and retrieve results
+    QUERY_RESULT = QUERY_ENGINE.EXECUTE(QUERY_BUFFER)
+    
+    % Display results
+    FOR EACH RECORD IN QUERY_RESULT DO
+      PRINT "ID: " RECORD.ID
+      PRINT "Expr: " RECORD.EXPRESSION
+      PRINT "Value: " RECORD.VALUE
+    END_FOR
+  END_PROCESS_INPUT
+
+  MAIN:
+    CALL INIT_SYSTEM
+    LOOP
+      CALL PROCESS_INPUT
+    END_LOOP
+  END_MAIN
+
+END_PROGRAM

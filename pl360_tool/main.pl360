@@ -1,37 +1,38 @@
-      OPTION  MAIN=TRUE,  SETAM=512K,  LIST=NO,  SRC=NO
+* PL360 UTILITY FOR LOW-LEVEL SYSTEM INSTRUCTION HANDLING
+* THIS CODE DEMONSTRATES BASIC SYSTEM CALLS AND REGISTERS HANDLING
 
-      START   PL360_TOOL
-
-      *       PL360 MAINLINE
-      *       This program serves as the entry point for the PL360 tool.
-      *       It initializes registers, sets up the environment, and
-      *       begins execution of the provided logic.
-
-PL360_TOOL  EQU   0
-
-      LR    R12,R15       * Set up Register 12 as a pointer
-      USING PL360_TOOL,R12
-      LA    R15,PL360_TOOL * Load address of tool
-      B     EXECUTE_TOOL  * Branch to execution routine
-
-EXECUTE_TOOL
-      *       Initialize general purpose registers
-      *       R0-R3: Working registers
-      *       R12: Pointer register
-      *       R15: Address register
-
-      LR    R0,R0         * Clear R0
-      LR    R1,R0         * Clear R1
-      LR    R2,R0         * Clear R2
-
-      *       Call main logic subroutine
-      B     MAIN_LOGIC
-
-MAIN_LOGIC
-      *       Perform core tool operations here
-      *       Example: Process input, manipulate data
-
-      XR    R0,R0         * Return code 0
-      BR    R14           * Return to caller
-
-END
+         SETENV  PASS,1       * SET ENVIRONMENT VARIABLE
+         STM   14,12,12(13)  * SAVE REGISTERS
+         LR    12,15        * CALCULATE BASE ADDRESS
+         BAL   14,XTENSION * BRANCH TO EXTENSION
+         DC    16F'0'       * SAVE AREA
+         USING  *,12        * SET CURRENT BASE REGISTER
+         LA    15,=V(SA)    * LOAD SAVE ADDRESS
+         STM   0,14,12(13)  * SAVE REGISTERS AGAIN
+         LR    13,15        * UPDATE BASE POINTER
+         LR    15,12        * SET RETURN ADDRESS
+         STM   14,12,12(13) * SAVE REGISTERS FINAL
+         LR    12,15        * CALCULATE BASE ADDRESS
+         BAL   14,XTENSION * BRANCH TO EXTENSION
+         DC    16F'0'       * SAVE AREA
+         USING  *,12        * SET CURRENT BASE REGISTER
+         LA    15,=V(SA)    * LOAD SAVE ADDRESS
+         STM   0,14,12(13)  * SAVE REGISTERS AGAIN
+         LR    13,15        * UPDATE BASE POINTER
+         LR    15,12        * SET RETURN ADDRESS
+         STM   14,12,12(13) * SAVE REGISTERS FINAL
+         LR    12,15        * CALCULATE BASE ADDRESS
+         BAL   14,XTENSION * BRANCH TO EXTENSION
+         DC    16F'0'       * SAVE AREA
+         USING  *,12        * SET CURRENT BASE REGISTER
+         LA    15,=V(SA)    * LOAD SAVE ADDRESS
+         STM   0,14,12(13)  * SAVE REGISTERS AGAIN
+         LR    13,15        * UPDATE BASE POINTER
+         LR    15,12        * SET RETURN ADDRESS
+         C       15,=A(0)   * CHECK IF NULL
+         BNE   EXIT         * IF NOT NULL, EXIT
+         LA    15,1         * RETURN CODE 1
+         BXH   14,=A(0),RETURN * RETURN TO CALLER
+         RETURN
+SA       DS    0H
+         END

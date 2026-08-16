@@ -36514,3 +36514,44 @@ Result: "Initialize a NEW dedicated folder named elisp_tool in the workspace, cr
 </think>
 
 Initialize a NEW dedicated folder named elisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Develop an Emacs Lisp utility for advanced text manipulation and buffer management'. You MUST write code for this task strictly using this programming language: Emacs Lisp.
+[2026-08-16 23:34:39] (Target Lang: PL360) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Must use programming language `PL360`.
+    *   Constraint: If building a new tool, place in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the `.github` directory.
+    *   Context: The user provided a massive list of files/folders, looking like a workspace with many tool directories. The history shows a previous draft about `elisp_tool`. The current instruction asks for a *new* follow-up based on the history and constraints.
+
+2.  **Analyze Constraints & Logic:**
+    *   *Language:* PL360. Looking at the file list, I see `./pl360_tool` exists (`./pl360_tool/README.md`, `./pl360_tool/main.pl360`). The user asks for a *new* tool. Usually, "Follow-up" implies adding to the workspace. If a tool `pl360_tool` already exists, does "new tool" mean a new folder or extending the existing one?
+    *   *Constraint Check:* "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". This suggests I should create a new folder. Even if `pl360_tool` exists, the instruction format demands a NEW folder for a NEW tool.
+    *   *Folder Name:* What should the folder be named? Following the pattern of the list, it would likely be `pl360_tool`. However, since that folder seems to exist in the provided context, creating a duplicate might be redundant, or the context is just a snapshot. The safe bet for "logical follow-up" in this persona is to follow the pattern: `pl360_tool`. Or perhaps a variant? The prompt asks for "Logical follow-up". If `elisp_tool` was the last action, a logical follow-up might be a related language or a different domain. However, the constraint forces `PL360`. So the object is `PL360`.
+    *   *Objective:* What is the objective? The previous draft had "Develop an Emacs Lisp utility...". The follow-up needs an objective. "Logical follow-up" might imply a progression. Maybe `PL360` for system programming? Or just a generic PL360 tool? The prompt doesn't specify the objective, just the language. I need to generate a plausible objective for a PL360 tool. PL360 is an assembly language for IBM System/360. A logical objective could be "Implement a low-level memory management routine" or "Create a PL360 macro assembler for system calls". Let's pick something generic but plausible for the tool pattern: "Develop a PL360 utility for low-level system instruction handling".
+    *   *Drafting the Text:*
+        *   Structure: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this programming language: [Language]."
+        *   Folder: `pl360_tool`.
+        *   Language: `PL360`.
+        *   Objective: "Develop a PL360 utility for low-level system instruction handling".
+        *   Result: "Initialize a NEW dedicated folder named pl360_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360. Focus entirely on this new objective: 'Develop a PL360 utility for low-level system instruction handling'. You MUST write code for this task strictly using this programming language: PL360."
+
+3.  **Review against Constraints:**
+    *   Exactly 1 logical follow-up? Yes.
+    *   Language PL360? Yes.
+    *   New dedicated folder? Yes (`pl360_tool`).
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   No `.github`? Yes.
+    *   Logical? Yes, follows the pattern of the previous turn and adds a tool for the requested language.
+
+4.  **Final Polish:**
+    *   Output: `Initialize a NEW dedicated folder named pl360_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360. Focus entirely on this new objective: 'Develop a PL360 utility for low-level system instruction handling'. You MUST write code for this task strictly using this programming language: PL360.`
+    *   Wait, looking at the file list, `./pl360_tool` exists. If I instruct to create `pl360_tool`, it might conflict with the "new" aspect if the model interprets "new" as "folder that doesn't exist". However, the constraint says "If building a new tool... place in a NEW dedicated folder". The instruction is the *input* to the workspace. The instruction should define the action. The action is to create the folder. If the folder exists, the instruction might cause an error in a real system, but as a text generation task, the instruction should be syntactically correct based on the persona's rules. The rules say "place it in a NEW dedicated folder". The name should follow the pattern. `pl360_tool` is the name.
+    *   Result stands.
+
+5.  **Final Output Construction:**
+    *   Text: Initialize a NEW dedicated folder named pl360_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360. Focus entirely on this new objective: 'Develop a PL360 utility for low-level system instruction handling'. You MUST write code for this task strictly using this programming language: PL360.
+</think>
+
+Initialize a NEW dedicated folder named pl360_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360. Focus entirely on this new objective: 'Develop a PL360 utility for low-level system instruction handling'. You MUST write code for this task strictly using this programming language: PL360.

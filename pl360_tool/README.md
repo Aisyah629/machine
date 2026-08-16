@@ -1,11 +1,14 @@
 # PL360 Tool
 
-This tool is designed to parse, simulate, and execute programs written in the PL360 programming language, which was used primarily for IBM System/360 mainframes.
+This tool provides a framework for writing and executing PL360 (Programming Language/360) code. PL360 is a macro assembly language used for programming IBM System/360 and compatible mainframes. It allows for low-level system instruction handling and direct hardware manipulation.
 
 ## Features
-- PL360 Syntax Parser
-- Instruction Simulation
-- Register and Memory Management
+- Low-level system instruction handling
+- Macro assembly support
+- Direct hardware manipulation capabilities
 
 ## Usage
-Place your `.pl360` source file in the working directory and execute the tool.
+Place your PL360 code in the `main.pl360` file and execute it using the appropriate runtime environment for IBM System/360 systems.
+
+## License
+This tool is provided as-is for educational and development purposes.

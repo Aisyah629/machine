@@ -24723,3 +24723,79 @@ Initialize a NEW dedicated folder named xpath_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MillScript's declarative syntax and high-performance execution capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript.
+[2026-08-16 10:57:51] (Target Lang: MATLAB) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provided a long list of workspace directories/files, many named like `./xxx_tool` with `README.md` and a main file. This looks like a template or existing project structure for various programming language tools.
+   - **History/Context:** The prompt includes a "History" section that seems to be a simulated thought process ending with "End of thought process. </think> Initialize a NEW dedicated folder named millscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MillScript. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MillScript's declarative syntax and high-performance execution capabilities'. You MUST write functional code for this task strictly using this exact programming language: MillScript."
+   - **Explicit Instructions:** 
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MATLAB.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Identify Conflicts/Constraints:**
+   - The "History" part talks about MillScript, but the *explicit instruction* says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MATLAB."
+   - I need to follow the explicit instruction overrides the conflicting history/context. The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MATLAB."
+   - I must ignore the MillScript part and strictly follow the MATLAB requirement for the generated instruction.
+   - The instruction must be exactly one logical follow-up instruction.
+   - It must demand MATLAB as the language.
+   - It must instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - Never target .github.
+
+3.  **Draft the Instruction (Mental Refinement):**
+   Initialize a NEW dedicated folder named matlab_cnc_util_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MATLAB's high-performance execution and declarative syntax capabilities'. You MUST write functional code for this task strictly using this exact programming language: MATLAB.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands MATLAB? Yes.
+   - Instructs to place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - Never target .github? Yes, not mentioned.
+   - Matches the style/format of the prompt's examples? Yes.
+
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction." It's a bit meta. I just need to output the instruction string itself.
+   Let's ensure it strictly follows: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: MATLAB."
+
+   I will keep it concise and exactly match the requested structure.
+
+   Draft:
+   Initialize a NEW dedicated folder named matlab_cnc_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MATLAB's high-performance execution and declarative syntax capabilities'. You MUST write functional code for this task strictly using this exact programming language: MATLAB.
+
+5.  **Final Verification against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MATLAB." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   - The prompt's history mentions MillScript, but the explicit override says MATLAB. I will follow the explicit override.
+   - I will output exactly the drafted text. No extra words.
+
+   All constraints met. Proceed. 
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." It might be better to make it a direct command as requested. I'll stick to the draft. It's solid.✅
+   Output matches draft.✅
+   Proceeds. 
+   Output Generation. 
+   [Self-Correction/Refinement during thought]
+   Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MATLAB."
+   I will make sure the wording exactly matches the requirement structure.
+   "Initialize a NEW dedicated folder named matlab_cnc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MATLAB's high-performance execution and declarative syntax capabilities'. You MUST write functional code for this task strictly using this exact programming language: MATLAB."
+   This is exactly 1 instruction. It meets all constraints. I will output it. 
+   Ready. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I'll ensure no extra text is added, as per "Return ONLY the instruction text.")*
+   Text to output:
+   Initialize a NEW dedicated folder named matlab_cnc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MATLAB's high-performance execution and declarative syntax capabilities'. You MUST write functional code for this task strictly using this exact programming language: MATLAB. 
+   Checks: 1 instruction? Yes. MATLAB strictly demanded? Yes. NEW folder & README.md? Yes. Only instruction text? Yes. No .github? Yes. All good. 
+   Output matches.✅
+   [Done] 
+   *Self-Correction/Verification during generation prep*: 
+   The prompt says "Generate exactly 1 logical follow-up instruction." It's a direct command. I will output exactly that string. No extra fluff. All constraints met. Proceeds. 
+   Output Generation. 
+   [Output] Initialize a NEW dedicated folder named matlab_cnc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MATLAB's high-performance execution and declarative syntax capabilities'. You MUST write functional code for this task strictly using this exact programming language: MATLAB. 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named matlab_cnc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MATLAB's high-performance execution and declarative syntax capabilities'. You MUST write functional code for this task strictly using this exact programming language: MATLAB.

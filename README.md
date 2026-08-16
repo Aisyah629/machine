@@ -746,3 +746,5 @@ Training Machine
 - Created/Updated module: `mohol_tool` (See `mohol_tool/README.md` for details)
 
 - Created/Updated module: `smalltalk_tool` (See `smalltalk_tool/README.md` for details)
+
+- Created/Updated module: `espol_tool` (See `espol_tool/README.md` for details)

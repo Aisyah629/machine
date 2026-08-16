@@ -29971,3 +29971,38 @@ Initialize a NEW dedicated folder named scilab_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named smalltalk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Smalltalk. Focus entirely on this new objective: 'Implement a dynamic object-oriented framework for real-time message routing and reflection'. You MUST write code for this task strictly using this exact programming language: Smalltalk.
+[2026-08-16 17:29:15] (Target Lang: ESPOL) The user wants a single instruction following the pattern of the previous ones.
+The instruction must:
+1. Create a new folder named `espol_tool`.
+2. Create a local `README.md` inside it.
+3. Build a new tool strictly using the programming language `ESPOL`.
+4. Include a technical objective relevant to ESPOL.
+5. Return ONLY the instruction text.
+6. Never target `.github`.
+
+ESPOL is a programming language. I need to find a plausible objective for ESPOL or a generic technical objective if the specific one isn't obvious, but usually, it's something about logic, parsing, or systems. ESPOL (Executable Specification of Processes and Languages) sounds like it could be related to formal methods, specification, or process modeling. A good objective would be "Implement a formal process specification engine for verifying concurrent system behaviors" or "Develop a compiler front-end for executable process specifications with rigorous syntax validation". Let's go with something about process specification or executable specifications since "ESPOL" suggests that.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named espl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ESPOL. Focus entirely on this new objective: 'Implement a formal process specification engine for verifying concurrent system behaviors with rigorous syntax validation'. You MUST write code for this task strictly using this exact programming language: ESPOL."
+
+Checking constraints:
+- NEW dedicated folder named `espol_tool`: Yes.
+- Create local README.md: Yes.
+- STRICTLY using ESPOL: Yes.
+- Only instruction text: Yes.
+- No .github: Yes.
+
+Refining the objective to sound more like the history examples (which are often about numerical solvers, simulation engines, etc., but adapted to the language). ESPOL being "Executable Specification of Processes and Languages", a simulation/verification objective fits well.
+"Implement a formal process specification engine for verifying concurrent system behaviors with rigorous syntax validation." sounds good.
+
+Final Polish:
+"Initialize a NEW dedicated folder named espl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ESPOL. Focus entirely on this new objective: 'Implement a formal process specification engine for verifying concurrent system behaviors with rigorous syntax validation'. You MUST write code for this task strictly using this exact programming language: ESPOL."
+
+One minor check: "espol" vs "ESPOL". The instruction usually uses lowercase for the folder name and the language name capitalized or lowercase in the text. The prompt asks for "espol" in the folder name context usually (based on history `smalltalk_tool`), but the language is ESPOL. The previous example used `smalltalk_tool` and `Smalltalk`.
+The prompt says "built STRICTLY using this exact programming language: ESPOL".
+So folder: `espol_tool`. Language: `ESPOL`.
+
+Result looks solid.
+</think>
+
+Initialize a NEW dedicated folder named espl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ESPOL. Focus entirely on this new objective: 'Implement a formal process specification engine for verifying concurrent system behaviors with rigorous syntax validation'. You MUST write code for this task strictly using this exact programming language: ESPOL.

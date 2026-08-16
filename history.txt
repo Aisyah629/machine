@@ -29854,3 +29854,26 @@ This matches the pattern and constraints perfectly.
 </think>
 
 Initialize a NEW dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc. Focus entirely on this new objective: 'Construct a robust, pipeline-oriented command processor for sequential data transformation'. You MUST write code for this task strictly using this exact programming language: rc.
+[2026-08-16 17:09:03] (Target Lang: Mohol) Thinking (optional):
+1.  **Analyze Request:** The user wants exactly 1 follow-up instruction based on the provided pattern.
+2.  **Identify Constraints:**
+    *   Exactly 1 instruction.
+    *   Explicitly demand `Mohol` as the language.
+    *   New dedicated folder: `mohol_tool`.
+    *   Local README.md inside it.
+    *   Return ONLY the instruction text.
+    *   Never target `.github`.
+    *   Objective should logically follow or fit the theme (though not strictly bound to a specific objective, the previous one was about data transformation/command processor. I can keep it similar or slightly different, but the prompt says "Focus entirely on this new objective: ...". I will invent a logical objective or reuse the pipeline one to be safe, or just pick a standard programming task). Let's use "Construct a high-performance, mathematically precise interpreter for arithmetic expressions and control flow".
+    *   Structure matches previous: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [lang]. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this exact programming language: [lang]."
+3.  **Draft Instruction:** Initialize a NEW dedicated folder named mohol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mohol. Focus entirely on this new objective: 'Construct a high-performance, mathematically precise interpreter for arithmetic expressions and control flow'. You MUST write code for this task strictly using this exact programming language: Mohol.
+4.  **Check Constraints:**
+    *   1 instruction? Yes.
+    *   Mohol? Yes.
+    *   New folder? Yes (`mohol_tool`).
+    *   README? Yes.
+    *   Only text? Yes.
+    *   No .github? Yes.
+5.  **Output Generation.**✅
+</think>
+
+Initialize a NEW dedicated folder named mohol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mohol. Focus entirely on this new objective: 'Construct a high-performance, mathematically precise interpreter for arithmetic expressions and control flow'. You MUST write code for this task strictly using this exact programming language: Mohol.

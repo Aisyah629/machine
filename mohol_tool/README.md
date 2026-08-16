@@ -1,20 +1,14 @@
 # Mohol Tool
 
-## Description
-A specialized tool built strictly using the Mohol programming language. Mohol is a unique language designed for specific computational paradigms.
-
-## Usage
-Run the Mohol script to execute the tool's functionality.
+This tool is an interpreter for the Mohol programming language, focused on arithmetic expressions and control flow.
 
 ## Features
-- Built exclusively in Mohol
-- Optimized for specific task execution
-- Follows Mohol best practices
+- High-performance interpretation
+- Mathematical precision
+- Support for arithmetic expressions and control flow
 
-## Installation
-1. Ensure Mohol runtime is installed.
-2. Navigate to this directory.
-3. Execute `mohol main.mol`.
+## Usage
+Execute `main.mol` to run the interpreter.
 
 ## License
-This tool is provided as-is for educational and experimental purposes.
+MIT

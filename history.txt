@@ -30042,3 +30042,61 @@ I will output the instruction exactly as drafted.
 </think>
 
 Initialize a NEW dedicated folder named powershell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell. Focus entirely on this new objective: 'Develop an automated system workflow orchestrator to manage complex multi-step task execution with robust error handling and logging capabilities'. You MUST write code for this task strictly using this exact programming language: PowerShell.
+[2026-08-16 17:32:10] (Target Lang: Curry) Thinking Process:
+1.  **Analyze the Request:**
+    *   Context: An "Autonomous AI" with a workspace listing many tools/folders.
+    *   History: A previous draft for `powershell_tool` was shown.
+    *   Current Task: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   Explicitly demand the new tool be built STRICTLY using Curry.
+        *   If building a new tool: explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+        *   Return ONLY the instruction text.
+        *   NEVER target `.github`.
+        *   Based on the pattern of previous inputs in the history (e.g., `Initialize a NEW dedicated folder named ... build the entire new tool STRICTLY using ... Focus entirely on this new objective: '...' You MUST write code for this task strictly using ...`).
+
+2.  **Drafting the Instruction:**
+    *   *Folder Name:* `curry_tool` (consistent with the pattern of language names).
+    *   *Language:* Curry.
+    *   *Objective:* Needs to be a technical software engineering task suitable for Curry (a functional logic programming language). Examples: "Implement a logic-based constraint solver for scheduling problems", "Develop a declarative system for symbolic manipulation of mathematical expressions", "Create a rule-based inference engine for automated theorem proving". Let's go with: "Develop a declarative logic system capable of solving constraint satisfaction problems through non-deterministic search and functional programming paradigms".
+    *   *Structure:*
+        "Initialize a NEW dedicated folder named curry_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Curry. Focus entirely on this new objective: 'Develop a declarative logic system capable of solving constraint satisfaction problems through non-deterministic search and functional programming paradigms'. You MUST write code for this task strictly using this exact programming language: Curry."
+
+3.  **Checking Constraints:**
+    *   Exactly 1 logical follow-up instruction? Yes.
+    *   Explicitly demand built STRICTLY using Curry? Yes ("STRICTLY using this exact programming language: Curry" and "You MUST write code for this task strictly using this exact programming language: Curry").
+    *   NEW dedicated folder? Yes (`curry_tool`).
+    *   Local `README.md`? Yes.
+    *   NEVER target `.github`? Yes.
+    *   Return ONLY the instruction text? Yes.
+
+4.  **Final Polish (Mental Review of Draft):**
+    "Initialize a NEW dedicated folder named curry_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Curry. Focus entirely on this new objective: 'Develop a declarative logic system capable of solving constraint satisfaction problems through non-deterministic search and functional programming paradigms'. You MUST write code for this task strictly using this exact programming language: Curry."
+
+    Looks perfect. Matches the requested format and constraints exactly. Matches the style of the `powershell_tool` example in the prompt's history.
+
+5.  **Output Generation.** Just the string. No quotes, no markdown (unless standard, but usually plain text is safer for "ONLY the instruction text"). I will output just the text.
+
+    *Self-Correction during drafting:*
+    Check the prompt again: "Return ONLY the instruction text."
+    I will paste exactly the drafted string.
+
+    Draft:
+    Initialize a NEW dedicated folder named curry_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Curry. Focus entirely on this new objective: 'Develop a declarative logic system capable of solving constraint satisfaction problems through non-deterministic search and functional programming paradigms'. You MUST write code for this task strictly using this exact programming language: Curry.
+
+    Let's refine the objective to be a bit more concise and punchy, like the PowerShell one.
+    "Develop a logic-based reasoning engine capable of solving constraint satisfaction problems using non-deterministic search and declarative programming constructs." -> Sounds good.
+
+    Final Text:
+    Initialize a NEW dedicated folder named curry_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Curry. Focus entirely on this new objective: 'Develop a logic-based reasoning engine capable of solving constraint satisfaction problems using non-deterministic search and declarative programming constructs'. You MUST write code for this task strictly using this exact programming language: Curry.
+
+    Matches all rules. Done.
+
+    Wait, constraint check: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Curry."
+    Draft: "...STRICTLY using this exact programming language: Curry... You MUST write code for this task strictly using this exact programming language: Curry."
+    This meets the requirement of explicitly demanding it.
+
+    Result is ready.
+    Outputting.
+</think>
+
+Initialize a NEW dedicated folder named curry_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Curry. Focus entirely on this new objective: 'Develop a logic-based reasoning engine capable of solving constraint satisfaction problems using non-deterministic search and declarative programming constructs'. You MUST write code for this task strictly using this exact programming language: Curry.

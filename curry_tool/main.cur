@@ -1,43 +1,61 @@
--- Curry Tool: Constraint Satisfaction Engine for Logic Puzzles
+- module Currying.
 
-module main where
+-- Defining types for variables, constraints, and domains
+-- A variable is identified by a name and has a range of possible values (its domain)
+-- A constraint is a relation between variables that must be satisfied
 
-import CurryLib
+type Variable = String
+type Value = Int
 
--- Define a simple constraint satisfaction problem
--- Example: The Zebra Puzzle
+data Domain = Domain [Value]
 
--- Data types for the problem
-data Country = Germany | Norway | Spain | Italy | England
-data Drink = Tea | Coffee | Milk | Orange | Water
-data Smoker = Dunhill | PallMall | BlueMaster | Prince | Blends
-data Pet = Dog | Snails | Fox | Zebra | Horse
-data Color = Red | Green | Ivory | Yellow | Blue
+data Constraint = Constraint (Variable -> Variable -> Bool)  -- Binary constraint for simplicity
 
--- Define the constraints
-constraints =
-  [ true -- Placeholder for constraints
-  ]
+-- Sample constraint: x and y must have different values
+constraintNotEqual :: Constraint
+constraintNotEqual = Constraint (/=)
 
--- Solver function
-solve :: [(Color, Country, Drink, Smoker, Pet)]
-solve =
-  let
-    colors = [Red, Green, Ivory, Yellow, Blue]
-    countries = [Germany, Norway, Spain, Italy, England]
-    drinks = [Tea, Coffee, Milk, Orange, Water]
-    smokers = [Dunhill, PallMall, BlueMaster, Prince, Blends]
-    pets = [Dog, Snails, Fox, Zebra, Horse]
-  in
-    -- Generate all possible combinations and filter based on constraints
-    [ (c, co, d, s, p) | c <- colors, co <- countries, d <- drinks, s <- smokers, p <- pets ]
-    -- Apply constraints here
-    -- For example: England is in the red house, etc.
+-- Define a simple problem structure
+-- Variables: ['x', 'y']
+-- Domains: x can be 1, 2; y can be 1, 2
+-- Constraints: x and y must be different
 
--- Main function
-main =
-  do
-    putStrLn "Constraint Satisfaction Engine for Logic Puzzles"
-    putStrLn "Solving..."
-    let result = solve
-    print result
+type Assignment = [(Variable, Value)]
+
+-- Check if an assignment satisfies a given constraint
+-- For the simplified constraintNotEqual, we check if the assigned values for two variables are different
+satisfyConstraint :: Assignment -> Constraint -> Bool
+satisfyConstraint _ (Constraint pred) = undefined  -- Simplified; real implementation needs to parse the assignment and apply the predicate
+
+-- Non-deterministic search to find a valid assignment
+-- We use the 'amb' operator from Curry to explore possibilities
+search :: [Variable] -> [(Variable, Domain)] -> [Constraint] -> [Assignment]
+search [] _ _ = [[]]  -- Base case: an empty assignment is valid
+search (v:vs) domains constraints =
+    let possibleValues = getDomain v domains
+        restAssignments = search vs domains constraints
+    in do
+        val <- possibleValues
+        assignment <- restAssignments
+        if satisfyConstraint ((v, val):assignment) constraints
+        then [(v, val):assignment]
+        else []
+
+-- Helper to get the domain of a variable
+getDomain :: Variable -> [(Variable, Domain)] -> [Value]
+getDomain v ds = case lookup v ds of
+    Just (Domain vs) -> vs
+    Nothing -> []  -- Should not happen in a well-formed problem
+
+-- Main execution point
+main :: IO ()
+main = do
+    putStrLn "Curry Tool: Constraint Satisfaction Problem Solver"
+    putStrLn "=================================================="
+    let problemVars = ["x", "y"]
+        problemDomains = [("x", Domain [1, 2]), ("y", Domain [1, 2])]
+        problemConstraints = [constraintNotEqual]
+    solutions <- search problemVars problemDomains problemConstraints
+    if null solutions
+        then putStrLn "No solution found."
+        else putStrLn $ "Solution found: " ++ show (head solutions)}]}

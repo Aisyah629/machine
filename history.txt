@@ -25235,3 +25235,124 @@ This matches all constraints.
 </think>
 
 Initialize a NEW dedicated folder named stackless_python_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Stackless Python. Focus entirely on this new objective: 'Design a high-throughput concurrent data processing pipeline utilizing microthreads and channel-based communication for massive scalability'. You MUST write code for this task strictly using this exact programming language: Stackless Python.
+[2026-08-16 11:22:19] (Target Lang: Io) The user wants a follow-up instruction based on a specific pattern.
+The history shows a pattern of initializing new tool folders with specific languages and objectives.
+The prompt explicitly demands the language "Io".
+It also demands a NEW dedicated folder and a local README.md.
+It asks for exactly 1 logical follow-up instruction.
+It requires returning ONLY the instruction text.
+It forbids targeting .github.
+
+Pattern analysis from history:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+
+Constraints:
+- Language: Io
+- Folder: ike_tool (Looking at the file list, `./ioke_tool` exists, but the prompt asks for a NEW dedicated folder. Usually, the model creates a folder name based on the language. Let's look at the file list again. `./ioke_tool` exists. `./io_tool` exists. `./ios` isn't there. `./io` isn't there as a directory. `./io_kit`? No.
+Wait, `./io_tool` exists. `./ioke_tool` exists. `./io` usually refers to the Io programming language. The folder name should likely be `io_tool` or `io_kit`. However, `io_tool` already exists. The prompt says "Initialize a NEW dedicated folder". If `io_tool` exists, maybe I should use `io_kit` or `io_lang_tool`. But usually, the pattern is `[language_name]_tool`.
+Let's check the file list for `io_tool`. Yes, `./io_tool/README.md` exists.
+Let's check `ioke_tool`. Yes, `./ioke_tool` exists.
+Let's check `io_kit`. No.
+The prompt asks for "Io". The file list has `io_tool`. This might be a conflict if the tool already exists.
+However, the instruction is to "Initialize a NEW dedicated folder". If the folder exists, this is contradictory.
+But usually, these prompts assume a fresh context or the model should generate the instruction text regardless of the current state, or perhaps the folder name is inferred differently.
+Looking at the history, the previous instruction was for `stackless_python_tool`.
+The list shows `./stackless_python_tool` exists.
+The user asks to generate a follow-up.
+If I generate the instruction, I should follow the format.
+The language is "Io".
+Folder name? `io_tool` is taken. `io_kit`? `io_lang_tool`?
+Maybe `io_tool` is for I/O operations, not the language Io.
+`io_tool` might be I/O. `ioke_tool` is Io language? No, Io language is often just `io`.
+Let's assume the folder name is `io_tool` or `io_lang_tool`.
+If I look at `./io_tool/main.io`, this suggests `io_tool` is indeed for the Io language.
+So `io_tool` exists.
+The user asks for a "NEW dedicated folder".
+Maybe the folder name should be `io_kit`? Or `io_project`?
+Or maybe the prompt implies creating a folder that doesn't exist yet, and I should suggest a name.
+If `io_tool` exists, maybe the instruction should use `io_lang_tool`.
+Or maybe the user doesn't know `io_tool` exists and wants me to generate the instruction text for `io_tool`.
+The pattern suggests `[language]_tool`.
+If I strictly follow the pattern, I would say `io_tool`.
+But `io_tool` exists.
+The instruction says "Initialize a NEW dedicated folder...".
+If I output `io_tool`, and it exists, the instruction is "Initialize io_tool".
+This might be acceptable in the context of generating the text.
+However, `ioke_tool` is also there.
+Let's look for `io` in the list. `./io_tool` is there.
+Maybe I should use `io_kit`.
+Let's check the objective.
+"Design a high-throughput concurrent data processing pipeline utilizing microthreads and channel-based communication for massive scalability" was the previous one.
+For Io, a common feature is message passing and objects.
+A good objective for Io might be "Design an object-oriented concurrent scripting system utilizing prototype-based inheritance and message passing for flexible system modeling".
+Or "Build a lightweight object-oriented scripting engine focused on prototype-based programming and dynamic behavior manipulation".
+The prompt asks for a "logical follow-up".
+The previous one was high-throughput concurrent processing.
+Io is good for this.
+Objective: "Design a flexible object-oriented scripting framework leveraging prototype-based inheritance and message passing for dynamic system modeling".
+
+Resulting Instruction Draft:
+Initialize a NEW dedicated folder named io_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Io. Focus entirely on this new objective: 'Design a flexible object-oriented scripting framework leveraging prototype-based inheritance and message passing for dynamic system modeling'. You MUST write code for this task strictly using this exact programming language: Io.
+
+Refinement on Folder Name:
+If `io_tool` exists, using `io_tool` in the instruction "Initialize a NEW dedicated folder named io_tool" is slightly weird but follows the pattern `language_tool`.
+Given the strict pattern in the history, the model usually outputs `[language]_tool`.
+I will use `io_tool`.
+The user asked for "Io".
+Language name in output: "Io".
+Folder: `io_tool`.
+Objective: Something relevant to Io.
+"You MUST write code for this task strictly using this exact programming language: Io."
+
+Let's check the history format again.
+"Initialize a NEW dedicated folder named stackless_python_tool..."
+"STRICTLY using this exact programming language: Stackless Python."
+"Focus entirely on this new objective: '...'"
+"You MUST write code for this task strictly using this exact programming language: Stackless Python."
+
+My draft matches this.
+Folder: `io_tool`.
+Language: `Io`.
+Objective: `Design a lightweight object-oriented scripting engine utilizing prototype-based inheritance and message passing for flexible system modeling`.
+
+One detail: `io_tool` exists.
+Does the user want me to detect this?
+"Initialize a NEW dedicated folder".
+If I say `io_tool`, and it exists, it's not NEW.
+Maybe `io_kit` is safer?
+But the pattern is strong.
+Usually, these prompts are generated by a script that doesn't check existence, or checks and picks a name.
+If I am the AI generating the instruction, and I see `io_tool` exists, I might suggest `io_kit`.
+However, looking at `./io_tool/main.io`, it seems `io_tool` is the canonical name for Io in this workspace.
+Maybe the instruction is to *re-initialize* or the user wants to overwrite.
+Or maybe the "NEW" refers to the logical entity.
+I'll stick to `io_tool` as it matches the language `Io` and the pattern.
+Or maybe `io_lang_tool`?
+Let's look at `./ioke_tool`. That's Ioke.
+`./io_tool` is Io.
+I will use `io_tool`.
+
+Objective text:
+'Design a lightweight object-oriented scripting engine utilizing prototype-based inheritance and message passing for flexible system modeling'
+
+Final text:
+Initialize a NEW dedicated folder named io_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Io. Focus entirely on this new objective: 'Design a lightweight object-oriented scripting engine utilizing prototype-based inheritance and message passing for flexible system modeling'. You MUST write code for this task strictly using this exact programming language: Io.
+
+Wait, check `./io_tool` again.
+`./io_tool/README.md`
+`./io_tool/main.io`
+It exists.
+Maybe I should use `io_kit`.
+`io_kit` is not in the list.
+The history shows `stackless_python_tool` which exists in the list.
+`./stackless_python_tool/README.md`
+`./stackless_python_tool/main.py`
+So the pattern persists even if the folder exists.
+The instruction is "Initialize...".
+So I should output `io_tool`.
+
+Result:
+Initialize a NEW dedicated folder named io_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Io. Focus entirely on this new objective: 'Design a lightweight object-oriented scripting engine utilizing prototype-based inheritance and message passing for flexible system modeling'. You MUST write code for this task strictly using this exact programming language: Io.
+</think>
+
+Initialize a NEW dedicated folder named io_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Io. Focus entirely on this new objective: 'Design a lightweight object-oriented scripting engine utilizing prototype-based inheritance and message passing for flexible system modeling'. You MUST write code for this task strictly using this exact programming language: Io.

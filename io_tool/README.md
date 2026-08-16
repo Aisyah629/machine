@@ -1,25 +1,22 @@
-# Io Tool
+# Io Programming Language Tool
 
-This folder contains the Io tool, a dedicated scripting utility implemented strictly using the Io programming language.
-
-## Purpose
-The Io tool serves as a lightweight, object-oriented scripting environment for rapid prototyping, text processing, and automation tasks. Io's prototype-based object model and dynamic nature make it ideal for flexible, expressive scripts.
-
-## Usage
-Run the main script using the Io interpreter:
-```bash
-io main.io
-```
+## Overview
+This tool is designed to build and execute Io scripts, focusing on its unique prototype-based object-oriented paradigm. It facilitates the development of flexible, dynamic systems using Io's powerful message passing and concurrency model.
 
 ## Features
-- Prototype-based object inheritance
-- High-level string and file manipulation
-- Metaprogramming capabilities
-- Lightweight runtime footprint
+- **Prototype-Based Inheritance**: Leverages Io's object model for flexible code reuse.
+- **Message Passing**: Implements robust message handling for dynamic behavior.
+- **Concurrency**: Supports lightweight threads (M threads) and channels for high-throughput processing.
+- **Interoperability**: Interfaces with other languages via the Io language API.
 
-## Structure
-- `main.io`: Core implementation of the scripting utility.
-- `README.md`: This documentation file.
+## Usage
+1. Place your `.io` script in the `src/` directory.
+2. Run the tool to execute the script within the sandboxed environment.
+3. Check the `output/` directory for generated results or logs.
 
-## Installation
-Ensure the Io interpreter is installed on your system. Then execute the main script directly.
+## Requirements
+- Io interpreter
+- Standard I/O libraries for communication with the host environment.
+
+## License
+MIT

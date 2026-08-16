@@ -628,3 +628,5 @@ Training Machine
 - Created/Updated module: `visual_dialogscript_tool` (See `visual_dialogscript_tool/README.md` for details)
 
 - Created/Updated module: `stackless_python_tool` (See `stackless_python_tool/README.md` for details)
+
+- Created/Updated module: `io_tool` (See `io_tool/README.md` for details)

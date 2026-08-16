@@ -31586,3 +31586,67 @@ Initialize a NEW dedicated folder named ml_tool in the workspace, create a local
 </think>
 
 Initialize a NEW dedicated folder named cms_exec_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CMS EXEC. Focus entirely on this new objective: 'Implement a deterministic state machine executor with dynamic script compilation and memory-safe execution.'. You MUST write code for this task strictly using this exact programming language: CMS EXEC.
+[2026-08-16 19:46:59] (Target Lang: BASIC) The user wants a follow-up instruction for an Autonomous AI.
+The previous instruction was about `cms_exec_tool`.
+I need to generate a NEW instruction.
+The new tool must be built using the language: BASIC.
+It must be in a NEW dedicated folder.
+It must have a local README.md.
+It must NOT target .github.
+It must be exactly 1 instruction.
+The objective should be logical for BASIC. BASIC is a family of general-purpose programming languages.
+Possible objectives: "Implement a legacy system emulator for mainframe batch processing automation" or "Develop a retro-compliant command-line interface for industrial control logic".
+Given the "cms_exec_tool" context, maybe something related to system scripting or legacy integration.
+"Implement a cross-platform batch processing engine with backward-compatible syntax parsing and legacy database connectivity."
+Let's pick a folder name. `basic_tool` is in the list (`./basic_tool`). So I must use a different name or a variation?
+The list contains `./basic_tool`.
+Wait, looking at the list: `./basic_tool` exists.
+I must create a NEW folder.
+Maybe `basica_tool` or `basic_emulator_tool`?
+Or just `basic_legacy_tool`?
+The prompt says "Exactly 1 instruction".
+The structure should be: `Initialize a NEW dedicated folder named [NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC. Focus entirely on this new objective: 'OBJECTIVE'. You MUST write code for this task strictly using this exact programming language: BASIC.`
+
+Let's check the list for `basic_tool` again.
+`./basic_tool` is present.
+So I cannot use `basic_tool`.
+I can use `basic_emulator_tool` or `basic_interpreter_tool`.
+Let's check `basic_interpreter_tool` or similar.
+List has `basic_tool`.
+I'll use `basic_legacy_tool`.
+Or `basic_scripting_tool`.
+Let's check `basic_scripting_tool`. Not in list.
+So `basic_scripting_tool` is safe.
+
+Objective: "Develop a deterministic batch processing engine with retro-compatible syntax parsing and cross-platform legacy execution."
+This fits BASIC well.
+
+Result:
+Initialize a NEW dedicated folder named basic_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC. Focus entirely on this new objective: 'Develop a deterministic batch processing engine with retro-compatible syntax parsing and cross-platform legacy execution.'. You MUST write code for this task strictly using this exact programming language: BASIC.
+
+Check constraints:
+1. 1 instruction? Yes.
+2. Language BASIC? Yes.
+3. NEW folder? Yes (`basic_scripting_tool` not in list, `basic_tool` is).
+4. Local README.md? Yes.
+5. ONLY instruction text? Yes.
+6. No .github? Yes.
+7. Logical follow-up? Yes.
+
+Double check list for `basic_scripting_tool`.
+List has `basic_tool`.
+List has `basic_...`?
+Scanning list...
+`./basic_tool` is there.
+`./basic_scripting_tool` does not appear.
+`./basic_emulator_tool` does not appear.
+`./basic_interpreter_tool` does not appear.
+So `basic_scripting_tool` is a valid new folder name.
+
+Final text construction.
+"Initialize a NEW dedicated folder named basic_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC. Focus entirely on this new objective: 'Develop a deterministic batch processing engine with retro-compatible syntax parsing and cross-platform legacy execution.'. You MUST write code for this task strictly using this exact programming language: BASIC."
+
+Looks good.
+</think>
+
+Initialize a NEW dedicated folder named basic_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC. Focus entirely on this new objective: 'Develop a deterministic batch processing engine with retro-compatible syntax parsing and cross-platform legacy execution.'. You MUST write code for this task strictly using this exact programming language: BASIC.

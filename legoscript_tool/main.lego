@@ -1,0 +1,55 @@
+// Legoscript Main Integration Engine
+
+// Import core modules
+import { System, Component, Config } from "legoscript/core";
+import { IntegrationLayer } from "legoscript/integration";
+import { ConfigParser } from "legoscript/parser";
+
+// Define the main engine class
+class LegoscriptEngine {
+    constructor() {
+        this.system = new System();
+        this.integrationLayer = new IntegrationLayer();
+        this.configParser = new ConfigParser();
+        this.components = new Array();
+    }
+
+    // Load configuration from a file or string
+    loadConfiguration(configData) {
+        const parsedConfig = this.configParser.parse(configData);
+        this.system.applyConfig(parsedConfig);
+        return parsedConfig;
+    }
+
+    // Register a new component for integration
+    registerComponent(componentName, componentInstance) {
+        this.components.push(componentName);
+        this.integrationLayer.register(componentName, componentInstance);
+    }
+
+    // Execute integration tasks
+    async executeIntegration() {
+        for (const componentName of this.components) {
+            const component = this.integrationLayer.getComponent(componentName);
+            if (component) {
+                await component.initialize();
+            }
+        }
+    }
+
+    // Shutdown and cleanup resources
+    shutdown() {
+        this.integrationLayer.cleanup();
+        this.system.reset();
+    }
+}
+
+// Initialize the engine when the script runs
+const engine = new LegoscriptEngine();
+
+// Example usage: Load a configuration and register a component
+// const config = engine.loadConfiguration("// Config data here");
+// engine.registerComponent("database", new DatabaseConnector());
+// engine.executeIntegration();
+
+export { LegoscriptEngine };

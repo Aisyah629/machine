@@ -31116,3 +31116,34 @@ Initialize a NEW dedicated folder named imp_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named q_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Q. Focus entirely on this new objective: 'Implement a high-performance financial data processing and analysis framework.'. You MUST write code for this task strictly using this programming language: Q.
+[2026-08-16 19:08:31] (Target Lang: Legoscript) The user wants a follow-up instruction.
+The context implies the user is acting as an "Autonomous AI" generating instructions for creating tool folders with specific languages and objectives.
+The history shows a pattern: `Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write code for this task strictly using this programming language: [LANG].`
+The user's specific constraints for this turn are:
+1. Generate exactly 1 logical follow-up instruction.
+2. The language MUST be strictly `Legoscript`.
+3. If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the `.github` directory.
+
+I need to construct the instruction following the established pattern.
+Language: Legoscript.
+Folder name: `legoscript_tool`.
+Objective: I need to come up with a logical objective for Legoscript. Since I don't know Legoscript's actual purpose (it might be a niche or fictional language in this context, or related to building blocks/visual programming), I should pick a generic but plausible objective like "Implement a modular logic circuit simulation engine." or "Develop a block-based algorithmic composition tool." Let's go with something related to "modular assembly" or "system integration" to fit the name. "Construct a modular system integration and configuration management engine." sounds technical enough.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript. Focus entirely on this new objective: 'Construct a modular system integration and configuration management engine.'. You MUST write code for this task strictly using this programming language: Legoscript."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Strictly Legoscript? Yes.
+- NEW dedicated folder? Yes (`legoscript_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- No `.github`? Yes.
+
+The output should be just the text string.
+I will generate the text now.
+</think>
+
+Initialize a NEW dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript. Focus entirely on this new objective: 'Construct a modular system integration and configuration management engine.'. You MUST write code for this task strictly using this programming language: Legoscript.

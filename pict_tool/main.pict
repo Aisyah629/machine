@@ -1,25 +1,59 @@
-@begin
-  @class PictCore
+/*
+ * Pict Visual Scripting Environment
+ * main.pict
+ * 
+ * This script implements a visual programming environment for graphical 
+ * program generation and layout design using the Pict language.
+ */
 
-  @method initialize
-    System.out.println("Pict Tool Initialized Successfully");
-    return true;
-  @end
+/* Initialize the visual canvas */
+canvas width 1024 height 768
+background_color "#f0f0f0"
+grid enable
 
-  @method processTask: input
-    @if input not null then
-      @do
-        // Execute primary logic using Pict's native constructs
-        System.out.println("Processing task: " + input.toString());
-        @return "Task completed successfully.";
-      @end
-    @else
-      @return "No input provided for processing.";
-    @endif
-  @end
+/* Define node types for the visual scripting environment */
+node_type "input" color "#4CAF50"
+node_type "process" color "#2196F3"
+node_type "output" color "#FF9800"
 
-  @method execute
-    @call self.initialize();
-    @call self.processTask("Default Execution");
-  @end
-@end
+/* Create the main program structure */
+node "start" type "input" position 100 200
+node "calculate" type "process" position 350 200
+node "display" type "output" position 600 200
+
+/* Connect the nodes */
+connect "start" "calculate" label "data"
+connect "calculate" "display" label "result"
+
+/* Add visual properties */
+canvas title "Pict Visual Programming Environment"
+canvas description "Build graphical programs with visual nodes"
+
+/* Generate the visual layout */
+layout "grid"
+arrange "auto"
+
+/* Render the visualization */
+render "svg" output "pict_graph.svg"
+render "png" output "pict_preview.png"
+
+/* Define a sample program flow */
+flow "example_flow"
+    step "load_data" type "process" position 100 100
+    step "process_data" type "process" position 300 100
+    step "validate" type "process" position 500 100
+    step "present" type "output" position 700 100
+    
+    connect "load_data" "process_data"
+    connect "process_data" "validate"
+    connect "validate" "present"
+
+/* Execute the flow */
+execute "example_flow"
+
+/* Output status */
+status "Visual program generated successfully"
+status "Files created: pict_graph.svg, pict_preview.png"
+
+/* End of Pict script */
+end

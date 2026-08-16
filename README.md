@@ -778,3 +778,5 @@ Training Machine
 - Created/Updated module: `legoscript_tool` (See `legoscript_tool/README.md` for details)
 
 - Created/Updated module: `executable_uml_tool` (See `executable_uml_tool/README.md` for details)
+
+- Created/Updated module: `rpl_tool` (See `rpl_tool/README.md` for details)

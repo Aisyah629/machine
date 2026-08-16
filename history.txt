@@ -26358,3 +26358,50 @@ Initialize a NEW dedicated folder named subtext_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named abap_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABAP. Focus entirely on this new objective: 'Develop an enterprise data processing and transaction simulation framework'. You MUST write code for this task strictly using this exact programming language: ABAP.
+[2026-08-16 12:50:50] (Target Lang: Ratfor) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Language Requirement: MUST explicitly demand the tool be built STRICTLY using `Ratfor`.
+    *   Structure Requirements:
+        *   If building a new tool, place it in a NEW dedicated folder.
+        *   Create a local `README.md` inside that folder.
+        *   Return ONLY the instruction text.
+        *   NEVER target the `.github` directory.
+    *   Context: The user provided a workspace listing and history. The history shows a pattern of instructions like "Initialize a NEW dedicated folder named [tool_name]_tool...". The current prompt asks for a follow-up based on the workspace. The workspace contains many tools, including `ratfor_tool` (wait, let me check the workspace list).
+        *   *Check Workspace List:* I see `./ratfor_tool ./ratfor_tool/README.md`.
+        *   *Result:* `ratfor_tool` already exists in the workspace.
+        *   *Conflict Check:* The user asks to "Generate exactly 1 logical follow-up instruction" and "If building a new tool...".
+        *   *Analysis:* The instruction should likely be about the `ratfor_tool`. Since it exists, the instruction could be to update it, or the user might be simulating a scenario where the model generates an instruction that *would* build a tool, or the model should generate an instruction consistent with the tool existing.
+        *   *Standard Behavior:* Usually, in these few-shot or instruction-following tasks, the model generates the next instruction in a sequence. The history shows `abap_tool` was the last one. The workspace shows `ratfor_tool` exists. However, the prompt asks to "Generate exactly 1 logical follow-up instruction" and explicitly demands Ratfor.
+        *   *Interpretation:* The instruction should instruct the *AI agent* (me) to create a tool or modify the existing one? The constraint "If building a new tool..." implies the generated instruction might be for a new tool or might handle the case of an existing tool. Given the explicit demand for Ratfor, the generated instruction must mention Ratfor.
+        *   *Drafting the Instruction:*
+        *   Keywords: "Ratfor", "STRICTLY", "NEW dedicated folder", "README.md".
+        *   *Potential Conflict:* If the tool already exists, asking for a NEW dedicated folder might cause a collision error in a real system, or the instruction should just say "Initialize a NEW dedicated folder named ratfor_tool...". The prompt doesn't forbid creating a folder that might exist (though "NEW" implies it shouldn't exist). However, looking at the workspace list, `ratfor_tool` is there.
+        *   *Refinement:* In these types of prompts, the "Logical follow-up" often ignores the current state or the user wants the instruction as if it's the next step in a generation pipeline. Or, the workspace list includes `ratfor_tool` to show it exists, but the instruction is to *build* it (perhaps the user wants to regenerate it, or the workspace list is the target state and I need to produce the instruction that leads to it).
+        *   *Safer approach:* The prompt asks for an instruction to build a tool using Ratfor. The constraints are strict. I should generate the instruction string.
+        *   *Structure:* "Initialize a NEW dedicated folder named ratfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ratfor. Focus entirely on this new objective: [Objective]. You MUST write code for this task strictly using this exact programming language: Ratfor."
+        *   *Objective Generation:* I need a logical objective for Ratfor. Ratfor is "Rational Fortran". It's a preprocessor for Fortran. Objectives usually involve "Rational Fortran", "Preprocessing", "Fortran extension".
+        *   *Sample Objective:* "Develop a Rational Fortran preprocessing and scientific computing framework." or "Implement a Ratfor-based code generation utility."
+        *   *Matching History Style:* The history shows objectives like "Develop an enterprise data processing..." or "Create an interactive diagnostic...".
+        *   *Draft Objective:* "Implement a Ratfor-based scientific calculation and data analysis utility."
+        *   *Final Text Construction:*
+        `Initialize a NEW dedicated folder named ratfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ratfor. Focus entirely on this new objective: 'Implement a Ratfor-based scientific calculation and data analysis utility'. You MUST write code for this task strictly using this exact programming language: Ratfor.`
+        *   *Review Constraints:*
+        *   Exactly 1 instruction? Yes.
+        *   STRICTLY Ratfor? Yes.
+        *   NEW dedicated folder? Yes (`ratfor_tool`).
+        *   Local README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   No .github? Yes.
+        *   Result looks solid. The existence of `ratfor_tool` in the provided list might be a distractor or context, but the instruction generation task usually follows the format of creating the folder structure as defined. The instruction itself is the output.
+
+2.  **Final Polish (Mental Representation of Output):**
+    `Initialize a NEW dedicated folder named ratfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ratfor. Focus entirely on this new objective: 'Implement a Ratfor-based scientific calculation and data analysis utility'. You MUST write code for this task strictly using this exact programming language: Ratfor.`
+
+    *Self-Correction on Objective:* Ratfor is quite niche. "Scientific calculation" is appropriate. "Data analysis" is also appropriate. The objective should be descriptive. The drafted objective is good.
+
+    *Output:* The text string.
+</think>
+
+Initialize a NEW dedicated folder named ratfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ratfor. Focus entirely on this new objective: 'Implement a Ratfor-based scientific calculation and data analysis utility'. You MUST write code for this task strictly using this exact programming language: Ratfor.

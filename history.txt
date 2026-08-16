@@ -35110,3 +35110,64 @@ Output matches the draft.
 </think>
 
 Initialize a NEW dedicated folder named lagoona_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lagoona. Focus entirely on this new objective: 'Construct a robust runtime environment for Lagoona applications'. You MUST write code for this task strictly using this programming language: Lagoona.
+[2026-08-16 22:44:33] (Target Lang: Seed7) Thinking Process:
+1.  **Analyze Input**:
+    - **Prompt**: The user provides a list of workspace directories (tools, READMEs, etc.) and a history/context block.
+    - **Context/History**: Shows a previous prompt that asked to initialize `lagoona_engine_tool` using the language "Lagoona". It also contains the "Final verification" and "Output matches the draft" blocks, ending with the exact prompt I need to process.
+    - **Current Task**: The actual prompt to answer is at the very end: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Seed7. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints**:
+    - Generate exactly 1 logical follow-up instruction.
+    - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: Seed7.
+    - If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    - Explicitly instruct to create a local README.md.
+    - Return ONLY the instruction text.
+    - NEVER target the .github directory.
+
+3.  **Formulate Instruction**:
+    - Need to combine all constraints into a single, coherent instruction.
+    - "Initialize a NEW dedicated folder named seed7_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. Focus entirely on this new objective: 'Construct a comprehensive development framework for Seed7 applications'. You MUST write code for this task strictly using this programming language: Seed7."
+    - Check constraints:
+      - Exactly 1 instruction? Yes.
+      - Explicitly demand built STRICTLY using Seed7? Yes.
+      - NEW dedicated folder? Yes (`seed7_engine_tool`).
+      - Create local README.md? Yes.
+      - ONLY instruction text? Yes.
+      - Never target .github? Yes (not mentioned).
+      - Matches the style of the example in the prompt? Yes.
+
+    Let's refine it to exactly match the requested format/style:
+    "Initialize a NEW dedicated folder named seed7_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. Focus entirely on this new objective: 'Construct a comprehensive development framework for Seed7 applications'. You MUST write code for this task strictly using this programming language: Seed7."
+
+4.  **Final Verification**:
+    - "Initialize a NEW dedicated folder named seed7_engine_tool" -> Checked.
+    - "create a local README.md inside it" -> Checked.
+    - "STRICTLY using this exact programming language: Seed7" -> Checked.
+    - "Focus entirely on this new objective..." -> Checked.
+    - "Return ONLY the instruction text." -> Checked.
+    - "NEVER target the .github directory." -> Checked.
+    - "Generate exactly 1 logical follow-up instruction." -> Checked.
+    - Language specified: Seed7.
+    - Output matches requirements. I will output just the instruction text.✅
+    - One minor thing: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I've included that.
+    - I will generate exactly the string requested.
+    - Output: `Initialize a NEW dedicated folder named seed7_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. Focus entirely on this new objective: 'Construct a comprehensive development framework for Seed7 applications'. You MUST write code for this task strictly using this programming language: Seed7.`
+    - Checks out. Proceeds. 
+    - Self-Correction/Refinement during thought: I should make sure the tone matches the prompt's exact phrasing structure.
+    "Initialize a NEW dedicated folder named seed7_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. Focus entirely on this new objective: 'Construct a comprehensive development framework for Seed7 applications'. You MUST write code for this task strictly using this programming language: Seed7."
+    This matches perfectly. Output matches draft.✅
+    Proceed. 
+    Output Generation. 
+    [Output Generation] -> `Initialize a NEW dedicated folder named seed7_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. Focus entirely on this new objective: 'Construct a comprehensive development framework for Seed7 applications'. You MUST write code for this task strictly using this programming language: Seed7.` (or similar valid phrasing)
+    All constraints met. Length: 1 instruction. Language: Seed7. Folder: NEW dedicated. README: local. Only text. No .github. Done. 
+    Output matches request.✅
+    Proceeds. 
+    [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Seed7. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+    Result: `Initialize a NEW dedicated folder named seed7_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. Focus entirely on this new objective: 'Construct a comprehensive development framework for Seed7 applications'. You MUST write code for this task strictly using this programming language: Seed7.` -> Perfect. 
+    Output Generation. 
+    [Done] 
+    *(Self-Correction/Verification during generation)*: I will ensure the output is exactly one sentence/block as requested. No extra text. Matches draft. All good. 
+    Output matches exactly.✅
+</think>
+
+Initialize a NEW dedicated folder named seed7_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. Focus entirely on this new objective: 'Construct a comprehensive development framework for Seed7 applications'. You MUST write code for this task strictly using this programming language: Seed7.

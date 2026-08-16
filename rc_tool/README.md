@@ -1,6 +1,19 @@
 # rc_tool
 
-A tool built using the rc programming language.
+## Description
+A lightweight shell execution environment built in rc programming language.
 
-## Purpose
-This tool provides a structured programming or data manipulation utility using the rc language.
+## Features
+- Advanced pipeline processing
+- Robust error handling
+- Command execution and output capture
+
+## Usage
+Execute commands with error tracking and structured output.
+
+## Files
+- `main.rc`: Main implementation file
+- `README.md`: Documentation
+
+## License
+MIT License

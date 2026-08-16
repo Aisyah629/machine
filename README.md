@@ -690,3 +690,5 @@ Training Machine
 - Created/Updated module: `ats_tool` (See `ats_tool/README.md` for details)
 
 - Created/Updated module: `moo_tool` (See `moo_tool/README.md` for details)
+
+- Created/Updated module: `rc_tool` (See `rc_tool/README.md` for details)

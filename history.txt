@@ -27824,3 +27824,56 @@ Initialize a NEW dedicated folder named moo_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named moo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MOO. Focus entirely on this new objective: 'Construct a robust multi-user text-based virtual world engine with persistent object serialization'. You MUST write code for this task strictly using this exact programming language: MOO.
+[2026-08-16 14:54:20] (Target Lang: rc) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Demand the tool be built STRICTLY using `rc` programming language.
+    *   Constraint: Build a new tool, so must place in a NEW dedicated folder.
+    *   Constraint: Create a local `README.md`.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target `.github`.
+    *   Context: Workspace listing provided (many tools exist, `rc_tool` exists at `./rc_tool`).
+
+2.  **Analyze "Logical Follow-up":**
+    *   The workspace has many tools. `rc_tool` already exists.
+    *   A "logical follow-up" might be creating a *different* tool in the `rc` language, or extending `rc_tool`?
+    *   Usually, in these prompts, "logical follow-up" implies a variation or a specific use case of the language that hasn't been explicitly covered, or simply a new instance if the previous context implies a sequence.
+    *   However, since `rc_tool` exists, a "NEW dedicated folder" instruction might conflict with existing structure if the AI tries to overwrite. But the prompt asks to "Initialize a NEW dedicated folder named...".
+    *   If I name the folder `rc_tool`, it already exists. A logical follow-up might be naming it something distinct but related, or just following the format strictly.
+    *   The prompt asks for "Logical follow-up". This often means the instruction should reference a specific task or objective.
+    *   The prompt format example in the history (which the user pasted partially) suggests the output should look like: `Initialize a NEW dedicated folder named [name], create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write code for this task strictly using this exact programming language: [LANG].`
+    *   So I need to generate the text following this pattern.
+    *   Language: `rc`.
+    *   Objective: Needs to be something relevant to `rc`. `rc` is the "run command" shell used in plan9 and sam. It's a shell scripting language.
+    *   Objective ideas: "Build a plan9-style shell executor", "Create a resource control script manager", "Design a text-processing pipeline tool".
+    *   Let's pick a good objective: "Design a lightweight shell execution environment with robust error handling and pipeline management."
+    *   Folder name: `rc_tool` is taken. Should I suggest a new name? The prompt says "Initialize a NEW dedicated folder named...". It doesn't strictly force the name to be `rc_tool`. However, usually, these exercises map the language to the folder. If `rc_tool` exists, maybe the "logical follow-up" is a different tool like `rc_cli_tool` or just `rc_tool` if the system allows overwriting or the previous state is ignored?
+    *   Looking at the history provided in the prompt: The history shows `rc_tool` exists. The previous turn in the history (in the user's provided context block, which is actually the AI's thought process from a previous turn or a simulation) mentions `moo_tool`.
+    *   The user wants the instruction for `rc`.
+    *   If I look at the list, `rc_tool` exists. A "logical follow-up" to a list of tools often means generating the next one or a variation.
+    *   If I output `Initialize a NEW dedicated folder named rc_tool...`, it might be redundant.
+    *   However, the prompt structure usually expects the model to generate the instruction string.
+    *   I'll assume the standard pattern: `rc_tool` is the folder, even if it exists in the static list, the instruction generation task is to produce the instruction for the tool defined by the language. Or perhaps the "logical follow-up" implies a specific objective.
+    *   Let's check the constraint "Logical follow-up". If the previous tool was `moo_tool` (virtual world), and this is `rc` (shell), there's no direct dependency.
+    *   Maybe the "logical follow-up" is just the instruction itself being logical in structure.
+    *   I will generate the instruction string.
+    *   Result: `Initialize a NEW dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc. Focus entirely on this new objective: 'Develop a robust shell execution engine with advanced pipeline processing and signal handling'. You MUST write code for this task strictly using this exact programming language: rc.`
+    *   Does this meet all constraints?
+        *   1 instruction? Yes.
+        *   Strictly `rc`? Yes.
+        *   NEW dedicated folder? Yes (`rc_tool`).
+        *   Local README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   Never target `.github`? Yes.
+        *   Logical follow-up? Yes, it follows the format and provides a relevant objective.
+    *   One nuance: The prompt includes "Generate exactly 1 logical follow-up instruction."
+    *   The output should be just the text.
+    *   Final text construction:
+        `Initialize a NEW dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc. Focus entirely on this new objective: 'Construct a highly efficient shell script interpreter with support for complex pattern matching and resource limiting'. You MUST write code for this task strictly using this exact programming language: rc.`
+    *   This looks solid.
+    *   The "rc" language is obscure, used in Plan 9. "Pattern matching" and "resource limiting" are good objectives.
+    *   Output generation.
+</think>
+
+Initialize a NEW dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc. Focus entirely on this new objective: 'Develop a lightweight shell execution environment with advanced pipeline processing and robust error handling'. You MUST write code for this task strictly using this exact programming language: rc.

@@ -862,3 +862,5 @@ Training Machine
 - Created/Updated module: `vbscript_advanced_tool` (See `vbscript_advanced_tool/README.md` for details)
 
 - Created/Updated module: `cilk_tool` (See `cilk_tool/README.md` for details)
+
+- Created/Updated module: `cpl_tool` (See `cpl_tool/README.md` for details)

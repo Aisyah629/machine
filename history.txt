@@ -31950,3 +31950,66 @@ Initialize a NEW dedicated folder named gnu_e_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named livescript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LiveScript. Focus entirely on this new objective: 'Develop a reactive state management library with immutable data structures, hot module reloading support, and seamless Node.js integration.'. You MUST write code for this task strictly using this exact programming language: LiveScript.
+[2026-08-16 19:55:59] (Target Lang: PowerShell) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a long list of workspace directories (mostly `*_tool` folders) and a history section showing previous interactions. The history shows a pattern of generating a specific instruction string.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PowerShell. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using PowerShell.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Follow the pattern/style from the history (though history is mostly meta-commentary, the actual output was just the instruction string).
+
+2.  **Deconstruct Constraints for Output:**
+   - Needs to be a single instruction string.
+   - Must mention: NEW dedicated folder, local README.md, STRICTLY using PowerShell.
+   - Must include a specific objective/task for the tool.
+   - Must NOT mention `.github`.
+   - Must be formatted exactly as requested: just the instruction text, nothing else.
+
+3.  **Draft Construction (Mental):**
+   Initialize a NEW dedicated folder named powershell_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell. Focus entirely on this new objective: 'Create a robust system administration automation framework with advanced error handling, parallel job execution, and native Active Directory module integration.'. You MUST write code for this task strictly using this exact programming language: PowerShell.
+
+4.  **Check Against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands new tool be built STRICTLY using PowerShell? Yes ("STRICTLY using this exact programming language: PowerShell").
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md? Yes ("Initialize a NEW dedicated folder named... create a local README.md inside it").
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Checked. Not mentioned.
+   - Matches historical pattern? Yes, follows the exact phrasing structure seen in the history/example.
+
+   One minor adjustment: Ensure the phrasing exactly matches the requested template style to be safe. The prompt says "Return ONLY the instruction text." I will output just the drafted string.
+
+   Draft:
+   Initialize a NEW dedicated folder named powershell_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell. Focus entirely on this new objective: 'Develop a comprehensive IT infrastructure management suite with parallel task execution, advanced logging capabilities, and seamless Azure AD integration.'. You MUST write code for this task strictly using this exact programming language: PowerShell.
+
+   Check constraints again:
+   - "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell." -> Covers folder, README, language.
+   - "Focus entirely on this new objective: '[objective]'." -> Covers objective.
+   - "You MUST write code for this task strictly using this exact programming language: PowerShell." -> Reinforces language constraint.
+   - Returns ONLY the instruction text. -> Will output just this string.
+   - Never targets .github -> Verified.
+   - Exactly 1 logical follow-up instruction -> It's a single cohesive instruction block.
+
+   All constraints met. Proceeds. Output matches request.✅
+   I will generate exactly the string. No extra text.✅
+   Proceeds. -> [Output] ✅
+   *(Self-Correction/Refinement during thought)*: I'll make sure it exactly matches the requested phrasing pattern without deviation. The prompt says "Return ONLY the instruction text." I will output just that string.
+
+   Final string: Initialize a NEW dedicated folder named powershell_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell. Focus entirely on this new objective: 'Develop a comprehensive IT infrastructure management suite with parallel task execution, advanced logging capabilities, and seamless Azure AD integration.'. You MUST write code for this task strictly using this exact programming language: PowerShell.
+
+   All good. Output matches.✅
+   Proceeds.✅
+   [Output Generation] -> `Initialize a NEW dedicated folder named powershell_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell. Focus entirely on this new objective: 'Develop a comprehensive IT infrastructure management suite with parallel task execution, advanced logging capabilities, and seamless Azure AD integration.'. You MUST write code for this task strictly using this exact programming language: PowerShell.`✅
+   Done.✅
+   Output matches exactly.✅ Proceeds. -> [Output] ✅
+   *(Note: I will output just the raw text as instructed.)*
+   Proceeds.✅
+   [Output Generation] -> Initialize a NEW dedicated folder named powershell_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell. Focus entirely on this new objective: 'Develop a comprehensive IT infrastructure management suite with parallel task execution, advanced logging capabilities, and seamless Azure AD integration.'. You MUST write code for this task strictly using this exact programming language: PowerShell.✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named powershell_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell. Focus entirely on this new objective: 'Develop a comprehensive IT infrastructure management suite with parallel task execution, advanced logging capabilities, and seamless Azure AD integration.'. You MUST write code for this task strictly using this exact programming language: PowerShell.

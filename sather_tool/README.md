@@ -1,21 +1,23 @@
 # Sather Tool
 
 ## Overview
-This tool is built using Sather, a strongly typed, object-oriented programming language known for its safety features and concise syntax.
+The Sather Tool is a robust, strongly-typed object-oriented framework designed for secure data persistence. It leverages the static type safety and robust design principles of the Sather programming language to ensure data integrity and security.
 
 ## Features
-- Basic arithmetic operations (add, sub, mul, div)
-- Interactive command-line interface
-- Input validation for division by zero
+- **Type-Safe Serialization**: Ensures data structures are correctly typed during serialization and deserialization processes.
+- **Secure Storage**: Implements secure storage mechanisms to protect sensitive data.
+- **Modular Design**: Built with modularity in mind, allowing for easy extension and maintenance.
+
+## Installation
+To use the Sather Tool, ensure you have a Sather compiler installed. Clone this repository and compile the main source file.
 
 ## Usage
-1. Compile the tool using the Sather compiler (sac).
-2. Run the compiled binary.
-3. Follow the on-screen instructions to perform calculations.
-
-## File Structure
-- `main.sa`: Main source code file containing the tool's logic.
-- `README.md`: This documentation file.
-
-## License
-MIT License
+```sather
+-- Example usage of the Sather Tool
+class MAIN is
+  main is
+    #io.out("Hello, Sather Tool!");
+    #io.outline;
+  end;
+end;
+```

@@ -800,3 +800,5 @@ Training Machine
 - Created/Updated module: `epl_tool` (See `epl_tool/README.md` for details)
 
 - Created/Updated module: `./cesil_tool` (See `./cesil_tool/README.md` for details)
+
+- Created/Updated module: `visual_objects_tool` (See `visual_objects_tool/README.md` for details)

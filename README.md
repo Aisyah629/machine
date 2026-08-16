@@ -490,3 +490,5 @@ Training Machine
 - Created/Updated module: `combined_tool` (See `combined_tool/README.md` for details)
 
 - Created/Updated module: `jean_tool` (See `jean_tool/README.md` for details)
+
+- Created/Updated module: `oz_tool` (See `oz_tool/README.md` for details)

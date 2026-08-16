@@ -20363,3 +20363,31 @@ Initialize a NEW dedicated folder named prolog_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named c_string_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C. Focus entirely on this new objective: 'Develop a high-performance string manipulation and parsing library'. You MUST write functional code for this task strictly using this programming language: C.
+[2026-08-16 04:02:59] (Target Lang: Cayenne) The user wants a single logical follow-up instruction.
+The previous instruction created `c_string_tool` in C.
+The new instruction must:
+1.  Demand the language: Cayenne.
+2.  Create a new dedicated folder.
+3.  Create a local README.md.
+4.  Return ONLY the instruction text.
+5.  Never target `.github`.
+6.  Follow the format: "Initialize a NEW dedicated folder named [NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cayenne. Focus entirely on this new objective: '[OBJ]'. You MUST write functional code for this task strictly using this programming language: Cayenne."
+7.  Choose a unique folder name. Looking at the list, `cayenne` is not in the tool names (`cayenne_tool` would be unique).
+8.  Choose a logical objective for Cayenne, e.g., "Implement a secure cryptographic protocol verifier".
+9.  Construct the text.
+
+Draft:
+Initialize a NEW dedicated folder named cayenne_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cayenne. Focus entirely on this new objective: 'Implement a secure cryptographic protocol verifier'. You MUST write functional code for this task strictly using this programming language: Cayenne.
+
+Check constraints:
+- Language: Cayenne. Yes.
+- NEW folder: cayenne_tool. Yes.
+- README.md: Yes.
+- ONLY instruction text: Yes.
+- No .github: Yes.
+- Logical follow-up: Yes.
+
+Result matches draft.
+</think>
+
+Initialize a NEW dedicated folder named cayenne_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cayenne. Focus entirely on this new objective: 'Implement a secure cryptographic protocol verifier'. You MUST write functional code for this task strictly using this programming language: Cayenne.

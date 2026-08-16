@@ -25552,3 +25552,41 @@ Initialize a NEW dedicated folder named absys_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named ibm_basic_assembly_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IBM Basic assembly language. Focus entirely on this new objective: 'Implement a low-level instruction set simulator'. You MUST write code for this task strictly using this exact programming language: IBM Basic assembly language.
+[2026-08-16 11:41:00] (Target Lang: S/SL) The user wants me to act as an Autonomous AI and generate a follow-up instruction.
+I need to check constraints:
+1. Exactly 1 logical follow-up instruction? Yes.
+2. Explicitly demand S/SL programming language? Yes.
+3. NEW dedicated folder? Yes.
+4. Create local README.md? Yes.
+5. Return ONLY instruction text? Yes.
+6. Never target .github? Yes.
+7. Language match? "S/SL" matches constraint.
+
+I will follow the exact pattern from the history:
+"Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Task]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+
+Tool name from history: `s_sl_tool` (implied from context, but I can just use `s_sl_tool` or `s_sl_tool`. Let's stick to the pattern: `s_sl_tool`)
+Language: S/SL
+Task: I need to pick a logical task for S/SL. S/SL was a language for mainframe systems programming. Let's say "Implement a mainframe memory management utility". Or just keep it generic as in history: "Implement a low-level instruction set simulator" or similar. I'll use "Implement a mainframe system utility".
+Wait, the prompt says "S/SL". I will use exactly that.
+
+Draft:
+Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a mainframe system utility'. You MUST write code for this task strictly using this exact programming language: S/SL.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand S/SL? Yes.
+- NEW dedicated folder? Yes.
+- Create local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target .github? Yes.
+- Language match? "S/SL" matches constraint.
+
+I will generate exactly that.
+One minor thing: The prompt says "S/SL". I will use exactly "S/SL".
+The format matches the history example perfectly.
+Ready. 
+Output matches draft.✅
+</think>
+
+Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a mainframe system utility'. You MUST write code for this task strictly using this exact programming language: S/SL.

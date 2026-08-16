@@ -730,3 +730,5 @@ Training Machine
 - Created/Updated module: `oz_tool` (See `oz_tool/README.md` for details)
 
 - Created/Updated module: `cfml_tool` (See `cfml_tool/README.md` for details)
+
+- Created/Updated module: `babbage_tool` (See `babbage_tool/README.md` for details)

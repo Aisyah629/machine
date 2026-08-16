@@ -828,3 +828,5 @@ Training Machine
 - Created/Updated module: `pico_tool` (See `pico_tool/README.md` for details)
 
 - Created/Updated module: `xpl_tool` (See `xpl_tool/README.md` for details)
+
+- Created/Updated module: `rexx_tool` (See `rexx_tool/README.md` for details)

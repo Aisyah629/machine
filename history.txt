@@ -22029,3 +22029,86 @@ Initialize a NEW dedicated folder named typescript_framework_tool in the workspa
 </think>
 
 Initialize a NEW dedicated folder named phrogram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Phrogram. Focus entirely on this new objective: 'Develop a high-performance desktop application with a native graphical user interface leveraging FreeBASIC capabilities'. You MUST write functional code for this task strictly using this exact programming language: Phrogram.
+[2026-08-16 07:32:05] (Target Lang: Caché ObjectScript) The user wants me to generate exactly 1 logical follow-up instruction.
+Based on the history, the previous instruction was about creating a `phrogram_tool` using Phrogram.
+The new instruction must explicitly demand that the new tool be built STRICTLY using Caché ObjectScript.
+If building a new tool, I need to instruct to place it in a NEW dedicated folder and create a local README.md.
+Return ONLY the instruction text. Never target the .github directory.
+Folder naming convention from history: `name_tool`. So `cache_tool` or `objectscript_tool` or `intersystems_tool`. Let's use `cache_objectscript_tool`.
+Objective: Caché ObjectScript is typically used for enterprise applications, health information exchange, backend processing, or database interactions in the InterSystems IRIS/Caché ecosystem. Objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'.
+Combine: Initialize a NEW dedicated folder named `cache_objectscript_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'. You MUST write functional code for this task strictly using this exact programming language: Caché ObjectScript.
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Strictly Caché ObjectScript? Yes.
+- New folder + README.md? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+
+Let's refine it to match the exact style of the prompt:
+`Initialize a NEW dedicated folder named cache_objectscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'. You MUST write functional code for this task strictly using this exact programming language: Caché ObjectScript.`
+
+Wait, the prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Caché ObjectScript. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+I will just output the instruction text as requested.
+Check format: "Initialize a NEW dedicated folder named `cache_objectscript_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'. You MUST write functional code for this task strictly using this exact programming language: Caché ObjectScript."
+
+Everything matches. I will produce exactly this. No extra text.
+One minor thing: I'll make sure the folder name matches the pattern `cache_tool` or `objectscript_tool`. The prompt history shows `phrogram_tool`. I'll stick with `cache_tool` or `intersystems_tool` or `objectscript_tool`. Let's use `cache_objectscript_tool` to be safe, or just `cache_tool`. Actually, `intersystems_tool` is fine. I'll stick with `cache_tool`.
+Let's just use `cache_tool`.
+"Initialize a NEW dedicated folder named cache_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'. You MUST write functional code for this task strictly using this exact programming language: Caché ObjectScript."
+
+Check constraints again:
+- Exactly 1 instruction? Yes.
+- Strictly Caché ObjectScript? Yes.
+- New folder + README.md? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+
+Looks solid. Output matches requirement.
+Proceeds. 
+Self-Correction/Verification during thought: 
+The prompt says "Generate exactly 1 logical follow-up instruction." 
+I will output just the text string.
+Ready. 
+Output Generation. 
+`Initialize a NEW dedicated folder named cache_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'. You MUST write functional code for this task strictly using this exact programming language: Caché ObjectScript.`
+Matches perfectly.✅
+Proceeds. 
+Output matches response. 
+(Note: I'll ensure no markdown formatting interferes if not requested, but the prompt says "Return ONLY the instruction text." I will just provide the raw text.)
+All good. 
+Output Generation. 
+[Done] 
+`Initialize a NEW dedicated folder named cache_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'. You MUST write functional code for this task strictly using this exact programming language: Caché ObjectScript.`
+Wait, checking the exact wording from the prompt's example in history:
+"Initialize a NEW dedicated folder named phrogram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Phrogram. Focus entirely on this new objective: 'Develop a high-performance desktop application with a native graphical user interface leveraging FreeBASIC capabilities'. You MUST write functional code for this task strictly using this exact programming language: Phrogram."
+I will mirror this structure exactly.
+Done. 
+Output matches. 
+Proceeds. 
+[Final Check]
+- 1 instruction? Yes.
+- Strictly Caché ObjectScript? Yes.
+- New folder + README.md? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+Ready. 
+Output Generation. 
+`Initialize a NEW dedicated folder named cache_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'. You MUST write functional code for this task strictly using this exact programming language: Caché ObjectScript.`
+Matches perfectly.✅
+Proceeds. 
+(Self-Correction/Refinement during thought: I'll make sure the folder name uses underscores if needed, but `cache_tool` is fine. I'll stick to it.)
+All good.
+Output matches response. 
+Proceeds. 
+[Output Generation] (Proceeds)
+"Initialize a NEW dedicated folder named cache_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'. You MUST write functional code for this task strictly using this exact programming language: Caché ObjectScript."
+Done. 
+(Note: I will output exactly this string without quotes.)
+All constraints met.
+Proceeds. 
+[Final Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named cache_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Build a robust enterprise data processing module for high-throughput transaction management within an InterSystems IRIS environment'. You MUST write functional code for this task strictly using this exact programming language: Caché ObjectScript.

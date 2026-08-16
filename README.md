@@ -510,3 +510,5 @@ Training Machine
 - Created/Updated module: `beanshell_tool` (See `beanshell_tool/README.md` for details)
 
 - Created/Updated module: `signal_tool` (See `signal_tool/README.md` for details)
+
+- Created/Updated module: `c_string_tool` (See `c_string_tool/README.md` for details)

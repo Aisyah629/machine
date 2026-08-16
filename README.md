@@ -582,3 +582,5 @@ Training Machine
 - Created/Updated module: `islisp_tool` (See `islisp_tool/README.md` for details)
 
 - Created/Updated module: `genie_tool` (See `genie_tool/README.md` for details)
+
+- Created/Updated module: `self_healing_tool` (See `self_healing_tool/README.md` for details)

@@ -522,3 +522,5 @@ Training Machine
 - Created/Updated module: `kif_tool` (See `kif_tool/README.md` for details)
 
 - Created/Updated module: `coq_tool` (See `coq_tool/README.md` for details)
+
+- Created/Updated module: `pict_tool` (See `pict_tool/README.md` for details)

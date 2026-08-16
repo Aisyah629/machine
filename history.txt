@@ -22312,3 +22312,23 @@ Initialize a NEW dedicated folder named newtonscript_tool in the workspace, crea
 
 Initialize a NEW dedicated folder named escapade_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Escapade. Focus entirely on this new objective: 'Design a high-performance declarative data processing and querying framework'. You MUST write functional code for this task strictly using this exact programming language: Escapade.
 [2026-08-16 07:57:16] (Target Lang: Neko) Create a new utility for data processing in a new folder. You MUST write it strictly in Neko. Include a local README.md.
+[2026-08-16 07:58:47] (Target Lang: RTL/2) The user wants me to generate a follow-up instruction based on a specific format and constraint.
+The target programming language for this instruction is "RTL/2".
+I need to create a new tool in a new folder named "rtl2_tool".
+I need to include a local README.md.
+I must explicitly demand that the tool be built STRICTLY using "RTL/2".
+The instruction should be the only output.
+I should look at the history to understand the pattern. The history shows previous instructions like "Initialize a NEW dedicated folder named escapade_tool...".
+The prompt ends with: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: RTL/2. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+The output should follow the pattern: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+Folder name: rtl2_tool.
+Language: RTL/2.
+Objective: Needs to be relevant to RTL/2. RTL/2 is a programming language often used for embedded systems or scientific computing. A good objective might be "Implement a numerical solver for differential equations" or "Develop a high-performance control system algorithm". I'll choose a generic but plausible objective like "Design a robust computational module for embedded signal processing".
+Constraint check: "STRICTLY using this exact programming language: RTL/2".
+Constraint check: "Return ONLY the instruction text".
+Constraint check: "NEVER target the .github directory".
+Resulting text: "Initialize a NEW dedicated folder named rtl2_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RTL/2. Focus entirely on this new objective: 'Design a robust computational module for embedded signal processing'. You MUST write functional code for this task strictly using this exact programming language: RTL/2."
+This matches the pattern and constraints.
+</think>
+
+Initialize a NEW dedicated folder named rtl2_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RTL/2. Focus entirely on this new objective: 'Design a robust computational module for embedded signal processing'. You MUST write functional code for this task strictly using this exact programming language: RTL/2.

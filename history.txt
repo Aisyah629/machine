@@ -22422,3 +22422,71 @@ Output the instruction.
 </think>
 
 Initialize a NEW dedicated folder named metall_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MetaL. Focus entirely on this new objective: 'Implement a declarative knowledge representation system for automated reasoning'. You MUST write functional code for this task strictly using this exact programming language: MetaL.
+[2026-08-16 08:05:00] (Target Lang: FoxPro) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace structure with many tool directories (e.g., `c_tool`, `haskell_tool`, etc.) and a history/instruction format.
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - MUST explicitly demand the new tool be built STRICTLY using FoxPro.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+   - **Implicit Requirements:** Follow the pattern from the history/example. The instruction should be a single, cohesive command matching the requested format.
+
+2.  **Deconstruct Constraints:**
+   - *Language:* FoxPro (strictly)
+   - *Structure:* NEW dedicated folder named `foxpro_tool` (following the pattern)
+   - *Files:* `README.md` inside the new folder
+   - *Objective:* Needs to be relevant to FoxPro or a general programming task. FoxPro is known for database management, data manipulation, and legacy Windows applications. A good objective: "Develop a relational data management and reporting engine for legacy business systems".
+   - *Format:* Match the example: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+   - *Output:* ONLY the instruction text.
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named `foxpro_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FoxPro. Focus entirely on this new objective: 'Develop a relational data management and reporting engine for legacy business systems'. You MUST write functional code for this task strictly using this exact programming language: FoxPro.
+
+4.  **Check Constraints:**
+   - Generate exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using FoxPro? Yes.
+   - NEW dedicated folder and README.md? Yes (`foxpro_tool` and `README.md`).
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches pattern? Yes.
+
+   The draft looks solid. I will output exactly this text. No extra words. Ensure formatting matches the prompt's request. I'll make sure the language name matches exactly "FoxPro" as requested.
+
+   One minor adjustment: The prompt says "FoxPro", I'll use exactly that. The pattern uses backticks for folder names sometimes, but the example didn't strictly require them. I'll stick to the exact phrasing structure.
+
+   Draft: Initialize a NEW dedicated folder named foxpro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FoxPro. Focus entirely on this new objective: 'Develop a relational data management and reporting engine for legacy business systems'. You MUST write functional code for this task strictly using this exact programming language: FoxPro.
+
+   All constraints met. Output matches draft.✅
+   Proceed. 
+   Self-Correction/Verification during thought: 
+   The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: FoxPro."
+   I will ensure the output is just the instruction string. No markdown formatting unless necessary, but the example output didn't use backticks in the final instruction text. I'll keep it plain text as requested. "Return ONLY the instruction text."
+
+   Final check of the text:
+   Initialize a NEW dedicated folder named foxpro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FoxPro. Focus entirely on this new objective: 'Develop a relational data management and reporting engine for legacy business systems'. You MUST write functional code for this task strictly using this exact programming language: FoxPro.
+
+   Matches perfectly. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Outputs the exact string*
+   *(Note: I'll make sure it's exactly one paragraph/sentence block as requested.)*
+   All good. 
+   Output matches response. 
+   [Done.] 
+   *Self-Correction/Refinement during thought*: Wait, the prompt says "Generate exactly 1 logical follow-up instruction." and gives the exact format in the history. I will replicate that format precisely.
+   "Initialize a NEW dedicated folder named foxpro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FoxPro. Focus entirely on this new objective: 'Develop a relational data management and reporting engine for legacy business systems'. You MUST write functional code for this task strictly using this exact programming language: FoxPro."
+   This is perfect. No extra text. Proceeds. 
+   Output Generation. 
+   [Output] -> Initialize a NEW dedicated folder named foxpro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FoxPro. Focus entirely on this new objective: 'Develop a relational data management and reporting engine for legacy business systems'. You MUST write functional code for this task strictly using this exact programming language: FoxPro.✅
+   All constraints verified. Ready. 
+   [Output Generation] (Proceeds)
+   *(Note: I will output exactly the text without any surrounding quotes or markdown to strictly follow "Return ONLY the instruction text.")*
+   Done. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: FoxPro. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Matches perfectly. Output matches.✅
+   [Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named foxpro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FoxPro. Focus entirely on this new objective: 'Develop a relational data management and reporting engine for legacy business systems'. You MUST write functional code for this task strictly using this exact programming language: FoxPro.

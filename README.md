@@ -544,3 +544,5 @@ Training Machine
 - Created/Updated module: `macsyma_tool` (See `macsyma_tool/README.md` for details)
 
 - Created/Updated module: `newspeak_tool` (See `newspeak_tool/README.md` for details)
+
+- Created/Updated module: `cesil_tool` (See `cesil_tool/README.md` for details)

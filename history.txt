@@ -21377,3 +21377,100 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named newspeak_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Newspeak. Focus entirely on this new objective: 'Develop a secure and object-oriented scripting environment using Newspeak'. You MUST write functional code for this task strictly using this exact programming language: Newspeak.
+[2026-08-16 05:51:50] (Target Lang: Cesil) The user wants a follow-up instruction for a new tool.
+The programming language must be "Cesil".
+I need to check if there is already a `cesil_tool` directory in the workspace listing.
+Looking at the workspace list:
+...
+`./c_shell_tool`
+...
+`./c_string_tool`
+...
+`./c_tool`
+...
+`./candle_tool`
+...
+`./cayenne_tool`
+...
+`./cduce_tool`
+...
+`./cel_tool`
+...
+`./cg_core`
+...
+`./chain_tool`
+...
+`./chapel_tool`
+...
+`./chill_tool`
+...
+`./chip8_tool`
+...
+`./chomski_tool`
+...
+`./chuck_tool`
+...
+`./cl_tool`
+...
+`./clarion_tool`
+...
+`./clean_tool`
+...
+`./clist_tool`
+...
+`./clojure_tool`
+...
+`./cola_tool`
+...
+`./comal_tool`
+...
+`./combined_tool`
+...
+`./converge_tool`
+...
+`./coq_tool`
+...
+`./cryptographic_tool`
+...
+`./curry_tool`
+...
+`./cyclone_tool`
+...
+
+I do not see `cesil_tool` in the list.
+The language "Cesil" is likely a typo for "COBOL" or a very obscure language, or perhaps "CESIL" stands for something like "Computer Education in Schools Instruction Language".
+Wait, looking closer at the list, I see languages like `ada`, `agora`, `alef`, `alf`, `algol58`, `alice`, `ambienttalk`, `ampl`, `api_client`, `asharp_dotnet`, `autocoder`, `bcpl`, `beanshell`, `bliss`, `boo`, `bourne_shell`, `c_engine`, `c_shell`, `c_string`, `c_tool`, `candle`, `cayenne`, `cduce`, `cel`, `cg_core`, `chain`, `chapel`, `chill`, `chip8`, `chomski`, `chuck`, `cl`, `clarion`, `clean`, `clist`, `clojure`, `cola`, `comal`, `combined`, `converge`, `coq`, `cryptographic`, `curry`, `cyclone`.
+
+I don't see `cesil_tool`.
+So I must create a new folder named `cesil_tool`.
+The instruction must demand the tool be built strictly using "Cesil".
+The instruction must create a new folder `cesil_tool`.
+The instruction must create a local `README.md`.
+The instruction must return ONLY the instruction text.
+The instruction must NOT target `.github`.
+
+The instruction should look like:
+"Initialize a NEW dedicated folder named cesil_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cesil. Focus entirely on this new objective: '...'. You MUST write functional code for this task strictly using this exact programming language: Cesil."
+
+I need a focus objective. Since Cesil is obscure, I can invent a plausible objective.
+"Develop a data processing utility using Cesil."
+Or "Create a batch processing tool using Cesil."
+The previous example used "Develop a secure and object-oriented scripting environment using Newspeak".
+I'll use "Create a structured data processing utility using Cesil." or similar.
+The prompt asks to "Generate exactly 1 logical follow-up instruction."
+
+Structure:
+"Initialize a NEW dedicated folder named cesil_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cesil. Focus entirely on this new objective: 'Create a structured data processing utility using Cesil'. You MUST write functional code for this task strictly using this exact programming language: Cesil."
+
+Check constraints:
+- 1 instruction? Yes.
+- Language Cesil? Yes.
+- NEW dedicated folder? Yes.
+- Create README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+Result seems solid.
+</think>
+
+Initialize a NEW dedicated folder named cesil_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cesil. Focus entirely on this new objective: 'Create a structured data processing utility using Cesil'. You MUST write functional code for this task strictly using this exact programming language: Cesil.

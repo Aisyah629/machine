@@ -638,3 +638,5 @@ Training Machine
 - Created/Updated module: `s_sl_tool` (See `s_sl_tool/README.md` for details)
 
 - Created/Updated module: `felix_tool` (See `felix_tool/README.md` for details)
+
+- Created/Updated module: `coral66_tool` (See `coral66_tool/README.md` for details)

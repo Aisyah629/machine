@@ -844,3 +844,5 @@ Training Machine
 - Created/Updated module: `tutor_verification_tool` (See `tutor_verification_tool/README.md` for details)
 
 - Created/Updated module: `iswim_tool` (See `iswim_tool/README.md` for details)
+
+- Created/Updated module: `watfiv_watfor_tool` (See `watfiv_watfor_tool/README.md` for details)

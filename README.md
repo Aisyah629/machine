@@ -882,3 +882,5 @@ Training Machine
 - Created/Updated module: `livescript_tool` (See `livescript_tool/README.md` for details)
 
 - Created/Updated module: `gpss_tool` (See `gpss_tool/README.md` for details)
+
+- Created/Updated module: `ici_tool` (See `ici_tool/README.md` for details)

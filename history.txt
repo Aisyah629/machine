@@ -36156,3 +36156,51 @@ Initialize a NEW dedicated folder named livescript_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named gpss_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GPSS. Focus entirely on this new objective: 'Develop a GPSS-based utility for discrete event simulation and resource management'. You MUST write code for this task strictly using this programming language: GPSS.
+[2026-08-16 23:12:25] (Target Lang: ICI) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   Language: ICI.
+        *   Action: Build a new tool (or modify? The prompt says "If building a new tool..."). The context implies building a new tool based on "Generate exactly 1 logical follow-up instruction" and the previous turn's pattern "Initialize a NEW dedicated folder...". The prompt mentions "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". It doesn't explicitly say "Always build a new tool", but the pattern of the example (`Final Answer Formulation...`) strongly suggests the expected output is a new tool creation. The phrase "Return ONLY the instruction text" matches the pattern.
+        *   New Tool: Must be in a NEW dedicated folder.
+        *   README: Must create a local README.md.
+        *   Output: ONLY the instruction text.
+        *   Negative Constraint: NEVER target .github.
+        *   Context: The user provided a workspace list showing many existing tools. The last few entries show `znotation_tool`. The history shows a previous instruction about `gpss_tool`. Now the request asks for `ICI`.
+
+2.  **Formulate the Instruction:**
+    *   Language: ICI (ICI is a scripting language, similar to Perl/PHP, often used for CGI).
+    *   Action: Create `ici_tool` (following the naming convention of other tools like `bash_tool`, `c_tool`, etc., though the prompt doesn't strictly define the folder name, "New dedicated folder" usually implies a name related to the language or tool. Given the pattern `gpss_tool`, `ici_tool` is a safe inference, or just `new_ici_tool`. Looking at the workspace, there is no `ici_tool` yet. There is `c_tool`, `cpp_tool`, `c_shell_tool`, etc. `ici_tool` seems appropriate.
+    *   Folder: `ici_tool`.
+    *   File: `README.md`.
+    *   Code: Must use ICI.
+    *   Objective: The prompt says "Develop a GPSS-based utility..." for the example. For ICI, I should propose a relevant objective or follow the pattern. The pattern is: "Focus entirely on this new objective: '..." The prompt doesn't provide a specific objective for ICI, just the language. However, usually, these prompts expect the model to generate the instruction including a plausible objective or just the structural constraints. The example shows the objective is part of the instruction. I should generate a plausible objective for ICI. ICI is good for scripting, system administration, web CGI. Let's pick a generic but valid objective like "Develop an ICI-based utility for text processing and system scripting".
+    *   *Self-Correction on Objective:* The prompt asks "Generate exactly 1 logical follow-up instruction." It doesn't ask the model to invent the objective, but the example shows the instruction *contains* the objective. The prompt structure is `Final Answer Formulation. Initialize...`. The output should be the instruction text. The instruction text usually includes the objective. I'll include a reasonable objective for ICI.
+    *   *Refinement on Folder Name:* The workspace has `.../ici_tool`? Scanning the list... I see `icn_tool` (unicon), `icl`? No. I see `ici`? I don't see `ici_tool` in the list. The list ends with `znotation_tool`. So `ici_tool` is new.
+    *   *Drafting the Instruction Text:*
+        "Initialize a NEW dedicated folder named ici_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ICI. Focus entirely on this new objective: 'Develop an ICI-based utility for automated text processing and system administration tasks'. You MUST write code for this task strictly using this programming language: ICI."
+
+3.  **Check Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Language ICI? Yes.
+    *   New dedicated folder? Yes (`ici_tool`).
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   Never target .github? Yes.
+    *   Logical follow-up? Yes, it continues the pattern of adding tools to the workspace.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Output: `Initialize a NEW dedicated folder named ici_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ICI. Focus entirely on this new objective: 'Develop an ICI-based utility for automated text processing and system administration tasks'. You MUST write code for this task strictly using this programming language: ICI.`
+
+5.  **Review against "Return ONLY the instruction text":**
+    *   The output should be just that string. No markdown code blocks? The prompt says "Return ONLY the instruction text". Usually, this means the raw string. The example output in the prompt description (the `Final Answer Formulation...` part) is the thought process, the actual output is likely the text string.
+    *   Result: The text string drafted above.
+
+6.  **Final Output Construction:**
+    *   "Initialize a NEW dedicated folder named ici_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ICI. Focus entirely on this new objective: 'Create an ICI-based scripting utility for efficient log analysis and report generation'. You MUST write code for this task strictly using this programming language: ICI."
+    *   (Changed objective slightly to be more specific to ICI's strengths, text processing is good).
+    *   Result looks solid.
+</think>
+
+Initialize a NEW dedicated folder named ici_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ICI. Focus entirely on this new objective: 'Develop an ICI-based utility for automated text processing and system administration scripting'. You MUST write code for this task strictly using this programming language: ICI.

@@ -1,0 +1,125 @@
+// JEAN Tool: Concurrent Task Scheduler for Distributed Systems
+// File: main.jean
+
+module JeanScheduler;
+
+// System definition for the distributed task scheduler
+system SchedulerNode {
+  // Ports for inter-node communication
+  port task_queue: Task;
+  port result_queue: Result;
+  port heartbeat: Signal;
+  
+  // Local state for task execution and tracking
+  var active_tasks: List(Task);
+  var completed_tasks: List(Task);
+  var node_status: Status;
+  
+  // Initialization logic
+  init() {
+    active_tasks = empty_list();
+    completed_tasks = empty_list();
+    node_status = Status::IDLE;
+  }
+  
+  // Task acquisition logic
+  behavior receive_task() {
+    loop {
+      when task_queue.receive(task) -> {
+        // Enqueue task for execution
+        active_tasks.push(task);
+        log.info("Received task " + task.id);
+        
+        // Transition to EXECUTING status if IDLE
+        if node_status == Status::IDLE {
+          node_status = Status::EXECUTING;
+        }
+      }
+    }
+  }
+  
+  // Task execution logic
+  behavior execute_tasks() {
+    loop {
+      when not active_tasks.empty() -> {
+        let task = active_tasks.pop();
+        
+        // Simulate task execution
+        let result = process_task(task);
+        
+        // Store result
+        let res: Result = Result(task.id, result);
+        result_queue.send(res);
+        completed_tasks.push(res);
+        
+        log.info("Completed task " + task.id);
+        
+        // Check if node is empty
+        if active_tasks.empty() and result_queue.is_empty() {
+          node_status = Status::IDLE;
+        }
+      }
+    }
+  }
+  
+  // Heartbeat broadcast logic
+  behavior broadcast_heartbeat() {
+    loop {
+      when heartbeat.receive() -> {
+        heartbeat.send(node_status);
+        yield 1000; // 1 second interval
+      }
+    }
+  }
+  
+  // Task processing simulation
+  function process_task(task: Task) -> any {
+    // Simulate varying execution times
+    yield task.duration;
+    return "Task_" + task.id + "_processed";
+  }
+}
+
+// Type definitions
+record Task {
+  id: int;
+  duration: int;
+  payload: string;
+}
+
+record Result {
+  task_id: int;
+  outcome: string;
+}
+
+enum Status {
+  IDLE,
+  EXECUTING,
+  ERROR
+}
+
+// Entry point
+start {
+  let node1 = SchedulerNode();
+  let node2 = SchedulerNode();
+  
+  // Connect nodes for demonstration
+  connect node1.task_queue -> node2.task_queue;
+  connect node1.result_queue -> node2.task_queue;
+  
+  // Start behaviors
+  spawn node1.receive_task();
+  spawn node1.execute_tasks();
+  spawn node1.broadcast_heartbeat();
+  
+  spawn node2.receive_task();
+  spawn node2.execute_tasks();
+  spawn node2.broadcast_heartbeat();
+  
+  // Inject initial task
+  let initial_task = Task(1, 100, "hello");
+  node1.task_queue.send(initial_task);
+  
+  // Run indefinitely
+  await forever;
+}

@@ -812,3 +812,5 @@ Training Machine
 - Created/Updated module: `rust_scheduler_tool` (See `rust_scheduler_tool/README.md` for details)
 
 - Created/Updated module: `tex_macro_compiler_tool` (See `tex_macro_compiler_tool/README.md` for details)
+
+- Created/Updated module: `./coral66_tool` (See `./coral66_tool/README.md` for details)

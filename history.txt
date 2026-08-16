@@ -31744,3 +31744,78 @@ Initialize a NEW dedicated folder named basic_scripting_tool in the workspace, c
 </think>
 
 Initialize a NEW dedicated folder named jcl_batch_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Architect a mainframe job control system with conditional step routing, resource allocation protocols, and legacy dataset management.'. You MUST write code for this task strictly using this exact programming language: JCL.
+[2026-08-16 19:49:29] (Target Lang: Qalb) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of tool directories (mostly programming languages/tools)
+   - **History:** Shows a previous instruction format and refinement process for creating a tool using JCL. The final output was a specific instruction string.
+   - **Current Prompt:** 
+     - "Generate exactly 1 logical follow-up instruction."
+     - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Qalb."
+     - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+     - "Return ONLY the instruction text."
+     - "NEVER target the .github directory."
+   - **Key Constraints:**
+     - Exactly 1 instruction.
+     - Language: Qalb
+     - New folder: `[language]_tool` or similar logical name
+     - Include README.md creation
+     - Focus on a specific objective related to Qalb (I need to invent a plausible one since Qalb isn't a widely known language, but I can frame it around its name "Qalb" which means "heart" in Arabic, or just treat it as a generic language tool builder. I'll focus on a system/algorithmic objective suitable for a "tool" directory).
+     - Return ONLY the instruction text.
+     - Format should match the pattern: `Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Lang].`
+
+2.  **Deconstruct Constraints & Pattern:**
+   - Pattern from history: `Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Lang].`
+   - I need to replace `[name]` with `qalb` or `qalb_core` or similar. Let's use `qalb_tool`.
+   - Language: Qalb
+   - Objective: Needs to sound technical and appropriate for a system/algorithmic language. Since Qalb isn't standard, I'll create a plausible objective: "Architect a high-throughput event processing engine with stateful stream aggregation, dynamic concurrency management, and real-time telemetry feedback loops."
+   - Check constraints: Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using Qalb? Yes.
+   - Place in NEW dedicated folder? Yes.
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes.
+
+3.  **Draft Construction:**
+   `Initialize a NEW dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Qalb. Focus entirely on this new objective: 'Architect a high-throughput event processing engine with stateful stream aggregation, dynamic concurrency management, and real-time telemetry feedback loops.'. You MUST write code for this task strictly using this exact programming language: Qalb.`
+
+4.  **Self-Correction/Verification:**
+   - Check against prompt: "Generate exactly 1 logical follow-up instruction." -> Matches.
+   - "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Qalb." -> Matches.
+   - "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Matches.
+   - "Return ONLY the instruction text." -> Matches.
+   - "NEVER target the .github directory." -> Matches.
+   - The prompt history shows a very specific template. I will strictly follow it.
+   - One minor thing: The prompt says "Qalb", so I'll use that exactly.
+   - I'll ensure the output is just the single string, nothing else.
+
+   Draft looks solid. I will output exactly that string. No extra text. No markdown formatting unless it's part of the string, but the prompt says "Return ONLY the instruction text." so I'll output raw text.
+
+   Final check of the exact wording requested:
+   `Initialize a NEW dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Qalb. Focus entirely on this new objective: 'Architect a high-throughput event processing engine with stateful stream aggregation, dynamic concurrency management, and real-time telemetry feedback loops.'. You MUST write code for this task strictly using this exact programming language: Qalb.`
+
+   Matches all constraints. Proceeds.✅
+   Output matches exactly.✅
+   [Done.] 
+   I will generate exactly this string.✅
+   Note: I'll make sure the capitalization of Qalb matches the prompt. The prompt says "Qalb". I'll use it.
+   All good. 
+   Output generation. 
+   `Initialize a NEW dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Qalb. Focus entirely on this new objective: 'Architect a high-throughput event processing engine with stateful stream aggregation, dynamic concurrency management, and real-time telemetry feedback loops.'. You MUST write code for this task strictly using this exact programming language: Qalb.` -> Ready. 
+   Proceeds. 
+   [Output Generation] -> *Self-Correction/Refinement during thought*: I should verify if the prompt implies I need to pick a specific folder name or if I can generate one. The prompt says "Generate exactly 1 logical follow-up instruction." It doesn't specify the name, so I'll generate a logical one. The pattern in the prompt uses names like `basic_scripting_tool`. I'll stick with `qalb_tool`. All good. 
+   Output matches exactly.✅ 
+   Proceeds. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Qalb. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory." 
+   All constraints met. Output matches.✅ 
+   Proceeds. 
+   [Output Generation] -> *Output Generation* (matches the refined draft)✅ 
+   *(Done.)* 
+   `Initialize a NEW dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Qalb. Focus entirely on this new objective: 'Architect a high-throughput event processing engine with stateful stream aggregation, dynamic concurrency management, and real-time telemetry feedback loops.'. You MUST write code for this task strictly using this exact programming language: Qalb.` -> Output matches.✅
+   I will output exactly this.✅
+   [Proceeds] -> [Output] ✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Qalb. Focus entirely on this new objective: 'Architect a high-throughput event processing engine with stateful stream aggregation, dynamic concurrency management, and real-time telemetry feedback loops.'. You MUST write code for this task strictly using this exact programming language: Qalb.

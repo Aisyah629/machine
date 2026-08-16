@@ -580,3 +580,5 @@ Training Machine
 - Created/Updated module: `chr_tool` (See `chr_tool/README.md` for details)
 
 - Created/Updated module: `islisp_tool` (See `islisp_tool/README.md` for details)
+
+- Created/Updated module: `genie_tool` (See `genie_tool/README.md` for details)

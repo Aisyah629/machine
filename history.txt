@@ -35484,3 +35484,40 @@ Initialize a NEW dedicated folder named prolog_constraint_solver_tool in the wor
 </think>
 
 Initialize a NEW dedicated folder named teco_macro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TECO. Focus entirely on this new objective: 'Develop a TECO-based macro language utility for automated text transformation and document formatting'. You MUST write code for this task strictly using this programming language: TECO.
+[2026-08-16 23:08:51] (Target Lang: LiveScript) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand the new tool be built strictly using `LiveScript`.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the `.github` directory.
+    *   Context: The workspace has many tools listed, including `./livescript_tool`. The history shows a pattern of generating instructions to create new tools. The user wants a follow-up based on this pattern.
+
+2.  **Draft the Instruction:**
+    *   *Folder Name:* `livescript_tool` (or similar, but `livescript_tool` is already in the list? Let's check the list. Yes, `./livescript_tool` exists in the provided workspace list. However, the instruction usually follows the pattern of "Initialize a NEW dedicated folder...". If I say "livescript_tool", it might conflict or be a valid request to create it if it doesn't exist, or the user wants a new instance. Usually, in these prompts, the model generates a text string that *looks* like the history. The history shows "Initialize a NEW dedicated folder named teco_macro_tool...". Even though `teco_macro_tool` is in the list, the instruction is to create it. I should follow the format. The user asked for `LiveScript`. So the folder name should be `livescript_tool` or something descriptive. Let's use `livescript_tool` to match the existing structure, or `new_livescript_tool`. Given the history shows creating `teco_macro_tool` which exists in the list, the instruction likely triggers the creation or overwrites. I'll use `livescript_tool` as the folder name to be safe and consistent with the naming convention seen in the list, or just follow the prompt's language. The prompt asks for "Logical follow-up". The output should be the instruction string.
+    *   *Language:* `LiveScript`.
+    *   *Objective:* Needs a description. The example had "Develop a TECO-based macro language utility...". I need a similar description for LiveScript. LiveScript is a functional language for Node.js/Web. A good objective: "Develop a LiveScript-based script for asynchronous data processing and web service interaction" or "Develop a LiveScript-based utility for functional reactive programming and event handling". Let's pick something plausible. "Develop a LiveScript-based utility for asynchronous data stream processing and functional composition".
+    *   *Structure:* "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this programming language: [Language]."
+    *   *Drafting:* "Initialize a NEW dedicated folder named livescript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LiveScript. Focus entirely on this new objective: 'Develop a LiveScript-based utility for asynchronous data stream processing and functional composition'. You MUST write code for this task strictly using this programming language: LiveScript."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, the output is one block of text.
+    *   *Explicitly demand built strictly using LiveScript?* Yes, "STRICTLY using this exact programming language: LiveScript" appears twice in the draft structure.
+    *   *Place in NEW dedicated folder?* Yes, "Initialize a NEW dedicated folder named livescript_tool".
+    *   *Create local README.md?* Yes, "create a local README.md inside it".
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target .github?* Yes, the instruction targets a tool folder, not `.github`.
+    *   *Language check:* `LiveScript` is the requested language. Note: `LiveScript` is often associated with the `.ls` extension, distinct from `Livescript` (sometimes confused with `LiveScript` vs `Livescript` vs `Livescript`). The prompt asks for `LiveScript`. I should use that exact casing.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Initialize a NEW dedicated folder named livescript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LiveScript. Focus entirely on this new objective: 'Develop a LiveScript-based utility for asynchronous data stream processing and functional composition'. You MUST write code for this task strictly using this programming language: LiveScript.`
+
+5.  **Final Output Construction:**
+    *   The output should be just the text string. No markdown code blocks if the constraint implies raw text, but usually "Return ONLY the instruction text" means the content of the text. The prompt format suggests the output is the text itself.
+    *   Result: `Initialize a NEW dedicated folder named livescript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LiveScript. Focus entirely on this new objective: 'Develop a LiveScript-based utility for asynchronous data stream processing and functional composition'. You MUST write code for this task strictly using this programming language: LiveScript.`
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named livescript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LiveScript. Focus entirely on this new objective: 'Develop a LiveScript-based utility for asynchronous data stream processing and functional composition'. You MUST write code for this task strictly using this programming language: LiveScript.

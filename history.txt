@@ -25160,3 +25160,38 @@ Initialize a NEW dedicated folder named visual_dialogscript_tool in the workspac
 </think>
 
 Initialize a NEW dedicated folder named charm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Charm. Focus entirely on this new objective: 'Develop a concurrent, fault-tolerant system capable of managing actor-based message passing, state mutation, and reliable distributed communication'. You MUST write functional code for this task strictly using this exact programming language: Charm.
+[2026-08-16 11:19:01] (Target Lang: Hume) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: The new tool must be built STRICTLY using the exact programming language: Hume.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint: Create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+
+2.  **Formulate the Instruction:**
+    *   I need to create a string that looks like the previous instructions in the history. The history shows a pattern: `Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language].`
+    *   *Tool Name:* The prompt asks for Hume. Following the pattern, the folder should be `hume_tool`.
+    *   *Language:* Hume.
+    *   *Objective:* The previous objective was about concurrency/actors. Since Hume is a language for hardware description (specifically, a higher-level abstraction over VHDL/Verilog often used in high-performance computing), a logical objective might relate to hardware acceleration, pipelining, or functional hardware description. However, the user's prompt doesn't specify the objective, so I should generate a generic but plausible objective or reuse the structure. The prompt says "Generate exactly 1 logical follow-up instruction." This implies I need to invent the objective text. A "logical" follow-up based on Hume might be "Design a high-performance hardware accelerator pipeline..." or "Develop a robust concurrent hardware description..."
+    *   *Drafting the text:*
+        `Initialize a NEW dedicated folder named hume_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hume. Focus entirely on this new objective: 'Design a high-performance hardware pipeline accelerator utilizing Hume's functional composition and type-safe abstractions for efficient RTL generation'. You MUST write functional code for this task strictly using this exact programming language: Hume.`
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes.
+    *   *STRICTLY using Hume?* Yes.
+    *   *NEW dedicated folder?* Yes (`hume_tool`).
+    *   *Local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target .github?* Yes, no mention of .github.
+
+4.  **Final Polish:**
+    *   The output should be just the string.
+    *   Result: `Initialize a NEW dedicated folder named hume_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hume. Focus entirely on this new objective: 'Design a high-performance hardware pipeline accelerator utilizing Hume's functional composition and type-safe abstractions for efficient RTL generation'. You MUST write functional code for this task strictly using this exact programming language: Hume.`
+
+5.  **Output Generation:**
+    *   Provide the string.
+</think>
+
+Initialize a NEW dedicated folder named hume_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hume. Focus entirely on this new objective: 'Design a high-performance hardware pipeline accelerator utilizing Hume's functional composition and type-safe abstractions for efficient RTL generation'. You MUST write functional code for this task strictly using this exact programming language: Hume.

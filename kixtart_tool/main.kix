@@ -1,0 +1,124 @@
+@NOTBREAKMODE
+$ErrorMode = 0
+SetOption("WrapAtEOL", "True")
+SetOption("ExplicitMode", "True")
+SetOption("ComSpec", "cmd.exe")
+SetOption("MacroExpansion", "True")
+
+Function InitializeEngine()
+  LogEvent("Kixtart Automation Engine v1.0 initialized.")
+  Return 0
+EndFunction
+
+Function ExecuteAdminTask($taskType, $params)
+  Dim $result, $logMsg
+  
+  Select Case $taskType
+    Case "user_management"
+      $result = ManageUserAccounts($params)
+    Case "service_management"
+      $result = ManageServices($params)
+    Case "registry_operations"
+      $result = ManageRegistry($params)
+    Case Else
+      $result = -1
+      $logMsg = "Unknown task type: " + $taskType
+  EndSelect
+  
+  LogEvent($logMsg + " Operation Result: " + $result)
+  Return $result
+EndFunction
+
+Function ManageUserAccounts($params)
+  Dim $action, $username, $status
+  $action = GetParam($params, "action")
+  $username = GetParam($params, "username")
+  
+  If $action = "create" Then
+    If Not @Error Then
+      $status = AddUser($username, "*", "*")
+    Else
+      $status = -1
+    EndIf
+  ElseIf $action = "delete" Then
+    If Not @Error Then
+      $status = DelUser($username)
+    Else
+      $status = -1
+    EndIf
+  Else
+    $status = -1
+  EndIf
+  
+  Return $status
+EndFunction
+
+Function ManageServices($params)
+  Dim $serviceName, $action, $status
+  $serviceName = GetParam($params, "serviceName")
+  $action = GetParam($params, "action")
+  
+  If $action = "start" Then
+    $status = WScript.Shell.Run("net start " + $serviceName, 1, True)
+  ElseIf $action = "stop" Then
+    $status = WScript.Shell.Run("net stop " + $serviceName, 1, True)
+  Else
+    $status = -1
+  EndIf
+  
+  Return $status
+EndFunction
+
+Function ManageRegistry($params)
+  Dim $keyPath, $valueName, $valueData, $action, $status
+  $keyPath = GetParam($params, "keyPath")
+  $valueName = GetParam($params, "valueName")
+  $valueData = GetParam($params, "valueData")
+  $action = GetParam($params, "action")
+  
+  If $action = "set" Then
+    $status = RegWrite($keyPath, $valueName, "REG_SZ", $valueData)
+  ElseIf $action = "delete" Then
+    $status = RegDeleteValue($keyPath, $valueName)
+  Else
+    $status = -1
+  EndIf
+  
+  Return $status
+EndFunction
+
+Function GetParam($params, $name)
+  Dim $i, $pair, $key, $value
+  For $i = 0 To UBound($params) - 1
+    $pair = Split($params[$i], "=")
+    $key = $pair[0]
+    $value = $pair[1]
+    If $key = $name Then
+      Return $value
+    EndIf
+  Next
+  Return ""
+EndFunction
+
+Function LogEvent($message)
+  Dim $logFile, $timestamp, $logEntry
+  $logFile = "KixtartAutomation.log"
+  $timestamp = @YMD + " " + @HMS
+  $logEntry = "[" + $timestamp + "] " + $message
+  
+  $fso = CreateObject("Scripting.FileSystemObject")
+  $file = $fso.OpenTextFile($logFile, 8, True)
+  $file.WriteLine($logEntry)
+  $file.Close()
+  
+  ConsoleWrite($logEntry + @CRLF)
+EndFunction
+
+Dim $engineStatus, $taskParams
+$engineStatus = InitializeEngine()
+If $engineStatus = 0 Then
+  $taskParams = Array("action=create", "username=testuser")
+  ExecuteAdminTask("user_management", $taskParams)
+EndIf
+
+Quit 0

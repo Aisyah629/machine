@@ -498,3 +498,5 @@ Training Machine
 - Created/Updated module: `self_healing_tool` (See `self_healing_tool/README.md` for details)
 
 - Created/Updated module: `xbl_tool` (See `xbl_tool/README.md` for details)
+
+- Created/Updated module: `kixtart_tool` (See `kixtart_tool/README.md` for details)

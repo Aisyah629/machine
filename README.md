@@ -548,3 +548,5 @@ Training Machine
 - Created/Updated module: `cesil_tool` (See `cesil_tool/README.md` for details)
 
 - Created/Updated module: `swift_tool` (See `swift_tool/README.md` for details)
+
+- Created/Updated module: `ksh_tool` (See `ksh_tool/README.md` for details)

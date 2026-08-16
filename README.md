@@ -648,3 +648,5 @@ Training Machine
 - Created/Updated module: `chapel_tool` (See `chapel_tool/README.md` for details)
 
 - Created/Updated module: `combined_programming_language_tool` (See `combined_programming_language_tool/README.md` for details)
+
+- Created/Updated module: `lucid_tool` (See `lucid_tool/README.md` for details)

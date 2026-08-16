@@ -1,0 +1,37 @@
+// SIGNAL programming language example
+// Reactive systems programming for real-time applications
+// This code demonstrates a basic signal processing pipeline
+
+// Signal declarations
+type Signal = float;
+
+// Synchronous clock definition
+clock Tick = 1.0;
+
+// Signal generator: produces a periodic sine wave
+fun generate_wave(t: Signal) -> Signal =
+    let amplitude = 1.0 in
+    let frequency = 5.0 in
+    amplitude * sin(2.0 * pi * frequency * t);
+
+// Signal processor: applies a low-pass filter
+fun low_pass(input: Signal, prev_output: Signal, alpha: Signal) -> Signal =
+    let output = alpha * input + (1.0 - alpha) * prev_output in
+    output;
+
+// Synchronous process: main execution cycle
+clock Tick synchronized {
+    
+    // Define input signal
+    let raw_signal = generate_wave(0.0);
+    
+    // Initialize filter state
+    var filter_state = 0.0;
+    let alpha = 0.2;
+    
+    // Process signal in synchronous step
+    filter_state = low_pass(raw_signal, filter_state, alpha);
+    
+    // Output filtered signal
+    print("Filtered signal: " + filter_state);
+}

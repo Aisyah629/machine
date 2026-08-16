@@ -508,3 +508,5 @@ Training Machine
 - Created/Updated module: `krc_tool` (See `krc_tool/README.md` for details)
 
 - Created/Updated module: `beanshell_tool` (See `beanshell_tool/README.md` for details)
+
+- Created/Updated module: `signal_tool` (See `signal_tool/README.md` for details)

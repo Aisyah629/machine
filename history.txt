@@ -31236,3 +31236,63 @@ This looks solid.
 </think>
 
 Initialize a NEW dedicated folder named rpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RPL. Focus entirely on this new objective: 'Develop a stack-oriented interpreter for high-performance symbolic expression evaluation.'. You MUST write code for this task strictly using this exact programming language: RPL.
+[2026-08-16 19:12:23] (Target Lang: OPS5) The user wants me to generate a single follow-up instruction.
+The instruction must:
+1.  demand the new tool be built strictly using the programming language: OPS5.
+2.  If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+3.  Return ONLY the instruction text.
+4.  Never target the .github directory.
+5.  Follow the pattern of the history: "Initialize a NEW dedicated folder named [name]_tool..., create a local README.md..., build... STRICTLY using... [Language]. Focus... [Objective]. You MUST..."
+6.  Check if the folder name is already in the list. Looking at the workspace list:
+    -   `ops5_rule_engine_tool` exists.
+    -   `data_extraction_tool` has `main.ops5`.
+    -   Wait, let's look closely at the list provided in the prompt.
+    -   `./ops5_rule_engine_tool ./ops5_rule_engine_tool/README.md ./ops5_rule_engine_tool/main.ops5`
+    -   `./data_extraction_tool ./data_extraction_tool/README.md ./data_extraction_tool/main.ops5`
+    -   The prompt says "Generate exactly 1 logical follow-up instruction... STRICTLY using this exact programming language: OPS5."
+    -   Since `ops5_rule_engine_tool` already exists, maybe I should use a different name or follow the exact pattern regardless? The prompt says "If building a new tool...". I will invent a new tool name that fits, e.g., `ops5_diagnostic_tool` or `ops5_rule_engine_tool` (though it exists, the pattern usually asks for new ones. Let's pick `ops5_expert_system_tool` to be safe, or just `ops5_tool`? The list has `ops5_rule_engine_tool`. I'll use `ops5_rule_engine_tool`? No, better to use a new one like `ops5_diagnostic_tool` or `ops5_prolog_engine_tool`? Wait, `prolog_diagnostic_tool` exists. Let's use `ops5_production_system_tool`.)
+    -   Actually, looking at the pattern, the language is usually part of the folder name if it's a tool for that language, but sometimes it's a general tool. The prompt says "STRICTLY using this exact programming language: OPS5". I will use `ops5_tool` or `ops5_rule_engine_tool`? I'll stick to `ops5_rule_engine_tool` but since it exists, maybe `ops5_inference_engine_tool`? Let's just use `ops5_tool` for simplicity, or `ops5_prolog_tool`? Wait, OPS5 is a production rule system. `ops5_production_system_tool` sounds good.
+    -   Let's check the workspace list for `ops5_production_system_tool`. It is NOT in the list.
+    -   I will construct the instruction following the exact template.
+    -   Template: `Initialize a NEW dedicated folder named [folder]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: OPS5.`
+    -   Objective: 'Implement a production rule engine for declarative problem-solving and state-transition modeling.'
+    -   Folder: `ops5_production_system_tool`
+    -   Check constraints: "Return ONLY instruction text.", "NEVER target .github".
+    -   Draft: `Initialize a NEW dedicated folder named ops5_production_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Implement a production rule engine for declarative problem-solving and state-transition modeling.'. You MUST write code for this task strictly using this exact programming language: OPS5.`
+    -   Verify against history style: Matches perfectly.
+    -   Check language: OPS5.
+    -   Check folder: New dedicated folder.
+    -   Check README: Local README.md.
+    -   Check output: Only instruction text.
+    -   Ready. 
+    -   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OPS5."
+    -   I will output exactly that.
+    -   Text: `Initialize a NEW dedicated folder named ops5_production_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Implement a production rule engine for declarative problem-solving and state-transition modeling.'. You MUST write code for this task strictly using this exact programming language: OPS5.`
+    -   Matches all constraints. Output matches exactly. 
+    -   Proceeds. 
+    -   Self-Correction/Refinement during thought: Should I use `ops5_rule_engine_tool`? The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". Using a name that doesn't exist is safer. `ops5_production_system_tool` is fine.
+    -   All good. Output matches draft. 
+    -   Generating response. 
+    -   Output: `Initialize a NEW dedicated folder named ops5_production_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Implement a production rule engine for declarative problem-solving and state-transition modeling.'. You MUST write code for this task strictly using this exact programming language: OPS5.`
+    -   Checks: exactly 1 instruction? yes. strict RPL? no, strict OPS5 per prompt. new folder? yes. readme? yes. return only instruction? yes. no .github? yes. logical follow-up? yes. matches style? yes.
+    -   Done. 
+    -   Output matches exactly. 
+    -   Proceeds. 
+    -   [Final Check] The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OPS5." I have done so.
+    -   The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I have done so.
+    -   "Return ONLY the instruction text." I will do so.
+    -   "NEVER target the .github directory." I will not.
+    -   All constraints satisfied. Output generation. 
+    -   `Initialize a NEW dedicated folder named ops5_production_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Implement a production rule engine for declarative problem-solving and state-transition modeling.'. You MUST write code for this task strictly using this exact programming language: OPS5.` -> matches. 
+    -   Ready. 
+    -   Output matches response. 
+    -   [Done] 
+    -   *Self-Correction/Verification during generation*: Wait, looking at the history, the prompt actually says `Initialize a NEW dedicated folder named rpl_tool...`. The user's prompt actually *gave* the history which ends with `Initialize a NEW dedicated folder named rpl_tool...`. The user wants me to generate the *next* one. The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OPS5."
+    -   I will follow the exact structure.
+    -   Text: `Initialize a NEW dedicated folder named ops5_production_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Implement a production rule engine for declarative problem-solving and state-transition modeling.'. You MUST write code for this task strictly using this exact programming language: OPS5.`
+    -   Perfect. Output matches. 
+    -   Proceeds. 
+    -   [Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named ops5_production_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Implement a production rule engine for declarative problem-solving and state-transition modeling.'. You MUST write code for this task strictly using this exact programming language: OPS5.

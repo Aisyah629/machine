@@ -36480,3 +36480,37 @@ Result matches the draft.
 </think>
 
 Initialize a NEW dedicated folder named focus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FOCUS. Focus entirely on this new objective: 'Develop a FOCUS-based utility for high-throughput data processing and functional composition'. You MUST write code for this task strictly using this programming language: FOCUS.
+[2026-08-16 23:33:17] (Target Lang: Emacs Lisp) The user wants a logical follow-up instruction based on the provided workspace history and the last generated instruction.
+The last instruction was about creating a `focus_tool` using `FOCUS`.
+The new instruction must:
+1.  Generate exactly 1 logical follow-up.
+2.  Explicitly demand the language `Emacs Lisp`.
+3.  Instruct to place the tool in a NEW dedicated folder.
+4.  Instruct to create a local `README.md`.
+5.  Return ONLY the instruction text (no quotes, no markdown).
+6.  Never target `.github`.
+
+Looking at the workspace, there are many tools already. A logical follow-up could be another tool directory.
+The language is `Emacs Lisp`.
+The folder name should likely be `elisp_tool` or `emacs_lisp_tool` based on naming conventions seen (e.g., `lisp_tool`, `scheme_tool`, etc.). `elisp_tool` is concise and fits the pattern.
+The content should focus on a specific task. Since it's Emacs Lisp, maybe an editor utility or automation script.
+Draft: "Initialize a NEW dedicated folder named elisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Develop an Emacs Lisp utility for advanced text manipulation and buffer management'. You MUST write code for this task strictly using this programming language: Emacs Lisp."
+
+Check constraints:
+- Follow-up? Yes, adds another tool.
+- Language `Emacs Lisp`? Yes.
+- NEW folder? Yes.
+- README.md? Yes.
+- ONLY instruction text? Yes.
+- No `.github`? Yes.
+
+Refinement on folder name: The workspace has `lisp_tool`, `scheme_tool`, `clojure_tool`, `racket_tool` (implied by pattern), `slisp_tool`, etc. `elisp_tool` seems appropriate. Or `emacs_lisp_tool`. `elisp_tool` is shorter and fits `lisp_tool`. Let's use `elisp_tool`.
+
+Refinement on objective: "Develop an Emacs Lisp utility for advanced text manipulation and buffer management". This is a standard Emacs task.
+
+Final text structure: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this programming language: [Language]."
+
+Result: "Initialize a NEW dedicated folder named elisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Develop an Emacs Lisp utility for advanced text manipulation and buffer management'. You MUST write code for this task strictly using this programming language: Emacs Lisp."
+</think>
+
+Initialize a NEW dedicated folder named elisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Develop an Emacs Lisp utility for advanced text manipulation and buffer management'. You MUST write code for this task strictly using this programming language: Emacs Lisp.

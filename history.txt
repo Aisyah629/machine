@@ -20953,3 +20953,92 @@ Initialize a NEW dedicated folder named spk_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named c_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C Shell. Focus entirely on this new objective: 'Develop a robust system administration and automation framework using C Shell'. You MUST write functional code for this task strictly using this programming language: C Shell.
+[2026-08-16 05:24:20] (Target Lang: VBScript) Thinking Process:
+1.  **Analyze the Request:**
+    *   Input: A list of workspace items, History entries (pattern matching format), and a specific instruction to "Generate exactly 1 logical follow-up instruction".
+    *   Target Language for the follow-up: VBScript.
+    *   Constraints:
+        *   MUST explicitly demand the new tool be built STRICTLY using VBScript.
+        *   MUST instruct to place it in a NEW dedicated folder.
+        *   MUST instruct to create a local README.md.
+        *   MUST return ONLY the instruction text.
+        *   NEVER target the `.github` directory.
+        *   Format should match the pattern in the history: `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this programming language: [Language].`
+
+2.  **Determine Parameters:**
+    *   Language: VBScript (User specified this in the prompt: "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: VBScript").
+    *   Folder Name: Needs to be consistent with the naming convention seen in the history (`vbscript_tool` or similar). Let's check the list for existing `vbscript_tool`. I don't see `vbscript_tool` in the provided list (I see `vbnet_tool`, `visual_basic_tool`? No, just `vbnet_tool`, `visualfoxpro_tool`). I'll use `vbscript_tool` to match the pattern `language_tool`.
+    *   Objective: Needs to be relevant to VBScript and automated. e.g., 'Develop a robust system automation and management framework using VBScript'.
+
+3.  **Draft the Instruction:**
+    Initialize a NEW dedicated folder named vbscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Develop a robust system automation and management framework using VBScript'. You MUST write functional code for this task strictly using this programming language: VBScript.
+
+4.  **Refine:**
+    *   Check language match: VBScript. Yes.
+    *   Check folder: `vbscript_tool`. Yes.
+    *   Check README: `README.md`. Yes.
+    *   Check constraints: "Return ONLY the instruction text." "NEVER target the .github directory." Yes.
+    *   History Pattern: Matches the `c_shell_tool` example closely.
+
+5.  **Final Output Generation:**
+    Initialize a NEW dedicated folder named vbscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Develop a robust system automation and management framework using VBScript'. You MUST write functional code for this task strictly using this programming language: VBScript.
+    *Self-Correction/Refinement:* The prompt asks to "Generate exactly 1 logical follow-up instruction." based on the pattern.
+    The pattern includes the phrase "You MUST write functional code for this task strictly using this programming language: [Language]." at the end.
+    The user prompt says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: VBScript."
+
+    Draft:
+    Initialize a NEW dedicated folder named vbscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Develop a robust system automation and management framework using VBScript'. You MUST write functional code for this task strictly using this programming language: VBScript.
+
+    This looks correct.
+
+    One check: Is `vbscript_tool` valid? The list has `visualbasic_tool`? No, I see `vbnet_tool`, `visualfoxpro_tool`, `visualjsharp_tool`. So `vbscript_tool` is a safe, logical name following the `language_tool` convention.
+
+    Final check on constraints:
+    - exactly 1 logical follow-up instruction: Yes.
+    - MUST explicitly demand... VBScript: Yes.
+    - NEW dedicated folder: Yes.
+    - create local README.md: Yes.
+    - Return ONLY the instruction text: Yes.
+    - NEVER target .github: Yes.
+
+    Result matches.
+    One detail: The prompt history has `Initialize a NEW dedicated folder named c_shell_tool...`.
+    The prompt asks to "Generate exactly 1 logical follow-up instruction."
+    I will output just that string.
+    Wait, could the objective be more specific? The user said "The objective part can be generic since the user didn't specify one, but it adds flavor." I will use a generic but relevant one. "Develop a robust system automation and management framework using VBScript" is good.
+
+    Final text:
+    Initialize a NEW dedicated folder named vbscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Develop a robust system automation and management framework using VBScript'. You MUST write functional code for this task strictly using this programming language: VBScript.
+    Looks solid.
+    Wait, the user says "Generate exactly 1 logical follow-up instruction."
+    The output should be that single instruction.
+    I will provide just the instruction text.
+    Double check "Return ONLY the instruction text".
+    So no markdown block, no "Here is the instruction:", just the raw text.
+    Actually, usually "instruction text" implies the content of the message to be sent.
+    I will provide the raw string.
+    Let's check the pattern in history again:
+    `Initialize a NEW dedicated folder named c_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C Shell. Focus entirely on this new objective: 'Develop a robust system administration and automation framework using C Shell'. You MUST write functional code for this task strictly using this programming language: C Shell.`
+
+    I will mirror this structure exactly for VBScript.
+    Folder: `vbscript_tool`
+    Language: `VBScript`
+    Objective: `'Develop a robust system automation and management framework using VBScript'` (or similar)
+    End: `You MUST write functional code for this task strictly using this programming language: VBScript.`
+
+    Result:
+    Initialize a NEW dedicated folder named vbscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Develop a robust system automation and management framework using VBScript'. You MUST write functional code for this task strictly using this programming language: VBScript.
+    Perfect.
+    One final check of the history provided in the prompt:
+    `Initialize a NEW dedicated folder named c_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C Shell. Focus entirely on this new objective: 'Develop a robust system administration and automation framework using C Shell'. You MUST write functional code for this task strictly using this programming language: C Shell.`
+
+    The user asked: "Generate exactly 1 logical follow-up instruction."
+    The user constraint: "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: VBScript."
+
+    Okay, ready to output.
+    I will output exactly the string constructed.
+    No extra characters.
+    End of thought process.
+</think>
+
+Initialize a NEW dedicated folder named vbscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Develop a robust system automation and management framework using VBScript'. You MUST write functional code for this task strictly using this programming language: VBScript.

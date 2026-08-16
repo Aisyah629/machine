@@ -1,0 +1,116 @@
+// Combined Programming Language (CPL)
+// Low-Level Memory Management and Network Protocol Simulator
+
+% Global Constants %
+CONSTANTS
+    MAX_MEMORY_SIZE = 256;
+    PACKET_BUFFER_SIZE = 16;
+    MAX_PACKET_SIZE = 64;
+END CONSTANTS;
+
+% Data Structures %
+TYPE Block = RECORD
+    start: INTEGER;
+    size: INTEGER;
+    allocated: BOOLEAN;
+    data: ARRAY OF INTEGER;
+END RECORD;
+
+TYPE Packet = RECORD
+    id: INTEGER;
+    payload_size: INTEGER;
+    data: ARRAY OF INTEGER;
+    status: INTEGER; % 0: In Transit, 1: Delivered, 2: Dropped %
+END RECORD;
+
+% Global State %
+MEMORY BLOCKS: ARRAY [1..MAX_MEMORY_SIZE] OF Block;
+PACKET_BUFFER: ARRAY [1..PACKET_BUFFER_SIZE] OF Packet;
+BUFFER_HEAD: INTEGER;
+BUFFER_TAIL: INTEGER;
+NEXT_BLOCK_ID: INTEGER;
+
+% Memory Management Subroutines %
+SUBROUTINE initialize_memory
+    FOR i = 1 TO MAX_MEMORY_SIZE DO
+        MEMORY BLOCKS[i].start = 0;
+        MEMORY BLOCKS[i].size = 0;
+        MEMORY BLOCKS[i].allocated = FALSE;
+        NEXT_BLOCK_ID = 0;
+    END FOR;
+    BUFFER_HEAD = 1;
+    BUFFER_TAIL = 1;
+END SUBROUTINE;
+
+SUBROUTINE allocate_block(size: INTEGER) RETURNS (INTEGER)
+    % Find first available block with sufficient size %
+    FOR i = 1 TO MAX_MEMORY_SIZE DO
+        IF (NOT MEMORY BLOCKS[i].allocated) AND (MEMORY BLOCKS[i].size >= size) THEN
+            MEMORY BLOCKS[i].allocated = TRUE;
+            NEXT_BLOCK_ID = NEXT_BLOCK_ID + 1;
+            RETURN NEXT_BLOCK_ID;
+        END IF;
+    END FOR;
+    RETURN -1; % Allocation failed %
+END SUBROUTINE;
+
+SUBROUTINE deallocate_block(id: INTEGER)
+    FOR i = 1 TO MAX_MEMORY_SIZE DO
+        IF (MEMORY BLOCKS[i].allocated) AND (id = NEXT_BLOCK_ID) THEN
+            MEMORY BLOCKS[i].allocated = FALSE;
+            NEXT_BLOCK_ID = NEXT_BLOCK_ID - 1;
+            EXIT;
+        END IF;
+    END FOR;
+END SUBROUTINE;
+
+% Network Protocol Subroutines %
+SUBROUTINE enqueue_packet(packet: Packet) RETURNS (BOOLEAN)
+    % Circular buffer implementation %
+    IF (BUFFER_TAIL + 1) MOD PACKET_BUFFER_SIZE = BUFFER_HEAD THEN
+        RETURN FALSE; % Buffer full %
+    END IF;
+    PACKET_BUFFER[BUFFER_TAIL] = packet;
+    BUFFER_TAIL = (BUFFER_TAIL + 1) MOD PACKET_BUFFER_SIZE;
+    RETURN TRUE;
+END SUBROUTINE;
+
+SUBROUTINE dequeue_packet() RETURNS (Packet)
+    LOCAL empty_packet: Packet;
+    IF BUFFER_HEAD = BUFFER_TAIL THEN
+        RETURN empty_packet; % Buffer empty %
+    END IF;
+    LOCAL result = PACKET_BUFFER[BUFFER_HEAD];
+    BUFFER_HEAD = (BUFFER_HEAD + 1) MOD PACKET_BUFFER_SIZE;
+    RETURN result;
+END SUBROUTINE;
+
+% Main Execution %
+SUBROUTINE main
+    initialize_memory;
+
+    % Simulate memory allocation %
+    LOCAL id1 = allocate_block(10);
+    LOCAL id2 = allocate_block(20);
+    PRINT "Allocated Block 1 ID: ", id1;
+    PRINT "Allocated Block 2 ID: ", id2;
+
+    % Simulate packet creation %
+    LOCAL pkt1: Packet;
+    pkt1.id = 1;
+    pkt1.payload_size = 32;
+    pkt1.data = NEW ARRAY [0..31] OF 0;
+    pkt1.status = 0;
+
+    IF enqueue_packet(pkt1) THEN
+        PRINT "Packet 1 Enqueued";
+    ELSE
+        PRINT "Packet 1 Enqueue Failed";
+    END IF;
+
+    % Simulate packet processing %
+    LOCAL received = dequeue_packet();
+    PRINT "Received Packet ID: ", received.id;
+    PRINT "Packet Status: ", received.status;
+
+END SUBROUTINE;

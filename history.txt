@@ -31650,3 +31650,97 @@ Looks good.
 </think>
 
 Initialize a NEW dedicated folder named basic_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC. Focus entirely on this new objective: 'Develop a deterministic batch processing engine with retro-compatible syntax parsing and cross-platform legacy execution.'. You MUST write code for this task strictly using this exact programming language: BASIC.
+[2026-08-16 19:48:10] (Target Lang: JCL) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of existing tool directories (mostly programming languages/tools)
+   - **History:** Shows previous steps where `basic_scripting_tool` was analyzed and found missing, then initialized. The history ends with the AI generating an instruction for `basic_scripting_tool`.
+   - **Current Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Follow the pattern/style of the history/example.
+
+2.  **Deconstruct Constraints:**
+   - Target Language: JCL (Job Control Language)
+   - Action: Initialize a NEW dedicated folder, create README.md, build the tool strictly in JCL.
+   - Focus/Objective: Needs to be a plausible software engineering objective (though JCL is mainly for job control on mainframes, I can frame it around batch job scheduling, resource allocation, or system task orchestration).
+   - Format: Single instruction string, matching the style: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write code for this task strictly using this exact programming language: [LANG]."
+
+3.  **Identify Missing Component:**
+   - The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL."
+   - I need to pick a folder name for the JCL tool. Looking at the existing list, there's `jcl_tool` already in the workspace: `./jcl_tool ./jcl_tool/README.md ./jcl_tool/main.jcl`. Wait, the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". I should avoid `jcl_tool` since it exists. I'll invent a logical follow-up name like `jcl_orchestrator_tool` or `mainframe_job_ctrl_tool` or `jcl_workflow_tool`. Let's stick to the pattern: `[name]_tool`. I'll use `jcl_orchestration_tool`.
+   - Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL." It doesn't strictly require me to pick a specific folder name, but I should follow the format.
+   - Let's craft the instruction carefully to match the exact required phrasing.
+
+   Required structure (from example):
+   "Initialize a NEW dedicated folder named [FOLDER_NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write code for this task strictly using this exact programming language: JCL."
+
+   I need to invent a folder name and objective.
+   Folder: `jcl_orchestration_tool`
+   Objective: 'Design a mainframe job scheduling system with conditional branch routing, resource allocation protocols, and legacy dataset management.'
+   Let's check if it matches constraints:
+   - exactly 1 logical follow-up instruction? Yes.
+   - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL? Yes.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md? Yes.
+   - Return ONLY the instruction text. NEVER target the .github directory. Yes.
+
+   Let's draft it:
+   Initialize a NEW dedicated folder named jcl_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Design a mainframe job scheduling system with conditional branch routing, resource allocation protocols, and legacy dataset management.'. You MUST write code for this task strictly using this exact programming language: JCL.
+
+4.  **Refine & Verify against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   - Format matches the prompt's example exactly.
+
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL." I will ensure the exact phrase "STRICTLY using this exact programming language: JCL" is present.
+   I will keep the folder name simple: `jcl_task_scheduler_tool`.
+   Objective: 'Orchestrate legacy batch job execution with robust error handling, conditional step routing, and system resource monitoring.'
+
+   Draft:
+   Initialize a NEW dedicated folder named jcl_task_scheduler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Orchestrate legacy batch job execution with robust error handling, conditional step routing, and system resource monitoring.'. You MUST write code for this task strictly using this exact programming language: JCL.
+
+   Checks:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands JCL? Yes.
+   - Instructs to place in NEW dedicated folder & create README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+   - Matches tone/pattern? Yes.
+
+   Ready. Output matches draft.✅
+   One detail: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL." I'll make sure the wording is exact.
+   "Initialize a NEW dedicated folder named jcl_task_scheduler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Orchestrate legacy batch job execution with robust error handling, conditional step routing, and system resource monitoring.'. You MUST write code for this task strictly using this exact programming language: JCL."
+   All constraints met. Output matches exactly.✅
+   Proceeds. 
+   Self-Correction/Verification during thought: 
+   Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL." The example has "STRICTLY using this exact programming language: BASIC." and ends with "You MUST write code for this task strictly using this exact programming language: BASIC."
+   I will mirror that exactly, replacing BASIC with JCL.
+   Folder name: `jcl_batch_orchestrator_tool` (to avoid collision with existing `jcl_tool`).
+   Objective: 'Architect a mainframe job control system with conditional step routing, resource allocation protocols, and legacy dataset management.'.
+   Final check of the text:
+   Initialize a NEW dedicated folder named jcl_batch_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Architect a mainframe job control system with conditional step routing, resource allocation protocols, and legacy dataset management.'. You MUST write code for this task strictly using this exact programming language: JCL.
+   Matches perfectly. Output matches.✅
+   Proceeds. 
+   Output Generation. 
+   [Output matches the refined draft]✅
+   Note: I will ensure no extra text is included. Just the instruction. All constraints satisfied.✅
+   Final Output Generation. 
+   `Initialize a NEW dedicated folder named jcl_batch_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Architect a mainframe job control system with conditional step routing, resource allocation protocols, and legacy dataset management.'. You MUST write code for this task strictly using this exact programming language: JCL.` -> Matches perfectly.✅
+   Proceeds. 
+   [Output Generation] -> *Self-Correction/Refinement during thought*: I should verify if the prompt implies I need to pick a specific folder name or if I can generate one. The prompt says "Generate exactly 1 logical follow-up instruction." It doesn't specify the name, so I'll generate a logical one. The pattern in the prompt uses names like `basic_scripting_tool`. I'll stick with `jcl_batch_orchestrator_tool`. All good. 
+   Output matches exactly.✅
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints met. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Output Generation* (matches the refined draft)✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named jcl_batch_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Architect a mainframe job control system with conditional step routing, resource allocation protocols, and legacy dataset management.'. You MUST write code for this task strictly using this exact programming language: JCL.

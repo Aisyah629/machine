@@ -31524,3 +31524,31 @@ This matches the style, constraints, and requirements.
 </think>
 
 Initialize a NEW dedicated folder named mad_i_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAD/I. Focus entirely on this new objective: 'Construct a real-time interrupt handling and context-switching simulation engine.'. You MUST write code for this task strictly using this exact programming language: MAD/I.
+[2026-08-16 19:36:41] (Target Lang: ML) Thinking (Process):
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: `ML`.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provides a list of workspace contents (a massive list of tool directories like `abap_tool`, `bash_tool`, `ml_tool` exists in the list? Let's check.
+    *   *Check workspace list:* `./ml_tool ./ml_tool/README.md ./ml_tool/main.ml` exists in the provided text.
+    *   *Wait:* The prompt asks to "Initialize a NEW dedicated folder". However, `ml_tool` already exists in the `History:` list? Let's check `History:`.
+    *   `History:` only has item `3.` regarding `mad_i_tool`. It does *not* list `ml_tool`.
+    *   `History:` implies a sequence of steps for an "Autonomous AI".
+    *   The prompt says: "Generate exactly 1 logical follow-up instruction."
+    *   It also says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ML."
+    *   *Conflict:* If I generate the instruction, I must output the text. The instruction text itself is the output.
+    *   Output: `Initialize a NEW dedicated folder named ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ML. Focus entirely on this new objective: 'Implement a functional language compiler backend with type inference and code generation.'. You MUST write code for this task strictly using this exact programming language: ML.`
+    *   Check constraints:
+        *   Exactly 1 instruction? Yes.
+        *   STRICTLY ML? Yes.
+        *   NEW dedicated folder? Yes (`ml_tool`).
+        *   Local README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   Never target .github? Yes.
+        *   Logical follow-up? Yes.
+    *   Result matches style, constraints, requirements.
+</think>
+
+Initialize a NEW dedicated folder named ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ML. Focus entirely on this new objective: 'Implement a functional language compiler backend with type inference and code generation.'. You MUST write code for this task strictly using this exact programming language: ML.

@@ -1,13 +1,40 @@
-// Mohol Script: main.mol
-// A simple demonstration of Mohol syntax and execution flow.
+;; Mohol Interpreter
+;; Focus: Arithmetic expressions and control flow
 
-MOHOL_ENTRY_POINT
-declare main
+;; Define core arithmetic operations
+(define add (lambda (x y) (+ x y)))
+(define sub (lambda (x y) (- x y)))
+(define mul (lambda (x y) (* x y)))
+(define div (lambda (x y) (/ x y)))
 
-function main():
-    print "Hello from Mohol!"
-    print "This is a tool built strictly using Mohol."
-    return 0
-end
+;; Define control flow constructs
+(define if-else (lambda (cond then-branch else-branch) (if cond then-branch else-branch)))
+(define while-loop (lambda (cond body) (let loop () (if cond (begin body (loop)) void))))
 
-main()
+;; Example usage
+(define test-math (lambda () (add 5 3))) ;; Returns 8
+
+(define test-control (lambda () 
+  (let ((i 0))
+    (while-loop (< i 5) (begin (display i) (set! i (+ i 1))))
+    (display "Loop finished")
+)))
+
+;; Main entry point
+(define main (lambda () 
+  (display "Mohol Interpreter running...
+")
+  (display "Test Math: ")
+  (display (test-math))
+  (display "
+")
+  (display "Test Control: 
+")
+  (test-control)
+  (display "
+")
+  (display "Done.
+")
+))
+
+(main)

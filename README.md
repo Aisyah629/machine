@@ -716,3 +716,5 @@ Training Machine
 - Created/Updated module: `idl_interface_tool` (See `idl_interface_tool/README.md` for details)
 
 - Created/Updated module: `setl_health_tool` (See `setl_health_tool/README.md` for details)
+
+- Created/Updated module: `agora_advanced_tool` (See `agora_advanced_tool/README.md` for details)

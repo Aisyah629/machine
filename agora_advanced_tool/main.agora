@@ -1,0 +1,37 @@
+MODULE AGORA_ADVANCED_ENGINE;
+
+IMPORT System, Logic;
+
+TYPE
+    Assertion = RECORD
+        id: String;
+        premises: List<String>;
+        conclusion: String;
+    END;
+
+    Reasoner = OBJECT
+        PROCEDURE Evaluate(assertion: Assertion): Boolean;
+        PROCEDURE Parse(input: String): List<Assertion>;
+    END;
+
+CLASS SymbolicEngine;
+    VAR engine: Reasoner;
+
+    CONSTRUCTOR Init();
+        engine := NEW Reasoner;
+    END Init;
+
+    FUNCTION Run(query: String): List<Boolean>;
+        VAR parsed: List<Assertion> := engine.Parse(query);
+        VAR results: List<Boolean> := NEW List<Boolean>;
+        FOR EACH a IN parsed DO
+            results.Add(engine.Evaluate(a));
+        END FOR;
+        RETURN results;
+    END Run;
+END CLASS SymbolicEngine;
+
+BEGIN
+    VAR myEngine := NEW SymbolicEngine.Init();
+    VAR output := myEngine.Run("A AND B -> C");
+END MODULE.

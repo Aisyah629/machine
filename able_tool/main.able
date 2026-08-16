@@ -1,0 +1,98 @@
+-- ABLE Language Implementation
+-- Purpose: Declarative rule-based system for logical inference and pattern matching
+
+-- Define a Rule structure
+type Rule as:
+  id: String
+  condition: Expression
+  action: Procedure
+end type
+
+-- Define a Knowledge Base
+type KnowledgeBase as:
+  rules: List of Rule
+  facts: List of Fact
+end type
+
+-- Define a Fact structure
+type Fact as:
+  predicate: String
+  arguments: List of Value
+  truth: Boolean
+end type
+
+-- Function to parse rules from a text file
+function parseRules(filename: String): List of Rule
+  rules = []
+  for line in readFile(filename)
+    if line starts with "RULE"
+      rule = parseLine(line)
+      append(rules, rule)
+    end if
+  next line
+  return rules
+end function
+
+-- Function to evaluate a condition against facts
+function evaluateCondition(rule: Rule, facts: List of Fact): Boolean
+  for fact in facts
+    if matches(rule.condition, fact)
+      return true
+    end if
+  next fact
+  return false
+end function
+
+-- Function to execute actions of matched rules
+function executeActions(rule: Rule, facts: List of Fact)
+  if evaluateCondition(rule, facts)
+    executeProcedure(rule.action, facts)
+  end if
+end function
+
+-- Function to run the inference engine
+function runInference(kb: KnowledgeBase)
+  for rule in kb.rules
+    executeActions(rule, kb.facts)
+  next rule
+end function
+
+-- Helper function to parse a single line into a Rule
+type Expression as:
+  operator: String
+  operands: List of Expression
+end type
+
+function parseLine(line: String): Rule
+  parts = split(line, " ")
+  id = parts[1]
+  condition = parseExpression(parts[2:])
+  action = parseProcedure(parts[3:])
+  return Rule(id, condition, action)
+end function
+
+-- Helper function to parse an expression
+function parseExpression(tokens: List of String): Expression
+  if tokens.length == 0
+    return null
+  end if
+  op = tokens[1]
+  operands = []
+  for token in tokens[2:]
+    append(operands, parseExpression(token))
+  next token
+  return Expression(op, operands)
+end function
+
+-- Helper function to parse a procedure
+function parseProcedure(tokens: List of String): Procedure
+  return Procedure(tokens)
+end function
+
+-- Main execution
+procedure main
+  kb = KnowledgeBase([], [])
+  kb.rules = parseRules("rules.txt")
+  kb.facts = loadFacts("facts.txt")
+  runInference(kb)
+end procedure

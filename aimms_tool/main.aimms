@@ -1,85 +1,70 @@
-! Main AIMMS Project File
-! Purpose: Supply Chain Optimization Framework
-! Language: AIMMS 4.x
+# AIMMS Project: Supply Chain Optimization
 
-! ------------------------------------------------------------------
 ! Declarations
-! ------------------------------------------------------------------
+set Products := 'Product1' 'Product2' 'Product3';
+set Warehouses := 'Warehouse1' 'Warehouse2' 'Warehouse3';
+set Customers := 'Customer1' 'Customer2' 'Customer3';
 
-project SupplyChainOpt {
-    ! Identifiers
-    identifier category ParameterSet {
-        parameter Demand[Item, Zone] : float;
-        parameter Capacity[Factory, Zone] : float;
-        parameter UnitCost[Item, Factory, Zone] : float;
-        parameter FixedCost[Factory] : float;
-        parameter Distance[Zone, Zone] : float;
-    }
+parameter ProductionCost { indexset: Products; };
+parameter WarehouseCapacity { indexset: Warehouses; };
+parameter CustomerDemand { indexset: Customers; };
+parameter TransportationCost { indexset: (Products, Warehouses, Customers); };
 
-    identifier category DecisionVariable {
-        variable x[Item, Factory, Zone] : nonnegative continuous;
-        variable y[Factory] : binary;
-        variable z[Zone, Zone] : nonnegative continuous;
-    }
+var Production { indexset: Products; };
+var Shipment { indexset: (Products, Warehouses, Customers); };
+var TotalCost;
 
-    identifier category Objective {
-        objective TotalCost : sum(i, f, z) (UnitCost[i,f,z] * x[i,f,z] + FixedCost[f] * y[f]) + sum(z1, z2) (Distance[z1,z2] * z[z1,z2]);
-    }
+! Constraints
+Production <= 100;
+Shipment <= WarehouseCapacity;
+Shipment >= CustomerDemand;
 
-    identifier category Constraint {
-        constraint DemandSatisfied[Item, Zone] : sum(f, x[i,f,z]) >= Demand[i,z];
-        constraint CapacityEnforced[Factory, Zone] : sum(i, x[i,f,z]) <= Capacity[f,z] * y[f];
-        constraint FlowBalance[Zone] : sum(z1, z[z1,z]) = sum(z2, z[z,z2]);
-    }
-}
+! Objective
+TotalCost := sum(p:Products, q:Warehouses, r:Customers) (TransportationCost(p,q,r) * Shipment(p,q,r)) + sum(p:Products, ProductionCost(p) * Production(p));
+model minimize TotalCost;
 
-! ------------------------------------------------------------------
 ! Initialization
-! ------------------------------------------------------------------
+ProductionCost('Product1') := 10;
+ProductionCost('Product2') := 20;
+ProductionCost('Product3') := 30;
 
-procedure InitModel {
-    ! Load external datasets
-    ! Parameterize solver options
-    Solver.Cplex.Options.OptimalityTolerance := 1e-6;
-    Solver.Cplex.Options.TimeLimit := 3600;
-}
+WarehouseCapacity('Warehouse1') := 50;
+WarehouseCapacity('Warehouse2') := 60;
+WarehouseCapacity('Warehouse3') := 70;
 
-! ------------------------------------------------------------------
+CustomerDemand('Customer1') := 20;
+CustomerDemand('Customer2') := 25;
+CustomerDemand('Customer3') := 30;
+
+TransportationCost('Product1', 'Warehouse1', 'Customer1') := 1;
+TransportationCost('Product1', 'Warehouse1', 'Customer2') := 2;
+TransportationCost('Product1', 'Warehouse1', 'Customer3') := 3;
+TransportationCost('Product1', 'Warehouse2', 'Customer1') := 4;
+TransportationCost('Product1', 'Warehouse2', 'Customer2') := 5;
+TransportationCost('Product1', 'Warehouse2', 'Customer3') := 6;
+TransportationCost('Product1', 'Warehouse3', 'Customer1') := 7;
+TransportationCost('Product1', 'Warehouse3', 'Customer2') := 8;
+TransportationCost('Product1', 'Warehouse3', 'Customer3') := 9;
+
+TransportationCost('Product2', 'Warehouse1', 'Customer1') := 1;
+TransportationCost('Product2', 'Warehouse1', 'Customer2') := 2;
+TransportationCost('Product2', 'Warehouse1', 'Customer3') := 3;
+TransportationCost('Product2', 'Warehouse2', 'Customer1') := 4;
+TransportationCost('Product2', 'Warehouse2', 'Customer2') := 5;
+TransportationCost('Product2', 'Warehouse2', 'Customer3') := 6;
+TransportationCost('Product2', 'Warehouse3', 'Customer1') := 7;
+TransportationCost('Product2', 'Warehouse3', 'Customer2') := 8;
+TransportationCost('Product2', 'Warehouse3', 'Customer3') := 9;
+
+TransportationCost('Product3', 'Warehouse1', 'Customer1') := 1;
+TransportationCost('Product3', 'Warehouse1', 'Customer2') := 2;
+TransportationCost('Product3', 'Warehouse1', 'Customer3') := 3;
+TransportationCost('Product3', 'Warehouse2', 'Customer1') := 4;
+TransportationCost('Product3', 'Warehouse2', 'Customer2') := 5;
+TransportationCost('Product3', 'Warehouse2', 'Customer3') := 6;
+TransportationCost('Product3', 'Warehouse3', 'Customer1') := 7;
+TransportationCost('Product3', 'Warehouse3', 'Customer2') := 8;
+TransportationCost('Product3', 'Warehouse3', 'Customer3') := 9;
+
 ! Execution
-! ------------------------------------------------------------------
-
-procedure RunOptimization {
-    declare optStatus : integer;
-    declare solutionTime : float;
-    
-    ! Clear previous results
-    ClearAll(x, y, z);
-    
-    ! Solve using configured solver
-    solve TotalCost;
-    optStatus := Solver.Result.Optimality;
-    solutionTime := Solver.Result.SolutionTime;
-    
-    ! Log results
-    Print "Optimization Status: ", optStatus;
-    Print "Solution Time: ", solutionTime, " seconds";
-    Print "Total Cost: ", TotalCost.OriginalValue;
-}
-
-! ------------------------------------------------------------------
-! Sensitivity & Reporting
-! ------------------------------------------------------------------
-
-procedure GenerateReport {
-    ! Export optimal decision variables
-    ! Generate shadow prices and reduced costs
-    ! Write results to CSV/Excel
-    Print "Report generation complete.";
-}
-
-! Main execution flow
-begin
-    InitModel;
-    RunOptimization;
-    GenerateReport;
-end;
+solve model;

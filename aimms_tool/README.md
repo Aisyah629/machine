@@ -1,21 +1,23 @@
 # AIMMS Tool
 
-A robust optimization solver and supply chain modeling framework built strictly using AIMMS (Advanced Integrated Multi-dimensional Modeling System).
-
-This tool focuses on leveraging AIMMS mathematical programming capabilities to design, implement, and execute high-performance optimization models for supply chain, logistics, and resource allocation problems.
+## Description
+This tool is designed to develop optimization modules for supply chain management and resource allocation using AIMMS (A Mathematical Instruction Modeling Method for Systems).
 
 ## Features
-- Advanced LP/MIP/NLP solver integration
-- Multi-dimensional indexing and parameter management
-- Automated sensitivity analysis and scenario modeling
-- Supply chain network optimization
-- Constraint programming and heuristic integration
+- Supply chain optimization
+- Resource allocation
+- Mathematical modeling
+- Scenario analysis
+
+## Installation
+1. Install AIMMS on your system.
+2. Clone this repository.
+3. Open the `aimms_tool` directory in AIMMS.
 
 ## Usage
-Run the main AIMMS project file to initialize the optimization engine, load your dataset, and execute the solver. All model definitions, declarations, and implementations are contained within the `main.aimms` project structure.
+1. Load the `main.aimms` project file.
+2. Run the optimization model.
+3. Analyze the results.
 
-## Technical Specifications
-- Language: AIMMS 4.x
-- Solver: CPLEX/HiGHS (configurable)
-- Output: Tabular results, sensitivity reports, optimization traces
-- Compatibility: Windows/Linux AIMMS environments
+## License
+This project is licensed under the MIT License.

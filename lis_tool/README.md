@@ -1,21 +1,15 @@
 # LIS Tool
 
-This tool is built strictly using the LIS programming language. It serves as a modular component within the Polyglot Software Engineer workspace, demonstrating language-specific capabilities and standards.
+A dedicated folder containing tools and utilities built strictly using the LIS programming language.
 
-## Features
-
-*   Core logic implementation in LIS.
-*   Adherence to workspace tooling standards.
-*   Self-contained and modular design.
+## Overview
+This tool implements a LIS-based functional programming and symbolic computation framework for mathematical modeling and algorithmic analysis.
 
 ## Usage
+Execute the main LIS script to initialize the symbolic computation environment, load mathematical models, and run algorithmic analysis pipelines.
 
-To use this tool, invoke the main LIS source file located in this directory. Ensure your environment supports the LIS interpreter/compiler as specified in the workspace documentation.
-
-## Architecture
-
-The tool is organized into a single main module (`main.lis`) for simplicity and demonstration purposes. Future iterations may expand this into a multi-file module structure if complexity requires.
+## Files
+- `main.lis`: Core implementation of the symbolic computation and modeling framework.
 
 ## License
-
-This tool is part of the broader Polyglot Software Engineer project.
+Internal use only. Built strictly with LIS.

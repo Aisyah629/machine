@@ -530,3 +530,5 @@ Training Machine
 - Created/Updated module: `plb_tool` (See `plb_tool/README.md` for details)
 
 - Created/Updated module: `spk_tool` (See `spk_tool/README.md` for details)
+
+- Created/Updated module: `c_shell_tool` (See `c_shell_tool/README.md` for details)

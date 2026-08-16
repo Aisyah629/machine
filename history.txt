@@ -20896,3 +20896,60 @@ Initialize a NEW dedicated folder named modelica_tool in the workspace, create a
 </think>
 
 Initialize a NEW dedicated folder named spk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SP/k. Focus entirely on this new objective: 'Develop a rigorous formal specification and verification framework for concurrent and distributed systems using SP/k'. You MUST write functional code for this task strictly using this programming language: SP/k.
+[2026-08-16 05:04:43] (Target Lang: C Shell) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction based on the provided history/context.
+    *   Context: A list of tool directories (e.g., `a0_system_tool`, `abap_tool`, ..., `spk_tool`). The history shows a pattern of creating new tools, specifically mentioning `spk_tool` in the "History" block, implying the current state includes `spk_tool`.
+    *   Constraint 1: Target Language: **C Shell**.
+    *   Constraint 2: Create a NEW dedicated folder.
+    *   Constraint 3: Create a local `README.md`.
+    *   Constraint 4: Build the entire new tool STRICTLY using C Shell.
+    *   Constraint 5: Return ONLY the instruction text.
+    *   Constraint 6: NEVER target the `.github` directory.
+
+2.  **Formulate the Instruction:**
+    *   *Action:* Initialize a NEW dedicated folder.
+    *   *Folder Name:* Needs to be relevant to C Shell. The history uses lowercase folder names like `abap_tool`, `ada_tool`. So, `c_shell_tool` is the logical choice.
+    *   *Content:* Create a local `README.md`.
+    *   *Task/Objective:* The prompt requires an instruction. It doesn't specify *what* the tool does, just the language. I should create a generic but plausible objective or just state the requirement to build the tool. The prompt examples (in the history) usually have a specific objective like "Develop a rigorous formal specification...". I will create a similar objective for C Shell. Maybe "Develop a robust system administration and automation framework".
+    *   *Drafting:* "Initialize a NEW dedicated folder named c_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C Shell. Focus entirely on this new objective: 'Develop a robust system administration and automation framework using C Shell'. You MUST write functional code for this task strictly using this programming language: C Shell."
+
+3.  **Refine based on Constraints:**
+    *   Language: "C Shell" (Explicitly requested).
+    *   Folder: "c_shell_tool" (Matches pattern).
+    *   Readme: Included.
+    *   Code requirement: Included ("strictly using this exact programming language: C Shell").
+    *   Negative constraint: Do not mention `.github`.
+
+4.  **Final Polish:**
+    "Initialize a NEW dedicated folder named c_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C Shell. Focus entirely on this new objective: 'Develop a robust system administration and automation framework using C Shell'. You MUST write functional code for this task strictly using this programming language: C Shell."
+
+5.  **Output Generation:**
+    The user wants *only* the instruction text.
+
+    *Self-Correction during drafting:* The prompt history shows the output format is just the text string.
+
+    Text: Initialize a NEW dedicated folder named c_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C Shell. Focus entirely on this new objective: 'Develop a robust system administration and automation framework using C Shell'. You MUST write functional code for this task strictly using this programming language: C Shell.
+
+6.  **Final Verification:**
+    *   1 logical instruction? Yes.
+    *   Language: C Shell? Yes.
+    *   New folder? Yes (`c_shell_tool`).
+    *   README.md? Yes.
+    *   No `.github`? Yes.
+    *   Return ONLY text? Yes.
+
+    Result matches the pattern of the history entry: `Initialize a NEW dedicated folder named spk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SP/k. Focus entirely on this new objective: 'Develop a rigorous formal specification and verification framework for concurrent and distributed systems using SP/k'. You MUST write functional code for this task strictly using this programming language: SP/k.`
+
+    My result: `Initialize a NEW dedicated folder named c_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C Shell. Focus entirely on this new objective: 'Develop a robust system administration and automation framework using C Shell'. You MUST write functional code for this task strictly using this programming language: C Shell.`
+
+    The objective part can be generic since the user didn't specify one, but it adds flavor. The core requirement is the tool creation with C Shell.
+
+    One check: Is "C Shell" the exact language name requested? Yes.
+    Is "c_shell_tool" a logical folder name? Yes, consistent with `spk_tool`, `ada_tool`, etc.
+
+    Let's go.
+</think>
+
+Initialize a NEW dedicated folder named c_shell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C Shell. Focus entirely on this new objective: 'Develop a robust system administration and automation framework using C Shell'. You MUST write functional code for this task strictly using this programming language: C Shell.

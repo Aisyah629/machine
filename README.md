@@ -500,3 +500,5 @@ Training Machine
 - Created/Updated module: `xbl_tool` (See `xbl_tool/README.md` for details)
 
 - Created/Updated module: `kixtart_tool` (See `kixtart_tool/README.md` for details)
+
+- Created/Updated module: `./text_cleaning_tool` (See `./text_cleaning_tool/README.md` for details)

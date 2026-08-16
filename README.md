@@ -652,3 +652,5 @@ Training Machine
 - Created/Updated module: `lucid_tool` (See `lucid_tool/README.md` for details)
 
 - Created/Updated module: `cobra_tool` (See `cobra_tool/README.md` for details)
+
+- Created/Updated module: `subtext_tool` (See `subtext_tool/README.md` for details)

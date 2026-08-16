@@ -706,3 +706,5 @@ Training Machine
 - Created/Updated module: `s_sl_tool` (See `s_sl_tool/README.md` for details)
 
 - Created/Updated module: `./self_healing_tool` (See `./self_healing_tool/README.md` for details)
+
+- Created/Updated module: `prolog_diagnostic_tool` (See `prolog_diagnostic_tool/README.md` for details)

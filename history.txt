@@ -22953,3 +22953,44 @@ Initialize a NEW dedicated folder named genie_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named s_lang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S-Lang. Focus entirely on this new objective: 'Develop a high-performance numerical analysis and scientific data visualization framework with automated report generation and interactive console capabilities'. You MUST write functional code for this task strictly using this exact programming language: S-Lang.
+[2026-08-16 08:53:39] (Target Lang: Simulink) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using Simulink.
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a workspace list and history. The history shows a pattern where the output is a specific string format: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+    *   Current Request: "Generate exactly 1 logical follow-up instruction... Simulink..."
+    *   Output Format: Based on the history examples, the output should be the instruction string itself.
+
+2.  **Draft the instruction:**
+    *   Folder name: Following the pattern `s_lang_tool`, `genie_tool`, etc., for Simulink, it should likely be `simulink_tool`.
+    *   Language: Simulink.
+    *   Objective: Needs to be relevant to Simulink. Simulink is for modeling, simulation, and embedded code generation. Good objectives: "Build a robust control system simulation framework...", "Develop a multi-domain physical system modeling environment...", "Construct an automated model validation and code generation pipeline...".
+    *   Structure: "Initialize a NEW dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: Simulink."
+
+3.  **Refine the Objective:**
+    *   The prompt asks for a "logical follow-up". The previous examples in the history mention objectives like "numerical computing", "GUI application framework".
+    *   For Simulink, a strong objective would be: "Develop a high-fidelity dynamic system simulation environment with automated model verification and executable artifact generation".
+    *   Let's check the constraints again. "Return ONLY the instruction text."
+    *   Result string: "Initialize a NEW dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink. Focus entirely on this new objective: 'Develop a high-fidelity dynamic system simulation environment with automated model verification and executable artifact generation'. You MUST write functional code for this task strictly using this exact programming language: Simulink."
+
+4.  **Final Verification:**
+    *   Does it contain the folder name? Yes (`simulink_tool`).
+    *   Does it contain README.md creation? Yes.
+    *   Does it demand Simulink strictly? Yes.
+    *   Does it have an objective? Yes.
+    *   Does it mention writing functional code? Yes.
+    *   Does it target .github? No.
+    *   Is it exactly one instruction? Yes.
+    *   Is the output only the text? Yes.
+
+5.  **Output Construction:**
+    *   `Initialize a NEW dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink. Focus entirely on this new objective: 'Develop a high-fidelity dynamic system simulation environment with automated model verification and executable artifact generation'. You MUST write functional code for this task strictly using this exact programming language: Simulink.`
+
+This matches the pattern observed in the history and satisfies all constraints.
+</think>
+
+Initialize a NEW dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink. Focus entirely on this new objective: 'Develop a high-fidelity dynamic system simulation environment with automated model verification and executable artifact generation'. You MUST write functional code for this task strictly using this exact programming language: Simulink.

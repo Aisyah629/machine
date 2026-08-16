@@ -35020,3 +35020,53 @@ Initialize a NEW dedicated folder named gdl_visualization_tool in the workspace,
 </think>
 
 Initialize a NEW dedicated folder named revolution_workflow_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Revolution. Focus entirely on this new objective: 'Automate task scheduling and workflow orchestration.'. You MUST write code for this task strictly using this programming language: Revolution.
+[2026-08-16 22:42:21] (Target Lang: QPL) Thinking Process:
+1.  **Analyze the Request**:
+    *   Input: A long list of files in a workspace (looks like a repo structure of various "tools" for different programming languages), a "History" section showing a previous interaction where an instruction was generated for a "Revolution" language tool, and a final directive to "Generate exactly 1 logical follow-up instruction."
+    *   Constraint 1: Generate *exactly* 1 logical follow-up instruction.
+    *   Constraint 2: Explicitly demand the new tool be built using the exact programming language: **QPL**.
+    *   Constraint 3: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+
+2.  **Deconstruct "Logical Follow-up"**:
+    *   The previous tool was `revolution_workflow_tool` focusing on "Automate task scheduling and workflow orchestration."
+    *   The language is **QPL**. I need to identify what QPL likely stands for or treat it as a specific language name provided by the user. In the context of "Autonomous AI" and "Workspace", this looks like a prompt injection or a structured generation task where the AI is simulating a developer or a system creating a tool.
+    *   A logical follow-up to "workflow orchestration" in "Revolution" might be a specific domain within QPL, or a complementary tool. However, the core instruction is just to generate the text. The content of the "focus" can be arbitrary but should be "logical". Since the previous one was workflow, maybe QPL is a query language or a data language? Or just a generic follow-up. I'll invent a plausible objective for QPL, such as "Query processing" or "Pattern matching" or just a general "New tool". Let's look at the language name "QPL". It could be "Query Programming Language" or "Quality Programming Language". Without specific knowledge, I should treat it as a label. A safe logical follow-up is to build a tool that complements the previous one or demonstrates the language. Let's assume a generic but sensible objective like "Implement a core library for the QPL language" or "Build a parser".
+    *   *Self-Correction on "Logical"*: The user asks for *my* generation of the instruction. The "logical" part is subjective to the flow. Since the previous was `revolution_workflow_tool`, a follow-up could be `qpl_analysis_tool` or `qpl_compiler_tool`. The objective can be "Implement a syntax analyzer" or "Build a data extraction engine". I'll choose something distinct but professional. Let's go with "Build a core QPL compiler framework" or "Implement data serialization utilities". Let's stick to the structure: "Initialize a NEW dedicated folder named [name], create README.md, build tool using QPL. Focus on [Objective]."
+    *   *Name*: `qpl_core_tool` or `qpl_engine_tool`.
+    *   *Objective*: "Construct a robust runtime environment for QPL applications."
+
+3.  **Drafting the Instruction**:
+    *   *Start*: Initialize a NEW dedicated folder named `qpl_engine_tool` in the workspace...
+    *   *Folder*: `qpl_engine_tool`.
+    *   *Readme*: ...create a local README.md inside it...
+    *   *Language*: ...and build the entire new tool STRICTLY using this exact programming language: QPL.
+    *   *Objective*: Focus entirely on this new objective: 'Construct a robust runtime environment for QPL applications.'.
+    *   *Language constraint repeat*: You MUST write code for this task strictly using this programming language: QPL.
+    *   *Check Constraints*:
+        *   1 instruction? Yes.
+        *   Language QPL? Yes.
+        *   New folder + README? Yes.
+        *   Only text? Yes.
+        *   No .github? Yes.
+
+4.  **Refining the Text**:
+    *   "Initialize a NEW dedicated folder named qpl_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL. Focus entirely on this new objective: 'Construct a robust runtime environment for QPL applications.'. You MUST write code for this task strictly using this programming language: QPL."
+
+5.  **Final Polish**:
+    *   Ensure no markdown formatting in the output unless requested (Constraint: "Return ONLY the instruction text." usually implies raw text, but the example output in the history block had raw text. I will output raw text).
+    *   Result: `Initialize a NEW dedicated folder named qpl_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL. Focus entirely on this new objective: 'Construct a robust runtime environment for QPL applications.'. You MUST write code for this task strictly using this programming language: QPL.`
+
+6.  **Verification**:
+    *   Language: QPL. Checked.
+    *   Folder: New. Checked.
+    *   Readme: Local. Checked.
+    *   Text only: Checked.
+    *   No github: Checked.
+    *   Logical follow-up: Yes, creates a tool for QPL.
+
+This looks correct.
+</think>
+
+Initialize a NEW dedicated folder named qpl_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL. Focus entirely on this new objective: 'Construct a robust runtime environment for QPL applications.'. You MUST write code for this task strictly using this programming language: QPL.

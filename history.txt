@@ -25444,3 +25444,73 @@ Output matches draft.✅
 </think>
 
 Initialize a NEW dedicated folder named rlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rlab. Focus entirely on this new objective: 'Implement a complex mathematical or cryptographic algorithm.'. You MUST write code for this task strictly using this exact programming language: Rlab.
+[2026-08-16 11:36:55] (Target Lang: ABSYS) Thinking Process:
+1.  **Analyze the Request:**
+   *   Role: Autonomous AI.
+   *   Task: Generate exactly 1 logical follow-up instruction.
+   *   Constraints for the output:
+     *   Return ONLY the instruction text.
+     *   Explicitly demand the new tool be built strictly using `ABSYS`.
+     *   If building a new tool, instruct to place it in a NEW dedicated folder and create a local `README.md`.
+     *   NEVER target the `.github` directory.
+     *   Match the exact format requested.
+     *   Input prompt example format: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+
+2.  **Identify Key Components for Output:**
+   *   Target Language: `ABSYS`
+   *   Tool Folder Name: `absys_tool` (must be new, check workspace list -> `absys_tool` is not in the list, so it's safe).
+   *   Objective: Needs to be logical for ABSYS (a systems programming language often used for low-level/embedded). Let's pick "Implement a real-time operating system scheduler simulation." or "Build a low-level memory allocator and manager." or "Develop a hardware abstraction layer for embedded sensors." I'll go with "Implement a low-level memory allocation and management system." or "Develop a real-time task scheduling engine." Let's stick to something concrete: "Implement a real-time task scheduling engine."
+   *   Structure: "Initialize a NEW dedicated folder named absys_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus entirely on this new objective: 'Implement a real-time task scheduling engine.'. You MUST write code for this task strictly using this exact programming language: ABSYS."
+
+3.  **Check Constraints:**
+   *   Return ONLY instruction text? Yes.
+   *   Explicitly demand `ABSYS`? Yes.
+   *   NEW dedicated folder & local README.md? Yes.
+   *   NEVER target `.github`? Yes.
+   *   Matches exact format? Yes.
+   *   Logical follow-up? Yes, continues the pattern of creating specialized tools in the workspace.
+
+4.  **Draft Output:**
+   Initialize a NEW dedicated folder named absys_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus entirely on this new objective: 'Implement a real-time task scheduling engine.'. You MUST write code for this task strictly using this exact programming language: ABSYS.
+
+5.  **Refine according to exact prompt format:**
+   The prompt shows:
+   "Initialize a NEW dedicated folder named rlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rlab. Focus entirely on this new objective: 'Implement a complex mathematical or cryptographic algorithm.'. You MUST write code for this task strictly using this exact programming language: Rlab."
+
+   I will map exactly to this structure with `absys_tool` and `ABSYS`.
+   Objective: 'Implement a low-level hardware abstraction layer.' (or similar)
+   Let's stick closely to the template.
+
+   Text: Initialize a NEW dedicated folder named absys_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus entirely on this new objective: 'Implement a low-level hardware abstraction layer.'. You MUST write code for this task strictly using this exact programming language: ABSYS.
+
+   Check constraints: "Return ONLY the instruction text." -> Will output just that string.
+   All good. Proceed. 
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." So I just output the string.
+   Format matches. No extra text.✅
+   Output matches draft. 
+   Proceed. 
+   [Self-Correction/Verification during thought]
+   Check workspace list for `absys_tool`: Not present. Good.
+   Check language: ABSYS. Good.
+   Check format: Matches exactly.
+   Ready. 
+   Output Generation. 
+   `Initialize a NEW dedicated folder named absys_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus entirely on this new objective: 'Implement a low-level hardware abstraction layer.'. You MUST write code for this task strictly using this exact programming language: ABSYS.` -> Exactly matches requirement.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I will ensure absolutely no extra text is included, as per "Return ONLY the instruction text.")*
+   All constraints verified. Output matches request.✅
+   *Self-Correction/Refinement during thought*: The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ABSYS." I will strictly follow the template.
+   Text: Initialize a NEW dedicated folder named absys_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus entirely on this new objective: 'Implement a low-level hardware abstraction layer.'. You MUST write code for this task strictly using this exact programming language: ABSYS.
+   Matches perfectly. Output matches.✅
+   [Final Check of the Prompt]: "Return ONLY the instruction text." -> I will output just the string.
+   All good. 
+   Proceeds. 
+   [Output Generation] (simulated) -> "Initialize a NEW dedicated folder named absys_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus entirely on this new objective: 'Implement a low-level hardware abstraction layer.'. You MUST write code for this task strictly using this exact programming language: ABSYS." -> Exactly matches.✅
+   Done. 
+   *Self-Correction/Note during generation*: I'll make sure the objective fits ABSYS well. "Implement a low-level hardware abstraction layer." is perfect.
+   Output matches exactly.✅
+   [Final Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named absys_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus entirely on this new objective: 'Implement a low-level hardware abstraction layer.'. You MUST write code for this task strictly using this exact programming language: ABSYS.

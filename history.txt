@@ -29496,3 +29496,48 @@ This matches the pattern perfectly and satisfies all constraints.
 </think>
 
 Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Develop a functional stack-based utility for data transformation'. You MUST write code for this task strictly using this exact programming language: Joy.
+[2026-08-16 17:03:20] (Target Lang: Sather) The user wants a single instruction to generate a new tool folder named `sather_tool` (since `sather_tool` already exists in the list, wait, let me check the history.
+The history shows `./sather_tool ./sather_tool/README.md ./sather_tool/main.scl`
+Wait, the user prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Sather. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+Wait, the `sather_tool` directory already exists in the workspace list provided in the prompt: `./sather_tool ./sather_tool/README.md ./sather_tool/main.scl`.
+However, the prompt asks me to generate an instruction. The instruction should follow the pattern of the previous history item but for `Sather`.
+The instruction should be: "Initialize a NEW dedicated folder named sather_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sather. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: Sather."
+
+I need to come up with an objective for Sather. Sather is a statically typed object-oriented programming language. A good objective would be something like "Develop a robust object-oriented utility for type-safe data serialization" or "Build a strongly-typed object-oriented framework for secure network communication". Let's go with "Develop a robust object-oriented utility for type-safe data serialization".
+
+Wait, the prompt says "Return ONLY the instruction text."
+The format should match the history example.
+History example: `Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Develop a functional stack-based utility for data transformation'. You MUST write code for this task strictly using this exact programming language: Joy.`
+
+So for Sather:
+`Initialize a NEW dedicated folder named sather_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sather. Focus entirely on this new objective: 'Develop a robust object-oriented utility for type-safe data serialization'. You MUST write code for this task strictly using this exact programming language: Sather.`
+
+Let's verify constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand new tool built STRICTLY using Sather? Yes.
+- Explicitly instruct to place in NEW dedicated folder and create README? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+One detail: The prompt history shows `joy_tool` was already added to the file list. The prompt says "Generate exactly 1 logical follow-up instruction...". It implies I am acting as the autonomous AI generating the *next* instruction to be executed by the system, or just generating the text of the instruction. The system prompt says "Return ONLY the instruction text."
+
+I will construct the instruction exactly as requested.
+
+Objective choice: Sather is known for static typing and safety. "Develop a strongly-typed object-oriented framework for secure data persistence" sounds appropriate.
+
+Draft:
+Initialize a NEW dedicated folder named sather_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sather. Focus entirely on this new objective: 'Develop a strongly-typed object-oriented framework for secure data persistence'. You MUST write code for this task strictly using this exact programming language: Sather.
+
+Check constraints again.
+- "STRICTLY using this exact programming language: Sather" -> Included.
+- "NEW dedicated folder named sather_tool" -> Included.
+- "create a local README.md" -> Included.
+- "Focus entirely on this new objective: '...'" -> Included.
+- "Return ONLY the instruction text." -> Will do.
+
+Final text:
+Initialize a NEW dedicated folder named sather_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sather. Focus entirely on this new objective: 'Develop a strongly-typed object-oriented framework for secure data persistence'. You MUST write code for this task strictly using this exact programming language: Sather.
+</think>
+
+Initialize a NEW dedicated folder named sather_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sather. Focus entirely on this new objective: 'Develop a strongly-typed object-oriented framework for secure data persistence'. You MUST write code for this task strictly using this exact programming language: Sather.

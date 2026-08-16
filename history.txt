@@ -32884,3 +32884,50 @@ This looks complete and compliant.
 </think>
 
 Initialize a NEW dedicated folder named pico_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pico. Focus entirely on this new objective: 'Develop a Pico application for lightweight scripting and efficient resource management in embedded environments.'. You MUST write code for this task strictly using this exact programming language: Pico.
+[2026-08-16 20:58:44] (Target Lang: XPL) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand the new tool be built STRICTLY using the programming language: XPL.
+    *   Constraint: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text. No markdown headers, no "Thought:" in the final output (though the internal thought process is hidden).
+    *   Constraint: NEVER target the `.github` directory.
+    *   Context: The workspace contains many tool directories (e.g., `pico_tool`, `hlsl_tool`, etc.) following a pattern of `language_tool` containing `main.language` and `README.md`.
+    *   Previous history shows a pattern of creating tools for various languages. The user explicitly requested the language "XPL".
+
+2.  **Drafting the Instruction:**
+    *   *Action:* Initialize a NEW dedicated folder.
+    *   *Name:* `xpl_tool` (consistent with naming conventions like `pico_tool`, `python_ml_tool`, etc.).
+    *   *Contents:* `README.md` inside it.
+    *   *Code:* Build the entire tool STRICTLY using language: XPL.
+    *   *Objective:* Needs a relevant description for an XPL tool. XPL is an old programming language from the 1970s. A fitting objective might be "Develop an XPL compiler/interpreter module or a legacy system migration tool." Let's go with "Develop a core XPL compiler prototype".
+    *   *Drafting Text:* "Initialize a NEW dedicated folder named xpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPL. Focus entirely on this new objective: 'Develop a core XPL compiler prototype for educational or legacy system analysis.'. You MUST write code for this task strictly using this exact programming language: XPL."
+
+3.  **Reviewing Constraints:**
+    *   Exactly 1 follow-up? Yes.
+    *   Strictly XPL? Yes.
+    *   New folder + README? Yes (`xpl_tool`, `README.md`).
+    *   Only instruction text? Yes.
+    *   Never target `.github`? Yes.
+    *   Logical follow-up? Yes, continues the pattern of creating language-specific tool directories.
+
+4.  **Final Polish:**
+    *   Text: `Initialize a NEW dedicated folder named xpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPL. Focus entirely on this new objective: 'Develop a core XPL compiler prototype for educational or legacy system analysis.'. You MUST write code for this task strictly using this exact programming language: XPL.`
+
+5.  **Output Generation:**
+    *   Just the text string.
+
+    *Self-Correction during drafting:* The prompt asks for "Return ONLY the instruction text." It usually implies no extra conversational filler. The prompt format matches the example provided in the `History` section.
+
+    *Final String:* Initialize a NEW dedicated folder named xpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPL. Focus entirely on this new objective: 'Develop a core XPL compiler prototype for educational or legacy system analysis.'. You MUST write code for this task strictly using this exact programming language: XPL.
+
+    *Wait, checking specific constraint:* "Return ONLY the instruction text."
+    *Is there a specific naming convention for the file? Usually `main.xpl`. The prompt asks to "build the entire new tool", implying the file creation is part of the instruction logic, but the text instructions should focus on the action. The previous examples usually end with the language constraint.
+
+    *Refining the specific objective text:* "Develop a core XPL compiler prototype..." is good.
+
+    *Final check on the language name:* "XPL".
+
+    *Result:* Initialize a NEW dedicated folder named xpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPL. Focus entirely on this new objective: 'Develop a core XPL compiler prototype for educational or legacy system analysis.'. You MUST write code for this task strictly using this exact programming language: XPL.
+</think>
+
+Initialize a NEW dedicated folder named xpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPL. Focus entirely on this new objective: 'Develop a core XPL compiler prototype for educational or legacy system analysis.'. You MUST write code for this task strictly using this exact programming language: XPL.

@@ -552,3 +552,5 @@ Training Machine
 - Created/Updated module: `ksh_tool` (See `ksh_tool/README.md` for details)
 
 - Created/Updated module: `ioke_tool` (See `ioke_tool/README.md` for details)
+
+- Created/Updated module: `clipper_tool` (See `clipper_tool/README.md` for details)

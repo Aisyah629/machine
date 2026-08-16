@@ -1,0 +1,66 @@
+C ============================================================
+C Ratfor (Rational Fortran) Tool
+C Purpose: Scientific calculation and data analysis utility
+C ============================================================
+
+      PARAMETER (MAX_POINTS = 1000)
+
+      REAL X(MAX_POINTS), Y(MAX_POINTS)
+      REAL SUM_X, SUM_Y, SUM_XX, SUM_YX
+      REAL MEAN_X, MEAN_Y, SLOPE, INTERCEPT
+      INTEGER N, I
+
+      PRINT *, 'Ratfor Data Analysis Tool'
+      PRINT *, 'Linear Regression Calculator'
+      PRINT *, 'Enter number of data points:'
+      READ *, N
+
+      IF (N .GT. MAX_POINTS .OR. N .LE. 0) THEN
+         PRINT *, 'Error: Invalid number of points.'
+         STOP
+      END IF
+
+      PRINT *, 'Enter data points (X Y):'
+      DO 10 I = 1, N
+         READ *, X(I), Y(I)
+  10 CONTINUE
+
+C Initialize sums for regression
+      SUM_X = 0.0
+      SUM_Y = 0.0
+      SUM_XX = 0.0
+      SUM_YX = 0.0
+
+      DO 20 I = 1, N
+         SUM_X = SUM_X + X(I)
+         SUM_Y = SUM_Y + Y(I)
+         SUM_XX = SUM_XX + X(I) * X(I)
+         SUM_YX = SUM_YX + X(I) * Y(I)
+  20 CONTINUE
+
+C Calculate means
+      MEAN_X = SUM_X / N
+      MEAN_Y = SUM_Y / N
+
+C Calculate slope and intercept
+C Slope = (N * SUM_YX - SUM_X * SUM_Y) / (N * SUM_XX - SUM_X^2)
+C Intercept = MEAN_Y - Slope * MEAN_X
+
+      IF (N * SUM_XX - SUM_X * SUM_X .EQ. 0.0) THEN
+         PRINT *, 'Error: Vertical line or constant X.'
+         STOP
+      END IF
+
+      SLOPE = (N * SUM_YX - SUM_X * SUM_Y) / (N * SUM_XX - SUM_X * SUM_X)
+      INTERCEPT = MEAN_Y - SLOPE * MEAN_X
+
+      PRINT *
+      PRINT *, 'Results:'
+      PRINT *, 'Number of points:', N
+      PRINT *, 'Mean X:', MEAN_X
+      PRINT *, 'Mean Y:', MEAN_Y
+      PRINT *, 'Slope:', SLOPE
+      PRINT *, 'Intercept:', INTERCEPT
+
+      STOP
+      END

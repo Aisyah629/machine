@@ -1,28 +1,35 @@
 # Ratfor Tool
 
-This tool implements a complex mathematical algorithm using Ratfor (Rational Fortran), a preprocessor for Fortran that allows the use of a C-like syntax with control structures.
+## Description
+This is a Ratfor (Rational Fortran) tool designed for scientific calculation and data analysis.
+Ratfor is an extension of Fortran that provides rational arithmetic and preprocessing capabilities.
 
-## Algorithm Implemented
-
-### RSA Cryptosystem
-
-This implementation provides the core mathematical functions required for the RSA public-key cryptosystem:
-
-1. **Modular Exponentiation**: Efficiently computes $(base^{exponent}) \mod modulus$.
-2. **Extended Euclidean Algorithm**: Computes the Greatest Common Divisor (GCD) and Bézout coefficients.
-3. **Modular Inverse**: Computes the multiplicative inverse of a number modulo another.
-4. **Miller-Rabin Primality Test**: A probabilistic algorithm to determine if a number is prime.
-5. **Key Generation**: Generates a public/private key pair.
+## Features
+- Linear regression analysis
+- Rational arithmetic support
+- Scientific data processing
 
 ## Usage
+1. Ensure a Ratfor compiler/preprocessor is installed.
+2. Compile the `main.ratfor` file:
+   ```bash
+   ratfor main.ratfor -o main
+   ```
+3. Run the program:
+   ```bash
+   ./main
+   ```
 
-To use this Ratfor code:
+## Input Format
+- Number of data points
+- Pairs of (X, Y) values
 
-1. Process the Ratfor source code through the `ratfor` preprocessor to generate standard Fortran code.
-2. Compile the resulting Fortran code with a Fortran compiler (e.g., `gfortran`).
-3. Run the executable to generate keys and test encryption/decryption.
+## Output
+- Mean values
+- Regression slope and intercept
 
-## Requirements
+## Dependencies
+- Ratfor compiler
 
-- Ratfor preprocessor
-- Fortran compiler (Fortran 77 or later)
+## License
+Proprietary / Internal Use Only

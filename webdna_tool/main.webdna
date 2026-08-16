@@ -1,0 +1,71 @@
+<!-- WebDNA Tool: main.webdna -->
+<!-- Dynamic Web Content Generation Utility -->
+
+<webdna>
+  <server>
+    <getvalue name="page" default="home" />
+    <getvalue name="action" default="none" />
+  </server>
+
+  <database>
+    <connect name="mydb" user="user" pass="pass" server="localhost" />
+  </database>
+
+  <if expr="{{page}}" op="eq" value="home">
+    <page>
+      <title>Welcome to WebDNA Tool</title>
+      <body>
+        <h1>Dynamic Content Generation</h1>
+        <p>This page is dynamically generated using WebDNA.</p>
+        <p>Current Action: {{action}}</p>
+      </body>
+    </page>
+  </if>
+
+  <if expr="{{page}}" op="eq" value="contact">
+    <page>
+      <title>Contact Us</title>
+      <body>
+        <h1>Contact Form</h1>
+        <form method="post" action="/webdna_tool/main.webdna">
+          <input type="hidden" name="page" value="contact">
+          <input type="hidden" name="action" value="submit">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" name="email" required>
+          <input type="submit" value="Send">
+        </form>
+      </body>
+    </page>
+  </if>
+
+  <if expr="{{action}}" op="eq" value="submit">
+    <server>
+      <getvalue name="name" />
+      <getvalue name="email" />
+      <if expr="{{name}}" op="neq" value="" AND "{{email}}" op="neq" value="">
+        <database>
+          <query name="contact" db="mydb" sql="INSERT INTO contacts (name, email) VALUES ('{{name}}', '{{email}}')" />
+        </database>
+        <response>
+          <body>
+            <p>Thank you for your message, {{name}}!</p>
+            <a href="/webdna_tool/main.webdna?page=home">Back to Home</a>
+          </body>
+        </response>
+      </if>
+    </server>
+  </if>
+
+  <if expr="{{action}}" op="eq" value="none" AND "{{page}}" op="neq" value="home" AND "{{page}}" op="neq" value="contact">
+    <response>
+      <status code="404" />
+      <body>
+        <h1>404 Not Found</h1>
+        <p>The page you requested was not found.</p>
+        <a href="/webdna_tool/main.webdna?page=home">Back to Home</a>
+      </body>
+    </response>
+  </if>
+</webdna>

@@ -21250,3 +21250,46 @@ Initialize a NEW dedicated folder named xojo_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc. Focus entirely on this new objective: 'Develop a lightweight shell script processing utility using rc'. You MUST write functional code for this task strictly using this exact programming language: rc.
+[2026-08-16 05:29:17] (Target Lang: WebDNA) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: MUST explicitly demand the new tool be built STRICTLY using the programming language: `WebDNA`.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md inside the new folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+
+2.  **Analyze the Pattern/Context:**
+    *   Looking at the "History" provided in the prompt (though it seems to be a simulation of a thought process ending with an output), the pattern is very specific.
+    *   Example pattern from history: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [lang]. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: [lang]."
+    *   The user wants me to follow this pattern but substitute `WebDNA` as the language.
+    *   The prompt asks for "Generate exactly 1 logical follow-up instruction." This usually implies continuing a sequence. The previous output in the history was about `rc_tool`.
+    *   So, the new instruction should likely follow the structure: `Initialize a NEW dedicated folder named webdna_tool in the workspace...`
+
+3.  **Draft the Instruction:**
+    *   *Folder Name:* `webdna_tool` (Standard naming convention based on `rc_tool` in history).
+    *   *Language:* `WebDNA`.
+    *   *Objective:* Needs to be logical for WebDNA. WebDNA is an early web scripting language. A good objective might be "Develop a dynamic content generation module" or "Create a web-based template processor". Let's stick to a generic but functional description like "Develop a web content generation utility".
+    *   *Drafting:* Initialize a NEW dedicated folder named webdna_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WebDNA. Focus entirely on this new objective: 'Develop a web content generation utility using WebDNA'. You MUST write functional code for this task strictly using this exact programming language: WebDNA.
+
+4.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Explicitly demand strict usage of WebDNA?* Yes ("STRICTLY using this exact programming language: WebDNA").
+    *   *NEW dedicated folder?* Yes ("Initialize a NEW dedicated folder named webdna_tool").
+    *   *Create local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes (The output should be just the string).
+    *   *NEVER target .github?* Yes (No mention of .github).
+    *   *Logical follow-up?* Yes, follows the pattern of adding a tool for a specific language.
+
+5.  **Final Polish (Mental Representation of Output):**
+    `Initialize a NEW dedicated folder named webdna_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WebDNA. Focus entirely on this new objective: 'Develop a web content generation utility using WebDNA'. You MUST write functional code for this task strictly using this exact programming language: WebDNA.`
+
+6.  **Final Output Construction:**
+    *   The text matches the draft. No extra fluff.
+    *   Result: `Initialize a NEW dedicated folder named webdna_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WebDNA. Focus entirely on this new objective: 'Develop a web content generation utility using WebDNA'. You MUST write functional code for this task strictly using this exact programming language: WebDNA.`
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named webdna_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WebDNA. Focus entirely on this new objective: 'Develop a web content generation utility using WebDNA'. You MUST write functional code for this task strictly using this exact programming language: WebDNA.

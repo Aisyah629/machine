@@ -820,3 +820,5 @@ Training Machine
 - Created/Updated module: `wyvern_tool` (See `wyvern_tool/README.md` for details)
 
 - Created/Updated module: `tcl_tool` (See `tcl_tool/README.md` for details)
+
+- Created/Updated module: `pure_tool` (See `pure_tool/README.md` for details)

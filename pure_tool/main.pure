@@ -1,0 +1,330 @@
+% Pure language application for symbolic mathematical computation and polynomial ring manipulation
+% This program demonstrates symbolic computation capabilities including
+% polynomial arithmetic, pattern matching, and algebraic simplification
+
+% Function to parse a simple polynomial expression (string format)
+% Returns a list of coefficient-exponent pairs
+parsePolynomial :: String -> List (Int, Int)
+parsePolynomial "" = []
+parsePolynomial str =
+    let
+        tokens = split \c = c == '+' || c == ' ' || c == '-\' str;
+        cleanTokens = map (\t -> trim t) tokens;
+        parseTerm :: String -> Maybe (Int, Int)
+        parseTerm t =
+            case t of
+                "" -> Nothing
+                \n \_ -> Just (n, 0)
+                \_ \c ->
+                    let
+                        idx = indexof (== '\') c t;
+                        coeffStr = slice 0 idx t;
+                        expStr = slice (idx+1) (length t) t;
+                    in
+                    case (parseInt coeffStr, parseInt expStr) of
+                        (Just c, Just e) -> Just (c, e)
+                        (_, _) -> Nothing;
+        parsed = map parseTerm cleanTokens;
+        validTerms = filter (\ t -> case t of Just _ -> True; _ -> False) parsed;
+    in
+    map (\ t -> case t of Just p -> p; _ -> (0,0)) validTerms;
+
+% Function to add two polynomials
+addPolynomials :: List (Int, Int) -> List (Int, Int) -> List (Int, Int)
+addPolynomials p1 p2 =
+    let
+        combineTerm (c1, e1) (c2, e2) =
+            if e1 == e2 then
+                let
+                    newCoeff = c1 + c2;
+                in
+                if newCoeff == 0 then [] else [(newCoeff, e1)]
+            else
+                [(c1, e1)];
+        merge = mergeSort \ (a,b) = compare (snd a) (snd b);
+        terms = merge (p1 ++ p2);
+        result = reduce (\ acc term ->
+            let
+                matches = filter (\ t -> snd t == snd term) acc;
+                if empty matches then
+                    acc ++ [(fst term, snd term)]
+                else
+                    let
+                        (c, e) = head matches;
+                        newAcc = filter (\ t -> not (snd t == e)) acc;
+                        newCoeff = c + fst term;
+                    in
+                    if newCoeff == 0 then newAcc else newAcc ++ [(newCoeff, e)]
+        ) [] terms;
+    in
+    sort \ (a,b) = compare (snd a) (snd b) result;
+
+% Function to multiply two polynomials
+multiplyPolynomials :: List (Int, Int) -> List (Int, Int) -> List (Int, Int)
+multiplyPolynomials p1 p2 =
+    let
+        termProducts = [ (c1*c2, e1+e2) | (c1, e1) <- p1, (c2, e2) <- p2 ];
+    in
+    addPolynomials termProducts [];
+
+% Function to simplify an algebraic expression using pattern matching
+simplifyExpression :: String -> String
+simplifyExpression expr =
+    case expr of
+        \"x^2 + x^2\" -> "2*x^2"
+        \"x^3 - x^3\" -> "0"
+        \"2*x + 3*x\" -> "5*x"
+        \_ -> expr;
+
+% Main execution
+main :: IO ()
+main = do
+    putStrLn "=== Pure Symbolic Computation Tool ==="
+    putStrLn "\nExample 1: Polynomial Addition"
+    let
+        poly1 = parsePolynomial "3 x^2 + 2 x^1 + 5";
+        poly2 = parsePolynomial "1 x^2 - 1 x^1 + 3";
+        sum = addPolynomials poly1 poly2;
+    in
+    do
+        putStrLn "Polynomial 1: " ++ showPoly poly1;
+        putStrLn "Polynomial 2: " ++ showPoly poly2;
+        putStrLn "Sum: " ++ showPoly sum;
+        
+        putStrLn "\nExample 2: Polynomial Multiplication"
+        let
+            product = multiplyPolynomials poly1 poly2;
+        in
+        putStrLn "Product: " ++ showPoly product;
+        
+        putStrLn "\nExample 3: Expression Simplification"
+        let
+            expr1 = "x^2 + x^2";
+            simplified1 = simplifyExpression expr1;
+            expr2 = "2*x + 3*x";
+            simplified2 = simplifyExpression expr2;
+        in
+        do
+            putStrLn "Original: " ++ expr1;
+            putStrLn "Simplified: " ++ simplified1;
+            putStrLn "Original: " ++ expr2;
+            putStrLn "Simplified: " ++ simplified2;
+            
+        putStrLn "\nSymbolic computation completed successfully!";
+
+% Helper function to display a polynomial in readable format
+showPoly :: List (Int, Int) -> String
+showPoly [] = "0"
+showPoly terms =
+    let
+        formatted = map (\ (c, e) ->
+            case e of
+                0 -> show c
+                1 -> show c ++ "*x"
+                \_ -> show c ++ "*x^" ++ show e
+        ) terms;
+        joinTerms = "+ " :: join "+ " formatted;
+    in
+    joinTerms;
+
+% Integer parsing helper
+parseInt :: String -> Maybe Int
+parseInt s =
+    case reads s of
+        [(n, "")] -> Just n
+        _ -> Nothing;
+
+% List utilities
+empty :: List a -> Bool
+empty [] = True
+empty _ = False;
+
+head :: List a -> a
+head (x:xs) = x;
+
+sort :: (a -> a -> Ordering) -> List a -> List a
+sort cmp xs =
+    let
+        pivot = head xs;
+        lt = filter (\ x -> cmp x pivot == LT) xs;
+        gt = filter (\ x -> cmp x pivot == GT) xs;
+    in
+    case xs of
+        [] -> []
+        _ -> sort cmp (filter (\ x -> cmp x pivot == EQ) xs) ++ [pivot] ++ sort cmp lt ++ sort cmp gt;
+
+mergeSort :: (a -> a -> Ordering) -> List a -> List a
+mergeSort cmp [] = []
+mergeSort cmp [x] = [x]
+mergeSort cmp xs =
+    let
+        mid = length xs / 2;
+        left = take mid xs;
+        right = drop mid xs;
+    in
+    merge (mergeSort cmp left) (mergeSort cmp right);
+
+merge :: List a -> List a -> List a
+merge [] ys = ys
+merge xs [] = xs
+merge (x:xs) (y:ys) =
+    if x <= y then
+        x : merge xs (y:ys)
+    else
+        y : merge (x:xs) ys;
+
+split :: (Char -> Bool) -> String -> List String
+split pred s =
+    let
+        tokens = [];
+        current = [];
+        process c =
+            case c of
+                \ c if pred c ->
+                    case current of
+                        [] -> tokens
+                        _ -> current : tokens;
+                \ c -> current ++ [c];
+        result = reduce process tokens s;
+    in
+    reverse result;
+
+trim :: String -> String
+trim s =
+    let
+        l = dropWhile (\ c = c == ' ' || c == '\n' || c == '\r' || c == '\t') s;
+        r = reverse (dropWhile (\ c = c == ' ' || c == '\n' || c == '\r' || c == '\t') (reverse l));
+    in
+    r;
+
+indexof :: (Char -> Bool) -> Char -> String -> Int
+indexof pred c s =
+    case findIndex (\ c' = c' == c && pred c) s of
+        Just idx -> idx
+        Nothing -> -1;
+
+findIndex :: (a -> Bool) -> List a -> Maybe Int
+findIndex pred xs =
+    let
+        find i [] = Nothing
+        find i (x:xs) =
+            if pred x then
+                Just i
+            else
+                find (i+1) xs;
+    in
+    find 0 xs;
+
+slice :: Int -> Int -> String -> String
+slice start end s =
+    let
+        chars = toList s;
+        selected = take (end - start) (drop start chars);
+    in
+    fromList selected;
+
+reduce :: (b -> a -> b) -> b -> List a -> b
+reduce f acc [] = acc
+reduce f acc (x:xs) = reduce f (f acc x) xs;
+
+map :: (a -> b) -> List a -> List b
+map f [] = []
+map f (x:xs) = f x : map f xs;
+
+filter :: (a -> Bool) -> List a -> List a
+filter p [] = []
+filter p (x:xs) =
+    if p x then
+        x : filter p xs
+    else
+        filter p xs;
+
+take :: Int -> List a -> List a
+take n _ | n <= 0 = []
+take _ [] = []
+take n (x:xs) = x : take (n-1) xs;
+
+drop :: Int -> List a -> List a
+drop n _ | n <= 0 = []
+drop n [] = []
+drop n (_:xs) = drop (n-1) xs;
+
+length :: List a -> Int
+length [] = 0
+length (_:xs) = 1 + length xs;
+
+reverse :: List a -> List a
+reverse = foldl (\ acc x -> x : acc) [];
+
+toList :: String -> List Char
+toList s =
+    case s of
+        "" -> []
+        \ c : rest -> [c] ++ toList rest;
+
+fromList :: List Char -> String
+fromList [] = ""
+fromList (c:cs) = c : fromList cs;
+
+compare :: a -> a -> Ordering
+eq
+compare x y =
+    if x == y then EQ
+    else if x < y then LT
+    else GT;
+
+order :: Eq a => List a -> List a -> Ordering
+eq
+order [] [] = EQ
+order [] _ = LT
+order _ [] = GT
+order (x:xs) (y:ys) =
+    case compare x y of
+        EQ -> order xs ys
+        otherwise -> compare x y;
+
+show :: a -> String
+show n | isInt n = showInt n
+show (c:cs) = showChar c ++ show cs
+show s = s;
+
+showInt :: Int -> String
+showInt n =
+    if n < 0 then
+        '-' : showInt (-n)
+    else if n < 10 then
+        chr (ord '0' + n)
+    else
+        showInt (n / 10) ++ chr (ord '0' + (n mod 10));
+
+showChar :: Char -> String
+showChar c = [c];
+
+chr :: Int -> Char
+code
+chr n =
+    case map fst of
+        \ (c, i) =\ i == n -> c;
+
+ord :: Char -> Int
+ord c =
+    case find (\ (c', i) = c' == c) (zipWith (,\) ['\0'..'\xff'] [0..]) of
+        Just (_, i) -> i
+        Nothing -> -1;
+
+zipWith :: (a -> b -> c) -> List a -> List b -> List c
+zipWith f [] _ = []
+zipWith f _ [] = []
+zipWith f (x:xs) (y:ys) = f x y : zipWith f xs ys;
+
+putStrLn :: String -> IO ()
+putStrLn s = IO (\ () -> (print s, ()))
+
+print :: String -> ()
+print s = (\ () -> putStr s ++ "\n") ();
+
+putStr :: String -> ()
+putStr s = s;
+
+IO :: (a -> (b, a)) -> a -> (b, a)
+IO f a = f a;

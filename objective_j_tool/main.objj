@@ -1,0 +1,145 @@
+@import <Foundation/CPObject.j>;
+@import <Foundation/CPURLRequest.j>;
+@import <Foundation/CPURLConnection.j>;
+@import <Foundation/CPDictionary.j>;
+
+// Forward declaration for the protocol
+typedef void (^ServiceCompletionHandler)(id result, NSError error);
+
+@class ObjectiveJWebServiceClient;
+
+@protocol ObjectiveJWebServiceClientDelegate
+- (void)serviceClient:(ObjectiveJWebServiceClient *)client didCompleteRequestWithResult:(id)result;
+- (void)serviceClient:(ObjectiveJWebServiceClient *)client didFailWithError:(NSError *)error;
+@end
+
+/**
+ * ObjectiveJWebServiceClient
+ * Handles HTTP requests and JSON serialization.
+ */
+class ObjectiveJWebServiceClient extends CPObject {
+    @property (nonatomic, assign) id <ObjectiveJWebServiceClientDelegate> delegate;
+    @property (nonatomic, strong) CPURLRequest request;
+    @property (nonatomic, strong) CPURLResponse response;
+
+    /**
+     * Initialize the client with a base URL.
+     */
+    - (id)initWithBaseURL:(CPString)baseURL {
+        if (self = [super init]) {
+            baseURL_ = baseURL;
+            request = nil;
+            response = nil;
+            delegate = nil;
+        }
+        return self;
+    }
+
+    /**
+     * Construct a URL from a path and the base URL.
+     */
+    - (CPString)constructURL:(CPString)path {
+        CPString fullURL = [[CPURL URLWithString:baseURL_] relativePath:path];
+        return fullURL;
+    }
+
+    /**
+     * Send a GET request.
+     */
+    - (void)sendGetRequest:(CPString)path completionHandler:(ServiceCompletionHandler)handler {
+        CPString url = [self constructURL:path];
+        CPURLRequest *request = [CPURLRequest requestWithURL:[CPURL URLWithString:url]];
+        [request setHTTPMethod:@"GET"];
+        [self executeRequest:request completionHandler:handler];
+    }
+
+    /**
+     * Send a POST request with a JSON payload.
+     */
+    - (void)sendPostRequest:(CPString)path payload:(CPDictionary)payload completionHandler:(ServiceCompletionHandler)handler {
+        CPString url = [self constructURL:path];
+        CPURLRequest *request = [CPURLRequest requestWithURL:[CPURL URLWithString:url]];
+        [request setHTTPMethod:@"POST"];
+        [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        
+        // Serialize payload to JSON string
+        CPString jsonString = [ObjectiveJJSONSerializer serialize:payload];
+        CPData *data = [[CPData alloc] initWithBytes:[jsonString UTF8String] length:[jsonString lengthOfBytesUsingEncoding:CPUTF8StringEncoding]];
+        [request setHTTPBody:data];
+        
+        [self executeRequest:request completionHandler:handler];
+    }
+
+    /**
+     * Execute the request and handle the response.
+     */
+    - (void)executeRequest:(CPURLRequest *)request completionHandler:(ServiceCompletionHandler)handler {
+        request_ = request;
+        CPURLConnection *connection = [CPURLConnection connectionWithRequest:request delegate:self];
+        
+        // In a real implementation, the connection delegate methods would handle the lifecycle.
+        // For this strict Objective-J demonstration, we assume a synchronous helper or a wrapper
+        // that invokes the completionHandler upon receiving data.
+        
+        [connection start];
+    }
+
+    /**
+     * Delegate method for receiving data.
+     */
+    - (void)connection:(CPURLConnection *)connection didReceiveResponse:(CPURLResponse *)response {
+        response_ = response;
+    }
+
+    - (void)connection:(CPURLConnection *)connection didReceiveData:(CPData *)data {
+        CPString jsonString = [[CPString alloc] initWithData:data encoding:CPUTF8StringEncoding];
+        id result = [ObjectiveJJSONSerializer deserialize:jsonString];
+        
+        if (delegate && [delegate respondsToSelector:@selector(serviceClient:didCompleteRequestWithResult:)]) {
+            [delegate serviceClient:self didCompleteRequestWithResult:result];
+        }
+        if (completionHandler) {
+            completionHandler(result, nil);
+        }
+    }
+
+    - (void)connection:(CPURLConnection *)connection didFailWithError:(NSError *)error {
+        if (delegate && [delegate respondsToSelector:@selector(serviceClient:didFailWithError:)]) {
+            [delegate serviceClient:self didFailWithError:error];
+        }
+        if (completionHandler) {
+            completionHandler(nil, error);
+        }
+    }
+}
+
+/**
+ * ObjectiveJJSONSerializer
+ * Handles JSON serialization and deserialization.
+ */
+class ObjectiveJJSONSerializer extends CPObject {
+    /**
+     * Serialize an object to a JSON string.
+     */
+    + (CPString)serialize:(id)object {
+        // CPDictionary implements - (id)JSON;
+        if ([object isKindOfClass:[CPDictionary class]]) {
+            return [object JSON];
+        }
+        return nil;
+    }
+
+    /**
+     * Deserialize a JSON string to an object.
+     */
+    + (id)deserialize:(CPString)jsonString {
+        // CPJSON is not standard in all CP environments, usually handled by the bridge.
+        // Assuming the Objective-J bridge provides a JSON parser.
+        @try {
+            id result = [jsonString JSONValue];
+            return result;
+        } @catch (CPException *exception) {
+            return nil;
+        }
+    }
+}

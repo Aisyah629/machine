@@ -1,1 +1,21 @@
-# BeanShell Tool\n\n## Overview\nThe BeanShell Tool implements a lightweight scripting and automation framework designed for dynamic Java extensions. It leverages the BeanShell language to provide an interpreted, scriptable environment that seamlessly integrates with standard Java applications.\n\n## Features\n- Dynamic command execution via inline scripting\n- Lightweight runtime context management\n- Seamless Java interop for rapid prototyping and automation\n- Structured command handler architecture\n\n## Usage\n1. Compile the main entry point:\n   ```bash\n   javac main.bsh\n   ```\n2. Run the framework with a desired command:\n   ```bash\n   java Main info\n   java Main run\n   ```\n\n## Architecture\n- `main.bsh`: Core automation engine and command dispatcher\n- Context maps handle dynamic state passed to script modules\n- Designed for extension via additional `.bsh` modules\n\n## Requirements\n- Java Runtime Environment (JRE) 8 or higher\n- Standard Java libraries\n\n## License\nMIT License"}]}
+# BeanShell Data Extraction Utility
+
+This tool provides a data extraction and parsing utility implemented in BeanShell (`.bsh`). It demonstrates how to parse structured text data (like CSV or log lines) and extract specific fields.
+
+## Features
+
+- Parses comma-separated values (CSV)
+- Extracts specific columns by index
+- Handles basic error checking
+- Demonstrates BeanShell scripting capabilities for data processing
+
+## Usage
+
+Place your data in a text file and run:
+`bsh main.bsh`
+
+The script expects the data to be passed via a variable `data` or read from a file if configured.
+
+## Author
+
+Autonomous AI Polyglot Software Engineer

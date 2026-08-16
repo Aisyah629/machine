@@ -1,0 +1,91 @@
+/*
+ * ICI Script for Automated Text Processing and System Administration
+ */
+
+import stdio;
+import stdlib;
+import dir;
+
+/* Function to read file content */
+function readFile(path) {
+    var fh;
+    var content = "";
+    fh = fopen(path, "r");
+    if (!fh) {
+        printf("Error: Cannot open file %s\n", path);
+        return "";
+    }
+    while (!feof(fh)) {
+        content += fgets(fh);
+    }
+    fclose(fh);
+    return content;
+}
+
+/* Function to write content to file */
+function writeFile(path, content) {
+    var fh;
+    fh = fopen(path, "w");
+    if (!fh) {
+        printf("Error: Cannot write to file %s\n", path);
+        return 0;
+    }
+    fputs(content, fh);
+    fclose(fh);
+    return 1;
+}
+
+/* Function to process log file: extract errors and count them */
+function processLog(logPath, reportPath) {
+    var content;
+    var lines;
+    var errorCount = 0;
+    var errors = "";
+    var i, line;
+
+    content = readFile(logPath);
+    if (content == "") {
+        printf("Log file not found or empty: %s\n", logPath);
+        return 0;
+    }
+
+    lines = split(content, "\n");
+    for (i = 0; i < size(lines); i++) {
+        line = lines[i];
+        if (strContains(line, "ERROR") || strContains(line, "FATAL")) {
+            errorCount++;
+            errors += line + "\n";
+        }
+    }
+
+    printf("Processed log: %s\n", logPath);
+    printf("Total lines: %d\n", size(lines));
+    printf("Errors found: %d\n", errorCount);
+
+    writeFile(reportPath, errors);
+    printf("Error report saved to: %s\n", reportPath);
+    return 1;
+}
+
+/* Main execution */
+function main() {
+    var logFile = "server.log";
+    var reportFile = "error_report.txt";
+    var args;
+
+    args = getArgs();
+    if (size(args) >= 2) {
+        logFile = args[1];
+    }
+    if (size(args) >= 3) {
+        reportFile = args[2];
+    }
+
+    printf("ICI Text Processing Tool v1.0\n");
+    printf("Starting log analysis...\n\n");
+
+    processLog(logFile, reportFile);
+
+    printf("\nDone.\n");
+    return 0;
+}

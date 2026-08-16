@@ -24864,3 +24864,39 @@ Initialize a NEW dedicated folder named matlab_cnc_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named rust_concurrent_data_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rust. Focus entirely on this new objective: 'Develop a high-performance concurrent data processing and network communication utility leveraging Rust's zero-cost abstractions and memory safety guarantees'. You MUST write functional code for this task strictly using this exact programming language: Rust.
+[2026-08-16 11:00:03] (Target Lang: Prolog) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using `Prolog`.
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder and create a local `README.md`.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The workspace contains many tools (e.g., `prolog_tool`, `cl_tool`, `logic_tool` implied by `datalog_tool`, etc.). The prompt mentions "logical follow-up", which usually implies a continuation or expansion, but the constraints focus on the new tool definition.
+
+2.  **Draft the Instruction:**
+    *   *Folder Name:* Needs to be unique and descriptive. Since the language is Prolog, something like `prolog_logic_reasoning_tool` or `prolog_knowledge_base_tool` makes sense. Let's use `prolog_reasoning_engine_tool`.
+    *   *Directory Action:* `Initialize a NEW dedicated folder named prolog_reasoning_engine_tool in the workspace, create a local README.md inside it...`
+    *   *Language Demand:* `...and build the entire new tool STRICTLY using this exact programming language: Prolog.`
+    *   *Objective:* The user didn't specify a specific objective text like "Focus entirely on...", but the example in the prompt history shows a pattern: `Focus entirely on this new objective: '...'`. I should follow this pattern to generate a high-quality instruction. A good objective for Prolog would be: 'Develop a robust Prolog-based logic programming engine capable of complex rule-based inference, backtracking search, and knowledge graph querying'.
+    *   *Mandatory Phrase:* `You MUST write functional code for this task strictly using this exact programming language: Prolog.`
+    *   *Combine:* `Initialize a NEW dedicated folder named prolog_reasoning_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a robust Prolog-based logic programming engine capable of complex rule-based inference, backtracking search, and knowledge graph querying'. You MUST write functional code for this task strictly using this exact programming language: Prolog.`
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes, it's a single block of text.
+    *   *Explicitly demand Prolog?* Yes: "STRICTLY using this exact programming language: Prolog." and "strictly using this exact programming language: Prolog."
+    *   *New folder?* Yes: `prolog_reasoning_engine_tool`.
+    *   *Local README.md?* Yes: `create a local README.md inside it`.
+    *   *Return ONLY instruction text?* Yes, no markdown wrappers like ```text...``` unless requested, but usually, raw text is safer for "Return ONLY". The output should be the string itself.
+    *   *Never target .github?* The instruction targets a new tool folder, not `.github`. Safe.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named prolog_reasoning_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a robust Prolog-based logic programming engine capable of complex rule-based inference, backtracking search, and knowledge graph querying'. You MUST write functional code for this task strictly using this exact programming language: Prolog.`
+
+5.  **Final Output Construction:**
+    *   The output matches the polished string.
+
+Result: `Initialize a NEW dedicated folder named prolog_reasoning_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a robust Prolog-based logic programming engine capable of complex rule-based inference, backtracking search, and knowledge graph querying'. You MUST write functional code for this task strictly using this exact programming language: Prolog.`
+</think>
+
+Initialize a NEW dedicated folder named prolog_reasoning_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a robust Prolog-based logic programming engine capable of complex rule-based inference, backtracking search, and knowledge graph querying'. You MUST write functional code for this task strictly using this exact programming language: Prolog.

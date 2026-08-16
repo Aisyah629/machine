@@ -24799,3 +24799,68 @@ Initialize a NEW dedicated folder named millscript_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named matlab_cnc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a robust industrial automation and CNC machine control utility leveraging MATLAB's high-performance execution and declarative syntax capabilities'. You MUST write functional code for this task strictly using this exact programming language: MATLAB.
+[2026-08-16 10:59:08] (Target Lang: Rust) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of existing tools/directories with their respective languages (e.g., `./c_tool/main.c`, `./python_ml_tool/main.py`, etc.)
+   - **History:** Shows a previous turn where the AI generated an instruction for a MATLAB tool (`matlab_cnc_tool`).
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rust. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rust.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Must match the format/style of the previous instruction (based on history).
+
+3.  **Deconstruct Required Elements for the Instruction:**
+   - Action: Initialize a NEW dedicated folder
+   - Folder name: Needs a descriptive name related to Rust and its purpose. I'll invent one like `rust_data_validator_tool`.
+   - Create local README.md inside it.
+   - Language: MUST explicitly demand Rust.
+   - Objective: Need a logical follow-up objective that fits the pattern. The previous was "Develop a robust industrial automation and CNC machine control utility leveraging MATLAB's high-performance execution and declarative syntax capabilities". I'll create something like "Develop a high-performance concurrent data processing and network communication utility leveraging Rust's zero-cost abstractions and memory safety guarantees."
+   - Must include: "You MUST write functional code for this task strictly using this exact programming language: Rust."
+   - Structure: "Initialize a NEW dedicated folder named [NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write functional code for this task strictly using this exact programming language: [LANG]."
+
+4.  **Draft Instruction:**
+   Initialize a NEW dedicated folder named rust_concurrent_data_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rust. Focus entirely on this new objective: 'Develop a high-performance concurrent data processing and network communication utility leveraging Rust's zero-cost abstractions and memory safety guarantees'. You MUST write functional code for this task strictly using this exact programming language: Rust.
+
+5.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using this exact programming language: Rust? Yes.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target the .github directory? Yes, not mentioned.
+   - Matches history format? Yes.
+
+   One minor adjustment: Ensure the wording exactly matches the required structure from the prompt's history example.
+   History example: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write functional code for this task strictly using this exact programming language: [LANG]."
+
+   My draft matches this perfectly.
+
+6.  **Final Output Generation:** (Just the instruction text, as requested)
+   "Initialize a NEW dedicated folder named rust_concurrent_data_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rust. Focus entirely on this new objective: 'Develop a high-performance concurrent data processing and network communication utility leveraging Rust's zero-cost abstractions and memory safety guarantees'. You MUST write functional code for this task strictly using this exact programming language: Rust."
+
+   Check against constraints: All met. Output matches exactly. No extra text. Proceeds. 
+   One thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rust." I will ensure that exact phrasing is in the output.
+   The draft has: "build the entire new tool STRICTLY using this exact programming language: Rust." and "You MUST write functional code for this task strictly using this exact programming language: Rust." This covers it.
+   Ready.✅
+   Output matches draft.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Self-Correction/Verification during thought)*: I'll double check the exact wording required: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rust." I will make sure the output contains this exact demand. The draft does. All good.
+   Final string: Initialize a NEW dedicated folder named rust_concurrent_data_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rust. Focus entirely on this new objective: 'Develop a high-performance concurrent data processing and network communication utility leveraging Rust's zero-cost abstractions and memory safety guarantees'. You MUST write functional code for this task strictly using this exact programming language: Rust. 
+   Matches perfectly. Output matches request.✅
+   [Done] 
+   *Output Generation* (matches the final string)✅
+   *(Note: I will output only the instruction text as requested.)*
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rust. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints satisfied. Output matches.✅
+   Proceeds. 
+   [Output] -> Initialize a NEW dedicated folder named rust_concurrent_data_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rust. Focus entirely on this new objective: 'Develop a high-performance concurrent data processing and network communication utility leveraging Rust's zero-cost abstractions and memory safety guarantees'. You MUST write functional code for this task strictly using this exact programming language: Rust. 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named rust_concurrent_data_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rust. Focus entirely on this new objective: 'Develop a high-performance concurrent data processing and network communication utility leveraging Rust's zero-cost abstractions and memory safety guarantees'. You MUST write functional code for this task strictly using this exact programming language: Rust.

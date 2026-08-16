@@ -28879,3 +28879,65 @@ Proceeds.✅
 </think>
 
 Initialize a NEW dedicated folder named proc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pro*C. Focus entirely on this new objective: 'Develop database connectivity routines that utilize the embedded SQL interfaces'. You MUST write code for this task strictly using this exact programming language: Pro*C.
+[2026-08-16 16:09:22] (Target Lang: A# .NET) The user wants me to generate a follow-up instruction based on the current state of the workspace and the previous action.
+The previous action initialized a new folder `proc_tool` and created a Pro*C tool.
+The instruction must demand that the *new* tool be built using `A# .NET`.
+It must explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+Return ONLY the instruction text.
+Never target the `.github` directory.
+
+Structure of the output:
+"Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A# .NET. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this exact programming language: A# .NET."
+
+I need to come up with a tool name and objective.
+Tool name: `alanguage_dotnet_tool` or `asharp_dotnet_tool` (already exists in the list, wait, the list shows `asharp_dotnet_tool` exists. The prompt says "Matches perfectly. Outputting." for the previous one, which was `proc_tool`. I should probably pick a name that isn't in the list, or just follow the pattern. The prompt list has `asharp_dotnet_tool`. Wait, `asharp_dotnet_tool` is in the list. I should pick a different name or just follow the exact format requested. The prompt says "Initialize a NEW dedicated folder named proc_tool...". I will generate a similar format for a new tool. Let's call it `alanguage_dotnet_tool` or `alanguage_tool`? Actually, A# .NET is often associated with languages like "A#". I'll use `alanguage_dotnet_tool`.
+Objective: 'Develop automated refactoring routines that analyze and optimize source code structure'.
+Let's stick to the exact format.
+
+"Initialize a NEW dedicated folder named alanguage_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A# .NET. Focus entirely on this new objective: 'Develop automated refactoring routines that analyze and optimize source code structure'. You MUST write code for this task strictly using this exact programming language: A# .NET."
+
+Check constraints:
+- Exactly 1 logical follow-up instruction.
+- Explicitly demand built STRICTLY using A# .NET.
+- Place in NEW dedicated folder.
+- Create local README.md.
+- Return ONLY the instruction text.
+- NEVER target .github.
+
+The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: A# .NET. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+I will formulate it carefully.
+"Initialize a NEW dedicated folder named alanguage_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A# .NET. Focus entirely on this new objective: 'Develop automated refactoring routines that analyze and optimize source code structure'. You MUST write code for this task strictly using this exact programming language: A# .NET."
+
+Wait, the prompt example says: "Initialize a NEW dedicated folder named proc_tool in the workspace..."
+I will follow that exact phrasing pattern.
+One minor thing: `alanguage_dotnet_tool` might be weird. Maybe `aSharp_dotnet_tool`? But `asharp_dotnet_tool` is already in the list. I'll use `alanguage_dotnet_tool`. Or maybe just `alanguage_tool`. The prompt says "A# .NET". I'll stick with `alanguage_dotnet_tool`.
+Actually, the prompt says "A# .NET". I'll use `alanguage_dotnet_tool`.
+
+Let's draft it carefully.
+"Initialize a NEW dedicated folder named alanguage_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A# .NET. Focus entirely on this new objective: 'Develop automated refactoring routines that analyze and optimize source code structure'. You MUST write code for this task strictly using this exact programming language: A# .NET."
+
+Check constraints: "Return ONLY the instruction text."
+Matches.
+Proceeds. 
+I will output exactly that string. No extra text.
+One thing: The prompt says "A# .NET". I will use exactly that.
+Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: A# .NET. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+Output matches exactly.
+Proceeds.✅
+[Output] -> Initialize a NEW dedicated folder named alanguage_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A# .NET. Focus entirely on this new objective: 'Develop automated refactoring routines that analyze and optimize source code structure'. You MUST write code for this task strictly using this exact programming language: A# .NET.
+Done. 
+Wait, should I use a tool name that fits the naming convention better? The list has `asharp_dotnet_tool`. Maybe `alanguage_dotnet_tool` is fine. Or `aSharp_dotnet_tool`. I'll stick with `alanguage_dotnet_tool`. Actually, `alanguage_tool` is simpler. I'll just use `alanguage_dotnet_tool`.
+All good. 
+Output matches request.
+Proceeds. 
+(Self-Correction/Verification during thought: The prompt says "A# .NET". I will just use `alanguage_dotnet_tool` as the folder name. It's fine.)
+Ready. 
+Output Generation. 
+[Output] -> Initialize a NEW dedicated folder named alanguage_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A# .NET. Focus entirely on this new objective: 'Develop automated refactoring routines that analyze and optimize source code structure'. You MUST write code for this task strictly using this exact programming language: A# .NET. 
+Done. 
+Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named alanguage_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A# .NET. Focus entirely on this new objective: 'Develop automated refactoring routines that analyze and optimize source code structure'. You MUST write code for this task strictly using this exact programming language: A# .NET.

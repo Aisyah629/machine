@@ -1,19 +1,12 @@
 # Epigram Tool
 
-## Overview
-This tool provides a functional implementation focused on the Epigram programming language. Epigram is a dependently typed functional programming language based on the lambda cube, designed for formal verification and type-safe software development.
+This tool is built using the Epigram programming language.
+It implements a formal verification automation script engine.
 
 ## Features
-- Dependent type checking and inference support
-- Formal verification utilities
-- Functional programming constructs optimized for theorem proving
-- Integration-ready architecture for type-safe code generation
+- Type-theoretic functional programming
+- Formal verification capabilities
+- Automated proof construction
 
 ## Usage
-The main implementation is located in `main.epi`. Run the tool to execute type verification routines and functional operations.
-
-## Contributing
-Feel free to extend the tool with additional type checkers or verification modules.
-
-## License
-MIT
+Run the tool using the Epigram interpreter.

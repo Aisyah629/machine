@@ -840,3 +840,5 @@ Training Machine
 - Created/Updated module: `sml_tool` (See `sml_tool/README.md` for details)
 
 - Created/Updated module: `code_tool` (See `code_tool/README.md` for details)
+
+- Created/Updated module: `tutor_verification_tool` (See `tutor_verification_tool/README.md` for details)

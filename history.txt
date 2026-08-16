@@ -33940,3 +33940,76 @@ Initialize a NEW dedicated folder named code_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named coq_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Develop a certified formal methods toolkit for verifying the mathematical correctness and type safety of automated code generation pipelines.'. You MUST write code for this task strictly using this programming language: Coq.
+[2026-08-16 21:46:25] (Target Lang: TUTOR) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories/files, mostly programming language/tool folders (e.g., `./coq_tool`, `./bash_tool`, etc.) and a `.github` directory.
+   - **History:** Shows previous prompt/response patterns. The user wants exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: `TUTOR`.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local `README.md`.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+     - Follow the pattern/style of the history (starts with "Initialize a NEW dedicated folder named...", includes a focus objective in quotes, ends with "You MUST write code for this task strictly using this programming language: TUTOR.")
+
+2.  **Identify Key Requirements:**
+   - New folder name: `tutor_tool` (or similar, following the naming convention in the workspace)
+   - Language: `TUTOR` (explicitly demanded)
+   - Objective: Something relevant to formal verification/code correctness or similar, matching the Coq theme, but I can make it general or specific to TUTOR's actual purpose (TUTOR is an old tutoring system language, but I'll stick to the prompt's directive to focus on a logical objective, perhaps related to automated tutoring or educational code validation, or I'll just follow the exact structure requested).
+   - Must include: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TUTOR. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this programming language: TUTOR."
+   - Return ONLY the instruction text. No extra words.
+
+3.  **Draft Construction:**
+   "Initialize a NEW dedicated folder named tutor_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TUTOR. Focus entirely on this new objective: 'Establish an automated pedagogical framework to validate and tutor code correctness through formal proof generation and educational feedback loops.'. You MUST write code for this task strictly using this programming language: TUTOR."
+
+   Let's check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using TUTOR? Yes.
+   - NEW dedicated folder & local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches history style? Yes.
+
+   I will refine it to match the exact phrasing pattern from the history:
+   "Initialize a NEW dedicated folder named tutor_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TUTOR. Focus entirely on this new objective: 'Establish an automated pedagogical framework to validate and tutor code correctness through formal proof generation and educational feedback loops.'. You MUST write code for this task strictly using this programming language: TUTOR."
+
+   Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TUTOR." and "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   I'll make sure the phrasing closely matches the example:
+   "Initialize a NEW dedicated folder named tutor_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TUTOR. Focus entirely on this new objective: 'Develop a certified tutoring and validation framework to verify the pedagogical structure and logical consistency of interactive learning modules.'. You MUST write code for this task strictly using this programming language: TUTOR."
+
+   Check constraints again:
+   - "Return ONLY the instruction text." -> I will output just the string.
+   - "NEVER target the .github directory." -> Checked.
+   - Language: TUTOR -> Checked.
+   - NEW folder + README.md -> Checked.
+   - Exactly 1 instruction -> Checked.
+
+   The draft looks solid. I will output it exactly.
+   One minor thing: The prompt says "STRICTLY using this exact programming language: TUTOR." I'll keep that exact phrasing.
+   I'll generate it now. 
+   Output matches the draft.✅
+   Proceeds. 
+   [Output Generation] -> "Initialize a NEW dedicated folder named tutor_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TUTOR. Focus entirely on this new objective: 'Develop a certified tutoring and validation framework to verify the pedagogical structure and logical consistency of interactive learning modules.'. You MUST write code for this task strictly using this programming language: TUTOR."
+   All constraints met. No extra text. Ready. 
+   Self-Correction/Verification during thought: 
+   The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TUTOR."
+   My draft includes: "build the entire new tool STRICTLY using this exact programming language: TUTOR." and "You MUST write code for this task strictly using this programming language: TUTOR."
+   This matches the required pattern perfectly.
+   I will output exactly that string.✅
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TUTOR. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches. 
+   Proceeds. 
+   [Output Generation] -> *Outputs the exact string*
+   "Initialize a NEW dedicated folder named tutor_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TUTOR. Focus entirely on this new objective: 'Develop a certified tutoring and validation framework to verify the pedagogical structure and logical consistency of interactive learning modules.'. You MUST write code for this task strictly using this programming language: TUTOR." 
+   (Note: I'll make sure there are no quotes around the output unless they are part of the instruction itself, but the prompt says "Return ONLY the instruction text." I will just output the raw text.)
+   Actually, the history shows the output is just the text. I'll follow that.
+   Done. 
+   Output Generation. 
+   [Final Text]: Initialize a NEW dedicated folder named tutor_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TUTOR. Focus entirely on this new objective: 'Develop a certified tutoring and validation framework to verify the pedagogical structure and logical consistency of interactive learning modules.'. You MUST write code for this task strictly using this programming language: TUTOR. 
+   Matches perfectly.✅
+   Proceeds. 
+   [Output] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named tutor_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TUTOR. Focus entirely on this new objective: 'Develop a certified tutoring and validation framework to verify the pedagogical structure and logical consistency of interactive learning modules.'. You MUST write code for this task strictly using this programming language: TUTOR.

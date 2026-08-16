@@ -20556,3 +20556,38 @@ Initialize a NEW dedicated folder named mdl_structural_tool in the workspace, cr
 </think>
 
 Initialize a NEW dedicated folder named kif_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KIF. Focus entirely on this new objective: 'Design a semantic knowledge representation and reasoning script for logical data mapping'. You MUST write functional code for this task strictly using this programming language: KIF.
+[2026-08-16 04:30:49] (Target Lang: Coq) The user wants me to generate a follow-up instruction.
+I need to follow the format of the previous instructions but change the target language to Coq.
+The instruction must:
+1. Be exactly 1 logical follow-up instruction.
+2. Explicitly demand that the new tool be built STRICTLY using the programming language: Coq.
+3. Instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Focus entirely on a new objective.
+5. Return ONLY the instruction text.
+6. NEVER target the .github directory.
+
+Looking at the history, the previous instruction was:
+"Initialize a NEW dedicated folder named kif_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KIF. Focus entirely on this new objective: 'Design a semantic knowledge representation and reasoning script for logical data mapping'. You MUST write functional code for this task strictly using this programming language: KIF."
+
+I will create a similar instruction for Coq.
+Language: Coq
+Objective: Something related to Coq, e.g., 'Develop a formal verification script for mathematical theorem proving' or 'Create a functional proof assistant script for logical validation'.
+Folder name: coq_tool
+README: local README.md inside it.
+
+Draft:
+Initialize a NEW dedicated folder named coq_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Create a functional proof assistant script for logical validation and mathematical verification'. You MUST write functional code for this task strictly using this programming language: Coq.
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand built STRICTLY using Coq? Yes.
+- NEW dedicated folder and local README.md? Yes.
+- Focus on new objective? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+Matches perfectly. Output matches constraint exactly. Proceed. 
+I will output the draft exactly.✅
+</think>
+
+Initialize a NEW dedicated folder named coq_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Create a functional proof assistant script for logical validation and mathematical verification'. You MUST write functional code for this task strictly using this programming language: Coq.

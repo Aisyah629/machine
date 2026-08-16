@@ -19319,3 +19319,45 @@ Initialize a NEW dedicated folder named xojo_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named magik_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Magik. Focus entirely on this new objective: 'Develop a robust object-oriented business logic framework'. You MUST write functional code for this task strictly using this programming language: Magik.
+[2026-08-16 02:04:56] (Target Lang: XBL) Thinking process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Language requirement: MUST use programming language "XBL".
+    *   Action: Build a new tool.
+    *   Structure: NEW dedicated folder, local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context from History: The previous turn involved creating a `magik_tool` for a business logic framework. The pattern seems to be: Create folder `<lang>_tool`, create `README.md`, create `main.<ext>`, write functional code in `<lang>` for a specific objective.
+
+2.  **Draft the instruction content:**
+    *   *Language:* XBL.
+    *   *Folder:* `xbl_tool`.
+    *   *File:* `main.xbl` (based on extension patterns, though I don't know the extension for XBL, I'll assume `.xbl` or just use the language name as the file extension as is common in these synthetic toolchains. Looking at the file list, most have extensions matching the language name, e.g., `c_tool/main.c`, `python_tool/main.py`. So `xbl_tool/main.xbl` is safe. Wait, the history mentions `magik_tool` but `main.magik` isn't explicitly checked, but `magik` usually doesn't have a standard extension, but in this context, the tool structure implies `main.<lang>`. I'll use `main.xbl`.)
+    *   *Objective:* Needs a parallel objective. The history had "Develop a robust object-oriented business logic framework" for Magik. A good parallel for XBL? XBL often stands for XML Binding Language or Extended Business Logic, but in this context, it's likely a fictional or specific language for the toolchain. I need a "good parallel" objective. Maybe "Construct a declarative data serialization schema validator" or "Design a high-performance event-driven microservice orchestrator". Let's go with "Construct a declarative data serialization schema validator".
+    *   *Text formulation:* "Initialize a NEW dedicated folder named xbl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XBL. Focus entirely on this new objective: 'Construct a declarative data serialization schema validator'. You MUST write functional code for this task strictly using this programming language: XBL."
+
+3.  **Refine the text to match the requested format:**
+    *   The user asked for "exactly 1 logical follow-up instruction".
+    *   The instruction must explicitly demand the language XBL.
+    *   The instruction must mention the folder and README.
+    *   Result: "Initialize a NEW dedicated folder named xbl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XBL. Focus entirely on this new objective: 'Construct a declarative data serialization schema validator'. You MUST write functional code for this task strictly using this programming language: XBL."
+
+4.  **Final Polish (Mental Review against constraints):**
+    *   *1 instruction?* Yes.
+    *   *Language XBL?* Yes ("programming language: XBL").
+    *   *NEW folder?* Yes ("xbl_tool").
+    *   *README?* Yes ("local README.md").
+    *   *Return ONLY instruction text?* Yes.
+    *   *No .github?* Yes.
+    *   *Logical follow-up?* Yes, follows the pattern of creating tools for languages.
+
+5.  **Output Generation:**
+    *   Text: Initialize a NEW dedicated folder named xbl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XBL. Focus entirely on this new objective: 'Construct a declarative data serialization schema validator'. You MUST write functional code for this task strictly using this programming language: XBL.
+
+This matches the pattern observed in the history (e.g., the Magik instruction). The structure is: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write functional code for this task strictly using this programming language: [LANG]."
+
+Result looks solid.
+</think>
+
+Initialize a NEW dedicated folder named xbl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XBL. Focus entirely on this new objective: 'Construct a declarative data serialization schema validator'. You MUST write functional code for this task strictly using this programming language: XBL.

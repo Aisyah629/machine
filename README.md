@@ -496,3 +496,5 @@ Training Machine
 - Created/Updated module: `tacpol_tool` (See `tacpol_tool/README.md` for details)
 
 - Created/Updated module: `self_healing_tool` (See `self_healing_tool/README.md` for details)
+
+- Created/Updated module: `xbl_tool` (See `xbl_tool/README.md` for details)

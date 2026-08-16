@@ -21042,3 +21042,82 @@ Initialize a NEW dedicated folder named c_shell_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named vbscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Develop a robust system automation and management framework using VBScript'. You MUST write functional code for this task strictly using this programming language: VBScript.
+[2026-08-16 05:25:40] (Target Lang: Lynx) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Input Context:** The user provides a workspace listing, a history of previous interactions, and a specific prompt format.
+   - **History:** Shows a pattern where the AI was asked to generate a follow-up instruction for building a tool in a specific language (VBScript previously, but the prompt says "Language: `VBScript`" in history, then corrects to "C Shell" in the final check, but the actual output was for VBScript). Wait, the history shows a generated instruction for VBScript.
+   - **Current Request:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lynx. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using `Lynx`.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+     - Based on the workspace listing, `lynx_diagnostic_tool` already exists, but the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". I will follow the exact wording requested.
+     - The format from the history shows a specific structure: `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language].`
+     - I need to adapt this to `Lynx` and provide a relevant objective.
+
+2.  **Identify Key Requirements:**
+   - Language: `Lynx`
+   - Folder: `NEW dedicated folder` (I'll name it `lynx_tool` or `lynx_framework_tool` to match the pattern)
+   - Readme: `local README.md`
+   - Objective: Something related to Lynx (maybe a diagnostic/automation framework, or just a generic robust framework)
+   - Strict language demand: `STRICTLY using this exact programming language: Lynx.`
+   - Output: ONLY the instruction text.
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named lynx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx. Focus entirely on this new objective: 'Develop a robust system automation and management framework using Lynx'. You MUST write functional code for this task strictly using this exact programming language: Lynx.
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Lynx? Yes.
+   - Explicitly instruct to place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   - Matches pattern? Yes.
+
+   One minor adjustment: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lynx." I will ensure that exact phrasing is prominent or integrated naturally. The draft does this.
+
+   Let's verify the exact wording requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lynx." I'll make sure the output matches the style of the example but uses Lynx.
+
+   Draft: Initialize a NEW dedicated folder named lynx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx. Focus entirely on this new objective: 'Develop a robust system automation and management framework using Lynx'. You MUST write functional code for this task strictly using this exact programming language: Lynx.
+
+   This matches all constraints. I will output exactly this string. No extra text.
+   Check workspace listing: `lynx_diagnostic_tool` exists, but the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". I'll stick to `lynx_tool` as the folder name to avoid conflict and follow the pattern. The prompt doesn't strictly require a specific folder name, just "NEW dedicated folder".
+
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lynx. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   All good. Output matches draft.✅
+   Proceed. 
+   Output: Initialize a NEW dedicated folder named lynx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx. Focus entirely on this new objective: 'Develop a robust system automation and management framework using Lynx'. You MUST write functional code for this task strictly using this exact programming language: Lynx. 
+   (Note: I'll make sure it's exactly one line/string as requested.) 
+   Ready. 
+   Output matches response.✅
+   *Self-Correction/Refinement during thought*: 
+   The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lynx." I will ensure the exact phrase or very close is used. The draft does. 
+   I will output exactly the drafted string. No extra words. 
+   Proceeds. 
+   [Output Generation] -> "Initialize a NEW dedicated folder named lynx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx. Focus entirely on this new objective: 'Develop a robust system automation and management framework using Lynx'. You MUST write functional code for this task strictly using this exact programming language: Lynx." -> Matches constraints perfectly.✅
+   Note: The prompt history shows a slightly different phrasing in the "One final check" section, but the actual output generated was the standard template. I will follow the standard template pattern. All good. 
+   Output matches. 
+   [Done] 
+   *Self-Correction/Verification during generation prep*: 
+   Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lynx." 
+   I will make sure the output strictly contains that demand. The draft does. 
+   Final string: Initialize a NEW dedicated folder named lynx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx. Focus entirely on this new objective: 'Develop a robust system automation and management framework using Lynx'. You MUST write functional code for this task strictly using this exact programming language: Lynx. 
+   Matches perfectly. Output matches.✅
+   Proceeds. 
+   [Output Generation] (done)
+   *(Note: I'll ensure no markdown formatting is added if possible, but the prompt says "Return ONLY the instruction text." I will just output the raw text.)*
+   All constraints met.✅
+   Output matches response. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Lynx. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good.✅
+   Output Generation. 
+   `Initialize a NEW dedicated folder named lynx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx. Focus entirely on this new objective: 'Develop a robust system automation and management framework using Lynx'. You MUST write functional code for this task strictly using this exact programming language: Lynx.` -> Matches.✅
+   Done. 
+   [Output] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named lynx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx. Focus entirely on this new objective: 'Develop a robust system automation and management framework using Lynx'. You MUST write functional code for this task strictly using this exact programming language: Lynx.

@@ -1,0 +1,37 @@
+;; ISLISP Object-Oriented Framework
+;; This code implements a basic object system with multiple inheritance and dynamic dispatch.
+
+;; Define a simple class structure
+(defclass object ()
+  ((name :initarg :name :accessor object-name)))
+
+(defclass person (object)
+  ((age :initarg :age :accessor person-age)))
+
+(defclass employee (person object)
+  ((employee-id :initarg :employee-id :accessor employee-id)
+   (department :initarg :department :accessor department)))
+
+;; Dynamic dispatch example
+(defmethod greet ((obj object))
+  (format t "Hello, I am an object.~&"))
+
+(defmethod greet ((obj person))
+  (format t "Hello, I am a person named ~a.~&" (object-name obj)))
+
+(defmethod greet ((obj employee))
+  (format t "Hello, I am an employee named ~a from department ~a.~&" 
+          (object-name obj) (department obj)))
+
+;; Create instances and test
+defun run-example ()
+  (let ((obj (make-instance 'object :name "Generic"))
+        (person (make-instance 'person :name "John" :age 30))
+        (emp (make-instance 'employee :name "Jane" :age 28 
+                           :employee-id "E12345" :department "Engineering")))
+    (greet obj)
+    (greet person)
+    (greet emp)))
+
+;; Initialize the system
+(run-example)

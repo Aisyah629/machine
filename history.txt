@@ -26777,3 +26777,36 @@ Initialize a NEW dedicated folder named visual_prolog_tool in the workspace, cre
 </think>
 
 Initialize a NEW dedicated folder named lis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LIS. Focus entirely on this new objective: 'Implement a LIS-based functional programming and symbolic computation framework for mathematical modeling and algorithmic analysis'. You MUST write code for this task strictly using this exact programming language: LIS.
+[2026-08-16 13:23:09] (Target Lang: Lisaac) The user wants a single follow-up instruction to be generated.
+The current state of the system involves a history of creating various tool folders.
+The prompt specifies:
+1.  Generate exactly 1 logical follow-up instruction.
+2.  Explicitly demand that the new tool be built STRICTLY using this exact programming language: Lisaac.
+3.  If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4.  Return ONLY the instruction text.
+5.  NEVER target the .github directory.
+
+Looking at the history, the last operation was creating `lis_tool`.
+The user asks to build a new tool using "Lisaac".
+Lisaac is a programming language.
+The instruction should follow the pattern seen in the history:
+"Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lisaac. Focus entirely on this new objective: [Objective]. You MUST write code for this task strictly using this exact programming language: Lisaac."
+
+I need to choose a tool name and an objective.
+Tool name: `lisaac_tool` seems appropriate based on the pattern `language_tool`.
+Objective: Something related to Lisaac, like object-oriented programming. "Implement a Lisaac-based high-performance object-oriented framework for system simulation and component modeling" sounds logical.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named lisaac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lisaac. Focus entirely on this new objective: 'Implement a Lisaac-based high-performance object-oriented framework for system simulation and component modeling'. You MUST write code for this task strictly using this exact programming language: Lisaac."
+
+Check constraints:
+1. Exactly 1 instruction? Yes.
+2. Build STRICTLY using Lisaac? Yes.
+3. NEW dedicated folder and README.md? Yes.
+4. ONLY instruction text? Yes.
+5. Never target .github? Yes.
+
+Result looks solid.
+</think>
+
+Initialize a NEW dedicated folder named lisaac_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lisaac. Focus entirely on this new objective: 'Implement a Lisaac-based high-performance object-oriented framework for system simulation and component modeling'. You MUST write code for this task strictly using this exact programming language: Lisaac.

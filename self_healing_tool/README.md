@@ -1,51 +1,40 @@
-# Self-Healing Tool
+# DYNAMO Self-Healing Tool
 
-A comprehensive self-healing tool implemented in PL/M that handles edge cases and errors with automated recovery mechanisms.
+## Overview
+The DYNAMO Self-Healing Tool is a robust error handling and recovery system designed for the DYNAMO programming language. It automatically detects edge cases, runtime anomalies, and common errors, and initiates predefined recovery actions to restore system functionality.
 
 ## Features
+- **Anomaly Detection:** Monitors code execution for invalid results, exceptions, and timeouts.
+- **Automatic Recovery:** Triggers appropriate recovery actions based on error type.
+- **Health Checks:** Periodically checks system resources (CPU, Memory, Disk, Services).
+- **Configurable Retry Logic:** Retries recovery actions up to a defined maximum number of times.
+- **Extensible:** Allows easy registration of custom recovery actions for specific error types.
+- **Logging:** Comprehensive logging system with multiple log levels (DEBUG, INFO, ERROR).
 
-- **Automatic Error Detection**: Identifies common error conditions (division by zero, overflow, underflow, invalid input, memory issues, timeouts)
-- **Self-Recovery**: Attempts to recover from detected errors using predefined healing strategies
-- **Exponential Backoff**: Implements retry logic with increasing delays to prevent system overload
-- **Error Logging**: Maintains a log of all errors and healing attempts
-- **Configurable Retries**: Allows customization of maximum retry attempts
+## Components
+- `main.dc`: The main script containing all logic for detection, recovery, and health checks.
 
-## Architecture
+## How to Use
+1. **Include the Tool:** Import or include the `main.dc` script in your DYNAMO application.
+2. **Configure:** Adjust constants like `MAX_RETRY_COUNT` and `CURRENT_LOG_LEVEL` as needed.
+3. **Register Actions:** Add custom recovery actions to the `recovery_actions` map for specific error types.
+4. **Run:** Execute your application. The tool will automatically start health checks and monitor for errors.
 
-The tool implements a self-healing loop that:
-1. Attempts the primary operation
-2. Catches any errors that occur
-3. Applies appropriate healing strategies
-4. Retries with exponential backoff
-5. Logs all events for analysis
+## Customization
+To add a custom recovery action, modify the `main.dc` script and register it like this:
+```dynamo
+recovery_actions["CUSTOM_ERROR"] = {
+    name: "Custom Recovery",
+    execute: function() {
+        log(LOG_LEVEL_INFO, "Executing custom recovery...");
+        // Your custom recovery logic here
+    }
+};
+```
 
-## Error Handling Strategies
+## Limitations
+- This is a simulated implementation for demonstration purposes. Real-time system checks (CPU, Memory, Disk) and true asynchronous execution with timeouts require integration with the underlying DYNAMO runtime and OS APIs.
+- The `execute_with_timeout` function is a placeholder and does not provide true concurrency in this standalone script.
 
-| Error Type       | Healing Strategy                  |
-|-----------------|-----------------------------------|
-| Division by Zero| Reset operands to safe values     |
-| Overflow        | Scale down values                 |
-| Underflow       | Scale up values                   |
-| Invalid Input   | Use default values                |
-| Memory Issues   | Attempt garbage collection        |
-| Timeout         | Extend timeout period             |
-
-## Usage
-
-1. Compile with PL/M compiler
-2. Load into target environment
-3. The tool will automatically initialize and begin monitoring
-
-## Configuration
-
-- `MAX_RETRIES`: Maximum number of healing attempts (default: 3)
-- `ERROR_LOG_SIZE`: Size of error log buffer (default: 100 entries)
-
-## Files
-
-- `main.dc`: Main implementation in PL/M
-
-## Notes
-
-- This implementation targets PL/M-80 or PL/M-51 compatible environments
-- Hardware-specific features (timers, memory management) should be adapted to target platform
+## License
+This tool is provided as-is for educational and developmental purposes within the DYNAMO ecosystem.

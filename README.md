@@ -700,3 +700,5 @@ Training Machine
 - Created/Updated module: `lustre_data_extraction_tool` (See `lustre_data_extraction_tool/README.md` for details)
 
 - Created/Updated module: `jovial_tool` (See `jovial_tool/README.md` for details)
+
+- Created/Updated module: `./beanshell_tool` (See `./beanshell_tool/README.md` for details)

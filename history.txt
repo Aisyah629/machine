@@ -22554,3 +22554,37 @@ Result matches the draft.
 </think>
 
 Initialize a NEW dedicated folder named e_sharp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: E#. Focus entirely on this new objective: 'Develop a high-performance desktop application for real-time financial market analysis with advanced charting capabilities'. You MUST write functional code for this task strictly using this exact programming language: E#.
+[2026-08-16 08:16:43] (Target Lang: Constraint Handling Rules) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand "Constraint Handling Rules" as the programming language.
+    *   Constraint 2: If building a new tool, use a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: Never target the .github directory.
+    *   Context: The user provided a file list showing many existing tools. I need to check if a "Constraint Handling Rules" tool already exists to determine if I need a new folder or if I should overwrite/update. However, the prompt says "If building a new tool...", implying I should probably treat this as creating a new tool unless instructed otherwise, or the instruction should reflect the creation of a new tool. Looking at the file list, I see `./c_engine_tool`, `./c_tool`, `./cacl_tool` (not found), `./candle_tool`... searching for "Constraint Handling Rules" or "CHR".
+        *   Scan list: `... ./chill_tool ... ./chr_tool ...`? No `chr_tool`. `... ./chuck_tool ...`. No obvious match for CHR.
+        *   Result: "Constraint Handling Rules" likely doesn't have a folder yet. So I should instruct to create a new folder. A reasonable folder name would be `chr_tool` or `constraint_handling_rules_tool`. Following the pattern of the workspace (e.g., `ada_tool`, `c_tool`, `prolog_tool`), `chr_tool` is concise and consistent.
+
+2.  **Draft the Instruction:**
+    *   *Core Action:* Initialize a new folder, create README, build tool.
+    *   *Language:* Constraint Handling Rules.
+    *   *Objective:* Needs a focus. The prompt example used "Develop a high-performance desktop application...". I should generate a plausible objective. Let's pick something related to CHR, like a constraint solver or a logic programming task. Example: "Develop a symbolic constraint solver capable of handling linear and finite domain constraints."
+    *   *Drafting:* "Initialize a NEW dedicated folder named chr_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Constraint Handling Rules. Focus entirely on this new objective: 'Develop a symbolic constraint solver capable of handling linear and finite domain constraints'. You MUST write functional code for this task strictly using this exact programming language: Constraint Handling Rules."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, it's a single block.
+    *   *Explicitly demand "Constraint Handling Rules"?* Yes.
+    *   *NEW dedicated folder?* Yes (`chr_tool`).
+    *   *Create local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes.
+
+4.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named chr_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Constraint Handling Rules. Focus entirely on this new objective: 'Develop a symbolic constraint solver capable of handling linear and finite domain constraints'. You MUST write functional code for this task strictly using this exact programming language: Constraint Handling Rules.`
+
+5.  **Output Generation:**
+    *   Produce the text.
+</think>
+
+Initialize a NEW dedicated folder named chr_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Constraint Handling Rules. Focus entirely on this new objective: 'Develop a symbolic constraint solver capable of handling linear and finite domain constraints'. You MUST write functional code for this task strictly using this exact programming language: Constraint Handling Rules.

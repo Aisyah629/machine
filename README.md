@@ -484,3 +484,5 @@ Training Machine
 - Created/Updated module: `./memory_network_tool` (See `./memory_network_tool/README.md` for details)
 
 - Created/Updated module: `chain_tool` (See `chain_tool/README.md` for details)
+
+- Created/Updated module: `dasl_tool` (See `dasl_tool/README.md` for details)

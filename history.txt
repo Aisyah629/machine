@@ -18935,3 +18935,42 @@ Initialize a NEW dedicated folder named chain_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named object_lisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Object Lisp. Focus entirely on this new objective: 'Develop an object-oriented runtime environment'. You MUST write functional code for this task strictly using this programming language: Object Lisp. I will output this. End. I will output the text now.
+[2026-08-16 00:25:17] (Target Lang: DASL) The user wants a follow-up instruction based on the provided workspace and history.
+The history shows the creation of a tool named `object_lisp_tool` using the language `Object Lisp` for the objective "Develop an object-oriented runtime environment".
+The prompt asks to generate *exactly 1 logical follow-up instruction*.
+This new instruction must:
+1. Build a new tool STRICTLY using the programming language: DASL.
+2. Instruct to place it in a NEW dedicated folder.
+3. Create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target the .github directory.
+
+I need to formulate a prompt that asks for a DASL tool.
+Looking at the history, the previous instruction format was: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this programming language: [Language]. I will output this. End. I will output the text now."
+
+I will follow this pattern.
+New language: DASL.
+New folder name: `dasl_tool`.
+New objective: Something logical for DASL. DASL is a database query language. Let's choose "Develop a database query system". Or "Create a data analysis framework".
+Let's stick to the pattern.
+
+Draft:
+Initialize a NEW dedicated folder named dasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DASL. Focus entirely on this new objective: 'Construct a comprehensive database querying engine'. You MUST write functional code for this task strictly using this programming language: DASL. I will output this. End. I will output the text now.
+
+Refining the objective to be distinct but logical.
+"Develop a robust database query interface".
+"DASL tool" seems to be the standard naming convention in the history (e.g., `object_lisp_tool`, `c_tool`, `ada_tool`).
+
+Final check of constraints:
+- 1 instruction.
+- Language: DASL.
+- NEW folder: dasl_tool.
+- Local README.md.
+- ONLY instruction text.
+- No .github.
+
+Result:
+Initialize a NEW dedicated folder named dasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DASL. Focus entirely on this new objective: 'Construct a high-performance database querying engine'. You MUST write functional code for this task strictly using this programming language: DASL. I will output this. End. I will output the text now.
+</think>
+
+Initialize a NEW dedicated folder named dasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DASL. Focus entirely on this new objective: 'Construct a high-performance database querying engine'. You MUST write functional code for this task strictly using this programming language: DASL. I will output this. End. I will output the text now.

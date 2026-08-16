@@ -1,0 +1,74 @@
+/*****************************************************************************
+ * Joy Tool - Functional Stack-based Utility
+ * 
+ * This implementation demonstrates core Joy features including:
+ * - Stack manipulation
+ * - List processing
+ * - Recursive definitions
+ * - Combinators and higher-order functions
+ *****************************************************************************/
+
+/----- Stack Manipulation -----
+
+dup    : "dup n" -> "n n";
+swap   : "n1 n2" -> "n2 n1";
+over   : "n1 n2" -> "n1 n2 n1";
+ipick  : "n1 n2" -> "n1 n2 n1";
+drop   : "n" -> "";
+rot    : "n1 n2 n3" -> "n2 n3 n1";
+vswap  : "n1 n2 n3" -> "n3 n2 n1";
+
+def dup { dup };
+def swap { swap };
+def over { over };
+def drop { drop };
+def rot { rot };
+
+/----- List Processing -----
+
+length : "[l1 l2 ... ln]" -> "n";
+def length { [0] [pop inc] mapreduce };
+
+member? : "x [l1 l2 ... ln]" -> "true|false";
+def member? { swap [eq] some };
+
+subseq : "[l1 ... li ...] [lj ...]" -> "[li ... lj ...]";
+def subseq { dip cons };
+
+/----- Recursive Definitions -----
+
+def sum { [0=] [0+] [1-] condition };
+def fac { [1<=] [1] [1-*] dup 1- condition };
+def fib { [2<=] [1+] [dup 1- fib] dip 2- fib + condition };
+
+/----- Higher-Order Functions -----
+
+mapreduce : "[l1 ... ln] f acc" -> "acc'";
+def mapreduce { [] [pop cons] [pop cons] mapreduce };
+
+filter : "[l1 ... ln] pred" -> "[l'1 ... l'k]";
+def filter { [] [swap dup null not swap [cons] dip] [pop] if };
+
+/----- Combinators -----
+
+/----- Entry Point -----
+
+def main {
+  dup 5
+  swap 3
+  rot
+  over
+  drop
+  swap
+  
+  5 length dup length drop
+  5 member? [1 2 3] drop
+  
+  5 sum drop
+  5 fac drop
+  5 fib drop
+  
+  true
+};
+
+main

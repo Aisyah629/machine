@@ -1,0 +1,35 @@
+$ MAIN TECO MACRO SCRIPT FOR TEXT TRANSFORMATION & DOCUMENT FORMATTING
+;; Initialize processing state
+S" STATUS:"P"Processing initialized."
+
+;; Define reusable transformation macros
+M MACRO TRANSFORM_HEADER /!"[HEADING]"/"[" & "!" & "]"/
+M MACRO TRANSFORM_LIST /!"- "/"* "/
+M MACRO TRANSFORM_PARAGRAPH /!"^M^M"/^M^P  /  ^M/ 
+M MACRO TRANSFORM_INDENT /!"  "//^
+
+;; Process input stream character by character
+A INPUT_BUFFER /!
+;; Scan for patterns and apply transformations
+IF INPUT_BUFFER MATCHES /"^"/ THEN
+  CALL TRANSFORM_HEADER
+ELSEIF INPUT_BUFFER MATCHES /"- "/ THEN
+  CALL TRANSFORM_LIST
+ELSEIF INPUT_BUFFER MATCHES /"^M^M"/ THEN
+  CALL TRANSFORM_PARAGRAPH
+ELSEIF INPUT_BUFFER MATCHES /"  "/ THEN
+  CALL TRANSFORM_INDENT
+ENDIF
+
+;; Formatting pass: normalize whitespace
+A NORMALIZE /!" ^"/^ / 
+A NORMALIZE /!"  "/^ / 
+A NORMALIZE /!"^M^M"/^M^ / 
+A NORMALIZE /!"^M^ / ^M/ 
+
+;; Output processed document
+A OUTPUT /!"^Z"/ 
+
+;; Finalize and exit
+S" STATUS:"P"Document transformation complete." 
+$ EXIT

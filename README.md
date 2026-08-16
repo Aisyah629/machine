@@ -830,3 +830,5 @@ Training Machine
 - Created/Updated module: `xpl_tool` (See `xpl_tool/README.md` for details)
 
 - Created/Updated module: `rexx_tool` (See `rexx_tool/README.md` for details)
+
+- Created/Updated module: `dynamo_tool` (See `dynamo_tool/README.md` for details)

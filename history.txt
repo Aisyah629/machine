@@ -33087,3 +33087,44 @@ Initialize a NEW dedicated folder named rexx_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named mary_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mary. Focus entirely on this new objective: 'Develop a modular configuration template engine for automated infrastructure provisioning and system state validation.'. You MUST write code for this task strictly using this exact programming language: Mary.
+[2026-08-16 21:07:28] (Target Lang: DYNAMO) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: New tool MUST use language "DYNAMO".
+    *   Constraint: If new tool, MUST place in a NEW dedicated folder and create a local `README.md`.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the `.github` directory.
+    *   Context: The user provided a large list of existing tools (mostly programming languages/tools like `a0_system_tool`, `abap_tool`, `bash_tool`, `c_tool`, etc.) and a history block showing a previous iteration for "Mary". The current request is for "DYNAMO".
+
+2.  **Formulate the Instruction:**
+    *   *Action:* Initialize a NEW dedicated folder.
+    *   *Folder Name:* `dynamo_tool`.
+    *   *File Creation:* Create a local `README.md`.
+    *   *Language:* DYNAMO.
+    *   *Objective:* Needs a logical objective based on "DYNAMO". Looking at the history, the objective for Mary was "Develop a modular configuration template engine...". For Dynamo, a common association in the real world is simulation or 3D modeling, but within this abstract list of "tools", I should pick something plausible or just a generic system task that fits the pattern. The pattern in the history suggests a specific technical objective. Let's choose something like "Develop a dynamic workflow orchestration engine for real-time system metric analysis and automated remediation." or "Develop a fluid dynamics simulation engine for high-performance computational modeling." Given the list includes many system/admin tools (`system_tool`, `data_extraction_tool`), a workflow or simulation tool makes sense. Let's go with a "Distributed simulation engine" or "Dynamic resource allocation engine". "Develop a dynamic resource allocation engine for predictive load balancing and automated scaling in distributed environments." sounds professional and fits the theme.
+    *   *Drafting text:* "Initialize a NEW dedicated folder named `dynamo_tool` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Develop a dynamic resource allocation engine for predictive load balancing and automated scaling in distributed environments.'. You MUST write code for this task strictly using this exact programming language: DYNAMO."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes, it's one coherent command block.
+    *   *Language DYNAMO?* Yes, explicitly demanded.
+    *   *NEW dedicated folder?* Yes, `dynamo_tool`.
+    *   *Local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes, the output should be just the text.
+    *   *No `.github`?* Yes, text doesn't mention `.github`.
+    *   *Logical follow-up?* The previous one was Mary. This is Dynamo. It follows the pattern of the list (adding a new tool). It's logical in the context of building out this workspace of tools.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Develop a dynamic resource allocation engine for predictive load balancing and automated scaling in distributed environments.'. You MUST write code for this task strictly using this exact programming language: DYNAMO.`
+
+5.  **Final Output Construction:**
+    *   The output must be exactly the text above. No quotes, no extra whitespace (unless part of the text), no markdown code blocks unless the instruction format implies it, but usually "Return ONLY the instruction text" means raw text or the text string. Based on the history example in the prompt (`Initialize a NEW dedicated folder named mary_tool...`), the format is a raw text paragraph.
+
+    *   Result: `Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Develop a dynamic resource allocation engine for predictive load balancing and automated scaling in distributed environments.'. You MUST write code for this task strictly using this exact programming language: DYNAMO.`
+
+    *   Wait, let me check the "Objective" part. The history had `Develop a modular configuration template engine...`. The user didn't provide an objective for Dynamo in the prompt, just the language. The instruction needs to include the objective? The constraint says "Focus entirely on this new objective...". The prompt asks me to "Generate exactly 1 logical follow-up instruction." The instruction itself must contain the objective to be useful. The example in the history includes the objective. So I must invent a plausible objective for Dynamo. The one I drafted is good.
+
+    *   Result confirms.
+</think>
+
+Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Develop a dynamic resource allocation engine for predictive load balancing and automated scaling in distributed environments.'. You MUST write code for this task strictly using this exact programming language: DYNAMO.

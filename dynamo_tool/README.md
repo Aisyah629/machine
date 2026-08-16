@@ -1,15 +1,17 @@
-# DYNAMO Tool
+# Dynamo Tool
 
-This tool provides a comprehensive system dynamics simulation model for resource flow analysis, implemented strictly in the DYNAMO programming language.
+This tool is built using the **DYNAMO** programming language.
 
-## Overview
-DYNAMO is a domain-specific language designed for system dynamics modeling and simulation. It allows users to define stocks, flows, and feedback loops to simulate complex behavioral patterns over time.
+## Objective
+
+Develop a dynamic resource allocation engine for predictive load balancing and automated scaling in distributed environments.
 
 ## Features
-- Robust stock and flow definitions
-- Built-in feedback loop handling
-- Time-stepped integration
-- Resource flow analysis capabilities
+
+- Predictive analytics for load balancing
+- Automated scaling based on real-time metrics
+- Dynamic resource allocation
 
 ## Usage
-Run the main DYNAMO simulation script to execute the ecological resource modeling task.
+
+Run the main script `main.dynamo` to initialize the engine.

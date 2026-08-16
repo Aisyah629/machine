@@ -816,3 +816,5 @@ Training Machine
 - Created/Updated module: `./coral66_tool` (See `./coral66_tool/README.md` for details)
 
 - Created/Updated module: `lc3_tool` (See `lc3_tool/README.md` for details)
+
+- Created/Updated module: `wyvern_tool` (See `wyvern_tool/README.md` for details)

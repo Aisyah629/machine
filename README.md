@@ -810,3 +810,5 @@ Training Machine
 - Created/Updated module: `zig_tool` (See `zig_tool/README.md` for details)
 
 - Created/Updated module: `rust_scheduler_tool` (See `rust_scheduler_tool/README.md` for details)
+
+- Created/Updated module: `tex_macro_compiler_tool` (See `tex_macro_compiler_tool/README.md` for details)

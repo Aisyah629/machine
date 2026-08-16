@@ -32442,3 +32442,42 @@ Initialize a NEW dedicated folder named rust_scheduler_tool in the workspace, cr
 </think>
 
 Initialize a NEW dedicated folder named zig_stream_transformer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Zig. Focus entirely on this new objective: 'Build a zero-allocation streaming data transformer for real-time video frames.'. You MUST write code for this task strictly using this exact programming language: Zig.
+[2026-08-16 20:35:33] (Target Lang: TeX) Thinking Process:
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Use programming language: TeX.
+    *   Action: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Output: ONLY the instruction text.
+    *   Negative Constraint: NEVER target the `.github` directory.
+    *   Pattern from History: The user provides a history of an instruction like "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+
+2.  **Draft the Instruction:**
+    *   *Language:* TeX.
+    *   *Tool Name:* Needs to be unique. Following the pattern `*_tool`, maybe `tex_macro_compiler_tool` or `tex_document_processor_tool`. Let's use `tex_macro_compiler_tool`.
+    *   *Objective:* Needs to be related to TeX. TeX is a typesetting system. A logical objective could be "Create a macro compiler for generating custom document templates" or "Build a TeX document processor for automated typesetting workflows". Let's go with "Build a TeX macro compiler that optimizes macro expansions for complex document generation."
+    *   *Structure:*
+        *   Initialize a NEW dedicated folder named `tex_macro_compiler_tool` in the workspace.
+        *   Create a local `README.md` inside it.
+        *   Build the entire new tool STRICTLY using this exact programming language: TeX.
+        *   Focus entirely on this new objective: 'Build a TeX macro compiler that optimizes macro expansions for complex document generation.'.
+        *   You MUST write code for this task strictly using this exact programming language: TeX.
+
+3.  **Refine the Text (Mental Simulation of Output):**
+    *   "Initialize a NEW dedicated folder named tex_macro_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TeX. Focus entirely on this new objective: 'Build a TeX macro compiler that optimizes macro expansions for complex document generation.'. You MUST write code for this task strictly using this exact programming language: TeX."
+
+4.  **Check Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Language: TeX? Yes.
+    *   New dedicated folder? Yes (`tex_macro_compiler_tool`).
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   NEVER target `.github`? Yes (no mention of `.github`).
+    *   Logical follow-up? Yes, fits the pattern of adding tools to a repository of tools.
+
+5.  **Final Polish:**
+    *   Result: Initialize a NEW dedicated folder named tex_macro_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TeX. Focus entirely on this new objective: 'Build a TeX macro compiler that optimizes macro expansions for complex document generation.'. You MUST write code for this task strictly using this exact programming language: TeX.
+
+This matches the style of the history examples perfectly.
+</think>
+
+Initialize a NEW dedicated folder named tex_macro_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TeX. Focus entirely on this new objective: 'Build a TeX macro compiler that optimizes macro expansions for complex document generation.'. You MUST write code for this task strictly using this exact programming language: TeX.

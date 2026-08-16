@@ -21509,3 +21509,37 @@ Initialize a NEW dedicated folder named cesil_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named swift_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Swift (parallel scripting language). Focus entirely on this new objective: 'Create a high-performance parallel task executor using Swift'. You MUST write functional code for this task strictly using this exact programming language: Swift.
+[2026-08-16 05:53:41] (Target Lang: ksh) The user wants a logical follow-up instruction based on the previous context and the provided constraints.
+Constraints:
+1. Exactly 1 instruction.
+2. Must explicitly demand the new tool be built STRICTLY using 'ksh' (KornShell).
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+6. Logical follow-up.
+
+Context analysis:
+Previous context: "Create a high-performance parallel task executor using Swift".
+Current request: Follow-up using 'ksh'.
+'ksh' is a shell scripting language. A logical follow-up could be a system administration script, a deployment script, or a lightweight command-line utility.
+Given the previous task was a "high-performance parallel task executor", a logical follow-up might be a "robust system health monitor using ksh" or "automated backup utility using ksh". Let's go with "Create a robust automated backup utility using ksh".
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named `ksh_tool` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: ksh. Focus entirely on this new objective: 'Create a robust automated backup utility using ksh'. You MUST write functional code for this task strictly using this exact programming language: ksh."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand built STRICTLY using 'ksh'? Yes.
+- NEW dedicated folder? Yes (`ksh_tool`).
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+- Logical follow-up? Swift parallel executor -> ksh backup utility. Good progression from complex parallel logic to system maintenance/scripting.
+
+Refining text to match the style of the example:
+"Initialize a NEW dedicated folder named ksh_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ksh. Focus entirely on this new objective: 'Create a robust automated backup utility using ksh'. You MUST write functional code for this task strictly using this exact programming language: ksh."
+
+Matches all constraints. Output generation.
+</think>
+
+Initialize a NEW dedicated folder named ksh_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ksh. Focus entirely on this new objective: 'Create a robust automated backup utility using ksh'. You MUST write functional code for this task strictly using this exact programming language: ksh.

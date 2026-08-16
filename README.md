@@ -616,3 +616,5 @@ Training Machine
 - Created/Updated module: `aimms_tool` (See `aimms_tool/README.md` for details)
 
 - Created/Updated module: `aspectj_tool` (See `aspectj_tool/README.md` for details)
+
+- Created/Updated module: `xpath_tool` (See `xpath_tool/README.md` for details)

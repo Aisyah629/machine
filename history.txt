@@ -19680,3 +19680,79 @@ Initialize a NEW dedicated folder named onyx_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named coffeescript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus entirely on this new objective: 'Develop a modular data transformation pipeline'. You MUST write functional code for this task strictly using this programming language: CoffeeScript.
+[2026-08-16 03:16:11] (Target Lang: KRC) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: KRC.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a large list of existing tools and a history of a previous instruction (CoffeScript). The new instruction is for "KRC".
+
+2.  **Identify Key Elements for KRC Tool:**
+    *   Language: KRC (Kerberos Request Cryptography? No, KRC usually refers to "Kernel Request Control" or historically a logic programming language related to Prolog/Mercury, or "KRC" as in the language defined by C.A.R. Hoare for formal verification. Given the context of "tools" and "languages" in the workspace list, it's likely the functional logic language KRC. I should treat it as a distinct programming language).
+    *   Task/Objective: Needs a specific task. The prompt implies I should follow the pattern of the previous instruction ("Develop a modular data transformation pipeline"). I can reuse a similar generic but functional objective or pick a KRC-suitable one (like theorem proving or logic verification), but the prompt just says "Generate exactly 1 logical follow-up instruction... Focus entirely on this new objective". It doesn't specify the objective, so I can choose a generic one or stick to the previous one if it fits. The previous one was "Develop a modular data transformation pipeline". KRC is a functional language, so that fits. Or I can pick something logic-oriented. However, the safest bet for a "logical follow-up" in these automated prompt scenarios is often to pick a new objective or reuse the previous structure. Let's look at the "History" provided in the prompt. The history shows a self-correction loop for CoffeScript. The user wants *me* to generate the instruction for KRC now.
+    *   The prompt asks to "Generate exactly 1 logical follow-up instruction". This implies I am the AI generating the text that would be executed.
+    *   Structure: "Initialize a NEW dedicated folder named [name]... create README.md... build tool STRICTLY using [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code... strictly using [Language]."
+
+3.  **Drafting the Instruction:**
+    *   *Folder Name:* krc_tool (following the naming convention `./language_tool` seen in the list like `./c_tool`, `./haskell_tool`).
+    *   *Language:* KRC.
+    *   *Objective:* Needs to be defined. Since the previous one was "Develop a modular data transformation pipeline", and the user didn't specify a new objective, I should probably generate a logical one. "Develop a formal logic verification system" or "Implement a functional data processing module". Let's go with "Implement a functional data processing module" to keep it generic enough or "Develop a theorem proving assistant". Actually, looking at the "History" text, the user pasted a "Self-Correction" block for CoffeScript. The user wants me to output the KRC instruction now.
+    *   *Constraint Check:*
+        *   "MUST explicitly demand... STRICTLY using this exact programming language: KRC."
+        *   "NEW dedicated folder... create local README.md."
+        *   "Return ONLY the instruction text."
+        *   "NEVER target .github."
+
+4.  **Refining the Text:**
+    *   "Initialize a NEW dedicated folder named krc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRC. Focus entirely on this new objective: 'Develop a formal logic verification engine'. You MUST write functional code for this task strictly using this programming language: KRC."
+    *   *Check:* Does it meet all constraints?
+        *   NEW folder `krc_tool`? Yes.
+        *   README.md? Yes.
+        *   Language KRC? Yes.
+        *   "STRICTLY using this exact programming language: KRC"? Yes.
+        *   Objective? Yes ("Develop a formal logic verification engine" fits KRC's nature well, or I could just use "Develop a modular data transformation pipeline" to be safe as a direct follow-up, but a logical follow-up might suggest a new task. The prompt doesn't force a specific task text, just that I must demand the language. I'll pick a task that sounds good. "Develop a functional logic verification system" is strong for KRC).
+        *   "You MUST write functional code... strictly using this programming language: KRC"? Yes (repeating the demand).
+        *   ONLY instruction text? Yes.
+        *   No .github? Yes.
+
+5.  **Final Polish (Mental Representation of Output):**
+    `Initialize a NEW dedicated folder named krc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRC. Focus entirely on this new objective: 'Develop a functional logic verification system'. You MUST write functional code for this task strictly using this programming language: KRC.`
+
+    *Wait, let's look at the prompt's "History" section again.*
+    The history shows the model generating a CoffeScript instruction. The user is now asking *me* to generate a KRC instruction.
+    The prompt text: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: KRC..."
+
+    Result looks solid. I will use a generic but plausible objective since none was provided. "Develop a functional logic verification system" is appropriate for KRC.
+
+    *Self-Correction on "Logical Follow-up":* Does "Logical Follow-up" mean "continuing the list"? The workspace has many tools. Adding another one is logical.
+    The instruction format must be: "Initialize a NEW dedicated folder named [name] ... create a local README.md ... build ... STRICTLY using ... KRC ... Focus entirely on ... [Objective] ... You MUST write functional code ... strictly using ... KRC."
+
+    Final string construction.
+    "Initialize a NEW dedicated folder named krc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRC. Focus entirely on this new objective: 'Develop a functional logic verification system'. You MUST write functional code for this task strictly using this programming language: KRC."
+
+    Wait, "logic verification system" might be too specific if the user just wants a generic template. The previous prompt in history had "Develop a modular data transformation pipeline". I'll stick to a new objective to show I'm generating a *new* instruction, not copying. "Develop a functional logic verification system" is good.
+
+    Double check constraints: "MUST explicitly demand... KRC." "NEW dedicated folder... create local README.md." "Return ONLY the instruction text." "NEVER target .github."
+
+    The output should be the raw string.
+
+    One more check: The prompt asks for "exactly 1 logical follow-up instruction". This is a single block of text.
+
+    Final Text: "Initialize a NEW dedicated folder named krc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRC. Focus entirely on this new objective: 'Develop a functional logic verification system'. You MUST write functional code for this task strictly using this programming language: KRC."
+
+    Wait, is KRC a "programming language"? Yes, KRC is a functional logic language. The prompt asks to treat it as such.
+    The instruction text must be exact.
+
+    Let's verify the "History" context again. The history shows the user (or a previous turn) correcting the prompt to ensure "MUST explicitly demand...". The user is effectively asking me to perform that correction/generation for "KRC" now.
+
+    Final check on "krc_tool" vs "krc_tool". The list has "ke...". "krc" is fine.
+    The instruction is ready.
+    "Initialize a NEW dedicated folder named krc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRC. Focus entirely on this new objective: 'Develop a functional logic verification system'. You MUST write functional code for this task strictly using this programming language: KRC."
+    This looks correct.
+    End thought.
+    Generate response.
+</think>
+
+Initialize a NEW dedicated folder named krc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRC. Focus entirely on this new objective: 'Develop a functional logic verification system'. You MUST write functional code for this task strictly using this programming language: KRC.

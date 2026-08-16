@@ -27429,3 +27429,46 @@ Output matches draft.✅
 </think>
 
 Initialize a NEW dedicated folder named elan_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ELAN. Focus entirely on this new objective: 'Define an algebraic specification module for string manipulation rules'. You MUST write code for this task strictly using this exact programming language: ELAN.
+[2026-08-16 14:31:18] (Target Lang: PortablE) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand the new tool be built STRICTLY using `PortablE`.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint: Create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the `.github` directory.
+    *   Context: The workspace history shows a pattern of initializing tools in dedicated folders with a language-specific main file and a README. The previous draft was for `elan_tool`. The current request asks for a follow-up using `PortablE`.
+
+2.  **Analyze the "PortablE" language:**
+    *   PortablE is an educational, algebraic specification language similar to ELAN and OBJ. It's often used for teaching formal methods and algebraic specification.
+    *   Key syntax features: `SPEC`, `MODULE`, `IMPORTS`, `SORTS`, `OPS`, `EQUATIONS`.
+
+3.  **Draft the instruction content:**
+    *   *Action:* Initialize a NEW dedicated folder.
+    *   *Folder Name:* `portable_tool` (consistent with naming conventions in the workspace list, e.g., `c_tool`, `python_tool`, etc.).
+    *   *File:* `main.portable` (or similar extension, though PortablE files often use `.portable` or just plain text, but looking at the pattern, most tools have a `main.<ext>`. I'll assume `main.portable` for consistency, or just `main` if the extension isn't standard, but the pattern suggests an extension. Let's check the workspace list... `a0_system_tool`, `abap_tool`... most have a main file. I'll use `main.portable` as a safe guess for the extension based on the language name).
+    *   *Readme:* `README.md`.
+    *   *Language:* PortablE.
+    *   *Objective:* Needs to be relevant to PortablE. Since it's an algebraic specification language, a good objective would be "Define an algebraic specification for list operations" or "Specify a stack data structure algebraically". Let's go with "Specify an algebraic definition for a list data structure with append and reverse operations".
+
+    *Draft Text:* Initialize a NEW dedicated folder named portable_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PortablE. Focus entirely on this new objective: 'Specify an algebraic definition for a list data structure with append and reverse operations'. You MUST write code for this task strictly using this exact programming language: PortablE.
+
+4.  **Review against constraints:**
+    *   *Exactly 1 instruction?* Yes, it's a single paragraph/command block.
+    *   *Explicitly demand STRICTLY using PortablE?* Yes ("STRICTLY using this exact programming language: PortablE").
+    *   *NEW dedicated folder?* Yes (`portable_tool`).
+    *   *Local README.md?* Yes.
+    *   *ONLY instruction text?* Yes, the output should be just the text.
+    *   *NEVER target .github?* Yes, no mention of `.github`.
+    *   *Logical follow-up?* Yes, follows the pattern of creating a tool for a specific language.
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   "Initialize a NEW dedicated folder named portable_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PortablE. Focus entirely on this new objective: 'Specify an algebraic definition for a list data structure with append and reverse operations'. You MUST write code for this task strictly using this exact programming language: PortablE."
+
+    *Wait, let's check the workspace list for `portable_tool`. It doesn't exist in the provided list, so creating it is valid. The pattern holds.*
+
+    *Result matches the drafted text.*
+</think>
+
+Initialize a NEW dedicated folder named portable_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PortablE. Focus entirely on this new objective: 'Specify an algebraic definition for a list data structure with append and reverse operations'. You MUST write code for this task strictly using this exact programming language: PortablE.

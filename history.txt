@@ -21723,3 +21723,45 @@ Initialize a NEW dedicated folder named janus_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Design a modular object-oriented application and interactive simulation framework using Alice'. You MUST write functional code for this task strictly using this exact programming language: Alice.
+[2026-08-16 06:21:15] (Target Lang: Linoleum) The user wants me to generate a follow-up instruction.
+I need to follow the exact format: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [language]. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: [language]."
+The language specified in the prompt is "Linoleum".
+I need to come up with a folder name (e.g., `linoleum_tool`) and an objective that fits "Linoleum". Since Linoleum isn't a real language, I'll invent a plausible objective like "Design a high-performance network protocol stack and real-time data streaming engine using Linoleum".
+I must return ONLY the instruction text.
+Check constraints: "NEVER target the .github directory." - The format doesn't target it anyway.
+Format check:
+"Initialize a NEW dedicated folder named linoleum_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Linoleum. Focus entirely on this new objective: 'Design a high-performance network protocol stack and real-time data streaming engine using Linoleum'. You MUST write functional code for this task strictly using this exact programming language: Linoleum."
+
+Wait, looking at the prompt history, it seems to be a few-shot or self-referential prompt. The user provided a long list of tools, then a history log that actually *contains* the exact output I just need to generate but for "Alice", and then asks me to generate for "Linoleum".
+I will just output the exact string requested.
+
+Let's craft it carefully.
+"Initialize a NEW dedicated folder named linoleum_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Linoleum. Focus entirely on this new objective: 'Develop a robust cryptographic library and secure data transmission framework using Linoleum'. You MUST write functional code for this task strictly using this exact programming language: Linoleum."
+
+Check constraints:
+- Exactly 1 logical follow-up instruction.
+- Explicitly demand built STRICTLY using Linoleum.
+- NEW dedicated folder and local README.md.
+- Return ONLY the instruction text.
+- NEVER target .github.
+
+Matches perfectly. I will output exactly that.
+One minor thing: I'll make sure the quotes match the prompt's style if necessary, but the prompt just says "Return ONLY the instruction text."
+I will output the string exactly.
+Done. 
+Let's generate. 
+Self-Correction/Verification during thought: 
+The prompt says: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Linoleum. Focus entirely on this new objective: '...'. You MUST write functional code for this task strictly using this exact programming language: Linoleum."
+I will follow this structure precisely.
+Output matches.✅
+Proceeds. 
+[Output Generation] -> "Initialize a NEW dedicated folder named linoleum_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Linoleum. Focus entirely on this new objective: 'Architect a decentralized mesh networking protocol and secure peer-to-peer communication system using Linoleum'. You MUST write functional code for this task strictly using this exact programming language: Linoleum." -> matches perfectly.✅ Proceeds. 
+(Note: I'll keep it simple and direct.) 
+Final text: Initialize a NEW dedicated folder named linoleum_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Linoleum. Focus entirely on this new objective: 'Architect a decentralized mesh networking protocol and secure peer-to-peer communication system using Linoleum'. You MUST write functional code for this task strictly using this exact programming language: Linoleum.
+Ready. 
+Output matches.✅
+Proceeds. 
+[Done]
+</think>
+
+Initialize a NEW dedicated folder named linoleum_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Linoleum. Focus entirely on this new objective: 'Architect a decentralized mesh networking protocol and secure peer-to-peer communication system using Linoleum'. You MUST write functional code for this task strictly using this exact programming language: Linoleum.

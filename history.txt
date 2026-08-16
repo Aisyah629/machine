@@ -28985,3 +28985,36 @@ Initialize a NEW dedicated folder named alanguage_dotnet_tool in the workspace, 
 </think>
 
 Initialize a NEW dedicated folder named agora_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agora. Focus entirely on this new objective: 'Develop a symbolic reasoning engine capable of parsing and executing complex logical assertions'. You MUST write code for this task strictly using this exact programming language: Agora.
+[2026-08-16 16:28:29] (Target Lang: Metafont) The user wants a single logical follow-up instruction based on the provided workspace and history.
+The instruction must explicitly demand building a new tool using the programming language "Metafont".
+The instruction must create a new dedicated folder and a local README.md.
+The output must be ONLY the instruction text.
+No targeting `.github`.
+
+Workspace analysis:
+The workspace contains many tools like `a0_system_tool`, `abap_tool`, `agora_tool`, `c_tool`, `haskell_tool`, etc.
+There is no `metafont_tool` in the list.
+This suggests creating a `metafont_tool` is a valid new action.
+
+History analysis:
+The history shows a previous instruction about `agora_advanced_tool` and `Agora` language.
+This supports the pattern of generating sequential tool creation instructions.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named metafont_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Metafont. Focus entirely on this new objective: 'Construct a vector graphics generator capable of rendering complex mathematical typography'. You MUST write code for this task strictly using this exact programming language: Metafont."
+
+Check constraints:
+- Logical follow-up? Yes, creating a new tool based on a language available or implied by the request.
+- Strictly use Metafont? Yes.
+- New folder? Yes (`metafont_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target .github? Yes.
+
+Refining the instruction text for clarity and strictness:
+Initialize a NEW dedicated folder named metafont_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Metafont. Focus entirely on this new objective: 'Construct a vector graphics generator capable of rendering complex mathematical typography'. You MUST write code for this task strictly using this exact programming language: Metafont.
+
+The output should be just this text.
+</think>
+
+Initialize a NEW dedicated folder named metafont_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Metafont. Focus entirely on this new objective: 'Construct a vector graphics generator capable of rendering complex mathematical typography'. You MUST write code for this task strictly using this exact programming language: Metafont.

@@ -718,3 +718,5 @@ Training Machine
 - Created/Updated module: `setl_health_tool` (See `setl_health_tool/README.md` for details)
 
 - Created/Updated module: `agora_advanced_tool` (See `agora_advanced_tool/README.md` for details)
+
+- Created/Updated module: `metafont_tool` (See `metafont_tool/README.md` for details)

@@ -29754,3 +29754,59 @@ Initialize a NEW dedicated folder named m2001_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named fsharp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: F#. Focus entirely on this new objective: 'Construct a robust, type-safe framework for functional data transformation'. You MUST write code for this task strictly using this exact programming language: F#.
+[2026-08-16 17:07:10] (Target Lang: Lua) Thinking Process:
+
+1.  **Deconstruct the User's Request:**
+    *   Goal: Generate a logical follow-up instruction.
+    *   Current Context: The user provided a history of a previous interaction where an AI initialized `fsharp_tool`, created a `README.md`, and built an F# tool focused on "Construct a robust, type-safe framework for functional data transformation".
+    *   Constraints for the Output:
+        *   Generate exactly 1 logical follow-up instruction.
+        *   MUST explicitly demand the new tool be built STRICTLY using Lua.
+        *   If building a new tool (which the pattern suggests), instruct to place it in a NEW dedicated folder and create a local README.md.
+        *   Return ONLY the instruction text.
+        *   NEVER target the .github directory.
+
+2.  **Formulate the Follow-up Instruction:**
+    *   *Language:* Lua.
+    *   *Action:* Initialize a new tool.
+    *   *Folder Name:* Based on the language, it should be `lua_tool`.
+    *   *Files:* `README.md` inside the folder.
+    *   *Code:* Must use Lua strictly.
+    *   *Objective:* Needs to be relevant to Lua but follow the pattern of the previous objective style. The previous objective was "Construct a robust, type-safe framework for functional data transformation".
+    *   *Lua Characteristics:* Lua is known for being lightweight, embeddable, often used for scripting, extensibility, and sometimes coroutines/garbage collection. A good objective might focus on these.
+    *   *Drafting Objective:* "Construct a lightweight, embeddable scripting engine for dynamic configuration management" or "Build a high-performance, coroutine-based I/O abstraction layer".
+    *   *Refining Objective to match style:* The previous one was "Construct a robust...". Let's try "Construct a versatile, coroutine-based framework for asynchronous event handling". This sounds professional and fits Lua's strengths (coroutines are a major feature).
+    *   *Combining Elements:*
+        *   "Initialize a NEW dedicated folder named lua_tool..."
+        *   "...create a local README.md..."
+        *   "...build the entire new tool STRICTLY using this exact programming language: Lua."
+        *   "Focus entirely on this new objective: 'Construct a versatile, coroutine-based framework for asynchronous event handling'."
+        *   "You MUST write code for this task strictly using this exact programming language: Lua."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Demand Lua?* Yes ("STRICTLY using this exact programming language: Lua").
+    *   *New folder?* Yes ("lua_tool").
+    *   *Local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* The instruction doesn't mention .github. It's safe.
+
+4.  **Final Polish (Mental Representation of Output):**
+    "Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua. Focus entirely on this new objective: 'Construct a versatile, coroutine-based framework for asynchronous event handling'. You MUST write code for this task strictly using this exact programming language: Lua."
+
+    *Self-Correction on "Logical Follow-up":* The prompt asks for a "logical follow-up". The user provided history shows the AI deciding on the objective. The "Follow-up" usually implies the next step in the chain. If the previous step was creating `fsharp_tool`, a logical follow-up might be creating `lua_tool` to expand the toolset, or perhaps enhancing the fsharp tool? However, the constraints force the creation of a *new* tool in a *new* folder using *Lua*. So the "logical" part is just maintaining the pattern of tool creation while switching the language to Lua as demanded. The output should be the instruction itself.
+
+    *Result:* The drafted text looks solid. It matches the style of the history provided in the prompt's context, satisfies the Lua constraint, folder constraint, README constraint, and excludes .github.
+
+5.  **Final Output Construction:**
+    `Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua. Focus entirely on this new objective: 'Construct a lightweight, extensible scripting engine for dynamic plugin management'. You MUST write code for this task strictly using this exact programming language: Lua.`
+
+    *Wait, let me check the objective string.* The user didn't specify the objective text for the follow-up, just that it must be a "logical follow-up". I should generate a plausible objective. "Construct a lightweight, extensible scripting engine..." is good for Lua. Or "Build a high-performance, garbage-collected runtime for embedded data processing". Let's go with something that emphasizes Lua's nature. "Construct a modular, coroutine-driven system for concurrent network requests" is also good. The previous one was "functional data transformation". Lua isn't primarily functional, though it supports it. A "coroutine-based" objective is very logical for Lua.
+    Let's use: "Construct a versatile, coroutine-based framework for asynchronous event processing".
+    This aligns well.
+
+    Final text:
+    Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua. Focus entirely on this new objective: 'Construct a versatile, coroutine-based framework for asynchronous event processing'. You MUST write code for this task strictly using this exact programming language: Lua.
+</think>
+
+Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua. Focus entirely on this new objective: 'Construct a versatile, coroutine-based framework for asynchronous event processing'. You MUST write code for this task strictly using this exact programming language: Lua.

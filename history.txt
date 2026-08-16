@@ -22588,3 +22588,37 @@ Initialize a NEW dedicated folder named e_sharp_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named chr_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Constraint Handling Rules. Focus entirely on this new objective: 'Develop a symbolic constraint solver capable of handling linear and finite domain constraints'. You MUST write functional code for this task strictly using this exact programming language: Constraint Handling Rules.
+[2026-08-16 08:17:45] (Target Lang: Deesel) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand "Deesel" as the programming language.
+    *   Constraint: If building a new tool, use a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target `.github`.
+
+2.  **Drafting the Instruction:**
+    *   *Core Action:* Initialize a new tool.
+    *   *Language:* Deesel.
+    *   *Folder:* Needs a name. Looking at the workspace list, I don't see `deesel_tool`. Common naming convention in the workspace seems to be `{tool_name}_tool`. So, `deesel_tool`.
+    *   *README:* Must create `README.md` inside the folder.
+    *   *Objective:* Needs a plausible objective. The prompt mentions the example used "Develop a high-performance desktop application...". Deesel is a domain-specific language (DSL) for game development/scripting. A plausible objective would be related to game logic, simulation, or scripting. Let's pick "Develop a modular game scripting framework capable of handling entity component systems and dynamic behavior injection." This sounds technical and fits a DSL.
+    *   *Structure:* "Initialize a NEW dedicated folder named deesel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Deesel. Focus entirely on this new objective: 'Develop a modular game scripting framework capable of handling entity component systems and dynamic behavior injection'. You MUST write functional code for this task strictly using this exact programming language: Deesel."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* The draft is a single paragraph/block of text. Yes.
+    *   *Explicitly demand "Deesel"?* Yes ("STRICTLY using this exact programming language: Deesel").
+    *   *NEW dedicated folder?* Yes (`deesel_tool`).
+    *   *Create local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes, the output should be just the text.
+    *   *Never target .github?* The instruction targets `deesel_tool`, not `.github`. Yes.
+
+4.  **Final Polish:**
+    *   Text: `Initialize a NEW dedicated folder named deesel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Deesel. Focus entirely on this new objective: 'Develop a modular game scripting framework capable of handling entity component systems and dynamic behavior injection'. You MUST write functional code for this task strictly using this exact programming language: Deesel.`
+
+5.  **Output Construction:**
+    *   Result matches the polished text.
+    *   Output: `Initialize a NEW dedicated folder named deesel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Deesel. Focus entirely on this new objective: 'Develop a modular game scripting framework capable of handling entity component systems and dynamic behavior injection'. You MUST write functional code for this task strictly using this exact programming language: Deesel.`
+</think>
+
+Initialize a NEW dedicated folder named deesel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Deesel. Focus entirely on this new objective: 'Develop a modular game scripting framework capable of handling entity component systems and dynamic behavior injection'. You MUST write functional code for this task strictly using this exact programming language: Deesel.

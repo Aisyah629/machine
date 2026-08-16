@@ -1,0 +1,36 @@
+# Deesel Tool
+
+## Overview
+The Deesel Tool is a specialized implementation for developing a modular game scripting framework using the Deesel programming language. This tool is designed to handle entity component systems (ECS) and dynamic behavior injection, providing a robust foundation for game development and simulation.
+
+## Features
+- **Entity Component System (ECS):** Implements a scalable and efficient ECS for managing game entities and their components.
+- **Dynamic Behavior Injection:** Allows for the runtime modification and injection of behaviors into game entities.
+- **Modular Design:** The framework is structured to be easily extensible, allowing developers to add new components and systems as needed.
+- **Performance Optimization:** Optimized for high-performance execution, suitable for real-time game applications.
+
+## Installation
+1. Clone the repository or download the source code.
+2. Ensure you have the Deesel compiler installed.
+3. Navigate to the `deesel_tool` directory.
+4. Compile the main script using the Deesel compiler.
+
+## Usage
+1. Create a new game entity and assign components to it.
+2. Define custom behaviors and inject them into the entity.
+3. Run the simulation and observe the dynamic behavior changes.
+
+## Example
+```deesel
+// Example of creating an entity and injecting behavior
+entity player = new Entity()
+add_component(player, "Movement")
+add_behavior(player, "Jump")
+run_simulation()
+```
+
+## Contributing
+Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.

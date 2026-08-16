@@ -572,3 +572,5 @@ Training Machine
 - Created/Updated module: `dynamo_tool` (See `dynamo_tool/README.md` for details)
 
 - Created/Updated module: `metall_tool` (See `metall_tool/README.md` for details)
+
+- Created/Updated module: `foxpro_tool` (See `foxpro_tool/README.md` for details)

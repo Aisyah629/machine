@@ -23913,3 +23913,58 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Develop a streamlined log file parsing utility'. You MUST write functional code for this task strictly using this exact programming language: Sed.
+[2026-08-16 10:02:58] (Target Lang: Starlogo) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Context:** The user provides a list of files in the current workspace (representing previous tool creations) and a history of interactions.
+    *   **History:** The last action was creating `sed_tool` with a `README.md` and functional code for "streamlined log file parsing utility" using `Sed`.
+    *   **Goal:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraints:**
+        *   New tool must be built STRICTLY using `Starlogo`.
+        *   Must be placed in a NEW dedicated folder.
+        *   Must create a local `README.md`.
+        *   Return *only* the instruction text.
+        *   No markdown headers (like "Instruction:", "Here is the instruction").
+        *   Never target `.github`.
+
+2.  **Determine the Subject:**
+    *   Language: `Starlogo`.
+    *   Theme: Needs to be logical. Starlogo is typically used for modeling multi-agent systems, swarms, and complex systems.
+    *   Previous tool (`sed_tool`) was about log parsing.
+    *   Logical follow-up: Maybe something related to simulation or analysis, but strictly adhering to the "Starlogo" constraint. Let's choose a "Swarm behavior modeling utility" or "Complex system simulation framework" as the focus, as it fits Starlogo well.
+
+3.  **Draft the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named starlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Starlogo. Focus entirely on this new objective: 'Develop a swarm behavior modeling utility'. You MUST write functional code for this task strictly using this exact programming language: Starlogo.
+    *   *Check against constraints:*
+        *   New folder `starlogo_tool`? Yes.
+        *   Local `README.md`? Yes.
+        *   Language `Starlogo`? Yes.
+        *   Objective `Develop a swarm behavior modeling utility`? Yes.
+        *   "You MUST write functional code..."? Yes.
+        *   No markdown headers? Yes.
+        *   No `.github`? Yes.
+
+4.  **Refine the Wording:**
+    *   The prompt examples in the history show a specific phrasing pattern: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+
+5.  **Final Polish:**
+    *   Folder: `starlogo_tool`
+    *   Language: `Starlogo`
+    *   Objective: `Develop a multi-agent swarm simulation engine` (or similar).
+
+    *Result:* Initialize a NEW dedicated folder named starlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Starlogo. Focus entirely on this new objective: 'Develop a multi-agent swarm simulation engine'. You MUST write functional code for this task strictly using this exact programming language: Starlogo.
+
+6.  **Final Output Generation:**
+    Initialize a NEW dedicated folder named starlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Starlogo. Focus entirely on this new objective: 'Develop a multi-agent swarm simulation engine'. You MUST write functional code for this task strictly using this exact programming language: Starlogo.
+
+7.  **Double Check Constraints:**
+    *   Return ONLY the instruction text? Yes.
+    *   Never target .github? Yes.
+    *   Logical follow-up? Yes.
+    *   Language: Starlogo? Yes.
+    *   New folder/README? Yes.
+
+    Proceed.
+</think>
+
+Initialize a NEW dedicated folder named starlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Starlogo. Focus entirely on this new objective: 'Develop a multi-agent swarm simulation engine'. You MUST write functional code for this task strictly using this exact programming language: Starlogo.

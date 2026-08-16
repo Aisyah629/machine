@@ -31296,3 +31296,40 @@ The instruction must:
 </think>
 
 Initialize a NEW dedicated folder named ops5_production_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Implement a production rule engine for declarative problem-solving and state-transition modeling.'. You MUST write code for this task strictly using this exact programming language: OPS5.
+[2026-08-16 19:30:19] (Target Lang: ABLE) Thinking process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using ABLE programming language.
+    *   Constraint 2: If building a new tool, place in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a workspace list and history. The history shows previous instructions following a pattern: "Initialize a NEW dedicated folder named [tool_name]... create a local README.md... build... STRICTLY using [language]... Focus on [objective]...".
+    *   Current History End: `Initialize a NEW dedicated folder named ops5_production_system_tool...`
+    *   New Instruction Target: ABLE language.
+
+2.  **Draft the Instruction based on Pattern:**
+    *   *Folder Name:* Needs to be `able_tool` based on the pattern (e.g., `ops5_production_system_tool`, `rpl_tool`).
+    *   *Language:* ABLE.
+    *   *Action:* Initialize folder, create README, build tool.
+    *   *Objective:* Needs a plausible objective for ABLE. ABLE is a language for rule-based systems/declarative programming. Good objective: "Implement a declarative rule-based system for logical inference and pattern matching."
+    *   *Draft:* `Initialize a NEW dedicated folder named able_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: 'Implement a declarative rule-based system for logical inference and pattern matching.'. You MUST write code for this task strictly using this exact programming language: ABLE.`
+
+3.  **Check Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Explicitly demand ABLE?* Yes ("STRICTLY using this exact programming language: ABLE").
+    *   *New dedicated folder?* Yes ("able_tool").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes, no markdown code blocks, no extra text.
+    *   *Never target .github?* Yes, text doesn't mention .github.
+
+4.  **Refine Text:**
+    *   Result: `Initialize a NEW dedicated folder named able_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: 'Implement a declarative rule-based system for logical inference and pattern matching.'. You MUST write code for this task strictly using this exact programming language: ABLE.`
+
+5.  **Final Output Construction:**
+    *   Output the refined text exactly.
+
+Result matches expectations.
+</think>
+
+Initialize a NEW dedicated folder named able_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: 'Implement a declarative rule-based system for logical inference and pattern matching.'. You MUST write code for this task strictly using this exact programming language: ABLE.

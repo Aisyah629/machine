@@ -640,3 +640,5 @@ Training Machine
 - Created/Updated module: `felix_tool` (See `felix_tool/README.md` for details)
 
 - Created/Updated module: `coral66_tool` (See `coral66_tool/README.md` for details)
+
+- Created/Updated module: `object_rexx_tool` (See `object_rexx_tool/README.md` for details)

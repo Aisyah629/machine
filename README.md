@@ -738,3 +738,5 @@ Training Machine
 - Created/Updated module: `sather_tool` (See `sather_tool/README.md` for details)
 
 - Created/Updated module: `m2001_tool` (See `m2001_tool/README.md` for details)
+
+- Created/Updated module: `fsharp_tool` (See `fsharp_tool/README.md` for details)

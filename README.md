@@ -558,3 +558,5 @@ Training Machine
 - Created/Updated module: `janus_tool` (See `janus_tool/README.md` for details)
 
 - Created/Updated module: `alice_tool` (See `alice_tool/README.md` for details)
+
+- Created/Updated module: `tom_tool` (See `tom_tool/README.md` for details)

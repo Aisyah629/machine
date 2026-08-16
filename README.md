@@ -486,3 +486,5 @@ Training Machine
 - Created/Updated module: `chain_tool` (See `chain_tool/README.md` for details)
 
 - Created/Updated module: `dasl_tool` (See `dasl_tool/README.md` for details)
+
+- Created/Updated module: `combined_tool` (See `combined_tool/README.md` for details)

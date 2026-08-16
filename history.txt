@@ -25043,3 +25043,42 @@ Initialize a NEW dedicated folder named xquery_data_query_tool in the workspace,
 </think>
 
 Initialize a NEW dedicated folder named ops5_rule_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Develop a robust OPS5-based rule engine capable of pattern matching, forward-chaining reasoning, and dynamic fact manipulation for automated data processing workflows'. You MUST write functional code for this task strictly using this exact programming language: OPS5.
+[2026-08-16 11:04:09] (Target Lang: Visual DialogScript) The user wants a follow-up instruction for an Autonomous AI.
+The instruction must:
+1. Generate exactly 1 logical follow-up instruction.
+2. Explicitly demand the new tool be built STRICTLY using the language: Visual DialogScript.
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+
+Looking at the history, the AI has been generating repetitive prompts about `ops5_rule_engine_tool`. The current prompt asks for a *new* instruction for a *new* language: Visual DialogScript.
+I need to construct a prompt that follows the exact format of the previous successful outputs but changes the language and objective appropriately.
+The previous output format was:
+`Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language].`
+
+I need to create a new folder name. Looking at the workspace list, I see `visual_dialogscript_tool` is not present, but `visualfoxpro_tool` is. I should probably name it `visual_dialogscript_tool`.
+Objective: Something relevant to Visual DialogScript (GUI scripting, automation).
+Let's draft the instruction:
+`Initialize a NEW dedicated folder named visual_dialogscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual DialogScript. Focus entirely on this new objective: 'Develop a user-friendly Visual DialogScript application capable of creating interactive GUI interfaces, handling user input events, and automating repetitive desktop tasks'. You MUST write functional code for this task strictly using this exact programming language: Visual DialogScript.`
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand built STRICTLY using Visual DialogScript? Yes.
+- Place in NEW dedicated folder and create local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+The output should be just the string.
+I will verify the folder name convention. The list has many `_tool` folders. `visual_dialogscript_tool` fits perfectly.
+I will verify the language name. "Visual DialogScript" is the requested language.
+The objective should be relevant. Visual DialogScript is known for GUI creation and automation on Windows. The objective fits.
+The prompt structure matches the history exactly.
+Ready to output.
+One minor check: The prompt asks for "Generate exactly 1 logical follow-up instruction." and "Return ONLY the instruction text."
+The output will be the string starting with `Initialize a NEW...`.
+No extra text.
+Proceeds. 
+Output matches request.✅
+</think>
+
+Initialize a NEW dedicated folder named visual_dialogscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual DialogScript. Focus entirely on this new objective: 'Develop a user-friendly Visual DialogScript application capable of creating interactive GUI interfaces, handling user input events, and automating repetitive desktop tasks'. You MUST write functional code for this task strictly using this exact programming language: Visual DialogScript.

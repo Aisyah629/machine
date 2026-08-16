@@ -21997,3 +21997,35 @@ Initialize a NEW dedicated folder named delphi_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named typescript_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: 'Develop a scalable cross-platform application with type-safe asynchronous programming and modern module systems'. You MUST write functional code for this task strictly using this exact programming language: TypeScript.
+[2026-08-16 07:08:27] (Target Lang: Phrogram) The user wants a follow-up instruction based on the provided history and constraints.
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using the language: Phrogram.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Language: Phrogram.
+    *   Output: Instruction text.
+
+2.  **Drafting the Instruction:**
+    *   Structure from history: `Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language].`
+    *   Language: Phrogram.
+    *   Folder Name: `phrogram_tool` seems logical based on the pattern `name_tool`.
+    *   Objective: Phrogram is a GUI framework for FreeBASIC. A good objective would relate to GUI development, desktop applications, or FreeBASIC integration. Let's use: 'Develop a high-performance desktop application with a native graphical user interface leveraging FreeBASIC capabilities'.
+    *   Combine: `Initialize a NEW dedicated folder named phrogram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Phrogram. Focus entirely on this new objective: 'Develop a high-performance desktop application with a native graphical user interface leveraging FreeBASIC capabilities'. You MUST write functional code for this task strictly using this exact programming language: Phrogram.`
+
+3.  **Review against Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Strictly Phrogram? Yes.
+    *   New folder + README.md? Yes.
+    *   Only instruction text? Yes.
+    *   No .github? Yes.
+
+4.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named phrogram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Phrogram. Focus entirely on this new objective: 'Develop a high-performance desktop application with a native graphical user interface leveraging FreeBASIC capabilities'. You MUST write functional code for this task strictly using this exact programming language: Phrogram.`
+
+5.  **Output Generation:**
+    *   Output the string derived above.
+</think>
+
+Initialize a NEW dedicated folder named phrogram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Phrogram. Focus entirely on this new objective: 'Develop a high-performance desktop application with a native graphical user interface leveraging FreeBASIC capabilities'. You MUST write functional code for this task strictly using this exact programming language: Phrogram.

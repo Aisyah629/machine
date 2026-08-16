@@ -31406,3 +31406,40 @@ Initialize a NEW dedicated folder named able_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named cpp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C++. Focus entirely on this new objective: 'Construct a concurrent, high-performance data serialization framework with template metaprogramming support.'. You MUST write code for this task strictly using this exact programming language: C++.
+[2026-08-16 19:33:17] (Target Lang: Visual FoxPro) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: New tool must be built STRICTLY using `Visual FoxPro`.
+    *   Constraint 2: Place the new tool in a NEW dedicated folder.
+    *   Constraint 3: Create a local `README.md` inside the new folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Context: The workspace has a list of tools. `visualfoxpro_tool` exists (`./visualfoxpro_tool/main.vfp`). However, the prompt asks for a "NEW dedicated folder". If I use `visualfoxpro_tool`, it might conflict with the existing one, or the system might interpret "NEW" as "don't overwrite the existing one, create a new one with a different name" or just "use the instruction template to create a new tool entry". Given the pattern in the "History" section, the model often checks for existing folders. For example, in the history, `cpp_tool` existed, and the model considered `cxx_engine_tool` or `modern_cpp_tool` to be safe. Here, `visualfoxpro_tool` exists. To be safe and logical (like the history example), I should probably use a name that ensures it's a *new* folder, or just use the tool name and let the system handle it. The history shows: "Wait, the workspace already has `./cpp_tool`... I'll use `cpp_tool`... matches perfectly." It seems the history example decided to use `cpp_tool` despite it existing, or perhaps the history example was simulating a thought process where it realized it was okay. Actually, looking closely at the history output: `Initialize a NEW dedicated folder named cpp_tool...`. The history output *did* use `cpp_tool` which already exists. So the precedent is to use the tool name directly in the instruction, even if it exists, or the system treats the instruction as creating the content. The instruction says "Initialize a NEW dedicated folder...". If I follow the pattern, I should generate: `Initialize a NEW dedicated folder named visualfoxpro_tool in the workspace...`. Or I could use a variant like `visualfoxpro_advanced_tool` to be distinct. However, the history output used `cpp_tool` directly. I'll follow the history pattern and use the standard tool name `visualfoxpro_tool` to ensure the instruction targets the expected structure, or use a slight variation if the history was deceptive. Let's re-read the history carefully.
+    *   History Text: `Wait, the workspace already has ./cpp_tool... I'll use cpp_tool... matches perfectly... Final text: Initialize a NEW dedicated folder named cpp_tool...`
+    *   Conclusion: The model in the history decided to use `cpp_tool` despite the conflict, concluding it matches. So I should use `visualfoxpro_tool`.
+
+2.  **Draft the Instruction:**
+    *   Structure: `Initialize a NEW dedicated folder named [TOOL_NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual FoxPro. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write code for this task strictly using this exact programming language: Visual FoxPro.`
+    *   Tool Name: `visualfoxpro_tool`.
+    *   Language: `Visual FoxPro`.
+    *   Objective: Needs to be relevant to Visual FoxPro but distinct or interesting. VFP is known for database access, forms, and legacy Windows apps. A good objective might be "Construct a robust legacy database migration utility with form-based UI generation" or "Build a concurrent data synchronization module for FoxPro tables". Let's go with "Construct a concurrent, high-performance data synchronization engine for legacy FoxPro DBF tables with form-based configuration." This leverages VFP strengths while adding the "concurrent" aspect mentioned in the C++ example context (though VFP concurrency is different). Or I can just make a generic but strong objective. "Construct a high-performance data manipulation and reporting engine for legacy FoxPro databases."
+    *   Refined Objective: "Construct a high-performance data manipulation and reporting engine for legacy FoxPro databases."
+    *   Full Draft: `Initialize a NEW dedicated folder named visualfoxpro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual FoxPro. Focus entirely on this new objective: 'Construct a high-performance data manipulation and reporting engine for legacy FoxPro databases.'. You MUST write code for this task strictly using this exact programming language: Visual FoxPro.`
+
+3.  **Review Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   STRICTLY Visual FoxPro? Yes, mentioned twice (in build demand and code demand).
+    *   NEW dedicated folder? Yes, `visualfoxpro_tool`.
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   Never target .github? Yes, no mention of .github.
+
+4.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named visualfoxpro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual FoxPro. Focus entirely on this new objective: 'Construct a high-performance data manipulation and reporting engine for legacy FoxPro databases.'. You MUST write code for this task strictly using this exact programming language: Visual FoxPro.`
+
+5.  **Output Generation:**
+    *   Output the string.
+</think>
+
+Initialize a NEW dedicated folder named visualfoxpro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual FoxPro. Focus entirely on this new objective: 'Construct a high-performance data manipulation and reporting engine for legacy FoxPro databases.'. You MUST write code for this task strictly using this exact programming language: Visual FoxPro.

@@ -36555,3 +36555,64 @@ Initialize a NEW dedicated folder named elisp_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named pl360_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360. Focus entirely on this new objective: 'Develop a PL360 utility for low-level system instruction handling'. You MUST write code for this task strictly using this programming language: PL360.
+[2026-08-16 23:35:49] (Target Lang: Maxima) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built strictly using Maxima.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a workspace list containing many tool directories. The "History" shows a previous instruction was to create a `pl360_tool`. Now I need to generate the next logical instruction based on the prompt's requirements.
+
+2.  **Determine the Tool Name and Folder:**
+    *   Language: Maxima.
+    *   Pattern from history: `[language]_tool`.
+    *   Proposed Folder Name: `maxima_tool`.
+    *   Proposed File Name (main): `main.max` or similar, but the instruction just needs to specify the folder and language.
+
+3.  **Draft the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named maxima_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maxima. Focus entirely on this new objective: 'Develop a Maxima utility for symbolic mathematical computation'. You MUST write code for this task strictly using this programming language: Maxima.
+
+4.  **Refine based on Constraints:**
+    *   "Explicitly demand that the new tool be built STRICTLY using this exact programming language: Maxima." -> Checked.
+    *   "Place it in a NEW dedicated folder" -> Checked (`maxima_tool`).
+    *   "Create a local README.md" -> Checked.
+    *   "Return ONLY the instruction text" -> Checked.
+    *   "Never target .github" -> Checked.
+
+5.  **Final Polish:**
+    *   The prompt asks for "exactly 1 logical follow-up instruction".
+    *   The format usually follows the structure seen in the history example provided in the prompt description (although the prompt text provided *is* the history, I need to generate the next one).
+    *   Structure: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this programming language: [Language]."
+
+    *   *Self-Correction on "New":* Looking at the file list, `./maxima_tool` does *not* appear in the list provided (only `macsyma_tool` appears). `macsyma` is often related to Maxima (since Maxima is a successor to Macsyma), but `maxima_tool` is a distinct folder name. Therefore, creating `maxima_tool` satisfies the "NEW" constraint relative to the provided list.
+
+    *   *Objective:* Needs to be relevant to Maxima. "Develop a Maxima utility for symbolic mathematical computation" or "Develop a Maxima utility for algebraic equation solving". Let's go with "Develop a Maxima utility for symbolic algebraic manipulation".
+
+6.  **Construct Final Output:**
+    Initialize a NEW dedicated folder named maxima_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maxima. Focus entirely on this new objective: 'Develop a Maxima utility for symbolic algebraic manipulation'. You MUST write code for this task strictly using this programming language: Maxima.
+
+7.  **Final Verification:**
+    *   One instruction? Yes.
+    *   Language Maxima? Yes.
+    *   New folder? Yes (`maxima_tool`).
+    *   Local README.md? Yes.
+    *   Only instruction text? Yes.
+    *   No `.github`? Yes.
+
+    (Note: The prompt history shows `macsyma_tool` exists. `maxima_tool` is distinct and new.)
+
+    Result: `Initialize a NEW dedicated folder named maxima_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maxima. Focus entirely on this new objective: 'Develop a Maxima utility for symbolic algebraic manipulation'. You MUST write code for this task strictly using this programming language: Maxima.`
+
+    Wait, checking the file list again carefully.
+    `./macsyma_tool` exists.
+    `./maxima_tool` does NOT exist.
+    So `maxima_tool` is safe.
+
+    Let's produce the text.
+
+    "Initialize a NEW dedicated folder named maxima_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maxima. Focus entirely on this new objective: 'Develop a Maxima utility for symbolic algebraic manipulation'. You MUST write code for this task strictly using this programming language: Maxima."
+</think>
+
+Initialize a NEW dedicated folder named maxima_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maxima. Focus entirely on this new objective: 'Develop a Maxima utility for symbolic algebraic manipulation'. You MUST write code for this task strictly using this programming language: Maxima.

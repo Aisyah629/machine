@@ -23681,3 +23681,71 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named esterel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Esterel. Focus entirely on this new objective: 'Implement a deterministic state machine for hardware protocol validation'. You MUST write functional code for this task strictly using this exact programming language: Esterel.
+[2026-08-16 09:57:44] (Target Lang: Visual Objects) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of existing tool directories/files in a workspace.
+   - There's a "History" section showing a pattern of how instructions were generated/formatted.
+   - The final prompt asks me to: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Objects. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - The prompt also gives a template/example pattern from the history: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+   - I need to generate exactly one instruction following these constraints, specifically for "Visual Objects".
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using "Visual Objects".
+   - MUST instruct to place it in a NEW dedicated folder.
+   - MUST instruct to create a local README.md inside that folder.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Follow the pattern/style from the history.
+
+3.  **Formulate the Instruction:**
+   - Tool name: `visual_objects_tool` (following the naming convention in the list)
+   - Language: `Visual Objects`
+   - Objective: Needs to be relevant to Visual Objects (a legacy rapid application development environment/language, often associated with Xbase++/Clipper). I'll create a relevant objective: "Implement a client-server data retrieval module for legacy database systems".
+   - Structure it exactly like the example: "Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Implement a client-server data retrieval module for legacy database systems'. You MUST write functional code for this task strictly using this exact programming language: Visual Objects."
+
+   Let's check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using Visual Objects? Yes.
+   - NEW dedicated folder? Yes.
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches pattern? Yes.
+
+4.  **Refine (Self-Correction/Verification during thought):**
+   - Check the exact wording from the prompt's example: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Obj]'. You MUST write functional code for this task strictly using this exact programming language: [Lang]."
+   - I will stick closely to this template.
+   - Language: Visual Objects
+   - Folder name: `visual_objects_tool`
+   - Objective: "Implement a deterministic state machine for hardware protocol validation" was for Esterel in the history, but I need a new one for Visual Objects. I'll make it appropriate: "Implement a legacy database connectivity bridge for Windows desktop applications".
+   - Let's craft it carefully.
+
+   Draft: Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Implement a legacy database connectivity bridge for Windows desktop applications'. You MUST write functional code for this task strictly using this exact programming language: Visual Objects.
+
+   Check against constraints:
+   - "Generate exactly 1 logical follow-up instruction." -> Met.
+   - "explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Objects." -> Met.
+   - "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Met.
+   - "Return ONLY the instruction text." -> Met.
+   - "NEVER target the .github directory." -> Met.
+   - Matches the requested pattern/style.
+
+   All good. I will output exactly the drafted text. No extra words.✅
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Objects." I'll make sure the exact phrase or close to it is used. The draft covers it.
+   I will output just the instruction text as requested.✅
+   Proceed. 
+   Output matches draft.✅
+   [Done] 
+   Output Generation. 
+   `Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Implement a legacy database connectivity bridge for Windows desktop applications'. You MUST write functional code for this task strictly using this exact programming language: Visual Objects.` -> This matches perfectly. 
+   I will produce exactly this. 
+   Self-Correction/Note during thought: The prompt says "Generate exactly 1 logical follow-up instruction." and gives a strict format. I'll stick to it. No extra text. All constraints met. 
+   Final Output Generation. 
+   [Output] Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Implement a legacy database connectivity bridge for Windows desktop applications'. You MUST write functional code for this task strictly using this exact programming language: Visual Objects. 
+   (Note: I'll ensure capitalization and punctuation exactly match the requested pattern.) 
+   Ready.✅
+</think>
+
+Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Implement a legacy database connectivity bridge for Windows desktop applications'. You MUST write functional code for this task strictly using this exact programming language: Visual Objects.

@@ -1,106 +1,47 @@
-Object subclass: #SecureScriptEnvironment instanceVariableNames: 'rootClass' classVariableNames: '' poolDictionaries: '' category: 'NewspeakTool'.
-
-SecureScriptEnvironment methodsFor: 'accessing'!
-
-rootClass
-    ^ rootClass.
-
-rootClass: anObject
-    rootClass := anObject.
-
-! !
-
-SecureScriptEnvironment methodsFor: 'initialization'!
-
-initialize
-    super initialize.
-    rootClass := nil.
-    self defineRootClass.
-    self createSecureEnvironment.
-
-! !
-
-SecureScriptEnvironment methodsFor: 'private'!
-
-defineRootClass
-    "Create the root class for the secure environment."
-    rootClass := Object subclass: #EnvironmentRoot instanceVariableNames: 'secureContext' classVariableNames: '' poolDictionaries: '' category: 'SecureEnvironment'.
-    rootClass subclass: #Module instanceVariableNames: 'name components' classVariableNames: '' poolDictionaries: '' category: 'SecureEnvironment'.
-    rootClass subclass: #SecureComponent instanceVariableNames: 'parent' classVariableNames: '' poolDictionaries: '' category: 'SecureEnvironment'.
-
-createSecureEnvironment
-    "Initialize the secure context and root module."
-    secureContext := Dictionary new.
-    secureContext at: 'securityLevel' put: 'high'.
-    secureContext at: 'encryptionEnabled' put: true.
-    secureContext at: 'debugMode' put: false.
-
-! !
-
-SecureScriptEnvironment methodsFor: 'operations'!
-
-declareModule: moduleName
-    "Declare a new module within the secure environment."
-    | newModule | 
-    newModule := rootClass organization moduleNamed: moduleName ifAbsent: [Module new: moduleName].
-    self ensureUniqueModuleName: moduleName.
-    ^ newModule.
-
-secureExecutionOf: aBlock
-    "Execute a block within a secure context."
-    | result | 
-    [ result := aBlock value ]
-        on: Exception
-        do: [:ex | 
-            self logError: ex messageText.
-            ^ nil].
-    ^ result.
-
-logError: errorMessage
-    "Log an error message securely."
-    (self secureContext at: 'securityLevel') = 'high'
-        ifTrue: [ Transcript show: 'SECURITY: ', errorMessage. Transcript cr ]
-        ifFalse: [ Transcript show: errorMessage. Transcript cr ].
-
-secureContext
-    ^ secureContext.
-
-ensureUniqueModuleName: aName
-    "Ensure module names are unique within the root context."
-    rootClass organization isNil
-        ifTrue: [ rootClass organization: (Organization new named: aName) ]
-        ifFalse: [ 
-            (rootClass organization memberNames includes: aName)
-                ifTrue: [ self error: 'Module name already exists' ]
+Class: Serializer
+    Instance variables: dataStream
+    
+    open:
+        dataStream := WriteStream on: (ByteArray new: 1024).
+    
+    serialize: anObject
+        | serializedData |
+        serializedData := self writeObject: anObject.
+        ^ serializedData
+    
+    writeObject: anObject
+        anObject isNil ifTrue: [^ #(Nil)].
+        anObject isNumber ifTrue: [^ #(Number, anObject)].
+        anObject isString ifTrue: [^ #(String, anObject)].
+        anObject isCollection ifTrue: [
+            | result |
+            result := Array new.
+            result at: 1 put: #(Collection).
+            result at: 2 put: (anObject collect: [:each | self writeObject: each]).
+            ^ result
         ].
+        ^ #(Unknown, anObject).
+    
+    close:
+        dataStream := nil.
 
-! !
-
-Module methodsFor: 'initialization'!
-
-initialize: moduleName
-    super initialize.
-    name := moduleName.
-    components := OrderedCollection new.
-
-name
-    ^ name.
-
-components
-    ^ components.
-
-addComponent: aComponent
-    components add: aComponent.
-    aComponent parent: self.
-
-! !
-
-SecureComponent methodsFor: 'initialization'!
-
-parent: aModule
-    parent := aModule.
-
-parent
-    ^ parent.
-
-! !
+Class: Deserializer
+    
+    deserialize: anArray
+        | object |
+        object := self readObject: anArray.
+        ^ object
+    
+    readObject: anArray
+        anArray size = 0 ifTrue: [^ nil].
+        | type | type := anArray first.
+        type = #Nil ifTrue: [^ nil].
+        type = #Number ifTrue: [^ anArray second].
+        type = #String ifTrue: [^ anArray second].
+        type = #Collection ifTrue: [
+            | collection |
+            collection := OrderedCollection new.
+            (anArray second) do: [:each | collection add: (self readObject: each)].
+            ^ collection
+        ].
+        ^ anArray second.

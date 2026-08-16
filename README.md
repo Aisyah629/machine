@@ -770,3 +770,5 @@ Training Machine
 - Created/Updated module: `amiga_e_tool` (See `amiga_e_tool/README.md` for details)
 
 - Created/Updated module: `./cel_tool` (See `./cel_tool/README.md` for details)
+
+- Created/Updated module: `newspeak_tool` (See `newspeak_tool/README.md` for details)

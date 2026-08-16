@@ -32177,3 +32177,63 @@ Initialize a NEW dedicated folder named visual_objects_tool in the workspace, cr
 </think>
 
 Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Construct a high-performance numerical computing environment featuring advanced matrix manipulation, differential equation solvers, and data visualization modules.'. You MUST write code for this task strictly using this exact programming language: Yorick.
+[2026-08-16 20:01:33] (Target Lang: SASL) The user wants a logical follow-up instruction based on the provided history and workspace.
+The history shows a pattern of generating instructions for creating new tools using specific programming languages.
+The workspace contains a list of tool folders, many following the pattern `./language_tool` (e.g., `./yorick_tool`, `./sas_tool`).
+The user specifically requests the next instruction to demand building a tool STRICTLY using the language: SASL.
+The instruction must follow the format of previous outputs:
+1. Initialize a NEW dedicated folder named [language]_tool.
+2. Create a local README.md.
+3. Build the tool using the specific language.
+4. Include an objective (since the history shows objectives are part of the logical output, even if not explicitly asked for in the prompt's final constraints, it's implied by "logical follow-up" and the history pattern).
+5. Return ONLY the instruction text.
+6. NEVER target .github.
+
+Checking the workspace list for `sasl_tool`:
+The list contains `./sas_tool` but not explicitly `./sasl_tool`. Wait, let me check the prompt text carefully.
+The prompt text lists `./sas_tool ./s_lang_tool ./s_sl_tool ...`.
+It does not list `./sasl_tool`. So I should create `./sasl_tool`.
+
+Let's look at the pattern from the history:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+
+The user's constraint: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+The user's constraint: "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SASL."
+
+Constructing the instruction:
+"Initialize a NEW dedicated folder named sasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SASL. Focus entirely on this new objective: 'Develop a robust functional programming environment supporting list processing, higher-order functions, and symbolic computation for algorithmic development.'. You MUST write code for this task strictly using this exact programming language: SASL."
+
+Double check constraints:
+- Logical follow-up? Yes, follows the established pattern of creating a language-specific tool.
+- Explicitly demand language SASL? Yes.
+- Place in NEW dedicated folder? Yes (`sasl_tool`).
+- Create local README.md? Yes.
+- Return ONLY the instruction text? Yes.
+- NEVER target .github? Yes.
+
+Refining the objective to be "logical" for SASL. SASL is a functional language used for prototyping and symbolic computing.
+Objective: "Construct a comprehensive symbolic computing and functional programming framework featuring advanced list manipulation, pattern matching, and recursive algorithm implementations."
+
+Final Text:
+Initialize a NEW dedicated folder named sasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SASL. Focus entirely on this new objective: 'Construct a comprehensive symbolic computing and functional programming framework featuring advanced list manipulation, pattern matching, and recursive algorithm implementations.'. You MUST write code for this task strictly using this exact programming language: SASL.
+
+The output should be just that text.
+The history shows the model thinking about `yorick_tool` and generating a similar text. The user asks to generate exactly 1 logical follow-up. The history is context. The prompt is "Generate exactly 1 logical follow-up instruction...". The text before "Generate exactly..." is the workspace and history.
+The output should follow the style: "Initialize a NEW dedicated folder named sasl_tool..."
+
+Wait, looking at the history provided in the prompt:
+The history shows the model decided on Yorick. The prompt asks for SASL.
+I will generate the instruction for SASL.
+
+Final check on the folder name: `sasl_tool`.
+Final check on language: `SASL`.
+Final check on constraints: `NEW dedicated folder`, `local README.md`, `ONLY the instruction text`, `NEVER target .github`.
+
+Looks good.
+Objective selection: "Construct a comprehensive symbolic computing and functional programming framework featuring advanced list manipulation, pattern matching, and recursive algorithm implementations." sounds appropriate for SASL.
+
+Result:
+Initialize a NEW dedicated folder named sasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SASL. Focus entirely on this new objective: 'Construct a comprehensive symbolic computing and functional programming framework featuring advanced list manipulation, pattern matching, and recursive algorithm implementations.'. You MUST write code for this task strictly using this exact programming language: SASL.
+</think>
+
+Initialize a NEW dedicated folder named sasl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SASL. Focus entirely on this new objective: 'Construct a comprehensive symbolic computing and functional programming framework featuring advanced list manipulation, pattern matching, and recursive algorithm implementations.'. You MUST write code for this task strictly using this exact programming language: SASL.

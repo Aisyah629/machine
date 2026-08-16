@@ -24972,3 +24972,74 @@ Initialize a NEW dedicated folder named prolog_reasoning_engine_tool in the work
 </think>
 
 Initialize a NEW dedicated folder named xquery_data_query_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XQuery. Focus entirely on this new objective: 'Develop a robust XQuery-based engine capable of advanced XML and JSON data querying, hierarchical navigation, and semantic transformation'. You MUST write functional code for this task strictly using this exact programming language: XQuery.
+[2026-08-16 11:03:01] (Target Lang: OPS5) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of directories/files, mostly tool directories with README.md and a main file (e.g., `./xquery_data_query_tool/README.md`, `./xquery_data_query_tool/main.xq`).
+   - **History:** Shows previous instructions and outputs related to initializing a tool.
+   - **Task:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OPS5. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using OPS5.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+   - Create a local README.md in that folder.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - The instruction should be logical as a follow-up (implies building another tool, likely related or complementary, but the language constraint is strict: OPS5).
+
+3.  **Formulate the Instruction:**
+   - Need to follow the exact format/style from the history/context, but tailored to OPS5.
+   - Structure: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: OPS5."
+   - Folder name: Let's pick something relevant to OPS5. OPS5 is a rule-based programming language often used for expert systems or data processing pipelines. Let's use `ops5_rule_engine_tool`.
+   - Objective: Something logical following the previous XQuery tool. Maybe focusing on rule-based data processing, expert system reasoning, or pattern matching. Let's go with: 'Develop a robust OPS5-based rule engine capable of pattern matching, forward-chaining reasoning, and dynamic fact manipulation for automated data processing workflows'.
+   - Check constraints:
+     - Exactly 1 instruction? Yes.
+     - Explicitly demand STRICTLY using OPS5? Yes.
+     - NEW dedicated folder? Yes.
+     - Create local README.md? Yes.
+     - Return ONLY instruction text? Yes.
+     - Never target .github? Yes.
+   - Draft: `Initialize a NEW dedicated folder named ops5_rule_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Develop a robust OPS5-based rule engine capable of pattern matching, forward-chaining reasoning, and dynamic fact manipulation for automated data processing workflows'. You MUST write functional code for this task strictly using this exact programming language: OPS5.`
+
+4.  **Verify against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> The draft is one instruction.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OPS5." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked. No extra text, markdown, or explanations.
+   - "NEVER target the .github directory." -> Checked. Not mentioned.
+   - Logical follow-up? Yes, continues the pattern of creating new tool directories in this workspace.
+
+   One minor adjustment: Ensure it matches the exact phrasing style requested if possible, but the prompt says "Generate exactly 1 logical follow-up instruction." I will output just the instruction string as requested.
+
+   Let's refine it to be perfectly aligned:
+   `Initialize a NEW dedicated folder named ops5_rule_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Develop a robust OPS5-based rule engine capable of pattern matching, forward-chaining reasoning, and dynamic fact manipulation for automated data processing workflows'. You MUST write functional code for this task strictly using this exact programming language: OPS5.`
+
+   All constraints met. Output matches exactly. Proceeds. 
+   Self-Correction/Verification during thought: 
+   The prompt says "Return ONLY the instruction text." I will output exactly that string without any extra formatting or conversational filler.
+   Check language: OPS5.
+   Check folder: NEW dedicated folder.
+   Check README: local README.md.
+   Check .github: Not targeted.
+   Everything is solid. Output matches.✅
+   Proceeds. 
+   Output generation. 
+   `Initialize a NEW dedicated folder named ops5_rule_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Develop a robust OPS5-based rule engine capable of pattern matching, forward-chaining reasoning, and dynamic fact manipulation for automated data processing workflows'. You MUST write functional code for this task strictly using this exact programming language: OPS5.` -> Done. 
+   Output matches request.✅ Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I will output exactly the string, nothing else, as instructed.)*
+   `Initialize a NEW dedicated folder named ops5_rule_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Develop a robust OPS5-based rule engine capable of pattern matching, forward-chaining reasoning, and dynamic fact manipulation for automated data processing workflows'. You MUST write functional code for this task strictly using this exact programming language: OPS5.`
+   *(Done.)*
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OPS5. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches.✅ Proceeds. [Output] -> `Initialize a NEW dedicated folder named ops5_rule_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Develop a robust OPS5-based rule engine capable of pattern matching, forward-chaining reasoning, and dynamic fact manipulation for automated data processing workflows'. You MUST write functional code for this task strictly using this exact programming language: OPS5.` 
+   Ready. 
+   Output matches exactly.✅ Proceeds. 
+   [Output Generation] -> *Proceeds* 
+   *(Note: I will output exactly the string, nothing else, as instructed.)* 
+   `Initialize a NEW dedicated folder named ops5_rule_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Develop a robust OPS5-based rule engine capable of pattern matching, forward-chaining reasoning, and dynamic fact manipulation for automated data processing workflows'. You MUST write functional code for this task strictly using this exact programming language: OPS5.` 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named ops5_rule_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Develop a robust OPS5-based rule engine capable of pattern matching, forward-chaining reasoning, and dynamic fact manipulation for automated data processing workflows'. You MUST write functional code for this task strictly using this exact programming language: OPS5.

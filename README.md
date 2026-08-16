@@ -868,3 +868,5 @@ Training Machine
 - Created/Updated module: `basic_tool` (See `basic_tool/README.md` for details)
 
 - Created/Updated module: `xquery_data_transform_tool` (See `xquery_data_transform_tool/README.md` for details)
+
+- Created/Updated module: `lagoona_engine_tool` (See `lagoona_engine_tool/README.md` for details)

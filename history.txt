@@ -28941,3 +28941,47 @@ Proceeds.✅
 </think>
 
 Initialize a NEW dedicated folder named alanguage_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A# .NET. Focus entirely on this new objective: 'Develop automated refactoring routines that analyze and optimize source code structure'. You MUST write code for this task strictly using this exact programming language: A# .NET.
+[2026-08-16 16:27:39] (Target Lang: Agora) Thinking Process:
+
+1.  **Deconstruct the User's Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand the new tool be built STRICTLY using the exact programming language: "Agora".
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a file list which includes `./agora_tool` with `./agora_tool/README.md` and `./agora_tool/main.agora`. This indicates an `agora_tool` already exists. However, the instruction asks to generate a follow-up instruction. Usually, in these types of prompts (autonomous AI context), the follow-up instruction should be actionable and consistent with the workspace state. Since `agora_tool` exists, the follow-up might be to update it, or perhaps the user wants a *new* tool despite the existing one? The prompt says "If building a new tool...". It doesn't explicitly forbid updating an existing tool, but the phrase "build the entire new tool" and "place it in a NEW dedicated folder" strongly suggests creating something new. If I create a new folder for "Agora", what would be the name? The existing one is `agora_tool`. A new one might be `agora_extended_tool` or `agora_analysis_tool`? Or maybe the user just wants the instruction text regardless of whether it's redundant?
+    *   *Interpretation:* The safest interpretation of "Generate exactly 1 logical follow-up instruction" in the context of "Autonomous AI" prompts is to generate an instruction that the AI would execute next. If the previous instruction was "Build alanguage_dotnet_tool", the logical follow-up might be related to that or a new task. However, the constraint forces the language to be "Agora". The existing `agora_tool` has `main.agora`. The constraint "build the entire new tool" and "NEW dedicated folder" implies I should instruct the creation of a folder like `agora_v2_tool` or `advanced_agora_tool`? Or perhaps `agora_scripting_tool`?
+    *   *Refinement:* The prompt asks to return ONLY the instruction text. The instruction text must follow the format: "Initialize a NEW dedicated folder named [name]... create a local README.md... build... STRICTLY using... Agora... Focus entirely on...".
+    *   *Naming:* Since `agora_tool` exists, naming the new folder `agora_tool` would conflict. A logical name would be something like `agora_compiler_tool` or `agora_simulation_tool`. Let's pick `agora_logic_tool` or just `agora_next_tool`. To be safe and logical, I'll choose a descriptive name that doesn't conflict. `agora_refinement_tool`? The previous example used `alanguage_dotnet_tool` for A# .NET. A# .NET exists as `asharp_dotnet_tool`. So the pattern suggests the user might be ignoring existing tools or the prompt template is rigid. The prompt says "If building a new tool...". It doesn't say "Check for existing tools". It says "Initialize a NEW dedicated folder". So I should generate a string that starts with "Initialize a NEW dedicated folder...".
+    *   *Drafting the Instruction:*
+        *   Action: Initialize a NEW dedicated folder named `agora_advanced_tool` (arbitrary but non-conflicting name).
+        *   Action: Create a local README.md inside it.
+        *   Language: STRICTLY using this exact programming language: Agora.
+        *   Objective: Needs a logical objective. Since I'm generating the instruction, I need to invent a plausible objective for an Agora tool. Agora is often associated with logic, reasoning, or general-purpose systems in these fictional/tool lists. Let's invent an objective: "Develop a symbolic reasoning engine capable of parsing and executing complex logical assertions".
+        *   Language Repetition: "You MUST write code for this task strictly using this exact programming language: Agora."
+        *   Resulting Text: "Initialize a NEW dedicated folder named agora_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agora. Focus entirely on this new objective: 'Develop a symbolic reasoning engine capable of parsing and executing complex logical assertions'. You MUST write code for this task strictly using this exact programming language: Agora."
+
+    *   *Review against constraints:*
+        *   Exactly 1 instruction? Yes.
+        *   Explicitly demand strictly using "Agora"? Yes.
+        *   NEW dedicated folder? Yes (`agora_advanced_tool`).
+        *   Create local README.md? Yes.
+        *   Return ONLY instruction text? Yes.
+        *   NEVER target .github? Yes.
+        *   Logical follow-up? Yes, it's a coherent instruction for building a tool.
+
+    *   *Final Polish (Mental Representation of Output):*
+        `Initialize a NEW dedicated folder named agora_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agora. Focus entirely on this new objective: 'Develop a symbolic reasoning engine capable of parsing and executing complex logical assertions'. You MUST write code for this task strictly using this exact programming language: Agora.`
+
+    *   *Wait, check the "Logical follow-up" aspect relative to the input.* The input has a "History" section showing a previous thought/output about `alanguage_dotnet_tool`. The user wants a *follow-up*. The follow-up should be distinct. The draft above is distinct. It creates a new tool. This is logical in a chain of building tools. The specific name `agora_advanced_tool` is a choice. The prompt doesn't specify the folder name, just "NEW dedicated folder". So I must invent the name. `agora_advanced_tool` is a reasonable invention. `agora_tool` is taken. `agora_main_tool` might be confusing. `agora_logic_tool` is also good. I'll stick with `agora_advanced_tool` as it suggests a progression or extension, which is logical.
+
+    *   *Result:*
+        Initialize a NEW dedicated folder named agora_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agora. Focus entirely on this new objective: 'Develop a symbolic reasoning engine capable of parsing and executing complex logical assertions'. You MUST write code for this task strictly using this exact programming language: Agora.
+
+    *   *Note on "Return ONLY the instruction text":* The output should be just that string. No markdown code blocks if possible, or just the raw text as requested by "Return ONLY the instruction text". Usually, this means the string itself.
+
+    *   *Final Output Construction:*
+        Initialize a NEW dedicated folder named agora_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agora. Focus entirely on this new objective: 'Develop a symbolic reasoning engine capable of parsing and executing complex logical assertions'. You MUST write code for this task strictly using this exact programming language: Agora.
+</think>
+
+Initialize a NEW dedicated folder named agora_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agora. Focus entirely on this new objective: 'Develop a symbolic reasoning engine capable of parsing and executing complex logical assertions'. You MUST write code for this task strictly using this exact programming language: Agora.

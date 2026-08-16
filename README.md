@@ -518,3 +518,5 @@ Training Machine
 - Created/Updated module: `flow_matic_tool` (See `flow_matic_tool/README.md` for details)
 
 - Created/Updated module: `mdl_structural_tool` (See `mdl_structural_tool/README.md` for details)
+
+- Created/Updated module: `xtend_tool` (See `xtend_tool/README.md` for details)

@@ -1,40 +1,39 @@
-# DYNAMO Self-Healing Tool
+# Self-Healing Tool
 
-## Overview
-The DYNAMO Self-Healing Tool is a robust error handling and recovery system designed for the DYNAMO programming language. It automatically detects edge cases, runtime anomalies, and common errors, and initiates predefined recovery actions to restore system functionality.
+This is a self-healing tool implemented in OPS5. It handles edge cases and errors by detecting them, logging them, analyzing them, and applying recovery strategies.
 
 ## Features
-- **Anomaly Detection:** Monitors code execution for invalid results, exceptions, and timeouts.
-- **Automatic Recovery:** Triggers appropriate recovery actions based on error type.
-- **Health Checks:** Periodically checks system resources (CPU, Memory, Disk, Services).
-- **Configurable Retry Logic:** Retries recovery actions up to a defined maximum number of times.
-- **Extensible:** Allows easy registration of custom recovery actions for specific error types.
-- **Logging:** Comprehensive logging system with multiple log levels (DEBUG, INFO, ERROR).
 
-## Components
-- `main.dc`: The main script containing all logic for detection, recovery, and health checks.
+- **Error Detection:** Identifies errors in the system.
+- **Error Logging:** Logs errors for analysis.
+- **Error Analysis:** Analyzes errors to determine the appropriate recovery strategy.
+- **Recovery Strategies:** Implements various recovery strategies such as reboot, rollback, and skip faulty components.
+- **System Healing:** Restores the system to a healthy state.
 
-## How to Use
-1. **Include the Tool:** Import or include the `main.dc` script in your DYNAMO application.
-2. **Configure:** Adjust constants like `MAX_RETRY_COUNT` and `CURRENT_LOG_LEVEL` as needed.
-3. **Register Actions:** Add custom recovery actions to the `recovery_actions` map for specific error types.
-4. **Run:** Execute your application. The tool will automatically start health checks and monitor for errors.
+## Usage
 
-## Customization
-To add a custom recovery action, modify the `main.dc` script and register it like this:
-```dynamo
-recovery_actions["CUSTOM_ERROR"] = {
-    name: "Custom Recovery",
-    execute: function() {
-        log(LOG_LEVEL_INFO, "Executing custom recovery...");
-        // Your custom recovery logic here
-    }
-};
-```
+To use the self-healing tool, you need to run the `main.dc` file in an OPS5 environment.
 
-## Limitations
-- This is a simulated implementation for demonstration purposes. Real-time system checks (CPU, Memory, Disk) and true asynchronous execution with timeouts require integration with the underlying DYNAMO runtime and OS APIs.
-- The `execute_with_timeout` function is a placeholder and does not provide true concurrency in this standalone script.
+## File Structure
 
-## License
-This tool is provided as-is for educational and developmental purposes within the DYNAMO ecosystem.
+- `main.dc`: The main OPS5 code file implementing the self-healing logic.
+- `README.md`: This documentation file.
+
+## Implementation Details
+
+The tool uses a rule-based system to handle errors and system states. Rules are defined for error detection, logging, analysis, recovery strategy application, system healing, and system shutdown.
+
+## Example Rules
+
+1. **Detect Error:** Identifies an error in the system.
+2. **Log Error:** Logs the error details.
+3. **Analyze Error:** Analyzes the error to determine a recovery strategy.
+4. **Apply Recovery:** Applies the chosen recovery strategy.
+5. **Heal System:** Restores the system to a healthy state.
+6. **System Healthy:** Confirms the system is healthy again.
+7. **Initial Setup:** Initializes the system.
+8. **Shutdown:** Gracefully shuts down the system.
+
+## Conclusion
+
+This self-healing tool provides a robust framework for handling errors and maintaining system health.

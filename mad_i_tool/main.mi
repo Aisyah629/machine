@@ -1,0 +1,326 @@
+       MAD/I PROGRAM: MATRIX AND NUMERICAL ANALYSIS UTILITY
+       AUTHOR: Autonomous AI Polyglot Software Engineer
+       DESCRIPTION: Implements numerical analysis and matrix operations
+       using MAD/I language standards
+
+       PROGRAM MATRIX_ANALYSIS;
+
+       BEGIN
+
+       ! Declaration of arrays and variables
+       REAL A(10,10), B(10,10), C(10,10);
+       REAL X(10), B_VEC(10);
+       INTEGER I, J, N;
+       REAL DET, EIGVAL(10);
+       LOGICAL SUCCESS;
+
+       ! Main execution block
+       DISPLAY 'MAD/I Numerical Analysis and Matrix Utility';
+       DISPLAY '------------------------------------------';
+
+       ! Initialize sample matrix
+       N = 4;
+       DO I = 1, N;
+         DO J = 1, N;
+           A(I,J) = 1.0 / REAL(I+J-1);
+         ENDDO;
+       ENDDO;
+
+       ! Display the matrix
+       DISPLAY 'Initial Matrix A:';
+       CALL DISPLAY_MATRIX(A, N, N);
+
+       ! Calculate determinant
+       CALL CALC_DETERMINANT(A, N, DET, SUCCESS);
+       IF SUCCESS THEN
+         DISPLAY 'Determinant: ', DET;
+       ELSE
+         DISPLAY 'Determinant calculation failed';
+       ENDIF;
+
+       ! Solve linear system Ax = b
+       DO I = 1, N;
+         B_VEC(I) = REAL(I);
+       ENDDO;
+
+       CALL SOLVE_SYSTEM(A, B_VEC, X, N, SUCCESS);
+       IF SUCCESS THEN
+         DISPLAY 'Solution vector X:';
+         CALL DISPLAY_VECTOR(X, N);
+       ELSE
+         DISPLAY 'System solution failed';
+       ENDIF;
+
+       ! Matrix multiplication C = A * A
+       CALL MATRIX_MULTIPLY(A, A, C, N, N, N);
+       DISPLAY 'Matrix C = A*A:';
+       CALL DISPLAY_MATRIX(C, N, N);
+
+       ! Calculate eigenvalues (simplified power method for demo)
+       DISPLAY 'Approximate eigenvalues:';
+       CALL POWER_METHOD(A, N, EIGVAL);
+       CALL DISPLAY_VECTOR(EIGVAL, 1); ! Just show dominant eigenvalue
+
+       ! Statistical analysis
+       DISPLAY 'Statistical analysis:';
+       CALL STATISTICS(A, N, N);
+
+       DISPLAY 'Program completed successfully';
+
+       END PROGRAM MATRIX_ANALYSIS;
+
+       ! Subprograms
+
+       SUBROUTINE DISPLAY_MATRIX(M, ROWS, COLS);
+         REAL M(ROWS, COLS);
+         INTEGER ROWS, COLS;
+         INTEGER I, J;
+
+         DO I = 1, ROWS;
+           DISPLAY ''; 
+           DO J = 1, COLS;
+             DISPLAY ' ', FORMAT(F10.4), M(I,J);
+           ENDDO;
+         ENDDO;
+
+       END DISPLAY_MATRIX;
+
+       SUBROUTINE DISPLAY_VECTOR(V, SIZE);
+         REAL V(SIZE);
+         INTEGER SIZE;
+         INTEGER I;
+
+         DO I = 1, SIZE;
+           DISPLAY ' ', FORMAT(F10.4), V(I);
+         ENDDO;
+
+       END DISPLAY_VECTOR;
+
+       SUBROUTINE CALC_DETERMINANT(M, SIZE, DET, SUCCESS);
+         REAL M(SIZE, SIZE);
+         INTEGER SIZE;
+         REAL DET;
+         LOGICAL SUCCESS;
+         INTEGER I, J, K, PIV;
+         REAL TEMP, FACTOR;
+         REAL WORK_MATRIX(SIZE, SIZE);
+
+         ! Copy matrix to work array
+         DO I = 1, SIZE;
+           DO J = 1, SIZE;
+             WORK_MATRIX(I,J) = M(I,J);
+           ENDDO;
+         ENDDO;
+
+         DET = 1.0;
+         SUCCESS = TRUE;
+
+         DO K = 1, SIZE-1;
+           ! Find pivot
+           PIV = K;
+           DO I = K+1, SIZE;
+             IF ABS(WORK_MATRIX(I,K)) > ABS(WORK_MATRIX(PIV,K)) THEN
+               PIV = I;
+             ENDIF;
+           ENDDO;
+
+           ! Check for zero pivot
+           IF WORK_MATRIX(PIV,K) == 0.0 THEN
+             SUCCESS = FALSE;
+             RETURN;
+           ENDIF;
+
+           ! Swap rows if needed
+           IF PIV /= K THEN
+             DET = -DET;
+             DO J = K, SIZE;
+               TEMP = WORK_MATRIX(K,J);
+               WORK_MATRIX(K,J) = WORK_MATRIX(PIV,J);
+               WORK_MATRIX(PIV,J) = TEMP;
+             ENDDO;
+           ENDIF;
+
+           DET = DET * WORK_MATRIX(K,K);
+
+           DO I = K+1, SIZE;
+             FACTOR = WORK_MATRIX(I,K) / WORK_MATRIX(K,K);
+             DO J = K+1, SIZE;
+               WORK_MATRIX(I,J) = WORK_MATRIX(I,J) - FACTOR * WORK_MATRIX(K,J);
+             ENDDO;
+           ENDDO;
+         ENDDO;
+
+         IF SIZE > 0 THEN
+           DET = DET * WORK_MATRIX(SIZE,SIZE);
+         ENDIF;
+
+       END CALC_DETERMINANT;
+
+       SUBROUTINE SOLVE_SYSTEM(A, B, X, SIZE, SUCCESS);
+         REAL A(SIZE, SIZE), B(SIZE), X(SIZE);
+         INTEGER SIZE;
+         LOGICAL SUCCESS;
+         INTEGER I, J, K, PIV;
+         REAL TEMP, FACTOR;
+         REAL WORK_A(SIZE, SIZE);
+         REAL WORK_B(SIZE);
+
+         ! Copy to work arrays
+         DO I = 1, SIZE;
+           DO J = 1, SIZE;
+             WORK_A(I,J) = A(I,J);
+           ENDDO;
+           WORK_B(I) = B(I);
+         ENDDO;
+
+         ! Gaussian elimination with partial pivoting
+         DO K = 1, SIZE;
+           PIV = K;
+           DO I = K+1, SIZE;
+             IF ABS(WORK_A(I,K)) > ABS(WORK_A(PIV,K)) THEN
+               PIV = I;
+             ENDIF;
+           ENDDO;
+
+           IF WORK_A(PIV,K) == 0.0 THEN
+             SUCCESS = FALSE;
+             RETURN;
+           ENDIF;
+
+           IF PIV /= K THEN
+             TEMP = WORK_B(K);
+             WORK_B(K) = WORK_B(PIV);
+             WORK_B(PIV) = TEMP;
+             DO J = K, SIZE;
+               TEMP = WORK_A(K,J);
+               WORK_A(K,J) = WORK_A(PIV,J);
+               WORK_A(PIV,J) = TEMP;
+             ENDDO;
+           ENDIF;
+
+           DO I = K+1, SIZE;
+             FACTOR = WORK_A(I,K) / WORK_A(K,K);
+             WORK_B(I) = WORK_B(I) - FACTOR * WORK_B(K);
+             DO J = K+1, SIZE;
+               WORK_A(I,J) = WORK_A(I,J) - FACTOR * WORK_A(K,J);
+             ENDDO;
+           ENDDO;
+         ENDDO;
+
+         ! Back substitution
+         DO I = SIZE, 1, -1;
+           X(I) = WORK_B(I);
+           DO J = I+1, SIZE;
+             X(I) = X(I) - WORK_A(I,J) * X(J);
+           ENDDO;
+           X(I) = X(I) / WORK_A(I,I);
+         ENDDO;
+
+         SUCCESS = TRUE;
+
+       END SOLVE_SYSTEM;
+
+       SUBROUTINE MATRIX_MULTIPLY(A, B, C, M, N, P);
+         REAL A(M, N), B(N, P), C(M, P);
+         INTEGER M, N, P;
+         INTEGER I, J, K;
+
+         DO I = 1, M;
+           DO J = 1, P;
+             C(I,J) = 0.0;
+             DO K = 1, N;
+               C(I,J) = C(I,J) + A(I,K) * B(K,J);
+             ENDDO;
+           ENDDO;
+         ENDDO;
+
+       END MATRIX_MULTIPLY;
+
+       SUBROUTINE POWER_METHOD(A, N, LAMBDA);
+         REAL A(N, N), LAMBDA(N);
+         INTEGER N;
+         REAL V(N), OLD_V(N);
+         INTEGER I, J, ITER;
+         REAL SUM, MAX_VAL;
+
+         ! Initialize vector
+         DO I = 1, N;
+           V(I) = 1.0;
+         ENDDO;
+
+         ! Power method iteration
+         DO ITER = 1, 100;
+           DO I = 1, N;
+             OLD_V(I) = V(I);
+             SUM = 0.0;
+             DO J = 1, N;
+               SUM = SUM + A(I,J) * V(J);
+             ENDDO;
+             V(I) = SUM;
+           ENDDO;
+
+           ! Find maximum absolute value for normalization
+           MAX_VAL = 0.0;
+           DO I = 1, N;
+             IF ABS(V(I)) > MAX_VAL THEN
+               MAX_VAL = ABS(V(I));
+             ENDIF;
+           ENDDO;
+
+           IF MAX_VAL > 0.0001 THEN
+             DO I = 1, N;
+               V(I) = V(I) / MAX_VAL;
+             ENDDO;
+           ENDIF;
+
+           ! Check convergence
+           SUM = 0.0;
+           DO I = 1, N;
+             SUM = SUM + (V(I) - OLD_V(I))**2;
+           ENDDO;
+           IF SUM < 0.000001 THEN
+             EXIT;
+           ENDIF;
+         ENDDO;
+
+         ! Eigenvalue is approximately the ratio of old to new
+         LAMBDA(1) = MAX_VAL;
+
+       END POWER_METHOD;
+
+       SUBROUTINE STATISTICS(M, ROWS, COLS);
+         REAL M(ROWS, COLS);
+         INTEGER ROWS, COLS;
+         INTEGER I, J;
+         REAL SUM, SUM_SQ, MEAN, VARIANCE;
+         REAL MIN_VAL, MAX_VAL;
+
+         SUM = 0.0;
+         SUM_SQ = 0.0;
+         MIN_VAL = M(1,1);
+         MAX_VAL = M(1,1);
+
+         DO I = 1, ROWS;
+           DO J = 1, COLS;
+             SUM = SUM + M(I,J);
+             SUM_SQ = SUM_SQ + M(I,J)**2;
+             IF M(I,J) < MIN_VAL THEN
+               MIN_VAL = M(I,J);
+             ENDIF;
+             IF M(I,J) > MAX_VAL THEN
+               MAX_VAL = M(I,J);
+             ENDIF;
+           ENDDO;
+         ENDDO;
+
+         MEAN = SUM / REAL(ROWS * COLS);
+         VARIANCE = SUM_SQ / REAL(ROWS * COLS) - MEAN**2;
+
+         DISPLAY '  Count: ', ROWS * COLS;
+         DISPLAY '  Sum: ', SUM;
+         DISPLAY '  Mean: ', MEAN;
+         DISPLAY '  Variance: ', VARIANCE;
+         DISPLAY '  Min: ', MIN_VAL;
+         DISPLAY '  Max: ', MAX_VAL;
+
+       END STATISTICS;

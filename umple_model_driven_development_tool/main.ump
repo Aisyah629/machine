@@ -1,0 +1,401 @@
+/**
+ * Umple Model-Driven Development Framework
+ * 
+ * This file defines the core models for the Umple-based model-driven development framework.
+ * It includes components for generating boilerplate code and UML artifacts.
+ */
+
+// Define the main Application class
+class UmpleModelDrivenDevelopment {
+    
+    /**
+     * Generates boilerplate code from Umple models.
+     * @param model The Umple model to generate code for.
+     * @return The generated boilerplate code.
+     */
+    + generateBoilerplateCode(model: Model): String
+    
+    /**
+     * Generates UML artifacts from Umple models.
+     * @param model The Umple model to generate UML artifacts for.
+     * @return The generated UML artifacts.
+     */
+    + generateUmlArtifacts(model: Model): List<UmlArtifact>
+    
+    /**
+     * Validates the Umple model.
+     * @param model The Umple model to validate.
+     * @return True if the model is valid, false otherwise.
+     */
+    + validateModel(model: Model): Boolean
+    
+    /**
+     * Initializes the Umple model-driven development framework.
+     */
+    + initialize()
+}
+
+// Define the Model class
+abstract class Model {
+    
+    /**
+     * The name of the model.
+     */
+    - name: String
+    
+    /**
+     * The description of the model.
+     */
+    - description: String
+    
+    /**
+     * Gets the name of the model.
+     * @return The name of the model.
+     */
+    + getName(): String
+    
+    /**
+     * Sets the name of the model.
+     * @param name The name of the model.
+     */
+    + setName(name: String)
+    
+    /**
+     * Gets the description of the model.
+     * @return The description of the model.
+     */
+    + getDescription(): String
+    
+    /**
+     * Sets the description of the model.
+     * @param description The description of the model.
+     */
+    + setDescription(description: String)
+}
+
+// Define the CodeGenerationComponent class
+component CodeGenerationComponent extends UmpleModelDrivenDevelopment {
+    
+    /**
+     * Generates boilerplate code from Umple models.
+     * @param model The Umple model to generate code for.
+     * @return The generated boilerplate code.
+     */
+    + generateBoilerplateCode(model: Model): String
+    
+    /**
+     * Compiles the generated code.
+     * @param code The generated boilerplate code.
+     * @return True if the code compiles successfully, false otherwise.
+     */
+    + compileCode(code: String): Boolean
+}
+
+// Define the UmlArtifactGenerationComponent class
+component UmlArtifactGenerationComponent extends UmpleModelDrivenDevelopment {
+    
+    /**
+     * Generates UML artifacts from Umple models.
+     * @param model The Umple model to generate UML artifacts for.
+     * @return The generated UML artifacts.
+     */
+    + generateUmlArtifacts(model: Model): List<UmlArtifact>
+    
+    /**
+     * Exports the UML artifacts.
+     * @param artifacts The UML artifacts to export.
+     * @param filePath The file path to export the artifacts to.
+     */
+    + exportUmlArtifacts(artifacts: List<UmlArtifact>, filePath: String)
+}
+
+// Define the UmlArtifact class
+abstract class UmlArtifact {
+    
+    /**
+     * The type of the UML artifact.
+     */
+    - type: String
+    
+    /**
+     * Gets the type of the UML artifact.
+     * @return The type of the UML artifact.
+     */
+    + getType(): String
+    
+    /**
+     * Sets the type of the UML artifact.
+     * @param type The type of the UML artifact.
+     */
+    + setType(type: String)
+}
+
+// Define the ClassDiagramArtifact class
+class ClassDiagramArtifact extends UmlArtifact {
+    
+    /**
+     * The classes included in the class diagram.
+     */
+    - classes: List<Class>
+    
+    /**
+     * Gets the classes included in the class diagram.
+     * @return The classes included in the class diagram.
+     */
+    + getClasses(): List<Class>
+    
+    /**
+     * Sets the classes included in the class diagram.
+     * @param classes The classes included in the class diagram.
+     */
+    + setClasses(classes: List<Class>)
+}
+
+// Define the SequenceDiagramArtifact class
+class SequenceDiagramArtifact extends UmlArtifact {
+    
+    /**
+     * The lifelines in the sequence diagram.
+     */
+    - lifelines: List<Lifeline>
+    
+    /**
+     * Gets the lifelines in the sequence diagram.
+     * @return The lifelines in the sequence diagram.
+     */
+    + getLifelines(): List<Lifeline>
+    
+    /**
+     * Sets the lifelines in the sequence diagram.
+     * @param lifelines The lifelines in the sequence diagram.
+     */
+    + setLifelines(lifelines: List<Lifeline>)
+}
+
+// Define the Lifeline class
+class Lifeline {
+    
+    /**
+     * The object represented by the lifeline.
+     */
+    - object: Object
+    
+    /**
+     * Gets the object represented by the lifeline.
+     * @return The object represented by the lifeline.
+     */
+    + getObject(): Object
+    
+    /**
+     * Sets the object represented by the lifeline.
+     * @param object The object represented by the lifeline.
+     */
+    + setObject(object: Object)
+}
+
+// Define the Class class
+class Class {
+    
+    /**
+     * The name of the class.
+     */
+    - name: String
+    
+    /**
+     * The attributes of the class.
+     */
+    - attributes: List<Attribute>
+    
+    /**
+     * The methods of the class.
+     */
+    - methods: List<Method>
+    
+    /**
+     * Gets the name of the class.
+     * @return The name of the class.
+     */
+    + getName(): String
+    
+    /**
+     * Sets the name of the class.
+     * @param name The name of the class.
+     */
+    + setName(name: String)
+    
+    /**
+     * Gets the attributes of the class.
+     * @return The attributes of the class.
+     */
+    + getAttributes(): List<Attribute>
+    
+    /**
+     * Sets the attributes of the class.
+     * @param attributes The attributes of the class.
+     */
+    + setAttributes(attributes: List<Attribute>)
+    
+    /**
+     * Gets the methods of the class.
+     * @return The methods of the class.
+     */
+    + getMethods(): List<Method>
+    
+    /**
+     * Sets the methods of the class.
+     * @param methods The methods of the class.
+     */
+    + setMethods(methods: List<Method>)
+}
+
+// Define the Attribute class
+class Attribute {
+    
+    /**
+     * The name of the attribute.
+     */
+    - name: String
+    
+    /**
+     * The type of the attribute.
+     */
+    - type: String
+    
+    /**
+     * Gets the name of the attribute.
+     * @return The name of the attribute.
+     */
+    + getName(): String
+    
+    /**
+     * Sets the name of the attribute.
+     * @param name The name of the attribute.
+     */
+    + setName(name: String)
+    
+    /**
+     * Gets the type of the attribute.
+     * @return The type of the attribute.
+     */
+    + getType(): String
+    
+    /**
+     * Sets the type of the attribute.
+     * @param type The type of the attribute.
+     */
+    + setType(type: String)
+}
+
+// Define the Method class
+class Method {
+    
+    /**
+     * The name of the method.
+     */
+    - name: String
+    
+    /**
+     * The parameters of the method.
+     */
+    - parameters: List<Parameter>
+    
+    /**
+     * The return type of the method.
+     */
+    - returnType: String
+    
+    /**
+     * Gets the name of the method.
+     * @return The name of the method.
+     */
+    + getName(): String
+    
+    /**
+     * Sets the name of the method.
+     * @param name The name of the method.
+     */
+    + setName(name: String)
+    
+    /**
+     * Gets the parameters of the method.
+     * @return The parameters of the method.
+     */
+    + getParameters(): List<Parameter>
+    
+    /**
+     * Sets the parameters of the method.
+     * @param parameters The parameters of the method.
+     */
+    + setParameters(parameters: List<Parameter>)
+    
+    /**
+     * Gets the return type of the method.
+     * @return The return type of the method.
+     */
+    + getReturnType(): String
+    
+    /**
+     * Sets the return type of the method.
+     * @param returnType The return type of the method.
+     */
+    + setReturnType(returnType: String)
+}
+
+// Define the Parameter class
+class Parameter {
+    
+    /**
+     * The name of the parameter.
+     */
+    - name: String
+    
+    /**
+     * The type of the parameter.
+     */
+    - type: String
+    
+    /**
+     * Gets the name of the parameter.
+     * @return The name of the parameter.
+     */
+    + getName(): String
+    
+    /**
+     * Sets the name of the parameter.
+     * @param name The name of the parameter.
+     */
+    + setName(name: String)
+    
+    /**
+     * Gets the type of the parameter.
+     * @return The type of the parameter.
+     */
+    + getType(): String
+    
+    /**
+     * Sets the type of the parameter.
+     * @param type The type of the parameter.
+     */
+    + setType(type: String)
+}
+
+// Define the Object class
+class Object {
+    
+    /**
+     * The class that the object is an instance of.
+     */
+    - class: Class
+    
+    /**
+     * Gets the class that the object is an instance of.
+     * @return The class that the object is an instance of.
+     */
+    + getClass(): Class
+    
+    /**
+     * Sets the class that the object is an instance of.
+     * @param class The class that the object is an instance of.
+     */
+    + setClass(class: Class)
+}

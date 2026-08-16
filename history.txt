@@ -28481,3 +28481,44 @@ Initialize a NEW dedicated folder named lis_deduction_tool in the workspace, cre
 </think>
 
 Initialize a NEW dedicated folder named netlogo_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NetLogo. Focus entirely on this new objective: 'Develop a comprehensive NetLogo-based agent-based modeling system for simulating complex social dynamics and ecological interactions'. You MUST write code for this task strictly using this exact programming language: NetLogo.
+[2026-08-16 15:50:56] (Target Lang: Umple) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using Umple.
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a massive list of workspace files and a history snippet showing a previous turn where a `netlogo_simulation_tool` was initialized. The "logical follow-up" implies a continuation or a related task based on the pattern. The pattern seems to be "Initialize a NEW dedicated folder... create README... build tool...".
+
+2.  **Draft the instruction based on constraints:**
+    *   *Action:* Initialize a NEW dedicated folder.
+    *   *Folder Name:* Needs a name. Since the previous one was `netlogo_simulation_tool`, a logical follow-up might be related to Umple. Let's name it `umple_code_generation_tool` or `umple_uml_tool`. The prompt doesn't specify the name, just "NEW dedicated folder". I should pick a descriptive name. `umple_automated_testing_tool` or `umple_model_driven_development_tool`. Let's go with `umple_model_driven_development_tool`.
+    *   *File:* Create local `README.md`.
+    *   *Language:* STRICTLY Umple.
+    *   *Objective:* Needs an objective related to Umple. Umple is a meta-language for Object-Oriented and System Modeling. Objective could be "Develop a comprehensive Umple-based model-driven development framework for generating boilerplate code and UML artifacts".
+    *   *Mandatory Phrase:* "You MUST write code for this task strictly using this exact programming language: Umple."
+
+    *Draft 1:*
+    Initialize a NEW dedicated folder named umple_model_driven_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Umple. Focus entirely on this new objective: 'Develop a comprehensive Umple-based model-driven development framework for generating boilerplate code and UML artifacts'. You MUST write code for this task strictly using this exact programming language: Umple.
+
+3.  **Review against constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, it's one sentence block.
+    *   *Explicitly demand STRICTLY using Umple?* Yes ("STRICTLY using this exact programming language: Umple").
+    *   *NEW dedicated folder?* Yes ("NEW dedicated folder named...").
+    *   *Create local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY the instruction text?* Yes, the output will be just the text.
+    *   *NEVER target .github?* The instruction doesn't mention `.github`. The folder name is `umple_model_driven_development_tool`. Safe.
+    *   *Logical follow-up?* The history shows a pattern of initializing tools. This follows that pattern.
+
+4.  **Refine the output text:**
+    *   The prompt asks to "Return ONLY the instruction text."
+    *   Result: `Initialize a NEW dedicated folder named umple_model_driven_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Umple. Focus entirely on this new objective: 'Develop a comprehensive Umple-based model-driven development framework for generating boilerplate code and UML artifacts'. You MUST write code for this task strictly using this exact programming language: Umple.`
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   Text: Initialize a NEW dedicated folder named umple_model_driven_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Umple. Focus entirely on this new objective: 'Develop a comprehensive Umple-based model-driven development framework for generating boilerplate code and UML artifacts'. You MUST write code for this task strictly using this exact programming language: Umple.
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named umple_model_driven_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Umple. Focus entirely on this new objective: 'Develop a comprehensive Umple-based model-driven development framework for generating boilerplate code and UML artifacts'. You MUST write code for this task strictly using this exact programming language: Umple.

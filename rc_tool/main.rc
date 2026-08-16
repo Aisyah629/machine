@@ -1,7 +1,69 @@
 #!/bin/rc
-# This is a structured programming or data manipulation utility implemented in rc.
+# main.rc
+# A robust, pipeline-oriented command processor for sequential data transformation
 
-# Sample data manipulation logic could be placed here.
-# For now, this serves as the functional entry point.
+# Define the main pipeline processor function
+proc pipeline_process {
+    # Input data as an array of strings
+    data = ($@)
+    
+    # Define transformations
+    # 1. Uppercase all text
+    # 2. Filter lines starting with 'ERROR'
+    # 3. Count remaining lines
+    
+    # Process pipeline
+    # The rc shell excels at pipelines using the '|' operator
+    
+    # Create a temporary file to hold intermediate results
+    tmp = $(mktemp)
+    trap 'rm $tmp' EXIT
+    
+    # Stage 1: Input data generation (simulated)
+    cat > $tmp <<EOF
+INFO: System started
+ERROR: Disk failure
+INFO: User login
+ERROR: Network timeout
+INFO: Backup complete
+EOF
+    
+    # Stage 2: Apply transformations using pipeline syntax
+    # Transform: Convert to uppercase, filter errors, count lines
+    
+    # The pipeline:
+    # 1. cat $tmp (read input)
+    # 2. ucase (uppercase conversion - custom or external)
+    # 3. grep -i error (filter errors)
+    # 4. wc -l (count)
+    
+    # Since rc doesn't have a built-in ucase, we simulate it with tr or awk
+    # For demonstration, let's use a pure rc approach with command substitution
+    
+    # Read the file
+    lines = ($(*< $tmp))
+    
+    # Transform: Uppercase and filter in a loop
+    transformed = ()
+    for (line in $lines) {
+        # Convert to uppercase using tr
+        upper = ($(	r 'a-z' 'A-Z' <<< $line))
+        # Check for ERROR (case insensitive after uppercasing)
+        if (~ $upper ERROR) {
+            transformed = ($transformed $upper)
+        }
+    }
+    
+    # Count the results
+    count = $#transformed
+    
+    # Output results
+    print "Transformation Complete"
+    print "Errors Found: $count"
+    for (line in $transformed) {
+        print "  - $line"
+    }
+}
 
-echo "rc_tool initialized successfully."
+# Execute the pipeline
+pipeline_process $@

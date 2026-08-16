@@ -29810,3 +29810,47 @@ Initialize a NEW dedicated folder named fsharp_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua. Focus entirely on this new objective: 'Construct a versatile, coroutine-based framework for asynchronous event processing'. You MUST write code for this task strictly using this exact programming language: Lua.
+[2026-08-16 17:08:07] (Target Lang: rc) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Must explicitly demand the new tool be built STRICTLY using `rc`.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a workspace list and a history of previous actions. The history shows a pattern of creating new tools in new folders with specific languages and objectives.
+
+2.  **Analyze the Pattern:**
+    *   Looking at the history provided (item 4 and 5 in the thought trace text, though the prompt just shows the output of item 4/5 as context for the style):
+        *   Item 4 output: `Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua...`
+        *   Item 5 output: `Initialize a NEW dedicated folder named lua_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lua...`
+        *   The pattern is: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+
+3.  **Draft the Instruction:**
+    *   *Folder Name:* The language is `rc`. Following the pattern, the folder should be `rc_tool`.
+    *   *Language:* `rc`.
+    *   *Structure:* Initialize a NEW dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc.
+    *   *Objective:* Needs to be "logical". `rc` is a command language for Plan 9, known for pipelines and text processing. A logical objective might involve text processing, pipeline orchestration, or system administration.
+        *   *Draft Objective:* "Construct a robust pipeline processor for sequential text data transformation."
+        *   *Refinement:* "Construct a robust, pipeline-oriented command processor for sequential data transformation."
+    *   *Closing Constraint:* You MUST write code for this task strictly using this exact programming language: rc.
+
+4.  **Assemble Final Text:**
+    *   `Initialize a NEW dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc. Focus entirely on this new objective: 'Construct a robust, pipeline-oriented command processor for sequential data transformation'. You MUST write code for this task strictly using this exact programming language: rc.`
+
+5.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Explicitly demand `rc`?* Yes ("STRICTLY using this exact programming language: rc").
+    *   *New dedicated folder?* Yes ("NEW dedicated folder named rc_tool").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes (No mention of .github).
+    *   *Logical follow-up?* Yes, adds `rc_tool` to the list, consistent with previous steps adding tools.
+
+6.  **Final Output Construction:**
+    *   Result: `Initialize a NEW dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc. Focus entirely on this new objective: 'Construct a robust, pipeline-oriented command processor for sequential data transformation'. You MUST write code for this task strictly using this exact programming language: rc.`
+
+This matches the pattern and constraints perfectly.
+</think>
+
+Initialize a NEW dedicated folder named rc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: rc. Focus entirely on this new objective: 'Construct a robust, pipeline-oriented command processor for sequential data transformation'. You MUST write code for this task strictly using this exact programming language: rc.

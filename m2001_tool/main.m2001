@@ -1,0 +1,196 @@
+// M2001 Type-Safe Cryptography Library
+// Objective: Construct a robust, type-safe library for real-time cryptographic operations
+
+MODULE Cryptography;
+
+// Strongly typed constants
+CONST 
+  HASH_BLOCK_SIZE : INT = 64;
+  KEY_LENGTH      : INT = 32;
+  IV_LENGTH       : INT = 16;
+  AES_ROUNDS      : INT = 10;
+  SHA_ROUNDS      : INT = 64;
+END;
+
+// Type definitions
+TYPE
+  Byte       : INT(0, 255);
+  Bits       : INT(0, 1);
+  Key        : ARRAY<Byte> OF 32;
+  IV         : ARRAY<Byte> OF 16;
+  HashOutput : ARRAY<Byte> OF 32;
+  CipherText : ARRAY<Byte> OF INT(0, 1024);
+  PlainText  : ARRAY<Byte> OF INT(0, 1024);
+END;
+
+// Function signatures
+FUNCTION xor(a : Bits, b : Bits) : Bits;
+FUNCTION md5(data : PlainText) : HashOutput;
+FUNCTION sha256(data : PlainText) : HashOutput;
+FUNCTION aes_encrypt(key : Key, iv : IV, plaintext : PlainText) : CipherText;
+FUNCTION aes_decrypt(key : Key, iv : IV, ciphertext : CipherText) : PlainText;
+FUNCTION verify_integrity(data : PlainText, signature : HashOutput) : Bits;
+
+// Implementation
+FUNCTION xor(a : Bits, b : Bits) : Bits;
+  RETURN (a + b) MOD 2;
+END;
+
+FUNCTION md5(data : PlainText) : HashOutput;
+  VAR h0, h1, h2, h3 : INT;
+  VAR transformed_data : ARRAY<Byte> OF 64;
+  
+  // Padding
+  transformed_data[0..63] := data[0..63] + [0x80, 0x00..0x00];
+  
+  // Initialize hash values
+  h0 := 0x67452301;
+  h1 := 0xEFCDAB89;
+  h2 := 0x98BADCFE;
+  h3 := 0x10325476;
+  
+  // Process each 512-bit chunk
+  FOR i = 0 TO 63 DO
+    // Compression function steps
+    h0 := (h0 + f(i, h1, h2, h3) + g(i) + K(i)) MOD 2^32;
+    h1 := (h1 + g(i, h0, h1, h2) + h(i) + K(i)) MOD 2^32;
+    h2 := (h2 + h(i, h0, h1, h2) + f(i) + K(i)) MOD 2^32;
+    h3 := (h3 + f(i, h0, h1, h2) + g(i) + K(i)) MOD 2^32;
+  END;
+  
+  RETURN [Byte(h0), Byte(h1), Byte(h2), Byte(h3)];
+END;
+
+FUNCTION sha256(data : PlainText) : HashOutput;
+  VAR h0, h1, h2, h3, h4, h5, h6, h7 : INT;
+  VAR k : ARRAY<INT> OF 64;
+  
+  // Initialize hash values
+  h0 := 0x6a09e667;
+  h1 := 0xbb67ae85;
+  h2 := 0x3c6ef372;
+  h3 := 0xa54ff53a;
+  h4 := 0x510e527f;
+  h5 := 0x9b05688c;
+  h6 := 0x1f83d9ab;
+  h7 := 0x5be0cd19;
+  
+  // Initialize round constants
+  FOR i = 0 TO 63 DO
+    k[i] := (2^30 * i) MOD 2^32;
+  END;
+  
+  // Process each 512-bit chunk
+  FOR i = 0 TO 63 DO
+    // Compression function steps
+    t1 := (h7 + Sigma1(h4) + Ch(h4, h5, h6) + k[i] + data[i]) MOD 2^32;
+    t2 := Sigma0(h0) + Maj(h0, h1, h2);
+    h7 := h6;
+    h6 := h5;
+    h5 := h4;
+    h4 := (h3 + t1) MOD 2^32;
+    h3 := h2;
+    h2 := h1;
+    h1 := h0;
+    h0 := (t1 + t2) MOD 2^32;
+  END;
+  
+  RETURN [Byte(h0), Byte(h1), Byte(h2), Byte(h3), Byte(h4), Byte(h5), Byte(h6), Byte(h7)];
+END;
+
+FUNCTION aes_encrypt(key : Key, iv : IV, plaintext : PlainText) : CipherText;
+  VAR state : ARRAY<Byte> OF 16;
+  VAR round_key : ARRAY<Byte> OF 4;
+  
+  // Key expansion
+  round_key[0..3] := key[0..3];
+  round_key[4..7] := key[4..7];
+  round_key[8..11] := key[8..11];
+  round_key[12..15] := key[12..15];
+  
+  // Initial round
+  state[0..15] := plaintext[0..15] XOR round_key[0..15];
+  
+  // Main rounds
+  FOR i = 1 TO 9 DO
+    state[0..15] := SubByte(state[0..15]) XOR ShiftRows(state[0..15]) XOR MixColumns(state[0..15]) XOR round_key[16 + (i-1)*16 .. 16 + (i-1)*16 + 15];
+  END;
+  
+  // Final round
+  state[0..15] := SubByte(state[0..15]) XOR ShiftRows(state[0..15]) XOR round_key[16 + 9*16 .. 16 + 9*16 + 15];
+  
+  RETURN state;
+END;
+
+FUNCTION aes_decrypt(key : Key, iv : IV, ciphertext : CipherText) : PlainText;
+  VAR state : ARRAY<Byte> OF 16;
+  VAR round_key : ARRAY<Byte> OF 4;
+  
+  // Key expansion
+  round_key[0..3] := key[0..3];
+  round_key[4..7] := key[4..7];
+  round_key[8..11] := key[8..11];
+  round_key[12..15] := key[12..15];
+  
+  // Initial round
+  state[0..15] := ciphertext[0..15] XOR round_key[0..15];
+  
+  // Main rounds
+  FOR i = 1 TO 9 DO
+    state[0..15] := InvShiftRows(state[0..15]) XOR InvSubByte(state[0..15]) XOR AddRoundKey(state[0..15], round_key[16 + (10-i)*16 .. 16 + (10-i)*16 + 15]);
+  END;
+  
+  // Final round
+  state[0..15] := InvShiftRows(state[0..15]) XOR InvSubByte(state[0..15]) XOR AddRoundKey(state[0..15], round_key[0..15]);
+  
+  RETURN state;
+END;
+
+FUNCTION verify_integrity(data : PlainText, signature : HashOutput) : Bits;
+  VAR computed_hash : HashOutput;
+  VAR match : Bits := 1;
+  
+  computed_hash := sha256(data);
+  
+  FOR i = 0 TO 31 DO
+    IF computed_hash[i] != signature[i] THEN
+      match := 0;
+    END;
+  END;
+  
+  RETURN match;
+END;
+
+END;
+
+// Usage Example
+PROC main;
+  VAR key : Key;
+  VAR iv : IV;
+  VAR plaintext : PlainText;
+  VAR ciphertext : CipherText;
+  VAR signature : HashOutput;
+  
+  // Initialize key and IV
+  key[0..31] := [0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F, 0x20];
+  iv[0..15] := [0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F];
+  plaintext[0..15] := [0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF];
+  
+  // Encrypt data
+  ciphertext := aes_encrypt(key, iv, plaintext);
+  
+  // Decrypt data
+  plaintext := aes_decrypt(key, iv, ciphertext);
+  
+  // Compute signature
+  signature := sha256(plaintext);
+  
+  // Verify integrity
+  IF verify_integrity(plaintext, signature) THEN
+    OUTPUT "Data integrity verified.";
+  ELSE
+    OUTPUT "Data integrity check failed.";
+  END;
+END;
+
+END MODULE;

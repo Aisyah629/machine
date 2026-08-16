@@ -27472,3 +27472,82 @@ Initialize a NEW dedicated folder named elan_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named portable_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PortablE. Focus entirely on this new objective: 'Specify an algebraic definition for a list data structure with append and reverse operations'. You MUST write code for this task strictly using this exact programming language: PortablE.
+[2026-08-16 14:32:34] (Target Lang: C++) The user wants a follow-up instruction for an Autonomous AI.
+The instruction must:
+1. Be exactly 1 paragraph/command block.
+2. Explicitly demand building a new tool strictly using C++.
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target the .github directory.
+6. Follow the pattern of the previous instruction (which was about PortablE).
+7. Focus on a specific objective.
+
+Looking at the workspace list, there's no `cpp_tool` or `c_plus_plus_tool` or similar. So I need to create a new folder for C++.
+The previous instruction was about `portable_tool` and PortablE.
+The new instruction should create a folder like `cpp_tool` or `c_plus_plus_tool`. Let's use `cpp_tool`.
+Objective: Should be specific, maybe related to C++ features or a general algorithm/data structure task. The previous one was about algebraic definition for a list. Let's pick something like "Implement a thread-safe singleton pattern with lazy initialization". Or "Define a custom memory allocator using placement new". Let's go with "Implement a generic template-based binary search tree with insertion, deletion, and traversal operations".
+Wait, the prompt says "Focus entirely on this new objective: '...'".
+I will draft the instruction:
+"Initialize a NEW dedicated folder named cpp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C++. Focus entirely on this new objective: 'Implement a thread-safe singleton pattern with lazy initialization and thread-local storage'. You MUST write code for this task strictly using this exact programming language: C++."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand STRICTLY using C++? Yes.
+- NEW dedicated folder? Yes (`cpp_tool`).
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+- Logical follow-up? Yes.
+
+Let's refine it to match the style of the previous one exactly.
+"Initialize a NEW dedicated folder named cpp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C++. Focus entirely on this new objective: 'Implement a thread-safe singleton pattern with lazy initialization and custom mutex management'. You MUST write code for this task strictly using this exact programming language: C++."
+
+Wait, the prompt says "Generate exactly 1 logical follow-up instruction."
+I will output just the instruction text.
+Check workspace for `cpp_tool`: not present.
+Check constraints: "EXPLICITLY demand that the new tool be built STRICTLY using this exact programming language: C++."
+"NEW dedicated folder and create a local README.md."
+"Return ONLY the instruction text."
+"NEVER target the .github directory."
+
+Everything matches. I will generate it now.
+One minor thing: The prompt says "Focus entirely on this new objective: 'Specify an algebraic definition...'" in the example. I will change the objective to something C++ relevant.
+"Initialize a NEW dedicated folder named cpp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C++. Focus entirely on this new objective: 'Implement a lock-free intrusive linked list with memory reclamation support'. You MUST write code for this task strictly using this exact programming language: C++."
+
+Looks good. Output matches requirements.
+I will produce exactly that string.
+Double check constraint: "exactly 1 logical follow-up instruction." "Return ONLY the instruction text."
+Ready. 
+Output matches draft.✅
+Proceeds. 
+Self-Correction/Verification during thought:
+- Check if `cpp_tool` exists in list: No.
+- Check format: Matches previous.
+- Language: C++.
+- Folder: NEW dedicated folder.
+- README: local README.md.
+- Constraint check: All met.
+Output generation. 
+"Initialize a NEW dedicated folder named cpp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C++. Focus entirely on this new objective: 'Implement a lock-free intrusive linked list with memory reclamation support'. You MUST write code for this task strictly using this exact programming language: C++." -> This is exactly 1 paragraph. Matches all constraints.✅
+Proceeds. 
+Output matches exactly. 
+[Final Check]
+- 1 instruction? Yes.
+- STRICTLY C++? Yes.
+- NEW folder + README.md? Yes.
+- ONLY text? Yes.
+- No .github? Yes.
+- Logical? Yes.
+All good. 
+Output Generation. 
+`Initialize a NEW dedicated folder named cpp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C++. Focus entirely on this new objective: 'Implement a lock-free intrusive linked list with memory reclamation support'. You MUST write code for this task strictly using this exact programming language: C++. ` (trimming trailing space if any)
+Done. 
+Proceeds. 
+[Output Generation] -> *Proceeds*
+(Note: I will ensure the output is exactly the instruction text as requested.) 
+"Initialize a NEW dedicated folder named cpp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C++. Focus entirely on this new objective: 'Implement a lock-free intrusive linked list with memory reclamation support'. You MUST write code for this task strictly using this exact programming language: C++." -> Matches perfectly. 
+Done. 
+[Output] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named cpp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: C++. Focus entirely on this new objective: 'Implement a lock-free intrusive linked list with memory reclamation support'. You MUST write code for this task strictly using this exact programming language: C++.

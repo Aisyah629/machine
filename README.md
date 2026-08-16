@@ -682,3 +682,5 @@ Training Machine
 - Created/Updated module: `script_net_tool` (See `script_net_tool/README.md` for details)
 
 - Created/Updated module: `mortran_tool` (See `mortran_tool/README.md` for details)
+
+- Created/Updated module: `cpp_tool` (See `cpp_tool/README.md` for details)

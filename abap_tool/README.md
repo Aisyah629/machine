@@ -1,30 +1,17 @@
 # ABAP Tool
 
-A dedicated workspace for building and managing ABAP-based applications and utilities. This tool provides a structured environment for developing, testing, and deploying ABAP code following best practices for SAP systems.
+This tool is a standalone application developed using ABAP, designed to process enterprise data and simulate transactions.
 
 ## Features
 
-- ABAP code generation and validation
-- SAP dictionary object management
-- Performance optimization guidelines
-- Unit testing framework integration
+- Data processing engine
+- Transaction simulation module
+- Reporting interface
 
 ## Usage
 
-1. Place ABAP source files in the `main.abap` entry point
-2. Run validation scripts to check syntax and best practices
-3. Deploy to SAP test or production systems as needed
+To use this tool, copy the main.abap file to your SAP system and execute the program via SE38 or as part of a background job.
 
-## Directory Structure
+## License
 
-```
-abap_tool/
-├── README.md
-└── main.abap
-```
-
-## Notes
-
-- Always adhere to SAP coding standards
-- Perform thorough testing in a non-production environment first
-- Ensure compatibility with target SAP NetWeaver versions
+Internal use only.

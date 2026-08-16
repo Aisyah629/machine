@@ -654,3 +654,5 @@ Training Machine
 - Created/Updated module: `cobra_tool` (See `cobra_tool/README.md` for details)
 
 - Created/Updated module: `subtext_tool` (See `subtext_tool/README.md` for details)
+
+- Created/Updated module: `abap_tool` (See `abap_tool/README.md` for details)

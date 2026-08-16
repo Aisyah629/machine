@@ -26318,3 +26318,43 @@ Initialize a NEW dedicated folder named mathematica_tool in the workspace, creat
 </think>
 
 Initialize a NEW dedicated folder named subtext_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Subtext. Focus entirely on this new objective: 'Develop a text-driven interactive visualization and data flow framework'. You MUST write code for this task strictly using this exact programming language: Subtext.
+[2026-08-16 12:49:40] (Target Lang: ABAP) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Demand the new tool be built STRICTLY using ABAP.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: Previous history shows a pattern of generating instructions for "tools" with specific languages. The current state includes a `subtext_tool` being generated in the history, but the user is asking for the *next* instruction based on the current prompt which asks for ABAP.
+
+2.  **Analyze Constraints & Format:**
+    *   The output must be a single string (instruction).
+    *   Must mention "ABAP".
+    *   Must mention "NEW dedicated folder" and "local README.md".
+    *   Must not mention `.github`.
+    *   Result should look like: `Initialize a NEW dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABAP. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: ABAP.`
+
+3.  **Draft the Instruction:**
+    *   Folder Name: `abap_tool`.
+    *   Language: `ABAP`.
+    *   Objective: Needs a logical objective. Looking at the history, objectives are usually descriptive like "Create an interactive diagnostic..." or "Develop a text-driven...". A good ABAP objective might be "Develop an enterprise data processing and reporting framework" or "Implement a system transaction simulation tool". Since the prompt doesn't specify the objective, I should generate a plausible one consistent with ABAP (ERP/Enterprise resource planning context) or a generic tool objective. The previous examples in the prompt history show objectives like "Create an interactive diagnostic or visualization tool" or "Develop a text-driven interactive visualization...". I'll choose a coherent objective. "Develop an enterprise data processing and transaction simulation framework" sounds good for ABAP.
+    *   *Drafting:* `Initialize a NEW dedicated folder named abap_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABAP. Focus entirely on this new objective: 'Develop an enterprise data processing and transaction simulation framework'. You MUST write code for this task strictly using this exact programming language: ABAP.`
+
+4.  **Review against Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   STRICTLY ABAP? Yes ("STRICTLY using this exact programming language: ABAP", "strictly using this exact programming language: ABAP").
+    *   NEW dedicated folder? Yes ("Initialize a NEW dedicated folder named abap_tool").
+    *   Local README.md? Yes ("create a local README.md inside it").
+    *   ONLY instruction text? Yes.
+    *   No .github? Yes.
+
+5.  **Final Polish:**
+    *   The structure matches the previous outputs in the history provided in the prompt.
+    *   Result: `Initialize a NEW dedicated folder named abap_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABAP. Focus entirely on this new objective: 'Develop an enterprise data processing and transaction simulation framework'. You MUST write code for this task strictly using this exact programming language: ABAP.`
+
+6.  **Output Generation:**
+    *   Return the drafted string.
+</think>
+
+Initialize a NEW dedicated folder named abap_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABAP. Focus entirely on this new objective: 'Develop an enterprise data processing and transaction simulation framework'. You MUST write code for this task strictly using this exact programming language: ABAP.

@@ -714,3 +714,5 @@ Training Machine
 - Created/Updated module: `kee_diagnostic_tool` (See `kee_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `idl_interface_tool` (See `idl_interface_tool/README.md` for details)
+
+- Created/Updated module: `setl_health_tool` (See `setl_health_tool/README.md` for details)

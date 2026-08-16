@@ -872,3 +872,5 @@ Training Machine
 - Created/Updated module: `lagoona_engine_tool` (See `lagoona_engine_tool/README.md` for details)
 
 - Created/Updated module: `seed7_engine_tool` (See `seed7_engine_tool/README.md` for details)
+
+- Created/Updated module: `aspectj_crosscutting_engine_tool` (See `aspectj_crosscutting_engine_tool/README.md` for details)

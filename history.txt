@@ -35264,3 +35264,53 @@ Initialize a NEW dedicated folder named chip8_vm_tool in the workspace, create a
 
 Initialize a NEW dedicated folder named espol_modeling_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ESPOL. Focus entirely on this new objective: 'Construct a formal specification framework using ESPOL'. You MUST write code for this task strictly using this programming language: ESPOL.
 [2026-08-16 22:58:38] (Target Lang: Genie) Create a new utility for data processing in a new folder. You MUST write it strictly in Genie. Include a local README.md.
+[2026-08-16 22:59:32] (Target Lang: AspectJ) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Format: Return ONLY the instruction text.
+    *   Constraints:
+        *   Never target `.github` directory.
+        *   Explicitly demand the new tool be built STRICTLY using `AspectJ`.
+        *   If building a new tool, place it in a NEW dedicated folder.
+        *   Create a local README.md.
+        *   "Logical follow-up" implies context from previous turns. The "History" section shows a sequence of tool creation instructions. The last entry in the history block seems to be a meta-instruction about `espol_modeling_tool` and Genie, but the user's prompt specifically asks for a follow-up based on the provided context. Looking at the `History` section provided in the prompt:
+            *   There's a block of text starting with "6. **Final Output Generation:** ... `espol_modeling_tool` ... ESPOL ...".
+            *   Then "Wait, looking at the previous turn...".
+            *   Then "Result: Initialize a NEW dedicated folder named `espol_modeling_tool`...".
+            *   Then "[2026-08-16 22:58:38] (Target Lang: Genie) Create a new utility for data processing...".
+            *   Then the user asks: "Generate exactly 1 logical follow-up instruction... Explicitly demand... AspectJ...".
+        *   So the context ends with a Genie instruction. A "logical follow-up" usually continues the pattern of creating tools, perhaps for a different purpose or language, or a variation. Since the user forces the language to AspectJ, the content should likely be related to AspectJ's domain (AOP, cross-cutting concerns, logging, security, metrics, etc.) to be "logical" in a technical sense, or just a generic "new tool" if the prompt doesn't specify content logic beyond the constraints. Usually, "logical follow-up" in these few-shot or chain-of-thought prompts implies maintaining the style and structure of the previous instructions.
+
+2.  **Drafting the Instruction:**
+    *   *Structure:* `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: '[objective]'.`
+    *   *Folder Name:* Needs to be new. `aspectj_tool` exists in the file list. `aspectj_logging_tool`, `aspectj_metrics_tool`, `aspectj_aop_framework_tool`? Let's pick something distinct. `aspectj_aop_framework_tool` is good. Or `aspectj_crosscutting_tool`. Let's go with `aspectj_diagnostic_framework_tool` or `aspectj_security_monitor_tool`. To be safe and generic but logical: `aspectj_crosscutting_engine_tool`.
+    *   *Language:* AspectJ.
+    *   *Objective:* Needs to match AspectJ. AspectJ is used for AOP. A good objective would be "Construct a cross-cutting concern management system using AspectJ" or "Develop an aspect-oriented debugging framework using AspectJ". Let's use "Develop an aspect-oriented performance monitoring framework using AspectJ".
+    *   *Refining the Text:*
+        *   "Initialize a NEW dedicated folder named `aspectj_crosscutting_engine_tool` in the workspace..."
+        *   "...create a local README.md inside it..."
+        *   "...and build the entire new tool STRICTLY using this exact programming language: AspectJ."
+        *   "Focus entirely on this new objective: 'Develop an aspect-oriented performance monitoring framework using AspectJ'."
+        *   "You MUST write code for this task strictly using this programming language: AspectJ."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up?* Yes, it's one block of text.
+    *   *Explicitly demand AspectJ?* Yes ("STRICTLY using this exact programming language: AspectJ").
+    *   *NEW dedicated folder?* Yes ("Initialize a NEW dedicated folder named...").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes, no markdown headers like "Instruction:", just the text.
+    *   *Never target .github?* Yes, folder name is `aspectj_crosscutting_engine_tool`, no `.github`.
+    *   *Logical follow-up?* Yes, it follows the pattern of previous tool creation instructions seen in the history structure (even though the history block is messy, the pattern is clear: "Initialize a NEW dedicated folder... language... objective...").
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named aspectj_crosscutting_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop an aspect-oriented performance monitoring framework using AspectJ'. You MUST write code for this task strictly using this programming language: AspectJ.`
+
+5.  **Final Output Construction:**
+    *   The output should be exactly that string.
+
+Result:
+Initialize a NEW dedicated folder named aspectj_crosscutting_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop an aspect-oriented performance monitoring framework using AspectJ'. You MUST write code for this task strictly using this programming language: AspectJ.
+</think>
+
+Initialize a NEW dedicated folder named aspectj_crosscutting_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop an aspect-oriented performance monitoring framework using AspectJ'. You MUST write code for this task strictly using this programming language: AspectJ.

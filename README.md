@@ -614,3 +614,5 @@ Training Machine
 - Created/Updated module: `axiom_tool` (See `axiom_tool/README.md` for details)
 
 - Created/Updated module: `aimms_tool` (See `aimms_tool/README.md` for details)
+
+- Created/Updated module: `aspectj_tool` (See `aspectj_tool/README.md` for details)

@@ -1,0 +1,46 @@
+% Metafont Script for Complex Mathematical Typography
+% This script demonstrates the creation of vector graphics using Metafont,
+% focusing on rendering complex mathematical typography.
+
+gfulpen pencircle scaled .7bp;
+
+def newpath expr p =
+  p := fullcircle scaled 20 shifted (0, 0);
+  p
+def enddef;
+
+path p;
+p := newpath;
+draw p;
+
+% Define a function to draw a simple equation
+beginfig(1);
+  label("$x^2 + y^2 = z^2$", (0, 0));
+endfig;
+
+% Define a function to draw a more complex equation
+beginfig(2);
+  label("$\sum_{i=0}^{n} i = \frac{n(n+1)}{2}$", (0, 0));
+endfig;
+
+% Define a function to draw a geometric shape
+beginfig(3);
+  draw fullcircle scaled 50;
+endfig;
+
+% Define a function to draw a custom glyph
+beginfig(4);
+  draw (0, 0) -- (10, 10) -- (20, 0) -- cycle;
+endfig;
+
+% Define a function to draw a mathematical symbol
+beginfig(5);
+  draw (0, 0) -- (10, 0) -- (10, 10) -- (0, 10) -- cycle;
+endfig;
+
+% Define a function to draw a complex mathematical expression
+beginfig(6);
+  label("$\int_{a}^{b} f(x) \, dx = F(b) - F(a)$", (0, 0));
+endfig;
+
+end

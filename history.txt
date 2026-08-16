@@ -25082,3 +25082,81 @@ Output matches request.✅
 </think>
 
 Initialize a NEW dedicated folder named visual_dialogscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual DialogScript. Focus entirely on this new objective: 'Develop a user-friendly Visual DialogScript application capable of creating interactive GUI interfaces, handling user input events, and automating repetitive desktop tasks'. You MUST write functional code for this task strictly using this exact programming language: Visual DialogScript.
+[2026-08-16 11:17:29] (Target Lang: Charm) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of directories and files, mostly `_tool` folders with `README.md` and a main source file (e.g., `./c_tool/main.c`).
+   - **History/Constraints:**
+     - Exactly 1 logical follow-up instruction? Yes.
+     - Explicitly demand built STRICTLY using Visual DialogScript? (Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Charm." in the final line, overriding the history example. The history example is just context/formatting.)
+     - Place in NEW dedicated folder and create local README.md? Yes.
+     - Return ONLY instruction text? Yes.
+     - NEVER target .github? Yes.
+     - The output should be just the string.
+   - **Final Instruction:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Charm. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Requirements for Output:**
+   - Format: Exactly 1 logical follow-up instruction.
+   - Must start with something like "Initialize a NEW dedicated folder named [language]_tool..."
+   - Must explicitly demand the tool be built STRICTLY using: Charm
+   - Must instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Must include a relevant objective/task for the language.
+   - Must NOT target `.github`.
+   - Must return ONLY the instruction text.
+
+3.  **Draft Construction (Mental):**
+   Initialize a NEW dedicated folder named `charm_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Charm. Focus entirely on this new objective: 'Develop a concurrent, fault-tolerant system capable of managing actor-based message passing, state mutation, and reliable distributed communication'. You MUST write functional code for this task strictly using this exact programming language: Charm.
+
+   Let's check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Charm? Yes.
+   - Place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches the pattern from the history? Yes.
+
+   The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Charm."
+   I will format it exactly as requested.
+
+   Refined draft:
+   Initialize a NEW dedicated folder named charm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Charm. Focus entirely on this new objective: 'Develop a robust concurrent application utilizing actor-based concurrency, state mutation, and reliable distributed messaging to handle high-throughput system operations'. You MUST write functional code for this task strictly using this exact programming language: Charm.
+
+4.  **Final Verification:**
+   - Starts with "Initialize a NEW..."
+   - Mentions `charm_tool` folder and `README.md`
+   - Explicitly demands STRICTLY using `Charm`
+   - Has a relevant objective
+   - Only one instruction
+   - No `.github` mention
+   - Only returns the instruction text
+   - Matches the exact structure requested.
+
+   All constraints met. Output matches exactly.✅
+   Proceed. 
+   Output generation. 
+   [Self-Correction/Verification during thought]
+   Wait, the prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Charm."
+   The history example uses "Visual DialogScript", but the final line overrides it with "Charm". I will follow the final line.
+   Structure matches: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+   I will produce exactly that.✅
+   Output matches request.✅
+   Proceeds. 
+   Output: Initialize a NEW dedicated folder named charm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Charm. Focus entirely on this new objective: 'Develop a robust concurrent application utilizing actor-based concurrency, state mutation, and reliable distributed messaging to handle high-throughput system operations'. You MUST write functional code for this task strictly using this exact programming language: Charm. 
+   (Note: I'll make sure it's exactly one string as requested.) 
+   All good. 
+   Output matches.✅
+   [Done] 
+   *Self-Correction/Refinement during generation prep*: 
+   I should ensure the exact phrasing matches the prompt's requested structure closely. The prompt says: "Initialize a NEW dedicated folder named visual_dialogscript_tool...". I will adapt it to `charm_tool`.
+   Final string: Initialize a NEW dedicated folder named charm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Charm. Focus entirely on this new objective: 'Develop a concurrent, fault-tolerant system capable of managing actor-based message passing, state mutation, and reliable distributed communication'. You MUST write functional code for this task strictly using this exact programming language: Charm.
+   Matches perfectly. Output matches request.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I will output exactly the string without any extra text as instructed.)*
+   `Initialize a NEW dedicated folder named charm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Charm. Focus entirely on this new objective: 'Develop a concurrent, fault-tolerant system capable of managing actor-based message passing, state mutation, and reliable distributed communication'. You MUST write functional code for this task strictly using this exact programming language: Charm.` -> This is ready.✅
+   Output matches.✅
+   [Done]
+</think>
+
+Initialize a NEW dedicated folder named charm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Charm. Focus entirely on this new objective: 'Develop a concurrent, fault-tolerant system capable of managing actor-based message passing, state mutation, and reliable distributed communication'. You MUST write functional code for this task strictly using this exact programming language: Charm.

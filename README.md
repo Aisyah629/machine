@@ -590,3 +590,5 @@ Training Machine
 - Created/Updated module: `./nu_tool` (See `./nu_tool/README.md` for details)
 
 - Created/Updated module: `curry_tool` (See `curry_tool/README.md` for details)
+
+- Created/Updated module: `vala_tool` (See `vala_tool/README.md` for details)

@@ -21914,3 +21914,86 @@ Initialize a NEW dedicated folder named delphi_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named delphi_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Delphi. Focus entirely on this new objective: 'Develop a robust desktop application framework with strong database connectivity and event-driven architecture'. You MUST write functional code for this task strictly using this exact programming language: Delphi.
+[2026-08-16 07:06:24] (Target Lang: TypeScript) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a list of workspace files/directories and a conversation history. The history shows a prompt asking to initialize a new tool folder for Delphi.
+   - **Current Task:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TypeScript. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 instruction.
+     - Explicitly demand built STRICTLY using TypeScript.
+     - Explicitly instruct NEW dedicated folder and README.md.
+     - ONLY instruction text.
+     - NEVER target .github.
+     - Focus on a new objective (implied by "logical follow-up instruction").
+
+2.  **Deconstruct Constraints:**
+   - Must be a single instruction string.
+   - Must explicitly mention "TypeScript" as the language.
+   - Must explicitly demand "STRICTLY using this exact programming language: TypeScript".
+   - Must instruct to create a NEW dedicated folder and a local README.md inside it.
+   - Must NOT target .github.
+   - Must return ONLY the instruction text.
+
+3.  **Draft Construction (Mental):**
+   Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: TypeScript.
+
+   Let's refine it to match the style of the prompt exactly, ensuring all constraints are met.
+   "Initialize a NEW dedicated folder named typescript_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: 'Develop a scalable cross-platform application with asynchronous I/O handling and modern package management'. You MUST write functional code for this task strictly using this exact programming language: TypeScript."
+
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using Delphi? Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TypeScript." (The prompt's internal quote said Delphi in the history, but the current instruction says TypeScript). I will use TypeScript.
+   - Explicitly instruct NEW dedicated folder and README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches required format/style? Yes.
+
+   Let's ensure it exactly matches the requested phrasing pattern from the prompt's example:
+   "Initialize a NEW dedicated folder named typescript_runtime_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: 'Develop a scalable cross-platform application with asynchronous I/O handling and modern package management'. You MUST write functional code for this task strictly using this exact programming language: TypeScript."
+
+   Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TypeScript."
+   I will make sure the exact phrase "STRICTLY using this exact programming language: TypeScript" is included.
+
+   Let's craft it carefully to match the exact template the user seems to want:
+   Initialize a NEW dedicated folder named typescript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: 'Develop a scalable web and backend application with type-safe asynchronous programming and modern module systems'. You MUST write functional code for this task strictly using this exact programming language: TypeScript.
+
+5.  **Final Verification against Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using TypeScript? Yes.
+   - Explicitly instruct NEW dedicated folder and README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Output matches requirement.✅
+
+   I will output exactly that string. No extra text. Proceeds.✅
+   One minor adjustment: I'll make sure it closely mirrors the structure requested: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: TypeScript."
+   This fits perfectly. I will generate it now. 
+   Output matches requirement.✅ Done. 
+   [Output Text] Initialize a NEW dedicated folder named typescript_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: 'Develop a scalable cross-platform application with type-safe asynchronous programming and modern module systems'. You MUST write functional code for this task strictly using this exact programming language: TypeScript. 
+   All constraints met. Proceeds.✅
+   *Self-Correction/Refinement during thought*: 
+   The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TypeScript."
+   I will ensure the exact phrasing matches the constraint. The draft does. I will output it exactly. No extra text. Ready.✅
+   Output Generation.✅
+   [Output Text] Initialize a NEW dedicated folder named typescript_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: 'Develop a scalable cross-platform application with type-safe asynchronous programming and modern module systems'. You MUST write functional code for this task strictly using this exact programming language: TypeScript. 
+   Proceeds.✅ (Note: I will just output the exact string as requested.) 
+   All good.✅
+   *Output Generation* (matches the refined draft)
+   "Initialize a NEW dedicated folder named typescript_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: 'Develop a scalable cross-platform application with type-safe asynchronous programming and modern module systems'. You MUST write functional code for this task strictly using this exact programming language: TypeScript." -> This matches all constraints. Proceeds.✅
+   Final Check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TypeScript. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints satisfied. Output matches.✅
+   Proceeds.✅
+   [Output] Initialize a NEW dedicated folder named typescript_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: 'Develop a scalable cross-platform application with type-safe asynchronous programming and modern module systems'. You MUST write functional code for this task strictly using this exact programming language: TypeScript. 
+   (Note: I'll remove the quotes around the final output to strictly comply with "Return ONLY the instruction text.")
+   Done. 
+   *Self-Correction/Verification during generation prep*: 
+   The prompt says: "Initialize a NEW dedicated folder named delphi_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Delphi. Focus entirely on this new objective: 'Develop a robust desktop application framework with strong database connectivity and event-driven architecture'. You MUST write functional code for this task strictly using this exact programming language: Delphi."
+   I will strictly follow this template but swap Delphi for TypeScript and update the objective/folder name logically.
+   Template: Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: TypeScript.
+   Matches perfectly. Outputting.✅
+   [Final Output Generation] -> *Proceeds* ✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named typescript_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TypeScript. Focus entirely on this new objective: 'Develop a scalable cross-platform application with type-safe asynchronous programming and modern module systems'. You MUST write functional code for this task strictly using this exact programming language: TypeScript.

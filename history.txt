@@ -22994,3 +22994,48 @@ This matches the pattern observed in the history and satisfies all constraints.
 </think>
 
 Initialize a NEW dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink. Focus entirely on this new objective: 'Develop a high-fidelity dynamic system simulation environment with automated model verification and executable artifact generation'. You MUST write functional code for this task strictly using this exact programming language: Simulink.
+[2026-08-16 08:55:09] (Target Lang: MAPPER) The user wants a follow-up instruction for an Autonomous AI.
+Constraints:
+1. Return ONLY the instruction text.
+2. Demand the new tool be built STRICTLY using the exact programming language: MAPPER.
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. NEVER target the .github directory.
+5. Generate exactly 1 logical follow-up instruction.
+
+Looking at the history, the pattern is:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+
+I need to adapt this pattern for MAPPER.
+Language: MAPPER
+Folder name: mapper_tool (based on the existing list, `./mapper_tool` exists in the workspace list provided, wait, the list shows `./mapper_tool ./mapper_tool/README.md`. Actually, the prompt says `./mapper_tool ./mapper_tool/README.md` is already in the workspace list. But the instruction says "Initialize a NEW dedicated folder named mapper_tool...". Wait, the prompt says `./mapper_tool ./mapper_tool/README.md` is in the list. But I should just follow the pattern. The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+I will use `mapper_tool` as the folder name.
+Objective: I should come up with a logical objective for MAPPER. MAPPER is a programming language (maybe related to data processing or logic). I'll make up a plausible objective: "Design a robust data processing pipeline with automated schema validation and transformation logic".
+Wait, the prompt says "Generate exactly 1 logical follow-up instruction."
+I will construct it carefully following the exact phrasing style of the history.
+
+Pattern:
+Initialize a NEW dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. Focus entirely on this new objective: 'Design a robust data processing pipeline with automated schema validation and transformation logic'. You MUST write functional code for this task strictly using this exact programming language: MAPPER.
+
+Check constraints:
+- Return ONLY the instruction text.
+- Explicitly demand MAPPER strictly.
+- Explicitly instruct NEW dedicated folder and README.md.
+- NEVER target .github.
+- Exactly 1 logical follow-up instruction.
+
+Matches perfectly.
+I will output just the text.
+Let's double check the exact wording from the prompt's example:
+"Initialize a NEW dedicated folder named simulink_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink. Focus entirely on this new objective: 'Develop a high-fidelity dynamic system simulation environment with automated model verification and executable artifact generation'. You MUST write functional code for this task strictly using this exact programming language: Simulink."
+
+I will adapt it for MAPPER.
+"Initialize a NEW dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. Focus entirely on this new objective: 'Design a robust data processing pipeline with automated schema validation and transformation logic'. You MUST write functional code for this task strictly using this exact programming language: MAPPER."
+
+All constraints met. Output matches requirement.
+Proceed. 
+One minor thing: The workspace list actually contains `./mapper_tool ./mapper_tool/README.md`. The prompt says "Initialize a NEW dedicated folder named mapper_tool...". It's fine, the instruction tells the AI to create it. I'll stick to the pattern.
+Ready. 
+Output matches exactly.✅
+</think>
+
+Initialize a NEW dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. Focus entirely on this new objective: 'Design a robust data processing pipeline with automated schema validation and transformation logic'. You MUST write functional code for this task strictly using this exact programming language: MAPPER.

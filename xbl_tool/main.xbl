@@ -1,0 +1,66 @@
+// XBL - Declarative Data Serialization Schema Validator
+// Objective: Construct a declarative data serialization schema validator
+
+// Define a schema structure
+SCHEMA UserSchema {
+  TYPE User {
+    NAME: STRING REQUIRED
+    AGE: INTEGER REQUIRED
+    EMAIL: STRING REQUIRED FORMAT EMAIL
+  }
+}
+
+// Validation function
+FUNCTION validateUser(user) {
+  // Check if user is defined
+  IF user IS NULL {
+    RETURN ERROR "User data cannot be null"
+  }
+
+  // Validate NAME
+  IF user.NAME IS NULL OR user.NAME IS EMPTY {
+    RETURN ERROR "NAME is required and cannot be empty"
+  }
+
+  // Validate AGE
+  IF user.AGE IS NULL {
+    RETURN ERROR "AGE is required"
+  }
+  IF NOT (IS INTEGER user.AGE) {
+    RETURN ERROR "AGE must be an integer"
+  }
+  IF user.AGE < 0 OR user.AGE > 150 {
+    RETURN ERROR "AGE must be between 0 and 150"
+  }
+
+  // Validate EMAIL
+  IF user.EMAIL IS NULL OR user.EMAIL IS EMPTY {
+    RETURN ERROR "EMAIL is required and cannot be empty"
+  }
+  IF NOT MATCHES user.EMAIL PATTERN "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" {
+    RETURN ERROR "EMAIL is not valid"
+  }
+
+  RETURN SUCCESS "User data is valid"
+}
+
+// Example usage
+MAIN {
+  USER_DATA = {
+    NAME: "John Doe",
+    AGE: 30,
+    EMAIL: "john.doe@example.com"
+  }
+
+  RESULT = validateUser(USER_DATA)
+  PRINT RESULT
+
+  INVALID_USER_DATA = {
+    NAME: "",
+    AGE: -5,
+    EMAIL: "invalid-email"
+  }
+
+  RESULT = validateUser(INVALID_USER_DATA)
+  PRINT RESULT
+}

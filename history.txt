@@ -29368,3 +29368,37 @@ Initialize a NEW dedicated folder named plexil_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named oz_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oz. Focus entirely on this new objective: 'Develop a constraint-based scheduling system with distributed constraint propagation'. You MUST write code for this task strictly using this exact programming language: Oz.
+[2026-08-16 16:53:41] (Target Lang: CFML) The user wants a follow-up instruction for an autonomous AI system.
+The instruction must:
+1.  Be a single logical follow-up to the previous context (building an `oz_tool` for constraint-based scheduling).
+2.  Explicitly demand the new tool be built STRICTLY using CFML.
+3.  If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+4.  Return ONLY the instruction text.
+5.  Never target the `.github` directory.
+
+Previous context: `oz_tool` was created for constraint-based scheduling.
+New objective: Create a tool using CFML.
+Language: CFML.
+Constraints: New folder, README.md, STRICTLY CFML, no .github.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named cfml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Develop a web application component for data processing'. You MUST write code for this task strictly using this exact programming language: CFML."
+
+Checking constraints:
+- Exactly 1 instruction? Yes.
+- STRICTLY using CFML? Yes.
+- NEW dedicated folder? Yes (`cfml_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+- Logical follow-up? Yes, continuing the pattern of creating language tools.
+
+Refining the instruction text to match the style of the previous turn:
+"Initialize a NEW dedicated folder named cfml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Develop a web application component for data processing'. You MUST write code for this task strictly using this exact programming language: CFML."
+
+The objective "Develop a web application component for data processing" is generic but fits CFML. I can make it slightly more specific or keep it general like the previous one. The previous one was "Develop a constraint-based scheduling system with distributed constraint propagation". I'll use a similar structure.
+
+Final check of the output format: Just the text.
+</think>
+
+Initialize a NEW dedicated folder named cfml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Develop a web application component for data processing'. You MUST write code for this task strictly using this exact programming language: CFML.

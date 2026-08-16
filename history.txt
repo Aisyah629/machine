@@ -27638,3 +27638,45 @@ Done.
 </think>
 
 Initialize a NEW dedicated folder named plm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL/M. Focus entirely on this new objective: 'Develop a low-level disk I/O driver for legacy storage devices.'. You MUST write code for this task strictly using this exact programming language: PL/M.
+[2026-08-16 14:35:51] (Target Lang: SLIP) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using the programming language SLIP.
+    *   Constraint 2: If building a new tool, must explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Must explicitly instruct to create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Context: The user provided a workspace list showing many tools exist, including `./plm_tool` and `./data_processing_tool/main.slip` (implied by `./data_processing_tool/main.slip` in the list, though the prompt asks for SLIP). The history shows a previous instruction about `plm_tool`. The current request asks for a *follow-up* instruction.
+
+2.  **Drafting the Instruction:**
+    *   *New Language:* SLIP.
+    *   *New Folder:* Needs a unique name. Looking at the workspace, `data_processing_tool` exists, and `main.slip` is mentioned there. However, the instruction should probably create a *new* dedicated folder for the SLIP tool to follow the pattern of "Initialize a NEW dedicated folder". Let's call it `slip_tool`.
+    *   *Objective:* Needs a logical objective related to SLIP. SLIP (Sequence Logic Inference Procedure) is often associated with AI reasoning, logic programming, or data processing. A good objective might be "Develop an automated data cleaning pipeline" or "Implement a logical inference engine". Let's go with "Implement a logical inference engine for automated reasoning tasks" as SLIP is historically related to logic.
+    *   *Structure:* "Initialize a NEW dedicated folder named [name]..., create a local README.md..., build... using... [Language]. Focus on... [Objective]. You MUST... [Language]."
+    *   *Draft 1:* Initialize a NEW dedicated folder named slip_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SLIP. Focus entirely on this new objective: 'Implement a logical inference engine for automated reasoning tasks.'. You MUST write code for this task strictly using this exact programming language: SLIP.
+
+3.  **Reviewing Constraints:**
+    *   *Exactly 1 logical follow-up?* Yes, the output is one sentence/instruction.
+    *   *Explicitly demand SLIP?* Yes, "STRICTLY using this exact programming language: SLIP" and "strictly using this exact programming language: SLIP".
+    *   *New dedicated folder?* Yes, "NEW dedicated folder named slip_tool".
+    *   *Local README.md?* Yes, "create a local README.md inside it".
+    *   *Return ONLY instruction text?* Yes, the output should be just the text.
+    *   *Never target .github?* The draft does not mention `.github`.
+
+4.  **Refining the Text:**
+    *   The draft looks solid.
+    *   "Initialize a NEW dedicated folder named slip_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SLIP. Focus entirely on this new objective: 'Implement a logical inference engine for automated reasoning tasks.'. You MUST write code for this task strictly using this exact programming language: SLIP."
+    *   Check for forbidden characters or structures? No.
+    *   Check against workspace history? The history shows `plm_tool` was done. `slip_tool` does not appear in the provided workspace list (`./data_processing_tool` exists, `./main.slip` exists there, but `./slip_tool` does not). So `slip_tool` is a valid new folder name.
+
+5.  **Final Output Construction:**
+    *   Result: `Initialize a NEW dedicated folder named slip_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SLIP. Focus entirely on this new objective: 'Implement a logical inference engine for automated reasoning tasks.'. You MUST write code for this task strictly using this exact programming language: SLIP.`
+
+6.  **Final Polish (Mental Representation of Output):**
+    *   Output: Initialize a NEW dedicated folder named slip_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SLIP. Focus entirely on this new objective: 'Implement a logical inference engine for automated reasoning tasks.'. You MUST write code for this task strictly using this exact programming language: SLIP.
+    *   This matches the style of the previous turn in the history provided in the prompt context (though the user asks for *my* generation, the pattern is established).
+    *   Result matches all constraints.
+</think>
+
+Initialize a NEW dedicated folder named slip_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SLIP. Focus entirely on this new objective: 'Implement a logical inference engine for automated reasoning tasks.'. You MUST write code for this task strictly using this exact programming language: SLIP.

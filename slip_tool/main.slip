@@ -1,0 +1,57 @@
+; SLIP - Sequence Logic Inference Procedure
+; Logical Inference Engine for Automated Reasoning
+
+; Define the main inference module
+MODULE inference_engine
+
+    ; Initialize the knowledge base
+    PREDICATE init_knowledge_base
+        DECLARE knowledge_base []
+        RETURN knowledge_base
+    END PREDICATE
+
+    ; Add a fact to the knowledge base
+    PREDICATE add_fact(fact)
+        CALL get_knowledge_base
+        APPEND fact TO knowledge_base
+        RETURN knowledge_base
+    END PREDICATE
+
+    ; Add a rule to the knowledge base
+    PREDICATE add_rule(rule)
+        CALL get_knowledge_base
+        APPEND rule TO rules
+        RETURN rules
+    END PREDICATE
+
+    ; Perform a logical inference
+    PREDICATE perform_inference(query)
+        CALL get_knowledge_base
+        CALL apply_rules(query)
+        RETURN conclusion
+    END PREDICATE
+
+    ; Apply rules to the query
+    PREDICATE apply_rules(query)
+        FOREACH rule IN rules DO
+            IF rule MATCHES query THEN
+                CONCLUDE rule.conclusion
+            END IF
+        END FOREACH
+    END PREDICATE
+
+    ; Main execution
+    PREDICATE main
+        SET kb = init_knowledge_base()
+        CALL add_fact("is_human(socrates)")
+        CALL add_fact("is_mortal_all_man()")
+        CALL add_rule("man(x) -> mortal(x)")
+        CALL add_fact("is_man(socrates)")
+        CALL perform_inference("is_mortal(socrates)")
+        PRINT conclusion
+    END PREDICATE
+
+END MODULE
+
+; Execute the main module
+CALL main

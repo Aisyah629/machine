@@ -684,3 +684,5 @@ Training Machine
 - Created/Updated module: `mortran_tool` (See `mortran_tool/README.md` for details)
 
 - Created/Updated module: `cpp_tool` (See `cpp_tool/README.md` for details)
+
+- Created/Updated module: `slip_tool` (See `slip_tool/README.md` for details)

@@ -30472,3 +30472,79 @@ Output Generation.✅
 </think>
 
 Initialize a NEW dedicated folder named fortran_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fortran. Focus entirely on this new objective: 'Implement a high-performance matrix multiplication engine for scientific computing'. You MUST write code for this task strictly using this exact programming language: Fortran.
+[2026-08-16 17:59:31] (Target Lang: Logtalk) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Goal:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraint 1:** Explicitly demand the new tool be built STRICTLY using the programming language: **Logtalk**.
+    *   **Constraint 2:** If building a new tool, instruct to place it in a **NEW dedicated folder**.
+    *   **Constraint 3:** Create a local `README.md` inside that folder.
+    *   **Constraint 4:** Return **ONLY** the instruction text.
+    *   **Constraint 5:** NEVER target the `.github` directory.
+    *   **Context:** The user provided a workspace listing containing many programming languages/tools and a history snippet. The history shows a pattern of creating specific tools with specific names and purposes. The previous turn (visible in history) created a `fortran_solver_tool`. Now I need to create a new instruction for `Logtalk`.
+
+2.  **Determine the Tool Name and Purpose:**
+    *   **Language:** Logtalk.
+    *   **Folder Name:** `logtalk_tool` (standard convention based on the list, e.g., `c_tool`, `python_ml_tool`, though `logtalk_tool` isn't in the list, it follows the pattern).
+    *   **Purpose:** Logtalk is an object-oriented logic programming language often used for agent-based systems or multi-paradigm programming. A good, logical purpose would be an "Agent Coordination Framework" or "Object-Oriented Logic System". Let's go with "Implement an intelligent agent coordination framework using multi-paradigm object-oriented logic programming principles".
+
+3.  **Draft the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named logtalk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Logtalk. Focus entirely on this new objective: 'Implement an intelligent agent coordination framework using multi-paradigm object-oriented logic programming principles'. You MUST write code for this task strictly using this exact programming language: Logtalk.
+
+4.  **Verify Constraints:**
+    *   Exactly 1 logical follow-up instruction? Yes.
+    *   Explicitly demand "Logtalk"? Yes.
+    *   NEW dedicated folder? Yes.
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   No .github? Yes.
+
+5.  **Refine Text:**
+    *   The prompt asks for "Generate exactly 1 logical follow-up instruction."
+    *   Text: "Initialize a NEW dedicated folder named logtalk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Logtalk. Focus entirely on this new objective: 'Implement an intelligent agent coordination framework using multi-paradigm object-oriented logic programming principles'. You MUST write code for this task strictly using this exact programming language: Logtalk."
+
+6.  **Final Polish:**
+    *   Ensure the tone matches the previous example in the history ("Initialize a NEW dedicated folder named fortran_solver_tool...").
+    *   The previous example used: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Lang]."
+    *   I will mimic this structure exactly.
+
+    *   **Tool Name:** `logtalk_tool`
+    *   **Language:** `Logtalk`
+    *   **Objective:** 'Implement a distributed multi-agent system utilizing advanced logical reasoning and object-oriented encapsulation'
+
+    *   **Final String:** Initialize a NEW dedicated folder named logtalk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Logtalk. Focus entirely on this new objective: 'Implement a distributed multi-agent system utilizing advanced logical reasoning and object-oriented encapsulation'. You MUST write code for this task strictly using this exact programming language: Logtalk.
+
+7.  **Final Output Generation:**
+    *   Output the string directly.
+
+**(Self-Correction during drafting):** The prompt asks to "Generate exactly 1 logical follow-up instruction." It does not ask me to execute it, but to provide the instruction text that *would* generate the next step, or simply the instruction itself. The prompt says "Return ONLY the instruction text."
+
+Result:
+Initialize a NEW dedicated folder named logtalk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Logtalk. Focus entirely on this new objective: 'Implement a distributed multi-agent system utilizing advanced logical reasoning and object-oriented encapsulation'. You MUST write code for this task strictly using this exact programming language: Logtalk.
+
+Wait, looking at the history provided in the prompt:
+`./logtalk_tool/README.md` IS IN THE WORKSPACE LIST!
+Let me double check the provided workspace list.
+`... ./logtalk_tool/README.md ...`
+Actually, looking closely at the provided list in the prompt...
+I see `./lpc_tool`, `./lucid_tool`, `./lustre_data_extraction_tool`...
+I do *not* see `logtalk_tool` in the list provided in the prompt text.
+List search: "logtalk".
+Result: 0 matches.
+Okay, safe to create a new folder named `logtalk_tool`.
+
+Final check of the text to be outputted.
+"Initialize a NEW dedicated folder named logtalk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Logtalk. Focus entirely on this new objective: 'Implement a distributed multi-agent system utilizing advanced logical reasoning and object-oriented encapsulation'. You MUST write code for this task strictly using this exact programming language: Logtalk."
+
+Looks good. Use this.
+(Note: The prompt history example used "fortran_solver_tool", which was also NOT in the list, creating a parallel).
+Wait, "fortran_solver_tool" is in the history text provided in the prompt. The list is the *current* state. The history is a transcript of a previous interaction. The user wants the *next* logical step.
+The previous step was Fortran. This step is Logtalk.
+
+The constraint "Return ONLY the instruction text" is key.
+
+Final String:
+Initialize a NEW dedicated folder named logtalk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Logtalk. Focus entirely on this new objective: 'Implement a distributed multi-agent system utilizing advanced logical reasoning and object-oriented encapsulation'. You MUST write code for this task strictly using this exact programming language: Logtalk.
+</think>
+
+Initialize a NEW dedicated folder named logtalk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Logtalk. Focus entirely on this new objective: 'Implement a distributed multi-agent system utilizing advanced logical reasoning and object-oriented encapsulation'. You MUST write code for this task strictly using this exact programming language: Logtalk.

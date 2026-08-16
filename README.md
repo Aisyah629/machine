@@ -604,3 +604,5 @@ Training Machine
 - Created/Updated module: `python_ml_tool` (See `python_ml_tool/README.md` for details)
 
 - Created/Updated module: `starlogo_tool` (See `starlogo_tool/README.md` for details)
+
+- Created/Updated module: `csp_tool` (See `csp_tool/README.md` for details)

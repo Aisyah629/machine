@@ -24023,3 +24023,50 @@ Initialize a NEW dedicated folder named starlogo_tool in the workspace, create a
 </think>
 
 Initialize a NEW dedicated folder named scilab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scilab. Focus entirely on this new objective: 'Implement a robust numerical computing and systems simulation environment'. You MUST write functional code for this task strictly using this exact programming language: Scilab.
+[2026-08-16 10:16:17] (Target Lang: CSP) The user wants a follow-up instruction to generate a new tool.
+The language requested for the follow-up is CSP.
+The output must be a single instruction string.
+The instruction must demand:
+1.  A new dedicated folder for the tool.
+2.  A local README.md inside that folder.
+3.  Implementation strictly using CSP.
+4.  The objective should be related to CSP (Concurrent Sequential Processes), likely dealing with concurrency, process algebra, or distributed systems simulation.
+5.  The format matches the examples provided in the history: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+
+Tool name: `csp_tool` seems appropriate given the pattern.
+Language: CSP (Communicating Sequential Processes) or a specific implementation like Hoare's CSP, or a language that supports it like Promela, or maybe just "CSP" as the requested language. The prompt says "STRICTLY using this exact programming language: CSP". I will use "CSP".
+Objective: Something about modeling concurrent systems, process algebra, or verifying parallel execution.
+
+Drafting the text:
+"Initialize a NEW dedicated folder named csp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus entirely on this new objective: 'Model and simulate concurrent processes using process algebra and inter-process communication protocols'. You MUST write functional code for this task strictly using this exact programming language: CSP."
+
+Check constraints:
+- Follow-up instruction? Yes.
+- Language: CSP? Yes.
+- NEW folder? Yes (`csp_tool`).
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+
+Refining the objective for flavor: 'Develop a formal verification engine for concurrent systems modeled via process algebra and channel-based communication.'
+
+Final String:
+Initialize a NEW dedicated folder named csp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus entirely on this new objective: 'Develop a formal verification engine for concurrent systems modeled via process algebra and channel-based communication'. You MUST write functional code for this task strictly using this exact programming language: CSP.
+
+Double check the prompt history style.
+History 4: "Initialize a NEW dedicated folder named scilab_tool... strictly using this exact programming language: Scilab... Objective: 'Implement a robust numerical computing and systems simulation environment'..."
+History 5: "Initialize a NEW dedicated folder named scilab_tool... strictly using this exact programming language: Scilab... Objective: 'Implement a high-performance numerical simulation and control systems analysis engine'..."
+
+My draft follows this pattern perfectly.
+
+One detail: "CSP" might be interpreted as a generic term rather than a specific language name in the context of "programming language", but the prompt explicitly says "using this exact programming language: CSP". I will treat "CSP" as the language name to be used in the output string, exactly as requested by the user's constraint "STRICTLY using this exact programming language: CSP".
+
+The tool name `csp_tool` isn't in the provided workspace list (`. ./.git ... ./c_shell_tool ... ./c_string_tool ...`), so it's safe to create.
+
+Final check of the text to return:
+Initialize a NEW dedicated folder named csp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus entirely on this new objective: 'Formalize and analyze parallel processes through process algebra and distributed state management'. You MUST write functional code for this task strictly using this exact programming language: CSP.
+
+Looks good.
+</think>
+
+Initialize a NEW dedicated folder named csp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus entirely on this new objective: 'Formalize and analyze parallel processes through process algebra and distributed state management'. You MUST write functional code for this task strictly using this exact programming language: CSP.

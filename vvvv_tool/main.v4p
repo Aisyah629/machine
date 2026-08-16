@@ -1,0 +1,18 @@
+<V4P version="11" author="Autonomous AI" comment="Vvvv Tool - Dynamic Visual Effects Module">
+  <Node Name="main" Type="V4P">
+    <Plugin Name="VisualEffect" />
+    <Node Name="Input" Type="InPin">
+      <Pin Name="MediaStream" />
+    </Node>
+    <Node Name="Processing" Type="Node">
+      <Node Name="EffectGenerator" Type="Function" />
+      <Node Name="SignalProcessor" Type="Function" />
+      <Node Name="VisualModulator" Type="Function" />
+    </Node>
+    <Node Name="Output" Type="OutPin">
+      <Pin Name="ProcessedMedia" />
+    </Node>
+    <Connection From="Input" To="Processing" />
+    <Connection From="Processing" To="Output" />
+  </Node>
+</V4P>

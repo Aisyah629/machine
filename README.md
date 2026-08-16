@@ -562,3 +562,5 @@ Training Machine
 - Created/Updated module: `tom_tool` (See `tom_tool/README.md` for details)
 
 - Created/Updated module: `cache_tool` (See `cache_tool/README.md` for details)
+
+- Created/Updated module: `vvvv_tool` (See `vvvv_tool/README.md` for details)

@@ -21474,3 +21474,38 @@ Result seems solid.
 </think>
 
 Initialize a NEW dedicated folder named cesil_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cesil. Focus entirely on this new objective: 'Create a structured data processing utility using Cesil'. You MUST write functional code for this task strictly using this exact programming language: Cesil.
+[2026-08-16 05:52:43] (Target Lang: Swift (parallel scripting language)) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using the exact programming language: Swift (parallel scripting language).
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provides a workspace list showing many tools (e.g., `abap_tool`, `acc_tool`, `cesil_tool`, `swift_tool` is not in the list, implying a new one might be needed, or I should check if `swift_tool` exists. Looking at the list... `swift_tool` is *not* in the list. There is `s2_tool`, `s_lang_tool`, `smalltalk_tool`, etc., but no `swift_tool`. So a new folder is appropriate.)
+
+2.  **Draft the Instruction:**
+    *   *Core Action:* Initialize a NEW dedicated folder.
+    *   *Folder Name:* `swift_tool` (standard convention based on the workspace list like `abap_tool`, `c_tool`, etc.).
+    *   *Files:* `README.md` and main source file.
+    *   *Language:* Swift (parallel scripting language).
+    *   *Objective:* Need a logical follow-up. The previous context mentioned "Create a structured data processing utility using Cesil". A logical follow-up might be "Create a high-performance parallel task executor using Swift".
+    *   *Drafting text:* "Initialize a NEW dedicated folder named `swift_tool` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: Swift (parallel scripting language). Focus entirely on this new objective: 'Create a high-performance parallel task executor using Swift'. You MUST write functional code for this task strictly using this exact programming language: Swift."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Strictly Swift?* Yes ("STRICTLY using this exact programming language: Swift (parallel scripting language)").
+    *   *New dedicated folder?* Yes ("Initialize a NEW dedicated folder named `swift_tool`").
+    *   *Create local README.md?* Yes ("create a local `README.md` inside it").
+    *   *Return ONLY instruction text?* The output should be just the text string.
+    *   *NEVER target .github?* Yes, no mention of `.github`.
+    *   *Logical follow-up?* The Cesil tool was data processing. Swift is known for performance and concurrency. "High-performance parallel task executor" connects well to Swift's strengths and is a logical progression or parallel capability to data processing.
+
+4.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named swift_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Swift (parallel scripting language). Focus entirely on this new objective: 'Create a high-performance parallel task executor using Swift'. You MUST write functional code for this task strictly using this exact programming language: Swift.`
+
+5.  **Output Generation:**
+    *   Print the result.
+</think>
+
+Initialize a NEW dedicated folder named swift_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Swift (parallel scripting language). Focus entirely on this new objective: 'Create a high-performance parallel task executor using Swift'. You MUST write functional code for this task strictly using this exact programming language: Swift.

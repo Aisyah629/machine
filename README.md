@@ -878,3 +878,5 @@ Training Machine
 - Created/Updated module: `prolog_constraint_solver_tool` (See `prolog_constraint_solver_tool/README.md` for details)
 
 - Created/Updated module: `teco_macro_tool` (See `teco_macro_tool/README.md` for details)
+
+- Created/Updated module: `livescript_tool` (See `livescript_tool/README.md` for details)

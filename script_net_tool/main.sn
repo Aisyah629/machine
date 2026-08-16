@@ -1,0 +1,56 @@
+
+// Script.NET Game State Serialization Utility
+// This tool demonstrates basic serialization and deserialization
+// of game state data using Script.NET syntax.
+
+var GameState = {
+    player: {
+        name: "Hero",
+        health: 100,
+        level: 1
+    },
+    inventory: [],
+    world: "forest"
+};
+
+function serializeState(state) {
+    var result = "";
+    result += "{\"player\":{\"name\":\"" + state.player.name + "\",\"health\":" + state.player.health + ",\"level\":" + state.player.level + "}";
+    result += ",\"inventory\":[";
+    for (var i = 0; i < state.inventory.length; i++) {
+        result += "\"" + state.inventory[i] + "\"";
+        if (i < state.inventory.length - 1) {
+            result += ",";
+        }
+    }
+    result += "],\"world\":\"" + state.world + "\"}";
+    return result;
+}
+
+function deserializeState(jsonString) {
+    var result = {};
+    jsonString = jsonString.substring(1, jsonString.length - 1);
+    var sections = jsonString.split(",");
+    for (var i = 0; i < sections.length; i++) {
+        if (sections[i].indexOf(":") > -1) {
+            var pair = sections[i].split(":");
+            var key = pair[0].replace("\"", "");
+            var value = pair[1];
+            if (key === "player") {
+                result.player = {
+                    name: value.substring(1, value.indexOf("\",")).replace("\"", ""),
+                    health: parseInt(value.substring(value.indexOf(":") + 1, value.indexOf(","))),
+                    level: parseInt(value.substring(value.lastIndexOf(":") + 1, value.indexOf("}")))
+                };
+            } else if (key === "world") {
+                result.world = value.replace("\"", "").replace("}", "");
+            }
+        }
+    }
+    return result;
+}
+
+var serialized = serializeState(GameState);
+print(serialized);
+var deserialized = deserializeState(serialized);
+print(deserialized.player.name + ", Health: " + deserialized.player.health);

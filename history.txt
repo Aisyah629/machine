@@ -27321,3 +27321,41 @@ Result looks good.
 </think>
 
 Initialize a NEW dedicated folder named objective_j_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Objective-J. Focus entirely on this new objective: 'Implement a lightweight web service client and JSON serialization module using Objective-J syntax'. You MUST write code for this task strictly using this exact programming language: Objective-J.
+[2026-08-16 14:07:50] (Target Lang: Script.NET) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Context: The user provides a list of existing tools/folders in a workspace, followed by a "History" section describing the creation of `objective_j_tool`. The history shows a pattern: `Folder name`, `Objective`, `Draft`, `Constraints`, `Result`.
+    *   Current Task: Generate exactly 1 logical follow-up instruction.
+    *   Specific Constraints for the Output:
+        *   New tool language: Script.NET.
+        *   Language requirement: STRICTLY Script.NET.
+        *   Folder requirement: NEW dedicated folder.
+        *   File requirement: Local README.md.
+        *   Output format: Return ONLY the instruction text.
+        *   Negative constraint: NEVER target .github directory.
+
+2.  **Formulate the Instruction:**
+    *   *Goal:* Create a tool for Script.NET.
+    *   *Folder Name:* Following the pattern `./<language>_tool`, the folder should be `script_net_tool` or `script.net_tool`. Looking at existing examples like `c_engine_tool`, `fsharp_tool`, `javascript_tool` (not listed, but `javascript` usually maps to `javascript_tool` or similar), `vbscript_tool`, the pattern suggests snake_case or dot-notation converted to underscores might be used, or just the language name with `_tool`. `Script.NET` is a specific dialect. `script_net_tool` seems most consistent with `hla_tool`, `fsharp_tool`, etc. Let's use `script_net_tool`.
+    *   *Objective:* Script.NET is a .NET implementation of JavaScript, often used in Game Studio (RPG Maker). A good objective would be related to its use case or syntax. "Implement a simple RPG event system simulation" or "Create a utility for serializing game state data". Let's go with "Implement a game state serialization utility using Script.NET syntax".
+    *   *Drafting the text:*
+        "Initialize a NEW dedicated folder named `script_net_tool` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: Script.NET. Focus entirely on this new objective: 'Implement a game state serialization utility using Script.NET syntax'. You MUST write code for this task strictly using this exact programming language: Script.NET."
+    *   *Refining based on "Return ONLY instruction text":*
+        The output should be just the instruction string, likely mimicking the structure of the user's provided example or the expected format. The user's example ends with `Initialize a NEW dedicated folder...`. The prompt asks to "Generate exactly 1 logical follow-up instruction".
+        Result: `Initialize a NEW dedicated folder named script_net_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Script.NET. Focus entirely on this new objective: 'Implement a game state serialization utility using Script.NET syntax'. You MUST write code for this task strictly using this exact programming language: Script.NET.`
+
+3.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Initialize a NEW dedicated folder named script_net_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Script.NET. Focus entirely on this new objective: 'Implement a game state serialization utility using Script.NET syntax'. You MUST write code for this task strictly using this exact programming language: Script.NET.`
+    *   Check constraints:
+        *   Script.NET? Yes.
+        *   NEW folder? Yes (`script_net_tool`).
+        *   README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   No .github? Yes.
+        *   Logical follow-up? Yes, continues the pattern of language tools.
+
+4.  **Output Generation:**
+    `Initialize a NEW dedicated folder named script_net_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Script.NET. Focus entirely on this new objective: 'Implement a game state serialization utility using Script.NET syntax'. You MUST write code for this task strictly using this exact programming language: Script.NET.`
+</think>
+
+Initialize a NEW dedicated folder named script_net_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Script.NET. Focus entirely on this new objective: 'Implement a game state serialization utility using Script.NET syntax'. You MUST write code for this task strictly using this exact programming language: Script.NET.

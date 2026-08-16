@@ -34737,3 +34737,60 @@ Looks correct.
 </think>
 
 Initialize a NEW dedicated folder named cpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CPL. Focus entirely on this new objective: 'Develop a robust data serialization framework or configuration parser utility.'. You MUST write code for this task strictly using this programming language: CPL.
+[2026-08-16 22:20:35] (Target Lang: BASIC) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: New tool must be built STRICTLY using the language: BASIC.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a workspace list and a history. The history shows the previous instruction generated was for `cpl_tool` with a serialization/config parser objective. The output format of the history suggests the instruction is a single string starting with "Initialize a NEW dedicated folder named...".
+
+2.  **Formulate the Instruction Content:**
+    *   *Language:* BASIC.
+    *   *Action:* Initialize a NEW dedicated folder. Based on the pattern "cpl_tool" -> "cpl_tool/main.cpl", the new folder should be named `basic_tool` and contain `README.md` and likely a main file like `main.bas` or `main.basic`.
+    *   *Folder Name:* `basic_tool` seems consistent with the workspace naming convention (e.g., `cpl_tool`, `python_ml_tool`).
+    *   *Objective:* I need to invent a logical objective for BASIC. BASIC is a general-purpose language, often used for scripting, education, or legacy systems. A good fit might be a simple calculator, a text parser, or a data manipulation script. Let's choose something classic for BASIC: a simple text-based utility or a calculator. Let's go with "Develop a simple interactive calculator and data manipulation utility" or "Create a robust text file parser and report generator". "Text file parser and report generator" sounds slightly more "tool-like".
+    *   *Drafting the string:*
+        *   "Initialize a NEW dedicated folder named basic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC."
+        *   "Focus entirely on this new objective: 'Create a robust text file parser and report generator utility'."
+        *   "You MUST write code for this task strictly using this programming language: BASIC."
+        *   *Review against constraints:*
+        *   "STRICTLY using this exact programming language: BASIC"? Yes.
+        *   "NEW dedicated folder"? Yes.
+        *   "create a local README.md"? Yes.
+        *   "Return ONLY the instruction text"? The output should be just the text.
+        *   "NEVER target .github"? The text doesn't mention `.github`. Good.
+        *   "Check against 'STRICTLY'": Included. Good.
+        *   "Check against 'You MUST write code...'": Included. Good.
+
+3.  **Refine the Objective:**
+    *   Looking at the history, the previous objective was "Develop a robust data serialization framework or configuration parser utility."
+    *   For BASIC, a "text file parser and report generator" is a reasonable task. Alternatively, "Develop a simple interactive menu-driven application for managing a list of items".
+    *   Let's pick "Develop a robust text file parsing and data reporting utility." This fits BASIC's strengths in string handling (historically) and linear programming.
+    *   Result: `Focus entirely on this new objective: 'Develop a robust text file parsing and data reporting utility'.`
+
+4.  **Final String Construction:**
+    *   `Initialize a NEW dedicated folder named basic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC. Focus entirely on this new objective: 'Develop a robust text file parsing and data reporting utility.'. You MUST write code for this task strictly using this programming language: BASIC.`
+
+5.  **Final Verification:**
+    *   Structure: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write code for this task strictly using this programming language: [LANG]."
+    *   Name: `basic_tool`.
+    *   Lang: `BASIC`.
+    *   Obj: `Develop a robust text file parsing and data reporting utility`.
+    *   Output: `Initialize a NEW dedicated folder named basic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC. Focus entirely on this new objective: 'Develop a robust text file parsing and data reporting utility.'. You MUST write code for this task strictly using this programming language: BASIC.`
+    *   Constraints:
+        *   BASIC? Yes.
+        *   NEW folder? Yes.
+        *   README.md? Yes.
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+        *   Logical follow-up? Yes, moving from CPL (systems) to BASIC (general/scripting/parsing) is a distinct step.
+
+6.  **Result Generation:**
+    *   The string matches the pattern of the history example perfectly.
+    *   Output: `Initialize a NEW dedicated folder named basic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC. Focus entirely on this new objective: 'Develop a robust text file parsing and data reporting utility.'. You MUST write code for this task strictly using this programming language: BASIC.`
+</think>
+
+Initialize a NEW dedicated folder named basic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BASIC. Focus entirely on this new objective: 'Develop a robust text file parsing and data reporting utility.'. You MUST write code for this task strictly using this programming language: BASIC.

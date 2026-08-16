@@ -26877,3 +26877,42 @@ Initialize a NEW dedicated folder named lisaac_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named object_pascal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Object Pascal. Focus entirely on this new objective: 'Develop a robust cross-platform desktop application framework with advanced UI component management and database integration capabilities'. You MUST write code for this task strictly using this exact programming language: Object Pascal.
+[2026-08-16 13:25:13] (Target Lang: LC-3) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Target Language: LC-3.
+    *   Action: Build a new tool strictly using LC-3.
+    *   Structure: New dedicated folder, local README.md.
+    *   Constraint: Return ONLY the instruction text. NEVER target `.github`.
+    *   Context: The user provided a huge list of existing tools and a history snippet showing a pattern of previous instructions. The history shows examples like: "Initialize a NEW dedicated folder named [name]_tool..., create a local README.md..., build... STRICTLY using... [Language]. Focus... [Objective]."
+
+2.  **Draft the Instruction:**
+    *   *Folder Name:* Following the pattern `object_pascal_tool`, the new folder should be `lc3_tool`.
+    *   *Language Constraint:* "STRICTLY using this exact programming language: LC-3."
+    *   *Objective:* The history shows varied objectives (system utilities, desktop app framework). I need to create a plausible objective for LC-3. LC-3 is a simple educational assembly language. Good objectives might be:
+        *   "Construct a low-level memory debugger for LC-3 simulation."
+        *   "Develop a simple LC-3 compiler backend."
+        *   "Create a high-performance bit-manipulation library for LC-3."
+        *   Let's go with something fitting LC-3's nature: "Construct a high-performance bit-manipulation and I/O simulation library for LC-3 environments."
+    *   *Full Text Construction:*
+        "Initialize a NEW dedicated folder named lc3_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LC-3. Focus entirely on this new objective: 'Construct a high-performance bit-manipulation and I/O simulation library for LC-3 environments'. You MUST write code for this task strictly using this exact programming language: LC-3."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *MUST demand STRICTLY LC-3?* Yes ("STRICTLY using this exact programming language: LC-3").
+    *   *New dedicated folder?* Yes ("Initialize a NEW dedicated folder named lc3_tool").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes (Output should be the text string).
+    *   *NEVER target .github?* Yes (No mention of `.github`).
+    *   *Logical follow-up?* Yes, it follows the established pattern in the history.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named lc3_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LC-3. Focus entirely on this new objective: 'Construct a high-performance bit-manipulation and I/O simulation library for LC-3 environments'. You MUST write code for this task strictly using this exact programming language: LC-3.`
+
+5.  **Final Output Generation:**
+    *   The output matches the polished text.
+    *   Result: `Initialize a NEW dedicated folder named lc3_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LC-3. Focus entirely on this new objective: 'Construct a high-performance bit-manipulation and I/O simulation library for LC-3 environments'. You MUST write code for this task strictly using this exact programming language: LC-3.`
+</think>
+
+Initialize a NEW dedicated folder named lc3_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LC-3. Focus entirely on this new objective: 'Construct a high-performance bit-manipulation and I/O simulation library for LC-3 environments'. You MUST write code for this task strictly using this exact programming language: LC-3.

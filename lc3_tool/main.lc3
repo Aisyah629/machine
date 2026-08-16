@@ -1,0 +1,57 @@
+;
+; LC3 Tool - High-Performance Bit-Manipulation and I/O Simulation Library
+; File: main.lc3
+; Description: Entry point and main library routines for bit manipulation and I/O simulation.
+;
+
+.ORIG x3000
+
+; Main program entry point
+MAIN:
+    ; Initialize the library
+    CALL INIT_LIB
+
+    ; Example bit manipulation: Set bit 5 in R0
+    LD R0, BIT_MASK
+    AND R1, R1, #0
+    ADD R1, R0, R1
+    ST R1, RESULT
+
+    ; Example I/O simulation: Print "Hello, LC3!"
+    LEA R0, MSG
+    CALL PRINT_STRING
+
+    ; Terminate program
+    HALT
+
+; Initialize library routines
+INIT_LIB:
+    ; Placeholder for library initialization
+    RET
+
+; Subroutine to print a null-terminated string
+; Input: R0 = address of string
+; Output: None
+PRINT_STRING:
+    ST R2, SAVE_R2
+    ST R3, SAVE_R3
+    LEA R2, 0(R0)
+PRINT_LOOP:
+    LDR R3, R2, #0
+    BRz PRINT_DONE
+    OUT
+    ADD R2, R2, #1
+    BRnz PRINT_LOOP
+PRINT_DONE:
+    LD R2, SAVE_R2
+    LD R3, SAVE_R3
+    RET
+
+; Data
+BIT_MASK .FILL x0020
+RESULT .BLKW 1
+MSG .STRINGZ "Hello, LC3!"
+SAVE_R2 .BLKW 1
+SAVE_R3 .BLKW 1
+
+.END

@@ -28594,3 +28594,77 @@ Output matches request.✅
 </think>
 
 Initialize a NEW dedicated folder named kee_diagnostic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KEE. Focus entirely on this new objective: 'Develop a robust system diagnostics and performance monitoring utility'. You MUST write code for this task strictly using this exact programming language: KEE.
+[2026-08-16 16:00:34] (Target Lang: IDL) The user wants a follow-up instruction based on the previous one.
+The previous instruction created a tool named `kee_diagnostic_tool` using the language KEE.
+The current request asks for a follow-up instruction: "Generate exactly 1 logical follow-up instruction."
+The constraints for the follow-up instruction are:
+1.  **Language:** Must explicitly demand the new tool be built STRICTLY using **IDL**.
+2.  **Location:** NEW dedicated folder.
+3.  **Content:** Create a local README.md.
+4.  **Output:** ONLY the instruction text.
+5.  **Negative Constraint:** NEVER target the .github directory.
+6.  **Pattern:** Follow the structure of the prompt's examples (Initialize a NEW dedicated folder named [name]... build... STRICTLY using this exact programming language: [Language]... Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language].).
+
+Step 1: Choose a name for the new folder.
+It should be related to the language IDL (Interface Definition Language) or the previous context (system diagnostics/monitoring).
+Since the prompt asks for a "logical follow-up", it might be building a complementary tool.
+Previous tool: `kee_diagnostic_tool` (System diagnostics).
+Next tool idea: A tool that defines interfaces for the diagnostic tool or handles data transmission using IDL.
+Folder name: `idl_interface_tool` or `idl_comm_tool`. Let's go with `idl_interface_tool`.
+
+Step 2: Define the objective.
+Focus on system diagnostics or communication relevant to the previous context.
+Objective: "Define strict interfaces for system monitoring components." or "Create a robust interface definition for inter-process communication within the diagnostic system."
+
+Step 3: Construct the instruction text.
+"Initialize a NEW dedicated folder named idl_interface_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Define strict interfaces for system monitoring components'. You MUST write code for this task strictly using this exact programming language: IDL."
+
+Step 4: Check constraints.
+- Exactly 1 instruction? Yes.
+- Strictly IDL? Yes.
+- New folder? Yes (`idl_interface_tool`).
+- Local README.md? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+
+Refinement: Ensure the name doesn't conflict with existing ones. The list provided in the context doesn't have `idl_interface_tool`.
+The name `idl_interface_tool` seems safe.
+
+Drafting the text:
+Initialize a NEW dedicated folder named idl_interface_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Define strict interfaces for system monitoring components'. You MUST write code for this task strictly using this exact programming language: IDL.
+
+Final Polish:
+The prompt asks for "logical follow-up". If the first tool is diagnostics, defining interfaces for it is logical.
+The output format must be just the text.
+
+Text:
+Initialize a NEW dedicated folder named idl_interface_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Define strict interfaces for system monitoring components'. You MUST write code for this task strictly using this exact programming language: IDL.
+
+Wait, looking at the history, `kee_diagnostic_tool` was the output. The new instruction should logically follow.
+Let's check the language extension for IDL. Usually `.idl`.
+The folder name `idl_interface_tool` is descriptive.
+
+Final check of the required string format based on the prompt's examples:
+"Initialize a NEW dedicated folder named [NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write code for this task strictly using this exact programming language: [LANG]."
+
+Constructed Output:
+Initialize a NEW dedicated folder named idl_interface_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Define strict interfaces for system monitoring components'. You MUST write code for this task strictly using this exact programming language: IDL.
+
+One detail: The prompt asks for "Generate exactly 1 logical follow-up instruction." and "Return ONLY the instruction text."
+The logic holds.
+
+Let's try a name that might be slightly more distinct if `idl_interface_tool` feels too generic, but generic is usually safer in these automated generation tasks to avoid collisions unless specific names are derived from the previous one. `idl_diagnostic_interface`? `idl_interface_tool` fits the pattern `language_tool` seen in the workspace list (e.g., `c_tool`, `python_tool`).
+
+Selected Name: `idl_interface_tool`.
+Selected Objective: "Define strict interfaces for system monitoring components".
+
+Resulting text matches the structure perfectly.
+One final check: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". My text does that. "create a local README.md inside it". My text does that. "STRICTLY using this exact programming language: IDL". My text does that. "Focus entirely on this new objective...". My text does that.
+
+Ready to output.
+One thought: Is `idl` a programming language in the context of this list? The prompt implies I should just use the language requested by the user ("You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: IDL"). So yes.
+
+Let's generate.
+</think>
+
+Initialize a NEW dedicated folder named idl_interface_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Define strict interfaces for system monitoring components'. You MUST write code for this task strictly using this exact programming language: IDL.

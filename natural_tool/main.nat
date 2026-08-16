@@ -1,0 +1,29 @@
+PROGRAM natural_enterprise_tool
+
+  DEFINE DATA LOCAL
+  1 EMPLOYEE (A) OCCURS 10
+  1 CURRENT-EMPLOYEE (A)
+  1 REPORT-LINE (A) VALUE 'Employee Report'
+  END-DEFINE
+
+  INITIALIZE EMPLOYEE
+
+  PRINT REPORT-LINE
+  PRINT '----------------------------'
+
+  /* Process each employee record */
+  FOR I FROM 1 TO 10
+    CURRENT-EMPLOYEE = EMPLOYEE(I)
+    PRINT 'Employee: ' CURRENT-EMPLOYEE
+  END-FOR
+
+  /* Simulate Adabas integration placeholder */
+  /* In a real scenario, this would involve Adabas SQL calls or NATURAL Adabas statements */
+  PRINT 'Adabas integration module initialized.'
+  PRINT 'Generating report...'
+
+  /* Report formatting */
+  PRINT '----------------------------'
+  PRINT 'Report Generation Complete.'
+
+END-PROGRAM

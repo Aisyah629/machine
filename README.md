@@ -534,3 +534,5 @@ Training Machine
 - Created/Updated module: `c_shell_tool` (See `c_shell_tool/README.md` for details)
 
 - Created/Updated module: `vbscript_tool` (See `vbscript_tool/README.md` for details)
+
+- Created/Updated module: `lynx_tool` (See `lynx_tool/README.md` for details)

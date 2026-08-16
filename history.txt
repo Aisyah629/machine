@@ -35070,3 +35070,43 @@ This looks correct.
 </think>
 
 Initialize a NEW dedicated folder named qpl_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: QPL. Focus entirely on this new objective: 'Construct a robust runtime environment for QPL applications.'. You MUST write code for this task strictly using this programming language: QPL.
+[2026-08-16 22:43:20] (Target Lang: Lagoona) The user wants a follow-up instruction for creating a tool.
+The instruction must:
+1. Create a new folder named `lagoona_engine_tool`.
+2. Create a local `README.md` inside it.
+3. Build the tool using the programming language `Lagoona`.
+4. Focus on the objective: 'Construct a robust runtime environment for Lagoona applications'.
+5. Return ONLY the instruction text.
+6. No markdown formatting in the output.
+7. Do not target .github.
+
+Drafting the instruction:
+Initialize a NEW dedicated folder named lagoona_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lagoona. Focus entirely on this new objective: 'Construct a robust runtime environment for Lagoona applications'. You MUST write code for this task strictly using this programming language: Lagoona.
+
+Checking constraints:
+- New folder: `lagoona_engine_tool`. Yes.
+- Local README.md: Yes.
+- Language: Lagoona. Yes.
+- Objective: Construct runtime environment. Yes.
+- Only instruction text: Yes.
+- No .github: Yes.
+
+The prompt asks for exactly 1 logical follow-up instruction.
+The output should be just the text of that instruction.
+
+Text:
+Initialize a NEW dedicated folder named lagoona_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lagoona. Focus entirely on this new objective: 'Construct a robust runtime environment for Lagoona applications'. You MUST write code for this task strictly using this programming language: Lagoona.
+
+Final verification:
+- "Initialize a NEW dedicated folder named lagoona_engine_tool" -> Checked.
+- "create a local README.md inside it" -> Checked.
+- "STRICTLY using this exact programming language: Lagoona" -> Checked.
+- "Focus entirely on this new objective: 'Construct a robust runtime environment for Lagoona applications'." -> Checked.
+- "Return ONLY the instruction text." -> Checked.
+- "NEVER target the .github directory." -> Checked.
+- "Generate exactly 1 logical follow-up instruction." -> Checked.
+
+Output matches the draft.
+</think>
+
+Initialize a NEW dedicated folder named lagoona_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lagoona. Focus entirely on this new objective: 'Construct a robust runtime environment for Lagoona applications'. You MUST write code for this task strictly using this programming language: Lagoona.

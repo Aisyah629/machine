@@ -19017,3 +19017,47 @@ Initialize a NEW dedicated folder named dasl_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named jean_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JEAN. Focus entirely on this new objective: 'Develop a concurrent task scheduler for distributed systems'. You MUST write functional code for this task strictly using this programming language: JEAN.
+[2026-08-16 00:28:22] (Target Lang: Oz) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Must explicitly demand the new tool be built STRICTLY using the language: Oz.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The workspace contains many tools (e.g., `ada_tool`, `abap_tool`, etc.) following a pattern `<language>_tool` with a `README.md` and a main file (e.g., `main.<ext>`). The history shows a previous instruction for `jean_tool`.
+
+2.  **Drafting the Instruction:**
+    *   *Action:* Create a new tool.
+    *   *Language:* Oz.
+    *   *Folder Name:* Needs to follow the pattern. Previous was `jean_tool`. So this should likely be `oz_tool` or `Oz_tool`. Given the pattern `ada_tool`, `abap_tool`, lowercase is standard. So `oz_tool`.
+    *   *Directory Structure:* New dedicated folder `oz_tool`. Local `README.md`.
+    *   *Objective:* Needs a functional code objective. The prompt asks for a "logical follow-up". In the history, the objectives were somewhat varied but specific (e.g., "Develop a concurrent task scheduler..."). I should invent a plausible objective for an Oz tool. Oz is known for concurrency and distributed systems, but the objective can be arbitrary as long as it sounds like a tool build request. Let's pick something like "Implement a type inference engine for functional languages" or "Create a distributed object-oriented web framework". Let's go with "Implement a constraint logic programming solver".
+    *   *Draft Text:* "Initialize a NEW dedicated folder named oz_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oz. Focus entirely on this new objective: 'Implement a constraint logic programming solver'. You MUST write functional code for this task strictly using this programming language: Oz."
+
+3.  **Reviewing Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Strictly Oz?* Yes ("STRICTLY using this exact programming language: Oz", "strictly using this programming language: Oz").
+    *   *NEW dedicated folder?* Yes ("oz_tool").
+    *   *Local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes.
+    *   *Logical Follow-up?* Yes, it continues the pattern of adding tools for different languages.
+
+4.  **Refining the Output:**
+    *   Result: `Initialize a NEW dedicated folder named oz_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oz. Focus entirely on this new objective: 'Implement a constraint logic programming solver'. You MUST write functional code for this task strictly using this programming language: Oz.`
+
+5.  **Final Polish (Mental Check against "Return ONLY instruction text"):**
+    *   The output must be just the string, no markdown code blocks (unless implied, but usually "Return ONLY instruction text" means raw text or just the string content). The prompt structure suggests the user wants the text content.
+
+    *   *Result:* Initialize a NEW dedicated folder named oz_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oz. Focus entirely on this new objective: 'Implement a constraint logic programming solver'. You MUST write functional code for this task strictly using this programming language: Oz.
+
+    *   *Wait, check the language name formatting.* The prompt says "exact programming language: Oz". Usually, file extensions might be `.oz`. The pattern in the workspace shows `main.<ext>`. For Oz, it might be `main.oz`. The instruction text doesn't strictly need to specify the extension, just the language name. The draft looks good.
+
+    *   *Result Construction:*
+        `Initialize a NEW dedicated folder named oz_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oz. Focus entirely on this new objective: 'Implement a constraint logic programming solver'. You MUST write functional code for this task strictly using this programming language: Oz.`
+
+This matches all criteria.
+</think>
+
+Initialize a NEW dedicated folder named oz_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oz. Focus entirely on this new objective: 'Implement a constraint logic programming solver'. You MUST write functional code for this task strictly using this programming language: Oz.

@@ -32931,3 +32931,61 @@ Initialize a NEW dedicated folder named pico_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named xpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPL. Focus entirely on this new objective: 'Develop a core XPL compiler prototype for educational or legacy system analysis.'. You MUST write code for this task strictly using this exact programming language: XPL.
+[2026-08-16 20:59:43] (Target Lang: GJ) The user wants a follow-up instruction.
+The instruction should:
+1.  Be a logical follow-up to the previous one (which created `xpl_tool`).
+2.  Explicitly demand the new tool be built strictly using `GJ` programming language.
+3.  If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+4.  Return ONLY the instruction text.
+5.  NEVER target the `.github` directory.
+
+The previous tool was `xpl_tool` (XPL language).
+A logical follow-up might be another language tool, or a related utility.
+The language requested is `GJ` (GJ is a variant of Java with generics, or just a specific language identifier in this context).
+The folder should be new, e.g., `gj_tool`.
+
+Drafting the instruction:
+Initialize a NEW dedicated folder named gj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus entirely on this new objective: 'Implement a robust file system monitoring utility for tracking changes in large codebases.'. You MUST write code for this task strictly using this exact programming language: GJ.
+
+Let's check the constraints.
+- Logical follow-up: Yes, another tool.
+- Language: GJ.
+- New folder: `gj_tool`.
+- README.md: Yes.
+- ONLY instruction text: Yes.
+- No .github: Yes.
+
+Refining the objective to be generic or related to compilation/analysis if possible, or just a new tool. The previous one was a compiler prototype. Maybe a parser? Or just "Implement a GJ language syntax checker". Let's stick to a generic but useful objective for a tool. "Develop a GJ syntax validation utility".
+
+Final Text:
+Initialize a NEW dedicated folder named gj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus entirely on this new objective: 'Develop a GJ syntax validation utility for static analysis of generic extensions.'. You MUST write code for this task strictly using this exact programming language: GJ.
+
+Wait, looking at the history, the format is:
+`Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Lang].`
+
+So I will follow this pattern exactly.
+
+Folder: `gj_tool`
+Language: `GJ`
+Objective: 'Implement a core GJ type inference engine for generic types.' (Fits with GJ being a Java variant with generics).
+
+Constructed Instruction:
+Initialize a NEW dedicated folder named gj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus entirely on this new objective: 'Implement a core GJ type inference engine for generic types.'. You MUST write code for this task strictly using this exact programming language: GJ.
+
+Double check "Return ONLY the instruction text".
+The output should be just that string.
+
+One more check on "logical follow-up". The previous was XPL (compiler prototype). GJ is also a programming language. Creating a tool *in* GJ for *GJ* analysis is a logical next step in a list of language tools.
+
+Final string:
+Initialize a NEW dedicated folder named gj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus entirely on this new objective: 'Implement a core GJ type inference engine for generic types.'. You MUST write code for this task strictly using this exact programming language: GJ.
+
+The user prompt says "Return ONLY the instruction text. NEVER target the .github directory." and "Generate exactly 1 logical follow-up instruction."
+
+The prompt ends with "Return ONLY the instruction text."
+
+Result:
+Initialize a NEW dedicated folder named gj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus entirely on this new objective: 'Implement a core GJ type inference engine for generic types.'. You MUST write code for this task strictly using this exact programming language: GJ.
+</think>
+
+Initialize a NEW dedicated folder named gj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus entirely on this new objective: 'Implement a core GJ type inference engine for generic types.'. You MUST write code for this task strictly using this exact programming language: GJ.

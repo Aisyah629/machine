@@ -1,0 +1,32 @@
+import system
+import string
+
+class TemplateEngine {
+  constructor() {
+    this.patterns = [];
+  }
+  
+  function registerPattern(pattern, replacement) {
+    this.patterns.push({pattern: new system.Regex(pattern), replacement: replacement});
+  }
+  
+  function render(text) {
+    for (let i = 0; i < this.patterns.length; i++) {
+      let rule = this.patterns[i];
+      text = rule.pattern.replaceAll(text, rule.replacement);
+    }
+    return text;
+  }
+}
+
+function main() {
+  let engine = new TemplateEngine();
+  engine.registerPattern("\\[\\[name\\]\\]", "Ferite");
+  engine.registerPattern("\\[\\[version\\]\\]", "1.0");
+  
+  let input = "Welcome to [[name]] version [[version]]!";
+  let output = engine.render(input);
+  
+  system.writeLine(output);
+  return 0;
+}

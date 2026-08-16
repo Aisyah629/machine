@@ -756,3 +756,5 @@ Training Machine
 - Created/Updated module: `qalb_tool` (See `qalb_tool/README.md` for details)
 
 - Created/Updated module: `ml_tool` (See `ml_tool/README.md` for details)
+
+- Created/Updated module: `ferite_tool` (See `ferite_tool/README.md` for details)

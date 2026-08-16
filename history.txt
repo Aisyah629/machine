@@ -28187,3 +28187,47 @@ Initialize a NEW dedicated folder named goal_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a parallel algorithmic framework for advanced mathematical modeling and simulation'. You MUST write code for this task strictly using this exact programming language: S/SL.
+[2026-08-16 15:31:07] (Target Lang: SML) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built strictly using the language "SML".
+    *   Constraint 2: If building a new tool, must instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a workspace listing and a history. The history shows a previous turn about "S/SL" and `s_sl_tool`. The current prompt asks for "SML". Looking at the workspace list, I see `./s_lang_tool`, `./s_sl_tool`, but I *do not* see `./sml_tool` or a file like `main.sml`. This implies SML is a new tool to be created, or at least the prompt treats it as such. The instruction "If building a new tool..." reinforces that I should treat this as a new tool creation task.
+
+2.  **Draft the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Create a high-performance functional programming library for data transformation pipelines'. You MUST write code for this task strictly using this exact programming language: SML.
+    *   *Review against constraints:*
+        *   "Initialize a NEW dedicated folder named sml_tool..." -> Checks out.
+        *   "create a local README.md..." -> Checks out.
+        *   "STRICTLY using this exact programming language: SML" -> Checks out.
+        *   "Return ONLY the instruction text" -> The output should be just the text, no markdown code blocks wrapping the whole thing unless that's the format, but usually "Return ONLY the instruction text" means the raw text of the instruction. However, looking at the pattern in the history, the output seems to be the instruction text itself. The user asked "Generate exactly 1 logical follow-up instruction... Return ONLY the instruction text." So the output should be the text of the instruction.
+        *   "NEVER target the .github directory" -> The draft doesn't mention .github. Checks out.
+        *   "Exactly 1 logical follow-up instruction" -> The draft is one paragraph/instruction. Checks out.
+
+3.  **Refine the Instruction Text:**
+    *   The prompt asks for "Generate exactly 1 logical follow-up instruction".
+    *   The example in the "History" shows a pattern: `Initialize a NEW dedicated folder named ... create a local README.md ... build ... STRICTLY using ...`.
+    *   I should follow this pattern.
+    *   *Refinement:* `Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Implement a concurrent pattern-matching engine for distributed theorem proving'. You MUST write code for this task strictly using this exact programming language: SML.`
+    *   *Check "SML":* The prompt asks for "SML". SML usually stands for Standard ML. The workspace has `s_lang_tool` (S?), `s_sl_tool` (S/SL). It does not have `sml_tool`. So creating `sml_tool` is appropriate.
+    *   *Check "SML" in text:* "STRICTLY using this exact programming language: SML." -> Yes.
+    *   *Check "NEW dedicated folder":* "sml_tool" -> Yes.
+    *   *Check "README.md":* "create a local README.md" -> Yes.
+    *   *Check "ONLY instruction text":* The output will be just the string.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Develop a robust functional web server framework with automatic garbage collection optimization'. You MUST write code for this task strictly using this exact programming language: SML.`
+    *   *Self-Correction on "Logical":* The objective should be logical for SML. SML is a functional language. "Functional web server framework" or "Functional library" is good. "Automatic garbage collection optimization" might be too low-level for a tool definition, but "Web server framework" is a common use case for functional languages in AI coding assistants. Or "Data transformation pipeline". Let's stick to a generic but plausible objective. "Implement a concurrent pattern-matching engine..." is good for SML. Or "Build a type-safe database interface...". Any objective works as long as the language constraint is met. The prompt doesn't specify the objective, just the language and structure. I can pick any objective. I'll pick "Implement a high-performance functional data processing library".
+    *   *Result:* `Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Implement a high-performance functional data processing library'. You MUST write code for this task strictly using this exact programming language: SML.`
+
+5.  **Final Output Construction:**
+    *   The output must be the instruction text.
+    *   Result: `Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Implement a high-performance functional data processing library'. You MUST write code for this task strictly using this exact programming language: SML.`
+
+This matches all constraints.
+</think>
+
+Initialize a NEW dedicated folder named sml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus entirely on this new objective: 'Implement a high-performance functional data processing library'. You MUST write code for this task strictly using this exact programming language: SML.

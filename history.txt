@@ -25590,3 +25590,75 @@ Output matches draft.✅
 </think>
 
 Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S/SL. Focus entirely on this new objective: 'Implement a mainframe system utility'. You MUST write code for this task strictly using this exact programming language: S/SL.
+[2026-08-16 11:42:09] (Target Lang: Felix) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories and files, mostly following the pattern `./<tool_name>_tool/README.md` and `./<tool_name>_tool/main.<ext>`. There's also a history section showing a previous draft/instruction.
+   - **History:** Shows a draft that initialized an `s_sl_tool` folder with a README.md and built a tool using S/SL for a "mainframe system utility" objective.
+   - **Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Felix. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - Explicitly demand the new tool be built STRICTLY using the programming language: **Felix**.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - The instruction should logically follow the previous context (which was about `s_sl_tool` for a mainframe utility, but the new instruction must be independent or a logical next step, focusing on Felix).
+
+3.  **Formulate Instruction (Mental Draft):**
+   Initialize a NEW dedicated folder named felix_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Felix. Focus entirely on this new objective: 'Implement a functional programming library for data transformation'. You MUST write code for this task strictly using this exact programming language: Felix.
+
+4.  **Check Constraints against Draft:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand Felix? Yes.
+   - NEW dedicated folder? Yes (`felix_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   - Language match? "Felix" matches constraint.
+   - Format matches history example? Yes, follows the exact structure: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Lang]."
+
+5.  **Refine Instruction:**
+   Let's ensure it strictly matches the requested format and constraints.
+   "Initialize a NEW dedicated folder named felix_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Felix. Focus entirely on this new objective: 'Implement a functional programming library for data transformation'. You MUST write code for this task strictly using this exact programming language: Felix."
+
+   Check against constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands Felix? Yes.
+   - NEW dedicated folder & local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   - Logical follow-up? Yes, continues the pattern of initializing new tools in the workspace.
+
+   The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Felix. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   I will output exactly the refined instruction. No extra text.
+   One minor thing: I'll make sure the phrasing exactly matches the prompt's requirement style. The prompt itself gives an example in the history, so I'll mimic that structure precisely.
+
+   Draft: Initialize a NEW dedicated folder named felix_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Felix. Focus entirely on this new objective: 'Implement a functional programming library for data transformation'. You MUST write code for this task strictly using this exact programming language: Felix.
+
+   All constraints met. Output matches draft.✅
+   Proceed. 
+   Output generation. 
+   [Self-Correction/Verification during thought]
+   - Check: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Felix." -> Covered.
+   - Check: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Covered.
+   - Check: "Return ONLY the instruction text." -> Covered.
+   - Check: "NEVER target the .github directory." -> Covered.
+   - Check: "Generate exactly 1 logical follow-up instruction." -> Covered.
+   The structure is consistent with the history example. I will output exactly that string.✅
+   Ready. 
+   Output: Initialize a NEW dedicated folder named felix_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Felix. Focus entirely on this new objective: 'Implement a functional programming library for data transformation'. You MUST write code for this task strictly using this exact programming language: Felix. 
+   Matches perfectly. No extra whitespace or text. Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I'll make sure the output is exactly the instruction text as requested.)*
+   "Initialize a NEW dedicated folder named felix_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Felix. Focus entirely on this new objective: 'Implement a functional programming library for data transformation'. You MUST write code for this task strictly using this exact programming language: Felix." -> This is correct.✅
+   Output matches. 
+   [Done.] 
+   *Self-Correction/Refinement during generation prep*: The prompt says "Generate exactly 1 logical follow-up instruction." I will just output the instruction string directly. No markdown, no extra words. Just the exact text. All good. 
+   Proceeds. 
+   [Output Generation] -> *Outputs the exact string.* 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named felix_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Felix. Focus entirely on this new objective: 'Implement a functional programming library for data transformation'. You MUST write code for this task strictly using this exact programming language: Felix.

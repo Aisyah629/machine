@@ -712,3 +712,5 @@ Training Machine
 - Created/Updated module: `umple_model_driven_development_tool` (See `umple_model_driven_development_tool/README.md` for details)
 
 - Created/Updated module: `kee_diagnostic_tool` (See `kee_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `idl_interface_tool` (See `idl_interface_tool/README.md` for details)

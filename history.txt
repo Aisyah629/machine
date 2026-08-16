@@ -21582,3 +21582,31 @@ Result looks good.
 </think>
 
 Initialize a NEW dedicated folder named ioke_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ioke. Focus entirely on this new objective: 'Design a reflex-based autonomic computing module using Ioke'. You MUST write functional code for this task strictly using this exact programming language: Ioke.
+[2026-08-16 06:14:47] (Target Lang: Clipper) The user wants a follow-up instruction to build a tool using the programming language 'Clipper'.
+The instruction must:
+1. Initialize a new folder named `clipper_tool`.
+2. Create a local `README.md` inside it.
+3. Build the tool strictly using `Clipper`.
+4. Focus on a new objective related to Clipper.
+5. Be a logical follow-up to the previous context (autonomic computing, reflex-based, though Clipper is a dBASE-compatible language, so the objective might shift to something like "Data integrity audit" or "Legacy system migration" or "Database query optimization" or "Report generation for system logs").
+6. Return ONLY the instruction text.
+7. Never target `.github`.
+
+Objective idea: Clipper is known for database development. A good fit for an autonomic system context could be "Legacy database migration and integrity verification module". Or "Automated log database archival tool". Let's go with "Legacy database migration and integrity verification module".
+
+Structure of the instruction:
+"Initialize a NEW dedicated folder named clipper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Clipper. Focus entirely on this new objective: 'Design a legacy database migration and integrity verification module using Clipper'. You MUST write functional code for this task strictly using this exact programming language: Clipper."
+
+Check constraints:
+- 1 instruction? Yes.
+- Strictly Clipper? Yes.
+- New folder? Yes (`clipper_tool`).
+- README? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+- Logical follow-up? Yes, adds a database tool to the toolkit.
+
+Result matches requirements.
+</think>
+
+Initialize a NEW dedicated folder named clipper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Clipper. Focus entirely on this new objective: 'Design a legacy database migration and integrity verification module using Clipper'. You MUST write functional code for this task strictly using this exact programming language: Clipper.

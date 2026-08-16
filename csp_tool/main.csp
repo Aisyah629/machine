@@ -1,0 +1,117 @@
+-- =============================================
+-- CSP Tool: Concurrent Sequential Processes
+-- =============================================
+-- 
+-- This script implements a formal simulation engine for CSP.
+-- It defines processes using a structured data approach and
+-- manages state through a global event log and process scheduler.
+-- 
+-- Language: CSP (Concurrent Sequential Processes)
+-- =============================================
+
+-- Global Configuration
+SET max_iterations TO 10000
+SET debug_mode TO true
+
+-- Channel Definitions
+DEFINE channel input_channel AS (Int)
+DEFINE channel output_channel AS (String)
+DEFINE channel status_channel AS (Boolean)
+
+-- Process Definitions
+
+-- Process: Producer
+-- Generates a sequence of integers and sends them to input_channel
+PROCEDURE producer() {
+    FOR i FROM 1 TO 10 {
+        SEND input_channel i
+        WAIT status_channel ACK
+    }
+    STOP
+}
+
+-- Process: Transformer
+-- Receives integers, squares them, and sends strings to output_channel
+PROCEDURE transformer() {
+    WHILE TRUE {
+        RECEIVE input_channel val
+        LET result = val * val
+        SEND output_channel "SQUARED(" + result + ")"
+        WAIT status_channel ACK
+    }
+}
+
+-- Process: Consumer
+-- Reads strings from output_channel and logs them
+PROCEDURE consumer() {
+    FOR i FROM 1 TO 10 {
+        RECEIVE output_channel msg
+        PRINT "Received: " + msg
+        SEND status_channel true
+    }
+    STOP
+}
+
+-- Process: Supervisor
+-- Coordinates the lifecycle of other processes
+PROCEDURE supervisor() {
+    INITIATE producer
+    INITIATE transformer
+    INITIATE consumer
+    
+    WAIT ALL TO COMPLETE
+    PRINT "Simulation Finished Successfully"
+    STOP
+}
+
+-- Event Log and Scheduler Logic
+GLOBAL LOG events_log AS (Event)
+GLOBAL PROCESS_QUEUE queue AS (Process)
+
+PROCEDURE schedule_process(p AS Process) {
+    APPEND queue p
+}
+
+PROCEDURE execute_next() {
+    LET p = POP queue
+    IF p IS NOT NULL {
+        RUN p
+        LOG events_log ("EXECUTION", p)
+    }
+}
+
+PROCEDURE monitor_channels() {
+    WHILE TRUE {
+        IF HAS_MESSAGE input_channel THEN {
+            EXTRACT input_channel
+            NOTIFY transformer
+        } ELSEIF HAS_MESSAGE output_channel THEN {
+            EXTRACT output_channel
+            NOTIFY consumer
+        } ELSE {
+            WAIT 1 CYCLE
+        }
+    }
+}
+
+-- Main Entry Point
+MAIN() {
+    PRINT "Initializing CSP Simulation Engine..."
+    
+    ADD supervisor TO queue
+    
+    -- Start background monitoring
+    INITIATE monitor_channels
+    
+    -- Execute the main simulation loop
+    FOR iter FROM 1 TO max_iterations {
+        IF SIZE queue == 0 THEN BREAK
+        execute_next()
+        
+        IF debug_mode AND (iter MOD 100 == 0) THEN {
+            PRINT "Iteration " + iter + ": Active Processes: " + SIZE queue
+        }
+    }
+    
+    PRINT "Final Status: " + (SIZE queue == 0 ? "COMPLETED" : "TIMEOUT")
+}

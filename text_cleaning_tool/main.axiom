@@ -1,0 +1,75 @@
+import From String import String
+import From String import StringTools
+import From List import List
+import From List import ListTools
+
+-- Function to clean and normalize text
+cleanText(text: String): String ==
+  -- Remove extra whitespace
+  text := trim(text)
+  
+  -- Remove multiple spaces
+  while find("  ", text) ~= empty findResult ==
+    text := replace("  ", " ", text)
+  end
+  
+  -- Normalize line breaks
+  text := replace("", "", text)
+  text := replace("
+", " ", text)
+  
+  -- Remove non-printable characters
+  text := filter(
+    (c: Character): Boolean == c <= ' ' and c ~= ' '
+      then False else True
+  , text)
+  
+  -- Convert to lowercase
+  text := lowercase(text)
+  
+  return text
+
+-- Function to parse and clean a line from a dataset
+cleanLine(line: String): String ==
+  -- Trim whitespace
+  line := trim(line)
+  
+  -- Remove comments (anything after #)
+  line := substring(line, 0, find("#", line) - 1)
+  
+  -- Clean the text
+  return cleanText(line)
+
+-- Function to process a full dataset
+processDataset(data: List[String]): List[String] ==
+  result := empty
+  
+  for line in data ==
+    cleaned := cleanLine(line)
+    if not empty cleaned ==
+      result := result concat [cleaned]
+    end
+  end
+  
+  return result
+
+-- Main execution block
+do
+  -- Example dataset
+  data := [
+    "This is a sample line #comment
+    "   Another line with   extra spaces   ",
+    "Third line with\r\nline breaks",
+    "   # This line is all comment",
+    ""  -- Empty line
+  ]
+  
+  -- Process the dataset
+  cleaned := processDataset(data)
+  
+  -- Output results
+  for line in cleaned ==
+    output line || "
+"
+  end
+end

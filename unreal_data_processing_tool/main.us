@@ -1,0 +1,103 @@
+// Unreal Data Processing Tool
+// Main script for data processing operations
+
+class DataProcessor extends UObject;
+
+var array<array<float>> dataset;
+var array<string> headers;
+var int numRows;
+var int numCols;
+
+// Initialize the dataset with provided headers and data
+function InitDataset(array<string> pHeaders, array<array<float>> pData)
+{
+    headers = pHeaders;
+    dataset = pData;
+    numRows = pData.Length;
+    numCols = (numRows > 0) ? pData[0].Length : 0;
+}
+
+// Calculate the mean of a specific column
+function float ColumnMean(int colIndex)
+{
+    if (colIndex < 0 || colIndex >= numCols || numRows == 0)
+    {
+        log("Invalid column index or empty dataset.");
+        return 0.0;
+    }
+    float sum = 0.0;
+    for (int i = 0; i < numRows; i++)
+    {
+        sum += dataset[i][colIndex];
+    }
+    return sum / numRows;
+}
+
+// Calculate the standard deviation of a specific column
+function float ColumnStdDev(int colIndex)
+{
+    if (colIndex < 0 || colIndex >= numCols || numRows == 0)
+    {
+        log("Invalid column index or empty dataset.");
+        return 0.0;
+    }
+    float mean = ColumnMean(colIndex);
+    float sumSqDiff = 0.0;
+    for (int i = 0; i < numRows; i++)
+    {
+        float diff = dataset[i][colIndex] - mean;
+        sumSqDiff += diff * diff;
+    }
+    return sqrt(sumSqDiff / numRows);
+}
+
+// Normalize a specific column to [0, 1] range
+function array<float> NormalizeColumn(int colIndex)
+{
+    if (colIndex < 0 || colIndex >= numCols || numRows == 0)
+    {
+        log("Invalid column index or empty dataset.");
+        return array<float>();
+    }
+    array<float> normalized;
+    normalized.SetArraySize(numRows);
+    float minVal = dataset[0][colIndex];
+    float maxVal = dataset[0][colIndex];
+    for (int i = 1; i < numRows; i++)
+    {
+        if (dataset[i][colIndex] < minVal) minVal = dataset[i][colIndex];
+        if (dataset[i][colIndex] > maxVal) maxVal = dataset[i][colIndex];
+    }
+    float range = maxVal - minVal;
+    if (range == 0.0)
+    {
+        for (int i = 0; i < numRows; i++)
+        {
+            normalized[i] = 0.0;
+        }
+    }
+    else
+    {
+        for (int i = 0; i < numRows; i++)
+        {
+            normalized[i] = (dataset[i][colIndex] - minVal) / range;
+        }
+    }
+    return normalized;
+}
+
+// Log data summary
+function LogSummary()
+{
+    log("Dataset Summary:");
+    log("Number of Rows: " @ numRows);
+    log("Number of Columns: " @ numCols);
+    for (int i = 0; i < numCols; i++)
+    {
+        log("Column " @ i @ " (" @ headers[i] @ ") - Mean: " @ ColumnMean(i) @ ", StdDev: " @ ColumnStdDev(i));
+    }
+}
+
+defaultproperties
+{
+}

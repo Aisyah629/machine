@@ -710,3 +710,5 @@ Training Machine
 - Created/Updated module: `prolog_diagnostic_tool` (See `prolog_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `umple_model_driven_development_tool` (See `umple_model_driven_development_tool/README.md` for details)
+
+- Created/Updated module: `kee_diagnostic_tool` (See `kee_diagnostic_tool/README.md` for details)

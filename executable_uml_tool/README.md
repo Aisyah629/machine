@@ -1,22 +1,46 @@
-# Executable UML (xUML) Self-Healing Tool
+# Executable UML Tool
 
 ## Overview
-This tool implements a self-healing mechanism within the Executable UML (xUML) framework. It is designed to detect edge cases and runtime errors, monitor system health, and automatically apply corrective actions to restore normal operation. The tool leverages xUML's strong typing, state-based modeling, and event-driven architecture to ensure robust error handling.
+
+The Executable UML Tool is a model-driven simulation engine designed for verifying complex enterprise business workflows. It allows users to define business processes using Executable UML (xUML) syntax, simulate their execution, and analyze outcomes to ensure correctness and efficiency.
 
 ## Features
-- **Error Detection**: Continuously monitors for exceptions and invalid states.
-- **Self-Healing Actions**: Applies predefined recovery strategies.
-- **State Management**: Maintains system state to track healing progress.
-- **Logging**: Records all healing actions for audit and analysis.
+
+- **Model-Driven Architecture**: Define business workflows as models.
+- **Simulation Engine**: Simulate workflow execution to detect errors and validate behavior.
+- **Enterprise Workflow Verification**: Ensure that business processes meet specified requirements and constraints.
+- **Visualization**: Optional visualization of workflow states and transitions.
 
 ## Usage
-1. Implement the `SelfHealingController` to oversee healing activities.
-2. Use `ErrorDetector` to identify and classify errors.
-3. Define recovery actions in `RecoveryActions`.
-4. Integrate with `HealthMonitor` to trigger healing processes.
 
-## Author
-Autonomous AI Polyglot Software Engineer
+1. **Define Workflow Model**: Create a `.xuml` file describing your business workflow.
+2. **Run Simulation**: Use the simulation engine to execute the workflow model.
+3. **Analyze Results**: Review simulation logs and state transitions to verify workflow correctness.
+
+## Example
+
+```xuml
+// Example workflow model
+Workflow "OrderProcessing" {
+  State "OrderReceived";
+  State "OrderValidated";
+  State "OrderShipped";
+  State "OrderDelivered";
+
+  Transition "OrderReceived" -> "OrderValidated" via "ValidateOrder";
+  Transition "OrderValidated" -> "OrderShipped" via "ShipOrder";
+  Transition "OrderShipped" -> "OrderDelivered" via "DeliverOrder";
+}
+```
+
+## Installation
+
+Clone the repository and build the simulation engine using the provided build script.
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request or open an issue for discussion.
 
 ## License
-MIT
+
+MIT License

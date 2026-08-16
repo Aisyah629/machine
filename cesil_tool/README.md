@@ -1,16 +1,14 @@
-# Cesil Tool
+# Cesil Diagnostic/Visualization Tool
 
-A structured data processing utility built using the Cesil programming language.
+This tool implements a basic diagnostic and visualization tool using the Cesil programming language.
 
-## Overview
+## Functionality
 
-This tool provides foundational data processing capabilities within the Cesil environment, designed to handle structured inputs and generate processed outputs efficiently.
+- Reads data from three data sets
+- Plots the data
+- Stops execution
 
-## Usage
+## Files
 
-To run the data processing utility, execute the main source file:
-
-```cesil
-# Execute the data processor
-main();
-```
+- `main.cesil`: Main code for the Cesil tool.
+- `README.md`: This file.

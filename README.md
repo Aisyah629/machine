@@ -798,3 +798,5 @@ Training Machine
 - Created/Updated module: `gnu_e_tool` (See `gnu_e_tool/README.md` for details)
 
 - Created/Updated module: `epl_tool` (See `epl_tool/README.md` for details)
+
+- Created/Updated module: `./cesil_tool` (See `./cesil_tool/README.md` for details)

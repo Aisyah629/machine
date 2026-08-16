@@ -674,3 +674,5 @@ Training Machine
 - Created/Updated module: `mad_i_tool` (See `mad_i_tool/README.md` for details)
 
 - Created/Updated module: `arc_tool` (See `arc_tool/README.md` for details)
+
+- Created/Updated module: `b_tool` (See `b_tool/README.md` for details)

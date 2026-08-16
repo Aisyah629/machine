@@ -672,3 +672,5 @@ Training Machine
 - Created/Updated module: `lc3_tool` (See `lc3_tool/README.md` for details)
 
 - Created/Updated module: `mad_i_tool` (See `mad_i_tool/README.md` for details)
+
+- Created/Updated module: `arc_tool` (See `arc_tool/README.md` for details)

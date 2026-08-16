@@ -37011,3 +37011,45 @@ Matches perfectly. Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named pearl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PEARL. Focus entirely on this new objective: 'Construct a PEARL program for real-time embedded system simulation and task scheduling'. You MUST write code for this task strictly using this programming language: PEARL.
+[2026-08-16 23:59:34] (Target Lang: A+) The user wants a follow-up instruction.
+The instruction should:
+1. Generate exactly 1 logical follow-up instruction.
+2. Explicitly demand that the new tool be built STRICTLY using the exact programming language: A+.
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+6. The current workspace has a `./aplus_algorithmic_simulation_tool` which uses `.aplus` extension. But I need to create a NEW folder. Let's name it `aplus_new_tool` or `aplus_advanced_tool` or just `aplus_tool_2`? Wait, the prompt says "Generate exactly 1 logical follow-up instruction." I will follow the exact format of the previous instruction but change the language to A+ and maybe change the objective slightly to be logical, or keep it similar.
+Let's stick closely to the template: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A+. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this programming language: A+."
+
+Let's choose a logical objective for A+ (Algorithmic Simulation). Example: "Develop an A+ program for parallel algorithmic simulation and data processing."
+Wait, the prompt says "explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+I will formulate it exactly as requested.
+"Initialize a NEW dedicated folder named aplus_parallel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A+. Focus entirely on this new objective: 'Develop an A+ program for parallel algorithmic simulation and distributed data processing'. You MUST write code for this task strictly using this programming language: A+."
+
+Check constraints:
+- Exactly 1 logical follow-up instruction.
+- Explicitly demand A+.
+- NEW dedicated folder + README.md.
+- ONLY the instruction text.
+- NEVER target .github.
+
+All good. I will output just the text.
+Let's refine it to match the exact style:
+"Initialize a NEW dedicated folder named aplus_parallel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A+. Focus entirely on this new objective: 'Construct an A+ program for parallel algorithmic simulation and distributed data processing'. You MUST write code for this task strictly using this programming language: A+."
+
+Wait, the prompt says "explicitly demand that the new tool be built STRICTLY using this exact programming language: A+."
+I will just output the exact sentence.
+Check format: "Return ONLY the instruction text. NEVER target the .github directory."
+Ready.✅
+Output matches requirements.
+Proceeds. 
+One minor thing: A+ is a functional programming language. "aplus_parallel_tool" is fine.
+I will generate it now. 
+Text: Initialize a NEW dedicated folder named aplus_parallel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A+. Focus entirely on this new objective: 'Construct an A+ program for parallel algorithmic simulation and distributed data processing'. You MUST write code for this task strictly using this programming language: A+.
+Matches all constraints. Output matches exactly. Proceeds. 
+[Final Check] -> All constraints met. Output is ready.
+Proceeds. 
+[Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named aplus_parallel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A+. Focus entirely on this new objective: 'Construct an A+ program for parallel algorithmic simulation and distributed data processing'. You MUST write code for this task strictly using this programming language: A+.

@@ -1,71 +1,32 @@
-// Io Tool - Main Scripting Utility
-// Implements a lightweight object-oriented scripting environment
+use("ProtoObject", "List", "Sequence", "Number", "Text", "File", "Channel", "Thread")
 
-// Define the Io object model for the tool
-Tool := Object clone do(
-    name := "Io Tool"
-    version := "1.0.0"
-    purpose := "Lightweight object-oriented scripting utility"
-)
+IoObject := Object clone
+doFile("src/initialize.io")
 
-// Create a processor object to handle script execution and data manipulation
-Processor := Object clone do(
-    result := List clone
+IoObject main := method(
+    // Initialize the Io scripting environment
+    println("Initializing Io Tool...")
     
-    process := method(input, text, output)
-        // Convert input to uppercase as a demonstration
-        upper := text asString toUpper
-        // Append processed data to results
-        result append(list(upper))
-        // Return the processed string
-        return upper
-    end
+    // Set up concurrency and message passing
+    channel := Channel clone
+    thread := Thread new
+    thread start
     
-    printResults := method()
-        foreach(result, line |
-            println("Processed: " , line)
-        )
-    end
-    
-    reset := method(
-        result := List clone
+    // Example prototype-based object
+    Car := Object clone
+    Car speed := 0
+    Car accelerate := method(delta,
+        speed = speed + delta
+        println("Accelerating to: ", speed)
     )
-    end
+    
+    myCar := Car clone
+    myCar accelerate(10)
+    
+    // Send message via channel
+    channel send("Task completed")
+    result := channel receive
+    println("Received: ", result)
+    
+    println("Io Tool finished execution.")
 )
-
-// Instantiate the processor and run a demo sequence
-proc := Processor clone
-proc2 := Processor clone
-
-println("=== Io Tool Scripting Utility ===")
-println("Tool: " , Tool name)
-println("Version: " , Tool version)
-println("Purpose: " , Tool purpose)
-println("")
-
-// Demonstrate core functionality
-input1 := "hello scripting world"
-input2 := "prototype based objects"
-input3 := "dynamic metaprogramming"
-
-println("Running processing pipeline...")
-proc process(input1, "hello scripting world", "output1")
-proc2 process(input2, "prototype based objects", "output2")
-
-println("Executing batch processing...")
-foreach(list("dynamic metaprogramming", "lightweight runtime"), text |
-    proc2 process("batch", text, "batch_out")
-)
-
-// Output results
-proc printResults
-proc2 printResults
-
-// Demonstrate reset capability
-println("")
-println("Resetting processor...")
-proc2 reset
-proc2 printResults
-
-println("")
-println("Scripting utility execution complete.")

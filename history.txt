@@ -32845,3 +32845,42 @@ Result looks solid.
 </think>
 
 Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL. Focus entirely on this new objective: 'Develop an HLSL application for high-performance graphics shader development and real-time visual simulation.'. You MUST write code for this task strictly using this exact programming language: HLSL.
+[2026-08-16 20:57:30] (Target Lang: Pico) Thinking Process:
+
+1.  **Deconstruct the User's Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Strictly use programming language "Pico".
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The workspace list shows many tools (e.g., `hls_tool`, `asharp_dotnet_tool`, etc.), but `pico_tool` is not explicitly listed in the provided snippet (though the user might be adding it). The history shows a pattern of creating tools like `hlsl_tool`. The user wants a follow-up to that pattern using "Pico".
+
+2.  **Drafting the Instruction:**
+    *   *Language:* Pico.
+    *   *Action:* Initialize a NEW folder, create README.md, build the tool.
+    *   *Objective:* Needs to be specific to Pico. Pico is often associated with microcontrollers (Raspberry Pi Pico) or the Pico programming language. Given the context of a list of programming language tools (like `python_tool`, `c_tool`, `hls_tool`), "Pico" likely refers to the Pico programming language (a dialect of Lisp or a specific language in this taxonomy) or the Raspberry Pi Pico ecosystem. Looking at the list, I see `pico_tool` is not there, but there are obscure languages like `picolisp_tool`. However, the user explicitly asked for "Pico". I should treat "Pico" as the target language.
+    *   *Objective Text:* "Develop a Pico application for efficient embedded system control and microcontroller programming." or "Create a Pico application for lightweight scripting and resource-constrained environments." Let's go with something standard for the language name. "Pico" often implies brevity or embedded contexts. "Develop a Pico application for lightweight scripting and efficient resource management in embedded environments."
+    *   *Structure:* "Initialize a NEW dedicated folder named `pico_tool`... create local `README.md`... build strictly using Pico... Focus on objective... You MUST write code strictly using Pico."
+
+    *   *Draft 1:* Initialize a NEW dedicated folder named `pico_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pico. Focus entirely on this new objective: 'Develop a Pico application for lightweight scripting and efficient resource management in embedded environments.'. You MUST write code for this task strictly using this exact programming language: Pico.
+
+3.  **Reviewing Constraints:**
+    *   *Exactly 1 follow-up?* Yes, the draft is one instruction block.
+    *   *Strictly Pico?* Yes, mentioned multiple times.
+    *   *New folder + README?* Yes (`pico_tool`, `README.md`).
+    *   *Only instruction text?* Yes, no markdown headers like "Thought:" in the final output (though the model outputs thought first, the final result is just the text). The prompt asks for "Return ONLY the instruction text."
+    *   *Never target `.github`?* The instruction doesn't mention `.github`. It targets `pico_tool`.
+    *   *Logical follow-up?* The previous example was `hlsl_tool`. This is `pico_tool`. This follows the pattern.
+
+4.  **Refining the Text:**
+    *   The user's example output format is: "Initialize a NEW dedicated folder named... You MUST write code... strictly using this exact programming language: [LANG]."
+    *   My draft matches this format perfectly.
+    *   Result: "Initialize a NEW dedicated folder named pico_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pico. Focus entirely on this new objective: 'Develop a Pico application for lightweight scripting and efficient resource management in embedded environments.'. You MUST write code for this task strictly using this exact programming language: Pico."
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   Output: `Initialize a NEW dedicated folder named pico_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pico. Focus entirely on this new objective: 'Develop a Pico application for lightweight scripting and efficient resource management in embedded environments.'. You MUST write code for this task strictly using this exact programming language: Pico.`
+
+This looks complete and compliant.
+</think>
+
+Initialize a NEW dedicated folder named pico_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pico. Focus entirely on this new objective: 'Develop a Pico application for lightweight scripting and efficient resource management in embedded environments.'. You MUST write code for this task strictly using this exact programming language: Pico.

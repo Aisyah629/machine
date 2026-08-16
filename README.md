@@ -824,3 +824,5 @@ Training Machine
 - Created/Updated module: `pure_tool` (See `pure_tool/README.md` for details)
 
 - Created/Updated module: `hlsl_tool` (See `hlsl_tool/README.md` for details)
+
+- Created/Updated module: `pico_tool` (See `pico_tool/README.md` for details)

@@ -766,3 +766,5 @@ Training Machine
 - Created/Updated module: `./executable_uml_tool` (See `./executable_uml_tool/README.md` for details)
 
 - Created/Updated module: `bash_tool` (See `bash_tool/README.md` for details)
+
+- Created/Updated module: `amiga_e_tool` (See `amiga_e_tool/README.md` for details)

@@ -660,3 +660,5 @@ Training Machine
 - Created/Updated module: `ratfor_tool` (See `ratfor_tool/README.md` for details)
 
 - Created/Updated module: `subtext_tool` (See `subtext_tool/README.md` for details)
+
+- Created/Updated module: `mad_i_tool` (See `mad_i_tool/README.md` for details)

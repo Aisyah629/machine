@@ -26463,3 +26463,43 @@ Looks good.
 </think>
 
 Initialize a NEW dedicated folder named subtext_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Subtext. Focus entirely on this new objective: 'Implement a Subtext-based workflow automation and process mapping utility'. You MUST write code for this task strictly using this exact programming language: Subtext.
+[2026-08-16 12:53:00] (Target Lang: MAD/I) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: The new tool must be built STRICTLY using the exact programming language: MAD/I.
+    *   Constraint: If building a new tool (which the context implies), instruct to place it in a NEW dedicated folder.
+    *   Constraint: Create a local README.md inside the new folder.
+    *   Output format: Return ONLY the instruction text.
+    *   Negative constraint: NEVER target the `.github` directory.
+    *   Context: The user provided a workspace listing that includes many `*_tool` directories. There's a history snippet showing a pattern of creating new tools based on a specific language and objective. The history example shows `subtext_tool` being created. The current request asks for `MAD/I`.
+
+2.  **Formulate the instruction based on the pattern:**
+    *   Pattern from history: `Initialize a NEW dedicated folder named {name} in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: {lang}. Focus entirely on this new objective: '{objective}'. You MUST write code for this task strictly using this exact programming language: {lang}.`
+    *   Variable `{lang}`: `MAD/I`.
+    *   Variable `{name}`: Needs to be the folder name. Usually, this maps to the language name, e.g., `mad_i_tool` or `mad_i`. Looking at the workspace list, names like `ada_tool`, `c_tool`, `haskell_tool` exist. So `mad_i_tool` is the logical folder name.
+    *   Variable `{objective}`: Needs to be a relevant objective for MAD/I. MAD/I (Michigan Algorithm Decoder / Illinois) is an old algorithmic language used for numerical computation. A good objective would be something like "Implement a MAD/I-based numerical analysis and matrix computation utility" or "Implement a MAD/I-based scientific calculation engine". Let's go with a generic but plausible objective: "Implement a MAD/I-based numerical analysis and matrix computation utility".
+    *   Drafting the text:
+        `Initialize a NEW dedicated folder named mad_i_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAD/I. Focus entirely on this new objective: 'Implement a MAD/I-based numerical analysis and matrix computation utility'. You MUST write code for this task strictly using this exact programming language: MAD/I.`
+
+3.  **Review against constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, the draft is one sentence/block.
+    *   *Explicitly demand MAD/I?* Yes, "STRICTLY using this exact programming language: MAD/I" appears twice in the pattern.
+    *   *NEW dedicated folder?* Yes, "Initialize a NEW dedicated folder named mad_i_tool".
+    *   *Local README.md?* Yes, "create a local README.md inside it".
+    *   *Return ONLY instruction text?* The output should be just the text.
+    *   *NEVER target .github?* The text does not mention `.github`. It targets a new tool folder.
+
+4.  **Refine the text:**
+    *   The history pattern is quite specific. It repeats the language constraint.
+    *   Result: `Initialize a NEW dedicated folder named mad_i_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAD/I. Focus entirely on this new objective: 'Implement a MAD/I-based numerical analysis and matrix computation utility'. You MUST write code for this task strictly using this exact programming language: MAD/I.`
+
+5.  **Final Polish:**
+    *   The prompt asks for "Generate exactly 1 logical follow-up instruction."
+    *   The output should be the instruction string itself.
+    *   Result matches the drafted text.
+
+Output: `Initialize a NEW dedicated folder named mad_i_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAD/I. Focus entirely on this new objective: 'Implement a MAD/I-based numerical analysis and matrix computation utility'. You MUST write code for this task strictly using this exact programming language: MAD/I.`
+</think>
+
+Initialize a NEW dedicated folder named mad_i_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAD/I. Focus entirely on this new objective: 'Implement a MAD/I-based numerical analysis and matrix computation utility'. You MUST write code for this task strictly using this exact programming language: MAD/I.

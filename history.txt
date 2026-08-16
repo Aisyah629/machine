@@ -23624,3 +23624,60 @@ This looks good.
 </think>
 
 Initialize a NEW dedicated folder named opencl_wavelet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a 1D wavelet transform kernel'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.
+[2026-08-16 09:56:32] (Target Lang: Esterel) The user wants me to generate a follow-up instruction based on the provided history and context.
+The instruction must:
+1. Ask for exactly 1 logical follow-up instruction.
+2. Explicitly demand that the new tool be built STRICTLY using the language: Esterel.
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+6. Follow the pattern: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Esterel. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: Esterel."
+
+Let's choose a folder name and objective related to Esterel.
+Esterel is a synchronous programming language often used for real-time systems, signal processing, or state machines.
+Objective idea: "Implement a deterministic state machine for protocol validation" or "Design a concurrent signal processor for hardware verification".
+Folder name: `esterel_tool`
+Let's follow the exact format requested.
+
+"Initialize a NEW dedicated folder named esterel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Esterel. Focus entirely on this new objective: 'Implement a deterministic state machine for hardware protocol validation'. You MUST write functional code for this task strictly using this exact programming language: Esterel."
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand language: Esterel? Yes.
+- NEW dedicated folder & local README.md? Yes.
+- ONLY instruction text? Yes.
+- Never target .github? Yes.
+- Matches history pattern? Yes.
+
+I will output exactly the instruction text.
+No extra words.
+Proceed. 
+Let's verify the exact wording from the prompt: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Esterel. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: Esterel."
+
+I will construct it carefully.
+"Initialize a NEW dedicated folder named esterel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Esterel. Focus entirely on this new objective: 'Implement a deterministic state machine for hardware protocol validation'. You MUST write functional code for this task strictly using this exact programming language: Esterel."
+Matches perfectly. Output matches request.✅
+Done. 
+Self-Correction/Refinement during thought: 
+The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Esterel. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+I will strictly output the single instruction string.
+Ready. 
+Output matches the constructed string.✅
+Proceeds. 
+[Output Generation] -> "Initialize a NEW dedicated folder named esterel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Esterel. Focus entirely on this new objective: 'Implement a deterministic state machine for hardware protocol validation'. You MUST write functional code for this task strictly using this exact programming language: Esterel." -> Matches constraints.✅
+All good. 
+Output matches. 
+Proceeds. 
+[Final Check of the Prompt] "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Esterel. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+Matches.
+Output Generation. 
+[Done] 
+(Self-Correction/Note during generation prep: I should make sure the phrasing exactly matches the requested pattern from history if possible, or just follows the explicit instructions. The prompt says: "Initialize a NEW dedicated folder named opencl_wavelet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a 1D wavelet transform kernel'. You MUST write functional code for this task strictly using this exact programming language: OpenCL."
+I will adapt it to Esterel.)
+Final text: Initialize a NEW dedicated folder named esterel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Esterel. Focus entirely on this new objective: 'Implement a deterministic state machine for hardware protocol validation'. You MUST write functional code for this task strictly using this exact programming language: Esterel.
+Matches. Output matches exactly.✅
+Proceeds. 
+[Output Generation] -> (Proceeds)
+</think>
+
+Initialize a NEW dedicated folder named esterel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Esterel. Focus entirely on this new objective: 'Implement a deterministic state machine for hardware protocol validation'. You MUST write functional code for this task strictly using this exact programming language: Esterel.

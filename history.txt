@@ -22889,3 +22889,67 @@ Initialize a NEW dedicated folder named islisp_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named genie_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Genie. Focus entirely on this new objective: 'Develop a cross-platform GUI application framework with signal-slot event handling and declarative widget layout'. You MUST write functional code for this task strictly using this exact programming language: Genie.
+[2026-08-16 08:52:09] (Target Lang: S-Lang) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a file list (workspace structure) showing many existing tool directories.
+   - There's a "History" section that seems to be a log of a previous prompt/response cycle. It shows the model generating an instruction for `genie_tool`.
+   - The actual prompt at the end says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: S-Lang. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - The key constraint: Generate exactly 1 logical follow-up instruction.
+   - Language constraint: MUST explicitly demand that the new tool be built STRICTLY using S-Lang.
+   - Folder constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Output constraint: Return ONLY the instruction text. NEVER target the .github directory.
+   - Context: The workspace already has `s_lang_tool` in the list (`./s_lang_tool ./s_lang_tool/README.md ./s_lang_tool/main.sl`). Wait, the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." This implies I should generate an instruction for a *new* tool, even if one might exist, or I can just follow the exact template from the history. The history example shows: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Lang]."
+   - I need to adapt this to S-Lang. I'll pick a logical objective for S-Lang (which is known for numerical/mathematical computing, scientific scripting, and cross-platform GUI via GTK, though it's more known for scientific/numerical tasks). Let's stick to a plausible objective: "Develop a high-performance numerical analysis and data visualization toolkit with interactive plotting capabilities."
+   - I will follow the exact phrasing pattern from the history but adapt it to S-Lang and a new objective.
+   - Constraint check: "Return ONLY the instruction text." -> No greetings, no explanations.
+   - Constraint check: "NEVER target the .github directory." -> The instruction won't mention it.
+   - Constraint check: "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: S-Lang." -> Included.
+   - Constraint check: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Included.
+   - I will craft the instruction carefully to match the requested format.
+
+   Draft:
+   Initialize a NEW dedicated folder named s_lang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S-Lang. Focus entirely on this new objective: 'Develop a high-performance numerical analysis and data visualization toolkit with interactive plotting capabilities and automated report generation'. You MUST write functional code for this task strictly using this exact programming language: S-Lang.
+
+   Wait, the prompt says "s_lang_tool" is already in the file list. The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I can just follow the exact template. The user's example used `genie_tool` even though it might not have been in the list (or maybe it was added after). I'll stick to `s_lang_tool` as requested by the language name, or maybe `s_lang_tool` is fine. The prompt says "S-Lang", so the folder would logically be `s_lang_tool`.
+
+   Let's verify the exact wording from the prompt's example:
+   "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Lang]."
+
+   I will replace [name] with `s_lang`, [Lang] with `S-Lang`, and [Objective] with a relevant one.
+   Objective: 'Build a robust numerical computing and scientific data analysis framework with automated script execution and cross-platform CLI support'.
+
+   Let's assemble it exactly as requested.
+   "Initialize a NEW dedicated folder named s_lang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S-Lang. Focus entirely on this new objective: 'Build a robust numerical computing and scientific data analysis framework with automated script execution and cross-platform CLI support'. You MUST write functional code for this task strictly using this exact programming language: S-Lang."
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand new tool built STRICTLY using S-Lang? Yes.
+   - Explicitly instruct to place it in a NEW dedicated folder and create a local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches pattern? Yes.
+
+   One minor thing: The prompt says "S-Lang". I will use exactly that.
+   I will output just the instruction string. No extra text.
+   Ready.✅
+   Output matches draft. Proceeds. 
+   Generating response. 
+   [Output Generation] -> "Initialize a NEW dedicated folder named s_lang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S-Lang. Focus entirely on this new objective: 'Build a robust numerical computing and scientific data analysis framework with automated script execution and cross-platform CLI support'. You MUST write functional code for this task strictly using this exact programming language: S-Lang."
+   All constraints verified. Proceeds. 
+   *(Self-Correction/Verification during thought)*: 
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction." It's a bit meta. The user wants me to output the instruction string itself. I will strictly output just that string.
+   The exact wording from the history example is:
+   "Initialize a NEW dedicated folder named genie_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Genie. Focus entirely on this new objective: 'Develop a cross-platform GUI application framework with signal-slot event handling and declarative widget layout'. You MUST write functional code for this task strictly using this exact programming language: Genie."
+   I will adapt it to S-Lang.
+   Final check of the prompt: "Return ONLY the instruction text."
+   I will output exactly that. No markdown formatting if possible, or just plain text. I'll stick to plain text to be safe.
+   Proceeds. 
+   Output matches.✅
+   [Output Generation] -> Initialize a NEW dedicated folder named s_lang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S-Lang. Focus entirely on this new objective: 'Develop a high-performance numerical analysis and scientific data visualization framework with automated report generation and interactive console capabilities'. You MUST write functional code for this task strictly using this exact programming language: S-Lang. 
+   (Note: I'll keep it tight and exactly as requested.)
+   Done. 
+   [Output] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named s_lang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: S-Lang. Focus entirely on this new objective: 'Develop a high-performance numerical analysis and scientific data visualization framework with automated report generation and interactive console capabilities'. You MUST write functional code for this task strictly using this exact programming language: S-Lang.

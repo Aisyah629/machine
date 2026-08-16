@@ -692,3 +692,5 @@ Training Machine
 - Created/Updated module: `moo_tool` (See `moo_tool/README.md` for details)
 
 - Created/Updated module: `rc_tool` (See `rc_tool/README.md` for details)
+
+- Created/Updated module: `obj2_tool` (See `obj2_tool/README.md` for details)

@@ -19756,3 +19756,77 @@ Initialize a NEW dedicated folder named coffeescript_tool in the workspace, crea
 </think>
 
 Initialize a NEW dedicated folder named krc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRC. Focus entirely on this new objective: 'Develop a functional logic verification system'. You MUST write functional code for this task strictly using this programming language: KRC.
+[2026-08-16 03:56:12] (Target Lang: Alice) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories/files representing various "tools" (mostly programming languages/domains) with `README.md` and a main file in each.
+   - **History:** Shows a previous interaction where the prompt was corrected to strictly demand a new folder, README, and language (KRC). The history ends with a generated instruction for KRC.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Alice. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints & Requirements:**
+   - Generate exactly 1 logical follow-up instruction.
+   - Must explicitly demand the new tool be built STRICTLY using the exact programming language: `Alice`.
+   - If building a new tool: explicitly instruct to place it in a NEW dedicated folder.
+   - Explicitly instruct to create a local README.md inside it.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - The output should be a raw string (as per the history/context pattern).
+
+3.  **Formulate the Instruction:**
+   I need to craft a single, coherent instruction that meets all constraints.
+   - Target language: Alice (which corresponds to `alice_tool` in the workspace list, but the prompt says "NEW dedicated folder named alice_tool" or similar? The prompt says "explicitly instruct to place it in a NEW dedicated folder". I'll use `alice_tool` to match the workspace naming convention, or just `alice_tool` as specified in the list. Actually, the list already has `alice_tool`, but the prompt says "NEW dedicated folder", so I'll just follow the exact phrasing requested: "Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Develop a functional logic verification system'. You MUST write functional code for this task strictly using this programming language: Alice."
+   - Wait, the prompt says "explicitly demand that the new tool be built STRICTLY using this exact programming language: Alice." It doesn't specify a new objective, but I should include one to make it logical, or I can just stick to the core requirements. The history shows a pattern: "Initialize a NEW dedicated folder named [tool]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Obj]'. You MUST write functional code for this task strictly using this programming language: [Lang]."
+   - I will adapt this pattern to Alice.
+   - Let's craft it carefully to match constraints: "Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Develop a robust object-oriented simulation environment'. You MUST write functional code for this task strictly using this programming language: Alice."
+   - Check constraints:
+     - Exactly 1 logical follow-up instruction? Yes.
+     - Explicitly demand built STRICTLY using Alice? Yes.
+     - Explicitly instruct to place in NEW dedicated folder? Yes.
+     - Create local README.md? Yes.
+     - Return ONLY instruction text? Yes.
+     - NEVER target .github? Yes, not mentioned.
+   - I'll keep it concise and directly aligned with the prompt's wording.
+
+   Draft: "Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Develop a visual programming environment for educational simulations'. You MUST write functional code for this task strictly using this programming language: Alice."
+
+   Let's verify against the exact wording requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Alice. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   I will ensure these phrases are directly in the output.
+
+   Refined: "Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Develop a modular simulation framework'. You MUST write functional code for this task strictly using this programming language: Alice."
+
+   This matches the pattern from the history and fulfills all constraints. I will output exactly this string. No extra text. Raw string.
+   One minor thing: The prompt says "exact programming language: Alice." I'll make sure it's capitalized as requested.
+   I will generate exactly the instruction text.
+   Ready.✅
+   Output matches the draft.✅
+   Proceeds. 
+   Self-Correction/Verification during thought: 
+   The prompt says "Return ONLY the instruction text." I will ensure no markdown formatting, no quotes, just the raw string.
+   The history shows the exact format: "Initialize a NEW dedicated folder named krc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRC. Focus entirely on this new objective: 'Develop a functional logic verification system'. You MUST write functional code for this task strictly using this programming language: KRC."
+   I will mirror this structure exactly, replacing KRC with Alice and adjusting the objective slightly to be appropriate for Alice (a visual OOP language), but keeping it generic enough. Actually, I'll just use a standard objective like 'Develop a visual object-oriented programming environment' or stick to the exact requested structure.
+   I'll output: Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Develop a visual object-oriented simulation engine'. You MUST write functional code for this task strictly using this programming language: Alice.
+   Checks:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand STRICTLY using Alice? Yes.
+   - NEW dedicated folder? Yes.
+   - local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   All good. Output matches. 
+   Proceeds. 
+   [Output Generation] -> "Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Develop a visual object-oriented simulation engine'. You MUST write functional code for this task strictly using this programming language: Alice." (Note: I'll remove the quotes as per "raw string" and "ONLY the instruction text" requirement). Actually, the prompt says "Return ONLY the instruction text." so I will just output the raw text.
+   Final check of the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Alice." -> I'll make sure that exact phrase or close to it is in the output. The prompt says "explicitly demand", so I'll use the exact phrasing from the history pattern which is standard for this task.
+   All set.✅
+   Output matches exactly. 
+   Proceeds. 
+   [Output Generation] (raw string)
+   "Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Develop a visual object-oriented simulation engine'. You MUST write functional code for this task strictly using this programming language: Alice." -> I will output this without quotes.
+   Actually, to be perfectly safe, I'll just output the exact text.
+   Done. 
+   [Output] Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Develop a visual object-oriented simulation engine'. You MUST write functional code for this task strictly using this programming language: Alice. 
+   (Self-Correction/Refinement during thought: The prompt says "exactly 1 logical follow-up instruction". I will ensure it's a single sentence/block. The history example uses single quotes for the objective. I'll keep it. All constraints met.) 
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named alice_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Alice. Focus entirely on this new objective: 'Develop a visual object-oriented simulation engine'. You MUST write functional code for this task strictly using this programming language: Alice.

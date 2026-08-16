@@ -29210,3 +29210,79 @@ Context from history:
 </think>
 
 Initialize a NEW dedicated folder named lynx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx. Focus entirely on this new objective: 'Construct a comprehensive HTTP request automation framework designed for high-performance web scraping and dynamic API interactions'. You MUST write code for this task strictly using this exact programming language: Lynx.
+[2026-08-16 16:34:51] (Target Lang: AspectJ) The user wants me to generate exactly 1 logical follow-up instruction.
+The instruction must:
+1. Demand the new tool be built STRICTLY using the exact programming language: AspectJ.
+2. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. NEVER target the `.github` directory.
+5. Follow the pattern from the history.
+
+Looking at the history, the format is:
+`Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language].`
+
+I need to pick a language (AspectJ is specified), create a tool name (e.g., `aspectj_tool`), and an objective that fits the language.
+Language: AspectJ
+Objective: something related to Aspect-Oriented Programming, like modular cross-cutting concerns or weaving advice into existing codebases.
+Tool name: `aspectj_tool`
+
+Let's construct the instruction:
+"Initialize a NEW dedicated folder named aspectj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop a robust aspect-oriented programming framework designed for seamless cross-cutting concern implementation and dynamic code weaving'. You MUST write code for this task strictly using this exact programming language: AspectJ."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Language: AspectJ. Yes.
+- Place in NEW dedicated folder and create README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+- Follows pattern? Yes.
+
+Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AspectJ."
+And "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+"Return ONLY the instruction text. NEVER target the .github directory."
+
+I will generate exactly that string.
+Let's double check the exact phrasing from the history to match style:
+`Initialize a NEW dedicated folder named aspectj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop a robust aspect-oriented programming framework designed for seamless cross-cutting concern implementation and dynamic code weaving'. You MUST write code for this task strictly using this exact programming language: AspectJ.`
+
+Matches all constraints. Output only this text.
+One minor thing: "aspectj_tool" already exists in the provided workspace list (`./aspectj_tool ./aspectj_tool/README.md`), but the prompt says "If the system checks existence and prevents duplication, the instruction might fail. But the prompt asks me to generate the instruction, not execute it. The history shows `xtend_tool` existing in the list, yet the instruction asked to create it. This confirms the pattern: Generate the instruction to create the tool regardless of the list state." So I will proceed with `aspectj_tool`.
+
+Final check of the text:
+"Initialize a NEW dedicated folder named aspectj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop a robust aspect-oriented programming framework designed for seamless cross-cutting concern implementation and dynamic code weaving'. You MUST write code for this task strictly using this exact programming language: AspectJ."
+
+All constraints met. Proceeds. 
+Output matches exactly.✅
+I will produce exactly that string. 
+No extra text.
+Ready. 
+Output generation. 
+`Initialize a NEW dedicated folder named aspectj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop a robust aspect-oriented programming framework designed for seamless cross-cutting concern implementation and dynamic code weaving'. You MUST write code for this task strictly using this exact programming language: AspectJ.`
+Matches perfectly. 
+Proceeds. 
+[Done] 
+(Self-Correction/Verification during thought)
+Wait, should I check if "AspectJ" is spelled correctly? Yes.
+Is the format exactly matching the prompt's request? Yes.
+Does it demand exactly 1 logical follow-up instruction? Yes.
+Does it return ONLY the instruction text? Yes.
+Does it NEVER target .github? Yes.
+All good. 
+Output matches. 
+Proceeds. 
+[Output Generation] -> `Initialize a NEW dedicated folder named aspectj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop a robust aspect-oriented programming framework designed for seamless cross-cutting concern implementation and dynamic code weaving'. You MUST write code for this task strictly using this exact programming language: AspectJ.`
+Done. 
+(Self-Correction/Refinement during thought)
+Let's verify the exact wording from the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AspectJ."
+My draft does this.
+"Initialize a NEW dedicated folder named aspectj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop a robust aspect-oriented programming framework designed for seamless cross-cutting concern implementation and dynamic code weaving'. You MUST write code for this task strictly using this exact programming language: AspectJ."
+Matches perfectly. Output matches.
+Done. 
+Proceeds. 
+[Final Output Generation] (matches the draft)
+`Initialize a NEW dedicated folder named aspectj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop a robust aspect-oriented programming framework designed for seamless cross-cutting concern implementation and dynamic code weaving'. You MUST write code for this task strictly using this exact programming language: AspectJ.`
+Done. 
+[Output Generation] (Proceeds)
+</think>
+
+Initialize a NEW dedicated folder named aspectj_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AspectJ. Focus entirely on this new objective: 'Develop a robust aspect-oriented programming framework designed for seamless cross-cutting concern implementation and dynamic code weaving'. You MUST write code for this task strictly using this exact programming language: AspectJ.

@@ -724,3 +724,5 @@ Training Machine
 - Created/Updated module: `xtend_tool` (See `xtend_tool/README.md` for details)
 
 - Created/Updated module: `lynx_tool` (See `lynx_tool/README.md` for details)
+
+- Created/Updated module: `./aspectj_tool` (See `./aspectj_tool/README.md` for details)

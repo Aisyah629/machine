@@ -34499,3 +34499,40 @@ This matches the structure, constraints, and language requirements.
 </think>
 
 Initialize a NEW dedicated folder named nasm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NASM. Focus entirely on this new objective: 'Develop a low-level system utility or bootloader simulation application.'. You MUST write code for this task strictly using this programming language: NASM.
+[2026-08-16 22:02:08] (Target Lang: LINC) Thinking (hidden thought process)
+1.  **Analyze User Input:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: New tool MUST be built STRICTLY using `LINC`.
+    *   Constraint 2: Must explicitly instruct to place it in a `NEW dedicated folder`.
+    *   Constraint 3: Must explicitly instruct to create a `local README.md`.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Workspace: A long list of tools. Check if `linc_tool` exists.
+        *   Scanning workspace list... `linc_tool` is NOT present.
+    *   Format: Matches previous examples. "Initialize a NEW dedicated folder named ...".
+
+2.  **Draft Construction:**
+    *   *Subject:* `linc_tool`
+    *   *Language:* `LINC`
+    *   *Objective:* Needs a logical objective. Since it's a "follow-up", it should be distinct but related to the theme of system/tool development, or just a valid programming task. Let's use "Build a text processing or data transformation utility" or "Create a simple calculator or arithmetic simulator". Let's stick to "Develop a data processing or text transformation utility." to keep it generic but solid.
+    *   *Phrasing:* "Initialize a NEW dedicated folder named linc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LINC. Focus entirely on this new objective: 'Develop a data processing or text transformation utility.'. You MUST write code for this task strictly using this programming language: LINC."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Strictly LINC?* Yes.
+    *   *New dedicated folder?* Yes (`linc_tool`).
+    *   *Local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes.
+    *   *Workspace check:* `linc_tool` is not in the list. Valid.
+
+4.  **Final Polish:**
+    *   Output: Initialize a NEW dedicated folder named linc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LINC. Focus entirely on this new objective: 'Develop a data processing or text transformation utility.'. You MUST write code for this task strictly using this programming language: LINC.
+    *   *Self-Correction on Objective:* To make it slightly more robust for a generated tool, "Develop a text parsing or string manipulation utility" is good. Or "Create a simple arithmetic or logic calculator". Let's go with "Develop a text parsing or string manipulation utility."
+
+    *   Final String: Initialize a NEW dedicated folder named linc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LINC. Focus entirely on this new objective: 'Develop a text parsing or string manipulation utility.'. You MUST write code for this task strictly using this programming language: LINC.
+
+5.  **Output Generation:** Just the text.
+</think>
+
+Initialize a NEW dedicated folder named linc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LINC. Focus entirely on this new objective: 'Develop a text parsing or string manipulation utility.'. You MUST write code for this task strictly using this programming language: LINC.

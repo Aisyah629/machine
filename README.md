@@ -606,3 +606,5 @@ Training Machine
 - Created/Updated module: `starlogo_tool` (See `starlogo_tool/README.md` for details)
 
 - Created/Updated module: `csp_tool` (See `csp_tool/README.md` for details)
+
+- Created/Updated module: `natural_tool` (See `natural_tool/README.md` for details)

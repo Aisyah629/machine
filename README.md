@@ -904,3 +904,5 @@ Training Machine
 - Created/Updated module: `sequencel_analysis_tool` (See `sequencel_analysis_tool/README.md` for details)
 
 - Created/Updated module: `gosu_workflow_engine_tool` (See `gosu_workflow_engine_tool/README.md` for details)
+
+- Created/Updated module: `aplus_algorithmic_simulation_tool` (See `aplus_algorithmic_simulation_tool/README.md` for details)

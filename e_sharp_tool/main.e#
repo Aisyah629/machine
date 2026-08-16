@@ -1,0 +1,73 @@
+// E# program for financial market analysis
+import System;
+import System.Windows.Forms;
+import System.Drawing;
+import System.Data;
+import System.Threading;
+
+public class FinancialAnalysisApp : Form {
+    private Chart chart;
+    private TextBox inputBox;
+    private Button analyzeButton;
+    private Thread dataThread;
+    private volatile bool stopDataThread;
+    
+    public FinancialAnalysisApp() {
+        InitializeUI();
+        InitializeDataThread();
+    }
+    
+    private void InitializeUI() {
+        this.Text = "Financial Market Analysis";
+        this.Size = new Size(800, 600);
+        
+        chart = new Chart();
+        chart.Location = new Point(10, 10);
+        chart.Size = new Size(760, 400);
+        this.Controls.Add(chart);
+        
+        inputBox = new TextBox();
+        inputBox.Location = new Point(10, 420);
+        inputBox.Size = new Size(400, 20);
+        this.Controls.Add(inputBox);
+        
+        analyzeButton = new Button();
+        analyzeButton.Location = new Point(420, 420);
+        analyzeButton.Size = new Size(100, 25);
+        analyzeButton.Text = "Analyze";
+        analyzeButton.Click += new EventHandler(OnAnalyzeButtonClick);
+        this.Controls.Add(analyzeButton);
+    }
+    
+    private void InitializeDataThread() {
+        stopDataThread = false;
+        dataThread = new Thread(UpdateChartData);\n        dataThread.IsBackground = true;
+        dataThread.Start();
+    }
+    
+    private void UpdateChartData() {
+        Random random = new Random();
+        while (!stopDataThread) {
+            ChartDataPoint point = new ChartDataPoint();
+            point.X = DateTime.Now.ToBinary();
+            point.Y = random.NextDouble() * 100;
+            chart.AddDataPoint(point);
+            Thread.Sleep(1000);
+        }
+    }
+    
+    private void OnAnalyzeButtonClick(object sender, EventArgs e) {
+        string input = inputBox.Text;
+        // Perform analysis based on input
+        MessageBox.Show("Analysis initiated for: " + input);
+    }
+    
+    public static void Main() {
+        Application.Run(new FinancialAnalysisApp());
+    }
+}
+
+public class ChartDataPoint {
+    public long X { get; set; }
+    public double Y { get; set; }
+}

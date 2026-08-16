@@ -22516,3 +22516,41 @@ The draft looks good. I will output it now.
 </think>
 
 Initialize a NEW dedicated folder named ubercode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ubercode. Focus entirely on this new objective: 'Create a high-level automated deployment pipeline for cloud infrastructure'. You MUST write functional code for this task strictly using this exact programming language: Ubercode.
+[2026-08-16 08:15:43] (Target Lang: E#) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand the new tool be built STRICTLY using "E#".
+    *   Constraint: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a large list of existing tools/folders. I need to check if an `e_sharp_tool` or similar exists to avoid collisions or just follow the "NEW dedicated folder" instruction. Looking at the list, I see `e_tool`, `gnu_e_tool`, but no `e_sharp_tool` or `e#_tool`. The instruction says "NEW dedicated folder", so I should create one like `e_sharp_tool`.
+
+2.  **Draft the Instruction:**
+    *   *Template based on history/example:* "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+    *   *Fill in variables:*
+        *   Tool Name: `e_sharp_tool` (Standard naming convention based on `e_tool`, `ada_tool`, etc., though `E#` is the language, folder names usually replace symbols or use underscores. `e_sharp_tool` is a safe bet for "E#".)
+        *   Language: `E#`.
+        *   Objective: Need a plausible objective for E#. E# is a language for Windows Forms and web apps, often associated with high-level abstraction. A good objective might be "Develop a robust GUI-based inventory management system with real-time database synchronization." or "Construct a secure multi-threaded networking application for distributed data processing." Let's pick something distinct: "Develop a high-performance desktop application for real-time financial market analysis with advanced charting capabilities."
+    *   *Drafting:* "Initialize a NEW dedicated folder named e_sharp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: E#. Focus entirely on this new objective: 'Develop a high-performance desktop application for real-time financial market analysis with advanced charting capabilities'. You MUST write functional code for this task strictly using this exact programming language: E#."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, it's a single paragraph/sentence block representing one instruction.
+    *   *Explicitly demand "E#"?* Yes ("STRICTLY using this exact programming language: E#").
+    *   *NEW dedicated folder?* Yes ("e_sharp_tool").
+    *   *Create local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes, no mention of .github.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Result: `Initialize a NEW dedicated folder named e_sharp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: E#. Focus entirely on this new objective: 'Develop a high-performance desktop application for real-time financial market analysis with advanced charting capabilities'. You MUST write functional code for this task strictly using this exact programming language: E#.`
+
+5.  **Output Generation:**
+    *   Produce the text.
+
+*(Post-computation/generation thought regarding folder naming)*: The user asked for "E#". In file systems, `#` is sometimes restricted or awkward. `e_sharp_tool` is the logical mapping. The prompt doesn't forbid reasonable folder naming conventions for the symbol. I'll use `e_sharp_tool`.
+
+Result matches the draft.
+</think>
+
+Initialize a NEW dedicated folder named e_sharp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: E#. Focus entirely on this new objective: 'Develop a high-performance desktop application for real-time financial market analysis with advanced charting capabilities'. You MUST write functional code for this task strictly using this exact programming language: E#.

@@ -644,3 +644,5 @@ Training Machine
 - Created/Updated module: `object_rexx_tool` (See `object_rexx_tool/README.md` for details)
 
 - Created/Updated module: `flavors_tool` (See `flavors_tool/README.md` for details)
+
+- Created/Updated module: `chapel_tool` (See `chapel_tool/README.md` for details)

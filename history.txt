@@ -31443,3 +31443,38 @@ Initialize a NEW dedicated folder named cpp_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named visualfoxpro_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual FoxPro. Focus entirely on this new objective: 'Construct a high-performance data manipulation and reporting engine for legacy FoxPro databases.'. You MUST write code for this task strictly using this exact programming language: Visual FoxPro.
+[2026-08-16 19:34:23] (Target Lang: KRYPTON) Thinking (Process):
+1.  **Analyze the Input:**
+    *   Current Objective: The user wants me to generate exactly 1 logical follow-up instruction based on the previous context (which ended with a request to create a Visual FoxPro tool for data manipulation/reporting).
+    *   Constraint 1: Return ONLY the instruction text.
+    *   Constraint 2: Explicitly demand the new tool be built STRICTLY using `KRYPTON`.
+    *   Constraint 3: If building a new tool, explicitly instruct to place it in a `NEW dedicated folder` and create a `local README.md`.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The workspace lists many `*_tool` directories, implying a pattern of tool creation. The previous instruction asked for `visualfoxpro_tool`. The follow-up should likely continue this pattern or refine it, but the specific constraint is `KRYPTON`.
+
+2.  **Drafting the Instruction:**
+    *   *Goal:* Create a tool using KRYPTON.
+    *   *Folder:* `krypton_tool`.
+    *   *Readme:* `README.md`.
+    *   *Language:* STRICTLY KRYPTON.
+    *   *Objective:* Needs to be relevant or distinct, though the prompt doesn't strictly mandate a specific objective text other than implying a logical follow-up. However, usually, these prompts benefit from a clear objective. Since the previous one was data manipulation, maybe KRYPTON could be about "Secure cryptographic key exchange" or "Quantum-resistant data validation". Let's assume a generic but functional objective like "Construct a quantum-resistant data encryption and decryption utility" or just keep the structure consistent. The prompt asks for a "logical follow-up instruction". A logical follow-up might switch domains or languages while keeping the structure.
+    *   *Draft Text:* Initialize a NEW dedicated folder named `krypton_tool` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON. Focus entirely on this new objective: 'Construct a quantum-resistant secure data encryption and decryption module for modern distributed systems.'. You MUST write code for this task strictly using this exact programming language: KRYPTON.
+
+3.  **Review against Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   STRICTLY KRYPTON? Yes, mentioned explicitly.
+    *   NEW dedicated folder? Yes, `krypton_tool`.
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   Never target .github? Yes, no mention.
+    *   Logical follow-up? Yes, continues the tool creation pattern, changes language to KRYPTON, proposes a distinct objective.
+
+4.  **Final Polish:**
+    *   The structure should match the style of the "History" example provided in the prompt context (which ended with the Visual FoxPro instruction).
+    *   Result: `Initialize a NEW dedicated folder named krypton_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON. Focus entirely on this new objective: 'Construct a quantum-resistant secure data encryption and decryption module for modern distributed systems.'. You MUST write code for this task strictly using this exact programming language: KRYPTON.`
+
+5.  **Output Generation:**
+    *   Return the text string only.
+</think>
+
+Initialize a NEW dedicated folder named krypton_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON. Focus entirely on this new objective: 'Construct a quantum-resistant secure data encryption and decryption module for modern distributed systems.'. You MUST write code for this task strictly using this exact programming language: KRYPTON.

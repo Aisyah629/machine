@@ -1,0 +1,99 @@
+;; OPS5 Rule Engine Tool
+;; Implements forward-chaining rule-based processing for data workflows.
+
+;; Working Memory Structure
+;; Facts are represented as tuples: (fact-type attribute value)
+;; Example: (data-record id 101 status "pending")
+
+;; Initialize the rule engine
+(defengine op5-engine
+  (workspace (new))
+  (rules (new))
+  (conflict-resolution 'rsa) ; Rightmost, Shortest Left Pattern, etc.
+  (execution-log (new)))
+
+;; Add a fact to working memory
+(defproc add-fact (engine fact-type attributes)
+  (let* ((fact-id (unique-id))
+         (fact (cons 'fact fact-type attributes fact-id)))
+    (insert! (engine workspace) fact)
+    (log-action engine (str "Inserted fact: " fact))
+    fact))
+
+;; Retract a fact from working memory
+(defproc retract-fact (engine fact-id)
+  (retract! (engine workspace) (lambda (f) (equal? (last f) fact-id)))
+  (log-action engine (str "Retracted fact: " fact-id)))
+
+;; Rule: Process Pending Data
+(defrule process-pending-data
+  (condition (data-record ?id status "pending"))
+  (action
+    (add-fact engine 'data-record '(id ?id status "processing"))
+    (log-action engine (str "Processing record: " ?id))
+    ;; Simulate async processing by scheduling next step
+    (schedule-task engine ?id)))
+
+;; Rule: Complete Processing
+(defrule complete-processing
+  (condition (processing-status ?id "processing"))
+  (action
+    (add-fact engine 'data-record '(id ?id status "completed"))
+    (log-action engine (str "Completed record: " ?id))))
+
+;; Rule: Error Handling
+(defrule handle-processing-error
+  (condition (error-log ?id ?error))
+  (action
+    (add-fact engine 'data-record '(id ?id status "error"))
+    (log-action engine (str "Error handling for record: " ?id " - " ?error))))
+
+;; Scheduler Task Management
+(defproc schedule-task (engine record-id)
+  (add-fact engine 'processing-status '(id record-id status "processing")))
+
+;; Execution Loop
+(defproc run-engine (engine &optional max-iterations)
+  (let ((iterations 0)
+        (fired-rules (new)))
+    (while (< iterations (or max-iterations 100))
+      (let* ((matched-rules (match-rules engine))
+             (next-rule (resolve-conflict engine matched-rules)))
+        (if next-rule
+            (progn
+              (execute-rule engine next-rule)
+              (set! iterations (inc! iterations)))
+            (break)))
+      (log-action engine (str "Iteration: " iterations " - Engine active.")))
+    (log-action engine "Engine execution complete.")))
+
+;; Helper: Match rules against working memory
+(defproc match-rules (engine)
+  (let ((working-memory (engine workspace)))
+    (filter-rules engine working-memory)))
+
+;; Helper: Resolve conflict
+(defproc resolve-conflict (engine rules)
+  (if (empty? rules)
+      nil
+      (first rules))) ; Simplified: takes first match
+
+;; Helper: Execute rule
+(defproc execute-rule (engine rule)
+  (apply rule-actions rule) ; Trigger rule actions
+  (log-action engine (str "Fired rule: " (rule-name rule))))
+
+;; Log action utility
+(defproc log-action (engine message)
+  (insert! (engine execution-log) '(log-entry (timestamp (now)) message)))
+
+;; Main execution block
+(defmain
+  (let* ((engine (op5-engine))
+         (data-facts '((data-record id 101 status "pending")
+                       (data-record id 102 status "pending")
+                       (error-log id 103 error "timeout"))))
+    (dolist (fact data-facts)
+      (add-fact engine (first fact) (rest fact)))
+    (run-engine engine 50)
+    (print "OPS5 Rule Engine Execution Finished.")))

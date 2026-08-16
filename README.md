@@ -864,3 +864,5 @@ Training Machine
 - Created/Updated module: `cilk_tool` (See `cilk_tool/README.md` for details)
 
 - Created/Updated module: `cpl_tool` (See `cpl_tool/README.md` for details)
+
+- Created/Updated module: `basic_tool` (See `basic_tool/README.md` for details)

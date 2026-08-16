@@ -23516,3 +23516,111 @@ Looks good.
 </think>
 
 Initialize a NEW dedicated folder named opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a GPU-accelerated particle simulation engine'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.
+[2026-08-16 09:48:13] (Target Lang: OpenCL) The user wants a single follow-up instruction.
+The instruction must:
+1. Request a new tool in a NEW dedicated folder.
+2. Create a local `README.md`.
+3. Use the programming language "OpenCL".
+4. Focus on a new objective.
+5. NEVER target `.github`.
+6. Return ONLY the instruction text.
+
+Looking at the file list provided, there is already `./opencl_tool` in the list:
+`./opencl_tool ./opencl_tool/README.md ./opencl_tool/main.cl`
+Wait, let me double-check the history.
+The history says:
+"Final verification of the output format. The user asks to "Return ONLY the instruction text." The output should be the string. One more check on the prompt history provided in the user message. The user provided "History:" which includes steps 3, 4, 5 and the final output text. The final output text is the instruction. I need to generate the new instruction based on the new constraint: "OpenCL". The instruction: Initialize a NEW dedicated folder named opencl_tool in the workspace..."
+And the provided text ends with that instruction.
+However, the file list shows `./opencl_tool` already exists.
+The user's prompt history shows the model previously outputted an instruction for `opencl_tool`.
+Now the user asks: "Generate exactly 1 logical follow-up instruction. ... explicitly demand that the new tool be built STRICTLY using this exact programming language: OpenCL."
+This implies I should generate an instruction similar to the one in the history, or a new one if the previous one was meant to be executed.
+But usually, these prompts are part of a chain where the model generates an instruction, which is then executed by an agent (me, or the system interpreting my output).
+The file list shows `opencl_tool` exists.
+The user wants "exactly 1 logical follow-up instruction".
+The language constraint is "OpenCL".
+The folder constraint is "NEW dedicated folder".
+If `opencl_tool` exists, creating a "NEW dedicated folder named opencl_tool" would be a conflict if interpreted strictly as "create a folder that doesn't exist" or just naming it that.
+However, the prompt history suggests the previous output was for `opencl_tool`.
+The user might be testing if I can generate an instruction that follows the pattern even if the tool exists, or the user wants a different tool with the same language?
+Or perhaps the user wants me to generate an instruction for a *different* language but constrained to OpenCL? No, the constraint is explicit: "built STRICTLY using this exact programming language: OpenCL".
+The instruction text in the history was: "Initialize a NEW dedicated folder named opencl_tool..."
+Since `opencl_tool` exists in the workspace, a logical follow-up might be to update it or create a different one.
+But the constraint is "NEW dedicated folder".
+If I generate an instruction for `opencl_tool` again, it might be redundant.
+However, looking at the user's request: "Generate exactly 1 logical follow-up instruction."
+The history shows the previous step generated an instruction for `opencl_tool`.
+The user likely wants the next step.
+If the previous instruction was to create `opencl_tool`, and it was executed (implied by the file list), the next instruction should probably be for a different tool or a different language.
+BUT the user says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: OpenCL."
+This forces the language to be OpenCL.
+So I need a new tool using OpenCL.
+Since `opencl_tool` exists, I should probably name the new folder something else, e.g., `opencl_tool_2`, or the user wants me to generate the instruction for `opencl_tool` as a template?
+Usually, these prompts are for a "Tool Creator" agent. The agent generates an instruction, the environment executes it, the file list updates.
+Here the file list is provided as context.
+The file list contains `opencl_tool`.
+The history shows the model outputted an instruction for `opencl_tool`.
+This suggests the model outputted the instruction, and the environment *has* the file list *after* that instruction? Or before?
+The file list has `opencl_tool`.
+The history text includes the output instruction for `opencl_tool`.
+This suggests the instruction for `opencl_tool` was generated and perhaps the file list reflects the state including that tool.
+The user wants a *follow-up* instruction.
+So I need to generate an instruction for a *new* tool using OpenCL.
+Since `opencl_tool` is taken, I should propose a different folder name, e.g., `opencl_accel_tool` or `gpu_sim_tool` or just `opencl_advanced_tool`.
+The prompt asks to "Return ONLY the instruction text."
+The instruction must define the folder, README, and language.
+Language: OpenCL.
+Folder: NEW dedicated folder (distinct from existing ones if possible, or the user might be repeating? No, "logical follow-up" implies progress).
+Objective: Needs to be a new objective.
+Example: "Initialize a NEW dedicated folder named opencl_matrix_tool in the workspace..."
+Objective: "Implement a matrix multiplication kernel".
+Or "Initialize a NEW dedicated folder named opencl_image_tool..."
+Objective: "Implement image convolution".
+The instruction should follow the format:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: OpenCL."
+
+Let's pick a name and objective.
+Name: `opencl_image_tool`
+Objective: "Implement a real-time image convolution filter"
+Or `opencl_vector_tool` for vector addition.
+Let's use `opencl_vector_add_tool`.
+Objective: "Implement a vector addition kernel".
+
+Wait, the prompt history has `opencl_tool` in the file list.
+The history text shows the model outputting the instruction for `opencl_tool`.
+This implies the history includes the *output* of the previous turn.
+So the current state has `opencl_tool`.
+I need to generate the *next* instruction.
+The user constraint is OpenCL.
+So I need another OpenCL tool.
+Folder: `opencl_image_processing_tool`
+Objective: "Implement a Gaussian blur kernel"
+
+Instruction:
+Initialize a NEW dedicated folder named opencl_image_processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a Gaussian blur kernel'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.
+
+Check constraints:
+- Only 1 instruction? Yes.
+- NEW dedicated folder? Yes (`opencl_image_processing_tool`).
+- Local README.md? Yes.
+- Language: OpenCL? Yes.
+- Never target .github? Yes.
+- Return ONLY instruction text? Yes.
+
+This seems solid.
+The instruction text should be self-contained.
+The format in the history example is:
+"Initialize a NEW dedicated folder named opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a GPU-accelerated particle simulation engine'. You MUST write functional code for this task strictly using this exact programming language: OpenCL."
+
+I will follow this pattern.
+Folder: `opencl_wavelet_tool`
+Objective: "Implement a 1D wavelet transform kernel"
+Or `opencl_sort_tool`.
+Let's go with `opencl_wavelet_tool`.
+Result:
+Initialize a NEW dedicated folder named opencl_wavelet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a 1D wavelet transform kernel'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.
+
+This looks good.
+</think>
+
+Initialize a NEW dedicated folder named opencl_wavelet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a 1D wavelet transform kernel'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.

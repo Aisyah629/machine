@@ -596,3 +596,5 @@ Training Machine
 - Created/Updated module: `prolog_tool` (See `prolog_tool/README.md` for details)
 
 - Created/Updated module: `opencl_tool` (See `opencl_tool/README.md` for details)
+
+- Created/Updated module: `opencl_wavelet_tool` (See `opencl_wavelet_tool/README.md` for details)

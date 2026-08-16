@@ -1,10 +1,24 @@
 # Self-Healing Tool
 
-This tool provides a SystemVerilog implementation of a self-healing mechanism. 
-It is designed to handle edge cases and errors by detecting invalid states 
-and automatically transitioning back to a valid or reset state.
+This tool provides robust error handling and recovery mechanisms for edge cases and unexpected errors in software execution.
 
 ## Features
-- Edge case detection
-- Error handling
-- Self-healing state transitions
+- Edge case identification and handling
+- Automatic error recovery strategies
+- Graceful degradation under high load
+- Logging and monitoring of recovery events
+
+## Usage
+The tool can be integrated into existing systems by including the main.java file.
+
+## Example
+```java
+// Initialize the self-healing system
+SelfHealingSystem system = new SelfHealingSystem();
+
+// Register a component to be monitored
+system.registerComponent("myComponent", new MyComponent());
+
+// Run the system
+system.run();
+```

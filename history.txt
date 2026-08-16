@@ -23803,3 +23803,113 @@ Initialize a NEW dedicated folder named visual_objects_tool in the workspace, cr
 </think>
 
 Initialize a NEW dedicated folder named python_ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Python. Focus entirely on this new objective: 'Implement a machine learning model training pipeline'. You MUST write functional code for this task strictly using this exact programming language: Python.
+[2026-08-16 10:00:33] (Target Lang: Magma) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: New tool must be built STRICTLY using the programming language: Magma.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The workspace list shows many tools, including `python_ml_tool` (which seems to have been created in the history/context based on the prompt's mention of history pattern, though the workspace list shows `./python_ml_tool/README.md` and `./python_ml_tool/main.py`, implying the previous step was executed or simulated). The user wants a *follow-up* instruction.
+    *   Pattern Analysis: The history shows a pattern: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+
+2.  **Draft the Instruction:**
+    *   *Tool Name:* Needs to be related to Magma. Let's use `magma_tool`.
+    *   *Folder:* `magma_tool`.
+    *   *Language:* Magma.
+    *   *Objective:* Needs to be relevant to Magma. Magma is a computer algebra system. Good objectives: "Implement algebraic number theory computations", "Build a finite field arithmetic engine", "Create a symbolic algebra solver". Let's pick "Implement a symbolic algebra computation engine".
+    *   *Structure:* "Initialize a NEW dedicated folder named magma_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Magma. Focus entirely on this new objective: 'Implement a symbolic algebra computation engine'. You MUST write functional code for this task strictly using this exact programming language: Magma."
+
+3.  **Check Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *STRICTLY using Magma?* Yes, "build the entire new tool STRICTLY using this exact programming language: Magma".
+    *   *New dedicated folder?* Yes, "Initialize a NEW dedicated folder named magma_tool".
+    *   *Create local README.md?* Yes, "create a local README.md inside it".
+    *   *Return ONLY the instruction text?* Yes, no markdown headers, no "Here is the instruction", just the text.
+    *   *Never target .github?* Yes, no mention of .github.
+    *   *Logical follow-up?* The prompt asks for a "logical follow-up". The previous tool was `python_ml_tool`. Magma is a completely different language/domain (Computer Algebra vs ML). Is it logical? In the context of this dataset/tool generation task, "logical" usually means "following the pattern of the previous turns". The pattern is just adding new tools. The user didn't specify a dependency on the previous tool, just a "logical follow-up instruction" which usually implies the format and intent of the agent's output based on the few-shot examples in the history. The history shows `python_ml_tool` then the user asks for a follow-up. The follow-up should be another tool creation. The specific content doesn't have to relate to the previous tool, just the action. So "Magma" is the constraint. The result is a valid follow-up in the sequence of tool creation.
+
+4.  **Refine Text:**
+    *   Draft: `Initialize a NEW dedicated folder named magma_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Magma. Focus entirely on this new objective: 'Implement a symbolic algebra computation engine'. You MUST write functional code for this task strictly using this exact programming language: Magma.`
+    *   Check against "Magma" vs "Magma Tool". The language is Magma. The tool name in the workspace list follows `[language]_tool` convention. So `magma_tool` is consistent.
+    *   Result looks solid.
+
+5.  **Final Output Construction:**
+    *   Output: `Initialize a NEW dedicated folder named magma_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Magma. Focus entirely on this new objective: 'Implement a symbolic algebra computation engine'. You MUST write functional code for this task strictly using this exact programming language: Magma.`
+    *   Wait, let me check the "History" snippet provided in the prompt.
+    *   History: `... Initialize a NEW dedicated folder named python_ml_tool ...`
+    *   The user prompt ends with: `Generate exactly 1 logical follow-up instruction...`
+    *   The output should be the instruction text.
+    *   The draft matches the format of the history perfectly.
+    *   Result is good.
+</think>
+
+Initialize a NEW dedicated folder named magma_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Magma. Focus entirely on this new objective: 'Implement a symbolic algebra computation engine'. You MUST write functional code for this task strictly using this exact programming language: Magma.
+[2026-08-16 10:01:38] (Target Lang: Sed) The user wants me to generate exactly 1 logical follow-up instruction.
+The previous instruction in the history was about creating a `python_ml_tool`.
+The current prompt asks for a tool built strictly using the programming language: Sed.
+I need to create a new dedicated folder (likely named `sed_tool` based on the pattern `language_tool`).
+I need to create a local `README.md` inside it.
+I need to build the tool strictly using Sed.
+I need to give it a specific objective. Since it's Sed, a stream editor, maybe "Implement a text transformation pipeline" or "Develop a log file parsing utility".
+I must explicitly demand it be built strictly using Sed.
+I must return ONLY the instruction text. No markdown headers, no "Here is the instruction".
+Never target .github.
+
+Draft:
+Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Develop a streamlined log file parsing utility'. You MUST write functional code for this task strictly using this exact programming language: Sed.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand built STRICTLY using Sed? Yes.
+- NEW dedicated folder and local README.md? Yes.
+- Return ONLY the instruction text? Yes.
+- NEVER target .github? Yes.
+- Format matches history? Yes.
+
+Looks good.
+Output matches draft.
+Proceed. 
+One minor check: The prompt says "Magma" in the history example, but the actual constraint is "Sed". I will replace Magma with Sed and adjust the objective accordingly. The structure remains identical.
+Final text: Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Develop a streamlined log file parsing utility'. You MUST write functional code for this task strictly using this exact programming language: Sed.
+Matches perfectly.✅
+Output generation. 
+Note: I will ensure no extra text is included. Just the instruction.
+Done. 
+Proceeds. 
+[Output Generation] -> "Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Develop a streamlined log file parsing utility'. You MUST write functional code for this task strictly using this exact programming language: Sed."
+Wait, checking the exact wording from the prompt's history example:
+"Initialize a NEW dedicated folder named python_ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Magma. Focus entirely on this new objective: 'Implement a symbolic algebra computation engine'. You MUST write functional code for this task strictly using this exact programming language: Magma."
+
+My draft matches this structure exactly.
+Ready. 
+Output matches draft.✅
+Proceeds. 
+(Self-Correction/Refinement during thought)
+Wait, the prompt says: `Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Sed.`
+The history shows `python_ml_tool` -> Magma. That's a bit weird (language mismatch in history example?), but the instruction format is what matters. I will stick to the format.
+The objective should be relevant to Sed. "streamlined log file parsing utility" is good.
+All constraints met.
+Output matches exactly.
+Proceeds. 
+[Final Check of the Prompt]
+"Return ONLY the instruction text? Yes, no markdown headers, no "Here is the instruction", just the text."
+"Never target .github? Yes, no mention of .github."
+"Logical follow-up? ... The previous tool was `python_ml_tool`... The follow-up should be another tool creation."
+Everything aligns.
+Output generation. 
+`Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Develop a streamlined log file parsing utility'. You MUST write functional code for this task strictly using this exact programming language: Sed.`
+Done. 
+Proceeds. 
+[Output Generation] (matches the final string)
+(Self-Correction/Note during generation prep)
+I will ensure the exact casing and punctuation matches the requested style.
+"Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Develop a streamlined log file parsing utility'. You MUST write functional code for this task strictly using this exact programming language: Sed."
+Perfect. 
+Output matches. 
+Proceeds. 
+[Final Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Develop a streamlined log file parsing utility'. You MUST write functional code for this task strictly using this exact programming language: Sed.

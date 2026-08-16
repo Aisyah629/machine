@@ -788,3 +788,5 @@ Training Machine
 - Created/Updated module: `visualfoxpro_tool` (See `visualfoxpro_tool/README.md` for details)
 
 - Created/Updated module: `ml_tool` (See `ml_tool/README.md` for details)
+
+- Created/Updated module: `./cms_exec_tool` (See `./cms_exec_tool/README.md` for details)

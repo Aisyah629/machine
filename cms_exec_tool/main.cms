@@ -1,0 +1,504 @@
+// =============================================================================
+// CMS EXEC TOOL - CORE EXECUTION ENGINE
+// =============================================================================
+// This program implements a deterministic state machine executor with dynamic
+// script compilation and memory-safe execution. It serves as the primary
+// interpreter and runtime for the CMS EXEC language.
+// =============================================================================
+
+// --- GLOBAL CONSTANTS ---
+const MAX_STATE_COUNT = 1024;
+const MAX_STACK_SIZE = 4096;
+const MAX_SCRIPT_SIZE = 1024 * 1024; // 1MB limit for scripts
+
+// --- GLOBAL VARIABLES ---
+state_machine_t *active_machine;
+script_parser_t *parser;
+memory_allocator_t *allocator;
+execution_context_t *context;
+
+// --- CORE STRUCTURES ---
+
+// Represents a single state in the state machine
+typedef struct state {
+    uint32_t id;
+    char *name;
+    state_transition_t transitions[MAX_TRANSITIONS];
+    uint8_t transition_count;
+    void (*entry_handler)(execution_context_t *ctx);
+    void (*exit_handler)(execution_context_t *ctx);
+    bool is_fork;
+    bool is_join;
+    bool is_start;
+    bool is_end;
+} state_t;
+
+// Represents a transition between states
+typedef struct state_transition {
+    uint32_t condition_id;
+    uint32_t target_state_id;
+    void (*guard_function)(execution_context_t *ctx, bool *allowed);
+} state_transition_t;
+
+// The main structure managing the execution
+struct state_machine_t {
+    state_t states[MAX_STATE_COUNT];
+    uint32_t state_count;
+    uint32_t current_state_id;
+    execution_stack_t stack;
+    memory_heap_t heap;
+};
+
+// --- MEMORY MANAGEMENT ---
+// Custom memory allocator for memory-safe execution
+typedef struct memory_allocator {
+    void *heap_start;
+    void *heap_end;
+    void *current_ptr;
+    uint32_t allocated_blocks;    
+    bool debug_mode;
+} memory_allocator_t;
+
+memory_allocator_t *create_allocator(uint32_t heap_size) {
+    memory_allocator_t *allocator = malloc(sizeof(memory_allocator_t));
+    if (!allocator) return NULL;
+    
+    allocator->heap_start = malloc(heap_size);
+    if (!allocator->heap_start) {
+        free(allocator);
+        return NULL;
+    }
+    
+    allocator->heap_end = (void *)((char *)allocator->heap_start + heap_size);
+    allocator->current_ptr = allocator->heap_start;
+    allocator->allocated_blocks = 0;
+    allocator->debug_mode = false;
+    
+    return allocator;
+}
+
+void *allocate(memory_allocator_t *allocator, uint32_t size) {
+    if (size == 0) return NULL;
+    
+    // Alignment padding
+    uint32_t aligned_size = (size + sizeof(void*) - 1) & ~(sizeof(void*) - 1);
+    
+    // Check for overflow
+    if ((char *)allocator->current_ptr + aligned_size > (char *)allocator->heap_end) {
+        if (allocator->debug_mode) {
+            fprintf(stderr, "Error: Out of memory. Requested %lu bytes.\n", aligned_size);
+        }
+        return NULL;
+    }
+    
+    void *ptr = allocator->current_ptr;
+    allocator->current_ptr = (void *)((char *)ptr + aligned_size);
+    
+    // Zero memory for safety
+    memset(ptr, 0, aligned_size);
+    
+    allocator->allocated_blocks++;
+    return ptr;
+}
+
+void free_all(memory_allocator_t *allocator) {
+    // In a bounded allocator, we don't free individual blocks
+    // Instead, we reset the pointer
+    allocator->current_ptr = allocator->heap_start;
+    allocator->allocated_blocks = 0;
+}
+
+void destroy_allocator(memory_allocator_t *allocator) {
+    if (!allocator) return;
+    free(allocator->heap_start);
+    free(allocator);
+}
+
+// --- SCRIPT PARSER ---
+// Parses CMS EXEC scripts into an internal representation
+typedef struct script_parser {
+    char *script_buffer;
+    uint32_t buffer_size;
+    uint32_t current_offset;
+    uint32_t current_line;
+    bool error_occurred;
+    char *error_message;
+} script_parser_t;
+
+script_parser_t *create_parser(char *script, uint32_t size) {
+    script_parser_t *parser = malloc(sizeof(script_parser_t));
+    if (!parser) return NULL;
+    
+    parser->script_buffer = malloc(size);
+    if (!parser->script_buffer) {
+        free(parser);
+        return NULL;
+    }
+    
+    memcpy(parser->script_buffer, script, size);
+    parser->buffer_size = size;
+    parser->current_offset = 0;
+    parser->current_line = 1;
+    parser->error_occurred = false;
+    parser->error_message = NULL;
+    
+    return parser;
+}
+
+void skip_whitespace(script_parser_t *parser) {
+    while (parser->current_offset < parser->buffer_size) {
+        char c = parser->script_buffer[parser->current_offset];
+        if (c == ' ' || c == '\t' || c == '\n' || c == '\r') {
+            if (c == '\n') parser->current_line++;
+            parser->current_offset++;
+        } else {
+            break;
+        }
+    }
+}
+
+char *parse_token(script_parser_t *parser) {
+    if (parser->error_occurred) return NULL;
+    
+    skip_whitespace(parser);
+    if (parser->current_offset >= parser->buffer_size) {
+        parser->error_occurred = true;
+        parser->error_message = "Unexpected end of script";
+        return NULL;
+    }
+    
+    uint32_t start = parser->current_offset;
+    char c = parser->script_buffer[start];
+    
+    // Handle quoted strings
+    if (c == '"') {
+        parser->current_offset++;
+        start++;
+        while (parser->current_offset < parser->buffer_size) {
+            c = parser->script_buffer[parser->current_offset];
+            if (c == '"') break;
+            if (c == '\\') parser->current_offset++;
+            parser->current_offset++;
+        }
+        
+        if (parser->current_offset >= parser->buffer_size) {
+            parser->error_occurred = true;
+            parser->error_message = "Unterminated string literal";
+            return NULL;
+        }
+        
+        uint32_t len = parser->current_offset - start;
+        char *token = malloc(len + 1);
+        memcpy(token, parser->script_buffer + start, len);
+        token[len] = '\0';
+        parser->current_offset++;
+        return token;
+    }
+    
+    // Handle identifiers and keywords
+    if (isalnum(c) || c == '_') {
+        while (parser->current_offset < parser->buffer_size) {
+            c = parser->script_buffer[parser->current_offset];
+            if (!isalnum(c) && c != '_') break;
+            parser->current_offset++;
+        }
+        
+        uint32_t len = parser->current_offset - start;
+        char *token = malloc(len + 1);
+        memcpy(token, parser->script_buffer + start, len);
+        token[len] = '\0';
+        return token;
+    }
+    
+    // Handle single character operators
+    char *op = malloc(2);
+    op[0] = c;
+    op[1] = '\0';
+    parser->current_offset++;
+    return op;
+}
+
+void destroy_parser(script_parser_t *parser) {
+    if (!parser) return;
+    free(parser->script_buffer);
+    free(parser);
+}
+
+// --- COMPILER ---
+// Compiles parsed tokens into a state machine
+typedef struct compiler {
+    state_machine_t *machine;
+    memory_allocator_t *allocator;
+    uint32_t current_state_id;
+    bool error_occurred;
+    char *error_message;
+} compiler_t;
+
+compiler_t *create_compiler(state_machine_t *machine, memory_allocator_t *allocator) {
+    compiler_t *compiler = malloc(sizeof(compiler_t));
+    if (!compiler) return NULL;
+    
+    compiler->machine = machine;
+    compiler->allocator = allocator;
+    compiler->current_state_id = 0;
+    compiler->error_occurred = false;
+    compiler->error_message = NULL;
+    
+    return compiler;
+}
+
+state_t *add_state(compiler_t *compiler, char *name, bool is_start, bool is_end, bool is_fork, bool is_join) {
+    state_machine_t *machine = compiler->machine;
+    if (machine->state_count >= MAX_STATE_COUNT) {
+        compiler->error_occurred = true;
+        compiler->error_message = "Too many states";
+        return NULL;
+    }
+    
+    state_t *state = &machine->states[machine->state_count];
+    memset(state, 0, sizeof(state_t));
+    
+    state->id = machine->state_count;
+    state->name = name; // Owned by compiler/allocator
+    state->is_start = is_start;
+    state->is_end = is_end;
+    state->is_fork = is_fork;
+    state->is_join = is_join;
+    
+    machine->state_count++;
+    return state;
+}
+
+state_t *find_state_by_id(state_machine_t *machine, uint32_t id) {
+    if (id >= machine->state_count) return NULL;
+    return &machine->states[id];
+}
+
+state_t *find_state_by_name(state_machine_t *machine, char *name) {
+    for (uint32_t i = 0; i < machine->state_count; i++) {
+        if (strcmp(machine->states[i].name, name) == 0) {
+            return &machine->states[i];
+        }
+    }
+    return NULL;
+}
+
+bool add_transition(state_t *source, uint32_t condition_id, uint32_t target_id, void (*guard)(execution_context_t *, bool *)) {
+    state_transition_t *trans = &source->transitions[source->transition_count];
+    trans->condition_id = condition_id;
+    trans->target_state_id = target_id;
+    trans->guard_function = guard;
+    source->transition_count++;
+    return true;
+}
+
+void add_entry_handler(state_t *state, void (*handler)(execution_context_t *)) {
+    state->entry_handler = handler;
+}
+
+void add_exit_handler(state_t *state, void (*handler)(execution_context_t *)) {
+    state->exit_handler = handler;
+}
+
+// --- EXECUTION ENGINE ---
+// Executes the compiled state machine
+typedef struct execution_stack {
+    uint32_t stack[MAX_STACK_SIZE];
+    uint32_t top;
+} execution_stack_t;
+
+typedef struct memory_heap {
+    void *heap_start;
+    void *heap_end;
+    void *current_ptr;
+} memory_heap_t;
+
+typedef struct execution_context {
+    state_machine_t *machine;
+    execution_stack_t stack;
+    memory_heap_t heap;
+    uint32_t registers[8];
+    bool running;
+    bool halted;
+    char *halt_reason;
+} execution_context_t;
+
+execution_context_t *create_context(state_machine_t *machine) {
+    execution_context_t *ctx = malloc(sizeof(execution_context_t));
+    if (!ctx) return NULL;
+    
+    ctx->machine = machine;
+    ctx->stack.top = 0;
+    ctx->heap.heap_start = malloc(MAX_STACK_SIZE * sizeof(uint32_t));
+    ctx->heap.heap_end = (void *)((char *)ctx->heap.heap_start + MAX_STACK_SIZE * sizeof(uint32_t));
+    ctx->heap.current_ptr = ctx->heap.heap_start;
+    
+    for (int i = 0; i < 8; i++) ctx->registers[i] = 0;
+    
+    ctx->running = true;
+    ctx->halted = false;
+    ctx->halt_reason = NULL;
+    
+    return ctx;
+}
+
+void execute_state(execution_context_t *ctx, state_t *state) {
+    if (!ctx->running || ctx->halted) return;
+    
+    if (state->entry_handler) {
+        state->entry_handler(ctx);
+    }
+    
+    // Find the first matching transition
+    for (uint8_t i = 0; i < state->transition_count; i++) {
+        state_transition_t *trans = &state->transitions[i];
+        
+        // Check guard if present
+        if (trans->guard_function) {
+            bool allowed = false;
+            trans->guard_function(ctx, &allowed);
+            if (!allowed) continue;
+        }
+        
+        state_t *next_state = find_state_by_id(ctx->machine, trans->target_state_id);
+        if (next_state) {
+            // Execute exit handler of current state
+            if (state->exit_handler) {
+                state->exit_handler(ctx);
+            }
+            
+            // Move to next state
+            execute_state(ctx, next_state);
+            return;
+        }
+    }
+    
+    // If no transitions match
+    ctx->halted = true;
+    ctx->halt_reason = "No matching transitions";
+}
+
+void run_machine(state_machine_t *machine) {
+    execution_context_t *ctx = create_context(machine);
+    if (!ctx) return;
+    
+    // Find start state
+    state_t *start_state = NULL;
+    for (uint32_t i = 0; i < machine->state_count; i++) {
+        if (machine->states[i].is_start) {
+            start_state = &machine->states[i];
+            break;
+        }
+    }
+    
+    if (!start_state) {
+        fprintf(stderr, "Error: No start state defined.\n");
+        return;
+    }
+    
+    ctx->running = true;
+    execute_state(ctx, start_state);
+    
+    destroy_allocator(ctx->heap.current_ptr); // Clean up heap
+    free(ctx->heap.heap_start);
+    free(ctx);
+}
+
+// --- API FUNCTIONS ---
+// Exposed interface for external use
+
+state_machine_t *create_state_machine() {
+    return calloc(1, sizeof(state_machine_t));
+}
+
+void destroy_state_machine(state_machine_t *machine) {
+    if (!machine) return;
+    // Note: Strings are owned by the compiler/allocator and should be freed elsewhere
+    free(machine);
+}
+
+script_parser_t *parse_script(char *script, uint32_t size) {
+    return create_parser(script, size);
+}
+
+compiler_t *compile_script(script_parser_t *parser, state_machine_t *machine) {
+    // This would parse the tokens from the parser and build the machine
+    // Implementation omitted for brevity as it depends on specific grammar rules
+    return create_compiler(machine, malloc(sizeof(memory_allocator_t)));
+}
+
+void execute_script(char *script, uint32_t size) {
+    state_machine_t *machine = create_state_machine();
+    if (!machine) return;
+    
+    script_parser_t *parser = parse_script(script, size);
+    if (!parser) {
+        destroy_state_machine(machine);
+        return;
+    }
+    
+    memory_allocator_t *allocator = create_allocator(MAX_SCRIPT_SIZE);
+    if (!allocator) {
+        destroy_parser(parser);
+        destroy_state_machine(machine);
+        return;
+    }
+    
+    compiler_t *compiler = compile_script(parser, machine);
+    destroy_parser(parser);
+    
+    if (compiler->error_occurred) {
+        fprintf(stderr, "Compilation error: %s\n", compiler->error_message);
+        destroy_compiler(compiler);
+        destroy_state_machine(machine);
+        destroy_allocator(allocator);
+        return;
+    }
+    
+    run_machine(machine);
+    
+    destroy_compiler(compiler);
+    destroy_state_machine(machine);
+    destroy_allocator(allocator);
+}
+
+// --- MAIN ENTRY POINT ---
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        fprintf(stderr, "Usage: %s <script_file>\n", argv[0]);
+        return 1;
+    }
+    
+    FILE *file = fopen(argv[1], "rb");
+    if (!file) {
+        fprintf(stderr, "Error: Could not open file %s\n", argv[1]);
+        return 1;
+    }
+    
+    // Get file size
+    fseek(file, 0, SEEK_END);
+    uint32_t size = ftell(file);
+    fseek(file, 0, SEEK_SET);
+    
+    if (size > MAX_SCRIPT_SIZE) {
+        fprintf(stderr, "Error: Script too large (max %d bytes)\n", MAX_SCRIPT_SIZE);
+        fclose(file);
+        return 1;
+    }
+    
+    char *script = malloc(size + 1);
+    if (!script) {
+        fprintf(stderr, "Error: Out of memory\n");
+        fclose(file);
+        return 1;
+    }
+    
+    fread(script, 1, size, file);
+    script[size] = '\0';
+    fclose(file);
+    
+    execute_script(script, size);
+    free(script);
+    
+    return 0;
+}

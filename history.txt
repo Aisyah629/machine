@@ -31552,3 +31552,37 @@ Initialize a NEW dedicated folder named mad_i_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ML. Focus entirely on this new objective: 'Implement a functional language compiler backend with type inference and code generation.'. You MUST write code for this task strictly using this exact programming language: ML.
+[2026-08-16 19:44:56] (Target Lang: CMS EXEC) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using the programming language: CMS EXEC.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a long list of files (likely the result of a `find` or similar command) and a History. The current task is to generate an instruction for an "Autonomous AI" based on these constraints. The History mentions `ml_tool` in a confusing way, but the prompt says "Generate exactly 1 logical follow-up instruction" based on the provided text. The provided text contains a massive list of directories like `./c_tool`, `./cpp_tool`, `./bash_tool`, etc. It looks like a workspace full of tools.
+    *   Check existing files: Is `cms_exec_tool` already there? Scanning the provided text... I see `./cms_tool`? No, I see `./chapel_tool`, `./chill_tool`, `./cla_tool`? No. I see `./c_tool`, `./cpp_tool`. I don't see `./cms_exec_tool` or `./cms_exec` in the list. The list has `./cms_tool`? No. Let's scan carefully.
+    *   Scanning for `cms`: `./chapel_tool`, `./chill_tool`, `./cipher_tool`? No. `./chuck_tool`. `./chomski_tool`. `./chr_tool`. `./cip_tool`? No.
+    *   Result: `cms_exec_tool` does not appear in the list. So creating a NEW folder is valid.
+    *   Language: CMS EXEC.
+    *   Structure: `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CMS EXEC. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this exact programming language: CMS EXEC.`
+    *   Folder Name: `cms_exec_tool` seems consistent with the naming convention of the workspace (`_tool` suffix).
+    *   Objective: Needs to be logical for CMS EXEC. CMS EXEC might be a control language or execution language. A plausible objective could be "Implement a high-performance control system executor with real-time monitoring capabilities" or "Develop a robust script interpreter for automated execution workflows". Given the style of the previous example ("Implement a functional language compiler backend..."), I should create a technical objective. "Implement a deterministic state machine executor with dynamic script compilation and memory-safe execution." fits well.
+    *   Drafting the instruction: "Initialize a NEW dedicated folder named cms_exec_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CMS EXEC. Focus entirely on this new objective: 'Implement a deterministic state machine executor with dynamic script compilation and memory-safe execution.'. You MUST write code for this task strictly using this exact programming language: CMS EXEC."
+    *   Review against constraints:
+        *   Exactly 1 instruction? Yes.
+        *   STRICTLY CMS EXEC? Yes.
+        *   NEW dedicated folder? Yes (`cms_exec_tool`).
+        *   Local README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   Never target .github? Yes.
+        *   Logical follow-up? Yes, adding a tool to the collection.
+    *   Output generation.
+    *   Result: `Initialize a NEW dedicated folder named cms_exec_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CMS EXEC. Focus entirely on this new objective: 'Implement a deterministic state machine executor with dynamic script compilation and memory-safe execution.'. You MUST write code for this task strictly using this exact programming language: CMS EXEC.`
+    *   Wait, check the previous example in the prompt. The example output was: `Initialize a NEW dedicated folder named ml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ML. Focus entirely on this new objective: 'Implement a functional language compiler backend with type inference and code generation.'. You MUST write code for this task strictly using this exact programming language: ML.`
+    *   My draft matches this structure perfectly.
+    *   One more check: Is `cms_exec_tool` definitely not in the list? The list is long. I saw `./c_tool`, `./c_shell_tool`, `./c_string_tool`, `./cache_tool`, `./candle_tool`, `./cayenne_tool`, `./cduce_tool`, `./cel_tool`, `./cesil_tool`, `./cfml_tool`, `./cg_core`, `./chain_tool`, `./chapel_tool`, `./chill_tool`, `./chip8_tool`, `./chomski_tool`, `./chr_tool`, `./chuck_tool`, `./cl_tool`, `./clarion_tool`, `./clean_tool`, `./clipper_tool`, `./clist_tool`, `./clojure_tool`, `./cobra_tool`, `./cola_tool`, `./comal_tool`, `./combined_programming_language_tool`, `./combined_tool`. No `cms_exec_tool`.
+    *   Conclusion: Safe to proceed.
+    *   Output text construction.
+</think>
+
+Initialize a NEW dedicated folder named cms_exec_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CMS EXEC. Focus entirely on this new objective: 'Implement a deterministic state machine executor with dynamic script compilation and memory-safe execution.'. You MUST write code for this task strictly using this exact programming language: CMS EXEC.

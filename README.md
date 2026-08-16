@@ -532,3 +532,5 @@ Training Machine
 - Created/Updated module: `spk_tool` (See `spk_tool/README.md` for details)
 
 - Created/Updated module: `c_shell_tool` (See `c_shell_tool/README.md` for details)
+
+- Created/Updated module: `vbscript_tool` (See `vbscript_tool/README.md` for details)

@@ -1,48 +1,57 @@
-/**
- * ISWIM Tool - main.iswim
- * A functional programming environment focused on combinatory logic theory
- * and symbolic computation frameworks.
- */
+/ ISWIM Symbolic Computation Engine
+; Hierarchical data structure processor
+; Nested expression evaluator
 
-/*
- * ISWIM (Programming Language For Mathematics) Syntax Simulation
- * This script demonstrates basic combinatory logic and lambda calculus concepts.
- */
+; Define basic data types and structures
+type expr = Atom | Cons of expr * expr | Lambda of atom * expr | App of expr * expr
 
-// Define basic combinators
-let
-    // S combinator: S x y z = x z (y z)
-    S = lambda x . lambda y . lambda z . x z (y z);
+; Utility functions for symbolic manipulation
+function head(e: expr): expr =
+  case e of
+    Cons(h, _) -> h
+    _ -> Error("Invalid list structure")
+  end
 
-    // K combinator: K x y = x
-    K = lambda x . lambda y . x;
+function tail(e: expr): expr =
+  case e of
+    Cons(_, t) -> t
+    _ -> Error("Invalid list structure")
+  end
 
-    // I combinator (identity): I x = x, defined as K K
-    I = K K;
+; Evaluate nested expressions with substitution
+function eval(e: expr, env: map<atom, expr>): expr =
+  case e of
+    Atom(s) -> lookup(s, env)
+    Lambda(x, body) -> Lambda(x, body)
+    App(f, a) ->
+      let fval = eval(f, env)
+      let aval = eval(a, env)
+      case fval of
+        Lambda(x, body) -> eval(body, extend(x, aval, env))
+        _ -> Error("Non-function application")
+      end
+    Cons(h, t) -> Cons(eval(h, env), eval(t, env))
+  end
 
-    // Apply a function to an argument
-    apply = lambda f . lambda x . f x;
+; List processing helpers
+function cons(h: expr, t: expr): expr = Cons(h, t)
+function nil(): expr = Cons(Atom(nil), Atom(nil))
 
-    // Example reduction
-    // Let's try to simplify I x
-    // I x = (K K) x = K x = x
+; Extend environment with new binding
+function extend(x: atom, v: expr, env: map<atom, expr>): map<atom, expr> =
+  update(x, v, env)
 
-    // Define a simple expression
-    expr1 = apply I 42;
-    expr2 = apply (apply K 1) 2;
+; Lookup symbol in environment
+function lookup(x: atom, env: map<atom, expr>): expr =
+  if isdefined(x, env) then env[x] else Atom(x)
 
-    // Output results
-    print "I 42 = ";
-    print expr1;
+; Entry point - demonstrate hierarchical processing
+function main(): expr =
+  let base_env = empty_map()
+  let sample_list = cons(Atom(x), cons(Atom(y), nil()))
+  let result = eval(sample_list, base_env)
+  result
+end
 
-    print "K 1 2 = ";
-    print expr2;
-
-    // Test S combinator: S K K x = K x (K x) = x
-    S_KK = apply (apply S K) K;
-    expr3 = apply S_KK 99;
-
-    print "S K K 99 = ";
-    print expr3;
-
-end;
+; System initialization
+initialize(main)

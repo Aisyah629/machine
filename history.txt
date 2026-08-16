@@ -32803,3 +32803,45 @@ Result: Initialize a NEW dedicated folder named pure_tool in the workspace, crea
 </think>
 
 Initialize a NEW dedicated folder named pure_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pure. Focus entirely on this new objective: 'Develop a Pure language application for symbolic mathematical computation and polynomial ring manipulation.'. You MUST write code for this task strictly using this exact programming language: Pure.
+[2026-08-16 20:56:13] (Target Lang: HLSL) The user wants a follow-up instruction based on the provided format.
+The instruction must:
+1. Target a NEW dedicated folder named `hlsl_tool`.
+2. Create a local `README.md` inside it.
+3. Build the tool STRICTLY using the programming language `HLSL`.
+4. Focus on a specific objective related to HLSL.
+5. Output ONLY the instruction text.
+6. Never target `.github`.
+
+Analysis of the request:
+- Language: HLSL (High-Level Shader Language).
+- Folder: `hlsl_tool`.
+- README: Yes.
+- Constraint: STRICTLY using HLSL.
+- Objective: Needs to be relevant to HLSL (e.g., shader development, graphics programming, GPU computing).
+- Output format: A single string instruction.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL. Focus entirely on this new objective: 'Develop an HLSL application for advanced real-time graphics rendering and compute shader optimization.'. You MUST write code for this task strictly using this exact programming language: HLSL."
+
+Checking constraints:
+- `hlsl_tool` is not in the list? Scanning list... `hlsl_tool` is not present. `hlsl` extension is not present. Safe.
+- STRICTLY using HLSL? Yes.
+- NEW folder? Yes.
+- Local README? Yes.
+- Return ONLY instruction text? Yes.
+- Never target `.github`? Yes.
+- Exactly 1 follow-up? Yes.
+
+Refining the objective to be more specific to HLSL capabilities:
+Objective: "Develop an HLSL application for advanced real-time graphics rendering and compute shader optimization." seems good. Or "Create an HLSL application for high-performance GPU compute operations and shader graph generation."
+Let's stick to something standard: "Develop an HLSL application for high-performance graphics shader development and real-time visual simulation."
+
+Final Polish:
+"Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL. Focus entirely on this new objective: 'Develop an HLSL application for high-performance graphics shader development and real-time visual simulation.'. You MUST write code for this task strictly using this exact programming language: HLSL."
+
+Double check: The user provided a history example where the output was just the text. The prompt asks to "Generate exactly 1 logical follow-up instruction... Return ONLY the instruction text."
+
+Result looks solid.
+</think>
+
+Initialize a NEW dedicated folder named hlsl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: HLSL. Focus entirely on this new objective: 'Develop an HLSL application for high-performance graphics shader development and real-time visual simulation.'. You MUST write code for this task strictly using this exact programming language: HLSL.

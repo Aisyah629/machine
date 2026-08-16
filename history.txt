@@ -22751,3 +22751,45 @@ Initialize a NEW dedicated folder named m2001_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named omnimark_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OmniMark. Focus entirely on this new objective: 'Develop a high-performance text transformation and data extraction engine optimized for processing massive XML and SGML documents'. You MUST write functional code for this task strictly using this exact programming language: OmniMark.
+[2026-08-16 08:20:51] (Target Lang: Visual Prolog) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built STRICTLY using the language: `Visual Prolog`.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local `README.md` inside that folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Context: The workspace lists many tools, including `visual_prolog_tool` (wait, let me check the list).
+        *   Scanning list: `visual_fortran_tool`, `visualfoxpro_tool`, `visualjsharp_tool`.
+        *   Result: `visual_prolog_tool` is NOT in the list. This confirms "Visual Prolog" is a new tool request, so the "NEW dedicated folder" constraint applies.
+
+2.  **Draft the Instruction Text:**
+    *   *Structure:* Initialize NEW folder -> Create README.md -> Build tool in Language -> Objective/Task.
+    *   *Language:* Visual Prolog.
+    *   *Folder Name:* `visual_prolog_tool` (following the naming convention of existing tools like `c_tool`, `prolog_tool`, etc.).
+    *   *Objective:* Needs to be realistic for Visual Prolog. Visual Prolog is a logic programming language, often used for AI, parsing, expert systems, and enterprise applications.
+    *   *Drafting:* "Initialize a NEW dedicated folder named `visual_prolog_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Prolog. Focus entirely on this new objective: 'Develop a robust expert system shell with advanced rule engine and pattern matching capabilities optimized for complex knowledge representation and inference tasks'. You MUST write functional code for this task strictly using this exact programming language: Visual Prolog."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, it's a single paragraph.
+    *   *STRICTLY Visual Prolog?* Yes, mentioned explicitly.
+    *   *NEW dedicated folder?* Yes, `visual_prolog_tool`.
+    *   *Local README.md?* Yes, mentioned.
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes, `visual_prolog_tool` is not `.github`.
+    *   *Context Check:* The previous instruction was about `omnimark_tool`. The output format matches the pattern established by the example in the history (though the history shows a self-correction, the user wants the final output text). The user prompt asks to "Generate exactly 1 logical follow-up instruction", implying I should output the text that would be the next step.
+
+4.  **Refine Language/Style:**
+    *   The style should match the pattern: "Initialize a NEW dedicated folder named... create a local README.md... build... STRICTLY using... Visual Prolog. Focus... 'Objective'. You MUST write functional code... strictly using... Visual Prolog."
+    *   *Refinement:* `Initialize a NEW dedicated folder named visual_prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Prolog. Focus entirely on this new objective: 'Construct a sophisticated knowledge base management system with bidirectional reasoning and automated theorem proving capabilities'. You MUST write functional code for this task strictly using this exact programming language: Visual Prolog.`
+    *   *Objective Check:* "Knowledge base management", "bidirectional reasoning", "theorem proving" fits Visual Prolog well.
+    *   *Final Text Construction:* `Initialize a NEW dedicated folder named visual_prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Prolog. Focus entirely on this new objective: 'Construct a sophisticated knowledge base management system with bidirectional reasoning and automated theorem proving capabilities'. You MUST write functional code for this task strictly using this exact programming language: Visual Prolog.`
+
+5.  **Final Polish (Mental Output Representation):**
+    *   Result: `Initialize a NEW dedicated folder named visual_prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Prolog. Focus entirely on this new objective: 'Construct a sophisticated knowledge base management system with bidirectional reasoning and automated theorem proving capabilities'. You MUST write functional code for this task strictly using this exact programming language: Visual Prolog.`
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named visual_prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Prolog. Focus entirely on this new objective: 'Construct a sophisticated knowledge base management system with bidirectional reasoning and automated theorem proving capabilities'. You MUST write functional code for this task strictly using this exact programming language: Visual Prolog.

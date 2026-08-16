@@ -1,0 +1,72 @@
+// ABSYS Hardware Abstraction Layer Implementation
+// Language: ABSYS
+
+MODULE HAL;
+
+IMPORT memory;
+IMPORT interrupt;
+IMPORT device;
+
+TYPE
+    RegisterBlock = RECORD
+        addr: UNSIGNED;
+        size: UNSIGNED;
+        data: BYTE[256];
+    END;
+
+    Handler = PROCEDURE(IN status: INTEGER);
+
+GLOBAL
+    baseAddress: UNSIGNED := 0x40000000;
+    irqHandlers: ARRAY[16] OF Handler := [NULL];
+
+PROCEDURE InitHAL(): VOID;
+BEGIN
+    memory.mapRegion(baseAddress, 0x1000, memory.READ_WRITE);
+    interrupt.enableController();
+    device.registerBase(baseAddress);
+END;
+
+PROCEDURE ReadRegister(register: UNSIGNED): UNSIGNED;
+VAR
+    offset: UNSIGNED;
+    val: UNSIGNED;
+BEGIN
+    IF register < 0x100 THEN
+        offset := baseAddress + register;
+        val := memory.readWord(offset);
+        RETURN val;
+    END;
+    RETURN 0;
+END;
+
+PROCEDURE WriteRegister(register: UNSIGNED, value: UNSIGNED): VOID;
+VAR
+    offset: UNSIGNED;
+BEGIN
+    IF register < 0x100 THEN
+        offset := baseAddress + register;
+        memory.writeWord(offset, value);
+    END;
+END;
+
+PROCEDURE RegisterIRQ(irqNum: UNSIGNED, handler: Handler): INTEGER;
+BEGIN
+    IF irqNum < 16 THEN
+        irqHandlers[irqNum] := handler;
+        interrupt.enableLine(irqNum);
+        RETURN 0;
+    END;
+    RETURN -1;
+END;
+
+PROCEDURE IRQDispatcher(irqNum: UNSIGNED, status: INTEGER): VOID;
+BEGIN
+    IF irqNum < 16 AND irqHandlers[irqNum] <> NULL THEN
+        irqHandlers[irqNum](status);
+    END;
+END;
+
+BEGIN
+    InitHAL();
+END MODULE HAL;

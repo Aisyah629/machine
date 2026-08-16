@@ -536,3 +536,5 @@ Training Machine
 - Created/Updated module: `vbscript_tool` (See `vbscript_tool/README.md` for details)
 
 - Created/Updated module: `lynx_tool` (See `lynx_tool/README.md` for details)
+
+- Created/Updated module: `xojo_tool` (See `xojo_tool/README.md` for details)

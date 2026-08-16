@@ -21121,3 +21121,40 @@ Initialize a NEW dedicated folder named vbscript_tool in the workspace, create a
 </think>
 
 Initialize a NEW dedicated folder named lynx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx. Focus entirely on this new objective: 'Develop a robust system automation and management framework using Lynx'. You MUST write functional code for this task strictly using this exact programming language: Lynx.
+[2026-08-16 05:27:02] (Target Lang: Xojo) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand the new tool be built STRICTLY using "Xojo".
+    *   Constraint: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a workspace structure showing many existing tools (like `lynx_tool`, `c_tool`, etc.) and a history of a previous action involving `lynx_tool`. The prompt asks for a "logical follow-up instruction". Since the previous action (in the history) was creating `lynx_tool`, a logical follow-up could be creating a related tool, a complementary tool, or a tool for a different purpose but following the same pattern. The specific language constraint is "Xojo".
+
+2.  **Drafting the Instruction:**
+    *   *New Folder Name:* Needs to be distinct. Looking at the pattern, folders are named `{language}_tool`. So, `xojo_tool` is a logical name.
+    *   *Language:* Xojo.
+    *   *Objective:* Needs to be a plausible objective for a tool. Since `lynx_tool` was about "system automation", `xojo_tool` could be about "cross-platform desktop application development" or "Rapid Application Development", as Xojo is known for that. Let's pick a generic but robust objective like "Develop a cross-platform desktop application framework using Xojo".
+    *   *Mandatory Phrasing:* "build the entire new tool STRICTLY using this exact programming language: Xojo" and "write functional code... strictly using this exact programming language: Xojo".
+    *   *Structure:* "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [language]. Focus entirely on this new objective: '[objective]'. You MUST write functional code for this task strictly using this exact programming language: [language]."
+
+3.  **Refining the Text:**
+    *   *Draft:* Initialize a NEW dedicated folder named xojo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Xojo. Focus entirely on this new objective: 'Develop a cross-platform desktop application framework using Xojo'. You MUST write functional code for this task strictly using this exact programming language: Xojo.
+    *   *Check against constraints:*
+        *   Exactly 1 instruction? Yes.
+        *   Explicitly demand STRICTLY using Xojo? Yes ("STRICTLY using this exact programming language: Xojo").
+        *   NEW dedicated folder? Yes ("NEW dedicated folder named xojo_tool").
+        *   Local README.md? Yes ("create a local README.md inside it").
+        *   Return ONLY instruction text? Yes (Output should be just the text).
+        *   Never target .github? Yes (No mention of .github).
+        *   Logical follow-up? Yes, creates a new tool folder similar to existing ones, following the pattern of the history where a new tool was created.
+
+4.  **Final Polish:**
+    *   The text looks solid.
+    *   Result: `Initialize a NEW dedicated folder named xojo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Xojo. Focus entirely on this new objective: 'Develop a cross-platform desktop application framework using Xojo'. You MUST write functional code for this task strictly using this exact programming language: Xojo.`
+
+5.  **Output Generation:**
+    *   Output the drafted text.
+</think>
+
+Initialize a NEW dedicated folder named xojo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Xojo. Focus entirely on this new objective: 'Develop a cross-platform desktop application framework using Xojo'. You MUST write functional code for this task strictly using this exact programming language: Xojo.

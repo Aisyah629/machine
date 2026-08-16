@@ -24121,3 +24121,58 @@ Resulting string looks solid.
 </think>
 
 Initialize a NEW dedicated folder named natural_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NATURAL. Focus entirely on this new objective: 'Construct a high-fidelity enterprise data processing and report generation system utilizing Adabas integration and structured query capabilities'. You MUST write functional code for this task strictly using this exact programming language: NATURAL.
+[2026-08-16 10:19:30] (Target Lang: Mirah) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: The follow-up instruction must explicitly demand the new tool be built STRICTLY using the exact programming language: Mirah.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a list of tools (many directories) and a history snippet showing a pattern for "NATURAL". The history shows a format like "Initialize a NEW dedicated folder named natural_tool...".
+    *   Output Format: Just the instruction string.
+
+2.  **Analyze the Pattern from History:**
+    *   History example: "Initialize a NEW dedicated folder named natural_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NATURAL. Focus entirely on this new objective: '...'. You MUST write functional code for this task strictly using this exact programming language: NATURAL."
+    *   Structure:
+        *   Action: Initialize a NEW dedicated folder named `[tool_name]_tool`.
+        *   Action: Create a local README.md inside it.
+        *   Action: Build the entire new tool STRICTLY using this exact programming language: `[Language]`.
+        *   Focus: Focus entirely on this new objective: '[Objective Text]'.
+        *   Mandatory: You MUST write functional code for this task strictly using this exact programming language: `[Language]`.
+
+3.  **Draft the Instruction based on Constraints:**
+    *   *Language:* Mirah.
+    *   *Folder Name:* Based on the pattern, it should be `mirah_tool`.
+    *   *Objective:* The prompt asks for a logical follow-up instruction. It doesn't specify a *new* objective text in the final prompt, but usually, these tasks imply generating a specific objective related to the tool being built or just reusing the pattern. The prompt says "Generate exactly 1 logical follow-up instruction." It doesn't provide a new objective string like "Construct a high-fidelity..." was in the history example. However, looking at the prompt structure, the user is asking me to *act* as the AI generating the instruction. The prompt text ends with "Generate exactly 1 logical follow-up instruction...".
+    *   *Self-Correction on Objective:* The prompt doesn't give me a specific objective to use for the follow-up. It just says "Generate exactly 1 logical follow-up instruction." Usually, in these chain-of-thought or prompt-generation contexts, if the objective isn't provided, I might need to invent a plausible one or just use the structure. However, the prompt says "Focus entirely on this new objective..." in the history example. The current prompt is the instruction to the AI. The AI needs to output the *next* instruction.
+    *   *Inference:* Since the user didn't provide a specific objective for the Mirah tool, I should probably generate a generic but functional objective suitable for Mirah (a JVM-based language) or just follow the structure with a placeholder objective?
+    *   *Reviewing the "Constraints check" in the thought block of the user's example:* The user's example has a thought block where the AI decides the folder name and objective. The current prompt is asking me to output the instruction.
+    *   *Safe Bet:* I will create an objective that fits Mirah. Mirah is a statically typed JVM language. A good objective would be something like "Construct a robust enterprise-grade data serialization and processing engine leveraging the JVM ecosystem with strict type safety."
+    *   *Drafting Text:*
+        "Initialize a NEW dedicated folder named mirah_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mirah. Focus entirely on this new objective: 'Construct a robust enterprise-grade data serialization and processing engine leveraging the JVM ecosystem with strict type safety'. You MUST write functional code for this task strictly using this exact programming language: Mirah."
+
+4.  **Refine Text to Match Constraints:**
+    *   *Constraint Check:*
+        *   "Initialize a NEW dedicated folder named mirah_tool..." -> OK.
+        *   "...create a local README.md inside it..." -> OK.
+        *   "...build the entire new tool STRICTLY using this exact programming language: Mirah." -> OK.
+        *   "Focus entirely on this new objective: '...'" -> OK.
+        *   "You MUST write functional code for this task strictly using this exact programming language: Mirah." -> OK.
+        *   "Return ONLY the instruction text." -> OK.
+        *   "NEVER target the .github directory." -> OK (not mentioned).
+        *   "mirah_tool" folder.
+        *   "Mirah" language.
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   Result: `Initialize a NEW dedicated folder named mirah_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mirah. Focus entirely on this new objective: 'Construct a high-performance, type-safe data transformation pipeline and API gateway utilizing the Java Virtual Machine environment'. You MUST write functional code for this task strictly using this exact programming language: Mirah.`
+    *   *Objective Choice:* "Construct a high-performance, type-safe data transformation pipeline..." sounds good for Mirah.
+    *   *Length/Style:* Matches the history example style.
+
+6.  **Final Output Construction:**
+    *   Text: `Initialize a NEW dedicated folder named mirah_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mirah. Focus entirely on this new objective: 'Construct a high-performance, type-safe data transformation pipeline and API gateway utilizing the Java Virtual Machine environment'. You MUST write functional code for this task strictly using this exact programming language: Mirah.`
+
+This looks complete and adheres to all constraints.
+</think>
+
+Initialize a NEW dedicated folder named mirah_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mirah. Focus entirely on this new objective: 'Construct a high-performance, type-safe data transformation pipeline and API gateway utilizing the Java Virtual Machine environment'. You MUST write functional code for this task strictly using this exact programming language: Mirah.

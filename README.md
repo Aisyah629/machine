@@ -524,3 +524,5 @@ Training Machine
 - Created/Updated module: `coq_tool` (See `coq_tool/README.md` for details)
 
 - Created/Updated module: `pict_tool` (See `pict_tool/README.md` for details)
+
+- Created/Updated module: `lpc_tool` (See `lpc_tool/README.md` for details)

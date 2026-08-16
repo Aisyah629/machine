@@ -23434,3 +23434,85 @@ This matches all constraints.
 </think>
 
 Initialize a NEW dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a symbolic AI inference engine for logical deduction'. You MUST write functional code for this task strictly using this exact programming language: Prolog.
+[2026-08-16 09:46:30] (Target Lang: OpenCL) The user wants a follow-up instruction for an Autonomous AI.
+The instruction must follow specific constraints:
+1.  Exactly 1 instruction.
+2.  Explicitly demand the new tool be built using "OpenCL".
+3.  If building a new tool, instruct to place it in a NEW dedicated folder.
+4.  Instruct to create a local README.md inside that folder.
+5.  Return ONLY the instruction text.
+6.  Never target the `.github` directory.
+
+Looking at the history, the format is a single sentence or paragraph giving the command.
+The previous history example used: `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language].`
+
+I need to adapt this structure for "OpenCL".
+Folder name: `opencl_tool` seems consistent with the pattern `name_tool`.
+Language: OpenCL.
+Objective: I should invent a relevant objective for OpenCL. OpenCL is used for parallel programming, often for GPU computing. A good objective could be "Implement a parallel matrix multiplication kernel" or "Build a high-performance parallel image processing pipeline". Let's go with "Develop a high-performance parallel computing kernel for matrix operations" or something similar.
+
+Let's check the existing folders in the workspace list to ensure `opencl_tool` isn't already there.
+Scanning the list... `./opencl_tool` is NOT in the list. `./opencl_tool/README.md` is not there. So creating `opencl_tool` is valid.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Develop a high-performance parallel matrix multiplication engine'. You MUST write functional code for this task strictly using this exact programming language: OpenCL."
+
+Refining based on the pattern in history:
+The history shows the output is just the text.
+The text usually has the structure: "Initialize a NEW dedicated folder named ... create a local README.md ... build the entire new tool STRICTLY using this exact programming language: ... Focus entirely on this new objective: '...' You MUST write functional code ..."
+
+Let's pick an objective: "Build a GPU-accelerated cryptographic hash solver" or "Implement a parallel simulation framework". "Develop a parallel computing framework for high-performance matrix operations" sounds good.
+
+Final text construction:
+Initialize a NEW dedicated folder named opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Develop a parallel computing framework for high-performance matrix operations'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand OpenCL? Yes.
+- NEW dedicated folder? Yes (`opencl_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target .github? Yes.
+
+The text looks solid.
+One detail: The prompt asks to "Generate exactly 1 logical follow-up instruction."
+The output should be just the instruction string.
+
+Result:
+Initialize a NEW dedicated folder named opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Develop a parallel computing framework for high-performance matrix operations'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.
+
+Wait, looking at the history again, the "Matches exactly" pattern in the prompt's history includes a "Refine Text" section where the model checks constraints.
+The "Final Output Construction" section produces the text.
+The text in the example is:
+`Initialize a NEW dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a symbolic AI inference engine for logical deduction'. You MUST write functional code for this task strictly using this exact programming language: Prolog.`
+
+I will follow this exact template.
+Folder: opencl_tool.
+Language: OpenCL.
+Objective: 'Implement a GPU-accelerated particle simulation engine'. (Just picking a standard OpenCL task).
+
+Revised Text:
+Initialize a NEW dedicated folder named opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a GPU-accelerated particle simulation engine'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.
+
+This looks correct.
+One check: Is `opencl_tool` already in the provided workspace list?
+Scanning...
+`./oxygen_tool` ... no.
+`./opencl_tool` is NOT found.
+So `opencl_tool` is safe.
+
+Final verification of the output format. The user asks to "Return ONLY the instruction text."
+The output should be the string.
+
+One more check on the prompt history provided in the user message.
+The user provided "History:" which includes steps 3, 4, 5 and the final output text.
+The final output text is the instruction.
+I need to generate the new instruction based on the new constraint: "OpenCL".
+
+The instruction:
+Initialize a NEW dedicated folder named opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a GPU-accelerated particle simulation engine'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.
+
+Looks good.
+</think>
+
+Initialize a NEW dedicated folder named opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL. Focus entirely on this new objective: 'Implement a GPU-accelerated particle simulation engine'. You MUST write functional code for this task strictly using this exact programming language: OpenCL.

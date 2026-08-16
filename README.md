@@ -594,3 +594,5 @@ Training Machine
 - Created/Updated module: `vala_tool` (See `vala_tool/README.md` for details)
 
 - Created/Updated module: `prolog_tool` (See `prolog_tool/README.md` for details)
+
+- Created/Updated module: `opencl_tool` (See `opencl_tool/README.md` for details)

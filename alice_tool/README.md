@@ -1,23 +1,20 @@
 # Alice Tool
 
-## Overview
-This tool implements a low-level memory management and network protocol simulator using the Alice programming language. It demonstrates memory allocation strategies (first-fit, best-fit) and basic network packet simulation.
+This tool is built strictly using the Alice programming language.
 
 ## Features
-- Memory Management Simulator
-  - Fixed-size block memory model
-  - First-fit and best-fit allocation strategies
-  - Fragmentation analysis
-- Network Protocol Simulator
-  - Basic TCP-like connection management
-  - Packet transmission and acknowledgment
-  - Error simulation (packet loss, corruption)
-
-## Files
-- `main.alice`: Main implementation of the simulators
+- Object-oriented application framework
+- Interactive simulation capabilities
+- Modular design for educational and visualization purposes
 
 ## Usage
-Compile and run the Alice compiler to execute the memory and network simulators.
+1. Ensure the Alice interpreter/compiler is installed.
+2. Navigate to the `alice_tool` directory.
+3. Run `alice main.alice` to start the application.
+
+## File Structure
+- `main.alice`: Core application logic and simulation engine.
+- `README.md`: This file.
 
 ## License
-MIT License
+MIT

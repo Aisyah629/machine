@@ -758,3 +758,5 @@ Training Machine
 - Created/Updated module: `ml_tool` (See `ml_tool/README.md` for details)
 
 - Created/Updated module: `ferite_tool` (See `ferite_tool/README.md` for details)
+
+- Created/Updated module: `fortran_solver_tool` (See `fortran_solver_tool/README.md` for details)

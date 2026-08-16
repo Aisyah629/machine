@@ -30427,3 +30427,48 @@ Initialize a NEW dedicated folder named ferite_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Implement a command-line utility for system monitoring and log analysis'. You MUST write code for this task strictly using this exact programming language: Boomerang.
+[2026-08-16 17:58:27] (Target Lang: Fortran) The user wants a single logical follow-up instruction based on the provided workspace and history.
+The instruction must:
+1. Explicitly demand the new tool be built using Fortran.
+2. If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. Never target the .github directory.
+5. Match the format of previous instructions (though the prompt just says "Return ONLY the instruction text", I should look at the history to see the expected format).
+
+History shows:
+"Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Implement a command-line utility for system monitoring and log analysis'. You MUST write code for this task strictly using this exact programming language: Boomerang."
+
+I will generate a similar instruction but for Fortran.
+I need to pick a new tool name, e.g., `fortran_math_tool`.
+I need to pick an objective, e.g., "Implement a numerical solver for linear algebra systems".
+I will combine these into the requested format.
+
+Draft:
+Initialize a NEW dedicated folder named fortran_math_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fortran. Focus entirely on this new objective: 'Implement a numerical solver for linear algebra systems'. You MUST write code for this task strictly using this exact programming language: Fortran.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand Fortran? Yes.
+- NEW dedicated folder + README.md? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+- Matches history style? Yes.
+
+I will output exactly the draft.
+Wait, let's verify the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Fortran. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+I will produce exactly that string.
+Final check of the draft: "Initialize a NEW dedicated folder named fortran_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fortran. Focus entirely on this new objective: 'Implement a high-performance matrix multiplication engine for scientific computing'. You MUST write code for this task strictly using this exact programming language: Fortran."
+
+Matches perfectly. Proceeds. 
+Output matches request.
+Proceeds.
+[Output Generation] -> *Proceeds*
+Done. 
+Output: Initialize a NEW dedicated folder named fortran_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fortran. Focus entirely on this new objective: 'Implement a high-performance matrix multiplication engine for scientific computing'. You MUST write code for this task strictly using this exact programming language: Fortran.
+(Note: I'll keep it concise and aligned with the prompt's tone.) 
+All constraints met.✅
+Output Generation.✅
+</think>
+
+Initialize a NEW dedicated folder named fortran_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fortran. Focus entirely on this new objective: 'Implement a high-performance matrix multiplication engine for scientific computing'. You MUST write code for this task strictly using this exact programming language: Fortran.

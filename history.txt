@@ -20391,3 +20391,36 @@ Result matches draft.
 </think>
 
 Initialize a NEW dedicated folder named cayenne_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cayenne. Focus entirely on this new objective: 'Implement a secure cryptographic protocol verifier'. You MUST write functional code for this task strictly using this programming language: Cayenne.
+[2026-08-16 04:26:13] (Target Lang: FLOW-MATIC) The user wants a single follow-up instruction based on the previous context.
+The previous instruction created a `cayenne_tool` for a cryptographic protocol verifier using Cayenne.
+The new instruction must:
+1.  Generate exactly 1 logical follow-up instruction.
+2.  Demand the new tool be built strictly using FLOW-MATIC.
+3.  If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+4.  Return ONLY the instruction text.
+5.  NEVER target the `.github` directory.
+
+Analysis of FLOW-MATIC:
+- FLOW-MATIC is a programming language, one of the predecessors to COBOL.
+- It's a rare/legacy language.
+- A logical objective for a FLOW-MATIC tool in this context (after a crypto verifier in Cayenne) could be something related to data processing or business logic, fitting its historical use, or perhaps a bridge/interpreter concept if that fits the "tool" theme. However, the objective should be self-contained.
+- Let's choose an objective like "Create a data transformation script generator".
+- Folder name: `flow_matic_tool`. Checking the list... `flow_matic_tool` is not present.
+- Format: "Initialize a NEW dedicated folder named [NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FLOW-MATIC. Focus entirely on this new objective: '[OBJ]'. You MUST write functional code for this task strictly using this programming language: FLOW-MATIC."
+
+Drafting the instruction:
+Initialize a NEW dedicated folder named flow_matic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FLOW-MATIC. Focus entirely on this new objective: 'Design a legacy data record sorting utility'. You MUST write functional code for this task strictly using this programming language: FLOW-MATIC.
+
+Check constraints:
+- Exactly 1 instruction: Yes.
+- Language: FLOW-MATIC: Yes.
+- NEW folder: `flow_matic_tool`: Yes.
+- README.md: Yes.
+- Only instruction text: Yes.
+- No .github: Yes.
+- Logical follow-up: Yes, adding another tool to the workspace.
+
+Result looks good.
+</think>
+
+Initialize a NEW dedicated folder named flow_matic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FLOW-MATIC. Focus entirely on this new objective: 'Design a legacy data record sorting utility'. You MUST write functional code for this task strictly using this programming language: FLOW-MATIC.

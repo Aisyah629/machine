@@ -646,3 +646,5 @@ Training Machine
 - Created/Updated module: `flavors_tool` (See `flavors_tool/README.md` for details)
 
 - Created/Updated module: `chapel_tool` (See `chapel_tool/README.md` for details)
+
+- Created/Updated module: `combined_programming_language_tool` (See `combined_programming_language_tool/README.md` for details)

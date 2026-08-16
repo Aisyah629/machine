@@ -27680,3 +27680,45 @@ Initialize a NEW dedicated folder named plm_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named slip_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SLIP. Focus entirely on this new objective: 'Implement a logical inference engine for automated reasoning tasks.'. You MUST write code for this task strictly using this exact programming language: SLIP.
+[2026-08-16 14:36:56] (Target Lang: ATS) Thinking Process:
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built STRICTLY using the programming language ATS.
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Instruct to create a local `README.md` inside the new folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Context: The user provides a list of existing tools/workspaces and a history snippet. The history snippet shows a previous instruction format: "Initialize a NEW dedicated folder named [tool_name]... create a local README.md... build... using... [language]... Focus... [objective]...".
+    *   Workspace check: The list includes many tools. I need to check if `ats_tool` exists. Scanning the list: `.../api_client_tool ... ./arc_tool ... ./asharp_dotnet_tool ... ./aspectj_tool ...`. `ats_tool` does *not* appear in the provided list. This means `ats_tool` is a safe, new name for a folder.
+
+2.  **Draft the instruction:**
+    *   *Structure based on history/context:* `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write code for this task strictly using this exact programming language: [LANG].`
+    *   *Fill variables:*
+        *   `folder_name`: `ats_tool` (Standard naming convention observed: `*_tool`).
+        *   `LANG`: `ATS`.
+        *   `OBJ`: Needs to be logical for ATS. ATS is a functional programming language with linear types, good for system programming, compilers, and formal verification. A logical follow-up could be related to these strengths. Example: "Implement a formal verification framework for linear type checking" or "Build a high-performance compiler frontend using dependent types". Let's pick something generic but fitting: "Implement a formal verification system leveraging dependent types".
+        *   *Drafting text:* `Initialize a NEW dedicated folder named ats_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ATS. Focus entirely on this new objective: 'Implement a formal verification system leveraging dependent types'. You MUST write code for this task strictly using this exact programming language: ATS.`
+
+3.  **Review against constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Strictly ATS?* Yes (`using this exact programming language: ATS`).
+    *   *New dedicated folder?* Yes (`new dedicated folder named ats_tool`).
+    *   *Local README.md?* Yes (`create a local README.md inside it`).
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes (folder is `ats_tool`, no mention of `.github`).
+    *   *Logical follow-up?* ATS is distinct from the previous turn (SLIP, which is a logic programming language often used for inference). ATS is related (functional/system) but distinct enough to be a follow-up request for a different tool. The prompt asks for a "logical follow-up instruction", which usually implies continuing the pattern of adding tools or expanding the workspace. The drafted instruction fits this pattern perfectly.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Result: `Initialize a NEW dedicated folder named ats_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ATS. Focus entirely on this new objective: 'Implement a formal verification system leveraging dependent types'. You MUST write code for this task strictly using this exact programming language: ATS.`
+    *   Check for forbidden characters? None.
+    *   Check against workspace? `ats_tool` is new. Good.
+    *   Output matches the requested format.
+
+5.  **Final Output Construction:**
+    *   Text: Initialize a NEW dedicated folder named ats_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ATS. Focus entirely on this new objective: 'Implement a formal verification system leveraging dependent types'. You MUST write code for this task strictly using this exact programming language: ATS.
+    *   Wait, let me double-check the "Logical follow-up" aspect. The user asked for a "logical follow-up instruction". In the context of LLM prompting for code generation, this often means the instruction should flow naturally. The previous turn (from history) was about SLIP and inference. ATS is also used for formal methods. So requesting an ATS tool for formal verification is a logical thematic follow-up (shifting from logic programming inference to formal verification/system programming with ATS). The objective choice supports the "logical" requirement.
+
+Result matches all criteria.
+</think>
+
+Initialize a NEW dedicated folder named ats_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ATS. Focus entirely on this new objective: 'Implement a formal verification system leveraging dependent types'. You MUST write code for this task strictly using this exact programming language: ATS.

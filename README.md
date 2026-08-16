@@ -880,3 +880,5 @@ Training Machine
 - Created/Updated module: `teco_macro_tool` (See `teco_macro_tool/README.md` for details)
 
 - Created/Updated module: `livescript_tool` (See `livescript_tool/README.md` for details)
+
+- Created/Updated module: `gpss_tool` (See `gpss_tool/README.md` for details)

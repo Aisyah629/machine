@@ -1,0 +1,21 @@
+* GPSS Program: Discrete Event Simulation and Resource Management
+* This program simulates a simple system with entities arriving, being processed by a resource, and then leaving.
+* It demonstrates basic GPSS constructs: GENERATE, ADVANCE, SEIZE, RELEASE, and TERMINATE.
+
+* Define the system parameters
+PARAMETER MAX_TIME=1000      * Maximum simulation time
+PARAMETER ARRIVAL_INTERVAL=10 * Time between entity arrivals
+PARAMETER SERVICE_TIME=5      * Time to process an entity
+
+* Initialize the simulation
+SIMULATION
+  GENERATE ARRIVAL_INTERVAL      * Generate entities every ARRIVAL_INTERVAL time units
+  SEIZE RESOURCE                  * Seize the resource (single server)
+  ADVANCE SERVICE_TIME            * Hold the entity for SERVICE_TIME (processing)
+  RELEASE RESOURCE                * Release the resource
+  TERMINATE                       * Terminate the entity
+
+END
+* Note: In a real GPSS implementation, you would need to initialize the random number generator
+* and set the simulation end time. This is a simplified example for demonstration purposes.
+* Actual GPSS syntax may vary depending on the specific GPSS implementation being used.

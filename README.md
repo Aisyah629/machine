@@ -850,3 +850,5 @@ Training Machine
 - Created/Updated module: `aimms_tool` (See `aimms_tool/README.md` for details)
 
 - Created/Updated module: `macsyma_tool` (See `macsyma_tool/README.md` for details)
+
+- Created/Updated module: `dcl_tool` (See `dcl_tool/README.md` for details)

@@ -1,36 +1,70 @@
-% main.pl - Prolog Tool Entry Point
+% Prolog Tool: Symbolic AI Inference Engine for Logical Deduction
+% This engine manages a knowledge base and performs logical deductions.
 
-:- module(main, [run/0, greet/1, factorial/2, member/2]).
+:- dynamic fact/2, rule/3.
 
-:- initialization(run).
+% Initialize the inference engine
+start_engine :-
+    write('Symbolic AI Inference Engine started.\n'),
+    load_knowledge_base,
+    main_loop.
 
-% run/0: Main execution predicate
-greet :-
-    write('Hello from the Prolog Tool!\n'),
-    fail.
-greet.
+% Main loop for user interaction
+main_loop :-
+    write('Enter query (end with quit/0): '),
+    read(Query),
+    (Query = quit -> 
+        write('Engine stopped.\n')
+    ; query_engine(Query) 
+    ; main_loop).
 
-% run/0: Main execution predicate
-run :-
-    format('~n=== Prolog Tool Initialized ===~n~n'),
+% Process a query
+query_engine(Query) :-
+    call_query(Query, Result),
+    (Result = true -> 
+        write('Yes.\n')
+    ; Result = false -> 
+        write('No.\n')
+    ; Result = [Solution] -> 
+        write('Solution: '), write(Solution), nl
+    ; Result = solutions(Solutions) -> 
+        write('Solutions: '), write(Solutions), nl
+    ; write('Unknown query.\n')
+    ).
+
+% Call a query with backtracking for multiple solutions
+call_query(Query, Result) :-
+    catch(
+        (call(Query), !, Result = true),
+        Error,
+        handle_error(Error, Result)
+    ).
+
+% Handle errors during query execution
+handle_error(Error, Result) :-
+    write('Error: '), write(Error), nl,
+    Result = false.
+
+% Load knowledge base from external file or predefined facts
+load_knowledge_base :-
     
-    % Example 1: Factorial Calculation
-    format('~n--- Factorial Example ---~n'),
-    factorial(5, F),
-    format('factorial(5) = ~d~n', [F]),
+    % Example facts (These can be replaced with file loading)
+    assertz(fact(cat, fluffy)),
+    assertz(fact(dog, bobby)),
+    assertz(fact(cat, misty)),
     
-    % Example 2: List Membership
-    format('~n--- List Membership Example ---~n'),
-    member(X, [a, b, c]),
-    format('member found: ~w~n', [X]),
-    fail.
+    % Example rules
+    assertz(rule(is_pet, Animal) :- fact(Animal, _)).,
+    
+    % Load from file if exists
+    (catch(consult('kb.pl'), _, true) -> true ; true).
 
-member(X, [X|_]).
-member(X, [_|T]) :- member(X, T).
+% Example predicates for demonstration
+is_pet(Animal) :-
+    fact(Animal, _).
 
-factorial(0, 1).
-factorial(N, Result) :-
-    N > 0,
-    N1 is N - 1,
-    factorial(N1, SubResult),
-    Result is N * SubResult.
+% Query examples:
+% ?- is_pet(fluffy).  -> Yes
+% ?- is_pet(bobby).   -> Yes
+% ?- is_pet(lion).    -> No
+% ?- findall(X, is_pet(X), Pets). -> Pets = [fluffy, bobby, misty]

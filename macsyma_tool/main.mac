@@ -1,0 +1,24 @@
+/*
+  Macsyma Symbolic Mathematics and Equation Solving Utility
+  Language: Macsyma
+  Purpose: Core logic for symbolic computation and equation solving.
+*/
+
+/* Initialize the solver engine and load necessary libraries */
+infile("solver.mac");
+
+/* Define the main solver function */
+solve_equation(eq, vars) := block(
+  [sol],
+  /* Attempt to solve the equation for the specified variables */
+  sol : solve(eq, vars),
+  if null(sol) then (print("No symbolic solution found.")$ sol)$
+  else (print("Symbolic solution found.")$ sol)
+);
+
+/* Example usage block */
+/* Example: Solve x^2 - 4 = 0 for x */
+/* result : solve_equation(x^2 - 4 = 0, x); */
+
+/* End of Macsyma Tool Implementation */
+end$;

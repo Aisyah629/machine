@@ -1,14 +1,13 @@
-# Macsyma Symbolic Mathematics Computation Engine
+# Macsyma Tool
 
-## Overview
-This tool implements a symbolic mathematics computation engine using the Macsyma programming language. Macsyma is a pioneering computer algebra system (CAS) known for its powerful symbolic and algebraic manipulation capabilities.
+This directory contains the Macsyma tool implementation. It is designed to provide symbolic mathematics and equation solving utilities using the Macsyma programming language.
 
-## Features
-- Symbolic expression manipulation
-- Algebraic simplification
-- Calculus operations (differentiation, integration)
-- Matrix operations
-- Equation solving
+## Purpose
+Develop a symbolic mathematics and equation solving utility.
+
+## Structure
+- `README.md`: This documentation file.
+- `main.mac`: The primary Macsyma source file containing the core logic.
 
 ## Usage
-Run the main.mac file to initialize the computation engine and perform symbolic mathematics tasks.
+Execute the main Macsyma file within a compatible Macsyma environment to run the symbolic computation and equation solving routines.

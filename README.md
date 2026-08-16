@@ -848,3 +848,5 @@ Training Machine
 - Created/Updated module: `watfiv_watfor_tool` (See `watfiv_watfor_tool/README.md` for details)
 
 - Created/Updated module: `aimms_tool` (See `aimms_tool/README.md` for details)
+
+- Created/Updated module: `macsyma_tool` (See `macsyma_tool/README.md` for details)

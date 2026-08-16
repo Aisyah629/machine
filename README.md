@@ -884,3 +884,5 @@ Training Machine
 - Created/Updated module: `gpss_tool` (See `gpss_tool/README.md` for details)
 
 - Created/Updated module: `ici_tool` (See `ici_tool/README.md` for details)
+
+- Created/Updated module: `simula_tool` (See `simula_tool/README.md` for details)

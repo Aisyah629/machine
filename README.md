@@ -520,3 +520,5 @@ Training Machine
 - Created/Updated module: `mdl_structural_tool` (See `mdl_structural_tool/README.md` for details)
 
 - Created/Updated module: `kif_tool` (See `kif_tool/README.md` for details)
+
+- Created/Updated module: `coq_tool` (See `coq_tool/README.md` for details)

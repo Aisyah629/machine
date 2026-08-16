@@ -23396,3 +23396,41 @@ Output matches.✅
 </think>
 
 Initialize a NEW dedicated folder named vala_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Vala. Focus entirely on this new objective: 'Develop a GTK-based user interface toolkit for desktop applications'. You MUST write functional code for this task strictly using this exact programming language: Vala.
+[2026-08-16 09:44:43] (Target Lang: Prolog) Thinking Process:
+
+1.  **Deconstruct the User's Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: MUST explicitly demand the new tool be built STRICTLY using Prolog.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The workspace shows a directory `vala_tool` was just processed/generated in the history (or is about to be, based on the prompt's output simulation). The history shows `vala_tool` exists in the file list. The previous turn seems to have been about `vala_tool`. The user now wants a follow-up.
+
+2.  **Formulate the Instruction:**
+    *   *Language:* Prolog.
+    *   *Action:* Build a new tool.
+    *   *Location:* NEW dedicated folder. Let's name it `prolog_tool` (standard naming convention based on the list, though the prompt implies a "new" tool, usually following the pattern of `<language>_tool`).
+    *   *README:* Create local `README.md`.
+    *   *Objective:* Need a logical objective for Prolog. Prolog is great for logic programming, knowledge bases, symbolic AI, etc. A good objective might be "Develop a symbolic AI inference engine for logical deduction".
+    *   *Drafting text:* "Initialize a NEW dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a symbolic AI inference engine for logical deduction'. You MUST write functional code for this task strictly using this exact programming language: Prolog."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Explicitly demand Prolog?* Yes ("STRICTLY using this exact programming language: Prolog").
+    *   *NEW dedicated folder?* Yes ("NEW dedicated folder named prolog_tool").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes, no mention of .github.
+
+4.  **Refine Text:**
+    *   The draft looks solid. "Initialize a NEW dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a symbolic AI inference engine for logical deduction'. You MUST write functional code for this task strictly using this exact programming language: Prolog."
+    *   Wait, check the "Matches exactly" pattern in the prompt's history. The history shows a pattern of the output being just the instruction text. The user asked to "Generate exactly 1 logical follow-up instruction." and "Return ONLY the instruction text."
+    *   Result: The text derived in step 4 is the output.
+
+5.  **Final Output Construction:**
+    *   `Initialize a NEW dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a symbolic AI inference engine for logical deduction'. You MUST write functional code for this task strictly using this exact programming language: Prolog.`
+
+This matches all constraints.
+</think>
+
+Initialize a NEW dedicated folder named prolog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus entirely on this new objective: 'Develop a symbolic AI inference engine for logical deduction'. You MUST write functional code for this task strictly using this exact programming language: Prolog.

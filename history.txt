@@ -30190,3 +30190,45 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named dog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Dog. Focus entirely on this new objective: 'Develop a dynamic data transformation utility capable of parsing and converting between multiple nested formats using pattern matching and lazy evaluation'. You MUST write code for this task strictly using this exact programming language: Dog.
+[2026-08-16 17:47:44] (Target Lang: Qalb) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built strictly using the programming language: "Qalb".
+    *   Constraint 2: If building a new tool (which is implied by "logical follow-up" and the pattern in history), explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a workspace list (many `*_tool` directories), a history showing a pattern of generating instructions to create tools, and a specific output format in the history. The history shows a prompt like "Initialize a NEW dedicated folder named [tool_name]_tool... create a local README.md... build... STRICTLY using... [Language]... Focus... [Objective]... You MUST write code...".
+    *   Output Analysis: The user wants a follow-up instruction. The history shows the AI outputting the instruction text directly. The prompt asks to "Generate exactly 1 logical follow-up instruction." and "Return ONLY the instruction text."
+
+2.  **Draft the Instruction:**
+    *   Structure based on history: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+    *   Language: "Qalb".
+    *   Folder Name: Needs to be logical. Usually `qalb_tool`.
+    *   Objective: Needs to be related to "Qalb". "Qalb" might be a fictional or obscure language, or just a random name for this exercise. The history shows objectives related to the language type (e.g., Curry -> logic-based reasoning). Since I don't know "Qalb", I should generate a plausible objective that sounds consistent with a programming language, or just a generic but coherent one. The prompt doesn't specify the objective, just the language. I should invent a reasonable objective.
+        *   *I Check:* The prompt says "Generate exactly 1 logical follow-up instruction." It doesn't specify the objective text, so I have freedom to choose, but it must be "logical".
+        *   *Drafting Objective:* "Develop a secure cryptographic validation framework capable of verifying data integrity using zero-knowledge proofs and immutable ledger structures." Or something simpler. "Develop a high-performance concurrent processing framework utilizing asynchronous message passing and fault tolerance mechanisms." Let's go with something that sounds like a utility, similar to the previous one. "Develop a resilient distributed coordination service capable of managing state synchronization across multiple nodes using consensus algorithms and event sourcing."
+        *   *Refinement:* The previous objective was "Develop a dynamic data transformation utility...". A logical follow-up might be "Develop a secure transaction processing engine...". Let's use: "Develop a secure transaction processing engine capable of handling atomic operations and ensuring data consistency using optimistic concurrency control."
+    *   *Assembling Text:*
+        "Initialize a NEW dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Qalb. Focus entirely on this new objective: 'Develop a secure transaction processing engine capable of handling atomic operations and ensuring data consistency using optimistic concurrency control'. You MUST write code for this task strictly using this exact programming language: Qalb."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Language Qalb?* Yes.
+    *   *NEW dedicated folder?* Yes (`qalb_tool`).
+    *   *Create local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes (no mention of .github).
+    *   *Pattern Match?* The history shows the output is just the instruction string. The user's prompt ends with `> Initialize...`. The model should output the instruction.
+    *   *Result:* The drafted text matches the structure: "Initialize a NEW dedicated folder named [tool]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Obj]'. You MUST write code for this task strictly using this exact programming language: [Lang]."
+
+4.  **Final Polish (Mental Representation of Output):**
+    `Initialize a NEW dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Qalb. Focus entirely on this new objective: 'Develop a secure transaction processing engine capable of handling atomic operations and ensuring data consistency using optimistic concurrency control'. You MUST write code for this task strictly using this exact programming language: Qalb.`
+
+    *Self-Correction on Objective:* The prompt doesn't force a specific objective, but "logical follow-up" implies continuity or a new distinct task. The objective text is part of the instruction. The generated instruction must be self-contained. The draft looks solid.
+
+    *Result:*
+    Initialize a NEW dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Qalb. Focus entirely on this new objective: 'Develop a secure transaction processing engine capable of handling atomic operations and ensuring data consistency using optimistic concurrency control'. You MUST write code for this task strictly using this exact programming language: Qalb.
+</think>
+
+Initialize a NEW dedicated folder named qalb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Qalb. Focus entirely on this new objective: 'Develop a secure transaction processing engine capable of handling atomic operations and ensuring data consistency using optimistic concurrency control'. You MUST write code for this task strictly using this exact programming language: Qalb.

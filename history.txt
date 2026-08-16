@@ -36372,3 +36372,72 @@ Initialize a NEW dedicated folder named george_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: 'Develop a Processing-based utility for real-time visual data simulation and interactive generative art rendering'. You MUST write code for this task strictly using this programming language: Processing.
+[2026-08-16 23:31:32] (Target Lang: R++) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of existing tool directories (mostly ending in `_tool`) with `README.md` files and main source files.
+   - **History:** Shows a pattern of instructions to create new tool folders, `README.md` files, and build tools strictly using a specific programming language. The history example explicitly demands strict language usage, a new folder, a `README.md`, and a specific objective.
+   - **Prompt Constraint:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: R++. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Key Requirements for Output:**
+     - Exactly 1 instruction.
+     - Must explicitly demand the tool be built STRICTLY using `R++`.
+     - Must instruct to place it in a NEW dedicated folder.
+     - Must instruct to create a local `README.md`.
+     - Return ONLY the instruction text.
+     - NEVER target `.github`.
+     - Follow the pattern from the history/example.
+
+2.  **Deconstruct the Pattern from History:**
+   The history example says:
+   "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write code for this task strictly using this programming language: [LANGUAGE]."
+
+   I need to adapt this pattern to use `R++` as the language. I should invent a tool name (e.g., `rplus_tool` or `rplusplus_tool`) and an objective that fits R++ (though R++ isn't a standard real-world language, I'll treat it as requested). I'll stick closely to the exact phrasing pattern.
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named rplusplus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: R++. Focus entirely on this new objective: 'Develop an R++-based utility for advanced statistical computing and high-performance data analysis'. You MUST write code for this task strictly using this programming language: R++.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using R++? Yes ("STRICTLY using this exact programming language: R++" and "strictly using this programming language: R++").
+   - NEW dedicated folder and local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches history pattern? Yes.
+
+   One minor thing: The prompt says "R++". I'll use `rplusplus_tool` as the folder name to match the `_tool` suffix convention seen in the workspace. The prompt says "R++", so I'll keep it exactly as requested.
+
+   Let's verify the exact wording against the prompt's requirement: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: R++."
+   My draft: "Initialize a NEW dedicated folder named rplusplus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: R++. Focus entirely on this new objective: 'Develop an R++-based utility for advanced statistical computing and high-performance data analysis'. You MUST write code for this task strictly using this programming language: R++."
+
+   This matches perfectly. I will output exactly this text. No extra words. No markdown formatting unless it's part of the instruction itself (but the prompt says "Return ONLY instruction text", and the history example has no markdown in the final output block). I'll strip markdown to be safe, or keep it plain text as requested.
+
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: R++. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   The draft satisfies all constraints. Proceed. 
+   Output matches draft.✅
+   Text: Initialize a NEW dedicated folder named rplusplus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: R++. Focus entirely on this new objective: 'Develop an R++-based utility for advanced statistical computing and high-performance data analysis'. You MUST write code for this task strictly using this programming language: R++. 
+   Ready.✅
+   Output matches exactly. No extra text. Proceeds. 
+   [Self-Correction/Refinement during thought]
+   Wait, the prompt says "R++". I should probably use `rplus_tool` or `rplusplus_tool`. The workspace uses underscores. I'll stick with `rplusplus_tool`. The objective can be generic but fitting. The exact phrasing from the history example is highly structured. I will replicate it precisely.
+   "Initialize a NEW dedicated folder named rplusplus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: R++. Focus entirely on this new objective: 'Develop an R++-based utility for advanced statistical computing and high-performance data analysis'. You MUST write code for this task strictly using this programming language: R++."
+   This is perfect. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds to output exactly the drafted text.* 
+   Note: I will ensure absolutely no markdown formatting is used in the output to strictly comply with "Return ONLY instruction text." and the history example style. All good. 
+   Output matches draft.✅
+   [Done.] 
+   *Self-Correction/Verification during generation prep*: 
+   The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: R++."
+   I will make sure the exact phrase "STRICTLY using this exact programming language: R++" is present.
+   The draft has it.
+   All constraints met. Output matches.✅
+   Proceeds. 
+   [Final Output Generation] (matches the draft)
+   "Initialize a NEW dedicated folder named rplusplus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: R++. Focus entirely on this new objective: 'Develop an R++-based utility for advanced statistical computing and high-performance data analysis'. You MUST write code for this task strictly using this programming language: R++." 
+   (Note: I'll remove quotes if not needed, but the history example didn't have quotes around the whole thing, just the objective. I'll output exactly as drafted.) 
+   Ready.✅
+</think>
+
+Initialize a NEW dedicated folder named rplusplus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: R++. Focus entirely on this new objective: 'Develop an R++-based utility for advanced statistical computing and high-performance data analysis'. You MUST write code for this task strictly using this programming language: R++.

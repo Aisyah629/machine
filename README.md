@@ -826,3 +826,5 @@ Training Machine
 - Created/Updated module: `hlsl_tool` (See `hlsl_tool/README.md` for details)
 
 - Created/Updated module: `pico_tool` (See `pico_tool/README.md` for details)
+
+- Created/Updated module: `xpl_tool` (See `xpl_tool/README.md` for details)

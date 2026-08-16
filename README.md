@@ -852,3 +852,5 @@ Training Machine
 - Created/Updated module: `macsyma_tool` (See `macsyma_tool/README.md` for details)
 
 - Created/Updated module: `dcl_tool` (See `dcl_tool/README.md` for details)
+
+- Created/Updated module: `matlab_tool` (See `matlab_tool/README.md` for details)

@@ -34400,3 +34400,53 @@ Initialize a NEW dedicated folder named macsyma_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named dcl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DCL. Focus entirely on this new objective: 'Develop an automated system configuration or batch processing utility.'. You MUST write code for this task strictly using this programming language: DCL.
+[2026-08-16 22:00:07] (Target Lang: MATLAB) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using MATLAB.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md inside the new folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: Workspace contains many tool folders. History shows a pattern of initializing tools. The last entry in history mentions `dcl_tool` being initialized. The user is asking for a *follow-up* instruction based on the current state and constraints.
+
+2.  **Drafting the Instruction:**
+    *   *Draft 1 (Mental or rough text):* Initialize a new folder called matlab_tool, create a README.md inside it, and build a tool strictly in MATLAB. The goal should be something relevant to MATLAB, like matrix operations or simulation. Don't touch .github.
+    *   *Refining based on constraints:*
+        *   "Initialize a NEW dedicated folder named matlab_tool..." (Check: New folder name? `matlab_tool` seems appropriate based on naming convention in workspace).
+        *   "...create a local README.md inside it..." (Check: README.md included).
+        *   "...and build the entire new tool STRICTLY using this exact programming language: MATLAB." (Check: Strict MATLAB demand).
+        *   "Focus entirely on this new objective: 'Create a numerical simulation or matrix manipulation utility'." (Check: Objective added for coherence, though the prompt didn't explicitly force a specific objective text, it's good practice in these types of prompts to include a focus to make the instruction logical. The prompt asks for a "logical follow-up instruction". A tool without an objective isn't very logical. I'll add a generic MATLAB objective).
+        *   "You MUST write code for this task strictly using this programming language: MATLAB." (Check: Reinforcement of constraint).
+        *   ".github check:" Ensure no mention of `.github`.
+
+    *   *Resulting Text:* Initialize a NEW dedicated folder named matlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Create a numerical simulation or matrix manipulation utility.'. You MUST write code for this task strictly using this programming language: MATLAB.
+
+3.  **Sanity Check:**
+    *   Exactly 1 instruction? Yes, it's a single paragraph/sentence structure.
+    *   MATLAB demanded? Yes ("STRICTLY using this exact programming language: MATLAB").
+    *   New folder? Yes (`matlab_tool`).
+    *   README.md? Yes.
+    *   .github avoided? Yes.
+    *   Only instruction text? Yes.
+    *   Logical? Yes, follows the pattern of previous history entries.
+
+4.  **Final Polish (Output Construction):**
+    *   Output: `Initialize a NEW dedicated folder named matlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Create a numerical simulation or matrix manipulation utility.'. You MUST write code for this task strictly using this programming language: MATLAB.`
+
+5.  **Review against "Return ONLY the instruction text":**
+    *   The output should be just the string, no markdown code blocks unless requested, but usually, LLM outputs are text. The prompt says "Return ONLY the instruction text." I will provide the raw text.
+
+    *   *Self-Correction on "Return ONLY":* Sometimes "Return ONLY" implies no conversational filler. I should output just the sentence.
+
+    *   *Final String:* Initialize a NEW dedicated folder named matlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a numerical computing or data visualization application.'. You MUST write code for this task strictly using this programming language: MATLAB.
+
+    *   *Note on Objective:* The prompt doesn't specify the objective, but a "logical follow-up" usually includes the objective text as seen in the history (e.g., "Develop an automated system..."). I'll include a relevant MATLAB objective. "Develop a numerical computing or data visualization application" is a safe, logical MATLAB objective.
+
+    *   *Final Result:* Initialize a NEW dedicated folder named matlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a numerical computing or data visualization application.'. You MUST write code for this task strictly using this programming language: MATLAB.
+
+This matches all constraints.
+</think>
+
+Initialize a NEW dedicated folder named matlab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MATLAB. Focus entirely on this new objective: 'Develop a numerical computing or data visualization application.'. You MUST write code for this task strictly using this programming language: MATLAB.

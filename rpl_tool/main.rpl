@@ -1,0 +1,94 @@
+// RPL (Reverse Polish Lisp) - Stack-oriented interpreter for symbolic expression evaluation
+// main.rpl
+
+// Data structures
+: STACK ( DUP 0= IF 2DROP DROP ELSE DUP HEAD @ SWAP TAIL @ SWAP CONS THEN );
+: PUSH ( DUP @ SWAP OVER @ CONS HEAD ! );
+: POP ( HEAD @ TAIL @ HEAD ! );
+: TOP ( HEAD @ );
+
+// Expression parser
+: PARSE-EXPR ( TOKENS -> EXPRESSION )
+  BEGIN
+    DUP EMPTY?
+  WHILE
+    HEAD @
+    DUP SYMBOL?
+  IF
+    SYMBOL -> VARIABLE
+    VARIABLE EVAL
+  ELSE
+    DUP NUMBER?
+  IF
+    NUMBER -> VALUE
+    VALUE
+  ELSE
+    DUP OPERATOR?
+  IF
+    OPERATOR -> OP
+    OP EVAL
+  ELSE
+    ERROR "Invalid token"
+  THEN
+  THEN
+  THEN
+  TAIL @
+  REPEAT
+  ;
+
+// Symbolic evaluator
+: EVAL-SYMBOL ( SYMBOL -> RESULT )
+  CASE
+    "+" ADD
+    "-" SUB
+    "*" MUL
+    "/" DIV
+    "^" POW
+    "sqrt" SQRT
+    "log" LOG
+    "sin" SIN
+    "cos" COS
+    "tan" TAN
+    "exp" EXP
+    "ln" LN
+    "abs" ABS
+    "floor" FLOOR
+    "ceil" CEIL
+    "round" ROUND
+    "max" MAX
+    "min" MIN
+    "gcd" GCD
+    "lcm" LCM
+    "prime" PRIME?
+    "factor" FACTOR
+    "fib" FIB
+    "fac" FAC
+    "rand" RAND
+    "seed" SEED
+    "pi" PI
+    "e" E
+    "tau" TAU
+    "phi" PHI
+    "inf" INF
+    "nan" NAN
+    "true" TRUE
+    "false" FALSE
+    "nil" NIL
+    "null" NULL
+    "undefined" UNDEFINED
+    "void" VOID
+    "object" OBJECT
+    "array" ARRAY
+    "list" LIST
+    "dict" DICT
+    "set" SET
+    "map" MAP
+    "pair" PAIR
+    "tuple" TUPLE
+    "struct" STRUCT
+    "class" CLASS
+    "func" FUNC
+    "lambda" LAMBDA
+    "closure" CLOSURE
+    "coroutine" COROUTINE
+    

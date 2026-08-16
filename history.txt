@@ -31195,3 +31195,44 @@ Initialize a NEW dedicated folder named legoscript_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named executable_uml_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Executable UML. Focus entirely on this new objective: 'Construct a model-driven simulation engine for verifying complex enterprise business workflows.'. You MUST write code for this task strictly using this programming language: Executable UML.
+[2026-08-16 19:11:10] (Target Lang: RPL) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Language Constraint: MUST use "RPL" strictly.
+    *   Structure: If building a new tool, use a NEW dedicated folder and create a local README.md.
+    *   Output Format: Return ONLY the instruction text.
+    *   Negative Constraint: NEVER target the `.github` directory.
+    *   Context: The user provided a workspace list and a history entry. The history shows a pattern of creating tools for specific languages (e.g., `executable_uml_tool`). The workspace list contains many `_tool` directories. I need to check if `rpl_tool` or similar exists in the workspace list to ensure I'm creating a *new* one or following the pattern.
+    *   Workspace Scan: Scanning the provided workspace list for "rpl".
+        *   ... `rapid_tool` ... `rsl_tool` ... `ruby_tool` ...
+        *   No `rpl_tool` found.
+        *   Therefore, the instruction should create a new tool named `rpl_tool`.
+        *   The instruction should mention `executable_uml_tool`? No, the previous history item mentions `executable_uml_tool`, but the current request is a "follow-up". Usually, a follow-up in this context implies continuing the pattern or adding to the collection. The pattern is creating a tool for a specific language.
+        *   The language is RPL. RPL stands for Reverse Polish Lisp (used in HP calculators) or potentially a specific tool language. In the context of this workspace, it's just another language entry.
+        *   Target folder: `rpl_tool`.
+        *   File: `main.rpl` (based on pattern `main.<ext>`).
+        *   Objective: Needs to be descriptive but arbitrary or following a theme. The previous one was "Construct a model-driven simulation engine...". I should generate a plausible objective for RPL. RPL is stack-based, functional. Maybe "Create a functional stack-based calculator engine" or "Build a recursive logic processor". The prompt doesn't specify the objective, just the language and structure. I should invent a reasonable objective for the tool to make the instruction complete, similar to the history.
+        *   Drafting the instruction: "Initialize a NEW dedicated folder named rpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RPL. Focus entirely on this new objective: 'Build a stack-based functional processor for symbolic mathematics evaluation.'. You MUST write code for this task strictly using this exact programming language: RPL."
+
+2.  **Review Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Strictly RPL? Yes.
+    *   NEW dedicated folder? Yes (`rpl_tool`).
+    *   Local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   No `.github`? Yes.
+    *   Logical follow-up? Yes, continues the pattern of adding tools.
+    *   Workspace check: `rpl_tool` is not in the list. `rsl_tool` is there, `rapid_tool` is there. `rpl` is safe.
+
+3.  **Final Polish:**
+    *   Text: `Initialize a NEW dedicated folder named rpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RPL. Focus entirely on this new objective: 'Develop a stack-oriented interpreter for high-performance symbolic expression evaluation.'. You MUST write code for this task strictly using this exact programming language: RPL.`
+    *   This matches the style of the history: `Initialize a NEW dedicated folder named [name]..., create a local README.md..., build... STRICTLY using... [Language]. Focus... [Objective]. You MUST...`
+
+4.  **Output Construction:**
+    *   Result: `Initialize a NEW dedicated folder named rpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RPL. Focus entirely on this new objective: 'Develop a stack-oriented interpreter for high-performance symbolic expression evaluation.'. You MUST write code for this task strictly using this exact programming language: RPL.`
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named rpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RPL. Focus entirely on this new objective: 'Develop a stack-oriented interpreter for high-performance symbolic expression evaluation.'. You MUST write code for this task strictly using this exact programming language: RPL.

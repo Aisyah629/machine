@@ -29877,3 +29877,44 @@ Initialize a NEW dedicated folder named rc_tool in the workspace, create a local
 </think>
 
 Initialize a NEW dedicated folder named mohol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mohol. Focus entirely on this new objective: 'Construct a high-performance, mathematically precise interpreter for arithmetic expressions and control flow'. You MUST write code for this task strictly using this exact programming language: Mohol.
+[2026-08-16 17:27:24] (Target Lang: Scilab) The user wants a single follow-up instruction.
+The instruction must:
+1.  Demand the use of the language `Scilab`.
+2.  Create a NEW dedicated folder named `scilab_tool`.
+3.  Create a local `README.md` inside it.
+4.  Build a tool with a logical objective (following the theme of the workspace which seems to be about various tools, possibly computational or scripting).
+5.  Return ONLY the instruction text.
+6.  Never target `.github`.
+
+Plan:
+-   Start with "Initialize a NEW dedicated folder named scilab_tool in the workspace..."
+-   Include "...create a local README.md inside it..."
+-   Include "...build the entire new tool STRICTLY using this exact programming language: Scilab."
+-   Define an objective suitable for Scilab. Scilab is often used for numerical computation, scientific simulation, etc. Let's pick an objective like "Implement a numerical solver for systems of nonlinear equations".
+-   Combine these into the final string.
+
+Draft:
+Initialize a NEW dedicated folder named scilab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scilab. Focus entirely on this new objective: 'Implement a robust numerical solver for systems of nonlinear algebraic equations'. You MUST write code for this task strictly using this exact programming language: Scilab.
+
+Check constraints:
+-   Exactly 1 instruction? Yes.
+-   Scilab? Yes.
+-   New folder? Yes (`scilab_tool`).
+-   README? Yes.
+-   Only text? Yes.
+-   No `.github`? Yes.
+
+Final Polish:
+"Initialize a NEW dedicated folder named scilab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scilab. Focus entirely on this new objective: 'Implement a robust numerical solver for systems of nonlinear algebraic equations'. You MUST write code for this task strictly using this exact programming language: Scilab."
+
+Wait, looking at the history, the prompt usually follows a pattern: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [lang]. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this exact programming language: [lang]."
+
+I will follow this pattern exactly.
+
+Objective for Scilab: "Develop a high-precision numerical simulation engine for dynamic systems analysis". This sounds appropriate.
+
+Final Text:
+Initialize a NEW dedicated folder named scilab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scilab. Focus entirely on this new objective: 'Develop a high-precision numerical simulation engine for dynamic systems analysis'. You MUST write code for this task strictly using this exact programming language: Scilab.
+</think>
+
+Initialize a NEW dedicated folder named scilab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scilab. Focus entirely on this new objective: 'Develop a high-precision numerical simulation engine for dynamic systems analysis'. You MUST write code for this task strictly using this exact programming language: Scilab.

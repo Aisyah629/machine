@@ -1,0 +1,28 @@
+* MORTRAN PROCEDURE FOR MATHEMATICAL LIBRARY UTILITY
+*
+* This is a simplified example of a mathematical library utility
+* implemented using Mortran syntax. Mortran is a preprocessor for
+* Fortran that simplifies complex mathematical expressions.
+*
+* Example utility: Compute the Gaussian function.
+*
+* MORTRAN
+*
+* COMPUTE GAUSSIAN FUNCTION
+* INPUT: X (REAL), MEAN (REAL), STD_DEV (REAL)
+* OUTPUT: RESULT (REAL)
+*
+       INTEGER I
+       REAL X, MEAN, STD_DEV, RESULT, PI
+*
+* Initialize constants
+       PI = 3.14159265358979323846
+*
+* Compute the Gaussian function
+* Formula: (1 / (sqrt(2 * PI) * STD_DEV)) * exp(-((X - MEAN)**2) / (2 * STD_DEV**2))
+*
+       RESULT = 1.0 / (SQRT(2.0 * PI) * STD_DEV) * EXP(-((X - MEAN)**2) / (2.0 * STD_DEV**2))
+*
+* Return the result
+       RETURN
+       END

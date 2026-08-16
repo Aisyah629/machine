@@ -27359,3 +27359,33 @@ Initialize a NEW dedicated folder named objective_j_tool in the workspace, creat
 </think>
 
 Initialize a NEW dedicated folder named script_net_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Script.NET. Focus entirely on this new objective: 'Implement a game state serialization utility using Script.NET syntax'. You MUST write code for this task strictly using this exact programming language: Script.NET.
+[2026-08-16 14:09:18] (Target Lang: Mortran) The user wants a follow-up instruction for an Autonomous AI workspace.
+The instruction should follow the pattern of previous instructions, which involve creating a new tool folder, a README.md, and building a tool using a specific programming language.
+The specific programming language requested is "Mortran".
+The instruction must demand the tool be built STRICTLY using Mortran.
+It must explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+The output should be ONLY the instruction text.
+The .github directory must not be targeted.
+
+Let's construct the instruction:
+1.  Start with the action: "Initialize a NEW dedicated folder named `mortran_tool`..." (Choosing a folder name based on the language, consistent with `script_net_tool` -> `script_net_tool`).
+2.  Add the README requirement: "...create a local `README.md` inside it..."
+3.  Add the language constraint: "...and build the entire new tool STRICTLY using this exact programming language: Mortran."
+4.  Add the focus objective: "Focus entirely on this new objective: 'Implement a procedural mathematical library utility using Mortran syntax'." (Choosing a plausible objective for Mortran, which is a programming language for scientific computing).
+5.  Reiterate the language constraint: "You MUST write code for this task strictly using this exact programming language: Mortran."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand STRICTLY using Mortran? Yes.
+- NEW dedicated folder? Yes.
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+Drafting the text:
+`Initialize a NEW dedicated folder named mortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mortran. Focus entirely on this new objective: 'Implement a procedural mathematical library utility using Mortran syntax'. You MUST write code for this task strictly using this exact programming language: Mortran.`
+
+This looks correct and follows the format of the example provided in the history.
+</think>
+
+Initialize a NEW dedicated folder named mortran_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mortran. Focus entirely on this new objective: 'Implement a procedural mathematical library utility using Mortran syntax'. You MUST write code for this task strictly using this exact programming language: Mortran.

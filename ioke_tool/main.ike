@@ -1,0 +1,154 @@
+;; Reflex-Based Autonomic Computing Module
+;; Language: Ioke
+
+Module:
+
+  ;; System context for the autonomic computing module
+  SystemContext = Cell new
+  SystemContext set(
+    :resources, {}
+    :status, :healthy
+    :reflexes, []
+    :metrics, {}
+  )
+
+  ;; Resource monitor for tracking system resources
+  ResourceMonitor = Object clone set(
+    initialize: fn(self, context, updateInterval = 5000) {
+      self context = context
+      self updateInterval = updateInterval
+      self startTimer()
+    }
+    
+    startTimer: fn(self) {
+      timer = Timer clone
+      timer schedule(
+        fn() {
+          self updateMetrics()
+          self evaluateReflexes()
+        },
+        self updateInterval
+      )
+    }
+    
+    updateMetrics: fn(self) {
+      ;; Collect system metrics
+      cpuUsage = System getCPUUsage()
+      memoryUsage = System getMemoryUsage()
+      diskUsage = System getDiskUsage()
+      
+      ;; Update context metrics
+      self context :metrics put(:cpu, cpuUsage)
+      self context :metrics put(:memory, memoryUsage)
+      self context :metrics put(:disk, diskUsage)
+      
+      ;; Log metrics
+      System log("Metrics updated - CPU: ", cpuUsage, ", Memory: ", memoryUsage, ", Disk: ", diskUsage)
+    }
+    
+    evaluateReflexes: fn(self) {
+      context = self context
+      metrics = context :metrics
+      
+      ;; Evaluate each reflex
+      context :reflexes each(fn(reflex) {
+        if (reflex evaluate(metrics)) {
+          reflex execute()
+        }
+      })
+    }
+  )
+
+  ;; Reflex base for autonomic behaviors
+  Reflex = Object clone set(
+    initialize: fn(self, condition, action, name) {
+      self condition = condition
+      self action = action
+      self name = name
+    }
+    
+    evaluate: fn(self, metrics) {
+      self condition invoke(nil, metrics)
+    }
+    
+    execute: fn(self) {
+      System log("Executing reflex: ", self name)
+      self action invoke()
+    }
+  )
+
+  ;; Autonomic system manager
+  AutonomicSystem = Object clone set(
+    initialize: fn(self) {
+      self context = SystemContext clone
+      self monitor = nil
+      self started = false
+    }
+    
+    start: fn(self, updateInterval = 5000) {
+      if (self started) {
+        raise("System already started")
+      }
+      
+      self monitor = ResourceMonitor clone init(self context, updateInterval)
+      self configureDefaultReflexes()
+      self started = true
+      
+      System log("Autonomic system started with update interval: ", updateInterval, "ms")
+    }
+    
+    configureDefaultReflexes: fn(self) {
+      ;; High CPU usage reflex
+      highCpuReflex = Reflex clone init(
+        fn(metrics) { metrics :cpu > 80 },
+        fn() { self :throttleProcesses() },
+        "High CPU Throttle"
+      )
+      
+      ;; Low memory reflex
+      lowMemoryReflex = Reflex clone init(
+        fn(metrics) { metrics :memory > 90 },
+        fn() { self :optimizeMemoryUsage() },
+        "Low Memory Optimization"
+      )
+      
+      ;; Disk space warning reflex
+      diskSpaceReflex = Reflex clone init(
+        fn(metrics) { metrics :disk > 85 },
+        fn() { self :cleanTempFiles() },
+        "Disk Space Cleanup"
+      )
+      
+      ;; Add reflexes to context
+      self context :reflexes add(highCpuReflex)
+      self context :reflexes add(lowMemoryReflex)
+      self context :reflexes add(diskSpaceReflex)
+    }
+    
+    throttleProcesses: fn(self) {
+      System log("Throttling high-CPU processes...")
+      ;; Implementation would involve process management
+    }
+    
+    optimizeMemoryUsage: fn(self) {
+      System log("Optimizing memory usage...")
+      ;; Implementation would involve memory management
+    }
+    
+    cleanTempFiles: fn(self) {
+      System log("Cleaning temporary files...")
+      ;; Implementation would involve file system operations
+    }
+  )
+
+  ;; Main execution
+  main: fn() {
+    System log("Initializing Autonomic Computing Module...")
+    
+    autonomic = AutonomicSystem clone init
+    autonomic start(5000)  ;; 5-second update interval
+    
+    System log("Autonomic Computing Module ready. Monitoring system resources...")
+  }
+  
+  main

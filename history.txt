@@ -32013,3 +32013,48 @@ Initialize a NEW dedicated folder named livescript_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named powershell_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell. Focus entirely on this new objective: 'Develop a comprehensive IT infrastructure management suite with parallel task execution, advanced logging capabilities, and seamless Azure AD integration.'. You MUST write code for this task strictly using this exact programming language: PowerShell.
+[2026-08-16 19:57:01] (Target Lang: EPL) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built STRICTLY using the programming language: EPL.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Explicitly instruct to create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The user provided a huge list of files, history, and a previous instruction pattern. The previous instruction pattern seems to be: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+    *   The user wants a *follow-up* instruction. The history shows a previous output that matches the pattern. The current request asks for a *new* instruction following specific constraints.
+
+2.  **Formulate the Instruction:**
+    *   *Language:* EPL.
+    *   *Folder:* Needs a name. Looking at the history, the previous tool was `powershell_automation_tool`. A logical follow-up might be related to EPL. EPL often stands for "EPL programming language" or "Enterprise Policy Language" or similar. Since there's a list of tools, I should check if `epl_tool` exists in the provided list. Scanning the list... `./e_sharp_tool`, `./ease_tool`, `./eiffel_tool`... I don't see `epl_tool`. So I should create a new one. A good name would be `epl_tool` or `epl_engine_tool`. Let's stick to the pattern `epl_tool` or similar. The pattern usually uses `[language]_tool`. So `epl_tool` is safe.
+    *   *Folder Name:* `epl_tool`.
+    *   *Objective:* The request asks for a "logical follow-up". Since the previous one was PowerShell IT infrastructure, and this is EPL, I need a plausible objective for EPL. EPL is often used for event processing or policy. A logical objective might be "Develop a real-time event processing engine with complex event correlation and rule-based alerting." or something similar. However, the prompt doesn't specify the objective text, just the language and constraints. The pattern in the history includes a focus objective. I should generate a coherent objective. Let's use: "Develop a high-throughput event processing framework with temporal correlation analysis and dynamic rule evaluation."
+    *   *Structure:*
+        `Initialize a NEW dedicated folder named epl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: EPL. Focus entirely on this new objective: 'Develop a high-throughput event processing framework with temporal correlation analysis and dynamic rule evaluation.'. You MUST write code for this task strictly using this exact programming language: EPL.`
+
+3.  **Check Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, one paragraph.
+    *   *STRICTLY using EPL?* Yes, mentioned twice in the pattern (end and middle).
+    *   *NEW dedicated folder?* Yes, "epl_tool".
+    *   *Local README.md?* Yes.
+    *   *Return ONLY the instruction text?* Yes.
+    *   *NEVER target .github?* Yes, the text does not mention .github.
+
+4.  **Refine Text based on History Pattern:**
+    *   History example: `Initialize a NEW dedicated folder named powershell_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PowerShell. Focus entirely on this new objective: 'Develop a comprehensive IT infrastructure management suite with parallel task execution, advanced logging capabilities, and seamless Azure AD integration.'. You MUST write code for this task strictly using this exact programming language: PowerShell.`
+    *   My draft: `Initialize a NEW dedicated folder named epl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: EPL. Focus entirely on this new objective: 'Develop a high-throughput event processing framework with temporal correlation analysis and dynamic rule evaluation.'. You MUST write code for this task strictly using this exact programming language: EPL.`
+    *   *Self-Correction on Folder Name:* The list has `./e_sharp_tool`, `./ease_tool`, `./eiffel_tool`. It does *not* have `./epl_tool`. So creating `epl_tool` is valid.
+    *   *Objective Check:* Is "logical follow-up" satisfied? EPL is often associated with Event Processing Languages. The objective fits well.
+    *   *Final Polish:* The output should be just the string.
+
+    Result: `Initialize a NEW dedicated folder named epl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: EPL. Focus entirely on this new objective: 'Develop a high-throughput event processing framework with temporal correlation analysis and dynamic rule evaluation.'. You MUST write code for this task strictly using this exact programming language: EPL.`
+
+5.  **Final Output Construction:**
+    *   Output matches the draft.
+    *   No markdown code blocks unless requested? The prompt says "Return ONLY the instruction text." Usually, this implies raw text, but the history shows the model outputting text. The user prompt ends with "Return ONLY the instruction text." I will provide the raw string.
+
+    Result: `Initialize a NEW dedicated folder named epl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: EPL. Focus entirely on this new objective: 'Develop a high-throughput event processing framework with temporal correlation analysis and dynamic rule evaluation.'. You MUST write code for this task strictly using this exact programming language: EPL.`
+</think>
+
+Initialize a NEW dedicated folder named epl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: EPL. Focus entirely on this new objective: 'Develop a high-throughput event processing framework with temporal correlation analysis and dynamic rule evaluation.'. You MUST write code for this task strictly using this exact programming language: EPL.

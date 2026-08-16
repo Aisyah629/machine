@@ -1,9 +1,11 @@
 # Curry Tool
 
-A tool written in the functional logic programming language Curry.
-
-## Description
-This tool implements core functionalities using Curry's features such as non-determinism, lazy evaluation, and constraint solving.
+This tool is designed to develop a constraint satisfaction engine for solving logic puzzles using the Curry programming language.
 
 ## Usage
-Run the tool using a Curry interpreter or compiler (e.g., PAKCS, CurryFPGA, etc.).
+
+To run the Curry tool, use the following command:
+
+```bash
+curry_tool/main.cur
+```

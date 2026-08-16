@@ -1,0 +1,98 @@
+COMBINATIONSPL
+! Combined Programming Language (CPL) - Serialization and Configuration Parser
+
+! Data Structure Definitions
+STRUCTURE DataRecord;
+  STRING Name(32);
+  INTEGER Value;
+  BOOLEAN Active;
+END DataRecord;
+
+! Global Configuration
+CONFIG ConfigData;
+  BOOLEAN DebugMode FALSE;
+  STRING LogLevel(16) "INFO";
+END ConfigData;
+
+! Serialization Functions
+PROC SerializeDataRecord(Rec: DataRecord) RETURNS STRING;
+  VAR Result: STRING(128);
+  BEGIN
+    Result := "%s %d %s"(Rec.Name, Rec.Value, IF Rec.Active THEN "TRUE" ELSE "FALSE");
+    RETURN Result;
+  END SerializeDataRecord;
+
+PROC DeserializeDataRecord(Input: STRING) RETURNS DataRecord;
+  VAR Rec: DataRecord;
+  VAR Parts: STRING(128);
+  VAR NamePart: STRING(32);
+  VAR ValuePart: INTEGER;
+  VAR ActivePart: BOOLEAN;
+  BEGIN
+    ! Simple parsing logic (assumes space-separated values)
+    ! In a real CPL implementation, string manipulation might be more complex
+    NamePart := SUBSTRING(Input, 1, INDEX(Input, ' '));
+    VAR TempStr := SUBSTRING(Input, INDEX(Input, ' ') + 2);
+    ValuePart := TOINTEGER(SUBSTRING(TempStr, 1, INDEX(TempStr, ' ')));
+    ActivePart := TOBOOLEAN(SUBSTRING(TempStr, INDEX(TempStr, ' ') + 2));
+    
+    Rec.Name := NamePart;
+    Rec.Value := ValuePart;
+    Rec.Active := ActivePart;
+    RETURN Rec;
+  END DeserializeDataRecord;
+
+! Configuration Management Functions
+PROC LoadConfig(Path: STRING) RETURNS BOOLEAN;
+  BEGIN
+    ! Placeholder for file loading logic
+    ! In CPL, this would involve low-level I/O operations
+    ConfigData.DebugMode := TRUE;
+    ConfigData.LogLevel := "DEBUG";
+    RETURN TRUE;
+  END LoadConfig;
+
+PROC SaveConfig(Path: STRING) RETURNS BOOLEAN;
+  BEGIN
+    ! Placeholder for file saving logic
+    RETURN TRUE;
+  END SaveConfig;
+
+PROC GetLogLevel RETURNS STRING;
+  RETURN ConfigData.LogLevel;
+END GetLogLevel;
+
+! Main Execution
+BEGIN
+  VAR MyRecord: DataRecord;
+  VAR Serialized: STRING(128);
+  VAR Restored: DataRecord;
+  VAR ConfPath: STRING(64);
+
+  ! Initialize Data
+  MyRecord.Name := "SampleItem";
+  MyRecord.Value := 42;
+  MyRecord.Active := TRUE;
+
+  ! Serialize
+  Serialized := SerializeDataRecord(MyRecord);
+  WRITE(Serialized);
+
+  ! Deserialize
+  Restored := DeserializeDataRecord(Serialized);
+  IF Restored.Name = MyRecord.Name AND Restored.Value = MyRecord.Value THEN
+    WRITE("Data Integrity Verified")
+  ELSE
+    WRITE("Data Integrity Failed")
+  ENDIF;
+
+  ! Configuration
+  ConfPath := "config.dat";
+  IF LoadConfig(ConfPath) THEN
+    WRITE("Configuration Loaded: " & GetLogLevel())
+  ELSE
+    WRITE("Failed to load configuration")
+  ENDIF;
+
+  SAVECONFIG;
+END

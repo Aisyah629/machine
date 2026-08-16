@@ -34684,3 +34684,56 @@ Output Generation.
 </think>
 
 Initialize a NEW dedicated folder named cilk_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cilk. Focus entirely on this new objective: 'Develop a high-performance parallel task scheduling or multi-threaded computation framework.'. You MUST write code for this task strictly using this programming language: Cilk.
+[2026-08-16 22:19:22] (Target Lang: CPL) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using "CPL".
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Implicit Context: The user provided a list of existing tools and a history where `cilk_tool` was just requested. The pattern suggests I should follow the template: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this programming language: [Language]."
+
+2.  **Determine the Tool Name and Objective:**
+    *   Language: CPL (Combined Programming Language).
+    *   Folder Name: `cpl_tool`.
+    *   Objective: Needs to be relevant to CPL or general programming suitable for a "tool" in this repository. CPL is a language designed for portability and systems programming. A good objective could be a "compiler frontend" or a "data processing utility" or a "network protocol analyzer". Let's go with something robust: "Develop a cross-platform data serialization and serialization framework." or "Develop a robust compiler frontend for intermediate code generation." Let's stick to a standard "tool" vibe: "Develop a robust data serialization framework or configuration parser utility."
+
+3.  **Draft the Instruction:**
+    *   Template: Initialize a NEW dedicated folder named cpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CPL. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this programming language: CPL.
+    *   Objective Insertion: "Develop a robust data serialization framework or configuration parser utility."
+    *   Result: Initialize a NEW dedicated folder named cpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CPL. Focus entirely on this new objective: 'Develop a robust data serialization framework or configuration parser utility.'. You MUST write code for this task strictly using this programming language: CPL.
+
+4.  **Review Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Explicitly demand CPL? Yes ("STRICTLY using this exact programming language: CPL", "strictly using this programming language: CPL").
+    *   NEW dedicated folder? Yes ("cpl_tool").
+    *   Create local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   Never target .github? Yes.
+
+5.  **Final Polish:**
+    *   Text: Initialize a NEW dedicated folder named cpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CPL. Focus entirely on this new objective: 'Develop a robust data serialization framework or configuration parser utility.'. You MUST write code for this task strictly using this programming language: CPL.
+
+6.  **Output:**
+    *   Matches draft.
+
+One logical follow-up instruction generated.
+Language: CPL.
+Tool: cpl_tool.
+Object: Serialization/Config parser.
+Check against "CPL" capitalization: Request asks for "CPL". Draft uses "CPL". Good.
+Check against "STRICTLY": Draft includes "STRICTLY". Good.
+Check against "You MUST write code...": Draft includes this phrase. Good.
+Check against folder/README: Included. Good.
+Check against .github: Not included. Good.
+Check against "Return ONLY the instruction text": The output should be just the string. Good.
+
+Final String: Initialize a NEW dedicated folder named cpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CPL. Focus entirely on this new objective: 'Develop a robust data serialization framework or configuration parser utility.'. You MUST write code for this task strictly using this programming language: CPL.
+Double check objective logic. CPL is a systems language. Serialization/Parser is a good fit.
+
+Final verification of the output string.
+"Initialize a NEW dedicated folder named cpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CPL. Focus entirely on this new objective: 'Develop a robust data serialization framework or configuration parser utility.'. You MUST write code for this task strictly using this programming language: CPL."
+Looks correct.
+</think>
+
+Initialize a NEW dedicated folder named cpl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CPL. Focus entirely on this new objective: 'Develop a robust data serialization framework or configuration parser utility.'. You MUST write code for this task strictly using this programming language: CPL.

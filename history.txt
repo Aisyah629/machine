@@ -30363,3 +30363,67 @@ Initialize a NEW dedicated folder named ml_tool in the workspace, create a local
 </think>
 
 Initialize a NEW dedicated folder named ferite_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Implement a command-line utility for text processing and template rendering'. You MUST write code for this task strictly using this exact programming language: Ferite.
+[2026-08-16 17:57:18] (Target Lang: Boomerang) Thinking Process:
+1.  **Analyze User Input:**
+   - User wants exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: **Boomerang**.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - The history shows a pattern of generating instructions for tools in specific languages. The prompt gives a clear template.
+
+2.  **Identify Constraints:**
+   - Exactly 1 instruction.
+   - Language: Boomerang.
+   - New folder: `boomerang_tool`.
+   - Local README.md inside it.
+   - Focus/Objective: Needs to be something appropriate for a command-line/utility or just follow the pattern. The prompt says "Focus entirely on this new objective: 'Implement a command-line utility for [purpose]'". I will keep it similar to the previous one or make it generic but fitting. Let's stick to the pattern: "Implement a command-line utility for system monitoring and resource management" or similar, or just keep the structure. Actually, the prompt says "Focus entirely on this new objective: 'Implement a command-line utility for text processing and template rendering'." in the history, but for *this* turn, I need to generate a new instruction. I will invent a suitable objective or reuse the pattern. The prompt doesn't specify the objective for this turn, so I'll make one up or keep it general like "Implement a command-line utility for network packet analysis and logging". Wait, the prompt says "Generate exactly 1 logical follow-up instruction." I will follow the exact format of the previous ones.
+   - Format: `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language].`
+   - Language: Boomerang
+   - Folder: `boomerang_tool`
+   - Objective: I'll pick something logical, e.g., "Implement a command-line utility for log aggregation and pattern matching".
+   - Must NOT target .github.
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Implement a command-line utility for system process tracking and memory optimization'. You MUST write code for this task strictly using this exact programming language: Boomerang.
+
+   Check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using Boomerang? Yes.
+   - NEW dedicated folder? `boomerang_tool`
+   - Create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+
+   Let's verify the exact wording requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   I will format it exactly as requested. I'll keep the objective generic but valid for a CLI tool. Actually, to be safe, I'll mirror the exact structure from the prompt's example but replace the language and folder.
+   "Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Implement a command-line utility for system monitoring and log analysis'. You MUST write code for this task strictly using this exact programming language: Boomerang."
+
+   All constraints met. Output matches exactly. Proceed. 
+   One minor thing: The prompt says "Focus entirely on this new objective: '...'" I will just pick a reasonable objective. The exact text of the objective isn't specified, so I have creative freedom as long as it fits the CLI tool pattern. I'll stick to it.
+   Ready.✅
+   Output generation. 
+   Text: Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Implement a command-line utility for system monitoring and log analysis'. You MUST write code for this task strictly using this exact programming language: Boomerang. 
+   Checks: 
+   - 1 instruction? Yes.
+   - Boomerang? Yes.
+   - New folder + README? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+   Matches perfectly.✅
+   Output matches request. 
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Self-Correction/Refinement during thought)*: I should ensure the capitalization of "Boomerang" matches exactly. The prompt says "Boomerang". I will use it exactly. The prompt says "Return ONLY the instruction text." I will output exactly that string. No extra words.
+   Final string: Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Implement a command-line utility for system monitoring and log analysis'. You MUST write code for this task strictly using this exact programming language: Boomerang. 
+   All good.✅
+   Output matches. 
+   Proceeds. 
+   [Done] 
+   *Self-Correction/Verification during thought*: Wait, the prompt says "Focus entirely on this new objective: 'Implement a command-line utility for text processing and template rendering'." in the history, but for *this* turn it just says "Generate exactly 1 logical follow-up instruction...". I will just generate a fresh one. It's fine.
+   I will produce exactly the drafted string.✅
+   Output Generation.✅
+</think>
+
+Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Implement a command-line utility for system monitoring and log analysis'. You MUST write code for this task strictly using this exact programming language: Boomerang.

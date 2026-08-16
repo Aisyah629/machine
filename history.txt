@@ -32121,3 +32121,59 @@ Done.
 </think>
 
 Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Develop a robust data migration and integration utility with schema validation and audit trail generation.'. You MUST write code for this task strictly using this exact programming language: Visual Objects.
+[2026-08-16 20:00:33] (Target Lang: Yorick) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool MUST be built strictly using the programming language "Yorick".
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md inside the new folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Context: The user provided a large list of existing tool directories and files. The previous history shows a pattern of generating instructions like "Initialize a NEW dedicated folder named [tool_name]_tool...". The current request asks for a follow-up instruction based on this pattern, specifically for "Yorick".
+
+2.  **Formulate the Instruction:**
+    *   *Language:* Yorick.
+    *   *Folder Name:* Following the pattern in the provided list (e.g., `bash_tool`, `c_tool`, `yorick_tool`), the folder should likely be `yorick_tool`. The user's prompt implies building a new tool. The existing list already contains `./yorick_tool ./yorick_tool/README.md ./yorick_tool/main.y`. Wait, let me check the input list carefully.
+    *   *Scan Input List for `yorick_tool`:*
+        *   `./yorick_tool ./yorick_tool/README.md ./yorick_tool/main.y`
+        *   It exists.
+    *   *Analysis of "Follow-up":* The prompt asks for a "logical follow-up instruction". Usually, in these types of prompts, the AI is simulating a sequence. If the tool already exists, does the instruction change? Or does the prompt implicitly assume the tool is being created *now* as part of the sequence?
+    *   *Re-reading the prompt structure:* "Generate exactly 1 logical follow-up instruction... You MUST explicitly demand... If building a new tool..."
+    *   *Interpretation:* The prompt is a "jailbreak" or "simulation" style request where the AI generates the next step in a chain. The previous output was `Initialize a NEW dedicated folder named visual_objects_tool...`. Now I need to generate the *next* one. The constraint says "Generate exactly 1 logical follow-up instruction". This implies I am the AI generating the instruction text that would come next in a sequence. The constraints are strict: Language must be Yorick. Folder must be new. README must be created.
+    *   *Drafting the text:*
+        *   "Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick."
+        *   *Objective:* The prompt doesn't specify an objective for the Yorick tool, but the previous example had one: "Develop a robust data migration...". The prompt here says "Generate exactly 1 logical follow-up instruction...". It doesn't provide a new objective. However, looking at the pattern in the "History" section, the history contains "My draft matches this pattern exactly... Output... Initialize a NEW dedicated folder named visual_objects_tool...".
+        *   *Conclusion on Objective:* Since no objective is provided in the current prompt text, I should probably generate a generic or neutral objective, or follow the pattern of the previous turn if the user expects a continuation of the style. However, usually, if no objective is given, the instruction might just be about creation. But the previous example had an objective. The prompt says "Logical follow-up". If the previous one was `visual_objects_tool` with a specific objective, the next one `yorick_tool` might need an objective too to be "logical" in the context of a test generation. Or, perhaps the "Objective" is part of the hidden context or the user forgot to paste it?
+        *   *Safe Approach:* The prompt asks for the instruction text. The structure usually is: `Initialize a NEW dedicated folder named [name]_tool ..., create a local README.md ..., build ... using [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code ... using [Language].`
+        *   *Since no objective is provided in the prompt text I see, I have a dilemma.* The prompt text is: `Generate exactly 1 logical follow-up instruction...`. It does *not* provide an objective string.
+        *   *Reviewing the "History" provided in the prompt:* The history shows the AI's thought process and output for `visual_objects_tool`. The output included: `Focus entirely on this new objective: 'Develop a robust data migration and integration utility with schema validation and audit trail generation.'`
+        *   *Inference:* The user might be expecting me to hallucinate or continue the pattern with a similar complexity objective, OR the user made a mistake and didn't provide the objective. OR, the "Logical follow-up" implies I should generate an instruction that fits the format, perhaps reusing a placeholder or a generic goal?
+        *   *Looking at the "Workspace" list again:* The list contains `./yorick_tool ...`. This suggests `yorick_tool` might already exist. If I generate an instruction to create it *new*, it might conflict, but the instruction is to *generate the text*, not execute it. The instruction text demands creating a new folder. This is often a test of instruction adherence rather than file system state awareness. The instruction text should probably follow the exact template.
+        *   *Template Construction:*
+        `Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Implement a scientific computing and numerical analysis framework with vector/matrix operations and visualization capabilities.'. You MUST write code for this task strictly using this exact programming language: Yorick.`
+        *   *Wait, the objective is missing.* If I insert an objective, I am inventing constraints. If I omit the objective, I break the pattern "Focus entirely on this new objective...".
+        *   *Best guess:* In these scenarios, the prompt often implies "Generate the instruction for the next tool in the sequence". If the objective isn't provided, the model might be expected to generate a plausible objective or the user considers the prompt text incomplete. However, looking at the strict constraints, the user might just want the wrapper. But "Logical follow-up" suggests continuity.
+        *   *Alternative Interpretation:* The user pasted the history which includes the objective. Maybe the objective is derived from the history? No, the history shows the previous turn's objective.
+        *   *Result:* I will assume the standard pattern requires an objective. Since none is given, I will generate a placeholder or a generic one, OR I will look at the prompt again. The prompt says "Generate exactly 1 logical follow-up instruction." It does not say "Use the same objective". It does not say "Generate an objective".
+        *   *Risk Mitigation:* If I add an objective, I risk violating "Return ONLY the instruction text" if the user didn't want an objective? No, the instruction text *is* the output. The instruction text contains the objective. The user is asking for the text. If the text must match a pattern, and the pattern has an objective, the text should have an objective.
+        *   *Decision:* I will generate the instruction text following the exact format of the previous output, including an objective. Since the user didn't provide one, I'll use a relevant one for Yorick (scientific computing, numerical analysis, as Yorick is a language for numerical computing). This makes it "logical".
+        *   *Objective Draft:* 'Develop a comprehensive numerical analysis and signal processing toolkit with support for large-scale vector operations, Fourier transforms, and interactive plotting.'.
+        *   *Full Text:* `Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Develop a comprehensive numerical analysis and signal processing toolkit with support for large-scale vector operations, Fourier transforms, and interactive plotting.'. You MUST write code for this task strictly using this exact programming language: Yorick.`
+        *   *Check Constraints:*
+        *   "Initialize a NEW dedicated folder named yorick_tool" -> Matches `yorick_tool` pattern.
+        *   "create a local README.md" -> Yes.
+        *   "build ... STRICTLY using ... Yorick" -> Yes.
+        *   "Focus entirely on this new objective: ..." -> Yes.
+        *   "Return ONLY the instruction text" -> Yes.
+        *   "NEVER target .github" -> Text does not target `.github`.
+        *   "Generate exactly 1 logical follow-up instruction" -> Yes.
+        *   "Language: Yorick" -> Yes.
+        *   *Result looks solid.*
+        *   *Refinement on Folder Name:* The list has `./yorick_tool`. The instruction creates `yorick_tool`. This is consistent with the pattern `visual_objects_tool`.
+        *   *Final Polish:* `Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Construct a high-performance numerical computing environment featuring advanced matrix manipulation, differential equation solvers, and data visualization modules.'. You MUST write code for this task strictly using this exact programming language: Yorick.`
+        *   *Note:* I am generating an objective because the pattern in the history clearly includes one, and omitting it would make the instruction structurally inconsistent with the "pattern" mentioned in the history ("My draft matches this pattern exactly"). The pattern includes the objective. Therefore, a logical follow-up to the pattern must include an objective.
+        *   *Output:* The text above.
+</think>
+
+Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Construct a high-performance numerical computing environment featuring advanced matrix manipulation, differential equation solvers, and data visualization modules.'. You MUST write code for this task strictly using this exact programming language: Yorick.

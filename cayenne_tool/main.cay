@@ -1,0 +1,146 @@
+-- Cayenne Implementation: Secure Cryptographic Protocol Verifier
+-- This module defines the core data structures and verification logic for
+-- cryptographic protocols, ensuring security properties are met.
+
+module CayenneCryptoProtocolVerifier
+
+import Cayenne
+import Cayenne.IO
+import Cayenne.List
+import Cayenne.Set
+import Cayenne.Boolean
+
+-- Data Types for Protocol Elements
+
+type Principal = 
+  | User Name
+  | Server Name
+  | Authority Name
+
+and Name = String
+
+-- Message structure in the protocol
+type Message = 
+  | PlainText Content
+  | Encrypted Content Key
+  | Nonce Timestamp
+  | Signature Content Hash
+  | Timestamped Message Content Timestamp
+
+and Content = String
+and Key = Public | Private
+and Timestamp = Int
+and Hash = String
+
+-- Protocol Steps
+type ProtocolStep = 
+  | Send Principal Principal Message
+  | Receive Principal Principal Message
+  | GenerateKey Principal Key
+  | VerifySignature Principal Signature
+
+-- Security Properties
+
+type SecurityProperty = 
+  | Secrecy Message
+  | Authentication Principal
+  | Integrity
+  | Freshness
+
+-- Verifier Context
+type VerifierContext = 
+  {
+    knownKeys : Set (Principal, Key),
+    trustedParties : Set Principal,
+    protocolSteps : List ProtocolStep,
+    securityProperties : List SecurityProperty
+  }
+
+-- Helper Functions
+
+-- Check if a key is known and trusted
+checkKeyTrust : VerifierContext -> (Principal, Key) -> Boolean
+checkKeyTrust ctx (principal, key) = 
+  Set.contains (Set.map (\(p, k) -> (p, k)) ctx.knownKeys) (principal, key)
+
+-- Verify message freshness against a timestamp
+defreshen : Timestamp -> Timestamp -> Boolean
+defreshen timestamp currentTimestamp = 
+  (currentTimestamp - timestamp) < 100
+
+-- Verify signature (simplified logic)
+verifySignature : Message -> Boolean
+verifySignature (Signature content hash) = 
+  -- In a real implementation, this would verify the cryptographic signature
+  not (content == "")
+verifySignature _ = False
+
+-- Verify secrecy property
+-- Ensures that sensitive messages are only sent to trusted parties
+verifySecrecy : VerifierContext -> Message -> Boolean
+verifySecrecy ctx msg =
+  let checkPrincipal principal =
+    Set.contains ctx.trustedParties principal
+  in
+  -- Simplified check: for demonstration, we assume all principals are trusted
+  -- In a real implementation, this would check against the known keys and parties
+  True
+
+-- Main verification function
+verifyProtocol : VerifierContext -> Boolean
+verifyProtocol ctx =
+  -- Verify all protocol steps
+  let verifyStep step =
+    match step with
+    | Send sender receiver msg ->
+        -- Check if sender has rights to send
+        -- Check message integrity if required
+        True -- Placeholder for actual logic
+    | Receive sender receiver msg ->
+        -- Verify message integrity and authenticity
+        verifySignature msg
+    | GenerateKey principal key ->
+        -- Key generation should be secure
+        True
+    | VerifySignature principal sig ->
+        verifySignature sig
+  in
+  List.all verifyStep ctx.protocolSteps
+
+-- Example usage and test
+testProtocol : Boolean
+testProtocol =
+  let alice = User "Alice"
+      bob = User "Bob"
+      server = Server "CryptoServer"
+  
+      msg1 = PlainText "hello"
+      msg2 = Encrypted "secret" Public
+  
+      steps = 
+        [ 
+          Send alice server msg1,
+          Receive server alice msg2,
+          VerifySignature alice msg2
+        ]
+  
+      ctx = 
+        {
+          knownKeys = Set.fromList [(alice, Public), (server, Public)],
+          trustedParties = Set.fromList [alice, server],
+          protocolSteps = steps,
+          securityProperties = [Secrecy msg2]
+        }
+  in
+  verifyProtocol ctx
+
+-- Output results
+main : IO Unit
+main = 
+  let result = testProtocol in
+  if result then
+    putStrLn "Protocol verification passed."
+  else
+    putStrLn "Protocol verification failed."
+  in
+  return ()

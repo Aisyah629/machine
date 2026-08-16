@@ -512,3 +512,5 @@ Training Machine
 - Created/Updated module: `signal_tool` (See `signal_tool/README.md` for details)
 
 - Created/Updated module: `c_string_tool` (See `c_string_tool/README.md` for details)
+
+- Created/Updated module: `cayenne_tool` (See `cayenne_tool/README.md` for details)

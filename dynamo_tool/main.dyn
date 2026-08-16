@@ -1,0 +1,72 @@
+
+* DYNAMO MODEL: SYSTEM DYNAMICS SIMULATION FOR RESOURCE FLOW ANALYSIS
+* LANGUAGE: DYNAMO
+* OBJECTIVE: Implement a robust system dynamics simulation model for resource flow analysis
+
+* ========================================
+* MODEL DEFINITION & INITIALIZATION
+* ========================================
+
+MODEL SIMULATION OF ECOSYSTEM RESOURCE DYNAMICS
+
+* ========================================
+* LEVEL VARIABLES (STOCKS)
+* ========================================
+
+LEVEL RES_LEVEL(T) = RES_LEVEL(N) + DT * (GROWTH_RATE(N) - HARVEST_RATE(N) - DECAY_RATE(N))
+
+* Natural resource stock at current time step
+* Initial conditions
+LEVEL RES_LEVEL = 1000
+
+* ========================================
+* RATE VARIABLES (FLOWS)
+* ========================================
+
+RATE GROWTH_RATE
+RATE HARVEST_RATE
+RATE DECAY_RATE
+
+GROWTH_RATE(T) = ALPHA * RES_LEVEL(N) * (1 - RES_LEVEL(N) / CARRYING_CAPACITY)
+HARVEST_RATE(T) = EFFORT_FACTOR * RES_LEVEL(N)
+DECAY_RATE(T) = DECAY_COEFF * RES_LEVEL(N)
+
+* Growth follows logistic model with carrying capacity
+* Harvest rate depends on effort factor
+* Decay rate depends on environmental decay coefficient
+
+* ========================================
+* AUXILIARY VARIABLES & PARAMETERS
+* ========================================
+
+AUX ALPHA
+AUX CARRYING_CAPACITY
+AUX EFFORT_FACTOR
+AUX DECAY_COEFF
+AUX DT
+
+ALPHA = 0.1
+CARRYING_CAPACITY = 5000
+EFFORT_FACTOR = 0.05
+DECAY_COEFF = 0.02
+DT = 1.0
+
+* ========================================
+* SIMULATION CONTROL & OUTPUT
+* ========================================
+
+SIMULATION STARTS AT T = 0
+SIMULATION ENDS AT T = 100
+OUTPUT INTERVAL = DT
+
+PRNT T, RES_LEVEL, GROWTH_RATE, HARVEST_RATE, DECAY_RATE
+
+* ========================================
+* FEEDBACK LOOPS & INTERACTIONS
+* ========================================
+
+* Positive feedback: Resource growth supports more resource
+* Negative feedback: Resource depletion limits growth
+* External feedback: Environmental decay reduces resource
+
+END OF MODEL

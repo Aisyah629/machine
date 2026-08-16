@@ -22332,3 +22332,71 @@ This matches the pattern and constraints.
 </think>
 
 Initialize a NEW dedicated folder named rtl2_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RTL/2. Focus entirely on this new objective: 'Design a robust computational module for embedded signal processing'. You MUST write functional code for this task strictly using this exact programming language: RTL/2.
+[2026-08-16 08:00:06] (Target Lang: DYNAMO) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of existing tools/folders (`.git`, `.github`, various `_tool` directories with `README.md` and a main file).
+   - **History:** Shows a previous instruction pattern for creating a tool in a new folder with a specific language constraint.
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - Target language: `DYNAMO`
+     - Must explicitly demand the tool be built STRICTLY using `DYNAMO`
+     - If building a new tool: instruct to place it in a NEW dedicated folder and create a local README.md
+     - Return ONLY the instruction text
+     - NEVER target the `.github` directory
+   - **Pattern from History:** "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+
+2.  **Identify Key Components for Output:**
+   - Folder name: `dynamo_tool` (based on the pattern of other tools like `abap_tool`, `ada_tool`, etc.)
+   - Language: `DYNAMO`
+   - Objective: Needs to be relevant to DYNAMO. DYNAMO is a simulation modeling language (typically for system dynamics). I'll choose an objective like "Develop a system dynamics simulation model for resource management" or "Implement a complex feedback loop simulation for ecological modeling".
+   - Format: Match the exact pattern from the history/context.
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Implement a comprehensive system dynamics simulation for ecological resource modeling'. You MUST write functional code for this task strictly using this exact programming language: DYNAMO.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using DYNAMO? Yes.
+   - Instruct to place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches pattern? Yes.
+
+   All constraints met. I will output exactly the drafted text. No extra words. Ensure formatting matches the prompt's expectation. The prompt says "Return ONLY the instruction text." I will provide just that string.
+
+   One minor adjustment: DYNAMO is often associated with system dynamics/simulation. I'll make the objective slightly more technical to match the tone: "Implement a robust system dynamics simulation model for resource flow analysis". The rest is solid.
+
+   Final check of the exact prompt text pattern:
+   "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+
+   Matches perfectly. Output matches exactly.✅
+   Proceed. 
+   Output generation. 
+   [Output]: Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Implement a robust system dynamics simulation model for resource flow analysis'. You MUST write functional code for this task strictly using this exact programming language: DYNAMO.✅
+   All constraints verified. No extra text. Ready. 
+   *Self-Correction/Refinement during thought*: 
+   Wait, the prompt says "Return ONLY the instruction text." I will strictly output just the sentence. No markdown, no quotes around the whole thing unless necessary, but the prompt example shows just the text. I'll output exactly the string.
+   The prompt history shows: `Initialize a NEW dedicated folder named rtl2_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RTL/2. Focus entirely on this new objective: 'Design a robust computational module for embedded signal processing'. You MUST write functional code for this task strictly using this exact programming language: RTL/2.`
+   I will follow this exactly.
+   Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   "Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Implement a robust system dynamics simulation model for resource flow analysis'. You MUST write functional code for this task strictly using this exact programming language: DYNAMO." -> matches exactly. 
+   All good. 
+   Output matches response. 
+   [Done] 
+   *Self-Correction/Note during generation*: I should make sure the capitalization and punctuation exactly match the requested pattern. The prompt says: `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language].`
+   I will paste it exactly.
+   Ready. 
+   Output matches.✅
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DYNAMO. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints met. Output matches pattern. Proceeds. 
+   [Output Generation] -> *Proceeds*
+   `Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Implement a robust system dynamics simulation model for resource flow analysis'. You MUST write functional code for this task strictly using this exact programming language: DYNAMO.` -> exactly matches. 
+   Done. 
+   [Output] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Implement a robust system dynamics simulation model for resource flow analysis'. You MUST write functional code for this task strictly using this exact programming language: DYNAMO.

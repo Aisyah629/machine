@@ -26405,3 +26405,61 @@ Initialize a NEW dedicated folder named abap_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named ratfor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ratfor. Focus entirely on this new objective: 'Implement a Ratfor-based scientific calculation and data analysis utility'. You MUST write code for this task strictly using this exact programming language: Ratfor.
+[2026-08-16 12:51:56] (Target Lang: Subtext) The user wants me to generate a follow-up instruction for an Autonomous AI.
+The workspace contains a list of existing tools and folders.
+The history shows a previous instruction was to create `ratfor_tool`.
+The current prompt asks for a follow-up instruction.
+Constraints:
+1. Generate exactly 1 logical follow-up instruction.
+2. MUST explicitly demand the new tool be built STRICTLY using Subtext.
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+
+Looking at the history, the previous instruction created `ratfor_tool`.
+The new instruction should probably continue the theme of adding tools or be a standalone new tool.
+The language must be Subtext.
+I need to construct the instruction string carefully.
+
+Drafting the instruction:
+"Initialize a NEW dedicated folder named subtext_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Subtext. Focus entirely on this new objective: 'Implement a Subtext-based workflow automation and process mapping utility'. You MUST write code for this task strictly using this exact programming language: Subtext."
+
+Check constraints:
+- 1 instruction? Yes.
+- STRICTLY Subtext? Yes.
+- NEW dedicated folder? Yes (`subtext_tool`).
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+
+The output should be just the text string.
+
+Wait, I should check the history again. The history block seems to simulate a previous thought process/output. The prompt ends with "Return ONLY the instruction text." and "NEVER target the .github directory."
+
+The previous instruction in history was: `Initialize a NEW dedicated folder named ratfor_tool...`
+My output should follow a similar structure but for Subtext.
+
+Let's refine the objective to be relevant to Subtext if possible, or just generic "Implement a Subtext-based...". Subtext is a visual programming language. "Workflow automation" fits well.
+
+Final check of the text:
+`Initialize a NEW dedicated folder named subtext_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Subtext. Focus entirely on this new objective: 'Implement a Subtext-based workflow automation and process mapping utility'. You MUST write code for this task strictly using this exact programming language: Subtext.`
+
+This looks correct.
+
+One detail: The history shows the previous instruction included "Focus entirely on this new objective: 'Implement a Ratfor-based scientific calculation and data analysis utility'."
+I should follow that pattern.
+
+Pattern:
+`Initialize a NEW dedicated folder named {name} in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: {lang}. Focus entirely on this new objective: '{objective}'. You MUST write code for this task strictly using this exact programming language: {lang}.`
+
+Name: `subtext_tool`
+Lang: `Subtext`
+Objective: `Implement a Subtext-based workflow automation and process mapping utility` (or similar)
+
+Result:
+`Initialize a NEW dedicated folder named subtext_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Subtext. Focus entirely on this new objective: 'Implement a Subtext-based workflow automation and process mapping utility'. You MUST write code for this task strictly using this exact programming language: Subtext.`
+
+Looks good.
+</think>
+
+Initialize a NEW dedicated folder named subtext_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Subtext. Focus entirely on this new objective: 'Implement a Subtext-based workflow automation and process mapping utility'. You MUST write code for this task strictly using this exact programming language: Subtext.

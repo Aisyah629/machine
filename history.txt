@@ -32521,3 +32521,41 @@ Output matches the drafted text.
 </think>
 
 Initialize a NEW dedicated folder named coral66_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coral 66. Focus entirely on this new objective: 'Build a Coral 66 application for high-performance matrix operations and numerical simulations.'. You MUST write code for this task strictly using this exact programming language: Coral 66.
+[2026-08-16 20:38:14] (Target Lang: LC-3) Thinking process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Build a new tool strictly using the programming language `LC-3`.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local `README.md` inside the folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Context: The user provided a large list of files/directories (representing the workspace state) and a history of a previous instruction (`coral66_tool`). The history shows the pattern: "Initialize a NEW dedicated folder named [folder_name]..., create a local README.md..., build... STRICTLY using [Language]. Focus...".
+
+2.  **Draft the Instruction:**
+    *   *Folder Name:* Following the pattern `language_tool`, the folder should be `lc3_tool` (or `lc_3_tool` based on the list provided in the context, I see `lc3_tool` exists in the list `./lc3_tool/main.lc3`). The prompt asks for a "NEW dedicated folder". However, the instruction generation logic usually assumes the action will happen. The list shows `lc3_tool` exists. Does the user want a *new* one or just the instruction? The constraint says "If building a new tool...". The instruction should probably create the folder. Even if it exists in the list, the instruction is the *command* to build it. The prompt asks for a "logical follow-up". The previous history was `coral66_tool`. The list contains `coral66_tool`. So the previous instruction was likely executed. Now I need to generate the next one.
+    *   *Language:* LC-3.
+    *   *Format:* "Initialize a NEW dedicated folder named lc3_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LC-3."
+    *   *Objective/Focus:* I should add a focus similar to the history. The history had "Build a Coral 66 application for high-performance matrix operations...". I can create a generic or specific focus. The prompt doesn't restrict the focus text, just the language. I'll add a reasonable focus to match the style. "Focus entirely on this new objective: 'Implement an LC-3 program for efficient bit manipulation and low-level system simulation.'."
+    *   *Mandatory Phrase:* "You MUST write code for this task strictly using this exact programming language: LC-3."
+
+3.  **Refine the Instruction Text:**
+    *   *Draft:* Initialize a NEW dedicated folder named lc3_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LC-3. Focus entirely on this new objective: 'Implement an LC-3 program for efficient bit manipulation and low-level system simulation.'. You MUST write code for this task strictly using this exact programming language: LC-3.
+
+4.  **Check Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Language: LC-3? Yes.
+    *   New dedicated folder? Yes (`lc3_tool`).
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   NEVER target `.github`? Yes.
+    *   Logical follow-up? Yes.
+
+5.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named lc3_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LC-3. Focus entirely on this new objective: 'Implement an LC-3 program for efficient bit manipulation and low-level system simulation.'. You MUST write code for this task strictly using this exact programming language: LC-3.`
+
+6.  **Output Generation:**
+    *   Return the polished text.
+</think>
+
+Initialize a NEW dedicated folder named lc3_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LC-3. Focus entirely on this new objective: 'Implement an LC-3 program for efficient bit manipulation and low-level system simulation.'. You MUST write code for this task strictly using this exact programming language: LC-3.

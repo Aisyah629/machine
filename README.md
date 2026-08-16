@@ -814,3 +814,5 @@ Training Machine
 - Created/Updated module: `tex_macro_compiler_tool` (See `tex_macro_compiler_tool/README.md` for details)
 
 - Created/Updated module: `./coral66_tool` (See `./coral66_tool/README.md` for details)
+
+- Created/Updated module: `lc3_tool` (See `lc3_tool/README.md` for details)

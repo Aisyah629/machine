@@ -25195,3 +25195,43 @@ Initialize a NEW dedicated folder named charm_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named hume_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hume. Focus entirely on this new objective: 'Design a high-performance hardware pipeline accelerator utilizing Hume's functional composition and type-safe abstractions for efficient RTL generation'. You MUST write functional code for this task strictly using this exact programming language: Hume.
+[2026-08-16 11:20:49] (Target Lang: Stackless Python) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Must explicitly demand the new tool be built STRICTLY using the exact programming language: Stackless Python.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a long list of existing tools and a history snippet. The history shows a pattern of creating `hume_tool` using `Hume`. The user now wants a *new* instruction based on the pattern, but for `Stackless Python`.
+
+2.  **Drafting the Instruction:**
+    *   *Folder Name:* Based on the pattern `name_tool`, the folder should be `stackless_python_tool`.
+    *   *Language:* Stackless Python.
+    *   *Action:* Initialize folder, create README.md, build tool.
+    *   *Objective:* Need a plausible objective for Stackless Python. Stackless Python is known for microthreads and scalability. A good objective might be "Design a highly scalable concurrent task scheduler utilizing microthreading for massive parallelism." or "Create a distributed computing framework leveraging lightweight channels and tasklets." Let's go with something aligned with the "hardware pipeline" style of the previous example but adapted for Stackless Python. Maybe "Design a high-throughput concurrent data processing pipeline utilizing Stackless Python's microthreads and channel-based communication for efficient parallel execution."
+    *   *Mandatory Phrases:* "STRICTLY using this exact programming language: Stackless Python", "NEW dedicated folder named stackless_python_tool", "create a local README.md", "MUST write functional code...".
+
+    *   *Draft 1:* Initialize a NEW dedicated folder named stackless_python_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Stackless Python. Focus entirely on this new objective: 'Design a high-throughput concurrent data processing pipeline utilizing microthreads and channel-based communication for massive scalability'. You MUST write code for this task strictly using this exact programming language: Stackless Python.
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, it's a single sentence/command structure.
+    *   *STRICTLY using Stackless Python?* Yes, "STRICTLY using this exact programming language: Stackless Python" is included.
+    *   *NEW dedicated folder?* Yes, "stackless_python_tool".
+    *   *Local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes, the output will be just the text.
+    *   *NEVER target .github?* Yes, no mention of .github.
+    *   *Logical follow-up?* Yes, it follows the pattern of the history but changes the language and tool name appropriately.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Initialize a NEW dedicated folder named stackless_python_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Stackless Python. Focus entirely on this new objective: 'Design a high-throughput concurrent data processing pipeline utilizing microthreads and channel-based communication for massive scalability'. You MUST write code for this task strictly using this exact programming language: Stackless Python.`
+
+    *   *Refinement on Language Name:* The user asked for "Stackless Python". The folder name in the list shows `stackless_python_tool`. The instruction should match the language name provided. The draft looks good.
+
+5.  **Final Output Construction:**
+    *   Result: Initialize a NEW dedicated folder named stackless_python_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Stackless Python. Focus entirely on this new objective: 'Design a high-throughput concurrent data processing pipeline utilizing microthreads and channel-based communication for massive scalability'. You MUST write code for this task strictly using this exact programming language: Stackless Python.
+
+This matches all constraints.
+</think>
+
+Initialize a NEW dedicated folder named stackless_python_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Stackless Python. Focus entirely on this new objective: 'Design a high-throughput concurrent data processing pipeline utilizing microthreads and channel-based communication for massive scalability'. You MUST write code for this task strictly using this exact programming language: Stackless Python.

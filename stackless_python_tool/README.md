@@ -1,12 +1,23 @@
 # Stackless Python Tool
 
-This tool provides a framework for building, testing, and deploying applications using the Stackless Python programming language. Stackless Python is an enhanced version of the Python interpreter that supports microthreads (green threads) for concurrent programming without the overhead of traditional operating system threads.
+## Overview
+This tool is a high-throughput concurrent data processing pipeline designed using Stackless Python. It leverages microthreads (tasklets) and channel-based communication to achieve massive scalability and efficient parallel execution.
 
 ## Features
-- Microthread-based concurrency model
-- Seamless integration with standard Python libraries
-- High-performance coroutine scheduling
-- Robust task management and communication channels
+- Microthread-based concurrency
+- Channel-based inter-tasklet communication
+- Scalable data processing pipeline
+- Fault-tolerant task management
 
 ## Usage
-To use this tool, clone the repository and run the main application file (`main.py`) to access the interactive Stackless Python environment and utilities.
+To run the tool, execute the main script:
+
+```bash
+python main.py
+```
+
+## Installation
+Ensure Stackless Python is installed. You can download it from the official Stackless Python website.
+
+## License
+This tool is provided as-is for educational and research purposes.

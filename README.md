@@ -900,3 +900,5 @@ Training Machine
 - Created/Updated module: `krl_tool` (See `krl_tool/README.md` for details)
 
 - Created/Updated module: `octave_analysis_tool` (See `octave_analysis_tool/README.md` for details)
+
+- Created/Updated module: `sequencel_analysis_tool` (See `sequencel_analysis_tool/README.md` for details)

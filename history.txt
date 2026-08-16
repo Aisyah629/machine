@@ -36680,3 +36680,41 @@ Initialize a NEW dedicated folder named krl_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named octave_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Octave. Focus entirely on this new objective: 'Implement an Octave script for signal processing and filtering'. You MUST write code for this task strictly using this programming language: Octave.
+[2026-08-16 23:48:25] (Target Lang: SequenceL) The user wants a follow-up instruction based on the provided workspace and history.
+The instruction should follow a specific style: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write code for this task strictly using this programming language: [LANG]."
+I need to check the workspace listing to see what tools exist and potentially what language 'SequenceL' corresponds to or if it's a new tool.
+Looking at the workspace list, I see `sequencel_tool` with `./sequencel_tool/README.md`, `./sequencel_tool/main.seq`, and `./sequencel_tool/main.seql`.
+This indicates `SequenceL` is already present.
+However, the user prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+Wait, the prompt asks me to generate the *instruction* that would be given to the AI.
+The instruction must demand building a tool in SequenceL.
+Since `sequencel_tool` exists, should I create a new folder? The prompt says "If building a new tool...".
+Usually, follow-ups imply extending functionality or creating a variation.
+The style requires: "Initialize a NEW dedicated folder named [name]..."
+So I should invent a name for the new folder, e.g., `sequencel_advanced_tool` or `sequencel_data_tool`.
+The language must be SequenceL.
+The objective should be relevant.
+Example: `sequencel_signal_tool` with objective 'Implement a SequenceL script for pattern matching in sequences'.
+Or `sequencel_machine_learning_tool` with objective 'Develop a SequenceL program for machine learning classification'.
+Let's pick a name and objective.
+Name: `sequencel_analysis_tool`.
+Objective: 'Create a SequenceL program for data analysis and visualization'.
+Language: SequenceL.
+Constraint check:
+- New dedicated folder: Yes (`sequencel_analysis_tool`).
+- Local README.md: Yes.
+- Language: SequenceL.
+- Objective: Included.
+- NO .github: Yes.
+- Output only instruction text: Yes.
+
+Drafting:
+"Initialize a NEW dedicated folder named sequencel_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SequenceL. Focus entirely on this new objective: 'Create a SequenceL program for data analysis and visualization'. You MUST write code for this task strictly using this programming language: SequenceL."
+
+This matches the style.
+Check `sequencel_tool` exists? Yes.
+Is SequenceL the language? Yes.
+Result looks good.
+</think>
+
+Initialize a NEW dedicated folder named sequencel_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SequenceL. Focus entirely on this new objective: 'Create a SequenceL program for data analysis and visualization'. You MUST write code for this task strictly using this programming language: SequenceL.

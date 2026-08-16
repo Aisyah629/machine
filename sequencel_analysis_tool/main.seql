@@ -1,0 +1,66 @@
+// SequenceL Data Analysis and Visualization Tool
+// Language: SequenceL
+// Version: 1.0.0
+
+// Function to load a sequence from a CSV-like format
+load_data(seq_str, delimiter) =>
+    if seq_str == "" then
+        []
+    else
+        split(seq_str, delimiter);
+
+// Function to normalize a sequence to [0, 1] range
+normalize_seq(seq) =>
+    let min_val := min(seq);
+    let max_val := max(seq);
+    let range := max_val - min_val;
+    if range == 0 then
+        [0.0 | x in seq]
+    else
+        [(x - min_val) / range | x in seq];
+
+// Function to calculate the mean of a sequence
+calculate_mean(seq) =>
+    if length(seq) == 0 then
+        0.0
+    else
+        sum(seq) / length(seq);
+
+// Function to calculate standard deviation
+calculate_std_dev(seq) =>
+    let mean := calculate_mean(seq);
+    let sum_sq_diff := sum([(x - mean)^2 | x in seq]);
+    sqrt(sum_sq_diff / length(seq));
+
+// Function to sort a sequence in ascending order
+sort_sequence(seq) =>
+    if length(seq) <= 1 then
+        seq
+    else
+        let pivot := seq[0];
+        let less := [x | x in seq[1:] if x <= pivot];
+        let greater := [x | x in seq[1:] if x > pivot];
+        concat(sort_sequence(less), [pivot], sort_sequence(greater));
+
+// Function to generate a simple bar chart representation (ASCII)
+generate_bar_chart(values, labels) =>
+    let max_val := max(values);
+    if max_val == 0 then
+        ["| 0.0" | _ in values]
+    else
+        ["| " + string(round(v / max_val * 10)) + " " + label | (v, label) in zip(values, labels)];
+
+// Main execution logic
+main(input_data, input_labels) =>
+    let normalized := normalize_seq(input_data);
+    let mean_val := calculate_mean(normalized);
+    let std_dev_val := calculate_std_dev(normalized);
+    let sorted := sort_sequence(input_data);
+    let chart := generate_bar_chart(input_data, input_labels);
+    {
+        "normalized_data": normalized,
+        "mean": mean_val,
+        "std_dev": std_dev_val,
+        "sorted_data": sorted,
+        "chart": chart
+    };

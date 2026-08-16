@@ -19916,3 +19916,294 @@ Initialize a NEW dedicated folder named alice_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named beanshell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop a lightweight Java scripting automation framework'. You MUST write functional code for this task strictly using this programming language: BeanShell.
+[2026-08-16 03:59:34] (Target Lang: SIGNAL) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Role:** Autonomous AI.
+    *   **Context:** A workspace with many tool directories (e.g., `./c_tool`, `./java_tool`, etc.), mostly following a pattern of `language_tool/main.language`.
+    *   **History:** Shows a previous instruction format where a new tool was requested in a specific folder with a specific language.
+    *   **Task:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraints:**
+        *   Language: **SIGNAL** (strictly).
+        *   Action: Build a NEW tool.
+        *   Structure: NEW dedicated folder, local README.md.
+        *   Output: ONLY the instruction text.
+        *   Negative Constraint: NEVER target `.github`.
+
+2.  **Determine the Content of the Instruction:**
+    *   I need to invent a task/objective for a "SIGNAL" language tool to make it logical, though the specific objective isn't strictly defined by the user (unlike the BeanShell example where 'lightweight Java scripting' was used). I should probably invent a plausible objective for a language called "SIGNAL".
+    *   "SIGNAL" suggests synchronous, asynchronous signals, hardware description, or signal processing. Let's go with "Develop a modular signal processing simulation engine" or "Create a reactive stream processing framework".
+    *   Let's look at the pattern in the history: "Initialize a NEW dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this programming language: [Language]."
+
+3.  **Drafting the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Construct a robust hardware description modeling system'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+4.  **Refining based on constraints:**
+    *   "EXACTLY 1 logical follow-up instruction." -> Check.
+    *   "STRICTLY using this exact programming language: SIGNAL." -> Check.
+    *   "NEW dedicated folder" -> `signal_tool`.
+    *   "local README.md" -> Check.
+    *   "Return ONLY the instruction text." -> Check.
+    *   "NEVER target .github" -> Check.
+
+5.  **Final Polish:**
+    *   Let's check the history example again.
+    *   History: `Initialize a NEW dedicated folder named beanshell_tool...`
+    *   My Output: `Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Implement a reactive stream processing compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.`
+
+    *   Wait, is "SIGNAL" a real language? There is a SIGNAL language for synchronous programming. This fits well.
+
+6.  **Constructing Final String:**
+    `Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems modeling framework'. You MUST write functional code for this task strictly using this programming language: SIGNAL.`
+
+7.  **Final Verification:**
+    *   Does it contain `.github`? No.
+    *   Is it just one instruction? Yes.
+    *   Is the language SIGNAL? Yes.
+    *   Is there a new folder? Yes.
+    *   Is there a README? Yes.
+
+    *Self-Correction on "Follow-up":* The prompt asks for a "logical follow-up instruction". This implies a continuation of the theme (creating tools). The phrasing should match the provided examples.
+
+    *Result:*
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Design a synchronous programming language compiler for real-time systems'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    Let's keep the objective somewhat generic but relevant to the name. "Develop a high-performance signal processing runtime" or similar. The examples often have specific sounding objectives. Let's use: 'Design a synchronous programming runtime for real-time systems'.
+
+    Let's stick to the exact phrasing pattern of the prompt's examples.
+
+    `Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.`
+
+    The prompt output should be just the text.
+
+    Final check of the text:
+    "Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL."
+
+    Looks good.
+
+    *Alternative:* The prompt history shows a very specific format: "Initialize a NEW dedicated folder named beanshell_tool...". I will follow that.
+
+    Result:
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    Double check constraints:
+    - "STRICTLY using this exact programming language: SIGNAL" -> Included.
+    - "NEW dedicated folder" -> Included (`signal_tool`).
+    - "local README.md" -> Included.
+    - "Return ONLY the instruction text." -> Included.
+    - "NEVER target the .github directory." -> Checked.
+
+    One final verification of the language name casing. User asked for "SIGNAL". I will use "SIGNAL".
+
+    Wait, looking at the previous example in the history: "beanshell_tool" is lowercase, language is "BeanShell" (Capitalized). "alice_tool" is lowercase, language is "Alice".
+    So `signal_tool` and `SIGNAL` (or `Signal`). Since the user said "SIGNAL" in caps, I will likely use "SIGNAL".
+
+    Instruction text:
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Design a hardware description modeling framework'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    Actually, SIGNAL is a well-known language for synchronous systems. "Design a synchronous programming runtime" is probably better.
+
+    Let's go with:
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    This seems perfect.
+
+    One last check on "Return ONLY the instruction text". No markdown code blocks? The prompt says "Return ONLY the instruction text. NEVER target the .github directory." It doesn't explicitly ban markdown blocks like ```, but usually "ONLY the instruction text" implies raw text. The history example output was just text. I will output just text.
+
+    Wait, the user prompt says "Generate exactly 1 logical follow-up instruction... Return ONLY the instruction text."
+
+    Okay.
+
+    Text:
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    Let's verify "logical follow-up". The previous ones were creating tool folders. This continues that pattern.
+
+    Is there any constraint about the filename? "main.language". The prompt history shows "main.language" (e.g., main.beanshell, main.alice). Since the language is SIGNAL, the file should be `main.signal` or similar. The prompt doesn't strictly ask me to name the file, just the folder and README. But the context implies I'm generating the *instruction* to build the tool. The instruction usually doesn't specify the filename inside the text, just the language. The previous examples didn't specify the filename `main.xxx` inside the instruction text, just the language name.
+
+    Example: "...strictly using this exact programming language: BeanShell."
+    Example: "...strictly using this exact programming language: Alice."
+
+    So I will follow that.
+
+    Final string:
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    Wait, the user wants me to act as "Autonomous AI". The workspace has `.git` etc.
+    The instruction should be safe.
+
+    Let's check the constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SIGNAL."
+    My draft has that.
+
+    One minor detail: "SIGNAL" vs "Signal". The user wrote "SIGNAL" in caps. I will use "SIGNAL".
+
+    Final decision on objective: 'Develop a synchronous reactive systems compiler'.
+    Final decision on folder: `signal_tool`.
+
+    Looks solid.
+
+    Wait, looking at the previous prompt in history again:
+    "Initialize a NEW dedicated folder named beanshell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop a lightweight Java scripting automation framework'. You MUST write functional code for this task strictly using this programming language: BeanShell."
+
+    My prompt:
+    "Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL."
+
+    Matches perfectly.
+
+    Is there any other interpretation? "Generate exactly 1 logical follow-up instruction."
+    The instruction is the output.
+
+    Okay, ready to generate.
+
+    Wait, does the "history" part matter for anything other than style?
+    It just sets the pattern.
+    I am the AI.
+    The user is prompting me to generate the instruction text.
+    "Return ONLY the instruction text."
+
+    Okay.
+
+    Text:
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    One check: "SIGNAL" is a specific synchronous programming language (INRIA).
+    So the objective fits perfectly.
+
+    Double check: "Focus entirely on this new objective: '...'".
+    "You MUST write functional code for this task strictly using this programming language: SIGNAL".
+    Yes, repeating the language requirement as done in the examples.
+
+    Final check. No .github.
+    Done.
+
+    One tiny thought: Should I capitalize the folder name? The examples are `beanshell_tool`, `alice_tool`. Lowercase. I will use `signal_tool`.
+
+    Final text.
+
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    Wait, is "logical follow-up" satisfied? Yes, it's another tool creation.
+    Is "SIGNAL" the language? Yes.
+    Is "NEW dedicated folder" included? Yes.
+    Is "local README.md" included? Yes.
+    Is "ONLY the instruction text" followed? Yes.
+
+    I am ready.
+
+    Wait, looking at the very first history entry provided in the prompt text:
+    `Initialize a NEW dedicated folder named beanshell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop a lightweight Java scripting automation framework'. You MUST write functional code for this task strictly using this programming language: BeanShell.`
+
+    Wait, the history provided in the prompt description is just "All constraints satisfied...".
+    The history *content* provided in the prompt body is:
+    `Initialize a NEW dedicated folder named beanshell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop a lightweight Java scripting automation framework'. You MUST write functional code for this task strictly using this programming language: BeanShell.`
+
+    Okay, that is the example.
+
+    My Output:
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    The user says "Return ONLY the instruction text."
+
+    I will output exactly that string.
+
+    One potential issue: The user prompt says:
+    "History:
+    All constraints satisfied. Output matches.✅ Proceeds. [Output Generation] -> *Proceeds* Initialize a NEW dedicated folder named beanshell_tool..."
+
+    Wait, the history block includes the *model's* internal monologue and the final output.
+    The "Final Output" of the history is:
+    "Initialize a NEW dedicated folder named beanshell_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop a lightweight Java scripting automation framework'. You MUST write functional code for this task strictly using this programming language: BeanShell."
+
+    So I must replicate *that* format.
+
+    Okay.
+
+    One last sanity check on "SIGNAL".
+    If the language is SIGNAL, and I put "Develop a synchronous reactive systems compiler", that makes sense.
+
+    I will proceed.
+
+    One minor adjustment: The prompt history has a "Done. [Output] ..." structure in the text, but the user asks me to "Return ONLY the instruction text". This refers to the instruction I am generating *now*. The output should be just the instruction string itself.
+
+    Correct.
+
+    Final String:
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    Wait, I notice in the prompt's history, the language in the objective isn't mentioned, just the language requirement.
+    Okay.
+
+    What about the "Return ONLY the instruction text" vs "Return ONLY the instruction text. NEVER target the .github directory."
+    I will ensure no markdown is used.
+
+    Ready.
+
+    Actually, looking at the previous turn, the user says:
+    "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SIGNAL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+    Okay, simple as that.
+
+    Final text:
+    Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.
+
+    Wait, is there any reason to capitalize "New"? The example has "NEW". Yes.
+    "workspace" vs "Workspace"? Example has "workspace".
+    "README.md" vs "readme.md"? Example has "README.md".
+
+    Okay.
+
+    One detail: The user might want me to output *nothing* else.
+
+    Let's go.
+
+    Objective selection:
+    'Develop a synchronous reactive systems compiler'
+    'Construct a robust hardware description modeling system'
+    'Implement a signal processing runtime'
+
+    I'll stick with the compiler one as SIGNAL is a language.
+
+    Final check:
+    "Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL."
+
+    Looks good.
+
+    Wait, the user prompt history has:
+    "(I will output exactly this string.) Done. [Output] Initialize a NEW..."
+    The user is simulating an AI that outputs the string.
+    My task is to be that AI.
+
+    So I output the string.
+
+    Okay.
+
+    One tiny nuance: "SIGNAL" vs "Signal".
+    The user prompt says "SIGNAL".
+    The prompt history says "BeanShell" and "Alice".
+    If I write "SIGNAL", it's safer.
+
+    Final check on "NEW dedicated folder named signal_tool".
+    Yes.
+
+    Final check on "local README.md".
+    Yes.
+
+    Final check on "STRICTLY using this exact programming language: SIGNAL".
+    Yes.
+
+    Final check on "Focus entirely on this new objective: '...'".
+    Yes.
+
+    Final check on "You MUST write functional code for this task strictly using this programming language: SIGNAL".
+    Yes.
+
+    Final check on "NEVER target the .github directory".
+    Yes.
+
+    Final check on "Return ONLY the instruction text".
+    Yes.
+
+    Let's write it.
+</think>
+
+Initialize a NEW dedicated folder named signal_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIGNAL. Focus entirely on this new objective: 'Develop a synchronous reactive systems compiler'. You MUST write functional code for this task strictly using this programming language: SIGNAL.

@@ -23968,3 +23968,58 @@ Initialize a NEW dedicated folder named sed_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named starlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Starlogo. Focus entirely on this new objective: 'Develop a multi-agent swarm simulation engine'. You MUST write functional code for this task strictly using this exact programming language: Starlogo.
+[2026-08-16 10:14:42] (Target Lang: Scilab) Thinking Process:
+
+1.  **Deconstruct the Input:**
+    *   Workspace: A list of directories and files. I see `starlogo_tool` is already present (`./starlogo_tool`, `./starlogo_tool/README.md`, `./starlogo_tool/main.sl`).
+    *   History: Shows a previous action creating `starlogo_tool` with Starlogo code for a "multi-agent swarm simulation engine".
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   Return ONLY the instruction text.
+        *   Never target `.github`.
+        *   Logical follow-up to `starlogo_tool`? The prompt asks for a follow-up. Usually, in these autonomous AI prompts, a follow-up might involve a related tool, a successor, or a variation. However, the explicit constraint says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Scilab."
+        *   If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+        *   Return ONLY the instruction text.
+        *   NEVER target `.github`.
+
+2.  **Formulate the Instruction:**
+    *   *Subject:* The user wants a follow-up instruction. The previous action was `starlogo_tool`. A logical follow-up in a repository of many tools might be a tool in a different language that does something similar, or just the next item in a sequence. The constraint forces the language to be `Scilab`.
+    *   *Action:* "Initialize a NEW dedicated folder named `scilab_tool`..." (Naming convention seems to be `{language}_tool`).
+    *   *Requirements:*
+        *   Create `scilab_tool` folder.
+        *   Create `scilab_tool/README.md`.
+        *   Build tool using `Scilab`.
+        *   Objective: Needs an objective. Looking at the history, the objective was "Develop a multi-agent swarm simulation engine". A logical follow-up might be a numerical computation engine, a control system simulation, or a data analysis tool, as Scilab is known for these. Since the prompt doesn't specify the objective for the Scilab tool, I should infer a reasonable one or keep it generic but functional. However, the prompt structure in the history example included an objective. The output instruction should probably define the objective. Let's pick a standard Scilab use case: "Implement a numerical simulation and control system analysis engine" or similar.
+        *   *Constraint Check:* "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Scilab."
+        *   *Result:* The instruction must say: "Initialize a NEW dedicated folder named scilab_tool... build... STRICTLY using... Scilab... create README.md...".
+
+3.  **Drafting the Text:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named scilab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scilab. Focus entirely on this new objective: 'Implement a high-performance numerical simulation and control systems analysis engine'. You MUST write functional code for this task strictly using this exact programming language: Scilab.
+    *   *Review against constraints:*
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+        *   Logical follow-up? Yes, moves from Starlogo (agent simulation) to Scilab (numerical simulation/control), which is a natural progression in a toolset repository.
+        *   New folder/README? Yes.
+        *   Language: Scilab? Yes.
+        *   Explicit demand? Yes ("STRICTLY using... Scilab").
+
+4.  **Final Polish:**
+    *   The output should be the raw text of the instruction.
+    *   Result: `Initialize a NEW dedicated folder named scilab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scilab. Focus entirely on this new objective: 'Implement a high-performance numerical simulation and control systems analysis engine'. You MUST write functional code for this task strictly using this exact programming language: Scilab.`
+
+    *Wait, let me check the `starlogo_tool` existence.*
+    *   The workspace list shows `./starlogo_tool` exists.
+    *   The history shows `starlogo_tool` was just created.
+    *   The follow-up asks for `scilab_tool`.
+    *   `scilab_tool` is not in the workspace list.
+    *   So creating a new folder `scilab_tool` is valid.
+    *   The instruction text looks solid.
+
+5.  **Output Generation:**
+    *   Return the drafted text.
+    *   "Initialize a NEW dedicated folder named scilab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scilab. Focus entirely on this new objective: 'Implement a robust numerical computing and systems simulation environment'. You MUST write functional code for this task strictly using this exact programming language: Scilab."
+    *   (Swapped objective slightly for variety but same quality. "Robust numerical computing..." is good for Scilab.)
+    *   Final string matches constraints.
+</think>
+
+Initialize a NEW dedicated folder named scilab_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scilab. Focus entirely on this new objective: 'Implement a robust numerical computing and systems simulation environment'. You MUST write functional code for this task strictly using this exact programming language: Scilab.

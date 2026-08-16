@@ -36645,3 +36645,38 @@ Result looks good.
 </think>
 
 Initialize a NEW dedicated folder named krl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRL. Focus entirely on this new objective: 'Develop a KRL utility for industrial robot motion control'. You MUST write code for this task strictly using this programming language: KRL.
+[2026-08-16 23:47:25] (Target Lang: Octave) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand Octave language.
+    *   Constraint 2: Must build a new tool.
+    *   Constraint 3: Must place it in a NEW dedicated folder.
+    *   Constraint 4: Must create a local README.md.
+    *   Constraint 5: Return ONLY the instruction text.
+    *   Constraint 6: NEVER target .github.
+    *   Context: The history shows a pattern of initializing tools, creating folders, READMEs, and writing code in specific languages for specific objectives.
+
+2.  **Drafting the instruction:**
+    *   *Structure:* Initialize NEW folder -> Create README -> Build tool in Octave -> Specific Objective.
+    *   *Drafting:* "Initialize a NEW dedicated folder named octave_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Octave. Focus entirely on this new objective: 'Implement an Octave script for signal processing and filtering'. You MUST write code for this task strictly using this programming language: Octave."
+    *   *Refining based on style:* The previous examples use phrases like "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write code for this task strictly using this programming language: [LANG]."
+    *   *Applying Style:* "Initialize a NEW dedicated folder named octave_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Octave. Focus entirely on this new objective: 'Implement an Octave script for signal processing and filtering'. You MUST write code for this task strictly using this programming language: Octave."
+
+3.  **Checking constraints:**
+    *   1 logical follow-up? Yes.
+    *   Explicitly demand Octave? Yes.
+    *   NEW dedicated folder? Yes (`octave_analysis_tool`).
+    *   Local README.md? Yes.
+    *   ONLY instruction text? Yes (output will be just the text).
+    *   No .github? Yes.
+    *   Language matches demand? Yes.
+
+4.  **Final Polish:**
+    *   Result: "Initialize a NEW dedicated folder named octave_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Octave. Focus entirely on this new objective: 'Implement an Octave script for signal processing and filtering'. You MUST write code for this task strictly using this programming language: Octave."
+
+5.  **Output Generation:**
+    *   Provide the text exactly as drafted.
+</think>
+
+Initialize a NEW dedicated folder named octave_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Octave. Focus entirely on this new objective: 'Implement an Octave script for signal processing and filtering'. You MUST write code for this task strictly using this programming language: Octave.

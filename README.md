@@ -696,3 +696,5 @@ Training Machine
 - Created/Updated module: `obj2_tool` (See `obj2_tool/README.md` for details)
 
 - Created/Updated module: `./self_healing_tool` (See `./self_healing_tool/README.md` for details)
+
+- Created/Updated module: `lustre_data_extraction_tool` (See `lustre_data_extraction_tool/README.md` for details)

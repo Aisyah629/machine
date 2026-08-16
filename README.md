@@ -740,3 +740,5 @@ Training Machine
 - Created/Updated module: `m2001_tool` (See `m2001_tool/README.md` for details)
 
 - Created/Updated module: `fsharp_tool` (See `fsharp_tool/README.md` for details)
+
+- Created/Updated module: `rc_tool` (See `rc_tool/README.md` for details)

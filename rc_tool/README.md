@@ -1,19 +1,20 @@
 # rc_tool
 
-## Description
-A lightweight shell execution environment built in rc programming language.
+This tool provides a robust, pipeline-oriented command processor for sequential data transformation using the `rc` shell language.
+
+The `rc` shell is known for its simplicity, powerful pipeline syntax, and unique features like the null command and implicit redirections. This tool demonstrates these capabilities by implementing a reusable pipeline processing framework.
 
 ## Features
-- Advanced pipeline processing
-- Robust error handling
-- Command execution and output capture
+
+- Sequential data transformation pipelines
+- Command substitution and piping
+- Error handling within pipelines
+- Modularity through command grouping
 
 ## Usage
-Execute commands with error tracking and structured output.
 
-## Files
-- `main.rc`: Main implementation file
-- `README.md`: Documentation
+Execute the main script to run the pipeline processor.
 
-## License
-MIT License
+```bash
+./main.rc
+```

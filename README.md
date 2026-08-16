@@ -516,3 +516,5 @@ Training Machine
 - Created/Updated module: `cayenne_tool` (See `cayenne_tool/README.md` for details)
 
 - Created/Updated module: `flow_matic_tool` (See `flow_matic_tool/README.md` for details)
+
+- Created/Updated module: `mdl_structural_tool` (See `mdl_structural_tool/README.md` for details)

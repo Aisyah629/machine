@@ -808,3 +808,5 @@ Training Machine
 - Created/Updated module: `sasl_tool` (See `sasl_tool/README.md` for details)
 
 - Created/Updated module: `zig_tool` (See `zig_tool/README.md` for details)
+
+- Created/Updated module: `rust_scheduler_tool` (See `rust_scheduler_tool/README.md` for details)

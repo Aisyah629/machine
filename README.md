@@ -858,3 +858,5 @@ Training Machine
 - Created/Updated module: `nasm_tool` (See `nasm_tool/README.md` for details)
 
 - Created/Updated module: `linc_tool` (See `linc_tool/README.md` for details)
+
+- Created/Updated module: `vbscript_advanced_tool` (See `vbscript_advanced_tool/README.md` for details)

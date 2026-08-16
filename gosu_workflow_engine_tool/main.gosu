@@ -1,0 +1,134 @@
+package workflow_engine
+
+import java.util.concurrent.ConcurrentHashMap
+import java.util.concurrent.atomic.AtomicInteger
+
+/**
+ * WorkflowEngine orchestrates the execution of sequential and parallel workflow stages.
+ * Built strictly in Gosu for enterprise task orchestration.
+ */
+class WorkflowEngine {
+   private _stages : List<WorkflowStage> = []
+   private _state : ConcurrentMap<String, Object> = ConcurrentHashMap<String, Object>()
+   private _executionLog : List<String> = []
+   private _status : String = "idle"
+
+   function addStage(stage : WorkflowStage) {
+      if (stage == null) {
+         throw new ArgumentNullException("Stage cannot be null")
+      }
+      _stages.add(stage)
+   }
+
+   function execute() {
+      if (_stages.isEmpty()) {
+         throw new IllegalStateException("No stages defined for execution")
+      }
+      _status = "running"
+      _state.put("startTime", DateTime.Now)
+      log("Workflow execution started")
+
+      try {
+         for (stage in _stages) {
+            _state.put("currentStage", stage.name)
+            stage.execute(_state)
+            _executionLog.add("Completed: ${stage.name}")
+            log(stage.name)
+         }
+         _status = "completed"
+         _state.put("endTime", DateTime.Now)
+         log("Workflow execution completed successfully")
+      } catch (e : Exception) {
+         _status = "failed"
+         _state.put("error", e)
+         log("Workflow execution failed: ${e.message}")
+         throw e
+      }
+   }
+
+   function getState() : ConcurrentMap<String, Object> {
+      return _state
+   }
+
+   function getExecutionLog() : List<String> {
+      return _executionLog
+   }
+
+   function getStatus() : String {
+      return _status
+   }
+
+   private function log(message : String) {
+      _executionLog.add("[${DateTime.Now}] ${message}")
+   }
+}
+
+/**
+ * Represents a single stage in the workflow. Each stage contains a processing function.
+ */
+class WorkflowStage {
+   var name : String
+   var processFunc : Func<Map<String, Object>, void>
+
+   constructor(name : String, processFunc : Func<Map<String, Object>, void>) {
+      this.name = name
+      this.processFunc = processFunc
+   }
+
+   function execute(state : Map<String, Object>) {
+      try {
+         processFunc.invoke(state)
+      } catch (e : Exception) {
+         throw new WorkflowStageException(name, e)
+      }
+   }
+}
+
+/**
+ * Custom exception for workflow stage failures.
+ */
+class WorkflowStageException : Exception {
+   var stageName : String
+
+   constructor(stageName : String, cause : Exception) : super(cause) {
+      this.stageName = stageName
+   }
+
+   override function getMessage() : String {
+      return "Stage '${stageName}' failed: ${super.getMessage()}"
+   }
+}
+
+// Entry point to demonstrate the workflow engine in action
+var engine = WorkflowEngine()
+
+engine.addStage(WorkflowStage("Initialize", 
+   (state : Map<String, Object>) -> {
+      state.put("initialized", true)
+   }))
+
+engine.addStage(WorkflowStage("ProcessData", 
+   (state : Map<String, Object>) -> {
+      if (!(state.get("initialized") as boolean?)) {
+         throw new IllegalStateException("Workflow not initialized")
+      }
+      state.put("processed", true)
+      // Simulate heavy processing
+      Thread.sleep(50)
+   }))
+
+engine.addStage(WorkflowStage("GenerateReport", 
+   (state : Map<String, Object>) -> {
+      if (!(state.get("processed") as boolean?)) {
+         throw new IllegalStateException("Data not processed")
+      }
+      state.put("reportGenerated", true)
+   }))
+
+try {
+   engine.execute()
+   System.out.println("Status: " + engine.getStatus())
+   System.out.println("Log: " + engine.getExecutionLog())
+} catch (e : Exception) {
+   System.out.println("Workflow failed: " + e)
+}

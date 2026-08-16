@@ -624,3 +624,5 @@ Training Machine
 - Created/Updated module: `xquery_data_query_tool` (See `xquery_data_query_tool/README.md` for details)
 
 - Created/Updated module: `ops5_rule_engine_tool` (See `ops5_rule_engine_tool/README.md` for details)
+
+- Created/Updated module: `visual_dialogscript_tool` (See `visual_dialogscript_tool/README.md` for details)

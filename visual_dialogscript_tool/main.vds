@@ -1,0 +1,37 @@
+/**
+ * Visual DialogScript Application
+ * 
+ * This script demonstrates the creation of an interactive GUI interface,
+ * handling user input events, and automating a repetitive desktop task.
+ */
+
+// Initialize the main application window
+Dialog "Main Application" 200 150 400 300
+
+// Create GUI components
+Button "Click Me" 50 50 100 30
+Editbox "Input" 50 90 200 20
+Text "Output: " 50 130 100 20
+Editbox "Result" 100 130 200 20 Read-Only
+
+// Handle the button click event
+DialogEvent 
+    Case "ButtonClick"
+        If $dialogID == $ButtonID 
+            // Get input from the editbox
+            $input = $editboxInput
+            // Process the input (e.g., convert to uppercase)
+            $processed = Ucase($input)
+            // Display the result in the output editbox
+            $editboxResult = "Processed: " & $processed
+        EndIf
+    Case "DialogClose"
+        // Exit the application when the window is closed
+        Exit
+EndDialogEvent
+
+// Main loop to keep the application running
+While True
+    // Check for new dialog events
+    Wait
+Wend

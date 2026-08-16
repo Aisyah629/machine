@@ -542,3 +542,5 @@ Training Machine
 - Created/Updated module: `webdna_tool` (See `webdna_tool/README.md` for details)
 
 - Created/Updated module: `macsyma_tool` (See `macsyma_tool/README.md` for details)
+
+- Created/Updated module: `newspeak_tool` (See `newspeak_tool/README.md` for details)

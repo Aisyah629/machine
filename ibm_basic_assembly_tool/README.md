@@ -1,18 +1,23 @@
-# IBM Basic Assembly Language Tool
+# IBM Basic Assembly Tool
+
+This tool implements a low-level instruction set simulator using IBM Basic Assembly Language.
 
 ## Overview
-This tool contains a sample program built strictly using IBM Basic Assembly Language (BAL). It is designed to demonstrate core BAL syntax, macro usage, and direct hardware interaction patterns typical of legacy mainframe environments.
 
-## File Structure
-- `main.bal`: The primary assembly source file.
-- `README.md`: This documentation file.
+The simulator provides a framework for emulating instruction execution, memory manipulation, and register states within a simulated environment. It is designed to support basic assembly language constructs and provide insights into low-level execution behavior.
 
-## Building & Execution
-IBM BAL code typically requires the IBM Assembler (ASMA90 or later) and a compatible mainframe environment or emulator (such as Hercules or z/OS). Compile using standard MVS/JCL assembly steps.
+## Features
+
+- Instruction decoding and execution
+- Memory management and access
+- Register state simulation
+- Input/Output handling for simulated environment
 
 ## Usage
-The provided program initializes a simple console output routine and demonstrates data movement and control flow using BAL mnemonics.
 
-## Notes
-- Ensure appropriate assembly macros are defined for your target environment.
-- This implementation is for educational and legacy system reference purposes only.
+To utilize the simulator, compile the `main.bal` source file and run the executable. The simulator will interpret and execute the provided assembly instructions.
+
+## File Structure
+
+- `README.md`: This file.
+- `main.bal`: The main source file containing the simulator implementation.

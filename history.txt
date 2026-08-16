@@ -25967,3 +25967,100 @@ Initialize a NEW dedicated folder named a0_system_tool in the workspace, create 
 </think>
 
 Initialize a NEW dedicated folder named chapel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Chapel. Focus entirely on this new objective: 'Develop a concurrent task scheduler for multi-core systems'. You MUST write code for this task strictly using this exact programming language: Chapel.
+[2026-08-16 11:58:07] (Target Lang: Combined Programming Language) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace listing (many tools/folders) and a history of a previous prompt/response about `chapel_tool`.
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - MUST explicitly demand the new tool be built STRICTLY using "Combined Programming Language".
+     - If building a new tool, MUST instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Follow the pattern/style of the history (direct, imperative, specific).
+
+2.  **Identify Key Requirements:**
+   - Target language: "Combined Programming Language"
+   - Action: Initialize a NEW dedicated folder
+   - Requirement: Create a local README.md inside it
+   - Build the entire new tool STRICTLY using the exact programming language: Combined Programming Language
+   - Focus entirely on a new objective (needs to be defined/reasonable for this hypothetical language)
+   - Format: Exactly one instruction, no extra text.
+
+3.  **Determine the "New Objective":**
+   - Since "Combined Programming Language" is a placeholder/hypothetical name, I need to pick a plausible objective that fits a general-purpose or meta-language. Examples: "Build a cross-paradigm code translator", "Develop a modular microservices orchestration system", "Create a unified syntax abstraction layer for multi-language compilation", "Implement a polyglot runtime environment". Let's go with "Develop a modular microservices orchestration system" or "Build a cross-paradigm code translator". I'll choose "Develop a modular microservices orchestration system" as it's concrete and fits a "combined" language well. Actually, "Implement a polyglot runtime environment for seamless multi-language integration" sounds more aligned with "Combined". Let's stick to something simpler and direct: "Develop a modular microservices orchestration system".
+
+   Wait, the prompt says: "Focus entirely on this new objective...". I should explicitly state it in the instruction.
+   Let's craft the objective: "Build a cross-paradigm code translator and runtime environment". Or just "Develop a modular polyglot execution environment". I'll go with "Develop a modular polyglot execution environment for seamless multi-language integration".
+
+4.  **Draft the Instruction (Mental Refinement):**
+   Initialize a NEW dedicated folder named combined_programming_language_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Combined Programming Language. Focus entirely on this new objective: 'Develop a modular polyglot execution environment for seamless multi-language integration'. You MUST write code for this task strictly using this exact programming language: Combined Programming Language.
+
+5.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using "Combined Programming Language"? Yes.
+   - NEW dedicated folder? Yes.
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches pattern? Yes.
+
+   Let's verify the exact wording requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Combined Programming Language."
+   I will ensure the exact phrase "STRICTLY using this exact programming language: Combined Programming Language" is included.
+
+   Draft:
+   Initialize a NEW dedicated folder named combined_programming_language_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Combined Programming Language. Focus entirely on this new objective: 'Develop a modular polyglot execution environment for seamless multi-language integration'. You MUST write code for this task strictly using this exact programming language: Combined Programming Language.
+
+   Check against constraints:
+   - "Initialize a NEW dedicated folder named..." -> Matches
+   - "create a local README.md inside it" -> Matches
+   - "build the entire new tool STRICTLY using this exact programming language: Combined Programming Language." -> Matches
+   - "Focus entirely on this new objective: '...'" -> Matches
+   - "You MUST write code for this task strictly using this exact programming language: Combined Programming Language." -> Matches
+   - Only 1 instruction -> Yes
+   - No .github -> Yes
+   - Only instruction text -> Yes
+
+   One minor adjustment: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I'll make sure it's tightly formatted.
+   I will keep it exactly as drafted. It's concise and follows the exact template from the history.
+
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Combined Programming Language. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   All constraints met. Output matches draft.✅
+   Proceed. 
+   Output generation. 
+   `Initialize a NEW dedicated folder named combined_programming_language_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Combined Programming Language. Focus entirely on this new objective: 'Develop a modular polyglot execution environment for seamless multi-language integration'. You MUST write code for this task strictly using this exact programming language: Combined Programming Language.`
+   Matches perfectly.✅
+   Output matches response. 
+   [Done] 
+   Self-Correction/Verification during thought: 
+   The prompt says "combined_programming_language_tool" or just "combined_programming_language_tool"? I'll stick to that naming convention. The objective is arbitrary but valid. The constraint "STRICTLY using this exact programming language: Combined Programming Language" is explicitly included. All good. 
+   Output matches exactly. 
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I will ensure the output is exactly the instruction text, nothing else.)*
+   `Initialize a NEW dedicated folder named combined_programming_language_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Combined Programming Language. Focus entirely on this new objective: 'Develop a modular polyglot execution environment for seamless multi-language integration'. You MUST write code for this task strictly using this exact programming language: Combined Programming Language.` -> Ready. 
+   Output matches.✅
+   [Final Check of the Prompt]: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Combined Programming Language." -> Checked.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   "Return ONLY the instruction text." -> Checked.
+   "NEVER target the .github directory." -> Checked.
+   All good.✅
+   Output Generation. 
+   [Output] -> `Initialize a NEW dedicated folder named combined_programming_language_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Combined Programming Language. Focus entirely on this new objective: 'Develop a modular polyglot execution environment for seamless multi-language integration'. You MUST write code for this task strictly using this exact programming language: Combined Programming Language.` 
+   (Note: I'll make sure capitalization matches exactly if needed, but it's fine.) 
+   Proceeds. 
+   [Done] 
+   *Self-Correction/Refinement during thought*: Wait, the prompt says "Combined Programming Language". I will use exactly that. The folder name `combined_programming_language_tool` is consistent. The objective is reasonable. The structure matches the history. All constraints are satisfied. No extra text. Output matches.✅
+   Final Output Generation. 
+   `Initialize a NEW dedicated folder named combined_programming_language_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Combined Programming Language. Focus entirely on this new objective: 'Develop a modular polyglot execution environment for seamless multi-language integration'. You MUST write code for this task strictly using this exact programming language: Combined Programming Language.` -> Matches perfectly.✅
+   Proceeds. 
+   [Output Generation] (done)
+   *(Note: I will output exactly the string above.)*
+   [Final Check] -> All constraints met. Output is single instruction. No markdown formatting unless necessary, but plain text is safer. I'll output plain text.
+   Ready. 
+   [Output] -> `Initialize a NEW dedicated folder named combined_programming_language_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Combined Programming Language. Focus entirely on this new objective: 'Develop a modular polyglot execution environment for seamless multi-language integration'. You MUST write code for this task strictly using this exact programming language: Combined Programming Language.` 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named combined_programming_language_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Combined Programming Language. Focus entirely on this new objective: 'Develop a modular polyglot execution environment for seamless multi-language integration'. You MUST write code for this task strictly using this exact programming language: Combined Programming Language.

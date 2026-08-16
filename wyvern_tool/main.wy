@@ -1,0 +1,46 @@
+// Wyvern Tool: Robust Data Serialization and Schema Validation
+// Language: Wyvern
+
+import std.io;
+import std.serialization;
+import std.validation;
+
+// Define a schema for validation
+const UserSchema = {
+    "name": { "type": "string" },
+    "age": { "type": "integer" },
+    "email": { "type": "string", "format": "email" }
+};
+
+// Data serialization function
+fun serializeUser(user: map<string, any>) -> string {
+    let serialized = serialization.encode(user);
+    io.println("Serialized User: " + serialized);
+    return serialized;
+}
+
+// Schema validation function
+fun validateUser(user: map<string, any>) -> bool {
+    let isValid = validation.check(user, UserSchema);
+    if isValid {
+        io.println("User validated successfully.");
+    } else {
+        io.println("Validation failed. Invalid user data.");
+    }
+    return isValid;
+}
+
+// Main execution
+fun main() {
+    let userData = {
+        "name": "Alice",
+        "age": 30,
+        "email": "alice@example.com"
+    };
+
+    // Validate and serialize
+    validateUser(userData);
+    serializeUser(userData);
+}
+
+main();

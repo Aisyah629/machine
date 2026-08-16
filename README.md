@@ -554,3 +554,5 @@ Training Machine
 - Created/Updated module: `ioke_tool` (See `ioke_tool/README.md` for details)
 
 - Created/Updated module: `clipper_tool` (See `clipper_tool/README.md` for details)
+
+- Created/Updated module: `janus_tool` (See `janus_tool/README.md` for details)

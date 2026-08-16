@@ -1,0 +1,61 @@
+// xojo_tool - Main Generator Script
+// This script generates a basic Xojo project structure.
+// Xojo uses a specific file format for projects (.xojo_binary_project),
+// but this tool generates the necessary folder structure and
+// text-based representation of windows and classes.
+
+import os
+import json
+
+def main():
+    project_name = "CrossPlatformApp"
+    base_dir = os.path.join(os.getcwd(), project_name)
+    
+    # Create directory structure
+    dirs = [
+        "Window1",
+        "Module1",
+        "App"
+    ]
+    
+    for d in dirs:
+        os.makedirs(os.path.join(base_dir, d), exist_ok=True)
+    
+    # Generate Window1 content
+    window_content = {
+        "window": {
+            "name": "Window1",
+            "type": "Window",
+            "properties": {
+                "width": 800,
+                "height": 600,
+                "title": "Cross Platform App"
+            },
+            "events": {
+                "Opened": "Window1_Opened",
+                "Closed": "Window1_Closed"
+            }
+        }
+    }
+    
+    with open(os.path.join(base_dir, "Window1", "window1.xojo_window"), "w") as f:
+        json.dump(window_content, f, indent=4)
+        
+    # Generate App content
+    app_content = {
+        "app": {
+            "name": "App",
+            "type": "Application",
+            "properties": {
+                "productName": "CrossPlatformApp"
+            }
+        }
+    }
+    
+    with open(os.path.join(base_dir, "App", "app.xojo_app"), "w") as f:
+        json.dump(app_content, f, indent=4)
+        
+    print(f"Project '{project_name}' generated successfully in {base_dir}")
+
+if __name__ == "__main__":
+    main()

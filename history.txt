@@ -29457,3 +29457,42 @@ Initialize a NEW dedicated folder named cfml_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named babbage_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Babbage. Focus entirely on this new objective: 'Develop a symbolic computation engine for mathematical logic'. You MUST write code for this task strictly using this exact programming language: Babbage.
+[2026-08-16 16:55:34] (Target Lang: Joy) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using the exact programming language: Joy.
+    *   Constraint 2: If building a new tool (implied by the context of "new dedicated folder"), explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a list of workspace items (mostly folders like `./..._tool/...`) and a history snippet. The history shows a pattern of initializing a tool folder, README, and code in a specific language. The previous history item was about `babbage_tool` with language "Babbage". The current request asks for a follow-up instruction for "Joy".
+
+2.  **Analyze the Pattern:**
+    *   Looking at the history text provided:
+        *   "Initialize a NEW dedicated folder named babbage_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Babbage. Focus entirely on this new objective: 'Develop a symbolic computation engine for mathematical logic'. You MUST write code for this task strictly using this exact programming language: Babbage."
+    *   The structure is: `Initialize a NEW dedicated folder named [NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write code for this task strictly using this exact programming language: [LANG].`
+
+3.  **Draft the Instruction:**
+    *   *Language:* Joy.
+    *   *Folder Name:* Following the pattern of `_tool`, the folder should likely be `joy_tool`.
+    *   *Objective:* Needs to be generic but fitting. The history examples have objectives like "Develop a web application component for data processing", "Develop a logic-based engine for symbolic computation", "Develop a symbolic computation engine for mathematical logic". For Joy (a concatenative programming language), a good objective might be "Develop a stack-based functional utility for list transformations" or "Develop a functional programming tool for stack manipulation". Let's pick something plausible. "Develop a functional stack-based utility for data transformation".
+    *   *Drafting:* Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Develop a functional stack-based utility for data transformation'. You MUST write code for this task strictly using this exact programming language: Joy.
+
+4.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, the draft is a single instruction block.
+    *   *Explicitly demand new tool built STRICTLY using Joy?* Yes ("STRICTLY using this exact programming language: Joy", "strictly using this exact programming language: Joy").
+    *   *Explicitly instruct to place in NEW dedicated folder and create README?* Yes ("Initialize a NEW dedicated folder named joy_tool... create a local README.md...").
+    *   *Return ONLY instruction text?* The output should be just the text string.
+    *   *NEVER target .github?* The instruction targets `joy_tool`, which is safe. No mention of `.github`.
+
+5.  **Refine the Text:**
+    *   Result: `Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Develop a functional stack-based utility for data transformation'. You MUST write code for this task strictly using this exact programming language: Joy.`
+
+6.  **Final Polish (Mental Representation of Output):**
+    *   The user asked for "Return ONLY the instruction text."
+    *   Output: `Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Develop a functional stack-based utility for data transformation'. You MUST write code for this task strictly using this exact programming language: Joy.`
+
+This matches the pattern perfectly and satisfies all constraints.
+</think>
+
+Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Develop a functional stack-based utility for data transformation'. You MUST write code for this task strictly using this exact programming language: Joy.

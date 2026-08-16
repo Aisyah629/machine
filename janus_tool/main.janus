@@ -1,0 +1,80 @@
+// Janus Reversible Computation and State Rollback Simulation Module
+// Language: Janus (Reversible Computing)
+// Objective: Design a reversible computation and state rollback simulation module
+
+module ReversibleComputation
+
+    import System
+    import Memory
+
+    // Reversible state structure
+    struct ReversibleState {
+        value: Integer,
+        history: List<Integer>,
+        snapshot: Optional<ReversibleState>
+    }
+
+    // Initialize a new reversible state
+    function init_state(initial_value: Integer) -> ReversibleState {
+        return ReversibleState {
+            value: initial_value,
+            history: [],
+            snapshot: None
+        }
+    }
+
+    // Compute a reversible operation: state + 1
+    // In reversible computing, operations must be bijective.
+    function increment(state: ReversibleState) -> ReversibleState {
+        let new_value = state.value + 1
+        let new_history = cons(new_value, state.history)
+        return ReversibleState {
+            value: new_value,
+            history: new_history,
+            snapshot: Some(state)
+        }
+    }
+
+    // Compute a reversible operation: state - 1
+    function decrement(state: ReversibleState) -> ReversibleState {
+        if state.value == 0 {
+            // In reversible computing, we must handle edge cases carefully
+            // Here we assume the state cannot go below 0 for simplicity in simulation
+            return state
+        }
+        let new_value = state.value - 1
+        let new_history = cons(new_value, state.history)
+        return ReversibleState {
+            value: new_value,
+            history: new_history,
+            snapshot: Some(state)
+        }
+    }
+
+    // Rollback to the last snapshot
+    function rollback(state: ReversibleState) -> ReversibleState {
+        match state.snapshot {
+            Some(prev_state) => prev_state,
+            None => state
+        }
+    }
+
+    // Simulate a sequence of reversible operations
+    function simulate_reversible_computation(initial_value: Integer) -> ReversibleState {
+        let s1 = init_state(initial_value)
+        let s2 = increment(s1)
+        let s3 = increment(s2)
+        let s4 = decrement(s3)
+        let s5 = rollback(s4) // Should revert to s3
+        return s5
+    }
+
+    // Main entry point
+    function main() {
+        let initial_value = 10
+        let result_state = simulate_reversible_computation(initial_value)
+        println("Final Value: " + int_to_string(result_state.value))
+        println("History Length: " + int_to_string(length(result_state.history)))
+    }
+
+end module

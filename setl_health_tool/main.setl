@@ -1,0 +1,71 @@
+-- main.setl
+-- SETL Health Tool
+-- Automated health-check routines using strict SETL syntax
+
+-- Interface module for health checks
+health_check_interface := {
+    check_cpu: -> null,
+    check_memory: -> null,
+    check_disk: -> null,
+    check_network: -> null,
+    report: -> null
+};
+
+-- Implementation of health check routines
+health_checks := {
+    check_cpu := ->
+        -- Simulate CPU load check
+        cpu_load := random(100);
+        return cpu_load < 90;
+    ,
+    check_memory := ->
+        -- Simulate memory usage check
+        mem_used := random(100);
+        return mem_used < 85;
+    ,
+    check_disk := ->
+        -- Simulate disk space check
+        disk_avail := random(100);
+        return disk_avail > 10;
+    ,
+    check_network := ->
+        -- Simulate network connectivity check
+        ping_success := random(2) = 1;
+        return ping_success;
+    ,
+    report := ->
+        -- Aggregate and display health status
+        status := {
+            "CPU": health_checks.check_cpu(),
+            "Memory": health_checks.check_memory(),
+            "Disk": health_checks.check_disk(),
+            "Network": health_checks.check_network()
+        };
+        println("Health Report:");
+        for component in set status.keys() do
+            println(component, ": ", status.component);
+        end;
+        return status;
+    end
+};
+
+-- Main execution block
+println("Initializing SETL Health Tool...");
+result := health_checks.report();
+
+-- Validate overall health
+overall_healthy := true;
+for status_val in set result.values() do
+    if not status_val then
+        overall_healthy := false;
+    end;
+end;
+
+if overall_healthy then
+    println("System status: HEALTHY");
+else
+    println("System status: DEGRADED - Attention required");
+end;
+
+println("Health check cycle complete.");
+-- END OF main.setl

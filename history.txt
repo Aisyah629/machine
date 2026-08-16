@@ -28745,3 +28745,87 @@ Initialize a NEW dedicated folder named idl_interface_tool in the workspace, cre
 </think>
 
 Initialize a NEW dedicated folder named george_interface_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GEORGE. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: GEORGE.
+[2026-08-16 16:04:41] (Target Lang: SETL) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace directory listing and a "History" section that contains a chain-of-thought/prompt injection example, ending with a specific instruction template.
+   - **Core Instruction:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SETL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 instruction.
+     - Must explicitly demand the tool be built STRICTLY using SETL.
+     - If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Follow the pattern/style from the history if applicable, but the core constraints are strict.
+
+2.  **Deconstruct Constraints:**
+   - *Exactly 1 logical follow-up instruction:* The output must be a single sentence or paragraph constituting one instruction.
+   - *MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SETL.* -> Include "STRICTLY using this exact programming language: SETL" or similar.
+   - *If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.* -> Include "Initialize a NEW dedicated folder named [something]_tool in the workspace, create a local README.md inside it, and build the entire new tool..."
+   - *Return ONLY the instruction text.* -> No extra words, no markdown formatting unless it's part of the instruction itself, no greetings, no explanations.
+   - *NEVER target the .github directory.* -> Implicitly satisfied by focusing on the new tool folder.
+
+3.  **Draft Construction:**
+   I need to construct an instruction that matches the pattern from the history but adapts to the current constraints. The history shows a template like:
+   "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write code for this task strictly using this exact programming language: [LANG]."
+
+   I'll adapt it to SETL:
+   "Initialize a NEW dedicated folder named setl_health_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SETL. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: SETL."
+
+   Check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand STRICTLY using SETL? Yes.
+   - NEW dedicated folder & local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+
+   I should make it slightly more aligned with the exact phrasing requested if possible, but the draft covers all constraints. I'll refine it to be precise and punchy.
+
+   "Initialize a NEW dedicated folder named setl_interface_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SETL. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: SETL."
+
+   Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SETL."
+   I will ensure the exact phrase "STRICTLY using this exact programming language: SETL" appears.
+   Also, the prompt says: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   I'll combine these tightly.
+
+   Draft:
+   Initialize a NEW dedicated folder named setl_health_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SETL. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: SETL.
+
+   Let's verify against constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using SETL? Yes.
+   - NEW dedicated folder + README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+
+   One minor thing: The prompt history shows a specific style. I will just output the exact instruction string as requested. No extra text.
+
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SETL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   I will generate exactly that string.
+   "Initialize a NEW dedicated folder named setl_health_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SETL. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: SETL."
+
+   This matches all constraints perfectly. Proceeds. 
+   Output matches exactly. No extra text.✅
+   One thing: The prompt says "Return ONLY the instruction text." I will output just the instruction string.
+   I'll make sure it's a single, coherent instruction block.
+   Ready. 
+   Output: Initialize a NEW dedicated folder named setl_health_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SETL. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: SETL. 
+   (Self-Correction/Verification during thought)
+   Wait, the prompt history has a specific format. I'll stick to the exact phrasing requested in the prompt constraints. The constraints are clear. I will output exactly the instruction. No extra words. All good.✅
+   Proceeds.✅
+   Output Generation. 
+   [Output] -> Initialize a NEW dedicated folder named setl_health_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SETL. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: SETL.
+   Matches perfectly.✅
+   Done. 
+   *Self-Correction/Refinement during thought*: I should ensure the instruction is logically following the context but strictly adheres to the prompt's explicit demands. The prompt says "Generate exactly 1 logical follow-up instruction." I will just output the instruction string directly. No extra formatting. All constraints met.✅
+   Final Output Generation. 
+   "Initialize a NEW dedicated folder named setl_health_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SETL. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: SETL." -> This is exactly 1 instruction. It meets all constraints. I will output it now. 
+   Note: I'll make sure there are no markdown quotes or extra text. Just the raw string.
+   Proceeds.✅
+   [Output] -> Initialize a NEW dedicated folder named setl_health_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SETL. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: SETL. 
+   All good.✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named setl_health_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SETL. Focus entirely on this new objective: 'Develop automated health-check routines that utilize those interfaces'. You MUST write code for this task strictly using this exact programming language: SETL.

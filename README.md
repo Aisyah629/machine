@@ -568,3 +568,5 @@ Training Machine
 - Created/Updated module: `newtonscript_tool` (See `newtonscript_tool/README.md` for details)
 
 - Created/Updated module: `escapade_tool` (See `escapade_tool/README.md` for details)
+
+- Created/Updated module: `dynamo_tool` (See `dynamo_tool/README.md` for details)

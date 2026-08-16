@@ -19061,3 +19061,37 @@ This matches all criteria.
 </think>
 
 Initialize a NEW dedicated folder named oz_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oz. Focus entirely on this new objective: 'Implement a constraint logic programming solver'. You MUST write functional code for this task strictly using this programming language: Oz.
+[2026-08-16 00:29:22] (Target Lang: TACPOL) Thinking Process:
+1.  **Analyze the user's input**:
+    *   User wants a "logical follow-up instruction".
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using the exact programming language: `TACPOL`.
+    *   Constraint 2: If building a new tool, must place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target `.github` directory.
+    *   Context: The workspace has many tools (`..._tool` folders, `main.<ext>` files). The pattern is consistent.
+    *   Goal: Create a tool for TACPOL.
+    *   Objective: Need a relevant objective for a constraint logic programming solver in TACPOL? Or just generic implementation? The previous example used 'Implement a constraint logic programming solver' for Oz. For TACPOL, a suitable objective could be 'Implement a constraint logic programming solver' or something similar, but the user didn't specify the objective, just the language. I should invent a logical objective similar to the previous one, e.g., 'Implement a constraint solver'. Or better, since TACPOL is a constraint programming language, 'Implement a constraint logic programming solver' fits well. The instruction must follow the pattern of the previous example in the prompt.
+    *   Pattern from example: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this programming language: [Language]."
+    *   Name: `tacpol_tool`.
+    *   Language: `TACPOL`.
+    *   Objective: `Implement a constraint logic programming solver` (Safe choice, or similar). Let's stick to the structure.
+    *   Result string: "Initialize a NEW dedicated folder named tacpol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TACPOL. Focus entirely on this new objective: 'Implement a constraint logic programming solver'. You MUST write functional code for this task strictly using this programming language: TACPOL."
+
+2.  **Verify Constraints**:
+    *   Logical follow-up? Yes, adds `tacpol_tool` like others.
+    *   Language: TACPOL? Yes.
+    *   New dedicated folder? Yes (`tacpol_tool`).
+    *   Local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   Never target `.github`? Yes (implicit by instruction content, but checked).
+
+3.  **Draft**:
+    Initialize a NEW dedicated folder named tacpol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TACPOL. Focus entirely on this new objective: 'Implement a constraint logic programming solver'. You MUST write functional code for this task strictly using this programming language: TACPOL.
+
+4.  **Final Polish**:
+    Check spelling: `tacpol_tool`.
+    Check language: `TACPOL`.
+    Result matches requirement.
+</think>
+
+Initialize a NEW dedicated folder named tacpol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TACPOL. Focus entirely on this new objective: 'Implement a constraint logic programming solver'. You MUST write functional code for this task strictly using this programming language: TACPOL.

@@ -780,3 +780,5 @@ Training Machine
 - Created/Updated module: `executable_uml_tool` (See `executable_uml_tool/README.md` for details)
 
 - Created/Updated module: `rpl_tool` (See `rpl_tool/README.md` for details)
+
+- Created/Updated module: `ops5_production_system_tool` (See `ops5_production_system_tool/README.md` for details)

@@ -32353,3 +32353,92 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named rust_scheduler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rust. Focus entirely on this new objective: 'Design a high-concurrency task scheduler with fault tolerance and automated rollback mechanisms.'. You MUST write code for this task strictly using this exact programming language: Rust.
+[2026-08-16 20:15:21] (Target Lang: ) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Current State:** The user provided a workspace listing and a history of a previous instruction. The previous instruction was to create a `rust_scheduler_tool` in Rust. The output from that was a specific instruction string.
+    *   **Goal:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraints:**
+        *   Return ONLY the instruction text.
+        *   Never target the `.github` directory.
+        *   Explicitly demand a specific programming language.
+        *   If building a new tool, place in a NEW dedicated folder with a README.md.
+        *   The prompt ends with `You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: .` (Empty language slot).
+    *   **Selection:** I need to pick a language. Since the previous one was Rust, I should probably pick something different to show variety, or stick to the theme. Let's look at the available tools in the workspace listing to see what's missing or what might be relevant. The listing shows many tool folders. I need to create a *new* one.
+    *   **Logic:** A logical follow-up to a "task scheduler" might be a "resource monitor" or a "logging framework" or a "message queue". Let's go with a "distributed consensus protocol implementation" or a "real-time stream processor". Let's choose **Go** (Golang) as it's great for concurrency and systems, which fits well with the previous Rust task. Or maybe **C++** for systems. Or **Raku**. Let's go with **Go**.
+
+2.  **Drafting the Instruction:**
+    *   *Language:* Go.
+    *   *Topic:* A high-performance real-time stream processor with backpressure handling.
+    *   *Folder:* `go_stream_processor_tool`.
+    *   *Structure:* New folder, local README.md.
+    *   *Constraint Check:* "Return ONLY the instruction text." "Never target .github".
+
+    *Draft:*
+    Initialize a NEW dedicated folder named go_stream_processor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Go. Focus entirely on this new objective: 'Develop a high-performance real-time stream processor with backpressure handling and pluggable filter plugins.'. You MUST write code for this task strictly using this exact programming language: Go.
+
+3.  **Refining:**
+    *   The prompt implies I should fill in the blank `You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: .`
+    *   The user's prompt ends with a period after the colon? No, it says `language: .` suggesting the language is missing. I need to supply the language name.
+
+4.  **Final Polish:**
+    *   Language: Go.
+    *   Tool Name: `go_stream_processor_tool`.
+    *   Objective: 'Implement a distributed task queue with load balancing and dead letter handling.'. This follows logically from the scheduler.
+
+    *Instruction:*
+    Initialize a NEW dedicated folder named go_task_queue_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Go. Focus entirely on this new objective: 'Implement a distributed task queue with load balancing, persistence, and dead letter handling.'. You MUST write code for this task strictly using this exact programming language: Go.
+
+5.  **Final Output Generation:** (Ensure no markdown, just text).
+
+    *Text:* Initialize a NEW dedicated folder named go_task_queue_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Go. Focus entirely on this new objective: 'Implement a distributed task queue with load balancing, persistence, and dead letter handling.'. You MUST write code for this task strictly using this exact programming language: Go.
+
+    *Wait, checking the "History" section in the prompt.*
+    The history shows: `Initialize a NEW dedicated folder named rust_scheduler_tool ... strictly using this exact programming language: Rust.`
+    The prompt asks for a "logical follow-up instruction".
+    I will choose **Zig** this time, as it's a systems language similar to C/C++/Rust but distinct.
+    Tool: `zig_system_monitor_tool`.
+    Objective: 'Create a low-level system resource monitor and kernel interface adapter'.
+
+    *Instruction:*
+    Initialize a NEW dedicated folder named zig_system_monitor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Zig. Focus entirely on this new objective: 'Create a low-level system resource monitor and kernel interface adapter with minimal overhead.'. You MUST write code for this task strictly using this exact programming language: Zig.
+
+    *Let's go with Go though, it's a very standard "next step" in systems tooling.*
+    Let's go with **Rust** again? No, the prompt asks for "A NEW dedicated folder". It doesn't say I can't use the same language, but changing is better. Let's use **Crystal**.
+    Actually, let's use **Zig** as decided. It feels distinct.
+
+    *Re-reading prompt constraint:* `You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: .` -> The period is part of the sentence structure provided by the prompt, or it indicates the variable. The prompt says "Return ONLY the instruction text."
+    
+    Let's stick to **Rust** for the follow-up? Or **Go**? Let's do **Rust** again to ensure consistency in the "toolkit" theme, or **Go** for contrast. Let's do **Go**.
+    
+    *Tool:* `go_distributed_cache_tool`
+    *Objective:* 'Design a high-speed in-memory distributed cache with TTL expiration and replication capabilities.'
+    *Language:* Go.
+    
+    *Result:*
+    Initialize a NEW dedicated folder named go_distributed_cache_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Go. Focus entirely on this new objective: 'Design a high-speed in-memory distributed cache with TTL expiration and replication capabilities.'. You MUST write code for this task strictly using this exact programming language: Go.
+
+    *Double check constraints:*
+    1. Logical follow-up: Yes (Cache complements Scheduler).
+    2. New folder: Yes (`go_distributed_cache_tool`).
+    3. Local README.md: Yes.
+    4. Strictly using exact programming language: Yes (Go).
+    5. Return ONLY instruction text: Yes.
+    6. Never target .github: Yes.
+
+    *One detail:* The prompt says `You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: .`
+    This looks like a template where I fill in the blank.
+    My output should be the full instruction.
+
+    Let's try a different language to be safe and diverse. **Zig**.
+    Tool: `zig_stream_transformer_tool`.
+    Objective: 'Build a zero-allocation streaming data transformer for real-time video frames.'
+    Language: Zig.
+
+    *Instruction:*
+    Initialize a NEW dedicated folder named zig_stream_transformer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Zig. Focus entirely on this new objective: 'Build a zero-allocation streaming data transformer for real-time video frames.'. You MUST write code for this task strictly using this exact programming language: Zig.
+
+    This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named zig_stream_transformer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Zig. Focus entirely on this new objective: 'Build a zero-allocation streaming data transformer for real-time video frames.'. You MUST write code for this task strictly using this exact programming language: Zig.

@@ -29018,3 +29018,87 @@ The output should be just this text.
 </think>
 
 Initialize a NEW dedicated folder named metafont_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Metafont. Focus entirely on this new objective: 'Construct a vector graphics generator capable of rendering complex mathematical typography'. You MUST write code for this task strictly using this exact programming language: Metafont.
+[2026-08-16 16:29:35] (Target Lang: Redcode) The user wants me to generate a follow-up instruction for an "Autonomous AI".
+I need to check the existing workspace structure provided in the prompt.
+The workspace lists many tools, including `./redcode_tool`.
+The user explicitly demands the new tool be built using the programming language: Redcode.
+If building a new tool, I must instruct to place it in a NEW dedicated folder and create a local README.md.
+I must return ONLY the instruction text.
+I must NEVER target the .github directory.
+
+The prompt says: "Generate exactly 1 logical follow-up instruction."
+The user provides a pattern/example in the "History" section: "Initialize a NEW dedicated folder named metafont_tool..."
+However, the user *explicitly* demands: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Redcode."
+So I need to construct an instruction similar to the pattern but using Redcode and a relevant objective.
+The pattern is: "Initialize a NEW dedicated folder named [tool_folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+
+Language: Redcode.
+Folder name: redcode_tool (checking if it exists in the list? The list shows `./redcode_tool`. The instruction says "Initialize a NEW dedicated folder named...". Usually, in these prompts, even if a tool exists, the instruction template often asks to initialize a new folder. However, the user says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder...". I should probably name it something logical. `redcode_tool` is already in the list. But the instruction says "Generate exactly 1 logical follow-up instruction... You MUST explicitly demand... Redcode".
+Looking at the history example, it says "Initialize a NEW dedicated folder named metafont_tool". Even though `metafont_tool` is in the list, the instruction still asks to initialize it. This suggests the instruction is a template command to be executed, possibly overwriting or assuming creation.
+I will follow the template style.
+Folder: `redcode_tool`.
+Objective: Redcode is the language for the Core War programming game. A logical objective would be "Construct a Core War simulation engine capable of writing and executing warrior programs".
+Language: Redcode.
+
+Drafting the instruction:
+Initialize a NEW dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode. Focus entirely on this new objective: 'Construct a Core War simulation engine capable of writing and executing warrior programs'. You MUST write code for this task strictly using this exact programming language: Redcode.
+
+Check constraints:
+- Logical follow-up? Yes.
+- Strictly use Redcode? Yes.
+- New folder? Yes (`redcode_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target .github? Yes.
+
+The text matches the pattern.
+Result: "Initialize a NEW dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode. Focus entirely on this new objective: 'Construct a Core War simulation engine capable of writing and executing warrior programs'. You MUST write code for this task strictly using this exact programming language: Redcode."
+
+Wait, looking at the history example again, the user provided the "Refining the instruction text" in the history, and then the output was just the instruction.
+The prompt asks me to "Generate exactly 1 logical follow-up instruction."
+I will output the text exactly as drafted.
+One detail: The user said "Generate exactly 1 logical follow-up instruction."
+The example in the history shows the output of the previous turn.
+I need to produce the text string.
+
+Final Polish:
+Initialize a NEW dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode. Focus entirely on this new objective: 'Construct a Core War simulation engine capable of writing and executing warrior programs'. You MUST write code for this task strictly using this exact programming language: Redcode.
+</think>
+
+Initialize a NEW dedicated folder named redcode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Redcode. Focus entirely on this new objective: 'Construct a Core War simulation engine capable of writing and executing warrior programs'. You MUST write code for this task strictly using this exact programming language: Redcode.
+[2026-08-16 16:32:27] (Target Lang: Xtend) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using `Xtend`.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a file list (workspace structure) showing many tool folders exist (e.g., `abap_tool`, `ada_tool`, ..., `xtend_tool` might be missing or present? Let's check the list).
+        *   Scanning list for `xtend`: I see `abap_tool`, `ada_tool`, ..., `xbl_tool`, `xc_tool`, ..., `xquery_data_query_tool`, `xsb_tool`, `yorick_tool`, `zeno_tool`, `znotation_tool`.
+        *   I do *not* see `xtend_tool` in the provided list. The list ends with `znotation_tool`. There is no `xtend_tool` folder listed.
+        *   Conclusion: `xtend_tool` is a new folder. The instruction should create it.
+    *   History Analysis: The history example shows a pattern: "Initialize a NEW dedicated folder named [name]... create a local README.md... build the entire new tool STRICTLY using this exact programming language: [Lang]... Focus entirely on this new objective: '[Objective]'... You MUST write code... strictly using... [Lang]."
+
+2.  **Draft the Instruction:**
+    *   *Structure:* `Initialize a NEW dedicated folder named xtend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Xtend. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: Xtend.`
+    *   *Objective Generation:* Since the language is Xtend (a programming language for the JVM often associated with EMF/Eclipse modeling), a logical objective would be related to model transformation, code generation, or general JVM development. Let's pick a standard but relevant objective. "Construct a Model-to-Text transformation engine capable of generating Java boilerplate from EMF models." or "Build a comprehensive Eclipse plugin development toolkit focused on dynamic type generation." Given the previous examples often use generic but descriptive objectives, I'll use: "Construct a robust Model-to-Code generator capable of processing EMF models and emitting optimized Java artifacts."
+    *   *Refinement:* The prompt asks to "Generate exactly 1 logical follow-up instruction." It doesn't specify the objective, but the history example has a specific objective in the output. Usually, in these few-shot or context-aware prompts, the model is expected to generate the full text including a plausible objective if one isn't provided by the user. The user prompt says "Generate exactly 1 logical follow-up instruction." It doesn't give the objective. However, the output format in the history includes the objective. I should include a plausible objective to make the instruction "logical" and complete, or the user might be testing the structure. Looking at the prompt "Generate exactly 1 logical follow-up instruction... explicitly demand... Xtend...", it implies I need to construct the instruction string.
+    *   *Resulting Text:* "Initialize a NEW dedicated folder named xtend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Xtend. Focus entirely on this new objective: 'Construct a robust Model-to-Code generator capable of processing EMF models and emitting optimized Java artifacts'. You MUST write code for this task strictly using this exact programming language: Xtend."
+
+3.  **Final Review against Constraints:**
+    *   *NEW dedicated folder `xtend_tool`?* Yes. (Folder doesn't exist in list).
+    *   *Local `README.md`?* Yes.
+    *   *STRICTLY using `Xtend`?* Yes.
+    *   *NEW folder and README explicitly instructed?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target `.github`?* Yes. (Text doesn't mention `.github`).
+    *   *Exactly 1 instruction?* Yes.
+
+4.  **Output Construction:**
+    *   `Initialize a NEW dedicated folder named xtend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Xtend. Focus entirely on this new objective: 'Construct a robust Model-to-Code generator capable of processing EMF models and emitting optimized Java artifacts'. You MUST write code for this task strictly using this exact programming language: Xtend.`
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named xtend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Xtend. Focus entirely on this new objective: 'Construct a robust Model-to-Code generator capable of processing EMF models and emitting optimized Java artifacts'. You MUST write code for this task strictly using this exact programming language: Xtend.

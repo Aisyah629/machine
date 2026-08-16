@@ -1,0 +1,38 @@
+-- KRC Functional Logic Verification System
+-- This module implements a simple functional logic verification engine.
+
+-- Define a data type for logical expressions
+type Expr = Var String
+          | Const Int
+          | Add Expr Expr
+          | Mul Expr Expr
+
+-- Function to evaluate an expression
+eval (Var _) = error "Unbound variable"
+eval (Const n) = n
+eval (Add x y) = eval x + eval y
+eval (Mul x y) = eval x * eval y
+
+-- Function to check if a variable is present in an expression
+containsVar v (Var x) = v == x
+containsVar v (Const _) = False
+containsVar v (Add x y) = containsVar v x || containsVar v y
+containsVar v (Mul x y) = containsVar v x || containsVar v y
+
+-- Main verification logic
+verify :: Expr -> [String] -> IO Bool
+verify expr vars = do
+    putStrLn $ "Verifying expression: " ++ show expr
+    putStrLn $ "Expected variables: " ++ show vars
+    let found = [v | v <- vars, containsVar v expr]
+    putStrLn $ "Found variables in expression: " ++ show found
+    return (found == vars)
+
+-- Entry point
+main = do
+    let expr = Add (Var "x") (Mul (Const 2) (Var "y"))
+    let expected = ["x", "y"]
+    result <- verify expr expected
+    if result
+        then putStrLn "Verification Successful"
+        else putStrLn "Verification Failed"

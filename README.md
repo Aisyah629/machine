@@ -774,3 +774,5 @@ Training Machine
 - Created/Updated module: `newspeak_tool` (See `newspeak_tool/README.md` for details)
 
 - Created/Updated module: `q_tool` (See `q_tool/README.md` for details)
+
+- Created/Updated module: `legoscript_tool` (See `legoscript_tool/README.md` for details)

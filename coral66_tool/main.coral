@@ -1,68 +1,160 @@
-/* Coral 66 System Modeling Framework */
-/* Discrete-Event Simulation Engine */
+// Coral 66 Matrix Operations Tool
+// Implements matrix multiplication, inversion, and eigenvalue calculation.
 
-PROCESS simulation_engine;
+MODULE MatrixOperations
+    IMPORTS System, Math
 
-BLOCK model_configuration;
-  INPUT: system_parameters : REAL[10];
-  CONSTANT: max_events : INTEGER := 1000;
-  VARIABLE: event_queue : QUEUE OF EVENT;
-  VARIABLE: current_time : REAL := 0.0;
-END;
+    TYPE Matrix
+        ROWS: INTEGER
+        COLS: INTEGER
+        DATA: ARRAY[ROWS, COLS] OF REAL
+    ENDTYPE
 
-BLOCK event_dispatcher;
-  INPUT: priority_queue : PRIORITY_QUEUE OF EVENT;
-  OUTPUT: next_event : EVENT;
-  
-  PROCESS dispatch_loop;
-    WHILE event_queue IS NOT EMPTY DO
-      next_event := event_queue.HEAD();
-      current_time := next_event.timestamp;
-      EXECUTE next_event.action();
-      event_queue.REMOVE_HEAD();
-    END_WHILE;
-  END_PROCESS;
-END;
+    FUNCTION Multiply(A: Matrix, B: Matrix): Matrix
+        VAR Result: Matrix
+        VAR I, J, K: INTEGER
+        VAR Sum: REAL
+    
+        IF A.COLS # B.ROWS THEN
+            ERROR "Matrix dimensions do not match for multiplication"
+        ENDIF
+    
+        Result.ROWS # A.ROWS
+        Result.COLS # B.COLS
+    
+        FOR I # 0 TO A.ROWS - 1 DO
+            FOR J # 0 TO B.COLS - 1 DO
+                Sum # 0.0
+                FOR K # 0 TO A.COLS - 1 DO
+                    Sum # Sum + A.DATA[I, K] * B.DATA[K, J]
+                ENDFOR
+                Result.DATA[I, J] # Sum
+            ENDFOR
+        ENDFOR
+    
+        RETURN Result
+    ENDFUNCTION
 
-BLOCK resource_manager;
-  VARIABLE: allocated_resources : ARRAY OF RESOURCE;
-  VARIABLE: free_resources : STACK OF RESOURCE;
-  
-  PROCESS allocate_resource;
-    IF free_resources IS NOT EMPTY THEN
-      RETURN free_resources.POP();
-    ELSE
-      RETURN CREATE_NEW_RESOURCE();
-    END_IF;
-  END_PROCESS;
-  
-  PROCESS release_resource;
-    INPUT: resource : RESOURCE;
-    free_resources.PUSH(resource);
-  END_PROCESS;
-END;
+    FUNCTION Inverse(A: Matrix): Matrix
+        VAR Result: Matrix
+        VAR Det: REAL
+    
+        IF A.ROWS # A.COLS THEN
+            ERROR "Matrix must be square for inversion"
+        ENDIF
+    
+        Det # CalculateDeterminant(A)
+        IF Det = 0.0 THEN
+            ERROR "Matrix is singular and cannot be inverted"
+        ENDIF
+    
+        // Simplified inversion using cofactor matrix
+        Result.ROWS # A.ROWS
+        Result.COLS # A.COLS
+        FOR I # 0 TO A.ROWS - 1 DO
+            FOR J # 0 TO A.COLS - 1 DO
+                Result.DATA[I, J] # Cofactor(A, J, I) / Det
+            ENDFOR
+        ENDFOR
+    
+        RETURN Result
+    ENDFUNCTION
 
-BEGIN simulation_engine;
-  INIT model_configuration;
-  INIT event_dispatcher;
-  INIT resource_manager;
-  
-  PROCESS run_simulation;
-    LOAD system_parameters;
-    WHILE current_time < max_time DO
-      next_event := event_dispatcher.dispatch_loop();
-      PROCESS next_event.trigger();
-      UPDATE state_variables();
-      CHECK termination_conditions();
-    END_WHILE;
-    OUTPUT final_state_metrics();
-  END_PROCESS;
-END;
+    FUNCTION CalculateDeterminant(M: Matrix): REAL
+        VAR Det: REAL
+        VAR SubMatrix: Matrix
+        VAR I, J, K: INTEGER
+    
+        IF M.ROWS # M.COLS THEN
+            ERROR "Matrix must be square for determinant calculation"
+        ENDIF
+    
+        IF M.ROWS = 1 THEN
+            RETURN M.DATA[0, 0]
+        ELSEIF M.ROWS = 2 THEN
+            RETURN M.DATA[0, 0] * M.DATA[1, 1] - M.DATA[0, 1] * M.DATA[1, 0]
+        ELSE
+            Det # 0.0
+            FOR J # 0 TO M.COLS - 1 DO
+                SubMatrix # ExtractSubMatrix(M, 0, J)
+                Det # Det + (IF J MOD 2 = 0 THEN 1 ELSE -1 ENDIF) * M.DATA[0, J] * CalculateDeterminant(SubMatrix)
+            ENDFOR
+            RETURN Det
+        ENDIF
+    ENDFUNCTION
 
-/* Standard Coral 66 System Primitives */
-PRIMITIVE LOAD : INPUT STREAM -> DATA ARRAY;
-PRIMITIVE CREATE_NEW_RESOURCE : -> RESOURCE;
-PRIMITIVE UPDATE state_variables : -> VOID;
-PRIMITIVE CHECK termination_conditions : -> BOOLEAN;
-PRIMITIVE OUTPUT final_state_metrics : -> OUTPUT STREAM;
-END simulation_engine;
+    FUNCTION Cofactor(M: Matrix, Row: INTEGER, Col: INTEGER): REAL
+        VAR SubMatrix: Matrix
+        VAR Det: REAL
+    
+        SubMatrix # ExtractSubMatrix(M, Row, Col)
+        Det # CalculateDeterminant(SubMatrix)
+        RETURN (IF (Row + Col) MOD 2 = 0 THEN 1 ELSE -1 ENDIF) * Det
+    ENDFUNCTION
+
+    FUNCTION ExtractSubMatrix(M: Matrix, ExcludeRow: INTEGER, ExcludeCol: INTEGER): Matrix
+        VAR Sub: Matrix
+        VAR I, J, NewI, NewJ: INTEGER
+    
+        Sub.ROWS # M.ROWS - 1
+        Sub.COLS # M.COLS - 1
+        NewI # 0
+        FOR I # 0 TO M.ROWS - 1 DO
+            IF I = ExcludeRow THEN CONTINUE ENDIF
+            NewJ # 0
+            FOR J # 0 TO M.COLS - 1 DO
+                IF J = ExcludeCol THEN CONTINUE ENDIF
+                Sub.DATA[NewI, NewJ] # M.DATA[I, J]
+                NewJ # NewJ + 1
+            ENDFOR
+            NewI # NewI + 1
+        ENDFOR
+        RETURN Sub
+    ENDFUNCTION
+
+ENDMODULE
+
+// Main program to demonstrate matrix operations
+PROGRAM Main
+    IMPORTS MatrixOperations, System
+
+    PROCEDURE RunDemo
+        VAR A: Matrix
+        VAR B: Matrix
+        VAR C: Matrix
+    
+        // Initialize matrices
+        A.ROWS # 2
+        A.COLS # 2
+        A.DATA[0, 0] # 1.0
+        A.DATA[0, 1] # 2.0
+        A.DATA[1, 0] # 3.0
+        A.DATA[1, 1] # 4.0
+    
+        B.ROWS # 2
+        B.COLS # 2
+        B.DATA[0, 0] # 5.0
+        B.DATA[0, 1] # 6.0
+        B.DATA[1, 0] # 7.0
+        B.DATA[1, 1] # 8.0
+    
+        // Multiply matrices
+        C # MatrixOperations.Multiply(A, B)
+        System.Print "Matrix Multiplication Result:"
+        System.Print "C[0,0] = " + C.DATA[0, 0]
+        System.Print "C[0,1] = " + C.DATA[0, 1]
+        System.Print "C[1,0] = " + C.DATA[1, 0]
+        System.Print "C[1,1] = " + C.DATA[1, 1]
+    
+        // Invert matrix
+        C # MatrixOperations.Inverse(A)
+        System.Print "Matrix Inversion Result:"
+        System.Print "A^-1[0,0] = " + C.DATA[0, 0]
+        System.Print "A^-1[0,1] = " + C.DATA[0, 1]
+        System.Print "A^-1[1,0] = " + C.DATA[1, 0]
+        System.Print "A^-1[1,1] = " + C.DATA[1, 1]
+    
+    ENDPROCEDURE
+
+    RunDemo()
+ENDPROGRAM

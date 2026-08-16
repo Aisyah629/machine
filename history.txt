@@ -19554,3 +19554,64 @@ Initialize a NEW dedicated folder named kixtart_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named epigram_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Epigram. Focus entirely on this new objective: 'Construct a formal verification automation script engine'. You MUST write functional code for this task strictly using this programming language: Epigram.
+[2026-08-16 03:13:45] (Target Lang: Onyx) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories/files, mostly tool directories with `README.md` and a main file (e.g., `./epigram_tool/README.md`, `./epigram_tool/main.epi`). Wait, `epigram_tool` is already in the workspace list! Let me check: `./epigram_tool ./epigram_tool/README.md ./epigram_tool/main.epi`. Yes, it exists.
+   - **History:** Shows a previous interaction where the AI generated an instruction for `epigram_tool` targeting "Construct a formal verification automation script engine". The output matches exactly what's at the end.
+   - **Current Task:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Onyx. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: **Onyx**.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Logical follow-up to the previous context (which was about Epigram and formal verification).
+
+3.  **Formulate the Instruction:**
+   - Need to mention: `onyx_tool` (new folder), `README.md`, language `Onyx`, objective (logical follow-up to formal verification, maybe "Construct a theorem prover automation framework" or "Build a mathematical proof assistant engine" or "Develop a formal logic specification compiler"). Let's stick close to the formal verification theme: "Construct a mathematical proof assistant automation engine".
+   - Must explicitly say: "build the entire new tool STRICTLY using this exact programming language: Onyx."
+   - Must explicitly say: "Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it..."
+   - Combine into a single, coherent instruction matching the pattern from the history.
+   - Check constraints: Exactly 1 instruction? Yes. Target Onyx? Yes. New folder + README? Yes. Strictly Onyx? Yes. Only instruction text? Yes. No .github? Yes.
+
+   Draft:
+   Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx. Focus entirely on this new objective: 'Construct a mathematical proof assistant automation engine'. You MUST write functional code for this task strictly using this programming language: Onyx.
+
+4.  **Verify against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Yes.
+   - "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Onyx." -> Included.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Included.
+   - "Return ONLY the instruction text." -> I will output just the drafted text.
+   - "NEVER target the .github directory." -> Checked, not mentioned.
+   - Logical follow-up? The previous was Epigram for formal verification automation. Onyx (a programming language, often used for systems/embedded or symbolic execution) for a mathematical proof assistant automation engine fits well as a follow-up/parallel tool.
+
+   The draft matches the pattern exactly. I will output it precisely.
+
+   One minor check: The prompt says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Onyx." I'll make sure the wording matches closely.
+   "Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx. Focus entirely on this new objective: 'Develop a symbolic execution verification framework'. You MUST write functional code for this task strictly using this programming language: Onyx."
+
+   This fits perfectly. I will output only this text.✅
+   Proceed. 
+   Output matches the draft.✅
+   Self-Correction/Refinement during thought: 
+   The prompt says "Generate exactly 1 logical follow-up instruction." It doesn't specify the exact wording must mirror the history, but the history shows a specific format. I'll stick to that format. I'll ensure it explicitly contains "STRICTLY using this exact programming language: Onyx." as requested.
+   Final text: Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx. Focus entirely on this new objective: 'Develop a symbolic execution verification framework'. You MUST write functional code for this task strictly using this programming language: Onyx.
+   All constraints met. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Self-Correction/Verification during generation prep)*: Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Onyx." I will make sure that exact phrase or very close to it is in the output. The draft has it. Good.
+   The prompt also says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." My draft has it.
+   "Return ONLY the instruction text." -> I will output exactly the string.
+   All good. 
+   Output matches draft.✅
+   [Done] 
+   *Self-Correction/Note during thought*: I should verify if "Onyx" is a real language. Yes, there's a language called Onyx (often associated with symbolic execution or just a name). It doesn't matter, the prompt forces it.
+   I will generate the exact string. 
+   Output: `Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx. Focus entirely on this new objective: 'Develop a symbolic execution verification framework'. You MUST write functional code for this task strictly using this programming language: Onyx.` 
+   Matches all constraints. Proceeds. 
+   [Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx. Focus entirely on this new objective: 'Develop a symbolic execution verification framework'. You MUST write functional code for this task strictly using this programming language: Onyx.

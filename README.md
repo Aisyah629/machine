@@ -688,3 +688,5 @@ Training Machine
 - Created/Updated module: `slip_tool` (See `slip_tool/README.md` for details)
 
 - Created/Updated module: `ats_tool` (See `ats_tool/README.md` for details)
+
+- Created/Updated module: `moo_tool` (See `moo_tool/README.md` for details)

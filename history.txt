@@ -22400,3 +22400,25 @@ Initialize a NEW dedicated folder named rtl2_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named dynamo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DYNAMO. Focus entirely on this new objective: 'Implement a robust system dynamics simulation model for resource flow analysis'. You MUST write functional code for this task strictly using this exact programming language: DYNAMO.
+[2026-08-16 08:01:36] (Target Lang: MetaL) The user wants a follow-up instruction for a new tool.
+The language must be MetaL.
+The instruction must create a new folder `metall_tool` (following the pattern of existing tools like `dynamo_tool`).
+It must create a `README.md`.
+It must demand building the tool strictly using MetaL.
+The objective should be something relevant to MetaL or a general programming task. MetaL is an old language, often associated with logic programming or specific academic projects. A good objective might be "Implement a declarative knowledge representation system for automated reasoning" or "Build a symbolic computation engine". Let's go with "Implement a declarative knowledge representation system for automated reasoning" as it fits the spirit of such languages, or perhaps "Develop a modular symbolic algebra system".
+Let's look at the pattern: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+Folder name: `metall_tool`.
+Language: `MetaL`.
+Objective: "Implement a declarative knowledge representation system for automated reasoning".
+Instruction: `Initialize a NEW dedicated folder named metall_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MetaL. Focus entirely on this new objective: 'Implement a declarative knowledge representation system for automated reasoning'. You MUST write functional code for this task strictly using this exact programming language: MetaL.`
+Check constraints:
+- Generate exactly 1 logical follow-up instruction.
+- Demand built STRICTLY using MetaL.
+- NEW dedicated folder and README.md.
+- Return ONLY instruction text.
+- NEVER target .github.
+Result matches constraints.
+Output the instruction.
+</think>
+
+Initialize a NEW dedicated folder named metall_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MetaL. Focus entirely on this new objective: 'Implement a declarative knowledge representation system for automated reasoning'. You MUST write functional code for this task strictly using this exact programming language: MetaL.

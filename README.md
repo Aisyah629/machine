@@ -786,3 +786,5 @@ Training Machine
 - Created/Updated module: `able_tool` (See `able_tool/README.md` for details)
 
 - Created/Updated module: `visualfoxpro_tool` (See `visualfoxpro_tool/README.md` for details)
+
+- Created/Updated module: `ml_tool` (See `ml_tool/README.md` for details)

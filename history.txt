@@ -34598,3 +34598,39 @@ Initialize a NEW dedicated folder named linc_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named vbscript_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Develop a file system organization or batch processing utility.'. You MUST write code for this task strictly using this programming language: VBScript.
+[2026-08-16 22:16:35] (Target Lang: Oxygene) The user wants exactly one logical follow-up instruction.
+The instruction must explicitly demand that the new tool be built STRICTLY using the programming language Oxygene.
+If building a new tool, it must be placed in a NEW dedicated folder with a local README.md.
+Return ONLY the instruction text.
+Never target .github.
+
+Looking at the history:
+- The previous instruction was for `vbscript_advanced_tool` using VBScript.
+- The pattern is `<language>_tool`.
+- Oxygene is already in the list as `oxygene_tool`. Wait, the prompt says "If building a new tool...". But Oxygene exists. However, the prompt says "Develop a file system organization or batch processing utility." I can create `oxygene_advanced_tool` or just follow the pattern. The prompt says "strictly using this exact programming language: Oxygene." I will create `oxygene_advanced_tool` to be safe, or just `oxygene_tool` but the prompt says "NEW dedicated folder". I'll stick to `oxygene_advanced_tool` or follow the exact naming pattern if it's expected, but `oxygene_advanced_tool` is fine. Actually, the prompt says "If building a new tool...". I will generate an instruction for `oxygene_advanced_tool`.
+
+Let's craft the instruction carefully:
+"Initialize a NEW dedicated folder named oxygene_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oxygene. Focus entirely on this new objective: 'Develop a file system organization or batch processing utility.'. You MUST write code for this task strictly using this programming language: Oxygene."
+
+Check constraints:
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+- Logical follow-up? Yes.
+- Explicitly demand Oxygene? Yes.
+- NEW dedicated folder + README.md? Yes.
+
+Matches the pattern of the previous output exactly.
+Ready. 
+Output matches the prompt's request.
+Proceed. 
+Self-Correction/Verification during thought:
+The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Oxygene."
+I will output exactly the instruction string.
+"Initialize a NEW dedicated folder named oxygene_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oxygene. Focus entirely on this new objective: 'Develop a file system organization or batch processing utility.'. You MUST write code for this task strictly using this programming language: Oxygene."
+Matches perfectly. No extra text.
+Done. 
+Output Generation. 
+[Proceeds]
+</think>
+
+Initialize a NEW dedicated folder named oxygene_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Oxygene. Focus entirely on this new objective: 'Develop a file system organization or batch processing utility.'. You MUST write code for this task strictly using this programming language: Oxygene.

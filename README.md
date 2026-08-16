@@ -754,3 +754,5 @@ Training Machine
 - Created/Updated module: `curry_tool` (See `curry_tool/README.md` for details)
 
 - Created/Updated module: `qalb_tool` (See `qalb_tool/README.md` for details)
+
+- Created/Updated module: `ml_tool` (See `ml_tool/README.md` for details)

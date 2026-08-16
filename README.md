@@ -678,3 +678,5 @@ Training Machine
 - Created/Updated module: `b_tool` (See `b_tool/README.md` for details)
 
 - Created/Updated module: `objective_j_tool` (See `objective_j_tool/README.md` for details)
+
+- Created/Updated module: `script_net_tool` (See `script_net_tool/README.md` for details)

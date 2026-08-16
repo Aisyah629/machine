@@ -888,3 +888,5 @@ Training Machine
 - Created/Updated module: `simula_tool` (See `simula_tool/README.md` for details)
 
 - Created/Updated module: `processing_tool` (See `processing_tool/README.md` for details)
+
+- Created/Updated module: `focus_tool` (See `focus_tool/README.md` for details)

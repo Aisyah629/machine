@@ -856,3 +856,5 @@ Training Machine
 - Created/Updated module: `matlab_tool` (See `matlab_tool/README.md` for details)
 
 - Created/Updated module: `nasm_tool` (See `nasm_tool/README.md` for details)
+
+- Created/Updated module: `linc_tool` (See `linc_tool/README.md` for details)

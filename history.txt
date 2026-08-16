@@ -25662,3 +25662,67 @@ Initialize a NEW dedicated folder named s_sl_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named felix_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Felix. Focus entirely on this new objective: 'Implement a functional programming library for data transformation'. You MUST write code for this task strictly using this exact programming language: Felix.
+[2026-08-16 11:43:30] (Target Lang: Coral 66) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a file tree listing many tool directories, each with a `README.md` and a main source file. The history shows a pattern of generating instructions for new tools.
+   - **Prompt Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Coral 66.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+   - **Format Expected:** A single string matching the pattern from the history example, but customized for the new language (Coral 66) and following all constraints.
+
+2.  **Deconstruct Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> One sentence/paragraph.
+   - "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Coral 66." -> Must state "STRICTLY using this exact programming language: Coral 66."
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Must mention creating a new dedicated folder and a local README.md.
+   - "Return ONLY the instruction text." -> No extra words, no markdown formatting if possible, just the raw text.
+   - "NEVER target the .github directory." -> Implicitly handled by not mentioning it.
+   - Pattern from history: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language]."
+
+3.  **Draft Construction:**
+   Need a tool name: `coral66_tool`
+   Need an objective: I'll create a relevant objective for Coral 66. Coral 66 was a high-level programming language for system design and simulation. Objective: "Design a simulation framework for discrete-event system modeling".
+   Combine with constraints:
+   "Initialize a NEW dedicated folder named coral66_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coral 66. Focus entirely on this new objective: 'Design a simulation framework for discrete-event system modeling'. You MUST write code for this task strictly using this exact programming language: Coral 66."
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Coral 66? Yes.
+   - NEW dedicated folder + local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches history pattern? Yes.
+
+   One minor adjustment to exactly match the requested phrasing style: The prompt says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Coral 66." I'll make sure the wording closely aligns.
+   Let's refine:
+   "Initialize a NEW dedicated folder named coral66_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coral 66. Focus entirely on this new objective: 'Develop a system modeling framework for discrete-event simulation'. You MUST write code for this task strictly using this exact programming language: Coral 66."
+
+   Check against constraints: All met. Output matches the exact requested format. No extra text. Ready.✅
+   I will output exactly that string.👇🏼
+   "Initialize a NEW dedicated folder named coral66_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coral 66. Focus entirely on this new objective: 'Develop a system modeling framework for discrete-event simulation'. You MUST write code for this task strictly using this exact programming language: Coral 66." 
+   Wait, let's verify if the prompt requires a specific objective or if I can make one up. The prompt says "Focus entirely on this new objective:" but doesn't specify one. I'll pick a relevant one. The pattern in the history uses a generic but specific objective. I'll stick with the drafted one.
+   All constraints met. Output matches exactly. Proceeds. 
+   Output generation. 
+   [Self-Correction/Verification during thought]
+   The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Coral 66. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will ensure the output is exactly one sentence/paragraph matching the pattern.
+   Text: Initialize a NEW dedicated folder named coral66_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coral 66. Focus entirely on this new objective: 'Develop a system modeling framework for discrete-event simulation'. You MUST write code for this task strictly using this exact programming language: Coral 66.
+   Matches perfectly. Proceeds. 
+   Output matches exactly.✅
+   [Done.] 
+   *Self-Correction/Refinement during generation prep*: I'll make sure the output is just the raw string as requested. No markdown, no extra words. All good. Proceeds. 
+   [Output Generation] -> *Outputs the exact string.* 
+   *(Done.)*
+   `Initialize a NEW dedicated folder named coral66_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coral 66. Focus entirely on this new objective: 'Develop a system modeling framework for discrete-event simulation'. You MUST write code for this task strictly using this exact programming language: Coral 66.`
+   Wait, the prompt says "Return ONLY the instruction text." I will output exactly that.
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Coral 66. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Outputs the exact string.*
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named coral66_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coral 66. Focus entirely on this new objective: 'Develop a system modeling framework for discrete-event simulation'. You MUST write code for this task strictly using this exact programming language: Coral 66.

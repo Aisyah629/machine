@@ -794,3 +794,5 @@ Training Machine
 - Created/Updated module: `jcl_batch_orchestrator_tool` (See `jcl_batch_orchestrator_tool/README.md` for details)
 
 - Created/Updated module: `qalb_tool` (See `qalb_tool/README.md` for details)
+
+- Created/Updated module: `gnu_e_tool` (See `gnu_e_tool/README.md` for details)

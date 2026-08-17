@@ -934,3 +934,5 @@ Training Machine
 - Created/Updated module: `algol58_tool` (See `algol58_tool/README.md` for details)
 
 - Created/Updated module: `arexx_tool` (See `arexx_tool/README.md` for details)
+
+- Created/Updated module: `spitbol_tool` (See `spitbol_tool/README.md` for details)

@@ -1,25 +1,19 @@
-# Visual Objects Data Migration Tool
+# Visual Objects Tool
 
-## Overview
-This tool provides a robust data migration and integration utility built strictly using the Visual Objects programming language. It focuses on schema validation, data transformation, and comprehensive audit trail generation to ensure data integrity during legacy system migrations.
+A comprehensive tool for generating legacy enterprise resource planning (ERP) modules with integrated graphical report designers and secure user authentication systems. Built strictly using Visual Objects syntax.
 
 ## Features
-- **Schema Validation**: Validates source and target database schemas before migration begins.
-- **Data Transformation**: Converts data types and formats according to predefined rules.
-- **Audit Trail**: Generates detailed logs of all migration activities for compliance and debugging.
-- **Error Handling**: Robust error handling to manage partial failures and rollback scenarios.
+
+- Automated ERP Module Generation
+- Integrated Graphical Report Designer
+- Secure User Authentication System
+- Legacy Data Migration Support
+- Real-time Validation Rules
 
 ## Usage
-Compile the `main.vox` file and execute the migration utility by pointing it to your source and target database configurations.
 
-```bash
-voo main.vox -source config_src.json -target config_tgt.json -log audit.log
-```
-
-## Requirements
-- Visual Objects Compiler
-- Compatible Database ODBC Drivers
-- JSON configuration files for source and target schemas
+To use this tool, include the main.fox file in your Visual Objects project.
 
 ## License
-Internal Use Only - Proprietary Software
+
+MIT

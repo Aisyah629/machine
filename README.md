@@ -1030,3 +1030,5 @@ Training Machine
 - Created/Updated module: `acc_financial_engine_tool` (See `acc_financial_engine_tool/README.md` for details)
 
 - Created/Updated module: `systemverilog_tool` (See `systemverilog_tool/README.md` for details)
+
+- Created/Updated module: `visual_objects_tool` (See `visual_objects_tool/README.md` for details)

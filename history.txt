@@ -42122,3 +42122,46 @@ This looks solid.
 </think>
 
 Initialize a NEW dedicated folder named systemverilog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SystemVerilog. Focus entirely on this new objective: 'Develop a high-performance network packet switch simulator with randomized verification constraints and automated error injection mechanisms.'
+[2026-08-17 11:39:48] (Target Lang: Visual Objects) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: The new tool must be built STRICTLY using Visual Objects.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a huge list of existing tools and a history of a previous action (systemverilog_tool). The current task is to generate a *follow-up* instruction based on the pattern.
+
+2.  **Analyze the Pattern:**
+    *   Looking at the history, the previous instruction was: "Initialize a NEW dedicated folder named systemverilog_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SystemVerilog. Focus entirely on this new objective: 'Develop a high-performance network packet switch simulator with randomized verification constraints and automated error injection mechanisms.'"
+    *   The format is: `Initialize a NEW dedicated folder named [FOLDER_NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. Focus entirely on this new objective: '[OBJECTIVE]'.`
+
+3.  **Formulate the New Instruction:**
+    *   *Language:* Visual Objects.
+    *   *Folder Name:* Needs to be logical. Usually, these tools are named `language_tool`. So, `visual_objects_tool`.
+    *   *Objective:* Needs to be a specific, plausible objective for Visual Objects. Visual Objects is a programming language/tool for Windows application development (often associated with xBase/dbf databases). A good objective might be related to database management, GUI generation, or legacy system migration.
+        *   *Draft Objective:* "Develop a cross-platform database management interface with automated data migration tools and real-time validation rules."
+        *   *Refinement:* The prompt asks for a "logical follow-up". Since the previous one was a network switch simulator (SystemVerilog), the next one should be distinct but plausible for Visual Objects.
+        *   *Objective Choice:* "Create a legacy enterprise resource planning (ERP) module generator with integrated graphical report designer and secure user authentication system." This feels like a solid enterprise application objective suitable for Visual Objects.
+    *   *Constructing the Text:*
+        *   "Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Create a legacy enterprise resource planning (ERP) module generator with integrated graphical report designer and secure user authentication system.'"
+
+4.  **Verify Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *STRICTLY Visual Objects?* Yes ("STRICTLY using this exact programming language: Visual Objects").
+    *   *NEW dedicated folder?* Yes ("Initialize a NEW dedicated folder named visual_objects_tool").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target .github?* Yes, content is safe.
+    *   *Logical follow-up?* Yes, follows the pattern of the history.
+
+5.  **Final Output Construction:**
+    *   Result: "Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Create a legacy enterprise resource planning (ERP) module generator with integrated graphical report designer and secure user authentication system.'"
+
+6.  **Final Polish (Mental Representation):**
+    *   The output matches the thought result. No extra text.
+
+This thought structure covers analysis, pattern recognition, formulation, verification, and final output generation.
+</think>
+
+Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Create a legacy enterprise resource planning (ERP) module generator with integrated graphical report designer and secure user authentication system.'

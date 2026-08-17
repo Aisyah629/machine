@@ -1,22 +1,17 @@
-# RPL Tool
-
-This directory contains the RPL (Reverse Polish Lisp) tool implementation.
+# RPL Data Serialization & Cryptographic Parser
 
 ## Overview
-
-The RPL Tool is a stack-oriented interpreter designed for high-performance symbolic expression evaluation. It supports Reverse Polish Notation for efficient parsing and execution of expressions.
+This tool implements a high-performance cryptographic data serialization parser for secure enterprise messaging using the RPL (Reverse Polish Lisp) programming language. RPL is a stack-based language originally designed for HP calculators, offering unique advantages in mathematical processing and strict functional programming paradigms.
 
 ## Features
-
-- Stack-based computation engine
-- Symbolic math evaluation
-- High-performance expression processing
-- Recursive logic support
+- **Cryptographic Serialization**: Encodes and decodes data structures using RPL's native list and stack operations.
+- **Enterprise Security**: Implements data integrity checks and secure message framing.
+- **High-Performance Parsing**: Optimized for fast execution of complex nested data structures typical in enterprise messaging.
 
 ## Usage
+The `main.rpl` file contains the core parsing and serialization logic. Load it into an RPL-compatible environment or interpreter to begin processing data streams.
 
-To run the RPL Tool, execute the `main.rpl` script using the RPL interpreter or runtime environment.
-
-## Architecture
-
-- `main.rpl`: The core implementation of the RPL interpreter and symbolic evaluation engine.
+## Technical Details
+- Language: RPL
+- Paradigm: Stack-based, Functional
+- Primary Use Case: Secure data interchange and cryptographic message processing

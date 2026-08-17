@@ -40831,3 +40831,56 @@ Initialize a NEW dedicated folder named chill_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named msl_message_routing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MSL. Focus entirely on this new objective: 'Construct a high-throughput message routing engine for distributed network synchronization.'
+[2026-08-17 09:54:29] (Target Lang: MIMIC) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using programming language: MIMIC.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: If building a new tool, explicitly instruct to create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The user provided a massive list of files (mostly `*_tool` directories) and a history snippet. The history snippet shows a previous interaction where the model generated an instruction for "msl_message_routing_tool" using "MSL". The current request is to generate a *new* instruction based on this pattern, but using "MIMIC" language.
+
+2.  **Analyze Constraints & Patterns:**
+    *   *Language:* MIMIC.
+    *   *Structure:* "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'."
+    *   *Folder Name:* Needs to be logical. Based on the history, the naming convention is `[language]_[project_name]_tool`. So, `mimic_message_routing_tool` or `mimic_something_tool`. Since the previous one was "message routing", a logical follow-up might be related but distinct, or just a new folder. The prompt asks for a "logical follow-up instruction". Usually, this implies a continuation of the theme or a new step. Given the previous was "message routing", maybe "mimic_data_parsing_tool" or "mimic_event_driven_tool". However, the safest interpretation of "logical follow-up" in these prompts is often just generating a new tool instruction that fits the schema, potentially referencing a new folder name. Let's look at the history text again. The history ends with the output of the MSL instruction. The user is asking the AI to generate the *next* instruction. The AI should generate an instruction for a new tool using MIMIC.
+    *   *Folder Name Construction:* `mimic_event_driven_tool` or `mimic_simulation_tool`. MIMIC is often associated with discrete event simulation. Let's use `mimic_discrete_event_sim_tool` or just `mimic_simulation_tool`. To be safe and generic but logical: `mimic_simulation_tool` is a good fit. Or `mimic_message_broker_tool` to follow the routing theme? "Logical follow-up" might mean "Now do the same for MIMIC but for a related topic". Or it might just mean "Generate the next instruction in the sequence". The prompt doesn't specify the objective text, so I have freedom there, but it should be sensible.
+    *   *Drafting the Text:*
+        *   "Initialize a NEW dedicated folder named mimic_simulation_tool in the workspace..."
+        *   "...create a local README.md inside it..."
+        *   "...and build the entire new tool STRICTLY using this exact programming language: MIMIC."
+        *   "Focus entirely on this new objective: 'Construct a discrete event simulation framework for modeling complex system dynamics.'" (MIMIC is a language for simulation, so this is highly logical).
+
+3.  **Refining the Text against Constraints:**
+    *   *Constraint Check:*
+        *   "Initialize a NEW dedicated folder..." -> Yes.
+        *   "...named mimic_simulation_tool..." -> Yes.
+        *   "...create a local README.md inside it..." -> Yes.
+        *   "...build the entire new tool STRICTLY using this exact programming language: MIMIC." -> Yes.
+        *   "Focus entirely on this new objective..." -> Yes.
+        *   "Return ONLY the instruction text." -> Result must be just the string.
+        *   "NEVER target the .github directory." -> Result does not mention .github. Yes.
+        *   "Generate exactly 1 logical follow-up instruction." -> Result is one string. Yes.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   String: `Initialize a NEW dedicated folder named mimic_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIMIC. Focus entirely on this new objective: 'Construct a high-fidelity discrete event simulation framework for modeling complex system dynamics.'`
+    *   *Review:* The name `mimic_simulation_tool` follows the pattern `[lang]_[name]_tool`. `mimic` is the lang. `simulation_tool` is the name. This is consistent.
+    *   *Language Check:* The prompt asks for MIMIC. The text has MIMIC.
+    *   *Strictness Check:* "STRICTLY using this exact programming language: MIMIC". Included.
+    *   *Folder/Readme Check:* "NEW dedicated folder", "create a local README.md". Included.
+    *   *No .github:* Included.
+    *   *Output Format:* Just the text.
+
+5.  **Final Output Construction:**
+    *   `Initialize a NEW dedicated folder named mimic_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIMIC. Focus entirely on this new objective: 'Construct a high-fidelity discrete event simulation framework for modeling complex system dynamics.'`
+
+    *Self-Correction on Folder Name:* The prompt history shows `msl_message_routing_tool`. The suffix is `_tool`. So `mimic_simulation_tool` is good. The prefix is the language name lowercase. `mimic`. Good.
+
+    *Result:* `Initialize a NEW dedicated folder named mimic_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIMIC. Focus entirely on this new objective: 'Construct a high-fidelity discrete event simulation framework for modeling complex system dynamics.'`
+
+    This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named mimic_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIMIC. Focus entirely on this new objective: 'Construct a high-fidelity discrete event simulation framework for modeling complex system dynamics.'

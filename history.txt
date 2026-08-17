@@ -46926,3 +46926,50 @@ Initialize a NEW dedicated folder named pikt_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named prolog_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Prolog. Focus on developing a sophisticated logic-based auditing and resolution framework capable of parsing complex dependency graphs, inferring hidden constraints, and automating the verification of system configurations against declarative compliance rules.
+[2026-08-17 19:15:16] (Target Lang: Promela) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: New tool must be built STRICTLY using the exact programming language: Promela.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The workspace has many tools listed. The last tool mentioned in history is `prolog_logic_engine_tool`. The prompt asks for a follow-up.
+
+2.  **Analyze the Context/Logic:**
+    *   Previous tool: `prolog_logic_engine_tool`.
+    *   Prolog is a logic programming language, often used for reasoning, rule-based systems, and auditing.
+    *   New language: Promela (Protocol Meta Language).
+    *   Promela is used for modeling concurrent systems and model checking (Spin).
+    *   Logical connection: Prolog handled logic/auditing. Promela is excellent for verifying concurrency, protocols, and state machines. A natural follow-up to a logic-based auditing tool might be a model checking or concurrency verification tool.
+    *   Theme: System verification, concurrency, protocols, or model checking.
+
+3.  **Draft the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named promela_model_checker_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Promela. Focus on developing a concurrent system model checker capable of verifying protocol correctness, detecting deadlocks in state transitions, and generating visual traces for asynchronous communication patterns.
+    *   *Check Constraints:*
+        *   New folder? Yes (`promela_model_checker_tool`).
+        *   README.md? Yes.
+        *   Strict language: Promela? Yes.
+        *   Logical follow-up? Yes (Prolog logic -> Promela concurrency verification).
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+
+4.  **Refine the Text (Style Matching):**
+    *   The previous instruction style is: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus on developing [description]."
+    *   *Refinement:* Initialize a NEW dedicated folder named promela_concurrency_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Promela. Focus on developing a rigorous model checking framework capable of simulating asynchronous message passing, verifying invariants across parallel processes, and automatically detecting race conditions and livelocks within distributed system architectures.
+
+5.  **Final Polish (Mental Review against constraints):**
+    *   "Initialize a NEW dedicated folder named promela_concurrency_validator_tool..." -> Good.
+    *   "...create a local README.md inside it..." -> Good.
+    *   "...build the entire new tool STRICTLY using this exact programming language: Promela." -> Good.
+    *   "Focus on developing..." -> Good content.
+    *   Output is just the text. -> Good.
+    *   No .github. -> Good.
+    *   Result: `Initialize a NEW dedicated folder named promela_concurrency_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Promela. Focus on developing a rigorous model checking framework capable of simulating asynchronous message passing, verifying invariants across parallel processes, and automatically detecting race conditions and livelocks within distributed system architectures.`
+
+6.  **Final Output Construction:**
+    *   The output should be the string derived above.
+    *   `Initialize a NEW dedicated folder named promela_concurrency_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Promela. Focus on developing a rigorous model checking framework capable of simulating asynchronous message passing, verifying invariants across parallel processes, and automatically detecting race conditions and livelocks within distributed system architectures.`
+</think>
+
+Initialize a NEW dedicated folder named promela_concurrency_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Promela. Focus on developing a rigorous model checking framework capable of simulating asynchronous message passing, verifying invariants across parallel processes, and automatically detecting race conditions and livelocks within distributed system architectures.

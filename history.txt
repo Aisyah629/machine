@@ -42165,3 +42165,188 @@ This thought structure covers analysis, pattern recognition, formulation, verifi
 </think>
 
 Initialize a NEW dedicated folder named visual_objects_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Objects. Focus entirely on this new objective: 'Create a legacy enterprise resource planning (ERP) module generator with integrated graphical report designer and secure user authentication system.'
+[2026-08-17 11:41:23] (Target Lang: Elixir) The user wants a follow-up instruction based on the provided history and constraints.
+The history shows a pattern of initializing a tool folder, creating a README, and specifying a programming language and objective.
+The current instruction is for `visual_objects_tool`.
+The follow-up instruction must:
+1.  Be exactly 1 logical follow-up.
+2.  Demand the new tool be built STRICTLY using `Elixir`.
+3.  Instruct to place it in a NEW dedicated folder (e.g., `elixir_tool` or similar, but the prompt implies a specific naming convention based on the tool name, likely `elixir_tool` or `elixir_advanced_tool`, but looking at the list, `elixir_tool` is not present, so a new folder name like `elixir_tool` is appropriate).
+4.  Create a local README.md inside the new folder.
+5.  Return ONLY the instruction text.
+6.  Never target `.github`.
+
+The pattern in the history suggests the format: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'."
+
+The language is `Elixir`.
+The folder name should be `elixir_tool`.
+The objective should be related to Elixir's strengths or a logical next step, but the user didn't specify the objective in the prompt text, just the language. However, looking at the previous turn (History item 4/5), the user provided a specific objective in the "Final Output Construction" section: "'Create a legacy enterprise resource planning (ERP) module generator with integrated graphical report designer and secure user authentication system.'".
+Wait, the prompt says "Generate exactly 1 logical follow-up instruction." and "Focus entirely on this new objective: ...".
+Actually, the prompt ends with the instruction text for the *previous* step (Visual Objects).
+The request is to generate the *next* instruction.
+The constraints for the next instruction are:
+- Language: Elixir.
+- NEW dedicated folder.
+- Local README.md.
+- ONLY instruction text.
+- No .github.
+
+I need to construct the instruction text.
+Folder name: `elixir_tool`.
+Language: `Elixir`.
+Objective: The user didn't explicitly provide the objective for Elixir in the prompt text, just "Generate exactly 1 logical follow-up instruction... build... STRICTLY using... Elixir".
+Usually, the objective comes from the user. Here the user says "Focus entirely on this new objective: ...".
+Wait, looking at the prompt structure:
+"Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Elixir. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+The user *didn't* provide the objective text in the final prompt block. The objective was in the history block for the Visual Objects tool.
+However, the prompt asks to "Generate exactly 1 logical follow-up instruction."
+If I look at the pattern, the objective is usually part of the generated instruction.
+Since the user didn't specify the objective for Elixir, I should probably infer a logical one or use a generic placeholder?
+Re-reading carefully: "Focus entirely on this new objective: 'Create a legacy enterprise resource planning...'" was part of the *previous* turn's output description.
+The current request is: "Generate exactly 1 logical follow-up instruction...".
+It does *not* specify the objective for Elixir.
+However, usually, in these prompts, the "objective" is part of the instruction generation.
+If the user doesn't provide it, I might need to make one up or ask?
+No, the instruction is "Return ONLY the instruction text."
+I will assume a generic but relevant objective for Elixir, or perhaps the user omitted it by mistake?
+Let's look at the structure again.
+The user provided a list of files, a history, and then a block of text ending with "Initialize a NEW dedicated folder...".
+Then the user says: "Generate exactly 1 logical follow-up instruction...".
+It is highly likely the user wants me to generate the text for the Elixir tool.
+Since no objective is provided for Elixir, I should probably generate a reasonable objective or a template one?
+Actually, looking at the previous turn, the objective was "Create a legacy enterprise resource planning (ERP) module generator with integrated graphical report designer and secure user authentication system."
+Maybe the user wants the *same* objective? Or a different one?
+The prompt doesn't say "Same objective".
+It just says "Generate exactly 1 logical follow-up instruction."
+I will generate a logical objective for Elixir. Elixir is good for concurrency, distributed systems, web apps.
+A logical follow-up might be a high-concurrency system or a web server.
+However, without a specified objective, I might be deviating if I make one up.
+But I must return the instruction text. I cannot ask questions.
+I will assume the objective should be generated by me to be "logical".
+Or, perhaps the "Focus entirely on this new objective" part in the previous turn's text was the *result* of the previous instruction, and now I need to generate the next one.
+I'll create a new objective related to Elixir.
+Example: "Build a high-performance distributed message queue system with real-time analytics and fault-tolerant node clustering."
+
+Let's check the constraints again.
+"Return ONLY the instruction text."
+Format: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'."
+
+Folder: `elixir_tool`.
+Language: `Elixir`.
+Objective: I'll choose something distinct. "Develop a scalable real-time chat application with end-to-end encryption and load-balanced message routing."
+
+Wait, looking at the history item 4/5 again.
+"Final Output Construction: Result: 'Initialize a NEW dedicated folder named visual_objects_tool... Focus entirely on this new objective: 'Create a legacy enterprise resource planning (ERP) module generator with integrated graphical report designer and secure user authentication system.''"
+This suggests the output is a single string.
+The current prompt asks for a follow-up.
+I will construct the string for Elixir.
+Since the user didn't specify the objective, I will use a placeholder or a generic one?
+Actually, often these prompts are tests of format. If the objective is missing, I might fail if I invent one?
+But "Generate exactly 1 logical follow-up instruction" implies I am the generator.
+I will invent a plausible objective.
+Objective: "Implement a distributed state management system with real-time synchronization and crash recovery mechanisms."
+
+Let's refine the folder name. The list has `elixir_tool`?
+Searching the list:
+`./elixir_tool` is NOT in the list.
+`./elixir_tool/README.md` is NOT in the list.
+So `elixir_tool` is a safe NEW folder name.
+
+Instruction:
+Initialize a NEW dedicated folder named elixir_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elixir. Focus entirely on this new objective: 'Develop a distributed state management system with real-time synchronization and crash recovery mechanisms.'
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- STRICTLY Visual Objects? No, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Elixir."
+- NEW dedicated folder? Yes (`elixir_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+The result should be the text string.
+
+One detail: The prompt says "Focus entirely on this new objective: '...'".
+If I don't know the objective, is there a standard one?
+Maybe the user copied the prompt and forgot the objective?
+Or maybe the "objective" is the same as the previous one?
+"Focus entirely on this new objective: 'Create a legacy enterprise resource planning...'"
+This text appears in the history as the *result* of the previous step.
+The current prompt does *not* contain an objective for Elixir.
+It says "Generate exactly 1 logical follow-up instruction."
+I will generate a logical objective.
+"Develop a high-throughput event sourcing platform with CQRS architecture and automated saga orchestration."
+This sounds logical for Elixir.
+
+Final check of the text format.
+"Initialize a NEW dedicated folder named elixir_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elixir. Focus entirely on this new objective: 'Develop a high-throughput event sourcing platform with CQRS architecture and automated saga orchestration.'"
+
+This looks correct.
+
+One more check.
+"STRICTLY using this exact programming language: Elixir." -> Included.
+"NEW dedicated folder" -> `elixir_tool`.
+"local README.md" -> Included.
+"Return ONLY the instruction text" -> Output is just the text.
+
+The prompt ends with "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Elixir. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+I will output the instruction text now.
+Folder name: `elixir_tool`.
+Language: `Elixir`.
+Objective: "Develop a high-throughput event sourcing platform with CQRS architecture and automated saga orchestration."
+
+Wait, looking at the previous turn's objective: "Create a legacy enterprise resource planning (ERP) module generator with integrated graphical report designer and secure user authentication system."
+Maybe I should use a similar complexity?
+"Build a scalable microservices orchestrator with distributed transaction management and automated failover capabilities."
+This is good.
+
+Result:
+Initialize a NEW dedicated folder named elixir_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elixir. Focus entirely on this new objective: 'Build a scalable microservices orchestrator with distributed transaction management and automated failover capabilities.'
+
+I will use this.
+One nuance: "STRICTLY using this exact programming language: Elixir."
+The prompt asks to "explicitly demand that the new tool be built STRICTLY using this exact programming language: Elixir."
+My text includes "STRICTLY using this exact programming language: Elixir."
+This matches.
+
+Final verification:
+- 1 instruction? Yes.
+- Elixir? Yes.
+- NEW folder? Yes.
+- README? Yes.
+- ONLY text? Yes.
+- No .github? Yes.
+
+I'm ready.
+One thought: The user might expect the objective to be the same?
+"Focus entirely on this new objective: '...'"
+The prompt says "Generate exactly 1 logical follow-up instruction."
+It doesn't say "reuse objective".
+It says "Focus entirely on this new objective" as part of the instruction format to be generated.
+Since no objective is provided in the input for the generation step, I must supply one.
+"Logical follow-up" suggests relevance.
+Elixir is functional, concurrent.
+Microservices/Distributed systems is logical.
+I'll stick with that.
+
+Text:
+Initialize a NEW dedicated folder named elixir_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elixir. Focus entirely on this new objective: 'Develop a distributed state management system with real-time synchronization and crash recovery mechanisms.'
+
+I'll use "Develop a distributed state management system..." as it's a strong Elixir use case.
+Or "Implement a high-performance real-time chat application with end-to-end encryption and load-balanced message routing."
+Both are fine. I'll go with the state management one, it feels more "tool-like".
+Actually, the previous one was "ERP module generator...". That's a complex app.
+"Elixir Tool" usually implies a compiler or runtime?
+The folder is named `elixir_tool`.
+Looking at other folders: `bash_tool`, `c_tool`.
+These seem to be wrappers or specific implementations.
+If `elixir_tool` is a wrapper around Elixir, the objective might be a specific application.
+The objective "Build a scalable microservices orchestrator..." fits well.
+I'll use that.
+
+Final string:
+Initialize a NEW dedicated folder named elixir_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elixir. Focus entirely on this new objective: 'Build a scalable microservices orchestrator with distributed transaction management and automated failover capabilities.'
+</think>
+
+Initialize a NEW dedicated folder named elixir_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elixir. Focus entirely on this new objective: 'Build a scalable microservices orchestrator with distributed transaction management and automated failover capabilities.'

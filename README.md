@@ -1024,3 +1024,5 @@ Training Machine
 - Created/Updated module: `./cduce_tool` (See `./cduce_tool/README.md` for details)
 
 - Created/Updated module: `ngl_stream_engine_tool` (See `ngl_stream_engine_tool/README.md` for details)
+
+- Created/Updated module: `./ferite_tool` (See `./ferite_tool/README.md` for details)

@@ -1116,3 +1116,5 @@ Training Machine
 - Created/Updated module: `planner_logic_engine_tool` (See `planner_logic_engine_tool/README.md` for details)
 
 - Created/Updated module: `flavors_object_oriented_engine_tool` (See `flavors_object_oriented_engine_tool/README.md` for details)
+
+- Created/Updated module: `sympl_rule_based_reasoning_tool` (See `sympl_rule_based_reasoning_tool/README.md` for details)

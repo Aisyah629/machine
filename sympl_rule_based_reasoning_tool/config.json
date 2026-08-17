@@ -1,0 +1,15 @@
+{
+  "engine": {
+    "max_iterations": 1000,
+    "verbose": true,
+    "parallel_processing": false
+  },
+  "knowledge_base": {
+    "initial_facts": [],
+    "storage_type": "in_memory"
+  },
+  "rules": {
+    "default_priority": 0,
+    "conflict_resolution_strategy": "priority_based"
+  }
+}

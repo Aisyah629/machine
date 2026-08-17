@@ -1176,3 +1176,5 @@ Training Machine
 - Created/Updated module: `ml_development_tool` (See `ml_development_tool/README.md` for details)
 
 - Created/Updated module: `lynx_development_tool` (See `lynx_development_tool/README.md` for details)
+
+- Created/Updated module: `peoplecode_tool` (See `peoplecode_tool/README.md` for details)

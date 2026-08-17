@@ -1040,3 +1040,5 @@ Training Machine
 - Created/Updated module: `elm_tool` (See `elm_tool/README.md` for details)
 
 - Created/Updated module: `plb_tool` (See `plb_tool/README.md` for details)
+
+- Created/Updated module: `newlisp_tool` (See `newlisp_tool/README.md` for details)

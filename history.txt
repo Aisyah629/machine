@@ -42770,3 +42770,27 @@ Initialize a NEW dedicated folder named elm_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named plb_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL/B. Focus entirely on this new objective: 'Develop a system for mainframe data processing optimized for legacy IBM environment compatibility and efficient batch file handling.'
+[2026-08-17 12:26:08] (Target Lang: NewLISP) The user wants a single follow-up instruction to initialize a new tool named `newlisp_tool`.
+The instruction must explicitly demand using the `NewLISP` programming language.
+The instruction must instruct to place the tool in a `newlisp_tool` folder and create a `README.md`.
+The instruction should return only the instruction text.
+The prompt history shows previous instructions for other tools like `plb_tool`.
+The target language is `NewLISP`.
+The folder name is `newlisp_tool`.
+The file structure should match the pattern: `Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'`
+The objective needs to be relevant to NewLISP, e.g., scripting, dynamic coding, or similar.
+NewLISP is known for Lisp dialect, dynamic typing, scripting.
+Objective: 'Develop a dynamic scripting framework for rapid text manipulation and symbolic processing with high-level list operations.'
+Construct the instruction.
+`Initialize a NEW dedicated folder named newlisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NewLISP. Focus entirely on this new objective: 'Develop a dynamic scripting framework for rapid text manipulation and symbolic processing with high-level list operations.'`
+Check constraints:
+- 1 logical follow-up instruction.
+- Explicitly demand NewLISP.
+- Place in NEW dedicated folder `newlisp_tool`.
+- Create local README.md.
+- Return ONLY instruction text.
+- NEVER target .github.
+All constraints met.
+</think>
+
+Initialize a NEW dedicated folder named newlisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NewLISP. Focus entirely on this new objective: 'Develop a dynamic scripting framework for rapid text manipulation and symbolic processing with high-level list operations.'

@@ -1,36 +1,27 @@
 # NewLISP Tool
 
-This tool is implemented in **NewLISP**, a powerful, high-level scripting language designed for rapid development, embedded systems, and cross-platform compatibility. NewLISP combines the simplicity of Lisp with modern features like garbage collection, pattern matching, and web scripting capabilities.
+This tool implements a dynamic scripting framework for rapid text manipulation and symbolic processing with high-level list operations, built strictly in NewLISP.
 
 ## Features
 
--   **Simple Syntax**: Easy to learn and write, with a Lisp-like S-expression format.
--   **Pattern Matching**: Powerful string and list pattern matching.
--   **Web Scripting**: Built-in support for web application development.
--   **Cross-Platform**: Runs on Windows, macOS, and Linux.
--   **Embedded**: Suitable for embedding in other applications.
+- **Dynamic Scripting**: Leverage NewLISP's dynamic typing and flexible evaluation model.
+- **Text Manipulation**: Efficient regex-based and pattern-matching operations on strings.
+- **Symbolic Processing**: Manipulate symbols and expressions as first-class objects.
+- **High-Level List Operations**: Advanced list processing using built-in NewLISP functions and custom utilities.
 
 ## Usage
 
-To run the tool, execute the following command:
+Execute the main script:
 
 ```bash
-newlisp main.nl
+newlisp main.lsp
 ```
 
-## Examples
+## Development
 
--   **Greeting**: Greets the user with a personalized message.
--   **List Operations**: Demonstrates list manipulation and arithmetic operations.
--   **File I/O**: Shows basic file existence checks and writing.
+- **Language**: NewLISP
+- **Main Entry**: `main.lsp`
 
-## Project Structure
+## License
 
--   `main.nl`: The main NewLISP script containing the tool's logic.
--   `README.md`: This file, providing documentation and usage instructions.
-
-## Requirements
-
--   NewLISP interpreter installed on your system.
-
-For more information about NewLISP, visit the [official NewLISP website](http://www.newlisp.org/).
+MIT

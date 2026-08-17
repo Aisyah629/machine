@@ -1,13 +1,11 @@
 # PL/B Tool
 
-## Description
-This tool implements a robust mainframe transaction processing system for legacy batch job orchestration and enterprise data migration, built strictly using the PL/B programming language.
+This tool is designed for mainframe data processing, optimized for legacy IBM environment compatibility and efficient batch file handling.
 
 ## Features
-- High-performance transaction processing
-- Legacy batch job orchestration
-- Enterprise data migration utilities
-- Mainframe-compatible output formatting
+- High-speed batch processing
+- Legacy format support
+- Optimized memory usage
 
 ## Usage
-Initialize the tool and execute the main processing modules as defined in the source code.
+Run the main.plb file to execute the data processing engine.

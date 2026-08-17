@@ -940,3 +940,5 @@ Training Machine
 - Created/Updated module: `gamemonkey_script_tool` (See `gamemonkey_script_tool/README.md` for details)
 
 - Created/Updated module: `pilot_workflow_tool` (See `pilot_workflow_tool/README.md` for details)
+
+- Created/Updated module: `fl_transformation_tool` (See `fl_transformation_tool/README.md` for details)

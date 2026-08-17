@@ -1,0 +1,197 @@
+-- PLEXIL Autonomous Mission Planner
+-- Core Mission Architecture: State Machine, Command Sequencing, Exception Handling
+
+package plexil_autonomous_mission_planner
+
+-- Mission Configuration & Parameters
+Config
+  clock_frequency = 1.0;
+  max_retry_count = 3;
+  timeout_threshold = 300.0;
+  telemetry_interval = 10.0;
+End
+
+-- Global Variables & Telemetry
+-- State: INITIALIZING, COMPLETED, FAILED, WAITING_FOR_GROUND
+Command Global
+  mission_state = "INITIALIZING";
+  retry_counter = 0;
+  last_telemetry_time = 0.0;
+End
+
+-- Exception/Error Definitions
+Command Global
+  error_code = 0;
+  fault_detected = false;
+End
+
+-- Main Mission Sequence
+Command Sequence
+  name = "AutonomousMissionFlow";
+  states = {
+    InitializeSystem,
+    RunOperations,
+    HandleExceptions,
+    TerminateMission
+  };
+  transitions = {
+    {InitializeSystem, RunOperations, mission_state == "COMPLETED"},
+    {RunOperations, HandleExceptions, fault_detected == true},
+    {RunOperations, TerminateMission, mission_state == "FAILED"},
+    {InitializeSystem, InitializeSystem, mission_state == "WAITING_FOR_GROUND"}
+  };
+End
+
+-- State: Initialize System
+State
+  name = "InitializeSystem";
+  commands = {
+    SendTelemetry,
+    CheckSystemHealth,
+    LoadMissionParameters
+  };
+  triggers = {
+    system_ready = mission_state == "READY"
+  };
+  on_entry = {
+    mission_state = "INITIALIZING";
+    retry_counter = 0;
+  };
+End
+
+-- State: Run Operations
+State
+  name = "RunOperations";
+  commands = {
+    ExecutePrimarySequence,
+    ProcessTelemetryData,
+    MonitorFlightPath
+  };
+  triggers = {
+    operation_complete = mission_state == "COMPLETED",
+    timeout_occurred = (current_time - last_telemetry_time) > timeout_threshold
+  };
+  on_entry = {
+    fault_detected = false;
+  };
+End
+
+-- State: Handle Exceptions
+State
+  name = "HandleExceptions";
+  commands = {
+    LogFault,
+    ExecuteRecoveryProtocol,
+    RequestGroundIntervention
+  };
+  triggers = {
+    recovery_successful = mission_state == "COMPLETED",
+    recovery_failed = retry_counter >= max_retry_count
+  };
+  on_entry = {
+    retry_counter = retry_counter + 1;
+  };
+End
+
+-- State: Terminate Mission
+State
+  name = "TerminateMission";
+  commands = {
+    SendFinalTelemetry,
+    ShutDownSystems,
+    ArchiveMissionData
+  };
+  triggers = {
+    shutdown_complete = mission_state == "SHUTDOWN"
+  };
+End
+
+-- Commands
+Command Sequence
+  name = "SendTelemetry";
+  parameters = {
+    telemetry_packet = current_telemetry_data;
+    transmission_channel = "PRIMARY";
+  };
+  timeout = telemetry_interval;
+End
+
+Command Sequence
+  name = "CheckSystemHealth";
+  parameters = {
+    subsystems = {"POWER", "COMMS", "PROPELLANT", "THERMAL"};
+  };
+End
+
+Command Sequence
+  name = "LoadMissionParameters";
+  parameters = {
+    config_file = "mission_config.json";
+  };
+End
+
+Command Sequence
+  name = "ExecutePrimarySequence";
+  parameters = {
+    sequence_id = "PRIMARY_FLIGHT_PHASE";
+  };
+End
+
+Command Sequence
+  name = "ProcessTelemetryData";
+  parameters = {
+    filter_mode = "REALTIME";
+  };
+End
+
+Command Sequence
+  name = "MonitorFlightPath";
+  parameters = {
+    reference_frame = "INERTIAL";
+  };
+End
+
+Command Sequence
+  name = "LogFault";
+  parameters = {
+    fault_code = error_code;
+    timestamp = current_time;
+  };
+End
+
+Command Sequence
+  name = "ExecuteRecoveryProtocol";
+  parameters = {
+    recovery_type = "AUTONOMOUS";
+  };
+End
+
+Command Sequence
+  name = "RequestGroundIntervention";
+  parameters = {
+    priority = "HIGH";
+  };
+End
+
+Command Sequence
+  name = "SendFinalTelemetry";
+  parameters = {
+    final_report = "MISSION_TERMINATED";
+  };
+End
+
+Command Sequence
+  name = "ShutDownSystems";
+  parameters = {
+    shutdown_order = {"COMMS", "PAYLOAD", "POWER"};
+  };
+End
+
+Command Sequence
+  name = "ArchiveMissionData";
+  parameters = {
+    storage_device = "NON_VOLATILE";
+  };
+End
+
+End

@@ -1168,3 +1168,5 @@ Training Machine
 - Created/Updated module: `simulink_dynamic_system_simulator_tool` (See `simulink_dynamic_system_simulator_tool/README.md` for details)
 
 - Created/Updated module: `sas_statistical_analysis_tool` (See `sas_statistical_analysis_tool/README.md` for details)
+
+- Created/Updated module: `flavors_development_tool` (See `flavors_development_tool/README.md` for details)

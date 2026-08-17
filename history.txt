@@ -49888,3 +49888,62 @@ Initialize a NEW dedicated folder named vsxu_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named napier88_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Napier88.
+[2026-08-17 23:15:32] (Target Lang: Elm) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace list (file/directory structure) and a "History" section showing a pattern of generating instructions for creating new tools/folders.
+   - **Core Task:** Generate exactly 1 logical follow-up instruction.
+   - **Mandatory Constraint 1:** Explicitly demand that the new tool be built STRICTLY using this exact programming language: Elm.
+   - **Mandatory Constraint 2:** If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - **Mandatory Constraint 3:** Return ONLY the instruction text.
+   - **Mandatory Constraint 4:** NEVER target the `.github` directory.
+   - **Format:** Matches the pattern in the history: `Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language].`
+
+2.  **Identify Key Requirements for the Output:**
+   - Must be exactly one instruction.
+   - Must mention creating a NEW dedicated folder (e.g., `elm_tool` or similar).
+   - Must mention creating a local `README.md` inside it.
+   - Must explicitly state building the tool STRICTLY using the language `Elm`.
+   - Must NOT contain any extra text, markdown, or explanations.
+   - Must NOT target `.github`.
+
+3.  **Draft Construction:**
+   Following the exact pattern from the history:
+   `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.`
+
+4.  **Verify against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Elm? Yes.
+   - Instruct to place in NEW dedicated folder? Yes (`elm_tool`).
+   - Instruct to create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches pattern? Yes.
+
+   All constraints met. I will output exactly the drafted string. No extra whitespace or formatting. Ensure it's plain text as requested.
+
+   Final check of the prompt: "Return ONLY the instruction text. NEVER target the .github directory."
+   The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Elm. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   Draft: `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.`
+
+   Matches perfectly. Proceeds.✅
+   Output matches requirement.✅
+   Final Output Generation.✅
+   *(Self-Correction/Verification during drafting)*: The prompt history shows a specific phrasing: `Initialize a NEW dedicated folder named napier88_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Napier88.` I will adapt it exactly to Elm.
+   All good. Output matches.✅
+   Proceeds.
+   [Output Generation] -> `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.`
+   Done.✅
+   Output matches.✅
+   Proceeds. 
+   *(Note: I will output exactly the string without any extra text or markdown formatting, as per "Return ONLY the instruction text.")*
+   Final string: `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.`
+   Ready. 
+   Output matches requirement.✅
+   Proceeds. 
+   [Output Generation] -> `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.`
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.

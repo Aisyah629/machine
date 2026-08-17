@@ -44578,3 +44578,42 @@ Output matches.✅
 </think>
 
 Initialize a NEW dedicated folder named turbo_cpp_legacy_system_profiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Turbo C++. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a high-performance memory manager and interrupt handler analyzer optimized for 16-bit real-mode DOS environments.
+[2026-08-17 15:32:29] (Target Lang: Seed7) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Constraint: Explicitly demand the new tool be built STRICTLY using the programming language: Seed7.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Context: The user provided a file list and history. The history shows a previous instruction about `turbo_cpp_legacy_system_profiler_tool`. The workspace contains many tools. I need to create a *new* tool instruction based on the "logical follow-up" concept. A logical follow-up often implies continuing a theme, fixing something, or extending functionality related to the previous context or general tooling improvements, though the prompt doesn't strictly define "logical follow-up" beyond the constraints. Usually, in these prompts, "logical follow-up" implies generating a prompt that makes sense in the context of the workspace or continues a pattern. Since the previous tool was about a legacy profiler, a logical follow-up might be about a modern analysis tool, or a tool in the specified language (Seed7).
+    *   Language Constraint: Must be Seed7.
+    *   Output Constraint: "Return ONLY the instruction text."
+
+2.  **Drafting the Instruction:**
+    *   *Structure:* "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7."
+    *   *Folder Name:* Needs to be distinct. Looking at the file list, there's no `seed7_tool` yet. I should propose a name. `seed7_analysis_tool` or `seed7_parser_tool` seems appropriate. Let's go with `seed7_expression_evaluator_tool`.
+    *   *Description:* Needs to be a functional description. "Focus on engineering a robust expression parser and evaluator optimized for algebraic syntax and dynamic typing."
+    *   *Combining:* Initialize a NEW dedicated folder named `seed7_expression_evaluator_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a robust expression parser and evaluator optimized for algebraic syntax and dynamic typing.
+
+3.  **Reviewing against Constraints:**
+    *   *ONLY instruction text?* Yes, the draft is just the instruction.
+    *   *NEVER target .github?* Yes, no mention of .github.
+    *   *STRICTLY Seed7?* Yes, included.
+    *   *NEW dedicated folder?* Yes, `seed7_expression_evaluator_tool`.
+    *   *Local README.md?* Yes, included.
+    *   *Logical follow-up?* The previous tool was `turbo_cpp_legacy_system_profiler_tool`. A follow-up could be contrasting legacy with a structured, safe language like Seed7. Or simply adding a tool that exists in the list of tools but not in the workspace. Since the workspace is a collection of tools, adding another tool is a logical action. The description "expression parser" is a good tool function.
+    *   *Refinement on "Logical Follow-up":* Sometimes "logical follow-up" in these automated prompts means "Generate the next instruction in a sequence". If I look at the history, the user might be building a suite of tools. The prompt asks for "exactly 1 logical follow-up instruction". This usually means the output should be the text of that instruction. The structure usually mimics the "Final string" seen in the history: "Initialize a NEW... [Folder]... [Language]... [Description]."
+    *   *Result:* `Initialize a NEW dedicated folder named seed7_expression_evaluator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a robust expression parser and evaluator optimized for algebraic syntax and dynamic typing.`
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Text: "Initialize a NEW dedicated folder named seed7_expression_evaluator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a robust expression parser and evaluator optimized for algebraic syntax and dynamic typing."
+    *   Check for `.github`: None.
+    *   Check for Seed7: Present.
+    *   Check for Folder/Readme: Present.
+    *   Check for "ONLY text": Yes.
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named seed7_expression_evaluator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Seed7. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a robust expression parser and evaluator optimized for algebraic syntax and dynamic typing.

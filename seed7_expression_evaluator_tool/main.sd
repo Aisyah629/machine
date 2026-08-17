@@ -1,0 +1,195 @@
+$ The Seed7 Expression Evaluator Tool
+$ This file implements a robust expression parser and evaluator.
+
+$ include "std/io.s7i";
+$ include "std/base.s7i";
+$ include "std/text.s7i";
+
+const expr: operators := 50;
+const integer: operator_count := operators;
+
+const string: operators_str := "+ - * / = < > <= >= <> ( ) ! ^";
+const array integer: precedences := < 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 >;
+const array integer: associativities := < 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 >;
+
+const expr: expression := 1;
+const integer: expr_count := expression;
+
+type expr_result:
+  field
+    integer: value;
+    boolean: success;
+    string: message;
+  end type;
+
+const expr_result: empty_expr_result is expr_result(0, FALSE, "");
+
+const expr_result: success_result is func
+  result
+    var expr_result: result is expr_result(0, TRUE, "");
+  begin
+    result.value := 0;
+    result.success := TRUE;
+    result.message := "";
+  end func;
+
+const expr_result: error_result is func
+  param
+    string: message is "";
+  result
+    var expr_result: result is expr_result(0, FALSE, "");
+  begin
+    result.value := 0;
+    result.success := FALSE;
+    result.message := message;
+  end func;
+
+const integer: MAX_EXPR_LENGTH := 1000;
+
+tokenize_expression is func
+  local
+    var text: expr_text is "";
+    var array string: tokens := [ ]("");
+    var string: current_token is "";
+    var integer: i is 0;
+    var char: c is "";
+  begin
+    for i range 1 to length(expr_text) do
+      c := expr_text[i];
+      if c = " " then
+        if current_token <> "" then
+            add(tokens, current_token);
+            current_token := "";
+        end if;
+      else
+        current_token := current_token <& c;
+      end if;
+    end for;
+    if current_token <> "" then
+      add(tokens, current_token);
+    end if;
+  end func;
+
+parse_expression is func
+  local
+    var array string: tokens := [ ]("");
+    var integer: pos is 1;
+    var integer: result is 0;
+  begin
+    tokenize_expression(expr_text, tokens);
+    if length(tokens) = 0 then
+      return error_result("Empty expression");
+    end if;
+    result := parse_term(tokens, pos);
+    if pos <= length(tokens) then
+      return error_result("Unexpected token: " & tokens[pos]);
+    end if;
+    return success_result(result);
+  end func;
+
+parse_term is func
+  local
+    var array string: tokens := [ ]("");
+    var integer: pos is 1;
+    var integer: factor_val is 0;
+    var string: op is "";
+    var integer: term_val is 0;
+  begin
+    factor_val := parse_factor(tokens, pos);
+    while pos <= length(tokens) and (tokens[pos] = "*" or tokens[pos] = "/") do
+      op := tokens[pos];
+      pos := pos + 1;
+      term_val := parse_factor(tokens, pos);
+      case op
+        when "*" then
+          factor_val := factor_val * term_val;
+        when "/" then
+          if term_val = 0 then
+            return error_result("Division by zero");
+          end if;
+          factor_val := factor_val / term_val;
+      end case;
+    end while;
+    return factor_val;
+  end func;
+
+parse_factor is func
+  local
+    var array string: tokens := [ ]("");
+    var integer: pos is 1;
+    var string: token is "";
+    var integer: factor_val is 0;
+  begin
+    if pos > length(tokens) then
+      return error_result("Unexpected end of expression");
+    end if;
+    token := tokens[pos];
+    case token
+      when "(" then
+        pos := pos + 1;
+        factor_val := parse_expression(tokens, pos);
+        if pos <= length(tokens) and tokens[pos] = ")" then
+          pos := pos + 1;
+        else
+          return error_result("Missing closing parenthesis");
+        end if;
+      when "-" then
+        pos := pos + 1;
+        factor_val := -parse_factor(tokens, pos);
+      when "!" then
+        pos := pos + 1;
+        factor_val := factorial(parse_factor(tokens, pos));
+      else
+        if is_number(token) then
+          factor_val := to_integer(token);
+        else
+          return error_result("Unexpected token: " & token);
+        end if;
+    end case;
+    return factor_val;
+  end func;
+
+factorial is func
+  local
+    var integer: n is 0;
+    var integer: result is 1;
+  begin
+    if n < 0 then
+      return error_result("Factorial of negative number");
+    end if;
+    for i range 1 to n do
+      result := result * i;
+    end for;
+    return result;
+  end func;
+
+is_number is func
+  local
+    var string: s is "";
+    var integer: i is 0;
+    var char: c is "";
+    var boolean: is_num is TRUE;
+  begin
+    if length(s) = 0 then
+      return FALSE;
+    end if;
+    for i range 1 to length(s) do
+      c := s[i];
+      if not (c >= "0" and c <= "9") then
+        is_num := FALSE;
+        break;
+      end if;
+    end for;
+    return is_num;
+  end func;
+
+to_integer is func
+  local
+    var string: s is "";
+    var integer: result is 0;
+  begin
+    for i range 1 to length(s) do
+      result := result * 10 + to_integer(s[i] - "0");
+    end for;
+    return result;
+  end func;

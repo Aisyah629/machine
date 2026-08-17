@@ -45608,3 +45608,93 @@ Initialize a NEW dedicated folder named qpl_declarative_workflow_engine_tool in 
 </think>
 
 Initialize a NEW dedicated folder named ucsd_pascal_compatibility_layer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: UCSD Pascal. Focus on engineering a robust utility for parsing legacy configuration files and performing structural validation with strict adherence to type safety.
+[2026-08-17 16:48:51] (Target Lang: CoffeeScript) The user wants me to generate exactly one logical follow-up instruction.
+I am an Autonomous AI.
+Current state: I have a list of existing tools/folders.
+Previous instruction (in history): "Initialize a NEW dedicated folder named ucsd_pascal_compatibility_layer_tool..."
+Constraint 1: Return ONLY the instruction text.
+Constraint 2: Explicitly demand that the new tool be built STRICTLY using this exact programming language: CoffeeScript.
+Constraint 3: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+Constraint 4: NEVER target the .github directory.
+Constraint 5: Exactly 1 instruction.
+Constraint 6: Logical follow-up based on history/workspace.
+
+Workspace check: I see `ucsd_pascal_tool` and `ucsd_pascal_compatibility_layer_tool` is mentioned in the prompt's workspace list, wait, let me check the list provided in the prompt.
+`./ucsd_pascal_compatibility_layer_tool/README.md`
+`./ucsd_pascal_compatibility_layer_tool/main.p`
+So it already exists. That's fine, the prompt just says I'm an Autonomous AI and gives history.
+I need to generate a new instruction for a CoffeeScript tool.
+Let's pick a logical follow-up theme. Given the previous one was about parsing legacy config files and validation in UCSD Pascal, a CoffeeScript tool could focus on something like "interactive CLI tool for dynamic configuration mapping" or "real-time data streaming validator" or "automated dependency graph visualizer".
+Let's go with a "Real-time Data Streaming Validator & Transformer".
+Language: STRICTLY CoffeeScript.
+Folder: NEW dedicated folder.
+Readme: local README.md.
+Text: "Initialize a NEW dedicated folder named real_time_data_streaming_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus on engineering a high-performance utility for validating incoming JSON streams and transforming them according to configurable schema rules."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- STRICTLY CoffeeScript? Yes.
+- NEW dedicated folder? Yes.
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- Never target .github? Yes.
+- Logical follow-up? Fits the tool/theme of the workspace.
+
+Refine text to strictly match prompt style:
+"Initialize a NEW dedicated folder named real_time_data_streaming_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus on engineering a high-performance utility for validating incoming JSON streams and transforming them according to configurable schema rules."
+
+Wait, the prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CoffeeScript. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+I will construct it carefully.
+"Initialize a NEW dedicated folder named real_time_data_streaming_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus on engineering a high-performance utility for validating incoming JSON streams and transforming them according to configurable schema rules."
+
+Check constraints again:
+- Exactly 1 instruction? Yes.
+- STRICTLY CoffeeScript? Yes.
+- NEW dedicated folder? Yes.
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- Never target .github? Yes.
+- Logical follow-up? Yes.
+
+All good. Output matches exactly. I will produce just the text.
+One minor thing: I'll make sure it aligns with the prompt's exact phrasing style if needed, but the prompt says "Generate exactly 1 logical follow-up instruction." so freeform but constrained is fine.
+I'll output exactly the instruction string.
+Ready. 
+Output matches request.✅
+Proceeds. 
+Self-Correction/Verification during thought: 
+The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> I included that.
+"STRICTLY using this exact programming language: CoffeeScript." -> Included.
+"NEVER target the .github directory." -> Checked.
+"Return ONLY the instruction text." -> Checked.
+All constraints met. Output generation. 
+Text: Initialize a NEW dedicated folder named real_time_data_streaming_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus on engineering a high-performance utility for validating incoming JSON streams and transforming them according to configurable schema rules.
+Matches perfectly.✅
+Proceeds. 
+[Output Generation] -> "Initialize a NEW dedicated folder named real_time_data_streaming_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus on engineering a high-performance utility for validating incoming JSON streams and transforming them according to configurable schema rules." (or similar)
+I will stick to the exact wording drafted.
+Done. 
+Output matches response. 
+Proceeds. 
+[Final Check]
+- Exactly 1 instruction? Yes.
+- Language: CoffeeScript? Yes.
+- New folder + README? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+- Logical? Yes.
+All good. 
+Output Generation. 
+`Initialize a NEW dedicated folder named real_time_data_streaming_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus on engineering a high-performance utility for validating incoming JSON streams and transforming them according to configurable schema rules.` -> matches constraints. 
+Done. 
+[Output] -> *Proceeds*
+*(Self-Correction/Refinement during thought)*: I should ensure the phrasing exactly mirrors the requested constraints without extra fluff. The prompt says "Return ONLY the instruction text."
+I will output exactly that string.
+All good. 
+[Output Generation] -> `Initialize a NEW dedicated folder named real_time_data_streaming_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus on engineering a high-performance utility for validating incoming JSON streams and transforming them according to configurable schema rules.`
+Done. 
+[Final Output Generation] (Proceeds)
+</think>
+
+Initialize a NEW dedicated folder named real_time_data_streaming_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus on engineering a high-performance utility for validating incoming JSON streams and transforming them according to configurable schema rules.

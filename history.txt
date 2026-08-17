@@ -40884,3 +40884,47 @@ Initialize a NEW dedicated folder named msl_message_routing_tool in the workspac
 </think>
 
 Initialize a NEW dedicated folder named mimic_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIMIC. Focus entirely on this new objective: 'Construct a high-fidelity discrete event simulation framework for modeling complex system dynamics.'
+[2026-08-17 09:55:30] (Target Lang: Hartmann pipelines) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Context: The user provided a workspace listing and a history snippet. The history shows a tool named `mimic_simulation_tool` being discussed/created.
+    *   Constraints:
+        *   Must demand the new tool be built STRICTLY using the language: `Hartmann pipelines`.
+        *   If building a new tool, must instruct to place it in a NEW dedicated folder and create a local README.md.
+        *   Return ONLY the instruction text.
+        *   NEVER target the `.github` directory.
+
+2.  **Formulate the Instruction:**
+    *   *Language:* "Hartmann pipelines" -> Based on the pattern in the workspace (e.g., `hartmann_tool`, `hartmann_pipeline_tool`), the language identifier is likely `hartmann`. The extension might be `.hpf` (seen in `hartmann_tool/main.hpf`).
+    *   *Folder Name:* Following the pattern `[lang]_[name]_tool`, the folder should be `hartmann_pipeline_tool`.
+    *   *Action:* Initialize folder, create README, build tool.
+    *   *Strictness:* "STRICTLY using this exact programming language: Hartmann pipelines".
+    *   *Objective:* The prompt doesn't specify a new objective in the "Generate" part, but usually, these prompts imply creating a tool. I need to invent a logical objective or use a generic one if not specified. However, looking at the pattern of the user's input "Generate exactly 1 logical follow-up instruction", it often implies the AI should generate the next step in a sequence. Since the user didn't provide a specific objective text in the "Generate" command, I should look at the constraints. The constraint is just to demand the tool based on "Hartmann pipelines". I can assume a generic or related objective, or just focus on the construction. Usually, these prompts expect a full sentence like `Initialize a NEW dedicated folder...`.
+    *   *Drafting the text:*
+        *   "Initialize a NEW dedicated folder named `hartmann_pipeline_tool` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines."
+        *   *Objective Addition:* The user didn't give an objective for this specific turn, but the example history had an objective. To be safe and "logical", I should probably include a generic objective or one related to Hartmann pipelines. Hartmann is often associated with optimization or specific domain modeling. A safe bet is to construct a framework or tool. Let's add a plausible objective: "Focus entirely on this new objective: 'Develop a robust optimization solver module for Hartmann pipelines.'" or just stick to the construction if the objective isn't mandated. However, the history shows the format includes the objective. I'll include a brief objective to match the style. "Construct a high-performance optimization engine for Hartmann pipelines."
+        *   *Refinement:* "Initialize a NEW dedicated folder named `hartmann_pipeline_tool` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines. Focus entirely on this new objective: 'Implement a specialized optimization framework utilizing Hartmann pipelines.'"
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *STRICTLY using Hartmann pipelines?* Yes ("STRICTLY using this exact programming language: Hartmann pipelines").
+    *   *NEW dedicated folder?* Yes (`hartmann_pipeline_tool`).
+    *   *Create local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target .github?* Yes.
+    *   *Folder naming consistency?* `hartmann_pipeline_tool` matches `[lang]_[name]_tool`. `hartmann` is the lang. `pipeline` is the name. Seems consistent with `hartmann_pipeline_tool` seen in the workspace list (`./hartmann_pipeline_tool`).
+
+4.  **Final Polish (Mental Representation):**
+    *   Text: `Initialize a NEW dedicated folder named hartmann_pipeline_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines. Focus entirely on this new objective: 'Construct a high-performance optimization framework leveraging Hartmann pipelines for complex system modeling.'`
+    *   *Check Language Name:* The prompt asks for "Hartmann pipelines". The folder should likely be `hartmann_pipeline_tool`. The workspace has `./hartmann_pipeline_tool`. This matches.
+    *   *Check Strictness:* Included.
+    *   *Result:* `Initialize a NEW dedicated folder named hartmann_pipeline_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines. Focus entirely on this new objective: 'Construct a high-performance optimization framework leveraging Hartmann pipelines for complex system modeling.'`
+
+5.  **Output Construction:**
+    *   Result: `Initialize a NEW dedicated folder named hartmann_pipeline_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines. Focus entirely on this new objective: 'Construct a high-performance optimization framework leveraging Hartmann pipelines for complex system modeling.'`
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named hartmann_pipeline_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hartmann pipelines. Focus entirely on this new objective: 'Construct a high-performance optimization framework leveraging Hartmann pipelines for complex system modeling.'

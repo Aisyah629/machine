@@ -1158,3 +1158,5 @@ Training Machine
 - Created/Updated module: `godiva_tool` (See `godiva_tool/README.md` for details)
 
 - Created/Updated module: `elm_tool` (See `elm_tool/README.md` for details)
+
+- Created/Updated module: `hamiltonc_shell_tool` (See `hamiltonc_shell_tool/README.md` for details)

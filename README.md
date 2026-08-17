@@ -1004,3 +1004,5 @@ Training Machine
 - Created/Updated module: `cfengine_tool` (See `cfengine_tool/README.md` for details)
 
 - Created/Updated module: `millscript_tool` (See `millscript_tool/README.md` for details)
+
+- Created/Updated module: `rapid_tool` (See `rapid_tool/README.md` for details)

@@ -1,3 +1,9 @@
 # RAPID Tool
 
-This directory contains the RAPID programming language tool for automated code generation and processing. RAPID (Robot Application Programming Interface Device) is a proprietary programming language used by ABB robots. This tool facilitates the creation, validation, and management of RAPID program modules.
+This tool is built using the RAPID programming language.
+
+## Objective
+Implement a deterministic kinematic solver for articulated robotic manipulators.
+
+## Usage
+Place `main.rapid` in the `rapid_tool` directory.

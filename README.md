@@ -1000,3 +1000,5 @@ Training Machine
 - Created/Updated module: `chill_tool` (See `chill_tool/README.md` for details)
 
 - Created/Updated module: `mimic_simulation_tool` (See `mimic_simulation_tool/README.md` for details)
+
+- Created/Updated module: `cfengine_tool` (See `cfengine_tool/README.md` for details)

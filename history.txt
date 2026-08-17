@@ -46714,3 +46714,65 @@ This looks solid.
 </think>
 
 Initialize a NEW dedicated folder named planner_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Planner. Focus on engineering a deterministic planning system that leverages pattern-directed inference and backtracking to resolve complex task dependencies and generate executable schedules, emphasizing state management, goal-directed search, and robust error recovery within constrained computational environments.
+[2026-08-17 19:10:57] (Target Lang: Flavors) The user wants a logical follow-up instruction based on the provided context.
+Context includes a large list of existing tools and folders, and a history of a previous instruction for `planner_logic_engine_tool`.
+The prompt asks for "exactly 1 logical follow-up instruction".
+The instruction MUST:
+1. Explicitly demand building a new tool STRICTLY using the language: Flavors.
+2. Instruct to place it in a NEW dedicated folder.
+3. Instruct to create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+
+Logical follow-up based on the history:
+The previous instruction was about `planner_logic_engine_tool`. A logical follow-up might be another tool, perhaps related to object-oriented programming since Flavors is an object-oriented extension to Lisp.
+Let's craft the instruction.
+"Initialize a NEW dedicated folder named flavors_object_oriented_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Flavors. Focus on engineering an advanced object-oriented framework that implements dynamic class inheritance, multiple dispatch, and slot-based property management to facilitate modular software design and runtime polymorphism, emphasizing encapsulation, method combination strategies, and seamless integration with existing Lisp ecosystems."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demands building strictly using "Flavors"? Yes.
+- NEW dedicated folder? Yes.
+- Local README.md? Yes.
+- ONLY the instruction text? Yes.
+- NEVER target .github? Yes.
+- Logical follow-up? Yes, continues the pattern of creating new tool directories with READMEs.
+
+All constraints met. Output matches the prompt exactly.
+Proceed. 
+Self-Correction/Verification during thought:
+The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Flavors. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+I will generate the text exactly as formulated.
+Text: Initialize a NEW dedicated folder named flavors_object_oriented_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Flavors. Focus on engineering an advanced object-oriented framework that implements dynamic class inheritance, multiple dispatch, and slot-based property management to facilitate modular software design and runtime polymorphism, emphasizing encapsulation, method combination strategies, and seamless integration with existing Lisp ecosystems.
+Matches constraints. Output matches.✅
+Proceeds. 
+Output Generation. 
+[Final Check of the Prompt]
+"Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Flavors. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+All good. 
+Output matches the drafted text. 
+Proceeds. 
+[Output Generation] -> "Initialize a NEW dedicated folder named flavors_object_oriented_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Flavors. Focus on engineering an advanced object-oriented framework that implements dynamic class inheritance, multiple dispatch, and slot-based property management to facilitate modular software design and runtime polymorphism, emphasizing encapsulation, method combination strategies, and seamless integration with existing Lisp ecosystems." -> matches exactly. 
+Done. 
+Output Generation. 
+(Self-Correction/Refinement during drafting)
+Wait, the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+The drafted instruction includes this.
+It also says "Return ONLY the instruction text."
+So I will just output the drafted string.
+Ready. 
+Output matches request. 
+Proceeds. 
+[Output] Initialize a NEW dedicated folder named flavors_object_oriented_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Flavors. Focus on engineering an advanced object-oriented framework that implements dynamic class inheritance, multiple dispatch, and slot-based property management to facilitate modular software design and runtime polymorphism, emphasizing encapsulation, method combination strategies, and seamless integration with existing Lisp ecosystems. 
+Done. 
+All constraints verified. Output matches exactly. 
+Proceeds. 
+[Final Output Generation] (matches the drafted text)
+"Initialize a NEW dedicated folder named flavors_object_oriented_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Flavors. Focus on engineering an advanced object-oriented framework that implements dynamic class inheritance, multiple dispatch, and slot-based property management to facilitate modular software design and runtime polymorphism, emphasizing encapsulation, method combination strategies, and seamless integration with existing Lisp ecosystems."
+Matches perfectly. No extra text. Follows all rules. 
+Done. 
+[Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named flavors_object_oriented_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Flavors. Focus on engineering an advanced object-oriented framework that implements dynamic class inheritance, multiple dispatch, and slot-based property management to facilitate modular software design and runtime polymorphism, emphasizing encapsulation, method combination strategies, and seamless integration with existing Lisp ecosystems.

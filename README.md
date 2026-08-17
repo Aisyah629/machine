@@ -1012,3 +1012,5 @@ Training Machine
 - Created/Updated module: `./s_lang_tool` (See `./s_lang_tool/README.md` for details)
 
 - Created/Updated module: `c_minus_minus_tool` (See `c_minus_minus_tool/README.md` for details)
+
+- Created/Updated module: `bigwig_tool` (See `bigwig_tool/README.md` for details)

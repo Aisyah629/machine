@@ -1,0 +1,262 @@
+// Bigwig Script: Distributed Consensus Simulator
+// Implements leader election, partition handling, and fault tolerance.
+
+MODULE ConsensusSimulator;
+
+IMPORTS Network, Node, StateMachine;
+
+CONSTANT
+    MAX_NODES = 10;
+    ELECTION_TIMEOUT_MIN = 150;
+    ELECTION_TIMEOUT_MAX = 300;
+    HEARTBEAT_INTERVAL = 50;
+    COMMIT_TIMEOUT = 200;
+END CONSTANT;
+
+TYPE MessageType = LeaderRequest, LeaderResponse, AppendEntries, Heartbeat, Commit;
+TYPE NodeState = Follower, Candidate, Leader;
+TYPE NetworkEvent = Partition, Heal, Crash, Recover;
+
+CLASS Node
+    PRIVATE
+        id: Integer;
+        state: NodeState;
+        currentTerm: Integer;
+        votedFor: Integer;
+        log: List<Entry>;
+        commitIndex: Integer;
+        lastApplied: Integer;
+        nextIndex: Map<Integer, Integer>;
+        matchIndex: Map<Integer, Integer>;
+        electionTimer: Timer;
+        heartbeatTimer: Timer;
+    
+    PUBLIC
+        CONSTRUCTOR Node(nodeId: Integer)
+            self.id = nodeId;
+            self.state = Follower;
+            self.currentTerm = 0;
+            self.votedFor = -1;
+            self.log = new List<Entry>();
+            self.commitIndex = 0;
+            self.lastApplied = 0;
+            self.nextIndex = new Map<Integer, Integer>();
+            self.matchIndex = new Map<Integer, Integer>();
+            self.electionTimer = new Timer(ELECTION_TIMEOUT_MIN, ELECTION_TIMEOUT_MAX);
+            self.heartbeatTimer = new Timer(HEARTBEAT_INTERVAL);
+        END CONSTRUCTOR;
+
+        METHOD StartElection()
+            self.state = Candidate;
+            self.currentTerm = self.currentTerm + 1;
+            self.votedFor = self.id;
+            self.log.append(new Entry(self.currentTerm, "Start Election"));
+            self.electionTimer.reset();
+            
+            FOR EACH peer IN Network.GetPeers(self.id) DO
+                IF Network.IsConnected(self.id, peer) THEN
+                    Network.Send(self.id, peer, new LeaderRequest(self.currentTerm));
+                END IF;
+            END FOR;
+        END METHOD;
+
+        METHOD HandleMessage(msg: Message, sender: Integer)
+            CASE msg.type OF
+                LeaderRequest:
+                    self.OnLeaderRequest(msg, sender);
+                LeaderResponse:
+                    self.OnLeaderResponse(msg, sender);
+                AppendEntries:
+                    self.OnAppendEntries(msg, sender);
+                Heartbeat:
+                    self.OnHeartbeat(msg, sender);
+                Commit:
+                    self.OnCommit(msg, sender);
+            ENDCASE;
+        END METHOD;
+
+    PRIVATE
+        METHOD OnLeaderRequest(req: LeaderRequest, sender: Integer)
+            IF req.term > self.currentTerm THEN
+                self.currentTerm = req.term;
+                self.state = Follower;
+                self.votedFor = -1;
+                Network.Send(sender, self.id, new LeaderResponse(self.currentTerm, TRUE, FALSE));
+            ELSE IF req.term == self.currentTerm THEN
+                IF self.votedFor == -1 OR self.votedFor == sender THEN
+                    self.votedFor = sender;
+                    self.electionTimer.reset();
+                    Network.Send(sender, self.id, new LeaderResponse(self.currentTerm, TRUE, TRUE));
+                ELSE
+                    Network.Send(sender, self.id, new LeaderResponse(self.currentTerm, FALSE, FALSE));
+                END IF;
+            ELSE
+                Network.Send(sender, self.id, new LeaderResponse(self.currentTerm, FALSE, FALSE));
+            END IF;
+        END METHOD;
+
+        METHOD OnLeaderResponse(resp: LeaderResponse, sender: Integer)
+            IF self.state == Candidate THEN
+                IF resp.term == self.currentTerm AND resp.granted THEN
+                    self.state = Leader;
+                    self.heartbeatTimer.reset();
+                    // Initialize nextIndex and matchIndex for all peers
+                    FOR EACH peer IN Network.GetPeers(self.id) DO
+                        IF Network.IsConnected(self.id, peer) THEN
+                            self.nextIndex.put(peer, self.log.size() + 1);
+                            self.matchIndex.put(peer, 0);
+                        END IF;
+                    END FOR;
+                END IF;
+            END IF;
+        END METHOD;
+
+        METHOD OnAppendEntries(entries: List<Entry>, leaderTerm: Integer, leaderId: Integer)
+            IF leaderTerm < self.currentTerm THEN
+                Network.Send(leaderId, self.id, new AppendEntries(self.currentTerm, FALSE, -1));
+            ELSE
+                // Apply entries
+                FOR EACH entry IN entries DO
+                    self.log.append(entry);
+                END FOR;
+                Network.Send(leaderId, self.id, new AppendEntries(self.currentTerm, TRUE, self.log.size()));
+            END IF;
+        END METHOD;
+
+        METHOD OnHeartbeat(msg: Message, leaderId: Integer)
+            self.electionTimer.reset();
+            // Process acks or updates from leader if needed
+        END METHOD;
+
+        METHOD OnCommit(commitMsg: Message, leaderId: Integer)
+            self.commitIndex = commitMsg.index;
+            // Apply committed entries to state machine
+            WHILE self.lastApplied < self.commitIndex DO
+                self.lastApplied = self.lastApplied + 1;
+                self.applyEntry(self.log.get(self.lastApplied));
+            END WHILE;
+        END METHOD;
+
+        METHOD applyEntry(entry: Entry)
+            // Logic to apply entry to the state machine
+        END METHOD;
+    END CLASS;
+
+CLASS NetworkSimulator
+    PRIVATE
+        nodes: List<Node>;
+        partitions: List<List<Integer>>;
+        connected: Map<Pair<Integer, Integer>, Boolean>;
+    
+    PUBLIC
+        CONSTRUCTOR NetworkSimulator(numNodes: Integer)
+            self.nodes = new List<Node>();
+            self.partitions = new List<List<Integer>>();
+            self.connected = new Map<Pair<Integer, Integer>, Boolean>();
+            
+            FOR i = 0 TO numNodes - 1 DO
+                self.nodes.append(new Node(i));
+            END FOR;
+            
+            // Initialize all-to-all connectivity
+            FOR i = 0 TO numNodes - 1 DO
+                FOR j = 0 TO numNodes - 1 DO
+                    IF i != j THEN
+                        self.connected.put(new Pair<Integer, Integer>(i, j), TRUE);
+                    END IF;
+                END FOR;
+            END FOR;
+        END CONSTRUCTOR;
+
+        METHOD CreatePartition(partitionA: List<Integer>, partitionB: List<Integer>)
+            FOR EACH a IN partitionA DO
+                FOR EACH b IN partitionB DO
+                    self.connected.put(new Pair<Integer, Integer>(a, b), FALSE);
+                    self.connected.put(new Pair<Integer, Integer>(b, a), FALSE);
+                END FOR;
+            END FOR;
+        END METHOD;
+
+        METHOD HealPartition()
+            FOR i = 0 TO self.nodes.size() - 1 DO
+                FOR j = 0 TO self.nodes.size() - 1 DO
+                    IF i != j THEN
+                        self.connected.put(new Pair<Integer, Integer>(i, j), TRUE);
+                    END IF;
+                END FOR;
+            END FOR;
+        END METHOD;
+
+        METHOD IsConnected(u: Integer, v: Integer) : Boolean
+            RETURN self.connected.get(new Pair<Integer, Integer>(u, v));
+        END METHOD;
+
+        METHOD GetPeers(nodeId: Integer) : List<Integer>
+            peers = new List<Integer>();
+            FOR EACH node IN self.nodes DO
+                IF node.id != nodeId AND self.IsConnected(nodeId, node.id) THEN
+                    peers.append(node.id);
+                END IF;
+            END FOR;
+            RETURN peers;
+        END METHOD;
+
+        METHOD Send(sender: Integer, receiver: Integer, msg: Message)
+            IF self.IsConnected(sender, receiver) THEN
+                self.nodes.get(receiver).HandleMessage(msg, sender);
+            END IF;
+        END METHOD;
+    END CLASS;
+
+GLOBAL sim : NetworkSimulator;
+
+PROCEDURE Main()
+    sim = new NetworkSimulator(MAX_NODES);
+    
+    // Simulate a scenario
+    // 1. All nodes start, trigger elections
+    // 2. One node becomes leader
+    // 3. Leader sends heartbeats/entries
+    // 4. Simulate partition
+    // 5. Simulate healing
+    
+    PRINT "Simulation Started";
+    
+    FOR i = 0 TO MAX_NODES - 1 DO
+        sim.nodes.get(i).StartElection();
+    END FOR;
+    
+    // Process messages (simplified loop)
+    FOR tick = 1 TO 1000 DO
+        FOR i = 0 TO MAX_NODES - 1 DO
+            sim.nodes.get(i).heartbeatTimer.tick();
+            sim.nodes.get(i).electionTimer.tick();
+            IF sim.nodes.get(i).state == Leader THEN
+                // Leader sends heartbeats
+                peers = sim.GetPeers(i);
+                FOR EACH peer IN peers DO
+                    sim.Send(i, peer, new Heartbeat());
+                END FOR;
+            END IF;
+        END FOR;
+        
+        // Simulate random events (partition/heal)
+        IF tick == 500 THEN
+            // Partition the network
+            partA = [0, 1, 2];
+            partB = [3, 4, 5, 6, 7, 8, 9];
+            sim.CreatePartition(partA, partB);
+            PRINT "Partition created at tick " + tick;
+        END IF;
+        
+        IF tick == 800 THEN
+            sim.HealPartition();
+            PRINT "Partition healed at tick " + tick;
+        END IF;
+    END FOR;
+    
+    PRINT "Simulation Ended";
+END PROCEDURE;
+
+PROGRAM Main();
+END PROGRAM;

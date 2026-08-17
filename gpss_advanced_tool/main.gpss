@@ -1,0 +1,38 @@
+! GPSS Advanced Tool - Discrete Event Simulation Framework
+! This program models a complex queueing network and resource allocation system.
+
+! Define simulation parameters
+START 1000
+
+! Queue definitions
+QUEUE CUSTOMER, 50
+QUEUE SERVER1, 10
+QUEUE SERVER2, 10
+
+! Resource definitions
+RESOURCE STAFF, 5
+RESOURCE MACHINE, 3
+
+! Simulation logic
+GENERATE 10, 2, 0, 0
+ADVANCE 5, 2
+QUEUE CUSTOMER
+SEIZE STAFF
+QUEUE SERVER1
+DEPART CUSTOMER
+SEIZE MACHINE
+ADVANCE 15, 5
+DEPART SERVER1
+RELEASE STAFF
+RELEASE MACHINE
+TERMINATE 0
+
+! Analysis and reporting
+REPORT
+PRINT SIMULATION RESULTS
+PRINT QUEUE STATISTICS
+PRINT RESOURCE UTILIZATION
+PRINT SIMULATION TIME
+
+! End of simulation
+END

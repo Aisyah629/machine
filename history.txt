@@ -38399,3 +38399,65 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named pl360_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360. Focus entirely on this new objective: 'Construct a low-level instruction decoding and execution simulator for mainframe architectures'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL360.
+[2026-08-17 04:59:50] (Target Lang: Rlab) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: MUST explicitly demand the new tool be built STRICTLY using the exact programming language: Rlab.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a workspace list and history. The history shows a previous instruction for `pl360_advanced_tool`. The current request asks for a follow-up for `Rlab`.
+
+2.  **Draft the Instruction:**
+    *   *Language:* Rlab.
+    *   *Structure:* Initialize a NEW dedicated folder named `[folder_name]` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: Rlab.
+    *   *Folder Name:* Needs to be logical. Looking at the pattern `rlab_tool` exists, but the prompt asks for a "NEW dedicated folder". The history used `pl360_advanced_tool`. A good name might be `rlab_advanced_tool` or just `rlab_tool` if it's new, but `rlab_tool` already exists in the file list (`./rlab_tool`). Wait, let me check the file list.
+        *   File list contains: `./rlab_tool ./rlab_tool/README.md ./rlab_tool/main.rl`.
+        *   So `rlab_tool` exists. The prompt asks to "Generate exactly 1 logical follow-up instruction... If building a new tool...".
+        *   *Ambiguity Check:* Does "logical follow-up" mean creating a *new* tool in a *new* folder, or modifying the existing one? Usually, in these workflows, a follow-up implies a new step, often creating a new variant or a new tool. If I create `rlab_tool` again, it might conflict. A "logical follow-up" to a mainframe simulator might be a different domain, or an advanced version.
+        *   *Best Practice for "New Dedicated Folder":* The instruction should specify a new folder name. Since `rlab_tool` exists, I should probably use a distinct name like `rlab_math_tool`, `rlab_numeric_analysis_tool`, or `rlab_advanced_tool`.
+        *   *Decision:* I'll use `rlab_advanced_tool` to mirror the pattern of `pl360_advanced_tool` from history, ensuring it's a NEW dedicated folder.
+        *   *Drafting text:* Initialize a NEW dedicated folder named rlab_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rlab.
+
+    *   *Objective:* The prompt doesn't specify an objective, but usually, a logical follow-up implies an objective. However, the constraints are very strict about the format. The example in history had an objective: 'Construct a low-level instruction decoding and execution simulator for mainframe architectures'.
+        *   The prompt asks for "exactly 1 logical follow-up instruction". It doesn't explicitly ask me to invent the objective, but the structure of the previous instruction included one. To be safe and consistent with the "logical follow-up" nature, I should include an objective relevant to Rlab. Rlab is a language for numerical analysis, linear algebra, etc.
+        *   *Objective Idea:* "Construct a high-performance numerical analysis and signal processing environment for scientific computing."
+        *   *Refinement:* The prompt doesn't strictly forbid an objective, but the core constraints are about the language and folder. I'll add a generic but relevant objective to make it a complete instruction, or keep it minimal if the user only wants the structural parts. Usually, these prompts benefit from a complete sentence structure like the history.
+        *   *Result:* "...Focus entirely on this new objective: 'Implement a robust numerical simulation framework for linear algebra and differential equations'."
+        *   *Wait, check constraints:* "Return ONLY the instruction text." This is standard. The instruction text can contain the objective.
+
+    *   *Mandatory Phrase:* "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rlab."
+        *   The draft already has this: "...build the entire new tool STRICTLY using this exact programming language: Rlab."
+        *   Does it need to repeat the demand at the end like the history? The history shows: `Initialize... language: PL360. Focus... architectures. You MUST explicitly demand... language: PL360.`
+        *   The history output was a bit redundant. It repeated the demand.
+        *   *Analysis of History Output:* The history output was: `Initialize a NEW dedicated folder named pl360_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL360. Focus entirely on this new objective: 'Construct a low-level instruction decoding and execution simulator for mainframe architectures'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL360.`
+        *   The user's prompt includes: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rlab."
+        *   This looks like a meta-constraint on the output. The output must contain the explicit demand.
+        *   The history output *ended* with the explicit demand.
+        *   *Conclusion:* I should follow the pattern of the history output which seems to be the desired format. The format is: `Initialize a NEW dedicated folder named [Name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Obj]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [Lang].`
+        *   *Wait, the "You MUST explicitly demand..." sentence is part of the instruction text?*
+        *   The history shows the output text includes that sentence.
+        *   So the instruction text itself contains the meta-instruction?
+        *   That seems to be the case based on the history provided. The "Output Generation" in the history resulted in text that includes `You MUST explicitly demand...`.
+        *   This suggests the instruction should be self-referential or formatted in a way that includes that string.
+        *   *Drafting based on pattern:*
+        `Initialize a NEW dedicated folder named rlab_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rlab. Focus entirely on this new objective: 'Develop a comprehensive numerical computing suite for matrix operations and statistical modeling'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rlab.`
+
+    *   *Review against constraints:*
+        *   1 logical follow-up instruction? Yes.
+        *   Explicit demand for Rlab? Yes (in the text).
+        *   New dedicated folder? Yes (`rlab_advanced_tool`).
+        *   Create local README.md? Yes.
+        *   Return ONLY instruction text? Yes.
+        *   NEVER target `.github`? Yes (folder is `rlab_advanced_tool`).
+        *   Language is Rlab? Yes.
+
+    *   *Folder Name Check:* `rlab_advanced_tool` is not in the file list. `rlab_tool` is. So `rlab_advanced_tool` is a valid NEW folder.
+    *   *Final Polish:*
+        `Initialize a NEW dedicated folder named rlab_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rlab. Focus entirely on this new objective: 'Construct a high-efficiency numerical analysis engine for scientific computing and data simulation'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rlab.`
+
+    *   *Result looks solid.*
+</think>
+
+Initialize a NEW dedicated folder named rlab_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rlab. Focus entirely on this new objective: 'Construct a high-efficiency numerical analysis engine for scientific computing and data simulation'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rlab.

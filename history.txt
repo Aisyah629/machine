@@ -43590,3 +43590,218 @@ This looks good.
 </think>
 
 Initialize a NEW dedicated folder named actionscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ActionScript. Focus entirely on this new objective: 'Architect a high-performance runtime environment for executing object-oriented logic within interactive multimedia and web-based gaming contexts.'
+[2026-08-17 14:15:13] (Target Lang: CDuce) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Context:** The user provides a list of existing tool directories (e.g., `abap_tool`, `actionscript_tool`, etc.) and a history of instructions.
+    *   **Current Task:** Generate exactly *one* logical follow-up instruction.
+    *   **Constraints:**
+        *   Must demand the new tool be built STRICTLY using the exact programming language: **CDuce**.
+        *   If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local `README.md`.
+        *   Return *ONLY* the instruction text.
+        *   NEVER target the `.github` directory.
+        *   The format should be similar to the history examples.
+
+2.  **Determine the Component Parts of the Instruction:**
+    *   Action: Initialize a NEW dedicated folder.
+    *   Folder Name: `cduce_tool` (based on the language name provided in the prompt).
+    *   File to create: `README.md` inside that folder.
+    *   Language: CDuce.
+    *   Objective: I need to invent a plausible objective for a tool built in CDuce. CDuce is a functional programming language designed for manipulating XML and Web data.
+        *   *Draft Objective:* "Construct a high-performance data processing engine for analyzing and transforming complex XML schemas and Web data streams with strong type safety."
+    *   Constraint Check: No `.github`.
+
+3.  **Drafting the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Construct a high-performance data processing engine for analyzing and transforming complex XML schemas and Web data streams with strong type safety.'
+
+4.  **Refining the Instruction:**
+    *   The prompt asks to "Generate exactly 1 logical follow-up instruction."
+    *   The prompt explicitly states: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CDuce."
+    *   The prompt says: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+    *   The prompt says: "Return ONLY the instruction text."
+
+    *   *Refined Draft:* Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Design a robust schema-compliant data transformation system for efficient XML processing and web service integration using structural types.'
+
+5.  **Final Polish:**
+    *   Language: CDuce.
+    *   Folder: `cduce_tool`.
+    *   README: Yes.
+    *   Objective: Focus on XML/Web data (typical for CDuce).
+    *   Format: Starts with "Initialize...", ends with the objective.
+
+6.  **Final Output Generation:**
+    "Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Develop a high-efficiency data processing framework for validating and transforming complex XML structures and Web service payloads using structural type inference.'"
+
+    Let's check the constraints again.
+    *   Strictly CDuce? Yes.
+    *   New folder? Yes (`cduce_tool`).
+    *   Local README.md? Yes.
+    *   Only instruction text? Yes.
+    *   No `.github`? Yes.
+
+    The "actionscript_tool" mentioned in the context seems to have already been created (it's in the list `./actionscript_tool ...`). The user asks for a *follow-up*.
+
+    Result:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Develop a high-efficiency data processing framework for validating and transforming complex XML structures and Web service payloads using structural type inference.'
+
+    Wait, looking at the history, the user provided an example of a previous turn.
+    History Instruction: "Initialize a NEW dedicated folder named actionscript_tool... Focus entirely on this new objective: 'Architect a high-performance runtime environment...'"
+    
+    The prompt asks me to generate the *next* instruction based on the history, but with the specific constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CDuce."
+
+    So the output is just the text of that specific instruction.
+
+    Text:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Implement a robust schema-driven data validation and transformation engine for processing complex XML documents and web service payloads with guaranteed type safety.'
+
+    I will use a slightly simpler objective to match the style of the previous ones (short, descriptive sentence).
+
+    Final Choice:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Construct a high-performance data processing framework for validating, transforming, and serializing complex XML documents and web service payloads using structural types.'
+
+    Let's verify "cduce_tool" vs just "cduce". The list has `./cduce_tool ...`. So `cduce_tool` is the correct naming convention.
+
+    Final check against constraints:
+    - Exactly 1 instruction? Yes.
+    - Strictly CDuce? Yes.
+    - New folder and README? Yes.
+    - Only instruction text? Yes.
+    - No .github? Yes.
+
+    Looks good.
+
+    Objective idea: CDuce is specifically known for pattern matching on XML.
+    Objective text: "Design a specialized runtime environment for manipulating structured data and executing complex pattern matching algorithms on XML and Web service payloads."
+
+    Let's go with:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Develop a robust data processing engine for transforming and validating complex XML structures and web service payloads using structural type inference.'
+
+    Wait, looking at the `./cduce_tool` entry in the provided list: `./cduce_tool/README.md ./cduce_tool/main.cd`.
+    Ah, the folder name `cduce_tool` is already in the list provided in the context (`. ./.git ... ./cduce_tool ...`).
+    However, the prompt says "Initialize a NEW dedicated folder...". In these types of prompts, usually, the model should follow the instruction template regardless of the workspace state unless told to check state. The prompt says "Generate exactly 1 logical follow-up instruction... If building a new tool, explicitly instruct to place it in a NEW dedicated folder".
+    So I will write the instruction as if I am initiating that tool.
+
+    The user prompt says: "Generate exactly 1 logical follow-up instruction."
+    The user prompt also says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CDuce."
+
+    So the output is simply the instruction string.
+
+    "Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Architect a high-performance data processing framework for transforming, validating, and serializing complex XML structures and web service payloads using structural types.'"
+
+    This fits perfectly.
+
+    One final check: The prompt asks for "logical follow-up".
+    The previous history item was about `actionscript_tool`.
+    This item is about `cduce_tool`.
+    This is a logical progression in a sequence of creating tools.
+
+    Final string construction.
+
+    "Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Develop a robust data processing engine for transforming and validating complex XML structures and web service payloads using structural type inference.'"
+
+    This is safe.
+
+    Wait, looking at the provided list again, there is `./cduce_tool`.
+    Does that matter? The instruction *is* the output. The instruction tells an agent to create it. Even if it exists in the list (perhaps it was created in a previous step not shown in the history, or the list is just a list of *available* or *planned* tools), the instruction text remains the same format. The prompt explicitly tells me to "Initialize a NEW dedicated folder...". I must follow that command.
+
+    The "History" shows the ActionScript instruction was generated *after* the list was likely established or as part of the process. The list shows `actionscript_tool` exists too.
+
+    So, I will proceed with generating the CDuce instruction.
+
+    Result:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Design a high-efficiency data processing framework for validating, transforming, and serializing complex XML structures and web service payloads using structural types.'
+
+    Let's make the objective slightly more generic to "tool" context.
+    "Construct a versatile XML processing framework for data validation and transformation within web application environments."
+    
+    Let's stick to the "Architect/Develop/Construct" style.
+    "Construct a high-performance runtime for data transformation and validation of XML documents using structural type matching."
+
+    I will use:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Construct a high-performance runtime environment for processing, validating, and transforming complex XML documents and web service payloads using structural type inference.'
+
+    That works.
+
+    One tiny detail: CDuce is a functional language.
+    "Construct a high-performance functional processing framework..."
+    No need to be that pedantic in the objective text unless necessary. "Runtime environment" or "Processing framework" is fine.
+
+    Final decision on text:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Construct a high-performance data processing framework for validating, transforming, and serializing complex XML structures and web service payloads using structural types.'
+
+    Actually, looking at the previous turn's style:
+    "Initialize a NEW dedicated folder named actionscript_tool... Focus entirely on this new objective: 'Architect a high-performance runtime environment...'"
+
+    I will match that.
+
+    Output:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Construct a high-performance data processing framework for validating, transforming, and serializing complex XML structures and web service payloads using structural types.'
+
+    Wait, the user provided a "History" section where the "Instruction" is the *output* of the previous turn. The current prompt is asking me to *be* the generator of the next instruction.
+    
+    The prompt says: "Generate exactly 1 logical follow-up instruction."
+    
+    I will output just the text.
+
+    "Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Develop a robust data processing engine for transforming and validating complex XML structures and web service payloads using structural type inference.'"
+
+    Let's check spelling. CDuce. Yes.
+    Folder: cduce_tool. Yes.
+
+    Final check on constraints.
+    - Exactly 1 instruction? Yes.
+    - Strictly CDuce? Yes.
+    - New folder/README? Yes.
+    - Only instruction text? Yes.
+    - No .github? Yes.
+
+    Ready.
+
+    One thought: Maybe "cduce" implies "CDuce" the language name. The folder is "cduce_tool".
+    The language name is "CDuce".
+    The prompt says: "built STRICTLY using this exact programming language: CDuce."
+
+    Correct.
+
+    Final Output:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Develop a robust data processing engine for transforming and validating complex XML structures and web service payloads using structural type inference.'
+
+    Wait, is there a more interesting objective?
+    "Architect a specialized XML query and transformation engine leveraging structural types for high-performance web data manipulation."
+    
+    I'll stick to the "Develop/Construct" generic one, it's safer.
+
+    "Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Develop a robust data processing engine for transforming and validating complex XML structures and web service payloads using structural type inference.'"
+
+    I will format the response now.
+
+    Wait, looking at the user prompt again.
+    "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CDuce. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+    Okay, simple enough.
+
+    Text:
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Develop a robust data processing engine for transforming and validating complex XML structures and web service payloads using structural type inference.'
+
+    I will use "Architect" to vary the verb slightly from "Develop" if I want, but "Develop" is fine.
+    Let's use "Construct" to match the previous example's "Construct" (wait, the previous example in history used "Construct a versatile event-driven framework..." for ActionScript).
+    The history *instruction* used "Initialize a NEW...". The *objective* used "Construct...".
+    
+    Okay, I will use "Construct" in the objective.
+    
+    "Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Construct a high-performance data processing engine for validating and transforming complex XML structures and web service payloads using structural type inference.'"
+
+    This looks solid.
+
+    Double check: "cduce_tool" is in the file list provided.
+    The user might be confused if I tell it to create a NEW folder that already exists in the list?
+    But the instructions say "If building a new tool, explicitly instruct to place it in a NEW dedicated folder".
+    The prompt is a simulation. I am generating the text of the instruction. The instruction *commands* the creation of the folder. Whether the folder exists or not in the *context list* doesn't change the *text of the instruction* I am generating. The instruction is the command.
+
+    So I proceed.
+
+    Final text.
+    Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Construct a high-performance data processing engine for validating and transforming complex XML structures and web service payloads using structural type inference.'
+</think>
+
+Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Construct a high-performance data processing engine for validating and transforming complex XML structures and web service payloads using structural type inference.'

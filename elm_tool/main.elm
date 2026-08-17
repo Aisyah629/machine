@@ -1,1 +1,46 @@
-module Main exposing (..) import Browser import Html exposing (..) import Html.Attributes exposing (..) import Html.Events exposing (onClick) type alias Model = { count : Int } type Msg = Increment | Decrement init : () -> Model init _ = { count = 0 } update : Msg -> Model -> Model update msg model = case msg of Increment -> { model | count = model.count + 1 } Decrement -> { model | count = model.count - 1 } view : Model -> Html Msg view model = div [] [ h1 [] [ text "Elm Tool Counter" ], div [] [ button [ onClick Decrement ] [ text "-" ], text (String.fromInt model.count), button [ onClick Increment ] [ text "+" ] ], div [] [ text "Try Elm's robust type system for reliable frontend development." ] ] main : Program () Model Msg main = Browser.element { init = init, view = view, update = update, subscriptions = \_ -> Sub.none }
+module Main exposing (main)
+
+import Html exposing (Html, button, div, text)
+import Html.Events exposing (onClick)
+
+-- MODEL
+type alias Model =
+    { count : Int }
+
+init : Model
+init =
+    { count = 0 }
+
+-- MESSAGE
+type Msg
+    = Increment
+    | Decrement
+
+-- UPDATE
+update : Msg -> Model -> Model
+update msg model =
+    case msg of
+        Increment ->
+            { model | count = model.count + 1 }
+
+        Decrement ->
+            { model | count = model.count - 1 }
+
+-- VIEW
+view : Model -> Html Msg
+view model =
+    div []
+        [ button [ onClick Increment ] [ text "+" ]
+        , div [] [ text ("Count: " ++ String.fromInt model.count) ]
+        , button [ onClick Decrement ] [ text "-" ]
+        ]
+
+-- MAIN
+main : Program () Model Msg
+main =
+    Html.program
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = always Sub.none
+        }

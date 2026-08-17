@@ -1,0 +1,15 @@
+// ATS: A Tutorial System for Programming Theorems
+// main.ats
+
+// Import necessary libraries
+implement main0 () = let
+  // Define a simple function to calculate the factorial of a number
+  fun factorial (n: int): int =
+    if n <= 0 then 1
+    else n * factorial (n - 1)
+  
+  // Main function
+  val result = factorial 5
+  val () = println!("Factorial of 5 is: ", result)
+in
+end

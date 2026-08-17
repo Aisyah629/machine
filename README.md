@@ -978,3 +978,5 @@ Training Machine
 - Created/Updated module: `joy_tool` (See `joy_tool/README.md` for details)
 
 - Created/Updated module: `xquery_tool` (See `xquery_tool/README.md` for details)
+
+- Created/Updated module: `ats_tool` (See `ats_tool/README.md` for details)

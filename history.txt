@@ -37847,3 +37847,58 @@ Initialize a NEW dedicated folder named eshar_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named arexx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ARexx. Focus entirely on this new objective: 'Implement a structured command parser for automated legacy system migration.'. You MUST write code for this task strictly using this exact programming language: ARexx.
+[2026-08-17 03:26:43] (Target Lang: SPITBOL) Thinking Process:
+1.  **Analyze the Request:**
+    *   User provided a workspace list (directories with `.git`, `.github`, many tools like `a0_system_tool`, `abap_tool`, etc.).
+    *   History shows a pattern of generating instructions for creating new tool folders in a specific programming language.
+    *   The last entry in history created `arexx_tool` for ARexx.
+    *   Current instruction: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   MUST explicitly demand the new tool be built strictly using **SPITBOL**.
+        *   If building a new tool, MUST instruct to place it in a NEW dedicated folder and create a local README.md.
+        *   Return ONLY the instruction text.
+        *   NEVER target the `.github` directory.
+        *   Objective should be "Something logical for SPITBOL". SPITBOL is a string processing language, often used for parsing, pattern matching, and text manipulation.
+        *   Format should match the history pattern: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPITBOL. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this exact programming language: SPITBOL."
+
+2.  **Determine Tool Name and Objective:**
+    *   Language: SPITBOL
+    *   Folder name: `spitbol_tool`
+    *   Objective: Logical for SPITBOL. SPITBOL is famous for string parsing, tokenization, regex-like pattern matching (but more powerful), and compiler writing. Let's use: "Develop a high-performance string tokenizer and regex-enhanced pattern matcher for log file analysis." or "Create a specialized string manipulation engine for natural language processing tasks." Let's go with a parsing/text processing objective since SPITBOL is a string language. "Implement a powerful string parsing and tokenization engine for unstructured log file analysis."
+    *   Let's check the history pattern for the objective string. History example: "Implement a structured command parser for automated legacy system migration."
+    *   New objective: "Develop a high-precision string parser and tokenization engine for unstructured data processing."
+
+3.  **Draft the Instruction:**
+    *   "Initialize a NEW dedicated folder named spitbol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPITBOL. Focus entirely on this new objective: 'Develop a high-precision string parser and tokenization engine for unstructured data processing.'. You MUST write code for this task strictly using this exact programming language: SPITBOL."
+
+4.  **Verify Constraints:**
+    *   Exactly 1 logical follow-up instruction? Yes.
+    *   Strictly use SPITBOL? Yes, mentioned twice as requested by the prompt's wording ("explicitly demand... strictly using this exact programming language: SPITBOL", "You MUST write code... strictly using... SPITBOL").
+    *   New dedicated folder? Yes, `spitbol_tool`.
+    *   Local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   Never target .github? Yes, not mentioned.
+    *   Logical for SPITBOL? Yes, string parsing/tokenization is SPITBOL's forte.
+
+5.  **Final Polish:**
+    *   Text: Initialize a NEW dedicated folder named spitbol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPITBOL. Focus entirely on this new objective: 'Develop a high-precision string parser and tokenization engine for unstructured data processing.'. You MUST write code for this task strictly using this exact programming language: SPITBOL.
+
+    Let's refine the objective to be slightly more SPITBOL-specific if possible, or keep it general enough to fit the pattern. "Develop a robust pattern-matching and text transformation engine for complex string manipulation tasks." This sounds good.
+    Let's stick to the draft: "Develop a high-precision string parser and tokenization engine for unstructured data processing." It works well.
+
+    Final check of the output string against the required format:
+    `Initialize a NEW dedicated folder named spitbol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPITBOL. Focus entirely on this new objective: 'Develop a high-precision string parser and tokenization engine for unstructured data processing.'. You MUST write code for this task strictly using this exact programming language: SPITBOL.`
+
+    Looks perfect. Proceeding. 
+    Wait, let's verify the exact wording requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPITBOL." -> I have included "STRICTLY using this exact programming language: SPITBOL" and "You MUST write code for this task strictly using this exact programming language: SPITBOL." This matches the prompt's requirement.
+    All constraints met. Output matches.✅
+    Generating response. 
+    Output: `Initialize a NEW dedicated folder named spitbol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPITBOL. Focus entirely on this new objective: 'Develop a high-precision string parser and tokenization engine for unstructured data processing.'. You MUST write code for this task strictly using this exact programming language: SPITBOL.`
+    Matches exactly. Done. 
+    Self-Correction/Refinement during thought: The prompt says "Focus entirely on this new objective: '[objective]'." I will ensure the objective is concise and logical. "Develop a high-precision string parser and tokenization engine for unstructured data processing." is fine.
+    Ready. 
+    Output Generation. 
+    `[Output Generation]` -> *Proceeds* ✅
+</think>
+
+Initialize a NEW dedicated folder named spitbol_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPITBOL. Focus entirely on this new objective: 'Develop a high-precision string parser and tokenization engine for unstructured data processing.'. You MUST write code for this task strictly using this exact programming language: SPITBOL.

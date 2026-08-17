@@ -1200,3 +1200,5 @@ Training Machine
 - Created/Updated module: `rpg_tool` (See `rpg_tool/README.md` for details)
 
 - Created/Updated module: `scilab_tool` (See `scilab_tool/README.md` for details)
+
+- Created/Updated module: `lava_lowlevel_network_memory_simulator_tool` (See `lava_lowlevel_network_memory_simulator_tool/README.md` for details)

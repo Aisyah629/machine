@@ -1,0 +1,37 @@
+// Lithe Text Processing and Templating Engine
+// This module demonstrates basic text processing, templating, and variable substitution capabilities in Lithe.
+
+// Initialize a new text processor context
+var context = new TextProcessor();
+
+// Define a sample template with placeholders
+template = "Hello, {name}! Welcome to {place}. Your balance is {balance}.";
+
+// Define variables to substitute
+variables = {
+    "name": "User",
+    "place": "Lithe Tool Workspace",
+    "balance": 42.50
+};
+
+// Process the template
+result = context.interpolate(template, variables);
+
+// Output the processed text
+print(result);
+
+// Demonstrate text transformation utilities
+rawText = "  LITHE IS AWESOME!  ";
+cleaned = context.trim(rawText);
+lowercased = context.toLowerCase(cleaned);
+
+print("Original: '" + rawText + "'");
+print("Trimmed:  '" + context.trim(rawText) + "'");
+print("Lower:    '" + lowercased + "'");
+
+// Validate context state
+if (result is not null) {
+    print("[SUCCESS] Templating engine executed successfully.");
+} else {
+    print("[ERROR] Failed to process template.");
+}

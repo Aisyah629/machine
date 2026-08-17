@@ -46291,3 +46291,64 @@ Initialize a NEW dedicated folder named msl_development_tool in the workspace, c
 </think>
 
 Initialize a NEW dedicated folder named csp_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus on engineering a robust concurrency verification environment that utilizes CSP's formal process algebra and synchronous communication model to facilitate safe multi-threaded system design and automated deadlock detection.
+[2026-08-17 18:02:04] (Target Lang: ABSYS) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a long list of existing tools/folders in a workspace, followed by a "History" section with past instructions/constraints.
+   - **Prompt/Constraint:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ABSYS. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Key Requirements:**
+     - Exactly 1 instruction.
+     - Must explicitly demand building strictly using the programming language: ABSYS.
+     - Must explicitly instruct to place it in a NEW dedicated folder.
+     - Must explicitly instruct to create a local README.md inside it.
+     - Return ONLY the instruction text.
+     - NEVER target .github.
+     - Should be logical following the pattern/history.
+
+2.  **Identify Target Language:** ABSYS (based on the prompt: "this exact programming language: ABSYS"). Looking at the workspace, there's already an `absys_tool` directory. The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder...". So I should name it something like `absys_verification_tool` or `absys_formal_method_tool` to be new.
+
+3.  **Draft Construction (Mental):**
+   Initialize a NEW dedicated folder named absys_formal_method_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus on engineering a robust formal verification environment that leverages ABSYS's declarative specification and automated proof capabilities to ensure system correctness and validate complex algorithmic logic.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand strictly using ABSYS? Yes ("STRICTLY using this exact programming language: ABSYS").
+   - Explicitly instruct to place in NEW dedicated folder? Yes.
+   - Explicitly instruct to create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes (not mentioned/targeted).
+   - Matches style of history? Yes, follows the pattern exactly.
+
+   One minor thing: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I've included that.
+   I will refine the draft to exactly match the required phrasing style and constraints.
+
+   Draft: Initialize a NEW dedicated folder named absys_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus on engineering a robust formal specification environment that leverages ABSYS's declarative architecture and automated theorem proving to validate complex system behaviors and ensure rigorous software correctness.
+
+5.  **Final Verification against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ABSYS." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   - Matches the exact phrasing pattern from the prompt's example? The example said: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus on [description]." I will follow this template exactly.
+
+   Final Text: Initialize a NEW dedicated folder named absys_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus on engineering a robust formal specification environment that leverages ABSYS's declarative architecture and automated theorem proving to validate complex system behaviors and ensure rigorous software correctness.
+
+   All constraints met. Output matches exactly. Proceeds.✅
+   Output generation. 
+   *Self-Correction/Refinement during thought*: I should make sure the folder name is distinct from existing ones (e.g., `absys_tool` already exists, so `absys_formal_verification_tool` or `absys_concurrency_analyzer_tool` is fine). I'll stick with `absys_verification_tool`. The prompt says "strictly using this exact programming language: ABSYS". I'll ensure that phrase is exactly as requested.
+
+   Text: Initialize a NEW dedicated folder named absys_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus on engineering a robust formal specification environment that leverages ABSYS's declarative architecture and automated theorem proving to validate complex system behaviors and ensure rigorous software correctness.
+
+   Matches perfectly. Output matches exactly.✅
+   Proceeds. 
+   [Output Generation] -> *Outputs exactly the drafted text.* (Done.) 
+   *Note: I will output just the instruction text as requested.* 
+   "Initialize a NEW dedicated folder named absys_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus on engineering a robust formal specification environment that leverages ABSYS's declarative architecture and automated theorem proving to validate complex system behaviors and ensure rigorous software correctness." -> Ready. 
+   All constraints verified. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Outputs exactly the drafted text.*
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named absys_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABSYS. Focus on engineering a robust formal specification environment that leverages ABSYS's declarative architecture and automated theorem proving to validate complex system behaviors and ensure rigorous software correctness.

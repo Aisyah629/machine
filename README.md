@@ -1174,3 +1174,5 @@ Training Machine
 - Created/Updated module: `agda_development_tool` (See `agda_development_tool/README.md` for details)
 
 - Created/Updated module: `ml_development_tool` (See `ml_development_tool/README.md` for details)
+
+- Created/Updated module: `lynx_development_tool` (See `lynx_development_tool/README.md` for details)

@@ -1188,3 +1188,5 @@ Training Machine
 - Created/Updated module: `./gibiane_tool` (See `./gibiane_tool/README.md` for details)
 
 - Created/Updated module: `kuka_tool` (See `kuka_tool/README.md` for details)
+
+- Created/Updated module: `idris_tool` (See `idris_tool/README.md` for details)

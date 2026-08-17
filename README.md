@@ -950,3 +950,5 @@ Training Machine
 - Created/Updated module: `scilab_data_tool` (See `scilab_data_tool/README.md` for details)
 
 - Created/Updated module: `q_advanced_tool` (See `q_advanced_tool/README.md` for details)
+
+- Created/Updated module: `rlab_advanced_tool` (See `rlab_advanced_tool/README.md` for details)

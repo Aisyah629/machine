@@ -1142,3 +1142,5 @@ Training Machine
 - Created/Updated module: `xmos_arch_tool` (See `xmos_arch_tool/README.md` for details)
 
 - Created/Updated module: `csharp_framework_tool` (See `csharp_framework_tool/README.md` for details)
+
+- Created/Updated module: `orc_tool` (See `orc_tool/README.md` for details)

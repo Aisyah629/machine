@@ -1,26 +1,12 @@
-# Orc Coordination Tool
+# Orc Tool
 
-This tool implements a concurrent distributed system coordination mechanism using the **Orc** programming language.
-
-## Overview
-Orc is a domain-specific language for orchestrating distributed computation. It excels at concurrency and coordination. This tool demonstrates how to manage distributed locks, leader election, and barrier synchronization using Orc's reactive primitives.
+This is the Orc Tool. It allows you to write and execute programs using the Orc programming language. 
 
 ## Features
-- Concurrent barrier synchronization
-- Leader election using a broadcast protocol
-- Distributed lock management via a coordinator
-- Reactive communication channels
+
+- Orc programming language support
+- Simple syntax
 
 ## Usage
-Compile and run the Orc script to simulate coordination tasks.
 
-## Syntax
-- `P | Q`: Parallel composition
-- `P >x> Q`: Connect output of P to input of Q
-- `stop`: Halt
-
-## Prerequisites
-Orc compiler/runtime environment
-
-## License
-MIT
+Place your Orc code in `main.orc` and execute using the appropriate Orc interpreter.

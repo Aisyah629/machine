@@ -40479,3 +40479,56 @@ Initialize a NEW dedicated folder named corn_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named fl_runtime_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FL. Focus entirely on this new objective: 'Construct a high-performance asynchronous communication layer for distributed microservices.'
+[2026-08-17 09:05:58] (Target Lang: Ferite) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of workspace directories (mostly tools for various programming languages).
+   - The "History" section shows a previous turn where an instruction was generated/outputted.
+   - The current prompt asks me to: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ferite. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - The prompt also says "Return ONLY the instruction text." and gives constraints matching the history format.
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - Must explicitly demand building a new tool STRICTLY using the programming language: `Ferite`.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+   - Explicitly instruct to create a local `README.md` inside it.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - Follow the style/constraints from the history (though the history is just an example of a previous output).
+
+3.  **Draft the Instruction (Mental Refinement):**
+   Initialize a NEW dedicated folder named ferite_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Develop a robust event-driven framework for real-time data synchronization across cloud-native environments.'
+   Checks against constraints:
+   - 1 instruction? Yes.
+   - Language: Ferite? Yes.
+   - NEW folder + README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+   - Logical follow-up? Yes, it follows the pattern of creating a new tool folder with a specific objective.
+
+4.  **Final Output Generation:**
+   I will output exactly the drafted instruction string, ensuring no extra text, prefixes, or markdown formatting interferes with the "ONLY instruction text" constraint.
+
+   Text: Initialize a NEW dedicated folder named ferite_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Develop a robust event-driven framework for real-time data synchronization across cloud-native environments.'
+
+   Double-checking constraints:
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ferite." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+
+   All constraints met. Output matches exactly. Proceeds. 
+   I will output just the instruction string.✅
+   *(Self-Correction/Verification during thought)*: The prompt says "Return ONLY the instruction text." I will ensure absolutely no extra characters, newlines, or markdown are included. Just the raw string. The output matches the drafted text exactly.✅
+   Proceeds. 
+   Output Generation -> *Proceeds.* 
+   *(Done.)* 
+   [Output] Initialize a NEW dedicated folder named ferite_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Develop a robust event-driven framework for real-time data synchronization across cloud-native environments.' 
+   *(Note: I'll make sure the formatting is exactly as requested, with no extra text.)* 
+   All good.✅
+   Output matches request.✅
+   Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named ferite_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Develop a robust event-driven framework for real-time data synchronization across cloud-native environments.'

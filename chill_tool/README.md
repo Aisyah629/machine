@@ -1,33 +1,25 @@
-# CHILL Tool
+# CHILL Telecommunications Message Processing Framework
 
-A comprehensive code analysis and refactoring assistant built strictly with the CHILL programming language.
+This tool implements a minimal telecommunications message processing framework for system-level programming, built strictly in the CHILL programming language.
 
-## Purpose
-This tool is designed to parse source code, identify structural patterns, suggest refactoring opportunities, and validate syntax consistency across CHILL and compatible codebases.
+## Overview
+
+The framework provides foundational capabilities for message queuing, protocol parsing, and system-level communication primitives tailored for telecommunications environments.
 
 ## Features
-- Static code analysis
-- Automated refactoring suggestions
-- Syntax validation
-- Dependency graph generation
-- Documentation extraction
+
+- Minimal message routing and dispatching
+- System-level communication primitives
+- Lightweight protocol parsing
+- Thread-safe message queue implementation
+- Configurable message buffering
 
 ## Usage
-Navigate to the `chill_tool` directory and execute the main entry point:
-```
-./main.chill
-```
 
-## Architecture
-The tool is structured around a modular pipeline:
-1. **Lexer**: Tokenizes input source files.
-2. **Parser**: Builds abstract syntax trees (ASTs).
-3. **Analyzer**: Scans ASTs for patterns, anomalies, and optimization opportunities.
-4. **Refactorer**: Generates suggested transformations and updates code accordingly.
-5. **Reporter**: Outputs findings, warnings, and refactoring plans in structured formats.
+To utilize the framework, include the necessary CHILL modules and invoke the initialization routine before processing incoming messages.
 
-## Contributing
-Please follow the standard coding guidelines for CHILL. Ensure all contributions are tested against the provided test suite before submission.
+## Notes
 
-## License
-MIT License
+- This tool strictly adheres to CHILL syntax and semantic constraints
+- Designed for embedded and real-time telecommunications systems
+- Optimized for deterministic message processing latency

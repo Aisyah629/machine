@@ -996,3 +996,5 @@ Training Machine
 - Created/Updated module: `algol58_compiler_tool` (See `algol58_compiler_tool/README.md` for details)
 
 - Created/Updated module: `bpel_workflow_engine_tool` (See `bpel_workflow_engine_tool/README.md` for details)
+
+- Created/Updated module: `chill_tool` (See `chill_tool/README.md` for details)

@@ -43027,3 +43027,32 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named pop11_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: POP-11. Focus entirely on this new objective: 'Design a high-performance pattern matching and rule-based inference system for symbolic AI research.'
+[2026-08-17 13:13:21] (Target Lang: LaTeX) The user wants a follow-up instruction for the autonomous AI.
+The instruction should:
+1.  Be for a NEW tool named `latex_tool`.
+2.  Be placed in a NEW dedicated folder named `latex_tool`.
+3.  Include a local `README.md` inside the folder.
+4.  Be built STRICTLY using the programming language `LaTeX`.
+5.  Have a focus/objective. I'll create something suitable for LaTeX, like "Document generation and typesetting automation engine".
+6.  Follow the exact format of the previous examples.
+7.  NOT target the `.github` directory.
+8.  Return ONLY the instruction text.
+
+Previous examples format:
+"Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. Focus entirely on this new objective: '...'"
+
+Applying to `latex_tool` and `LaTeX`:
+"Initialize a NEW dedicated folder named latex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LaTeX. Focus entirely on this new objective: 'Develop an advanced typesetting and document generation engine with complex layout processing capabilities.'"
+
+Check constraints:
+- NEW dedicated folder: `latex_tool` -> Yes.
+- local README.md -> Yes.
+- STRICTLY using LaTeX -> Yes.
+- Focus objective -> Yes.
+- Only instruction text -> Yes.
+- No .github -> Yes.
+
+Looks ready. Output matches exactly.
+</think>
+
+Initialize a NEW dedicated folder named latex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LaTeX. Focus entirely on this new objective: 'Develop an advanced typesetting and document generation engine with complex layout processing capabilities.'

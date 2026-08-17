@@ -1018,3 +1018,5 @@ Training Machine
 - Created/Updated module: `franz_lisp_tool` (See `franz_lisp_tool/README.md` for details)
 
 - Created/Updated module: `pl11_tool` (See `pl11_tool/README.md` for details)
+
+- Created/Updated module: `join_java_tool` (See `join_java_tool/README.md` for details)

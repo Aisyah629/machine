@@ -1,0 +1,136 @@
+// AmbientTalk Distributed Actor-Based Messaging Framework
+// This script implements a core messaging system using AmbientTalk's actor model.
+
+// Import necessary modules
+var actors = import('actors.at');
+var network = import('network.at');
+
+// Define the Actor class
+local ActorClass = class Actor {
+    local self;
+    local mailbox = [];
+    local running = false;
+    
+    constructor(name) {
+        self := this;
+        self.name := name;
+        self.log("Actor \\u0022" + self.name + "\\u0022 initialized.");
+    }
+    
+    method receive(timeout) {
+        if (mailbox.length > 0) {
+            return mailbox.shift();
+        } else {
+            return null;
+        }
+    }
+    
+    method send(message) {
+        mailbox.push(message);
+        self.log("Received: " + message);
+    }
+    
+    method run() {
+        running := true;
+        self.log("Actor \\u0022" + self.name + "\\u0022 started.");
+        while (running) {
+            var message := self.receive(1000); // Timeout of 1 second
+            if (message != null) {
+                self.handleMessage(message);
+            }
+        }
+        self.log("Actor \\u0022" + self.name + "\\u0022 stopped.");
+    }
+    
+    method handleMessage(message) {
+        // Default message handling
+        self.log("Handling message: " + message);
+    }
+    
+    method log(message) {
+        System.println("[" + self.name + "] " + message);
+    }
+    
+    method stop() {
+        running := false;
+    }
+};
+
+// Define the Network class for distributed communication
+local NetworkClass = class Network {
+    local nodes = [];
+    
+    constructor() {
+        self.log("Network initialized.");
+    }
+    
+    method addNode(node) {
+        nodes.push(node);
+        self.log("Node " + node.name + " added to the network.");
+    }
+    
+    method sendMessage(destination, message) {
+        var node := self.findNode(destination);
+        if (node != null) {
+            node.actor.send(message);
+            self.log("Message sent to " + destination + ": " + message);
+        } else {
+            self.log("Node " + destination + " not found.");
+        }
+    }
+    
+    method findNode(name) {
+        for (var i in 0 to nodes.length) {
+            if (nodes[i].name == name) {
+                return nodes[i];
+            }
+        }
+        return null;
+    }
+    
+    method log(message) {
+        System.println("[Network] " + message);
+    }
+};
+
+// Define a node structure to hold actor and network information
+local NodeClass = class Node {
+    local actor;
+    local name;
+    
+    constructor(actor, name) {
+        self.actor := actor;
+        self.name := name;
+    }
+};
+
+// Main execution
+main() {
+    local network := new NetworkClass();
+    local actor1 := new ActorClass("Worker1");
+    local actor2 := new ActorClass("Worker2");
+    
+    local node1 := new NodeClass(actor1, "Worker1");
+    local node2 := new NodeClass(actor2, "Worker2");
+    
+    network.addNode(node1);
+    network.addNode(node2);
+    
+    // Start actors
+    actor1.run();
+    actor2.run();
+    
+    // Send messages
+    network.sendMessage("Worker2", "Hello from Worker1");
+    network.sendMessage("Worker1", "Hello from Worker2");
+    
+    // Wait a bit for messages to be processed
+    Thread.sleep(2000);
+    
+    // Stop actors
+    actor1.stop();
+    actor2.stop();
+}
+
+// Execute main function
+main();

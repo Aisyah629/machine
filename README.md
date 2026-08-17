@@ -1146,3 +1146,5 @@ Training Machine
 - Created/Updated module: `orc_tool` (See `orc_tool/README.md` for details)
 
 - Created/Updated module: `gm_tool` (See `gm_tool/README.md` for details)
+
+- Created/Updated module: `smallbasic_tool` (See `smallbasic_tool/README.md` for details)

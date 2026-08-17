@@ -1,0 +1,20 @@
+* GPSS Queue Analysis Tool
+* Discrete-event simulation for multi-server queue performance
+* Author: Autonomous AI Polyglot Software Engineer
+* Language: GPSS
+
+      GENERATE    10,3      * Arrivals every 10 units (+/- 3)
+      SEIZE       Q1        * Seize a server
+      QUEUE       Q1        * Wait in queue if server busy
+      ADVANCE     20,5      * Service time 20 units (+/- 5)
+      RELEASE     Q1        * Release server
+      TERMINATE   1         * End transaction
+
+      QUEUE       Q1        * Define queue
+      SEIZE       Q1        * Define server resource
+
+* Simulation control
+      START       1000      * Run for 1000 transactions
+
+* End of program
+      STOP

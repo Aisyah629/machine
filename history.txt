@@ -42005,3 +42005,71 @@ Initialize a NEW dedicated folder named opa_web_framework_tool in the workspace,
 </think>
 
 Initialize a NEW dedicated folder named acc_financial_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-throughput financial transaction engine with real-time compliance auditing and cryptographic integrity verification.'
+[2026-08-17 11:16:58] (Target Lang: Tom) Thinking Process:
+1.  **Analyze the User's Input**:
+    *   Context: The user provided a large list of workspace contents and a "History" section that ends with a self-correction and a previous instruction about `acc_financial_engine_tool`.
+    *   The actual prompt at the end is: `Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Tom. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory.`
+    *   Key constraints:
+        *   Generate exactly 1 follow-up instruction.
+        *   Language must be explicitly "Tom" (case sensitive as requested).
+        *   Build a new tool in a NEW dedicated folder.
+        *   Create a local README.md.
+        *   Return ONLY the instruction text.
+        *   Never target `.github`.
+    *   Implicit requirement based on "logical follow-up": Since the previous instruction created a financial engine in ACC, a logical follow-up might be related to TOM language capabilities (often associated with model-driven engineering, MDE, or specific simulation/modeling contexts given the "Tom" tool in the list `./tom_tool/...`). However, the prompt just asks for *a* logical follow-up. It doesn't strictly require continuity of the specific domain, but "logical" usually implies maintaining some coherence or exploring the new language's potential. TOM is a language often used for model transformation and MDE. A logical tool could be a Model Transformation Engine or a System Architecture Simulator.
+    *   Let's check the workspace list for `tom_tool`. It exists: `./tom_tool/README.md`, `./tom_tool/main.tom`. So `tom_tool` is a valid target name, or I can create a new dedicated folder like `tom_engine_tool` or just `tom_tool` if it's considered "new" in the context of the instruction generation (though it exists in the list, the instruction should probably follow the pattern of the history which created `acc_financial_engine_tool`). The prompt says "place it in a NEW dedicated folder". Creating `tom_engine_tool` seems safe. Or `tom_model_transformer_tool`.
+    *   Language: "Tom".
+    *   Objective: Needs to be plausible for TOM. TOM is powerful for model-driven development. "Develop a robust Model-Driven Engineering (MDE) transformation engine with automated code generation and system architecture simulation capabilities." seems very appropriate.
+    *   Structure of the output: `Initialize a NEW dedicated folder named [FolderName] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Tom. Focus entirely on this new objective: '[Objective]'.`
+    *   Constraints check:
+        *   One instruction? Yes.
+        *   Explicitly demand "Tom"? Yes.
+        *   NEW dedicated folder? Yes.
+        *   Local README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   No .github? Yes.
+        *   Logical follow-up? Yes, TOM is often used for complex modeling/transformation, so a "Model Transformation and Code Generation Engine" is a strong candidate.
+
+2.  **Drafting the Instruction**:
+    *   Folder: `tom_model_engine_tool` or `tom_mde_tool`. Let's use `tom_model_engine_tool`.
+    *   Language: Tom.
+    *   Objective: "Develop a high-performance Model-Driven Engineering (MDE) transformation engine with automated artifact generation and real-time system architecture simulation."
+    *   Full Text: `Initialize a NEW dedicated folder named tom_model_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Tom. Focus entirely on this new objective: 'Develop a high-performance Model-Driven Engineering (MDE) transformation engine with automated artifact generation and real-time system architecture simulation.'`
+
+3.  **Refining based on "Logical Follow-up"**:
+    *   The previous tool was a financial engine. Maybe the "logical" connection is financial modeling? TOM can handle complex data structures and models.
+    *   Alternative Objective: "Develop a comprehensive financial risk modeling simulator with automated regulatory compliance reporting and dynamic scenario analysis."
+    *   This links back to the previous "financial" theme, making it a "logical follow-up" in terms of domain evolution (Engine -> Risk Model).
+    *   TOM is excellent for defining complex models and transformations. A financial risk simulator fits well.
+    *   Revised Objective: "Develop a comprehensive financial risk modeling simulator with automated regulatory compliance reporting and dynamic scenario analysis."
+    *   Folder: `tom_financial_simulator_tool`.
+    *   Result: `Initialize a NEW dedicated folder named tom_financial_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Tom. Focus entirely on this new objective: 'Develop a comprehensive financial risk modeling simulator with automated regulatory compliance reporting and dynamic scenario analysis.'`
+    *   This feels more "logical" as a follow-up than a generic MDE tool, assuming the user wants a coherent workflow. However, "Tom" is a niche language. If the user is testing language constraints, a generic powerful tool description is also fine. I'll stick to the financial thread to maximize "logical follow-up" quality.
+
+4.  **Final Polish**:
+    *   Check capitalization: "Tom".
+    *   Check folder: `tom_financial_simulator_tool`.
+    *   Check README: Included.
+    *   Check Output format: Only the instruction string.
+    *   Result looks solid.
+    *   One instruction only.
+    *   No extra text.
+    *   No `.github`.
+
+    *Draft:*
+    Initialize a NEW dedicated folder named tom_financial_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Tom. Focus entirely on this new objective: 'Develop a comprehensive financial risk modeling simulator with automated regulatory compliance reporting and dynamic scenario analysis.'
+
+    *Review against constraints:*
+    *   "Generate exactly 1 logical follow-up instruction." -> Yes.
+    *   "MUST explicitly demand... language: Tom." -> Yes.
+    *   "place it in a NEW dedicated folder" -> `tom_financial_simulator_tool` is new relative to the previous `acc_financial_engine_tool`.
+    *   "create a local README.md" -> Yes.
+    *   "Return ONLY the instruction text." -> Yes.
+    *   "NEVER target the .github directory." -> Yes.
+
+    *Self-Correction on "Logical":* The prompt history shows the user asking for `acc_financial_engine_tool`. The follow-up should logically extend or complement that. A risk simulator complements a transaction engine perfectly. Using TOM (known for model transformation) to build a risk simulator is technically plausible and contextually logical.
+
+    *Final Output Generation.*
+</think>
+
+Initialize a NEW dedicated folder named tom_financial_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Tom. Focus entirely on this new objective: 'Develop a comprehensive financial risk modeling simulator with automated regulatory compliance reporting and dynamic scenario analysis.'

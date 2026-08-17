@@ -1060,3 +1060,5 @@ Training Machine
 - Created/Updated module: `idl_tool` (See `idl_tool/README.md` for details)
 
 - Created/Updated module: `harbour_tool` (See `harbour_tool/README.md` for details)
+
+- Created/Updated module: `dataflex_tool` (See `dataflex_tool/README.md` for details)

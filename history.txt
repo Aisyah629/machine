@@ -43390,3 +43390,56 @@ Initialize a NEW dedicated folder named idl_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise data management and reporting system featuring real-time transaction processing and seamless multi-database integration.'
+[2026-08-17 13:54:36] (Target Lang: DataFlex) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Input Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DataFlex. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: `DataFlex`.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local `README.md`.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+   - **Context/History:** The user provided a long list of workspace directories/files (mostly tool folders) and a history section showing a similar prompt/response pattern. The pattern is: `Initialize a NEW dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'`
+   - I need to follow this exact template/format.
+
+2.  **Identify Key Components for the Output:**
+   - New folder name: `dataflex_tool` (based on the pattern `[language]_tool`)
+   - Language: `DataFlex`
+   - Requirement: Explicitly demand strict use of DataFlex
+   - Requirement: Place in NEW dedicated folder, create local README.md
+   - Objective: Needs to be a plausible software development objective suitable for DataFlex (often used for enterprise/business applications, databases, legacy systems). I'll craft one: "Develop a scalable enterprise inventory management and sales tracking system with integrated reporting and legacy database compatibility."
+   - Format: Follow the exact phrasing from the history/template.
+   - Constraint Check: Exactly 1 instruction. Explicitly demands DataFlex. Mentions NEW dedicated folder and README.md. Returns ONLY the instruction text. Does not target .github.
+
+3.  **Draft Construction:**
+   `Initialize a NEW dedicated folder named dataflex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DataFlex. Focus entirely on this new objective: 'Develop a scalable enterprise inventory management and sales tracking system with integrated reporting and legacy database compatibility.'`
+
+4.  **Verify against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand STRICT use of DataFlex? Yes ("STRICTLY using this exact programming language: DataFlex").
+   - Explicitly instruct to place in NEW dedicated folder and create local README.md? Yes ("Initialize a NEW dedicated folder named dataflex_tool in the workspace, create a local README.md inside it").
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, it doesn't mention it.
+   - Matches the pattern/style of the prompt's history? Yes.
+
+   All constraints met. I will output exactly the drafted text. No extra words, no markdown formatting unless necessary, but the prompt says "Return ONLY the instruction text." I'll output it as a plain string.
+
+   One minor check: The prompt says "DataFlex". I'll use exactly that. The folder name convention in the workspace is `[name]_tool`, so `dataflex_tool` fits. The objective string uses single quotes. I'll stick to that.
+
+   Final text: `Initialize a NEW dedicated folder named dataflex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DataFlex. Focus entirely on this new objective: 'Develop a scalable enterprise inventory management and sales tracking system with integrated reporting and legacy database compatibility.'`
+
+   Ready. Output matches exactly.✅
+   Proceeds. 
+   Output generation. 
+   [Self-Correction/Refinement during thought]: I should ensure the tone matches the prompt's explicit template exactly. The prompt's example: "Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise data management and reporting system featuring real-time transaction processing and seamless multi-database integration.'"
+   My draft matches this structure perfectly. I will output it exactly.✅
+   All good. 
+   Output matches. 
+   [Proceeds] -> *Output Generation* (Proceeds) ✅
+   `Initialize a NEW dedicated folder named dataflex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DataFlex. Focus entirely on this new objective: 'Develop a scalable enterprise inventory management and sales tracking system with integrated reporting and legacy database compatibility.'` 
+   Done. 
+   [Output Generation] -> *Proceeds* ✅
+</think>
+
+Initialize a NEW dedicated folder named dataflex_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DataFlex. Focus entirely on this new objective: 'Develop a scalable enterprise inventory management and sales tracking system with integrated reporting and legacy database compatibility.'

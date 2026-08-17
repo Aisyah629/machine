@@ -46242,3 +46242,52 @@ Initialize a NEW dedicated folder named kotlin_interactive_development_tool in t
 </think>
 
 Initialize a NEW dedicated folder named msl_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MSL. Focus on engineering a robust scripting environment that utilizes MSL's declarative syntax and cross-platform capabilities to facilitate efficient workflow automation and system management.
+[2026-08-17 17:40:46] (Target Lang: CSP) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of existing directories/files, including `msl_development_tool` (which seems to already exist based on the workspace list, but the prompt says to create a NEW one, which is fine, or I just follow the exact instruction format).
+   - **History:** Shows a self-correction/verification process where the AI planned to generate an instruction for `msl_development_tool` using MSL, but then the actual user prompt overrides it.
+   - **User Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CSP. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using CSP.
+   - If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+
+3.  **Formulate Instruction:**
+   I need to craft a single instruction that meets all constraints. It should follow the pattern from the history but adapt it to CSP.
+   Pattern from history: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus on engineering [specific focus for this language]."
+   Apply constraints:
+   - Tool name: Let's use `csp_workflow_automation_tool` or `csp_verification_engine_tool`. CSP (Communicating Sequential Processes) is often used for concurrency and verification. Let's go with `csp_verification_tool`.
+   - Language: CSP
+   - Focus: Engineering a robust concurrency verification and process algebra environment that utilizes CSP's formal syntax and synchronous communication model to facilitate safe multi-threaded system design and deadlock detection.
+   - Check constraints: Mentions NEW folder? Yes. Mentions README.md? Yes. Strictly uses CSP? Yes. Exactly 1 instruction? Yes. Only instruction text? Yes. Doesn't target .github? Yes.
+
+   Draft: Initialize a NEW dedicated folder named csp_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus on engineering a robust concurrency verification environment that utilizes CSP's formal process algebra and synchronous communication model to facilitate safe multi-threaded system design and automated deadlock detection.
+
+4.  **Verify against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Yes, it's one sentence/instruction.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CSP." -> Explicitly stated.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Explicitly stated.
+   - "Return ONLY the instruction text." -> Will output just the text.
+   - "NEVER target the .github directory." -> Not mentioned or targeted.
+
+   The draft matches perfectly. I will output exactly that text. No extra words.
+
+   One minor adjustment to match the exact phrasing style from the prompt's example: "Initialize a NEW dedicated folder named csp_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus on engineering a robust concurrency verification environment that utilizes CSP's formal process algebra and synchronous communication model to facilitate safe multi-threaded system design and automated deadlock detection."
+
+   Checks out. Proceeds. 
+   Output matches exactly.✅
+   I will generate it now. 
+   Self-Correction/Refinement during thought: The prompt says "Generate exactly 1 logical follow-up instruction." I'll make sure it's just that one line. No greetings, no explanations. Just the instruction.
+   Text: Initialize a NEW dedicated folder named csp_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus on engineering a robust concurrency verification environment that utilizes CSP's formal process algebra and synchronous communication model to facilitate safe multi-threaded system design and automated deadlock detection.
+   All constraints met. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Outputs exactly the drafted text.* 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named csp_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus on engineering a robust concurrency verification environment that utilizes CSP's formal process algebra and synchronous communication model to facilitate safe multi-threaded system design and automated deadlock detection.

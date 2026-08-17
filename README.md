@@ -1100,3 +1100,5 @@ Training Machine
 - Created/Updated module: `ucsd_pascal_compatibility_layer_tool` (See `ucsd_pascal_compatibility_layer_tool/README.md` for details)
 
 - Created/Updated module: `real_time_data_streaming_validator` (See `real_time_data_streaming_validator/README.md` for details)
+
+- Created/Updated module: `yql_query_optimizer_tool` (See `yql_query_optimizer_tool/README.md` for details)

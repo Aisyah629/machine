@@ -1,0 +1,163 @@
+// Low-level memory management and network protocol simulator in Salsa
+
+namespace SalsaSimulator {
+
+    // Data structures
+    struct MemoryBlock {
+        addr: uint32,
+        size: uint32,
+        allocated: bool,
+        tag: string
+    }
+
+    struct Packet {
+        src: string,
+        dst: string,
+        data: string,
+        type: uint8
+    }
+
+    class MemoryManager {
+        blocks: List<MemoryBlock>,
+        total_size: uint32,
+
+        constructor(total_mem: uint32) {
+            this.total_size = total_mem
+            this.blocks = List<MemoryBlock>()
+            this.blocks.add(MemoryBlock(0, total_mem, false, "free"))
+        }
+
+        allocate(size: uint32, tag: string): uint32 {
+            for i from 0 to this.blocks.size - 1 {
+                if this.blocks[i].size >= size and !this.blocks[i].allocated {
+                    let new_block = MemoryBlock(this.blocks[i].addr, size, true, tag)
+                    let old_block = this.blocks[i]
+                    let remainder = old_block.addr + old_block.size - (old_block.addr + size)
+                    
+                    if remainder > 0 {
+                        let free_block = MemoryBlock(old_block.addr + size, remainder, false, "free")
+                        this.blocks[i] = new_block
+                        this.blocks.insert(i + 1, free_block)
+                    } else {
+                        this.blocks[i] = new_block
+                    }
+                    return old_block.addr
+                }
+            }
+            return -1 // Failed to allocate
+        }
+
+        deallocate(addr: uint32) {
+            for i from 0 to this.blocks.size - 1 {
+                if this.blocks[i].addr == addr {
+                    this.blocks[i].allocated = false
+                    this.blocks[i].tag = "free"
+                    
+                    // Merge with next block if free
+                    if i + 1 < this.blocks.size and !this.blocks[i + 1].allocated {
+                        this.blocks[i].size += this.blocks[i + 1].size
+                        this.blocks.remove(i + 1)
+                    }
+                    
+                    // Merge with previous block if free
+                    if i > 0 and !this.blocks[i - 1].allocated {
+                        this.blocks[i - 1].size += this.blocks[i].size
+                        this.blocks.remove(i)
+                    }
+                    break
+                }
+            }
+        }
+
+        get_usage() {
+            let used = 0
+            for block in this.blocks {
+                if block.allocated {
+                    used += block.size
+                }
+            }
+            return used
+        }
+    }
+
+    class NetworkProtocol {
+        packets: List<Packet>,
+        packet_count: uint32,
+
+        constructor() {
+            this.packets = List<Packet>()
+            this.packet_count = 0
+        }
+
+        create_packet(src: string, dst: string, data: string, type: uint8) {
+            let packet = Packet(src, dst, data, type)
+            this.packets.add(packet)
+            this.packet_count += 1
+        }
+
+        send_packets() {
+            let sent = 0
+            for packet in this.packets {
+                // Simulate transmission delay
+                sleep(1)
+                sent += 1
+            }
+            return sent
+        }
+
+        clear_packets() {
+            this.packets.clear()
+        }
+
+        get_packet_count() {
+            return this.packet_count
+        }
+    }
+
+    class Simulator {
+        mem_mgr: MemoryManager,
+        net_proto: NetworkProtocol,
+
+        constructor(total_mem: uint32) {
+            this.mem_mgr = MemoryManager(total_mem)
+            this.net_proto = NetworkProtocol()
+        }
+
+        run_simulation() {
+            println("Starting Memory and Network Simulation")
+            println("=======================================")
+
+            // Memory allocation simulation
+            println("Allocating memory blocks...")
+            let addr1 = this.mem_mgr.allocate(1024, "data")
+            let addr2 = this.mem_mgr.allocate(512, "config")
+            let addr3 = this.mem_mgr.allocate(2048, "buffer")
+            
+            println(f"Allocated at addresses: {addr1}, {addr2}, {addr3}")
+            println(f"Memory usage: {this.mem_mgr.get_usage()} bytes")
+
+            // Network packet simulation
+            println("Creating and sending network packets...")
+            this.net_proto.create_packet("192.168.1.1", "192.168.1.2", "Hello", 1)
+            this.net_proto.create_packet("192.168.1.1", "192.168.1.3", "World", 2)
+            this.net_proto.create_packet("192.168.1.2", "192.168.1.1", "Ack", 3)
+            
+            let sent = this.net_proto.send_packets()
+            println(f"Sent {sent} packets")
+            println(f"Total packets created: {this.net_proto.get_packet_count()}")
+
+            // Memory deallocation simulation
+            println("Deallocating memory blocks...")
+            this.mem_mgr.deallocate(addr2)
+            println(f"Memory usage after deallocation: {this.mem_mgr.get_usage()} bytes")
+
+            println("=======================================")
+            println("Simulation complete")
+        }
+    }
+
+    main() {
+        let sim = Simulator(65536)
+        sim.run_simulation()
+    }
+}

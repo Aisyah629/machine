@@ -1,16 +1,18 @@
-# SALSA Tool
+# Salsa Tool - Low-Level Memory Management & Network Protocol Simulator
 
-A dedicated tool for building applications using the SALSA programming language. SALSA is designed for object-oriented scripting, dynamic component composition, high-level abstractions, and seamless integration capabilities for agile software delivery.
+This tool implements a low-level memory management and network protocol simulator using the Salsa programming language.
 
 ## Features
-- Object-oriented scripting support
-- Dynamic component composition
-- High-level abstractions
-- Cross-platform interoperability
-- Rapid application development cycles
+- Simulates memory allocation and deallocation
+- Simulates network packet transmission and reception
+- Tracks memory usage and network traffic statistics
 
 ## Usage
-To use the SALSA tool, ensure that the SALSA compiler/runtime is installed and available in your system PATH. Then, follow the project structure and guidelines provided in the main source files.
+Run the simulator using the Salsa interpreter:
+salsa main.salsa
 
-## License
-MIT License
+## Architecture
+- MemoryManager: Handles allocation, deallocation, and fragmentation simulation
+- NetworkProtocol: Simulates packet creation, transmission, and parsing
+- Simulator: Orchestrates the memory and network simulation tasks
+- Main: Entry point for the simulation

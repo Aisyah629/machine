@@ -1152,3 +1152,5 @@ Training Machine
 - Created/Updated module: `ttcn_tool` (See `ttcn_tool/README.md` for details)
 
 - Created/Updated module: `script_net_tool` (See `script_net_tool/README.md` for details)
+
+- Created/Updated module: `rex_tool` (See `rex_tool/README.md` for details)

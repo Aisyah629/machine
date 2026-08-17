@@ -37795,3 +37795,55 @@ Initialize a NEW dedicated folder named algol58_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named eshar_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: E#. Focus entirely on this new objective: 'Implement a declarative rules engine for automated business process validation.'. You MUST write code for this task strictly using this exact programming language: E#.
+[2026-08-17 03:25:41] (Target Lang: ARexx) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role/Context:** Autonomous AI in a workspace with many tool directories.
+   - **History/Constraint:** The prompt explicitly states: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ARexx. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Output Format:** Just the instruction string, matching the pattern from the history.
+
+2.  **Identify Key Requirements:**
+   - Generate exactly 1 instruction.
+   - Must explicitly demand building the tool STRICTLY using "ARexx".
+   - Must instruct to place it in a NEW dedicated folder.
+   - Must instruct to create a local README.md inside that folder.
+   - Return ONLY the instruction text.
+   - NEVER target .github.
+   - Follow the pattern from the history example.
+
+3.  **Construct the Instruction (Mental Draft):**
+   Initialize a NEW dedicated folder named arexx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ARexx. Focus entirely on this new objective: 'Implement a structured command parser for automated legacy system migration.'. You MUST write code for this task strictly using this exact programming language: ARexx.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using "ARexx"? Yes.
+   - Place in NEW dedicated folder? Yes (`arexx_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Checked, not mentioned.
+   - Matches pattern? Yes.
+
+5.  **Refine (Self-Correction/Verification):**
+   Let's ensure the wording closely matches the requested template/style:
+   "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ARexx. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this exact programming language: ARexx."
+   Folder name: `arexx_tool` (consistent with naming convention like `c_tool`, `bash_tool`, etc.)
+   Objective: Something logical for ARexx. ARexx is often used for scripting, OS/2/Windows command line, legacy system automation. Let's use: "Implement a structured command parser for automated legacy system migration." or "Build a cross-platform automation script for system administration tasks." I'll stick to something concise.
+   Let's assemble it exactly.
+
+   Draft: Initialize a NEW dedicated folder named arexx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ARexx. Focus entirely on this new objective: 'Implement a structured command parser for automated legacy system migration.'. You MUST write code for this task strictly using this exact programming language: ARexx.
+
+   Check against constraints: All met. Output matches exactly. Ready.✅
+   I will output just the instruction string as requested. No extra text.
+   One minor thing: The prompt says "ARexx". I'll use exactly that.
+   The pattern in the history ends with a period. I'll match it.
+   Final string matches draft. Proceed. 
+   Output generation. 
+   `[Output Generation]` -> `Initialize a NEW dedicated folder named arexx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ARexx. Focus entirely on this new objective: 'Implement a structured command parser for automated legacy system migration.'. You MUST write code for this task strictly using this exact programming language: ARexx.`✅
+   All constraints verified. Output matches request. Proceeds. 
+   *Self-Correction/Note during thought*: The prompt says "Return ONLY the instruction text." I will strictly output just that sentence. No markdown, no backticks. Just the raw text. Matches perfectly. 
+   Proceeds. 
+   [Output Generation] -> *Proceeds* ✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named arexx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ARexx. Focus entirely on this new objective: 'Implement a structured command parser for automated legacy system migration.'. You MUST write code for this task strictly using this exact programming language: ARexx.

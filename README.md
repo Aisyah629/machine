@@ -1196,3 +1196,5 @@ Training Machine
 - Created/Updated module: `napier88_tool` (See `napier88_tool/README.md` for details)
 
 - Created/Updated module: `elm_tool` (See `elm_tool/README.md` for details)
+
+- Created/Updated module: `rpg_tool` (See `rpg_tool/README.md` for details)

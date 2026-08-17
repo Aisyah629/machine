@@ -1,15 +1,21 @@
 # ATS Tool
 
-A high-performance tool built with the ATS programming language, focusing on formal verification and dependent types.
+## Overview
+This directory contains tools and resources specifically for the ATS (A Tutorial System for Programming Theorems) programming language. ATS is a functional programming language with a powerful type system that allows for formal verification of code correctness.
 
 ## Features
-- Dependent type system for compile-time safety
-- Linear types for memory safety
-- High performance system-level operations
+- **Dependent Types**: ATS supports dependent types, enabling more precise specification and verification of software.
+- **Verified Programming**: Write programs that are mathematically proven to be correct.
+- **Performance**: Generate efficient C code from high-level ATS specifications.
 
 ## Usage
-Compile the main tool file using the ATS compiler:
+To use the ATS tools in this directory, ensure you have ATS installed on your system. You can find installation instructions on the [official ATS website](https://www.cs.purdue.edu/homes/hjm/ats2.html).
 
-```bash
-dme -o ats_tool ats.dats
-```
+## Examples
+- `main.ats`: A basic example demonstrating ATS programming concepts.
+
+## Documentation
+For more detailed documentation, refer to the [ATS Documentation](https://www.cs.purdue.edu/homes/hjm/ats2.html/docs.html).
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.

@@ -1,0 +1,44 @@
+import "corn_tool/parser.corn"
+import "corn_tool/validator.corn"
+import "corn_tool/utils.corn"
+
+// Entry point for the Corn Configuration Management & System Validation Framework
+fun main(args: List<string>) {
+  if args.len < 1 {
+    eprintln("Usage: corn_tool <config_file>")
+    return 1
+  }
+
+  let config_path = args[0]
+  let schema_path = args.get(1, "default_schema.corn")
+
+  // Parse the configuration file
+  let parsed_config = parser.parse_file(config_path)
+  if parsed_config.is_error {
+    eprintln("Failed to parse configuration file: " + parsed_config.error)
+    return 2
+  }
+
+  // Load the schema
+  let schema = validator.load_schema(schema_path)
+  if schema.is_error {
+    eprintln("Failed to load validation schema: " + schema.error)
+    return 3
+  }
+
+  // Validate the configuration against the schema
+  let validation = validator.validate(parsed_config.data, schema.data)
+  
+  if validation.is_valid {
+    println("✅ Configuration is valid.")
+    utils.log_info("System validation passed successfully.")
+    return 0
+  } else {
+    println("❌ Validation failed:")
+    for error in validation.errors {
+      println("  - [" + error.level + "] " + error.path + ": " + error.message)
+    }
+    utils.log_error("System validation failed with " + validation.errors.len + " errors.")
+    return 4
+  }
+}

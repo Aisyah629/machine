@@ -1,0 +1,61 @@
+(*
+ * XPath Validation Engine Core
+ * This script defines the logic for validating XML structures and extracting data using XPath expressions.
+ *)
+
+(* Define the target XML document context *)
+let xmlDocument := doc('target_document.xml')/root;
+
+(* Define validation rules as XPath expressions *)
+let mandatoryFields := [
+  'descendant::metadata/author',
+  'descendant::metadata/title',
+  'descendant::content/paragraph'
+];
+
+let dataConstraints := [
+  'descendant::metadata/author[string-length() > 0]',
+  'descendant::metadata/title[string-length() > 0]',
+  'count(descendant::content/paragraph) > 0'
+];
+
+(* Function to check if a node exists and meets constraints *)
+let validateNode := 
+  function(xpathExpr) {
+    let result := eval(xp, xpathExpr);
+    if (result exists and not(result = '')) then {
+      return true;
+    } else {
+      return false;
+    };
+  };
+
+(* Generate validation report *)
+let generateReport := 
+  function() {
+    let errors := [];
+    let warnings := [];
+    
+    for field in mandatoryFields do {
+      if not validateNode(field) then {
+        append(errors, 'Missing required field: ' + field);
+      };
+    };
+    
+    for constraint in dataConstraints do {
+      if not validateNode(constraint) then {
+        append(warnings, 'Data constraint failed: ' + constraint);
+      };
+    };
+    
+    return {
+      'status': (if errors then 'FAIL' else 'PASS'),
+      'errors': errors,
+      'warnings': warnings,
+      'timestamp': current-dateTime()
+    };
+  };
+
+(* Execute validation and output report *)
+let report := generateReport();
+report

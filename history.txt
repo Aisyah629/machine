@@ -44400,3 +44400,43 @@ Initialize a NEW dedicated folder named compliance_audit_tool in the workspace, 
 </think>
 
 Initialize a NEW dedicated folder named sed_compliance_scanner in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on developing a streamlined text processor that cross-references directory permissions against security baselines and generates automated compliance reports.
+[2026-08-17 15:02:57] (Target Lang: XPath) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using the language: XPath.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The workspace contains many tools (`.git`, `./a0_system_tool`, `./abap_tool`, etc.). The history shows a previous instruction about `sed_log_validator` and `sed_compliance_scanner`. The current request asks for an XPath tool.
+
+2.  **Draft the Instruction:**
+    *   *Folder Name:* Needs to be unique. "xpath" is the language. Maybe "xpath_data_analyzer_tool" or "xpath_query_engine_tool" based on the naming conventions in the history (e.g., `./xpath_tool` already exists? Let me check the history list).
+    *   *Check History List:* Scanning the provided history... I see `./xpath_tool ./xpath_tool/README.md ./xpath_tool/main.xpath`.
+    *   *Implication:* `./xpath_tool` already exists. The prompt asks to "Initialize a NEW dedicated folder". This implies I should create a *different* folder name to avoid conflict, or the instruction is to create a *new* folder with a new name, even if an `xpath_tool` exists. Usually, "NEW dedicated folder" implies distinctness. If I just say "create folder xpath_tool", it might conflict. A safe bet is to use a descriptive name like `xpath_xml_transform_tool` or `xpath_validation_engine_tool`.
+    *   *Drafting Text:* "Initialize a NEW dedicated folder named `xpath_validation_engine_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPath. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on..."
+    *   *Refining Text:* The prompt structure usually mirrors the previous turns. The previous turns show a pattern: "Initialize a NEW dedicated folder named [name]... create a local README.md... build... STRICTLY using... [Language]. ... Focus on [Task]."
+    *   *Task Description:* XPath is for querying XML. A good task would be "develop a robust XML structure validator that extracts specific data nodes and generates detailed integrity reports" or "develop a high-performance XML query engine that navigates complex document hierarchies and produces structured extraction outputs."
+    *   *Combined Draft:* "Initialize a NEW dedicated folder named xpath_validation_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPath. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on developing a robust XML structure validator that navigates complex document hierarchies and produces structured integrity reports."
+
+3.  **Verify Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Strictly XPath?* Yes ("STRICTLY using this exact programming language: XPath").
+    *   *NEW dedicated folder?* Yes ("Initialize a NEW dedicated folder named...").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target .github?* Yes. The draft doesn't mention `.github`.
+    *   *Folder Name Collision Check:* `./xpath_tool` exists. `xpath_validation_engine_tool` is likely safe. `xpath_query_tool` might be safe. `xpath_parser_tool` might be safe. The draft `xpath_validation_engine_tool` seems distinct enough from `xpath_tool`.
+    *   *Language Check:* XPath is listed in the history? `./xpath_tool ...`. Yes, XPath exists as a tool category, but the instruction is to build a *new* tool *using* XPath. This is valid.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Initialize a NEW dedicated folder named xpath_validation_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPath. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on developing a robust XML structure validator that navigates complex document hierarchies and produces structured integrity reports.`
+
+5.  **Output Generation:**
+    *   Result matches the polished text. No extra words.
+    *   "Initialize a NEW dedicated folder named xpath_validation_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPath. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on developing a robust XML structure validator that navigates complex document hierarchies and produces structured integrity reports."
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named xpath_validation_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPath. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on developing a robust XML structure validator that navigates complex document hierarchies and produces structured integrity reports.

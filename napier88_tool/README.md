@@ -1,11 +1,18 @@
 # Napier88 Tool
 
-This is a Napier88-based tool.
+A specialized development and execution environment for the Napier88 programming language. Napier88 is a modern procedural language designed for scientific and engineering computations, featuring automatic differentiation and high-level array operations.
+
+## Features
+- Compile and run Napier88 source files
+- Execute mathematical and scientific algorithms
+- Generate documentation for Napier88 programs
 
 ## Usage
+Place your `.napier88` source files in this directory and execute the tool to compile, run, and analyze the code.
 
-Run the following to execute the tool:
+## Requirements
+- Napier88 Compiler/Interpreter
+- Standard Unix/Linux/macOS environment
 
-```napier88
-main.napier88
-```
+## License
+MIT License

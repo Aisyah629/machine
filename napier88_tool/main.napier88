@@ -1,8 +1,32 @@
-      PROGRAM NAPIER88_TOOL;
-      INTEGER X, Y, SUM;
-      BEGIN
-          X := 10;
-          Y := 20;
-          SUM := X + Y;
-          PRINT (SUM);
-      END.
+MODULE MAIN;
+
+IMPORT StdIO, Math;
+
+PROCEDURE RunComputation():
+    (* Napier88 Example: Numerical Integration and Array Operations *)
+    VAR
+        a, b, h, x, result, sum : REAL;
+        n : INTEGER;
+        i : INTEGER;
+    BEGIN
+        a := 0.0;
+        b := 1.0;
+        n := 1000;
+        h := (b - a) / n;
+        sum := 0.0;
+
+        FOR i := 0 TO n - 1 DO
+            x := a + (i + 0.5) * h;
+            sum := sum + 4.0 / (1.0 + x * x);
+        END;
+
+        result := sum * h;
+        StdIO.Write("Computed Value (Pi approx): ", result);
+        StdIO.WriteEol;
+    END RunComputation;
+
+BEGIN
+    StdIO.Write("Napier88 Execution Environment Initialized");
+    StdIO.WriteEol;
+    RunComputation();
+END MAIN.

@@ -1192,3 +1192,5 @@ Training Machine
 - Created/Updated module: `idris_tool` (See `idris_tool/README.md` for details)
 
 - Created/Updated module: `cg_data_extraction_tool` (See `cg_data_extraction_tool/README.md` for details)
+
+- Created/Updated module: `napier88_tool` (See `napier88_tool/README.md` for details)

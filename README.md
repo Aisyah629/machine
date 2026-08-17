@@ -1054,3 +1054,5 @@ Training Machine
 - Created/Updated module: `latex_tool` (See `latex_tool/README.md` for details)
 
 - Created/Updated module: `processing_js_tool` (See `processing_js_tool/README.md` for details)
+
+- Created/Updated module: `scratch_tool` (See `scratch_tool/README.md` for details)

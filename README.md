@@ -912,3 +912,5 @@ Training Machine
 - Created/Updated module: `pearl_tool` (See `pearl_tool/README.md` for details)
 
 - Created/Updated module: `aplus_parallel_tool` (See `aplus_parallel_tool/README.md` for details)
+
+- Created/Updated module: `argus_tool` (See `argus_tool/README.md` for details)

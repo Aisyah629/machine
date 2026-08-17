@@ -47199,3 +47199,86 @@ Initialize a NEW dedicated folder named goo_stream_analysis_tool in the workspac
 </think>
 
 Initialize a NEW dedicated folder named ps_document_composer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PostScript. Focus on developing a comprehensive document composition utility capable of automated layout rendering, precise font metric calculation, and optimized vector graphic generation for high-fidelity print output.
+[2026-08-17 19:41:04] (Target Lang: Sawzall) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Action: Initialize a NEW dedicated folder, create a local README.md, build a new tool.
+    *   Constraint 1: Build strictly using the programming language: Sawzall.
+    *   Constraint 2: Place in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Constraint 6: Logical follow-up.
+
+2.  **Analyze "Logical Follow-up":**
+    *   The previous instruction was about `ps_document_composer_tool` using PostScript.
+    *   A logical follow-up might relate to log analysis, data aggregation, or structured data processing, as Sawzall is typically associated with log analysis and aggregation (often used in Google infrastructure).
+    *   Possible ideas: A log aggregation tool, a data parsing tool, a structured text analysis tool.
+    *   Naming convention: Based on previous examples in the workspace list (like `data_extraction_tool`, `text_cleaning_tool`, `logtalk_tool`), a name like `sawzall_log_analyzer_tool` or `sawzall_data_aggregation_tool` seems appropriate. Let's choose `sawzall_log_aggregation_tool`.
+
+3.  **Draft the Instruction:**
+    *   *Draft 1:* `Initialize a NEW dedicated folder named sawzall_log_aggregation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall. Focus on developing a robust log analysis utility capable of parsing structured log entries, performing real-time aggregation, and generating summary statistics for system monitoring.`
+
+4.  **Review against Constraints:**
+    *   *NEW dedicated folder?* Yes: `sawzall_log_aggregation_tool`.
+    *   *Local README.md?* Yes.
+    *   *STRICTLY Sawzall?* Yes.
+    *   *Logical follow-up?* Yes, moves from document composition to log analysis, a common progression in tool suites.
+    *   *Return ONLY instruction text?* Yes, the output will be just the string.
+    *   *NEVER target .github?* Yes, no mention of `.github`.
+    *   *Exactly 1 instruction?* Yes.
+
+5.  **Refine Language for "Sawzall" characteristics:**
+    *   Sawzall is designed for analyzing log files. Keywords: `sawzall`, `log`, `aggregation`, `summary`, `sampling`.
+    *   The description should reflect this. "Parsing structured log entries," "aggregation," "summary statistics" are good.
+    *   Refined text: `Initialize a NEW dedicated folder named sawzall_log_aggregation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall. Focus on developing a comprehensive log analysis utility capable of parsing structured log entries, performing efficient data aggregation, and generating summary statistics for real-time system monitoring.`
+
+6.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named sawzall_log_aggregation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall. Focus on developing a comprehensive log analysis utility capable of parsing structured log entries, performing efficient data aggregation, and generating summary statistics for real-time system monitoring.`
+
+7.  **Final Output Construction:**
+    *   The user asked to "Return ONLY the instruction text."
+    *   Result: The string drafted above.
+
+This matches all criteria.
+</think>
+
+Initialize a NEW dedicated folder named sawzall_log_aggregation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sawzall. Focus on developing a comprehensive log analysis utility capable of parsing structured log entries, performing efficient data aggregation, and generating summary statistics for real-time system monitoring.
+[2026-08-17 19:43:53] (Target Lang: CODE) Thinking process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Return ONLY instruction text.
+    *   Constraint 2: NEVER target `.github`.
+    *   Constraint 3: Must explicitly demand the new tool be built STRICTLY using `CODE`.
+    *   Constraint 4: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 5: Create a local `README.md` inside the new folder.
+    *   Context: The user provided a long list of existing tools (simulated workspace). I need to look for patterns or "logical follow-ups".
+    *   Language Analysis: `CODE` is a language. Looking at the list: `./code_tool/README.md`, `./code_tool/main.CODE`. This suggests `CODE` exists. The extension is `.CODE`.
+    *   Logical Follow-up Strategy: The previous instruction (in the "History" section of the prompt, though it looks like a few-shot example or context injection) was about `sawzall_log_aggregation_tool`. A logical follow-up might be another tool, or a tool related to the list. Since I need to generate *one* instruction, and the prompt asks for a "logical follow-up", I should probably generate a tool instruction that fits the pattern of the workspace. The workspace has many tools. A safe bet is to generate a new tool based on a language or utility not fully covered or just a standard tool creation following the format. However, the prompt asks for a "logical follow-up" based on the history. The history shows a pattern: "Initialize a NEW dedicated folder... build... using... [Language]. Focus on... [Description]."
+    *   The user provided a "History" block that includes a "Final Output Construction" example. This suggests the user wants me to mimic that style.
+    *   The user explicitly asks to use `CODE`.
+    *   So, the instruction must be: `Initialize a NEW dedicated folder named [name]_tool..., create a local README.md..., build... STRICTLY using... CODE... Focus on... [Description].`
+    *   Name: Needs to be a logical folder name. Since the language is `CODE`, and looking at `./code_tool`, maybe I should create a tool related to `code` or a specific function. Or just a generic `code_generator_tool` or `code_analysis_tool`. Let's look at the list. `./code_tool` exists. A follow-up might be a specialized tool. `code_static_analysis_tool`? `code_refactoring_tool`? The prompt doesn't specify the function, just the language. I should invent a plausible function. "Code generation and syntax verification" seems appropriate for a language named CODE. Or "Source code transformation". Let's go with "Source code transformation and syntax verification".
+    *   Folder Name: `code_transformation_tool` or `code_analysis_tool`. Let's use `code_analysis_tool` to be distinct from `code_tool` but related.
+    *   Drafting the text:
+        *   `Initialize a NEW dedicated folder named code_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CODE. Focus on developing a robust utility for parsing source files, detecting syntax anomalies, and generating detailed static analysis reports to ensure code quality and compliance.`
+    *   Review against constraints:
+        *   1 instruction? Yes.
+        *   Only instruction text? Yes.
+        *   No `.github`? Yes.
+        *   STRICTLY CODE? Yes.
+        *   NEW folder? Yes (`code_analysis_tool`).
+        *   Local README.md? Yes.
+        *   Logical follow-up? Yes, it follows the pattern of the previous example and fits the workspace style.
+        *   Language description? `CODE` is the language. The description matches the language name well.
+    *   Result text: `Initialize a NEW dedicated folder named code_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CODE. Focus on developing a robust utility for parsing source files, detecting syntax anomalies, and generating detailed static analysis reports to ensure code quality and compliance.`
+
+2.  **Final Polish (Mental Representation):**
+    *   Output: `Initialize a NEW dedicated folder named code_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CODE. Focus on developing a robust utility for parsing source files, detecting syntax anomalies, and generating detailed static analysis reports to ensure code quality and compliance.`
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named code_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CODE. Focus on developing a robust utility for parsing source files, detecting syntax anomalies, and generating detailed static analysis reports to ensure code quality and compliance.

@@ -1,19 +1,17 @@
-# Lynx HTTP Automation Tool
+# Lynx Symbolic Computation Engine
 
 ## Overview
-This tool implements a comprehensive HTTP request automation framework written in Lynx. It is designed for high-performance web scraping and dynamic API interactions.
+This tool implements a modular symbolic computation engine written in Lynx. It provides capabilities for dynamic rule evaluation, expression simplification, and pattern matching.
 
 ## Features
-- Asynchronous HTTP request handling
-- Automatic cookie and session management
-- Concurrent request processing
-- Response parsing and data extraction
-- Proxy support
+- Modular architecture for adding new rules and transformations.
+- Dynamic rule evaluation system.
+- Pattern matching and expression simplification.
+- Extensible rule system for custom computations.
 
 ## Usage
-1. Import the lynx_tool module.
-2. Configure your HTTP client.
-3. Execute requests using the provided functions.
+To use the Lynx Symbolic Computation Engine, ensure you have the Lynx interpreter installed. Run the main script:
 
-## License
-MIT
+```bash
+lynx main.lx
+```

@@ -1,0 +1,46 @@
+program Main;
+
+-- Argus is a distributed programming language designed for building secure and reliable systems.
+-- This example demonstrates a simple distributed object with access control and error handling.
+
+begin Main;
+
+  -- Define a secure object interface
+  interface SecureObject;
+    method getValue returns Integer;
+    method setValue(value: Integer);
+  end SecureObject;
+
+  -- Implementation of the secure object
+  class SecureObjectImpl implements SecureObject;
+  private:
+    value: Integer := 0;
+  public:
+    method getValue returns Integer;
+      return value;
+    end getValue;
+
+    method setValue(value: Integer);
+      begin
+        -- Access control: only authorized changes allowed
+        if value < 0 then
+          raise AccessDenied("Invalid value");
+        end if;
+        self.value := value;
+      end setValue;
+  end SecureObjectImpl;
+
+  -- Exception handling
+  class AccessDenied extends Error;
+  end AccessDenied;
+
+  -- Main execution
+  begin
+    try
+      declare obj: SecureObject := new SecureObjectImpl();
+      obj.setValue(10);
+      print("Value set to: " + obj.getValue());
+    catch AccessDenied(reason) do
+      print("Access denied: " + reason);
+    end try;
+  end Main.

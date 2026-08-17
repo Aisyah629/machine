@@ -37113,3 +37113,47 @@ Final Output Generation.
 </think>
 
 Initialize a NEW dedicated folder named sail_system_emulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SAIL. Focus entirely on this new objective: 'Construct a SAIL program for low-level system instruction emulation and hardware simulation'. You MUST write code for this task strictly using this programming language: SAIL.
+[2026-08-17 00:02:02] (Target Lang: Argus) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: The new tool must be built STRICTLY using the programming language: Argus.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint: Explicitly instruct to create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a workspace list and a history. The history shows previous actions like creating folders for SAIL, ABAP, Ada, etc. The pattern is "Initialize a NEW dedicated folder named [language]_tool ... create a local README.md ... build ... STRICTLY using ... [language]". The previous output generated a SAIL tool. Now I need to generate a follow-up for Argus.
+
+2.  **Draft the instruction:**
+    *   Structure based on history: `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this programming language: Argus.`
+    *   Folder Name: The pattern in history is usually `[language]_tool`. So, `argus_tool` or `argus_system_tool`. Let's stick to the pattern `argus_tool`.
+    *   Objective: Needs to be relevant to Argus. Argus is a distributed programming language, often associated with security and reliability. A good objective might be "Implement a secure distributed object system with robust error handling and access control."
+    *   Language: Argus.
+    *   Constraints Check:
+        *   New folder? Yes (`argus_tool`).
+        *   README.md? Yes.
+        *   Language Argus? Yes.
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+        *   Exactly 1 instruction? Yes.
+
+3.  **Refine the text:**
+    *   Draft: `Initialize a NEW dedicated folder named argus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: 'Construct a distributed secure object system with robust exception handling and access control'. You MUST write code for this task strictly using this programming language: Argus.`
+    *   Review against "Return ONLY the instruction text": The draft looks like a single block of text. It doesn't include meta-commentary like "Here is the instruction". It just starts with "Initialize...".
+    *   Review against "NEVER target .github": The text mentions `argus_tool` and `README.md`, not `.github`.
+    *   Review against "Exactly 1 logical follow-up instruction": It's one paragraph/sentence block.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named argus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: 'Construct a distributed secure object system with robust exception handling and access control'. You MUST write code for this task strictly using this programming language: Argus.`
+
+5.  **Sanity Check on "Argus":**
+    *   Is Argus a real language? Yes, the Argus programming language exists, developed at MIT and others, focusing on distributed systems and security. The objective fits well.
+    *   The prompt asks for "Argus", not "Argus Language", but the draft uses "programming language: Argus", which is correct.
+
+6.  **Final Output Construction:**
+    *   Result: `Initialize a NEW dedicated folder named argus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: 'Construct a distributed secure object system with robust exception handling and access control'. You MUST write code for this task strictly using this programming language: Argus.`
+
+This matches all constraints.
+</think>
+
+Initialize a NEW dedicated folder named argus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: 'Construct a distributed secure object system with robust exception handling and access control'. You MUST write code for this task strictly using this programming language: Argus.

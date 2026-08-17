@@ -1180,3 +1180,5 @@ Training Machine
 - Created/Updated module: `peoplecode_tool` (See `peoplecode_tool/README.md` for details)
 
 - Created/Updated module: `./interactive_csp_diagnostic_tool` (See `./interactive_csp_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `cms_exec_tool` (See `cms_exec_tool/README.md` for details)

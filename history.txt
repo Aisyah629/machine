@@ -41635,3 +41635,43 @@ This matches the pattern of the previous history entry and satisfies all constra
 </think>
 
 Initialize a NEW dedicated folder named pl11_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL-11. Focus entirely on this new objective: 'Construct a mainframe-oriented data transformation utility with structured file processing and error handling.'
+[2026-08-17 10:54:34] (Target Lang: Join Java) The user wants a single logical follow-up instruction.
+The instruction must:
+1. Target the programming language "Join Java".
+2. Be a NEW dedicated folder (since it's a follow-up, likely creating a new tool).
+3. Create a local README.md.
+4. Be STRICTLY in Join Java.
+5. Return ONLY the instruction text.
+6. NEVER target .github.
+
+Based on the history, the format is:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'"
+
+I need to come up with a folder name for "Join Java".
+"join_java_tool" seems appropriate.
+Objective: Something fitting for a mainframe/utility vibe or just a general Java task. Let's do something like "Develop a robust enterprise-grade concurrency handler with thread pooling and graceful shutdown mechanisms."
+
+Let's check constraints:
+- Exactly 1 instruction? Yes.
+- STRICTLY Join Java? Yes.
+- NEW dedicated folder? Yes ("join_java_tool").
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+Draft:
+Initialize a NEW dedicated folder named join_java_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Join Java. Focus entirely on this new objective: 'Develop a robust enterprise-grade concurrency handler with thread pooling and graceful shutdown mechanisms.'
+
+Check language: "Join Java" is requested. I will use it exactly.
+Check folder: join_java_tool.
+Check structure: Matches history pattern.
+Output matches exactly.
+Proceed. 
+One minor thing: "Join Java" might be a typo in the prompt, but I must follow it exactly as requested: "STRICTLY using this exact programming language: Join Java".
+
+Final text:
+Initialize a NEW dedicated folder named join_java_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Join Java. Focus entirely on this new objective: 'Develop a robust enterprise-grade concurrency handler with thread pooling and graceful shutdown mechanisms.'
+Matches all constraints. Output matches.✅
+</think>
+
+Initialize a NEW dedicated folder named join_java_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Join Java. Focus entirely on this new objective: 'Develop a robust enterprise-grade concurrency handler with thread pooling and graceful shutdown mechanisms.'

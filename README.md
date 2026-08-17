@@ -1132,3 +1132,5 @@ Training Machine
 - Created/Updated module: `ps_document_composer_tool` (See `ps_document_composer_tool/README.md` for details)
 
 - Created/Updated module: `code_analysis_tool` (See `code_analysis_tool/README.md` for details)
+
+- Created/Updated module: `candle_tool` (See `candle_tool/README.md` for details)

@@ -1014,3 +1014,5 @@ Training Machine
 - Created/Updated module: `c_minus_minus_tool` (See `c_minus_minus_tool/README.md` for details)
 
 - Created/Updated module: `bigwig_tool` (See `bigwig_tool/README.md` for details)
+
+- Created/Updated module: `franz_lisp_tool` (See `franz_lisp_tool/README.md` for details)

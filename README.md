@@ -1122,3 +1122,5 @@ Training Machine
 - Created/Updated module: `pikt_tool` (See `pikt_tool/README.md` for details)
 
 - Created/Updated module: `prolog_logic_engine_tool` (See `prolog_logic_engine_tool/README.md` for details)
+
+- Created/Updated module: `promela_concurrency_validator_tool` (See `promela_concurrency_validator_tool/README.md` for details)

@@ -1,0 +1,8 @@
+;; Action! Plus Tool - main.action
+;; Purpose: Dynamic scripting and automation utility leveraging Action!'s high-level syntax and macro system.
+
+;; Macro for efficient string formatting
+DEFINE PRINT_FMT="$C$"=$"$C$"="$C$"="#PRINT_FMT"
+
+;; Macro for system interaction simulation
+DEFINE SYSTEM_CALL(cmd)=PRINT(

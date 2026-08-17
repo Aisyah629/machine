@@ -1,27 +1,24 @@
-# T Language Tool
+# t_tool
 
 ## Overview
-This folder contains the toolchain and examples for the **T** programming language, a high-level language focused on template-based generic system design and type-safe programming.
+This tool is built strictly using the **T** programming language. It implements a **high-performance cryptographic protocol verifier** with formal method checking and automated proof generation.
 
-## Purpose
-The primary objective of this toolset is to enable developers to leverage the expressive power of **T** for:
-- **Generic System Design:** Implementing reusable, type-safe generic components.
-- **Type Safety:** Ensuring robust type checking and error prevention at compile time.
-- **Performance:** Optimizing code through compile-time template instantiation and specialization.
+## Features
+- **Deterministic Finite Automaton (DFA) Simulation**: Models state machines for cryptographic handshake protocols.
+- **Formal Property Verification**: Supports specification of liveness and safety properties.
+- **Automated Proof Generation**: Generates proof chains via backward reachability analysis to validate state transitions.
+- **Trace Logging**: detailed logging of simulation steps and failures.
 
-## Contents
-- `main.t`: The main entry point demonstrating basic usage of the T language features.
-- `README.md`: This documentation file.
+## Usage
+1. Ensure the **T** interpreter is installed and accessible in your `PATH`.
+2. Run the tool:
+   ```bash
+   t t_tool/main.t
+   ```
+3. Review the output for simulation results, proof chains, and property verification status.
 
-## Getting Started
-1. Ensure you have the **T** compiler installed.
-2. Compile the main file: `tcc main.t`
-3. Run the executable: `./a.out` (or platform-specific equivalent)
-
-## Language Features
-- **Templates:** Define generic algorithms and data structures.
-- **Type Inference:** Automatic deduction of types to reduce boilerplate.
-- **Static Polymorphism:** Efficient dispatch without virtual function overhead.
+## Architecture
+- `main.t`: Contains the core implementation including `State`, `Automaton`, and `ProtocolVerifier` classes.
 
 ## License
-This tool is open source and available for modification and distribution.
+MIT License

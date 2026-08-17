@@ -49236,3 +49236,74 @@ Initialize a NEW dedicated folder named ml_development_tool in the workspace, cr
 </think>
 
 Initialize a NEW dedicated folder named lynx_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Lynx.
+[2026-08-17 22:14:01] (Target Lang: PeopleCode) Thinking Process:
+1.  **Analyze the Request**:
+    *   User wants exactly 1 logical follow-up instruction.
+    *   The instruction must explicitly demand the new tool be built STRICTLY using the programming language: `PeopleCode`.
+    *   If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local `README.md`.
+    *   Return ONLY the instruction text.
+    *   NEVER target the `.github` directory.
+    *   The context (History/Workspace) seems to be a list of tool folders, many of which look fictional or part of a structured experiment/manifest. The user is asking for a follow-up instruction.
+    *   Wait, the user's prompt is: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PeopleCode. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+    *   This is a meta-prompt asking *me* to generate the instruction string that *would* be given to an AI agent or system to perform the task.
+    *   The instruction must contain:
+        *   Build a NEW tool.
+        *   Language: `PeopleCode`.
+        *   Folder: NEW dedicated folder.
+        *   File: `README.md`.
+        *   No `.github`.
+        *   ONLY the instruction text.
+
+2.  **Drafting the Instruction**:
+    *   "Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode."
+    *   Wait, the prompt says "Generate exactly 1 logical follow-up instruction."
+    *   The instruction text should probably follow the pattern of the previous ones in the history, e.g., "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode."
+    *   The prompt *gives* the constraints. I just need to output the string.
+    *   "Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode."
+    *   Let's check the constraints:
+        *   Exactly 1 logical follow-up instruction. (Check)
+        *   Explicitly demand built STRICTLY using PeopleCode. (Check)
+        *   Instruct to place in NEW dedicated folder and create local README.md. (Check)
+        *   Return ONLY the instruction text. (Check)
+        *   NEVER target .github. (Check)
+
+3.  **Refining the Output**:
+    *   Output string: `Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode.`
+    *   Double-check strict wording: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PeopleCode." -> Included.
+    *   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Included.
+    *   "Return ONLY the instruction text." -> No extra text.
+
+    Final string matches the drafted version. Proceeds.
+    One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." The output should just be that instruction.
+    Result: `Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode.`
+    Wait, should I name the folder something specific or just "a NEW dedicated folder"? The prompt says "explicitly instruct to place it in a NEW dedicated folder". The examples in history use specific names like `lynx_development_tool`. I'll use `peoplecode_tool` to be consistent with the language name, or just follow the prompt's implied template. The prompt says "place it in a NEW dedicated folder". I will use `peoplecode_tool` for the folder name to be concrete.
+    Let's use the exact phrasing from the examples: "Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode."
+    This fits perfectly.
+    Output matches constraints. No markdown. Just the text.
+    Proceeds. 
+    Self-Correction/Verification during thought: The prompt says "Return ONLY the instruction text." I will output exactly that string. No backticks, no quotes.
+    String: Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode.
+    All good.✅
+    Output Generation. 
+    [Output] Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode.
+    Wait, let's look at the prompt carefully: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PeopleCode."
+    My string has that.
+    "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+    My string has that.
+    "Return ONLY the instruction text."
+    Ready.✅
+    Output matches. Proceeds.
+    [Final Output Generation] -> *Proceeds* Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode. 
+    (Note: I will output just the text as requested.) 
+    One detail: The prompt says "Generate exactly 1 logical follow-up instruction." I will output the string. No extra text.
+    Final string: Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode.
+    Done. 
+    Output Generation. 
+    *(Self-Correction/Note during thought)*: I should make sure I don't add any markdown or extra text. Just the raw string. The prompt says "Return ONLY the instruction text." I will output exactly that.
+    All constraints met. Output matches.✅
+    Proceeds.
+    [Output Generation] -> *Proceeds* Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode.
+    *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named peoplecode_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PeopleCode.

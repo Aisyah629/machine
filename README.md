@@ -1150,3 +1150,5 @@ Training Machine
 - Created/Updated module: `smallbasic_tool` (See `smallbasic_tool/README.md` for details)
 
 - Created/Updated module: `ttcn_tool` (See `ttcn_tool/README.md` for details)
+
+- Created/Updated module: `script_net_tool` (See `script_net_tool/README.md` for details)

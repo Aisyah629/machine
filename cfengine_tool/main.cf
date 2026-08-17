@@ -1,0 +1,59 @@
+bundle agent infrastructure_automation_main
+{
+  vars:
+    "server_ip" data => "127.0.0.1";
+    "policy_bundle_name" data => "infrastructure_automation_main";
+
+  methods:
+    "start_infrastructure_setup" usepackage => ["unix", "system"];
+
+  classes:
+    "monitoring_enabled" expression => "any";
+    "compliance_verified" expression => "any";
+
+  packages:
+    # Ensure core management packages are installed across all nodes
+    "policy_engine" ensure => "present";
+    "reporting_service" ensure => "installed";
+
+  files:
+    # Maintain a central configuration registry
+    "/var/lib/cfengine/policy_registry.json" 
+      create => "true",
+      permission => "640",
+      owner => "root",
+      group => "cfengine";
+
+    # Ensure audit logs are maintained and protected
+    "/var/log/cfengine/compliance_audit.log" 
+      create => "true",
+      permission => "600",
+      owner => "root",
+      group => "root";
+
+  commands:
+    # Trigger periodic system compliance checks
+    "cf-agent -Kf /var/lib/cfengine/policies/main.cf" 
+      depend => "{not(monitoring_enabled)}",
+      restart_class => "compliance_verified";
+
+  reports:
+    # Generate status reports for infrastructure state
+    "infrastructure_automation_main::" 
+      message => "Infrastructure automation framework initialized successfully. Monitoring and compliance verification active.";
+    "!infrastructure_automation_main::" 
+      message => "Policy execution completed. Awaiting next cycle for state convergence.";
+}
+
+bundle common common
+{
+  vars:
+    "sys_author" data => "";
+    "sys_contact" data => "admin@infrastructure.local";
+
+  commands:
+    "echo \"CFEngine Infrastructure Tool Loaded\"";
+
+  reports:
+    "CFEngine Tool Initialized";
+}

@@ -1136,3 +1136,5 @@ Training Machine
 - Created/Updated module: `candle_tool` (See `candle_tool/README.md` for details)
 
 - Created/Updated module: `./curry_tool` (See `./curry_tool/README.md` for details)
+
+- Created/Updated module: `visual_j_diagnostic_tool` (See `visual_j_diagnostic_tool/README.md` for details)

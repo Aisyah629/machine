@@ -948,3 +948,5 @@ Training Machine
 - Created/Updated module: `ambienttalk_advanced_tool` (See `ambienttalk_advanced_tool/README.md` for details)
 
 - Created/Updated module: `scilab_data_tool` (See `scilab_data_tool/README.md` for details)
+
+- Created/Updated module: `q_advanced_tool` (See `q_advanced_tool/README.md` for details)

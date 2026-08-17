@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:client="http://example.com/client"
+         xmlns:tns="http://example.com/bpel_workflow_engine"
+         name="bpel_workflow_engine"
+         targetNamespace="http://example.com/bpel_workflow_engine"
+         partnerLinkBindings="http://example.com/bpel_workflow_engine#link_bindings">
+
+  <!-- Process Variables -->
+  <variables>
+    <variable name="request" messageType="tns:processRequestMessage"/>
+    <variable name="response" messageType="tns:processResponseMessage"/>
+    <variable name="serviceCall1" messageType="tns:serviceCall1Message"/>
+    <variable name="serviceCall2" messageType="tns:serviceCall2Message"/>
+    <variable name="result" messageType="tns:resultMessage"/>
+  </variables>
+
+  <!-- Partner Links -->
+  <partnerLinks>
+    <partnerLink name="client" partnerLinkType="tns:clientLink" myRole="engineRole"/>
+    <partnerLink name="serviceA" partnerLinkType="tns:serviceALink" partnerRole="serviceARole"/>
+    <partnerLink name="serviceB" partnerLinkType="tns:serviceBLink" partnerRole="serviceBRole"/>
+  </partnerLinks>
+
+  <!-- Message Flow -->
+  <messageFlow name="requestFlow" source="client" target="engine"/>
+  <messageFlow name="responseFlow" source="engine" target="client"/>
+
+  <!-- Process Definition -->
+  <sequence name="mainSequence">
+    <!-- Receive initial request -->
+    <receive name="receiveRequest" partnerLink="client" portType="tns:clientPortType" operation="startProcess" variable="request" createInstance="yes"/>
+
+    <!-- Invoke Service A asynchronously -->
+    <invoke name="invokeServiceA" partnerLink="serviceA" portType="tns:serviceAPortType" operation="callService" inputVariable="serviceCall1" outputVariable="serviceCall2"/>
+
+    <!-- Wait for async response -->
+    <receive name="waitForServiceA" partnerLink="serviceA" portType="tns:serviceAPortType" operation="respond" variable="serviceCall2"/>
+
+    <!-- Invoke Service B -->
+    <invoke name="invokeServiceB" partnerLink="serviceB" portType="tns:serviceBPortType" operation="callService" inputVariable="serviceCall1" outputVariable="result"/>
+
+    <!-- Assemble and return response -->
+    <assign name="assembleResponse">
+      <copy>
+        <from expression="concat(request.data, serviceCall2.result, result.data)"/>
+        <to variable="response" part="payload"/>
+      </copy>
+    </assign>
+
+    <!-- Send response back to client -->
+    <reply name="sendResponse" partnerLink="client" portType="tns:clientPortType" operation="startProcess" variable="response"/>
+  </sequence>
+
+  <!-- Error Handling -->
+  <flow name="errorHandler".
+  <catchAll name="catchErrors">
+    <assign name="handleError">
+      <copy>
+        <from expression="'Process failed: ' + faultCode + ' - ' + faultString"/>
+        <to variable="response" part="payload"/>
+      </copy>
+      <throw name="propagateError" faultName="tns:ProcessFailure" faultVariable="fault"/>
+    </assign>
+  </catchAll>
+  </flow>
+
+  <!-- End of Process -->
+  <terminate name="endProcess"/>
+
+</process>

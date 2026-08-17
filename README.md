@@ -958,3 +958,5 @@ Training Machine
 - Created/Updated module: `gpss_queue_analysis_tool` (See `gpss_queue_analysis_tool/README.md` for details)
 
 - Created/Updated module: `java_queue_analyzer_tool` (See `java_queue_analyzer_tool/README.md` for details)
+
+- Created/Updated module: `optimization_solver_tool` (See `optimization_solver_tool/README.md` for details)

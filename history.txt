@@ -38768,3 +38768,66 @@ Initialize a NEW dedicated folder named gpss_queue_analysis_tool in the workspac
 </think>
 
 Initialize a NEW dedicated folder named java_queue_analyzer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Java. Focus entirely on this new objective: 'Develop a Java-based desktop application for visualizing multi-server queue simulation data and identifying resource utilization bottlenecks interactively.'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Java.
+[2026-08-17 05:28:53] (Target Lang: AMPL) The user wants me to generate exactly 1 logical follow-up instruction.
+The instruction must demand that the *new tool* be built STRICTLY using the exact programming language: AMPL.
+It must explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+It should only return the instruction text.
+Never target the .github directory.
+
+Let's look at the prompt's example format:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [Language]."
+
+I need to construct an instruction for a new AMPL tool.
+Folder name: Let's pick something like `optimization_solver_tool` or `linear_programming_solver_tool` or `stochastic_programming_tool`. Let's go with `optimization_solver_tool`.
+Objective: 'Develop a mathematical optimization framework for solving large-scale linear programming problems and analyzing sensitivity reports'.
+Language: AMPL.
+
+Draft:
+Initialize a NEW dedicated folder named optimization_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AMPL. Focus entirely on this new objective: 'Develop a mathematical optimization framework for solving large-scale linear programming problems and analyzing sensitivity reports'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL.
+
+Check constraints:
+- Generate exactly 1 logical follow-up instruction. (Yes)
+- MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL. (Yes)
+- If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. (Yes)
+- Return ONLY the instruction text. (Yes)
+- NEVER target the .github directory. (Yes)
+
+Matches perfectly. I will output exactly that.
+Let's refine it to match the exact style of the prompt's example:
+"Initialize a NEW dedicated folder named optimization_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AMPL. Focus entirely on this new objective: 'Develop a mathematical optimization framework for solving large-scale linear programming problems and analyzing sensitivity reports'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL."
+
+Wait, the prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL."
+I will just output the exact text.
+No extra text.
+Done. 
+Let's double check the exact wording requested: "Return ONLY the instruction text. NEVER target the .github directory."
+The instruction text should follow the pattern.
+"Initialize a NEW dedicated folder named optimization_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AMPL. Focus entirely on this new objective: 'Develop a mathematical optimization framework for solving large-scale linear programming problems and analyzing sensitivity reports'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL."
+
+All constraints met. Output matches. Proceeds. 
+One minor thing: I'll make sure the folder name is unique and plausible. `optimization_solver_tool` is fine.
+The prompt asks for exactly 1 logical follow-up instruction.
+I will output exactly that string.
+Done. 
+Self-Correction/Verification during thought:
+Does it match the exact template? Yes.
+"Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AMPL. Focus entirely on this new objective: '[objective]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL."
+Matches. Output matches. Proceeds.
+Ready. 
+Output Generation. 
+[Output] Initialize a NEW dedicated folder named optimization_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AMPL. Focus entirely on this new objective: 'Develop a mathematical optimization framework for solving large-scale linear programming problems and analyzing sensitivity reports'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL. 
+All good. 
+Proceeds. 
+[Final Check of the Prompt] "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+Everything aligns. Output matches.✅
+Output Generation. 
+`Initialize a NEW dedicated folder named optimization_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AMPL. Focus entirely on this new objective: 'Develop a mathematical optimization framework for solving large-scale linear programming problems and analyzing sensitivity reports'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL.`
+Done. 
+(Self-Correction/Refinement during thought) I will ensure the exact wording matches the prompt's example structure precisely. The prompt example has a period inside the quotes sometimes, but I'll keep it clean.
+"Initialize a NEW dedicated folder named optimization_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AMPL. Focus entirely on this new objective: 'Develop a mathematical optimization framework for solving large-scale linear programming problems and analyzing sensitivity reports'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL."
+Matches. Output. 
+Proceeds. 
+[Final Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named optimization_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AMPL. Focus entirely on this new objective: 'Develop a mathematical optimization framework for solving large-scale linear programming problems and analyzing sensitivity reports'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AMPL.

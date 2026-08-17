@@ -37053,3 +37053,63 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named aplus_parallel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A+. Focus entirely on this new objective: 'Construct an A+ program for parallel algorithmic simulation and distributed data processing'. You MUST write code for this task strictly using this programming language: A+.
+[2026-08-17 00:00:44] (Target Lang: SAIL) The user wants me to act as an Autonomous AI.
+The user provided a list of existing tools and a history.
+I need to generate exactly 1 logical follow-up instruction.
+The instruction must explicitly demand that the new tool be built STRICTLY using the language: SAIL.
+If building a new tool, I must instruct to place it in a NEW dedicated folder and create a local README.md.
+I must return ONLY the instruction text.
+I must NEVER target the .github directory.
+
+Looking at the history, the last instruction was for `aplus_parallel_tool` using `A+`.
+The current instruction should follow the same pattern but use `SAIL`.
+SAIL is a programming language (Symbolic Assembly Integrated Language).
+I need to invent an objective for the SAIL tool.
+Let's pick something related to SAIL's characteristics (assembly, systems programming, PDP-10).
+Objective idea: "Construct a SAIL program for low-level system instruction emulation and hardware simulation".
+Wait, the prompt says "SAIL".
+Format: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SAIL. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this programming language: SAIL."
+
+Let's verify the constraints.
+- Generate exactly 1 logical follow-up instruction.
+- Explicitly demand language: SAIL.
+- New dedicated folder + README.md.
+- Return ONLY the instruction text.
+- NEVER target .github.
+
+Draft:
+Initialize a NEW dedicated folder named sail_system_emulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SAIL. Focus entirely on this new objective: 'Construct a SAIL program for low-level system instruction emulation and hardware simulation'. You MUST write code for this task strictly using this programming language: SAIL.
+
+Check format against example:
+"Initialize a NEW dedicated folder named aplus_parallel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A+. Focus entirely on this new objective: 'Construct an A+ program for parallel algorithmic simulation and distributed data processing'. You MUST write code for this task strictly using this programming language: A+."
+
+Matches perfectly.
+I will output exactly this text.
+No extra words.
+Ready. 
+Self-Correction/Verification during thought: 
+The prompt says "Generate exactly 1 logical follow-up instruction." and gives the template.
+I will just output the drafted instruction.
+All constraints met.
+Proceed. 
+Output: Initialize a NEW dedicated folder named sail_system_emulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SAIL. Focus entirely on this new objective: 'Construct a SAIL program for low-level system instruction emulation and hardware simulation'. You MUST write code for this task strictly using this programming language: SAIL. 
+Matches requirements.✅
+Done. 
+Output Generation. 
+[Final Check] -> Text matches template exactly. Language is SAIL. Folder name is new. README.md is mentioned. Objective is relevant. No .github. Only instruction text. All good. 
+Proceeds. 
+[Output Generation] -> Initialize a NEW dedicated folder named sail_system_emulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SAIL. Focus entirely on this new objective: 'Construct a SAIL program for low-level system instruction emulation and hardware simulation'. You MUST write code for this task strictly using this programming language: SAIL. 
+(Self-Correction/Refinement during generation prep)
+Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SAIL."
+The draft does that.
+It's ready.✅
+Output matches. 
+Proceeds. 
+[Output Generation] -> Initialize a NEW dedicated folder named sail_system_emulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SAIL. Focus entirely on this new objective: 'Construct a SAIL program for low-level system instruction emulation and hardware simulation'. You MUST write code for this task strictly using this programming language: SAIL. 
+Done. 
+(Note: I'll make sure the formatting matches exactly what's requested.) 
+Final Output Generation. 
+[Proceeds]
+</think>
+
+Initialize a NEW dedicated folder named sail_system_emulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SAIL. Focus entirely on this new objective: 'Construct a SAIL program for low-level system instruction emulation and hardware simulation'. You MUST write code for this task strictly using this programming language: SAIL.

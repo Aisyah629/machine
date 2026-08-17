@@ -43252,3 +43252,63 @@ Initialize a NEW dedicated folder named millscript_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named scratch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scratch. Focus entirely on this new objective: 'Develop an interactive visual programming environment featuring block-based logic assembly and real-time simulation capabilities for educational purposes.'
+[2026-08-17 13:52:05] (Target Lang: IDL) The user wants a single logical follow-up instruction.
+The instruction must:
+1. Target a NEW dedicated folder.
+2. Create a local `README.md` inside it.
+3. Build the tool STRICTLY using `IDL`.
+4. Focus entirely on a new objective.
+5. NEVER target `.github`.
+6. Return ONLY the instruction text.
+
+Looking at the history, the style is:
+`Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective].'`
+
+Language: IDL
+Folder name: `idl_tool` (based on the pattern of other tools in the list, e.g., `abap_tool`, `ada_tool`, etc. The user prompt also lists `./idl_interface_tool` in the workspace list, but the instruction says "NEW dedicated folder", so I should pick a name that fits the pattern. Looking at the list, `idl_tool` isn't there, but `idl_interface_tool` is. However, standard naming seems to be `[language]_tool`. Let's stick to `idl_tool` to match the style of `bash_tool`, `c_tool`, etc., or perhaps `idl_interface_tool` is already taken. The prompt lists `./idl_interface_tool`. I should probably use `idl_tool` to be consistent with the majority, or check if `idl_tool` exists. The list has `./idl_interface_tool` but not `./idl_tool`. Wait, the list has `./idl_interface_tool`. Let's check the list carefully.
+`./idl_interface_tool ./idl_interface_tool/README.md ./idl_interface_tool/main.idl` exists.
+Wait, the prompt says "NEW dedicated folder". If `idl_interface_tool` exists, maybe I should use `idl_tool`? Or maybe the user wants me to create `idl_tool` even if `idl_interface_tool` exists? Or maybe I should use `idl_interface_tool` but the prompt says "NEW".
+Actually, looking at the workspace list provided in the prompt, I see:
+`./idl_interface_tool ./idl_interface_tool/README.md ./idl_interface_tool/main.idl`
+It does *not* list `./idl_tool`.
+So I will use `idl_tool` as the folder name to create a NEW one.
+
+Objective: Needs to be relevant to IDL. IDL (Interactive Data Language) is used for data analysis, visualization, and scientific computing.
+Draft Objective: 'Develop a high-performance scientific data visualization and analysis engine featuring interactive plotting capabilities and seamless integration with diverse data acquisition protocols.'
+
+Let's refine the instruction string.
+`Initialize a NEW dedicated folder named idl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Develop a high-performance scientific data visualization and analysis engine featuring interactive plotting capabilities and seamless integration with diverse data acquisition protocols.'`
+
+Check constraints:
+- STRICTLY using IDL? Yes.
+- NEW dedicated folder? Yes (`idl_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+Let's double check the list again to ensure `idl_tool` is not there.
+Scanning the list...
+`./ici_tool`... `./id_tool`... `./idl_interface_tool`...
+No `./idl_tool`.
+So `idl_tool` is safe.
+
+Final string:
+Initialize a NEW dedicated folder named idl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Develop a high-performance scientific data visualization and analysis engine featuring interactive plotting capabilities and seamless integration with diverse data acquisition protocols.'
+
+One more check on the prompt: "Generate exactly 1 logical follow-up instruction."
+The output should be just the string.
+
+Is there any other consideration?
+The previous example used "millscript_tool".
+The previous example used "Scratch".
+This one uses "IDL".
+The folder name usually matches the language name + `_tool`.
+So `idl_tool` is correct.
+
+Final Polish:
+`Initialize a NEW dedicated folder named idl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Develop a high-performance scientific data visualization and analysis engine featuring interactive plotting capabilities and seamless integration with diverse data acquisition protocols.'`
+
+Looks good.
+</think>
+
+Initialize a NEW dedicated folder named idl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Develop a high-performance scientific data visualization and analysis engine featuring interactive plotting capabilities and seamless integration with diverse data acquisition protocols.'

@@ -1,0 +1,25 @@
+
+  *
+  Automated Dataset Cleaning and Text Formatting Tool
+  
+  Purpose:
+  To clean raw text and dataset content by standardizing formatting,
+  removing duplicates, and handling common whitespace/encoding issues.
+  
+  Input:
+  Input file path provided as the first argument.
+  Optional output file path as the second argument. Defaults to stdout.
+  
+  Processing Steps:
+  1. Read all lines from input.
+  2. Remove lines that are entirely whitespace.
+  3. Strip leading and trailing whitespace from each line.
+  4. Collapse multiple internal spaces into a single space.
+  5. Remove duplicate lines while preserving order.
+  6. Write the cleaned lines to the output destination.
+  
+  Notes:
+  This is a robust, general-purpose text cleaning utility.
+  It does not parse CSV structures deeply, but handles simple delimited
+  text by cleaning line-by-line.
+  

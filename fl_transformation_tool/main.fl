@@ -1,0 +1,40 @@
+// FL Transformation Engine
+// Declarative functional transformation scripts
+
+import System;
+import Collection;
+
+// Define the transformation function
+define transform(data, rules) {
+    result = [];
+    for (item in data) {
+        for (rule in rules) {
+            if (rule.matches(item)) {
+                item = rule.apply(item);
+            }
+        }
+        result.append(item);
+    }
+    return result;
+}
+
+// Main execution
+function main() {
+    // Example data
+    data = [1, 2, 3, 4, 5];
+    
+    // Example rules
+    rules = [
+        Rule(1, x -> x * 2),
+        Rule(2, x -> x + 10)
+    ];
+    
+    // Apply transformations
+    result = transform(data, rules);
+    
+    // Output results
+    System.print("Transformed Data: " + result);
+}
+
+// Run main function
+main();

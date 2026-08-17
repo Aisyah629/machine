@@ -49393,3 +49393,44 @@ Done. Proceeds.✅
 </think>
 
 Initialize a NEW dedicated folder named cms_exec_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CMS EXEC.
+[2026-08-17 22:40:17] (Target Lang: BPEL) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   Explicitly demand the new tool be built STRICTLY using the programming language: BPEL.
+        *   If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+        *   Return ONLY the instruction text.
+        *   NEVER target the .github directory.
+
+2.  **Drafting the Instruction:**
+    *   *Attempt 1:* Initialize a NEW dedicated folder named bpel_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL.
+    *   *Check against constraints:*
+        *   "Initialize a NEW dedicated folder..." -> Yes, implies new folder.
+        *   "...named bpel_workflow_engine_tool..." -> Specific name is good practice for "logical follow-up", though the prompt doesn't strictly require a specific name, just the mechanism. However, looking at the pattern in the prompt's history/examples, tools often have descriptive names. "bpel_workflow_engine_tool" seems appropriate for BPEL.
+        *   "...create a local README.md inside it..." -> Yes.
+        *   "...build the entire new tool STRICTLY using this exact programming language: BPEL." -> Yes, explicitly demands BPEL.
+        *   "Return ONLY the instruction text." -> The output should be just the string.
+        *   "NEVER target the .github directory." -> The instruction doesn't mention .github.
+
+3.  **Refining the Text:**
+    *   The prompt asks for "exactly 1 logical follow-up instruction".
+    *   The structure should mirror the style of previous instructions implied by the context (though the context is just the workspace listing and a history snippet showing a pattern).
+    *   Pattern observed: "Initialize a NEW dedicated folder named [NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]."
+    *   Result: "Initialize a NEW dedicated folder named bpel_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL."
+
+4.  **Final Review:**
+    *   Does it have exactly 1 instruction? Yes.
+    *   Does it demand BPEL? Yes.
+    *   Does it demand NEW folder? Yes.
+    *   Does it demand README.md? Yes.
+    *   Is it ONLY the instruction text? Yes.
+    *   Does it target .github? No.
+
+5.  **Output Construction:**
+    *   Output: `Initialize a NEW dedicated folder named bpel_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL.`
+
+This matches all criteria.
+</think>
+
+Initialize a NEW dedicated folder named bpel_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL.

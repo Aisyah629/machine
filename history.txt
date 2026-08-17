@@ -39236,3 +39236,68 @@ Outputting the text.
 </think>
 
 Initialize a NEW dedicated folder named nesl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NESL. Focus entirely on this new objective: 'Architect a distributed data-parallel processing framework for high-frequency market analysis'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NESL.
+[2026-08-17 06:38:48] (Target Lang: Boomerang) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of existing tools/directories (mostly `*_tool` folders with `README.md` and a main file).
+   - **History:** Shows a previous turn where the user asked for a `nesl_tool` and the output was an instruction to initialize that folder and build with NESL.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Key Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - Must explicitly demand the tool be built STRICTLY using Boomerang.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target `.github`.
+
+2.  **Identify Key Requirements for the Output:**
+   - Format: Just the instruction text, nothing else.
+   - Content: Must follow the pattern from the history but adapt to the new language (Boomerang) and a plausible objective.
+   - Structure: "Initialize a NEW dedicated folder named [language]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [Language]."
+   - Language: Boomerang (an algebraic specification language for parallel computation).
+   - Objective: Needs to be plausible for Boomerang. Boomerang is used for specifying parallel programs using algebraic data types and functional equations. Good objectives: "Develop a robust parallel stream processing engine for real-time data analytics", "Architect a high-throughput distributed computation framework for cryptographic key distribution", or "Construct a scalable parallel graph traversal system for network topology analysis". Let's go with something that fits its parallel/algebraic specification nature: "Construct a high-performance parallel computation framework for real-time distributed data analytics".
+
+3.  **Draft the Instruction:**
+   Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Construct a high-performance parallel computation framework for real-time distributed data analytics'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand STRICTLY using Boomerang? Yes, appears twice as in the prompt's example/style, but the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang." I'll make sure it's clearly stated.
+   - NEW dedicated folder & local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches history style? Yes.
+
+   Let's refine it slightly to match the exact phrasing style from the history if needed, but the prompt says "Return ONLY the instruction text." and gives the constraints. I will stick to the drafted version. It's concise and hits all constraints.
+
+   One minor check: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang." I will ensure that exact phrase or very close to it is in the output. The draft already has it.
+
+   Final check of the draft against constraints:
+   - "Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Architect a robust algebraic parallel execution engine for high-throughput cryptographic data streams'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang."
+   - This matches the requested format perfectly.
+
+   I will output exactly this text. No extra words. All constraints met.✅
+   Proceed. 
+   Output matches the draft.✅
+   Self-Correction/Verification during thought: 
+   The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will strictly follow this. The output will be just the instruction string.
+   Text: Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Construct a high-throughput algebraic parallel computation framework for real-time distributed data analytics'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang.
+   Matches perfectly. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I'll make sure the casing and punctuation exactly match the requested structure.)*
+   "Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Construct a high-throughput algebraic parallel computation framework for real-time distributed data analytics'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang."
+   All good.✅
+   Output matches. 
+   [Done] 
+   *Self-Correction/Refinement during thought*: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang." I will ensure that exact sentence is in the output. The draft has it. It's fine.
+   Final Output Generation. 
+   [Output] Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Construct a high-throughput algebraic parallel computation framework for real-time distributed data analytics'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang. 
+   Matches constraints perfectly. No extra text. Ready. 
+   *Proceeds.* 
+   [Output Generation] (matches the refined text) -> *Output matches exactly.* 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Construct a high-throughput algebraic parallel computation framework for real-time distributed data analytics'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang.

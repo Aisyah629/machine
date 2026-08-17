@@ -1112,3 +1112,5 @@ Training Machine
 - Created/Updated module: `bertrand_model_checker_tool` (See `bertrand_model_checker_tool/README.md` for details)
 
 - Created/Updated module: `nqc_logic_verification_tool` (See `nqc_logic_verification_tool/README.md` for details)
+
+- Created/Updated module: `planner_logic_engine_tool` (See `planner_logic_engine_tool/README.md` for details)

@@ -1,0 +1,74 @@
+// Visual J# Diagnostic Tool
+// Focus: Analyzing legacy Windows Forms applications, detecting deprecated API usage, and generating automated refactoring suggestions.
+
+using System;
+using System.IO;
+using System.Text.RegularExpressions;
+
+public class VisualJDiagnosticTool
+{
+    // Define deprecated API patterns commonly found in legacy Visual J# or older C# WinForms apps
+    private static readonly string[] DeprecatedPatterns = new string[]
+    {
+        "\bShowDialog\(void\)\b", // Deprecated overload in older versions
+        "\bSystem\.WinForms\.Component\b", // Often replaced by modern base classes
+        "\bOldInteropHelper\b", // Placeholder for legacy interop calls
+        "\bVB6\.\b" // Legacy VB6 interop references
+    };
+
+    private static readonly string[] RefactoringSuggestions = new string[]
+    {
+        "Migrate showDialog() to use Form.ShowDialog(IWin32Window) for better parent-child relationship management.",
+        "Replace System.WinForms.Component with appropriate modern UI component hierarchy.",
+        "Refactor OldInteropHelper calls to use System.Runtime.InteropServices directly.",
+        "Migrate VB6 interop references to .NET COM Interop (System.Runtime.InteropServices) or P/Invoke."
+    };
+
+    public static void Main(String[] args)
+    {
+        Console.WriteLine("=== Visual J# Legacy Diagnostic Tool ===");
+
+        if (args == null || args.Length == 0)
+        {
+            Console.WriteLine("Usage: diagnostic_tool <path_to_source_directory>");
+            return;
+        }
+
+        string targetDir = args[0];
+        if (!Directory.Exists(targetDir))
+        {
+            Console.WriteLine("Error: Directory not found.");
+            return;
+        }
+
+        string[] files = Directory.GetFiles(targetDir, "*.vjs", SearchOption.AllDirectories);
+        int issuesFound = 0;
+
+        foreach (string file in files)
+        {
+            string[] lines = File.ReadAllLines(file);
+            for (int i = 0; i < lines.Length; i++)
+            {
+                for (int p = 0; p < DeprecatedPatterns.Length; p++)
+                {
+                    Regex regex = new Regex(DeprecatedPatterns[p], RegexOptions.IgnoreCase);
+                    if (regex.IsMatch(lines[i]))
+                    {
+                        Console.WriteLine($"[WARN] {file} (Line {i + 1}): Found potential deprecated API usage: {DeprecatedPatterns[p]}");
+                        Console.WriteLine($"       Suggestion: {RefactoringSuggestions[p]}");
+                        issuesFound++;
+                    }
+                }
+            }
+        }
+
+        if (issuesFound == 0)
+        {
+            Console.WriteLine("Scan complete. No deprecated patterns detected.");
+        }
+        else
+        {
+            Console.WriteLine($"Scan complete. {issuesFound} deprecated usage(s) found.");
+        }
+    }
+}

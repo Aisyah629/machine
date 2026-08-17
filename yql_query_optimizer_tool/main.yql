@@ -1,0 +1,56 @@
+<query>
+  <!-- 
+    YQL Query Optimizer Tool
+    
+    This tool leverages YQL's declarative syntax to optimize web service data retrieval and transformation.
+    It demonstrates how to structure YQL queries for maximum performance and clarity.
+  -->
+  
+  <!-- Example: Optimized Web Search Query -->
+  select title, url, snippet, clickurl, cache_url
+  from web.search
+  where query="YQL Query Optimization"
+    and country="US"
+  order by relevance desc
+  limit 10;
+
+  <!-- 
+    Explanation:
+    - Selecting specific fields reduces data transfer and processing overhead.
+    - Filtering by country ensures localized results and reduces irrelevant data.
+    - Ordering by relevance and limiting results improve performance and usability.
+  -->
+
+  <!-- Example: Optimized RSS Feed Query -->
+  select title, link, description, pubDate
+  from rss
+  where url="https://example.com/rss";
+
+  <!-- 
+    Explanation:
+    - Using the 'rss' table simplifies parsing and extracting data from RSS feeds.
+    - Selecting specific fields ensures only necessary data is retrieved.
+  -->
+
+  <!-- Example: Optimized SQL Query for a Database -->
+  select id, name, email
+  from table('database')
+  where status='active'
+  order by name asc;
+
+  <!-- 
+    Explanation:
+    - Filtering by status reduces the dataset size.
+    - Ordering by name provides predictable and useful results.
+    - Selecting specific fields minimizes data transfer.
+  -->
+
+  <!-- 
+    Best Practices for YQL Query Optimization:
+    1. Always select only the fields you need.
+    2. Use filters (WHERE clauses) to reduce the dataset.
+    3. Limit the number of results (LIMIT clause) when possible.
+    4. Order results (ORDER BY clause) for predictable outputs.
+    5. Use specific tables and parameters to tailor queries to your needs.
+  -->
+</query>

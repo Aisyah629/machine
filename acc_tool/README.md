@@ -1,12 +1,12 @@
-### ACC Memory Management Simulator
+# ACC Financial Engine Tool
 
-This tool simulates a low-level memory management system using the ACC programming language. It implements a fixed-block allocator with best-fit strategy, simulating memory allocation, deallocation, and fragmentation.
+This directory contains the ACC financial engine tool, implemented strictly using the ACC programming language.
 
-#### Features:
-- Fixed-block memory model
-- Best-fit allocation strategy
-- Block tracking and status visualization
-- Fragmentation statistics
+## Usage
 
-#### Usage:
-Execute the `main.acc` file to run the simulation.
+- Navigate to the `acc_tool` directory.
+- Run the main script: `./main.acc`
+
+## Structure
+
+- `main.acc`: The core ACC implementation for financial calculations and analysis.

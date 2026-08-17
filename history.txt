@@ -48514,3 +48514,40 @@ Initialize a NEW dedicated folder named hamiltonc_shell_tool in the workspace, c
 </think>
 
 Initialize a NEW dedicated folder named espl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ESPOL.
+[2026-08-17 21:08:31] (Target Lang: SuperCollider) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built STRICTLY using the language: SuperCollider.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a large list of existing tool folders/files in a workspace. The prompt asks for a "follow-up instruction", implying I should act as an autonomous agent continuing a chain of actions or generating a task based on the previous context. However, the core instruction is clear: "Generate exactly 1 logical follow-up instruction... explicitly demand... SuperCollider... NEW dedicated folder... README.md... Return ONLY the instruction text."
+
+2.  **Draft the Instruction:**
+    *   *Draft 1 (Mental or rough text):* Initialize a NEW dedicated folder named sc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperCollider.
+    *   *Refinement on Naming:* The language is SuperCollider. Common extensions for SuperCollider source files are `.sc`. A logical folder name would be `sc_tool` or `supercollier_tool`. Looking at the existing list, names like `abap_tool`, `ada_tool`, `bash_tool` suggest a pattern of `[language_abbreviation_or_name]_tool`. `sc_tool` fits well.
+    *   *Refinement on Constraints:*
+        *   "NEW dedicated folder": Check.
+        *   "local README.md": Check.
+        *   "STRICTLY using... SuperCollider": Check.
+        *   "Return ONLY the instruction text": This means the output should not have "Here is the instruction:" or markdown code blocks wrapping the whole thing, just the text of the instruction.
+        *   "NEVER target .github": Check. The instruction focuses on the workspace root.
+
+    *   *Resulting Text:* Initialize a NEW dedicated folder named sc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperCollider.
+
+3.  **Final Review:**
+    *   Does it mention SuperCollider? Yes.
+    *   Does it mention a new folder? Yes (`sc_tool`).
+    *   Does it mention README.md? Yes.
+    *   Is it exactly one instruction? Yes.
+    *   Does it avoid .github? Yes.
+    *   Is the format correct? Yes, just the text.
+
+4.  **Construct Output:**
+    *   `Initialize a NEW dedicated folder named sc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperCollider.`
+
+This matches all criteria.
+</think>
+
+Initialize a NEW dedicated folder named sc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SuperCollider.

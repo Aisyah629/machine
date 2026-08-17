@@ -1,0 +1,108 @@
+/*
+ * Bertrand Model Checker Specification
+ * 
+ * This specification defines a formal state-transition system for model checking.
+ * It uses Bertrand's declarative logic to specify states, transitions, and invariants.
+ * The tool will verify these invariants and detect concurrency anomalies.
+ */
+
+/*
+ * Define the State Space
+ * States are represented as variables with domains.
+ */
+VAR
+    state : {INIT, RUNNING, PAUSED, STOPPED};
+    buffer : [0..10];
+    thread_count : [0..5];
+
+/*
+ * Define the Transitions
+ * Transitions define how the system moves from one state to another.
+ * Pre-conditions must be met for the transition to occur.
+ */
+TRANSTION start_system
+    PRE state = INIT;
+    POST state = RUNNING;
+    POST buffer = 0;
+    POST thread_count = 1;
+
+TRANSITION pause_system
+    PRE state = RUNNING;
+    POST state = PAUSED;
+
+TRANSITION resume_system
+    PRE state = PAUSED;
+    POST state = RUNNING;
+
+TRANSITION stop_system
+    PRE state = RUNNING OR state = PAUSED;
+    POST state = STOPPED;
+
+TRANSITION add_to_buffer
+    PRE state = RUNNING AND buffer < 10;
+    POST buffer = buffer + 1;
+
+TRANSITION remove_from_buffer
+    PRE state = RUNNING AND buffer > 0;
+    POST buffer = buffer - 1;
+
+TRANSITION spawn_thread
+    PRE state = RUNNING AND thread_count < 5;
+    POST thread_count = thread_count + 1;
+
+TRANSITION kill_thread
+    PRE state = RUNNING AND thread_count > 1;
+    POST thread_count = thread_count - 1;
+
+/*
+ * Define Invariants
+ * Invariants are properties that must always hold true in any reachable state.
+ */
+INVARIANT buffer_non_negative
+    ALL states: buffer >= 0;
+
+INVARIANT buffer_non_positive
+    ALL states: buffer <= 10;
+
+INVARIANT thread_count_range
+    ALL states: thread_count >= 1 AND thread_count <= 5;
+
+INVARIANT state_validity
+    ALL states: state IN {INIT, RUNNING, PAUSED, STOPPED};
+
+INVARIANT only_running_adds
+    ALL states:
+        IF state = RUNNING THEN
+            EXISTS transition : add_to_buffer OR remove_from_buffer OR spawn_thread OR kill_thread;
+        ENDIF;
+
+INVARIANT no_running_from_init
+    ALL states:
+        IF state = INIT THEN
+            NOT EXISTS transition : pause_system OR resume_system OR stop_system;
+        ENDIF;
+
+/*
+ * Concurrency Anomaly Detection
+ * Bertrand can detect potential concurrency issues based on the defined transitions and state variables.
+ */
+CHECK_DEADLOCK
+    /*
+     * A deadlock occurs if the system reaches a state where no transitions are enabled.
+     */
+    DEFINE deadlock_state AS
+        NOT EXISTS transition : start_system OR pause_system OR resume_system OR stop_system OR add_to_buffer OR remove_from_buffer OR spawn_thread OR kill_thread;
+    ASSERT deadlock_state = FALSE;
+
+CHECK_RACE_CONDITION
+    /*
+     * A race condition occurs if the final state depends on the relative timing of concurrent transitions.
+     * For simplicity, we assume a race condition if multiple transitions can modify the same variable concurrently.
+     */
+    DEFINE modifying_buffer AS add_to_buffer OR remove_from_buffer;
+    DEFINE modifying_thread_count AS spawn_thread OR kill_thread;
+    ASSERT NOT (modifying_buffer INTERSECTS modifying_thread_count);
+
+/*
+ * End of Specification
+ */

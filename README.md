@@ -1206,3 +1206,5 @@ Training Machine
 - Created/Updated module: `mouse_tool` (See `mouse_tool/README.md` for details)
 
 - Created/Updated module: `pawn_tool` (See `pawn_tool/README.md` for details)
+
+- Created/Updated module: `strand_tool` (See `strand_tool/README.md` for details)

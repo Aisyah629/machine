@@ -1,26 +1,56 @@
-# Tom Language Text Processing Engine
+# TOM Tool
 
-## Overview
-This tool implements a high-performance text processing and pattern matching engine using the Tom programming language. Tom is a declarative language focused on term rewriting and pattern matching, making it ideal for text manipulation tasks.
+## Description
 
-## Features
-- High-performance pattern matching algorithms
-- Text processing pipelines
-- Regular expression alternatives using Tom patterns
-- Declarative rule-based transformations
+This tool implements a high-performance template transformation system for dynamic web application generation. It uses the TOM programming language to define templates and transformation rules, enabling the generation of complex web applications from a simple declarative specification.
 
 ## Usage
-To run the engine, execute the following command in the tom_tool directory:
-```
-tom main.tom
+
+### Example TOM Template
+
+```tom
+template WebPage {
+    header {
+        title "Welcome to My Web App"
+        nav {
+            link href="/about" "About"
+            link href="/contact" "Contact"
+        }
+    }
+    body {
+        section id="main" {
+            h1 "Main Content"
+            p "This is the main content of the page."
+        }
+    }
+    footer {
+        p "Copyright 2023 My Web App"
+    }
+}
+
+transform WebPage to HTML {
+    output file="index.html"
+}
 ```
 
-## Implementation Details
-The engine uses Tom's powerful pattern matching capabilities to define text processing rules declaratively. It supports various text transformation operations and provides efficient matching strategies.
+### Running the Tool
 
-## Dependencies
-- Tom Programming Language Runtime
-- Standard Tom libraries
+1. Save the above TOM template to a file named `webpage.tom`.
+2. Run the TOM tool:
+
+```sh
+./tom_tool main.tom
+```
+
+This will generate an `index.html` file with the transformed content.
+
+## Features
+
+- **Declarative Templates**: Define your web pages using a simple, readable syntax.
+- **Transformation Rules**: Customize how templates are converted to the target format.
+- **Dynamic Content**: Easily integrate dynamic data into your templates.
+- **High Performance**: Optimized for fast template processing, even for large applications.
 
 ## License
-MIT License
+
+MIT

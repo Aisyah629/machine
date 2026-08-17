@@ -39035,3 +39035,37 @@ Final string: "Initialize a NEW dedicated folder named sa_c_tool in the workspac
 </think>
 
 Initialize a NEW dedicated folder named sa_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SA-C. Focus entirely on this new objective: 'Implement a formal verification framework for autonomous flight control systems'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SA-C.
+[2026-08-17 06:04:00] (Target Lang: TOM) The user wants a follow-up instruction for a new tool.
+The language requested is "TOM".
+I need to:
+1.  Identify the tool name. Pattern is `_tool`. So `tom_tool`.
+2.  Check if `tom_tool` exists. Scanning the list... `./tom_tool` exists in the list.
+    Wait, the prompt says "If building a new tool...".
+    Looking at the list: `./tom_tool ./tom_tool/README.md ./tom_tool/main.tom`.
+    It exists.
+    However, the prompt says "Generate exactly 1 logical follow-up instruction." and "If building a new tool...".
+    This implies the user might want to treat `tom_tool` as a new target or perhaps the user is unaware it exists, or the instruction template forces a new creation.
+    Usually, in these prompts, if the tool exists, the instruction might be to update it, OR the user expects a new folder.
+    But the prompt explicitly says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder".
+    This suggests that if I follow the logic of "Generate a follow-up instruction", I should probably assume the user wants a new tool or is specifying a context where a new tool is created.
+    However, `tom_tool` is already there.
+    Maybe the user wants a variation? Or maybe the instruction should just be for `tom_tool` regardless of existence, effectively overwriting or adding to it?
+    Let's look at the example in the history: The history shows a request for `d_tool` which exists (`./d_tool` is in the list). The history response was "Initialize a NEW dedicated folder named d_tool...".
+    So the pattern is: Even if it exists, the instruction asks to Initialize a NEW dedicated folder named `xxx_tool`.
+    So I should follow that pattern.
+    Name: `tom_tool`.
+    Language: TOM.
+    TOM is a declarative programming language, often associated with configuration or transformation. A good objective would be "Implement a declarative configuration management engine for distributed cloud infrastructures" or "Build a high-performance template transformation system for web application generation".
+    Let's go with "Implement a high-performance template transformation system for dynamic web application generation".
+    Structure: "Initialize a NEW dedicated folder named tom_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TOM. Focus entirely on this new objective: 'Implement a high-performance template transformation system for dynamic web application generation'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TOM."
+    Check constraints:
+    - Explicitly demand language TOM.
+    - New dedicated folder `tom_tool`.
+    - Local README.md.
+    - Focus on objective.
+    - Return ONLY instruction text.
+    - Never target .github.
+    Result looks solid.
+</think>
+
+Initialize a NEW dedicated folder named tom_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TOM. Focus entirely on this new objective: 'Implement a high-performance template transformation system for dynamic web application generation'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TOM.

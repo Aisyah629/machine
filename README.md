@@ -968,3 +968,5 @@ Training Machine
 - Created/Updated module: `d_tool` (See `d_tool/README.md` for details)
 
 - Created/Updated module: `sa_c_tool` (See `sa_c_tool/README.md` for details)
+
+- Created/Updated module: `tom_tool` (See `tom_tool/README.md` for details)

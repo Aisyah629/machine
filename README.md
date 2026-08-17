@@ -956,3 +956,5 @@ Training Machine
 - Created/Updated module: `pl11_tool` (See `pl11_tool/README.md` for details)
 
 - Created/Updated module: `gpss_queue_analysis_tool` (See `gpss_queue_analysis_tool/README.md` for details)
+
+- Created/Updated module: `java_queue_analyzer_tool` (See `java_queue_analyzer_tool/README.md` for details)

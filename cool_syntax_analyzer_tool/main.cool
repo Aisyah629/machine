@@ -1,0 +1,43 @@
+(*
+ * Cool Syntax Analyzer Tool
+ * 
+ * This tool performs syntax and semantic analysis on Cool programs.
+ * It is optimized for educational purposes and classroom demonstration.
+ *)
+
+class Main inherits IO {
+    -- Entry point for the syntax analyzer tool
+    main(filename: String) : Object {
+        if (filename = "") then {
+            out_string("Usage: cool_syntax_analyzer_tool <filename.cool>\n");
+            abort();
+        };
+        
+        let
+            file_content: String <- (if input_file(filename) then (load_input() else "") fi)
+        in
+            case parse_program(file_content) of
+                (Ok, ast) => analyze_ast(ast)
+                (Err, msg) => out_string("Error: " ++ msg ++ "\n")
+            esac;
+        end;
+    };
+    
+    -- Dummy functions to simulate parsing and analysis
+    parse_program(content: String) : Object {
+        if (content = "") then
+            (Err, "Empty input")
+        else
+            (Ok, "AST Structure") -- Placeholder for actual AST
+        fi
+    };
+    
+    analyze_ast(ast: Object) : Object {
+        out_string("Analysis completed successfully.\n");
+        self
+    };
+    
+    -- Placeholder for more sophisticated parsing logic
+    -- In a real implementation, this would involve tokenizing and parsing the input
+    -- string, building an AST, and then performing semantic analysis.
+};

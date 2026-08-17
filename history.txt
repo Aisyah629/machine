@@ -37942,3 +37942,28 @@ Result: `Initialize a NEW dedicated folder named model_204_tool in the workspace
 </think>
 
 Initialize a NEW dedicated folder named model_204_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Model 204. Focus entirely on this new objective: 'Develop a robust data query and reporting engine for legacy mainframe systems.'. You MUST write code for this task strictly using this exact programming language: Model 204.
+[2026-08-17 03:31:44] (Target Lang: GameMonkey Script) Thinking (Mental Representation):
+1.  **Analyze Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using `GameMonkey Script`.
+    *   Constraint 2: If building a new tool (which it is), place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local `README.md` inside the new folder.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Constraint 6: Context implies a logical follow-up. Previous was `model_204_tool`. `gamemonkey_tool` already exists in the workspace list (`./gamemonkey_tool`). However, usually, in this pattern, if a tool folder exists, the instruction might still be valid if the user wants a specific new tool or an update, but the prompt says "Initialize a NEW dedicated folder". If `gamemonkey_tool` exists, I should check if the user expects a *new* folder. The prompt says "Initialize a NEW dedicated folder named...". If the name is fixed or suggested? The prompt doesn't give a name. It says "place it in a NEW dedicated folder". Usually, the instruction should specify the folder name. If `gamemonkey_tool` exists, maybe the instruction should be for a specific new folder like `gamemonkey_ai_tool` or just `gamemonkey_script_tool`? Or perhaps the user considers `gamemonkey_tool` as the target and wants a *new* tool inside it? No, "NEW dedicated folder" implies a top-level folder. Since `gamemonkey_tool` exists, using that name might violate "NEW". However, often these prompts expect the AI to name the folder based on the language. If the language is "GameMonkey Script", the folder might be `gamemonkey_script_tool`. Or the user might not notice `gamemonkey_tool` exists. To be safe, I should propose a distinct name, e.g., `gamemonkey_script_tool` or `gm_script_tool`. Alternatively, the instruction might just say "Initialize a NEW dedicated folder named gamemonkey_script_tool". The constraint is to generate the instruction text. I will choose a unique name like `gamemonkey_script_tool` to ensure it's new.
+    *   Constraint 7: Objective. The previous objective was "Develop a robust data query and reporting engine for legacy mainframe systems." A logical follow-up could be something related to scripting, gaming, or simulation. GameMonkey Script is often used in game development. Objective: "Create a dynamic game simulation engine".
+    *   Drafting Instruction: "Initialize a NEW dedicated folder named gamemonkey_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GameMonkey Script. Focus entirely on this new objective: 'Create a dynamic game simulation engine'. You MUST write code for this task strictly using this exact programming language: GameMonkey Script."
+    *   Review:
+        *   Exactly 1 instruction? Yes.
+        *   Explicit demand for GameMonkey Script? Yes.
+        *   NEW dedicated folder? Yes (`gamemonkey_script_tool` is likely new or distinct from `gamemonkey_tool`).
+        *   Local README.md? Yes.
+        *   Return ONLY instruction text? Yes.
+        *   NEVER target .github? Yes.
+        *   Logical follow-up? Yes, shifts from mainframe DB to game simulation, distinct domain.
+
+    *   Refinement: The workspace lists `./gamemonkey_tool`. The user might want to use that name? Usually, the prompt "Initialize a NEW dedicated folder" implies the AI should pick a name or the instruction picks the name. I'll use `gamemonkey_script_tool`.
+    *   Result text: `Initialize a NEW dedicated folder named gamemonkey_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GameMonkey Script. Focus entirely on this new objective: 'Create a dynamic game simulation engine'. You MUST write code for this task strictly using this exact programming language: GameMonkey Script.`
+</think>
+
+Initialize a NEW dedicated folder named gamemonkey_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GameMonkey Script. Focus entirely on this new objective: 'Create a dynamic game simulation engine'. You MUST write code for this task strictly using this exact programming language: GameMonkey Script.

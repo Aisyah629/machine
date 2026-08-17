@@ -1094,3 +1094,5 @@ Training Machine
 - Created/Updated module: `goo_stream_transformer_tool` (See `goo_stream_transformer_tool/README.md` for details)
 
 - Created/Updated module: `plexil_autonomous_mission_planner` (See `plexil_autonomous_mission_planner/README.md` for details)
+
+- Created/Updated module: `qpl_declarative_workflow_engine_tool` (See `qpl_declarative_workflow_engine_tool/README.md` for details)

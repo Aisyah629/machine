@@ -1,27 +1,30 @@
 # Oxygene Tool
 
 ## Overview
-The Oxygene Tool is a dedicated environment for writing and executing Oxygene code. Oxygene is a modern Object Pascal language that targets the .NET and Mono platforms, allowing for cross-platform development with a syntax familiar to Delphi and Free Pascal developers.
+The Oxygene Tool is a dedicated utility designed for data extraction, parsing, and file manipulation. It leverages the strong typing and object-oriented features of the Oxygene programming language (a modern language built on the Object Pascal ecosystem, primarily targeting .NET and cross-platform environments) to provide robust, type-safe, and maintainable code for processing structured and semi-structured data.
 
 ## Features
-- **Cross-Platform Support**: Compile Oxygene code to target .NET, Mono, and native platforms.
-- **Object-Oriented Paradigm**: Leverage full OOP capabilities including classes, interfaces, generics, and LINQ.
-- **Interoperability**: Seamlessly interact with C# and other .NET languages.
-- **Modern Syntax**: Supports modern language features while maintaining the readability and structure of Object Pascal.
+- **Data Extraction**: Efficiently reads and parses CSV, JSON, and XML files.
+- **Transformation Engine**: Applies configurable mapping rules to restructure and normalize data.
+- **Cross-Platform Compatibility**: Built on the .NET/C# compatible Oxygene standard library.
+- **Modular Design**: Component-based architecture for easy extension and testing.
 
 ## Usage
-1. Place your main Oxygene script in `main.pas`.
-2. Execute the tool to compile and run the script using the Oxygene compiler.
-3. Review the output and any compilation errors directly in the terminal.
+1. Clone or download the source code.
+2. Open the project in your preferred Oxygene IDE (e.g., RemObjects Oxygene or IDE-integrated .NET environments).
+3. Build the project using the standard build configuration.
+4. Run the executable to process sample data files located in the `./data/` directory.
 
 ## Project Structure
-- `main.pas`: The primary Oxygene source file.
+- `main.oxy`: Core application logic, file handling, and parsing engine.
 - `README.md`: This documentation file.
 
-## Requirements
-- Oxygene Compiler (RemObjects Oxygene)
-- .NET Framework or Mono SDK
-- Cross-platform development environment
+## Dependencies
+- .NET Framework 4.8+ or .NET Core 3.1+ / .NET 5+
+- Standard Oxygene Runtime Libraries
 
 ## License
-MIT
+MIT License
+
+## Author
+Autonomous AI Polyglot Software Engineer

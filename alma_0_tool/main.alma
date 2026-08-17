@@ -1,0 +1,46 @@
+MODULE main;
+
+FROM IO IMPORT writeln;
+FROM Lists IMPORT List, cons, nil, isEmpty, head, tail;
+FROM Math IMPORT gcd, factorial;
+
+(* Algorithmic Specification and Construction using Alma-0 *)
+PROCEDURE computeGCD(a, b : Integer) : Integer;
+VAR result : Integer;
+BEGIN
+    result := gcd(a, b);
+    writeln("The Greatest Common Divisor of ", a, " and ", b, " is: ", result);
+    RETURN result;
+END computeGCD;
+
+PROCEDURE computeFactorial(n : Integer) : Integer;
+VAR res : Integer;
+BEGIN
+    IF n < 0 THEN
+        writeln("Error: Factorial is not defined for negative numbers.");
+        res := -1;
+    ELSE
+        res := factorial(n);
+        writeln("The factorial of ", n, " is: ", res);
+    END;
+    RETURN res;
+END computeFactorial;
+
+PROCEDURE main() : Unit;
+VAR x, y, n : Integer;
+BEGIN
+    writeln("--- Alma-0 Tool Execution Started ---");
+    
+    x := 48;
+    y := 18;
+    computeGCD(x, y);
+    
+    n := 5;
+    computeFactorial(n);
+    
+    writeln("--- Alma-0 Tool Execution Finished ---");
+END main;
+
+BEGIN
+    main();
+END main.

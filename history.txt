@@ -37967,3 +37967,85 @@ Initialize a NEW dedicated folder named model_204_tool in the workspace, create 
 </think>
 
 Initialize a NEW dedicated folder named gamemonkey_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GameMonkey Script. Focus entirely on this new objective: 'Create a dynamic game simulation engine'. You MUST write code for this task strictly using this exact programming language: GameMonkey Script.
+[2026-08-17 04:08:55] (Target Lang: Bash) The user wants a single logical follow-up instruction.
+The constraint requires the new tool to be built STRICTLY using the exact programming language: Bash.
+If building a new tool, it must be placed in a NEW dedicated folder and have a local `README.md`.
+Return ONLY the instruction text.
+NEVER target the `.github` directory.
+
+Looking at the history, the previous instruction mentioned `gamemonkey_tool`.
+The current workspace has many tools.
+I need to create a new instruction for a Bash tool.
+The folder name should be new and related to Bash. `bash_automation_tool` or `bash_system_tool` or just `bash_tool`.
+Wait, `bash_tool` already exists in the workspace list (`./bash_tool`).
+So I should choose a distinct name like `bash_system_tool` or `bash_admin_tool` or `bash_workflow_tool`.
+Let's use `bash_system_tool`.
+The programming language is Bash.
+The objective should be a logical follow-up or a distinct new objective involving Bash.
+Bash is good for system administration, automation, pipelines.
+Let's propose an objective like "Develop a robust system automation and monitoring script suite".
+Instruction format: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Bash. Focus entirely on this new objective: '[objective]'. You MUST write code for this task strictly using this exact programming language: Bash."
+
+Check constraints:
+1. Exactly 1 instruction.
+2. Explicit demand for Bash.
+3. NEW dedicated folder.
+4. Local README.md.
+5. Return ONLY instruction text.
+6. NEVER target .github.
+7. Logical follow-up? Previous was GameMonkey script simulation. Bash for system automation is a good shift.
+
+Draft:
+Initialize a NEW dedicated folder named bash_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Bash. Focus entirely on this new objective: 'Develop a robust system automation and monitoring script suite'. You MUST write code for this task strictly using this exact programming language: Bash.
+
+Check workspace list: `./bash_tool` exists. `./bash_system_tool` does not appear to exist in the list (only `bash_tool` and `bourne_shell_tool`). So `bash_system_tool` is safe.
+The instruction text should be precise.
+
+Final check of the prompt requirements:
+"Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Bash. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+The draft looks compliant.
+I will output the draft text.
+One detail: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Bash."
+My draft has "STRICTLY using this exact programming language: Bash." twice. That's fine, emphasizes it.
+I will format it as a single string.
+Ready. 
+Output matches the draft.
+Proceeding. 
+Self-Correction/Refinement during thought: 
+The prompt history shows `gamemonkey_tool` existed. The previous instruction used `gamemonkey_script_tool`. I will stick with `bash_system_tool`.
+The objective "Develop a robust system automation and monitoring script suite" fits Bash well.
+The instruction text will be exactly one sentence/block.
+All constraints met.
+Output generation. 
+`Initialize a NEW dedicated folder named bash_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Bash. Focus entirely on this new objective: 'Develop a robust system automation and monitoring script suite'. You MUST write code for this task strictly using this exact programming language: Bash.`
+Matches perfectly.✅
+Proceeds. 
+Output Generation. 
+[Final Check]
+- Exactly 1 instruction? Yes.
+- Explicitly demand Bash? Yes.
+- NEW dedicated folder? Yes (`bash_system_tool`).
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+- Logical follow-up? Yes, shifts from game simulation to system automation.
+All good. 
+Output matches response. 
+[Done] 
+`Initialize a NEW dedicated folder named bash_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Bash. Focus entirely on this new objective: 'Develop a robust system automation and monitoring script suite'. You MUST write code for this task strictly using this exact programming language: Bash.`
+Wait, let's verify the exact wording constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Bash."
+My draft includes that phrase.
+It's ready. 
+Output matches. 
+Proceeds. 
+[Output Generation] -> *Proceeds*
+*(Self-Correction/Note during generation)*: I should ensure the folder name is definitely new. `bash_system_tool` is not in the list. `bash_tool` is. So it's safe.
+The prompt says "Return ONLY the instruction text."
+I will output just the text.
+Done. 
+[Output] Initialize a NEW dedicated folder named bash_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Bash. Focus entirely on this new objective: 'Develop a robust system automation and monitoring script suite'. You MUST write code for this task strictly using this exact programming language: Bash.
+*(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named bash_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Bash. Focus entirely on this new objective: 'Develop a robust system automation and monitoring script suite'. You MUST write code for this task strictly using this exact programming language: Bash.

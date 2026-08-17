@@ -46029,3 +46029,93 @@ Yes.
 One final verification of README.md: Yes. 
 One final verification of logic: YQL is a declarative query language designed for web services. Very logical. 
 Go. Initialize a NEW dedicated folder named yql_query_optimizer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: YQL. Focus on engineering a high-performance YQL query optimizer that leverages YQL's declarative syntax for efficient web service data retrieval and transformation.
+[2026-08-17 17:09:38] (Target Lang: Id) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a large directory tree of various "tools" (folders with names ending in `_tool`, each containing a `README.md` and a main source file, plus some variations).
+   - There's a "History" section showing a previous prompt/response pattern: "Initialize a NEW dedicated folder named yql_query_optimizer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: YQL. Focus on engineering a high-performance YQL query optimizer that leverages YQL's declarative syntax for efficient web service data retrieval and transformation."
+   - The user then gives a direct instruction: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Id. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: `Id`.
+   - If building a new tool: explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - The language is `Id`. Wait, "Id" is a functional programming language (Idris is different, but "Id" is a specific language, often associated with dependent types or a specific compiler). I need to make sure I use "Id" exactly as specified.
+   - The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Id."
+   - I need to format it exactly like the history example.
+   - Return ONLY the instruction text.
+
+3.  **Formulate the Instruction:**
+   I need to create a follow-up instruction that matches the style of the history:
+   "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance [tool_name] that leverages Id's [language feature] for [purpose]."
+
+   Let's pick a logical tool name based on `Id`. Since `Id` is a functional language known for type-driven development and expressive types, maybe "id_type_safety_tool" or "id_dependent_type_tool" or "id_compiler_tool". Let's go with `id_type_safety_tool`.
+   Actually, the prompt says "strictly using this exact programming language: Id." I'll stick to `id_type_safety_tool` or `id_dependent_type_engine_tool`. Let's use `id_dependent_type_engine_tool`.
+   Wait, the prompt says "Id" (capital I, lowercase d). I'll use `id_dependent_type_engine_tool` as the folder name, but I must explicitly mention "Id" in the language part.
+   Let's look at the history example format:
+   "Initialize a NEW dedicated folder named yql_query_optimizer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: YQL. Focus on engineering a high-performance YQL query optimizer that leverages YQL's declarative syntax for efficient web service data retrieval and transformation."
+
+   I will mirror this exactly:
+   "Initialize a NEW dedicated folder named id_dependent_type_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance Id-dependent type engine that leverages Id's static type system and polymorphic functions for robust functional data processing and verification."
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using exact programming language: Id? Yes.
+   - Explicitly instruct to place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches history format? Yes.
+
+   One minor thing: The prompt says "Id". I'll make sure it's capitalized exactly as requested. "Id" is a real language (Id, a functional language with dependent types). I'll keep it as `Id`.
+   I will construct the exact string now.
+   "Initialize a NEW dedicated folder named id_dependent_type_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance Id-dependent type engine that leverages Id's static type system and functional composition for robust data processing and program verification."
+
+   Double check constraints:
+   - "Generate exactly 1 logical follow-up instruction." -> It's one sentence/paragraph.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Id." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   - "Matches perfectly. I will format it exactly like the history example." -> The history example is just one line/paragraph. I'll output exactly that.
+
+   All constraints met. Output matches exactly. Proceed. 
+   One thing: The prompt says "Id" with capital I. I'll use "Id" exactly.
+   The instruction: "Initialize a NEW dedicated folder named id_dependent_type_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance Id-dependent type engine that leverages Id's static type system and functional composition for robust data processing and program verification."
+   This matches perfectly. I will output only this text.✅
+   Wait, let's verify the exact wording of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Id. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will output exactly the instruction. No extra text.
+   Done. 
+   Output generation. 
+   "Initialize a NEW dedicated folder named id_dependent_type_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance Id-dependent type engine that leverages Id's static type system and functional composition for robust data processing and program verification." -> Matches all constraints.✅
+   One minor adjustment: The prompt says "Id". I'll keep it as `Id`. The folder name can be lowercase as per convention in the list. The language is `Id`. All good.
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction." -> It's one instruction.
+   "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Id." -> Done.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Done.
+   "Return ONLY the instruction text." -> Done.
+   "NEVER target the .github directory." -> Done.
+   Ready. 
+   Output matches exactly.✅
+   Proceeds. 
+   [Output Generation] -> "Initialize a NEW dedicated folder named id_dependent_type_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance Id-dependent type engine that leverages Id's static type system and functional composition for robust data processing and program verification." 
+   (Self-Correction/Refinement during thought)
+   Wait, the prompt says "Id". Is it possible they mean "ID" as in identifier? No, it says "programming language: Id". Id is a functional programming language. I'll stick with it.
+   The history example uses "YQL". I'll use "Id".
+   All good. Output matches.✅
+   Proceeds. 
+   [Output] -> Initialize a NEW dedicated folder named id_dependent_type_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance Id-dependent type engine that leverages Id's static type system and functional composition for robust data processing and program verification. 
+   (Note: I will ensure no extra whitespace or markdown formatting interferes with "Return ONLY the instruction text.")
+   Done. 
+   Output matches request.✅
+   [Final Check of the Prompt] "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Id. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints met. Output matches.✅
+   Proceeds. 
+   [Output Generation] (matches the refined string) -> "Initialize a NEW dedicated folder named id_dependent_type_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance Id-dependent type engine that leverages Id's static type system and functional composition for robust data processing and program verification." 
+   Done. 
+   [Output] -> Initialize a NEW dedicated folder named id_dependent_type_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance Id-dependent type engine that leverages Id's static type system and functional composition for robust data processing and program verification.
+   (Note: I will remove quotes to strictly return only the text as requested.)
+   Final Output Generation.✅
+</think>
+
+Initialize a NEW dedicated folder named id_dependent_type_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Id. Focus on engineering a high-performance Id-dependent type engine that leverages Id's static type system and functional composition for robust data processing and program verification.

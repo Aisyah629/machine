@@ -926,3 +926,5 @@ Training Machine
 - Created/Updated module: `./opal_tool` (See `./opal_tool/README.md` for details)
 
 - Created/Updated module: `oxygene_tool` (See `oxygene_tool/README.md` for details)
+
+- Created/Updated module: `lithe_tool` (See `lithe_tool/README.md` for details)

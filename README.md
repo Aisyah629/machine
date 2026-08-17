@@ -918,3 +918,5 @@ Training Machine
 - Created/Updated module: `spin_tool` (See `spin_tool/README.md` for details)
 
 - Created/Updated module: `mesa_tool` (See `mesa_tool/README.md` for details)
+
+- Created/Updated module: `./chomski_tool` (See `./chomski_tool/README.md` for details)

@@ -41874,3 +41874,63 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named tex_typesetting_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TeX. Focus entirely on this new objective: 'Develop a robust document compilation engine with advanced macro expansion and automated cross-referencing.'
+[2026-08-17 11:14:44] (Target Lang: Opa) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of directories/files representing various programming language tools (e.g., `./c_tool`, `./python_ml_tool`, `./tex_typesetting_engine_tool` is mentioned in the history but not in the initial list, wait, the prompt says "History: ... Initialize a NEW dedicated folder named tex_typesetting_engine_tool ... Generate exactly 1 logical follow-up instruction."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Opa.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+   - **Format:** Follow the pattern from the history: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Opa. Focus entirely on this new objective: '[objective]'"
+
+2.  **Identify Key Requirements:**
+   - Language: Opa
+   - Folder: NEW dedicated folder, e.g., `opa_web_framework_tool` (Opa is known for web development, so something web/framework related makes sense)
+   - Local README.md: Must be mentioned
+   - Objective: Needs to be specific and logical for Opa
+   - Output: ONLY the instruction text
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named opa_web_application_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Opa. Focus entirely on this new objective: 'Develop a secure full-stack web application framework with integrated database handling and automatic type checking.'
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Opa? Yes.
+   - Explicitly instruct NEW dedicated folder + README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches history format? Yes.
+
+   Let's refine to match the exact phrasing pattern from the prompt's history:
+   "Initialize a NEW dedicated folder named opa_web_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Opa. Focus entirely on this new objective: 'Develop a secure full-stack web application framework with integrated database handling and automatic type checking.'"
+
+   All constraints met. Output matches exactly. Proceeds.✅
+   One minor check: The prompt says "Generate exactly 1 logical follow-up instruction." and gives the exact template. I will just output that single string. No extra text.
+   Ready. 
+   Output generation. 
+   `Initialize a NEW dedicated folder named opa_web_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Opa. Focus entirely on this new objective: 'Develop a secure full-stack web application framework with integrated database handling and automatic type checking.'` -> Matches perfectly.✅
+   Proceeds. 
+   [Output Generation] -> *Self-Correction/Verification during thought*: 
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Opa. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will strictly follow the requested format.
+   Text: Initialize a NEW dedicated folder named opa_web_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Opa. Focus entirely on this new objective: 'Develop a secure full-stack web application framework with integrated database handling and automatic type checking.'
+   All good.✅
+   Output matches.✅
+   Proceeds. 
+   [Final Check of the Prompt]
+   "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Opa. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Matches perfectly. Output is just the instruction string. No extra words.✅
+   Done. 
+   Output Generation. 
+   `Initialize a NEW dedicated folder named opa_web_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Opa. Focus entirely on this new objective: 'Develop a secure full-stack web application framework with integrated database handling and automatic type checking.'`✅
+   [Done] 
+   *Self-Correction/Note during generation prep*: I should make sure the folder name ends with `_tool` to match the workspace convention, and the language is exactly `Opa`. The prompt history shows `aimms_advanced_optimizer_tool`. I'll use `opa_web_framework_tool`. All good. 
+   Proceeds. 
+   [Output] -> *Proceeds* ✅
+</think>
+
+Initialize a NEW dedicated folder named opa_web_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Opa. Focus entirely on this new objective: 'Develop a secure full-stack web application framework with integrated database handling and automatic type checking.'

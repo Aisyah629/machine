@@ -1064,3 +1064,5 @@ Training Machine
 - Created/Updated module: `dataflex_tool` (See `dataflex_tool/README.md` for details)
 
 - Created/Updated module: `vbnet_tool` (See `vbnet_tool/README.md` for details)
+
+- Created/Updated module: `gpss_advanced_tool` (See `gpss_advanced_tool/README.md` for details)

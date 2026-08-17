@@ -1,0 +1,71 @@
+<!-- BPEL Process Definition: main.bpel -->
+<!-- BPEL 2.0 Orchestration Template for Enterprise Workflow Automation -->
+
+<process xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+         xmlns:ns="http://example.com/bsm"
+         name="BpelOrchestrationTool"
+         targetNamespace="http://example.com/bsm" 
+         partnerLinkEndpoints="bpel.xml">
+
+    <partnerLinks>
+        <partnerLink name="client" partnerLinkType="ns:BpelOrchestrationTool"
+                     myRole="BpelOrchestrationToolProvider"/>
+        <partnerLink name="orderService" partnerLinkType="ns:OrderServicePortType"/>
+    </partnerLinks>
+
+    <variables>
+        <variable name="request" messageType="ns:ProcessOrderRequest"/>
+        <variable name="response" messageType="ns:ProcessOrderResponse"/>
+        <variable name="orderResult" messageType="ns:OrderResult"/>
+    </variables>
+
+    <!-- WS-4 Compliance & Fault Handling Definitions -->
+    <faultHandlers>
+        <catchAll faultName="ns:OrchestrationFault">
+            <sequence>
+                <assign name="SetFaultResponse">
+                    <copy>
+                        <from expression="'Orchestration failed at runtime.'"/>
+                        <to variable="response" part="payload"/>
+                    </copy>
+                </assign>
+                <throw faultName="ns:OrchestrationFault"/>
+            </sequence>
+        </catchAll>
+    </faultHandlers>
+
+    <sequence name="MainSequence">
+        <!-- Receive request from client -->
+        <receive name="ReceiveRequest" partnerLink="client" portType="ns:BpelOrchestrationTool"
+                 operation="processOrder" variable="request" createInstance="yes"/>
+
+        <!-- Invoke Order Service -->
+        <invoke name="InvokeOrderService" partnerLink="orderService" portType="ns:OrderServicePortType"
+                operation="submitOrder" inputVariable="request" outputVariable="orderResult"/>
+
+        <!-- Process Results -->
+        <switch name="EvaluateResult">
+            <case condition="$orderResult/payload/status = 'APPROVED'">
+                <assign name="SetApprovedResponse">
+                    <copy>
+                        <from expression="$orderResult/payload/confirmationId"/>
+                        <to variable="response" part="confirmationId"/>
+                    </copy>
+                </assign>
+            </case>
+            <default>
+                <assign name="SetDeniedResponse">
+                    <copy>
+                        <from expression="$orderResult/payload/reasonCode"/>
+                        <to variable="response" part="denialReason"/>
+                    </copy>
+                </assign>
+            </default>
+        </switch>
+
+        <!-- Reply to client -->
+        <reply name="ReplyToClient" partnerLink="client" portType="ns:BpelOrchestrationTool"
+               operation="processOrder" variable="response"/>
+    </sequence>
+</process>

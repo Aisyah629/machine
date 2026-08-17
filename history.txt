@@ -46291,3 +46291,65 @@ Initialize a NEW dedicated folder named msl_development_tool in the workspace, c
 </think>
 
 Initialize a NEW dedicated folder named csp_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CSP. Focus on engineering a robust concurrency verification environment that utilizes CSP's formal process algebra and synchronous communication model to facilitate safe multi-threaded system design and automated deadlock detection.
+[2026-08-17 18:00:50] (Target Lang: BPEL) Thinking Process:
+1.  **Analyze User Input:**
+   - Input history/context: The user provided a long list of workspace files, history of previous instructions (mentioning `csp_verification_tool`, CSP language, etc.), and a specific prompt at the end.
+   - The prompt at the end: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: BPEL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - Constraints:
+     - Generate exactly 1 logical follow-up instruction.
+     - Explicitly demand the new tool be built STRICTLY using BPEL.
+     - Explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Identify Key Requirements for the Output:**
+   - Must be a single instruction.
+   - Must mention BPEL explicitly and demand strict use of it.
+   - Must mention creating a new dedicated folder.
+   - Must mention creating a local README.md inside that folder.
+   - Must not mention `.github`.
+   - Must return ONLY the text of the instruction.
+
+3.  **Draft Construction:**
+   "Initialize a NEW dedicated folder named bpel_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL. Focus on engineering a robust business process execution environment that utilizes BPEL's orchestration capabilities and WS-4 standards to facilitate safe multi-threaded system design and automated deadlock detection." -> Wait, I should keep the focus on BPEL's actual domain (business process orchestration, workflow automation) rather than copying the CSP concurrency focus, but I can adapt the structure. Let's make it precise.
+   Let's follow the exact phrasing style from the example in the history: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL. Focus on engineering a robust [domain focus] that utilizes BPEL's [key features] to facilitate [goals]."
+
+   Draft: Initialize a NEW dedicated folder named bpel_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL. Focus on engineering a robust business process orchestration environment that utilizes BPEL's XML-based process definition and WS-4 compliance to facilitate automated workflow management and reliable service integration.
+
+   Check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand STRICTLY BPEL? Yes.
+   - NEW dedicated folder & local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Logical follow-up? Yes, follows the pattern of the previous tool creation instructions.
+
+   Let's refine it to closely match the prompt's requested structure and tone.
+   "Initialize a NEW dedicated folder named bpel_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL. Focus on engineering a robust business process automation environment that utilizes BPEL's standardized XML orchestration syntax and WS-4 compliance to facilitate reliable service integration and dynamic workflow management."
+
+   All constraints met. Output matches exactly. I will output just that text. No extra words.
+   One minor check: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: BPEL." I have that.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I have that.
+   "Return ONLY the instruction text." I will.
+   "NEVER target the .github directory." I won't.
+   Ready.✅
+   Output generation. 
+   Text: Initialize a NEW dedicated folder named bpel_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL. Focus on engineering a robust business process automation environment that utilizes BPEL's standardized XML orchestration syntax and WS-4 compliance to facilitate reliable service integration and dynamic workflow management. 
+   Matches perfectly. Proceeds. 
+   [Output Generation] -> *Outputs exactly the drafted text.* (Done.) 
+   *Self-Correction/Verification during thought*: 
+   Check exact wording requirement: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL." -> This matches the required structure. I will ensure it's strictly one sentence or a short paragraph as requested. The prompt says "Return ONLY the instruction text." I will provide exactly that.
+   All good.✅
+   Output matches.👇🏼
+   "Initialize a NEW dedicated folder named bpel_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL. Focus on engineering a robust business process automation environment that utilizes BPEL's standardized XML orchestration syntax and WS-4 compliance to facilitate reliable service integration and dynamic workflow management." -> Matches constraints. Proceeds. 
+   Output Generation. 
+   [Done] 
+   *(Note: I will output exactly the drafted string without any extra formatting or conversational filler.)*
+   Final Check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: BPEL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints verified. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Outputs exactly the drafted text.* (Done.) 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named bpel_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL. Focus on engineering a robust business process automation environment that utilizes BPEL's standardized XML orchestration syntax and WS-4 compliance to facilitate reliable service integration and dynamic workflow management.

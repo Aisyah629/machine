@@ -1108,3 +1108,5 @@ Training Machine
 - Created/Updated module: `msl_development_tool` (See `msl_development_tool/README.md` for details)
 
 - Created/Updated module: `csp_verification_tool` (See `csp_verification_tool/README.md` for details)
+
+- Created/Updated module: `bpel_orchestration_tool` (See `bpel_orchestration_tool/README.md` for details)

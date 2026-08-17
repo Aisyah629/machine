@@ -992,3 +992,5 @@ Training Machine
 - Created/Updated module: `corn_tool` (See `corn_tool/README.md` for details)
 
 - Created/Updated module: `fl_runtime_tool` (See `fl_runtime_tool/README.md` for details)
+
+- Created/Updated module: `algol58_compiler_tool` (See `algol58_compiler_tool/README.md` for details)

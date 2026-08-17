@@ -1,32 +1,85 @@
-import system
-import string
+import ferio;
+import ferio.process;
+import ferio.ui;
+import ferio.system;
 
-class TemplateEngine {
-  constructor() {
-    this.patterns = [];
-  }
-  
-  function registerPattern(pattern, replacement) {
-    this.patterns.push({pattern: new system.Regex(pattern), replacement: replacement});
-  }
-  
-  function render(text) {
-    for (let i = 0; i < this.patterns.length; i++) {
-      let rule = this.patterns[i];
-      text = rule.pattern.replaceAll(text, rule.replacement);
+class Diagnostics {
+    private map stats;
+    private array history;
+
+    public constructor() {
+        stats = map();
+        history = array();
+        stats['uptime'] = system::clock();
+        stats['process_count'] = process::count();
+        stats['memory_usage'] = system::memory_usage();
     }
-    return text;
-  }
+
+    public function log_event(string message) {
+        history.append(map({'time': system::clock(), 'event': message}));
+    }
+
+    public function get_stats() {
+        return stats;
+    }
+
+    public function get_history() {
+        return history;
+    }
+
+    public function visualize_network(array nodes) {
+        let graph = "Graph Structure:\n";
+        for (let i = 0; i < nodes.length; i++) {
+            graph.append(String::format("Node %d: %s\n", i, nodes[i]));
+        }
+        ui::println(graph);
+    }
+}
+
+class Visualizer {
+    public function render_data(array data) {
+        let chart = "\n  DATA VISUALIZATION\n";
+        chart.append("  ----------------\n");
+        for (let i = 0; i < data.length; i++) {
+            let value = data[i];
+            let bar_length = value.floor() / 10;
+            if (bar_length < 1) bar_length = 1;
+            let bar = "#".repeat(bar_length);
+            chart.append(String::format("  [%2d] %s\n", i, bar));
+        }
+        chart.append("  ----------------\n");
+        ui::println(chart);
+    }
 }
 
 function main() {
-  let engine = new TemplateEngine();
-  engine.registerPattern("\\[\\[name\\]\\]", "Ferite");
-  engine.registerPattern("\\[\\[version\\]\\]", "1.0");
-  
-  let input = "Welcome to [[name]] version [[version]]!";
-  let output = engine.render(input);
-  
-  system.writeLine(output);
-  return 0;
+    ui::println("Starting Ferite Diagnostic Tool...");
+    
+    let diag = Diagnostics.new();
+    let vis = Visualizer.new();
+
+    // Simulate some data
+    let simulated_data = [120, 45, 89, 210, 55, 90];
+    
+    diag.log_event("Diagnostic cycle started");
+    vis.render_data(simulated_data);
+    
+    let network_nodes = ["Server-A", "Server-B", "Database", "Client-1"];
+    diag.visualize_network(network_nodes);
+    
+    let current_stats = diag.get_stats();
+    ui::println("Current Statistics:");
+    for (let key in current_stats.keys()) {
+        ui::println(String::format("  %s: %s", key, current_stats[key]));
+    }
+    
+    let history = diag.get_history();
+    ui::println("Event Log:");
+    for (let event in history) {
+        ui::println(String::format("  Time: %s | Event: %s", event['time'], event['event']));
+    }
+
+    ui::println("Diagnostics complete.");
 }
+
+main();

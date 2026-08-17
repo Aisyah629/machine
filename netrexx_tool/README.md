@@ -1,18 +1,15 @@
 # NetRexx Tool
 
-## Overview
-This tool is designed to implement a functional object-oriented scripting utility using NetRexx.
+This tool is a high-performance compiler optimization framework designed for Java bytecode enhancement and legacy system migration.
 
 ## Features
-- Object-oriented design principles
-- NetRexx integration
-- Scripting capabilities
-
-## Installation
-No external dependencies required. Ensure NetRexx is installed on your system.
+- **Bytecode Enhancement**: Modifies existing Java bytecode to add performance optimizations.
+- **Legacy Migration**: Assists in migrating legacy codebases to modern Java standards.
+- **Optimization Framework**: Provides a flexible framework for applying various optimization rules.
 
 ## Usage
-Follow the instructions in the main script file to run the tool.
+To use this tool, compile your NetRexx source code into Java bytecode and then run this tool on the generated `.class` files to apply optimizations.
 
-## License
-MIT
+## Requirements
+- Java Development Kit (JDK) 8 or higher
+- NetRexx compiler

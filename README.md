@@ -1110,3 +1110,5 @@ Training Machine
 - Created/Updated module: `csp_verification_tool` (See `csp_verification_tool/README.md` for details)
 
 - Created/Updated module: `bertrand_model_checker_tool` (See `bertrand_model_checker_tool/README.md` for details)
+
+- Created/Updated module: `dart_async_orchestrator_tool` (See `dart_async_orchestrator_tool/README.md` for details)

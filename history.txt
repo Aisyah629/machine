@@ -46412,3 +46412,43 @@ Initialize a NEW dedicated folder named bertrand_model_checker_tool in the works
 </think>
 
 Initialize a NEW dedicated folder named bertrand_model_checker_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Bertrand. Focus on engineering a formal state-transition specification environment that leverages Bertrand's declarative logic and model-checking capabilities to rigorously verify system invariants and detect concurrency anomalies.
+[2026-08-17 18:36:36] (Target Lang: Dart) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Must explicitly demand the new tool be built STRICTLY using "Dart".
+    *   Constraint: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a file list and a history log. The history log shows a pattern: "Initialize a NEW dedicated folder named [tool_name]... build the entire new tool STRICTLY using... [lang]... Focus on...". The last output in the history was for `bertrand_model_checker_tool` using `Bertrand`.
+    *   Inference: The "follow-up" should continue this pattern but switch to `Dart` as requested by the meta-instruction. I need to invent a plausible tool name that fits the workspace structure (usually `{name}_tool`) and a plausible description that uses Dart's strengths (e.g., async, web, mobile, or general utility), following the style of the history descriptions.
+
+2.  **Drafting the Instruction:**
+    *   *Structure:* "Initialize a NEW dedicated folder named {folder_name} in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Dart. Focus on engineering a [description]."
+    *   *Folder Name:* Needs to be unique. Looking at the list, I see `dart_tool` is missing, but I shouldn't just use `dart_tool` if it exists? Checking list... `dart_tool` does not appear in the provided list. Good. However, the pattern is `{name}_tool`. Let's pick a name. `dart_async_runtime_tool`? `dart_web_api_tool`? `dart_io_stream_tool`? The description should reflect the name.
+    *   *Description Ideas:* Dart is known for Flutter, web, and async. A "high-performance asynchronous event loop orchestrator" or "cross-platform service framework" sounds good.
+    *   *Drafting Description:* "Focus on engineering a robust asynchronous event-driven architecture that harnesses Dart's isolate parallelism and async/await semantics to manage concurrent streams and optimize cross-platform execution efficiency."
+    *   *Full Text:* "Initialize a NEW dedicated folder named dart_async_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Dart. Focus on engineering a robust asynchronous event-driven architecture that harnesses Dart's isolate parallelism and async/await semantics to manage concurrent streams and optimize cross-platform execution efficiency."
+    *   *Review against constraints:*
+        *   NEW dedicated folder? Yes (`dart_async_orchestrator_tool`).
+        *   Create local README.md? Yes.
+        *   Build STRICTLY using Dart? Yes.
+        *   Logical follow-up? Yes, follows the format of previous entries in history (e.g., `async_message_queue_monitor_tool`, `api_client_tool`).
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+        *   Exactly 1 instruction? Yes.
+
+3.  **Final Polish (Mental Representation of Output):**
+    *   Output: `Initialize a NEW dedicated folder named dart_async_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Dart. Focus on engineering a robust asynchronous event-driven architecture that harnesses Dart's isolate parallelism and async/await semantics to manage concurrent streams and optimize cross-platform execution efficiency.`
+
+4.  **Final Check:**
+    *   Does the user want a specific tool name? No, just "Generate exactly 1 logical follow-up instruction."
+    *   Is `dart_async_orchestrator_tool` a reasonable name? Yes.
+    *   Is the language Dart? Yes.
+    *   Is the format correct? Yes.
+    *   Result matches all constraints.
+
+This thought structure covers analysis, drafting, constraint checking, and final verification.
+</think>
+
+Initialize a NEW dedicated folder named dart_async_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Dart. Focus on engineering a robust asynchronous event-driven architecture that harnesses Dart's isolate parallelism and async/await semantics to manage concurrent streams and optimize cross-platform execution efficiency.

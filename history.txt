@@ -39016,3 +39016,22 @@ This matches the pattern.
 </think>
 
 Initialize a NEW dedicated folder named d_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: D. Focus entirely on this new objective: 'Implement a robust template metaprogramming framework for compile-time code generation'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: D.
+[2026-08-17 06:02:51] (Target Lang: SA-C) The user wants a follow-up instruction for a new tool.
+The specific language requested is "SA-C".
+I need to:
+1.  Identify the tool name. Given the pattern `./_tool`, it should be `sa_c_tool`.
+2.  Check if `sa_c_tool` already exists. Scanning the list... `./s_lang_tool` exists, `./s_sl_tool` exists, `./sac_tool` exists. The list includes `./sac_tool`. The user explicitly asks for "SA-C". Usually, if a tool for the language exists, the instruction might be to update it, but the prompt says "If building a new tool...". However, the prompt also says "Generate exactly 1 logical follow-up instruction" and "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SA-C." This implies I should treat it as a new tool or a specific request for a tool named `sa_c_tool`. If `sac_tool` exists, maybe the user wants `sa_c_tool` or the instruction template implies creating a new one regardless, or perhaps I should check if `sa_c_tool` is distinct from `sac_tool`. `sac_tool` is likely the SCILAB-Associated-Compiler or something else. SA-C usually refers to "Specification and Analysis of Component-based systems" or "Structured Analysis and Design" or similar, often related to "S/A-C". Given the strict instruction "If building a new tool...", I will assume I need to create a new folder `sa_c_tool`.
+3.  Formulate the objective. SA-C is often used for real-time systems, avionics, or formal methods. A good objective would be "Implement a formal verification engine for embedded real-time systems".
+4.  Structure the instruction: "Initialize a NEW dedicated folder named sa_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SA-C. Focus entirely on this new objective: '[Objective]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SA-C."
+5.  Objective selection: "Implement a formal verification framework for autonomous flight control systems".
+6.  Final check of the prompt requirements: "Return ONLY the instruction text." "NEVER target .github."
+
+Draft: "Initialize a NEW dedicated folder named sa_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SA-C. Focus entirely on this new objective: 'Implement a formal verification framework for autonomous flight control systems'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SA-C."
+
+Double check: `sac_tool` is in the list. `sa_c_tool` is not. The user asked for SA-C. I will use `sa_c_tool`.
+The objective should be relevant to SA-C. SA-C is often associated with "S/A-C" (Software Analysis and Design?) or "SA-C" (System Architecture C?). Actually, SA-C often stands for "SA/C" which is a language for component-based systems. A "formal verification framework" fits well.
+
+Final string: "Initialize a NEW dedicated folder named sa_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SA-C. Focus entirely on this new objective: 'Implement a formal verification framework for autonomous flight control systems'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SA-C."
+</think>
+
+Initialize a NEW dedicated folder named sa_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SA-C. Focus entirely on this new objective: 'Implement a formal verification framework for autonomous flight control systems'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SA-C.

@@ -972,3 +972,5 @@ Training Machine
 - Created/Updated module: `tom_tool` (See `tom_tool/README.md` for details)
 
 - Created/Updated module: `oxygene_tool` (See `oxygene_tool/README.md` for details)
+
+- Created/Updated module: `rpl_tool` (See `rpl_tool/README.md` for details)

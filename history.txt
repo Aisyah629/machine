@@ -49017,3 +49017,27 @@ Initialize a NEW dedicated folder named bash_scripting_tool in the workspace, cr
 </think>
 
 Initialize a NEW dedicated folder named flavors_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Flavors.
+[2026-08-17 21:58:10] (Target Lang: MaxScript) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using MaxScript.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a list of existing tools/folders and a history block showing a pattern. The history mentions `bash_scripting_tool` and then asks for a follow-up for "Flavors", which results in `flavors_development_tool`. The current request asks for "MaxScript".
+    *   Check existing tools for MaxScript: `maxscript_tool` exists with `main.ms`.
+    *   Determine the folder name for the new tool: Following the pattern, a new MaxScript tool should likely be named `maxscript_advanced_tool` or `maxscript_development_tool` or similar, to avoid collision with `maxscript_tool`. Let's choose `maxscript_development_tool`.
+    *   Draft Instruction: "Initialize a NEW dedicated folder named maxscript_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript."
+    *   Verify Constraints:
+        *   New dedicated folder? Yes (`maxscript_development_tool`).
+        *   Local README.md? Yes.
+        *   Build strictly using MaxScript? Yes.
+        *   Only instruction text? Yes.
+        *   No `.github`? Yes.
+        *   Logical follow-up? Yes, based on the history pattern of adding variants (bash -> flavors -> maxscript implied).
+
+2.  **Construct Output:**
+    *   `Initialize a NEW dedicated folder named maxscript_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript.`
+</think>
+
+Initialize a NEW dedicated folder named maxscript_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MaxScript.

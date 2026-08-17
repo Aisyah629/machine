@@ -1002,3 +1002,5 @@ Training Machine
 - Created/Updated module: `mimic_simulation_tool` (See `mimic_simulation_tool/README.md` for details)
 
 - Created/Updated module: `cfengine_tool` (See `cfengine_tool/README.md` for details)
+
+- Created/Updated module: `millscript_tool` (See `millscript_tool/README.md` for details)

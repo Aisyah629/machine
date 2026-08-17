@@ -39301,3 +39301,55 @@ Initialize a NEW dedicated folder named nesl_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named boomerang_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boomerang. Focus entirely on this new objective: 'Construct a high-throughput algebraic parallel computation framework for real-time distributed data analytics'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Boomerang.
+[2026-08-17 06:39:49] (Target Lang: Joy) Thinking Process:
+
+1.  **Deconstruct the User's Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Joy.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a workspace list (showing many existing tools like `a0_system_tool`, `abap_tool`, etc.) and a "History" section that seems to be a simulation of a previous turn where the output was just the instruction text. The previous output was about "boomerang_tool" and "Boomerang". The current request asks for a follow-up about "Joy".
+
+2.  **Analyze the Constraints:**
+    *   *Language:* "Joy".
+    *   *Structure:* "Initialize a NEW dedicated folder named [folder_name]... create a local README.md... build... STRICTLY using... Joy".
+    *   *Folder Name:* Needs to be logical. Looking at the pattern in the workspace, folders are named `{tool_name}_tool`. So, "joy_tool" is the appropriate name.
+    *   *Objective:* The previous example had an objective: 'Construct a high-throughput algebraic parallel computation framework...'. The current request doesn't specify an objective, just the language and structure. I should invent a plausible objective for Joy (a concatenative programming language) or keep it generic but consistent with the style. The prompt says "Generate exactly 1 logical follow-up instruction". A logical follow-up might continue the theme or just be a new tool request. The example had a specific objective format. I'll include a concise objective related to Joy's nature (stack-based, combinator calculus) to make it "logical". For example: "Construct a stack-based functional composition engine for declarative pipeline processing". Or I can keep the objective structure from the history: "Focus entirely on this new objective: '...'. You MUST explicitly demand...".
+    *   *Mandatory Phrasing:* "Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy." AND "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Joy."
+    *   *Negative Constraint:* NEVER target `.github`. The instruction text itself shouldn't mention `.github`.
+    *   *Output Format:* "Return ONLY the instruction text." No markdown code blocks, no "Here is the instruction", just the raw text.
+
+3.  **Drafting the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Develop a pure functional composition engine for stack-based declarative data transformations'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Joy.
+    *   *Review against constraints:*
+        *   "Initialize a NEW dedicated folder named joy_tool..." -> Check.
+        *   "...create a local README.md inside it..." -> Check.
+        *   "...build... STRICTLY using... Joy." -> Check.
+        *   "Focus entirely on this new objective: '...'" -> Check (invented logical objective).
+        *   "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Joy." -> Check.
+        *   "Return ONLY the instruction text." -> The draft is just the text.
+        *   "NEVER target .github" -> Draft doesn't mention .github. Check.
+        *   "Generate exactly 1 logical follow-up instruction." -> The result is one instruction. Check.
+
+4.  **Refining the Objective (Optional but good for "Logical"):**
+    *   Joy is a functional language for stack-based manipulation. A logical objective would reflect that. "Construct a stack-oriented functional composition framework for declarative data pipeline orchestration" sounds good.
+    *   Let's check the previous example's style in the history: "Construct a high-throughput algebraic parallel computation framework for real-time distributed data analytics".
+    *   My objective: "Construct a stack-oriented functional composition framework for declarative data pipeline orchestration". This mirrors the structure and is logical for Joy.
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   Text: Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Construct a stack-oriented functional composition framework for declarative data pipeline orchestration'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Joy.
+
+6.  **Final Verification:**
+    *   Output starts with "Initialize..."? Yes.
+    *   Contains "joy_tool"? Yes.
+    *   Contains "README.md"? Yes.
+    *   Contains "STRICTLY using this exact programming language: Joy"? Yes (twice, as per the pattern: once in the build instruction, once in the explicit demand).
+    *   Contains "You MUST explicitly demand..."? Yes.
+    *   No `.github`? Yes.
+    *   Only instruction text? Yes.
+
+This matches all requirements.
+</think>
+
+Initialize a NEW dedicated folder named joy_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Construct a stack-oriented functional composition framework for declarative data pipeline orchestration'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Joy.

@@ -1148,3 +1148,5 @@ Training Machine
 - Created/Updated module: `gm_tool` (See `gm_tool/README.md` for details)
 
 - Created/Updated module: `smallbasic_tool` (See `smallbasic_tool/README.md` for details)
+
+- Created/Updated module: `ttcn_tool` (See `ttcn_tool/README.md` for details)

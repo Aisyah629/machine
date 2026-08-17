@@ -920,3 +920,5 @@ Training Machine
 - Created/Updated module: `mesa_tool` (See `mesa_tool/README.md` for details)
 
 - Created/Updated module: `./chomski_tool` (See `./chomski_tool/README.md` for details)
+
+- Created/Updated module: `nxtg_tool` (See `nxtg_tool/README.md` for details)

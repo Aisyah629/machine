@@ -45166,3 +45166,52 @@ Initialize a NEW dedicated folder named github_compliance_audit_tool in the work
 </think>
 
 Initialize a NEW dedicated folder named lc3_binary_integrity_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LC-3. Focus on engineering a binary integrity checker that calculates checksums for LC-3 executable files, verifies word alignment, and detects corrupted opcode sequences to ensure data fidelity before program loading.
+[2026-08-17 16:12:34] (Target Lang: Mesa) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Follow-up must be logical based on the history.
+    *   Constraint 2: MUST explicitly demand the new tool be built STRICTLY using "Mesa".
+    *   Constraint 3: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+
+2.  **Analyze History:**
+    *   The user previously asked for an `lc3_binary_integrity_tool` built in LC-3.
+    *   The workspace contains a list of tools, including `lc3_tool` and `mesa_tool`.
+    *   The history shows a pattern of creating tools for specific languages with specific purposes (integrity checking, memory protection, etc.).
+    *   The current request asks for a follow-up to the LC-3 integrity tool, but using Mesa.
+
+3.  **Draft the Instruction (Mental or rough text):**
+    *   *Draft 1:* Initialize a NEW dedicated folder named mesa_security_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus on engineering a Mesa source code analyzer that checks for type safety violations, enforces strict interface contracts, and validates concurrent task synchronization to ensure robust system stability.
+    *   *Check against constraints:*
+        *   1 logical follow-up? Yes, it continues the theme of tools/validation but switches language to Mesa as requested.
+        *   STRICTLY Mesa? Yes ("STRICTLY using this exact programming language: Mesa").
+        *   NEW dedicated folder? Yes ("NEW dedicated folder named mesa_security_validator").
+        *   Local README.md? Yes ("create a local README.md inside it").
+        *   ONLY instruction text? Yes.
+        *   No `.github`? Yes.
+
+4.  **Refine the Instruction for Quality/Logic:**
+    *   "Mesa" is a programming language often associated with concurrent systems and distributed computing. A logical tool for Mesa might involve checking for race conditions, verifying concurrency patterns, or ensuring the Mesa type system is respected.
+    *   *Refinement:* "Initialize a NEW dedicated folder named mesa_concurrency_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus on engineering a concurrency analysis engine that detects race conditions in task blocks, verifies resource locking hierarchies, and ensures deterministic message passing between concurrent components to prevent deadlocks and data corruption in Mesa-based systems."
+    *   *Critique:* This is strong. It's specific to Mesa's strengths (concurrency). It meets all constraints.
+
+5.  **Final Polish (Output Construction):**
+    *   "Initialize a NEW dedicated folder named mesa_concurrency_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus on engineering a concurrency analysis engine that detects race conditions in task blocks, verifies resource locking hierarchies, and ensures deterministic message passing between concurrent components to prevent deadlocks and data corruption in Mesa-based systems."
+
+6.  **Final Review:**
+    *   Text: "Initialize a NEW dedicated folder named mesa_concurrency_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus on engineering a concurrency analysis engine that detects race conditions in task blocks, verifies resource locking hierarchies, and ensures deterministic message passing between concurrent components to prevent deadlocks and data corruption in Mesa-based systems."
+    *   Contains "Mesa"? Yes.
+    *   Contains "STRICTLY"? Yes.
+    *   Contains "NEW dedicated folder"? Yes.
+    *   Contains "README.md"? Yes.
+    *   Only instruction text? Yes.
+    *   No `.github`? Yes.
+    *   Exactly 1 instruction? Yes.
+    *   Logical follow-up? Yes, follows the pattern of creating a tool for a specific language with a specific functional focus, switching from LC-3 binary integrity to Mesa concurrency analysis.
+
+7.  **Output Generation.**
+</think>
+
+Initialize a NEW dedicated folder named mesa_concurrency_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus on engineering a concurrency analysis engine that detects race conditions in task blocks, verifies resource locking hierarchies, and ensures deterministic message passing between concurrent components to prevent deadlocks and data corruption in Mesa-based systems.

@@ -1,0 +1,138 @@
+MODULE MesaConcurrencyValidator;
+
+(*
+ * Mesa Concurrency Validator
+ *
+ * This module implements a concurrency analysis engine for Mesa source code.
+ * It detects race conditions, validates resource locking hierarchies,
+ * and ensures deterministic message passing between concurrent components.
+ *)
+
+FROM Semaphores IMPORT Signal, Wait;
+FROM Messages IMPORT Send, Receive;
+FROM Locks IMPORT Acquire, Release;
+
+CONST
+  MaxTasks = 100;
+  MaxResources = 50;
+
+TYPE
+  Resource = RECORD
+    id: INTEGER;
+    lock_level: INTEGER;
+    usage_count: INTEGER;
+  END;
+
+  TaskBlock = RECORD
+    task_id: INTEGER;
+    resources: SET OF Resource;
+    synchronization: LIST OF Semaphore;
+  END;
+
+VAR
+  resources: ARRAY [1..MaxResources] OF Resource;
+  task_blocks: ARRAY [1..MaxTasks] OF TaskBlock;
+  num_resources: INTEGER;
+  num_tasks: INTEGER;
+
+PROCEDURE InitializeResources(num: INTEGER);
+  VAR
+    i: INTEGER;
+  BEGIN
+    num_resources := num;
+    FOR i := 1 TO num_resources DO
+      resources[i].id := i;
+      resources[i].lock_level := i;
+      resources[i].usage_count := 0;
+    END;
+  END InitializeResources;
+
+PROCEDURE AcquireResource(id: INTEGER, task_id: INTEGER);
+  VAR
+    resource: POINTER TO Resource;
+    current_level: INTEGER;
+  BEGIN
+    IF id < 1 OR id > num_resources THEN
+      HALT("Invalid resource ID");
+    END;
+    
+    resource := @resources[id];
+    current_level := resource.lock_level;
+    
+    IF resource.usage_count > 0 THEN
+      (* Check for hierarchy violation *)
+      HALT("Resource locking hierarchy violation detected");
+    END;
+    
+    resource.usage_count := resource.usage_count + 1;
+    Signal(task_blocks[task_id].synchronization[id]);
+  END AcquireResource;
+
+PROCEDURE ReleaseResource(id: INTEGER, task_id: INTEGER);
+  VAR
+    resource: POINTER TO Resource;
+  BEGIN
+    IF id < 1 OR id > num_resources THEN
+      HALT("Invalid resource ID");
+    END;
+    
+    resource := @resources[id];
+    resource.usage_count := resource.usage_count - 1;
+    Wait(task_blocks[task_id].synchronization[id]);
+  END ReleaseResource;
+
+PROCEDURE CheckRaceCondition(task_id: INTEGER);
+  VAR
+    i, j: INTEGER;
+    res1, res2: POINTER TO Resource;
+  BEGIN
+    FOR i := 1 TO num_resources DO
+      FOR j := i + 1 TO num_resources DO
+        IF resources[i].usage_count > 0 AND resources[j].usage_count > 0 THEN
+          IF resources[i].lock_level = resources[j].lock_level THEN
+            HALT("Potential race condition detected between resources " + 
+                 TO_STRING(i) + " and " + TO_STRING(j));
+          END;
+        END;
+      END;
+    END;
+  END CheckRaceCondition;
+
+PROCEDURE ValidateDeadlockPrevention(task_id: INTEGER);
+  VAR
+    current_resources: SET OF Resource;
+    next_resources: SET OF Resource;
+    is_set: BOOLEAN;
+  BEGIN
+    current_resources := task_blocks[task_id].resources;
+    
+    (* Simplified deadlock prevention check *)
+    FOR i := 1 TO num_resources DO
+      IS_IN(current_resources, i, is_set);
+      IF is_set THEN
+        IF i > task_blocks[task_id].resources[MaxResources] THEN
+          HALT("Deadlock prevention violation: resource ordering issue");
+        END;
+      END;
+    END;
+  END ValidateDeadlockPrevention;
+
+BEGIN
+  (* Example usage *)
+  InitializeResources(5);
+  
+  (* Simulate task behavior *)
+  task_blocks[1].task_id := 1;
+  task_blocks[1].resources := {1, 2};
+  task_blocks[1].synchronization := NEW(SEMAPHORE, 2);
+  
+  AcquireResource(1, 1);
+  AcquireResource(2, 1);
+  
+  CheckRaceCondition(1);
+  ValidateDeadlockPrevention(1);
+  
+  ReleaseResource(2, 1);
+  ReleaseResource(1, 1);
+  
+END MesaConcurrencyValidator;

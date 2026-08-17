@@ -45891,3 +45891,78 @@ Initialize a NEW dedicated folder named kaleidoscope_compiler_infrastructure_too
 </think>
 
 Initialize a NEW dedicated folder named sml_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus on engineering a high-performance pattern matching engine that leverages Standard ML's algebraic data types and exhaustiveness checking for robust code analysis and transformation.
+[2026-08-17 17:06:18] (Target Lang: GJ) Thinking Process:
+1.  **Analyze the Request**:
+    *   Input: A large list of tools (directories/files) in a workspace, a history entry describing the creation of `sml_pattern_matching_engine_tool` using SML, and a specific instruction to generate exactly 1 logical follow-up instruction.
+    *   Constraint: The follow-up instruction MUST explicitly demand that the new tool be built STRICTLY using the programming language: GJ.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The history mentions using `sml_pattern_matching_engine_tool`. GJ is listed in the workspace as `gj_tool`.
+
+2.  **Determine the Output Format**:
+    *   The user wants the *instruction text* that I (the autonomous AI) would issue to my sub-process or to myself in the next step, based on the "History" and the "Constraint".
+    *   The prompt asks to "Generate exactly 1 logical follow-up instruction."
+    *   The instruction must follow the pattern of the History: "I will use [tool_name]... Result: Initialize a NEW dedicated folder... create README... build... STRICTLY using... [language]..."
+
+3.  **Draft the Instruction**:
+    *   Target Language: GJ.
+    *   Tool Name: Based on the language, it should likely be `gj_pattern_matching_engine_tool` or similar, but the prompt asks for the instruction text. The instruction itself should command the creation.
+    *   Required elements:
+        *   New folder: `gj_pattern_matching_engine_tool` (logical deduction based on the pattern).
+        *   Local README.md.
+        *   Build STRICTLY using GJ.
+        *   Focus: High-performance pattern matching engine (consistent with history context).
+    *   Draft: "I will use `gj_pattern_matching_engine_tool`.      Result:     Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming features for robust type-safe code analysis and transformation.      I will output this now.     One final verification of the language name: "GJ".     Yes.      One final verification of the folder name: `gj_pattern_matching_engine_tool`.     Yes.      One final verification of README.md: Yes.      One final verification of logic: GJ supports generics. Very logical.      Go."
+
+4.  **Refine according to constraints**:
+    *   The user wants *exactly 1 logical follow-up instruction*.
+    *   The prompt says: "Return ONLY the instruction text. NEVER target the .github directory."
+    *   The instruction should probably look like the "Result" part of the history or the whole block. The history format is: `I will use ... Result: ... I will output this now. ... One final verification ... Go.   [Action Text]`
+    *   The prompt asks to "Generate exactly 1 logical follow-up instruction."
+    *   Let's look at the example structure in the prompt's "History":
+        `I will use sml_pattern_matching_engine_tool.      Result:     Initialize a NEW dedicated folder named sml_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus on engineering a high-performance pattern matching engine that leverages Standard ML's algebraic data types and exhaustiveness checking for robust code analysis and transformation.      I will output this now.     One final verification of the language name: "SML".     Yes.      One final verification of the folder name: sml_pattern_matching_engine_tool.     Yes.      One final verification of README.md: Yes.      One final verification of logic: SML is famous for pattern matching. Very logical.      Go.  Initialize a NEW dedicated folder named sml_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SML. Focus on engineering a high-performance pattern matching engine that leverages Standard ML's algebraic data types and exhaustiveness checking for robust code analysis and transformation.`
+    *   The prompt says "Generate exactly 1 logical follow-up instruction."
+    *   I should generate the text that represents the instruction for the GJ tool.
+    *   Language: GJ.
+    *   Folder: `gj_pattern_matching_engine_tool`.
+    *   Content: GJ is Java with generics.
+    *   Instruction Text:
+        `I will use gj_pattern_matching_engine_tool.      Result:     Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming capabilities for robust type-safe code analysis and transformation.      I will output this now.     One final verification of the language name: "GJ".     Yes.      One final verification of the folder name: gj_pattern_matching_engine_tool.     Yes.      One final verification of README.md: Yes.      One final verification of logic: GJ extends Java with generics. Very logical.      Go.`
+
+5.  **Final Polish**:
+    *   Check constraints:
+        *   "STRICTLY using this exact programming language: GJ" -> Included.
+        *   "place it in a NEW dedicated folder" -> Included.
+        *   "create a local README.md" -> Included.
+        *   "Return ONLY the instruction text." -> Will output just the text.
+        *   "NEVER target the .github directory." -> Not targeted.
+        *   "Generate exactly 1 logical follow-up instruction." -> Yes.
+
+    *   Let's make sure the folder name matches the language/tool naming convention seen in the list (e.g., `gj_tool`). So `gj_pattern_matching_engine_tool` is consistent.
+    *   Let's ensure the text matches the requested format style (Result: ...).
+    *   The prompt says "Generate exactly 1 logical follow-up instruction." and "Return ONLY the instruction text."
+    *   I will provide the full block as seen in the history's "Result" style, ending with the actionable instruction.
+
+    *   *Self-Correction*: The prompt says "Generate exactly 1 logical follow-up instruction." It might just want the instruction part. But looking at the history, the "Result" is the instruction.
+    *   Let's format it exactly like the history's result.
+
+    `I will use gj_pattern_matching_engine_tool.      Result:     Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming capabilities for robust type-safe code analysis and transformation.      I will output this now.     One final verification of the language name: "GJ".     Yes.      One final verification of the folder name: gj_pattern_matching_engine_tool.     Yes.      One final verification of README.md: Yes.      One final verification of logic: GJ extends Java with generics. Very logical.      Go.   Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming capabilities for robust type-safe code analysis and transformation.`
+
+    *   Wait, the user wants *me* to output the instruction. The "Result" in the history is what the AI *does*. The prompt asks me to "Generate exactly 1 logical follow-up instruction."
+    *   I will output the text string that constitutes this instruction.
+
+    Text:
+    I will use gj_pattern_matching_engine_tool.      Result:     Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming capabilities for robust type-safe code analysis and transformation.      I will output this now.     One final verification of the language name: "GJ".     Yes.      One final verification of the folder name: gj_pattern_matching_engine_tool.     Yes.      One final verification of README.md: Yes.      One final verification of logic: GJ extends Java with generics. Very logical.      Go.  Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming capabilities for robust type-safe code analysis and transformation.
+
+    *   Double check: "STRICTLY using this exact programming language: GJ" is in the text. "NEW dedicated folder" is in the text. "local README.md" is in the text. No .github.
+
+    *   The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GJ."
+
+    *   The output should be the instruction itself.
+
+    *   Final check of the text to be generated.
+    *   "I will use gj_pattern_matching_engine_tool.      Result:     Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming capabilities for robust type-safe code analysis and transformation.      I will output this now.     One final verification of the language name: "GJ".     Yes.      One final verification of the folder name: gj_pattern_matching_engine_tool.     Yes.      One final verification of README.md: Yes.      One final verification of logic: GJ extends Java with generics. Very logical.      Go.   Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming capabilities for robust type-safe code analysis and transformation."
+</think>
+
+I will use gj_pattern_matching_engine_tool.      Result:     Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming capabilities for robust type-safe code analysis and transformation.      I will output this now.     One final verification of the language name: "GJ".     Yes.      One final verification of the folder name: gj_pattern_matching_engine_tool.     Yes.      One final verification of README.md: Yes.      One final verification of logic: GJ extends Java with generics. Very logical.      Go.   Initialize a NEW dedicated folder named gj_pattern_matching_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GJ. Focus on engineering a high-performance pattern matching engine that leverages GJ's generic programming capabilities for robust type-safe code analysis and transformation.

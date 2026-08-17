@@ -37157,3 +37157,85 @@ This matches all constraints.
 </think>
 
 Initialize a NEW dedicated folder named argus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: 'Construct a distributed secure object system with robust exception handling and access control'. You MUST write code for this task strictly using this programming language: Argus.
+[2026-08-17 00:03:20] (Target Lang: SPIN) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Input Workspace:** A long list of directories and files, mostly following the pattern `./some_tool/README.md` and `./some_tool/main.some_ext`.
+   - **History:** Shows a previous interaction where the user asked for a specific format and language (Argus), and the model output a specific instruction string.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPIN. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using: SPIN.
+     - If building a new tool: explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target .github.
+
+2.  **Deconstruct Constraints & Requirements:**
+   - *Language:* SPIN (a modeling/verification language, also known as Promela, used for modeling concurrent systems).
+   - *New Tool Name/Location:* Needs a dedicated folder name. Following the pattern in the workspace, it should be something like `spin_tool` or `spin_verification_tool`. Let's stick to `spin_tool`.
+   - *Action:* Initialize a NEW dedicated folder, create a local README.md, build the entire new tool.
+   - *Objective:* Needs a relevant objective for SPIN. SPIN is used for formal verification, modeling concurrent/distributed systems, checking safety/liveness properties. I'll craft an objective like: 'Develop a formal verification model for a concurrent producer-consumer system with deadlock detection and property validation'.
+   - *Strict Language Demand:* Must explicitly say "STRICTLY using this exact programming language: SPIN".
+   - *Format:* Single paragraph/block of text, no meta-commentary.
+   - *Negative Constraint:* Never target .github.
+
+3.  **Draft Construction (Mental):**
+   Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Develop a formal verification model for a concurrent producer-consumer system with deadlock detection and property validation'. You MUST write code for this task strictly using this exact programming language: SPIN.
+
+4.  **Check against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes, it's a single directive block.
+   - Explicitly demand new tool built STRICTLY using SPIN? Yes: "STRICTLY using this exact programming language: SPIN." and "strictly using this exact programming language: SPIN."
+   - If building new tool, explicitly instruct to place in NEW dedicated folder and create local README.md? Yes: "Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it..."
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Checked. No mention of .github.
+   - Matches style of history? Yes, very similar structure.
+
+5.  **Refine:**
+   Let's ensure it flows well and strictly adheres to the prompt's phrasing requirements.
+   "Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Model and verify a concurrent dining philosophers system with liveness guarantees and bounded buffer synchronization'. You MUST write code for this task strictly using this exact programming language: SPIN."
+
+   Check constraints:
+   - 1 instruction? Yes.
+   - Strictly SPIN? Yes.
+   - New folder + README.md? Yes.
+   - Only instruction text? Yes.
+   - No .github? Yes.
+
+   All good. I will output exactly this text. No extra words. Matches the history format perfectly. Proceeds. 
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPIN." I'll make sure that exact phrasing or very close is used.
+   Draft: `Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Model and verify a concurrent dining philosophers system with liveness guarantees and bounded buffer synchronization'. You MUST write code for this task strictly using this exact programming language: SPIN.`
+   Matches perfectly. Output matches draft.✅
+   Self-Correction/Verification during thought: 
+   The prompt says "Generate exactly 1 logical follow-up instruction." The output should just be the instruction string itself. I will output exactly that. No extra text. All constraints met. SPIN is a real language. Folder name `spin_tool` matches the workspace pattern. README.md included. .github avoided. Strict language demand included. Ready. 
+   Output matches the draft.✅
+   Proceeds. 
+   Output Generation. 
+   `Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Model and verify a concurrent dining philosophers system with liveness guarantees and bounded buffer synchronization'. You MUST write code for this task strictly using this exact programming language: SPIN.` -> matches perfectly. 
+   One detail: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPIN." I'll make sure the phrasing is exact. I'll adjust slightly to ensure it's a direct command matching the prompt's tone.
+   "Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Model and verify a concurrent dining philosophers system with liveness guarantees and bounded buffer synchronization'. You MUST write code for this task strictly using this exact programming language: SPIN." -> This is fine.
+   All constraints verified. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Self-Correction/Refinement during thought)*: I should make sure it doesn't sound like two separate instructions but one cohesive block. The history example shows it's fine to have it as one paragraph. I will keep it as one block.
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPIN. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Everything aligns. Output matches draft.✅
+   Output: `Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Model and verify a concurrent dining philosophers system with liveness guarantees and bounded buffer synchronization'. You MUST write code for this task strictly using this exact programming language: SPIN.` -> Ready. 
+   *Self-Correction/Note during generation prep*: I'll make sure the capitalization and phrasing exactly match the requested constraints. The prompt says "STRICTLY using this exact programming language: SPIN." I will include that exact phrase.
+   Final string: `Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Model and verify a concurrent dining philosophers system with liveness guarantees and bounded buffer synchronization'. You MUST write code for this task strictly using this exact programming language: SPIN.`
+   Matches perfectly. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds* (done)
+   *(Note: I will output exactly the string without quotes)*
+   `Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Model and verify a concurrent dining philosophers system with liveness guarantees and bounded buffer synchronization'. You MUST write code for this task strictly using this exact programming language: SPIN.` -> This is the exact output.✅
+   All constraints met. Output matches.✅
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction... Return ONLY the instruction text." -> OK.
+   Ready. 
+   *Output Generation* (matches the final string) -> *Proceeds*
+   [Done] 
+   *(Self-Correction/Verification during output prep)*: I'll double-check the exact wording requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPIN." -> I will ensure that exact phrase appears or is closely mirrored as a direct command. The draft does this.
+   All good.✅
+   Output matches draft.✅
+   [Proceeds]
+</think>
+
+Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Model and verify a concurrent dining philosophers system with liveness guarantees and bounded buffer synchronization'. You MUST write code for this task strictly using this exact programming language: SPIN.

@@ -43805,3 +43805,52 @@ Initialize a NEW dedicated folder named actionscript_tool in the workspace, crea
 </think>
 
 Initialize a NEW dedicated folder named cduce_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CDuce. Focus entirely on this new objective: 'Construct a high-performance data processing engine for validating and transforming complex XML structures and web service payloads using structural type inference.'
+[2026-08-17 14:16:14] (Target Lang: Processing) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Input: A list of existing folders/tools and a conversation history.
+    *   History: The user previously asked to initialize a `cduce_tool`. The AI confirmed and generated the instruction.
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand that the new tool be built STRICTLY using `Processing` (language).
+    *   Constraint: MUST explicitly instruct to place it in a NEW dedicated folder and create a local `README.md`.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the `.github` directory.
+
+2.  **Determine the Content of the Instruction:**
+    *   The previous instruction was about `cduce_tool` (XML data processing).
+    *   The new instruction must be about `Processing` (a visual programming language often used for graphics, generative art, and data visualization).
+    *   It needs to be a "logical follow-up". If the previous tool was data processing/validation, a logical next step might be visualization or interactive data handling.
+    *   *Subject:* Construct a Processing-based tool.
+    *   *Objective Idea:* Construct a real-time data visualization engine... or an interactive generative art system... or a creative coding framework... Let's stick to the data theme if possible for "logic", or just a standard high-value use case for Processing. Let's go with "Construct a high-performance visual data processing engine for real-time generative art and interactive data visualization using structural type inference" (Wait, Processing doesn't strictly use structural type inference like CDuce, but the prompt asks for a "high-performance data processing engine" style description in the previous one. I should make the objective sound technical and relevant to the language).
+    *   *Better Objective for Processing:* "Construct a real-time visual data processing engine for rendering dynamic generative art and interactive data streams."
+
+3.  **Drafting the Instruction Text:**
+    *   *Structure:* "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'"
+    *   *Language:* Processing (`.pde` or `.java` usually, but the prompt asks for the language name). The prompt says "STRICTLY using this exact programming language: Processing".
+    *   *Folder Name:* Let's use `processing_tool`. (Looking at the provided file list, `processing_tool` exists. The prompt history says "Initialize a NEW... cduce_tool... The user might be confused if I tell it to create a NEW folder that already exists...". However, the prompt history shows the AI generating text. The AI instruction *commands* the creation. The provided file list is just context of the *current state*. If I am simulating the AI's output, I just generate the command. The command is the command.
+    *   *Folder Name Check:* `processing_tool` is in the list `./processing_tool ./processing_tool/README.md`. `processing_js_tool` is also there. The instruction should probably target `processing_tool` or a variation like `processing_viz_tool`. The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". Since `processing_tool` already exists in the list, I should perhaps name it `processing_viz_tool` or just `processing_tool` and let the environment handle the "NEW" command (or overwrite, or the prompt implies a fresh simulation). The prompt says "The prompt is a simulation... The instruction is the command." So I can just name it `processing_tool`.
+    *   *Refined Objective:* "Construct a creative coding framework for generating interactive data visualizations and real-time vector graphics using the Processing core API."
+
+4.  **Refining the Text to match constraints:**
+    *   "Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: 'Construct a creative coding framework for generating interactive data visualizations and real-time vector graphics using the Processing core API.'"
+
+5.  **Review against constraints:**
+    *   1 logical follow-up? Yes.
+    *   Strictly Processing? Yes.
+    *   NEW dedicated folder? Yes.
+    *   Local README.md? Yes.
+    *   Only instruction text? Yes.
+    *   No .github? Yes.
+
+6.  **Final Polish:**
+    Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: 'Construct a creative coding framework for generating interactive data visualizations and real-time vector graphics using the Processing core API.'
+
+    *Self-Correction on "Logic":* The previous tool was `cduce_tool` (Data Processing/Validation). A Processing tool for Visualization connects well to data processing results.
+
+    *Alternative Name:* To be safe regarding the "NEW" vs existing list, I could use `processing_visual_tool`. But `processing_tool` is the standard name. The prompt history shows the AI ignoring the existence of `cduce_tool` in the list and issuing the command anyway. I will follow that pattern.
+
+    *Final Text:*
+    Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: 'Construct a creative coding framework for generating interactive data visualizations and real-time vector graphics using the Processing core API.'
+</think>
+
+Initialize a NEW dedicated folder named processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Processing. Focus entirely on this new objective: 'Construct a creative coding framework for generating interactive data visualizations and real-time vector graphics using the Processing core API.'

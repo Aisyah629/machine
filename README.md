@@ -1016,3 +1016,5 @@ Training Machine
 - Created/Updated module: `bigwig_tool` (See `bigwig_tool/README.md` for details)
 
 - Created/Updated module: `franz_lisp_tool` (See `franz_lisp_tool/README.md` for details)
+
+- Created/Updated module: `pl11_tool` (See `pl11_tool/README.md` for details)

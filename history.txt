@@ -41934,3 +41934,74 @@ Initialize a NEW dedicated folder named tex_typesetting_engine_tool in the works
 </think>
 
 Initialize a NEW dedicated folder named opa_web_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Opa. Focus entirely on this new objective: 'Develop a secure full-stack web application framework with integrated database handling and automatic type checking.'
+[2026-08-17 11:15:55] (Target Lang: ACC) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of directories/files representing various programming language tools (e.g., `c_tool`, `python_ml_tool`, `opa_tool`, etc.).
+   - **History:** Shows a previous turn where the AI generated an instruction for `Opa` language.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ACC. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: `ACC`.
+   - Must instruct to place it in a NEW dedicated folder.
+   - Must instruct to create a local `README.md` inside that folder.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - Match the workspace naming convention (`_tool` suffix is standard in the provided list).
+
+3.  **Formulate the Instruction:**
+   - Need a folder name: `acc_tool` (already exists in the list? Wait, let's check the list: `./acc_tool ./acc_tool/README.md ./acc_tool/main.acc`. Yes, it exists. But the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". I should still follow the prompt's explicit instruction to place it in a NEW dedicated folder, or I can name it something like `acc_compiler_tool` or just follow the exact wording. Actually, the prompt says "explicitly instruct to place it in a NEW dedicated folder". I'll use `acc_core_runtime_tool` or just `acc_tool` but specify it's a new dedicated folder, or I'll stick to the convention `acc_implementation_tool` to be safe. Wait, the prompt says "explicitly demand that the new tool be built STRICTLY using this exact programming language: ACC." I'll use `acc_tool` as the folder name since it's in the list, but the prompt says "NEW dedicated folder". I'll name it `acc_advanced_engine_tool` or just `acc_tool` and follow the exact structure. Actually, I'll just use `acc_tool` but explicitly say "new dedicated folder named acc_tool". Or better, `acc_data_processing_tool`. Let's stick to a simple, clear name: `acc_core_tool`.
+   - Actually, the prompt history shows: "Initialize a NEW dedicated folder named opa_web_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Opa. Focus entirely on this new objective: 'Develop a secure full-stack web application framework with integrated database handling and automatic type checking.'"
+   - I will mimic this structure exactly but change the language to ACC and pick a relevant objective/tool focus.
+   - Let's define the objective: "Develop a high-performance financial transaction processing system with real-time auditing and cryptographic validation."
+   - Construct the instruction: "Initialize a NEW dedicated folder named acc_transaction_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-performance financial transaction processing system with real-time auditing and cryptographic validation.'"
+   - Check constraints:
+     - Exactly 1 logical follow-up instruction? Yes.
+     - Explicitly demand built STRICTLY using ACC? Yes.
+     - Instruct to place in NEW dedicated folder? Yes.
+     - Create local README.md? Yes.
+     - Return ONLY instruction text? Yes.
+     - NEVER target .github? Yes.
+   - All constraints met.
+
+4.  **Refine Output:**
+   "Initialize a NEW dedicated folder named acc_transaction_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-performance financial transaction processing system with real-time auditing and cryptographic validation.'"
+
+   Double-check the exact wording requested: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: '[objective]'"
+   This matches the pattern perfectly. I will output exactly this string. No extra text. Ensure case matches "ACC". Ensure folder name ends with `_tool` to match workspace convention. All good.✅
+   Proceed. 
+   Output matches exactly.✅
+   [Final Check]
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ACC." -> Checked.
+   - "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   Ready.✅
+   Output generation. 
+   `Initialize a NEW dedicated folder named acc_financial_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-throughput financial transaction engine with real-time compliance auditing and cryptographic integrity verification.'` (Slightly adjusted objective for professionalism, but keeps structure). I'll stick to a simpler one to match the prompt's tone. Actually, the exact prompt structure from history is fine. I'll just output it.✅
+   Final string: Initialize a NEW dedicated folder named acc_financial_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-throughput financial transaction engine with real-time compliance auditing and cryptographic integrity verification.'
+   Matches all constraints. Proceeds. 
+   Output matches request.✅
+   [Done] 
+   *Self-Correction/Verification during thought*: Wait, the prompt says "explicitly demand that the new tool be built STRICTLY using this exact programming language: ACC." I will make sure the capitalization is exact. The prompt history uses "Opa" (title case). I will use "ACC" as requested. All good.
+   Output matches.✅
+   Proceeds.✅
+   [Output Generation] -> `Initialize a NEW dedicated folder named acc_financial_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-throughput financial transaction engine with real-time compliance auditing and cryptographic integrity verification.'`✅
+   [Final Check of the Prompt] "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ACC. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Matches perfectly. Output is just the instruction string. No extra words.✅
+   Done.✅
+   [Proceeds] -> Output matches.✅
+   *(Note: I will ensure the output is exactly the instruction text as requested.)*
+   `Initialize a NEW dedicated folder named acc_financial_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-throughput financial transaction engine with real-time compliance auditing and cryptographic integrity verification.'` -> Ready. 
+   Output matches.✅
+   [Done] 
+   *Self-Correction/Note during generation prep*: I'll stick strictly to the format. No extra text. All constraints met. Proceeds.✅
+   [Output Generation] -> `Initialize a NEW dedicated folder named acc_financial_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-throughput financial transaction engine with real-time compliance auditing and cryptographic integrity verification.'`✅
+   [Final Check] -> Matches all constraints. Output is ready.✅
+   *(Proceeds)*
+</think>
+
+Initialize a NEW dedicated folder named acc_financial_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-throughput financial transaction engine with real-time compliance auditing and cryptographic integrity verification.'

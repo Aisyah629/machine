@@ -1166,3 +1166,5 @@ Training Machine
 - Created/Updated module: `acc_tool` (See `acc_tool/README.md` for details)
 
 - Created/Updated module: `simulink_dynamic_system_simulator_tool` (See `simulink_dynamic_system_simulator_tool/README.md` for details)
+
+- Created/Updated module: `sas_statistical_analysis_tool` (See `sas_statistical_analysis_tool/README.md` for details)

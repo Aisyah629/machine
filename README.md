@@ -1066,3 +1066,5 @@ Training Machine
 - Created/Updated module: `vbnet_tool` (See `vbnet_tool/README.md` for details)
 
 - Created/Updated module: `gpss_advanced_tool` (See `gpss_advanced_tool/README.md` for details)
+
+- Created/Updated module: `actionscript_tool` (See `actionscript_tool/README.md` for details)

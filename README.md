@@ -1052,3 +1052,5 @@ Training Machine
 - Created/Updated module: `pop11_tool` (See `pop11_tool/README.md` for details)
 
 - Created/Updated module: `latex_tool` (See `latex_tool/README.md` for details)
+
+- Created/Updated module: `processing_js_tool` (See `processing_js_tool/README.md` for details)

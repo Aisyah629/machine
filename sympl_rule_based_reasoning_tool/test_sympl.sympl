@@ -1,0 +1,61 @@
+// Test cases for Sympl Rule-Based Reasoning Engine
+
+MODULE sympl_rule_based_reasoning_test;
+
+// Test 1: Basic Fact Addition
+PROCEDURE test_basic_fact_addition();
+BEGIN
+    // Should add a new fact
+    sympl_rule_based_reasoning_engine.add_fact("test_fact", TRUE);
+    
+    // Check if fact exists
+    ASSERT(sympl_rule_based_reasoning_engine.is_fact_true("test_fact"));
+END;
+
+// Test 2: Rule Firing
+PROCEDURE test_rule_firing();
+BEGIN
+    // Clear knowledge base
+    sympl_rule_based_reasoning_engine.knowledge_base = EMPTY;
+    sympl_rule_based_reasoning_engine.rule_set = EMPTY;
+    
+    // Add facts and rules
+    sympl_rule_based_reasoning_engine.add_fact("A", TRUE);
+    sympl_rule_based_reasoning_engine.add_fact("B", TRUE);
+    sympl_rule_based_reasoning_engine.add_rule(1, ["A", "B"], "C", 10);
+    
+    // Perform forward chaining
+    sympl_rule_based_reasoning_engine.forward_chaining();
+    
+    // Check if C was derived
+    ASSERT(sympl_rule_based_reasoning_engine.is_fact_true("C"));
+END;
+
+// Test 3: Priority Handling
+PROCEDURE test_priority_handling();
+BEGIN
+    // Clear knowledge base
+    sympl_rule_based_reasoning_engine.knowledge_base = EMPTY;
+    sympl_rule_based_reasoning_engine.rule_set = EMPTY;
+    
+    // Add facts and rules with different priorities
+    sympl_rule_based_reasoning_engine.add_fact("D", TRUE);
+    sympl_rule_based_reasoning_engine.add_rule(2, ["D"], "E", 5);
+    sympl_rule_based_reasoning_engine.add_rule(1, ["D"], "F", 10);
+    
+    // Perform forward chaining
+    sympl_rule_based_reasoning_engine.forward_chaining();
+    
+    // Both E and F should be derived
+    ASSERT(sympl_rule_based_reasoning_engine.is_fact_true("E"));
+    ASSERT(sympl_rule_based_reasoning_engine.is_fact_true("F"));
+END;
+
+// Run all tests
+BEGIN
+    test_basic_fact_addition();
+    test_rule_firing();
+    test_priority_handling();
+    
+    print("All tests passed!");
+END;

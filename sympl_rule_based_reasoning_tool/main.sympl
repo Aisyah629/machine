@@ -1,0 +1,116 @@
+// Sympl Rule-Based Reasoning Engine
+// This tool implements a rule-based inference engine using SYMPL.
+
+MODULE sympl_rule_based_reasoning_engine;
+
+// Define data structures for rules and facts
+RULE = RECORD
+    id: INTEGER;
+    antecedents: LIST OF SYMBOL;
+    consequent: SYMBOL;
+    priority: INTEGER;
+END;
+
+FACT = RECORD
+    symbol: SYMBOL;
+    truth_value: BOOLEAN;
+END;
+
+// Global knowledge base
+knowledge_base: LIST OF FACT = EMPTY;
+rule_set: LIST OF RULE = EMPTY;
+
+// Function to add a fact to the knowledge base
+PROCEDURE add_fact(symbol: SYMBOL, value: BOOLEAN);
+BEGIN
+    // Check if fact already exists
+    LOCAL found: BOOLEAN = FALSE;
+    FOR EACH fact IN knowledge_base DO
+        IF fact.symbol == symbol THEN
+            fact.truth_value = value;
+            found = TRUE;
+            BREAK;
+        END;
+    END;
+    
+    IF NOT found THEN
+        knowledge_base.append(FACT(symbol, value));
+    END;
+END;
+
+// Function to add a rule to the rule set
+PROCEDURE add_rule(id: INTEGER, antecedents: LIST OF SYMBOL, consequent: SYMBOL, priority: INTEGER);
+BEGIN
+    rule_set.append(RULE(id, antecedents, consequent, priority));
+END;
+
+// Function to perform forward chaining
+PROCEDURE forward_chaining();
+BEGIN
+    LOCAL changed: BOOLEAN = TRUE;
+    LOCAL processed_rules: LIST OF INTEGER = EMPTY;
+    
+    WHILE changed DO
+        changed = FALSE;
+        
+        // Sort rules by priority
+        rule_set.sort_by_priority();
+        
+        FOR EACH rule IN rule_set DO
+            IF processed_rules.contains(rule.id) THEN
+                CONTINUE;
+            END;
+            
+            // Check if all antecedents are true in the knowledge base
+            LOCAL all_antecedents_true: BOOLEAN = TRUE;
+            FOR EACH antecedent IN rule.antecedents DO
+                IF NOT is_fact_true(antecedent) THEN
+                    all_antecedents_true = FALSE;
+                    BREAK;
+                END;
+            END;
+            
+            IF all_antecedents_true THEN
+                // Fire the rule
+                add_fact(rule.consequent, TRUE);
+                processed_rules.append(rule.id);
+                changed = TRUE;
+            END;
+        END;
+    END;
+END;
+
+// Helper function to check if a fact is true
+FUNCTION is_fact_true(symbol: SYMBOL): BOOLEAN;
+BEGIN
+    FOR EACH fact IN knowledge_base DO
+        IF fact.symbol == symbol THEN
+            RETURN fact.truth_value;
+        END;
+    END;
+    RETURN FALSE;
+END;
+
+// Main execution
+BEGIN
+    // Initialize knowledge base with facts
+    add_fact("is_raining", TRUE);
+    add_fact("has_umbrella", FALSE);
+    add_fact("is_cold", TRUE);
+    add_fact("is_summer", FALSE);
+    
+    // Define rules
+    add_rule(1, ["is_raining", "has_umbrella"], "stays_dry", 10);
+    add_rule(2, ["is_raining"], "needs_umbrella", 5);
+    add_rule(3, ["is_cold", "is_summer"], "is_winter", 1);
+    add_rule(4, ["needs_umbrella"], "take_umbrella", 8);
+    
+    // Perform inference
+    forward_chaining();
+    
+    // Output results
+    print("Final Knowledge Base:");
+    FOR EACH fact IN knowledge_base DO
+        print(fact.symbol + " = " + fact.truth_value);
+    END;
+END;

@@ -43312,3 +43312,81 @@ Looks good.
 </think>
 
 Initialize a NEW dedicated folder named idl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Develop a high-performance scientific data visualization and analysis engine featuring interactive plotting capabilities and seamless integration with diverse data acquisition protocols.'
+[2026-08-17 13:53:21] (Target Lang: Harbour) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace listing (lots of tool directories) and a history of a prompt/instruction format.
+   - **Current Instruction in History:** `Initialize a NEW dedicated folder named idl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IDL. Focus entirely on this new objective: 'Develop a high-performance scientific data visualization and analysis engine featuring interactive plotting capabilities and seamless integration with diverse data acquisition protocols.'`
+   - **User's Final Command:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using Harbour.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Follow the pattern/style of the provided history example.
+
+2.  **Deconstruct Constraints & Requirements:**
+   - **Language:** Harbour (xBase-compatible dialect)
+   - **Folder Name:** `harbour_tool` (based on the pattern `language_tool`)
+   - **Files:** `harbour_tool/README.md`, `harbour_tool/main.prg` (or similar, but the prompt just says README.md and build the tool)
+   - **Objective/Domain:** Needs a logical, coherent objective for a Harbour-based tool. Given Harbour is often used for business logic, database access, and legacy systems, I should craft a relevant objective. Something like: "Develop a robust enterprise resource planning (ERP) data processing and reporting system featuring real-time inventory tracking and seamless multi-database integration."
+   - **Structure:** Match the exact format of the history example: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'."
+   - **Check Constraints:** 
+     - Exactly 1 instruction? Yes.
+     - Explicitly demand Harbour? Yes.
+     - NEW dedicated folder & README.md? Yes.
+     - ONLY instruction text? Yes.
+     - No .github? Yes.
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise resource planning (ERP) data processing and reporting system featuring real-time inventory tracking and seamless multi-database integration.'
+
+4.  **Verify against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   - Matches the style of the prompt? Yes.
+
+   One minor adjustment: I'll make sure the phrasing exactly matches the requested template/style.
+   "Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise resource planning (ERP) data processing and reporting system featuring real-time inventory tracking and seamless multi-database integration.'"
+
+   All constraints met. Output matches exactly. No extra text. Proceed. 
+   Self-Correction/Refinement during thought: 
+   The prompt says "Generate exactly 1 logical follow-up instruction." I will output just that string. I'll ensure the objective is relevant to Harbour but still fits the "scientific/technical" vibe if possible, though Harbour is more business-oriented. I'll stick to a solid, professional objective. The exact wording requested in the prompt's template is rigid: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'."
+
+   I will generate exactly that.
+   Text: Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise data management and reporting system featuring real-time transaction processing and seamless multi-database integration.'
+
+   Checks:
+   - 1 instruction? Yes.
+   - Explicitly demands Harbour? Yes.
+   - NEW folder & README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+   Ready.✅
+   Output matches the draft. 
+   Proceeds. 
+   [Output Generation] -> "Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise data management and reporting system featuring real-time transaction processing and seamless multi-database integration.'" (or similar valid objective)
+   I will keep it tight. All constraints satisfied.✅
+   Output matches exactly. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   The prompt gives a template implicitly from the history. I will follow it precisely.
+   Result: `Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise data management and reporting system featuring real-time transaction processing and seamless multi-database integration.'`
+   Perfect.✅
+   Output matches. 
+   [Proceeds] -> *Self-Correction/Note during generation*: I should make sure the objective string doesn't contain quotes that break the format, but the prompt uses single quotes around the objective. I'll stick to that. All good. 
+   Output matches the draft.✅
+   [Final Output Generation] (matches the draft) -> `Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise data management and reporting system featuring real-time transaction processing and seamless multi-database integration.'` 
+   Done. 
+   [Output Generation] (Proceeds)
+   *(Note: I'll ensure the output is exactly the string, nothing else, as requested.)*
+   `Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise data management and reporting system featuring real-time transaction processing and seamless multi-database integration.'` -> This matches all constraints.✅
+   Output matches. 
+   [Final Check] The prompt says "Return ONLY the instruction text." I will output exactly that. No extra words. All constraints met. Proceeds. 
+   [Output Generation] -> *Proceeds* ✅
+</think>
+
+Initialize a NEW dedicated folder named harbour_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Harbour. Focus entirely on this new objective: 'Develop a robust enterprise data management and reporting system featuring real-time transaction processing and seamless multi-database integration.'

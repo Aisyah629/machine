@@ -41338,3 +41338,56 @@ Done.
 </think>
 
 Initialize a NEW dedicated folder named rapid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RAPID. Focus entirely on this new objective: 'Implement a deterministic kinematic solver for articulated robotic manipulators.'
+[2026-08-17 10:20:59] (Target Lang: Model 204) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Role: Autonomous AI.
+    *   Workspace: A long list of existing tools and files (mostly `tool_name` folders with `README.md` and a main source file).
+    *   History: Mentions `rapid_tool` and `rapid_tool` (likely a typo in the history provided by the user, but the instruction clarifies `rapid_tool` is the name). Language is `RAPID`. Objective: 'Implement a deterministic kinematic solver for articulated robotic manipulators.'
+    *   Action: Initialize a NEW dedicated folder named `rapid_tool`, create a local `README.md`, and build the tool using `RAPID`.
+    *   Output: Generate exactly 1 logical follow-up instruction.
+    *   Constraints for Follow-up:
+        *   Demand the new tool be built STRICTLY using `Model 204`.
+        *   If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local `README.md`.
+        *   Return ONLY the instruction text.
+        *   NEVER target `.github`.
+
+2.  **Analyze the "Follow-up" Requirement:**
+    *   The user wants me to *generate* an instruction. This instruction will be the output of my response.
+    *   The content of this generated instruction must be about a *new* tool.
+    *   Language for the new tool: `Model 204`.
+    *   Structure: New folder, `README.md`.
+    *   The follow-up instruction should be "logical". Usually, in these prompts, "logical" might mean continuing a pattern or addressing a related topic, but the constraints are strict about the language and structure. The "objective" for the follow-up isn't explicitly defined by the user's prompt text regarding *what* the model 204 tool should do, only *how* (Model 204, new folder, readme). However, looking at the pattern of the input, the user provides an objective for the current tool (`rapid_tool`). For the follow-up, I need to generate the instruction. The constraint says "You MUST explicitly demand...". It doesn't restrict the objective of the follow-up, but usually, a good follow-up instruction should define an objective.
+    *   *Self-Correction on "Objective":* The prompt says "Objective is mine to define. I'll define it. Done." regarding the current tool. For the follow-up, the user says "Generate exactly 1 logical follow-up instruction." and "You MUST explicitly demand...". It doesn't say I can't define the objective for the follow-up. In fact, a follow-up instruction usually includes an objective. I should invent a plausible objective for a `Model 204` tool to make the instruction coherent, or just focus on the constraints. Given the strict constraints, I'll create a brief, logical objective for `Model 204`. `Model 204` sounds like a database language or a legacy language. A logical objective might be "Implement a query optimization engine" or "Build a data retrieval system". Let's go with "Implement a high-performance query optimizer for hierarchical database structures."
+
+3.  **Draft the Follow-up Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named model_204_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Model 204. Focus entirely on this new objective: 'Implement a high-performance query optimizer for hierarchical database structures.'
+    *   *Check Constraints:*
+        *   New dedicated folder? Yes (`model_204_tool`).
+        *   Local `README.md`? Yes.
+        *   Strictly using `Model 204`? Yes.
+        *   Exactly 1 instruction? Yes.
+        *   Only instruction text? Yes.
+        *   No `.github`? Yes.
+        *   Logical? Yes, it follows the pattern of the previous instruction.
+
+4.  **Refine based on "Logic" and "Pattern":**
+    *   The previous instruction ended with `Initialize a NEW dedicated folder named rapid_tool...`.
+    *   The follow-up should look like a continuation.
+    *   The output should be just the text of the instruction.
+    *   Result: "Initialize a NEW dedicated folder named model_204_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Model 204. Focus entirely on this new objective: 'Implement a robust query parser and execution engine for hierarchical data models.'"
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named model_204_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Model 204. Focus entirely on this new objective: 'Implement a robust query parser and execution engine for hierarchical data models.'`
+
+6.  **Final Review against negative constraints:**
+    *   Does it mention `.github`? No.
+    *   Is it only the instruction? Yes.
+    *   Is the language Model 204? Yes.
+    *   Is there a new folder? Yes.
+    *   Is there a readme? Yes.
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named model_204_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Model 204. Focus entirely on this new objective: 'Implement a robust query parser and execution engine for hierarchical data models.'

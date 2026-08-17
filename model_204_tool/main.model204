@@ -1,0 +1,229 @@
+// Model 204 Query Parser and Execution Engine
+// This program implements a query parser and execution engine for hierarchical data models.
+
+// Import necessary libraries
+IMPORT library:std;
+IMPORT library:io;
+IMPORT library:math;
+
+// Define data structures for hierarchical nodes
+TYPE Node
+    id: INTEGER;
+    name: STRING;
+    children: LIST OF Node;
+    parent: POINTER TO Node;
+ENDTYPE
+
+// Define query structures
+TYPE Query
+    type: STRING; // SELECT, INSERT, UPDATE, DELETE
+    tables: LIST OF STRING;
+    conditions: LIST OF CONDITION;
+    order: STRING;
+    limit: INTEGER;
+ENDTYPE
+
+TYPE CONDITION
+    field: STRING;
+    operator: STRING;
+    value: STRING;
+ENDTYPE
+
+// Global variables
+VAR root: POINTER TO Node;
+VAR queries: LIST OF Query;
+VAR errors: LIST OF STRING;
+
+// Function to create a new node
+FUNCTION createNode(id: INTEGER, name: STRING): POINTER TO Node
+    VAR newNode: POINTER TO Node;
+    newNode = ALLOCATE(Node);
+    newNode.id = id;
+    newNode.name = name;
+    newNode.children = CREATE_LIST(Node);
+    newNode.parent = NULL;
+    RETURN newNode;
+ENDFUNCTION
+
+// Function to add a child to a parent node
+FUNCTION addChild(parent: POINTER TO Node, child: POINTER TO Node)
+    IF parent <> NULL AND child <> NULL THEN
+        LIST_ADD(parent.children, child);
+        child.parent = parent;
+    ENDIF
+ENDFUNCTION
+
+// Function to parse a simple query
+FUNCTION parseQuery(queryString: STRING): QUERY
+    VAR query: QUERY;
+    VAR tokens: LIST OF STRING;
+    VAR parts: LIST OF STRING;
+
+    query.type = "";
+    query.tables = CREATE_LIST(STRING);
+    query.conditions = CREATE_LIST(CONDITION);
+    query.order = "";
+    query.limit = 0;
+
+    // Simple tokenization
+    tokens = STRING_SPLIT(queryString, " ");
+
+    // Parse SELECT, FROM, WHERE, ORDER BY, LIMIT
+    FOR i = 0 TO LENGTH(tokens) - 1 DO
+        IF tokens[i] == "SELECT" THEN
+            query.type = "SELECT";
+        ELSIF tokens[i] == "FROM" THEN
+            // Next token is the table name
+            IF i + 1 < LENGTH(tokens) THEN
+                LIST_ADD(query.tables, tokens[i+1]);
+            ENDIF
+        ELSIF tokens[i] == "WHERE" THEN
+            // Parse conditions
+            // This is a simplified parser
+            // In a real implementation, you would need a more robust parser
+            IF i + 3 < LENGTH(tokens) THEN
+                VAR cond: CONDITION;
+                cond.field = tokens[i+1];
+                cond.operator = tokens[i+2];
+                cond.value = tokens[i+3];
+                LIST_ADD(query.conditions, cond);
+            ENDIF
+        ELSIF tokens[i] == "ORDER" THEN
+            query.order = queryString;
+        ELSIF tokens[i] == "LIMIT" THEN
+            IF i + 1 < LENGTH(tokens) THEN
+                query.limit = STRING_TO_INT(tokens[i+1]);
+            ENDIF
+        ENDIF
+    ENDFOR
+
+    RETURN query;
+ENDFUNCTION
+
+// Function to execute a SELECT query
+FUNCTION executeSelect(query: QUERY)
+    VAR result: LIST OF Node;
+    VAR i: INTEGER;
+    VAR j: INTEGER;
+
+    result = CREATE_LIST(Node);
+
+    // For simplicity, assume we are querying from a single table (root node's children)
+    IF LENGTH(query.tables) > 0 THEN
+        VAR tableName: STRING;
+        LIST_GET(query.tables, 0, tableName);
+
+        // Traverse the hierarchy to find nodes matching the table name
+        // This is a simplified traversal
+        FOR i = 0 TO LENGTH(root.children) - 1 DO
+            VAR node: POINTER TO Node;
+            LIST_GET(root.children, i, node);
+            IF node.name == tableName THEN
+                // Add the node and its children to the result
+                LIST_ADD(result, node);
+                FOR j = 0 TO LENGTH(node.children) - 1 DO
+                    VAR child: POINTER TO Node;
+                    LIST_GET(node.children, j, child);
+                    LIST_ADD(result, child);
+                ENDFOR
+            ENDIF
+        ENDFOR
+
+        // Apply conditions
+        VAR finalResult: LIST OF Node;
+        finalResult = CREATE_LIST(Node);
+        FOR i = 0 TO LENGTH(result) - 1 DO
+            VAR node: POINTER TO Node;
+            LIST_GET(result, i, node);
+            VAR matches: BOOLEAN;
+            matches = TRUE;
+
+            FOR j = 0 TO LENGTH(query.conditions) - 1 DO
+                VAR cond: CONDITION;
+                LIST_GET(query.conditions, j, cond);
+                // Simplified condition check
+                IF cond.field == "id" THEN
+                    IF STRING_TO_INT(cond.value) <> node.id THEN
+                        matches = FALSE;
+                    ENDIF
+                ELSIF cond.field == "name" THEN
+                    IF node.name <> cond.value THEN
+                        matches = FALSE;
+                    ENDIF
+                ENDIF
+            ENDFOR
+
+            IF matches THEN
+                LIST_ADD(finalResult, node);
+            ENDIF
+        ENDFOR
+
+        // Apply limit
+        IF query.limit > 0 AND LENGTH(finalResult) > query.limit THEN
+            VAR trimmedResult: LIST OF Node;
+            trimmedResult = CREATE_LIST(Node);
+            FOR i = 0 TO query.limit - 1 DO
+                VAR node: POINTER TO Node;
+                LIST_GET(finalResult, i, node);
+                LIST_ADD(trimmedResult, node);
+            ENDFOR
+            RETURN trimmedResult;
+        ENDIF
+
+        RETURN finalResult;
+    ENDIF
+
+    RETURN result;
+ENDFUNCTION
+
+// Function to execute the main program
+FUNCTION main()
+    // Initialize the hierarchy
+    root = createNode(0, "Root");
+    VAR child1 = createNode(1, "TableA");
+    VAR child2 = createNode(2, "TableA");
+    VAR child3 = createNode(3, "TableB");
+    addChild(root, child1);
+    addChild(root, child2);
+    addChild(root, child3);
+
+    // Add grandchildren
+    VAR grandchild1 = createNode(4, "Record1");
+    VAR grandchild2 = createNode(5, "Record2");
+    addChild(child1, grandchild1);
+    addChild(child1, grandchild2);
+    VAR grandchild3 = createNode(6, "Record3");
+    addChild(child2, grandchild3);
+
+    // Define and parse a query
+    VAR queryStr = "SELECT FROM TableA WHERE name = Record1";
+    VAR query = parseQuery(queryStr);
+
+    // Execute the query
+    VAR results = executeSelect(query);
+
+    // Output the results
+    IO_PRINT("Query: " + queryStr);
+    IO_PRINT("Results:");
+    VAR i: INTEGER;
+    FOR i = 0 TO LENGTH(results) - 1 DO
+        VAR node: POINTER TO Node;
+        LIST_GET(results, i, node);
+        IO_PRINT("  - " + node.name + " (ID: " + INT_TO_STRING(node.id) + ")");
+    ENDFOR
+
+    // Output any errors
+    IF LENGTH(errors) > 0 THEN
+        IO_PRINT("Errors:");
+        FOR i = 0 TO LENGTH(errors) - 1 DO
+            IO_PRINT("  - " + errors[i]);
+        ENDFOR
+    ENDIF
+
+    // Clean up memory
+    // In a real implementation, you would need a garbage collection mechanism
+    RETURN 0;
+ENDFUNCTION
+
+// Start the program
+main();

@@ -1,61 +1,41 @@
-- module Currying.
+module main where
 
--- Defining types for variables, constraints, and domains
--- A variable is identified by a name and has a range of possible values (its domain)
--- A constraint is a relation between variables that must be satisfied
+import Search
 
-type Variable = String
-type Value = Int
+-- | A simple data structure to hold extracted key-value pairs
+keyValuePair :: String -> String -> String
+keyValuePair k v = k ++ "=" ++ v
 
-data Domain = Domain [Value]
+-- | Extract key-value pairs from a string
+-- Format: "key1=value1,key2=value2,..."
+extractKeyValuePairs :: String -> [String]
+extractKeyValuePairs input
+  | input == "" = []
+  | otherwise =
+    let parts = splitString "," input
+        result = [ kv | part <- parts,
+                        let kv = splitString "=" part,
+                        length kv == 2,
+                        let k = head kv,
+                        let v = tail kv,
+                        not (null k) && not (null v) ]
+    in
+    result
 
-data Constraint = Constraint (Variable -> Variable -> Bool)  -- Binary constraint for simplicity
+-- | Split a string by a delimiter
+splitString :: Char -> String -> [String]
+splitString _ [] = []
+splitString c str =
+  let (before, after) = break (== c) str
+  in
+  if null after
+  then [before]
+  else before : splitString c (tail after)
 
--- Sample constraint: x and y must have different values
-constraintNotEqual :: Constraint
-constraintNotEqual = Constraint (/=)
-
--- Define a simple problem structure
--- Variables: ['x', 'y']
--- Domains: x can be 1, 2; y can be 1, 2
--- Constraints: x and y must be different
-
-type Assignment = [(Variable, Value)]
-
--- Check if an assignment satisfies a given constraint
--- For the simplified constraintNotEqual, we check if the assigned values for two variables are different
-satisfyConstraint :: Assignment -> Constraint -> Bool
-satisfyConstraint _ (Constraint pred) = undefined  -- Simplified; real implementation needs to parse the assignment and apply the predicate
-
--- Non-deterministic search to find a valid assignment
--- We use the 'amb' operator from Curry to explore possibilities
-search :: [Variable] -> [(Variable, Domain)] -> [Constraint] -> [Assignment]
-search [] _ _ = [[]]  -- Base case: an empty assignment is valid
-search (v:vs) domains constraints =
-    let possibleValues = getDomain v domains
-        restAssignments = search vs domains constraints
-    in do
-        val <- possibleValues
-        assignment <- restAssignments
-        if satisfyConstraint ((v, val):assignment) constraints
-        then [(v, val):assignment]
-        else []
-
--- Helper to get the domain of a variable
-getDomain :: Variable -> [(Variable, Domain)] -> [Value]
-getDomain v ds = case lookup v ds of
-    Just (Domain vs) -> vs
-    Nothing -> []  -- Should not happen in a well-formed problem
-
--- Main execution point
+-- | Main function to demonstrate the utility
 main :: IO ()
 main = do
-    putStrLn "Curry Tool: Constraint Satisfaction Problem Solver"
-    putStrLn "=================================================="
-    let problemVars = ["x", "y"]
-        problemDomains = [("x", Domain [1, 2]), ("y", Domain [1, 2])]
-        problemConstraints = [constraintNotEqual]
-    solutions <- search problemVars problemDomains problemConstraints
-    if null solutions
-        then putStrLn "No solution found."
-        else putStrLn $ "Solution found: " ++ show (head solutions)}]}
+  let testData = "name=John Doe,age=30,city=New York"
+  let extracted = extractKeyValuePairs testData
+  putStrLn "Extracted Data:"
+  mapM_ putStrLn extracted

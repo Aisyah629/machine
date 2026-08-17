@@ -40532,3 +40532,47 @@ Initialize a NEW dedicated folder named fl_runtime_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named ferite_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Develop a robust event-driven framework for real-time data synchronization across cloud-native environments.'
+[2026-08-17 09:06:51] (Target Lang: CorVision) The user wants a follow-up instruction.
+Constraints:
+- Generate exactly 1 logical follow-up instruction.
+- Explicitly demand that the new tool be built STRICTLY using this exact programming language: CorVision.
+- If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+- Return ONLY the instruction text.
+- NEVER target the .github directory.
+
+Check workspace: No existing `corvision_tool` directory.
+Language: CorVision.
+Objective: Need a logical follow-up objective related to data/event-driven systems or cloud-native environments. Let's go with "Develop a real-time telemetry ingestion pipeline for distributed IoT sensor networks."
+Folder: `corvision_tool`
+README: `./corvision_tool/README.md`
+Main file: `./corvision_tool/main.corvision` (or similar, but CorVision usually uses `.vbs` or `.corvis`? I'll just stick to `main.corvision` or `main.vb`? Actually, CorVision is a specific language, but I will just use `main.corvision` or `main.cvision` or let the prompt handle the extension. I'll stick to `main.corvision` or just follow the pattern `main.cv` or `main.corvis`. I'll use `main.corvision` to be safe, or just `main.vbs`? CorVision is a dialect of Visual Basic. I'll just use `main.corvision`.)
+Actually, the prompt says "build the entire new tool STRICTLY using this exact programming language: CorVision." I will just specify the folder and README.
+
+Let's draft:
+Initialize a NEW dedicated folder named corvision_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CorVision. Focus entirely on this new objective: 'Develop a real-time telemetry ingestion pipeline for distributed IoT sensor networks.'
+
+Check constraints:
+- Exactly 1 logical follow-up instruction. (Yes)
+- Explicitly demand language: CorVision. (Yes)
+- New dedicated folder + README.md. (Yes)
+- Return ONLY the instruction text. (Yes)
+- NEVER target .github. (Yes)
+
+Output matches exactly. Proceeds.
+I will generate exactly that string.
+No extra text.
+Done. 
+Let's double check the exact wording required: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'"
+Matches pattern.
+Ready. 
+Output: Initialize a NEW dedicated folder named corvision_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CorVision. Focus entirely on this new objective: 'Develop a real-time telemetry ingestion pipeline for distributed IoT sensor networks.'
+Wait, CorVision is a legacy Microsoft database programming language. I'll stick to the exact string format.
+Done. 
+Proceeds. 
+[Output Generation] -> *Proceeds.*
+*(Self-Correction/Verification during thought)*: I will ensure absolutely no extra characters, newlines, or markdown are included. Just the raw string.
+Output matches request.
+Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named corvision_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CorVision. Focus entirely on this new objective: 'Develop a real-time telemetry ingestion pipeline for distributed IoT sensor networks.'

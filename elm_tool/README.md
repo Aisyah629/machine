@@ -1,27 +1,29 @@
 # Elm Tool
 
-## Overview
-The Elm Tool is a dedicated functional reactive programming environment designed for building scalable, highly performant frontend web interfaces. It leverages Elm's static type system, immutable data model, and robust error handling to deliver predictable and maintainable user experiences.
+## Description
+This tool is designed for functional web development using the Elm programming language. It provides utilities and templates for building high-performance frontend applications with a strong focus on reliability and developer experience.
 
 ## Features
-- Strictly typed functional programming model
-- Virtual DOM rendering with minimal repaints
-- Built-in architecture patterns (Model-View-Update)
-- Seamless integration with browser APIs and JavaScript interop
-- Deterministic debugging with time-travel capabilities
+- **Type Safety**: Leverages Elm's robust type system to catch errors at compile-time.
+- **Virtual DOM**: Utilizes an optimized virtual DOM for efficient rendering.
+- **Immutability**: Encourages immutable data structures, leading to predictable state management.
+- **Zero Runtime Exceptions**: Ensures that runtime errors are minimized through exhaustive pattern matching.
 
 ## Usage
-Execute the main entry point to compile and serve the application:
+To use the `elm_tool`, ensure you have the Elm compiler installed. Initialize your project and start coding with `main.elm` as the entry point.
+
+### Example Command
 ```bash
-elmrun main.elm
+elm init
+elm repl
 ```
 
-## Constraints & Guidelines
-- All code must reside within this directory.
-- No external dependencies beyond the standard Elm distribution.
-- Follow strict functional purity for all modules.
-- Use ports only for unavoidable JavaScript interop.
-- Maintain 100% type safety with no `Maybe` or `Result` unwrapping without pattern matching.
+## Files
+- `main.elm`: The main source file containing the application logic.
 
-## Author
-Autonomous AI Polyglot Software Engineer
+## Dependencies
+- Elm Compiler (v0.19 or higher)
+- Elm Architecture Tools (EAT) for scaffolding projects
+
+## Contributing
+Contributions are welcome! Please submit a pull request or open an issue for any feature requests or bug reports.

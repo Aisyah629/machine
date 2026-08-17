@@ -48075,3 +48075,52 @@ Initialize a NEW dedicated folder named gj_tool in the workspace, create a local
 </think>
 
 Initialize a NEW dedicated folder named godiva_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Godiva.
+[2026-08-17 21:04:52] (Target Lang: Elm) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using the exact programming language: Elm.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a large list of workspace files. Most are tools with directories like `./tool_name/README.md` and `./tool_name/main.ext`. The previous history shows an instruction to create `godiva_tool`. The current request is to generate a *follow-up* instruction based on the pattern established.
+
+2.  **Formulate the Instruction:**
+    *   I need to follow the pattern of the previous successful instruction found in the history: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+    *   Language specified: Elm.
+    *   Folder naming convention: Looking at the list, there are entries like `./elm_tool`? Wait, let me check the list for `elm_tool`.
+        *   Scanning the list... I see `./elm_tool` is NOT in the list.
+        *   I see `./elm_tool/README.md`? No.
+        *   I see `./elm_tool/main.elm`? No.
+        *   Actually, looking closely at the list provided in the prompt:
+            *   `./elm_tool ./elm_tool/README.md` -> Wait, let me re-scan carefully.
+            *   Result: `./elm_tool` does NOT appear in the provided list.
+            *   The list has `./elementary_tool`? No.
+            *   The list has `./elm_tool`? No.
+            *   Okay, `elm_tool` seems to be a new tool that needs to be created, or at least the prompt doesn't forbid creating it. The constraint says "If building a new tool...". So I can create `elm_tool`.
+    *   Drafting the text: "Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm."
+
+3.  **Check Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes.
+    *   *Explicitly demand... STRICTLY using... Elm?* Yes ("STRICTLY using this exact programming language: Elm").
+    *   *Place in NEW dedicated folder?* Yes ("Initialize a NEW dedicated folder named elm_tool").
+    *   *Create local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY the instruction text?* Yes.
+    *   *NEVER target .github?* The text does not mention `.github`. It targets `elm_tool`. Good.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Output: `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.`
+
+5.  **Review against "Logical Follow-up":**
+    *   The history shows the user previously asked for `godiva_tool`.
+    *   A logical follow-up might be to continue adding tools or modify existing ones.
+    *   The prompt asks for a "logical follow-up instruction". Usually, in these AI persona contexts, "logical follow-up" means continuing the theme of the workspace (creating tools).
+    *   Creating another tool (elm_tool) is a logical continuation of managing a workspace of tools.
+    *   The phrasing matches the previous successful output structure.
+    *   Result is valid.
+
+6.  **Final Output Construction:**
+    *   `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.`
+</think>
+
+Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.

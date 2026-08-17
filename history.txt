@@ -45215,3 +45215,43 @@ Initialize a NEW dedicated folder named lc3_binary_integrity_tool in the workspa
 </think>
 
 Initialize a NEW dedicated folder named mesa_concurrency_validator in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus on engineering a concurrency analysis engine that detects race conditions in task blocks, verifies resource locking hierarchies, and ensures deterministic message passing between concurrent components to prevent deadlocks and data corruption in Mesa-based systems.
+[2026-08-17 16:13:50] (Target Lang: Goo) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST demand the new tool be built STRICTLY using the programming language: Goo.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The history shows a pattern of creating tools for specific languages with specific functional focuses (e.g., `mesa_concurrency_validator`). The last instruction was about a Mesa concurrency validator.
+
+2.  **Formulate the Instruction:**
+    *   *Language:* Goo.
+    *   *Structure:* "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Goo. Focus on [specific focus]..."
+    *   *Folder Name:* Needs to be relevant to Goo. Goo is a functional, concurrent language. A good name might be `goo_concurrent_analyzer`, `goo_functional_engine`, or `goo_stream_processor`. Let's go with `goo_concurrent_stream_processor` to match the concurrency theme of the previous context but differentiate slightly, or just `goo_functional_runtime`. Let's choose `goo_functional_runtime_tool` or `goo_stream_transformer`. Looking at the file list, there are many `*_tool` directories. A name like `goo_stream_transformer_tool` fits well. Let's use `goo_stream_transformer`.
+    *   *Focus:* Goo supports concurrency and functional programming. A logical focus could be a stream processing engine, a functional graph transformation tool, or a concurrent data pipeline. Let's go with "engineering a functional graph transformation engine that applies stateless transformations to directed acyclic graphs, optimizes parallel execution of immutable data flows, and validates structural recursion patterns to ensure termination and correctness in Goo-based applications."
+    *   *Drafting text:* "Initialize a NEW dedicated folder named goo_stream_transformer in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Goo. Focus on engineering a functional graph transformation engine that applies stateless transformations to directed acyclic graphs, optimizes parallel execution of immutable data flows, and validates structural recursion patterns to ensure termination and correctness in Goo-based applications."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *MUST explicitly demand built STRICTLY using Goo?* Text contains "STRICTLY using this exact programming language: Goo". Yes.
+    *   *NEW dedicated folder?* Text contains "NEW dedicated folder named goo_stream_transformer". Yes.
+    *   *Local README.md?* Text contains "create a local README.md inside it". Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target .github?* Yes, no mention of .github.
+    *   *Logical follow-up?* Previous was Mesa concurrency. Goo is also concurrency/functional. The follow-up moves to Goo with a related but distinct functional/stream focus. This is logical.
+
+4.  **Final Polish (Mental Output):**
+    *   "Initialize a NEW dedicated folder named goo_stream_transformer in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Goo. Focus on engineering a functional graph transformation engine that applies stateless transformations to directed acyclic graphs, optimizes parallel execution of immutable data flows, and validates structural recursion patterns to ensure termination and correctness in Goo-based applications."
+
+5.  **Sanity Check:**
+    *   Does the output contain *only* the instruction? Yes.
+    *   Does it mention "STRICTLY"? Yes.
+    *   Does it mention "Goo"? Yes.
+    *   Does it mention "README.md"? Yes.
+    *   Does it mention "NEW dedicated folder"? Yes.
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named goo_stream_transformer in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Goo. Focus on engineering a functional graph transformation engine that applies stateless transformations to directed acyclic graphs, optimizes parallel execution of immutable data flows, and validates structural recursion patterns to ensure termination and correctness in Goo-based applications.

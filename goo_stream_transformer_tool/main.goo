@@ -1,0 +1,99 @@
+package goo_stream_transformer
+
+import "fmt"
+import "time"
+
+// Stream represents a data stream in the Goo Stream Transformer.
+type Stream struct {
+	ID      string
+	Sources []*Source
+	Sinks   []*Sink
+	Active  bool
+	Mu      sync.Mutex
+}
+
+// Source represents a data source in the stream.
+type Source struct {
+	ID     string
+	Type   string
+	Config map[string]interface{}
+}
+
+// Sink represents a data sink in the stream.
+type Sink struct {
+	ID     string
+	Type   string
+	Config map[string]interface{}
+}
+
+// Transform represents a transformation in the stream.
+type Transform struct {
+	ID     string
+	Type   string
+	Config map[string]interface{}
+}
+
+// NewStream creates a new Stream instance.
+func NewStream(id string) *Stream {
+	return &Stream{
+		ID:      id,
+		Sources: make([]*Source, 0),
+		Sinks:   make([]*Sink, 0),
+		Active:  false,
+	}
+}
+
+// AddSource adds a source to the stream.
+func (s *Stream) AddSource(id string, sourceType string, config map[string]interface{}) {
+	sources := &Source{
+		ID:     id,
+		Type:   sourceType,
+		Config: config,
+	}
+	s.Sources = append(s.Sources, sources)
+}
+
+// AddSink adds a sink to the stream.
+func (s *Stream) AddSink(id string, sinkType string, config map[string]interface{}) {
+	sinks := &Sink{
+		ID:     id,
+		Type:   sinkType,
+		Config: config,
+	}
+	s.Sinks = append(s.Sinks, sinks)
+}
+
+// AddTransform adds a transform to the stream.
+func (s *Stream) AddTransform(id string, transformType string, config map[string]interface{}) {
+	transforms := &Transform{
+		ID:     id,
+		Type:   transformType,
+		Config: config,
+	}
+	s.Transform = append(s.Transform, transforms)
+}
+
+// StartStream starts the stream processing.
+func (s *Stream) StartStream() error {
+	if s.Active {
+		return fmt.Errorf("stream %s is already active", s.ID)
+	}
+
+	s.Active = true
+
+	// Simulate stream processing
+	go func() {
+		for s.Active {
+			time.Sleep(time.Second)
+			fmt.Println("Processing stream...")
+		}
+	}()
+
+	return nil
+}
+
+// StopStream stops the stream processing.
+func (s *Stream) StopStream() {
+	s.Active = false
+	fmt.Printf("Stream %s stopped\n", s.ID)
+}

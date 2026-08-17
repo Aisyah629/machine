@@ -984,3 +984,5 @@ Training Machine
 - Created/Updated module: `fsprog_tool` (See `fsprog_tool/README.md` for details)
 
 - Created/Updated module: `lsharp_dotnet_tool` (See `lsharp_dotnet_tool/README.md` for details)
+
+- Created/Updated module: `fancy_tool` (See `fancy_tool/README.md` for details)

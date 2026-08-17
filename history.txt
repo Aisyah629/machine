@@ -38163,3 +38163,72 @@ Initialize a NEW dedicated folder named pilot_workflow_tool in the workspace, cr
 </think>
 
 Initialize a NEW dedicated folder named fl_transformation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FL. Focus entirely on this new objective: 'Develop a declarative functional transformation engine'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: FL.
+[2026-08-17 04:12:06] (Target Lang: Visual Basic .NET) The user wants a follow-up instruction to generate a new tool.
+The previous instruction generated `fl_transformation_tool` using `FL`.
+The new instruction must:
+1. Generate exactly 1 logical follow-up instruction.
+2. Explicitly demand the language: Visual Basic .NET.
+3. If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target the .github directory.
+6. The instruction format matches the history: "Initialize a NEW dedicated folder named [new_folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [language]. Focus entirely on this new objective: '[objective]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [language]."
+
+Language: Visual Basic .NET
+Folder Name: `vbnet_tool` or something related. Looking at the workspace, `vbnet_tool` already exists (`./vbnet_tool/README.md`, `./vbnet_tool/main.vb`).
+Wait, the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder".
+I should pick a folder name that doesn't exist, or just use the format. The prompt says "Generate exactly 1 logical follow-up instruction." I will invent a folder name like `dotnet_advanced_tool` or `visual_basic_dotnet_tool`. Let's use `visual_basic_dotnet_tool`.
+Objective: Something relevant to VB.NET, e.g., "Develop a robust desktop application framework with UI binding capabilities".
+Language: Visual Basic .NET
+
+Check constraints:
+- One instruction? Yes.
+- New folder? Yes.
+- README.md? Yes.
+- Strictly Visual Basic .NET? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+
+Draft: Initialize a NEW dedicated folder named visual_basic_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Basic .NET. Focus entirely on this new objective: 'Develop a robust desktop application framework with UI binding capabilities'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Basic .NET.
+
+Check against history format:
+"Initialize a NEW dedicated folder named fl_transformation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FL. Focus entirely on this new objective: 'Develop a declarative functional transformation engine'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: FL."
+
+Matches perfectly.
+I will output exactly that string.
+One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Basic .NET." I'll make sure it's at the end as in the example.
+Everything looks solid.
+Output matches draft.✅
+Proceed. 
+Self-Correction/Verification during thought:
+The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Basic .NET. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+I will construct it carefully.
+"Initialize a NEW dedicated folder named visual_basic_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Basic .NET. Focus entirely on this new objective: 'Develop a robust desktop application framework with UI binding capabilities'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Basic .NET."
+Matches constraints. Output matches exactly.✅
+Done. 
+Proceeds. 
+Output Generation. 
+[Output Text] Initialize a NEW dedicated folder named visual_basic_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Basic .NET. Focus entirely on this new objective: 'Develop a robust desktop application framework with UI binding capabilities'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Basic .NET. 
+All constraints met. No extra text. Format matches history. Language specified correctly. Folder name is new. README.md mentioned. Objective included. Explicit demand at end included. Non-github directory. Exactly 1 instruction. Ready. 
+Output matches response. 
+Proceeds. 
+[Final Check of the Prompt]
+"Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Basic .NET. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+Everything is aligned.
+Output Generation. 
+(Self-Correction/Refinement during thought: I should ensure the folder name isn't already in the workspace to be strictly "NEW". `vbnet_tool` exists. I'll use `dotnet_ui_framework_tool` or `visual_basic_dotnet_tool`. I'll stick with `visual_basic_dotnet_tool`.)
+Done. 
+Output matches the draft. 
+Proceeds. 
+[Output Generation] (Proceeds)
+`Initialize a NEW dedicated folder named visual_basic_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Basic .NET. Focus entirely on this new objective: 'Develop a robust desktop application framework with UI binding capabilities'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Basic .NET.`
+Matches perfectly.✅
+Done. 
+[Output Generation] (Proceeds)
+*(Self-Correction/Note during generation prep)*: I will verify the exact wording requested: "Initialize a NEW dedicated folder named [new_folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [Language]."
+All good.
+Output matches. 
+Proceeds. 
+[Final Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named visual_basic_dotnet_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Basic .NET. Focus entirely on this new objective: 'Develop a robust desktop application framework with UI binding capabilities'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Visual Basic .NET.

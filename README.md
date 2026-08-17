@@ -942,3 +942,5 @@ Training Machine
 - Created/Updated module: `pilot_workflow_tool` (See `pilot_workflow_tool/README.md` for details)
 
 - Created/Updated module: `fl_transformation_tool` (See `fl_transformation_tool/README.md` for details)
+
+- Created/Updated module: `visual_basic_dotnet_tool` (See `visual_basic_dotnet_tool/README.md` for details)

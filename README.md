@@ -1044,3 +1044,5 @@ Training Machine
 - Created/Updated module: `newlisp_tool` (See `newlisp_tool/README.md` for details)
 
 - Created/Updated module: `lynx_tool` (See `lynx_tool/README.md` for details)
+
+- Created/Updated module: `netrexx_tool` (See `netrexx_tool/README.md` for details)

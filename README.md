@@ -988,3 +988,5 @@ Training Machine
 - Created/Updated module: `fancy_tool` (See `fancy_tool/README.md` for details)
 
 - Created/Updated module: `vhdl_tool` (See `vhdl_tool/README.md` for details)
+
+- Created/Updated module: `corn_tool` (See `corn_tool/README.md` for details)

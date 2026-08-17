@@ -37239,3 +37239,75 @@ Initialize a NEW dedicated folder named argus_tool in the workspace, create a lo
 </think>
 
 Initialize a NEW dedicated folder named spin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPIN. Focus entirely on this new objective: 'Model and verify a concurrent dining philosophers system with liveness guarantees and bounded buffer synchronization'. You MUST write code for this task strictly using this exact programming language: SPIN.
+[2026-08-17 00:04:24] (Target Lang: Mesa) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A massive list of existing tool directories/files (mostly programming languages/tools)
+   - **History:** Shows a previous instruction about `spin_tool` and its response/confirmation.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mesa. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using `Mesa`.
+   - If building a new tool: place it in a NEW dedicated folder, create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - The instruction should be logical and follow the pattern of the history (which was about creating a tool folder, README, and building a specific tool with a specific language and objective).
+
+3.  **Deconstruct the Required Instruction Format:**
+   Based on the history example:
+   `Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write code for this task strictly using this exact programming language: [Language].`
+
+   I need to adapt this to `Mesa`.
+   - Tool name: `mesa_tool`
+   - Language: `Mesa`
+   - Objective: Needs to be logical for Mesa. Mesa was a programming language for concurrent computing and distributed systems (developed at Xerox PARC). A good objective would be something related to its concurrency features, like process coordination, distributed task scheduling, or cooperative concurrency. Let's go with: "Design and implement a concurrent process scheduling system with cooperative multitasking and inter-process communication primitives."
+   - Must explicitly mention `Mesa` as requested.
+   - Must include the exact phrasing demands.
+
+4.  **Draft the Instruction:**
+   Initialize a NEW dedicated folder named mesa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus entirely on this new objective: 'Design and implement a concurrent process scheduling system with cooperative multitasking and inter-process communication primitives'. You MUST write code for this task strictly using this exact programming language: Mesa.
+
+5.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Mesa? Yes.
+   - Place in NEW dedicated folder and create local README.md? Yes (`mesa_tool`, `README.md`).
+   - Return ONLY the instruction text? Yes.
+   - NEVER target `.github`? Yes, not mentioned.
+   - Matches the style/pattern of the prompt's history? Yes.
+
+   One minor adjustment to ensure it strictly matches the prompt's exact phrasing requirements: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mesa." I'll make sure the exact phrase or a very close imperative match is there. The draft has: "STRICTLY using this exact programming language: Mesa." and "You MUST write code for this task strictly using this exact programming language: Mesa." This covers it.
+
+   Let's refine it to perfectly mirror the requested structure:
+   `Initialize a NEW dedicated folder named mesa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus entirely on this new objective: 'Implement a distributed task queue with cooperative concurrency and message passing synchronization'. You MUST write code for this task strictly using this exact programming language: Mesa.`
+
+   Check against constraints:
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mesa." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+
+   All constraints met. Output matches exactly. I will generate just the instruction text as requested.
+   One thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mesa." I will ensure that exact wording is in the output or very close to it, as it's a direct constraint. The prompt's own example used "STRICTLY using this exact programming language: SPIN." I'll follow that pattern.
+
+   Final check of the draft:
+   `Initialize a NEW dedicated folder named mesa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus entirely on this new objective: 'Implement a distributed task queue with cooperative concurrency and message passing synchronization'. You MUST write code for this task strictly using this exact programming language: Mesa.`
+
+   Looks solid. Proceeds. 
+   Output matches exactly.✅
+   No extra text.✅
+   Ready. 
+   Output generation. 
+   [Done] 
+   *Self-Correction/Verification during thought*: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mesa." I will make sure the output contains that exact demand phrasing to be safe. I'll adjust slightly to match the prompt's exact wording if needed, but the draft already does. I'll stick with it. It's precise.
+   Final string: `Initialize a NEW dedicated folder named mesa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus entirely on this new objective: 'Implement a distributed task queue with cooperative concurrency and message passing synchronization'. You MUST write code for this task strictly using this exact programming language: Mesa.` -> Matches all constraints. Output matches.✅ Proceeds. 
+   [Output Generation] -> *Proceeds* (done)
+   *(Note: I will output exactly the string without quotes)*
+   `Initialize a NEW dedicated folder named mesa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus entirely on this new objective: 'Implement a distributed task queue with cooperative concurrency and message passing synchronization'. You MUST write code for this task strictly using this exact programming language: Mesa.` -> This is the exact output.✅ All constraints met. Output matches.✅ [Proceeds] 
+   [Done] 
+   *Output Generation* (matches the final string) -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named mesa_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mesa. Focus entirely on this new objective: 'Implement a distributed task queue with cooperative concurrency and message passing synchronization'. You MUST write code for this task strictly using this exact programming language: Mesa.

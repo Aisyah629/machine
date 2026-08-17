@@ -1,0 +1,183 @@
+MODULE Scheduler;
+
+IMPORTS
+    Class,
+    Monitor,
+    Queue,
+    Thread;
+
+
+class SchedulerClass
+    EXPORTS = Queue.QueueClass,
+             Monitor.MonitorClass
+    ASSUMES = Thread.ThreadClass
+
+define SchedulerClass
+    priorityQueue: Queue.PriorityQueueClass;
+    activeProcesses: Monitor.ProcessMonitorClass;
+    messageChannel: Queue.MessageQueueClass;
+
+    create scheduler
+        priorityQueue := Queue.newPriorityQueue();
+        activeProcesses := Monitor.newProcessMonitor();
+        messageChannel := Queue.newMessageQueue();
+        return scheduler;
+
+    schedule process
+        priorityQueue.enqueue(process);
+        activeProcesses.register(process);
+        return process;
+
+    dispatch next
+        if not priorityQueue.isEmpty()
+            next := priorityQueue.dequeue();
+            activeProcesses.activate(next);
+            messageChannel.broadcast(next);
+            return next;
+        else
+            return nil;
+        end;
+
+    process message
+        msg := messageChannel.receive();
+        activeProcesses.sync(msg.process);
+        return msg;
+
+    terminate process
+        activeProcesses.deregister(process);
+        priorityQueue.remove(process);
+        messageChannel.flush(process);
+        return;
+
+end SchedulerClass;
+
+
+monitor MonitorClass
+    processList: List.ProcessListClass;
+    syncCondition: Thread.ConditionVariableClass;
+
+define MonitorClass
+    create monitor
+        processList := List.newProcessList();
+        syncCondition := Thread.newConditionVariable();
+        return monitor;
+
+    register process
+        processList.append(process);
+        return;
+
+    deregister process
+        processList.remove(process);
+        return;
+
+    activate process
+        syncCondition.signal();
+        return;
+
+    wait
+        syncCondition.wait();
+        return;
+
+    sync targetProcess
+        while not processList.contains(targetProcess)
+            wait;
+        end;
+        return;
+
+end MonitorClass;
+
+
+queue QueueClass
+    buffer: Array.ArrayClass;
+    capacity: Int;
+    front, rear: Int;
+
+define QueueClass
+    create queue cap
+        buffer := Array.newArray(cap);
+        capacity := cap;
+        front := 0;
+        rear := 0;
+        return queue;
+
+    enqueue item
+        if not isFull()
+            buffer[rear] := item;
+            rear := (rear + 1) mod capacity;
+            return true;
+        else
+            return false;
+        end;
+
+    dequeue
+        if isEmpty()
+            return nil;
+        end;
+        item := buffer[front];
+        front := (front + 1) mod capacity;
+        return item;
+
+    isFull
+        return (rear + 1) mod capacity = front;
+
+    isEmpty
+        return front = rear;
+
+end QueueClass;
+
+
+thread ThreadClass
+    state: Enum.StateEnum;
+    priority: Int;
+    stack: Array.StackClass;
+
+define ThreadClass
+    create id pri
+        state := Enum.Runnable;
+        priority := pri;
+        stack := Array.newStack();
+        return thread;
+
+    suspend
+        state := Enum.Suspended;
+        return;
+
+    resume
+        state := Enum.Runnable;
+        return;
+
+    isRunnable
+        return state = Enum.Runnable;
+
+    isSuspended
+        return state = Enum.Suspended;
+
+end ThreadClass;
+
+
+main
+    scheduler := SchedulerClass.create();
+    monitor := MonitorClass.create();
+    queue := QueueClass.create(capacity: 100);
+    thread1 := ThreadClass.create(id: 1, pri: 5);
+    thread2 := ThreadClass.create(id: 2, pri: 8);
+
+    scheduler.schedule(thread1);
+    scheduler.schedule(thread2);
+    monitor.register(thread1);
+    monitor.register(thread2);
+
+    loop
+        next := scheduler.dispatchNext();
+        if next != nil
+            monitor.sync(next);
+        else
+            break;
+        end;
+    end;
+
+    scheduler.terminate(thread1);
+    scheduler.terminate(thread2);
+    return;
+
+END Scheduler;

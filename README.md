@@ -928,3 +928,5 @@ Training Machine
 - Created/Updated module: `oxygene_tool` (See `oxygene_tool/README.md` for details)
 
 - Created/Updated module: `lithe_tool` (See `lithe_tool/README.md` for details)
+
+- Created/Updated module: `./euslisp_memory_network_tool` (See `./euslisp_memory_network_tool/README.md` for details)

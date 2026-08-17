@@ -1,0 +1,77 @@
+(progn 
+  ;; Low-level Memory Management Simulator
+  
+  ;; Memory Pool Class
+  (defclass mem-pool (instance)
+    ((size :initarg :size :accessor pool-size)
+     (used :initform 0 :accessor pool-used)
+     (fragments :initform 0 :accessor pool-fragments)
+     (blocks :initform nil :accessor pool-blocks)))
+  
+  (defun alloc-block (pool size)
+    (let ((current-used (pool-used pool))
+          (current-size (pool-size pool)))
+      (if (>= (+ current-used size) current-size)
+          (progn 
+            (format t "Allocation failed: Insufficient space.~%")
+            nil)
+          (progn 
+            (setf (pool-used pool) (+ current-used size))
+            (incf (pool-fragments pool))
+            (let ((new-block (list :size size :offset current-used :free nil)))
+              (push new-block (pool-blocks pool))
+              new-block)))))
+  
+  (defun free-block (pool offset)
+    (dolist (block (pool-blocks pool))
+      (if (eq (getf block :offset) offset)
+          (progn 
+            (setf (getf block :free) t)
+            (let ((current-used (pool-used pool))
+                  (block-size (getf block :size)))
+              (setf (pool-used pool) (- current-used block-size))))))))
+  
+  (defun print-memory-stats (pool)
+    (let ((size (pool-size pool))
+          (used (pool-used pool)))
+      (format t "Memory Pool Stats:~%")
+      (format t "  Total Size: ~a~%" size)
+      (format t "  Used: ~a~%" used)
+      (format t "  Available: ~a~%" (- size used))
+      (format t "  Fragmentation Events: ~a~%" (pool-fragments pool))))
+  
+  ;; Network Protocol Simulator
+  
+  ;; Packet Class
+  (defclass packet (instance)
+    ((source :initarg :source :accessor packet-source)
+     (destination :initarg :destination :accessor packet-destination)
+     (payload :initarg :payload :accessor packet-payload)
+     (latency :initarg :latency :accessor packet-latency)))
+  
+  ;; Network Simulation Loop
+  (defun run-simulation ()
+    (let ((memory (make 'mem-pool :size 1024))
+          (packets (list)))
+      ;; Initial Allocation
+      (alloc-block memory 200)
+      (alloc-block memory 300)
+      
+      ;; Print initial memory stats
+      (print-memory-stats memory)
+      
+      ;; Simulate Network Traffic
+      (dotimes (i 5)
+        (let* ((src (format nil "Node-~a" i))
+               (dst (format nil "Node-~a" (mod (+ i 1) 5)))
+               (payload (format nil "Hello from ~a" src))
+               (new-packet (make 'packet 
+                                :source src 
+                                :destination dst 
+                                :payload payload 
+                                :latency (+ 10 (random 50)))))
+          (format t "Sent packet from ~a to ~a (Latency: ~a ms)~%" src dst (packet-latency new-packet)))))
+      
+      (format t "Simulation completed.~%")))
+
+(run-simulation)

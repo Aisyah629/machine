@@ -932,3 +932,5 @@ Training Machine
 - Created/Updated module: `./euslisp_memory_network_tool` (See `./euslisp_memory_network_tool/README.md` for details)
 
 - Created/Updated module: `algol58_tool` (See `algol58_tool/README.md` for details)
+
+- Created/Updated module: `arexx_tool` (See `arexx_tool/README.md` for details)

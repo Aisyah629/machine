@@ -922,3 +922,5 @@ Training Machine
 - Created/Updated module: `./chomski_tool` (See `./chomski_tool/README.md` for details)
 
 - Created/Updated module: `nxtg_tool` (See `nxtg_tool/README.md` for details)
+
+- Created/Updated module: `./opal_tool` (See `./opal_tool/README.md` for details)

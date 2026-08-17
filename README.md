@@ -1162,3 +1162,5 @@ Training Machine
 - Created/Updated module: `hamiltonc_shell_tool` (See `hamiltonc_shell_tool/README.md` for details)
 
 - Created/Updated module: `abe_tool` (See `abe_tool/README.md` for details)
+
+- Created/Updated module: `acc_tool` (See `acc_tool/README.md` for details)

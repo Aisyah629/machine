@@ -1,8 +1,60 @@
-BEGIN
-  INTEGER X, Y;
-  X := 10;
-  Y := 20;
-  OUTSTRING("The sum is: ");
-  OUTINTEGER(X + Y);
-  OUTCHAR(10);
-END
+comment Legacy System Compiler Backend in ALGOL 58;
+
+declare
+    SourceCode array [1:1000] of character;
+    AbstractSyntaxTree root;
+    IntermediateCode vector [1:500] of instruction;
+    TargetCode array [1:2000] of bit;
+    ErrorLevel fixed binary;
+    CompilationUnit procedure; returning (AbstractSyntaxTree);
+    GenerateIntermediateCode procedure (AbstractSyntaxTree, IntermediateCode);
+    EmitTargetCode procedure (IntermediateCode, TargetCode);
+    ReportError procedure (character vector, fixed binary);
+    InitializeCompiler procedure;
+    FinalizeCompiler procedure;
+
+begin
+    comment Main Compiler Driver;
+    InitializeCompiler();
+    ErrorLevel := 0;
+    root := CompilationUnit();
+    if root not equal null then
+    begin
+        GenerateIntermediateCode(root, IntermediateCode);
+        EmitTargetCode(IntermediateCode, TargetCode);
+    end;
+    if ErrorLevel > 0 then
+        ReportError("Compilation completed with errors.", ErrorLevel);
+    FinalizeCompiler();
+end CompilationUnit;
+
+procedure CompilationUnit;
+begin
+    comment Parse source into AST;
+    return null;
+end CompilationUnit;
+
+procedure GenerateIntermediateCode;
+begin
+    comment Transform AST into intermediate representation;
+end GenerateIntermediateCode;
+
+procedure EmitTargetCode;
+begin
+    comment Translate intermediate code to target machine code;
+end EmitTargetCode;
+
+procedure InitializeCompiler;
+begin
+    comment Set up compiler environment and load initial state;
+end InitializeCompiler;
+
+procedure FinalizeCompiler;
+begin
+    comment Release resources and save compilation results;
+end FinalizeCompiler;
+
+procedure ReportError;
+begin
+    comment Log and display compilation errors;
+end ReportError;

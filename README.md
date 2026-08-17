@@ -1184,3 +1184,5 @@ Training Machine
 - Created/Updated module: `cms_exec_tool` (See `cms_exec_tool/README.md` for details)
 
 - Created/Updated module: `octave_advanced_simulation_tool` (See `octave_advanced_simulation_tool/README.md` for details)
+
+- Created/Updated module: `./gibiane_tool` (See `./gibiane_tool/README.md` for details)

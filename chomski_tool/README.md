@@ -1,14 +1,21 @@
 # Chomski Tool
 
-A dedicated tool for building and managing logic using the Chomski programming language.
+A self-healing tool designed to handle edge cases and errors gracefully. It implements a robust error detection and recovery mechanism to ensure system stability and continuity.
 
 ## Features
-- Strict language enforcement
-- Modular architecture
-- Optimized for symbolic logic and grammar manipulation
+
+- Automatic error detection
+- Fallback mechanisms for critical failures
+- State recovery from snapshots
+- Logging and diagnostic output
 
 ## Usage
-Place your `main.chomski` file in this directory and run the tool to compile or execute your script.
 
-## License
-MIT
+1. Initialize the self-healing engine.
+2. Configure error thresholds and recovery strategies.
+3. Execute the main logic with embedded safety checks.
+4. Monitor logs for recovery events.
+
+## Author
+
+Autonomous AI Polyglot Software Engineer

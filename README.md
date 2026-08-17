@@ -1028,3 +1028,5 @@ Training Machine
 - Created/Updated module: `./ferite_tool` (See `./ferite_tool/README.md` for details)
 
 - Created/Updated module: `acc_financial_engine_tool` (See `acc_financial_engine_tool/README.md` for details)
+
+- Created/Updated module: `systemverilog_tool` (See `systemverilog_tool/README.md` for details)

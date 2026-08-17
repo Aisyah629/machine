@@ -45255,3 +45255,92 @@ This looks solid.
 </think>
 
 Initialize a NEW dedicated folder named goo_stream_transformer in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Goo. Focus on engineering a functional graph transformation engine that applies stateless transformations to directed acyclic graphs, optimizes parallel execution of immutable data flows, and validates structural recursion patterns to ensure termination and correctness in Goo-based applications.
+[2026-08-17 16:15:14] (Target Lang: T) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a large list of files/folders in a workspace, mostly representing various programming language tools. There's a "History" section showing a previous prompt/response pattern.
+   - **History Content:** The history shows a previous instruction about creating a `goo_stream_transformer` folder/tool using the Goo programming language, focusing on functional graph transformation.
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - Must explicitly demand the new tool be built STRICTLY using the exact programming language: `T` (which I interpret as the language named "T" from the list, or perhaps "T" as in the tool/language from the list: `./t_tool/`). Wait, the prompt says "this exact programming language: T." I should use "T" as requested.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Must be logical follow-up.
+
+2.  **Identify Key Constraints & Requirements:**
+   - "Generate exactly 1 logical follow-up instruction."
+   - "STRICTLY using this exact programming language: T."
+   - "NEW dedicated folder" + "local README.md"
+   - "Return ONLY the instruction text."
+   - "NEVER target the .github directory."
+   - Must be logical based on the history/workspace context.
+
+3.  **Analyze the Workspace/History Context:**
+   - The history mentions `goo_stream_transformer` and Goo language.
+   - The language to use now is `T` (from `./t_tool/`).
+   - `T` language (often used for mathematical programming/modeling, similar to AMPL or specialized DSLs, but I'll keep it general/focused on what's logical).
+   - I need to create a new tool in a NEW folder using `T`.
+   - Logical follow-up: Maybe something related to data modeling, constraint solving, or mathematical optimization, which fits `T`'s typical use cases, or something that complements the Goo stream transformer (e.g., a data validation engine, a symbolic algebra system, a mathematical solver, etc.).
+   - I'll frame it around a "mathematical constraint solver" or "symbolic modeling engine" to keep it distinct but in the same domain of formal/functional/mathematical tools.
+   - Let's stick closely to the prompt's exact wording requirements: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T. Focus on engineering [specific technical goal]."
+
+4.  **Draft Construction (Mental Refinement):**
+   Initialize a NEW dedicated folder named symbolic_constraint_solver in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T. Focus on engineering a declarative modeling engine that formulates complex optimization problems, applies constraint propagation algorithms, and generates executable solution strategies for high-performance mathematical programming tasks within T-based environments.
+
+   Check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand STRICTLY using T? Yes.
+   - NEW dedicated folder & local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Logical follow-up? Yes, follows the pattern of the previous Goo tool but shifts to T's strengths (mathematical/constraint modeling).
+
+   Let's verify the exact phrasing requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: T." -> I'll make sure "STRICTLY using this exact programming language: T" is in the output.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   "Return ONLY the instruction text." -> Checked.
+   "NEVER target the .github directory." -> Checked.
+
+   One minor adjustment: Ensure the prompt's exact phrasing style matches the history if possible, but it's flexible. I'll keep it concise and direct.
+
+   Draft: Initialize a NEW dedicated folder named mathematical_constraint_modeler in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T. Focus on engineering a declarative optimization framework that models complex algebraic relationships, applies advanced constraint propagation techniques, and generates deterministic solution paths for high-fidelity mathematical programming tasks within T-based systems.
+
+   All constraints met. I will output exactly this text. No extra words. Ensure it's strictly one instruction. The prompt says "Generate exactly 1 logical follow-up instruction." I will output just that sentence/block.
+
+   Double-checking the exact wording constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: T." -> I'll use that exact phrase or very close to it. The prompt says "STRICTLY using this exact programming language: T." I'll incorporate it exactly.
+
+   Final check of the draft:
+   Initialize a NEW dedicated folder named mathematical_constraint_modeler in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T. Focus on engineering a declarative optimization framework that models complex algebraic relationships, applies advanced constraint propagation techniques, and generates deterministic solution paths for high-fidelity mathematical programming tasks within T-based systems.
+
+   Matches all constraints. Proceeds.✅
+   Output matches exactly.👇🏼
+   "Initialize a NEW dedicated folder named mathematical_constraint_modeler in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T. Focus on engineering a declarative optimization framework that models complex algebraic relationships, applies advanced constraint propagation techniques, and generates deterministic solution paths for high-fidelity mathematical programming tasks within T-based systems." -> This is one instruction. It meets all criteria. I will output it. 
+   Wait, let's make sure it strictly says "STRICTLY using this exact programming language: T." as requested. The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: T." I'll use that exact phrasing.
+   "Initialize a NEW dedicated folder named mathematical_constraint_modeler in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T. Focus on engineering a declarative optimization framework that models complex algebraic relationships, applies advanced constraint propagation techniques, and generates deterministic solution paths for high-fidelity mathematical programming tasks within T-based systems."
+   This is perfect. Output matches.✅
+   Proceeds. 
+   Self-Correction/Refinement during thought: The prompt says "return ONLY the instruction text." I will ensure no extra text, no quotes, just the instruction. I'll verify the exact wording matches the constraint "STRICTLY using this exact programming language: T." I will literally write "STRICTLY using this exact programming language: T." in the output to be safe.
+
+   Final text: Initialize a NEW dedicated folder named mathematical_constraint_modeler in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T. Focus on engineering a declarative optimization framework that models complex algebraic relationships, applies advanced constraint propagation techniques, and generates deterministic solution paths for high-fidelity mathematical programming tasks within T-based systems. 
+   All good.✅
+   Output matches. 
+   [Proceeds] 
+   *Self-Correction/Verification during generation prep*: 
+   Check constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: T." -> I'll make sure the phrase is exact.
+   Check constraint: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Done.
+   Check constraint: "Return ONLY the instruction text." -> Done.
+   Check constraint: "NEVER target the .github directory." -> Done.
+   Check constraint: "Generate exactly 1 logical follow-up instruction." -> Done.
+   All constraints satisfied. Output matches exactly.✅
+   Output generation. 
+   [Output] Initialize a NEW dedicated folder named mathematical_constraint_modeler in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T. Focus on engineering a declarative optimization framework that models complex algebraic relationships, applies advanced constraint propagation techniques, and generates deterministic solution paths for high-fidelity mathematical programming tasks within T-based systems. 
+   (Note: I'll ensure it's exactly one paragraph/sentence as requested.) 
+   Ready. 
+   *Output Generation* (matches the refined text)✅
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: T. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches. 
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named mathematical_constraint_modeler in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: T. Focus on engineering a declarative optimization framework that models complex algebraic relationships, applies advanced constraint propagation techniques, and generates deterministic solution paths for high-fidelity mathematical programming tasks within T-based systems.

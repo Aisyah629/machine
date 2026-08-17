@@ -1,0 +1,113 @@
+define :main();
+  ;;; POP-11 Symbolic AI Reasoning Engine
+  ;;; Pattern matching and rule-based inference system
+
+  ;;; Initialize the knowledge base and rule set
+  lvars rules = [
+    ;;; Rule 1: If X is a mammal and X has hair, then X is a mammal (tautology for structure)
+    [match [is mammal ?X] [has hair ?X] => [conclusion is mammal ?X]]
+    ;;; Rule 2: If X is a bird and X can fly, then X can move
+    [match [is bird ?X] [can fly ?X] => [conclusion can move ?X]]
+    ;;; Rule 3: If X is a fish and X lives in water, then X can swim
+    [match [is fish ?X] [lives in water ?X] => [conclusion can swim ?X]]
+  ];
+
+  ;;; Initialize the fact base
+  lvars facts = [
+    [is mammal dog]
+    [has hair dog]
+    [is bird eagle]
+    [can fly eagle]
+    [is fish salmon]
+    [lives in water salmon]
+  ];
+
+  ;;; Inference loop
+  lvars new_facts = [];
+  lvars rule_applied = true;
+
+  while rule_applied do
+    lvars rule_applied = false;
+    lvars rule;
+    for rule in rules do
+      lvars match_pattern = car(rule);
+      lvars consequent = cddr(rule);
+      
+      ;;; Simple pattern matching simulation
+      ;;; In a real POP-11 system, this would use the pattern matcher
+      ;;; Here we simulate it for the executable format
+      lvars fact;
+      for fact in facts do
+        lvars match_result = try_match(match_pattern, fact);
+        if match_result then
+          ;;; Apply rule
+          lvars conclusion = apply_rule(consequent, match_result);
+          lvars new_fact = car(conclusion);
+          
+          ;;; Add to new facts if not already present
+          if not fact_exists(new_fact, facts) then
+            pushnew(new_fact, new_facts, revapp);
+            lvars rule_applied = true;
+          endif;
+        endif;
+      endfor;
+    endfor;
+    
+    ;;; Update facts
+    if new_facts then
+      lvars facts = append(facts, new_facts);
+      lvars new_facts = [];
+    endif;
+  endwhile;
+
+  ;;; Output results
+  printf('Reasoning Engine Results:\n');
+  printf('=========================\n');
+  lvars f;
+  for f in facts do
+    printf('   %B\n', f);
+  endfor;
+  printf('=========================\n');
+  printf('Total facts derived: %B\n', length(facts));
+  printf('Done.\n');
+
+enddefine;
+
+define try_match(pattern, fact);
+  lvars p = pattern;
+  lvars f = fact;
+  
+  ;;; Simple structural match
+  if hd(p) = hd(f) then
+    lvars p_rest = tl(p);
+    lvars f_rest = tl(f);
+    
+    if null(p_rest) then
+      true;
+    else
+      ;;; Handle variables in pattern
+      if car(p_rest) = 'X' or car(p_rest) = 'Y' or car(p_rest) = 'Z' then
+        true;
+      else
+        try_match(p_rest, f_rest);
+      endif;
+    endif;
+  else
+    false;
+  endif;
+enddefine;
+
+define apply_rule(consequent, match_vars);
+  ;;; Simple substitution for the sake of simulation
+  consequent;
+enddefine;
+
+define fact_exists(fact, facts_list);
+  lvars f;
+  for f in facts_list do
+    if f = fact then
+      true;
+    endif;
+  endfor;
+  false;
+enddefine;

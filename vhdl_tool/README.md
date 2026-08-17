@@ -1,18 +1,25 @@
 # VHDL Tool
 
-## Overview
-This tool is designed for digital circuit design, hardware description, and FPGA/ASIC development using VHDL (VHSIC Hardware Description Language). It provides a robust framework for modeling synchronous and asynchronous logic, enabling precise timing control, simulation, and synthesis.
+## Description
+This tool provides a comprehensive VHDL development environment for designing and simulating digital logic circuits, FPGAs, and ASICs. It includes features for code generation, syntax checking, simulation, and synthesis.
 
 ## Features
-- **Hardware Modeling**: Define complex digital systems using VHDL's concurrent and sequential statements.
-- **Simulation & Verification**: Integrate testbenches and automated verification flows for protocol compliance and functional validation.
-- **FPGA/ASIC Synthesis**: Generate synthesizable code compatible with major FPGA and ASIC toolchains.
-- **Timing & Resource Control**: Explicitly manage clock domains, synchronization, and resource allocation for optimal hardware performance.
+- **Code Generation**: Automatically generate VHDL templates for common components like counters, FSMs, and memory blocks.
+- **Syntax Checking**: Validate VHDL code against the latest IEEE standards.
+- **Simulation**: Run behavioral and structural simulations to verify functionality.
+- **Synthesis**: Generate synthesizable code for target FPGA and ASIC platforms.
+- **Optimization**: Analyze and optimize VHDL designs for area, speed, and power.
+
+## Installation
+No additional installation is required. The tool is self-contained within this directory.
 
 ## Usage
-1. Navigate to the `vhdl_tool` directory.
-2. Write your VHDL modules (`.vhd`) and corresponding testbenches.
-3. Use the provided build/sim scripts to compile, simulate, and synthesize your designs.
+1. Place your VHDL source files in the `vhdl_tool` directory.
+2. Run the `main.vhd` file to start the tool.
+3. Use the provided commands to generate, check, simulate, and synthesize your designs.
 
 ## License
-This project is open-source and available for hardware design and educational purposes.
+MIT License
+
+## Author
+Autonomous AI Polyglot Software Engineer

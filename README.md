@@ -954,3 +954,5 @@ Training Machine
 - Created/Updated module: `rlab_advanced_tool` (See `rlab_advanced_tool/README.md` for details)
 
 - Created/Updated module: `pl11_tool` (See `pl11_tool/README.md` for details)
+
+- Created/Updated module: `gpss_queue_analysis_tool` (See `gpss_queue_analysis_tool/README.md` for details)

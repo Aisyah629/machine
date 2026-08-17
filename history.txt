@@ -48682,3 +48682,43 @@ Initialize a NEW dedicated folder named acc_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named bitc_binary_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BitC.
+[2026-08-17 21:38:15] (Target Lang: Simulink) Thinking process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using the language: Simulink.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the `.github` directory.
+    *   Context: The user provides a massive list of existing tools/directories in the workspace. This looks like a list of folders like `./tool_name_tool/README.md`, `./tool_name_tool/main.extension`. The history shows a pattern of "Initialize a NEW dedicated folder named [name]_tool in the workspace...".
+
+2.  **Analyze the Pattern from History:**
+    *   The history shows a previous instruction: "Initialize a NEW dedicated folder named bitc_binary_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BitC."
+    *   The output format is just the instruction string.
+    *   Naming convention seems to be `[name]_tool`.
+
+3.  **Draft the Instruction:**
+    *   Language: Simulink.
+    *   Action: Initialize NEW dedicated folder, create README.md, build tool.
+    *   Name: Needs a logical name. Since the previous one was `bitc_binary_validator_tool`, and Simulink is often used for modeling/simulation, a name like `simulink_model_validator_tool` or `simulink_system_simulator_tool` or `simulink_dynamic_system_tool` makes sense. The prompt asks for a "logical follow-up". Without a specific domain context other than the massive list, a generic but professional Simulink name is safe. Let's go with `simulink_dynamic_system_simulator_tool`.
+    *   Draft: "Initialize a NEW dedicated folder named simulink_dynamic_system_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink."
+
+4.  **Review against Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Explicitly demand Simulink? Yes ("STRICTLY using this exact programming language: Simulink").
+    *   NEW dedicated folder? Yes ("Initialize a NEW dedicated folder named...").
+    *   Local README.md? Yes ("create a local README.md inside it").
+    *   Return ONLY instruction text? Yes.
+    *   Never target .github? Yes (No mention of .github).
+    *   Format matches history style? Yes.
+
+5.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named simulink_dynamic_system_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink.`
+
+6.  **Final Output Generation:**
+    *   The output should be just this string.
+    *   `Initialize a NEW dedicated folder named simulink_dynamic_system_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink.`
+</think>
+
+Initialize a NEW dedicated folder named simulink_dynamic_system_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink.

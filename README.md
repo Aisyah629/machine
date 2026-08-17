@@ -966,3 +966,5 @@ Training Machine
 - Created/Updated module: `rpg_business_logic_tool` (See `rpg_business_logic_tool/README.md` for details)
 
 - Created/Updated module: `d_tool` (See `d_tool/README.md` for details)
+
+- Created/Updated module: `sa_c_tool` (See `sa_c_tool/README.md` for details)

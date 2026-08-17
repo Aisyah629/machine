@@ -1128,3 +1128,5 @@ Training Machine
 - Created/Updated module: `csh_system_monitoring_tool` (See `csh_system_monitoring_tool/README.md` for details)
 
 - Created/Updated module: `goo_stream_analysis_tool` (See `goo_stream_analysis_tool/README.md` for details)
+
+- Created/Updated module: `ps_document_composer_tool` (See `ps_document_composer_tool/README.md` for details)

@@ -1,0 +1,47 @@
+// code_analysis_tool - Source code transformation and syntax verification
+// This tool parses CODE source files, detects syntax anomalies, and generates static analysis reports.
+
+program code_analysis
+
+    // Import necessary modules
+    import "system.io"
+    import "code.parser"
+    import "report.generator"
+
+    // Main entry point
+    procedure main()
+        // Define command line arguments
+        let input_file = argv[1]
+        let output_file = argv[2] ? "analysis_report.txt"
+
+        // Validate input file
+        if not file.exists(input_file)
+            print_error("Input file does not exist: " + input_file)
+            exit(1)
+        end if
+
+        // Parse the source file
+        let ast = parser.parse(input_file)
+        if ast is error
+            print_error("Failed to parse file: " + input_file)
+            exit(1)
+        end if
+
+        // Perform static analysis
+        let report = analyzer.analyze(ast)
+        if report is error
+            print_error("Analysis failed: " + report.message)
+            exit(1)
+        end if
+
+        // Generate and output the report
+        report.save(output_file)
+        print("Analysis complete. Report saved to: " + output_file)
+    end procedure
+
+    // Helper procedure for printing errors
+    procedure print_error(message)
+        stderr.write("ERROR: " + message + "\n")
+    end procedure
+
+end program

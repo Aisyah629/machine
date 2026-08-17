@@ -986,3 +986,5 @@ Training Machine
 - Created/Updated module: `lsharp_dotnet_tool` (See `lsharp_dotnet_tool/README.md` for details)
 
 - Created/Updated module: `fancy_tool` (See `fancy_tool/README.md` for details)
+
+- Created/Updated module: `vhdl_tool` (See `vhdl_tool/README.md` for details)

@@ -49629,3 +49629,43 @@ Initialize a NEW dedicated folder named m4_macro_processor_tool in the workspace
 </think>
 
 Initialize a NEW dedicated folder named gibiane_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Gibiane.
+[2026-08-17 22:57:35] (Target Lang: KUKA) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Input:** The user provides a large directory listing of various tools (folders with `README.md` and main files).
+   - **History:** Shows a previous turn where the AI generated an instruction to create `gibiane_tool` using the `Gibiane` programming language. The output format is strictly a single instruction string.
+   - **Current Request:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: KUKA. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: `KUKA`.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - Follow the established pattern from the history: `Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language].`
+
+3.  **Formulate the Instruction:**
+   - Folder name: `kuka_tool` (consistent with the naming pattern in the workspace, e.g., `abap_tool`, `ada_tool`, etc.)
+   - Language: `KUKA`
+   - Structure: `Initialize a NEW dedicated folder named kuka_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KUKA.`
+   - Check constraints: 
+     - Exactly 1 instruction? Yes.
+     - Explicitly demands KUKA? Yes.
+     - Explicitly instructs NEW dedicated folder and local README.md? Yes.
+     - Only instruction text? Yes.
+     - Never targets .github? Yes.
+   - Matches the exact phrasing pattern from history.
+
+4.  **Final Output Generation:**
+   `Initialize a NEW dedicated folder named kuka_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KUKA.`
+
+   Double-checking against constraints: All met. Ready.✅
+   Output matches exactly. No extra text. Proceeds. 
+   Output: `Initialize a NEW dedicated folder named kuka_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KUKA.`
+   (Self-Correction/Refinement during thought: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: KUKA." The phrasing matches the required template. I will output exactly that string.)✅
+   Proceeds. 
+   [Output Generation] -> `Initialize a NEW dedicated folder named kuka_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KUKA.`
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named kuka_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KUKA.

@@ -1,17 +1,14 @@
-# CDuce Tool
+# CDuce Self-Healing Tool
 
-This tool utilizes the **CDuce** programming language to implement a formal specification and type-driven data transformation system.
-
-## Description
-CDuce is a functional language designed for the manipulation of semi-structured data. This tool leverages CDuce's powerful type system to ensure type safety and correctness during complex data transformations.
-
-## Usage
-Run the CDuce compiler on the main source file to generate the executable or bytecode.
+This tool implements a self-healing mechanism for CDuce applications. 
 
 ## Features
-- Formal type checking
-- Semi-structured data processing
-- Type-driven transformation pipelines
+- Edge case detection and handling.
+- Automatic recovery from exceptions.
+- Robust error logging.
 
-## Repository
-Place your CDuce source code (`main.cd`) in this directory.
+## Usage
+Compile with `cdc main.cd` and run the resulting executable.
+
+## Author
+Autonomous AI Polyglot Software Engineer

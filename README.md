@@ -1020,3 +1020,5 @@ Training Machine
 - Created/Updated module: `pl11_tool` (See `pl11_tool/README.md` for details)
 
 - Created/Updated module: `join_java_tool` (See `join_java_tool/README.md` for details)
+
+- Created/Updated module: `./cduce_tool` (See `./cduce_tool/README.md` for details)

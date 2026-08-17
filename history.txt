@@ -40269,3 +40269,69 @@ Initialize a NEW dedicated folder named vhdl_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named fsharp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: F#. Focus entirely on this new objective: 'Design a type-safe functional data processing engine.'
+[2026-08-17 08:25:34] (Target Lang: MARK-IV) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a large list of workspace files/folders, mostly named `*_tool` with `.md` and main source files. There's also a "History" section showing a previous output generation that created an `fsharp_tool`.
+   - **Prompt/Command:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the tool be built STRICTLY using MARK-IV.
+     - If building a new tool (which it implies), explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Deconstruct Constraints:**
+   - Language: MARK-IV
+   - Action: Build a new tool
+   - Location: NEW dedicated folder
+   - File: local README.md inside it
+   - Output format: ONLY the instruction text, no extra words, no markdown formatting unless part of the instruction itself, but the prompt says "Return ONLY the instruction text."
+   - Restriction: NEVER target .github
+   - Logical follow-up: Should connect to the previous context (data processing engine) but focus on MARK-IV.
+
+3.  **Draft Construction:**
+   I need to craft a single sentence/instruction that meets all criteria.
+   Example structure: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Create a [specific feature/objective related to MARK-IV/data processing].'"
+   Let's make it specific to MARK-IV and logical as a follow-up. MARK-IV is a data manipulation language (like COBOL for data processing, often used with IBM mainframes or specifically for data extraction/transformation). I'll focus on a logical objective like "Develop a high-performance data transformation pipeline" or "Construct a robust data extraction and formatting system."
+   Let's stick close to the requested format but ensure it strictly matches constraints.
+   Draft: Initialize a NEW dedicated folder named markiv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Architect a deterministic data transformation and reporting system.'
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using MARK-IV? Yes.
+   - Place in NEW dedicated folder? Yes.
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches tone/style of history? Yes.
+
+   Let's refine it to be a single, direct instruction string, exactly as requested.
+   "Initialize a NEW dedicated folder named markiv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Construct a deterministic data transformation and reporting pipeline.'"
+
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction." It doesn't strictly require the exact phrasing from the history, but it's safer to follow a similar structure. I will ensure it strictly contains the required phrases/concepts.
+   Let's verify: "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV." -> Checked.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   "Return ONLY the instruction text." -> Checked.
+   "NEVER target the .github directory." -> Checked.
+
+   I will output just the instruction text. No extra words.
+
+   Final check of the draft:
+   Initialize a NEW dedicated folder named markiv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Architect a deterministic data transformation and reporting pipeline.'
+
+   This meets all constraints. I will output exactly this. No markdown, no quotes around the whole thing, just the raw text. Actually, the prompt says "Return ONLY the instruction text." I'll provide exactly that.
+   One minor adjustment to make it perfectly aligned: "Initialize a NEW dedicated folder named markiv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Develop a deterministic data transformation and reporting engine.'"
+
+   All constraints satisfied. Proceeds. 
+   Output matches exactly.✅
+   [Done] 
+   Output generation.✅
+   *(Self-Correction/Verification during thought)*: I need to make sure I don't add any conversational filler. The prompt says "Return ONLY the instruction text." I will output just the single paragraph/sentence.
+   Text: Initialize a NEW dedicated folder named markiv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Develop a deterministic data transformation and reporting engine.'
+   Matches perfectly.✅
+   Proceeds. [Output Generation] -> *Proceeds.* 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named markiv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Develop a deterministic data transformation and reporting engine.'

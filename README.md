@@ -952,3 +952,5 @@ Training Machine
 - Created/Updated module: `q_advanced_tool` (See `q_advanced_tool/README.md` for details)
 
 - Created/Updated module: `rlab_advanced_tool` (See `rlab_advanced_tool/README.md` for details)
+
+- Created/Updated module: `pl11_tool` (See `pl11_tool/README.md` for details)

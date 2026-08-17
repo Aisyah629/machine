@@ -38595,3 +38595,57 @@ Initialize a NEW dedicated folder named obj2_advanced_tool in the workspace, cre
 </think>
 
 Initialize a NEW dedicated folder named slip_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SLIP. Focus entirely on this new objective: 'Develop an advanced sequential data transformation pipeline for high-throughput batch processing and workflow automation'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SLIP.
+[2026-08-17 05:24:52] (Target Lang: PL-11) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Input Format:** The user provides a workspace listing, a history log, and a specific prompt at the end.
+   - **Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL-11. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Key Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using PL-11.
+     - If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Context from history shows a pattern: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [LANGUAGE]."
+
+2.  **Identify Core Requirements:**
+   - Folder name: `pl11_tool` (or similar, following the pattern `slip_advanced_tool` from history, but I'll stick to a standard naming like `pl11_tool` or `pl11_advanced_tool`). Let's use `pl11_tool`.
+   - Language: PL-11 (explicitly demanded)
+   - Objective: Needs to be logical for PL-11. PL-11 is a mainframe/legacy language often used for system programming, control language, or data processing on CDC mainframes (similar to SLIP mentioned in history). I'll frame an objective around "Develop a robust system control and data processing utility for mainframe batch operations".
+   - Structure: Follow the exact phrasing pattern from the history to ensure compliance.
+   - Constraint Check: "Return ONLY the instruction text." "NEVER target the .github directory." "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL-11."
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named pl11_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL-11. Focus entirely on this new objective: 'Develop a robust system control and data processing utility for mainframe batch operations'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL-11.
+
+   Let's verify against constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using PL-11? Yes, twice in the prompt pattern, but I'll make sure it's explicit.
+   - NEW dedicated folder & README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   - Logical follow-up? Yes, continues the pattern of creating specialized language tools.
+
+   I will adjust slightly to match the exact successful format from the history, as the user seems to expect that specific template style:
+   "Initialize a NEW dedicated folder named pl11_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL-11. Focus entirely on this new objective: 'Develop a robust mainframe system control and batch data processing utility'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL-11."
+
+   Check constraints again: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL-11." -> This is in the prompt, so I must include it in the output. The prompt says "Generate exactly 1 logical follow-up instruction." I will output just the instruction string.
+
+   Final check of the exact wording required:
+   "Initialize a NEW dedicated folder named pl11_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL-11. Focus entirely on this new objective: 'Develop a robust mainframe system control and batch data processing utility'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL-11."
+
+   This matches all constraints perfectly. I will output exactly this string.✅
+   Proceed. 
+   Output matches draft.✅
+   [Output Generation] -> *Proceeds*
+   *(Done.)*
+   Output: `Initialize a NEW dedicated folder named pl11_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL-11. Focus entirely on this new objective: 'Develop a robust mainframe system control and batch data processing utility'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL-11.`
+   All constraints met. No extra text. Ready. 
+   Self-Correction/Refinement during thought: The prompt says "Return ONLY the instruction text." I will ensure absolutely no markdown formatting or extra words. Just the raw string. The history shows exactly that format. I'll stick to it.✅
+   Output matches.✅
+   Proceeds.✅
+   [Final Output Generation] -> *Proceeds*
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named pl11_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL-11. Focus entirely on this new objective: 'Develop a robust mainframe system control and batch data processing utility'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL-11.

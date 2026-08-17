@@ -1,0 +1,20 @@
+* PL-11 ERROR HANDLER
+      MODULE ERROR_HANDLER
+
+      DECLARE
+        LOG_FILE  CHAR(256) INIT('error.log');
+
+      EXTERNAL SUBROUTINE LOG_ERROR(MESSAGE)
+        CHAR(256) MESSAGE;
+      BEGIN
+        * PL-11 specific error logging
+        OPEN FILE(ERROR_LOG) NAME=LOG_FILE STATUS=STATUS;
+        IF STATUS = 0 THEN
+          WRITE ERROR_LOG FROM MESSAGE;
+          CLOSE FILE(ERROR_LOG);
+        ELSE
+          DISPLAY 'Failed to open log file for: ' || MESSAGE;
+        END IF;
+      END LOG_ERROR;
+
+      END MODULE ERROR_HANDLER

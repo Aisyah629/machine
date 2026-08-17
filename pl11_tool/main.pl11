@@ -1,0 +1,96 @@
+* PL-11 MAIN ENTRY POINT
+      PROGRAM MAIN
+
+      INCLUDE 'processor.pl11'
+      INCLUDE 'error_handler.pl11'
+
+      DECLARE
+        INPUT_FILE   FILE (INPUT, RECORD),
+        OUTPUT_FILE  FILE (OUTPUT, RECORD),
+        CONFIG_FILE  FILE (INPUT, RECORD),
+        ERROR_LOG    FILE (OUTPUT, RECORD);
+
+      DECLARE
+        BUFFER       CHAR(1024),
+        REC_COUNT    FIXED BINARY INIT(0),
+        ERROR_COUNT  FIXED BINARY INIT(0),
+        STATUS       FIXED BINARY;
+
+      BEGIN
+
+        /* Initialize Error Logging */
+        OPEN FILE(ERROR_LOG) NAME='error.log' STATUS=STATUS;
+        IF STATUS /= 0 THEN
+          DISPLAY 'Failed to open error log' END;
+
+        /* Initialize Configuration */
+        OPEN FILE(CONFIG_FILE) NAME='config.json' STATUS=STATUS;
+        IF STATUS /= 0 THEN
+          CALL LOG_ERROR('Failed to open config file');
+          STOP;
+        END IF;
+
+        /* Initialize Input/Output Files */
+        OPEN FILE(INPUT_FILE) NAME='input.dat' STATUS=STATUS;
+        IF STATUS /= 0 THEN
+          CALL LOG_ERROR('Failed to open input file');
+          STOP;
+        END IF;
+
+        OPEN FILE(OUTPUT_FILE) NAME='output.dat' STATUS=STATUS;
+        IF STATUS /= 0 THEN
+          CALL LOG_ERROR('Failed to open output file');
+          STOP;
+        END IF;
+
+        /* Process Data */
+        PERFORM UNTIL EOF(INPUT_FILE)
+          READ INPUT_FILE INTO BUFFER STATUS=STATUS;
+          IF STATUS /= 0 AND STATUS /= 100 THEN
+            CALL LOG_ERROR('I/O Error on record read');
+            ERROR_COUNT = ERROR_COUNT + 1;
+            ITERATE;
+          END IF;
+
+          IF STATUS = 100 THEN /* End of File */
+            LEAVE;
+          END IF;
+
+          /* Validate Record */
+          CALL VALIDATE_RECORD(BUFFER, STATUS);
+          IF STATUS /= 0 THEN
+            CALL LOG_ERROR('Invalid record: ' || BUFFER);
+            ERROR_COUNT = ERROR_COUNT + 1;
+            ITERATE;
+          END IF;
+
+          /* Transform Record */
+          CALL TRANSFORM_RECORD(BUFFER, OUTPUT_BUFFER, STATUS);
+          IF STATUS /= 0 THEN
+            CALL LOG_ERROR('Transformation error on record');
+            ERROR_COUNT = ERROR_COUNT + 1;
+            ITERATE;
+          END IF;
+
+          /* Write Output Record */
+          WRITE OUTPUT_FILE FROM OUTPUT_BUFFER STATUS=STATUS;
+          IF STATUS /= 0 THEN
+            CALL LOG_ERROR('I/O Error on record write');
+            ERROR_COUNT = ERROR_COUNT + 1;
+            ITERATE;
+          END IF;
+
+          REC_COUNT = REC_COUNT + 1;
+        END PERFORM;
+
+        /* Close Files */
+        CLOSE FILE(INPUT_FILE);
+        CLOSE FILE(OUTPUT_FILE);
+        CLOSE FILE(CONFIG_FILE);
+        CLOSE FILE(ERROR_LOG);
+
+        /* Display Summary */
+        DISPLAY 'Records Processed: ' || REC_COUNT;
+        DISPLAY 'Errors Encountered: ' || ERROR_COUNT;
+
+      END PROGRAM MAIN

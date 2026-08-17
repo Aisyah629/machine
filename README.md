@@ -946,3 +946,5 @@ Training Machine
 - Created/Updated module: `visual_basic_dotnet_tool` (See `visual_basic_dotnet_tool/README.md` for details)
 
 - Created/Updated module: `ambienttalk_advanced_tool` (See `ambienttalk_advanced_tool/README.md` for details)
+
+- Created/Updated module: `scilab_data_tool` (See `scilab_data_tool/README.md` for details)

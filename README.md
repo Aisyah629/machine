@@ -1086,3 +1086,5 @@ Training Machine
 - Created/Updated module: `queue_deadlock_analyzer` (See `queue_deadlock_analyzer/README.md` for details)
 
 - Created/Updated module: `scraper_rights_audit_tool` (See `scraper_rights_audit_tool/README.md` for details)
+
+- Created/Updated module: `./github_compliance_audit_tool` (See `./github_compliance_audit_tool/README.md` for details)

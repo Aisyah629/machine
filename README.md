@@ -1074,3 +1074,5 @@ Training Machine
 - Created/Updated module: `jcl_tool` (See `jcl_tool/README.md` for details)
 
 - Created/Updated module: `jcl_validation_tool` (See `jcl_validation_tool/README.md` for details)
+
+- Created/Updated module: `jcl_workflow_orchestrator_tool` (See `jcl_workflow_orchestrator_tool/README.md` for details)

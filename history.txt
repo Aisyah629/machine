@@ -44064,3 +44064,43 @@ Initialize a NEW dedicated folder named jcl_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named jcl_validation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using JCL. Focus on developing a comprehensive JCL syntax validator and resource auditor that prevents common mainframe errors, detects syntax violations, and ensures compliance with system resource limits during batch execution.
+[2026-08-17 14:46:31] (Target Lang: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).) The user wants a single logical follow-up instruction based on the provided workspace and history.
+The workspace contains a vast number of tools, including `jcl_validation_tool`.
+The history shows the previous instruction was: "Initialize a NEW dedicated folder named jcl_validation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using JCL. Focus on developing a comprehensive JCL syntax validator and resource auditor that prevents common mainframe errors, detects syntax violations, and ensures compliance with system resource limits during batch execution."
+This instruction was already executed, as `jcl_validation_tool` exists in the workspace.
+The new instruction should be a logical follow-up. Since `jcl_validation_tool` exists, perhaps we can enhance it, or build something related to JCL, or build a completely new tool in a different language as per the pattern of the workspace.
+However, the prompt asks for "exactly 1 logical follow-up instruction".
+The prompt also specifies a constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)."
+Wait, the constraint text "For more on scraping GitHub..." is likely a distractor or a required phrase to be included verbatim as the language constraint?
+The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [Text]".
+This is unusual. The text provided is not a programming language. It looks like a Terms of Service link.
+Looking at the pattern, the user might be testing if I can follow the instruction to include that specific text as the "language" constraint, even though it's not a language.
+Or perhaps the user pasted a template where the language was replaced by that text.
+The instruction ends with: "Return ONLY the instruction text. NEVER target the .github directory."
+So I need to generate an instruction that:
+1. Is a logical follow-up.
+2. Explicitly demands the tool be built STRICTLY using the "language" "For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)."
+3. If building a new tool, places it in a NEW dedicated folder and creates a README.md.
+4. Returns only the instruction text.
+5. Does not target `.github`.
+
+Given the absurdity of the "language" constraint, I must include that text exactly as the language requirement in the generated instruction.
+The logical follow-up could be to build a tool related to the previous topic (JCL) but in this "language", or just a generic tool.
+Since the previous tool was `jcl_validation_tool`, a follow-up might be a `jcl_execution_simulator` or similar.
+However, the constraint forces a specific string.
+I will construct an instruction to build a new tool, perhaps `jcl_runtime_simulator_tool`, using that specific text as the language constraint.
+Structure: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using [Language Constraint]. Focus on [description]."
+The "Language Constraint" is the long string about GitHub.
+So the output should be something like:
+"Initialize a NEW dedicated folder named jcl_runtime_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service). Focus on creating a simulation engine that mimics JCL batch processing steps, handles dataset allocation, and logs execution traces for mainframe environments."
+This satisfies all constraints.
+I need to make sure the "Language" is inserted correctly. The prompt says "built STRICTLY using this exact programming language: [Text]".
+So the instruction should read "built STRICTLY using [Text]".
+The result will be weird, but it follows the prompt's explicit demand.
+I will generate a follow-up for `jcl_runtime_simulator_tool` or similar.
+Let's choose `jcl_workflow_orchestrator_tool` as a logical follow-up to the validation tool.
+Instruction: Initialize a NEW dedicated folder named jcl_workflow_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service). Focus on developing a workflow management system that chains JCL jobs, handles dependencies between batch steps, and automates the submission sequence for complex mainframe processing pipelines.
+This looks good.
+</think>
+
+Initialize a NEW dedicated folder named jcl_workflow_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service). Focus on developing a workflow management system that chains JCL jobs, handles dependencies between batch steps, and automates the submission sequence for complex mainframe processing pipelines.

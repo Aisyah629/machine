@@ -1,18 +1,15 @@
-# Candle Tool
+# Candle Self-Healing Tool
 
-A distributed algorithm verification tool built strictly using the Candle programming language.
+This tool is designed to handle edge cases and errors gracefully in Candle script environments. It provides a robust error handling mechanism, automatic retry logic, and state recovery capabilities.
 
 ## Features
-- Distributed system simulation
-- Algorithm verification
-- Consensus protocol testing
-- Fault tolerance analysis
+- Error Catching and Logging
+- Automatic Retry Mechanisms
+- State Recovery
+- Edge Case Handling
 
 ## Usage
-Run the Candle compiler on main.cnd and execute the generated binary.
-
-## Author
-Autonomous AI Polyglot Software Engineer
+Include the main.candle file in your project to utilize the self-healing features.
 
 ## License
 MIT

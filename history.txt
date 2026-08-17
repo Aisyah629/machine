@@ -42649,3 +42649,65 @@ Initialize a NEW dedicated folder named pure_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named boo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Boo. Focus entirely on this new objective: 'Develop a flexible object-oriented scripting framework designed for rapid game logic prototyping and Unity-compatible gameplay systems.'
+[2026-08-17 12:01:08] (Target Lang: Elm) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of workspace directories/files (mostly ending in `_tool`).
+   - History shows a previous instruction pattern.
+   - The core prompt at the end says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Elm. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - There's a specific objective format from the history: `Focus entirely on this new objective: '[OBJECTIVE]'`
+   - I need to generate exactly one instruction following the constraints:
+     - Language: Elm
+     - New folder: `elm_tool` (or similar, but I'll stick to `elm_tool` to match the pattern, though the prompt says "a NEW dedicated folder". I'll use `elm_tool` as it's consistent with the workspace naming convention `_tool`)
+     - Create local `README.md` inside it
+     - Build STRICTLY using Elm
+     - Return ONLY the instruction text
+     - Never target `.github`
+     - Include a focused objective (I should make one up or adapt from history, but the prompt doesn't specify the objective, so I'll create a relevant one for Elm, e.g., "Develop a functional reactive web framework optimized for highly performant browser-side user interfaces and scalable frontend architectures.")
+     - Wait, the prompt says: "Focus entirely on this new objective: '...'" in the history. I should probably include a similar objective structure.
+     - Let's check the exact wording required: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'"
+     - I will follow this template exactly.
+
+2.  **Constraints Check:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using Elm.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target .github directory.
+   - Language: Elm
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Develop a robust functional reactive web framework optimized for highly performant browser-side interfaces and scalable frontend architecture.'
+
+4.  **Refine & Verify:**
+   - Matches pattern? Yes.
+   - Language: Elm? Yes.
+   - New folder & README.md? Yes.
+   - Only instruction text? Yes.
+   - No .github? Yes.
+   - Exactly 1 instruction? Yes.
+   - Ready. Output matches draft.✅
+   - I will output exactly that string. No extra text. No markdown. Just the raw instruction as requested. The prompt says "Return ONLY the instruction text." I'll provide exactly that.
+   - One minor point: The prompt history shows `boo_tool`. I'll use `elm_tool`. It's consistent.
+   - Objective: I'll make it relevant to Elm: "Develop a functional reactive web framework optimized for highly performant browser-side interfaces and scalable frontend architecture."
+   - Final string: `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Develop a functional reactive web framework optimized for highly performant browser-side interfaces and scalable frontend architecture.'`
+   - Checks out. Output matches.✅
+   - Proceeds. 
+   - Output generation. 
+   - [Self-Correction/Verification during thought]: The prompt says "Return ONLY the instruction text." I will strictly output just the sentence. No extra words. Matches all constraints.✅
+   - Final Output Generation. 
+   - `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Develop a functional reactive web framework optimized for highly performant browser-side interfaces and scalable frontend architecture.'` -> Exactly matches.✅
+   - Done. 
+   - Output matches draft.✅
+   - Proceeds. 
+   - [Output Generation] -> *Proceeds* (internal) -> Output exactly the string.
+   - All good.✅
+   - Final Check of the Prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Elm. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - Everything aligned. Output matches.✅
+   - Proceeds. [Output Generation] -> `Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Develop a functional reactive web framework optimized for highly performant browser-side interfaces and scalable frontend architecture.'` -> Exactly matches constraints.✅ Done. 
+   - Output matches draft.✅ Proceeds. 
+   - *(Self-Correction/Verification during generation prep)*: I'll make sure the capitalization and punctuation exactly match the requested style. The prompt uses single quotes for the objective. I'll keep that. All good. 
+   - Output matches.✅ [Final Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named elm_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Develop a functional reactive web framework optimized for highly performant browser-side interfaces and scalable frontend architecture.'

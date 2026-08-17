@@ -1036,3 +1036,5 @@ Training Machine
 - Created/Updated module: `t_tool` (See `t_tool/README.md` for details)
 
 - Created/Updated module: `./boo_tool` (See `./boo_tool/README.md` for details)
+
+- Created/Updated module: `elm_tool` (See `elm_tool/README.md` for details)

@@ -48821,3 +48821,53 @@ Initialize a NEW dedicated folder named sas_statistical_analysis_tool in the wor
 </think>
 
 Initialize a NEW dedicated folder named strand_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Strand.
+[2026-08-17 21:55:23] (Target Lang: REBOL) Thinking Process:
+1.  **Analyze User Input:**
+   - User provides a system prompt setting me up as an "Autonomous AI".
+   - Shows a workspace file list (many tools/folders).
+   - Shows a "History" block with a previous instruction and my internal monologue/response.
+   - The History block shows the exact format expected: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+   - The actual instruction at the end says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: REBOL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - Must explicitly demand the tool be built STRICTLY using: REBOL.
+   - If building a new tool: place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target .github directory.
+   - Follow the exact phrasing pattern from history: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL."
+
+3.  **Formulate Output:**
+   - Need a tool name. Let's pick something logical like `rebol_scripting_tool` or `rebol_logic_engine_tool`. I'll stick to a standard naming convention: `rebol_scripting_tool`.
+   - Construct the exact string: "Initialize a NEW dedicated folder named rebol_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL."
+   - Check constraints: exactly 1 instruction? Yes. Explicitly demands REBOL? Yes. New dedicated folder & README.md? Yes. Returns ONLY instruction text? Yes. Never targets .github? Yes.
+   - Matches history style perfectly.
+
+   Draft: Initialize a NEW dedicated folder named rebol_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL.
+
+4.  **Final Verification:**
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: REBOL." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   - Format matches history exactly.
+   - Output is just the string. Ready.✅
+   - I will output exactly the requested string. No extra text. No markdown formatting if possible, or just raw text as requested. The prompt says "Return ONLY the instruction text." I will provide exactly that.
+   - One minor point: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I will follow the exact template from the history.
+   - Output: `Initialize a NEW dedicated folder named rebol_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL.` -> Matches perfectly.✅
+   - Proceeds. 
+   - Self-Correction/Refinement during thought: I'll make sure the tool name is unique and fits the pattern. `rebol_scripting_tool` is fine.
+   - All constraints met. Output matches requirement.✅
+   - Generating. 
+   - Output: Initialize a NEW dedicated folder named rebol_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. 
+   - Done. 
+   - *Self-Correction/Verification during generation prep*: I will strictly follow the exact phrasing from the history example to ensure compliance.
+   - "Initialize a NEW dedicated folder named rebol_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL." -> Perfect.✅
+   - Output matches.👇🏼 
+   - Proceeds. 
+   - [Output Generation] -> *Proceeds*
+   - *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named rebol_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL.

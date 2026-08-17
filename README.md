@@ -1120,3 +1120,5 @@ Training Machine
 - Created/Updated module: `sympl_rule_based_reasoning_tool` (See `sympl_rule_based_reasoning_tool/README.md` for details)
 
 - Created/Updated module: `pikt_tool` (See `pikt_tool/README.md` for details)
+
+- Created/Updated module: `prolog_logic_engine_tool` (See `prolog_logic_engine_tool/README.md` for details)

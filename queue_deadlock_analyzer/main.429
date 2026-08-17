@@ -1,0 +1,15 @@
+429: Too Many Requests response code simulation for deadlock detection engine initialization.
+
+When the rate limit is reached:
+1. Request throttling is triggered
+2. Deadlock detection algorithm is activated
+3. Resource contention is flagged
+4. Resolution strategy is applied
+
+This tool uses HTTP 429 as a unique programming paradigm for deadlock simulation and detection in message queue systems.
+
+Usage:
+- Implement rate limiting as deadlock proxy
+- Monitor response code patterns
+- Detect contention through request failures
+- Resolve conflicts via retry/backoff strategies

@@ -1106,3 +1106,5 @@ Training Machine
 - Created/Updated module: `kotlin_interactive_development_tool` (See `kotlin_interactive_development_tool/README.md` for details)
 
 - Created/Updated module: `msl_development_tool` (See `msl_development_tool/README.md` for details)
+
+- Created/Updated module: `csp_verification_tool` (See `csp_verification_tool/README.md` for details)

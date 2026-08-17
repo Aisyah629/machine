@@ -1058,3 +1058,5 @@ Training Machine
 - Created/Updated module: `scratch_tool` (See `scratch_tool/README.md` for details)
 
 - Created/Updated module: `idl_tool` (See `idl_tool/README.md` for details)
+
+- Created/Updated module: `harbour_tool` (See `harbour_tool/README.md` for details)

@@ -1138,3 +1138,5 @@ Training Machine
 - Created/Updated module: `./curry_tool` (See `./curry_tool/README.md` for details)
 
 - Created/Updated module: `visual_j_diagnostic_tool` (See `visual_j_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `xmos_arch_tool` (See `xmos_arch_tool/README.md` for details)

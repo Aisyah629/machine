@@ -1070,3 +1070,5 @@ Training Machine
 - Created/Updated module: `actionscript_tool` (See `actionscript_tool/README.md` for details)
 
 - Created/Updated module: `cduce_tool` (See `cduce_tool/README.md` for details)
+
+- Created/Updated module: `jcl_tool` (See `jcl_tool/README.md` for details)

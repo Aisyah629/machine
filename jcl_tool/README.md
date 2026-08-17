@@ -1,20 +1,20 @@
-# JCL Tool
+# JCL Batch Job Control Engine
 
 ## Overview
-This tool is a dedicated utility for managing and generating Job Control Language (JCL) scripts, primarily used in mainframe environments for batch job control and processing.
+The JCL (Job Control Language) Batch Job Control Engine is a specialized tool designed for mainframe environments. It automates the orchestration of batch processes, manages system resource allocation, and resolves job step dependencies through precise directive execution.
 
-## Features
-- Automated JCL template generation for standard batch jobs
-- Job control and scheduling utilities
-- Error handling and logging directives for mainframe execution
-- Compliance with standard JCL syntax and best practices
+## Capabilities
+- **Task Sequencing:** Defines and executes multi-step batch jobs with conditional logic and error handling.
+- **Resource Management:** Allocates datasets, allocates/declares memory, and manages I/O devices efficiently.
+- **Dependency Resolution:** Analyzes job step relationships to optimize execution order and prevent bottlenecks.
+- **I/O Scheduling:** Prioritizes input/output operations to maximize throughput on mainframe architecture.
 
 ## Usage
-Create a new JCL script by referencing this tool's functions. The tool provides a structured approach to defining job steps, procedures, and system parameters.
+Integrate this engine into your mainframe batch processing workflows to automate routine operational tasks, reduce manual JCL writing errors, and improve overall job execution reliability.
 
-## Structure
-- `main.jcl`: Core implementation of the JCL job control and batch processing logic.
-- `README.md`: This documentation file.
+## Dependencies
+- Compatible with IBM Z/OS and standard mainframe JCL interpreters.
+- Requires baseline mainframe operating system permissions for batch job submission.
 
-## Notes
-This tool is strictly written in JCL and is designed for mainframe systems. Ensure proper environment configuration before execution.
+## License
+Internal use only. Distributed as part of the Autonomous AI Polyglot Software Engineer workspace.

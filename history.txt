@@ -44526,3 +44526,55 @@ Initialize a NEW dedicated folder named xpath_validation_engine_tool in the work
 </think>
 
 Initialize a NEW dedicated folder named mdl_material_property_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MDL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on developing a comprehensive engineering model compiler that parses material datasets, computes derived physical constants, and generates validated configuration files for structural simulation pipelines.
+[2026-08-17 15:07:10] (Target Lang: Turbo C++) The user wants a single follow-up instruction.
+The instruction must:
+1. Generate exactly 1 logical follow-up instruction.
+2. Explicitly demand that the new tool be built STRICTLY using Turbo C++.
+3. Instruct to place it in a NEW dedicated folder and create a local README.md if building a new tool.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+
+The workspace has a `.git` and `.github` directory. I should make sure the instruction avoids `.github`. The prompt already says "NEVER target the .github directory", so I will just make sure the instruction doesn't mention it or ask to modify it.
+
+I need to come up with a tool name and purpose related to Turbo C++. The instruction should be self-contained.
+
+Draft:
+Initialize a NEW dedicated folder named turbo_cpp_legacy_runtime_enhancer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Turbo C++. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on developing a robust runtime environment analyzer and debug hook framework tailored for legacy DOS-based applications compiled with Borland compilers.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand STRICTLY using Turbo C++? Yes.
+- Explicitly instruct to place in NEW dedicated folder and create local README.md? Yes.
+- Return ONLY the instruction text? Yes.
+- NEVER target .github? Yes, it doesn't mention .github.
+
+The draft looks solid. I will output exactly that text.
+Wait, let's verify the exact wording of the constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Turbo C++."
+And: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+
+I will construct the instruction carefully to match these exact phrases or very close to them as requested. The prompt says "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I'll include that exact phrasing.
+
+Revised:
+Initialize a NEW dedicated folder named turbo_cpp_legacy_system_profiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Turbo C++. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a high-performance memory manager and interrupt handler analyzer optimized for 16-bit real-mode DOS environments.
+
+Check constraints again:
+- "Return ONLY the instruction text." -> I will output just the instruction string.
+- "NEVER target the .github directory." -> Not mentioned.
+- "explicitly demand that the new tool be built STRICTLY using this exact programming language: Turbo C++." -> Included.
+- "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Included.
+
+Everything matches. Output matches exactly.
+Proceed. 
+One minor thing: The prompt says "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I will paste that exactly.
+Final string:
+Initialize a NEW dedicated folder named turbo_cpp_legacy_system_profiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Turbo C++. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a high-performance memory manager and interrupt handler analyzer optimized for 16-bit real-mode DOS environments.
+Done. 
+Output matches exactly.✅
+Proceeds. 
+[Output Generation] -> "Initialize a NEW dedicated folder named turbo_cpp_legacy_system_profiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Turbo C++. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a high-performance memory manager and interrupt handler analyzer optimized for 16-bit real-mode DOS environments." 
+(Self-Correction/Verification during thought): I'll make sure there's no extra text. The prompt says "Return ONLY the instruction text." I will strictly output just that.
+Ready. 
+Output matches.✅
+</think>
+
+Initialize a NEW dedicated folder named turbo_cpp_legacy_system_profiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Turbo C++. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a high-performance memory manager and interrupt handler analyzer optimized for 16-bit real-mode DOS environments.

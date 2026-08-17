@@ -38947,3 +38947,42 @@ Initialize a NEW dedicated folder named formac_symbolic_engine_tool in the works
 </think>
 
 Initialize a NEW dedicated folder named rpg_business_logic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RPG. Focus entirely on this new objective: 'Develop a robust batch processing engine for legacy financial reporting and sequential file manipulation'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: RPG.
+[2026-08-17 05:56:47] (Target Lang: A-0 System) The user wants a follow-up instruction for a new tool.
+The tool must be built using the programming language: A-0 System.
+It needs to be placed in a NEW dedicated folder and create a local README.md.
+The objective should be specific and logical for the context.
+The language to use is A-0 System.
+The tool name should follow the pattern `a0_system_tool` (based on existing list: `./a0_system_tool`).
+The prompt already mentions `./a0_system_tool` in the workspace list, so I should follow that structure.
+The instruction format should be: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [Language]."
+The workspace list shows `./a0_system_tool` already exists. Usually, the AI generates instructions for *new* tools or updates. The prompt asks to "Generate exactly 1 logical follow-up instruction." and mentions "If building a new tool...".
+Looking at the previous turn, the output was for `rpg_business_logic_tool`.
+The current prompt asks for "A-0 System".
+The tool name is `a0_system_tool`.
+The folder name should be `a0_system_tool`.
+The language is A-0 System.
+Objective: Something related to A-0 System. A-0 System is an early programming system for IBM 701. It's assembly-like.
+Maybe "Develop a low-level system utility for memory management and I/O control on legacy IBM mainframe environments".
+Or "Create a foundational kernel module for hardware abstraction and interrupt handling on early mainframe architecture".
+Let's pick an objective that sounds technical and fits A-0.
+"Implement a low-level memory management utility for direct hardware access and interrupt servicing on early IBM mainframe systems".
+The instruction must be generated.
+The format is fixed.
+"Initialize a NEW dedicated folder named a0_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A-0 System. Focus entirely on this new objective: 'Implement a low-level memory management utility for direct hardware access and interrupt servicing on early IBM mainframe systems'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: A-0 System."
+Check constraints:
+- 1 logical follow-up instruction: Yes.
+- Language: A-0 System: Yes.
+- NEW dedicated folder: Yes.
+- Local README.md: Yes.
+- Return ONLY instruction text: Yes.
+- Never target .github: Yes.
+
+The user provided the workspace list which includes `./a0_system_tool`. The AI is supposed to generate an instruction. The fact that it exists in the list might mean it was already created or the list is just context of what's available/possible. The instruction asks to initialize a *NEW* folder. If the folder exists, the instruction might be redundant in a real scenario, but based on the pattern of these prompts, the AI just generates the text string for the instruction, assuming the execution might create it or overwrite, or the list is the state before the instruction runs. The prompt asks to "Generate exactly 1 logical follow-up instruction", implying the AI is creating the text of the instruction. The text should describe the action. The text should say "Initialize a NEW dedicated folder named a0_system_tool". Even if it exists, the instruction is to do that. The constraint "If building a new tool" applies. The tool name is `a0_system_tool` based on the language.
+Result: "Initialize a NEW dedicated folder named a0_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A-0 System. Focus entirely on this new objective: 'Implement a low-level memory management utility for direct hardware access and interrupt servicing on early IBM mainframe systems'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: A-0 System."
+The objective string needs quotes inside the instruction.
+The language is "A-0 System".
+The folder is "a0_system_tool".
+Looks correct.
+</think>
+
+Initialize a NEW dedicated folder named a0_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: A-0 System. Focus entirely on this new objective: 'Implement a low-level memory management utility for direct hardware access and interrupt servicing on early IBM mainframe systems'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: A-0 System.

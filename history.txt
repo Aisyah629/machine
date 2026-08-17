@@ -44856,3 +44856,81 @@ Initialize a NEW dedicated folder named async_message_queue_monitor_tool in the 
 </think>
 
 Initialize a NEW dedicated folder named queue_deadlock_analyzer in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: 429: Too Many Requests. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a deadlock detection and resolution engine that complements the asynchronous message queue monitoring, designed to track resource contention and prevent infinite wait states.
+[2026-08-17 15:55:42] (Target Lang: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories and files, mostly representing various programming language tools (e.g., `./bash_tool`, `./python_ml_tool`, etc.). Notably, `./queue_deadlock_analyzer` already exists in the list with `README.md` and `main.429`.
+   - **History:** Shows a previous instruction: `Initialize a NEW dedicated folder named queue_deadlock_analyzer in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: 429: Too Many Requests...`
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 logical follow-up instruction.
+     - Explicitly demand the new tool be built STRICTLY using the exact programming language provided: "For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)."
+     - Explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target .github.
+     - Follow the pattern/format of previous instructions in the history.
+
+2.  **Identify Key Elements for the Output:**
+   - Must start with something like "Initialize a NEW dedicated folder named [folder_name] in the workspace..."
+   - Must include: "...create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [provided language]."
+   - Must explicitly repeat the constraint about placing it in a NEW dedicated folder and creating a local README.md (as per the prompt's explicit demand: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.").
+   - Must end with a functional focus/description for the tool.
+   - The exact programming language to use is: "For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)."
+   - Need to pick a new folder name that isn't already used and fits the pattern. Let's use `github_terms_compliance_engine_tool` or `scraper_rights_audit_tool`. Let's go with `scraper_rights_audit_tool`.
+   - Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)."
+   - I will construct the instruction exactly matching the pattern.
+
+   Pattern from history:
+   "Initialize a NEW dedicated folder named [FOLDER_NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering [DESCRIPTION]."
+
+   Let's plug in the values:
+   - FOLDER_NAME: `scraper_rights_audit_tool`
+   - LANGUAGE: `For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).`
+   - DESCRIPTION: `Focus on engineering a compliance and rights-aware scraping monitor that ensures all automated data collection operations strictly adhere to platform policies and mitigate legal risks.`
+
+   Combine:
+   "Initialize a NEW dedicated folder named scraper_rights_audit_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service). If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a compliance and rights-aware scraping monitor that ensures all automated data collection operations strictly adhere to platform policies and mitigate legal risks."
+
+3.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand new tool be built STRICTLY using exact programming language provided? Yes.
+   - Explicitly instruct to place in NEW dedicated folder and create local README.md? Yes, it's in the prompt's required phrasing, and I'll make sure it's in the output.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Checked. Not mentioned.
+   - Matches history pattern? Yes.
+
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [text]." I will ensure the exact text is placed right after "STRICTLY using this exact programming language: ".
+   The prompt also says: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." This is already part of the standard pattern, but I'll make sure it's explicitly included as requested.
+
+   Let's draft it carefully:
+   `Initialize a NEW dedicated folder named scraper_rights_audit_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service). If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a compliance and rights-aware scraping monitor that ensures all automated data collection operations strictly adhere to platform policies and mitigate legal risks.`
+
+   Check against constraints:
+   - Exactly 1 instruction? Yes.
+   - Language exact match? Yes.
+   - Explicit folder/README instruction? Yes.
+   - Only instruction text? Yes.
+   - No .github? Yes.
+   - Follows pattern? Yes.
+
+   All good. Output matches exactly. I will generate it now. 
+   One thing to note: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [text].. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I will incorporate the exact phrasing requested. The draft does exactly that.
+   Ready.✅
+   Output matches the draft.✅
+   Proceeds. 
+   Self-Correction/Refinement during thought: 
+   The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   I will make sure the output strictly follows the exact wording pattern from the history:
+   "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [language]. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering [description]."
+   This matches perfectly. I will output exactly that.✅
+   Final check of the text to output:
+   `Initialize a NEW dedicated folder named scraper_rights_audit_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service). If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a compliance and rights-aware scraping monitor that ensures all automated data collection operations strictly adhere to platform policies and mitigate legal risks.`
+   Matches all constraints. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds* ✅
+   *(Self-Correction/Verification during thought)*: Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [text].. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." The double period in the prompt is likely a typo. I'll just output the instruction as a single coherent sentence block matching the history format. All constraints are met. The folder name `scraper_rights_audit_tool` is fresh. The description ties into the language text. All good. 
+   Output matches exactly.✅
+   [Final Output Generation] -> *Proceeds* ✅
+</think>
+
+Initialize a NEW dedicated folder named scraper_rights_audit_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service). If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Focus on engineering a compliance and rights-aware scraping monitor that ensures all automated data collection operations strictly adhere to platform policies and mitigate legal risks.

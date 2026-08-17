@@ -1084,3 +1084,5 @@ Training Machine
 - Created/Updated module: `cool_syntax_analyzer_tool` (See `cool_syntax_analyzer_tool/README.md` for details)
 
 - Created/Updated module: `queue_deadlock_analyzer` (See `queue_deadlock_analyzer/README.md` for details)
+
+- Created/Updated module: `scraper_rights_audit_tool` (See `scraper_rights_audit_tool/README.md` for details)

@@ -39463,3 +39463,45 @@ Initialize a NEW dedicated folder named xquery_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named ats_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ATS. Focus entirely on this new objective: 'Construct a dependently typed functional compilation framework for verifying mathematical theorems and generating optimized C code from high-level functional specifications'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ATS.
+[2026-08-17 07:37:27] (Target Lang: XQuery) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Language Constraint: MUST explicitly demand the new tool be built STRICTLY using XQuery.
+    *   New Tool Requirement: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Output Constraint: Return ONLY the instruction text. NEVER target `.github`.
+    *   Context: The user provided a workspace list and a history of a previous instruction. The previous instruction was about `ats_tool` with ATS language. The follow-up should likely continue the pattern or context but switch to XQuery as per the explicit constraint.
+
+2.  **Drafting the Instruction:**
+    *   *Core Action:* Initialize a NEW dedicated folder.
+    *   *Folder Name:* Needs to be logical for XQuery. `xquery_tool` or `xquery_framework`? Looking at the workspace list, there are many `*_tool` folders. `xquery_tool` exists in the list (`./xquery_tool`). However, the constraint says "If building a new tool... NEW dedicated folder". Usually, in these prompts, "new tool" implies a fresh creation. If `xquery_tool` already exists in the list, creating a "new" folder might mean `xquery_tool_2` or the instruction implies creating the tool structure even if the folder exists? Or perhaps the "new tool" is a distinct entity. Given the previous example (`ats_tool` was in the list too (`./ats_tool`), the instruction created a "NEW dedicated folder named ats_tool". This suggests the instruction creates the folder structure regardless of existence, or the model should propose a new folder. To be safe, I'll use a folder name that matches the pattern. `xquery_tool` is a good candidate, or `xquery_advanced_tool`. The prompt asks for a "logical follow-up". The previous was ATS for theorem proving. A logical follow-up for XQuery might be XML data processing or transformation.
+    *   *Language Constraint:* "STRICTLY using this exact programming language: XQuery."
+    *   *README:* "create a local README.md inside it".
+    *   *Objective:* "Construct a dependently typed..." was the previous objective. For XQuery, a logical objective might be "Develop a declarative data transformation pipeline for processing complex XML/JSON hierarchies into relational structures with rigorous schema validation." or "Build a high-performance XQuery engine module for semantic web reasoning and RDF triple generation." Let's go with a data transformation/validation focus as it fits XQuery well.
+    *   *Mandatory Phrasing:* "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XQuery. Focus entirely on this new objective: '[Objective]'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: XQuery."
+
+3.  **Refining the Text:**
+    *   *Folder Name:* `xquery_tool` is in the list. The previous history shows `ats_tool` was in the list, and the instruction asked for `ats_tool`. So I should ask for `xquery_tool`.
+    *   *Text:* "Initialize a NEW dedicated folder named xquery_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XQuery. Focus entirely on this new objective: 'Construct a high-performance declarative data transformation pipeline for processing complex XML/JSON hierarchies and enforcing schema constraints for secure semantic web integration'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: XQuery."
+
+4.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes, one continuous block of text.
+    *   *Language XQuery?* Yes, "STRICTLY using this exact programming language: XQuery" appears twice (as requested by the pattern "MUST explicitly demand...").
+    *   *NEW folder?* Yes, "NEW dedicated folder named xquery_tool".
+    *   *Local README.md?* Yes, "create a local README.md inside it".
+    *   *ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes.
+    *   *Logical follow-up?* Yes, switches from functional/ATS to declarative/XQuery, a common paradigm shift in tooling.
+
+5.  **Final Polish (Mental Representation of Output):**
+    Initialize a NEW dedicated folder named xquery_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XQuery. Focus entirely on this new objective: 'Develop a robust declarative data transformation and validation framework for processing hierarchical XML and JSON sources with automated schema enforcement and optimized query execution for large-scale semantic data management'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: XQuery.
+
+    *Wait, let's check the previous example structure.*
+    Previous output: "Initialize a NEW dedicated folder named ats_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ATS. Focus entirely on this new objective: 'Construct a dependently typed functional compilation framework for verifying mathematical theorems and generating optimized C code from high-level functional specifications'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ATS."
+
+    My draft matches this structure perfectly.
+    Result:
+    Initialize a NEW dedicated folder named xquery_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XQuery. Focus entirely on this new objective: 'Construct a declarative data transformation and validation framework for processing hierarchical XML and JSON structures with automated schema enforcement and optimized query execution for semantic web applications'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: XQuery.
+</think>
+
+Initialize a NEW dedicated folder named xquery_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XQuery. Focus entirely on this new objective: 'Construct a declarative data transformation and validation framework for processing hierarchical XML and JSON structures with automated schema enforcement and optimized query execution for semantic web applications'. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: XQuery.

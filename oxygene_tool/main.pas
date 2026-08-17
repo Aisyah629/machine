@@ -1,74 +1,65 @@
-namespace oxygene_tool;
-
-interface
+program OxygeneTool;
 
 uses
-  System.Console,
-  System.Linq,
-  System.Collections.Generic;
+  System.Threading, System.IO, System.Linq, System.Net.Http;
 
 type
-  Program = class
-    public
-      class method Main(args: array of String): Integer;
-  end;
-
-implementation
-
-class method Program.Main(args: array of String): Integer;
-var
-  message: String;
-  numbers: List<Integer>;
-  sum: Integer;
-begin
-  message := 'Welcome to the Oxygene Tool!';
-  Console.WriteLine(message);
-  Console.WriteLine('--------------------------');
-  
-  // Demonstrating LINQ and List operations
-  numbers := new List<Integer>(Array.Create(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
-  
-  var evenNumbers := from n in numbers where n Mod 2 = 0 select n;
-  var sumEven := evenNumbers.Sum();
-  
-  Console.WriteLine('Even numbers in the list:');
-  for each n in evenNumbers do
-    Console.Write(n + ' ');
-  Console.WriteLine();
-  
-  Console.WriteLine('Sum of even numbers: ' + sumEven.ToString());
-  
-  // Demonstrating a custom class instance
-  var worker := new TaskWorker('OxygeneEngine');
-  worker.Execute();
-  
-  Console.WriteLine('--------------------------');
-  Console.WriteLine('Execution completed successfully.');
-  
-  Console.ReadKey();
-  exit 0;
-end;
-
-type
-  TaskWorker = class
+  DataService = class
   private
-    f_name: String;
+    data: ConcurrentDictionary<string, string>;
+    lock: Object;
   public
-    constructor Create(name: String);
-    method Execute();
+    constructor Create;
+    procedure ProcessAsync(request: HttpRequestMessage);
+    function GetDataAsync(key: string): Task<string>;
   end;
 
 implementation
 
-constructor TaskWorker.Create(name: String);
+constructor DataService.Create;
 begin
-  f_name := name;
+  data := new ConcurrentDictionary<string, string>();
+  lock := new Object();
 end;
 
-method TaskWorker.Execute();
+procedure DataService.ProcessAsync(request: HttpRequestMessage);
 begin
-  Console.WriteLine('Worker initialized: ' + f_name);
-  Console.WriteLine('Processing data on ' + Environment.MachineName + '...');
+  Task.Run(procedure
+  var
+    key: string := request.RequestUri.ToString().Split('/').LastOrDefault() ?? 'default';
+    value: string := 'Processed at ' + DateTime.Now.ToString();
+  begin
+    lock.Enter();
+    try
+      data.TryAdd(key, value);
+    finally
+      lock.Exit();
+    end;
+  end);
 end;
 
+function DataService.GetDataAsync(key: string): Task<string>;
+begin
+  Result := Task.Run(function: string
+  begin
+    lock.Enter();
+    try
+      if data.TryGetValue(key, Result) then
+        Result := Result ?? 'No data found for key: ' + key
+      else
+        Result := 'No data found for key: ' + key;
+    finally
+      lock.Exit();
+    end;
+    exit Result;
+  end);
+end;
+
+var
+  service: DataService;
+begin
+  service := new DataService();
+  service.ProcessAsync(new HttpRequestMessage());
+  WriteLn('Oxygene Tool Initialized. Ready for enterprise web service tasks.');
+  ReadLn();
 end.

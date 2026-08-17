@@ -1072,3 +1072,5 @@ Training Machine
 - Created/Updated module: `cduce_tool` (See `cduce_tool/README.md` for details)
 
 - Created/Updated module: `jcl_tool` (See `jcl_tool/README.md` for details)
+
+- Created/Updated module: `jcl_validation_tool` (See `jcl_validation_tool/README.md` for details)

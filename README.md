@@ -1034,3 +1034,5 @@ Training Machine
 - Created/Updated module: `visual_objects_tool` (See `visual_objects_tool/README.md` for details)
 
 - Created/Updated module: `t_tool` (See `t_tool/README.md` for details)
+
+- Created/Updated module: `./boo_tool` (See `./boo_tool/README.md` for details)

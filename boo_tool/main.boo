@@ -1,1 +1,172 @@
-# Network and Memory Simulator in Boo\n\nimport System\nimport System.Collections.Generic\n\n# ==========================================\n# Memory Management Module\n# ==========================================\n\nclass MemoryBlock:\n\tpub decl var address As Integer\n\tpub decl var size As Integer\n\tpub decl var isFree As Boolean\n\n\tinit(address As Integer, size As Integer, isFree As Boolean):\n\t\tthis.address = address\n\t\tthis.size = size\n\t\tthis.isFree = isFree\n\n\tpub decl func toString() As String:\n\t\treturn "Block(addr={}, size={}, free={})".format(address, size, isFree)\n\nclass HeapAllocator:\n\tpub decl var memoryPool As List(Of MemoryBlock)\n\tpub decl var totalSize As Integer\n\t\n\tinit(totalSize As Integer):\n\t\tthis.totalSize = totalSize\n\t\tthis.memoryPool = List(Of MemoryBlock)()\n\t\t# Initialize with one large free block\n\t\tthis.memoryPool.Add(MemoryBlock(0, totalSize, True))\n\t\tConsole.WriteLine("Initializing Memory Pool (Size: {})...".format(totalSize))\n\n\tpub decl func alloc(size As Integer) As Integer:\n\t\t# First-fit algorithm\n\t\tFor block As MemoryBlock In memoryPool:\n\t\t\tIf block.isFree And block.size >= size:\n\t\t\t\t# Split the block if it's too large\n\t\t\t\tIf block.size - size >= 1:\n\t\t\t\t\t# Create new free block for the remainder\n\t\t\t\t\tnewBlock = MemoryBlock(block.address + size, block.size - size, True)\n\t\t\t\t\tblock.size = size\n\t\t\t\t\tblock.isFree = False\n\t\t\t\t\tmemoryPool.Insert(memoryPool.IndexOf(block) + 1, newBlock)\n\t\t\t\tElse:\n\t\t\t\t\t# Use the exact block\n\t\t\t\t\tblock.isFree = False\n\t\t\t\tConsole.WriteLine("Allocating block of size {} at offset {}.".format(size, block.address))\n\t\t\t\tReturn block.address\n\t\tReturn -1 # Failed to allocate\n\n\tpub decl func free(address As Integer) As Boolean:\n\t\tFor block As MemoryBlock In memoryPool:\n\t\t\tIf block.address == address And Not block.isFree:\n\t\t\t\tblock.isFree = True\n\t\t\t\tConsole.WriteLine("Freeing block at offset {}.".format(address))\n\t\t\t\t# Coalesce with neighbor free blocks\n\t\t\t\t_this.coalesce(address)\n\t\t\t\tReturn True\n\t\tReturn False\n\n\tpriv decl func coalesce(address As Integer):\n\t\t# Merge adjacent free blocks\n\t\tFor i As Integer In Range(0, memoryPool.Count - 1):\n\t\t\tcurrent As MemoryBlock = memoryPool[i]\n\t\t\tnext As MemoryBlock = memoryPool[i + 1]\n\t\t\tIf current.isFree And next.isFree:\n\t\t\t\t# Merge current into next (or vice versa)\n\t\t\t\tcurrent.size += next.size\n\t\t\t\tmemoryPool.RemoveAt(i + 1)\n\t\t\t\t# Re-check index since list shifted\n\t\t\t\ti -= 1\n\n\n# ==========================================\n# Network Protocol Module\n# ==========================================\n\nenum ConnectionState:\n\tCLOSED = 0\n\tSYN_SENT = 1\n\tSYN_RECEIVED = 2\n\tESTABLISHED = 3\n\tFIN_WAIT = 4\n\t\n\tdef __str__(self):\n\t\treturn {\n\t\t\tCLOSED: "CLOSED",\n\t\t\tSYN_SENT: "SYN_SENT",\n\t\t\tSYN_RECEIVED: "SYN_RECEIVED",\n\t\t\tESTABLISHED: "ESTABLISHED",\n\t\t\tFIN_WAIT: "FIN_WAIT"\n\t\t\t}.get(self, "UNKNOWN")\n\n\nclass NetworkPacket:\n\tpub decl var type As str\n\tpub decl var payload As str\n\n\tinit(type As str, payload As str = ""):\n\t\tthis.type = type\n\t\tthis.payload = payload\n\n\nclass ProtocolSimulator:\n\tpub decl var connections As Dictionary(Of Integer, ConnectionState)\n\tpub decl var connectionIdCounter As Integer\n\n\tinit():\n\t\tthis.connections = Dictionary(Of Integer, ConnectionState)()\n\t\tthis.connectionIdCounter = 0\n\t\tConsole.WriteLine("Initializing Protocol Engine...")\n\n\tpub decl func createConnection() As Integer:\n\t\tid = connectionIdCounter\n\t\tconnections[id] = ConnectionState.CLOSED\n\t\tconnectionIdCounter += 1\n\t\tReturn id\n\n\tpub decl func sendPacket(connId As Integer, pkt As NetworkPacket):\n\t\tif connId NotIn connections:\n\t\t\tConsole.WriteLine("Error: Connection {} not found.".format(connId))\n\t\t\tReturn\n\t\t\n\t\tcurrentState = connections[connId]\n\t\tConsole.WriteLine("Connection #{}: Sending {}...".format(connId, pkt.type))\n\t\t\n\t\t# Simulate state transitions\n\t\tif pkt.type == "SYN":\n\t\t\tif currentState == ConnectionState.CLOSED:\n\t\t\t\tconnections[connId] = ConnectionState.SYN_SENT\n\t\t\t\tConsole.WriteLine("Connection #{}: State changed to SYN_SENT.".format(connId))\n\t\t\t\t# Simulate receiving SYN-ACK\n\t\t\t\tThis.receivePacket(connId, NetworkPacket("SYN-ACK"))\n\t\t\t\t# Simulate sending ACK\n\t\t\t\tThis.receivePacket(connId, NetworkPacket("ACK")) # Treat incoming ACK as trigger\n\t\t\t\tconnections[connId] = ConnectionState.ESTABLISHED\n\t\t\t\tConsole.WriteLine("Connection #{}: State changed to ESTABLISHED.".format(connId))\n\t\telif pkt.type == "DATA":\n\t\t\tif currentState == ConnectionState.ESTABLISHED:\n\t\t\t\tConsole.WriteLine("Connection #{}: Sending DATA '{}'.".format(connId, pkt.payload))\n\t\t\t\t# Simulate ACK response\n\t\t\t\tThis.receivePacket(connId, NetworkPacket("ACK"))\n\t\t\t\tConsole.WriteLine("Connection #{}: Received ACK.".format(connId))\n\t\telif pkt.type == "FIN":\n\t\t\tif currentState == ConnectionState.ESTABLISHED:\n\t\t\t\tconnections[connId] = ConnectionState.FIN_WAIT\n\t\t\t\tConsole.WriteLine("Connection #{}: State changed to FIN_WAIT.".format(connId))\n\t\t\t\t# Simulate receiving FIN-ACK\n\t\t\t\tThis.receivePacket(connId, NetworkPacket("FIN"))\n\t\t\t\tconnections[connId] = ConnectionState.CLOSED\n\t\t\t\tConsole.WriteLine("Connection #{}: State changed to CLOSED.".format(connId))\n\t\t\t\tConsole.WriteLine("Connection #{}: Closed.".format(connId))\n\n\tpub decl func receivePacket(connId As Integer, pkt As NetworkPacket):\n\t\t# This function simulates internal processing or loopback for demonstration\n\t\t# In a real system, this would parse incoming network data\n\t\tpass\n\n\n# ==========================================\n# Main Execution\n# ==========================================\n\ndef main():\n\t# --- Memory Simulation ---\n\theap = HeapAllocator(100)\n\t\n\taddr1 = heap.alloc(20)\n\taddr2 = heap.alloc(30)\n\t\n\tif addr2 != -1:\n\t\theap.free(addr2)\n\t\t# Allocate again, should fit in freed space\n\t\theap.alloc(40)\n\t\n\t# --- Network Simulation ---\n\tsim = ProtocolSimulator()\n\t\n\tconn1 = sim.createConnection()\n\tsim.sendPacket(conn1, NetworkPacket("SYN"))\n\tsim.sendPacket(conn1, NetworkPacket("DATA", "Hello"))\n\tsim.sendPacket(conn1, NetworkPacket("FIN"))\n\n# Entry point\nif __name__ == "__main__":\n\tmain()
+import System
+import System.Collections.Generic
+import System.Reflection
+
+namespace GameFramework
+
+'''
+A flexible object-oriented scripting framework designed for rapid game logic
+prototyping and Unity-compatible gameplay systems.
+Built strictly with Boo for clean, Python-like syntax with strong .NET typing.
+'''
+
+abstract class MonoBehaviour():
+	private _enabled as bool = true
+	private _active as bool = true
+	private _deltaTime as double = 0.0
+	
+	get Enabled() as bool:
+		return _enabled
+	
+	set Enabled(value as bool):
+		_enabled = value
+	
+	get Active() as bool:
+		return _active
+	
+	set Active(value as bool):
+		_active = value
+
+	def Update():
+		'''
+		Called once per frame. Override in derived classes for per-frame logic.
+		'''
+		pass
+
+	def Start():
+		'''
+		Called once before the first Update. Use for initialization.
+		'''
+		pass
+
+	def OnEnable():
+		'''
+		Called when the component is enabled.
+		'''
+		Active = true
+
+	def OnDisable():
+		'''
+		Called when the component is disabled.
+		'''
+		Active = false
+
+	def Destroy():
+		'''
+		Safely disable and mark for garbage collection.
+		'''
+		Enabled = false
+		Active = false
+
+
+class GameObject():
+	private _name as string
+	private _components as List[object]
+	private _transform as Transform
+
+	get Name() as string:
+		return _name
+
+	def __init__(self as string = "New GameObject"):
+		_name = name
+		_components = List[object]()
+		_transform = Transform()
+		_components.Add(_transform)
+
+	def AddComponent(comp as object):
+		if comp is MonoBehaviour:
+			_components.Add(comp)
+			comp.OnEnable()
+			comp.Start()
+		else:
+			raise Exception("Only MonoBehaviour types can be added to GameObjects.")
+
+	def Update(deltaTime as double):
+		_deltaTime = deltaTime
+		for comp in _components:
+			if comp is MonoBehaviour:
+				if comp.Enabled and comp.Active:
+					comp.Update()
+
+	def GetComponent[T]() as T:
+		for comp in _components:
+			if comp is T:
+				return comp as T
+		return null as T
+
+class Transform():
+	public Position as Vector3
+	public Rotation as Vector3
+	public Scale as Vector3
+
+	def __init__():
+		Position = Vector3(0.0, 0.0, 0.0)
+		Rotation = Vector3(0.0, 0.0, 0.0)
+		Scale = Vector3(1.0, 1.0, 1.0)
+
+class Vector3():
+	public X as double
+	public Y as double
+	public Z as double
+
+	def __init__(self, x as double = 0.0, y as double = 0.0, z as double = 0.0):
+		X = x
+		Y = y
+		Z = z
+
+	def ToString() as string:
+		return "Vector3(%.2f, %.2f, %.2f)" % (X, Y, Z)
+
+class GameLogicSystem:
+	'''
+	Demonstrates a prototype game logic system using the framework.
+	'''
+	
+	private _activeLogic as bool = true
+	
+	def __init__():
+		pass
+	
+	def ExecuteFrame(frameNumber as int, deltaTime as double):
+		if not _activeLogic:
+			return
+
+		player = GameObject("PlayerController")
+		handler = PlayerHandler()
+		player.AddComponent(handler)
+
+		player.Update(deltaTime)
+		Console.WriteLine("Frame %d processed. Player State: %s" % (frameNumber, handler.DebugState()))
+
+	def DebugSystem():
+		Console.WriteLine("GameLogicSystem is operational.")
+
+
+class PlayerHandler(MonoBehaviour):
+	private _moveSpeed as double = 5.0
+	private _xPosition as double = 0.0
+
+	def Update():
+		if not Enabled or not Active:
+			return
+		
+		_xPosition += _moveSpeed * DeltaTime()
+		Console.WriteLine("Player moved to X: %.2f" % _xPosition)
+
+	def DebugState() as string:
+		return "PlayerHandler | X: %.2f | Speed: %.2f" % (_xPosition, _moveSpeed)
+
+	def DeltaTime() as double:
+		return _parent.DeltaTime if _parent else 0.0
+
+    # Note: Boo requires explicit type casting in some contexts for clean interop.
+    # This framework demonstrates the language's strong typing and OOP structure.
+
+if __name__ == "GameFramework":
+	Console.WriteLine("Initializing Boo Game Framework...")
+	system = GameLogicSystem()
+	system.ExecuteFrame(1, 0.016)  # Simulate 60 FPS frame
+	system.ExecuteFrame(2, 0.016)
+	system.ExecuteFrame(3, 0.016)
+	
+	Console.WriteLine("System complete. Boo framework ready for Unity/game prototyping.")

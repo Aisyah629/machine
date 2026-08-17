@@ -1,0 +1,67 @@
+; Franz Lisp Expert System Shell
+; This file implements a basic expert system shell with backward chaining inference.
+
+; Define the fact base and rule base
+(defvar *fact-base* nil "The fact base of the expert system")
+(defvar *rule-base* nil "The rule base of the expert system")
+
+; Add a fact to the fact base
+(defun add-fact (fact)
+  (if (not (member fact *fact-base*))
+      (push fact *fact-base*)))
+
+; Remove a fact from the fact base
+(defun remove-fact (fact)
+  (setq *fact-base* (remove fact *fact-base*)))
+
+; Check if a fact is in the fact base
+(defun fact-exists-p (fact)
+  (member fact *fact-base*))
+
+; Add a rule to the rule base
+; A rule is represented as (consequent (antecedent1 antecedent2 ...))
+(defun add-rule (rule)
+  (push rule *rule-base*))
+
+; Get the consequent of a rule
+(defun rule-consequent (rule)
+  (car rule))
+
+; Get the antecedents of a rule
+(defun rule-antecedents (rule)
+  (cadr rule))
+
+; Backward chaining inference
+; This function tries to prove a goal using the rule base and fact base.
+; It returns t if the goal can be proven, nil otherwise.
+(defun prove-goal (goal)
+  (cond
+    ; If the goal is already in the fact base, return t
+    ((fact-exists-p goal) t)
+    ; If there is a rule with the goal as the consequent, try to prove the antecedents
+    (t (let ((rule (find-rule-by-consequent goal)))
+         (if rule
+             (let ((antecedents (rule-antecedents rule)))
+               (every #'prove-goal antecedents))
+             nil)))))
+
+; Find a rule by its consequent
+(defun find-rule-by-consequent (consequent)
+  (find-if (lambda (rule) (equal (rule-consequent rule) consequent)) *rule-base*))
+
+; Initialize the expert system with some facts and rules
+(defun init-expert-system ()
+  (add-fact 'human)
+  (add-fact 'socrates)
+  (add-rule '(mortal (human)))
+  (add-rule '(human (socrates))))
+
+; Test the expert system
+(defun test-expert-system ()
+  (init-expert-system)
+  (if (prove-goal 'mortal)
+      (format t "Mortal can be proven.~%")
+      (format t "Mortal cannot be proven.~%")))
+
+; Run the test
+(test-expert-system)

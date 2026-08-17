@@ -41551,3 +41551,51 @@ Initialize a NEW dedicated folder named bigwig_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named bigwig_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Bigwig. Focus entirely on this new objective: 'Implement a high-throughput distributed consensus algorithm simulator with fault tolerance and network partition handling.'
+[2026-08-17 10:52:23] (Target Lang: Franz Lisp) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built strictly using `Franz Lisp`.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a workspace list and a history. The history shows a previous action creating `bigwig_tool`. The current request asks for a follow-up. The workspace list shows many tools already exist, including `bigwig_tool`. I need to check if `franz_lisp_tool` exists. Scanning the list... `franz_lisp` doesn't appear explicitly as a folder in the provided list, though `franz_lisp` is a language. The list has `franz_lisp_tool`? Let me check carefully.
+        *   Scanning... `franz_lisp_tool` is NOT in the list. `franz` is not mentioned.
+        *   So creating a new tool is valid.
+    *   Instruction Content: The instruction must follow the pattern established (implicitly) or just satisfy the constraints.
+        *   Pattern from history: "Initialize a NEW dedicated folder named [name]_tool..., create a local README.md..., build... STRICTLY using [Language]... Focus entirely on [Objective]..."
+        *   Language: Franz Lisp.
+        *   Folder: `franz_lisp_tool`.
+        *   Objective: Needs to be relevant to the language or just a valid objective. Since the user didn't specify an objective, I should generate a logical one or a generic one that fits the pattern. However, looking at the prompt structure, the user asks for "exactly 1 logical follow-up instruction". Usually, in these prompts, the "logical follow-up" implies continuing a theme or just generating a new distinct tool. Since no specific theme is given for the follow-up other than the language constraint, I should generate a reasonable objective for a Franz Lisp tool. Franz Lisp is an AI-focused language, often used for LISP processing, expert systems, etc. A good objective might be "Implement an expert system shell with backward chaining inference..." or "Build a symbol manipulation engine...".
+        *   However, the user's prompt template in the history shows "Focus entirely on this new objective: '...'" where the objective was filled in. In the final output block, the user provides the text "Initialize a NEW...". Wait, the user's prompt ends with "Generate exactly 1 logical follow-up instruction...".
+        *   The output should be the instruction text itself.
+        *   Result: "Initialize a NEW dedicated folder named franz_lisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Franz Lisp. Focus entirely on this new objective: 'Implement an expert system inference engine with backward chaining and dynamic rule loading.' " (Or similar objective).
+        *   Wait, the user's example output in the history is: "Initialize a NEW dedicated folder named bigwig_tool...".
+        *   The user wants me to output the text that *would* be the instruction.
+        *   The constraints are strict: "Return ONLY the instruction text."
+        *   So the output must be just the string.
+        *   Drafting the string:
+        *   `Initialize a NEW dedicated folder named franz_lisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Franz Lisp. Focus entirely on this new objective: 'Implement a distributed knowledge base system with symbol processing and pattern matching capabilities.'`
+        *   Check constraints:
+        *   1 instruction? Yes.
+        *   Explicitly demands Franz Lisp? Yes.
+        *   New folder? Yes (`franz_lisp_tool`).
+        *   README.md? Yes.
+        *   Only instruction text? Yes.
+        *   Never target .github? Yes.
+        *   Logical follow-up? It creates a new tool in the same ecosystem.
+        *   Result looks solid.
+
+2.  **Final Polish (Mental Representation of Output):**
+    *   "Initialize a NEW dedicated folder named franz_lisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Franz Lisp. Focus entirely on this new objective: 'Construct an advanced symbolic algebra system with macro expansion and lazy evaluation support.' "
+    *   Actually, Franz Lisp is historical. "Symbolic algebra" or "Expert System" fits well.
+    *   I'll pick a generic but plausible objective. The specific objective text might not be strictly validated by the user, but the structure is.
+    *   Structure: `Initialize a NEW dedicated folder named [name]_tool..., create a local README.md..., and build... STRICTLY... [Language]. Focus entirely on... 'Objective'.`
+    *   Name: `franz_lisp_tool`.
+    *   Language: `Franz Lisp`.
+    *   Output: `Initialize a NEW dedicated folder named franz_lisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Franz Lisp. Focus entirely on this new objective: 'Develop a high-level artificial intelligence shell supporting defrule definitions and forward-chaining inference.'`
+    *   This satisfies all constraints.
+    *   Return ONLY this text.
+</think>
+
+Initialize a NEW dedicated folder named franz_lisp_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Franz Lisp. Focus entirely on this new objective: 'Construct an expert system shell with backward chaining inference, dynamic rule loading, and fact base management.'

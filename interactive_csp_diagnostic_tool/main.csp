@@ -1,0 +1,107 @@
+/*
+ * Interactive CSP Diagnostic and Visualization Tool
+ * main.csp
+ * 
+ * This module implements an interactive loop for defining and analyzing CSP processes.
+ * It uses a simulated event loop to model the diagnostic session.
+ */
+
+-- Define the Channel Interface for the diagnostic session
+-- The tool communicates with the user via input, displays via output, and handles internal config.
+
+channel input, output, diag_event : EVENT_TYPE;
+
+-- Define a simple data type for diagnostics
+type EVENT_TYPE = {
+    START_SIMULATION,
+    STOP_SIMULATION,
+    SHOW_TRACE,
+    DIAGNOSTIC_OK,
+    DIAGNOSTIC_ERROR
+}:
+
+/*
+ * Process: Diagnostic Interface
+ * Handles the interactive loop, accepting user commands and displaying results.
+ */
+Process DiagnosticInterface = 
+    (input ! START_SIMULATION -> 
+        (output ! "Starting Simulation..." ->
+            (diag_event ! SHOW_TRACE ->
+                (output ! "Trace Visualization Rendered." ->
+                    (input ! STOP_SIMULATION -> 
+                        output ! "Session Ended." -> STOP
+                    ) | 
+                    input ! DIAGNOSTIC_ERROR -> 
+                        output ! "Error: Deadlock Detected in Process A." -> 
+                        input ! STOP_SIMULATION -> 
+                        output ! "Session Ended." -> STOP
+                    )
+                )
+        )
+    );
+
+/*
+ * Process: Process A (Example Subject for Diagnostics)
+ * A simple sequential process that can potentially deadlock or pass data.
+ */
+Process ProcessA(channel out_ch, in_ch : EVENT_TYPE) =
+    (in_ch ? x -> 
+        (out_ch ! x -> 
+            ProcessA(out_ch, in_ch)
+        ) |
+        (in_ch ! STOP_SIMULATION -> 
+            output ! "Process A halted." -> STOP
+        )
+    );
+
+/*
+ * Process: Process B (Example Subject for Diagnostics)
+ * Another sequential process.
+ */
+Process ProcessB(channel out_ch, in_ch : EVENT_TYPE) =
+    (in_ch ? x -> 
+        (out_ch ! x -> 
+            ProcessB(out_ch, in_ch)
+        ) |
+        (in_ch ! STOP_SIMULATION -> 
+            output ! "Process B halted." -> STOP
+        )
+    );
+
+/*
+ * Process: Simulation Engine
+ * Drives the state machine for the diagnostic visualization.
+ */
+Process SimulationEngine =
+    (diag_event ! SHOW_TRACE -> 
+        (output ! "Rendering Process Graph..." ->
+            (output ! "[P] <-> [Ch] <-> [Q]" ->
+                (diag_event ! DIAGNOSTIC_OK -> 
+                    output ! "No deadlocks detected." -> STOP
+                ) |
+                diag_event ! DIAGNOSTIC_ERROR -> 
+                    output ! "Potential starvation found in channel Ch." -> STOP
+                )
+            )
+        )
+    );
+
+/*
+ * Main System
+ * Composes the interactive interface with the example processes and the simulation engine.
+ * Uses external choice (\|\|) or parallel composition (||) depending on the desired isolation.
+ * For this diagnostic tool, we use a simple sequential composition for the flow of control.
+ */
+System = 
+    DiagnosticInterface || 
+    (ProcessA(output, input) || ProcessB(output, input)) || 
+    SimulationEngine;
+
+/*
+ * Note: 
+ * In a real CSP environment (like FDR), the actual implementation would use the specific 
+ * language primitives for the interactive shell. This CSP code models the logical structure 
+ * of an interactive diagnostic loop where the tool waits for user input, performs analysis 
+ * (simulation), and outputs diagnostic results.
+ */

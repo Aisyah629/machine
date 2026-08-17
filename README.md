@@ -1178,3 +1178,5 @@ Training Machine
 - Created/Updated module: `lynx_development_tool` (See `lynx_development_tool/README.md` for details)
 
 - Created/Updated module: `peoplecode_tool` (See `peoplecode_tool/README.md` for details)
+
+- Created/Updated module: `./interactive_csp_diagnostic_tool` (See `./interactive_csp_diagnostic_tool/README.md` for details)

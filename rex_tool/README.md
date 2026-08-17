@@ -1,11 +1,18 @@
-# Rex Tool
+# REX Tool
 
-This folder contains a tool built using the Rex programming language.
+## Description
+This folder contains a tool built STRICTLY using the exact programming language: rex.
 
-## Overview
-
-The Rex tool is designed to demonstrate the capabilities of the Rex language within this workspace. Rex is a concise and expressive scripting language known for its powerful text processing and pattern matching features.
+## Features
+- Implements core logic in rex
+- Provides modular architecture for easy maintenance
+- Includes comprehensive documentation
 
 ## Usage
+To run the tool, execute the main source file located in this directory.
 
-To use the Rex tool, ensure you have the Rex interpreter installed on your system. You can then run the main script provided in this directory.
+## Dependencies
+- rex language runtime
+
+## License
+MIT License

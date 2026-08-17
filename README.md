@@ -1202,3 +1202,5 @@ Training Machine
 - Created/Updated module: `scilab_tool` (See `scilab_tool/README.md` for details)
 
 - Created/Updated module: `lava_lowlevel_network_memory_simulator_tool` (See `lava_lowlevel_network_memory_simulator_tool/README.md` for details)
+
+- Created/Updated module: `mouse_tool` (See `mouse_tool/README.md` for details)

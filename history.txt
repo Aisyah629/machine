@@ -50153,3 +50153,59 @@ All constraints verified. Output matches requirement.✅ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named limbo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Limbo.
+[2026-08-17 23:40:07] (Target Lang: Mouse) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of workspace files/directories (mostly tool folders with README.md and main files in various programming languages).
+   - There's a "History" section containing a self-contained prompt/response loop that ends with an instruction: `Initialize a NEW dedicated folder named limbo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Limbo.`
+   - Then, the actual prompt I need to respond to is: `Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mouse. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory.`
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: `Mouse`.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+
+3.  **Formulate Instruction:**
+   I need to construct a sentence that matches the pattern from the few-shot example/history but uses the requested language "Mouse".
+   Pattern from history: `Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language].`
+   Adapting to "Mouse": `Initialize a NEW dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse.`
+
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands built STRICTLY using "Mouse"? Yes.
+   - Instructs to place in NEW dedicated folder and create local README.md? Yes.
+   - Returns ONLY the instruction text? Yes.
+   - Never targets .github? Yes.
+   - Logical follow-up? Yes, it follows the established pattern.
+
+   The output should be exactly the formatted string.
+
+   Let's verify the exact wording requested: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mouse. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   I will output: `Initialize a NEW dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse.`
+
+   Double-checking format: The prompt says "Return ONLY the instruction text." So I will just output that single line. No extra words. Matches the few-shot style exactly.
+
+   All constraints met. Proceed. 
+   Output matches requirement.✅
+   [Output Generation] -> `Initialize a NEW dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse.`
+   Done. 
+   Self-Correction/Verification during thought: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mouse." I've done that. "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I've done that. "Return ONLY the instruction text." I will do that. "NEVER target the .github directory." Checked.
+   Everything is solid. Output matches exactly.✅
+   Proceeds. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mouse. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Output: `Initialize a NEW dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse.`
+   Matches perfectly. No extra text. Ready. 
+   [Output Generation] -> `Initialize a NEW dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse.`
+   Done. 
+   *(Self-Correction/Note during generation)*: I should make sure the casing matches "Mouse" exactly. The prompt says "Mouse". I used "Mouse". Good.
+   The folder name convention in the workspace is `[language]_tool` or similar. `mouse_tool` fits.
+   All good.✅
+   Output matches requirement.✅ Proceeds. 
+   [Output] `Initialize a NEW dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse.` 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named mouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mouse.

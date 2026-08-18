@@ -39,3 +39,5 @@ MIT License
 - Created/Updated module: `candle_tool` (See `candle_tool/README.md` for details)
 
 - Created/Updated module: `./fjolnir_tool` (See `./fjolnir_tool/README.md` for details)
+
+- Created/Updated module: `elm_tool` (See `elm_tool/README.md` for details)

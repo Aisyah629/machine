@@ -81,3 +81,5 @@ MIT License
 - Created/Updated module: `signal_tool` (See `signal_tool/README.md` for details)
 
 - Created/Updated module: `self_healing_tool` (See `self_healing_tool/README.md` for details)
+
+- Created/Updated module: `./xpl_compiler_tool` (See `./xpl_compiler_tool/README.md` for details)

@@ -43,3 +43,5 @@ MIT License
 - Created/Updated module: `elm_tool` (See `elm_tool/README.md` for details)
 
 - Created/Updated module: `gj_tool` (See `gj_tool/README.md` for details)
+
+- Created/Updated module: `./lingo_data_security_tool` (See `./lingo_data_security_tool/README.md` for details)

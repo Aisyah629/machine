@@ -1,0 +1,118 @@
+// GJ Concurrent Runtime Tool Implementation
+// Language: GJ
+
+import gnu.gcj.concurrency;
+import java.util.concurrent.*;
+import java.util.*;
+
+public class GJConcurrentRuntime extends Object {
+
+    private Vector<WorkerNode> nodes;
+    private TaskQueue taskQueue;
+    private ExecutorService pool;
+
+    public GJConcurrentRuntime(int poolSize) {
+        super();
+        this.nodes = new Vector<WorkerNode>();
+        this.taskQueue = new TaskQueue();
+        this.pool = Executors.newFixedThreadPool(poolSize);
+        initializeNodes(poolSize);
+    }
+
+    private void initializeNodes(int count) {
+        int i;
+        WorkerNode node;
+        for (i = 0; i < count; i++) {
+            node = new WorkerNode(i);
+            nodes.addElement(node);
+        }
+    }
+
+    public void submitTask(Task t) {
+        if (t != null) {
+            taskQueue.enqueue(t);
+            pool.execute(taskQueue.getRunnableFor(t));
+        }
+    }
+
+    public Vector<WorkerNode> getNodes() {
+        return nodes;
+    }
+
+    public void shutdown() {
+        pool.shutdown();
+        try {
+            if (!pool.awaitTermination(60, TimeUnit.SECONDS)) {
+                pool.shutdownNow();
+            }
+        } catch (InterruptedException e) {
+            pool.shutdownNow();
+            Thread.currentThread().interrupt();
+        }
+    }
+
+    public static void main(String[] args) {
+        GJConcurrentRuntime runtime;
+        runtime = new GJConcurrentRuntime(4);
+        runtime.submitTask(new DummyTask());
+        System.out.println("Concurrent Runtime Initialized.");
+        runtime.shutdown();
+    }
+}
+
+class WorkerNode extends Object {
+    int id;
+
+    public WorkerNode(int id) {
+        super();
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+}
+
+class TaskQueue extends Object {
+    private Vector<Task> queue;
+
+    public TaskQueue() {
+        super();
+        this.queue = new Vector<Task>();
+    }
+
+    public void enqueue(Task t) {
+        synchronized(this) {
+            queue.addElement(t);
+            this.notify();
+        }
+    }
+
+    public Runnable getRunnableFor(Task t) {
+        return new TaskRunner(t);
+    }
+}
+
+class TaskRunner implements Runnable {
+    private Task t;
+
+    public TaskRunner(Task t) {
+        this.t = t;
+    }
+
+    public void run() {
+        if (t != null) {
+            t.execute();
+        }
+    }
+}
+
+abstract class Task extends Object {
+    public abstract void execute();
+}
+
+class DummyTask extends Task {
+    public void execute() {
+        System.out.println("Executing dummy task in parallel context.");
+    }
+}

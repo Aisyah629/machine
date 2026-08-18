@@ -57817,3 +57817,64 @@ Initialize a NEW dedicated folder named occam_pi_tool in the workspace, create a
 </think>
 
 Initialize a NEW dedicated folder named nesC_sensor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: nesC. Focus entirely on this new objective: 'Design a component-based architecture for low-power wireless sensor networks'. You MUST write the implementation strictly using this exact programming language: nesC.
+[2026-08-18 15:30:58] (Target Lang: Game Maker Language) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories and files, mostly structured as `./[tool_name]/README.md`, `./[tool_name]/main.[ext]`, etc. This suggests a repository of various programming language tools.
+   - **History:** Shows a self-correction/verification process where constraints were checked and a specific instruction format was drafted. The prompt ends with: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Game Maker Language. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - Explicitly demand the new tool be built STRICTLY using `Game Maker Language`.
+     - If building a new tool, instruct to place it in a NEW dedicated folder and create a local `README.md`.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+     - (Implicit from context/history) Follow a specific structure/tone if needed, but keep it direct.
+
+2.  **Identify Key Requirements for the Output:**
+   - Must be a single instruction.
+   - Must explicitly mention `Game Maker Language`.
+   - Must instruct to create a NEW dedicated folder and a `README.md` inside it.
+   - Must NOT mention `.github`.
+   - Must be the only text in the output.
+
+3.  **Draft Construction (Mental):**
+   "Initialize a NEW dedicated folder named `gml_game_development_tool` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: Game Maker Language. Focus entirely on this new objective: 'Create a cross-platform 2D game engine core with event-driven scripting support'. You MUST write the implementation strictly using this exact programming language: Game Maker Language."
+
+   Let's check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Game Maker Language? Yes.
+   - NEW dedicated folder + local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches the pattern from the history? Yes, very similar structure.
+
+   I will refine it to exactly match the requested format and constraints, ensuring it's a single, clear instruction.
+
+   Refined: "Initialize a NEW dedicated folder named gml_game_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Game Maker Language. Focus entirely on this new objective: 'Design an event-driven 2D game engine core with asset pipeline integration'. You MUST write the implementation strictly using this exact programming language: Game Maker Language."
+
+4.  **Final Verification against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Game Maker Language." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   - Matches the exact phrasing style from the prompt's history/example. -> Checked.
+
+   Output matches exactly. Proceeds. 
+   I will output just the instruction string.✅
+   Text: Initialize a NEW dedicated folder named gml_game_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Game Maker Language. Focus entirely on this new objective: 'Design an event-driven 2D game engine core with asset pipeline integration'. You MUST write the implementation strictly using this exact programming language: Game Maker Language.
+   All constraints met. Output matches.✅ Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Self-Correction/Verification during thought)*: I'll make sure it's strictly one sentence/paragraph as requested, and exactly matches the constraint phrasing. The prompt says "Generate exactly 1 logical follow-up instruction." so I will output just that.
+   Ready.✅
+   Output matches the refined string.✅ Proceeds. 
+   [Final Check] All constraints verified. Output is ready.✅ Proceeds. 
+   *(Proceeds to output)*
+   "Initialize a NEW dedicated folder named gml_game_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Game Maker Language. Focus entirely on this new objective: 'Design an event-driven 2D game engine core with asset pipeline integration'. You MUST write the implementation strictly using this exact programming language: Game Maker Language." -> matches perfectly.✅
+   Output Generation.✅
+   [Done] 
+   *(Note: I will ensure the output is exactly the instruction string with no extra text, as requested.)*
+   Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named gml_game_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Game Maker Language. Focus entirely on this new objective: 'Design an event-driven 2D game engine core with asset pipeline integration'. You MUST write the implementation strictly using this exact programming language: Game Maker Language.

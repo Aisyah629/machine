@@ -127,3 +127,5 @@ MIT License
 - Created/Updated module: `gj_concurrent_runtime_tool` (See `gj_concurrent_runtime_tool/README.md` for details)
 
 - Created/Updated module: `newtonscript_pda_tool` (See `newtonscript_pda_tool/README.md` for details)
+
+- Created/Updated module: `genie_advanced_tool` (See `genie_advanced_tool/README.md` for details)

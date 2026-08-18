@@ -95,3 +95,5 @@ MIT License
 - Created/Updated module: `mad_i_formal_verification_tool` (See `mad_i_formal_verification_tool/README.md` for details)
 
 - Created/Updated module: `rebol_web_api_gateway_tool` (See `rebol_web_api_gateway_tool/README.md` for details)
+
+- Created/Updated module: `maple_web_api_gateway_tool` (See `maple_web_api_gateway_tool/README.md` for details)

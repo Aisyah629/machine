@@ -55276,3 +55276,75 @@ Initialize a NEW dedicated folder named coq_formal_verification_tool in the work
 </think>
 
 Initialize a NEW dedicated folder named lil_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LIL. Focus entirely on this new objective: 'Develop a LIL-based logic programming framework for symbolic reasoning and automated rule execution'. You MUST write the implementation strictly using this exact programming language: LIL.
+[2026-08-18 11:06:58] (Target Lang: Rapira) The user wants a single follow-up instruction to be generated based on the context.
+The context shows a workspace listing various programming tools.
+The previous instruction generated (or simulated) was for `lil_logic_engine_tool` using `LIL`.
+The prompt asks to "Generate exactly 1 logical follow-up instruction."
+The constraint is: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rapira."
+Also: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+Finally: "Return ONLY the instruction text. NEVER target the .github directory."
+
+I need to construct a string that fulfills these requirements.
+The tool name isn't strictly defined by the prompt but implies a logic tool since Rapira is a logic programming language (or at least associated with Prolog-style logic in the provided list `./rapira_tool`).
+The prompt asks for a "logical follow-up". Given the previous one was LIL (Logic programming), Rapira (also logic programming) is a good follow-up.
+The instruction should look like the previous ones: "Initialize a NEW dedicated folder named [name]... create a local README.md... build... using... [language]... Objective: [objective]."
+
+Let's pick a name for the folder. `rapira_symbolic_reasoning_tool` seems appropriate.
+Language: Rapira.
+Objective: Something related to symbolic reasoning or logic, e.g., 'Develop a Rapira-based logic programming framework for automated deduction and symbolic problem solving'.
+
+Drafting the instruction:
+Initialize a NEW dedicated folder named rapira_symbolic_reasoning_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira. Focus entirely on this new objective: 'Develop a Rapira-based logic programming framework for automated deduction and symbolic problem solving'. You MUST write the implementation strictly using this exact programming language: Rapira.
+
+Check constraints:
+1. Exactly 1 logical follow-up instruction? Yes.
+2. Explicitly demand built using Rapira? Yes.
+3. Place in NEW dedicated folder? Yes.
+4. Create local README.md? Yes.
+5. Return ONLY instruction text? Yes.
+6. Never target .github? Yes.
+
+The text seems good. I will output just the text.
+One small detail: The prompt asks for "exactly 1 logical follow-up instruction".
+I will format the output as just the string.
+
+Let's refine the name to fit the pattern `rapira_tool` or similar based on the list? The list has `./rapira_tool`. The prompt asks for a *new* dedicated folder. I can use `rapira_advanced_reasoning_tool` or similar to distinguish it from the existing one, or just `rapira_logic_engine_tool` following the `lil_logic_engine_tool` pattern from the prompt history. The history showed `lil_logic_engine_tool`. I'll use `rapira_logic_engine_tool` or similar to match the style.
+Let's use `rapira_logic_engine_tool`.
+
+Instruction:
+Initialize a NEW dedicated folder named rapira_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira. Focus entirely on this new objective: 'Develop a Rapira-based logic programming framework for automated deduction and symbolic problem solving'. You MUST write the implementation strictly using this exact programming language: Rapira.
+
+This looks correct. I will return this string.
+Wait, the prompt says "Return ONLY the instruction text." I should ensure no extra conversational filler.
+The text is:
+Initialize a NEW dedicated folder named rapira_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira. Focus entirely on this new objective: 'Develop a Rapira-based logic programming framework for automated deduction and symbolic problem solving'. You MUST write the implementation strictly using this exact programming language: Rapira.
+
+Looks solid.
+I will verify the list again. `./rapira_tool` exists. The prompt asks to build a *new* tool. The folder name should be unique. `rapira_logic_engine_tool` is distinct from `rapira_tool`.
+The objective should make sense for Rapira (Logic programming). "Automated deduction and symbolic problem solving" fits well.
+
+Final check on the exact wording requested:
+"Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: Rapira."
+
+I will fill in [name] and [objective].
+Name: rapira_logic_engine_tool
+Objective: Develop a Rapira-based logic programming framework for automated deduction and symbolic problem solving
+
+Result:
+Initialize a NEW dedicated folder named rapira_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira. Focus entirely on this new objective: 'Develop a Rapira-based logic programming framework for automated deduction and symbolic problem solving'. You MUST write the implementation strictly using this exact programming language: Rapira.
+
+Double check: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Rapira."
+The text contains: "...build the entire new tool STRICTLY using this exact programming language: Rapira... You MUST write the implementation strictly using this exact programming language: Rapira."
+This satisfies the condition.
+
+Double check: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+The text contains: "Initialize a NEW dedicated folder named ... create a local README.md inside it..."
+This satisfies the condition.
+
+Double check: "Return ONLY the instruction text."
+I will output just the text.
+
+The plan is clear.
+</think>
+
+Initialize a NEW dedicated folder named rapira_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira. Focus entirely on this new objective: 'Develop a Rapira-based logic programming framework for automated deduction and symbolic problem solving'. You MUST write the implementation strictly using this exact programming language: Rapira.

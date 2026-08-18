@@ -57199,3 +57199,55 @@ Initialize a NEW dedicated folder named espol_formal_verification_tool in the wo
 </think>
 
 Initialize a NEW dedicated folder named vbscript_system_admin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Construct a comprehensive Windows system administration framework with active directory integration'. You MUST write the implementation strictly using this exact programming language: VBScript.
+[2026-08-18 14:30:57] (Target Lang: JCL) The user wants a logical follow-up instruction for an autonomous AI agent.
+The instruction should:
+1. Demand that the new tool be built STRICTLY using JCL.
+2. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. NEVER target the `.github` directory.
+5. Follow the pattern of the history provided (though history shows examples like `Initialize a NEW dedicated folder named [name]_advanced_tool...`).
+6. The workspace list shows many existing tools. I need to pick a unique folder name that fits the pattern, e.g., `jcl_compatibility_layer_tool` or `jcl_advanced_optimizer_tool`. The prompt says "JCL". I'll use `jcl_batch_orchestrator_tool`? Wait, `jcl_batch_orchestrator_tool` exists. Let's pick `jcl_mainframe_orchestration_tool`.
+7. Objective: "Engineer a robust mainframe job control workflow automation system".
+8. Format: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: JCL."
+
+Let's craft it carefully.
+"Initialize a NEW dedicated folder named jcl_mainframe_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Engineer a robust mainframe job control workflow automation system'. You MUST write the implementation strictly using this exact programming language: JCL."
+
+Check constraints:
+- "Return ONLY the instruction text." -> Yes.
+- "NEVER target the .github directory." -> Yes.
+- "explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL." -> Yes.
+- "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Yes.
+
+All constraints met. I will generate the exact string.
+One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." and gives history. I will just output the instruction text.
+Text: Initialize a NEW dedicated folder named jcl_mainframe_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Engineer a robust mainframe job control workflow automation system'. You MUST write the implementation strictly using this exact programming language: JCL.
+Matches perfectly. Proceeds. 
+Self-Correction/Verification during thought:
+Check workspace for `jcl_mainframe_orchestration_tool` -> not present. `jcl_batch_orchestrator_tool` and `jcl_optimizer_tool` and `jcl_validation_tool` and `jcl_tool` exist. So `jcl_mainframe_orchestration_tool` is safe.
+Language: JCL.
+Folder: NEW dedicated folder.
+README: local README.md.
+Objective: engineered into the prompt.
+Format matches exactly.
+Output matches request.
+Proceeds. 
+Output generation. 
+[Done] 
+Output: Initialize a NEW dedicated folder named jcl_mainframe_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Engineer a robust mainframe job control workflow automation system'. You MUST write the implementation strictly using this exact programming language: JCL. 
+Wait, let's verify the exact phrasing from the prompt's example:
+"Initialize a NEW dedicated folder named vbscript_system_admin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VBScript. Focus entirely on this new objective: 'Construct a comprehensive Windows system administration framework with active directory integration'. You MUST write the implementation strictly using this exact programming language: VBScript."
+Matches perfectly. I will output exactly that structure with JCL.
+Ready. 
+Output matches.✅
+Proceeds. 
+[Final Check of the Prompt]
+"Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: JCL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+All good. 
+Output Generation. 
+`Initialize a NEW dedicated folder named jcl_mainframe_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Engineer a robust mainframe job control workflow automation system'. You MUST write the implementation strictly using this exact programming language: JCL.` -> matches. 
+Done. 
+[Output Generation] (proceeds)
+</think>
+
+Initialize a NEW dedicated folder named jcl_mainframe_orchestration_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JCL. Focus entirely on this new objective: 'Engineer a robust mainframe job control workflow automation system'. You MUST write the implementation strictly using this exact programming language: JCL.

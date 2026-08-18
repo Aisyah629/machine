@@ -233,3 +233,5 @@ MIT License
 - Created/Updated module: `./cryptographic_tool` (See `./cryptographic_tool/README.md` for details)
 
 - Created/Updated module: `swift_parallel_script_tool` (See `swift_parallel_script_tool/README.md` for details)
+
+- Created/Updated module: `./speedcode_interactive_diagnostic_tool` (See `./speedcode_interactive_diagnostic_tool/README.md` for details)

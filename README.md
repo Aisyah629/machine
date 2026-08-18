@@ -167,3 +167,5 @@ MIT License
 - Created/Updated module: `ngl_network_gateway_tool` (See `ngl_network_gateway_tool/README.md` for details)
 
 - Created/Updated module: `bash_system_admin_tool` (See `bash_system_admin_tool/README.md` for details)
+
+- Created/Updated module: `alf_formal_spec_tool` (See `alf_formal_spec_tool/README.md` for details)

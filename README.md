@@ -63,3 +63,5 @@ MIT License
 - Created/Updated module: `snap_visual_block_editor_tool` (See `snap_visual_block_editor_tool/README.md` for details)
 
 - Created/Updated module: `bc_math_engine_tool` (See `bc_math_engine_tool/README.md` for details)
+
+- Created/Updated module: `rlab_analysis_tool` (See `rlab_analysis_tool/README.md` for details)

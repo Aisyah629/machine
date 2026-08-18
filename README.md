@@ -83,3 +83,5 @@ MIT License
 - Created/Updated module: `self_healing_tool` (See `self_healing_tool/README.md` for details)
 
 - Created/Updated module: `./xpl_compiler_tool` (See `./xpl_compiler_tool/README.md` for details)
+
+- Created/Updated module: `coffeescript_compiler_tool` (See `coffeescript_compiler_tool/README.md` for details)

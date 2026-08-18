@@ -203,3 +203,5 @@ MIT License
 - Created/Updated module: `jscript_tool` (See `jscript_tool/README.md` for details)
 
 - Created/Updated module: `objectlogo_tool` (See `objectlogo_tool/README.md` for details)
+
+- Created/Updated module: `k_advanced_tool` (See `k_advanced_tool/README.md` for details)

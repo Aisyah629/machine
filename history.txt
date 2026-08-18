@@ -59578,3 +59578,46 @@ Proceeds.✅
 </think>
 
 Initialize a NEW dedicated folder named dart_web_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Dart. Focus entirely on this new objective: 'Design a robust and scalable web framework for modern applications'. You MUST write the implementation strictly using this exact programming language: Dart.
+[2026-08-18 18:45:25] (Target Lang: Mercury) Thinking process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   Must explicitly demand a new tool built STRICTLY using the programming language: Mercury.
+        *   If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+        *   Explicitly instruct to create a local README.md.
+        *   Return ONLY the instruction text.
+        *   NEVER target the .github directory.
+        *   Match history format (implied by "Matches history format? Yes" in the prompt's self-check, though the user just wants the output now).
+
+2.  **Drafting the Instruction:**
+    *   *Language:* Mercury.
+    *   *Action:* Build a new tool.
+    *   *Folder:* NEW dedicated folder. Let's name it `mercury_system_tool` or `mercury_verification_tool` based on common patterns, or just generic. The prompt asks for "exactly 1 logical follow-up instruction". The example in the prompt used `dart_web_framework_tool`. I should invent a plausible folder name. Let's use `mercury_verification_tool` or `mercury_system_tool`. Let's go with `mercury_verification_tool` as Mercury is often used for logic/verification, or just `mercury_tool`. Let's stick to the pattern: `mercury_advanced_tool`. Actually, the prompt doesn't specify the objective, just the language. I need to construct the string.
+    *   *Structure:* "Initialize a NEW dedicated folder named [FOLDER_NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mercury. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write the implementation strictly using this exact programming language: Mercury."
+    *   *Objective:* The prompt doesn't specify an objective for the follow-up, unlike the history example which had an objective. However, the instruction format usually includes an objective. Looking at the history: "Focus entirely on this new objective: 'Design a robust and scalable web framework for modern applications'." I need to generate a follow-up instruction. Usually, these follow-ups have a topic. Since the user didn't specify a topic, I should probably generate a generic but relevant topic for Mercury, or just follow the template structure. The prompt asks to "Generate exactly 1 logical follow-up instruction". It implies I am the AI generating the next step. I should invent a reasonable objective for a Mercury tool.
+    *   *Drafting Objective:* Mercury is a logic programming language. Good objectives: "Formal verification of concurrent systems", "Symbolic execution engine", "Deductive program verification". Let's use "Develop a formal verification engine for deductive program correctness".
+    *   *Drafting Folder Name:* `mercury_verification_tool`.
+    *   *Full Text:* Initialize a NEW dedicated folder named mercury_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mercury. Focus entirely on this new objective: 'Develop a formal verification engine for deductive program correctness'. You MUST write the implementation strictly using this exact programming language: Mercury.
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, one paragraph.
+    *   *Explicitly demand new tool built STRICTLY using Mercury?* Yes ("STRICTLY using this exact programming language: Mercury").
+    *   *Place in NEW dedicated folder?* Yes ("Initialize a NEW dedicated folder named mercury_verification_tool").
+    *   *Create local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY the instruction text?* Yes.
+    *   *Never target .github?* Yes, no mention of .github.
+    *   *Matches history format?* The history format is: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Obj]'. You MUST write the implementation strictly using this exact programming language: [Lang]."
+    *   *Comparison:* My draft matches this format perfectly.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named mercury_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mercury. Focus entirely on this new objective: 'Develop a formal verification engine for deductive program correctness'. You MUST write the implementation strictly using this exact programming language: Mercury.`
+
+5.  **Final Output Construction:**
+    *   The output should be just this text.
+    *   Result: Initialize a NEW dedicated folder named mercury_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mercury. Focus entirely on this new objective: 'Develop a formal verification engine for deductive program correctness'. You MUST write the implementation strictly using this exact programming language: Mercury.
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named mercury_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Mercury. Focus entirely on this new objective: 'Develop a formal verification engine for deductive program correctness'. You MUST write the implementation strictly using this exact programming language: Mercury.

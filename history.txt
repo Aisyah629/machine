@@ -61178,3 +61178,47 @@ Done.
 </think>
 
 Initialize a NEW dedicated folder named mapper_programming_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. Focus entirely on this new objective: 'Construct a versatile scientific computation and data analysis engine capable of matrix operations, statistical modeling, and algorithmic prototyping'. You MUST write the implementation strictly using this exact programming language: MAPPER.
+[2026-08-18 20:44:07] (Target Lang: ACT-III) Thinking Process:
+
+1.  **Analyze the Request**:
+    *   Context: The user provided a directory listing and a history snippet showing a previous instruction for a "mapper_programming_tool".
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built STRICTLY using the exact programming language: **ACT-III**.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+
+2.  **Identify the Subject**:
+    *   The language is `act_iii`. Looking at the provided directory list, there is a folder `./act_iii_tool`.
+    *   The objective should align with the style of the previous prompt but focus on `act_iii`. `act_iii` is often associated with logic programming, theorem proving, or specific formal methods (though the extension is `.act`, historically related to ACT-III or similar languages, often found in academic/formal contexts).
+    *   The prompt asks for a "logical follow-up instruction". Since the previous draft was for `mapper_programming_tool`, this follow-up is a *new* instruction for the AI to execute, likely creating a tool for `act_iii`.
+    *   I need to define a reasonable objective for `act_iii`. Given the "scientific computation" style of the previous one, I'll stick to a similar formal/technical objective, perhaps related to formal verification, logic systems, or a specific computation engine suitable for this niche language. Let's choose "Construct a formal logic reasoning and theorem proving engine capable of symbolic manipulation and automated deduction".
+
+3.  **Draft the Instruction**:
+    *   *Folder Name*: `act_iii_tool` (Based on existing directory `./act_iii_tool` in the prompt context, or strictly "a NEW dedicated folder". The prompt says "If building a new tool...". If I assume this is a replacement or a new instance, I should pick a folder name. The prompt's example history shows `mapper_programming_tool`. Let's use `act_iii_tool` as it appears in the context list, implying it might be the target. Or `act_iii_logic_engine`. Let's stick to the standard naming convention seen in the list: `act_iii_tool`).
+    *   *Language*: ACT-III.
+    *   *Objective*: Construct a formal logic reasoning and theorem proving engine capable of symbolic manipulation and automated deduction.
+    *   *Requirement*: NEW dedicated folder, local README.md.
+
+4.  **Refine the Text**:
+    "Initialize a NEW dedicated folder named act_iii_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACT-III. Focus entirely on this new objective: 'Construct a formal logic reasoning and theorem proving engine capable of symbolic manipulation and automated deduction'. You MUST write the implementation strictly using this exact programming language: ACT-III."
+
+5.  **Check Constraints**:
+    *   Follow-up instruction? Yes.
+    *   Language: ACT-III? Yes.
+    *   NEW dedicated folder + README.md? Yes.
+    *   ONLY instruction text? Yes.
+    *   No .github? Yes.
+
+6.  **Final Polish**:
+    "Initialize a NEW dedicated folder named act_iii_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACT-III. Focus entirely on this new objective: 'Construct a formal logic reasoning and theorem proving engine capable of symbolic manipulation and automated deduction'. You MUST write the implementation strictly using this exact programming language: ACT-III."
+
+    (Self-correction: The prompt asks for *one* logical follow-up. The format should match the Draft in the history.)
+
+    *Draft*: Initialize a NEW dedicated folder named act_iii_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACT-III. Focus entirely on this new objective: 'Construct a formal logic reasoning and theorem proving engine capable of symbolic manipulation and automated deduction'. You MUST write the implementation strictly using this exact programming language: ACT-III.
+
+7.  **Final Output Generation**.
+    "Initialize a NEW dedicated folder named act_iii_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACT-III. Focus entirely on this new objective: 'Construct a formal logic reasoning and theorem proving engine capable of symbolic manipulation and automated deduction'. You MUST write the implementation strictly using this exact programming language: ACT-III."
+</think>
+
+Initialize a NEW dedicated folder named act_iii_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACT-III. Focus entirely on this new objective: 'Construct a formal logic reasoning and theorem proving engine capable of symbolic manipulation and automated deduction'. You MUST write the implementation strictly using this exact programming language: ACT-III.

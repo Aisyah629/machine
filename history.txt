@@ -59195,3 +59195,63 @@ Initialize a NEW dedicated folder named pure_logic_engine_tool in the workspace,
 </think>
 
 Initialize a NEW dedicated folder named cel_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel. Focus entirely on this new objective: 'Construct a constraint satisfaction solver with symbolic constraint propagation'. You MUST write the implementation strictly using this exact programming language: Cel.
+[2026-08-18 17:47:22] (Target Lang: Elm) Thinking Process:
+1.  **Analyze the user input**:
+    *   User: "You are an Autonomous AI... Generate exactly 1 logical follow-up instruction... strictly using this exact programming language: Elm... NEW dedicated folder... local README.md... Return ONLY the instruction text."
+    *   Key constraints:
+        *   Generate exactly 1 logical follow-up instruction.
+        *   MUST explicitly demand: programming language = Elm.
+        *   If building a new tool: MUST place in a NEW dedicated folder and create a local README.md.
+        *   Output: ONLY the instruction text.
+        *   Never target .github.
+2.  **Identify the context/goal**:
+    *   The workspace is a collection of various tool directories.
+    *   I need to generate an instruction to create a new tool named something like `elm_engine_tool` (or similar, checking for existing names first).
+    *   Wait, `elm_tool` exists (`./elm_tool/README.md`, `./elm_tool/main.elm`, `./elm_tool/src/Main.elm`). Let's check `elm_engine_tool`.
+    *   I'll create a new folder: `elm_engine_tool`.
+    *   Objective for Elm: "Construct a declarative view engine for reactive user interfaces".
+    *   Language constraint: MUST use "Elm".
+3.  **Draft the instruction**:
+    "Initialize a NEW dedicated folder named elm_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Construct a declarative view engine for reactive user interfaces'. You MUST write the implementation strictly using this exact programming language: Elm."
+4.  **Refine to match exact phrasing constraints**:
+    "Initialize a NEW dedicated folder named elm_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Construct a declarative view engine for reactive user interfaces'. You MUST write the implementation strictly using this exact programming language: Elm."
+    Wait, let's look at the prompt's example format in the "History" section:
+    "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [lang]. Focus entirely on this new objective: '[obj]'. You MUST write the implementation strictly using this exact programming language: [lang]."
+    My draft matches this exactly.
+5.  **Check constraints**:
+    *   Exactly 1 logical follow-up instruction? Yes.
+    *   MUST explicitly demand Elm? Yes.
+    *   NEW dedicated folder? Yes (`elm_engine_tool`).
+    *   Create local README.md? Yes.
+    *   Return ONLY the instruction text? Yes.
+    *   Never target .github? Checked, not targeting it.
+    *   Check existing `elm_engine_tool`: Not in the list. `elm_tool` exists. `elm_engine_tool` is safe.
+    *   Language: Elm.
+    *   Objective: 'Construct a declarative view engine for reactive user interfaces'.
+    *   Structure matches the prompt's example perfectly.
+    *   Final string: "Initialize a NEW dedicated folder named elm_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Construct a declarative view engine for reactive user interfaces'. You MUST write the implementation strictly using this exact programming language: Elm."
+6.  **Self-Correction/Verification during thought**:
+    *   The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Elm. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text."
+    *   I will output exactly the drafted string. No extra text.
+    *   Check folder name again: `elm_engine_tool` is not in the list.
+    *   All constraints met.
+    *   Output matches requested format.✅
+    *   Proceed. 
+    *   Text: `Initialize a NEW dedicated folder named elm_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Construct a declarative view engine for reactive user interfaces'. You MUST write the implementation strictly using this exact programming language: Elm.`
+    *   Wait, should I check `elm_advanced_tool`? Not in list. `elm_engine_tool` is fine.
+    *   Final check of the prompt: "Initialize a NEW dedicated folder named cel_engine_tool..." was the history. The new one should follow the exact same structure.
+    *   Output matches.✅
+    *   Generating response. 
+    *   *Self-Correction/Refinement during thought*: Let's make sure the phrasing is exactly as requested. "Initialize a NEW dedicated folder named elm_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Construct a declarative view engine for reactive user interfaces'. You MUST write the implementation strictly using this exact programming language: Elm." -> Matches perfectly. No extra words. Outputting. 
+    *   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." I will just output the instruction text.
+    *   Ready. 
+    *   Output Generation. 
+    *   [Done] 
+    *   *Self-Correction/Verification during output gen*: Wait, the prompt says `Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Elm. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory.`
+    *   I will produce exactly that string.
+    *   `Initialize a NEW dedicated folder named elm_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Construct a declarative view engine for reactive user interfaces'. You MUST write the implementation strictly using this exact programming language: Elm.`
+    *   Matches all constraints. Proceeds. 
+    *   Output matches exactly.✅
+</think>
+
+Initialize a NEW dedicated folder named elm_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. Focus entirely on this new objective: 'Construct a declarative view engine for reactive user interfaces'. You MUST write the implementation strictly using this exact programming language: Elm.

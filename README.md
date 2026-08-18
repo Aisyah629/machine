@@ -217,3 +217,5 @@ MIT License
 - Created/Updated module: `snowball_nlp_stemming_tool` (See `snowball_nlp_stemming_tool/README.md` for details)
 
 - Created/Updated module: `ffp_advanced_symbolic_compiler_tool` (See `ffp_advanced_symbolic_compiler_tool/README.md` for details)
+
+- Created/Updated module: `swift_parallel_scripting_engine_tool` (See `swift_parallel_scripting_engine_tool/README.md` for details)

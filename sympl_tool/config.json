@@ -1,0 +1,34 @@
+{
+  "algorithm": "sympl_crypto_v1",
+  "parameters": {
+    "prime_range": [1000000, 10000000],
+    "exponent": 65537,
+    "hash_iterations": 1000,
+    "modulo": 2147483647,
+    "base_value": 2,
+    "factorial_limit": 20,
+    "fibonacci_limit": 100
+  },
+  "rules": {
+    "encrypt_rule": {
+      "pattern": "encrypt(message, public_key)",
+      "action": "modular_exponentiation(message, public_key.e, public_key.n)",
+      "priority": 1
+    },
+    "decrypt_rule": {
+      "pattern": "decrypt(ciphertext, private_key)",
+      "action": "modular_exponentiation(ciphertext, private_key.d, private_key.n)",
+      "priority": 2
+    },
+    "hash_rule": {
+      "pattern": "hash(data)",
+      "action": "iterative_modular_hash(data)",
+      "priority": 3
+    }
+  },
+  "settings": {
+    "debug_mode": false,
+    "log_level": "info",
+    "max_iterations": 10000
+  }
+}

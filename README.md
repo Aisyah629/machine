@@ -219,3 +219,5 @@ MIT License
 - Created/Updated module: `ffp_advanced_symbolic_compiler_tool` (See `ffp_advanced_symbolic_compiler_tool/README.md` for details)
 
 - Created/Updated module: `swift_parallel_scripting_engine_tool` (See `swift_parallel_scripting_engine_tool/README.md` for details)
+
+- Created/Updated module: `mapper_programming_tool` (See `mapper_programming_tool/README.md` for details)

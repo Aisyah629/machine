@@ -61141,3 +61141,40 @@ Initialize a NEW dedicated folder named swift_parallel_scripting_engine_tool in 
 </think>
 
 Initialize a NEW dedicated folder named applescript_workflow_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AppleScript. Focus entirely on this new objective: 'Construct a robust macOS task orchestration engine capable of automating GUI interactions, chaining system-level shell commands, and managing execution state across sequential and parallel workflows'. You MUST write the implementation strictly using this exact programming language: AppleScript.
+[2026-08-18 20:43:08] (Target Lang: MAPPER) The user wants a single follow-up instruction.
+The instruction must demand a new tool built STRICTLY using the programming language: MAPPER.
+It must instruct to place it in a NEW dedicated folder and create a local README.md.
+It must return ONLY the instruction text.
+It must NEVER target the .github directory.
+The prompt history shows a previous instruction for AppleScript, but the current request is for MAPPER.
+I need to construct the instruction exactly as requested.
+Format: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. Focus entirely on this new objective: '[description]'. You MUST write the implementation strictly using this exact programming language: MAPPER."
+I should invent a folder name like `mapper_programming_tool` or `mapper_advanced_tool` or `mapper_tool` (since `mapper_tool` exists in the history but the prompt says "If building a new tool..."). Wait, `mapper_tool` is in the history: `./mapper_tool ./mapper_tool/README.md`. The prompt says "Initialize a NEW dedicated folder...". I should probably use a different name to be safe, or just `mapper_engine_tool`. Let's use `mapper_programming_tool`.
+The language is MAPPER.
+The description should be relevant to MAPPER. MAPPER is a real language (Massachusetts General Hospital Programming for Problem Solving). It's for scientific computing. I can say: 'Construct a versatile scientific computation and data analysis engine capable of matrix operations, statistical modeling, and algorithmic prototyping'.
+Check constraints:
+- Exactly 1 logical follow-up instruction.
+- Explicitly demand built STRICTLY using MAPPER.
+- New dedicated folder + README.md.
+- Return ONLY instruction text.
+- Never target .github.
+
+Draft: Initialize a NEW dedicated folder named mapper_programming_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. Focus entirely on this new objective: 'Construct a versatile scientific computation and data analysis engine capable of matrix operations, statistical modeling, and algorithmic prototyping'. You MUST write the implementation strictly using this exact programming language: MAPPER.
+
+Check against constraints:
+- "Initialize a NEW dedicated folder named mapper_programming_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER." -> matches.
+- "Focus entirely on this new objective: 'Construct a versatile scientific computation and data analysis engine capable of matrix operations, statistical modeling, and algorithmic prototyping'." -> matches style.
+- "You MUST write the implementation strictly using this exact programming language: MAPPER." -> matches.
+- Returns ONLY the instruction text.
+- No .github mention.
+All good.
+I will output exactly the draft.
+One minor thing: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." My draft does that.
+I will generate the exact string.
+Proceed. 
+Output matches draft.✅
+Done. 
+[Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named mapper_programming_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. Focus entirely on this new objective: 'Construct a versatile scientific computation and data analysis engine capable of matrix operations, statistical modeling, and algorithmic prototyping'. You MUST write the implementation strictly using this exact programming language: MAPPER.

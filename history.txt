@@ -60793,3 +60793,37 @@ This looks solid.
 </think>
 
 Initialize a NEW dedicated folder named snowball_nlp_stemming_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball. Focus entirely on this new objective: 'Construct a high-performance morphological analysis engine capable of dynamic rule compilation, multi-language stemming support, and real-time text normalization for search index optimization'. You MUST write the implementation strictly using this exact programming language: Snowball.
+[2026-08-18 20:15:40] (Target Lang: xHarbour) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand the tool be built STRICTLY using `xHarbour`.
+    *   Constraint: If building a new tool, place it in a NEW dedicated folder and create a local `README.md`.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target `.github`.
+    *   Context: The workspace has many tool folders. I need to check if `xharbour_tool` or similar exists. Looking at the list: `./xharbour_tool` exists. So I should create a *new* folder name like `xharbour_business_logic_engine_tool` or `xharbour_database_connector_tool` to ensure it's a "NEW dedicated folder". The prompt implies "If building a new tool", so creating a new folder is required.
+    *   Language: `xHarbour` (Xbase++ compatible, database/business logic focus).
+    *   Objective: Construct something fitting `xHarbour`'s strengths. E.g., "Develop a robust legacy data migration engine..." or "Build a high-throughput transaction processing system..."
+
+2.  **Drafting the Instruction:**
+    *   *Folder Name:* `xharbour_legacy_migration_engine_tool` (Unique, fits the pattern).
+    *   *Action:* Initialize NEW folder, create README.md.
+    *   *Language:* STRICTLY using this exact programming language: xHarbour.
+    *   *Objective:* 'Construct a robust transaction processing framework capable of automated database schema migration, multi-format data export, and strict ACID compliance for legacy enterprise systems.'
+    *   *Mandatory Phrasing:* "You MUST write the implementation strictly using this exact programming language: xHarbour."
+
+3.  **Review against Constraints:**
+    *   1 instruction? Yes.
+    *   Strictly xHarbour? Yes.
+    *   NEW folder + README? Yes (`xharbour_legacy_migration_engine_tool`, `README.md`).
+    *   ONLY instruction text? Yes.
+    *   No `.github`? Yes.
+    *   Logical follow-up? Yes, xHarbour is known for business logic and databases.
+
+4.  **Final Polish:**
+    *   Text: `Initialize a NEW dedicated folder named xharbour_legacy_migration_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: xHarbour. Focus entirely on this new objective: 'Construct a robust transaction processing framework capable of automated database schema migration, multi-format data export, and strict ACID compliance for legacy enterprise systems'. You MUST write the implementation strictly using this exact programming language: xHarbour.`
+
+5.  **Output Generation:**
+    *   Return the text.
+</think>
+
+Initialize a NEW dedicated folder named xharbour_legacy_migration_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: xHarbour. Focus entirely on this new objective: 'Construct a robust transaction processing framework capable of automated database schema migration, multi-format data export, and strict ACID compliance for legacy enterprise systems'. You MUST write the implementation strictly using this exact programming language: xHarbour.

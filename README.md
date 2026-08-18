@@ -241,3 +241,5 @@ MIT License
 - Created/Updated module: `rust_async_runtime_tool` (See `rust_async_runtime_tool/README.md` for details)
 
 - Created/Updated module: `coral66_protocol_validator_tool` (See `coral66_protocol_validator_tool/README.md` for details)
+
+- Created/Updated module: `rebol_network_connector_tool` (See `rebol_network_connector_tool/README.md` for details)

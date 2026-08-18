@@ -1,20 +1,41 @@
 # Cryptographic Tool
 
-## Description
-This tool implements a complex mathematical and cryptographic algorithm, specifically the RSA (Rivest–Shamir–Adleman) public-key cryptosystem.
+## Overview
+This ColdFusion tool implements advanced cryptographic algorithms including RSA encryption/decryption and SHA-256 hashing. It is designed for secure data processing and verification.
+
+## Features
+- **RSA Encryption**: Encrypts plain text using a randomly generated RSA key pair.
+- **RSA Decryption**: Decrypts base64 encoded strings using the corresponding private key.
+- **SHA-256 Hashing**: Generates a secure hash of input strings using the SHA-256 algorithm.
 
 ## Usage
-To use the RSA implementation:
-1. Generate a key pair (public and private keys).
-2. Encrypt a message using the public key.
-3. Decrypt the message using the private key.
 
-## Components
-- **Key Generation**: Generates a pair of RSA keys based on user-defined parameters.
-- **Encryption**: Encrypts a given message using the public key.
-- **Decryption**: Decrypts the encrypted message using the private key.
+### Encrypting Data
+```cfml
+<cfset crypto = createObject("component", "main").init()>
+<cfset encrypted = crypto.encrypt("Secret Message")>
+<cfoutput>Encrypted: #encrypted#</cfoutput>
+```
 
-## Algorithm Details
-- **Modular Exponentiation**: Utilized for efficient computation of large exponentiations.
-- **Prime Number Generation**: Generates random prime numbers for key generation.
-- **Extended Euclidean Algorithm**: Used to compute the modular multiplicative inverse.
+### Decrypting Data
+```cfml
+<cfset decrypted = crypto.decrypt(encrypted)>
+<cfoutput>Decrypted: #decrypted#</cfoutput>
+```
+
+### Hashing Data
+```cfml
+<cfset hash = crypto.hash("Sensitive Data")>
+<cfoutput>Hash: #hash#</cfoutput>
+```
+
+## Security Notes
+- **Key Size**: The tool uses 2048-bit RSA keys for enhanced security. In production environments, always use keys of at least 2048 bits.
+- **Key Management**: For production use, securely store and manage the private key. Avoid hardcoding keys in the source code.
+- **Error Handling**: The tool includes basic error handling. Ensure robust error handling and logging in your applications.
+
+## Files
+- `main.cfml`: The main component containing the cryptographic functions.
+
+## License
+This tool is provided as-is for educational and development purposes.

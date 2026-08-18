@@ -58140,3 +58140,53 @@ Initialize a NEW dedicated folder named able_pipeline_processor_tool in the work
 </think>
 
 Initialize a NEW dedicated folder named perl_data_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Perl. Focus entirely on this new objective: 'Implement a high-performance text manipulation and data extraction engine'. You MUST write the implementation strictly using this exact programming language: Perl.
+[2026-08-18 16:04:43] (Target Lang: MPD) Thinking Process:
+1.  **Analyze the Request**:
+    *   Target Language: MPD.
+    *   Action: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   Build strictly using MPD.
+        *   If new tool: NEW dedicated folder + local README.md.
+        *   Return ONLY instruction text.
+        *   Never target `.github`.
+    *   Context: Previous history shows a pattern of "Initialize a NEW dedicated folder named [name]... strictly using this exact programming language: [Lang]... Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Lang]."
+
+2.  **Determine the Tool Name**:
+    *   Language: MPD.
+    *   Suggestion: `mpd_control_tool` or `mpd_tool`. Let's use `mpd_control_tool` as it sounds like a reasonable tool name for MPD (Music Player Daemon or a specific DSL, though usually MPD refers to Music Player Daemon, in this context it's likely a DSL for a workflow or specific logic). Let's assume a generic MPD tool.
+
+3.  **Determine the Objective**:
+    *   Since MPD is often associated with Music Player Daemon, a logical objective might be "Implement a high-performance stream management and control engine". Or if MPD is a domain-specific language, "Implement a dynamic process definition engine". Given the previous examples, I should pick a plausible technical objective. "Implement a high-performance stream processing and orchestration engine" is safe and generic enough.
+
+4.  **Draft the Instruction**:
+    *   "Initialize a NEW dedicated folder named `mpd_control_tool` in the workspace, create a local `README.md` inside it, and build the entire new tool STRICTLY using this exact programming language: MPD. Focus entirely on this new objective: 'Implement a high-performance stream processing and orchestration engine'. You MUST write the implementation strictly using this exact programming language: MPD."
+
+5.  **Refine Constraints**:
+    *   Check "Target Lang: MPD".
+    *   Check "NEW dedicated folder".
+    *   Check "local README.md".
+    *   Check "STRICTLY using... MPD".
+    *   Check "Return ONLY instruction text".
+
+6.  **Final Polish**:
+    *   "Initialize a NEW dedicated folder named mpd_control_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MPD. Focus entirely on this new objective: 'Implement a high-performance stream processing and orchestration engine'. You MUST write the implementation strictly using this exact programming language: MPD."
+
+7.  **Final Review**:
+    *   Does it match the pattern of the previous example? Yes.
+    *   Is it MPD? Yes.
+    *   Is it one instruction? Yes.
+    *   Is it strictly MPD? Yes.
+    *   Does it mention the folder and README? Yes.
+    *   Does it avoid `.github`? Yes.
+    *   Result matches requirements.
+
+Let's double-check the "MPD" abbreviation. If it's "Music Player Daemon", the tool name `mpd_player_tool` or `mpd_stream_tool` might be better. If it's a language, `mpd_lang_tool`. The previous history has `mpd`? No, looking at the list, there is `mpc_tool`? No, `mpc` isn't there. `mpd` isn't there. I'll stick to `mpd_control_tool` as a generic name. The objective "stream processing and orchestration" fits a control tool well.
+
+One minor adjustment: The prompt history shows `perl_data_engine_tool`. The instruction text in the history is: "Initialize a NEW dedicated folder named perl_data_engine_tool...".
+My generated text should follow this exact structure.
+"Initialize a NEW dedicated folder named mpd_stream_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MPD. Focus entirely on this new objective: 'Implement a dynamic process definition and execution engine'. You MUST write the implementation strictly using this exact programming language: MPD."
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named mpd_stream_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MPD. Focus entirely on this new objective: 'Implement a dynamic process definition and execution engine'. You MUST write the implementation strictly using this exact programming language: MPD.

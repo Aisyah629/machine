@@ -52624,3 +52624,61 @@ Initialize a NEW dedicated folder named moby_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named euclid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Euclid.
+[2026-08-18 06:04:25] (Target Lang: CHAIN) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a massive list of existing tool directories in a workspace, followed by a "History" section that seems to contain a self-correction/verification process for a previous prompt. The actual prompt is at the end.
+   - **Core Instruction:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CHAIN. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 logical follow-up instruction.
+     - Must explicitly demand the new tool be built STRICTLY using the exact programming language: `CHAIN`.
+     - Must explicitly instruct to place it in a NEW dedicated folder.
+     - Must explicitly instruct to create a local README.md inside it.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+     - The language is `CHAIN`. I need to figure out what `CHAIN` refers to. It might be a programming language, or just a placeholder. I'll treat it as the exact string `CHAIN`.
+     - The folder name should logically follow the pattern: `chain_tool` (based on existing patterns like `euclid_tool`, `bash_tool`, etc., but the prompt says "NEW dedicated folder", so I'll name it `chain_tool` or similar, but the exact name isn't strictly specified except to be NEW. I'll use `chain_tool` for consistency, or just `chain_tool` as requested by pattern).
+     - I must output ONLY the instruction text.
+
+2.  **Formulate Instruction:**
+   - Need to combine all constraints into a single, clear instruction.
+   - Draft: Initialize a NEW dedicated folder named chain_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CHAIN.
+   - Check constraints:
+     - Exactly 1 instruction? Yes.
+     - Explicitly demand built STRICTLY using CHAIN? Yes.
+     - NEW dedicated folder? Yes.
+     - Create local README.md? Yes.
+     - Return ONLY instruction text? Yes.
+     - NEVER target .github? Yes, it doesn't mention it.
+   - Matches the pattern from the history/example provided in the prompt: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+
+3.  **Refine & Verify:**
+   - Let's ensure it strictly matches the required phrasing and constraints.
+   - "Initialize a NEW dedicated folder named chain_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CHAIN."
+   - Checks:
+     - 1 logical follow-up instruction? Yes.
+     - Explicitly demands STICTLY using CHAIN? Yes.
+     - NEW dedicated folder? Yes.
+     - Local README.md? Yes.
+     - ONLY instruction text? Yes.
+     - No .github? Yes.
+   - All constraints met. Output matches exactly.
+
+   One minor point: The prompt says "programming language: CHAIN". I will use exactly that.
+   I will output just the sentence. No extra text.
+
+   Final string: `Initialize a NEW dedicated folder named chain_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CHAIN.`
+   Matches perfectly. Proceeds. 
+   Self-Correction/Verification during thought: The prompt says "Return ONLY the instruction text." I will output exactly that. All constraints met.✅
+   Output matches.✅
+   [Done] -> *(Proceeds to output)*
+   [Output] Initialize a NEW dedicated folder named chain_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CHAIN.✅
+   All good.✅
+   *Self-Correction/Note during generation prep*: I should ensure casing matches exactly: `CHAIN`. Folder: `chain_tool`. All good.
+   Output matches.✅
+   [Final Check] All constraints satisfied. Output matches.✅
+   Output Generation.✅
+   *(Proceeds)* -> `Initialize a NEW dedicated folder named chain_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CHAIN.` -> *(Done)*
+</think>
+
+Initialize a NEW dedicated folder named chain_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CHAIN.

@@ -1,0 +1,65 @@
+OBJECT LOGIC TOOL - Main Implementation
+LANGUAGE: ObjectLOGO
+PURPOSE: Recursive Logic Engine, Visual State Tracing, Diagnostic
+
+CLASS LogicEngine
+    METHODS
+        Initialize() 
+            PRINT "ObjectLOGO Logic Engine Initialized"
+            SET stateTrace = []
+            SET queryCache = []
+        END
+        
+        EvaluateRule(rule, context)
+            TRACE "Evaluating rule: " + rule
+            PUSH stateTrace, EvaluateRule
+            IF rule.type == "recursive"
+                result = ExecuteRecursive(rule.body, context)
+            ELSE
+                result = EvaluateSimple(rule.body, context)
+            END
+            POP stateTrace
+            RETURN result
+        END
+        
+        ExecuteRecursive(body, context)
+            TRACE "Recursive evaluation started"
+            PUSH stateTrace, ExecuteRecursive
+            depth = context.depth + 1
+            IF depth > MAX_DEPTH
+                HANDLE "Depth limit exceeded"
+                RETURN false
+            END
+            FOR EACH subRule IN body
+                EvaluateRule(subRule, context)
+            END
+            POP stateTrace
+            RETURN true
+        END
+        
+        VisualizeTrace()
+            PRINT "State Trace History:"
+            FOR EACH step IN stateTrace
+                PRINT "  -> " + step
+            END
+        END
+        
+        RunDiagnostic()
+            PRINT "Starting Interactive Diagnostic Mode"
+            WHILE RUNNING
+                QUERY = INPUT("Enter query/rule: ")
+                IF QUERY == "quit"
+                    BREAK
+                END
+                result = EvaluateRule(QUERY, context)
+                PRINT "Result: " + result
+                VisualizeTrace()
+            END
+        END
+    END
+END
+
+// Main Execution
+ENGINE = Create(LogicEngine)
+ENGINE.Initialize()
+ENGINE.RunDiagnostic()

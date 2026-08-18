@@ -62810,3 +62810,48 @@ Initialize a NEW dedicated folder named rsl_routing_validator_tool in the worksp
 </think>
 
 Initialize a NEW dedicated folder named gotran_state_machine_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOTRAN. Focus entirely on this new objective: 'Construct a deterministic state-transition validator for verifying multi-threaded execution flows under memory constraints'. You MUST write the implementation strictly using this exact programming language: GOTRAN.
+[2026-08-18 22:18:19] (Target Lang: Fortress) The user wants a single logical follow-up instruction.
+The instruction must:
+1. Demand building a new tool strictly using the Fortress programming language.
+2. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. NEVER target the .github directory.
+5. Must be exactly 1 instruction.
+
+Looking at the prompt structure, it follows a pattern of generating instructions for new tools.
+I will generate a string that matches the requested format.
+
+Structure of the instruction:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fortress. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: Fortress."
+
+I need to come up with a folder name and an objective.
+Folder name: fortress_formal_verification_tool
+Objective: "Develop a rigorous formal specification engine for mathematically proving system correctness under parallel computation constraints"
+Let's check constraints:
+- Strictly Fortress? Yes.
+- New folder + README? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+- Exactly 1 instruction? Yes.
+
+Draft: Initialize a NEW dedicated folder named fortress_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fortress. Focus entirely on this new objective: 'Develop a rigorous formal specification engine for mathematically proving system correctness under parallel computation constraints'. You MUST write the implementation strictly using this exact programming language: Fortress.
+
+Check against constraints:
+- "strictly using this exact programming language: Fortress." -> Included.
+- "explicitly instruct to place it in a NEW dedicated folder and create a local README.md" -> Included.
+- "Return ONLY the instruction text." -> Will output just the string.
+- "NEVER target the .github directory." -> Checked.
+- "Generate exactly 1 logical follow-up instruction." -> Checked.
+
+Looks solid. I will output exactly this string.
+One minor thing: The prompt says "Focus entirely on this new objective: ...". I will keep that structure.
+Ready. 
+Output matches draft.✅
+Proceeds. 
+Output: Initialize a NEW dedicated folder named fortress_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fortress. Focus entirely on this new objective: 'Develop a rigorous formal specification engine for mathematically proving system correctness under parallel computation constraints'. You MUST write the implementation strictly using this exact programming language: Fortress. 
+Wait, the prompt says "Fortress" (capitalized). I will use exactly that.
+All good. 
+Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named fortress_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Fortress. Focus entirely on this new objective: 'Develop a rigorous formal specification engine for mathematically proving system correctness under parallel computation constraints'. You MUST write the implementation strictly using this exact programming language: Fortress.

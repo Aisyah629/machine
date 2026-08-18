@@ -1,0 +1,161 @@
+program StateMachineValidator
+  use core.io
+  use core.thread
+  use core.memory
+
+  // Configuration constants
+  const MAX_THREADS = 64
+  const MEMORY_LIMIT_BYTES = 524288 // 512KB
+  const STATE_TIMEOUT_MS = 5000
+
+  // State structure
+  type StateRecord
+    id: int
+    status: enum { IDLE, RUNNING, BLOCKED, VALIDATED, ERROR }
+    memory_usage: int
+    thread_id: int
+    transition_count: int
+  end type
+
+  // Validator engine
+  class StateMachineEngine
+    private states: array[StateRecord]
+    private lock: thread.lock
+    private memory_allocator: memory.pool
+
+    // Constructor
+    init()
+      self.states = allocate array[StateRecord] capacity MAX_THREADS
+      self.lock = thread.create_lock()
+      self.memory_allocator = memory.create_pool(MEMORY_LIMIT_BYTES)
+      initialize_states()
+    end init
+
+    // Initialize states to IDLE
+    private initialize_states()
+      for i from 0 to MAX_THREADS - 1
+        self.states[i].id = i
+        self.states[i].status = IDLE
+        self.states[i].memory_usage = 0
+        self.states[i].thread_id = i
+        self.states[i].transition_count = 0
+      end for
+    end initialize_states
+
+    // Validate transition for a given thread
+    function validate_transition(thread_id: int, new_state: enum) -> bool
+      acquire lock
+      if thread_id < 0 or thread_id >= MAX_THREADS
+        release lock
+        return false
+      end if
+
+      var current = self.states[thread_id]
+      if current.status == ERROR
+        release lock
+        return false
+      end if
+
+      // Memory constraint check
+      var estimated_usage = calculate_estimated_usage(current.memory_usage, new_state)
+      if estimated_usage > MEMORY_LIMIT_BYTES
+        release lock
+        return false
+      end if
+
+      // State transition logic
+      if not is_valid_transition(current.status, new_state)
+        release lock
+        return false
+      end if
+
+      // Apply transition
+      current.status = new_state
+      current.memory_usage = estimated_usage
+      current.transition_count = current.transition_count + 1
+      self.states[thread_id] = current
+      release lock
+      return true
+    end validate_transition
+
+    // Check if transition is allowed
+    private function is_valid_transition(current: enum, target: enum) -> bool
+      if current == IDLE
+        return target == RUNNING or target == BLOCKED
+      end if
+      if current == RUNNING
+        return target == BLOCKED or target == VALIDATED
+      end if
+      if current == BLOCKED
+        return target == IDLE or target == ERROR
+      end if
+      if current == VALIDATED
+        return target == IDLE
+      end if
+      return false
+    end is_valid_transition
+
+    // Estimate memory usage based on state
+    private function calculate_estimated_usage(current_usage: int, new_state: enum) -> int
+      var base = current_usage
+      if new_state == RUNNING
+        base = base + 1024
+      else if new_state == BLOCKED
+        base = base + 512
+      else if new_state == VALIDATED
+        base = base + 256
+      else if new_state == ERROR
+        base = base + 0
+      end if
+      return base
+    end calculate_estimated_usage
+
+    // Run concurrent validation simulation
+    function run_concurrent_validation()
+      var threads: array[thread.handle]
+      for i from 0 to MAX_THREADS - 1
+        threads[i] = thread.spawn(validate_single_state, i)
+      end for
+
+      for i from 0 to MAX_THREADS - 1
+        thread.join(threads[i])
+      end for
+
+      print_consolidated_results()
+    end run_concurrent_validation
+
+    // Simulation for single state thread
+    function validate_single_state(thread_id: int)
+      var engine = new StateMachineEngine()
+      engine.validate_transition(thread_id, RUNNING)
+      engine.validate_transition(thread_id, BLOCKED)
+      engine.validate_transition(thread_id, VALIDATED)
+      engine.validate_transition(thread_id, IDLE)
+    end validate_single_state
+
+    // Print final results
+    private function print_consolidated_results()
+      acquire lock
+      var total_valid = 0
+      var total_errors = 0
+      for i from 0 to MAX_THREADS - 1
+        if self.states[i].status == VALIDATED
+          total_valid = total_valid + 1
+        else if self.states[i].status == ERROR
+          total_errors = total_errors + 1
+        end if
+      end for
+      release lock
+      print "Validation Complete. Valid: ", total_valid, " Errors: ", total_errors
+    end print_consolidated_results
+  end class
+
+  // Main execution
+  main()
+    var engine = new StateMachineEngine()
+    print "Gotran State Machine Validator Initialized"
+    print "Running concurrent validation..."
+    engine.run_concurrent_validation()
+    print "Execution finished successfully."
+  end main
+end program

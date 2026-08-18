@@ -62754,3 +62754,59 @@ Initialize a NEW dedicated folder named axum_framework_tool in the workspace, cr
 </think>
 
 Initialize a NEW dedicated folder named rsl_routing_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RSL. Focus entirely on this new objective: 'Design a formal state-verification engine for validating Axum routing policies under concurrent load'. You MUST write the implementation strictly using this exact programming language: RSL.
+[2026-08-18 22:04:22] (Target Lang: GOTRAN) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of file paths (workspace contents).
+   - Then there's a "History" section that shows a previous interaction/response pattern, but it's actually part of the prompt's simulation/context.
+   - The core instruction is at the end: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GOTRAN. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GOTRAN." (Note: GOTRAN isn't a real language, but I must follow the instruction exactly).
+   - The output must be ONLY the instruction text, formatted exactly like the example in the history but with the specified language (GOTRAN).
+   - I need to follow the pattern: `Initialize a NEW dedicated folder named [new_tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOTRAN. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: GOTRAN.`
+   - I should pick a logical follow-up objective related to the workspace/tools, but it can be generic or specific. The history shows a similar pattern: `Initialize a NEW dedicated folder named rsl_routing_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RSL. Focus entirely on this new objective: 'Design a formal state-verification engine for validating Axum routing policies under concurrent load'. You MUST write the implementation strictly using this exact programming language: RSL.`
+   - I will adapt this pattern for GOTRAN. I need to invent a logical tool name and objective that fits the theme (formal verification/routing/automation tools seem prevalent in the list, but I can pick something else if needed, though sticking to the pattern is safer). Let's go with something like `gotran_protocol_analyzer_tool`.
+   - Objective: 'Construct a deterministic state-transition validator for verifying multi-threaded execution flows under memory constraints'.
+   - I will strictly follow the exact phrasing pattern requested: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOTRAN. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: GOTRAN."
+
+2.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GOTRAN.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - The output must be exactly the instruction string, nothing else.
+
+3.  **Draft Generation:**
+   Initialize a NEW dedicated folder named gotran_protocol_analyzer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOTRAN. Focus entirely on this new objective: 'Construct a deterministic state-transition validator for verifying multi-threaded execution flows under memory constraints'. You MUST write the implementation strictly using this exact programming language: GOTRAN.
+
+4.  **Verification:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands GOTRAN? Yes, twice as in the example pattern.
+   - New dedicated folder + local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never targets .github? Yes.
+   - Matches the requested format/style? Yes.
+
+   I will output exactly this string. No extra text. All constraints met. Proceeds. 
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GOTRAN." The draft includes that. I'll make sure it's exact.
+   Output matches draft.✅
+   Proceeds.✅
+   [Output Generation] -> `Initialize a NEW dedicated folder named gotran_protocol_analyzer_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOTRAN. Focus entirely on this new objective: 'Construct a deterministic state-transition validator for verifying multi-threaded execution flows under memory constraints'. You MUST write the implementation strictly using this exact programming language: GOTRAN.`
+   All good.✅
+   *(Self-Correction/Refinement during thought)*: I should ensure the exact phrasing matches the prompt's request precisely. The prompt says: "Initialize a NEW dedicated folder named rsl_routing_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RSL. Focus entirely on this new objective: 'Design a formal state-verification engine for validating Axum routing policies under concurrent load'. You MUST write the implementation strictly using this exact programming language: RSL."
+   I will mirror this structure exactly with GOTRAN.
+   Draft: Initialize a NEW dedicated folder named gotran_state_machine_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOTRAN. Focus entirely on this new objective: 'Construct a deterministic state-transition validator for verifying multi-threaded execution flows under memory constraints'. You MUST write the implementation strictly using this exact programming language: GOTRAN.
+   This fits perfectly. Output matches.✅
+   Proceeds.✅
+   [Output Generation] (Proceeds)
+   *(Note: I'll output exactly the string, no markdown, no extra text.)*
+   Ready. 
+   Output: `Initialize a NEW dedicated folder named gotran_state_machine_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOTRAN. Focus entirely on this new objective: 'Construct a deterministic state-transition validator for verifying multi-threaded execution flows under memory constraints'. You MUST write the implementation strictly using this exact programming language: GOTRAN.` 
+   All constraints verified.✅
+   Proceeds.✅
+   [Final Check] Matches all constraints. Returns ONLY the instruction text. Uses GOTRAN. Creates new folder + README. Never targets .github. Exactly 1 instruction. Logical follow-up. Done. 
+   Output matches.✅
+   *(Proceeds to output)*
+</think>
+
+Initialize a NEW dedicated folder named gotran_state_machine_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOTRAN. Focus entirely on this new objective: 'Construct a deterministic state-transition validator for verifying multi-threaded execution flows under memory constraints'. You MUST write the implementation strictly using this exact programming language: GOTRAN.

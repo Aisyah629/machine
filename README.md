@@ -253,3 +253,5 @@ MIT License
 - Created/Updated module: `axum_framework_tool` (See `axum_framework_tool/README.md` for details)
 
 - Created/Updated module: `rsl_routing_validator_tool` (See `rsl_routing_validator_tool/README.md` for details)
+
+- Created/Updated module: `gotran_state_machine_validator_tool` (See `gotran_state_machine_validator_tool/README.md` for details)

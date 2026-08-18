@@ -41,3 +41,5 @@ MIT License
 - Created/Updated module: `./fjolnir_tool` (See `./fjolnir_tool/README.md` for details)
 
 - Created/Updated module: `elm_tool` (See `elm_tool/README.md` for details)
+
+- Created/Updated module: `gj_tool` (See `gj_tool/README.md` for details)

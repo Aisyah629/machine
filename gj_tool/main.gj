@@ -1,37 +1,64 @@
-/* GJ Syntax Validation Utility */
+// Generic Type-Safe Data Structure Utility Library
+// Language: GJ (Generic Java)
 
-/* Import necessary classes */
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 
-public class GJSyntaxValidator {
+class GJTool {
+  public static void main(String[] args) {
+    SafeCollection<Integer> intCol = new SafeCollection<Integer>();
+    intCol.add(42);
+    intCol.add(17);
+    
+    SafeCollection<String> strCol = new SafeCollection<String>();
+    strCol.add("Alpha");
+    strCol.add("Beta");
+    
+    System.out.println("Integer Collection: " + intCol);
+    System.out.println("String Collection: " + strCol);
+    
+    // Demonstrate generic algorithm
+    Integer sum = GenericAlgorithm.<Integer>sum(intCol);
+    System.out.println("Sum of integers: " + sum);
+  }
+}
 
-    /* Main method to execute the syntax validation */
-    public static void main(String[] args) {
-        if (args.length == 0) {
-            System.out.println("Usage: GJSyntaxValidator <file.gj>");
-            return;
-        }
+// Generic collection with compile-time type safety
+class SafeCollection<T> extends Collection {
+  private ArrayList<T> data = new ArrayList<T>();
+  
+  public void add(T item) {
+    data.add(item);
+  }
+  
+  public T get(int index) {
+    return data.get(index);
+  }
+  
+  public int size() {
+    return data.size();
+  }
+  
+  public String toString() {
+    return data.toString();
+  }
+}
 
-        String filePath = args[0];
-        List<String> errors = validateGJSyntax(filePath);
-
-        if (errors.isEmpty()) {
-            System.out.println("No syntax errors found in " + filePath);
-        } else {
-            System.out.println("Syntax errors found in " + filePath);
-            for (String error : errors) {
-                System.out.println("  - " + error);
-            }
-        }
+// Generic utility algorithms
+class GenericAlgorithm {
+  public static <T extends Number> T sum(SafeCollection<T> collection) {
+    T result = null;
+    for (int i = 0; i < collection.size(); i++) {
+      T current = collection.get(i);
+      if (result == null) {
+        result = current;
+      } else {
+        // GJ supports generic arithmetic via Number methods in practice
+        // Here we demonstrate structural type constraints
+        double d = current.doubleValue();
+        double r = result.doubleValue();
+        result = (T) new Double(d + r);
+      }
     }
-
-    /* Method to validate the syntax of a GJ file */
-    private static List<String> validateGJSyntax(String filePath) {
-        List<String> errors = new ArrayList<String>();
-        // Placeholder for actual syntax validation logic
-        // In a real-world scenario, this would parse the file, check for GJ-specific syntax rules, and populate the errors list
-        System.out.println("Validating syntax for: " + filePath);
-        return errors;
-    }
+    return result;
+  }
 }

@@ -259,3 +259,5 @@ MIT License
 - Created/Updated module: `fortress_formal_verification_tool` (See `fortress_formal_verification_tool/README.md` for details)
 
 - Created/Updated module: `bigwig_tool` (See `bigwig_tool/README.md` for details)
+
+- Created/Updated module: `./pike_lowlevel_network_memory_simulator_tool` (See `./pike_lowlevel_network_memory_simulator_tool/README.md` for details)

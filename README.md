@@ -1226,3 +1226,5 @@ Training Machine
 - Created/Updated module: `elm_frontend_tool` (See `elm_frontend_tool/README.md` for details)
 
 - Created/Updated module: `foxpro_development_tool` (See `foxpro_development_tool/README.md` for details)
+
+- Created/Updated module: `ateji_px_tool` (See `ateji_px_tool/README.md` for details)

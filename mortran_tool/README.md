@@ -1,19 +1,11 @@
-# Mortran Tool
+# Mortran Mathematical Compiler Tool
 
-This folder contains the Mortran tool implementation.
+This tool is a dedicated implementation of the Mortran programming language, designed specifically for scientific computing, mathematical expression evaluation, and high-performance numerical analysis.
 
-## Overview
-
-Mortran is a preprocessor for Fortran, designed to simplify complex mathematical expressions. This tool focuses on implementing a procedural mathematical library utility using Mortran syntax.
+## Features
+- Advanced mathematical expression parsing and evaluation
+- Scientific computing simulation engine
+- High-performance numerical solver
 
 ## Usage
-
-To use this tool, ensure you have Mortran installed on your system. The main script `main.mortran` contains the procedural mathematical library utility.
-
-## Files
-
-- `main.mortran`: The main Mortran source file for the mathematical library utility.
-
-## License
-
-This project is open source.
+Place your `.mortran` or `.mt` files in the root of this directory and execute the tool to process them.

@@ -1250,3 +1250,5 @@ Training Machine
 - Created/Updated module: `xpath_tool` (See `xpath_tool/README.md` for details)
 
 - Created/Updated module: `nu_cli_tool` (See `nu_cli_tool/README.md` for details)
+
+- Created/Updated module: `pict_advanced_tool` (See `pict_advanced_tool/README.md` for details)

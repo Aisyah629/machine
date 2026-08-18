@@ -55822,3 +55822,62 @@ Initialize a NEW dedicated folder named e_capability_security_framework_tool in 
 </think>
 
 Initialize a NEW dedicated folder named masm_lowlevel_system_security_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MASM Microsoft Assembly x86. Focus entirely on this new objective: 'Develop a MASM-based low-level secure inter-process communication and memory isolation module for distributed system nodes'. You MUST write the implementation strictly using this exact programming language: MASM Microsoft Assembly x86.
+[2026-08-18 11:54:29] (Target Lang: REBOL) The user wants a follow-up instruction.
+The instruction must:
+1. Generate exactly 1 logical follow-up instruction.
+2. Explicitly demand that the new tool be built STRICTLY using this exact programming language: REBOL.
+3. Instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target the .github directory.
+
+I will formulate the instruction following the pattern from the history.
+Pattern: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [language]. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: [language]."
+
+I need to pick a folder name and an objective related to REBOL.
+Folder name: `rebol_web_api_gateway_tool`
+Language: REBOL
+Objective: 'Develop a REBOL-based lightweight web API gateway and data serialization module for dynamic scripting environments'
+Check constraints:
+- 1 logical follow-up instruction? Yes.
+- Strictly REBOL? Yes.
+- NEW folder + README.md? Yes.
+- ONLY instruction text? Yes.
+- Never .github? Yes.
+
+Constructing the text:
+Initialize a NEW dedicated folder named rebol_web_api_gateway_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Develop a REBOL-based lightweight web API gateway and data serialization module for dynamic scripting environments'. You MUST write the implementation strictly using this exact programming language: REBOL.
+
+Matches constraints perfectly. Output matches.✅
+Proceeds. 
+Output generation. 
+(Self-Correction/Verification during prep): I will verify the exact phrasing matches the prompt's request: "Initialize a NEW dedicated folder named rebol_web_api_gateway_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Develop a REBOL-based lightweight web API gateway and data serialization module for dynamic scripting environments'. You MUST write the implementation strictly using this exact programming language: REBOL."
+All good. Output matches.✅
+Proceeds. 
+[Output] -> `Initialize a NEW dedicated folder named rebol_web_api_gateway_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Develop a REBOL-based lightweight web API gateway and data serialization module for dynamic scripting environments'. You MUST write the implementation strictly using this exact programming language: REBOL.`
+Done. 
+Wait, checking constraints: "Return ONLY the instruction text. NEVER target the .github directory." -> Checked.
+"Generate exactly 1 logical follow-up instruction." -> Checked.
+"strictly using this exact programming language: REBOL." -> Checked.
+All good.
+Proceeds. 
+Output Generation. 
+`Initialize a NEW dedicated folder named rebol_web_api_gateway_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Develop a REBOL-based lightweight web API gateway and data serialization module for dynamic scripting environments'. You MUST write the implementation strictly using this exact programming language: REBOL.`
+Done. 
+Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: REBOL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+Matches perfectly. 
+Proceeds. 
+[Output Generation] -> Done. 
+(Self-Correction/Note): I will just output the exact string without extra markdown if possible, but standard text is fine. The prompt says "Return ONLY the instruction text." I will do exactly that.
+Ready. 
+[Output] -> `Initialize a NEW dedicated folder named rebol_web_api_gateway_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Develop a REBOL-based lightweight web API gateway and data serialization module for dynamic scripting environments'. You MUST write the implementation strictly using this exact programming language: REBOL.`
+Done. 
+Proceeds. 
+*(Self-Correction/Verification during output generation prep)*: I'll double check the exact wording required: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: REBOL." -> I have that. "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> I have that. "Return ONLY the instruction text." -> I will. "NEVER target the .github directory." -> I won't.
+All good.✅
+Output matches.✅
+[Final Output Generation] -> *Proceeds*
+`Initialize a NEW dedicated folder named rebol_web_api_gateway_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Develop a REBOL-based lightweight web API gateway and data serialization module for dynamic scripting environments'. You MUST write the implementation strictly using this exact programming language: REBOL.` 
+*(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named rebol_web_api_gateway_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Develop a REBOL-based lightweight web API gateway and data serialization module for dynamic scripting environments'. You MUST write the implementation strictly using this exact programming language: REBOL.

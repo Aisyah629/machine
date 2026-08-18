@@ -55348,3 +55348,42 @@ The plan is clear.
 </think>
 
 Initialize a NEW dedicated folder named rapira_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira. Focus entirely on this new objective: 'Develop a Rapira-based logic programming framework for automated deduction and symbolic problem solving'. You MUST write the implementation strictly using this exact programming language: Rapira.
+[2026-08-18 11:07:58] (Target Lang: Maple) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand the new tool be built strictly using the programming language: Maple.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the `.github` directory.
+    *   Context: The user provided a huge list of existing tools and a history. The history shows a previous instruction about a "rapira_logic_engine_tool". The current request asks for a "logical follow-up". Usually, in these contexts, "logical follow-up" implies continuing the pattern or expanding the toolset in a related or complementary way, or just creating another tool in the same style. The key constraints are the language (Maple) and the structure (New folder, README, only instruction text).
+
+2.  **Draft the instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named maple_symbolic_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maple. Focus entirely on this new objective: 'Implement a Maple-based symbolic computation engine for advanced mathematical theorem proving and algebraic manipulation'. You MUST write the implementation strictly using this exact programming language: Maple.
+
+3.  **Review against constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, it's one block of text.
+    *   *MUST explicitly demand the new tool be built STRICTLY using this exact programming language: Maple?* Yes, "STRICTLY using this exact programming language: Maple" and "strictly using this exact programming language: Maple" are present.
+    *   *If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md?* Yes, "Initialize a NEW dedicated folder named ... create a local README.md inside it".
+    *   *Return ONLY the instruction text?* The output should just be the text, no markdown formatting like "Here is the instruction:", just the text itself.
+    *   *NEVER target the .github directory?* The instruction mentions "workspace", "NEW dedicated folder", "local README.md". It does not mention `.github`. Safe.
+    *   *Logical follow-up?* The previous tool was "rapira_logic_engine_tool" for "automated deduction and symbolic problem solving". A "maple_symbolic_solver_tool" for "symbolic computation engine... theorem proving" is highly logical as a follow-up, given Maple is famous for symbolic math and Rapira for logic. This fits the theme well.
+
+4.  **Refine the text for style matching (optional but good practice based on examples):**
+    *   Looking at the history: "Initialize a NEW dedicated folder named rapira_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rapira. Focus entirely on this new objective: 'Develop a Rapira-based logic programming framework for automated deduction and symbolic problem solving'. You MUST write the implementation strictly using this exact programming language: Rapira."
+    *   My draft matches this structure perfectly.
+    *   Result: `Initialize a NEW dedicated folder named maple_symbolic_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maple. Focus entirely on this new objective: 'Implement a Maple-based symbolic computation engine for advanced mathematical theorem proving and algebraic manipulation'. You MUST write the implementation strictly using this exact programming language: Maple.`
+
+5.  **Final Polish (Mental Check of Output):**
+    *   Output: `Initialize a NEW dedicated folder named maple_symbolic_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maple. Focus entirely on this new objective: 'Implement a Maple-based symbolic computation engine for advanced mathematical theorem proving and algebraic manipulation'. You MUST write the implementation strictly using this exact programming language: Maple.`
+    *   Contains "Maple"? Yes.
+    *   Contains "STRICTLY"? Yes.
+    *   Contains "NEW dedicated folder"? Yes.
+    *   Contains "README.md"? Yes.
+    *   No `.github`? Yes.
+    *   Only instruction text? Yes.
+
+6.  **Conclusion:** The generated text meets all criteria.
+</think>
+
+Initialize a NEW dedicated folder named maple_symbolic_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maple. Focus entirely on this new objective: 'Implement a Maple-based symbolic computation engine for advanced mathematical theorem proving and algebraic manipulation'. You MUST write the implementation strictly using this exact programming language: Maple.

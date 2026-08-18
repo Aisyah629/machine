@@ -58262,3 +58262,38 @@ Initialize a NEW dedicated folder named mpd_stream_engine_tool in the workspace,
 </think>
 
 Initialize a NEW dedicated folder named cobol_transaction_processor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: COBOL. Focus entirely on this new objective: 'Implement a high-throughput batch record processing and legacy system integration framework'. You MUST write the implementation strictly using this exact programming language: COBOL.
+[2026-08-18 16:16:25] (Target Lang: OmniMark) The user wants me to generate exactly 1 logical follow-up instruction.
+The instruction must:
+1. Demand building a new tool strictly using OmniMark.
+2. Explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. Never target the .github directory.
+5. Follow the pattern from the history: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write the implementation strictly using this exact programming language: [LANGUAGE]."
+
+Let's construct it carefully.
+Language: OmniMark
+Folder name: omnimark_web_transformation_tool (or similar, but not .github)
+Objective: 'Automate high-performance XML and HTML document transformation and parsing workflows'
+
+Check constraints:
+- Exactly 1 logical follow-up instruction.
+- Explicitly demand OmniMark.
+- Explicitly instruct NEW folder + README.md.
+- Return ONLY instruction text.
+- Never target .github.
+
+Draft:
+Initialize a NEW dedicated folder named omnimark_web_transformation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OmniMark. Focus entirely on this new objective: 'Automate high-performance XML and HTML document transformation and parsing workflows'. You MUST write the implementation strictly using this exact programming language: OmniMark.
+
+Check against constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand OmniMark? Yes, twice as per pattern.
+- NEW dedicated folder + README.md? Yes.
+- ONLY instruction text? Yes.
+- Never target .github? Yes, folder name is irrelevant but not .github.
+Matches perfectly. Output matches the requested format.
+Proceed. 
+I will output exactly the drafted text.✅
+</think>
+
+Initialize a NEW dedicated folder named omnimark_web_transformation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OmniMark. Focus entirely on this new objective: 'Automate high-performance XML and HTML document transformation and parsing workflows'. You MUST write the implementation strictly using this exact programming language: OmniMark.

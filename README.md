@@ -155,3 +155,5 @@ MIT License
 - Created/Updated module: `perl_data_engine_tool` (See `perl_data_engine_tool/README.md` for details)
 
 - Created/Updated module: `mpd_stream_engine_tool` (See `mpd_stream_engine_tool/README.md` for details)
+
+- Created/Updated module: `omnimark_web_transformation_tool` (See `omnimark_web_transformation_tool/README.md` for details)

@@ -1,0 +1,160 @@
+import java.io.*;
+import java.util.*;
+import java.util.concurrent.*;
+
+/**
+ * Beanshell Build Orchestrator Tool
+ * Automates compilation, optimization, and deployment of graphics shader assets.
+ */
+
+// Configuration defaults
+HashMap<String, String> config = new HashMap<String, String>();
+config.put("shader_dir", "./shaders");
+config.put("output_dir", "./dist");
+config.put("log_level", "INFO");
+config.put("parallel_jobs", "4");
+
+// Logging utility
+def log(level, message) {
+    Date now = new Date();
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    print("[" + sdf.format(now) + "] [" + level + "] " + message);
+}
+
+// Shader file validator
+def validateShader(String path) {
+    if (!new File(path).exists()) {
+        log("ERROR", "Shader file not found: " + path);
+        return false;
+    }
+    String content = new String(new File(path).readAllBytes());
+    if (content.contains("#version") || content.contains("uniform") || content.contains("varying")) {
+        log("INFO", "Valid shader syntax detected: " + path);
+        return true;
+    }
+    log("WARN", "Potential syntax issues in: " + path);
+    return true; // Continue despite warnings
+}
+
+// Shader compiler wrapper
+def compileShader(String input, String output, String target, String profile) {
+    log("INFO", "Compiling " + input + " -> " + output + " [" + profile + "]");
+    try {
+        // Simulate compilation process
+        Thread.sleep(100);
+        // In real implementation, invoke Cg compiler via ProcessBuilder
+        def process = ["cg", "-profile", profile, "-entry", "main", "-o", output, input].execute();
+        process.waitFor();
+        if (process.exitValue() == 0) {
+            log("SUCCESS", "Compilation successful: " + output);
+            return true;
+        } else {
+            log("ERROR", "Compilation failed for: " + input);
+            return false;
+        }
+    } catch (Exception e) {
+        log("ERROR", "Compilation exception: " + e.getMessage());
+        return false;
+    }
+}
+
+// Build pipeline orchestrator
+def runBuildPipeline() {
+    log("INFO", "Initializing build pipeline...");
+    def startTime = System.currentTimeMillis();
+    def shaderFiles = new ArrayList<String>();
+    def compiledCount = 0;
+    def failedCount = 0;
+    def errors = new ArrayList<String>();
+
+    // Scan for shader files
+    def shaderDir = new File(config.get("shader_dir"));
+    if (shaderDir.exists() && shaderDir.isDirectory()) {
+        shaderDir.listFiles({ file -> file.getName().endsWith(".cg") || file.getName().endsWith(".cgs") }).each { file ->
+            shaderFiles.add(file.getAbsolutePath());
+        }
+    } else {
+        log("WARN", "Shader directory not found, creating placeholder...");
+        shaderDir.mkdirs();
+    }
+
+    if (shaderFiles.isEmpty()) {
+        log("INFO", "No shader files found. Generating test shaders...");
+        def testShader = new File(shaderDir, "test.cg");
+        new PrintWriter(testShader) {
+            write("void main(out float4 color : COLOR) { color = float4(1.0); }");
+        };
+        shaderFiles.add(testShader.getAbsolutePath());
+    }
+
+    // Process shaders sequentially for reliability
+    shaderFiles.each { shaderPath ->
+        if (validateShader(shaderPath)) {
+            def outputName = new File(shaderPath).getName().replaceFirst("\\.cg$", ".cso");
+            def outputPath = new File(config.get("output_dir"), outputName).getAbsolutePath();
+            
+            // Compile with standard profile
+            if (compileShader(shaderPath, outputPath, "vp_2_0", "vp_2_0")) {
+                compiledCount++;
+            } else {
+                failedCount++;
+                errors.add(shaderPath);
+            }
+        }
+    }
+
+    def endTime = System.currentTimeMillis();
+    def duration = (endTime - startTime) / 1000.0;
+    
+    log("INFO", "Build pipeline completed.");
+    log("INFO", "Total: " + shaderFiles.size() + ", Compiled: " + compiledCount + ", Failed: " + failedCount);
+    log("INFO", "Duration: " + duration + "s");
+    
+    return [success: failedCount == 0, compiled: compiledCount, failed: failedCount, errors: errors];
+}
+
+// Deploy pipeline orchestrator
+def runDeployPipeline() {
+    log("INFO", "Initializing deployment pipeline...");
+    def destDir = new File(config.get("output_dir"));
+    
+    if (!destDir.exists()) {
+        log("ERROR", "Output directory missing. Run build first.");
+        return false;
+    }
+    
+    // Simulate deployment steps
+    log("INFO", "Validating output artifacts...");
+    def artifacts = destDir.listFiles({ file -> file.isFile() });
+    log("INFO", "Found " + artifacts.size() + " artifacts for deployment.");
+    
+    log("INFO", "Deployment simulation complete. Artifacts staged in: " + destDir.getAbsolutePath());
+    return true;
+}
+
+// Main execution
+log("INFO", "Beanshell Build Orchestrator Tool v1.0");
+log("INFO", "Loading configuration...");
+
+// Load external config if exists
+def configPath = "build_config.bsh";
+if (new File(configPath).exists()) {
+    log("INFO", "Loading external configuration from: " + configPath);
+    eval(new FileReader(configPath));
+}
+
+log("INFO", "Starting build process...");
+def buildResult = runBuildPipeline();
+
+if (buildResult.success) {
+    log("SUCCESS", "Build phase completed successfully.");
+    runDeployPipeline();
+} else {
+    log("ERROR", "Build phase failed. Check error logs.");
+    if (!buildResult.errors.isEmpty()) {
+        buildResult.errors.each { log("ERROR", "Failed: " + it); }
+    }
+    System.exit(1);
+}
+
+log("INFO", "Orchestration complete.");

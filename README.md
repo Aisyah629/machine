@@ -193,3 +193,5 @@ MIT License
 - Created/Updated module: `./api_client_tool` (See `./api_client_tool/README.md` for details)
 
 - Created/Updated module: `mercury_verification_tool` (See `mercury_verification_tool/README.md` for details)
+
+- Created/Updated module: `beanshell_build_orchestrator_tool` (See `beanshell_build_orchestrator_tool/README.md` for details)

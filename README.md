@@ -139,3 +139,5 @@ MIT License
 - Created/Updated module: `apl_array_engine_tool` (See `apl_array_engine_tool/README.md` for details)
 
 - Created/Updated module: `simulink_block_diagram_engine_tool` (See `simulink_block_diagram_engine_tool/README.md` for details)
+
+- Created/Updated module: `strand_advanced_logic_tool` (See `strand_advanced_logic_tool/README.md` for details)

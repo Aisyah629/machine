@@ -223,3 +223,5 @@ MIT License
 - Created/Updated module: `mapper_programming_tool` (See `mapper_programming_tool/README.md` for details)
 
 - Created/Updated module: `act_iii_tool` (See `act_iii_tool/README.md` for details)
+
+- Created/Updated module: `lyapas_string_manipulation_tool` (See `lyapas_string_manipulation_tool/README.md` for details)

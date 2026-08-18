@@ -1,0 +1,47 @@
+\* LYaPAS String Manipulation Tool
+\* Purpose: Robust string parsing and transformation engine
+
+IMPORT STRING_TOOLS;
+IMPORT DATA_STRUCTURES;
+
+PROCEDURE InitializeParser()
+    \* Initialize parsing engine
+    SET parser TO CREATE ParserObject();
+    RETURN parser;
+END PROCEDURE;
+
+FUNCTION ParseComplexStructure(text: STRING) -> ARRAY OF STRING
+    \* Parse complex text data structures
+    LOCAL tokens: ARRAY OF STRING;
+    LOCAL result: ARRAY OF STRING;
+
+    tokens = SPLIT(text, DELIMITER); // Split by delimiter
+    FOREACH token IN tokens DO
+        IF IS_VALID_FORMAT(token) THEN
+            APPEND result TO PROCESS_TOKEN(token);
+        END IF;
+    END FOREACH;
+    RETURN result;
+END FUNCTION;
+
+FUNCTION PROCESS_TOKEN(token: STRING) -> STRING
+    \* Process individual tokens
+    IF IS_NUMERIC(token) THEN
+        RETURN CONVERT_TO_NUMBER(token);
+    ELSE
+        RETURN UPPERCASE(TRIM(token));
+    END IF;
+END FUNCTION;
+
+FUNCTION IS_VALID_FORMAT(token: STRING) -> BOOLEAN
+    \* Validate token format
+    RETURN LENGTH(token) > 0 AND NOT IS_WHITESPACE(token);
+END FUNCTION;
+
+\* Main Execution
+BEGIN
+    Local parser = InitializeParser();
+    Local inputData = "Sample, complex, data, structure";
+    Local parsedData = ParseComplexStructure(inputData);
+    PRINT "Parsed Data: ", parsedData;
+END

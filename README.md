@@ -91,3 +91,5 @@ MIT License
 - Created/Updated module: `coq_formal_verification_tool` (See `coq_formal_verification_tool/README.md` for details)
 
 - Created/Updated module: `maple_symbolic_solver_tool` (See `maple_symbolic_solver_tool/README.md` for details)
+
+- Created/Updated module: `mad_i_formal_verification_tool` (See `mad_i_formal_verification_tool/README.md` for details)

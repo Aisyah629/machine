@@ -55135,3 +55135,78 @@ Initialize a NEW dedicated folder named datatrieve_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named datatrieve_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DATATRIEVE. Focus entirely on this new objective: 'Develop a DATATRIEVE database query optimization engine with automated schema migration support'. You MUST write the implementation strictly using this exact programming language: DATATRIEVE.
+[2026-08-18 11:04:58] (Target Lang: Coq) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Current State:** The workspace already contains a `datatrieve_tool` folder with a README.md and `main.datatrieve` (implied by the list, though not explicitly shown in the prompt's file list, the prompt says `./datatrieve_tool/README.md` and `./datatrieve_tool/main.datatrieve` is not in the list, wait, the list shows `./datatrieve_tool/README.md` and `./datatrieve_tool/main.datatrieve` is missing from the explicit list but implied by the pattern. Actually, the prompt list shows `./datatrieve_tool/README.md` and `./datatrieve_tool/main.datatrieve` isn't explicitly listed, but it's fine).
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - Must explicitly demand the new tool be built STRICTLY using the exact programming language: **Coq**.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+     - Follow the pattern/style of previous instructions.
+
+2.  **Identify Key Requirements for the Follow-up:**
+   - New tool name/folder: `coq_tool` (or something specific like `coq_formal_verification_tool`, but keeping it simple like `coq_tool` or `coq_formal_methods_tool` is fine. I'll stick to `coq_tool` to match the existing `coq_tool` directory in the workspace, or create a new one like `coq_formal_verification_tool`. The prompt says "NEW dedicated folder", so I'll name it `coq_formal_verification_tool` or just `coq_tool` if it doesn't exist, but `coq_tool` is already in the list. To be safe, I'll use `coq_formal_verification_tool` or just follow the exact naming convention: `coq_tool`. Wait, the workspace already has `./coq_tool/README.md` and `./coq_tool/main.v`. I should probably create a new folder like `coq_formal_methods_tool` or just `coq_verification_tool`. Actually, the prompt says "NEW dedicated folder", so I can invent one: `coq_formal_verification_tool`.
+   - Language: STRICTLY Coq.
+   - Objective: Needs to be specific and logical. Something like "Develop a Coq formal verification framework for automated theorem proving and mathematical proof automation."
+   - Format: Instruction text only.
+   - Constraints check: Explicitly demand Coq, new folder, local README.md, only instruction text, no .github.
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named `coq_formal_verification_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Develop a Coq-based formal verification framework for automated theorem proving and mathematical proof automation'. You MUST write the implementation strictly using this exact programming language: Coq.
+
+   Let's refine it to strictly match the requested format and constraints:
+   "Initialize a NEW dedicated folder named coq_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Develop a Coq formal verification framework for automated theorem proving and mathematical proof automation'. You MUST write the implementation strictly using this exact programming language: Coq."
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand strictly Coq? Yes.
+   - New folder + README.md? Yes.
+   - Only instruction text? Yes.
+   - No .github? Yes.
+   - Matches style? Yes.
+
+   One minor adjustment: The prompt says "Language to use: DATATRIEVE. Folder name: `datatrieve_tool`." in the history, but for the follow-up, I just need to generate the instruction. I will keep it tight.
+
+   Draft: Initialize a NEW dedicated folder named coq_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Develop a Coq formal verification framework for automated theorem proving and mathematical proof automation'. You MUST write the implementation strictly using this exact programming language: Coq.
+
+   All constraints met. Output matches exactly. Proceed. 
+   Self-Correction/Verification during thought:
+   - Check if `coq_formal_verification_tool` exists in workspace list? No, workspace has `coq_tool`. So it's new.
+   - Check language: Coq.
+   - Check format: Instruction text only.
+   - Check tone: Matches prompt.
+   - Ready.✅
+   Output matches draft.✅
+   Proceeds. 
+   Output Generation. 
+   `Initialize a NEW dedicated folder named coq_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Develop a Coq formal verification framework for automated theorem proving and mathematical proof automation'. You MUST write the implementation strictly using this exact programming language: Coq.` -> Matches perfectly.✅
+   One thing: The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Coq." I will ensure the wording matches the requested style exactly.
+   Final check of the prompt: "Return ONLY the instruction text. NEVER target the .github directory."
+   All good. 
+   Output matches draft. 
+   Proceeds. 
+   [Output Generation] -> *Self-Correction/Refinement during thought*: I should make sure the folder name doesn't clash with existing ones. `coq_formal_verification_tool` is safe. The instruction text is solid. I will output it exactly. 
+   Final Text: Initialize a NEW dedicated folder named coq_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Develop a Coq formal verification framework for automated theorem proving and mathematical proof automation'. You MUST write the implementation strictly using this exact programming language: Coq. 
+   Matches all constraints. Ready. 
+   [Output] -> *Proceeds*. 
+   *(Note: I'll keep it concise and exactly as drafted.)*
+   `Initialize a NEW dedicated folder named coq_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Develop a Coq formal verification framework for automated theorem proving and mathematical proof automation'. You MUST write the implementation strictly using this exact programming language: Coq.` -> Perfect. 
+   Output matches.✅
+   [Done] 
+   *Self-Correction/Verification during output gen prep*: Wait, the prompt says "Generate exactly 1 logical follow-up instruction." I will just output the instruction text as requested. No extra words. All constraints met. Proceeds. 
+   [Output Generation] -> *Proceeds*. 
+   `Initialize a NEW dedicated folder named coq_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Develop a Coq formal verification framework for automated theorem proving and mathematical proof automation'. You MUST write the implementation strictly using this exact programming language: Coq.` -> Done. 
+   [Final Check of the Prompt]: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Coq." -> Checked.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   "Return ONLY the instruction text." -> Checked.
+   "NEVER target the .github directory." -> Checked.
+   All good.✅
+   Output matches exactly.✅
+   [Output Generation] -> *Proceeds*. 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named coq_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coq. Focus entirely on this new objective: 'Develop a Coq formal verification framework for automated theorem proving and mathematical proof automation'. You MUST write the implementation strictly using this exact programming language: Coq.

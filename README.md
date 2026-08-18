@@ -141,3 +141,5 @@ MIT License
 - Created/Updated module: `simulink_block_diagram_engine_tool` (See `simulink_block_diagram_engine_tool/README.md` for details)
 
 - Created/Updated module: `strand_advanced_logic_tool` (See `strand_advanced_logic_tool/README.md` for details)
+
+- Created/Updated module: `gapps_script_workflow_tool` (See `gapps_script_workflow_tool/README.md` for details)

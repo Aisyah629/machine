@@ -191,3 +191,5 @@ MIT License
 - Created/Updated module: `squirrel_engine_tool` (See `squirrel_engine_tool/README.md` for details)
 
 - Created/Updated module: `./api_client_tool` (See `./api_client_tool/README.md` for details)
+
+- Created/Updated module: `mercury_verification_tool` (See `mercury_verification_tool/README.md` for details)

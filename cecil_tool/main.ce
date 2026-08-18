@@ -1,0 +1,13 @@
+module main;
+
+using System, CecilEngine;
+
+procedure Main()
+{
+    let engine := new CecilEngine();
+    log("Cecil Tool initialized successfully.");
+    log("Ready to process Cecil modules.");
+    engine.run();
+}
+
+end module.

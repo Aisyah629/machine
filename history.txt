@@ -59746,3 +59746,96 @@ Initialize a NEW dedicated folder named acc_financial_engine_tool in the workspa
 </think>
 
 Initialize a NEW dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript. Focus entirely on this new objective: 'Develop a modular robotics control and simulation framework'. You MUST write the implementation strictly using this exact programming language: Legoscript.
+[2026-08-18 18:49:23] (Target Lang: Cg) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of directories/files representing various programming/language tools. Notable: `./legoscript_tool` already exists in the list (`./legoscript_tool ./legoscript_tool/README.md ./legoscript_tool/main.lego`). Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cg."
+   - **History:** Shows a previous instruction/output about `legoscript_tool`.
+   - **Current Request:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cg. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand building with: Cg
+     - If building a new tool: place in NEW dedicated folder, create local README.md
+     - Return ONLY the instruction text.
+     - NEVER target .github directory.
+
+2.  **Identify Key Requirements for the Output:**
+   - Must be a single instruction.
+   - Must specify the programming language: `Cg`
+   - Must specify a NEW dedicated folder name (I'll invent one, e.g., `cg_core_tool` or `cg_language_tool`, but the prompt says "explicitly instruct to place it in a NEW dedicated folder". I'll use `cg_tool` or `cg_engine_tool`. Wait, `cg_core` and `cg_data_extraction_tool` exist. I'll just say `cg_tool` or `cg_simulation_tool`. The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I will explicitly state the folder name, e.g., `cg_tool`.)
+   - Must explicitly demand the language: Cg.
+   - Must return ONLY the instruction text.
+   - Must NOT target .github.
+
+3.  **Draft Construction (Mental):**
+   Initialize a NEW dedicated folder named cg_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cg. Focus entirely on this new objective: 'Develop a high-performance graphics shader compilation and optimization framework'. You MUST write the implementation strictly using this exact programming language: Cg.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Cg? Yes.
+   - Place in NEW dedicated folder & create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches format of previous history/example? Yes, follows the pattern: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Lang]."
+
+   Let's verify the exact wording required: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cg."
+   I will adapt the draft to strictly match this requirement.
+
+   Draft: Initialize a NEW dedicated folder named cg_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cg. Focus entirely on this new objective: 'Develop a high-performance graphics shader compilation and optimization framework'. You MUST write the implementation strictly using this exact programming language: Cg.
+
+   Check against constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands Cg? Yes.
+   - NEW folder & README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+
+   All constraints met. I will output exactly this text.
+   One minor thing: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I'll make sure the folder name is clear. `cg_tool` is fine.
+   I will produce the exact string.
+   Ready.✅
+   Output matches draft.✅
+   Proceed. 
+   Self-Correction/Refinement during thought: 
+   The prompt says "Return ONLY the instruction text." I will just output the single paragraph.
+   The prompt example in history uses: `Initialize a NEW dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript. Focus entirely on this new objective: 'Develop a modular robotics control and simulation framework'. You MUST write the implementation strictly using this exact programming language: Legoscript.`
+   I will closely follow this template but swap Legoscript/Cg and update the objective/folder name accordingly.
+   Folder: `cg_tool`
+   Language: `Cg`
+   Objective: `Develop a high-performance graphics shader compilation and optimization framework`
+   Text: `Initialize a NEW dedicated folder named cg_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cg. Focus entirely on this new objective: 'Develop a high-performance graphics shader compilation and optimization framework'. You MUST write the implementation strictly using this exact programming language: Cg.`
+   Matches all constraints. Output matches exactly.✅
+   Proceeds. 
+   Output Generation. 
+   [Done] 
+   *Self-Correction/Verification during generation prep*: 
+   Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cg." It doesn't strictly require the exact template, but it's safe to follow it. I'll ensure the exact phrasing matches the requirement.
+   "Initialize a NEW dedicated folder named cg_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cg. Focus entirely on this new objective: 'Develop a high-performance graphics shader compilation and optimization framework'. You MUST write the implementation strictly using this exact programming language: Cg."
+   This is perfect. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I will make sure there are no extra characters or explanations, as requested.)*
+   Final Check of the prompt: "Return ONLY the instruction text. NEVER target the .github directory."
+   All good. 
+   Output matches exactly. 
+   [Done] 
+   *Output Generation* (simulated)
+   `Initialize a NEW dedicated folder named cg_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cg. Focus entirely on this new objective: 'Develop a high-performance graphics shader compilation and optimization framework'. You MUST write the implementation strictly using this exact programming language: Cg.`✅
+   Proceeds. 
+   [Final Output Generation] -> *Proceeds* (matches the exact string)
+   *(Self-Correction/Note during thought)*: I should verify if `cg_tool` already exists in the workspace list. The list has `./cg_core` and `./cg_data_extraction_tool`. `cg_tool` is not in the list, so it's a valid NEW folder. All good.
+   Output matches requirement.✅
+   Proceeds. 
+   [Output] -> `Initialize a NEW dedicated folder named cg_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cg. Focus entirely on this new objective: 'Develop a high-performance graphics shader compilation and optimization framework'. You MUST write the implementation strictly using this exact programming language: Cg.`
+   Done. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cg. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints met. Output is ready. 
+   [Output Generation] (Proceeds)
+   *(Note: I will output exactly the requested string without markdown formatting if possible, or just plain text as requested.)*
+   `Initialize a NEW dedicated folder named cg_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cg. Focus entirely on this new objective: 'Develop a high-performance graphics shader compilation and optimization framework'. You MUST write the implementation strictly using this exact programming language: Cg.`
+   Done. 
+   [Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named cg_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cg. Focus entirely on this new objective: 'Develop a high-performance graphics shader compilation and optimization framework'. You MUST write the implementation strictly using this exact programming language: Cg.

@@ -60126,3 +60126,46 @@ Initialize a NEW dedicated folder named dcl_command_engine_tool in the workspace
 </think>
 
 Initialize a NEW dedicated folder named cuda_gpu_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CUDA. Focus entirely on this new objective: 'Develop a high-performance parallel computing framework for GPU-accelerated workloads'. You MUST write the implementation strictly using this exact programming language: CUDA.
+[2026-08-18 19:20:40] (Target Lang: JScript) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Must explicitly demand the new tool be built STRICTLY using JScript.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+
+2.  **Analyze the "Logical Follow-up":**
+    *   The previous instruction (from History) was about `cuda_gpu_engine_tool` using CUDA.
+    *   A logical follow-up often implies a new tool, perhaps related to a different domain or a complementary tool, or just a new distinct tool following the same pattern.
+    *   The user wants a *new* tool using *JScript*.
+    *   Structure of the instruction should mirror the previous successful patterns seen in the history (e.g., "Initialize a NEW dedicated folder named [folder]... create a local README.md... build... STRICTLY using... language: [Lang]").
+
+3.  **Draft the instruction:**
+    *   *Folder Name:* Needs to be `jscript_tool` or something similar based on the pattern `language_tool`. Let's check existing tools in the workspace list. `csharp_framework_tool`, `csharp_tool`. JScript is related to VBScript/C#/.NET. A name like `jscript_tool` fits well.
+    *   *Action:* Initialize a NEW dedicated folder named `jscript_tool`.
+    *   *README:* Create a local `README.md`.
+    *   *Language:* JScript.
+    *   *Objective:* Needs a plausible objective. JScript is often used for scripting, web automation, or legacy Windows scripting. However, the prompt doesn't specify the objective, just the language and structure. I can invent a reasonable objective or keep it generic but high-level like "Develop a robust scripting engine for Windows automation". The previous one was "Develop a high-performance parallel computing framework...". I should probably follow that style.
+    *   *Draft Text:* "Initialize a NEW dedicated folder named jscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JScript. Focus entirely on this new objective: 'Develop a robust scripting engine for Windows automation and legacy system integration'. You MUST write the implementation strictly using this exact programming language: JScript."
+
+4.  **Review against constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes.
+    *   *Explicitly demand STRICTLY using JScript?* Yes ("STRICTLY using this exact programming language: JScript").
+    *   *New dedicated folder?* Yes ("NEW dedicated folder named jscript_tool").
+    *   *Local README.md?* Yes ("create a local README.md").
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes, no mention of .github.
+    *   *Format:* The output should be the raw text string.
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named jscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JScript. Focus entirely on this new objective: 'Develop a robust scripting engine for Windows automation and legacy system integration'. You MUST write the implementation strictly using this exact programming language: JScript.`
+
+6.  **Final Output Construction:**
+    *   Result matches the draft.
+    *   Output: `Initialize a NEW dedicated folder named jscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JScript. Focus entirely on this new objective: 'Develop a robust scripting engine for Windows automation and legacy system integration'. You MUST write the implementation strictly using this exact programming language: JScript.`
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named jscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: JScript. Focus entirely on this new objective: 'Develop a robust scripting engine for Windows automation and legacy system integration'. You MUST write the implementation strictly using this exact programming language: JScript.

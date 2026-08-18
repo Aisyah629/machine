@@ -199,3 +199,5 @@ MIT License
 - Created/Updated module: `dcl_command_engine_tool` (See `dcl_command_engine_tool/README.md` for details)
 
 - Created/Updated module: `cuda_gpu_engine_tool` (See `cuda_gpu_engine_tool/README.md` for details)
+
+- Created/Updated module: `jscript_tool` (See `jscript_tool/README.md` for details)

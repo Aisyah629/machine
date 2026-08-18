@@ -57297,3 +57297,62 @@ Output matches.✅
 </think>
 
 Initialize a NEW dedicated folder named gap_computational_algebra_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GAP. Focus entirely on this new objective: 'Develop an advanced computational framework for group theory and algebraic structures analysis'. You MUST write the implementation strictly using this exact programming language: GAP.
+[2026-08-18 14:58:26] (Target Lang: Arc) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provided a list of existing workspace directories/files, mostly tool definitions for various programming languages. There's a history section showing a previous instruction that created `gap_computational_algebra_tool` with GAP.
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: **Arc**.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+     - Format: Exactly 1 instruction.
+
+2.  **Identify Key Requirements for the Output:**
+   - Language: Arc
+   - New folder: `arc_tool` (or similar, but must be explicitly named/demanded)
+   - Local README.md inside that folder
+   - Focus/Theme: Something logical as a follow-up to group theory/algebra, perhaps symbolic computation, functional programming, or logical reasoning (Arc is a Lisp dialect known for AI and symbolic computation). Let's align it with something like "Develop a symbolic reasoning and functional programming framework for logical deduction and pattern matching".
+   - Constraint check: STRICTLY using Arc, NEW dedicated folder, README.md, ONLY instruction text, no `.github`.
+
+3.  **Draft Construction (Mental Refinement):**
+   Initialize a NEW dedicated folder named `arc_symbolic_reasoning_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Arc. Focus entirely on this new objective: 'Develop a symbolic reasoning and functional programming framework for logical deduction and pattern matching'. You MUST write the implementation strictly using this exact programming language: Arc.
+
+   Check against constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand Arc? Yes.
+   - NEW dedicated folder & README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Logical follow-up? Yes, moves from computational algebra (GAP) to symbolic reasoning/Arc (Lisp dialect often used in AI/logic).
+
+   Let's verify the exact wording matches the prompt's style: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Lang]."
+
+   I will adjust the folder name to `arc_logic_engine_tool` or `arc_symbolic_computation_tool` to be clear. The prompt says "arc" language. I'll use `arc_symbolic_logic_tool`.
+
+   Draft:
+   Initialize a NEW dedicated folder named arc_symbolic_logic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Arc. Focus entirely on this new objective: 'Develop a symbolic reasoning and functional programming framework for logical deduction and pattern matching'. You MUST write the implementation strictly using this exact programming language: Arc.
+
+   All constraints met. Output matches exactly. No extra text. Proceed. 
+   One minor thing: The prompt says "Return ONLY the instruction text." I will output exactly that string.
+   Check language: Arc (Lisp dialect). All good.
+   Check folder: arc_symbolic_logic_tool.
+   Check README: yes.
+   Check objective: yes.
+   Check constraints: yes.
+   Ready.✅
+   Output matches draft. 
+   Proceeds. 
+   [Output Generation] -> "Initialize a NEW dedicated folder named arc_symbolic_logic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Arc. Focus entirely on this new objective: 'Develop a symbolic reasoning and functional programming framework for logical deduction and pattern matching'. You MUST write the implementation strictly using this exact programming language: Arc." (Note: I'll make sure it's exactly one line/sentence block as requested). All good. 
+   Self-Correction/Verification during thought: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I've done that. "Return ONLY the instruction text." I will output just the instruction. No extra formatting. Matches perfectly.✅
+   Output Generation. 
+   [Final Check] - Exactly 1 instruction? Yes. - Explicitly demand Arc? Yes. - NEW dedicated folder & README.md? Yes. - ONLY instruction text? Yes. - NEVER target .github? Yes. Ready.✅
+   Proceeds. 
+   Output: Initialize a NEW dedicated folder named arc_symbolic_logic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Arc. Focus entirely on this new objective: 'Develop a symbolic reasoning and functional programming framework for logical deduction and pattern matching'. You MUST write the implementation strictly using this exact programming language: Arc. 
+   (Note: I'll keep it concise and strictly follow the template style from the history.)✅
+   All good. 
+   Output matches.✅
+</think>
+
+Initialize a NEW dedicated folder named arc_symbolic_logic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Arc. Focus entirely on this new objective: 'Develop a symbolic reasoning and functional programming framework for logical deduction and pattern matching'. You MUST write the implementation strictly using this exact programming language: Arc.

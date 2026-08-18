@@ -1,14 +1,42 @@
-# Vala Tool
+# Vala GUI Automation Framework
 
-This tool is a GTK-based user interface toolkit for desktop applications, built strictly using the Vala programming language.
+## Overview
+This tool implements a cross-platform desktop automation framework with robust event handling and native GUI integration, built strictly using the Vala programming language.
 
 ## Features
-- Native GTK+ integration
-- High-level GObject-based architecture
-- Modern, concise syntax with static typing
-- Compiled to high-quality C code and linked with GLib/GTK+ libraries
+- **Native GTK+ Integration**: Leverages GTK4 and libadwaita for modern, native desktop UI.
+- **Event Handling**: Asynchronous event loops and robust signal-based communication.
+- **Cross-Platform**: Compiles and runs on Linux, Windows, and macOS via Vala's cross-compilation capabilities.
+- **Automation API**: Provides high-level abstractions for window management, input simulation, and application control.
+
+## Project Structure
+```
+vala_tool/
+├── README.md
+├── vala_tool.vala
+└── meson.build
+```
+
+## Dependencies
+- `valac` (Vala compiler, >= 0.52.0)
+- `gtk4` (GTK+ 4)
+- `glib-2.0`
+- `gobject-2.0`
+- `libadwaita-1`
 
 ## Build Instructions
-1. Ensure Vala compiler (`valac`) and GTK+ development libraries are installed.
-2. Run `valac --pkg gtk+-3.0 main.vala` to compile the application.
-3. Execute the generated binary.
+```bash
+mkdir build && cd build
+meson .. --buildtype=release
+ninja
+```
+
+## Usage
+```vala
+using Vala;
+
+public class DesktopAutomation { ... }
+```
+
+## License
+MIT

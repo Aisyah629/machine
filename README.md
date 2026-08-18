@@ -121,3 +121,5 @@ MIT License
 - Created/Updated module: `tmg_tool` (See `tmg_tool/README.md` for details)
 
 - Created/Updated module: `powerhouse_tool` (See `powerhouse_tool/README.md` for details)
+
+- Created/Updated module: `vala_tool` (See `vala_tool/README.md` for details)

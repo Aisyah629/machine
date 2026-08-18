@@ -51743,3 +51743,41 @@ Output Generation -> "Initialize a NEW dedicated folder named pro_c_tool in the 
 </think>
 
 Initialize a NEW dedicated folder named pro_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pro*C.
+[2026-08-18 04:10:04] (Target Lang: Nu) The user wants a single logical follow-up instruction.
+Constraints:
+1. Build a new tool strictly using Nu.
+2. Place it in a NEW dedicated folder.
+3. Create a local README.md inside it.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+6. Must explicitly demand the use of Nu.
+7. Output must match the style of previous instructions (short, direct, imperative).
+Check existing folders: `nu_tool` exists in the workspace.
+I need to name the new folder something else, or use a different name to avoid conflicts.
+Wait, the prompt says `nu_tool` exists. So I should name it `nu_engine_tool` or `nu_data_processing_tool` or `nu_cli_tool` or just `nu_new_tool` or `nu_advanced_tool`. Let's use `nu_cli_tool`.
+Construct the instruction: "Initialize a NEW dedicated folder named nu_cli_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Nu."
+Verify constraints:
+- Build a new tool strictly using Nu? Yes.
+- NEW dedicated folder? Yes.
+- Create local README.md? Yes.
+- ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+- Explicitly demand use of Nu? Yes.
+- Match style? Yes.
+Output matches draft.✅ Proceeds.✅ Output Generation. 
+Wait, let's double check the exact wording from the prompt's example: "Initialize a NEW dedicated folder named pro_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pro*C."
+I will adapt it to Nu: "Initialize a NEW dedicated folder named nu_cli_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Nu."
+Check existing folders: `nu_tool` exists. So `nu_cli_tool` is safe.
+Ready. Output matches draft.✅ Proceeds.✅ Output Generation -> "Initialize a NEW dedicated folder named nu_cli_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Nu."✅ [Done.] 
+Wait, let's verify if `nu_tool` is indeed in the list. Yes, `./nu_tool` exists. So `nu_cli_tool` is a good choice.
+All constraints met. Output only the instruction text.
+Proceed. 
+Output: Initialize a NEW dedicated folder named nu_cli_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Nu. 
+Wait, is `nu_cli_tool` the best? Maybe `nu_advanced_tool` or `nu_interpreter_tool`. `nu_cli_tool` is fine.
+Let's just use `nu_cli_tool`.
+Done. 
+Output matches exactly.✅
+Proceeds.
+</think>
+
+Initialize a NEW dedicated folder named nu_cli_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Nu.

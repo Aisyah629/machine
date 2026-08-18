@@ -133,3 +133,5 @@ MIT License
 - Created/Updated module: `./vbscript_system_admin_tool` (See `./vbscript_system_admin_tool/README.md` for details)
 
 - Created/Updated module: `jcl_mainframe_orchestration_tool` (See `jcl_mainframe_orchestration_tool/README.md` for details)
+
+- Created/Updated module: `gap_computational_algebra_tool` (See `gap_computational_algebra_tool/README.md` for details)

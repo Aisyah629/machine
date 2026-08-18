@@ -55633,3 +55633,45 @@ Initialize a NEW dedicated folder named xquery_advanced_transform_tool in the wo
 </think>
 
 Initialize a NEW dedicated folder named dcl_advanced_batch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DCL. Focus entirely on this new objective: 'Develop a DCL-based automated system maintenance and log rotation utility for OpenVMS environments'. You MUST write the implementation strictly using this exact programming language: DCL.
+[2026-08-18 11:39:16] (Target Lang: MAD/I) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: The new tool MUST be built STRICTLY using the programming language: MAD/I.
+    *   Structure: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Output: Return ONLY the instruction text.
+    *   Negative Constraint: NEVER target the .github directory.
+
+2.  **Analyze Context:**
+    *   The user provided a list of existing tools/folders in the workspace.
+    *   Examples of existing patterns: `./mad_i_tool`, `./mad_i_tool/README.md`, `./mad_i_tool/main.mi`.
+    *   The instruction should follow the pattern of previous instructions seen in the "History" section (though the history is just for context, the output format is the key).
+    *   The prompt asks for a "logical follow-up instruction". This usually implies creating another tool, perhaps related or just continuing the theme of building tools in the workspace.
+    *   The prompt explicitly demands the language `MAD/I`.
+
+3.  **Draft the Instruction:**
+    *   *Language:* MAD/I.
+    *   *Folder:* New dedicated folder. Let's pick a name. `mad_i_advanced_scheduler_tool` seems logical given MAD/I is a language often used for systems/OS work historically, or just `mad_i_math_proving_tool` since MAD/I was used for math. Let's go with `mad_i_formal_verification_tool` to add variety, or `mad_i_system_monitoring_tool`. `mad_i_formal_verification_tool` sounds technical and fits the pattern.
+    *   *Files:* `README.md`, `main.mi` (standard extension for MAD/I based on `./mad_i_tool/main.mi`).
+    *   *Objective:* "Develop a MAD/I-based..."
+    *   *Drafting text:* Initialize a NEW dedicated folder named mad_i_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAD/I. Focus entirely on this new objective: 'Develop a MAD/I-based formal verification engine for mathematical proofs and theorem proving'. You MUST write the implementation strictly using this exact programming language: MAD/I.
+
+4.  **Review against Constraints:**
+    *   *1 instruction?* Yes.
+    *   *Strictly MAD/I?* Yes.
+    *   *NEW folder?* Yes (`mad_i_formal_verification_tool`).
+    *   *Local README.md?* Yes.
+    *   *Only instruction text?* The draft looks like instruction text.
+    *   *No .github?* Yes, folder is `mad_i_formal_verification_tool`.
+    *   *Logical follow-up?* Yes, creates a tool following the workspace pattern using the requested language.
+    *   *Target language explicit?* Yes ("MAD/I").
+
+5.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named mad_i_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAD/I. Focus entirely on this new objective: 'Develop a MAD/I-based formal verification engine for mathematical proofs and theorem proving'. You MUST write the implementation strictly using this exact programming language: MAD/I.`
+
+6.  **Final Output Construction:**
+    *   Return the polished text.
+    *   Output: `Initialize a NEW dedicated folder named mad_i_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAD/I. Focus entirely on this new objective: 'Develop a MAD/I-based formal verification engine for mathematical proofs and theorem proving'. You MUST write the implementation strictly using this exact programming language: MAD/I.`
+</think>
+
+Initialize a NEW dedicated folder named mad_i_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAD/I. Focus entirely on this new objective: 'Develop a MAD/I-based formal verification engine for mathematical proofs and theorem proving'. You MUST write the implementation strictly using this exact programming language: MAD/I.

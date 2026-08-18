@@ -1,0 +1,50 @@
+REM COMAL Engine Tool - Main Execution Entry Point
+REM Language: COMAL
+
+MODULE Main
+  PRINT "COMAL Engine Tool v1.0"
+  PRINT "Initializing System..."
+  
+  DECLARE x, y AS INTEGER
+  DECLARE total AS INTEGER
+  DECLARE result AS STRING
+  
+  REM Test 1: Arithmetic and Variables
+  x := 10
+  y := 20
+  total := x + y
+  PRINT "Test 1 (Addition):"; x; "+"; y; "="; total
+  
+  REM Test 2: Conditional Logic (IF/THEN/ELSE)
+  IF total > 25 THEN
+    PRINT "Result is greater than 25"
+  ELSE
+    PRINT "Result is 25 or less"
+  END IF
+  
+  REM Test 3: Looping (FOR loop)
+  PRINT "Counting 1 to 5:"
+  FOR i := 1 TO 5 DO
+    PRINT i;
+  NEXT i
+  PRINT ""
+  
+  REM Test 4: WHILE Loop
+  DECLARE counter AS INTEGER
+  counter := 1
+  WHILE counter <= 3 DO
+    PRINT "While Loop Iteration:"; counter
+    counter := counter + 1
+  END WHILE
+  
+  REM Test 5: String Concatenation and Input Handling
+  result := "Engine initialized successfully."
+  PRINT result
+  
+  PRINT "COMAL Engine Tool Completed."
+END MODULE
+
+REM Additional utility functions can be defined below as separate MODULEs
+MODULE Utils
+  PRINT "Utility Module Loaded"
+END MODULE

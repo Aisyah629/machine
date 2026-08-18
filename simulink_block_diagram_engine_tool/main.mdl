@@ -1,0 +1,20 @@
+% Simulink Block Diagram Engine Tool
+% Main Model: control_system_model
+
+% Create a new model
+model_name = 'simulink_engine_main';
+new_system(model_name);
+open_system(model_name);
+
+% Add blocks
+add_block('simulink/Commonly Used Blocks/Scope', [model_name '/Scope'], 'Position', [500, 100, 600, 200]);
+add_block('simulink/Commonly Used Blocks/Outport', [model_name '/Outport'], 'Position', [650, 150, 700, 180]);
+
+% Configure simulation parameters
+set_param(model_name, 'Solver', 'ode45', 'StopTime', '10', 'FixedStep', '0.01');
+
+% Run simulation
+sim(model_name);
+
+% Display results
+disp('Simulation complete. Check the Scope block for results.');

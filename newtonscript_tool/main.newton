@@ -1,0 +1,156 @@
+/*
+NewtonScript Tool
+Version: 1.0.0
+Language: NewtonScript
+Purpose: Runtime environment for NewtonScript application execution and debugging.
+*/
+
+
+to NewObject:inherited
+    inherited()
+    :parent := self
+    :name := ""
+    :children := {}
+end
+
+
+to Object:printSelf
+    print("Object: " _ :name)
+end
+
+
+to NewFrame:inherited
+    inherited()
+    :__proto__ := nil
+    :__protoChain := nil
+end
+
+
+to Frame:printSelf
+    local p := :__proto
+    print("Frame: " _ :name)
+    while p is not nil do
+        print("  Proto: " _ p:name)
+        p := p:__proto
+    end
+end
+
+
+to NewArray:inherited
+    inherited()
+    :size := 0
+    :data := []
+end
+
+
+to Array:At(index)
+    if index < 0 or index >= :size then
+        return nil
+    end
+    return :data[index]
+end
+
+
+to Array:Set(index, value)
+    if index < 0 or index >= :size then
+        return
+    end
+    :data[index] := value
+end
+
+
+to Array:Add(value)
+    Append(:data, value)
+    :size := Length(:data)
+end
+
+
+to Array:Remove(index)
+    if index < 0 or index >= :size then
+        return
+    end
+    Remove(:data, index, 1)
+    :size := Length(:data)
+end
+
+
+to NewFunc:inherited
+    inherited()
+    :code := nil
+    :args := {}
+    :locals := {}
+end
+
+
+to Func:Call(args)
+    :locals := {} 
+    for i from 1 to Length(:args) do
+        :locals[:args[i]] := args[i]
+    end
+    // In a real runtime, this would compile/execute the :code byte stream
+    return :code(:locals)
+end
+
+
+to ExecuteNewtonScript(script)
+    local env := NewObject()
+    local results := {}
+    
+    // Simple tokenizer/parser simulation
+    local tokens := Tokenize(script)
+    local stmts := Parse(tokens)
+    
+    for each stmt in stmts do
+        local res := Evaluate(stmt, env)
+        if res is not nil then
+            Add(results, res)
+        end
+    end
+    
+    return results
+end
+
+
+to Tokenize(script)
+    local tokens := {}
+    // NewtonScript is whitespace-sensitive and uses special operators like 'is', 'if', 'to'
+    // Simplified tokenization for demonstration
+    local current := ""
+    for each char in script do
+        if char = " " or char = "\n" or char = "\t" then
+            if Length(current) > 0 then
+                Add(tokens, current)
+                current := ""
+            end
+        else
+            current := current _ char
+        end
+    end
+    if Length(current) > 0 then
+        Add(tokens, current)
+    end
+    return tokens
+end
+
+
+to Parse(tokens)
+    local ast := {}
+    // Simplified parser simulation
+    // In a real tool, this would build a proper AST
+    return ast
+end
+
+
+to Evaluate(stmt, env)
+    // Simplified evaluation loop
+    // Actual NewtonScript evaluation involves deep frame resolution, proto chains, etc.
+    return nil
+end
+
+
+to Main
+    print("NewtonScript Runtime Initialized.")
+    print("Ready for execution.")
+end
+
+Main()

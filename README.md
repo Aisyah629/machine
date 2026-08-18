@@ -1266,3 +1266,5 @@ Training Machine
 - Created/Updated module: `corn_tool` (See `corn_tool/README.md` for details)
 
 - Created/Updated module: `krypton_tool` (See `krypton_tool/README.md` for details)
+
+- Created/Updated module: `sml_tool` (See `sml_tool/README.md` for details)

@@ -63120,3 +63120,43 @@ Initialize a NEW dedicated folder named joy_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named lpc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LPC. Focus entirely on this new objective: 'Develop a modular runtime environment for object-oriented state management and event-driven execution'. You MUST write the implementation strictly using this exact programming language: LPC.
+[2026-08-18 22:46:27] (Target Lang: MARK-IV) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using the exact programming language: MARK-IV.
+    *   Constraint 2: If building a new tool (which is implied by the context of "follow-up instruction" usually continuing a pattern or creating something new in this format), explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context Analysis: The user provided a large list of existing tool folders (e.g., `lpc_tool`, `bash_tool`, etc.) and a "History" section that shows a pattern of generating instructions for new tools. The history shows an example where `lpc_tool` was requested. The current request asks for a follow-up instruction for a *new* tool using MARK-IV.
+
+2.  **Draft the instruction based on constraints:**
+    *   *Language:* MARK-IV.
+    *   *Action:* Initialize NEW folder, create README.md, build tool.
+    *   *Folder Name:* Needs to be logical. Since the language is MARK-IV, the folder should likely be `mark_iv_tool` or `mark-iv_tool`. Looking at the pattern in the history (`lpc_tool`, `bash_tool`), snake_case with `_tool` suffix is common. So `mark_iv_tool` is a good choice.
+    *   *Objective:* The user didn't specify a specific objective for MARK-IV other than the language constraint. In the previous example (`lpc_tool`), there was a specific objective: 'Develop a modular runtime environment...'. Since this is a "follow-up instruction", I should probably invent a relevant objective or keep it generic but valid. However, the prompt asks for a "logical follow-up instruction". Usually, this implies continuing the pattern. The pattern seems to be: "Initialize a NEW dedicated folder named [name], create README.md, build tool using [Language], Focus on [Objective]."
+    *   *Drafting text:* "Initialize a NEW dedicated folder named mark_iv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Construct a robust legacy data processing engine optimized for mainframe batch operations and record manipulation'. You MUST write the implementation strictly using this exact programming language: MARK-IV."
+    *   *Refining Objective:* MARK-IV is a real language (Microdata MARK-IV) used for database management and data processing, often on mainframes/minis. A logical objective would relate to that. "Construct a robust legacy data processing engine..." fits well. Alternatively, to be safe and generic, I could use "Develop a comprehensive data management and reporting system...". The prompt doesn't strictly require a unique objective, just the constraints on language and folder. I'll include a plausible objective to match the style of the history provided.
+
+3.  **Check against negative constraints:**
+    *   *Return ONLY the instruction text:* The output should be just the string, no markdown code blocks, no "Here is the instruction", etc.
+    *   *NEVER target .github directory:* The instruction text does not mention `.github`. Good.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Initialize a NEW dedicated folder named mark_iv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Develop a high-performance data management system for legacy mainframe integration and structured record processing'. You MUST write the implementation strictly using this exact programming language: MARK-IV.`
+
+5.  **Review Constraints one last time:**
+    *   "Generate exactly 1 logical follow-up instruction." -> The output is one sentence/paragraph. Yes.
+    *   "Explicitly demand... STRICTLY using... MARK-IV." -> "STRICTLY using this exact programming language: MARK-IV" and "You MUST write... strictly... MARK-IV." Yes.
+    *   "Place it in a NEW dedicated folder and create a local README.md." -> "Initialize a NEW dedicated folder named mark_iv_tool... create a local README.md..." Yes.
+    *   "Return ONLY the instruction text." -> Output is just the text. Yes.
+    *   "NEVER target .github directory." -> Text doesn't mention `.github`. Yes.
+
+6.  **Result:**
+    Initialize a NEW dedicated folder named mark_iv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Develop a high-performance data management system for legacy mainframe integration and structured record processing'. You MUST write the implementation strictly using this exact programming language: MARK-IV.
+
+    *Self-Correction on Folder Name:* The prompt list has `lpc_tool`. It has `bash_tool`. It has `c_tool`. It has `mark_iv_tool`? The list provided by the user ends with `./zopl_tool/...`. The list contains `lpc_tool`. It does *not* contain `mark_iv_tool`. So `mark_iv_tool` is a valid new folder name.
+    *Result looks solid.*
+</think>
+
+Initialize a NEW dedicated folder named mark_iv_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MARK-IV. Focus entirely on this new objective: 'Develop a high-performance data management system for legacy mainframe integration and structured record processing'. You MUST write the implementation strictly using this exact programming language: MARK-IV.

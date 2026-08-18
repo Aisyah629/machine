@@ -59839,3 +59839,82 @@ Initialize a NEW dedicated folder named legoscript_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named cg_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cg. Focus entirely on this new objective: 'Develop a high-performance graphics shader compilation and optimization framework'. You MUST write the implementation strictly using this exact programming language: Cg.
+[2026-08-18 18:50:40] (Target Lang: BeanShell) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace directory listing (lots of tool folders) and a history showing a previous action: creating a `cg_tool` folder with a Cg shader compilation framework.
+   - **Current Task:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: BeanShell. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: `BeanShell`.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - The instruction should be logical as a follow-up to the previous one (which was about a Cg shader tool). A logical follow-up could be creating a companion tool, a test harness, a build script, or a deployment tool using BeanShell.
+
+   Let's brainstorm a logical follow-up context: The `cg_tool` compiles shaders. A logical next step could be a build/compilation orchestration tool, a pipeline manager, or a runtime environment tester. BeanShell is a lightweight Java scripting language. I'll frame it as a build automation or pipeline orchestration tool for the Cg framework, or perhaps a shader validation/testing harness.
+
+   I need to make sure the instruction strictly follows the format requested: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: BeanShell."
+
+3.  **Draft Construction:**
+   Let's create a tool name that fits logically after `cg_tool`. Maybe `bsh_build_automation_tool` or `beanshell_pipeline_orchestrator_tool`. I'll go with `beanshell_build_orchestrator_tool`.
+   Objective: 'Automate the compilation, optimization, and deployment of graphics shader assets'.
+   Check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand BeanShell? Yes.
+   - NEW dedicated folder + local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Logical follow-up? Yes, it builds on the Cg shader compilation by automating the pipeline.
+
+   Draft:
+   Initialize a NEW dedicated folder named beanshell_build_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop an automated build and deployment pipeline orchestrator for graphics shader assets'. You MUST write the implementation strictly using this exact programming language: BeanShell.
+
+4.  **Verify against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Checked.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: BeanShell." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   - Logical follow-up? Yes, follows the shader compilation tool with a build/deployment orchestrator.
+
+   The prompt says "Return ONLY the instruction text." So I will output exactly that string without any extra markdown or commentary.
+
+   One minor adjustment: I'll make sure the tool name doesn't conflict with existing ones. `beanshell_build_orchestrator_tool` seems fine. The prompt example used `cg_tool`, so I'll stick to a similar naming convention. I'll use `bsh_pipeline_manager_tool` or `beanshell_build_tool`. Let's stick to `beanshell_build_orchestrator_tool`.
+
+   Let's verify the exact wording requested: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: BeanShell."
+
+   I will construct it carefully.
+   "Initialize a NEW dedicated folder named beanshell_build_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop an automated build and deployment pipeline orchestrator for graphics shader assets'. You MUST write the implementation strictly using this exact programming language: BeanShell."
+
+   Checks:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands BeanShell? Yes, twice as in the example pattern.
+   - NEW folder + README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+   - Logical follow-up? Yes, pipeline orchestrator for the previously mentioned shader tool.
+
+   All constraints met. Output matches exactly. Proceeds. 
+   I will output just the instruction string.✅
+   One thing: The prompt says "Return ONLY the instruction text." I will ensure no markdown formatting surrounds it, just raw text as requested. Actually, markdown is fine but I'll keep it plain to be safe. The prompt example had it as plain text. I'll output exactly the string.
+   Final check of the draft:
+   Initialize a NEW dedicated folder named beanshell_build_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop an automated build and deployment pipeline orchestrator for graphics shader assets'. You MUST write the implementation strictly using this exact programming language: BeanShell.
+   Matches perfectly. Output matches requirement.✅ Proceeds. 
+   Generating response. 
+   [Self-Correction/Refinement during thought]
+   Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: BeanShell." I have that.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I have that.
+   "Return ONLY the instruction text." I will output just that.
+   All good.✅
+   Output matches exactly.✅ Proceeds. 
+   [Output Generation] -> *Proceeds*
+   `Initialize a NEW dedicated folder named beanshell_build_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop an automated build and deployment pipeline orchestrator for graphics shader assets'. You MUST write the implementation strictly using this exact programming language: BeanShell.`
+   Done. 
+   Proceeds. 
+   [Final Check] Matches all constraints. Ready. 
+   Output matches.✅
+</think>
+
+Initialize a NEW dedicated folder named beanshell_build_orchestrator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BeanShell. Focus entirely on this new objective: 'Develop an automated build and deployment pipeline orchestrator for graphics shader assets'. You MUST write the implementation strictly using this exact programming language: BeanShell.

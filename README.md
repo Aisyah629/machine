@@ -117,3 +117,5 @@ MIT License
 - Created/Updated module: `easytrieve_plus_tool` (See `easytrieve_plus_tool/README.md` for details)
 
 - Created/Updated module: `squeak_tool` (See `squeak_tool/README.md` for details)
+
+- Created/Updated module: `tmg_tool` (See `tmg_tool/README.md` for details)

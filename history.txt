@@ -52564,3 +52564,63 @@ Initialize a NEW dedicated folder named ksh_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named moby_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Moby.
+[2026-08-18 06:03:32] (Target Lang: Euclid) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of workspace directories/files (mostly tool directories with README.md and main files).
+   - There's a "History:" section that seems to be a log of previous prompts/instructions, ending with a specific instruction format.
+   - The core request is at the very end: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Euclid. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: `Euclid`.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+   - Create a local `README.md` inside that folder.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - Match the style/format of the previous examples in the history (e.g., "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language].")
+
+3.  **Formulate Instruction:**
+   - Language: Euclid
+   - Folder name pattern: `euclid_tool` (based on the naming convention in the workspace, e.g., `c_tool`, `bash_tool`, `rust_tool`)
+   - Structure: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+   - Draft: `Initialize a NEW dedicated folder named euclid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Euclid.`
+
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand built STRICTLY using `Euclid`? Yes.
+   - NEW dedicated folder? Yes (`euclid_tool`).
+   - Local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned or targeted.
+   - Matches tone/format? Yes.
+
+5.  **Final Output Generation:**
+   `Initialize a NEW dedicated folder named euclid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Euclid.`
+
+   Double-check against the prompt: "Return ONLY the instruction text." -> I will output exactly that string. No extra text. All constraints met. Proceed. 
+   One minor point: The prompt says "Moby" in the history example, but the actual request says "Euclid". I will use "Euclid" as instructed. The folder naming convention in the workspace is `[name]_tool`, so `euclid_tool` fits perfectly. I'll stick to the exact phrasing pattern.
+
+   Output matches draft.✅
+   Proceeds. 
+   [Output Generation] -> `Initialize a NEW dedicated folder named euclid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Euclid.`
+   All good. 
+   Self-Correction/Verification during thought: 
+   The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Euclid."
+   My draft does exactly that.
+   The prompt says: "Return ONLY the instruction text."
+   I will output just the sentence.
+   Ready. 
+   Output matches.✅
+   [Done]
+   *Self-Correction/Note during generation prep*: I should ensure casing matches exactly: `Euclid`. Folder: `euclid_tool`. All good.
+   Output: `Initialize a NEW dedicated folder named euclid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Euclid.` -> Proceeds.✅
+   [Final Check] All constraints satisfied. Output matches.✅
+   Output Generation. (Proceeds) -> `Initialize a NEW dedicated folder named euclid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Euclid.` -> final. -> [Done] -> *(Note: I will output just the string as requested.)* -> [Final Text Generation] -> Initialize a NEW dedicated folder named euclid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Euclid. -> *(Checks complete)* -> Output matches.✅
+   *(Proceeds to output)*
+   [Output] `Initialize a NEW dedicated folder named euclid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Euclid.` -> *Done.* 
+   *(Self-Correction/Verification during output prep)*: The prompt says "Return ONLY the instruction text." I will output exactly that. No extra words. All constraints met.✅
+   Final Output Generation.✅
+</think>
+
+Initialize a NEW dedicated folder named euclid_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Euclid.

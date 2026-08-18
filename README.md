@@ -175,3 +175,5 @@ MIT License
 - Created/Updated module: `./flow_matic_tool` (See `./flow_matic_tool/README.md` for details)
 
 - Created/Updated module: `hla_runtime_system_tool` (See `hla_runtime_system_tool/README.md` for details)
+
+- Created/Updated module: `hume_tool` (See `hume_tool/README.md` for details)

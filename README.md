@@ -61,3 +61,5 @@ MIT License
 - Created/Updated module: `corvision_tool` (See `corvision_tool/README.md` for details)
 
 - Created/Updated module: `snap_visual_block_editor_tool` (See `snap_visual_block_editor_tool/README.md` for details)
+
+- Created/Updated module: `bc_math_engine_tool` (See `bc_math_engine_tool/README.md` for details)

@@ -56653,3 +56653,66 @@ Initialize a NEW dedicated folder named powerhouse_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named vala_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Vala. Focus entirely on this new objective: 'Develop a cross-platform desktop automation framework with robust event handling and native GUI integration'. You MUST write the implementation strictly using this exact programming language: Vala.
+[2026-08-18 13:55:46] (Target Lang: Yorick) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace listing with many tool directories (e.g., `vala_tool`, `yorick_tool`, etc.) and a "History" section showing a previous prompt/response format.
+   - **Constraint 1:** Generate exactly 1 logical follow-up instruction.
+   - **Constraint 2:** Explicitly demand that the new tool be built STRICTLY using this exact programming language: Yorick.
+   - **Constraint 3:** If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - **Constraint 4:** Return ONLY the instruction text.
+   - **Constraint 5:** NEVER target the `.github` directory.
+   - **Implicit Context from History:** The history shows a pattern: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Language]."
+
+2.  **Identify Key Requirements for Output:**
+   - Must be exactly one instruction/sentence/paragraph.
+   - Must mention: NEW dedicated folder named `yorick_tool`.
+   - Must mention: create a local `README.md`.
+   - Must mention: build strictly using `Yorick`.
+   - Must include an objective (I'll create a plausible one for Yorick, e.g., 'Develop a numerical computing and data visualization framework for scientific analysis').
+   - Must strictly follow the pattern/style from the history.
+   - Must NOT mention `.github`.
+   - Must return ONLY the instruction text.
+
+3.  **Draft Construction (Mental):**
+   Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Develop a high-performance numerical computing and scientific data visualization framework for engineering simulations'. You MUST write the implementation strictly using this exact programming language: Yorick.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes, it's a single cohesive instruction block.
+   - Explicitly demand Yorick? Yes, mentioned twice as in the example, but I'll ensure it's prominent.
+   - NEW dedicated folder & README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Checked. Not mentioned.
+   - Matches history style? Yes, nearly identical structure.
+
+   Let's refine it to perfectly match the requested format and constraints:
+   "Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Develop a high-performance numerical computing and scientific data visualization framework for engineering simulations'. You MUST write the implementation strictly using this exact programming language: Yorick."
+
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Yorick."
+   I will ensure it strictly follows the pattern.
+
+   One minor thing: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   I'll stick to the exact phrasing style from the history:
+   "Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Develop a high-performance numerical computing and scientific data visualization framework for engineering simulations'. You MUST write the implementation strictly using this exact programming language: Yorick."
+
+   Checks:
+   - 1 instruction? Yes.
+   - Explicitly demand Yorick? Yes.
+   - NEW folder & README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+   - Matches style? Yes.
+
+   Ready. Output matches exactly. No extra text.✅
+   Proceeds. 
+   Output generation. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Yorick. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All constraints met. Output matches the draft.✅
+   I will output exactly that string.✅
+   *(Self-Correction/Verification during thought)*: I should make sure it's strictly one sentence/paragraph as requested. The draft is one paragraph. It's fine.
+   Output matches.✅
+   [Done] -> Output Generation.✅
+   *(Proceeds)*
+</think>
+
+Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Develop a high-performance numerical computing and scientific data visualization framework for engineering simulations'. You MUST write the implementation strictly using this exact programming language: Yorick.

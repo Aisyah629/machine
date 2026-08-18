@@ -85,3 +85,5 @@ MIT License
 - Created/Updated module: `./xpl_compiler_tool` (See `./xpl_compiler_tool/README.md` for details)
 
 - Created/Updated module: `coffeescript_compiler_tool` (See `coffeescript_compiler_tool/README.md` for details)
+
+- Created/Updated module: `datatrieve_tool` (See `datatrieve_tool/README.md` for details)

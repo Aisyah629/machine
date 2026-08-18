@@ -60662,3 +60662,57 @@ Initialize a NEW dedicated folder named cfml_web_engine_tool in the workspace, c
 </think>
 
 Initialize a NEW dedicated folder named neko_runtime_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Neko. Focus entirely on this new objective: 'Construct a lightweight runtime engine with bytecode execution and garbage collection capabilities'. You MUST write the implementation strictly using this exact programming language: Neko.
+[2026-08-18 20:01:18] (Target Lang: Verilog) The user wants me to generate exactly 1 logical follow-up instruction.
+The instruction must explicitly demand that a new tool be built STRICTLY using the programming language: Verilog.
+If building a new tool, it must be placed in a NEW dedicated folder and include a local README.md.
+I must return ONLY the instruction text.
+I must NEVER target the .github directory.
+The workspace contains many tool folders. I need to invent a new folder name for the Verilog tool, e.g., `verilog_fpga_simulator_tool` or `verilog_hdl_tool`.
+The objective should be clear and related to Verilog.
+Let's construct the instruction carefully following the exact format requested in the prompt history (though the prompt says "Generate exactly 1 logical follow-up instruction... Return ONLY the instruction text.")
+I will follow the style of the "Draft" in the history.
+"Initialize a NEW dedicated folder named verilog_hdl_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Verilog. Focus entirely on this new objective: 'Construct a hardware description language interpreter capable of parsing, simulating, and verifying synchronous digital circuit designs'. You MUST write the implementation strictly using this exact programming language: Verilog."
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand new tool built STRICTLY using Verilog? Yes.
+- Place in NEW dedicated folder and create local README.md? Yes.
+- Return ONLY the instruction text? Yes.
+- NEVER target .github? Yes.
+
+I will refine it to match the prompt's tone exactly.
+"Initialize a NEW dedicated folder named verilog_hdl_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Verilog. Focus entirely on this new objective: 'Construct a high-performance hardware simulation engine capable of parsing hardware descriptions, generating gate-level netlists, and verifying timing constraints'. You MUST write the implementation strictly using this exact programming language: Verilog."
+
+Wait, Verilog is a hardware description language, not typically used to build software tools in the traditional sense, but the prompt says "strictly using this exact programming language: Verilog". I will just follow the instruction literally.
+
+Let's ensure it matches the exact phrasing pattern:
+"Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Verilog. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: Verilog."
+
+I will output exactly that.
+Check constraints: "Return ONLY the instruction text."
+Done. 
+Proceed. 
+Output matches exactly. 
+Self-Correction/Verification during thought: 
+The prompt says "Generate exactly 1 logical follow-up instruction." and gives an example format. I will just output the instruction string.
+"Initialize a NEW dedicated folder named verilog_hdl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Verilog. Focus entirely on this new objective: 'Construct a hardware description language parser and simulator capable of generating gate-level netlists and performing timing analysis'. You MUST write the implementation strictly using this exact programming language: Verilog."
+This fits perfectly. No extra text.
+Done. 
+Output matches. 
+Proceeds. 
+[Final Check]
+- 1 instruction? Yes.
+- Strictly Verilog? Yes.
+- NEW folder + README? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+All good. 
+Output generation. 
+`Initialize a NEW dedicated folder named verilog_hdl_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Verilog. Focus entirely on this new objective: 'Construct a high-performance hardware simulation engine capable of parsing hardware descriptions, generating gate-level netlists, and verifying timing constraints'. You MUST write the implementation strictly using this exact programming language: Verilog.`
+Matches requirements.✅
+Output matches exactly. 
+Proceeds. 
+[Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named verilog_hdl_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Verilog. Focus entirely on this new objective: 'Construct a high-performance hardware simulation engine capable of parsing hardware descriptions, generating gate-level netlists, and verifying timing constraints'. You MUST write the implementation strictly using this exact programming language: Verilog.

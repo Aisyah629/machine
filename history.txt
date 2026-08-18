@@ -58424,3 +58424,70 @@ Initialize a NEW dedicated folder named claire_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named esharp_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: E#. Focus entirely on this new objective: 'Streamline functional object-oriented application development and .NET integration workflows'. You MUST write the implementation strictly using this exact programming language: E#.
+[2026-08-18 16:25:42] (Target Lang: SIMSCRIPT) The user wants me to generate exactly 1 follow-up instruction.
+The instruction must:
+1. Explicitly demand that the new tool be built STRICTLY using SIMSCRIPT.
+2. If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. NEVER target the .github directory.
+
+Looking at the existing structure:
+./simscript_tool ./simscript_tool/README.md ./simscript_tool/main.sim
+The prompt says: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+
+I need to generate a single instruction string that follows the exact format requested in the prompt.
+Format from prompt: "Initialize a NEW dedicated folder named [FOLDER_NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write the implementation strictly using this exact programming language: [LANGUAGE]."
+
+I will pick a folder name like `simscript_workflow_automation_tool`, language `SIMSCRIPT`, and an objective like `Automate complex business simulation modeling and discrete-event system processing`.
+Wait, the prompt says: "Return ONLY the instruction text." and gives an example of the expected output format in the History section.
+
+Let's construct it carefully:
+Initialize a NEW dedicated folder named simscript_workflow_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIMSCRIPT. Focus entirely on this new objective: 'Automate complex business simulation modeling and discrete-event system processing'. You MUST write the implementation strictly using this exact programming language: SIMSCRIPT.
+
+Check constraints:
+- Generate exactly 1 logical follow-up instruction.
+- Explicitly demand built STRICTLY using SIMSCRIPT.
+- Instruct to place it in a NEW dedicated folder and create a local README.md.
+- Return ONLY the instruction text.
+- NEVER target .github.
+- Output matches the pattern.
+
+All good. I will output exactly that string.
+Let's verify the exact wording from the prompt's example:
+"Initialize a NEW dedicated folder named esharp_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: E#. Focus entirely on this new objective: 'Streamline functional object-oriented application development and .NET integration workflows'. You MUST write the implementation strictly using this exact programming language: E#."
+
+I will replace E# with SIMSCRIPT, the folder name with a new one, and the objective with a relevant one.
+Folder: `simscript_advanced_simulation_tool`
+Objective: `Optimize discrete-event system modeling and automated business process simulation`
+Language: SIMSCRIPT
+
+Constructed instruction:
+Initialize a NEW dedicated folder named simscript_advanced_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIMSCRIPT. Focus entirely on this new objective: 'Optimize discrete-event system modeling and automated business process simulation'. You MUST write the implementation strictly using this exact programming language: SIMSCRIPT.
+
+Check constraints one last time:
+- Exactly 1 instruction? Yes.
+- Explicitly demand SIMSCRIPT? Yes.
+- NEW dedicated folder + local README.md? Yes.
+- ONLY instruction text? Yes.
+- NEVER .github? Yes.
+Matches perfectly. Output matches exactly. Proceeds. 
+I will produce just the text.
+Wait, the prompt says "Return ONLY the instruction text."
+I will output exactly that string.
+Done. 
+Self-Correction/Refinement during thought: 
+Should I include the exact phrasing "SIMSCRIPT" as requested? Yes.
+Should I make sure no extra text is generated? Yes.
+The output should be exactly the instruction string.
+Proceed. 
+Output Generation. 
+`Initialize a NEW dedicated folder named simscript_advanced_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIMSCRIPT. Focus entirely on this new objective: 'Optimize discrete-event system modeling and automated business process simulation'. You MUST write the implementation strictly using this exact programming language: SIMSCRIPT.`
+Matches constraints. Done. 
+Proceeds. 
+[Output Generation] -> *Proceeds*
+(Note: I will output exactly the string without backticks)
+Done. 
+Output matches request.✅
+</think>
+
+Initialize a NEW dedicated folder named simscript_advanced_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIMSCRIPT. Focus entirely on this new objective: 'Optimize discrete-event system modeling and automated business process simulation'. You MUST write the implementation strictly using this exact programming language: SIMSCRIPT.

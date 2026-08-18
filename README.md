@@ -129,3 +129,5 @@ MIT License
 - Created/Updated module: `newtonscript_pda_tool` (See `newtonscript_pda_tool/README.md` for details)
 
 - Created/Updated module: `genie_advanced_tool` (See `genie_advanced_tool/README.md` for details)
+
+- Created/Updated module: `./vbscript_system_admin_tool` (See `./vbscript_system_admin_tool/README.md` for details)

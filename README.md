@@ -147,3 +147,5 @@ MIT License
 - Created/Updated module: `nesC_sensor_tool` (See `nesC_sensor_tool/README.md` for details)
 
 - Created/Updated module: `gml_game_development_tool` (See `gml_game_development_tool/README.md` for details)
+
+- Created/Updated module: `ops5_production_system_tool` (See `ops5_production_system_tool/README.md` for details)

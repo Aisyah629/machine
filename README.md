@@ -59,3 +59,5 @@ MIT License
 - Created/Updated module: `lsl_scripting_tool` (See `lsl_scripting_tool/README.md` for details)
 
 - Created/Updated module: `corvision_tool` (See `corvision_tool/README.md` for details)
+
+- Created/Updated module: `snap_visual_block_editor_tool` (See `snap_visual_block_editor_tool/README.md` for details)

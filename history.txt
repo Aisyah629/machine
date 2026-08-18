@@ -54454,3 +54454,43 @@ Ready. Output matches draft.✅
 </think>
 
 Initialize a NEW dedicated folder named rlab_analysis_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Rlab. Focus entirely on this new objective: 'Construct a modular environment for advanced time-series forecasting and statistical simulation'. You MUST write functional code for this task strictly using this exact programming language: Rlab.
+[2026-08-18 09:53:00] (Target Lang: Common Lisp) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using `Common Lisp`.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a `NEW dedicated folder` and create a local `README.md`.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+
+2.  **Analyze the Context/History:**
+    *   The history shows a pattern of creating new tools in folders like `rlab_analysis_tool` with a specific objective.
+    *   The output format from the history is: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Language]."
+
+3.  **Draft the Instruction:**
+    *   *Folder Name:* Needs to be new and relevant to Common Lisp. Examples: `lisp_advanced_tool`, `common_lisp_solver_tool`, `cl_ai_engine_tool`. Let's pick `lisp_advanced_engine_tool` or just `lisp_tool` if it doesn't exist? Looking at the workspace list, I see `islisp_tool` but no generic `lisp_tool`. However, to be safe and distinct, a name like `lisp_advanced_tool` or `cl_engine_tool` is good. Let's use `lisp_advanced_tool`.
+    *   *Language:* `Common Lisp`.
+    *   *Objective:* Needs to be a logical follow-up or a distinct tool definition. The prompt doesn't specify the objective, just the language and structure. I should create a plausible objective. Since the previous one was "rlab_analysis_tool" for "time-series forecasting", maybe this one could be "Construct a robust functional programming environment for symbolic computation and list processing." or "Develop a high-performance meta-programming framework for dynamic code generation." Let's go with something generic but descriptive: "Construct a high-performance functional environment for symbolic computation and dynamic code generation."
+    *   *Structure Construction:*
+        *   "Initialize a NEW dedicated folder named `lisp_advanced_tool` in the workspace..."
+        *   "...create a local `README.md` inside it..."
+        *   "...and build the entire new tool STRICTLY using this exact programming language: Common Lisp."
+        *   "Focus entirely on this new objective: 'Construct a high-performance functional environment for symbolic computation and dynamic code generation'."
+        *   "You MUST write functional code for this task strictly using this exact programming language: Common Lisp."
+
+4.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, it's a single block of text starting with "Initialize...".
+    *   *Explicitly demand Common Lisp?* Yes, "STRICTLY using this exact programming language: Common Lisp" appears twice.
+    *   *Place in NEW dedicated folder and create README.md?* Yes, "NEW dedicated folder named `lisp_advanced_tool`... create a local `README.md`".
+    *   *Return ONLY instruction text?* The output will be just the text string.
+    *   *NEVER target .github?* The instruction mentions workspace folder and README, no reference to `.github`.
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Initialize a NEW dedicated folder named lisp_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Common Lisp. Focus entirely on this new objective: 'Construct a high-performance functional environment for symbolic computation and dynamic code generation'. You MUST write functional code for this task strictly using this exact programming language: Common Lisp.`
+
+6.  **Final Output Generation:**
+    *   The text matches the drafted structure.
+    *   Result: `Initialize a NEW dedicated folder named lisp_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Common Lisp. Focus entirely on this new objective: 'Construct a high-performance functional environment for symbolic computation and dynamic code generation'. You MUST write functional code for this task strictly using this exact programming language: Common Lisp.`
+</think>
+
+Initialize a NEW dedicated folder named lisp_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Common Lisp. Focus entirely on this new objective: 'Construct a high-performance functional environment for symbolic computation and dynamic code generation'. You MUST write functional code for this task strictly using this exact programming language: Common Lisp.

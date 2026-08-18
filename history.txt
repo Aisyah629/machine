@@ -58723,3 +58723,65 @@ Initialize a NEW dedicated folder named plus_data_consistency_engine_tool in the
 </think>
 
 Initialize a NEW dedicated folder named ngl_network_gateway_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: NGL. Focus entirely on this new objective: 'Implement a high-performance distributed message passing system with automatic failover and data consistency guarantees'. You MUST write the implementation strictly using this exact programming language: NGL.
+[2026-08-18 17:13:44] (Target Lang: bash) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provided a large list of workspace files/folders, many of which are tool directories with README.md and main source files. There's also a "History" section showing a previous interaction where the AI generated an instruction for `ngl_network_gateway_tool` using `NGL`.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: bash. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand building the new tool STRICTLY using `bash`.
+     - MUST instruct to place it in a NEW dedicated folder and create a local `README.md`.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+
+2.  **Identify Key Requirements for the Output:**
+   - Format: A single instruction string.
+   - Content: Must specify creating a new folder, a README.md inside it, building a new tool in that folder, using strictly `bash`, and avoiding `.github`.
+   - Tone/Style: Matches the pattern in the history (`Initialize a NEW dedicated folder named ...`).
+   - Constraint Check: "exactly 1 logical follow-up instruction", "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: bash", "place it in a NEW dedicated folder and create a local README.md", "Return ONLY the instruction text", "NEVER target the .github directory".
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named `bash_system_monitor_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: bash. Focus entirely on this new objective: 'Implement a comprehensive system resource monitor and log analyzer'. You MUST write the implementation strictly using this exact programming language: bash.
+
+   *Self-Correction/Refinement during drafting:*
+   - Check constraints: "exactly 1 logical follow-up instruction" - Yes.
+   - "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: bash." - Included.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." - Included.
+   - "Return ONLY the instruction text." - Will output just the string.
+   - "NEVER target the .github directory." - Not targeted.
+   - Match the style of the example: `Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [lang]. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: [lang].`
+   - Let's stick closely to that template but ensure `bash` is explicitly demanded as requested.
+
+   Draft: `Initialize a NEW dedicated folder named bash_admin_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: bash. Focus entirely on this new objective: 'Develop an automated server backup and maintenance script suite'. You MUST write the implementation strictly using this exact programming language: bash.`
+
+4.  **Final Verification against Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands built STRICTLY using bash? Yes.
+   - Instructs to place in NEW dedicated folder & create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches tone/style? Yes.
+
+   All constraints met. Output matches the draft. I will generate it exactly.✅
+   Note: I'll make sure there's no extra text, just the instruction string as requested. I'll use a plausible folder name like `bash_system_tool` or similar, keeping it lowercase with underscores as per workspace conventions. `bash_system_admin_tool` works well.
+
+   Final string: `Initialize a NEW dedicated folder named bash_system_admin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: bash. Focus entirely on this new objective: 'Develop a comprehensive automated server health monitoring and maintenance script'. You MUST write the implementation strictly using this exact programming language: bash.`
+   Checks out. Output matches. Proceeds. 
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." I will output just that string. No markdown formatting unless necessary, but raw text is safer per "Return ONLY the instruction text." I'll output raw text.
+   All good.✅
+   Output Generation. 
+   `Initialize a NEW dedicated folder named bash_system_admin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: bash. Focus entirely on this new objective: 'Develop a comprehensive automated server health monitoring and maintenance script'. You MUST write the implementation strictly using this exact programming language: bash.` -> Matches perfectly. Proceeds. 
+   [Output Generation] -> [Done]
+   *(Self-Correction/Verification during thought)*: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: bash." I have that. "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I have that. "Return ONLY the instruction text." I will. "NEVER target the .github directory." I won't. All constraints satisfied. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> `Initialize a NEW dedicated folder named bash_system_admin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: bash. Focus entirely on this new objective: 'Develop a comprehensive automated server health monitoring and maintenance script'. You MUST write the implementation strictly using this exact programming language: bash.` -> [Done] 
+   Final Output Generation.✅
+   *(Note: I will output exactly the string without backticks to strictly follow "Return ONLY the instruction text.")*
+   Ready. 
+   Output: Initialize a NEW dedicated folder named bash_system_admin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: bash. Focus entirely on this new objective: 'Develop a comprehensive automated server health monitoring and maintenance script'. You MUST write the implementation strictly using this exact programming language: bash. 
+   [Done] 
+   *(Proceeds)*
+</think>
+
+Initialize a NEW dedicated folder named bash_system_admin_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: bash. Focus entirely on this new objective: 'Develop a comprehensive automated server health monitoring and maintenance script'. You MUST write the implementation strictly using this exact programming language: bash.

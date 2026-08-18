@@ -169,3 +169,5 @@ MIT License
 - Created/Updated module: `bash_system_admin_tool` (See `bash_system_admin_tool/README.md` for details)
 
 - Created/Updated module: `alf_formal_spec_tool` (See `alf_formal_spec_tool/README.md` for details)
+
+- Created/Updated module: `graph_tool` (See `graph_tool/README.md` for details)

@@ -58903,3 +58903,70 @@ Output matches draft.✅
 </think>
 
 Initialize a NEW dedicated folder named autolisp_vl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: AutoLISP / Visual LISP. Focus entirely on this new objective: 'Automate CAD drawing element extraction and modification'. You MUST write the implementation strictly using this exact programming language: AutoLISP / Visual LISP.
+[2026-08-18 17:18:13] (Target Lang: GOAL) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A massive list of existing tool directories and files (not directly relevant to generating the next instruction, but sets context).
+   - **History:** Shows a pattern of generating instructions for new tools with specific languages, objectives, folder names, and constraints.
+   - **Current Instruction Pattern:** "Initialize a NEW dedicated folder named [FOLDER_NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write the implementation strictly using this exact programming language: [LANGUAGE]."
+   - **Task:** Generate exactly 1 logical follow-up instruction following the exact pattern/constraints provided.
+   - **Constraints:**
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+     - Must explicitly demand the new tool be built STRICTLY using the exact programming language: GOAL (Wait, the prompt says "GOAL" as a placeholder? Let me re-read carefully: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GOAL." This is likely a typo in the prompt's instruction template, or it literally wants me to use the word "GOAL" as the language? Actually, looking at the history example, it says "ALF". The prompt says "GOAL". I will assume "GOAL" is the target language name to use, or it's a placeholder I should replace with a specific language? Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GOAL." This is explicit. I will use "GOAL" as the language name, or maybe it's a typo for a real language? Actually, in these types of prompts, "GOAL" is often a placeholder in the instruction template that the user forgot to replace, or it's intentional. I'll stick to the exact wording "GOAL" as requested, or I'll interpret it as the language name. Let's re-read carefully: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GOAL." I will use "GOAL" as the language name to be safe, or maybe it's a test to see if I follow the exact string. I'll just use "GOAL".)
+     - Wait, the prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GOAL." This is a direct instruction. I will follow it literally.
+     - Also need a new folder name and objective. I'll pick a logical one: folder `graph_tool`, objective `'Visualize and manipulate directed graph structures for dependency analysis'`. Language: `GOAL`.
+     - Let's craft it exactly matching the required format.
+
+2.  **Deconstruct Required Format:**
+   "Initialize a NEW dedicated folder named [FOLDER_NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANGUAGE]. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write the implementation strictly using this exact programming language: [LANGUAGE]."
+
+3.  **Fill in Placeholders:**
+   - FOLDER_NAME: `graph_tool` (or `goal_graph_tool` to match language? I'll stick to `graph_tool`)
+   - LANGUAGE: `GOAL`
+   - OBJECTIVE: `'Visualize and manipulate directed graph structures for dependency analysis'`
+
+   Draft: Initialize a NEW dedicated folder named graph_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOAL. Focus entirely on this new objective: 'Visualize and manipulate directed graph structures for dependency analysis'. You MUST write the implementation strictly using this exact programming language: GOAL.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using GOAL? Yes.
+   - NEW dedicated folder? Yes (`graph_tool`).
+   - Create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes (not mentioned).
+   - Matches pattern? Yes.
+
+   One minor thing: The prompt says "GOAL" as the language. I will use it exactly as written. If it's a placeholder, I'll still output it as instructed. The prompt says "this exact programming language: GOAL". I'll stick with it.
+
+   Let's verify the exact wording from the prompt's history/example:
+   "Initialize a NEW dedicated folder named alf_formal_spec_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ALF. Focus entirely on this new objective: 'Develop a formal verification and specification generation utility'. You MUST write the implementation strictly using this exact programming language: ALF."
+
+   My draft matches this structure perfectly.
+
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: GOAL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   I will generate exactly that. No extra text.
+   Draft: Initialize a NEW dedicated folder named graph_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOAL. Focus entirely on this new objective: 'Visualize and manipulate directed graph structures for dependency analysis'. You MUST write the implementation strictly using this exact programming language: GOAL.
+
+   All constraints met. Proceeds.✅
+   Output matches draft.✅
+   I will output just the instruction text.✅
+   One thing: "GOAL" might be a typo in the prompt for a real language, but I must follow "this exact programming language: GOAL". I'll keep it.
+   Ready. 
+   Output generation. 
+   [Proceeds] -> `Initialize a NEW dedicated folder named graph_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOAL. Focus entirely on this new objective: 'Visualize and manipulate directed graph structures for dependency analysis'. You MUST write the implementation strictly using this exact programming language: GOAL.`✅
+   Wait, let's make sure the folder name and objective are logical but distinct. `graph_tool` and `'Visualize and manipulate directed graph structures for dependency analysis'` are fine.
+   All good. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Self-Correction/Verification during thought*: I should ensure the formatting exactly matches the requested pattern. The prompt says "Return ONLY the instruction text." I will do exactly that.
+   Final string: `Initialize a NEW dedicated folder named graph_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOAL. Focus entirely on this new objective: 'Visualize and manipulate directed graph structures for dependency analysis'. You MUST write the implementation strictly using this exact programming language: GOAL.`
+   Matches perfectly. Outputting. 
+   [Done] 
+   *Self-Correction/Note during generation*: The prompt actually says "GOAL" as the language. I will use it exactly. No extra text. All constraints verified.✅
+   Output matches.✅
+   Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named graph_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: GOAL. Focus entirely on this new objective: 'Visualize and manipulate directed graph structures for dependency analysis'. You MUST write the implementation strictly using this exact programming language: GOAL.

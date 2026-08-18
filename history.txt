@@ -59704,3 +59704,45 @@ Initialize a NEW dedicated folder named mercury_verification_tool in the workspa
 </think>
 
 Initialize a NEW dedicated folder named acc_financial_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACC. Focus entirely on this new objective: 'Develop a high-performance financial transaction processing engine'. You MUST write the implementation strictly using this exact programming language: ACC.
+[2026-08-18 18:47:53] (Target Lang: Legoscript) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using "Legoscript".
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: Previous output was about `acc_financial_engine_tool` using ACC language. The user provided a huge list of workspace files, ending with `./legoscript_tool`.
+    *   Format: Follow the style of the "History" output (a single paragraph instruction).
+
+2.  **Drafting the Instruction:**
+    *   *Subject:* Legoscript tool.
+    *   *Action:* Initialize a new folder, create README.md, build the tool.
+    *   *Language:* Legoscript.
+    *   *Objective:* Needs a logical objective for Legoscript. Legoscript is often used for robotics or block-based programming simulation, or just general scripting in this context. Let's pick a generic but fitting objective like "Create a modular robotics control and simulation framework" or "Build a visual block-based programming compiler". Let's stick to something generic like "Develop a modular robotics control and simulation framework".
+    *   *Draft 1:* Initialize a NEW dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript. Focus entirely on this new objective: 'Develop a modular robotics control and simulation framework'. You MUST write the implementation strictly using this exact programming language: Legoscript.
+    *   *Check Constraints:*
+        *   1 logical follow-up? Yes.
+        *   Explicitly demand Legoscript? Yes ("STRICTLY using this exact programming language: Legoscript", "strictly using this exact programming language: Legoscript").
+        *   NEW dedicated folder? Yes ("legoscript_tool").
+        *   README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   No .github? Yes.
+        *   Matches history format? Yes.
+
+3.  **Refining the Text:**
+    *   The prompt asks for "Generate exactly 1 logical follow-up instruction." based on the template structure.
+    *   Text: `Initialize a NEW dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript. Focus entirely on this new objective: 'Develop a modular robotics control and simulation framework'. You MUST write the implementation strictly using this exact programming language: Legoscript.`
+
+4.  **Final Verification:**
+    *   Does it match the requested format? Yes.
+    *   Is it Legoscript? Yes.
+    *   Is it a new folder? Yes.
+    *   Is there a README? Yes.
+    *   Is there no .github? Yes.
+    *   Is it the only output? Yes.
+
+5.  **Construct Output:**
+    *   `Initialize a NEW dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript. Focus entirely on this new objective: 'Develop a modular robotics control and simulation framework'. You MUST write the implementation strictly using this exact programming language: Legoscript.`
+</think>
+
+Initialize a NEW dedicated folder named legoscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Legoscript. Focus entirely on this new objective: 'Develop a modular robotics control and simulation framework'. You MUST write the implementation strictly using this exact programming language: Legoscript.

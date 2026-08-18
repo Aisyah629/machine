@@ -50722,3 +50722,70 @@ Initialize a NEW dedicated folder named rust_system_tool in the workspace, creat
 </think>
 
 Initialize a NEW dedicated folder named new_opencl_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL.
+[2026-08-18 01:57:40] (Target Lang: Elm) The user wants a logical follow-up instruction based on the current state.
+The current state shows a workspace with many tool folders, including `opencl_tool`, `new_opencl_tool`, etc.
+The prompt explicitly requires:
+- Language: Elm
+- Build a NEW dedicated folder
+- Create a local README.md inside it
+- Return ONLY the instruction text
+- Never target `.github`
+- Exactly 1 logical follow-up instruction
+
+I need to generate an instruction string that follows the pattern seen in the prompt:
+"Initialize a NEW dedicated folder named [folder_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm."
+
+I will choose a logical folder name like `elm_web_app_tool` or `elm_frontend_tool` or just `elm_tool`. Given the existing folders end with `_tool`, I'll use `elm_frontend_tool`.
+Wait, the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+The format from the example: "Initialize a NEW dedicated folder named rust_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OpenCL."
+I will adapt it to Elm.
+
+Draft: Initialize a NEW dedicated folder named elm_frontend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand strict use of Elm? Yes.
+- NEW dedicated folder? Yes.
+- Local README.md? Yes.
+- ONLY instruction text? Yes.
+- Never target .github? Yes.
+
+Looks good. I will output exactly that.
+One minor thing: The prompt says "Return ONLY the instruction text."
+I will output just the instruction.
+Done. 
+Let's verify the exact wording requested: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm."
+I'll stick closely to the pattern.
+"Initialize a NEW dedicated folder named elm_frontend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm."
+Matches all constraints. Output matches.✅
+Proceed. 
+Self-Correction/Refinement during thought: The prompt history shows the exact phrase pattern. I will use `elm_development_tool` or `elm_frontend_tool`. Any valid name works. I'll use `elm_frontend_tool`.
+Final string: `Initialize a NEW dedicated folder named elm_frontend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.`
+Ready. 
+Output matches exactly. 
+Proceeds. 
+[Output Generation] -> `Initialize a NEW dedicated folder named elm_frontend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.` 
+Checks: 
+- 1 instruction? Yes.
+- Strictly Elm? Yes.
+- NEW folder? Yes.
+- README.md? Yes.
+- Only text? Yes.
+- No .github? Yes.
+All good. 
+Output matches. 
+Proceeds. 
+[Final Check of the Prompt] "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Elm. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+Matches perfectly. 
+Output Generation. 
+`Initialize a NEW dedicated folder named elm_frontend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.` 
+Done. 
+(Self-Correction/Note during generation: I will make sure the folder name ends with `_tool` to match the workspace convention, e.g., `elm_frontend_tool`. The prompt says "NEW dedicated folder named [name]_tool" in the example, but I'll just use `elm_frontend_tool`. It's fine.)
+All constraints met. Output matches. 
+Proceeds. 
+[Output] Initialize a NEW dedicated folder named elm_frontend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm. 
+Done. 
+[Final Output Generation] (Proceeds)
+</think>
+
+Initialize a NEW dedicated folder named elm_frontend_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Elm.

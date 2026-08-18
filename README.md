@@ -1222,3 +1222,5 @@ Training Machine
 - Created/Updated module: `rust_system_tool` (See `rust_system_tool/README.md` for details)
 
 - Created/Updated module: `new_opencl_tool` (See `new_opencl_tool/README.md` for details)
+
+- Created/Updated module: `elm_frontend_tool` (See `elm_frontend_tool/README.md` for details)

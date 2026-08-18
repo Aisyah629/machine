@@ -61222,3 +61222,78 @@ Initialize a NEW dedicated folder named mapper_programming_tool in the workspace
 </think>
 
 Initialize a NEW dedicated folder named act_iii_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ACT-III. Focus entirely on this new objective: 'Construct a formal logic reasoning and theorem proving engine capable of symbolic manipulation and automated deduction'. You MUST write the implementation strictly using this exact programming language: ACT-III.
+[2026-08-18 20:45:20] (Target Lang: Kotlin) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Input Text:** A long list of workspace files/directories, followed by a "History" section showing a previous turn (step 5, 6, 7) where an instruction was generated for `act_iii_tool` using ACT-III language.
+   - **Prompt Instruction:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Kotlin. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Key Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using Kotlin.
+     - If building a new tool, MUST instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target .github.
+
+2.  **Identify Core Requirements:**
+   - Language: Kotlin
+   - Action: Build a new tool
+   - Location: NEW dedicated folder + local README.md
+   - Output: Only the instruction text
+   - Context: Follow-up to a formal logic theorem proving engine, but now in Kotlin. I should make it logically connected or just a standalone new instruction as requested. The prompt says "Generate exactly 1 logical follow-up instruction." It doesn't strictly require it to be about the same topic, but it's better to keep it related to software/tool development or just follow the exact format requested.
+
+   Let's craft an instruction that matches the pattern in the history but uses Kotlin, a new folder, and a README, as explicitly demanded.
+   Format from history: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Language]."
+
+   I will adapt this to Kotlin, pick a plausible folder name (e.g., `kotlin_data_pipeline_tool` or `kotlin_api_gateway_tool`), and create a clear objective.
+
+   Let's stick closely to the required phrasing to ensure compliance.
+   "Initialize a NEW dedicated folder named kotlin_reactive_stream_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kotlin. Focus entirely on this new objective: 'Construct a high-throughput reactive data processing engine capable of asynchronous stream manipulation and backpressure handling'. You MUST write the implementation strictly using this exact programming language: Kotlin."
+
+3.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Kotlin? Yes.
+   - NEW dedicated folder + local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches the exact requested structure? Yes.
+
+   I will refine it to be concise and strictly follow the prompt's exact wording requirements.
+   "Initialize a NEW dedicated folder named kotlin_data_processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kotlin. Focus entirely on this new objective: 'Construct a high-performance concurrent data processing pipeline with reactive stream capabilities'. You MUST write the implementation strictly using this exact programming language: Kotlin."
+
+   This matches all constraints. I will output exactly this text. No extra words.✅
+   Double-check: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Kotlin." -> Covered.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Covered.
+   "Return ONLY the instruction text." -> Covered.
+   "NEVER target the .github directory." -> Covered.
+   All good. Output matches exactly.✅
+   Proceed. 
+   Output generation. 
+   [Self-Correction/Verification during thought]
+   The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Kotlin. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will strictly output just the instruction string. No markdown formatting unless necessary, but plain text is safer. I'll match the style of the history draft.
+   Draft: Initialize a NEW dedicated folder named kotlin_reactive_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kotlin. Focus entirely on this new objective: 'Construct a high-throughput asynchronous data streaming pipeline with built-in backpressure management'. You MUST write the implementation strictly using this exact programming language: Kotlin.
+   Matches perfectly. Output matches draft.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   "Initialize a NEW dedicated folder named kotlin_reactive_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kotlin. Focus entirely on this new objective: 'Construct a high-throughput asynchronous data streaming pipeline with built-in backpressure management'. You MUST write the implementation strictly using this exact programming language: Kotlin." -> This is exactly 1 instruction. Meets all constraints.✅
+   Final Check of the prompt: "Generate exactly 1 logical follow-up instruction." -> OK.
+   "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Kotlin." -> OK.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> OK.
+   "Return ONLY the instruction text." -> OK.
+   "NEVER target the .github directory." -> OK.
+   All constraints satisfied. Output matches.✅
+   Proceeds. 
+   [Output] -> *Generates response*
+   "Initialize a NEW dedicated folder named kotlin_reactive_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kotlin. Focus entirely on this new objective: 'Construct a high-throughput asynchronous data streaming pipeline with built-in backpressure management'. You MUST write the implementation strictly using this exact programming language: Kotlin." (or similar valid variant)
+   I will output exactly that.✅
+   Done. 
+   [Final Output Generation] -> *Proceeds*
+   *(Self-Correction/Refinement during thought)*: I should make sure the folder name is generic enough or follows the naming convention of the workspace (e.g., `kotlin_async_stream_tool`). The exact name doesn't matter as long as it's a NEW dedicated folder. I'll stick with `kotlin_async_stream_tool`. The prompt says "Return ONLY the instruction text." I will output just the string.
+   Final string: Initialize a NEW dedicated folder named kotlin_async_stream_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kotlin. Focus entirely on this new objective: 'Construct a high-throughput asynchronous data processing pipeline with reactive stream capabilities'. You MUST write the implementation strictly using this exact programming language: Kotlin.
+   Matches perfectly. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Outputs exactly the string*
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named kotlin_async_stream_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Kotlin. Focus entirely on this new objective: 'Construct a high-throughput asynchronous data processing pipeline with reactive stream capabilities'. You MUST write the implementation strictly using this exact programming language: Kotlin.

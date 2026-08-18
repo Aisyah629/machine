@@ -1236,3 +1236,5 @@ Training Machine
 - Created/Updated module: `millscript_tool` (See `millscript_tool/README.md` for details)
 
 - Created/Updated module: `./cryptographic_gosu_tool` (See `./cryptographic_gosu_tool/README.md` for details)
+
+- Created/Updated module: `pipelines_tool` (See `pipelines_tool/README.md` for details)

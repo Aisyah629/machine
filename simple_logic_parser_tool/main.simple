@@ -1,0 +1,289 @@
+// SiMPLE Logic Parser Tool - main.simple
+// A modular rule-based inference engine for automated logical deduction and statement verification.
+
+IMPORT standard_io
+IMPORT math_utils
+IMPORT string_manipulation
+
+// ========================================
+// 1. DATA STRUCTURES & CONSTANTS
+// ========================================
+CONST MAX_RULES = 1024
+CONST MAX_FACTS = 1024
+
+TYPE Rule = RECORD
+    id : INTEGER
+    premise : LIST OF String
+    conclusion : String
+END TYPE
+
+TYPE KnowledgeBase = RECORD
+    rules : LIST OF Rule
+    facts : LIST OF String
+END TYPE
+
+TYPE QueryResult = ENUM
+    TRUE_POSITIVE
+    FALSE_NEGATIVE
+    INDETERMINATE
+    ERROR
+END TYPE
+
+// ========================================
+// 2. GLOBAL STATE & INITIALIZATION
+// ========================================
+GLOBAL kb : KnowledgeBase = {rules: [], facts: []}
+GLOBAL parsed_rules : LIST OF Rule = []
+GLOBAL error_log : LIST OF String = []
+
+PROCEDURE InitializeEngine()
+    PRINT("[SiMPLE Logic Engine] Initializing...")
+    kb.rules = []
+    kb.facts = []
+    parsed_rules = []
+    error_log = []
+    PRINT("[SiMPLE Logic Engine] Ready.")
+END PROCEDURE
+
+// ========================================
+// 3. PARSING MODULE
+// ========================================
+FUNCTION ParseRule(input_string : String) : Rule
+    VAR parts : LIST OF String
+    VAR rule_id : INTEGER
+    VAR premise_part : String
+    VAR conclusion_part : String
+    
+    // Basic validation
+    IF input_string = "" THEN
+        RAISE_ERROR("Rule cannot be empty.")
+        RETURN {id: -1, premise: [], conclusion: ""}
+    END IF
+
+    // Split by ' -> ' or ':' to separate premise and conclusion
+    parts = SPLIT_STRING(input_string, " -> ")
+    IF LENGTH(parts) != 2 THEN
+        // Fallback to comma separation for premise list
+        premise_part = input_string
+        conclusion_part = ""
+    ELSE
+        premise_part = parts[0]
+        conclusion_part = parts[1]
+    END IF
+
+    // Clean whitespace
+    premise_part = TRIM(premise_part)
+    conclusion_part = TRIM(conclusion_part)
+
+    // Generate ID
+    rule_id = LENGTH(parsed_rules) + 1
+
+    // Parse premises (comma separated or single)
+    IF FIND_CHAR(premise_part, ',') > -1 THEN
+        premise_part = REPLACE_STRING(premise_part, " ", "") // Remove spaces around commas for cleaner parsing
+        premise_part = SPLIT_STRING(premise_part, ",")
+    ELSE
+        premise_part = [premise_part]
+    END IF
+
+    RETURN {id: rule_id, premise: premise_part, conclusion: conclusion_part}
+END FUNCTION
+
+PROCEDURE LOAD_RULES(rule_file_path : String)
+    VAR file_lines : LIST OF String
+    VAR current_rule : Rule
+    
+    PRINT("[Parser] Loading rules from: " + rule_file_path)
+    file_lines = READ_FILE_LINES(rule_file_path)
+    
+    FOR EACH line : String IN file_lines DO
+        IF line[0] != ";" AND line != "" THEN // Skip comments and empty lines
+            current_rule = ParseRule(line)
+            IF current_rule.id > 0 THEN
+                parsed_rules = APPEND_LIST(parsed_rules, current_rule)
+                kb.rules = APPEND_LIST(kb.rules, current_rule)
+                PRINT("[Parser] Loaded Rule #" + TO_STRING(current_rule.id))
+            END IF
+        END IF
+    END FOR
+    
+    PRINT("[Parser] Loading complete. Total rules: " + TO_STRING(LENGTH(kb.rules)))
+END PROCEDURE
+
+PROCEDURE LOAD_FACTS(fact_file_path : String)
+    VAR file_lines : LIST OF String
+    
+    PRINT("[Parser] Loading facts from: " + fact_file_path)
+    file_lines = READ_FILE_LINES(fact_file_path)
+    
+    FOR EACH line : String IN file_lines DO
+        IF line[0] != ";" AND line != "" THEN
+            kb.facts = APPEND_LIST(kb.facts, TRIM(line))
+        END IF
+    END FOR
+    
+    PRINT("[Parser] Loading complete. Total facts: " + TO_STRING(LENGTH(kb.facts)))
+END PROCEDURE
+
+// ========================================
+// 4. INFERENCE ENGINE
+// ========================================
+FUNCTION MATCH_FACTS(hypothesis : String) : BOOLEAN
+    VAR matched : BOOLEAN = FALSE
+    VAR existing_fact : String
+    
+    FOR EACH existing_fact IN kb.facts DO
+        IF existing_fact = hypothesis THEN
+            matched = TRUE
+            BREAK
+        END IF
+    END FOR
+    
+    RETURN matched
+END FUNCTION
+
+PROCEDURE ADD_FACT(fact : String)
+    IF MATCH_FACTS(fact) THEN
+        PRINT("[Engine] Fact already exists: " + fact)
+    ELSE
+        kb.facts = APPEND_LIST(kb.facts, fact)
+        PRINT("[Engine] New Fact added: " + fact)
+    END IF
+END PROCEDURE
+
+PROCEDURE EXECUTE_INFERENCE() 
+    VAR chain_changed : BOOLEAN = TRUE
+    VAR iterations : INTEGER = 0
+    VAR max_iterations : INTEGER = 50
+    VAR current_rule : Rule
+    VAR premise_match : BOOLEAN
+    
+    PRINT("[Engine] Starting Inference Cycle...")
+    
+    WHILE chain_changed AND iterations < max_iterations DO
+        chain_changed = FALSE
+        iterations += 1
+        
+        FOR EACH current_rule IN kb.rules DO
+            premise_match = TRUE
+            
+            // Check if all premises are satisfied by existing facts
+            FOR EACH premise IN current_rule.premise DO
+                IF NOT MATCH_FACTS(premise) THEN
+                    premise_match = FALSE
+                    BREAK
+                END IF
+            END FOR
+            
+            // If all premises match, add conclusion as a new fact
+            IF premise_match THEN
+                IF NOT MATCH_FACTS(current_rule.conclusion) THEN
+                    ADD_FACT(current_rule.conclusion)
+                    chain_changed = TRUE
+                END IF
+            END IF
+        END FOR
+    END WHILE
+    
+    PRINT("[Engine] Inference cycle complete. Iterations: " + TO_STRING(iterations))
+END PROCEDURE
+
+// ========================================
+// 5. QUERY & VERIFICATION
+// ========================================
+FUNCTION VERIFY_STATEMENT(query : String) : QueryResult
+    VAR result : QueryResult
+    
+    IF MATCH_FACTS(query) THEN
+        result = TRUE_POSITIVE
+    ELSE
+        result = FALSE_NEGATIVE
+    END IF
+    
+    RETURN result
+END FUNCTION
+
+PROCEDURE RUN_DASHBOARD() 
+    VAR input_cmd : String
+    VAR input_val : String
+    VAR query_result : QueryResult
+    VAR rule_count : INTEGER
+    
+    PRINT("========================================")
+    PRINT("  SiMPLE Logic Parser Tool Dashboard   ")
+    PRINT("========================================")
+    PRINT("Commands: LOAD_RULES, LOAD_FACTS, RUN_INFERENCE, VERIFY <stmt>, EXIT")
+    PRINT("========================================")
+    
+    LOOP
+        PRINT("> ")
+        input_cmd = READ_LINE()
+        input_cmd = TRIM(input_cmd)
+        
+        // Extract command and arguments
+        IF FIND_CHAR(input_cmd, " ") > -1 THEN
+            // Simple split for first space
+            input_val = SPLIT_STRING(input_cmd, " ")[1]
+            input_cmd = TRIM(SPLIT_STRING(input_cmd, " ")[0])
+        ELSE
+            input_val = ""
+            input_cmd = TRIM(input_cmd)
+        END IF
+        
+        SWITCH input_cmd
+            CASE "LOAD_RULES"
+                IF input_val != "" THEN
+                    LOAD_RULES(input_val)
+                ELSE
+                    PRINT("Usage: LOAD_RULES <file_path>")
+                END IF
+                
+            CASE "LOAD_FACTS"
+                IF input_val != "" THEN
+                    LOAD_FACTS(input_val)
+                ELSE
+                    PRINT("Usage: LOAD_FACTS <file_path>")
+                END IF
+                
+            CASE "RUN_INFERENCE"
+                EXECUTE_INFERENCE()
+                
+            CASE "VERIFY"
+                IF input_val != "" THEN
+                    query_result = VERIFY_STATEMENT(input_val)
+                    CASE query_result
+                        CASE TRUE_POSITIVE: PRINT("[Result] TRUE: " + input_val)
+                        CASE FALSE_NEGATIVE: PRINT("[Result] FALSE: " + input_val)
+                        CASE INDETERMINATE: PRINT("[Result] INDETERMINATE")
+                        CASE ERROR: PRINT("[Result] ERROR verifying statement.")
+                    END CASE
+                ELSE
+                    PRINT("Usage: VERIFY <statement>")
+                END IF
+                
+            CASE "LIST_FACTS"
+                PRINT("--- Current Facts ---")
+                FOR EACH f IN kb.facts DO
+                    PRINT("  - " + f)
+                END FOR
+                PRINT("--- End Facts ---")
+                
+            CASE "EXIT"
+                PRINT("[SiMPLE] Shutting down engine...")
+                BREAK
+                
+            DEFAULT
+                PRINT("Unknown command. Available: LOAD_RULES, LOAD_FACTS, RUN_INFERENCE, VERIFY, LIST_FACTS, EXIT")
+        END SWITCH
+    END LOOP
+END PROCEDURE
+
+// ========================================
+// 6. MAIN ENTRY POINT
+// ========================================
+PROCEDURE MAIN()
+    InitializeEngine()
+    RUN_DASHBOARD()
+END PROCEDURE
+
+MAIN()

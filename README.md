@@ -53,3 +53,5 @@ MIT License
 - Created/Updated module: `awk_log_parser_tool` (See `awk_log_parser_tool/README.md` for details)
 
 - Created/Updated module: `ratfiv_computation_tool` (See `ratfiv_computation_tool/README.md` for details)
+
+- Created/Updated module: `simple_logic_parser_tool` (See `simple_logic_parser_tool/README.md` for details)

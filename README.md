@@ -197,3 +197,5 @@ MIT License
 - Created/Updated module: `beanshell_build_orchestrator_tool` (See `beanshell_build_orchestrator_tool/README.md` for details)
 
 - Created/Updated module: `dcl_command_engine_tool` (See `dcl_command_engine_tool/README.md` for details)
+
+- Created/Updated module: `cuda_gpu_engine_tool` (See `cuda_gpu_engine_tool/README.md` for details)

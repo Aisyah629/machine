@@ -61707,3 +61707,47 @@ Initialize a NEW dedicated folder named j_script_compiler_tool in the workspace,
 </think>
 
 Initialize a NEW dedicated folder named julia_analytics_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia. Focus entirely on this new objective: 'Develop a high-performance numerical computing and data analysis framework optimized for parallel processing and statistical modeling'. You MUST write the implementation strictly using this exact programming language: Julia.
+[2026-08-18 21:24:25] (Target Lang: Cesil) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Use language "Cesil".
+    *   Constraint: New dedicated folder, local `README.md`.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: Never target `.github`.
+    *   Context: Previous instruction mentioned `julia_analytics_engine_tool`, but the user wants a *new* instruction for *Cesil*. The prompt is a continuation or a fresh request based on the system prompt. The prompt explicitly says "Generate exactly 1 logical follow-up instruction...".
+    *   Output Format: Raw text only, no markdown, no extra text.
+
+2.  **Draft the Instruction:**
+    *   Action: Initialize new folder, create README, build tool.
+    *   Name: `cesil_tool` or `cesil_compiler_tool`? Looking at the list, `cesil_tool` exists. The prompt asks for a "logical follow-up". Usually, this implies a new tool or a specific action. The user prompt says "If building a new tool...". So I should propose a new tool name. Let's use `cesil_compilation_tool` or just `cesil_tool` if it's considered a new instance? Better to use a distinct name like `cesil_code_analyzer_tool` or just `cesil_tool` if the system treats folders as unique instances? The prompt usually implies creating a *new* directory. I'll use `cesil_interpreter_tool` to be safe and logical.
+    *   Language: Cesil.
+    *   Objective: Need a description. Cesil is a teaching language (Cesil is a simple programming language used in education). Objective: "Create a robust educational compiler/interpreter for the Cesil language featuring syntax validation and execution simulation."
+    *   Structure: `Initialize a NEW dedicated folder named cesil_interpreter_tool... create README.md... build... STRICTLY using Cesil...`
+
+3.  **Refine Text:**
+    *   "Initialize a NEW dedicated folder named cesil_interpreter_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cesil. Focus entirely on this new objective: 'Create a robust educational compiler and interpreter for the Cesil language featuring syntax validation, variable type checking, and execution simulation'. You MUST write the implementation strictly using this exact programming language: Cesil."
+
+4.  **Check Constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Language: Cesil? Yes.
+    *   New folder/README? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   No `.github`? Yes.
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named cesil_interpreter_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cesil. Focus entirely on this new objective: 'Create a robust educational compiler and interpreter for the Cesil language featuring syntax validation, variable type checking, and execution simulation'. You MUST write the implementation strictly using this exact programming language: Cesil.`
+
+6.  **Verify against "Logical Follow-up":**
+    *   The previous one was Julia analytics. Cesil is a teaching language. The logical step might be a tool to analyze or compile Cesil code. The objective matches.
+
+7.  **Final Output Construction:**
+    *   Copy the drafted string. Ensure no markdown code blocks around it if possible, though the prompt says "Return ONLY the instruction text". The model output should be the text itself.
+
+    *   Text: `Initialize a NEW dedicated folder named cesil_interpreter_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cesil. Focus entirely on this new objective: 'Create a robust educational compiler and interpreter for the Cesil language featuring syntax validation, variable type checking, and execution simulation'. You MUST write the implementation strictly using this exact programming language: Cesil.`
+
+    *   Wait, looking at the provided list, `cesil_tool` already exists. The prompt asks to "If building a new tool...". It's safer to create a new folder name that doesn't conflict, or assume the user wants a *new* tool in the workspace. The instruction text drives the creation. If the instruction says "cesil_interpreter_tool", that's a new folder. This is safe.
+
+    *   Result looks good.
+</think>
+
+Initialize a NEW dedicated folder named cesil_interpreter_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cesil. Focus entirely on this new objective: 'Create a robust educational compiler and interpreter for the Cesil language featuring syntax validation, variable type checking, and execution simulation'. You MUST write the implementation strictly using this exact programming language: Cesil.

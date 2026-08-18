@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process 
+    name="bpelToolProcess" 
+    targetNamespace="http://example.com/bpel-tool" 
+    xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable">
+    
+    <!-- Partners involved in the process -->
+    <partnerLinks>
+        <partnerLink name="requester" partnerLinkType="bpel:myRole" myRole="requester" />
+        <partnerLink name="responder" partnerLinkType="bpel:myRole" myRole="responder" />
+    </partnerLinks>
+
+    <!-- Data variables -->
+    <variables>
+        <variable name="inputVariable" messageType="tns:ProcessRequestMessage" />
+        <variable name="outputVariable" messageType="tns:ProcessResponseMessage" />
+    </variables>
+
+    <!-- Sequence of activities to be executed -->
+    <sequence>
+        <invoke 
+            name="initiateProcess" 
+            partnerLink="responder" 
+            portType="tns:ProcessPortType" 
+            operation="initiate"
+            inputVariable="inputVariable"
+            outputVariable="outputVariable" />
+
+        <log 
+            level="info" 
+            message="BPEL Tool processed the request successfully." />
+    </sequence>
+</process>

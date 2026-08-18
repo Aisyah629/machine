@@ -1,22 +1,18 @@
 # Bigwig Tool
 
-A high-throughput distributed consensus algorithm simulator with fault tolerance and network partition handling.
+A high-performance computational scripting engine designed for efficient data processing and system automation. Bigwig provides a concise, expressive syntax for rapid development and execution of complex data workflows.
 
-## Objective
-
-To design and implement a robust distributed consensus protocol simulator. This tool will focus on:
-- Implementing leader election mechanisms.
-- Handling network partitions and simulating packet loss/delays.
-- Ensuring fault tolerance and data consistency across simulated nodes.
-
-## Language
-
-Bigwig
-
-## Structure
-
-- `main.bw` : Core simulation engine and logic.
+## Features
+- High-performance execution engine
+- Expressive data processing syntax
+- System automation capabilities
+- Modular architecture for easy integration
 
 ## Usage
+Create a `.bigwig` file with your script and execute it using the Bigwig runtime engine.
 
-Run the Bigwig interpreter to execute the simulation.
+## Structure
+- `main.bigwig`: The core entry point for the scripting engine.
+
+## License
+MIT License

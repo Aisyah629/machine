@@ -56114,3 +56114,47 @@ This looks solid.
 </think>
 
 Initialize a NEW dedicated folder named inform_text_adventure_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Inform. Focus entirely on this new objective: 'Develop an Inform-based parser for interactive fiction logic and a state-transition engine'. You MUST write the implementation strictly using this exact programming language: Inform.
+[2026-08-18 12:17:48] (Target Lang: DIBOL) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DIBOL.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a long list of workspace files (mostly tools with READMEs and main source files) and a history. The history shows a previous instruction about an "inform_text_adventure_compiler_tool". The current request asks for a follow-up.
+
+2.  **Formulate the Instruction:**
+    *   *Action:* Initialize a NEW dedicated folder.
+    *   *Folder Name:* Needs a logical name based on DIBOL. DIBOL is a Business Information Language (originally for CDC mainframes). Let's call it `dibol_business_data_processing_tool` or similar. Looking at the pattern in the history (`inform_text_adventure_compiler_tool`), a name like `dibol_batch_processing_engine_tool` or `dibol_mainframe_logic_tool` fits well. Let's go with `dibol_mainframe_data_processing_tool`.
+    *   *README:* Create a local `README.md` inside it.
+    *   *Language:* STRICTLY using DIBOL.
+    *   *Objective:* Develop a DIBOL-based tool. The prompt mentions DIBOL is strict. The objective should reflect DIBOL's nature. DIBOL is known for business data processing, mainframes, string manipulation, and batch processing. Objective: 'Develop a DIBOL-based parser for structured business data processing and a state-transition engine' or 'Develop a DIBOL-based data transformation engine for mainframe environments'. Let's align with the style: 'Develop a DIBOL-based parser for structured business logic and a state-transition engine'.
+    *   *Drafting the text:* "Initialize a NEW dedicated folder named dibol_mainframe_data_processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DIBOL. Focus entirely on this new objective: 'Develop a DIBOL-based parser for structured business logic and a state-transition engine'. You MUST write the implementation strictly using this exact programming language: DIBOL."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Explicitly demand DIBOL?* Yes ("STRICTLY using this exact programming language: DIBOL", "You MUST write... DIBOL").
+    *   *New dedicated folder?* Yes ("Initialize a NEW dedicated folder named...").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes.
+    *   *Never target .github?* Yes (No mention of .github).
+    *   *Logical follow-up?* Yes, follows the pattern of the previous tool generation request.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Result: `Initialize a NEW dedicated folder named dibol_mainframe_data_processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DIBOL. Focus entirely on this new objective: 'Develop a DIBOL-based parser for structured business logic and a state-transition engine'. You MUST write the implementation strictly using this exact programming language: DIBOL.`
+
+5.  **Check for "Follow-up" nature:**
+    *   The user asked for a "logical follow-up instruction".
+    *   The previous history item was about Inform.
+    *   This instruction is about DIBOL.
+    *   This is a distinct new tool, which is a logical step in expanding the workspace's toolset, matching the pattern of the history.
+
+6.  **Final Output Construction:**
+    *   Output the drafted text exactly.
+    *   `Initialize a NEW dedicated folder named dibol_mainframe_data_processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DIBOL. Focus entirely on this new objective: 'Develop a DIBOL-based parser for structured business logic and a state-transition engine'. You MUST write the implementation strictly using this exact programming language: DIBOL.`
+
+This matches all constraints.
+</think>
+
+Initialize a NEW dedicated folder named dibol_mainframe_data_processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DIBOL. Focus entirely on this new objective: 'Develop a DIBOL-based parser for structured business logic and a state-transition engine'. You MUST write the implementation strictly using this exact programming language: DIBOL.

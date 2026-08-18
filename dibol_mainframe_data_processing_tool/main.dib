@@ -1,0 +1,144 @@
+
+* DIBOL Mainframe Data Processing Tool
+* Module: Main State-Transition Engine and Business Logic Parser
+* Description: Processes structured business records and manages state transitions.
+
+      DEFINE RECORD
+         * Input Record Layout
+         INPUT-REC (200)
+         *   Fields: 4-20 (ID), 21-50 (Name), 51-100 (Data), 101-200 (Status)
+
+         * State Management
+         CURRENT-STATE  (1) = 'P'      * Processing
+         TRANSITION-TBL (50, 3)        * Transition Table: [FromState, ToState, ActionCode]
+         ACTION-CODE    (2)            * Current Action to execute
+
+      MODULE INIT_STATE
+      * Initialize State Transition Table
+      * Populates TRANSITION-TBL with valid business states and actions
+
+         TRANSITION-TBL (1,1) = 'I'     * From: Initial
+         TRANSITION-TBL (1,2) = 'V'     * To: Validation
+         TRANSITION-TBL (1,3) = 'A'     * Action: Accept
+
+         TRANSITION-TBL (2,1) = 'V'     * From: Validation
+         TRANSITION-TBL (2,2) = 'P'     * To: Processing
+         TRANSITION-TBL (2,3) = 'C'     * Action: Continue
+
+         TRANSITION-TBL (3,1) = 'P'     * From: Processing
+         TRANSITION-TBL (3,2) = 'C'     * To: Complete
+         TRANSITION-TBL (3,3) = 'R'     * Action: Record
+
+         TRANSITION-TBL (4,1) = 'V'     * From: Validation
+         TRANSITION-TBL (4,2) = 'E'     * To: Error
+         TRANSITION-TBL (4,3) = 'F'     * Action: Fail
+
+         RETURN
+      END MODULE INIT_STATE
+
+      MODULE PARSE_RECORD
+      * Parse Input Record and Extract Fields
+
+         ID-STR    = INPUT-REC (4,20)
+         NAME-STR  = INPUT-REC (21,50)
+         DATA-STR  = INPUT-REC (51,100)
+         STATUS-STR = INPUT-REC (101,200)
+
+         * Business Logic Check: Validate Name Length
+         IF LENGTH (NAME-STR) < 3
+            ACTION-CODE = 'F'
+            CURRENT-STATE = 'E'
+            RETURN
+         END IF
+
+         * Business Logic Check: Validate Data String
+         IF DATA-STR = 'NULL' OR DATA-STR = ''
+            ACTION-CODE = 'F'
+            CURRENT-STATE = 'E'
+            RETURN
+         END IF
+
+         ACTION-CODE = 'C'
+         RETURN
+      END MODULE PARSE_RECORD
+
+      MODULE TRANSITION_ENGINE
+      * Execute State Transition based on Current State and Action
+
+         NEXT-STATE = 'I'
+         ACTION-CODE = 'N'
+
+         * Find matching transition
+         DO I = 1 TO 4
+            IF TRANSITION-TBL (I,1) = CURRENT-STATE
+               NEXT-STATE = TRANSITION-TBL (I,2)
+               ACTION-CODE  = TRANSITION-TBL (I,3)
+               LEAVE
+            END IF
+         END DO
+
+         * Execute Action
+         IF ACTION-CODE = 'A'
+            * Accept Record Logic
+            DISPLAY 'RECORD ACCEPTED'
+         END IF
+
+         IF ACTION-CODE = 'C'
+            * Continue Processing Logic
+            DISPLAY 'PROCESSING CONTINUED'
+         END IF
+
+         IF ACTION-CODE = 'R'
+            * Record Final Logic
+            DISPLAY 'RECORD COMPLETED'
+         END IF
+
+         IF ACTION-CODE = 'F'
+            * Fail/Error Logic
+            DISPLAY 'RECORD FAILED VALIDATION'
+         END IF
+
+         IF ACTION-CODE = 'N'
+            DISPLAY 'NO TRANSITION FOUND FOR STATE: ' CURRENT-STATE
+         END IF
+
+         CURRENT-STATE = NEXT-STATE
+         RETURN
+      END MODULE TRANSITION_ENGINE
+
+      PROGRAM MAIN
+      * Main Program Entry Point
+
+      INITIALIZE
+         CALL INIT_STATE
+         DISPLAY 'DIBOL BUSINESS DATA PROCESSING TOOL STARTED'
+
+         * Simulate Input Records
+         INPUT-REC = 'A12345678901234567890John Doe                   SOME DATA                  ACTIVE                   '
+         CURRENT-STATE = 'I'
+
+         * Process Record
+         CALL PARSE_RECORD
+         DISPLAY 'ACTION: ' ACTION-CODE
+         DISPLAY 'STATE:  ' CURRENT-STATE
+
+         IF ACTION-CODE = 'C'
+            * Transition from Initial to Validation
+            CURRENT-STATE = 'V'
+            CALL TRANSITION_ENGINE
+         END IF
+
+         IF CURRENT-STATE = 'P'
+            * Transition from Validation to Processing
+            CURRENT-STATE = 'P'
+            CALL TRANSITION_ENGINE
+         END IF
+
+         IF CURRENT-STATE = 'C'
+            * Transition from Processing to Complete
+            CURRENT-STATE = 'C'
+            CALL TRANSITION_ENGINE
+         END IF
+
+         DISPLAY 'PROCESSING COMPLETE'
+      END PROGRAM

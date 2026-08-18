@@ -1216,3 +1216,5 @@ Training Machine
 - Created/Updated module: `comal_engine_tool` (See `comal_engine_tool/README.md` for details)
 
 - Created/Updated module: `sympl_tool` (See `sympl_tool/README.md` for details)
+
+- Created/Updated module: `plankalkul_tool` (See `plankalkul_tool/README.md` for details)

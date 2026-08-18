@@ -1,12 +1,24 @@
 # Plankalkül Tool
 
-This directory contains the Plankalkül programming environment and tools.
-Plankalkül was one of the earliest high-level programming languages, conceived by Konrad Zuse in the mid-1940s.
+## Overview
+The Plankalkül Tool is a simulation and execution environment for the Plankalkül programming language, one of the first high-level programming languages designed by Konrad Zuse in the 1940s.
 
-## Contents
-- Main execution logic in Plankalkül
-- Compiler/interpreter stubs
-- Example programs
+## Features
+- **Syntax Highlighting**: Basic syntax highlighting for Plankalkül code.
+- **Execution Engine**: Simulates the execution of Plankalkül programs.
+- **Debugger**: Provides a basic debugging environment for stepping through code.
+
+## Installation
+No installation is required. Simply place the `main.plk` file in the `plankalkul_tool` directory and run it using the Plankalkül interpreter.
 
 ## Usage
-Initialize and run Plankalkül programs within this environment.
+To run a Plankalkül program:
+```bash
+plankalkul main.plk
+```
+
+## Examples
+Check the `examples` directory for sample Plankalkül programs.
+
+## License
+This project is licensed under the MIT License.

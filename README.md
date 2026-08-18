@@ -109,3 +109,5 @@ MIT License
 - Created/Updated module: `mortran_tool` (See `mortran_tool/README.md` for details)
 
 - Created/Updated module: `stackless_python_tool` (See `stackless_python_tool/README.md` for details)
+
+- Created/Updated module: `onyx_tool` (See `onyx_tool/README.md` for details)

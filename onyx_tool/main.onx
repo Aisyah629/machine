@@ -1,0 +1,492 @@
+/**
+ * Onyx Static Code Analysis Engine
+ * 
+ * A high-performance type checker for Onyx source code.
+ * Parses source files, builds an AST, and performs type validation.
+ */
+
+namespace OnyxAnalyzer {
+    
+    /**
+     * Represents a basic token from the lexer.
+     */
+    class Token {
+        kind: TokenKind
+        text: String
+        line: Int32
+        col: Int32
+        
+        constructor(kind: TokenKind, text: String, line: Int32, col: Int32) {
+            this.kind = kind
+            this.text = text
+            this.line = line
+            this.col = col
+        }
+    }
+    
+    /**
+     * Enumeration of all possible token kinds.
+     */
+    enum TokenKind {
+        Keyword
+        Identifier
+        Literal
+        Operator
+        Punctuation
+        Whitespace
+        Comment
+        EOF
+    }
+    
+    /**
+     * Represents a syntax node in the Abstract Syntax Tree (AST).
+     */
+    class SyntaxNode {
+        kind: NodeKind
+        children: List<SyntaxNode>
+        value: Option<Object>
+        
+        constructor(kind: NodeKind, children: List<SyntaxNode>, value: Option<Object>) {
+            this.kind = kind
+            this.children = children
+            this.value = value
+        }
+    }
+    
+    /**
+     * Enumeration of all possible syntax node kinds.
+     */
+    enum NodeKind {
+        Program
+        Block
+        Expression
+        Declaration
+        Assignment
+        FunctionDef
+        TypeRef
+        LiteralExpr
+        IdentifierExpr
+        OperatorExpr
+    }
+    
+    /**
+     * Represents a type in the Onyx type system.
+     */
+    class Type {
+        kind: TypeKind
+        name: String
+        parameters: List<Type>
+        
+        constructor(kind: TypeKind, name: String, parameters: List<Type>) {
+            this.kind = kind
+            this.name = name
+            this.parameters = parameters
+        }
+    }
+    
+    /**
+     * Enumeration of all possible Onyx types.
+     */
+    enum TypeKind {
+        Void
+        Bool
+        Int
+        Float
+        String
+        Char
+        Array
+        Map
+        Custom
+    }
+    
+    /**
+     * Represents a type error encountered during analysis.
+     */
+    class TypeError {
+        message: String
+        line: Int32
+        col: Int32
+        
+        constructor(message: String, line: Int32, col: Int32) {
+            this.message = message
+            this.line = line
+            this.col = col
+        }
+    }
+    
+    /**
+     * The main Analyzer class that orchestrates the parsing and type checking process.
+     */
+    class Analyzer {
+        tokens: List<Token>
+        ast: Option<SyntaxNode>
+        errors: List[TypeError]
+        
+        constructor() {
+            this.tokens = List[Token]()
+            this.ast = Option.empty()
+            this.errors = List[TypeError]()
+        }
+        
+        /**
+         * Main entry point: analyzes the given Onyx source code.
+         * @param source The source code string to analyze.
+         * @return A list of TypeErrors found during analysis.
+         */
+        analyze(source: String): List[TypeError] {
+            this.errors = List[TypeError]()
+            
+            // Step 1: Lexical Analysis
+            val tokenList = this.lexer(source)
+            if (tokenList.isError) {
+                return tokenList.errors
+            }
+            this.tokens = tokenList.result
+            
+            // Step 2: Syntax Analysis (Parsing)
+            val parseResult = this.parser(this.tokens)
+            if (parseResult.isError) {
+                return parseResult.errors
+            }
+            this.ast = parseResult.result
+            
+            // Step 3: Semantic Analysis (Type Checking)
+            if (this.ast.isDefined) {
+                val typeErrors = this.typeChecker(this.ast.get)
+                this.errors = this.errors.concat(typeErrors)
+            }
+            
+            return this.errors
+        }
+        
+        /**
+         * Lexical Analysis: Converts source string into tokens.
+         */
+        lexer(source: String): Result<List[Token], List[TypeError]] {
+            val tokens: List[Token] = List[Token]()
+            val errors: List[TypeError] = List[TypeError]()
+            var line: Int32 = 1
+            var col: Int32 = 1
+            var i: Int32 = 0
+            
+            while (i < source.length) {
+                val c = source.charAt(i)
+                
+                if (Character.isWhitespace(c)) {
+                    if (c == '\n') {
+                        line += 1
+                        col = 1
+                    } else {
+                        col += 1
+                    }
+                } else if (Character.isLetter(c) || c == '_') {
+                    var identifier: String = ""
+                    while (i < source.length && (Character.isLetterOrDigit(source.charAt(i)) || source.charAt(i) == '_')) {
+                        identifier += source.charAt(i)
+                        i += 1
+                    }
+                    val kind = this.identifyKeyword(identifier)
+                    tokens.add(new Token(kind, identifier, line, col))
+                } else if (Character.isDigit(c)) {
+                    var literal: String = ""
+                    while (i < source.length && Character.isDigit(source.charAt(i))) {
+                        literal += source.charAt(i)
+                        i += 1
+                    }
+                    tokens.add(new Token(TokenKind.Literal, literal, line, col))
+                } else if (c == '"') {
+                    var string: String = ""
+                    i += 1
+                    while (i < source.length && source.charAt(i) != '"') {
+                        if (source.charAt(i) == '\\') {
+                            i += 1
+                            if (i < source.length) {
+                                string += source.charAt(i)
+                            }
+                        } else {
+                            string += source.charAt(i)
+                        }
+                        i += 1
+                    }
+                    if (i < source.length) {
+                        i += 1
+                    }
+                    tokens.add(new Token(TokenKind.Literal, string, line, col))
+                } else if (c == '/' && i + 1 < source.length && source.charAt(i + 1) == '/') {
+                    while (i < source.length && source.charAt(i) != '\n') {
+                        i += 1
+                    }
+                } else if (c == '/' && i + 1 < source.length && source.charAt(i + 1) == '*') {
+                    var comment: String = ""
+                    i += 2
+                    while (i < source.length && !(source.charAt(i) == '*' && i + 1 < source.length && source.charAt(i + 1) == '/')) {
+                        comment += source.charAt(i)
+                        i += 1
+                    }
+                    if (i < source.length) {
+                        i += 2
+                    }
+                } else {
+                    tokens.add(new Token(TokenKind.Operator, c.toString(), line, col))
+                }
+                
+                i += 1
+            }
+            
+            tokens.add(new Token(TokenKind.EOF, "", line, col))
+            
+            if (errors.isEmpty()) {
+                return Result.ok(tokens)
+            } else {
+                return Result.err(errors)
+            }
+        }
+        
+        /**
+         * Identifies if a string is a keyword or a standard identifier.
+         */
+        identifyKeyword(text: String): TokenKind {
+            val keywords: List[String] = List("var", "func", "if", "else", "while", "return", "type", "struct", "interface", "import", "from", "to", "for", "in", "loop", "do", "break", "continue", "true", "false", "null", "self", "super")
+            if (keywords.contains(text)) {
+                return TokenKind.Keyword
+            }
+            return TokenKind.Identifier
+        }
+        
+        /**
+         * Syntax Analysis: Builds the AST from tokens.
+         */
+        parser(tokens: List[Token]): Result<Option<SyntaxNode], List[TypeError]] {
+            // Simplified parser implementation for demonstration purposes.
+            // A real parser would use recursive descent or a parser generator.
+            var index: Int32 = 0
+            val errors: List[TypeError] = List[TypeError]()
+            
+            val program = new SyntaxNode(NodeKind.Program, List(), Option.empty())
+            val blockChildren = List<SyntaxNode>()
+            
+            while (index < tokens.size && tokens.get(index).kind != TokenKind.EOF) {
+                val token = tokens.get(index)
+                if (token.kind == TokenKind.Keyword && token.text == "var") {
+                    // Expect identifier, colon, type
+                    val declaration = this.parseVariableDeclaration(tokens, index, errors)
+                    if (declaration.isError) {
+                        return Result.err(declaration.errors)
+                    }
+                    val node = declaration.result
+                    blockChildren.add(node)
+                    index = node.index
+                } else if (token.kind == TokenKind.Keyword && token.text == "func") {
+                    val function = this.parseFunctionDefinition(tokens, index, errors)
+                    if (function.isError) {
+                        return Result.err(function.errors)
+                    }
+                    val node = function.result
+                    blockChildren.add(node)
+                    index = node.index
+                } else {
+                    // Expression statement
+                    val expr = this.parseExpression(tokens, index, errors)
+                    if (expr.isError) {
+                        return Result.err(expr.errors)
+                    }
+                    val node = expr.result
+                    blockChildren.add(node)
+                    index = node.index
+                }
+            }
+            
+            program.children = blockChildren
+            return Result.ok(Option.some(program))
+        }
+        
+        /**
+         * Parses a variable declaration.
+         */
+        parseVariableDeclaration(tokens: List[Token], startIndex: Int32, errors: List[TypeError]): Result<{node: SyntaxNode, index: Int32}, List[TypeError]> {
+            var index = startIndex
+            // Skip 'var'
+            index += 1
+            if (index >= tokens.size) {
+                errors.add(new TypeError("Unexpected end of input after 'var'", tokens.get(startIndex).line, tokens.get(startIndex).col))
+                return Result.err(errors)
+            }
+            val identToken = tokens.get(index)
+            if (identToken.kind != TokenKind.Identifier) {
+                errors.add(new TypeError("Expected identifier after 'var'", identToken.line, identToken.col))
+                return Result.err(errors)
+            }
+            val identName = identToken.text
+            index += 1
+            if (index >= tokens.size || tokens.get(index).text != ":") {
+                errors.add(new TypeError("Expected ':' after identifier", identToken.line, identToken.col))
+                return Result.err(errors)
+            }
+            index += 1
+            // Parse type (simplified: assume identifier is type)
+            val typeToken = tokens.get(index)
+            val typeName = typeToken.text
+            index += 1
+            
+            val typeNode = new SyntaxNode(NodeKind.TypeRef, List(), Option.some(typeName))
+            val identNode = new SyntaxNode(NodeKind.IdentifierExpr, List(), Option.some(identName))
+            val assignNode = new SyntaxNode(NodeKind.Assignment, List(identNode, typeNode), Option.empty())
+            val declNode = new SyntaxNode(NodeKind.Declaration, List(assignNode), Option.empty())
+            
+            return Result.ok({node: declNode, index: index})
+        }
+        
+        /**
+         * Parses a function definition.
+         */
+        parseFunctionDefinition(tokens: List[Token], startIndex: Int32, errors: List[TypeError]): Result<{node: SyntaxNode, index: Int32}, List[TypeError]> {
+            var index = startIndex
+            // Skip 'func'
+            index += 1
+            if (index >= tokens.size) {
+                errors.add(new TypeError("Unexpected end of input after 'func'", tokens.get(startIndex).line, tokens.get(startIndex).col))
+                return Result.err(errors)
+            }
+            val nameToken = tokens.get(index)
+            if (nameToken.kind != TokenKind.Identifier) {
+                errors.add(new TypeError("Expected function name after 'func'", nameToken.line, nameToken.col))
+                return Result.err(errors)
+            }
+            val name = nameToken.text
+            index += 1
+            
+            val funcNode = new SyntaxNode(NodeKind.FunctionDef, List(), Option.some(name))
+            
+            return Result.ok({node: funcNode, index: index})
+        }
+        
+        /**
+         * Parses an expression.
+         */
+        parseExpression(tokens: List[Token], startIndex: Int32, errors: List[TypeError]): Result<{node: SyntaxNode, index: Int32}, List[TypeError]> {
+            var index = startIndex
+            val token = tokens.get(index)
+            var exprNode: SyntaxNode
+            
+            if (token.kind == TokenKind.Identifier) {
+                exprNode = new SyntaxNode(NodeKind.IdentifierExpr, List(), Option.some(token.text))
+                index += 1
+            } else if (token.kind == TokenKind.Literal) {
+                exprNode = new SyntaxNode(NodeKind.LiteralExpr, List(), Option.some(token.text))
+                index += 1
+            } else {
+                errors.add(new TypeError("Unexpected token in expression", token.line, token.col))
+                return Result.err(errors)
+            }
+            
+            return Result.ok({node: exprNode, index: index})
+        }
+        
+        /**
+         * Semantic Analysis: Type checks the AST.
+         */
+        typeChecker(node: SyntaxNode): List[TypeError] {
+            val errors: List[TypeError] = List[TypeError]()
+            
+            if (node.kind == NodeKind.Program) {
+                for (child in node.children) {
+                    val childErrors = this.typeChecker(child)
+                    errors = errors.concat(childErrors)
+                }
+            } else if (node.kind == NodeKind.Declaration) {
+                // Check type validity (simplified)
+                val typeNode = node.children.get(0).children.get(1)
+                val typeName = typeNode.value.get.toString()
+                if (!this.isBuiltinType(typeName) && !this.isDefinedType(typeName)) {
+                    val line = node.children.get(0).children.get(0).children.get(0).value.get.toString().length // Approx line
+                    errors.add(new TypeError("Undefined type: " + typeName, 0, 0))
+                }
+            } else if (node.kind == NodeKind.Assignment) {
+                val ident = node.children.get(0).value.get.toString()
+                val typeRef = node.children.get(1).value.get.toString()
+                // In a real engine, we'd check if 'ident' was previously declared with 'typeRef'
+            }
+            
+            return errors
+        }
+        
+        isBuiltinType(name: String): Boolean {
+            val builtins: List[String] = List("Int", "Float", "Bool", "String", "Char", "Void", "Array", "Map")
+            return builtins.contains(name)
+        }
+        
+        isDefinedType(name: String): Boolean {
+            // Placeholder for user-defined types
+            return false
+        }
+        
+        /**
+         * Helper class for Result type.
+         */
+        class Result<T, E> {
+            isOk: Boolean
+            result: Option<T>
+            errors: List[E]
+            
+            constructor(isOk: Boolean, result: Option<T>, errors: List[E]) {
+                this.isOk = isOk
+                this.result = result
+                this.errors = errors
+            }
+            
+            static ok<T>(value: T): Result<T, List[TypeError]> {
+                return new Result(true, Option.some(value), List[TypeError]())
+            }
+            
+            static err<E>(value: List[E]): Result<Object, List[E]> {
+                return new Result(false, Option.empty(), value)
+            }
+        }
+        
+        /**
+         * Helper class for Optional type.
+         */
+        class Option<T> {
+            isDefined: Boolean
+            value: Option<T>
+            
+            constructor(isDefined: Boolean, value: Option<T>) {
+                this.isDefined = isDefined
+                this.value = value
+            }
+            
+            static empty<T>(): Option<T> {
+                return new Option(false, null)
+            }
+            
+            static some<T>(value: T): Option<T> {
+                return new Option(true, value)
+            }
+        }
+    }
+    
+    /**
+     * Main execution entry point.
+     */
+    function main() {
+        val analyzer = new Analyzer()
+        val source: String = """
+var x: Int
+var name: String
+func greet(): Void
+    print("Hello")
+"""
+        
+        val errors = analyzer.analyze(source)
+        
+        if (errors.isEmpty()) {
+            print("Analysis successful: No type errors found.")
+        } else {
+            for (error in errors) {
+                print("Error at line " + error.line + ", col " + error.col + ": " + error.message)
+            }
+        }
+    }
+    
+    main()
+}

@@ -1,20 +1,9 @@
-# rc_tool
+# RC Tool
 
-This tool provides a robust, pipeline-oriented command processor for sequential data transformation using the `rc` shell language.
-
-The `rc` shell is known for its simplicity, powerful pipeline syntax, and unique features like the null command and implicit redirections. This tool demonstrates these capabilities by implementing a reusable pipeline processing framework.
-
-## Features
-
-- Sequential data transformation pipelines
-- Command substitution and piping
-- Error handling within pipelines
-- Modularity through command grouping
+This tool implements logic and system interactions using the RC programming language, focusing on structured scripting and macro-style operations.
 
 ## Usage
-
-Execute the main script to run the pipeline processor.
-
+Run the main script:
 ```bash
-./main.rc
+rc rc_tool/main.rc
 ```

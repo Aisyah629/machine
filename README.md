@@ -1244,3 +1244,5 @@ Training Machine
 - Created/Updated module: `subtext_tool` (See `subtext_tool/README.md` for details)
 
 - Created/Updated module: `webql_tool` (See `webql_tool/README.md` for details)
+
+- Created/Updated module: `rc_tool` (See `rc_tool/README.md` for details)

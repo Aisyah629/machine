@@ -89,3 +89,5 @@ MIT License
 - Created/Updated module: `datatrieve_tool` (See `datatrieve_tool/README.md` for details)
 
 - Created/Updated module: `coq_formal_verification_tool` (See `coq_formal_verification_tool/README.md` for details)
+
+- Created/Updated module: `maple_symbolic_solver_tool` (See `maple_symbolic_solver_tool/README.md` for details)

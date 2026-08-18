@@ -249,3 +249,5 @@ MIT License
 - Created/Updated module: `lisp_tool` (See `lisp_tool/README.md` for details)
 
 - Created/Updated module: `elisp_framework_tool` (See `elisp_framework_tool/README.md` for details)
+
+- Created/Updated module: `axum_framework_tool` (See `axum_framework_tool/README.md` for details)

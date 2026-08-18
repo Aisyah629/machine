@@ -1,15 +1,30 @@
-# Elm Tool
+# Elm UI Component Generator
 
-A dedicated tool for building functional, side-effect-free applications using the Elm programming language.
+This tool is a robust, type-safe front-end rendering engine built strictly in **Elm**. It transforms JSON data structures into interactive, dynamic web interface components. The project emphasizes immutability, strong static typing, and pure functional programming principles inherent to the Elm ecosystem.
 
 ## Features
-- Strict type safety and immutable data
-- Virtual DOM rendering for efficient UI updates
-- Zero runtime exceptions with exhaustive pattern matching
-- Excellent tooling and developer experience
+- Declarative UI generation from JSON schemas
+- Strongly typed component models and messages
+- Pure functions for data transformation and view rendering
+- Modular architecture for extensible component rendering
+- Zero runtime exceptions due to Elm's type system
 
 ## Usage
-Create a new project using `elm init` and start building your application.
+To run the development server:
+```bash
+elm-reactor
+```
 
-## License
-MIT
+To build for production:
+```bash
+elm make src/Main.elm --output=dist/bundle.js
+```
+
+## Architecture
+The application is structured into core modules:
+- `Model`: Defines the state and types for the application.
+- `Update`: Handles messages and state transitions.
+- `View`: Renders the UI based on the current model.
+- `Generator`: Parses JSON-like data structures and produces component definitions.
+
+All code adheres to Elm Best Practices and strict type safety constraints.

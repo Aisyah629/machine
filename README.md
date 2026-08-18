@@ -1218,3 +1218,5 @@ Training Machine
 - Created/Updated module: `sympl_tool` (See `sympl_tool/README.md` for details)
 
 - Created/Updated module: `plankalkul_tool` (See `plankalkul_tool/README.md` for details)
+
+- Created/Updated module: `rust_system_tool` (See `rust_system_tool/README.md` for details)

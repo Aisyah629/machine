@@ -137,3 +137,5 @@ MIT License
 - Created/Updated module: `gap_computational_algebra_tool` (See `gap_computational_algebra_tool/README.md` for details)
 
 - Created/Updated module: `apl_array_engine_tool` (See `apl_array_engine_tool/README.md` for details)
+
+- Created/Updated module: `simulink_block_diagram_engine_tool` (See `simulink_block_diagram_engine_tool/README.md` for details)

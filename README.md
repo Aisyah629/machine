@@ -119,3 +119,5 @@ MIT License
 - Created/Updated module: `squeak_tool` (See `squeak_tool/README.md` for details)
 
 - Created/Updated module: `tmg_tool` (See `tmg_tool/README.md` for details)
+
+- Created/Updated module: `powerhouse_tool` (See `powerhouse_tool/README.md` for details)

@@ -1,0 +1,60 @@
+# PROMAL Interactive Diagnostic Tool
+
+## Overview
+The PROMAL Interactive Diagnostic Tool (`main.pr`) is an interactive diagnostic tool for the PROMAL programming language. It provides features for syntax checking, code analysis, and diagnostic reporting for PROMAL source files.
+
+## Features
+- Syntax checking for PROMAL programs
+- Diagnostic message generation for syntax and logical errors
+- Interactive code analysis with real-time feedback
+- Comprehensive error reporting with line numbers and descriptions
+
+## Usage
+1. Save your PROMAL source code in a file (e.g., `program.pr`)
+2. Run the diagnostic tool: `promal_diagnostic program.pr`
+3. View the diagnostic output for syntax errors and analysis results
+
+## Example
+```promal
+
+### PROMAL
+PROGRAM DiagnosticTool
+
+IMPORT "stdio";
+
+FUNCTION CheckSyntax(code$ AS STRING)
+    DIM errors AS ARRAY OF STRING
+    DIM i AS INTEGER
+    
+    // Check for missing END statement
+    IF RIGHT$(code$, 3) <> "END" THEN
+        errors[0] = "Missing END statement at end of program"
+    END IF
+    
+    // Check for common syntax errors
+    FOR i = 1 TO LEN(code$) - 4
+        IF MID$(code$, i, 4) = "END " THEN
+            errors[1] = "Improper END statement format"
+        END IF
+    NEXT i
+    
+    IF ARRAYSIZE(errors) = 0 THEN
+        PRINT "Syntax Check: PASSED"
+    ELSE
+        PRINT "Syntax Errors Found:"
+        FOR i = 1 TO ARRAYSIZE(errors)
+            PRINT " - " + errors[i]
+        NEXT i
+    END IF
+END FUNCTION
+
+BEGIN
+    DIM testCode$ AS STRING
+    testCode$ = "\nPRINT \"Hello, World!\"\nEND"
+    
+    PRINT "=== PROMAL Interactive Diagnostic Tool ==="
+    PRINT "Checking PROMAL source code syntax...\n"
+    
+    CheckSyntax(testCode$)
+END PROGRAM
+```

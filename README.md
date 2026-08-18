@@ -1220,3 +1220,5 @@ Training Machine
 - Created/Updated module: `plankalkul_tool` (See `plankalkul_tool/README.md` for details)
 
 - Created/Updated module: `rust_system_tool` (See `rust_system_tool/README.md` for details)
+
+- Created/Updated module: `new_opencl_tool` (See `new_opencl_tool/README.md` for details)

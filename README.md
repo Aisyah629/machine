@@ -1242,3 +1242,5 @@ Training Machine
 - Created/Updated module: `cecil_tool` (See `cecil_tool/README.md` for details)
 
 - Created/Updated module: `subtext_tool` (See `subtext_tool/README.md` for details)
+
+- Created/Updated module: `webql_tool` (See `webql_tool/README.md` for details)

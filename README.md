@@ -263,3 +263,5 @@ MIT License
 - Created/Updated module: `./pike_lowlevel_network_memory_simulator_tool` (See `./pike_lowlevel_network_memory_simulator_tool/README.md` for details)
 
 - Created/Updated module: `data_processing_utility_tool` (See `data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `setl_data_processing_tool` (See `setl_data_processing_tool/README.md` for details)

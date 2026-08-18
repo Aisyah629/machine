@@ -239,3 +239,5 @@ MIT License
 - Created/Updated module: `objectlogo_logic_tool` (See `objectlogo_logic_tool/README.md` for details)
 
 - Created/Updated module: `rust_async_runtime_tool` (See `rust_async_runtime_tool/README.md` for details)
+
+- Created/Updated module: `coral66_protocol_validator_tool` (See `coral66_protocol_validator_tool/README.md` for details)

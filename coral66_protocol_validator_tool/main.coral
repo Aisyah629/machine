@@ -1,0 +1,144 @@
+MODULE PROTOCOL_VALIDATOR;
+IMPORT StdIO, ArrayOps, DataStreams;
+
+TYPE
+  DataStream = RECORD
+    ID: INTEGER;
+    Timestamp: REAL;
+    Payload: ARRAY [1..1000] OF BYTE;
+    Length: INTEGER;
+  END;
+
+  ProtocolRule = RECORD
+    RuleID: INTEGER;
+    ValidationMask: ARRAY [1..100] OF BOOLEAN;
+    ExpectedChecksum: INTEGER;
+  END;
+
+  ValidationResult = RECORD
+    StreamID: INTEGER;
+    Status: INTEGER;  {-1: Invalid, 0: Pending, 1: Valid, 2: Ignored -}
+    Errors: ARRAY [1..50] OF INTEGER;
+    ErrorCount: INTEGER;
+  END;
+
+VAR
+  InputStream: DataStream;
+  RuleSet: ARRAY [1..100] OF ProtocolRule;
+  OutputReport: ARRAY [1..1000] OF ValidationResult;
+  ReportCount: INTEGER;
+
+PROCEDURE InitializeDataStreams;
+BEGIN
+  StdIO.Printf("Initializing Historical Data Stream Processor...\n");
+  ReportCount <- 0;
+  InputStream.Length <- 0;
+  FOR i <- 1 TO 1000 DO
+    InputStream.Payload[i] <- 0;
+  END;
+END InitializeDataStreams;
+
+PROCEDURE ValidateStreamData(stream: DataStream, rule: ProtocolRule) RETURNS ValidationResult;
+VAR
+  i: INTEGER;
+  Checksum: INTEGER;
+  TempResult: ValidationResult;
+BEGIN
+  TempResult.StreamID <- stream.ID;
+  TempResult.Status <- 1;
+  TempResult.ErrorCount <- 0;
+  Checksum <- 0;
+
+  {- Validate Length -}
+  IF stream.Length < 1 OR stream.Length > 1000 THEN
+    TempResult.Status <- -1;
+    TempResult.Errors[1] <- 101;
+    TempResult.ErrorCount <- 1;
+    RETURN TempResult;
+  END;
+
+  {- Calculate Payload Checksum -}
+  FOR i <- 1 TO stream.Length DO
+    Checksum <- Checksum + stream.Payload[i];
+  END;
+
+  {- Apply Validation Mask -}
+  FOR i <- 1 TO MIN(100, stream.Length) DO
+    IF rule.ValidationMask[i] THEN
+      IF stream.Payload[i] & rule.ValidationMask[i] NE 0 THEN
+        TempResult.Errors[TempResult.ErrorCount + 1] <- 200 + i;
+        TempResult.ErrorCount <- TempResult.ErrorCount + 1;
+        TempResult.Status <- -1;
+      END;
+    END;
+  END;
+
+  {- Checksum Verification -}
+  IF Checksum NE rule.ExpectedChecksum THEN
+    TempResult.Errors[TempResult.ErrorCount + 1] <- 300;
+    TempResult.ErrorCount <- TempResult.ErrorCount + 1;
+    TempResult.Status <- -1;
+  END;
+
+  RETURN TempResult;
+END ValidateStreamData;
+
+PROCEDURE ProcessBatch(rules: ARRAY [1..100] OF ProtocolRule); RETURNS INTEGER;
+VAR
+  i: INTEGER;
+  CurrentStream: DataStream;
+  Result: ValidationResult;
+  ValidCount: INTEGER;
+BEGIN
+  ValidCount <- 0;
+  StdIO.Printf("Processing batch with %d rules...\n", rules[1].RuleID + 99);
+
+  FOR i <- 1 TO 50 DO {- Simulate processing 50 streams -}
+    CurrentStream.ID <- i;
+    CurrentStream.Timestamp <- REAL(i) * 0.1;
+    CurrentStream.Length <- MIN(100, i * 10);
+    FOR j <- 1 TO CurrentStream.Length DO
+      CurrentStream.Payload[j] <- (i + j) MOD 256;
+    END;
+
+    Result <- ValidateStreamData(CurrentStream, rules[1]); {- Apply first rule for demo -}
+    OutputReport[i] <- Result;
+    ReportCount <- ReportCount + 1;
+
+    IF Result.Status EQ 1 THEN
+      ValidCount <- ValidCount + 1;
+    END;
+  END;
+
+  RETURN ValidCount;
+END ProcessBatch;
+
+PROCEDURE Main;
+VAR
+  ValidStreams: INTEGER;
+  i: INTEGER;
+BEGIN
+  InitializeDataStreams;
+
+  {- Initialize dummy rule for demonstration -}
+  RuleSet[1].RuleID <- 1;
+  RuleSet[1].ExpectedChecksum <- 0;
+  FOR i <- 1 TO 100 DO
+    RuleSet[1].ValidationMask[i] <- TRUE;
+  END;
+
+  ValidStreams <- ProcessBatch(RuleSet);
+  StdIO.Printf("Validation Complete. Valid streams: %d out of 50 processed.\n", ValidStreams);
+
+  FOR i <- 1 TO ReportCount DO
+    IF OutputReport[i].Status NE 1 THEN
+      StdIO.Printf("Stream %d: FAILED with %d errors.\n", OutputReport[i].StreamID, OutputReport[i].ErrorCount);
+    END;
+  END;
+
+  StdIO.Printf("Protocol Validator Engine Terminated.\n");
+END Main;
+
+BEGIN
+  Main;
+END PROTOCOL_VALIDATOR.

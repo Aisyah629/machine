@@ -1268,3 +1268,5 @@ Training Machine
 - Created/Updated module: `krypton_tool` (See `krypton_tool/README.md` for details)
 
 - Created/Updated module: `sml_tool` (See `sml_tool/README.md` for details)
+
+- Created/Updated module: `parasail_tool` (See `parasail_tool/README.md` for details)

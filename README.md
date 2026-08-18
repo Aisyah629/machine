@@ -107,3 +107,5 @@ MIT License
 - Created/Updated module: `dibol_mainframe_data_processing_tool` (See `dibol_mainframe_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `mortran_tool` (See `mortran_tool/README.md` for details)
+
+- Created/Updated module: `stackless_python_tool` (See `stackless_python_tool/README.md` for details)

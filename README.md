@@ -55,3 +55,5 @@ MIT License
 - Created/Updated module: `ratfiv_computation_tool` (See `ratfiv_computation_tool/README.md` for details)
 
 - Created/Updated module: `simple_logic_parser_tool` (See `simple_logic_parser_tool/README.md` for details)
+
+- Created/Updated module: `lsl_scripting_tool` (See `lsl_scripting_tool/README.md` for details)

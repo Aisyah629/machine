@@ -1,12 +1,17 @@
-# RobotC Tool
+# RobotC Development Tool
 
-A specialized development and execution environment for RobotC, a programming language designed for LEGO Mindstorms and other educational robotics platforms.
+## Overview
+This tool provides a framework for developing deterministic control logic systems for collaborative multi-agent robotic swarms using the RobotC programming language.
 
 ## Features
-- Code syntax highlighting and linting for RobotC
-- Simulation engine for robotic behavior testing
-- Motor and sensor mapping utilities
-- Build automation for NXT, EV3, and VEX IQ platforms
+- Multi-agent communication protocols
+- Collision avoidance algorithms
+- Path planning and execution
+- Sensor data integration
+- Swarm coordination logic
 
 ## Usage
-Place your `.c` source files in this directory and use the provided build scripts to compile and deploy to connected robots.
+Place your RobotC source files in this directory and compile using the RobotC compiler.
+
+## License
+MIT License

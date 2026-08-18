@@ -54575,3 +54575,43 @@ Initialize a NEW dedicated folder named lisp_advanced_tool in the workspace, cre
 </think>
 
 Initialize a NEW dedicated folder named e_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: E. Focus entirely on this new objective: 'Develop a secure object-capability environment for distributed concurrent programming'. You MUST write the implementation strictly using this exact programming language: E.
+[2026-08-18 09:54:58] (Target Lang: RobotC) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using the exact programming language: RobotC.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a large list of workspace files and history, but the core instruction is self-contained in the final paragraph. The history shows a pattern of generating instructions for specific tools/languages.
+    *   Language to use: RobotC.
+
+2.  **Drafting the Instruction:**
+    *   Start with the required structure based on the prompt's examples and constraints.
+    *   "Initialize a NEW dedicated folder named robotc_tool in the workspace..." (Or `robotc_tool` or `robotc_system_tool` - the prompt usually implies a `_tool` suffix based on history, e.g., `swift_tool`, `zig_tool`. Let's use `robotc_tool`.)
+    *   "...create a local README.md inside it..."
+    *   "...and build the entire new tool STRICTLY using this exact programming language: RobotC."
+    *   Focus/Objective: Need a relevant objective for RobotC (robotics programming language). Example: 'Develop a precision navigation controller for autonomous quadruped robots'. Or 'Create a robust sensor fusion algorithm for LEGO Mindstorms NXT'. Let's go with something generic but strong: 'Develop a robust sensor fusion algorithm for autonomous mobile robots'.
+    *   Reiterate language constraint: "You MUST write the implementation strictly using this exact programming language: RobotC."
+
+    *Draft 1:* Initialize a NEW dedicated folder named robotc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RobotC. Focus entirely on this new objective: 'Create a robust sensor fusion algorithm for autonomous mobile robots'. You MUST write the implementation strictly using this exact programming language: RobotC.
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes.
+    *   *Explicitly demand built STRICTLY using RobotC?* Yes ("STRICTLY using this exact programming language: RobotC" and "strictly using this exact programming language: RobotC").
+    *   *New dedicated folder and README.md?* Yes ("NEW dedicated folder named robotc_tool", "create a local README.md").
+    *   *Return ONLY the instruction text?* Yes.
+    *   *NEVER target .github?* Yes, no mention of .github.
+    *   *Format matches previous examples?* Yes, matches the pattern: `Initialize a NEW dedicated folder named {folder_name} in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: {Lang}. Focus entirely on this new objective: '...'. You MUST write the implementation strictly using this exact programming language: {Lang}.`
+
+4.  **Final Polish:**
+    *   Folder name: `robotc_tool` fits the naming convention in the history list (e.g., `swift_tool`, `zig_tool`).
+    *   Language: RobotC.
+    *   Objective: 'Develop a deterministic control logic system for collaborative multi-agent robotic swarms'. (Sounds professional and specific to RobotC's strengths).
+
+    *Final String:* Initialize a NEW dedicated folder named robotc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RobotC. Focus entirely on this new objective: 'Develop a deterministic control logic system for collaborative multi-agent robotic swarms'. You MUST write the implementation strictly using this exact programming language: RobotC.
+
+5.  **Output Generation:** Output only the string.
+    *   Result: `Initialize a NEW dedicated folder named robotc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RobotC. Focus entirely on this new objective: 'Develop a deterministic control logic system for collaborative multi-agent robotic swarms'. You MUST write the implementation strictly using this exact programming language: RobotC.`
+</think>
+
+Initialize a NEW dedicated folder named robotc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RobotC. Focus entirely on this new objective: 'Develop a deterministic control logic system for collaborative multi-agent robotic swarms'. You MUST write the implementation strictly using this exact programming language: RobotC.

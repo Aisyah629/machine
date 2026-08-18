@@ -67,3 +67,5 @@ MIT License
 - Created/Updated module: `rlab_analysis_tool` (See `rlab_analysis_tool/README.md` for details)
 
 - Created/Updated module: `lisp_advanced_tool` (See `lisp_advanced_tool/README.md` for details)
+
+- Created/Updated module: `e_tool` (See `e_tool/README.md` for details)

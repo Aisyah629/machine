@@ -58491,3 +58491,47 @@ Output matches request.✅
 </think>
 
 Initialize a NEW dedicated folder named simscript_advanced_simulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SIMSCRIPT. Focus entirely on this new objective: 'Optimize discrete-event system modeling and automated business process simulation'. You MUST write the implementation strictly using this exact programming language: SIMSCRIPT.
+[2026-08-18 16:50:01] (Target Lang: Argus) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: The new tool must be built STRICTLY using the exact programming language: Argus.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a large list of files/directories and a history. The history shows a previous instruction about creating `simscript_advanced_simulation_tool`. The current task is to generate a *follow-up* instruction based on that context or just a new instruction following the constraints. The prompt asks for a "logical follow-up instruction". Usually, this means something related to the previous task or a continuation in a series. The previous task was about `simscript_advanced_simulation_tool`. A logical follow-up might be to add a feature, create a related tool, or use a different language for a similar purpose.
+    *   Specific Language Requirement: Argus.
+    *   Folder Requirement: NEW dedicated folder.
+    *   File Requirement: Local README.md.
+    *   Output Format: ONLY the instruction text.
+
+2.  **Draft the instruction:**
+    *   *Draft 1:* Create a new folder named `argus_concurrent_systems_tool` and a README.md inside it. Build the tool using Argus. The objective is to implement concurrent object communication patterns.
+    *   *Refinement against constraints:*
+        *   "Create a new folder named `argus_concurrent_systems_tool`" -> NEW dedicated folder. Good.
+        *   "create a local README.md inside it" -> Good.
+        *   "Build the tool using Argus" -> Must be stricter. "STRICTLY using this exact programming language: Argus".
+        *   "Return ONLY the instruction text" -> The output should be the text of the instruction itself.
+        *   "NEVER target .github" -> The instruction shouldn't mention .github. Good.
+        *   "Exactly 1 logical follow-up" -> The draft is one instruction.
+        *   *Refinement on "Logical Follow-up":* Since the previous tool was `simscript_advanced_simulation_tool`, a logical follow-up could be a tool that integrates with it or complements it. Argus is known for concurrent programming and distributed systems. A logical follow-up could be a tool that handles the distribution or concurrency aspects of simulation, or just a standalone tool in a related domain. Let's choose a domain like "Distributed Consensus Validation" or "Concurrent Process Management".
+        *   *Draft 2:* Initialize a NEW dedicated folder named argus_concurrent_consensus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: 'Implement distributed consensus validation and concurrent object communication mechanisms'. You MUST write the implementation strictly using this exact programming language: Argus.
+
+3.  **Final Polish (Mental Representation of Output):**
+    *   Result: `Initialize a NEW dedicated folder named argus_concurrent_consensus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: 'Implement distributed consensus validation and concurrent object communication mechanisms'. You MUST write the implementation strictly using this exact programming language: Argus.`
+    *   Check constraints:
+        *   Argus? Yes.
+        *   NEW folder? Yes (`argus_concurrent_consensus_tool`).
+        *   README.md? Yes.
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+        *   Logical follow-up? Yes, Argus is a logical language for concurrency, following Simscript which is simulation. Concurrency is a relevant adjacent topic.
+        *   Exactly 1? Yes.
+
+4.  **Final Output Construction:**
+    *   `Initialize a NEW dedicated folder named argus_concurrent_consensus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: 'Implement distributed consensus validation and concurrent object communication mechanisms'. You MUST write the implementation strictly using this exact programming language: Argus.`
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named argus_concurrent_consensus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Argus. Focus entirely on this new objective: 'Implement distributed consensus validation and concurrent object communication mechanisms'. You MUST write the implementation strictly using this exact programming language: Argus.

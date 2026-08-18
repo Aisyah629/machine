@@ -1224,3 +1224,5 @@ Training Machine
 - Created/Updated module: `new_opencl_tool` (See `new_opencl_tool/README.md` for details)
 
 - Created/Updated module: `elm_frontend_tool` (See `elm_frontend_tool/README.md` for details)
+
+- Created/Updated module: `foxpro_development_tool` (See `foxpro_development_tool/README.md` for details)

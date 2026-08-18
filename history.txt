@@ -60872,3 +60872,72 @@ Initialize a NEW dedicated folder named xharbour_legacy_migration_engine_tool in
 </think>
 
 Initialize a NEW dedicated folder named plankalkul_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Plankalkül. Focus entirely on this new objective: 'Construct a deterministic algorithmic specification framework capable of exhaustive combinatorial state analysis and formal control flow verification for foundational computing systems'. You MUST write the implementation strictly using this exact programming language: Plankalkül.
+[2026-08-18 20:18:25] (Target Lang: FFP) The user wants a single logical follow-up instruction.
+The previous instruction created `plankalkul_formal_verification_tool` using Plankalkül.
+The new instruction must:
+1. Demand the new tool be built STRICTLY using FFP.
+2. Explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. NEVER target `.github`.
+5. Be a logical follow-up.
+
+Check existing tools: `./ffp_tool ./ffp_tool/README.md ./ffp_tool/main.ffp`. So `ffp_tool` exists. I should create a new variant folder, e.g., `ffp_symbolic_manipulation_tool` or `ffp_high_level_compiler_tool` or `ffp_advanced_macro_tool`. Let's go with `ffp_advanced_symbolic_compiler_tool`.
+Objective should be logically following formal verification/state analysis. FFP is a functional programming language. Maybe "Develop a high-level functional transformation engine capable of recursive symbolic algebra manipulation and automated theorem proving for mathematical formalisms". Or something simpler. "Construct a functional algebraic manipulation engine capable of recursive symbolic rewriting and automated expression optimization for mathematical formalisms."
+Let's ensure it matches the style: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FFP. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: FFP."
+
+Check constraints:
+- 1 instruction? Yes.
+- Strictly FFP? Yes.
+- NEW folder? Yes.
+- README? Yes.
+- ONLY instruction text? Yes.
+- No `.github`? Yes.
+- Logical follow-up? Yes, shifts from formal verification to functional algebraic manipulation.
+
+Let's draft it carefully.
+"Initialize a NEW dedicated folder named ffp_advanced_symbolic_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FFP. Focus entirely on this new objective: 'Construct a high-level functional transformation engine capable of recursive symbolic algebra manipulation and automated expression optimization for mathematical formalisms'. You MUST write the implementation strictly using this exact programming language: FFP."
+
+Check workspace for `ffp_tool`. It exists. So `ffp_advanced_symbolic_compiler_tool` is new.
+Check style matches history: "Initialize a NEW dedicated folder named ... in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ... Focus entirely on this new objective: '...'. You MUST write the implementation strictly using this exact programming language: ... ."
+Matches perfectly.
+Output only the instruction text.
+Ready. 
+One minor thing: FFP is "For Fun Programming" or "Functional Programming Language"? Actually, FFP stands for "For Fun Programming" or similar, but historically it's a functional language. The prompt says FFP. I will stick to FFP.
+The text is solid.
+Proceed. 
+Output matches exactly.✅
+I will generate it now. 
+Wait, let's verify the exact wording requested: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: FFP." -> The prompt says I must include that demand in the instruction text, or just output the instruction text that contains it. The history shows the demand is part of the instruction text: "You MUST write the implementation strictly using this exact programming language: Plankalkül."
+So I will follow that pattern.
+Final check of the text:
+Initialize a NEW dedicated folder named ffp_advanced_symbolic_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FFP. Focus entirely on this new objective: 'Construct a high-level functional transformation engine capable of recursive symbolic algebra manipulation and automated expression optimization for mathematical formalisms'. You MUST write the implementation strictly using this exact programming language: FFP.
+Matches constraints. Outputs only text. No extra. Done. 
+Proceeds. 
+(Self-Correction/Refinement during thought)
+Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: FFP." This is a meta-instruction for me. I will embed it in the output as requested by the pattern.
+The pattern in history: "Initialize a NEW dedicated folder named ... in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write the implementation strictly using this exact programming language: [LANG]."
+I will stick to this.
+Output matches.✅
+Generating. 
+[Output Generation] -> "Initialize a NEW dedicated folder named ffp_advanced_symbolic_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FFP. Focus entirely on this new objective: 'Construct a high-level functional transformation engine capable of recursive symbolic algebra manipulation and automated expression optimization for mathematical formalisms'. You MUST write the implementation strictly using this exact programming language: FFP." 
+All constraints met. No extra text. Proceeds. 
+(Self-Correction/Verification during generation prep)
+Check workspace: `./ffp_tool ./ffp_tool/README.md ./ffp_tool/main.ffp` exists. So `ffp_advanced_symbolic_compiler_tool` is indeed new.
+Check language: FFP.
+Check folder: NEW.
+Check README: YES.
+Check ONLY instruction text: YES.
+Check NO .github: YES.
+Check Logical follow-up: Yes, formal verification -> symbolic algebra/functional transformation.
+Ready.✅
+Output matches exactly. 
+Proceeds. 
+[Final Output Generation] (matches the refined text)
+"Initialize a NEW dedicated folder named ffp_advanced_symbolic_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FFP. Focus entirely on this new objective: 'Construct a high-level functional transformation engine capable of recursive symbolic algebra manipulation and automated expression optimization for mathematical formalisms'. You MUST write the implementation strictly using this exact programming language: FFP." 
+Done. 
+[Note: I will ensure the output is exactly this string and nothing else.] 
+Proceeds. 
+[Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named ffp_advanced_symbolic_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FFP. Focus entirely on this new objective: 'Construct a high-level functional transformation engine capable of recursive symbolic algebra manipulation and automated expression optimization for mathematical formalisms'. You MUST write the implementation strictly using this exact programming language: FFP.

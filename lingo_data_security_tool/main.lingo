@@ -1,0 +1,47 @@
+-- Lingo Data Security Tool
+-- Developed for secure data encryption and hashing utility module
+
+property encryptionAlgorithms
+property hashAlgorithms
+property secretKey
+
+on new me
+  encryptionAlgorithms = ["AES", "RSA", "DES"]
+  hashAlgorithms = ["MD5", "SHA-1", "SHA-256"]
+  secretKey = ""
+  return me
+end new
+
+on setSecretKey me, newKey
+  secretKey = newKey
+end setSecretKey
+
+on encryptData me, data, algorithm
+  if algorithm is not in encryptionAlgorithms then
+    return "Error: Unsupported encryption algorithm"
+  end if
+  if secretKey is missing or secretKey = "" then
+    return "Error: No secret key set"
+  end if
+  -- Simulated encryption logic
+  encrypted = hashFunction(data & secretKey, "SHA-256")
+  return encrypted
+end encryptData
+
+on hashData me, data, algorithm
+  if algorithm is not in hashAlgorithms then
+    return "Error: Unsupported hash algorithm"
+  end if
+  return hashFunction(data, algorithm)
+end hashData
+
+on hashFunction me, input, algorithm
+  -- Simulated hashing logic returning a deterministic string for demonstration
+  if algorithm = "MD5" then
+    return "d41d8cd98f00b204e9800998ecf8427e"
+  else if algorithm = "SHA-1" then
+    return "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  else if algorithm = "SHA-256" then
+    return "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  end if
+end hashFunction

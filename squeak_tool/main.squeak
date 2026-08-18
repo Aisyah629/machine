@@ -1,0 +1,37 @@
+Object subclass: #ScriptingEngine
+    instanceVariableNames: 'moduleRegistry eventLoop uiFramework'
+    classVariableNames: ''
+    package: 'SqueakTool-Core'
+
+ScriptingEngine methodsFor: 'initialization' stamp: 'AI-Generated'
+    initialize
+        super initialize.
+        moduleRegistry := IdentityDictionary new.
+        eventLoop := EventLoop new.
+        uiFramework := MorphicUIFramework default
+    
+    loadModule: moduleName from: filePath
+        | stream classObj |  
+        (stream := (FileStream readOnlyFileNamed: filePath) ifNil: [^ self signalLoadError: 'File not found'])
+            ensure: [stream close].
+        classObj := (Smalltalk at: moduleName ifAbsent: [nil]).
+        classObj ifNil: [^ self signalLoadError: 'Class not found'].
+        moduleRegistry at: moduleName put: classObj.  
+        ^ self signalModuleLoaded: moduleName
+
+    signalLoadError: msg
+        Transcript show: 'Error: ', msg; cr.
+        ^ Error signal: msg
+
+    signalModuleLoaded: moduleName
+        Transcript show: 'Successfully loaded module: ', moduleName; cr.
+        ^ true
+
+    startEventLoop
+        eventLoop run.
+        ^ true
+
+    createUIComponent: componentName args: args
+        | component | 
+        component := (uiFramework createComponent: componentName withArgs: args).
+        ^ component

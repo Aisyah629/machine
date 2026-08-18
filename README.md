@@ -47,3 +47,5 @@ MIT License
 - Created/Updated module: `./lingo_data_security_tool` (See `./lingo_data_security_tool/README.md` for details)
 
 - Created/Updated module: `aimms_advanced_optimizer_tool` (See `aimms_advanced_optimizer_tool/README.md` for details)
+
+- Created/Updated module: `xojo_visualization_engine_tool` (See `xojo_visualization_engine_tool/README.md` for details)

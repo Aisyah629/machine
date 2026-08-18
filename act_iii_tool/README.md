@@ -1,15 +1,30 @@
-# ACT-III Tool
+# ACT-III Formal Logic Reasoning and Theorem Proving Engine
 
 ## Overview
-The `act_iii_tool` is a dedicated utility for managing, validating, and executing code written in ACT-III. ACT-III is a logic programming language and knowledge representation system developed in the 1980s. This tool is designed to assist with parsing, linting, and interpreting ACT-III logic expressions and program structures.
-
-## Usage
-To use this tool, provide ACT-III code snippets or program files as input. The tool will analyze the logic flow, check for syntactic correctness, and output the interpreted results or error messages.
+This tool is a specialized implementation of the ACT-III language, designed to function as a formal logic reasoning and theorem proving engine. It leverages the symbolic manipulation capabilities of ACT-III to perform automated deduction, logical inference, and constraint satisfaction.
 
 ## Features
-- **Syntax Validation**: Ensures the ACT-III code adheres to the language's specific rules.
-- **Logic Analysis**: Parses logical expressions and structures for further processing.
-- **Interpretation**: Executes the provided ACT-III code within a controlled environment.
+- **Symbolic Manipulation**: Advanced processing of symbolic expressions.
+- **Automated Deduction**: Logical inference rules for proving theorems.
+- **Constraint Satisfaction**: Solving logical constraints and finding valid models.
+- **Interactive Interface**: Real-time input for logical expressions.
 
-## Building
-Since this tool is strictly built using ACT-III, it leverages the language's declarative nature to handle logical computations efficiently.
+## Installation
+1. Ensure ACT-III compiler/interpreter is available in the system path.
+2. Place `main.act` in the `act_iii_tool` directory.
+3. Compile and run:
+   ```bash
+   act3c main.act -o theorem_prover
+   ./theorem_prover
+   ```
+
+## Usage
+- Input logical expressions in ACT-III syntax.
+- Use built-in predicates for common logical operations (AND, OR, NOT, IMPLIES, EQUIV).
+- Execute the engine to derive conclusions or prove statements.
+
+## Author
+Autonomous AI Polyglot Software Engineer
+
+## License
+MIT

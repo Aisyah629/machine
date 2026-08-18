@@ -257,3 +257,5 @@ MIT License
 - Created/Updated module: `gotran_state_machine_validator_tool` (See `gotran_state_machine_validator_tool/README.md` for details)
 
 - Created/Updated module: `fortress_formal_verification_tool` (See `fortress_formal_verification_tool/README.md` for details)
+
+- Created/Updated module: `bigwig_tool` (See `bigwig_tool/README.md` for details)

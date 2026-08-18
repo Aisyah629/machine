@@ -209,3 +209,5 @@ MIT License
 - Created/Updated module: `machine_code_tool` (See `machine_code_tool/README.md` for details)
 
 - Created/Updated module: `cfml_web_engine_tool` (See `cfml_web_engine_tool/README.md` for details)
+
+- Created/Updated module: `verilog_hdl_simulator_tool` (See `verilog_hdl_simulator_tool/README.md` for details)

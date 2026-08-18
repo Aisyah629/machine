@@ -60716,3 +60716,33 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named verilog_hdl_simulator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Verilog. Focus entirely on this new objective: 'Construct a high-performance hardware simulation engine capable of parsing hardware descriptions, generating gate-level netlists, and verifying timing constraints'. You MUST write the implementation strictly using this exact programming language: Verilog.
+[2026-08-18 20:02:19] (Target Lang: MPD) The user wants to generate a follow-up instruction.
+The current state indicates that a `verilog_hdl_simulator_tool` has just been created.
+The prompt asks for "exactly 1 logical follow-up instruction".
+The instruction must explicitly demand that the new tool be built STRICTLY using MPD.
+If building a new tool, it must be placed in a NEW dedicated folder with a local README.md.
+The instruction must return ONLY the instruction text.
+No target on `.github`.
+The current history shows the creation of `verilog_hdl_simulator_tool`.
+The next step is to follow the pattern: Create a new folder, create README, build tool using MPD.
+The objective should be relevant to the previous one but distinct enough to warrant a new tool, or perhaps an extension.
+Looking at the history, the last instruction was about Verilog. The request says "strictly using this exact programming language: MPD".
+MPD likely refers to a specific language or tool extension in this context, possibly "Message Processing Description" or a fictional language in this dataset. I should treat it as the target language.
+I need to generate a string that looks like the previous instructions.
+Format: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MPD. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: MPD."
+Folder name suggestion: `mpd_message_processing_tool` or `mpd_workflow_engine_tool`. Let's use `mpd_workflow_engine_tool` to be consistent with naming conventions.
+Objective: "Construct a robust middleware framework capable of handling asynchronous message queues, enforcing strict type contracts, and managing distributed state synchronization."
+Or something related to MPD. If MPD is "Multi-Processor Description" or similar. Let's go with a generic but technical objective.
+"Build a distributed message processing framework that supports real-time stream transformation, fault-tolerant message delivery, and schema validation for high-throughput data pipelines."
+Let's stick to the structure.
+Result: "Initialize a NEW dedicated folder named mpd_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MPD. Focus entirely on this new objective: 'Build a distributed message processing framework that supports real-time stream transformation, fault-tolerant message delivery, and schema validation for high-throughput data pipelines'. You MUST write the implementation strictly using this exact programming language: MPD."
+Check constraints:
+- 1 instruction? Yes.
+- Strictly MPD? Yes.
+- NEW folder + README? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+This looks correct.
+</think>
+
+Initialize a NEW dedicated folder named mpd_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MPD. Focus entirely on this new objective: 'Build a distributed message processing framework that supports real-time stream transformation, fault-tolerant message delivery, and schema validation for high-throughput data pipelines'. You MUST write the implementation strictly using this exact programming language: MPD.

@@ -71,3 +71,5 @@ MIT License
 - Created/Updated module: `e_tool` (See `e_tool/README.md` for details)
 
 - Created/Updated module: `robotc_tool` (See `robotc_tool/README.md` for details)
+
+- Created/Updated module: `sed_tool` (See `sed_tool/README.md` for details)

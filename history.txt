@@ -56603,3 +56603,53 @@ Initialize a NEW dedicated folder named tmg_tool in the workspace, create a loca
 </think>
 
 Initialize a NEW dedicated folder named powerhouse_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Powerhouse. Focus entirely on this new objective: 'Develop a high-throughput concurrent processing engine for real-time data pipelines'. You MUST write the implementation strictly using this exact programming language: Powerhouse.
+[2026-08-18 13:18:40] (Target Lang: Vala) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a long list of existing tool directories/files in a workspace. This is just context/background.
+   - **Instruction:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Vala. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 logical follow-up instruction.
+     - Must explicitly demand the new tool be built STRICTLY using the exact programming language: Vala.
+     - If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Follow the pattern/style of the prompt's example (though the example was in the history, I need to generate a fresh one matching the constraints).
+
+2.  **Identify Key Requirements for Output:**
+   - Start with creating a new folder (e.g., `vala_tool` or `vala_compiler_engine_tool`).
+   - Include instruction to create `README.md` inside it.
+   - Explicitly demand strict use of the language: `Vala`.
+   - Define a logical objective for the tool (e.g., "Develop a robust GUI application framework for desktop automation").
+   - Reiterate the strict language constraint.
+   - Output ONLY the instruction text. No extra words, no markdown formatting unless necessary, but the prompt says "Return ONLY the instruction text." I'll keep it plain.
+
+3.  **Draft Construction:**
+   Initialize a NEW dedicated folder named vala_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Vala. Focus entirely on this new objective: 'Develop a cross-platform desktop automation framework with robust event handling and native GUI integration'. You MUST write the implementation strictly using this exact programming language: Vala.
+
+4.  **Check Against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes, it's a single coherent directive.
+   - Explicitly demand new tool built STRICTLY using Vala? Yes: "STRICTLY using this exact programming language: Vala." and "You MUST write the implementation strictly using this exact programming language: Vala."
+   - Place in NEW dedicated folder and create local README.md? Yes: "Initialize a NEW dedicated folder named vala_tool in the workspace, create a local README.md inside it..."
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned or targeted.
+   - Matches pattern/style? Yes.
+
+   The draft looks solid. I will output exactly this string. No extra text. I'll make sure it's a single paragraph/sentence as requested.
+
+   One minor adjustment to match the exact phrasing style from the prompt's history example if needed, but the prompt says "Generate exactly 1 logical follow-up instruction." I'll keep it direct.
+
+   Draft: Initialize a NEW dedicated folder named vala_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Vala. Focus entirely on this new objective: 'Develop a cross-platform desktop automation framework with robust event handling and native GUI integration'. You MUST write the implementation strictly using this exact programming language: Vala.
+
+   Checks out perfectly. Proceeds.✅
+   Output matches exactly. No extra fluff. Follows all constraints.✅
+   I will output just the instruction text.✅
+   [Done] -> Output Generation.✅
+   *(Self-Correction/Verification during thought)*: The prompt says "Return ONLY the instruction text." I will ensure absolutely no conversational filler. The draft is exactly that. All constraints met. Proceeds.✅
+   Output matches.✅
+   [Final Output Generation] -> `Initialize a NEW dedicated folder named vala_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Vala. Focus entirely on this new objective: 'Develop a cross-platform desktop automation framework with robust event handling and native GUI integration'. You MUST write the implementation strictly using this exact programming language: Vala.` -> This matches perfectly. Proceeds.✅ [Done] -> Output matches.✅
+   I will output exactly this.✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named vala_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Vala. Focus entirely on this new objective: 'Develop a cross-platform desktop automation framework with robust event handling and native GUI integration'. You MUST write the implementation strictly using this exact programming language: Vala.

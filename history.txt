@@ -53152,3 +53152,17 @@ Final Output Generation.
 </think>
 
 Initialize a NEW dedicated folder named bpel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL.
+[2026-08-18 07:02:09] (Target Lang: Starlogo) The user wants a logical follow-up instruction based on the previous interaction.
+The previous interaction involved generating an instruction to create a `bpel_tool` using BPEL.
+The new instruction must demand building a new tool STRICTLY using `Starlogo`.
+It must explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+It must return ONLY the instruction text.
+It must NEVER target the `.github` directory.
+I need to format the output exactly like the example provided: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Starlogo."
+The tool name should be `starlogo_tool`.
+The instruction is: `Initialize a NEW dedicated folder named starlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Starlogo.`
+Check constraints: NEW dedicated folder? Yes. Local README.md? Yes. Return ONLY instruction text? Yes. Never target .github? Yes. Language: Starlogo. Yes.
+Everything looks correct.
+</think>
+
+Initialize a NEW dedicated folder named starlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Starlogo.

@@ -1,0 +1,104 @@
+-- SETL Data Processing Tool
+-- main.setl
+-- Purpose: General utility for data manipulation and processing in SETL
+
+-- Initialize global variables
+data_store := {}; -- To hold the processed data
+report_log := []; -- To log processing steps
+
+-- Function: log_message
+-- Purpose: Helper to log events to the report_log
+model log_message := procedure(msg)
+    append(report_log, msg);
+end;
+
+-- Function: load_data
+-- Purpose: Simulate loading data from a source (file or structure)
+-- In a real scenario, this would read from stdin or a file
+model load_data := procedure(input_source)
+    log_message("Loading data from: " || input_source);
+    
+    -- Simulated data ingestion
+    -- In a full implementation, one might use get_line or file reading
+    local_sample_data := {
+        {id: 1, value: 10, category: "A"},
+        {id: 2, value: 15, category: "B"},
+        {id: 3, value: 10, category: "A"},
+        {id: 4, value: 25, category: "C"},
+        {id: 5, value: 30, category: "B"}
+    };
+    
+    data_store := local_sample_data;
+    log_message("Loaded " || card(data_store) || " records.");
+end;
+
+-- Function: filter_data
+-- Purpose: Filter records based on a condition
+model filter_data := procedure(condition_func)
+    log_message("Filtering data with condition: condition_func");
+    data_store := {x in data_store | condition_func(x)};
+    log_message("Filtered records remaining: " || card(data_store));
+end;
+
+-- Function: transform_data
+-- Purpose: Apply a transformation function to each record
+model transform_data := procedure(transform_func)
+    log_message("Transforming data...");
+    data_store := [transform_func(x) | x in data_store];
+end;
+
+-- Function: aggregate_data
+-- Purpose: Perform statistical aggregation
+model aggregate_data := procedure(field)
+    log_message("Aggregating field: " || field);
+    local sum := 0;
+    local count := 0;
+    for rec in data_store do
+        sum := sum + rec(field);
+        count := count + 1;
+    end;
+    if count > 0 then
+        log_message("Average of " || field || ": " || (sum / count));
+        return sum / count;
+    else
+        log_message("No data to aggregate.");
+        return 0;
+    end;
+end;
+
+-- Function: display_results
+-- Purpose: Output the current state of data_store
+model display_results := procedure
+    log_message("Current Data State:");
+    for rec in data_store do
+        log_message("  " || rec);
+    end;
+end;
+
+-- Main Execution Flow
+model main := procedure
+    log_message("SETL Data Processing Tool Started");
+    
+    -- 1. Load Data
+    load_data("input_source");
+    
+    -- 2. Filter Data (e.g., keep only category "A" and "B")
+    filter_data(x -> x.category = "A" or x.category = "B");
+    
+    -- 3. Transform Data (e.g., double the value)
+    transform_data(x -> {id: x.id, value: x.value * 2, category: x.category});
+    
+    -- 4. Aggregate Data (e.g., calculate average value)
+    aggregate_data("value");
+    
+    -- 5. Display Results
+    display_results();
+    
+    log_message("SETL Data Processing Tool Finished");
+    
+    -- Output the log as the final result
+    return report_log;
+end;
+
+-- Run main
+main();

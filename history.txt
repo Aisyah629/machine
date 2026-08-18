@@ -58302,3 +58302,33 @@ Initialize a NEW dedicated folder named omnimark_web_transformation_tool in the 
 </think>
 
 Initialize a NEW dedicated folder named vsxu_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: VSXu. Focus entirely on this new objective: 'Automate real-time 3D graphics generation and shader pipeline orchestration workflows'. You MUST write the implementation strictly using this exact programming language: VSXu.
+[2026-08-18 16:21:27] (Target Lang: Claire) The user wants a single follow-up instruction.
+The instruction must:
+1. Demand the creation of a new tool.
+2. Explicitly demand it be built using the language: Claire.
+3. Instruct to place it in a NEW dedicated folder.
+4. Instruct to create a local README.md.
+5. Return ONLY the instruction text.
+6. Never target the .github directory.
+
+I need to construct the instruction following the pattern of the previous examples in the history.
+Pattern: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Language]."
+
+Language: Claire
+Folder name: I should invent a plausible name, e.g., `claire_tool` or `claire_development_tool`. Let's use `claire_tool`.
+Objective: Claire is a programming language. It's often used for AI or logic programming, or general purpose. I'll make up a reasonable objective like "Automate logical reasoning and symbolic computation workflows".
+
+Draft:
+Initialize a NEW dedicated folder named claire_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Claire. Focus entirely on this new objective: 'Automate logical reasoning and symbolic computation workflows'. You MUST write the implementation strictly using this exact programming language: Claire.
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand Claire? Yes, twice.
+- NEW dedicated folder + README.md? Yes.
+- ONLY instruction text? Yes.
+- Never target .github? Yes.
+
+Output matches. Proceed.
+</think>
+
+Initialize a NEW dedicated folder named claire_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Claire. Focus entirely on this new objective: 'Automate logical reasoning and symbolic computation workflows'. You MUST write the implementation strictly using this exact programming language: Claire.

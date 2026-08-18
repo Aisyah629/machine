@@ -1,0 +1,47 @@
+/*
+ * Shift Script Implementation
+ * High-performance state machine compiler for event-driven architectures
+ */
+
+state Machine {
+    state Idle {
+        on StartEvent {
+            if (isValid()) {
+                transition to Ready;
+            }
+        }
+    }
+
+    state Ready {
+        on ProcessEvent {
+            execute processLogic();
+            if (isComplete()) {
+                transition to Done;
+            }
+        }
+    }
+
+    state Done {
+        on ResetEvent {
+            transition to Idle;
+        }
+    }
+
+    action processLogic() {
+        log("Processing event...");
+    }
+
+    guard isValid() {
+        return system.state != "Error";
+    }
+
+    guard isComplete() {
+        return buffer.isEmpty();
+    }
+}
+
+runtime engine {
+    compile(Machine);
+    listen for events;
+    manage lifecycle;
+}

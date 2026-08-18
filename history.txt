@@ -62275,3 +62275,44 @@ Initialize a NEW dedicated folder named coral66_protocol_validator_tool in the w
 </think>
 
 Initialize a NEW dedicated folder named rebol_network_connector_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Engineer a robust network abstraction layer for asynchronous request routing and response marshaling across distributed endpoints'. You MUST write the implementation strictly using this exact programming language: REBOL.
+[2026-08-18 21:48:50] (Target Lang: Shift Script) Thinking process:
+1.  **Deconstruct the user's prompt:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using Shift Script.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a long list of existing folders/tools. The history shows a pattern of generating instructions for new tools in specific languages. The last history item was about `rebol_network_connector_tool`. The current request asks for a follow-up.
+    *   Analysis of "Shift Script": I need to check if "Shift Script" is a known language or a typo. The prompt mentions "Shift Script". Looking at the history or common knowledge, there might be "Shift Script" or it could be a specific request. However, the instruction is to demand the tool be built using "Shift Script". I should use that exact phrase. The list of existing tools includes things like `shift_script_tool`? Let me scan the list... `shift_script_tool` is not in the list. `shift` appears in `shift_script_tool`? No. `shift_script` isn't obvious. But the constraint is to use the language named "Shift Script". I must respect the prompt's request for "Shift Script".
+
+2.  **Draft the instruction:**
+    *   Structure: Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Shift Script. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: Shift Script.
+    *   Folder Name: Needs to be logical. Since the previous one was `rebol_network_connector_tool`, a follow-up might be related or just a new tool. The prompt doesn't specify the folder name, just "NEW dedicated folder". I should invent a name. A good pattern is `shift_script_tool` or something specific. Let's look at the list. `shift_script_tool` is not there. `shift_script` isn't there. I'll use `shift_script_tool` as a generic name, or `shift_script_advanced_tool`. The prompt doesn't forbid `shift_script_tool`. Let's use `shift_script_tool` for simplicity, or `shift_script_network_protocol_tool` to follow the pattern of specific names. The pattern in the history shows specific names like `rebol_network_connector_tool`. I'll use `shift_script_protocol_analyzer_tool` or similar. Let's go with `shift_script_tool` to be safe, or `shift_script_core_runtime_tool`. The prompt asks for a "logical follow-up". If the previous was REBOL network connector, maybe Shift Script is a follow-up language? The prompt doesn't link them. I'll just create a name. `shift_script_tool` is standard.
+    *   Objective: The prompt doesn't specify the objective, just the language. I need to invent an objective. "Engineer a high-performance packet switching engine for real-time data serialization" or "Develop a declarative workflow automation framework". The prompt doesn't restrict the objective, just the language. I should pick a plausible objective. "Engineer a robust state machine compiler for event-driven architectures" sounds good for Shift Script.
+    *   Resulting text: `Initialize a NEW dedicated folder named shift_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Shift Script. Focus entirely on this new objective: 'Engineer a high-performance state machine compiler for event-driven architectures'. You MUST write the implementation strictly using this exact programming language: Shift Script.`
+    *   Check constraints:
+        *   Exactly 1 instruction? Yes.
+        *   Explicitly demand Shift Script? Yes ("STRICTLY using this exact programming language: Shift Script", "You MUST write... Shift Script").
+        *   NEW dedicated folder? Yes.
+        *   Local README.md? Yes.
+        *   Return ONLY instruction text? Yes.
+        *   NEVER target .github? Yes (text doesn't mention .github).
+        *   Follow-up? Yes, it's a new instruction.
+        *   Language check: "Shift Script". The prompt asks for "Shift Script". I must use that string.
+        *   Output format: Text only.
+
+3.  **Refine the output:**
+    *   Text: Initialize a NEW dedicated folder named shift_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Shift Script. Focus entirely on this new objective: 'Engineer a high-performance state machine compiler for event-driven architectures'. You MUST write the implementation strictly using this exact programming language: Shift Script.
+    *   Wait, looking at the list, there is `shift_script_tool`? No. There is `shift`? No. There is `shift_script`? No.
+    *   The list has `shift_script_tool`? Scanning... `shift_script_tool` is not in the list. `shift_script` is not in the list.
+    *   The prompt asks for "Shift Script". I will use `shift_script_tool` as the folder name.
+    *   Result matches all constraints.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   `Initialize a NEW dedicated folder named shift_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Shift Script. Focus entirely on this new objective: 'Engineer a high-performance state machine compiler for event-driven architectures'. You MUST write the implementation strictly using this exact programming language: Shift Script.`
+    *   This looks correct.
+    *   One nuance: The user history shows `rebol_network_connector_tool` was the last one. The follow-up doesn't need to be related to REBOL. It just needs to be a follow-up instruction. The prompt asks for a "logical follow-up instruction". In the context of these prompts, a logical follow-up usually just continues the pattern of generating new tools. It doesn't need to be semantically related to the previous tool unless specified. The constraint is "exactly 1 logical follow-up instruction". The logic is the continuation of the tool generation workflow.
+    *   Output generation.
+</think>
+
+Initialize a NEW dedicated folder named shift_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Shift Script. Focus entirely on this new objective: 'Engineer a high-performance state machine compiler for event-driven architectures'. You MUST write the implementation strictly using this exact programming language: Shift Script.

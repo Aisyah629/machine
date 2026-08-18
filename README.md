@@ -243,3 +243,5 @@ MIT License
 - Created/Updated module: `coral66_protocol_validator_tool` (See `coral66_protocol_validator_tool/README.md` for details)
 
 - Created/Updated module: `rebol_network_connector_tool` (See `rebol_network_connector_tool/README.md` for details)
+
+- Created/Updated module: `shift_script_tool` (See `shift_script_tool/README.md` for details)

@@ -231,3 +231,5 @@ MIT License
 - Created/Updated module: `julia_analytics_engine_tool` (See `julia_analytics_engine_tool/README.md` for details)
 
 - Created/Updated module: `./cryptographic_tool` (See `./cryptographic_tool/README.md` for details)
+
+- Created/Updated module: `swift_parallel_script_tool` (See `swift_parallel_script_tool/README.md` for details)

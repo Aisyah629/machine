@@ -61917,3 +61917,51 @@ Done.
 </think>
 
 Initialize a NEW dedicated folder named moo_virtual_object_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MOO. Focus entirely on this new objective: 'Design a comprehensive object management and interaction system for a text-based virtual world environment'. You MUST write the implementation strictly using this exact programming language: MOO.
+[2026-08-18 21:29:32] (Target Lang: Swift (parallel scripting language)) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using Swift (parallel scripting language).
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provides a workspace listing containing many tools and a history. The history shows a previous action initializing `moo_virtual_object_engine_tool`. The current request asks for a follow-up instruction.
+
+2.  **Drafting the Instruction:**
+    *   *Core Action:* Create a new tool.
+    *   *Language:* Swift. The user specifies "Swift (parallel scripting language)". This is slightly unusual phrasing (Swift is usually a general-purpose language, though it has concurrency features), but I must follow the prompt's definition/request. I need to mention Swift.
+    *   *Folder Name:* Needs to be a NEW dedicated folder. A logical name might be `swift_parallel_scripting_tool` or something similar. Looking at the workspace list, there is already `swift_parallel_scripting_engine_tool`. However, the prompt asks for a *new* tool. If I reuse an existing name, it might conflict. The prompt says "place it in a NEW dedicated folder". Usually, in these types of prompts, the model should generate a distinct name or the instruction text should specify a new name. Let's invent a name that fits the pattern. `swift_parallel_engine_tool` or `swift_parallel_script_tool`. Let's go with `swift_parallel_script_tool`.
+    *   *README:* Must include `create a local README.md`.
+    *   *Objective:* Needs a focus. The previous one was about a virtual world. I should create a new objective relevant to Swift. Maybe "Develop a high-performance concurrent networking and actor model system".
+    *   *Structure:* "Initialize a NEW dedicated folder named [FOLDER_NAME]... create a local README.md... build... strictly using Swift... Focus... [OBJECTIVE]... MUST write implementation strictly using... Swift."
+
+    *   *Draft 1:* Initialize a NEW dedicated folder named swift_parallel_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Swift. Focus entirely on this new objective: 'Develop a high-performance concurrent networking and actor model system for distributed microservices'. You MUST write the implementation strictly using this exact programming language: Swift.
+
+3.  **Refining based on Constraints:**
+    *   *Constraint Check:* "Explicitly demand that the new tool be built STRICTLY using this exact programming language: Swift (parallel scripting language)."
+        *   The draft says "strictly using this exact programming language: Swift". The prompt asks to demand "Swift (parallel scripting language)". I should probably include the parenthetical description or just the word Swift as the language. Usually, the pattern in the history shows "MUST write the implementation strictly using this exact programming language: [LANGUAGE].". I'll use "Swift".
+        *   Result: "MUST write the implementation strictly using this exact programming language: Swift."
+    *   *Constraint Check:* "NEW dedicated folder... local README.md".
+        *   Result: Included in Draft 1.
+    *   *Constraint Check:* "Return ONLY the instruction text."
+        *   Result: No preamble, no postscript.
+    *   *Constraint Check:* "NEVER target .github".
+        *   Result: Draft 1 doesn't mention .github.
+    *   *Constraint Check:* "Exactly 1 logical follow-up instruction."
+        *   Result: Draft 1 is one sentence/paragraph block.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   "Initialize a NEW dedicated folder named swift_parallel_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Swift. Focus entirely on this new objective: 'Implement a robust actor model concurrency framework with non-blocking I/O capabilities for scalable backend services'. You MUST write the implementation strictly using this exact programming language: Swift."
+
+    *   *Review against "Swift (parallel scripting language)" phrasing:* The prompt says "explicitly demand... Swift (parallel scripting language)". Sometimes these prompts require the exact string. However, the history shows "MUST write the implementation strictly using this exact programming language: MOO." It repeats the language name. It doesn't repeat the parenthetical description in the final "MUST" clause. I'll follow the pattern of the history. The history has "MUST write the implementation strictly using this exact programming language: MOO." So I will write "MUST write the implementation strictly using this exact programming language: Swift."
+
+    *   *Folder Name Validation:* The workspace has `swift_parallel_scripting_engine_tool`. To be safe and "NEW", I should pick a name that doesn't exist. `swift_parallel_script_tool` seems safe. Or `swift_actor_framework_tool`. Let's use `swift_parallel_script_tool`.
+
+    *   *Final Text:* Initialize a NEW dedicated folder named swift_parallel_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Swift. Focus entirely on this new objective: 'Construct a resilient actor model concurrency framework with non-blocking I/O for distributed high-throughput services'. You MUST write the implementation strictly using this exact programming language: Swift.
+
+5.  **Output Generation:**
+    *   Result matches the thought process.
+    *   Output: `Initialize a NEW dedicated folder named swift_parallel_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Swift. Focus entirely on this new objective: 'Construct a resilient actor model concurrency framework with non-blocking I/O for distributed high-throughput services'. You MUST write the implementation strictly using this exact programming language: Swift.`
+</think>
+
+Initialize a NEW dedicated folder named swift_parallel_script_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Swift. Focus entirely on this new objective: 'Construct a resilient actor model concurrency framework with non-blocking I/O for distributed high-throughput services'. You MUST write the implementation strictly using this exact programming language: Swift.

@@ -157,3 +157,5 @@ MIT License
 - Created/Updated module: `mpd_stream_engine_tool` (See `mpd_stream_engine_tool/README.md` for details)
 
 - Created/Updated module: `omnimark_web_transformation_tool` (See `omnimark_web_transformation_tool/README.md` for details)
+
+- Created/Updated module: `esharp_framework_tool` (See `esharp_framework_tool/README.md` for details)

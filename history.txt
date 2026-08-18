@@ -52049,3 +52049,40 @@ Proceeds.
 </think>
 
 Initialize a NEW dedicated folder named visual_basic_dotnet_logic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Visual Basic .NET.
+[2026-08-18 05:16:33] (Target Lang: FOCUS) Thinking Process:
+1.  **Analyze the Request**:
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built STRICTLY using the programming language "FOCUS".
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The workspace contains a massive list of tool directories (mostly compilers, language tools, etc.). The history shows a similar pattern where a language/tool was requested (`Visual Basic .NET`). Now it's `FOCUS`.
+
+2.  **Verify "FOCUS"**:
+    *   Is "FOCUS" a programming language? Yes, FOCUS (Fast Uncomplicated Computer Oriented Data System) was a 4GL query language/tool by Cullinet.
+    *   The prompt asks to build a tool strictly using this language.
+
+3.  **Draft the Instruction**:
+    *   Name the folder: `focus_tool` or `focus_language_tool` or similar. Let's use `focus_tool`.
+    *   Action: Initialize a NEW dedicated folder named `focus_tool` in the workspace.
+    *   Action: Create a local `README.md` inside it.
+    *   Action: Build the entire new tool STRICTLY using this exact programming language: FOCUS.
+
+4.  **Refine based on constraints**:
+    *   "Return ONLY the instruction text." -> No quotes, no preamble, no postscript.
+    *   "NEVER target .github." -> The folder is `focus_tool`, not `.github`.
+    *   "Exactly 1 logical follow-up instruction." -> One sentence or a coherent set of commands.
+
+    *Draft*: Initialize a NEW dedicated folder named focus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FOCUS.
+
+5.  **Final Check**:
+    *   Language: FOCUS.
+    *   Folder: focus_tool.
+    *   README: Created.
+    *   Text only: Yes.
+    *   No .github: Yes.
+
+    Result: `Initialize a NEW dedicated folder named focus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FOCUS.`
+</think>
+
+Initialize a NEW dedicated folder named focus_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: FOCUS.

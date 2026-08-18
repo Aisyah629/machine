@@ -1,0 +1,18 @@
+      * FOCUS TOOL SIMULATION
+      * This script simulates basic FOCUS 4GL commands.
+
+      DEFINE DATASET USERS
+      DEFINE FIELD FIRSTNAME A10
+      DEFINE FIELD LASTNAME A10
+      DEFINE FIELD AGE A3
+
+      LOAD DATASET USERS FROM DATA SOURCE
+
+      PRINT FIRSTNAME LASTNAME AGE
+      IF AGE GT 30
+
+      HOLD FILE LISTED
+      END
+
+      * Note: This is a simulated representation.
+      * Actual FOCUS commands run in a Cullinet environment.

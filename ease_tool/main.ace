@@ -1,82 +1,177 @@
-// Ease Tool - Functional Data Transformation and Processing Pipeline Utility
+// Ease Low-Level Network/Memory Simulator
+// main.ace
 
-// Define data types
-list of int -> data_stream;
-map of string -> any -> config_map;
+type EventKind
+    EVENT_MEM_ALLOC
+    EVENT_MEM_FREE
+    EVENT_NET_SEND
+    EVENT_NET_RECEIVE
+    EVENT_NET_ACK
+end type
 
-// Function to initialize the pipeline
-init_pipeline(config) -> {
-    print("Initializing Ease Data Processing Pipeline...\n");
-    let pipeline_config = config;
-    return pipeline_config;
-}
+type Event
+    kind: EventKind
+    timestamp: int
+    data: int
+end type
 
-// Function to apply a transformation function to a data stream
-apply_transformation(data_stream, transform_func) -> {
-    let result_stream = [];
-    for (element in data_stream) {
-        result_stream.append(transform_func(element));
-    }
-    return result_stream;
-}
+type MemoryChunk
+    startAddr: int
+    size: int
+    isAllocated: bool
+end type
 
-// Function to filter data based on a predicate
-filter_data(data_stream, predicate_func) -> {
-    let filtered_stream = [];
-    for (element in data_stream) {
-        if (predicate_func(element)) {
-            filtered_stream.append(element);
-        }
-    }
-    return filtered_stream;
-}
+type Packet
+    seqNum: int
+    data: string
+    isAck: bool
+end type
 
-// Function to reduce a data stream to a single value
-reduce_data(data_stream, reduce_func, initial_value) -> {
-    let accumulator = initial_value;
-    for (element in data_stream) {
-        accumulator = reduce_func(accumulator, element);
-    }
-    return accumulator;
-}
+var memory: array of MemoryChunk
+var memorySize: int
+var nextMemAddr: int
+var packetSeq: int
+var nextExpectedSeq: int
+var packetQueue: array of Packet
 
-// Main execution
-main() -> {
-    // Initialize pipeline with a default configuration
-    let default_config = map of string -> any;
-    default_config["verbose"] = true;
-    let config = init_pipeline(default_config);
-    
-    // Sample data stream
-    let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    
-    // Define transformations
-    let double_element = (x) -> x * 2;
-    
-    // Define a filter predicate
-    let is_even = (x) -> (x % 2 == 0);
-    
-    // Define a reducer
-    let add_together = (acc, x) -> acc + x;
-    
-    // Process the data stream
-    let transformed_data = apply_transformation(data, double_element);
-    print("Transformed Data: ");
-    for (element in transformed_data) {
-        print(element);
-    }
-    
-    let filtered_data = filter_data(transformed_data, is_even);
-    print("\nFiltered (Even) Data: ");
-    for (element in filtered_data) {
-        print(element);
-    }
-    
-    let reduced_result = reduce_data(transformed_data, add_together, 0);
-    print("\nReduced Sum: ", reduced_result);
-    
-    print("\nPipeline execution completed successfully.");
-}
+function initMemoryManager(initialSize: int, chunkSize: int) : void
+    memorySize = initialSize
+    nextMemAddr = 0
+    var numChunks = initialSize / chunkSize
+    memory = new array of MemoryChunk(numChunks)
+    for i = 0 to numChunks - 1 do
+        memory[i].startAddr = i * chunkSize
+        memory[i].size = chunkSize
+        memory[i].isAllocated = false
+    end for
+end function
 
-// Start the application
-main();
+function allocateMemory(size: int) : int
+    var startAddr = -1
+    var currentAddr = nextMemAddr
+    var found = false
+    
+    for i = 0 to memorySize / 4 - 1 do
+        if not memory[i].isAllocated and memory[i].size >= size then
+            startAddr = memory[i].startAddr
+            memory[i].isAllocated = true
+            found = true
+            if memory[i].size > size then
+                var newChunk: MemoryChunk
+                newChunk.startAddr = startAddr + size
+                newChunk.size = memory[i].size - size
+                newChunk.isAllocated = false
+                memory[i].size = size
+                memory.insert(newChunk, i + 1)
+                nextMemAddr = startAddr + size
+            end if
+            break
+        end if
+    end for
+    
+    if not found then
+        if nextMemAddr + size <= memorySize then
+            startAddr = nextMemAddr
+            memory[nextMemAddr / 4].isAllocated = true
+            nextMemAddr = nextMemAddr + size
+        end if
+    end if
+    
+    return startAddr
+end function
+
+function freeMemory(startAddr: int, size: int) : void
+    var idx = startAddr / 4
+    if idx >= 0 and idx < memory.length then
+        memory[idx].isAllocated = false
+    end if
+    
+    // Merge with next chunk if possible
+    if idx + 1 < memory.length and not memory[idx + 1].isAllocated then
+        memory[idx].size = memory[idx].size + memory[idx + 1].size
+        memory.remove(idx + 1)
+    end if
+end function
+
+function createPacket(data: string, isAck: bool) : Packet
+    var pkt: Packet
+    if not isAck then
+        pkt.seqNum = packetSeq
+        packetSeq = packetSeq + 1
+    end if
+    pkt.data = data
+    pkt.isAck = isAck
+    return pkt
+end function
+
+function sendPacket(pkt: Packet) : void
+    var event: Event
+    event.kind = EVENT_NET_SEND
+    event.timestamp = 1000 // Simulated timestamp
+    event.data = pkt.seqNum
+    packetQueue.insert(pkt, packetQueue.length)
+end function
+
+function receivePacket() : Packet
+    if packetQueue.length > 0 then
+        var pkt = packetQueue.remove(0)
+        var event: Event
+        event.kind = EVENT_NET_RECEIVE
+        event.timestamp = 1001
+        event.data = pkt.seqNum
+        if pkt.seqNum == nextExpectedSeq then
+            nextExpectedSeq = nextExpectedSeq + 1
+        end if
+        return pkt
+    end if
+    var emptyPkt: Packet
+    emptyPkt.seqNum = -1
+    emptyPkt.data = ""
+    emptyPkt.isAck = false
+    return emptyPkt
+end function
+
+function handleEvent(event: Event) : void
+    switch event.kind
+        case EVENT_MEM_ALLOC:
+            var addr = allocateMemory(event.data)
+            print("Memory allocated at addr: " + addr + " for size: " + event.data)
+            break
+        case EVENT_MEM_FREE:
+            freeMemory(event.data, 10) // Assume fixed free size for demo
+            print("Memory freed at addr: " + event.data)
+            break
+        case EVENT_NET_SEND:
+            var pkt = createPacket("Simulated Data", false)
+            sendPacket(pkt)
+            print("Sent packet with seq: " + pkt.seqNum)
+            break
+        case EVENT_NET_RECEIVE:
+            var pkt = receivePacket()
+            if pkt.seqNum != -1 then
+                print("Received packet with seq: " + pkt.seqNum + " data: " + pkt.data)
+            end if
+            break
+        case EVENT_NET_ACK:
+            var pkt = receivePacket()
+            print("Acknowledged packet: " + event.data)
+            break
+    end switch
+end function
+
+var main: void
+    initMemoryManager(1024, 4) // 1KB memory, 4-byte chunks
+    
+    var eventQueue: array of Event
+    
+    eventQueue.insert(Event(EVENT_MEM_ALLOC, 100, 8), 0)
+    eventQueue.insert(Event(EVENT_MEM_FREE, 200, 8), 1)
+    eventQueue.insert(Event(EVENT_NET_SEND, 300, 0), 2)
+    eventQueue.insert(Event(EVENT_NET_RECEIVE, 400, 0), 3)
+    
+    for i = 0 to eventQueue.length - 1 do
+        handleEvent(eventQueue[i])
+    end for
+    
+    print("Simulation complete.")
+end function

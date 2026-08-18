@@ -1,15 +1,18 @@
-# Starlogo Swarm Simulation Engine
+# Starlogo Tool
 
-## Description
-A multi-agent swarm simulation engine built strictly using the **Starlogo** programming language.
+This tool implements a Starlogo TNG simulation engine. Starlogo TNG is an agent-based modeling tool derived from NetLogo, designed for parallel computing on multi-core CPUs and GPU clusters.
 
 ## Features
-- Agent-based modeling for swarm behaviors.
-- Configurability for agent rules and environmental parameters.
-- Real-time simulation capabilities.
+
+- Multi-agent simulation environment
+- Parallel processing support for compute-intensive models
+- Grid-based world management
+- Observer, turtle, and patch-based programming paradigm
 
 ## Usage
-Load the main file in the Starlogo environment to initiate the simulation.
 
-## License
-Internal Use Only
+Run the main script to initialize the simulation environment:
+
+```starlogo
+;; Main execution block
+observer go

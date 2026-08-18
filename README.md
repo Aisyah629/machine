@@ -33,3 +33,5 @@ Contributions are welcome. Please ensure all new features pass the existing test
 MIT License
 
 - Created/Updated module: `bpel_tool` (See `bpel_tool/README.md` for details)
+
+- Created/Updated module: `starlogo_tool` (See `starlogo_tool/README.md` for details)

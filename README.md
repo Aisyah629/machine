@@ -153,3 +153,5 @@ MIT License
 - Created/Updated module: `able_pipeline_processor_tool` (See `able_pipeline_processor_tool/README.md` for details)
 
 - Created/Updated module: `perl_data_engine_tool` (See `perl_data_engine_tool/README.md` for details)
+
+- Created/Updated module: `mpd_stream_engine_tool` (See `mpd_stream_engine_tool/README.md` for details)

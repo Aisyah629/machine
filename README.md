@@ -1230,3 +1230,5 @@ Training Machine
 - Created/Updated module: `ateji_px_tool` (See `ateji_px_tool/README.md` for details)
 
 - Created/Updated module: `modelica_tool` (See `modelica_tool/README.md` for details)
+
+- Created/Updated module: `k_tool` (See `k_tool/README.md` for details)

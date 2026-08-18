@@ -1,0 +1,199 @@
+package com.example.dataprocessing
+
+import java.util.Date
+
+/**
+ * Main entry point for the Data Processing Utility Tool.
+ * Demonstrates data cleaning, transformation, and aggregation capabilities.
+ */
+public class Main
+
+	var processor : DataProcessor
+
+	public function construct()
+		processor = new DataProcessor()
+
+	public function run()
+		print("=== Data Processing Utility Tool ===")
+		print("Starting processing pipeline...")
+		
+		// 1. Load Mock Data
+		var rawDataSet = this.generateMockData()
+		print("\n--- Raw Data ---")
+		for item in rawDataSet
+			print(item)
+		
+		// 2. Clean Data
+		var cleanedDataSet = processor.cleanData(rawDataSet)
+		print("\n--- Cleaned Data ---")
+		for item in cleanedDataSet
+			print(item)
+		
+		// 3. Transform Data
+		var transformedDataSet = processor.transformData(cleanedDataSet, new DataTransform())
+		print("\n--- Transformed Data ---")
+		for item in transformedDataSet
+			print(item)
+		
+		// 4. Aggregate Data
+		var stats = processor.calculateStats(transformedDataSet)
+		print("\n--- Statistical Summary ---")
+		print("Total Records Processed: " + stats["totalRecords"])
+		print("Total Value Sum: " + stats["totalSum"])
+		print("Average Value: " + stats["averageValue"])
+		
+		print("\nProcessing complete.")
+
+	private function generateMockData() : IList<Dictionary<String, Object>>
+		var list = new List<Dictionary<String, Object>>()
+		
+		list.add({
+			"id": 1,
+			"name": "Product A",
+			"value": "100.50",
+			"category": "Electronics"
+		})
+		
+		list.add({
+			"id": 2,
+			"name": "Product B",
+			"value": "200",
+			"category": "Books"
+		})
+		
+		list.add({
+			"id": 3,
+			"name": "Product C",
+			"value": "50.25",
+			"category": "Electronics"
+		})
+		
+		list.add({
+			"id": 4,
+			"name": "Product D",
+			"value": null,
+			"category": "Electronics"
+		})
+		
+		list.add({
+			"id": 5,
+			"name": "  Product E  ",
+			"value": "300",
+			"category": "Home"
+		})
+		
+		return list
+
+	public static function main()
+		var main = new Main()
+		main.run()
+
+/**
+ * Core utility class for data processing operations.
+ */
+public class DataProcessor
+
+	/**
+	 * Cleans the input dataset.
+	 * - Trims string values in 'name' column.
+	 * - Removes rows with null 'value'.
+	 */
+	public function cleanData(data : IList<Dictionary<String, Object>>) : IList<Dictionary<String, Object>>
+		var cleaned = new List<Dictionary<String, Object>>()
+		
+		for item in data
+			var clone = new Dictionary<String, Object>()
+			for key in item.keySet()
+				var val = item.get(key)
+				
+				if (val instanceof String)
+					clone[key] = (val as String).trim()
+				else
+					clone[key] = val
+			
+			// Filter out null values for numeric processing
+			if (clone.get("value") != null)
+				cleaned.add(clone)
+			
+		return cleaned
+
+	/**
+	 * Transforms the dataset using a provided DataTransform strategy.
+	 */
+	public function transformData(data : IList<Dictionary<String, Object>>, transformStrategy : DataTransform) : IList<Dictionary<String, Object>>
+		var transformed = new List<Dictionary<String, Object>>()
+		
+		for item in data
+			var result = transformStrategy.apply(item)
+			if result != null
+				transformed.add(result)
+			
+		return transformed
+
+	/**
+	 * Calculates statistical summary of the 'value' field.
+	 */
+	public function calculateStats(data : IList<Dictionary<String, Object>>) : Dictionary<String, Object>
+		var totalRecords = 0
+		var totalSum = 0.0
+		
+		for item in data
+			var valObj = item.get("value")
+			if valObj != null
+				var val = 0.0
+				if valObj instanceof Number
+					val = (valObj as Number).doubleValue()
+				else if valObj instanceof String
+					try
+						val = Double.parseDouble(valObj as String)
+					catch
+						// Ignore invalid numbers
+						continue
+				
+				totalRecords += 1
+				totalSum += val
+			
+		var avg = 0.0
+		if totalRecords > 0
+			avg = totalSum / totalRecords
+		
+		var stats = new Dictionary<String, Object>()
+		stats["totalRecords"] = totalRecords
+		stats["totalSum"] = totalSum
+		stats["averageValue"] = avg
+		
+		return stats
+
+/**
+ * Interface for data transformation strategies.
+ */
+public abstract class DataTransform
+
+	public abstract function apply(data : Dictionary<String, Object>) : Dictionary<String, Object>
+
+/**
+ * Example Transformation: Convert value to Double and append timestamp.
+ */
+public class NumericValueTransformer : DataTransform
+
+	public override function apply(data : Dictionary<String, Object>) : Dictionary<String, Object>
+		var output = new Dictionary<String, Object>()
+		
+		for key in data.keySet()
+			output[key] = data.get(key)
+		
+		var valObj = data.get("value")
+		var numericVal = 0.0
+		
+		if valObj instanceof Number
+			numericVal = (valObj as Number).doubleValue()
+		else if valObj instanceof String
+			try
+				numericVal = Double.parseDouble(valObj as String)
+			catch
+				numericVal = 0.0
+		
+		output["value"] = numericVal
+		output["processedTimestamp"] = new Date()
+		
+		return output

@@ -62612,3 +62612,59 @@ Initialize a NEW dedicated folder named mapper_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named elisp_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Engineer a high-performance code evaluation engine for interactive buffer manipulation'. You MUST write the implementation strictly using this exact programming language: Emacs Lisp.
+[2026-08-18 22:01:32] (Target Lang: Axum) Thinking Process:
+1.  **Analyze User Input:**
+   - User provided a massive file list of existing tools in a workspace.
+   - Provided a "History" section showing a pattern of generating instructions for new tools.
+   - The prompt ends with a specific instruction block: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Axum. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - Note: The user pasted a template/response from a previous turn in the "History" section, but the actual prompt at the end dictates the new requirements: language = "Axum", 1 instruction, NEW folder, README.md, ONLY instruction text, no .github.
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using this exact programming language: Axum.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Language: Axum (Note: Axum is actually a Rust web framework, not a standalone programming language, but the prompt explicitly says "this exact programming language: Axum". I must follow the prompt exactly, even if technically Axum is a framework. I will phrase it exactly as requested: "strictly using this exact programming language: Axum").
+   - Wait, the prompt says "this exact programming language: Axum". I will stick to that phrasing.
+   - Structure should match the history format: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Axum. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: Axum."
+
+3.  **Formulate Instruction:**
+   - Tool name: `axum_framework_tool` (or similar)
+   - Folder: `axum_framework_tool`
+   - Language: `Axum`
+   - Objective: Need something logical for Axum. Since it's a Rust web framework, I'll pick a relevant objective like 'Construct a robust asynchronous REST API handler for concurrent request processing'. Or I can keep it generic but precise. The prompt says "Focus entirely on this new objective: '[Objective]'." I'll make one up that fits.
+   - Let's craft it carefully to match the exact requested phrasing:
+     "Initialize a NEW dedicated folder named axum_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Axum. Focus entirely on this new objective: 'Develop a scalable asynchronous web server framework for handling concurrent HTTP requests'. You MUST write the implementation strictly using this exact programming language: Axum."
+   - Check constraints:
+     - Exactly 1 instruction? Yes.
+     - Explicitly demand built STRICTLY using this exact programming language: Axum? Yes.
+     - Explicitly instruct to place it in a NEW dedicated folder and create a local README.md? Yes.
+     - Return ONLY the instruction text? Yes.
+     - NEVER target .github? Yes.
+   - I will output exactly that string.
+
+4.  **Refine Output:**
+   "Initialize a NEW dedicated folder named axum_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Axum. Focus entirely on this new objective: 'Design a high-throughput asynchronous routing engine for concurrent web traffic'. You MUST write the implementation strictly using this exact programming language: Axum."
+   - Matches all constraints. Output matches exactly. No extra text. Proceed. 
+   - Self-Correction/Verification during thought: The prompt says "this exact programming language: Axum". I will copy that exact phrase. The structure matches the history example provided. I will ensure absolutely no extra words. All constraints satisfied.✅
+   - Output matches exactly.✅ Proceeds.✅
+   - Final string: `Initialize a NEW dedicated folder named axum_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Axum. Focus entirely on this new objective: 'Design a high-throughput asynchronous routing engine for concurrent web traffic'. You MUST write the implementation strictly using this exact programming language: Axum.`
+   - Checks: 1 instruction? Yes. Language: Axum? Yes. NEW folder & README.md? Yes. ONLY instruction text? Yes. No .github? Yes.
+   - Ready.✅ </think>
+   Output Generation. 
+   *(Note: I'll make sure the formatting is exact plain text as requested.)* 
+   Proceeds. 
+   [Output] -> `Initialize a NEW dedicated folder named axum_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Axum. Focus entirely on this new objective: 'Design a high-throughput asynchronous routing engine for concurrent web traffic'. You MUST write the implementation strictly using this exact programming language: Axum.` 
+   All constraints verified. Output matches exactly.✅
+   *(Self-Correction/Note during thought)*: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Axum." I will use exactly that phrasing in the instruction. I will keep the rest consistent.
+   Final check of the prompt: "Return ONLY the instruction text. NEVER target the .github directory."
+   Output matches.✅ Proceeds.✅
+   [Final Output Generation] -> `Initialize a NEW dedicated folder named axum_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Axum. Focus entirely on this new objective: 'Design a high-throughput asynchronous routing engine for concurrent web traffic'. You MUST write the implementation strictly using this exact programming language: Axum.`
+   Done.✅
+   *(Proceeds to output)*
+   [Output Text] -> `Initialize a NEW dedicated folder named axum_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Axum. Focus entirely on this new objective: 'Design a high-throughput asynchronous routing engine for concurrent web traffic'. You MUST write the implementation strictly using this exact programming language: Axum.`
+   All constraints verified. Output matches exactly.✅
+</think>
+
+Initialize a NEW dedicated folder named axum_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Axum. Focus entirely on this new objective: 'Design a high-throughput asynchronous routing engine for concurrent web traffic'. You MUST write the implementation strictly using this exact programming language: Axum.

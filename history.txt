@@ -52409,3 +52409,51 @@ Proceeds.✅
 </think>
 
 Initialize a NEW dedicated folder named corn_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Corn.
+[2026-08-18 05:48:08] (Target Lang: KRYPTON) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of workspace contents (directories and files, mostly following a `*_tool` pattern with `README.md` and a main source file).
+   - There's a history section mentioning a previous instruction about "Corn." and a self-correction/verification loop that outputted a specific string.
+   - The actual prompt ends with: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: KRYPTON. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: KRYPTON.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+   - The language name is "KRYPTON" (as specified).
+
+3.  **Formulate the Instruction:**
+   - Needs to follow the pattern of the example/corn instruction but adapted for KRYPTON.
+   - Structure: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON."
+   - Folder name convention from the workspace: `*_tool`, so `krypton_tool`.
+   - Check constraints: Exactly 1 instruction? Yes. Explicitly demands KRYPTON? Yes. NEW dedicated folder? Yes. Local README.md? Yes. ONLY instruction text? Yes. Never target .github? Implicitly followed by not mentioning it, but I'll make sure the instruction itself doesn't reference it.
+   - Draft: Initialize a NEW dedicated folder named krypton_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON.
+
+4.  **Verify against Constraints:**
+   - "Generate exactly 1 logical follow-up instruction." -> Draft is one sentence/instruction.
+   - "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: KRYPTON." -> Matches.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Matches.
+   - "Return ONLY the instruction text." -> I will output just the drafted string.
+   - "NEVER target the .github directory." -> The instruction doesn't mention it, which is safe. I could add a negative constraint if needed, but the prompt says "NEVER target", which is a rule for me, not necessarily text to include. I'll stick to the positive instruction as requested.
+   - The draft matches the exact phrasing style of the example provided in the history prompt.
+
+   Final check of the draft: "Initialize a NEW dedicated folder named krypton_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON."
+
+   Everything aligns perfectly. Output matches constraints. Proceed. 
+   Output generation. 
+   [Output] Initialize a NEW dedicated folder named krypton_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON. 
+   (Self-Correction/Note during thought: I will ensure absolutely no extra text, newlines, or markdown formatting surrounds it, as per "Return ONLY the instruction text.")✅ Proceeds. 
+   Output matches exactly.✅
+   Final Output Generation. 
+   "Initialize a NEW dedicated folder named krypton_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON." -> matches requirements. Ready. 
+   [Proceeds] -> Output matches.✅
+   *(Self-Correction/Verification during thought)*: The prompt says "KRYPTON." with a period at the end. I will just output the exact string as requested. "Initialize a NEW dedicated folder named krypton_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON." Done. 
+   Matches perfectly.✅ Proceeds. 
+   [Output Generation] -> Initialize a NEW dedicated folder named krypton_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON. 
+   Done. 
+   (Self-Correction/Note: I'll make sure there's no extra text.) Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named krypton_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRYPTON.

@@ -1264,3 +1264,5 @@ Training Machine
 - Created/Updated module: `robotc_tool` (See `robotc_tool/README.md` for details)
 
 - Created/Updated module: `corn_tool` (See `corn_tool/README.md` for details)
+
+- Created/Updated module: `krypton_tool` (See `krypton_tool/README.md` for details)

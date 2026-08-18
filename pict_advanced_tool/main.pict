@@ -1,0 +1,45 @@
+// pict_advanced_tool/main.pict
+// A pure functional image description tool using Pict language
+// This example demonstrates advanced geometric transformations
+// and color blending techniques.
+
+import color;
+import geometry;
+
+// Define a base shape: a circle
+define circle_radius 50;
+define base_circle circle(circle_radius, center: (0, 0));
+
+// Define a color palette
+define palette = [red, green, blue, yellow, magenta, cyan];
+
+// Function to create a rotating scaled version of a shape
+define transform_shape(shape, rotation, scale, translation) {
+  rotate(rotation, translate(translation, scale * shape));
+}
+
+// Create multiple layered circles with different transformations
+define layer_1 transform_shape(base_circle, 0, 1.0, (0, 0));
+define layer_2 transform_shape(base_circle, 30, 0.8, (20, 20));
+define layer_3 transform_shape(base_circle, 60, 0.6, (-20, 20));
+
+// Define a gradient color function
+define color_gradient(n) {
+  palette[n % length(palette)];
+}
+
+// Apply colors to layers
+define colored_layer_1 fill(layer_1, color_gradient(0));
+define colored_layer_2 fill(layer_2, color_gradient(1));
+define colored_layer_3 fill(layer_3, color_gradient(2));
+
+// Combine layers using overlay
+define composite_image overlay(colored_layer_1, colored_layer_2, colored_layer_3);
+
+// Set canvas size
+define canvas_size (300, 300);
+
+// Final output
+canvas(canvas_size) {
+  draw(composite_image, center: (canvas_size/2, canvas_size/2));
+}

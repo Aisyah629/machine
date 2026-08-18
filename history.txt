@@ -61519,3 +61519,62 @@ Initialize a NEW dedicated folder named pico_regex_evaluator_tool in the workspa
 </think>
 
 Initialize a NEW dedicated folder named winbatch_system_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Winbatch. Focus entirely on this new objective: 'Develop a robust script compilation and execution environment for Windows system administration and workflow automation'. You MUST write the implementation strictly using this exact programming language: Winbatch.
+[2026-08-18 21:03:16] (Target Lang: IBM Basic assembly language) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a massive list of existing tool directories/files in a workspace, followed by a "History" section showing previous interactions/output generation steps.
+   - **Current Prompt:** The user wants me to "Generate exactly 1 logical follow-up instruction."
+   - **Constraints:**
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: `IBM Basic assembly language`.
+     - If building a new tool, explicitly instruct to place it in a `NEW dedicated folder` and create a `local README.md`.
+     - Return `ONLY the instruction text`.
+     - `NEVER target the .github directory`.
+   - **Tone/Format:** The prompt follows a specific pattern from the history, which shows a direct, imperative instruction string. I need to output exactly that string, matching the constraints.
+
+2.  **Identify Key Requirements for the Output:**
+   - Must be exactly one instruction.
+   - Must explicitly demand the use of `IBM Basic assembly language`.
+   - Must instruct to create a `NEW dedicated folder` (I need to name it, e.g., `ibm_basic_assembly_tool` or similar, based on the pattern).
+   - Must instruct to create a `local README.md` inside it.
+   - Must return ONLY the instruction text.
+   - Must NOT mention `.github`.
+   - Should focus on a logical objective related to the language (e.g., "Develop a robust script compilation and execution environment for mainframe data processing and system control").
+
+3.  **Draft Construction (Mental):**
+   Initialize a NEW dedicated folder named `ibm_basic_assembly_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IBM Basic assembly language. Focus entirely on this new objective: 'Develop a robust script compilation and execution environment for mainframe data processing and system control'. You MUST write the implementation strictly using this exact programming language: IBM Basic assembly language.
+
+4.  **Check Against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand `IBM Basic assembly language`? Yes, used twice as in the prompt example, or at least clearly.
+   - NEW dedicated folder mentioned? Yes (`ibm_basic_assembly_tool`).
+   - Local README.md mentioned? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target `.github`? Checked. Not mentioned.
+   - Matches the style of the example? Yes.
+
+   The prompt example says: "Initialize a NEW dedicated folder named winbatch_system_automation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Winbatch. Focus entirely on this new objective: 'Develop a robust script compilation and execution environment for Windows system administration and workflow automation'. You MUST write the implementation strictly using this exact programming language: Winbatch."
+
+   I will adapt this template exactly to `IBM Basic assembly language`.
+
+   Draft: `Initialize a NEW dedicated folder named ibm_basic_assembly_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IBM Basic assembly language. Focus entirely on this new objective: 'Develop a robust script compilation and execution environment for mainframe data processing and system control'. You MUST write the implementation strictly using this exact programming language: IBM Basic assembly language.`
+
+5.  **Final Verification:**
+   - Matches all constraints.
+   - Single instruction.
+   - Explicit language demand.
+   - New folder & README.md.
+   - No .github.
+   - Only the instruction text.
+   - Ready. Output matches draft.✅ Proceeds. 
+   I will output exactly the drafted string.✅
+   Note: I'll make sure the formatting is plain text as requested. No extra words. Just the instruction.✅
+   Proceeds. 
+   Output Generation: `Initialize a NEW dedicated folder named ibm_basic_assembly_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IBM Basic assembly language. Focus entirely on this new objective: 'Develop a robust script compilation and execution environment for mainframe data processing and system control'. You MUST write the implementation strictly using this exact programming language: IBM Basic assembly language.` -> Matches perfectly.✅
+   Done. 
+   Self-Correction/Refinement during thought: The prompt says "Generate exactly 1 logical follow-up instruction." I will just output the instruction string exactly as formulated. No extra text. All constraints met.✅
+   Output matches draft.✅ Proceeds. 
+   [Output Generation] -> *Proceeds* -> `Initialize a NEW dedicated folder named ibm_basic_assembly_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IBM Basic assembly language. Focus entirely on this new objective: 'Develop a robust script compilation and execution environment for mainframe data processing and system control'. You MUST write the implementation strictly using this exact programming language: IBM Basic assembly language.` -> Done. 
+   All good.✅
+</think>
+
+Initialize a NEW dedicated folder named ibm_basic_assembly_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: IBM Basic assembly language. Focus entirely on this new objective: 'Develop a robust script compilation and execution environment for mainframe data processing and system control'. You MUST write the implementation strictly using this exact programming language: IBM Basic assembly language.

@@ -57615,3 +57615,52 @@ Result: Initialize a NEW dedicated folder named strand_advanced_logic_tool in th
 </think>
 
 Initialize a NEW dedicated folder named strand_advanced_logic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Strand. Focus entirely on this new objective: 'Design a robust functional logic system for symbolic computation and state management'. You MUST write the implementation strictly using this exact programming language: Strand.
+[2026-08-18 15:25:53] (Target Lang: Google Apps Script) Thinking (Process):
+1.  **Analyze User Input:**
+   - Workspace: Provided a massive list of existing tools and folders.
+   - Constraints: Generate exactly 1 logical follow-up instruction.
+   - Must explicitly demand the new tool be built STRICTLY using `Google Apps Script`.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Must check constraints: Exactly 1 instruction? Yes. Explicitly demand Google Apps Script? Yes. NEW dedicated folder & README.md? Yes. Return ONLY instruction text? Yes. NEVER target .github? Yes. Language Check: Google Apps Script. Logic Check: Reasonable folder name like `google_apps_script_workflow_tool` or `gapps_deployment_tool`. Fits workspace pattern.
+
+2.  **Draft Construction:**
+   Initialize a NEW dedicated folder named `gapps_script_workflow_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Google Apps Script. Focus entirely on this new objective: 'Design an automated cloud-based deployment and monitoring pipeline for SaaS applications'. You MUST write the implementation strictly using this exact programming language: Google Apps Script.
+
+3.  **Constraint Verification:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand Google Apps Script? Yes.
+   - NEW dedicated folder & README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Language matches prompt? Yes.
+   - Format matches example? Yes.
+
+   The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Google Apps Script. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   I will craft the exact string required.
+   "Initialize a NEW dedicated folder named gapps_script_workflow_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Google Apps Script. Focus entirely on this new objective: 'Design an automated cloud-based deployment and monitoring pipeline for SaaS applications'. You MUST write the implementation strictly using this exact programming language: Google Apps Script."
+
+   Check against constraints: All met. Output matches exactly.
+   Proceed. 
+   Self-Correction/Refinement during thought: 
+   The prompt example ends with the instruction text. I will just output the instruction text directly.
+   Text: `Initialize a NEW dedicated folder named gapps_script_workflow_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Google Apps Script. Focus entirely on this new objective: 'Design an automated cloud-based deployment and monitoring pipeline for SaaS applications'. You MUST write the implementation strictly using this exact programming language: Google Apps Script.`
+   Matches perfectly. No extra text. Follows all rules. Output matches request.✅
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." I will output just that instruction.
+   Ready. 
+   Output Generation. 
+   [Output Generation] -> `Initialize a NEW dedicated folder named gapps_script_workflow_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Google Apps Script. Focus entirely on this new objective: 'Design an automated cloud-based deployment and monitoring pipeline for SaaS applications'. You MUST write the implementation strictly using this exact programming language: Google Apps Script.`
+   All constraints verified. Proceeds. 
+   [Note: I'll make sure the formatting exactly matches the requested style.] 
+   Final Check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Google Apps Script. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Matches. Output matches.✅
+   Proceeds. 
+   [Output Generation] (Proceeds)
+   `Initialize a NEW dedicated folder named gapps_script_workflow_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Google Apps Script. Focus entirely on this new objective: 'Design an automated cloud-based deployment and monitoring pipeline for SaaS applications'. You MUST write the implementation strictly using this exact programming language: Google Apps Script.` -> This is exactly 1 instruction. Meets all constraints. Output matches.✅
+   Done. 
+   [Output Generation] (Proceeds)
+</think>
+
+Initialize a NEW dedicated folder named gapps_script_workflow_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Google Apps Script. Focus entirely on this new objective: 'Design an automated cloud-based deployment and monitoring pipeline for SaaS applications'. You MUST write the implementation strictly using this exact programming language: Google Apps Script.

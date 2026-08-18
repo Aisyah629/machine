@@ -237,3 +237,5 @@ MIT License
 - Created/Updated module: `./speedcode_interactive_diagnostic_tool` (See `./speedcode_interactive_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `objectlogo_logic_tool` (See `objectlogo_logic_tool/README.md` for details)
+
+- Created/Updated module: `rust_async_runtime_tool` (See `rust_async_runtime_tool/README.md` for details)

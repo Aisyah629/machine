@@ -213,3 +213,5 @@ MIT License
 - Created/Updated module: `verilog_hdl_simulator_tool` (See `verilog_hdl_simulator_tool/README.md` for details)
 
 - Created/Updated module: `mpd_workflow_engine_tool` (See `mpd_workflow_engine_tool/README.md` for details)
+
+- Created/Updated module: `snowball_nlp_stemming_tool` (See `snowball_nlp_stemming_tool/README.md` for details)

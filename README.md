@@ -1238,3 +1238,5 @@ Training Machine
 - Created/Updated module: `./cryptographic_gosu_tool` (See `./cryptographic_gosu_tool/README.md` for details)
 
 - Created/Updated module: `pipelines_tool` (See `pipelines_tool/README.md` for details)
+
+- Created/Updated module: `cecil_tool` (See `cecil_tool/README.md` for details)

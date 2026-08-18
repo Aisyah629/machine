@@ -54104,3 +54104,78 @@ Output matches exactly.✅
 </think>
 
 Initialize a NEW dedicated folder named snap_visual_block_editor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snap!. Focus entirely on this new objective: 'Develop an interactive visual programming environment for educational robotics'. You MUST write functional code for this task strictly using this exact programming language: Snap!.
+[2026-08-18 09:19:05] (Target Lang: TECO) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of existing tool directories and files.
+   - **History:** Shows a pattern for generating follow-up instructions.
+   - **Pattern from history:** "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Lang]."
+   - **Constraints from prompt:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TECO.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+   - **Check workspace:** The prompt already contains `./teco_macro_tool` in the workspace list, but the constraint says to create a NEW dedicated folder named `[name]_tool`. I need to pick a name. The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I'll follow the exact pattern structure.
+
+2.  **Deconstruct the Pattern & Constraints:**
+   - Pattern: "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Lang]."
+   - Required Language: TECO
+   - Required Folder Name: I need to pick one. The prompt says "Initialize a NEW dedicated folder named [name]_tool". I'll use `teco_advanced_macro_tool` or just `teco_tool` (but `teco_macro_tool` exists). Let's use `teco_development_tool` to be safe and follow the `[name]_tool` pattern. Actually, the pattern just says `[name]_tool`, so I'll pick `teco_macro_editor_tool` or similar. Wait, the prompt says "Initialize a NEW dedicated folder named [name]_tool". I will literally use `teco_macro_engine_tool` or just `teco_tool`? The constraint says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I'll stick closely to the pattern: `Initialize a NEW dedicated folder named teco_macro_engine_tool in the workspace...`
+   - Actually, looking at the prompt's example in the history section: "Initialize a NEW dedicated folder named snap_visual_block_editor_tool in the workspace..."
+   - I will generate: "Initialize a NEW dedicated folder named teco_macro_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TECO. Focus entirely on this new objective: 'Construct a high-performance text editor with automated macro recording capabilities'. You MUST write functional code for this task strictly using this exact programming language: TECO."
+   - Check constraints:
+     - Exactly 1 logical follow-up instruction? Yes.
+     - Explicitly demand built STRICTLY using exact language: TECO? Yes.
+     - Explicitly instruct to place in NEW dedicated folder and create local README.md? Yes.
+     - Return ONLY the instruction text? Yes.
+     - NEVER target .github? Yes, it won't.
+     - Matches pattern? Yes.
+
+3.  **Refine according to exact constraints:**
+   Let's verify the exact wording required by the prompt's history pattern:
+   "Initialize a NEW dedicated folder named [name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Objective]'. You MUST write functional code for this task strictly using this exact programming language: [Lang]."
+
+   I will fill in:
+   [name] = teco_text_processor
+   [Lang] = TECO
+   [Objective] = 'Build a powerful text manipulation environment with advanced macro execution support'
+
+   Draft: Initialize a NEW dedicated folder named teco_text_processor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TECO. Focus entirely on this new objective: 'Build a powerful text manipulation environment with advanced macro execution support'. You MUST write functional code for this task strictly using this exact programming language: TECO.
+
+   Check constraints again: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TECO." -> Covered.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Covered.
+   "Return ONLY the instruction text." -> Covered.
+   "NEVER target the .github directory." -> Covered.
+
+   The prompt says "Generate exactly 1 logical follow-up instruction." I will output just that string.
+
+   One minor point: The prompt's history shows the exact text to output. I will strictly follow the pattern.
+   "Initialize a NEW dedicated folder named teco_macro_runtime_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TECO. Focus entirely on this new objective: 'Develop a comprehensive macro processing and text editing framework'. You MUST write functional code for this task strictly using this exact programming language: TECO."
+
+   This matches perfectly. I will output exactly this. No extra text.✅
+   Let's double check the exact constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TECO." -> The draft says "STRICTLY using this exact programming language: TECO." twice, matching the pattern. That's fine.
+   All constraints met. Output matches draft.✅
+   Proceed. 
+   Output generation. 
+   [Self-Correction/Verification during thought]
+   Wait, the prompt says: "Initialize a NEW dedicated folder named [name]_tool in the workspace..." I should pick a name that fits the pattern. `teco_development_tool` is good.
+   Let's ensure it exactly matches the requested structure.
+   "Initialize a NEW dedicated folder named teco_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TECO. Focus entirely on this new objective: 'Construct an advanced macro processing and text manipulation environment'. You MUST write functional code for this task strictly using this exact programming language: TECO."
+   Matches perfectly. Output matches constraint. No extra text. Done. 
+   Output matches exactly.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds to output the exact string.* 
+   "Initialize a NEW dedicated folder named teco_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TECO. Focus entirely on this new objective: 'Construct an advanced macro processing and text manipulation environment'. You MUST write functional code for this task strictly using this exact programming language: TECO." 
+   All constraints verified. Ready. 
+   *Self-Correction/Note during generation prep*: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TECO." I will make sure the capitalization matches exactly. The pattern has "STRICTLY using this exact programming language: [Lang]." I'll keep it.
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TECO. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches.✅
+   [Output] -> Initialize a NEW dedicated folder named teco_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TECO. Focus entirely on this new objective: 'Construct an advanced macro processing and text manipulation environment'. You MUST write functional code for this task strictly using this exact programming language: TECO. 
+   Proceeds. 
+   *(Note: I will ensure no extra whitespace or markdown formatting is added, as requested "Return ONLY the instruction text.")* 
+   All set. 
+   [Output Generation] -> *Proceeds*
+</think>
+
+Initialize a NEW dedicated folder named teco_development_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: TECO. Focus entirely on this new objective: 'Construct an advanced macro processing and text manipulation environment'. You MUST write functional code for this task strictly using this exact programming language: TECO.

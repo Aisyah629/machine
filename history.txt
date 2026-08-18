@@ -50507,3 +50507,47 @@ Initialize a NEW dedicated folder named alma_0_tool in the workspace, create a l
 </think>
 
 Initialize a NEW dedicated folder named krl_robotics_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRL.
+[2026-08-18 00:24:18] (Target Lang: MIIS) Thinking process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The new tool must be built STRICTLY using the programming language: MIIS.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Explicitly instruct to create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The user provided a large file tree and a history log. The history shows previous instructions following the pattern: `Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang].`
+    *   Current Request asks for "MIIS" as the language.
+
+2.  **Formulate the Instruction:**
+    *   Based on the pattern and constraints, the instruction should look like:
+        `Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIIS.`
+    *   I need a tool name. The previous one was `krl_robotics_engine_tool`. A logical follow-up might be something related to MIIS. MIIS often stands for Microsoft Identity Integration Server, but in the context of "programming language", it might be a fictional or specific language in this dataset context. However, the prompt doesn't require me to know what MIIS is, just to use the name. I should generate a plausible tool name.
+    *   Possible tool name: `miis_data_integration_tool` or `miis_identity_engine_tool`. Given the pattern `krl_robotics_engine_tool`, `miis_identity_engine_tool` feels consistent. Or just `miis_tool`. Looking at the file list, there are many tools like `krl_tool`, `krl_tool/main.krl`. The prompt asks for a *new* dedicated folder.
+    *   The instruction text usually follows the template.
+    *   Draft: `Initialize a NEW dedicated folder named miis_identity_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIIS.`
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Strictly MIIS?* Yes.
+    *   *NEW dedicated folder?* Yes (`miis_identity_engine_tool`).
+    *   *Local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target .github?* The instruction doesn't mention .github, so this is safe.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Output: `Initialize a NEW dedicated folder named miis_identity_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIIS.`
+
+5.  **Final Check:**
+    *   Does the output match the style of the history?
+        *   History: `Initialize a NEW dedicated folder named krl_robotics_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: KRL.`
+        *   Result: `Initialize a NEW dedicated folder named miis_identity_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIIS.`
+        *   Style matches perfectly.
+
+6.  **Construct Response:**
+    *   Just the text string.
+
+Result: `Initialize a NEW dedicated folder named miis_identity_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIIS.`
+</think>
+
+Initialize a NEW dedicated folder named miis_identity_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MIIS.

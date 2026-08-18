@@ -61650,3 +61650,60 @@ Initialize a NEW dedicated folder named ibm_basic_assembly_tool in the workspace
 </think>
 
 Initialize a NEW dedicated folder named j_script_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: J. Focus entirely on this new objective: 'Develop a high-performance array manipulation and symbolic computation engine for mathematical modeling and data analysis'. You MUST write the implementation strictly using this exact programming language: J.
+[2026-08-18 21:05:20] (Target Lang: Julia) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of workspace directories/files (seems like a simulated file system structure for an "Autonomous AI" tool repository).
+   - History shows previous interactions following a strict format: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Language]."
+   - The current prompt asks: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Julia. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - Must explicitly demand the tool be built STRICTLY using the programming language: Julia.
+   - Must instruct to place it in a NEW dedicated folder.
+   - Must instruct to create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Follow the pattern/style of the history (though the history is just context, I need to generate a fresh instruction matching the constraints).
+
+3.  **Formulate Instruction:**
+   I need to craft a single sentence/paragraph that meets all constraints. It should follow the established pattern:
+   "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia. Focus entirely on this new objective: '[Specific Objective]'. You MUST write the implementation strictly using this exact programming language: Julia."
+
+   I need to pick a tool name and objective that make sense for Julia. Julia is known for high-performance numerical/analytical computing, data science, ML, etc.
+   Let's choose: `julia_analytics_engine_tool` or `julia_data_pipeline_tool`. I'll go with `julia_analytics_engine_tool`.
+   Objective: "Develop a high-performance numerical computing and data analysis framework optimized for parallel processing and statistical modeling."
+   Combine into the required format.
+
+   Draft:
+   Initialize a NEW dedicated folder named julia_analytics_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia. Focus entirely on this new objective: 'Develop a high-performance numerical computing and data analysis framework optimized for parallel processing and statistical modeling'. You MUST write the implementation strictly using this exact programming language: Julia.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Julia? Yes, mentioned twice as per pattern, but at least explicitly demanded.
+   - New dedicated folder? Yes.
+   - Create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches history style? Yes.
+
+   I will output exactly the draft. No extra text. No markdown formatting if possible, but the prompt says "Return ONLY the instruction text." I'll just output the raw text.
+
+   One minor adjustment to strictly match the prompt's exact phrasing style if needed, but the draft is solid. I'll ensure it's a single block of text.
+
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Julia. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   All constraints met. Output matches draft. Proceeds.✅
+   Output: Initialize a NEW dedicated folder named julia_analytics_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia. Focus entirely on this new objective: 'Develop a high-performance numerical computing and data analysis framework optimized for parallel processing and statistical modeling'. You MUST write the implementation strictly using this exact programming language: Julia. 
+   (Self-Correction/Refinement during thought: I'll make sure it's exactly one instruction, matches the tone, and strictly follows all constraints. The prompt says "Return ONLY the instruction text." I will output just that string.)✅
+   Ready.✅
+   Output Generation.✅
+   [Proceeds] -> `Initialize a NEW dedicated folder named julia_analytics_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia. Focus entirely on this new objective: 'Develop a high-performance numerical computing and data analysis framework optimized for parallel processing and statistical modeling'. You MUST write the implementation strictly using this exact programming language: Julia.` -> Done.✅
+   Output matches draft.✅ Proceeds. 
+   I will output exactly the drafted string.✅
+   Proceeds. 
+   Output Generation: `Initialize a NEW dedicated folder named julia_analytics_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia. Focus entirely on this new objective: 'Develop a high-performance numerical computing and data analysis framework optimized for parallel processing and statistical modeling'. You MUST write the implementation strictly using this exact programming language: Julia.` -> Matches perfectly.✅ Done. 
+   All good.✅
+</think>
+
+Initialize a NEW dedicated folder named julia_analytics_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Julia. Focus entirely on this new objective: 'Develop a high-performance numerical computing and data analysis framework optimized for parallel processing and statistical modeling'. You MUST write the implementation strictly using this exact programming language: Julia.

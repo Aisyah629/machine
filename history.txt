@@ -56060,3 +56060,57 @@ Output matches.✅
 </think>
 
 Initialize a NEW dedicated folder named portable_core_runtime_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PortablE. Focus entirely on this new objective: 'Develop a PortablE-based core logic compiler and execution engine for the previously defined system architecture'. You MUST write the implementation strictly using this exact programming language: PortablE.
+[2026-08-18 12:01:02] (Target Lang: Inform) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand the new tool be built STRICTLY using the programming language: Inform.
+    *   Constraint: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+
+2.  **Analyze the Context:**
+    *   The workspace list shows many tools, including `portable_core_runtime_tool` which was mentioned in the history as being created with PortablE.
+    *   The history shows the previous instruction was to create `portable_core_runtime_tool` using PortablE.
+    *   The current request asks for a *follow-up* instruction using *Inform*.
+    *   Inform is a programming language known for creating interactive fiction/text adventures, though it can be used for other logic.
+    *   The instruction should be logical following the previous context, or just a standalone valid instruction based on the constraints.
+    *   The user wants "exactly 1 logical follow-up instruction".
+    *   The output must be just the text of the instruction.
+
+3.  **Draft the Instruction:**
+    *   *Draft 1:* Initialize a NEW dedicated folder named informal_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Inform. Focus entirely on this new objective: 'Develop an Inform-based logic parser and state machine interpreter'. You MUST write the implementation strictly using this exact programming language: Inform.
+    *   *Review against constraints:*
+        *   Exactly 1 instruction? Yes.
+        *   Explicitly demand Inform? Yes ("STRICTLY using this exact programming language: Inform").
+        *   NEW dedicated folder? Yes ("informal_logic_engine_tool").
+        *   Local README.md? Yes ("create a local README.md").
+        *   ONLY instruction text? The draft is just the instruction text.
+        *   Never target .github? The draft does not mention .github.
+        *   Logical? It follows the pattern of creating a new tool. "Inform" is the language. The folder name is distinct.
+
+4.  **Refine the Instruction (Polishing for quality and adherence):**
+    *   The structure usually mirrors the previous successful pattern: "Initialize a NEW dedicated folder... create README... build... using [Language]... Focus... [Objective]... You MUST... [Language]."
+    *   *Refined Draft:* Initialize a NEW dedicated folder named inform_text_adventure_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Inform. Focus entirely on this new objective: 'Develop an Inform-based parser for interactive fiction logic and a state-transition engine'. You MUST write the implementation strictly using this exact programming language: Inform.
+    *   *Check constraints again:*
+        *   "inform_text_adventure_compiler_tool" is a valid folder name.
+        *   "README.md" is requested.
+        *   "STRICTLY using this exact programming language: Inform" is present.
+        *   "You MUST write... Inform" is present.
+        *   No `.github` references.
+        *   Single instruction block.
+
+5.  **Final Output Construction:**
+    *   Result: `Initialize a NEW dedicated folder named inform_text_adventure_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Inform. Focus entirely on this new objective: 'Develop an Inform-based parser for interactive fiction logic and a state-transition engine'. You MUST write the implementation strictly using this exact programming language: Inform.`
+
+6.  **Final Verification:**
+    *   Does it return *only* the instruction text? Yes.
+    *   Is it exactly one instruction? Yes.
+    *   Does it use Inform? Yes.
+    *   Does it create a folder and README? Yes.
+    *   Does it avoid .github? Yes.
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named inform_text_adventure_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Inform. Focus entirely on this new objective: 'Develop an Inform-based parser for interactive fiction logic and a state-transition engine'. You MUST write the implementation strictly using this exact programming language: Inform.

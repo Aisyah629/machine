@@ -1,15 +1,31 @@
-# Candle Self-Healing Tool
+# Candle API Client Tool
 
-This tool is designed to handle edge cases and errors gracefully in Candle script environments. It provides a robust error handling mechanism, automatic retry logic, and state recovery capabilities.
+## Overview
+This tool implements a robust data transfer and API interaction engine in the Candle programming language. It is designed for high-level network communication, featuring automatic retries, JSON parsing, and secure authorization handling.
 
 ## Features
-- Error Catching and Logging
-- Automatic Retry Mechanisms
-- State Recovery
-- Edge Case Handling
+- **HTTP Request Engine**: Handles GET, POST, PUT, and DELETE methods.
+- **Retry Logic**: Implements exponential backoff on failure.
+- **JSON Parsing**: Native support for parsing API responses.
+- **Authorization**: Bearer token support.
+- **Error Handling**: Robust try-catch blocks with logging.
 
 ## Usage
-Include the main.candle file in your project to utilize the self-healing features.
+To use this tool, ensure the Candle runtime is installed and available in your path. Execute the main script with:
+
+```bash
+candle main.candle
+```
+
+## Configuration
+Modify the `Config` struct in `main.candle` to set:
+- `url`: The base API URL.
+- `endpoint`: The specific API path.
+- `method`: HTTP method.
+- `auth_token`: Your API key or token.
+
+## File Structure
+- `main.candle`: The core implementation of the API client and data transfer logic.
 
 ## License
-MIT
+Internal Use Only

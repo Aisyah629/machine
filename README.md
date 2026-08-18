@@ -35,3 +35,5 @@ MIT License
 - Created/Updated module: `bpel_tool` (See `bpel_tool/README.md` for details)
 
 - Created/Updated module: `starlogo_tool` (See `starlogo_tool/README.md` for details)
+
+- Created/Updated module: `candle_tool` (See `candle_tool/README.md` for details)

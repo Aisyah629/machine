@@ -57,3 +57,5 @@ MIT License
 - Created/Updated module: `simple_logic_parser_tool` (See `simple_logic_parser_tool/README.md` for details)
 
 - Created/Updated module: `lsl_scripting_tool` (See `lsl_scripting_tool/README.md` for details)
+
+- Created/Updated module: `corvision_tool` (See `corvision_tool/README.md` for details)

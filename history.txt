@@ -54024,3 +54024,40 @@ Initialize a NEW dedicated folder named simple_logic_parser_tool in the workspac
 </think>
 
 Initialize a NEW dedicated folder named lsl_scripting_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LSL. Focus entirely on this new objective: 'Develop a modular event-driven communication protocol for real-time entity synchronization'. You MUST write functional code for this task strictly using this exact programming language: LSL.
+[2026-08-18 08:54:55] (Target Lang: CorVision) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built using the language "CorVision".
+    *   Constraint 2: If building a new tool, must instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a large list of existing tools and a history entry showing a previous instruction format. The previous history shows a pattern: `Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Obj]'. You MUST write functional code for this task strictly using this exact programming language: [Lang].`
+
+2.  **Draft the Instruction:**
+    *   *Folder Name:* Needs to be a new, logical name. Since the language is "CorVision", the folder should probably reflect that. e.g., `corvision_tool` or `corvision_scripting_tool`. Let's use `corvision_tool` for simplicity and clarity.
+    *   *Language:* "CorVision".
+    *   *Objective:* Needs to be a plausible objective for a tool using this language. Since "CorVision" sounds like a vision or coordination tool, I can invent an objective. e.g., "Develop a visual data processing pipeline for image recognition tasks" or "Create a core vision analysis module for autonomous system diagnostics". Let's go with something generic but functional: "Develop a core vision analysis module for autonomous system diagnostics".
+    *   *Structure:* Following the pattern from the history:
+        *   "Initialize a NEW dedicated folder named corvision_tool in the workspace,"
+        *   "create a local README.md inside it,"
+        *   "and build the entire new tool STRICTLY using this exact programming language: CorVision."
+        *   "Focus entirely on this new objective: 'Develop a core vision analysis module for autonomous system diagnostics'."
+        *   "You MUST write functional code for this task strictly using this exact programming language: CorVision."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes, the drafted text is a single coherent instruction block.
+    *   *Explicitly demand language CorVision?* Yes ("STRICTLY using this exact programming language: CorVision").
+    *   *New dedicated folder?* Yes ("NEW dedicated folder named corvision_tool").
+    *   *Local README.md?* Yes ("create a local README.md inside it").
+    *   *Return ONLY instruction text?* Yes, the output will be just the text.
+    *   *Never target .github?* Yes, the folder is `corvision_tool`, not `.github`.
+
+4.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named corvision_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CorVision. Focus entirely on this new objective: 'Develop a core vision analysis module for autonomous system diagnostics'. You MUST write functional code for this task strictly using this exact programming language: CorVision.`
+
+5.  **Output Generation:**
+    *   Print the result.
+</think>
+
+Initialize a NEW dedicated folder named corvision_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CorVision. Focus entirely on this new objective: 'Develop a core vision analysis module for autonomous system diagnostics'. You MUST write functional code for this task strictly using this exact programming language: CorVision.

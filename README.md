@@ -149,3 +149,5 @@ MIT License
 - Created/Updated module: `gml_game_development_tool` (See `gml_game_development_tool/README.md` for details)
 
 - Created/Updated module: `ops5_production_system_tool` (See `ops5_production_system_tool/README.md` for details)
+
+- Created/Updated module: `able_pipeline_processor_tool` (See `able_pipeline_processor_tool/README.md` for details)

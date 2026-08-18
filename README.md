@@ -205,3 +205,5 @@ MIT License
 - Created/Updated module: `objectlogo_tool` (See `objectlogo_tool/README.md` for details)
 
 - Created/Updated module: `k_advanced_tool` (See `k_advanced_tool/README.md` for details)
+
+- Created/Updated module: `machine_code_tool` (See `machine_code_tool/README.md` for details)

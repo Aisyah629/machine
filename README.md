@@ -1240,3 +1240,5 @@ Training Machine
 - Created/Updated module: `pipelines_tool` (See `pipelines_tool/README.md` for details)
 
 - Created/Updated module: `cecil_tool` (See `cecil_tool/README.md` for details)
+
+- Created/Updated module: `subtext_tool` (See `subtext_tool/README.md` for details)

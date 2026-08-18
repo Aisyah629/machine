@@ -265,3 +265,5 @@ MIT License
 - Created/Updated module: `data_processing_utility_tool` (See `data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `setl_data_processing_tool` (See `setl_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `cg_data_extraction_tool` (See `cg_data_extraction_tool/README.md` for details)

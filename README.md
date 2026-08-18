@@ -113,3 +113,5 @@ MIT License
 - Created/Updated module: `onyx_tool` (See `onyx_tool/README.md` for details)
 
 - Created/Updated module: `runeapi_client_tool` (See `runeapi_client_tool/README.md` for details)
+
+- Created/Updated module: `easytrieve_plus_tool` (See `easytrieve_plus_tool/README.md` for details)

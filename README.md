@@ -145,3 +145,5 @@ MIT License
 - Created/Updated module: `gapps_script_workflow_tool` (See `gapps_script_workflow_tool/README.md` for details)
 
 - Created/Updated module: `nesC_sensor_tool` (See `nesC_sensor_tool/README.md` for details)
+
+- Created/Updated module: `gml_game_development_tool` (See `gml_game_development_tool/README.md` for details)

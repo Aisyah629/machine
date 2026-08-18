@@ -59137,3 +59137,61 @@ Initialize a NEW dedicated folder named hume_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named pure_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pure. Focus entirely on this new objective: 'Develop a functional logic programming environment with term rewriting capabilities'. You MUST write the implementation strictly using this exact programming language: Pure.
+[2026-08-18 17:46:09] (Target Lang: Cel) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using the language: `Cel`.
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder and create a local `README.md`.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a long list of existing tool folders (mostly ending in `_tool`). I need to scan this list to ensure the new tool name and folder don't conflict or look like a modification of an existing one, although the prompt asks for a "NEW dedicated folder".
+
+2.  **Drafting the Instruction:**
+    *   *Language:* `Cel`.
+    *   *Action:* Create a new tool.
+    *   *Folder:* Needs a new name. Looking at the pattern `*_tool`, a plausible name could be `cel_compiler_tool` or `cel_system_tool`. Let's check the list.
+        *   Scanning list for "cel": `cel_tool` exists (`./cel_tool/README.md`, `./cel_tool/main.cel`).
+        *   *Crucial Check:* The prompt asks for a "NEW dedicated folder". If `cel_tool` already exists, creating a folder named `cel_tool` would conflict or be redundant. I should choose a distinct name. The prompt doesn't forbid naming it `cel_tool` if the user wants to overwrite, but "NEW dedicated folder" usually implies a new path. However, in these types of prompts, the AI often generates a tool that doesn't exist. Let's look for "cel" in the list again.
+        *   Result: `./cel_tool` exists.
+        *   Strategy: To be safe and adhere to "NEW", I should use a name that isn't `cel_tool`. Maybe `cel_advanced_tool` or `cel_parsing_tool`? Or just a generic `cel_engine_tool`? `cel_engine_tool` doesn't appear to be in the list. `cel_tool` is there. `cel` is also likely the extension for `cel_tool`.
+        *   Let's check `cel_tool` contents in the list: `./cel_tool/README.md`, `./cel_tool/main.cel`.
+        *   Conclusion: A new tool should likely be named something like `cel_compiler_tool` or `cel_analysis_tool` to be distinct. Or the prompt might accept `cel_tool` if the user considers "NEW" as "New instance", but usually, these instructions are parsed by scripts that check for directory existence. Creating `cel_engine_tool` is safer.
+        *   *Decision:* Use `cel_engine_tool` as the folder name to ensure it's NEW.
+    *   *Folder Creation:* `cel_engine_tool`.
+    *   *README:* Create `./cel_engine_tool/README.md`.
+    *   *Language Constraint:* STRICTLY `Cel`.
+    *   *Objective:* Develop a logic programming environment? Or just generic Cel tool? The prompt example used "Develop a functional logic programming environment...". I can use a similar style. Cel is often associated with constraint solving or formal verification. Let's suggest `Develop a constraint solving environment with symbolic execution capabilities` or similar. Or just generic "Build a Cel tool". The prompt example suggests a specific focus is good.
+    *   *Draft Text:* "Initialize a NEW dedicated folder named cel_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel. Focus entirely on this new objective: 'Construct a constraint satisfaction solver with symbolic constraint propagation'. You MUST write the implementation strictly using this exact programming language: Cel."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, it's a single block of text starting with an action verb, describing the creation and build.
+    *   *Explicitly demand Cel?* Yes ("STRICTLY using this exact programming language: Cel").
+    *   *NEW folder?* Yes (`cel_engine_tool` is not in the list).
+    *   *README.md?* Yes ("create a local README.md inside it").
+    *   *ONLY instruction text?* Yes, no preamble or postamble in the output.
+    *   *No .github?* Yes.
+    *   *Language Check:* The prompt asks to "Return ONLY the instruction text."
+    *   *Result:* The output should be the text string.
+
+4.  **Refinement of Text:**
+    *   "Initialize a NEW dedicated folder named cel_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel. Focus entirely on this new objective: 'Construct a constraint satisfaction solver with symbolic constraint propagation'. You MUST write the implementation strictly using this exact programming language: Cel."
+    *   This looks solid. It mirrors the structure of the example in the "History" section of the prompt (which seems to be few-shot context for the AI generating the instruction). The example shows: "Initialize a NEW dedicated folder named [name]... create a local README.md... build... STRICTLY using... Cel. Focus... 'Objective'. You MUST..."
+    *   The draft matches this structure.
+
+5.  **Final Output Construction:**
+    *   Text: `Initialize a NEW dedicated folder named cel_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel. Focus entirely on this new objective: 'Construct a constraint satisfaction solver with symbolic constraint propagation'. You MUST write the implementation strictly using this exact programming language: Cel.`
+    *   Wait, let me double-check the folder name `cel_engine_tool` against the list one more time mentally.
+        *   List includes: `cel_tool`.
+        *   List includes: `cel_tool/main.cel`.
+        *   List includes: `cel_tool/README.md`.
+        *   List does *not* include `cel_engine_tool`.
+        *   List includes `cel`? No, just `cel_tool`.
+        *   `cel_engine_tool` is safe.
+    *   Result is good.
+
+6.  **Final Polish (Mental Representation of Output):**
+    `Initialize a NEW dedicated folder named cel_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel. Focus entirely on this new objective: 'Construct a constraint satisfaction solver with symbolic constraint propagation'. You MUST write the implementation strictly using this exact programming language: Cel.`
+</think>
+
+Initialize a NEW dedicated folder named cel_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Cel. Focus entirely on this new objective: 'Construct a constraint satisfaction solver with symbolic constraint propagation'. You MUST write the implementation strictly using this exact programming language: Cel.

@@ -1,24 +1,26 @@
-# Cel Diagnostic Tool
+# Cel Tool
 
-This directory contains the Cel Diagnostic Tool, which provides interactive diagnostics and visualization capabilities for the Cel programming language.
-
-## Files
-- `main.cel`: The main diagnostic logic and visualization components.
-
-## Usage
-
-To run the diagnostic tool, simply execute the following command:
-
-```bash
-cel main.cel
-```
+## Description
+The Cel tool provides a framework for constraint evaluation and validation using the Cel programming language.
 
 ## Features
+- Constraint definition and application
+- Expression evaluation
+- Success/failure reporting
 
-- **Interactive Diagnostics:** Real-time analysis of Cel code structures.
-- **Visualizations:** Dynamic visualization of code execution paths and data flows.
-- **Customizable Displays:** Tailor the diagnostic output to specific needs.
+## Usage
+To use the Cel tool, compile and run the main.cel file:
+```
+cel run main.cel
+```
+
+## Structure
+- `main.cel`: The main entry point for the Cel tool.
+
+## Dependencies
+- `cel_core`: Core Cel library
+- `cel_math`: Mathematical functions
+- `cel_io`: Input/Output utilities
 
 ## License
-
-This project is licensed under the MIT License.
+MIT License

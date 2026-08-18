@@ -1,11 +1,50 @@
-## Cel Diagnostic Tool
+// Cel Tool - Main Entry Point
+// This file demonstrates the basic syntax and structure of a Cel tool.
 
-This tool provides an interactive diagnostic interface for Cel programming language.
+import "cel_core"
+import "cel_math"
+import "cel_io"
 
-### Features
-- Visual representation of Cel stages
-- Interactive elements for data visualization
-- Real-time updates
+// Define a simple data structure for constraints
+struct Constraint {
+  name: string
+  expression: string
+  value: float
+}
 
-### Usage
-To use the Cel Diagnostic Tool, simply import the module and initialize the diagnostic interface.
+// Function to evaluate a simple mathematical expression
+function evaluateExpression(expr: string): float {
+  // Placeholder for actual expression evaluation logic
+  // In a real implementation, this would parse and evaluate the expression
+  return 0.0
+}
+
+// Function to apply a constraint
+function applyConstraint(c: Constraint): bool {
+  result := evaluateExpression(c.expression)
+  if result == c.value {
+    cel_io.println("Constraint " + c.name + " passed")
+    return true
+  } else {
+    cel_io.println("Constraint " + c.name + " failed: expected " + c.value + ", got " + result)
+    return false
+  }
+}
+
+// Main function
+function main() {
+  // Create some example constraints
+  c1 := Constraint("Sum", "2 + 3", 5.0)
+  c2 := Constraint("Product", "4 * 5", 20.0)
+  
+  // Apply constraints
+  success := true
+  success := applyConstraint(c1) && success
+  success := applyConstraint(c2) && success
+  
+  if success {
+    cel_io.println("All constraints passed")
+  } else {
+    cel_io.println("Some constraints failed")
+  }
+}

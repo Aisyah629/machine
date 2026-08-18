@@ -49,3 +49,5 @@ MIT License
 - Created/Updated module: `aimms_advanced_optimizer_tool` (See `aimms_advanced_optimizer_tool/README.md` for details)
 
 - Created/Updated module: `xojo_visualization_engine_tool` (See `xojo_visualization_engine_tool/README.md` for details)
+
+- Created/Updated module: `awk_log_parser_tool` (See `awk_log_parser_tool/README.md` for details)

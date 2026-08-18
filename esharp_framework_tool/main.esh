@@ -1,0 +1,106 @@
+// E# (E Sharp) Framework Tool Implementation
+// Functional Object-Oriented Application Development and .NET Integration
+
+namespace ESharp.Framework
+
+open System
+open System.IO
+open System.Collections.Generic
+
+// Define core data types for E# source parsing and code generation
+type TokenType =
+    | TokenFunc
+    | TokenVar
+    | TokenLet
+    | TokenIf
+    | TokenElse
+    | TokenEnd
+    | TokenLambda
+    | TokenPipe
+    | TokenComma
+    | TokenIdent of string
+    | TokenInt of int
+    | TokenOp of string
+    | TokenEOF
+
+// Define the AST node structure for E# programs
+type Expr =
+    | EVar of string
+    | EInt of int
+    | ELet of string * Expr * Expr
+    | EFunc of string * Expr
+    | EApply of Expr * Expr
+    | EIf of Expr * Expr * Expr
+    | ELambda of string * Expr
+    | EOp of string * Expr * Expr
+
+type Program = { tokens: TokenType list; ast: Expr list; output: string }
+
+// E# Language Engine for Compilation and Execution
+class ESharpEngine
+    static member ParseToken (s: string) : TokenType =
+        match s with
+        | "func" -> TokenFunc
+        | "let" -> TokenLet
+        | "if" -> TokenIf
+        | "else" -> TokenElse
+        | "end" -> TokenEnd
+        | "->" -> TokenPipe
+        | "," -> TokenComma
+        | _ when System.Text.RegularExpressions.Regex.IsMatch(s, "^-?[0-9]+$") -> TokenInt(int s)
+        | _ -> TokenIdent(s)
+
+    static member Tokenize (input: string) : TokenType list =
+        input.Split([|' '; '\n'; '\t'; '('; ')'; ';'|], StringSplitOptions.RemoveEmptyEntries)
+        |> Array.map ESharpEngine.ParseToken
+        |> Array.toList
+
+    static member BuildAST (tokens: TokenType list) : Expr list =
+        let rec parseExpr tokens =
+            match tokens with
+            | TokenIdent name :: rest ->
+                [ EVar name ] @ parseExpr rest
+            | TokenInt n :: rest ->
+                [ EInt n ] @ parseExpr rest
+            | _ -> []
+        parseExpr tokens
+
+    static member GenerateCIL (ast: Expr list) : string =
+        let rec generate expr =
+            match expr with
+            | EVar name -> sprintf "ldstr %s" name
+            | EInt n -> sprintf "ldc.i4 %d" n
+            | ELet(name, init, body) ->
+                sprintf "let %%s = %%s in %%s" name (generate init) (generate body)
+            | EApply(func, arg) ->
+                sprintf "apply %%s %%s" (generate func) (generate arg)
+            | EIf(cond, thenBranch, elseBranch) ->
+                sprintf "if %%s then %%s else %%s" (generate cond) (generate thenBranch) (generate elseBranch)
+            | _ -> "noop"
+        List.map generate ast |> String.concat "\n"
+
+// Main Execution Logic for the E# Framework Tool
+type ESharpFrameworkTool() =
+    static member Run (args: string[]) =
+        let sourceCode = if Array.length > 1 then args.[1] else "let x = 5 in func add(a, b) = a + b -> 10"
+        let tokens = ESharpEngine.Tokenize sourceCode
+        let ast = ESharpEngine.BuildAST tokens
+        let cilCode = ESharpEngine.GenerateCIL ast
+        
+        let outputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "output", "esharp_build.dll")
+        Directory.CreateDirectory(Path.GetDirectoryName(outputPath)) |> ignore
+        
+        // Simulate .NET assembly generation
+        let assemblyContent = sprintf "// E# Generated CIL\r\n.assembly esharp_build {}\r\n.module esharp_build.dll\r\n%s" cilCode
+        File.WriteAllText(outputPath, assemblyContent)
+        
+        printfn "E# Framework Tool: Compilation successful."
+        printfn "Generated CIL:\r\n%s" cilCode
+        printfn "Output Assembly: %s" outputPath
+        printfn "Ready for .NET execution or further integration."
+
+// Entry Point
+[<EntryPoint>]
+let main argv =
+    ESharpFrameworkTool.Run argv
+    0

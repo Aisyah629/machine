@@ -53119,3 +53119,36 @@ Initialize a NEW dedicated folder named code_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx.
+[2026-08-18 07:01:21] (Target Lang: BPEL) The user wants a single logical follow-up instruction to add a new tool to the workspace.
+The tool must be built using the programming language BPEL.
+The instruction must explicitly demand the use of BPEL.
+It must instruct to place it in a NEW dedicated folder.
+It must instruct to create a local README.md.
+It must return ONLY the instruction text.
+It must NOT target the .github directory.
+The language for the tool is BPEL. The folder name should likely be `bpel_tool` or similar, but the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". Looking at the history, previous instructions like "Initialize a NEW dedicated folder named onyx_tool..." were used. I will follow that pattern.
+Let's craft the instruction carefully.
+"Initialize a NEW dedicated folder named bpel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL."
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand BPEL? Yes.
+- Place in NEW dedicated folder? Yes.
+- Create local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- Never target .github? Yes.
+Matches perfectly. Output matches request.✅
+Proceeds.
+Output Generation. -> `Initialize a NEW dedicated folder named bpel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL.`
+Done. 
+I will output exactly that string.
+Wait, let's verify the exact wording from the prompt example: "Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx."
+I will adapt it to BPEL.
+"Initialize a NEW dedicated folder named bpel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL."
+All good.✅
+Output matches.
+Proceeds. 
+Final Output Generation. 
+[Done]
+</think>
+
+Initialize a NEW dedicated folder named bpel_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: BPEL.

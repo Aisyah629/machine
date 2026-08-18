@@ -1262,3 +1262,5 @@ Training Machine
 - Created/Updated module: `sps_tool` (See `sps_tool/README.md` for details)
 
 - Created/Updated module: `robotc_tool` (See `robotc_tool/README.md` for details)
+
+- Created/Updated module: `corn_tool` (See `corn_tool/README.md` for details)

@@ -1,0 +1,97 @@
+! MIMIC Simulation Diagnostic Tool
+! Interactive visualization and monitoring for MIMIC data structures
+
+MAIN START_STATE
+
+! Define data structure for patient monitoring
+PATIENT_DATA RECORD
+  ID: INTEGER
+  HEART_RATE: FLOAT
+  BLOOD_PRESSURE: FLOAT
+  TEMPERATURE: FLOAT
+  TIMESTAMP: INTEGER
+END_RECORD
+
+! Initialize variables
+CURRENT_PATIENT: PATIENT_DATA
+SIMULATION_CYCLE: INTEGER = 0
+MAX_CYCLES: INTEGER = 10
+
+! Diagnostic output function
+FUNCTION DIAGNOSTIC_PRINT(message: STRING)
+  PRINT("[DIAGNOSTIC] " + message)
+END_FUNCTION
+
+! Visualization helper for simple text-based graph
+FUNCTION VISUALIZE_BAR(value: FLOAT, max_value: FLOAT)
+  BAR_WIDTH: INTEGER = 20
+  FILLED: INTEGER = (value / max_value) * BAR_WIDTH
+  BAR: STRING = ""
+  I: INTEGER
+
+  FOR I FROM 1 TO FILLED
+    BAR = BAR + "#"
+  END_FOR
+
+  FOR I FROM FILLED TO BAR_WIDTH
+    BAR = BAR + " "
+  END_FOR
+
+  PRINT("[" + BAR + "] " + FORMAT(value, 1))
+END_FUNCTION
+
+! Simulate vital sign updates
+FUNCTION UPDATE_VITALS(patient: PATIENT_DATA)
+  ! Add noise to simulate real-world fluctuations
+  patient.HEART_RATE = patient.HEART_RATE + (RANDOM() * 10 - 5)
+  patient.BLOOD_PRESSURE = patient.BLOOD_PRESSURE + (RANDOM() * 10 - 5)
+  patient.TEMPERATURE = patient.TEMPERATURE + (RANDOM() * 0.2 - 0.1)
+  patient.TIMESTAMP = patient.TIMESTAMP + 1
+END_FUNCTION
+
+! Main diagnostic loop
+START_STATE:
+  DIAGNOSTIC_PRINT("Initializing MIMIC Diagnostic Environment...")
+  
+  ! Initialize patient data with baseline values
+  CURRENT_PATIENT.ID = 1
+  CURRENT_PATIENT.HEART_RATE = 72.0
+  CURRENT_PATIENT.BLOOD_PRESSURE = 120.0
+  CURRENT_PATIENT.TEMPERATURE = 37.0
+  CURRENT_PATIENT.TIMESTAMP = 0
+
+  PRINT("--- MIMIC Interactive Diagnostic Session ---")
+  PRINT("Max simulation cycles: " + STR(MAX_CYCLES))
+  PRINT("Press Ctrl+C to terminate early")
+  PRINT("-----------------------------------------")
+
+  WHILE SIMULATION_CYCLE < MAX_CYCLES DO
+    DIAGNOSTIC_PRINT("Cycle: " + STR(SIMULATION_CYCLE + 1))
+    
+    ! Update vital signs
+    UPDATE_VITALS(CURRENT_PATIENT)
+    
+    ! Visualize Heart Rate
+    PRINT("Heart Rate: ")
+    VISUALIZE_BAR(CURRENT_PATIENT.HEART_RATE, 120.0)
+    
+    ! Visualize Blood Pressure
+    PRINT("Systolic BP: ")
+    VISUALIZE_BAR(CURRENT_PATIENT.BLOOD_PRESSURE, 180.0)
+    
+    ! Visualize Temperature
+    PRINT("Temperature: ")
+    VISUALIZE_BAR(CURRENT_PATIENT.TEMPERATURE, 42.0)
+    
+    PRINT("---")
+    
+    ! Increment cycle
+    SIMULATION_CYCLE = SIMULATION_CYCLE + 1
+  END_WHILE
+
+  DIAGNOSTIC_PRINT("Simulation complete.")
+  PRINT("Final values: HR=" + STR(CURRENT_PATIENT.HEART_RATE) + 
+        " BP=" + STR(CURRENT_PATIENT.BLOOD_PRESSURE) + 
+        " Temp=" + STR(CURRENT_PATIENT.TEMPERATURE))
+
+END_MAIN

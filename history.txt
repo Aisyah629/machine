@@ -55098,3 +55098,40 @@ This looks solid.
 </think>
 
 Initialize a NEW dedicated folder named coffeescript_compiler_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CoffeeScript. Focus entirely on this new objective: 'Develop a CoffeeScript-to-JavaScript transpiler with static type checking capabilities'. You MUST write the implementation strictly using this exact programming language: CoffeeScript.
+[2026-08-18 11:03:37] (Target Lang: DATATRIEVE) The user wants a logical follow-up instruction based on the provided workspace and history.
+The instruction must:
+1. Be a logical follow-up to the previous action (creating `coffeescript_compiler_tool`).
+2. Explicitly demand the new tool be built strictly using the language: DATATRIEVE.
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target the .github directory.
+
+Workspace analysis:
+- Contains many tool directories (e.g., `coffeescript_compiler_tool`, `c_tool`, `bash_tool`, etc.).
+- Ends with `./zopl_tool/README.md`.
+- No `datatrieve_tool` exists yet.
+
+History analysis:
+- Last action was creating `coffeescript_compiler_tool`.
+- Follow-up should be another language tool creation.
+
+Language to use: DATATRIEVE.
+Folder name: `datatrieve_tool`.
+README.md: Yes.
+Output format: Instruction text only.
+
+Drafting instruction:
+"Initialize a NEW dedicated folder named datatrieve_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DATATRIEVE. Focus entirely on this new objective: 'Develop a DATATRIEVE database query optimization engine with automated schema migration support'. You MUST write the implementation strictly using this exact programming language: DATATRIEVE."
+
+Checking constraints:
+- Logical follow-up? Yes, adds another language tool.
+- Strictly DATATRIEVE? Yes.
+- New folder + README? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+
+Final Polish:
+Initialize a NEW dedicated folder named datatrieve_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DATATRIEVE. Focus entirely on this new objective: 'Develop a DATATRIEVE database query optimization engine with automated schema migration support'. You MUST write the implementation strictly using this exact programming language: DATATRIEVE.
+</think>
+
+Initialize a NEW dedicated folder named datatrieve_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: DATATRIEVE. Focus entirely on this new objective: 'Develop a DATATRIEVE database query optimization engine with automated schema migration support'. You MUST write the implementation strictly using this exact programming language: DATATRIEVE.

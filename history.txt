@@ -56716,3 +56716,66 @@ Initialize a NEW dedicated folder named vala_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named yorick_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Yorick. Focus entirely on this new objective: 'Develop a high-performance numerical computing and scientific data visualization framework for engineering simulations'. You MUST write the implementation strictly using this exact programming language: Yorick.
+[2026-08-18 13:56:43] (Target Lang: Ferite) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a long list of workspace files/directories, mostly following a pattern like `./{tool_name}_tool/`, `./README.md`, `./.git`, etc. There's also a "History:" section that seems to be a log of previous instructions/actions, ending with an instruction about Yorick.
+   - **Task:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ferite. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 instruction.
+     - Explicitly demand Ferite language.
+     - Place in a NEW dedicated folder.
+     - Create a local README.md.
+     - Return ONLY the instruction text.
+     - Never target `.github`.
+     - Match the style of the example in the history (though the history is just context, the prompt gives explicit constraints).
+
+2.  **Deconstruct Constraints:**
+   - **Language:** Ferite (must be explicitly stated)
+   - **Location:** NEW dedicated folder (name should logically follow the pattern, e.g., `ferite_tool`)
+   - **File:** Create `README.md` inside it
+   - **Output:** ONLY the instruction text, no extra words, no markdown formatting unless necessary, but the prompt says "Return ONLY the instruction text."
+   - **Content:** The instruction should logically follow the previous one (Yorick tool for numerical computing/visualization) or just be a standalone valid instruction per the prompt. I'll make it about a new tool in Ferite, perhaps focusing on a different domain to keep it fresh, or just a general tool. The prompt says "logical follow-up instruction", so I'll frame it as a continuation or a new task.
+   - **Format:** Match the exact phrasing style if possible, but strictly follow the constraints.
+
+   Draft structure: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: '[description]'. You MUST write the implementation strictly using this exact programming language: Ferite."
+
+3.  **Refine according to constraints:**
+   - Must explicitly demand Ferite.
+   - Must mention NEW dedicated folder.
+   - Must mention local README.md.
+   - Return ONLY instruction text.
+   - NEVER target .github.
+
+   Let's craft it carefully:
+   "Initialize a NEW dedicated folder named ferite_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Develop a lightweight, cross-platform web application framework for rapid prototyping of interactive network services'. You MUST write the implementation strictly using this exact programming language: Ferite."
+
+   Check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand Ferite? Yes, twice actually, but that's fine. I'll make it explicit once or twice as in the prompt example.
+   - NEW dedicated folder? Yes.
+   - Local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Logical follow-up? It follows the pattern of the history entry.
+
+   Let's align it closely with the provided example in the history for consistency:
+   "Initialize a NEW dedicated folder named ferite_web_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Develop a high-throughput asynchronous web server and API gateway for real-time data streaming'. You MUST write the implementation strictly using this exact programming language: Ferite."
+
+   Wait, the prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ferite. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   I will output exactly that instruction string. No extra text.
+
+   Final check of the draft:
+   Initialize a NEW dedicated folder named ferite_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Develop a robust, event-driven backend service architecture for scalable microservice deployments'. You MUST write the implementation strictly using this exact programming language: Ferite.
+
+   Matches all constraints. Ready.✅
+   Output matches exactly. No extra text.✅
+   Proceeds. Output generation.✅
+   *(Self-Correction/Verification during thought)*: I should ensure it's strictly one paragraph/sentence as requested. The draft is one paragraph. It's fine.
+   Output matches.✅
+   [Done] -> Output Generation.✅
+   *(Proceeds)*
+</think>
+
+Initialize a NEW dedicated folder named ferite_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ferite. Focus entirely on this new objective: 'Develop a robust, event-driven backend service architecture for scalable microservice deployments'. You MUST write the implementation strictly using this exact programming language: Ferite.

@@ -159,3 +159,5 @@ MIT License
 - Created/Updated module: `omnimark_web_transformation_tool` (See `omnimark_web_transformation_tool/README.md` for details)
 
 - Created/Updated module: `esharp_framework_tool` (See `esharp_framework_tool/README.md` for details)
+
+- Created/Updated module: `argus_concurrent_consensus_tool` (See `argus_concurrent_consensus_tool/README.md` for details)

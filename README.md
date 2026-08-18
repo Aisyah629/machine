@@ -75,3 +75,5 @@ MIT License
 - Created/Updated module: `sed_tool` (See `sed_tool/README.md` for details)
 
 - Created/Updated module: `ease_tool` (See `ease_tool/README.md` for details)
+
+- Created/Updated module: `erlang_tool` (See `erlang_tool/README.md` for details)

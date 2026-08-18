@@ -1,0 +1,40 @@
+FUNCTION ProcessPipeline(data: list) -> list
+    VAR results: list = []
+    FOR item IN data DO
+        IF item IS VALID THEN
+            VAR transformed: dict = TransformItem(item)
+            results.ADD(transformed)
+        END IF
+    END FOR
+    RETURN results
+END FUNCTION
+
+FUNCTION TransformItem(item: dict) -> dict
+    VAR result: dict = {}
+    result.KEY = item.KEY
+    result.VALUE = item.VALUE * 2
+    result.STATUS = "PROCESSED"
+    RETURN result
+END FUNCTION
+
+FUNCTION ValidateData(data: list) -> bool
+    IF data IS EMPTY THEN
+        RETURN FALSE
+    END IF
+    FOR item IN data DO
+        IF item.KEY IS NULL OR item.VALUE IS NULL THEN
+            RETURN FALSE
+        END IF
+    END FOR
+    RETURN TRUE
+END FUNCTION
+
+START
+    VAR input_data: list = [{KEY: 'A', VALUE: 1}, {KEY: 'B', VALUE: 2}, {KEY: 'C', VALUE: 3}]
+    IF ValidateData(input_data) THEN
+        VAR output: list = ProcessPipeline(input_data)
+        PRINT output
+    ELSE
+        PRINT "Invalid input data"
+    END IF
+END

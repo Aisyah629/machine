@@ -58023,3 +58023,46 @@ Initialize a NEW dedicated folder named not_exact_c_tool in the workspace, creat
 </think>
 
 Initialize a NEW dedicated folder named ops5_production_system_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: OPS5. Focus entirely on this new objective: 'Implement a production system rule engine for automated data validation'. You MUST write the implementation strictly using this exact programming language: OPS5.
+[2026-08-18 15:57:46] (Target Lang: ABLE) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: New tool must be built STRICTLY using ABLE programming language.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The user provided a workspace list and a history. The history shows a pattern of generating instructions for new tools. The current output in the history shows a generated instruction for `ops5_production_system_tool` using OPS5. The user wants a *follow-up* instruction.
+    *   Logical Follow-up: Usually, a follow-up instruction relates to the previous one or continues the pattern. Since the previous instruction was about an OPS5 tool for a production system rule engine, a logical follow-up might be related to data validation, or perhaps a different tool using a different language as requested (ABLE). The prompt explicitly demands the language be ABLE.
+    *   Resulting Structure: `Initialize a NEW dedicated folder named [FOLDER_NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write the implementation strictly using this exact programming language: ABLE.`
+
+2.  **Draft the instruction content:**
+    *   *Folder Name:* Needs to be new. Based on the pattern in the history, folder names often match the tool name. Let's pick something related to "ABLE" and perhaps a function. Looking at the workspace, there's `able_tool`. The new tool should probably be something distinct. Maybe `able_data_integration_tool` or `able_stream_processing_tool`. Let's go with `able_computational_engine_tool` or just `able_analysis_tool`. Let's choose `able_advanced_analysis_tool` to sound distinct but plausible. Or better yet, follow the pattern of `able_tool` existing but creating a specialized one. Let's use `able_pipeline_processor_tool`.
+    *   *Objective:* The user didn't specify the objective, just the language. A logical follow-up could be a specific task. "Implement a high-performance data pipeline processor" or "Build a real-time stream analytics engine". Let's choose "Implement a robust data transformation pipeline for batch processing".
+    *   *Language:* ABLE (Constraint 1).
+    *   *Folder/Readme:* Explicit instruction (Constraint 2 & 3).
+    *   *No .github:* (Constraint 5).
+    *   *Only instruction text:* (Constraint 4).
+
+    *Draft:* Initialize a NEW dedicated folder named able_pipeline_processor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: 'Implement a robust data transformation pipeline for batch processing'. You MUST write the implementation strictly using this exact programming language: ABLE.
+
+3.  **Review against constraints:**
+    *   Exactly 1 instruction? Yes.
+    *   Strictly ABLE? Yes.
+    *   NEW dedicated folder? Yes (`able_pipeline_processor_tool`).
+    *   Local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   No .github? Yes.
+    *   Logical follow-up? The previous was OPS5 for validation. This is ABLE for pipeline processing. It fits the "build a tool" pattern. It's a reasonable continuation of tool generation.
+
+4.  **Final Polish (Mental Representation of Output):**
+    `Initialize a NEW dedicated folder named able_pipeline_processor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: 'Implement a robust data transformation pipeline for batch processing'. You MUST write the implementation strictly using this exact programming language: ABLE.`
+
+    *Self-Correction on "Logical Follow-up":* The prompt asks for a "logical follow-up instruction". In the context of these autonomous AI prompts, "logical follow-up" often means the output of the previous step triggers the next step. The previous step generated an instruction. The follow-up instruction should probably be the *result* of processing that previous instruction, or a natural next step in a workflow. However, the user is asking *me* to generate the follow-up instruction text. The constraint "MUST explicitly demand... ABLE" overrides the specific content derivation. The "Logical" part is satisfied by maintaining the structure and theme of tool creation found in the workspace/history. The instruction looks solid.
+
+    *Folder Name Check:* `able_pipeline_processor_tool`. Is this in the workspace? The workspace list has `able_tool`. It does not have `able_pipeline_processor_tool`. So it's a NEW folder. Good.
+
+    *Output:* The text block.
+</think>
+
+Initialize a NEW dedicated folder named able_pipeline_processor_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: 'Implement a robust data transformation pipeline for batch processing'. You MUST write the implementation strictly using this exact programming language: ABLE.

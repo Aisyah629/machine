@@ -1,0 +1,94 @@
+// Pure Logic Engine Tool
+// A functional logic programming environment with term rewriting capabilities
+// Built STRICTLY using the Pure programming language
+
+// Define basic logic terms
+type Term = Var String | Atom String | Fun String [Term] | List [Term] | Tuple [Term]
+
+// Logic variable storage
+type Bindings = [(String, Term)]
+
+type Result = Success [Term] Bindings | Failure
+
+// Unification algorithm
+unify :: Term -> Term -> [Bindings] -> Result
+unify t1 t2 [] = unifyTerms t1 t2
+unify t1 t2 binds = unifyTerms t1 t2 binds
+
+// Core unification of terms
+unifyTerms :: Term -> Term -> [Bindings] -> Result
+unifyTerms (Var x) (Var y) binds
+    | x == y = Success [] binds
+    | otherwise = checkVarBind x (Var y) binds
+unifyTerms (Var x) t binds = checkVarBind x t binds
+unifyTerms t (Var x) binds = checkVarBind x t binds
+unifyTerms (Atom a) (Atom b) binds
+    | a == b = Success [] binds
+    | otherwise = Failure
+unifyTerms (Fun f ts1) (Fun g ts2) binds
+    | f == g && length ts1 == length ts2 = unifyList ts1 ts2 binds
+    | otherwise = Failure
+unifyTerms (List ts1) (List ts2) binds
+    | length ts1 == length ts2 = unifyList ts1 ts2 binds
+    | otherwise = Failure
+unifyTerms (Tuple ts1) (Tuple ts2) binds
+    | length ts1 == length ts2 = unifyList ts1 ts2 binds
+    | otherwise = Failure
+unifyTerms _ _ _ = Failure
+
+// Check variable binding
+checkVarBind :: String -> Term -> [Bindings] -> Result
+checkVarBind x t binds
+    | isBound x binds = unify t (lookupVar x binds) []
+    | occursIn x t = Failure
+    | otherwise = Success [(x,t)] binds
+
+// Check if variable occurs in term
+occursIn :: String -> Term -> Bool
+occursIn x (Var y) = x == y
+occursIn x (Atom _) = False
+occursIn x (Fun _ ts) = any (occursIn x) ts
+occursIn x (List ts) = any (occursIn x) ts
+occursIn x (Tuple ts) = any (occursIn x) ts
+
+// Check if variable is bound
+isBound :: String -> [Bindings] -> Bool
+isBound x binds = any ( -> f==x) (map fst binds)
+
+// Lookup variable in bindings
+lookupVar :: String -> [Bindings] -> Term
+lookupVar x binds
+    | null bindings = Var x
+    | otherwise = snd (head bindings)
+    where
+        bindings = filter ( -> fst f == x) binds
+
+// Unify list of terms
+unifyList :: [Term] -> [Term] -> [Bindings] -> Result
+unifyList [] [] binds = Success [] binds
+unifyList [t1] [t2] binds = unify t1 t2 binds
+unifyList (t1:ts1) (t2:ts2) binds =
+    case unify t1 t2 binds of
+        Failure -> Failure
+        Success newBinds restBinds -> unifyList ts1 ts2 (newBinds ++ restBinds)
+
+// Term rewriting rule
+ruleRewrite :: Term -> [Bindings] -> [Term]
+ruleRewrite (Fun "replace" [pattern, replacement, target]) binds =
+    case unifyTerms pattern target binds of
+        Success _ newBinds -> [replacement]
+        Failure -> [target]
+ruleRewrite t _ = [t]
+
+// Apply rule to term
+applyRule :: Term -> Result
+applyRule t = ruleRewrite t []
+
+// Main execution
+main :: [String]
+main = 
+    let 
+        testTerm = Fun "replace" [Var "X", Atom "hello", Fun "g" [Var "X"]]
+        result = applyRule testTerm
+    in 
+        [show result]

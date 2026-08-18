@@ -62230,3 +62230,48 @@ Initialize a NEW dedicated folder named rust_async_runtime_tool in the workspace
 </think>
 
 Initialize a NEW dedicated folder named coral66_protocol_validator_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Coral 66. Focus entirely on this new objective: 'Develop a high-throughput array-processing engine for validating historical data streams and executing formal protocol sequences'. You MUST write the implementation strictly using this exact programming language: Coral 66.
+[2026-08-18 21:47:32] (Target Lang: REBOL) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Target Language: REBOL (strictly).
+    *   Action: Build a new tool.
+    *   Constraints:
+        *   Create a NEW dedicated folder.
+        *   Create a local README.md inside it.
+        *   Explicitly demand REBOL as the implementation language.
+        *   Return ONLY the instruction text.
+        *   NEVER target the `.github` directory.
+        *   Workspace context provided (large list of existing tools, but the user wants a *new* tool based on REBOL).
+        *   History shows a previous instruction was generated for `coral66_protocol_validator_tool`, but the current prompt explicitly changes the language to REBOL and asks for a follow-up. Wait, the prompt says "Generate exactly 1 logical follow-up instruction...". The user provided the history which includes a previous output. The current instruction is to generate a new one for REBOL.
+
+2.  **Determine the Scope of the New Tool:**
+    *   Language: REBOL.
+    *   Context from history: The previous instruction created `coral66_protocol_validator_tool`.
+    *   Logical follow-up: Since REBOL is a powerful language for networking and data prototyping, a logical follow-up could be a tool that complements the previous one or addresses a different aspect of the system, e.g., "REBOL web API gateway" or "REBOL data analysis engine". However, the prompt doesn't strictly require a connection to the previous tool, just a "logical follow-up". Given the workspace has many specific tools (e.g., `rebol_web_api_gateway_tool` exists in the list, but the instruction says "If building a new tool...", implying I should propose a *new* distinct tool or re-iterate the creation of a tool if the user considers the current state as needing a new one. Looking at the workspace list, `rebol_web_api_gateway_tool` *already exists*. The prompt says "If building a new tool...".
+    *   *Self-Correction*: The user might be simulating a cycle where I generate instructions. The workspace list shows `rebol_web_api_gateway_tool` exists. If I generate an instruction to build `rebol_web_api_gateway_tool`, it might conflict with the "build the entire new tool" instruction if it already exists. However, usually, in these prompts, the model acts as an AI agent generating tasks. The presence in the list might be the state *before* the new instruction is executed, or the list is just the environment.
+    *   *Safe Approach*: Generate an instruction for a *different* new tool to ensure it's truly "new". Or, the user might be asking for a specific tool name not present. Let's check `rebol_web_api_gateway_tool` exists. Yes. `rebol_tool`? No, I see `rebol_web_api_gateway_tool` and `rebol_tool` is not in the list explicitly as a root folder, wait, `rebol_web_api_gateway_tool` is there. Is `rebol_tool` there? Scanning... `rebol_web_api_gateway_tool`. `rebol_tool` is NOT in the list.
+    *   *Conclusion*: I can propose `rebol_tool` or a variation like `rebol_data_analyzer_tool`.
+    *   *Decision*: To be safe and creative, I'll propose a tool that fits the "REBOL" requirement and creates a new folder. Let's create `rebol_api_connector_tool` or similar. Or simply `rebol_tool`. `rebol_tool` is simple and likely expected if `rebol_web_api_gateway_tool` exists, the gateway is a subset.
+    *   *Refinement*: The prompt asks for a "logical follow-up". The previous one was `coral66_protocol_validator_tool`. REBOL is great for networking. A logical follow-up might be `rebol_network_monitor_tool` or `rebol_data_stream_processor`.
+    *   *Constraint Check*: "Return ONLY the instruction text."
+    *   *Drafting*: "Initialize a NEW dedicated folder named `rebol_data_stream_processor_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Construct a dynamic data transformation engine capable of parsing arbitrary web feeds and marshalling them into local persistence structures'. You MUST write the implementation strictly using this exact programming language: REBOL."
+    *   *Review*:
+        *   New folder? Yes.
+        *   README? Yes.
+        *   REBOL? Yes.
+        *   Only instruction text? Yes.
+        *   No `.github`? Yes.
+        *   Exactly 1 instruction? Yes.
+
+3.  **Final Polish:**
+    *   "Initialize a NEW dedicated folder named `rebol_network_connector_tool` in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Engineer a robust network abstraction layer for asynchronous request routing and response marshaling across distributed endpoints'. You MUST write the implementation strictly using this exact programming language: REBOL."
+    *   This looks solid.
+
+4.  **Output Generation:**
+    *   Text: Initialize a NEW dedicated folder named rebol_network_connector_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Engineer a robust network abstraction layer for asynchronous request routing and response marshaling across distributed endpoints'. You MUST write the implementation strictly using this exact programming language: REBOL.
+    *   Wait, the user history shows `coral66_protocol_validator_tool` was the previous output. The current prompt asks for a follow-up. The logic holds.
+    *   Result matches constraints.
+    *   Output string only.
+</think>
+
+Initialize a NEW dedicated folder named rebol_network_connector_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: REBOL. Focus entirely on this new objective: 'Engineer a robust network abstraction layer for asynchronous request routing and response marshaling across distributed endpoints'. You MUST write the implementation strictly using this exact programming language: REBOL.

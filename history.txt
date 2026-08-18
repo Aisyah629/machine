@@ -60746,3 +60746,50 @@ This looks correct.
 </think>
 
 Initialize a NEW dedicated folder named mpd_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MPD. Focus entirely on this new objective: 'Build a distributed message processing framework that supports real-time stream transformation, fault-tolerant message delivery, and schema validation for high-throughput data pipelines'. You MUST write the implementation strictly using this exact programming language: MPD.
+[2026-08-18 20:03:20] (Target Lang: Snowball) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Demand the new tool be built strictly using "Snowball".
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a list of existing folders/files and a history of a previous instruction involving "MPD". The previous instruction created `mpd_workflow_engine_tool`. The follow-up should likely be related to that or a distinct new tool using Snowball. Since the user asked for a "follow-up instruction", it could be building a related tool or a new one. Usually, in these prompts, a follow-up instruction builds a new tool that might complement or extend the previous one, or just a new tool. The constraint "If building a new tool..." implies I am building a new tool here.
+
+2.  **Determine the Folder Name:**
+    *   Language: Snowball.
+    *   Naming convention from history: `mpd_workflow_engine_tool`.
+    *   New name: `snowball_tool` or `snowball_language_processor_tool` or similar.
+    *   Looking at the list of existing tools, there's no `snowball_tool` yet (Snowball is a real language often used in NLP/stemming, but here it's treated as a target for a tool).
+    *   Let's choose a descriptive folder name: `snowball_nlp_stemming_tool` or just `snowball_tool`. Given the pattern `mpd_workflow_engine_tool`, a descriptive name is good. Let's go with `snowball_nlp_stemming_tool` to give it a purpose, or `snowball_compiler_tool`. Let's look at the objective to help decide.
+    *   Folder Name: `snowball_nlp_stemming_tool`.
+
+3.  **Draft the Objective:**
+    *   Language: Snowball.
+    *   What is Snowball? It's a language for creating stemming algorithms. A logical objective would be building a stemming engine, a text processing pipeline, or a compiler for Snowball itself.
+    *   Objective: "Construct a high-performance morphological analysis engine capable of dynamic rule compilation, multi-language stemming support, and real-time text normalization for search index optimization."
+    *   This sounds technical and fits "Snowball".
+
+4.  **Assemble the Instruction Text:**
+    *   Structure: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Language]."
+    *   Draft: "Initialize a NEW dedicated folder named snowball_nlp_stemming_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball. Focus entirely on this new objective: 'Construct a high-performance morphological analysis engine capable of dynamic rule compilation, multi-language stemming support, and real-time text normalization for search index optimization'. You MUST write the implementation strictly using this exact programming language: Snowball."
+
+5.  **Review against constraints:**
+    *   1 instruction? Yes.
+    *   Strictly Snowball? Yes (Mentioned twice as per pattern, or just "STRICTLY using this exact programming language: Snowball"). The draft mentions it twice. The prompt asks to "explicitly demand... strictly using this exact programming language: Snowball". The pattern from the history shows repetition. I'll keep the repetition for consistency with the expected output format based on the history example.
+    *   NEW folder + README? Yes (`snowball_nlp_stemming_tool`, `README.md`).
+    *   ONLY instruction text? Yes.
+    *   No `.github`? Yes.
+    *   Logical follow-up? Yes, builds a Snowball tool.
+
+6.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named snowball_nlp_stemming_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball. Focus entirely on this new objective: 'Construct a high-performance morphological analysis engine capable of dynamic rule compilation, multi-language stemming support, and real-time text normalization for search index optimization'. You MUST write the implementation strictly using this exact programming language: Snowball.`
+
+7.  **Sanity Check on Folder Name:**
+    *   Is `snowball_nlp_stemming_tool` safe? The list doesn't show `snowball` anywhere. It's safe.
+    *   The objective is coherent with Snowball's actual purpose (NLP stemming), making it a "logical" follow-up even if the previous one was MPD.
+
+This looks solid.
+</think>
+
+Initialize a NEW dedicated folder named snowball_nlp_stemming_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Snowball. Focus entirely on this new objective: 'Construct a high-performance morphological analysis engine capable of dynamic rule compilation, multi-language stemming support, and real-time text normalization for search index optimization'. You MUST write the implementation strictly using this exact programming language: Snowball.

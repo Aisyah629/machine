@@ -1,23 +1,30 @@
-# Stackless Python Tool
+# Stackless Python Concurrent Data Processing Engine
 
 ## Overview
-This tool is a high-throughput concurrent data processing pipeline designed using Stackless Python. It leverages microthreads (tasklets) and channel-based communication to achieve massive scalability and efficient parallel execution.
+A high-performance, lightweight concurrency framework built strictly using **Stackless Python**. This tool implements an asynchronous task scheduler designed for parallel data processing and simulated I/O operations without traditional OS-level threads.
 
 ## Features
-- Microthread-based concurrency
-- Channel-based inter-tasklet communication
-- Scalable data processing pipeline
-- Fault-tolerant task management
+- **Lightweight Microtasks**: Leverages Stackless Python's native microtasking for massive concurrency.
+- **Async Task Scheduler**: Centralized queue-based distribution with non-blocking `Future` objects.
+- **Channel-Based Communication**: Uses Stackless channels for safe, lock-free synchronization between workers and the main event loop.
+- **Extensible Architecture**: Easily plug in custom processing functions for data transformation, network requests, or compute-bound tasks.
+
+## Architecture
+- `AsyncTaskScheduler`: Manages the task queue, worker pool, and lifecycle.
+- `Worker`: Microtask that polls the queue and executes functions, returning results via futures.
+- `Future`: Represents an asynchronous computation, providing a blocking `get_result()` method that yields until completion.
 
 ## Usage
-To run the tool, execute the main script:
-
-```bash
-python main.py
+```python
+scheduler = AsyncTaskScheduler(max_threads=10)
+fut = scheduler.register_task(my_function, arg1, arg2, kwarg=val)
+scheduler.start_workers()
+result = fut.get_result()
 ```
 
-## Installation
-Ensure Stackless Python is installed. You can download it from the official Stackless Python website.
+## Requirements
+- Python 3.x with `stackless` module support.
+- Standard library `queue` and `threading` (for initial bootstrap).
 
 ## License
-This tool is provided as-is for educational and research purposes.
+MIT License

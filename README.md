@@ -123,3 +123,5 @@ MIT License
 - Created/Updated module: `powerhouse_tool` (See `powerhouse_tool/README.md` for details)
 
 - Created/Updated module: `vala_tool` (See `vala_tool/README.md` for details)
+
+- Created/Updated module: `gj_concurrent_runtime_tool` (See `gj_concurrent_runtime_tool/README.md` for details)

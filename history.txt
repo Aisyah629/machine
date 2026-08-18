@@ -51570,3 +51570,45 @@ Initialize a NEW dedicated folder named subtext_tool in the workspace, create a 
 </think>
 
 Initialize a NEW dedicated folder named webql_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: WebQL.
+[2026-08-18 03:33:41] (Target Lang: Agilent VEE) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of workspace contents (directories and files).
+   - The "History" section shows a past interaction where the AI was asked to generate a specific instruction format.
+   - The current prompt asks: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Agilent VEE. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using: "Agilent VEE".
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Format should match the pattern from the history: "Initialize a NEW dedicated folder named [folder_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]."
+
+3.  **Construct the Instruction:**
+   - Folder name: `agilent_vee_tool` (following the naming convention in the workspace list, e.g., `webql_tool`, `bash_tool`, etc.)
+   - Language: Agilent VEE
+   - Draft: Initialize a NEW dedicated folder named agilent_vee_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agilent VEE.
+
+4.  **Verify Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands "Agilent VEE"? Yes.
+   - Instructs to place in NEW dedicated folder? Yes (`agilent_vee_tool`).
+   - Instructs to create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned or targeted.
+   - Matches format? Yes.
+
+5.  **Final Output Generation:**
+   Just output the constructed string exactly as requested. No extra text, no markdown formatting unless necessary, but the prompt says "Return ONLY the instruction text." I will output it as a plain string.✅
+   Draft: Initialize a NEW dedicated folder named agilent_vee_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agilent VEE.
+   Matches all constraints perfectly. Proceeds. 
+   Output matches draft.✅
+   [Done.] 
+   Self-Correction/Verification during thought: The prompt says "Return ONLY the instruction text." I will strictly output just that sentence. No extra words. All good.✅
+   Proceeds.✅
+   Output Generation -> "Initialize a NEW dedicated folder named agilent_vee_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agilent VEE."✅
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named agilent_vee_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Agilent VEE.

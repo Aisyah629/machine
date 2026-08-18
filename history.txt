@@ -55387,3 +55387,81 @@ Initialize a NEW dedicated folder named rapira_logic_engine_tool in the workspac
 </think>
 
 Initialize a NEW dedicated folder named maple_symbolic_solver_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maple. Focus entirely on this new objective: 'Implement a Maple-based symbolic computation engine for advanced mathematical theorem proving and algebraic manipulation'. You MUST write the implementation strictly using this exact programming language: Maple.
+[2026-08-18 11:09:10] (Target Lang: Caché ObjectScript) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace listing and a history of a previous instruction.
+   - **Previous Tool:** `rapira_logic_engine_tool` for "automated deduction and symbolic problem solving".
+   - **Next Tool Suggested in History:** `maple_symbolic_solver_tool` for "symbolic computation engine... theorem proving".
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Mandatory Requirements:**
+     - Explicitly demand the new tool be built STRICTLY using `Caché ObjectScript`.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+   - **Implicit Context/Pattern:** The instruction format follows a specific template based on the history: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective description]'. You MUST write the implementation strictly using this exact programming language: [Language]."
+
+2.  **Determine Key Elements for the New Instruction:**
+   - **Tool Name:** Needs to be a new folder. Following the pattern, something like `cache_objectscript_tool` or `intersystems_caché_tool` or `csp_engine_tool`. Let's go with `cache_objectscript_tool` or `objectscript_engine_tool`. I'll use `objectscript_engine_tool` to be clear, or stick closer to the language name: `caché_objectscript_tool`. Let's use `cache_objectscript_tool`.
+   - **Language:** Caché ObjectScript (explicitly demanded).
+   - **Objective:** Needs to be logical and relevant to Caché ObjectScript. Common uses: enterprise application development, healthcare data processing, business logic engines, data transformation, or system administration scripts. Let's go with: "Implement a Caché ObjectScript-based enterprise data processing engine for high-performance healthcare record management and business logic execution" or something similar. Let's make it general but strong: "Develop a Caché ObjectScript-based enterprise application framework for robust data transformation and automated business workflow orchestration".
+   - **Format:** Must match the template exactly.
+
+3.  **Draft Construction (Mental):**
+   Initialize a NEW dedicated folder named cache_objectscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Develop a Caché ObjectScript-based enterprise data processing engine for high-performance business logic execution and healthcare record management'. You MUST write the implementation strictly using this exact programming language: Caché ObjectScript.
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Caché ObjectScript? Yes.
+   - Place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches style/pattern? Yes.
+
+   Let's refine the objective to sound more technical and aligned with typical Caché ObjectScript use cases (InterSystems IRIS/Caché ecosystem), like data management, business rules, or system administration. "Implement a Caché ObjectScript-based enterprise data transformation pipeline for secure healthcare information exchange and automated workflow orchestration." is good.
+
+   I will strictly follow the prompt's template structure:
+   `Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: Caché ObjectScript.`
+
+   Let's craft it carefully.
+
+   "Initialize a NEW dedicated folder named cache_objectscript_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Develop a Caché ObjectScript-based enterprise data processing framework for high-performance business rule execution and secure healthcare information management'. You MUST write the implementation strictly using this exact programming language: Caché ObjectScript."
+
+5.  **Final Verification against Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands Caché ObjectScript? Yes, twice as per pattern.
+   - NEW dedicated folder & README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Checked.
+   - Logical follow-up? Yes, transitions from symbolic/logic solving to enterprise data/business logic processing using a specific language.
+
+   All constraints met. Output matches exactly. Proceed. 
+   One minor adjustment: Ensure the folder name is clean. `cache_objectscript_tool` is fine. I'll stick to that.
+   Text: `Initialize a NEW dedicated folder named cache_objectscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Develop a Caché ObjectScript-based enterprise data processing framework for high-performance business rule execution and secure healthcare information management'. You MUST write the implementation strictly using this exact programming language: Caché ObjectScript.`
+   Matches perfectly. Output matches request.✅
+   Self-Correction/Refinement during thought: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Caché ObjectScript." I will ensure that exact phrasing is prominent. The template from history does this naturally. I will output exactly that string. No extra text. All good. 
+   Proceeds. 
+   Output Generation. 
+   [Output matches the refined draft]✅
+   `Initialize a NEW dedicated folder named cache_objectscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Develop a Caché ObjectScript-based enterprise data processing framework for high-performance business rule execution and secure healthcare information management'. You MUST write the implementation strictly using this exact programming language: Caché ObjectScript.` -> Ready. 
+   Note: I'll make sure the capitalization and punctuation exactly match the requested style. The prompt's example uses "Caché ObjectScript" so I will keep that. All constraints satisfied.✅
+   Output matches response. 
+   [Done] 
+   *Self-Correction/Verification during generation prep*: 
+   Check prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Caché ObjectScript. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   My draft: `Initialize a NEW dedicated folder named cache_objectscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Develop a Caché ObjectScript-based enterprise data processing framework for high-performance business rule execution and secure healthcare information management'. You MUST write the implementation strictly using this exact programming language: Caché ObjectScript.`
+   Matches perfectly. No extra words. Proceeds. 
+   Output Generation. 
+   [Output] -> `Initialize a NEW dedicated folder named cache_objectscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Develop a Caché ObjectScript-based enterprise data processing framework for high-performance business rule execution and secure healthcare information management'. You MUST write the implementation strictly using this exact programming language: Caché ObjectScript.`✅
+   All good. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction." -> The output is exactly one sentence/paragraph instruction. Matches.
+   "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Caché ObjectScript." -> Checked.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   "Return ONLY the instruction text." -> Checked.
+   "NEVER target the .github directory." -> Checked.
+   Ready. 
+   Output matches response.✅
+   [Proceeds]
+</think>
+
+Initialize a NEW dedicated folder named cache_objectscript_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Caché ObjectScript. Focus entirely on this new objective: 'Develop a Caché ObjectScript-based enterprise data processing framework for high-performance business rule execution and secure healthcare information management'. You MUST write the implementation strictly using this exact programming language: Caché ObjectScript.

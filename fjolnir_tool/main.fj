@@ -1,0 +1,27 @@
+# Fjölnir Cryptographic Engine
+
+This program implements the SHA-256 cryptographic hash function using the Fjölnir language.
+
+## SHA-256 Implementation in Fjölnir
+
+The SHA-256 algorithm operates on 512-bit blocks of data and produces a 256-bit hash value. It uses a series of bitwise operations, modular additions, and logical functions to process the input data.
+
+## Fjölnir Syntax
+
+Fjölnir is a functional programming language with the following syntax:
+- `fn`: Define a function
+- `let`: Bind a variable
+- `in`: Scope for let bindings
+- `where`: Define local functions
+- `if/else`: Conditional expressions
+- `let ... in`: Let bindings
+
+## Example
+
+```fj
+let 
+  fn sha256(message: string): string = ...
+in
+  sha256("Hello, World!")
+end
+```

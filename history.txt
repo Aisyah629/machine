@@ -61336,3 +61336,37 @@ This matches the pattern of previous outputs in the history (e.g., `Initialize a
 </think>
 
 Initialize a NEW dedicated folder named lyapas_string_manipulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: LYaPAS. Focus entirely on this new objective: 'Construct a robust string parsing and transformation engine for complex text data structures'. You MUST write the implementation strictly using this exact programming language: LYaPAS.
+[2026-08-18 20:59:35] (Target Lang: ABLE) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand the new tool be built strictly using the programming language "ABLE".
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The history shows a pattern of instructions like "Initialize a NEW dedicated folder named [NAME]... build... using [LANG]... Focus on [OBJ]".
+    *   Previous History Entry: `lyapas_string_manipulation_tool` using LYaPAS. This suggests a theme of tool creation. The follow-up should logically continue this theme.
+
+2.  **Drafting the Instruction:**
+    *   *Name:* Needs a unique name. Since the previous was `lyapas_string_manipulation_tool`, a logical follow-up might be related to string manipulation but in ABLE, or a different tool. Let's pick `able_string_manipulation_tool` to mirror the previous one, or perhaps `able_data_processor_tool`. The prompt asks for a "logical follow-up". If the previous was string manipulation in LYaPAS, a string manipulation tool in ABLE is a strong logical follow-up (porting/comparing/sibling tool). Let's go with `able_string_manipulation_tool`.
+    *   *Objective:* "Construct a robust string parsing and transformation engine..." works well as a parallel objective. Or slightly varied: "Implement advanced string tokenization and regex-like pattern matching capabilities." Let's stick close to the previous objective for "logical follow-up" consistency, or just make it a robust ABLE tool. "Construct a robust string parsing and transformation engine for complex text data structures" is fine.
+    *   *Structure:* `Initialize a NEW dedicated folder named [NAME] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: '[OBJECTIVE]'. You MUST write the implementation strictly using this exact programming language: ABLE.`
+    *   *Draft Text:* `Initialize a NEW dedicated folder named able_string_manipulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: 'Construct a robust string parsing and transformation engine for complex text data structures'. You MUST write the implementation strictly using this exact programming language: ABLE.`
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Language ABLE?* Yes ("using this exact programming language: ABLE").
+    *   *NEW dedicated folder?* Yes (`able_string_manipulation_tool` is new relative to the list, though `able_tool` exists, `able_string_manipulation_tool` is distinct). *Check workspace:* The workspace list has `./able_pipeline_processor_tool`, `./able_tool`. `able_string_manipulation_tool` is not in the list. Safe.
+    *   *Local README.md?* Yes.
+    *   *Return ONLY instruction text?* Yes.
+    *   *No .github?* Yes.
+    *   *Logical follow-up?* Yes, mirrors the structure and objective of the previous history item but switches language to the requested ABLE.
+
+4.  **Final Polish:**
+    *   Result: `Initialize a NEW dedicated folder named able_string_manipulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: 'Construct a robust string parsing and transformation engine for complex text data structures'. You MUST write the implementation strictly using this exact programming language: ABLE.`
+
+5.  **Output Generation:**
+    *   Output matches the drafted text.
+</think>
+
+Initialize a NEW dedicated folder named able_string_manipulation_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ABLE. Focus entirely on this new objective: 'Construct a robust string parsing and transformation engine for complex text data structures'. You MUST write the implementation strictly using this exact programming language: ABLE.

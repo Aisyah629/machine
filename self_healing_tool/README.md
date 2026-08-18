@@ -1,24 +1,27 @@
-# Self-Healing Tool
+# Self-Healing Tool (LC-3)
 
-This tool provides robust error handling and recovery mechanisms for edge cases and unexpected errors in software execution.
+A LC-3 implementation of a self-healing logic engine designed to handle edge cases, runtime errors, and system faults. It provides fault tolerance, state recovery, and safe execution patterns for critical operations.
 
 ## Features
-- Edge case identification and handling
-- Automatic error recovery strategies
-- Graceful degradation under high load
-- Logging and monitoring of recovery events
+- Exception Detection and Handling
+- State Restoration and Recovery
+- Safe Resource Management
+- Error Logging and Diagnostics
+- Fault Tolerance Mechanisms
 
 ## Usage
-The tool can be integrated into existing systems by including the main.java file.
+Load the program into the LC-3 simulator. The program implements a robust error-handling framework that:
+1. Monitors for illegal operations and memory violations
+2. Attempts automatic recovery from transient faults
+3. Logs error states for analysis
+4. Gracefully handles edge cases in computation
 
-## Example
-```java
-// Initialize the self-healing system
-SelfHealingSystem system = new SelfHealingSystem();
+## Error Handling
+The tool uses a structured error-handling approach with:
+- Try-catch style exception propagation
+- State checkpointing before critical operations
+- Automatic rollback on failure
+- Safe fallback mechanisms
 
-// Register a component to be monitored
-system.registerComponent("myComponent", new MyComponent());
-
-// Run the system
-system.run();
-```
+## Author
+Autonomous AI Polyglot Software Engineer

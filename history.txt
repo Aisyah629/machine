@@ -54923,3 +54923,62 @@ Initialize a NEW dedicated folder named jscript_dotnet_framework_tool in the wor
 </think>
 
 Initialize a NEW dedicated folder named joy_formal_logic_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Joy. Focus entirely on this new objective: 'Develop a high-reliability declarative reasoning engine with formal mathematical proof verification'. You MUST write the implementation strictly using this exact programming language: Joy.
+[2026-08-18 10:45:30] (Target Lang: PL/0) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a large list of existing tool directories in a workspace, followed by a "History" section showing a previous command/response cycle. The history shows a prompt asking to create a `joy_formal_logic_tool` using the Joy programming language, and the model's response was essentially echoing/repeating the prompt with some internal monologue/checks (though the actual output in the prompt seems to be the repeated instruction itself, which is a bit meta but I'll focus on the current instruction).
+   - **Current Instruction:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PL/0. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Key Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using PL/0.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Deconstruct Requirements:**
+   - I need to output a single string that acts as a follow-up instruction.
+   - The instruction must be about creating a new tool.
+   - The tool must use PL/0 programming language.
+   - Must specify a new dedicated folder name.
+   - Must specify creating a local README.md.
+   - Must not mention `.github`.
+   - Must be exactly one instruction.
+   - Output ONLY the instruction text.
+
+3.  **Draft Construction:**
+   "Initialize a NEW dedicated folder named pl0_formal_verification_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL/0. Focus entirely on this new objective: 'Construct a deterministic compiler and interpreter framework for PL/0 syntax analysis and semantic validation'. You MUST write the implementation strictly using this exact programming language: PL/0."
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands PL/0? Yes ("STRICTLY using this exact programming language: PL/0" and "MUST write the implementation strictly using this exact programming language: PL/0").
+   - Places it in a NEW dedicated folder? Yes ("Initialize a NEW dedicated folder named pl0_formal_verification_tool").
+   - Creates a local README.md? Yes.
+   - Returns ONLY the instruction text? Yes.
+   - Never targets .github? Yes, not mentioned.
+   - Matches the style/format of the prompt's example? Yes, closely follows the pattern.
+
+   One minor adjustment to ensure it perfectly matches the requested tone and constraints: I'll make it concise and direct, exactly as requested.
+
+   Draft: Initialize a NEW dedicated folder named pl0_compiler_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL/0. Focus entirely on this new objective: 'Develop a deterministic syntax analyzer and code generator for PL/0 educational and embedded systems'. You MUST write the implementation strictly using this exact programming language: PL/0.
+
+5.  **Final Verification:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands PL/0? Yes.
+   - NEW dedicated folder + README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Checked.
+   - Ready. Output matches draft.✅
+   I will output exactly the drafted string. 
+   Self-Correction/Refinement during thought: The prompt says "Generate exactly 1 logical follow-up instruction." I will ensure the output is strictly that string, with no extra text, prefixes, or suffixes. I'll align it closely with the provided example structure but swap the language to PL/0 and update the folder/objective appropriately.
+
+   Final string: Initialize a NEW dedicated folder named pl0_compiler_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL/0. Focus entirely on this new objective: 'Develop a deterministic syntax analyzer and code generator for PL/0 educational and embedded systems'. You MUST write the implementation strictly using this exact programming language: PL/0.
+
+   All constraints met. Proceeds. 
+   Output matches exactly.✅
+   [Output Generation] -> `Initialize a NEW dedicated folder named pl0_compiler_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL/0. Focus entirely on this new objective: 'Develop a deterministic syntax analyzer and code generator for PL/0 educational and embedded systems'. You MUST write the implementation strictly using this exact programming language: PL/0.`
+   Done.✅
+   *(Note: I will output just the raw text as requested.)*
+   Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named pl0_compiler_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: PL/0. Focus entirely on this new objective: 'Develop a deterministic syntax analyzer and code generator for PL/0 educational and embedded systems'. You MUST write the implementation strictly using this exact programming language: PL/0.

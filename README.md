@@ -181,3 +181,5 @@ MIT License
 - Created/Updated module: `pure_logic_engine_tool` (See `pure_logic_engine_tool/README.md` for details)
 
 - Created/Updated module: `cel_tool` (See `cel_tool/README.md` for details)
+
+- Created/Updated module: `object_pascal_engine_tool` (See `object_pascal_engine_tool/README.md` for details)

@@ -55946,3 +55946,62 @@ Initialize a NEW dedicated folder named rebol_web_api_gateway_tool in the worksp
 </think>
 
 Initialize a NEW dedicated folder named maple_web_api_gateway_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Maple. Focus entirely on this new objective: 'Develop a Maple-based core server implementation and data serialization parser for the previously defined web API gateway'. You MUST write the implementation strictly using this exact programming language: Maple.
+[2026-08-18 11:56:57] (Target Lang: Ruby) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context/Workspace:** A long list of directories and files, mostly tool directories with names like `./tool_name/README.md`, `./tool_name/main.extension`. There's also a `History:` section containing previous instructions/responses.
+   - **Constraint 1:** Generate exactly 1 logical follow-up instruction.
+   - **Constraint 2:** MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ruby.
+   - **Constraint 3:** If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - **Constraint 4:** Return ONLY the instruction text.
+   - **Constraint 5:** NEVER target the .github directory.
+   - **Implicit Context from History:** The history shows a pattern of generating instructions for new tools in specific languages. The last history entry was for `maple_web_api_gateway_tool` using Maple. The prompt now asks for Ruby.
+
+2.  **Identify Key Requirements:**
+   - Language: Ruby
+   - Structure: New dedicated folder, local README.md
+   - Content: Logical follow-up instruction
+   - Format: ONLY the instruction text, no extra words, markdown, or tags.
+   - Target: Avoid `.github` directory.
+
+3.  **Draft Construction:**
+   I need to create a single sentence/paragraph that follows the pattern but changes the language to Ruby and picks a logical new tool name/objective if possible, or just follows the exact template structure adapted for Ruby.
+   Looking at the history, the prompt says: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Language]."
+   I will adapt this to Ruby. I'll pick a logical tool name based on the workspace theme (e.g., `ruby_workflow_engine_tool` or `ruby_data_processor_tool`). Let's go with `ruby_workflow_engine_tool`.
+   Objective: 'Develop a Ruby-based core server implementation and data serialization parser for the previously defined web API gateway' (or something similar that fits Ruby). Actually, I can keep it generic or follow the exact pattern: 'Develop a Ruby-based core server implementation and data serialization parser for the previously defined web API gateway'.
+   Let's stick closely to the requested format: "Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ruby. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: Ruby."
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Ruby? Yes.
+   - NEW dedicated folder + local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Language: Ruby. Yes.
+
+   Draft:
+   Initialize a NEW dedicated folder named ruby_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ruby. Focus entirely on this new objective: 'Develop a Ruby-based core server implementation and data serialization parser for the previously defined web API gateway'. You MUST write the implementation strictly using this exact programming language: Ruby.
+
+4.  **Refine & Verify:**
+   - Does it match the exact phrasing pattern from the history? Yes.
+   - Does it explicitly say Ruby twice as requested/implied by the pattern? The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Ruby." I'll ensure it's clear.
+   - Check constraint: "Return ONLY the instruction text. NEVER target the .github directory."
+   - The draft is exactly one sentence/paragraph. It contains all required elements.
+   - I will output just the text.
+
+   Final check of the draft against constraints:
+   "Initialize a NEW dedicated folder named ruby_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ruby. Focus entirely on this new objective: 'Develop a Ruby-based core server implementation and data serialization parser for the previously defined web API gateway'. You MUST write the implementation strictly using this exact programming language: Ruby."
+   Matches perfectly. Ready.✅
+   Output matches constraint. Proceeds. 
+   I will output exactly this string. No extra text. No markdown formatting unless necessary, but the prompt says "Return ONLY the instruction text." I'll just output the raw text.
+   One minor thing: The prompt history shows the exact wording used before. I'll replicate that structure precisely but substitute Ruby and a logical tool name.
+   All good. Output matches.✅
+   [Output Generation] -> Initialize a NEW dedicated folder named ruby_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ruby. Focus entirely on this new objective: 'Develop a Ruby-based core server implementation and data serialization parser for the previously defined web API gateway'. You MUST write the implementation strictly using this exact programming language: Ruby. 
+   (Self-Correction/Verification during thought: The prompt says "Generate exactly 1 logical follow-up instruction." The draft is exactly that. It explicitly demands Ruby. It mentions the new folder and README.md. It returns only the text. It doesn't target .github. All constraints met.) 
+   Proceeds. 
+   Output matches.✅
+   [Final Output Generation] -> Initialize a NEW dedicated folder named ruby_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ruby. Focus entirely on this new objective: 'Develop a Ruby-based core server implementation and data serialization parser for the previously defined web API gateway'. You MUST write the implementation strictly using this exact programming language: Ruby. 
+   *(Done.)*
+</think>
+
+Initialize a NEW dedicated folder named ruby_workflow_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Ruby. Focus entirely on this new objective: 'Develop a Ruby-based core server implementation and data serialization parser for the previously defined web API gateway'. You MUST write the implementation strictly using this exact programming language: Ruby.

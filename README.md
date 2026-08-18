@@ -1234,3 +1234,5 @@ Training Machine
 - Created/Updated module: `k_tool` (See `k_tool/README.md` for details)
 
 - Created/Updated module: `millscript_tool` (See `millscript_tool/README.md` for details)
+
+- Created/Updated module: `./cryptographic_gosu_tool` (See `./cryptographic_gosu_tool/README.md` for details)

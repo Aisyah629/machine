@@ -229,3 +229,5 @@ MIT License
 - Created/Updated module: `able_string_manipulation_tool` (See `able_string_manipulation_tool/README.md` for details)
 
 - Created/Updated module: `julia_analytics_engine_tool` (See `julia_analytics_engine_tool/README.md` for details)
+
+- Created/Updated module: `./cryptographic_tool` (See `./cryptographic_tool/README.md` for details)

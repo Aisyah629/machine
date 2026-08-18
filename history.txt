@@ -51723,3 +51723,23 @@ Initialize a NEW dedicated folder named rc_tool in the workspace, create a local
 </think>
 
 Initialize a NEW dedicated folder named xpath_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: XPath.
+[2026-08-18 04:09:10] (Target Lang: Pro*C) The user wants a single logical follow-up instruction.
+Constraints:
+1. Build a new tool strictly using Pro*C.
+2. Place it in a NEW dedicated folder.
+3. Create a local README.md inside it.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+6. Must explicitly demand the use of Pro*C.
+7. Output must match the style of previous instructions (short, direct, imperative).
+
+Check existing folders to avoid naming conflicts: `xpath_tool` exists. `pro*c_tool` or similar might not exist. I will name the new folder `pro_c_tool`.
+Construct the instruction: "Initialize a NEW dedicated folder named pro_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pro*C."
+Verify constraints: NEW folder? Yes. README.md? Yes. STRICTLY using Pro*C? Yes. ONLY instruction text? Yes. No .github? Yes.
+Ready. Output matches draft.✅
+Proceeds.✅
+Output Generation -> "Initialize a NEW dedicated folder named pro_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pro*C."✅
+[Done.]
+</think>
+
+Initialize a NEW dedicated folder named pro_c_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pro*C.

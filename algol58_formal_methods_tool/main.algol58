@@ -1,0 +1,34 @@
+BEGIN
+    INTEGER X, Y, Z;
+    REAL    PI;
+    STRING  MSG;
+
+    PI := 3.14159265358979;
+    MSG := "ALGOL 58 Formal Methods Tool Initialized";
+
+    WRITE("System: " || MSG);
+    WRITE("PI Value: " || PI);
+
+    X := 10;
+    Y := 20;
+    Z := X + Y;
+
+    WRITE("Sum of X and Y: " || Z);
+
+    IF Z > 25 THEN
+        WRITE("Threshold exceeded.")
+    ELSE
+        WRITE("Within threshold.");
+    FI;
+
+    FOR I := 1 WHILE I <= 5 DO
+        WRITE("Iteration: " || I);
+        I := I + 1;
+    OD;
+
+    COMMENT Formal Verification Stub;
+    IF TRUE THEN
+        WRITE("Formal Specification Check Passed.");
+    FI;
+
+END

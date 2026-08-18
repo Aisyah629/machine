@@ -60409,3 +60409,38 @@ Output Generation.
 </think>
 
 Initialize a NEW dedicated folder named spark_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPARK. Focus entirely on this new objective: 'Develop a formally verified critical systems verification and runtime enforcement engine'. You MUST write the implementation strictly using this exact programming language: SPARK.
+[2026-08-18 19:46:54] (Target Lang: K) The user wants a single follow-up instruction for a new tool.
+The tool must be built using the programming language "K".
+The instruction must demand creating a NEW dedicated folder and a local README.md.
+The instruction must be returned as text only.
+Looking at the workspace list, there is `k_tool` at `./k_tool`. It has `README.md` and `main.k`.
+The instruction asks for a NEW dedicated folder.
+I should generate a string like: "Initialize a NEW dedicated folder named k_tool_2 (or similar) in the workspace..."
+Wait, the prompt says "Generate exactly 1 logical follow-up instruction... Return ONLY the instruction text."
+The previous example output was: "Initialize a NEW dedicated folder named spark_tool in the workspace..."
+I need to generate a similar string for language K.
+Language: K
+Objective: Develop a high-performance array processing and data manipulation engine.
+Folder: `k_tool_2` or `k_advanced_tool` or `k_data_processing_tool`. Let's use `k_advanced_tool`.
+Wait, `k_advanced_tool` exists? No, looking at the list: `k_tool` exists. `krc_tool` exists. `krl_tool` exists. `krypton_tool` exists. `ksh_tool` exists. `kuka_tool` exists.
+So `k_advanced_tool` is safe.
+Or `k_array_processing_tool`.
+Let's stick to `k_advanced_tool` for simplicity.
+Text: "Initialize a NEW dedicated folder named k_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: K. Focus entirely on this new objective: 'Develop a high-performance array processing and data manipulation engine'. You MUST write the implementation strictly using this exact programming language: K."
+Check constraints: "Return ONLY the instruction text. NEVER target the .github directory."
+Matches.
+Proceed. 
+Output generation. 
+One detail: "K" is the language. Sometimes written as "K". I will capitalize it as requested "STRICTLY using this exact programming language: K."
+Final string matches the pattern.
+Done. 
+Self-Correction/Verification during thought:
+Check workspace for `k_advanced_tool`? Not present.
+Check format: "Initialize a NEW dedicated folder named [folder] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: K. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: K."
+Looks solid.
+Output matches exactly. 
+Proceeds. 
+[Output] Initialize a NEW dedicated folder named k_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: K. Focus entirely on this new objective: 'Develop a high-performance array processing and data manipulation engine'. You MUST write the implementation strictly using this exact programming language: K.
+</think>
+
+Initialize a NEW dedicated folder named k_advanced_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: K. Focus entirely on this new objective: 'Develop a high-performance array processing and data manipulation engine'. You MUST write the implementation strictly using this exact programming language: K.

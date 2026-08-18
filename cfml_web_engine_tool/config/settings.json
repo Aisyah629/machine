@@ -1,0 +1,26 @@
+{
+  "server": {
+    "port": 8500,
+    "host": "localhost",
+    "debug": false
+  },
+  "sessions": {
+    "timeout": 30,
+    "cookieName": "WEBENGINE_SID",
+    "secure": true,
+    "httpOnly": true
+  },
+  "database": {
+    "dsn": "webengineDSN",
+    "driver": "postgresql",
+    "poolSize": 10,
+    "credentials": {
+      "user": "db_admin",
+      "password": "securepass"
+    }
+  },
+  "parser": {
+    "strictMode": true,
+    "allowCustomTags": true
+  }
+}

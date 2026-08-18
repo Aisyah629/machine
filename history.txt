@@ -60512,3 +60512,69 @@ Initialize a NEW dedicated folder named k_advanced_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named machine_code_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Machine code. Focus entirely on this new objective: 'Design a minimalistic binary bytecode interpreter and instruction tracing module'. You MUST write the implementation strictly using this exact programming language: Machine code.
+[2026-08-18 19:58:33] (Target Lang: CFML) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories and files, mostly `./<tool_name>/README.md` and `./<tool_name>/main.<ext>`. This is just context showing the project structure.
+   - **History:** Shows previous iterations of prompts/responses, following a specific pattern: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Language]."
+   - **Current Instruction:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CFML. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using CFML.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Follow the established pattern from the history.
+
+3.  **Formulate the Instruction:**
+   - Need a tool name. Let's pick something logical and CFML-related, e.g., `cfml_web_api_tool` or `cfml_dynamic_engine_tool` or `cfml_server_runtime_tool`. I'll go with `cfml_server_runtime_tool`.
+   - Need an objective. Something fitting for CFML: "Design a robust server-side web framework extension with dynamic tag parsing and session management capabilities."
+   - Structure it exactly like the history:
+     `Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: '[objective]'. You MUST write the implementation strictly using this exact programming language: CFML.`
+
+   Let's draft it:
+   `Initialize a NEW dedicated folder named cfml_server_runtime_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Design a robust server-side web framework extension with dynamic tag parsing and session management capabilities'. You MUST write the implementation strictly using this exact programming language: CFML.`
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands built STRICTLY using CFML? Yes.
+   - Instructs to place in a NEW dedicated folder and create a local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Matches pattern? Yes.
+
+   One minor adjustment to match the exact phrasing style from the prompt/history:
+   "Initialize a NEW dedicated folder named cfml_server_runtime_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Design a robust server-side web framework extension with dynamic tag parsing and session management capabilities'. You MUST write the implementation strictly using this exact programming language: CFML."
+
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction." and gives the exact template to follow. I will just output the string exactly as required.
+
+   Let's verify the exact wording from the prompt's history example:
+   "Initialize a NEW dedicated folder named machine_code_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Machine code. Focus entirely on this new objective: 'Design a minimalistic binary bytecode interpreter and instruction tracing module'. You MUST write the implementation strictly using this exact programming language: Machine code."
+
+   I will adapt it for CFML:
+   "Initialize a NEW dedicated folder named cfml_web_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Design a high-performance server-side rendering engine with dynamic tag processing and database connectivity module'. You MUST write the implementation strictly using this exact programming language: CFML."
+
+   All constraints met. Output matches exactly. No extra text. Proceed. 
+   One thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CFML." I'll make sure the word CFML is capitalized as requested.
+   I will output just the instruction string.✅
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CFML. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches. 
+   Proceeds. 
+   Output Generation. 
+   `Initialize a NEW dedicated folder named cfml_web_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Design a high-performance server-side rendering engine with dynamic tag processing and database connectivity module'. You MUST write the implementation strictly using this exact programming language: CFML.` -> Ready.✅
+   Output matches response.✅
+   [Done] 
+   Self-Correction/Verification during thought: I'll make sure the objective is realistic for CFML but keep it abstract as in the prompt. The structure is rigid. I will just output the exact string. No extra words. All constraints satisfied.✅
+   Final Output Generation. (matches exactly)
+   Proceeds.✅
+   [Output] `Initialize a NEW dedicated folder named cfml_web_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Design a high-performance server-side rendering engine with dynamic tag processing and database connectivity module'. You MUST write the implementation strictly using this exact programming language: CFML.` -> Perfect.✅
+   Done. 
+   [Output Generation] -> *Proceeds to output exactly the string.* 
+   *(Self-Correction/Refinement during thought)*: I should ensure the tool name matches the pattern `<language>_tool` or similar, but the prompt doesn't strictly enforce a naming convention, just a new dedicated folder. `cfml_web_engine_tool` is fine. I'll stick with it. The prompt says "Return ONLY the instruction text." I will do exactly that.
+   All good.✅
+   Output matches.✅
+   Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named cfml_web_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Design a high-performance server-side rendering engine with dynamic tag processing and database connectivity module'. You MUST write the implementation strictly using this exact programming language: CFML.

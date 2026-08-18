@@ -189,3 +189,5 @@ MIT License
 - Created/Updated module: `newtonscript_tool` (See `newtonscript_tool/README.md` for details)
 
 - Created/Updated module: `squirrel_engine_tool` (See `squirrel_engine_tool/README.md` for details)
+
+- Created/Updated module: `./api_client_tool` (See `./api_client_tool/README.md` for details)

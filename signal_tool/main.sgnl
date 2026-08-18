@@ -1,0 +1,35 @@
+(* Signal Processing Engine for Safety-Critical Systems *)
+
+module SignalEngine;
+
+(* Input Signals *)
+signal input x: float;
+signal input enable: bool;
+
+(* Internal State *)
+signal state current_val: float := 0.0;
+signal state prev_val: float := 0.0;
+
+(* Process: Signal Filter *)
+process Filter = 
+  current_val <- (0.5 * x) + (0.5 * prev_val) 
+  when enable
+  with
+    prev_val <- current_val;
+  end;
+
+(* Process: State Machine *)
+process StateMachine = 
+  current_val <- x * 2.0 
+  when not enable
+  with
+    prev_val <- x;
+  end;
+
+(* Main Engine *)
+engine Main = 
+  Filter;
+  StateMachine;
+end;
+
+end module SignalEngine;

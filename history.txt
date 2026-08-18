@@ -54615,3 +54615,38 @@ Initialize a NEW dedicated folder named e_tool in the workspace, create a local 
 </think>
 
 Initialize a NEW dedicated folder named robotc_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: RobotC. Focus entirely on this new objective: 'Develop a deterministic control logic system for collaborative multi-agent robotic swarms'. You MUST write the implementation strictly using this exact programming language: RobotC.
+[2026-08-18 10:12:45] (Target Lang: Sed) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using `Sed`.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The user provided a large list of existing tools and a history example showing the format. The output must follow the pattern: `Initialize a NEW dedicated folder named {folder_name} in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: {Lang}. Focus entirely on this new objective: '...'. You MUST write the implementation strictly using this exact programming language: {Lang}.`
+
+2.  **Drafting the Instruction:**
+    *   Folder Name: `sed_tool` (Following the pattern of `bash_tool`, `awk_tool`, etc., in the provided list).
+    *   Language: `Sed`.
+    *   Objective: Need a specific, professional-sounding objective for Sed. Sed is for stream editing. Good objectives: text transformation pipelines, log processing, batch file editing, configuration management.
+    *   Draft Objective: 'Automate complex stream-based text transformation and log parsing workflows'.
+    *   Constructing the sentence:
+        "Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Automate complex stream-based text transformation and log parsing workflows'. You MUST write the implementation strictly using this exact programming language: Sed."
+
+3.  **Review against Constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes.
+    *   *Explicitly demand built STRICTLY using Sed?* Yes ("STRICTLY using this exact programming language: Sed" and "strictly using this exact programming language: Sed").
+    *   *New dedicated folder and README.md?* Yes ("NEW dedicated folder named sed_tool", "create a local README.md").
+    *   *Return ONLY the instruction text?* Yes.
+    *   *NEVER target .github?* Yes, no mention of .github.
+    *   *Format matches previous examples?* Yes.
+
+4.  **Final Polish:**
+    *   Folder: `sed_tool`.
+    *   Language: `Sed`.
+    *   Objective: 'Automate complex stream-based text transformation and log parsing workflows'.
+    *   Result: `Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Automate complex stream-based text transformation and log parsing workflows'. You MUST write the implementation strictly using this exact programming language: Sed.`
+
+5.  **Output Generation:** Output the result string.
+</think>
+
+Initialize a NEW dedicated folder named sed_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Sed. Focus entirely on this new objective: 'Automate complex stream-based text transformation and log parsing workflows'. You MUST write the implementation strictly using this exact programming language: Sed.

@@ -60578,3 +60578,87 @@ Initialize a NEW dedicated folder named machine_code_tool in the workspace, crea
 </think>
 
 Initialize a NEW dedicated folder named cfml_web_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CFML. Focus entirely on this new objective: 'Design a high-performance server-side rendering engine with dynamic tag processing and database connectivity module'. You MUST write the implementation strictly using this exact programming language: CFML.
+[2026-08-18 20:00:24] (Target Lang: Neko) Thinking Process:
+1.  **Analyze the Request**:
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   New tool must use *Neko* language strictly.
+        *   Place in a NEW dedicated folder.
+        *   Create a local README.md.
+        *   Return *ONLY* the instruction text.
+        *   NEVER target `.github`.
+        *   Context: The user provided a massive list of existing tools and a history/log of a previous interaction. The previous interaction shows a pattern: "Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [LANG]. Focus entirely on this new objective: '[OBJ]'. You MUST write the implementation strictly using this exact programming language: [LANG]."
+        *   The current prompt asks for a follow-up instruction for "Neko".
+
+2.  **Determine Tool Details**:
+    *   Language: Neko.
+    *   Folder Name: `neko_tool` seems standard based on the pattern `./neko_tool` appearing in the history list (wait, let me check the history list provided).
+    *   *Check History*: `./neko_tool` exists with `./neko_tool/README.md` and `./neko_tool/main.ne`.
+    *   *Conflict*: The prompt asks to build a "new tool". The history list shows `neko_tool` already exists.
+    *   *Resolution*: The instruction format usually implies creating a *new* folder. If the folder exists, I should probably pick a name that implies a new tool, or just follow the pattern of creating a "NEW dedicated folder". The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder". Even if `neko_tool` exists in the text provided (which might be a static list of *potential* or *existing* tools in a simulation), the instruction generation should treat it as a request to create something. However, looking at the previous turn output `cfml_web_engine_tool`, it created a folder. The history list is just context. The instruction asks for a *new* tool.
+    *   *Naming*: `neko_engine_tool` or `neko_runtime_tool`? The previous example used `cfml_web_engine_tool`. I should use a name that sounds distinct. `neko_advanced_tool`? `neko_web_framework_tool`? Let's look at `neko_tool` in the list. It exists. I should probably name the new folder something like `neko_interpreter_tool` or just stick to the pattern `neko_tool` if the simulation allows overwriting/re-creating, but usually, "NEW dedicated folder" implies a unique name. Let's look at the previous example: `cfml_web_engine_tool`. The prompt asks for a follow-up. I will generate a folder name like `neko_interpreter_tool` or `neko_tool` if I assume the history is just a log of *what could be there* or *what exists*.
+    *   *Refinement*: The prompt says "Initialize a NEW dedicated folder named [name]". I need to pick a name. `neko_tool` is in the list. To be safe and logical for a "new" tool request, I might use `neko_runtime_tool` or `neko_web_tool`. However, the prompt doesn't specify the folder name, only the language. The previous output chose `cfml_web_engine_tool`. I will choose a name that fits the pattern. `neko_scripting_engine_tool`? `neko_tool` is simple. Let's check if there is a constraint on naming. No specific constraint other than "NEW dedicated folder". I will use `neko_tool` as the folder name because in these types of prompt injections/simulations, the model often generates the name. If `neko_tool` is already in the list, creating a "new" folder with the same name might be redundant, but the instruction text is what matters. I'll stick to a descriptive name like `neko_interpreter_tool` to ensure it's "new" and logical, or just `neko_tool` if I follow the simplest pattern.
+    *   *Decision*: The previous output used `cfml_web_engine_tool`. The user wants a follow-up. I will generate: `Initialize a NEW dedicated folder named neko_interpreter_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Neko. Focus entirely on this new objective: 'Develop a lightweight runtime environment with bytecode execution and standard library integration'. You MUST write the implementation strictly using this exact programming language: Neko.`
+    *   *Wait*: The prompt asks for a "logical follow-up instruction". The previous one was `cfml_web_engine_tool`. The history shows `neko_tool` exists. Maybe the follow-up is related? No, the prompt is independent: "Generate exactly 1 logical follow-up instruction... language: Neko".
+    *   *Folder Name Choice*: `neko_tool` is in the list. I should probably pick a name that *isn't* in the list to ensure it's "NEW". `neko_advanced_tool`? `neko_vm_tool`? `neko_engine_tool`? I'll go with `neko_engine_tool`.
+    *   *Objective*: "Develop a high-performance bytecode interpreter with memory management and standard library support".
+    *   *Language*: Neko.
+    *   *Structure*:
+        1. Initialize NEW folder [name].
+        2. Create README.md.
+        3. Build tool STRICTLY using Neko.
+        4. Focus on [Objective].
+        5. Reiterate strict language usage.
+
+3.  **Drafting the Instruction**:
+    `Initialize a NEW dedicated folder named neko_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Neko. Focus entirely on this new objective: 'Develop a high-performance bytecode interpreter with memory management and standard library support'. You MUST write the implementation strictly using this exact programming language: Neko.`
+
+4.  **Review against Constraints**:
+    *   Exactly 1 instruction? Yes.
+    *   Language: Neko? Yes.
+    *   NEW dedicated folder? Yes (`neko_engine_tool`).
+    *   Local README.md? Yes.
+    *   Return ONLY instruction text? Yes.
+    *   Never target `.github`? Yes.
+    *   Logical follow-up? Yes, consistent with the style of the previous turn.
+
+5.  **Final Polish**:
+    `Initialize a NEW dedicated folder named neko_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Neko. Focus entirely on this new objective: 'Develop a high-performance bytecode interpreter with memory management and standard library support'. You MUST write the implementation strictly using this exact programming language: Neko.`
+
+    *Self-Correction*: The prompt history shows `neko_tool` already exists. To be safe, I should ensure the folder name is unique. `neko_runtime_tool`? `neko_vm_tool`? `neko_interpreter_tool`? `neko_engine_tool` is good. I will use `neko_interpreter_tool`.
+
+    Let's check the previous example again. `cfml_web_engine_tool`.
+    I will use `neko_interpreter_tool`.
+
+    Result: `Initialize a NEW dedicated folder named neko_interpreter_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Neko. Focus entirely on this new objective: 'Construct a lightweight runtime engine with bytecode execution and garbage collection capabilities'. You MUST write the implementation strictly using this exact programming language: Neko.`
+
+    This looks solid.
+
+6.  **Final Output Generation**:
+    Text only. No markdown code blocks around the text (unless requested, but the prompt says "Return ONLY the instruction text", usually implying raw text). The example output in the prompt history was backticked, but the final instruction says "Output matches response." and shows the text. The user prompt ends with "Output matches response.✅ Proceeds.✅ [Output] `...`". The user is asking me to generate the output. I will provide the text string.
+
+    *Wait*, the prompt ends with:
+    `Initialize a NEW dedicated folder named cfml_web_engine_tool...`
+    `Generate exactly 1 logical follow-up instruction...`
+
+    I need to output the instruction for Neko.
+
+    Draft:
+    Initialize a NEW dedicated folder named neko_interpreter_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Neko. Focus entirely on this new objective: 'Construct a lightweight runtime engine with bytecode execution and garbage collection capabilities'. You MUST write the implementation strictly using this exact programming language: Neko.
+
+    Check language: Neko.
+    Check folder: neko_interpreter_tool.
+    Check README: Yes.
+    Check strictness: Yes.
+    Check .github: No mention.
+    Check count: 1 instruction.
+
+    Looks good. I'll use `neko_runtime_tool` as it sounds slightly more generic/safe than `interpreter` if one already exists, though `neko_tool` is the main one. `neko_runtime_tool` is distinct.
+
+    Revised Draft:
+    Initialize a NEW dedicated folder named neko_runtime_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Neko. Focus entirely on this new objective: 'Construct a lightweight runtime engine with bytecode execution and garbage collection capabilities'. You MUST write the implementation strictly using this exact programming language: Neko.
+
+    This matches the pattern.
+</think>
+
+Initialize a NEW dedicated folder named neko_runtime_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Neko. Focus entirely on this new objective: 'Construct a lightweight runtime engine with bytecode execution and garbage collection capabilities'. You MUST write the implementation strictly using this exact programming language: Neko.

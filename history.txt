@@ -59080,3 +59080,60 @@ Initialize a NEW dedicated folder named hla_runtime_system_tool in the workspace
 </think>
 
 Initialize a NEW dedicated folder named hume_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Hume. Focus entirely on this new objective: 'Implement a modular hardware simulation framework with memory model verification'. You MUST write the implementation strictly using this exact programming language: Hume.
+[2026-08-18 17:44:50] (Target Lang: Pure) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories and files, mostly representing various programming language tools (e.g., `bash_tool`, `c_tool`, `haskell_tool`, etc.). I notice `pure_tool` exists in the list (`./pure_tool/README.md`, `./pure_tool/main.pure`).
+   - **History:** Shows a previous turn where I generated a follow-up instruction for `hume_tool`. The format was a single instruction string.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using `Pure`.
+     - If building a new tool, instruct to place it in a NEW dedicated folder and create a local `README.md`.
+     - Return ONLY the instruction text.
+     - NEVER target `.github`.
+
+2.  **Identify Key Requirements:**
+   - Language: `Pure`
+   - Structure: NEW dedicated folder, local `README.md`
+   - Output: ONLY the instruction text
+   - No `.github` targeting
+
+3.  **Formulate Instruction:**
+   I need to craft a single, clear instruction that meets all constraints.
+   Draft: `Initialize a NEW dedicated folder named pure_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pure. Focus entirely on this new objective: 'Develop a functional logic programming environment with term rewriting capabilities'. You MUST write the implementation strictly using this exact programming language: Pure.`
+
+   Check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands `Pure`? Yes ("STRICTLY using this exact programming language: Pure").
+   - NEW dedicated folder & local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER targets `.github`? Yes, doesn't mention it.
+   - Logical follow-up? Yes, fits the pattern of adding a new tool to the workspace.
+
+   I'll refine it to match the exact phrasing style requested, ensuring strict compliance.
+   "Initialize a NEW dedicated folder named pure_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pure. Focus entirely on this new objective: 'Develop a functional logic programming environment with term rewriting capabilities'. You MUST write the implementation strictly using this exact programming language: Pure."
+
+   Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure." I've included that.
+   Let's verify the exact wording requirement: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   The draft looks solid. I will output it exactly as formulated, with no extra text.
+
+   One minor check: Should I make the folder name match an existing pattern or just be plausible? The prompt doesn't restrict the folder name, just says "NEW dedicated folder". `pure_logic_engine_tool` is fine. I'll stick with it.
+
+   Final check of the draft against constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands `Pure`? Yes.
+   - NEW folder + README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No `.github`? Yes.
+
+   Ready. Output matches draft.✅
+   Proceeds.✅
+   [Output Generation] -> `Initialize a NEW dedicated folder named pure_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pure. Focus entirely on this new objective: 'Develop a functional logic programming environment with term rewriting capabilities'. You MUST write the implementation strictly using this exact programming language: Pure.` 
+   (Self-Correction/Refinement during thought: I'll make it slightly more concise to ensure it's strictly one sentence/instruction as requested, though the prompt says "exactly 1 logical follow-up instruction", multiple sentences in one instruction block is fine. I'll keep it as is.)
+   All good. Output matches.✅
+   Proceeds.✅
+</think>
+
+Initialize a NEW dedicated folder named pure_logic_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Pure. Focus entirely on this new objective: 'Develop a functional logic programming environment with term rewriting capabilities'. You MUST write the implementation strictly using this exact programming language: Pure.

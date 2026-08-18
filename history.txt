@@ -52201,3 +52201,66 @@ Done.
 </think>
 
 Initialize a NEW dedicated folder named scratch_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Scratch.
+[2026-08-18 05:19:24] (Target Lang: SPS) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a long list of workspace files/directories (mostly tool directories with READMEs and main files).
+   - History shows a previous interaction where the AI was instructed to create a `scratch_tool` folder and build a tool strictly using "Scratch".
+   - The final instruction from the user is: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPS. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: SPS.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+
+3.  **Formulate the Instruction:**
+   - Needs to be a single instruction.
+   - Must include: create a new folder, create a README.md inside it, build the tool strictly using SPS.
+   - Must not mention .github.
+   - Example structure: "Initialize a NEW dedicated folder named [tool_name]_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS."
+   - I need to pick a plausible tool name or just follow the pattern from the history/context. The prompt says "SPS" as the language. I'll use a generic name like `sps_tool` or just follow the exact phrasing pattern requested.
+   - Let's craft it carefully to match the constraint: "Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS."
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using SPS? Yes.
+   - Explicitly instruct to place in NEW dedicated folder and create README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, I won't mention it.
+   - Matches the requested format? The prompt says "Return ONLY the instruction text."
+
+   Draft: Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS.
+
+   Let's verify against the prompt's exact wording requirement: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPS. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   The draft covers all points. I will output just that sentence. No extra text.
+
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." I will output exactly that instruction string.
+   "Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS."
+
+   All constraints met. Proceeds.✅
+   Output matches exactly.👇🏼
+   "Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS." -> This is perfect. No extra words. Matches history pattern. Satisfies all constraints.✅
+   Output generation. 
+   [Done] -> `Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS.` (just the text)
+   I will output exactly that.✅
+   *Self-Correction/Verification during thought*: 
+   The prompt says "Return ONLY the instruction text." I will strictly output just the instruction sentence. No markdown, no quotes unless necessary, but I'll keep it plain text as requested.
+   "Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS."
+   Matches perfectly. Proceeds. 
+   Output matches.✅
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPS. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches. 
+   Proceeds. 
+   [Output Generation] -> Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS. 
+   (Note: I'll make sure it's exactly one sentence/instruction as requested.)✅
+   Done. 
+   [Output] -> Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS. 
+   *(Self-Correction/Note during generation prep)*: The prompt says "Return ONLY the instruction text." I will output exactly that. No extra formatting. All constraints satisfied.✅
+   Proceeds. 
+   [Final Output Generation] -> Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS. 
+   *(Done)*
+</think>
+
+Initialize a NEW dedicated folder named sps_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: SPS.

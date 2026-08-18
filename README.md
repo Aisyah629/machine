@@ -1258,3 +1258,5 @@ Training Machine
 - Created/Updated module: `visual_basic_dotnet_logic_tool` (See `visual_basic_dotnet_logic_tool/README.md` for details)
 
 - Created/Updated module: `focus_tool` (See `focus_tool/README.md` for details)
+
+- Created/Updated module: `sps_tool` (See `sps_tool/README.md` for details)

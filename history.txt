@@ -53052,3 +53052,70 @@ Initialize a NEW dedicated folder named visual_basic_tool in the workspace, crea
 </think>
 
 Initialize a NEW dedicated folder named code_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CODE.
+[2026-08-18 07:00:30] (Target Lang: Onyx) Thinking Process:
+1.  **Analyze User Input:**
+   - Input: A long list of directories/files in a workspace, mostly following the `*_tool` pattern, each containing a `README.md` and a main source file. There's also a `History:` section at the end which seems to be a chain-of-thought from a previous turn, ending with a specific instruction: "Initialize a NEW dedicated folder named code_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: CODE."
+   - Wait, the prompt ends with: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Onyx. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - This is a meta-prompt. The user wants me to generate exactly one follow-up instruction based on their constraints.
+   - Constraints for the output:
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Onyx.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Identify Key Requirements for Output:**
+   - Must be a single instruction.
+   - Must mention "Onyx" as the exact programming language.
+   - Must mention creating a NEW dedicated folder.
+   - Must mention creating a local README.md inside it.
+   - Must NOT mention `.github`.
+   - Must be the *only* text returned.
+
+3.  **Draft Construction:**
+   "Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx."
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using Onyx? Yes.
+   - Instruct to place in NEW dedicated folder? Yes.
+   - Create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+
+   The draft matches all constraints perfectly. It mirrors the pattern of the previous turn's ending but swaps the language to Onyx as instructed.
+
+5.  **Refine Output:**
+   Ensure exact wording matches the requirement. I will output just the instruction string.
+   "Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx."
+
+   Double check constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Onyx." -> matches.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> matches.
+   "Return ONLY the instruction text." -> matches.
+
+   All good. Proceed. 
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." I will just output that single sentence. No extra text.
+   Ready. 
+   Output matches draft.✅
+   Self-Correction/Verification during thought: 
+   The prompt says "Generate exactly 1 logical follow-up instruction." It doesn't ask me to execute it, just to generate it. I will output exactly the instruction string.
+   Text: Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx.
+   Matches perfectly. Output matches request.✅
+   Proceeds. 
+   [Output Generation] -> `Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx.` (exactly as requested)
+   All constraints met. No extra text. No `.github`. Uses Onyx. Mentions folder and README.md. Exactly 1 instruction. Done. 
+   Output Generation. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Onyx. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Everything is aligned. Output matches.✅
+   Proceeds. 
+   [Output] Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx. 
+   (Note: I'll make sure there's absolutely no extra text, as requested.)
+   Done. 
+   *Self-Correction/Note during thought*: Actually, I should just output the exact string requested. No extra formatting.
+   "Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx."
+   Perfect.✅
+   Output Generation. 
+   [Done]
+</think>
+
+Initialize a NEW dedicated folder named onyx_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Onyx.

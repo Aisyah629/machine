@@ -125,3 +125,5 @@ MIT License
 - Created/Updated module: `vala_tool` (See `vala_tool/README.md` for details)
 
 - Created/Updated module: `gj_concurrent_runtime_tool` (See `gj_concurrent_runtime_tool/README.md` for details)
+
+- Created/Updated module: `newtonscript_pda_tool` (See `newtonscript_pda_tool/README.md` for details)

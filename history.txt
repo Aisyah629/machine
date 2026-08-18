@@ -57524,3 +57524,53 @@ Done.
 </think>
 
 Initialize a NEW dedicated folder named simulink_block_diagram_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Simulink. Focus entirely on this new objective: 'Construct a robust block-diagram-based simulation environment for control systems engineering, dynamic system modeling, and real-time algorithm validation'. You MUST write the implementation strictly using this exact programming language: Simulink.
+[2026-08-18 15:01:48] (Target Lang: occam-π) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using `occam-π`.
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+    *   Context: The workspace has a long list of existing tools (simulink_block_diagram_engine_tool, etc.). The user wants a follow-up instruction based on this context.
+
+2.  **Analyze the "Logical Follow-up":**
+    *   The previous instruction (implied by the history) created `simulink_block_diagram_engine_tool`.
+    *   A logical follow-up might relate to concurrency, parallelism, or a specific niche that `occam-π` is known for. `occam-π` is a concurrent programming language derived from CSP (Communicating Sequential Processes).
+    *   Looking at the workspace list, there are tools like `promela_concurrency_validator_tool`, `csp_tool`, `manna_muller_concurrent_tools`, etc.
+    *   A good follow-up could be creating a tool that leverages `occam-π` for a specific purpose, perhaps something that complements the simulation environment or addresses a different aspect like distributed systems or high-concurrency verification.
+    *   *Drafting the objective:* "Implement a high-performance distributed concurrent processing engine for real-time stream processing and message passing validation using occam-π." or "Develop a formal verification tool for concurrent systems based on occam-π."
+    *   *Refining the objective for "Logical Follow-up":* Since the previous tool was a simulation environment, a follow-up could be a tool for *verifying* such systems or handling the *concurrency* aspects. However, the prompt just asks for "logical follow-up instruction". Usually, in these generation tasks, "logical" implies continuing the pattern of adding tools to the workspace, perhaps exploring a related or distinct paradigm.
+    *   *Selected Objective:* Construct a dedicated tool for modeling and simulating concurrent systems using `occam-π`, focusing on process algebra and message passing. Let's call it `occam_pi_concurrent_systems_tool`.
+    *   *Folder Name:* `occam_pi_concurrent_systems_tool`.
+    *   *Language:* `occam-π` (must be strict).
+
+3.  **Draft the Instruction Text:**
+    *   *Must haves:*
+        *   "Initialize a NEW dedicated folder named [folder_name]..."
+        *   "...create a local README.md inside it..."
+        *   "...build the entire new tool STRICTLY using this exact programming language: occam-π."
+        *   "Focus entirely on this new objective: '[objective]'."
+        *   "You MUST write the implementation strictly using this exact programming language: occam-π."
+    *   *Drafting:* Initialize a NEW dedicated folder named occam_pi_concurrent_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam-π. Focus entirely on this new objective: 'Design a high-throughput concurrent execution engine for distributed task scheduling and verified message passing workflows'. You MUST write the implementation strictly using this exact programming language: occam-π.
+
+4.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Explicitly demand occam-π?* Yes ("STRICTLY using this exact programming language: occam-π", "MUST write... strictly using... occam-π").
+    *   *NEW dedicated folder & README.md?* Yes ("Initialize a NEW dedicated folder named occam_pi_concurrent_engine_tool", "create a local README.md").
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target .github?* Yes. The instruction mentions `occam_pi_concurrent_engine_tool`, not `.github`.
+    *   *Language Check:* `occam-π`. The prompt asks for `occam-π`. The draft has `occam-π`.
+    *   *Logic Check:* Is `occam_pi_concurrent_engine_tool` a reasonable name? Yes. Does it fit the workspace pattern? Yes.
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   Output: `Initialize a NEW dedicated folder named occam_pi_concurrent_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam-π. Focus entirely on this new objective: 'Design a high-throughput concurrent execution engine for distributed task scheduling and verified message passing workflows'. You MUST write the implementation strictly using this exact programming language: occam-π.`
+
+6.  **Final Output Construction:**
+    *   The text matches the draft. No extra characters. No markdown code blocks (unless the user requested, but "Return ONLY the instruction text" usually implies raw text or the text content). Given the history shows the output format is just the text string, I will provide that.
+
+Result:
+Initialize a NEW dedicated folder named occam_pi_concurrent_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam-π. Focus entirely on this new objective: 'Design a high-throughput concurrent execution engine for distributed task scheduling and verified message passing workflows'. You MUST write the implementation strictly using this exact programming language: occam-π.
+</think>
+
+Initialize a NEW dedicated folder named occam_pi_concurrent_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: occam-π. Focus entirely on this new objective: 'Design a high-throughput concurrent execution engine for distributed task scheduling and verified message passing workflows'. You MUST write the implementation strictly using this exact programming language: occam-π.

@@ -60307,3 +60307,62 @@ Initialize a NEW dedicated folder named autohotkey_tool in the workspace, create
 </think>
 
 Initialize a NEW dedicated folder named join_java_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Join Java. Focus entirely on this new objective: 'Develop a robust desktop automation and system interaction engine'. You MUST write the implementation strictly using this exact programming language: Join Java.
+[2026-08-18 19:43:31] (Target Lang: ObjectLOGO) Thinking Process:
+1.  **Analyze User Input**:
+    - Workspace contains a massive list of directories, mostly named `*_tool`, each containing a `README.md` and a main source file.
+    - History shows a previous instruction generating a folder `join_java_tool` and a README, and the output was a specific string.
+    - Current prompt asks to generate *exactly 1 logical follow-up instruction* based on the history/context.
+    - Constraints:
+        - Must explicitly demand the new tool be built STRICTLY using `ObjectLOGO`.
+        - Must instruct to place it in a NEW dedicated folder and create a local `README.md`.
+        - Return ONLY the instruction text.
+        - NEVER target `.github`.
+    - I need to craft a single instruction string that fulfills all these constraints.
+
+2.  **Identify Key Elements for the Instruction**:
+    - Target language: `ObjectLOGO`
+    - New folder name: `objectlogo_tool` (following the pattern of the workspace, e.g., `*_tool`)
+    - Required file: `README.md` inside the new folder
+    - Focus/Objective: Need to invent a plausible objective for ObjectLOGO (since it's a logo-like/visual/logical language, maybe "Develop a dynamic data visualization and procedural drawing engine" or "Create an advanced logic programming and symbolic computation environment"). I'll stick to a generic but strong objective: "Develop a dynamic data visualization and procedural computation engine".
+    - Constraint check: "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ObjectLOGO."
+    - Constraint check: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+    - Constraint check: "Return ONLY the instruction text."
+    - Constraint check: "NEVER target the .github directory."
+
+3.  **Draft the Instruction**:
+    Initialize a NEW dedicated folder named objectlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ObjectLOGO. Focus entirely on this new objective: 'Develop a dynamic data visualization and procedural computation engine'. You MUST write the implementation strictly using this exact programming language: ObjectLOGO.
+
+4.  **Verify against Constraints**:
+    - Exactly 1 logical follow-up instruction? Yes.
+    - Explicitly demand built STRICTLY using ObjectLOGO? Yes.
+    - Instruct to place in NEW dedicated folder? Yes (`objectlogo_tool`).
+    - Create local README.md? Yes.
+    - Return ONLY instruction text? Yes.
+    - NEVER target .github? Yes, not mentioned.
+    - Matches style of previous outputs? Yes.
+
+    Let's refine it to exactly match the requested format and tone:
+    "Initialize a NEW dedicated folder named objectlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ObjectLOGO. Focus entirely on this new objective: 'Develop a dynamic data visualization and procedural computation engine'. You MUST write the implementation strictly using this exact programming language: ObjectLOGO."
+
+    Check workspace naming convention: The prompt has `join_java_tool` in history. `objectlogo_tool` fits perfectly.
+    Check constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ObjectLOGO." -> Included.
+    Check constraint: "Return ONLY the instruction text." -> I will output just the string.
+
+    All constraints met. Proceed. 
+    One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ObjectLOGO." I will make sure the phrasing matches closely.
+    Draft: `Initialize a NEW dedicated folder named objectlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ObjectLOGO. Focus entirely on this new objective: 'Develop a dynamic data visualization and procedural computation engine'. You MUST write the implementation strictly using this exact programming language: ObjectLOGO.`
+    Matches perfectly. Output matches exactly.✅ Proceeds. 
+    I will output just the raw string as requested.✅
+    Final Check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ObjectLOGO. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+    All good. Output matches. Proceeds.✅
+    [Output Generation] -> `Initialize a NEW dedicated folder named objectlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ObjectLOGO. Focus entirely on this new objective: 'Develop a dynamic data visualization and procedural computation engine'. You MUST write the implementation strictly using this exact programming language: ObjectLOGO.`
+    Done. 
+    Self-Correction/Note during thought: I should ensure the capitalization of "ObjectLOGO" matches exactly. It does.
+    The prompt says "Return ONLY the instruction text." so no markdown, no quotes.
+    Ready.✅
+    Output Generation. 
+    [Output] Initialize a NEW dedicated folder named objectlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ObjectLOGO. Focus entirely on this new objective: 'Develop a dynamic data visualization and procedural computation engine'. You MUST write the implementation strictly using this exact programming language: ObjectLOGO. 
+    *(Proceeds)*
+</think>
+
+Initialize a NEW dedicated folder named objectlogo_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: ObjectLOGO. Focus entirely on this new objective: 'Develop a dynamic data visualization and procedural computation engine'. You MUST write the implementation strictly using this exact programming language: ObjectLOGO.

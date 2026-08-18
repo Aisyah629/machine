@@ -1,0 +1,109 @@
+;
+; ObjectLOGO Dynamic Data Visualization and Procedural Computation Engine
+; Language: ObjectLOGO
+; Purpose: Procedural generation, turtle graphics, and object-oriented data rendering
+;
+
+;
+; Define the Core Engine Object
+;
+object engine
+  field private width, height
+  field private dataStore
+  field private turtleState
+  
+  method new(w, h)
+    make "width w
+    make "height h
+    make "dataStore []
+    make "turtleState [x 0 y 0 heading 0]
+    output self
+  end
+  
+  method loadData(inputData)
+    make "dataStore inputData
+    print [Data loaded successfully.]  ; ObjectLOGO uses 'print' for console output
+  end
+  
+  method clear()
+    clearscreen
+    make "dataStore []
+    home  ; ObjectLOGO turtle command
+  end
+  
+  method renderLine(index)
+    if index > length :dataStore [print [Index out of bounds.]; stop]
+    local [x1 y1 x2 y2]
+    x1: item :index :dataStore
+    y1: item (inc :index) :dataStore
+    x2: item (inc (inc :index)) :dataStore
+    y2: item (inc (inc (inc :index))) :dataStore
+    setpos [:x1 :y1]
+    setpos [:x2 :y2]
+  end
+  
+  method renderPlot()
+    clear
+    local [len]
+    make "len length :dataStore
+    local [i]
+    make "i 0
+    while [i < :len] [
+      renderLine :i
+      make "i (inc :i)
+    ]
+    print [Plot rendering complete.]
+  end
+end
+
+;
+; Define Procedural Shapes Object
+;
+object shapeGenerator
+  
+  method fractalTree(length, depth)
+    if :depth = 0 [stop]
+    forward :length
+    left 25
+    shapeGenerator:fractalTree :length * 0.7 :depth - 1
+    right 50
+    shapeGenerator:fractalTree :length * 0.7 :depth - 1
+    left 25
+    backward :length
+  end
+  
+  method drawSpirograph(radius, steps, angle)
+    local [i]
+    make "i 0
+    while [i < :steps] [
+      circle :radius :angle
+      right 1
+      make "i (inc :i)
+    ]
+  end
+end
+
+;
+; Execution Block / Main Procedure
+;
+make "engine [engine:new 500 500]
+print [ObjectLOGO Engine Initialized.]
+
+;
+; 1. Data Visualization Test
+;
+make "testData [10 10 50 150 100 50 150 100 200 50 250 150]
+:engine:loadData :testData
+:engine:renderPlot
+
+;
+; 2. Procedural Generation Test
+;
+shapeGenerator:fractalTree 100 6
+shapeGenerator:drawSpirograph 100 360 60
+
+;
+; Finalize
+;
+print [Procedural computation engine task complete.]
+print [All operations executed strictly within ObjectLOGO.]

@@ -161,3 +161,5 @@ MIT License
 - Created/Updated module: `esharp_framework_tool` (See `esharp_framework_tool/README.md` for details)
 
 - Created/Updated module: `argus_concurrent_consensus_tool` (See `argus_concurrent_consensus_tool/README.md` for details)
+
+- Created/Updated module: `plus_data_consistency_engine_tool` (See `plus_data_consistency_engine_tool/README.md` for details)

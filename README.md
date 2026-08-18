@@ -143,3 +143,5 @@ MIT License
 - Created/Updated module: `strand_advanced_logic_tool` (See `strand_advanced_logic_tool/README.md` for details)
 
 - Created/Updated module: `gapps_script_workflow_tool` (See `gapps_script_workflow_tool/README.md` for details)
+
+- Created/Updated module: `nesC_sensor_tool` (See `nesC_sensor_tool/README.md` for details)

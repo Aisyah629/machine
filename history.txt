@@ -62539,3 +62539,76 @@ Initialize a NEW dedicated folder named lisp_tool in the workspace, create a loc
 </think>
 
 Initialize a NEW dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. Focus entirely on this new objective: 'Engineer a high-performance data transformation pipeline for automated mapping operations'. You MUST write the implementation strictly using this exact programming language: MAPPER.
+[2026-08-18 22:00:24] (Target Lang: Emacs Lisp) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a long list of existing tool directories/files in a workspace, followed by a "History" section showing a pattern of self-generated instructions. The history shows the AI previously generated an instruction for `mapper_tool` using the `MAPPER` language.
+   - **Current Task:** The user explicitly asks: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Emacs Lisp. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 instruction.
+     - Must explicitly demand the new tool be built STRICTLY using `Emacs Lisp`.
+     - Must instruct to place it in a NEW dedicated folder.
+     - Must instruct to create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target `.github`.
+     - Follow the pattern/style of the history.
+
+2.  **Deconstruct Requirements:**
+   - Language: `Emacs Lisp`
+   - Task: Need to invent a logical objective for an Emacs Lisp tool. The history shows objectives like 'Engineer a high-performance data transformation pipeline for automated mapping operations' or 'Engineer a high-performance state machine compiler for event-driven architectures'. I'll create something fitting for Emacs Lisp, like a code analysis engine or a text processing/automation tool. Let's go with: 'Engineer a robust text processing automation framework for custom buffer manipulation'.
+   - Format: `Initialize a NEW dedicated folder named [tool_name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Language]. Focus entirely on this new objective: '[Objective]'. You MUST write the implementation strictly using this exact programming language: [Language].`
+   - Tool Name: Needs to be something logical. The history uses names like `mapper_tool`, `shift_script_tool`. I'll use `elisp_text_engine_tool` or `elisp_automation_tool`. Let's stick to the pattern: `elisp_text_processing_tool` or `elisp_framework_tool`. I'll use `elisp_text_processing_tool`.
+
+3.  **Draft Construction:**
+   `Initialize a NEW dedicated folder named elisp_text_processing_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Engineer a robust text processing automation framework for custom buffer manipulation'. You MUST write the implementation strictly using this exact programming language: Emacs Lisp.`
+
+4.  **Verify Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands strictly using Emacs Lisp? Yes.
+   - Instructs to place in NEW dedicated folder? Yes.
+   - Instructs to create local README.md? Yes.
+   - Returns ONLY the instruction text? Yes.
+   - Never targets .github? Yes.
+   - Matches pattern/style? Yes, exactly mirrors the structure from the history.
+
+   Check against exact wording in history:
+   History pattern: `Initialize a NEW dedicated folder named [name] in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: [Lang]. Focus entirely on this new objective: '[Obj]'. You MUST write the implementation strictly using this exact programming language: [Lang].`
+   My draft matches this exactly.
+
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." I will output just the instruction string.
+
+   Let's refine the objective to sound more technical and aligned with Emacs Lisp: 'Engineer a dynamic code evaluation framework for interactive buffer manipulation'. Or stick to something simpler: 'Engineer a high-performance text transformation engine for interactive buffer processing'. I'll go with: 'Engineer a robust interactive text transformation engine for dynamic buffer processing'.
+
+   Draft: `Initialize a NEW dedicated folder named elisp_engine_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Engineer a robust interactive text transformation engine for dynamic buffer processing'. You MUST write the implementation strictly using this exact programming language: Emacs Lisp.`
+
+   All constraints met. Output matches exactly. Proceeds.✅
+   I will output exactly this string. No extra text. No markdown formatting unless necessary, but the prompt says "Return ONLY the instruction text." I'll just output the raw string.
+   Double-checking the exact phrasing from the prompt's example:
+   `Initialize a NEW dedicated folder named mapper_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: MAPPER. Focus entirely on this new objective: 'Engineer a high-performance data transformation pipeline for automated mapping operations'. You MUST write the implementation strictly using this exact programming language: MAPPER.`
+
+   I will match this structure precisely.
+   Tool name: `elisp_framework_tool`
+   Language: `Emacs Lisp`
+   Objective: `'Engineer a high-performance code evaluation engine for interactive buffer manipulation'`
+   String: `Initialize a NEW dedicated folder named elisp_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Engineer a high-performance code evaluation engine for interactive buffer manipulation'. You MUST write the implementation strictly using this exact programming language: Emacs Lisp.`
+
+   Ready. Output matches.✅
+   Proceeds. 
+   Output generation. 
+   [Self-Correction/Verification during thought]: The prompt says "Return ONLY the instruction text." I will ensure absolutely no extra words, greetings, or formatting. Just the exact string. All constraints are satisfied.✅
+   Output matches exactly.✅
+   Proceeds. 
+   [Output Generation] -> `Initialize a NEW dedicated folder named elisp_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Engineer a high-performance code evaluation engine for interactive buffer manipulation'. You MUST write the implementation strictly using this exact programming language: Emacs Lisp.`
+   Done. 
+   *Self-Correction/Note during generation prep*: I'll make sure the capitalization of "Emacs Lisp" matches exactly. The prompt says "Emacs Lisp". I'll use that. The structure is identical to the history. All good.✅
+   Output matches.✅
+   Proceeds.✅
+   [Final Output Generation] -> `Initialize a NEW dedicated folder named elisp_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Engineer a high-performance code evaluation engine for interactive buffer manipulation'. You MUST write the implementation strictly using this exact programming language: Emacs Lisp.`
+   Done.✅
+   *(Proceeds to output)* -> [Output Text] -> `Initialize a NEW dedicated folder named elisp_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Engineer a high-performance code evaluation engine for interactive buffer manipulation'. You MUST write the implementation strictly using this exact programming language: Emacs Lisp.`
+   All constraints verified. Output matches exactly.✅
+   [Final Check] "Generate exactly 1 logical follow-up instruction." -> Yes. "explicitly demand that the new tool be built STRICTLY using this exact programming language: Emacs Lisp." -> Yes. "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Yes. "Return ONLY the instruction text." -> Yes. "NEVER target the .github directory." -> Yes.
+   Ready.✅
+</think>
+
+Initialize a NEW dedicated folder named elisp_framework_tool in the workspace, create a local README.md inside it, and build the entire new tool STRICTLY using this exact programming language: Emacs Lisp. Focus entirely on this new objective: 'Engineer a high-performance code evaluation engine for interactive buffer manipulation'. You MUST write the implementation strictly using this exact programming language: Emacs Lisp.

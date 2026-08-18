@@ -1260,3 +1260,5 @@ Training Machine
 - Created/Updated module: `focus_tool` (See `focus_tool/README.md` for details)
 
 - Created/Updated module: `sps_tool` (See `sps_tool/README.md` for details)
+
+- Created/Updated module: `robotc_tool` (See `robotc_tool/README.md` for details)

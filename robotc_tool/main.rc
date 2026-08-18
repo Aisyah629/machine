@@ -1,0 +1,40 @@
+// RobotC Main Program
+// This serves as the entry point for the RobotC tool execution engine.
+
+#include "wpilib.h"
+
+double left_encoder_count;
+double right_encoder_count;
+double distance_moved;
+
+void initializeProgram() {
+    left_encoder_count = 0;
+    right_encoder_count = 0;
+    distance_moved = 0;
+}
+
+void autonomousCode() {
+    // Autonomous routine placeholder
+    motor[motorB] = 50;
+    motor[motorC] = 50;
+    wait1Msec(2000);
+    motor[motorB] = 0;
+    motor[motorC] = 0;
+}
+
+void userControlCode() {
+    // Teleoperation placeholder
+    while (true) {
+        motor[motorB] = vexRT[Ch3];
+        motor[motorC] = vexRT[Ch2];
+        wait1Msec(20);
+    }
+}
+
+// Main loop entry point for RobotC tool runtime
+int main() {
+    initializeProgram();
+    autonomousCode();
+    userControlCode();
+    return 0;
+}

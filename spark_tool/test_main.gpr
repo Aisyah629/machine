@@ -1,0 +1,20 @@
+project Test_Main is
+   for Source_Dirs use (".");
+   for Main use ("main.sp");
+   for Language use "SPARK";
+   for Switch ("SPARK") use ("-g", "-gnat2022", "-gnata");
+
+   for Object_Dir use "obj";
+   for Exec_Dir use "bin";
+
+   package Compiler is
+      for Switches ("SPARK") use
+         ("-gnat2022", "-gnata", "-gnatwa", "-gnatWu");
+   end Compiler;
+
+   package Verification is
+      for Program_Suite use ("Main");
+      for Switches ("Main") use ("-gnatpdw", "-gnatpg");
+   end Verification;
+
+end Test_Main;

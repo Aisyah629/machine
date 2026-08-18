@@ -1,25 +1,25 @@
-# Flow-Matic Tool
+# Flow-MATIC API Client & Data Transfer Tool
 
-This tool is a legacy data record sorting utility implemented in FLOW-MATIC.
-
-## Overview
-
-FLOW-MATIC was one of the earliest business-oriented programming languages, developed by Grace Hopper and her team at Remington Rand in the late 1950s. It introduced the concept of using English-like words for programming instructions, which greatly influenced the development of COBOL.
+A robust data transfer and API interaction script built using Flow-MATIC, a pioneering natural-language-oriented programming language designed in the 1950s. This tool handles data retrieval, parsing, and transfer operations with a human-readable syntax.
 
 ## Features
-
-- Sorts data records based on specified criteria.
-- Utilizes FLOW-MATIC syntax for data manipulation and control flow.
-- Suitable for legacy systems and educational purposes.
+- Data retrieval from specified endpoints
+- Data validation and transformation
+- Robust error handling
+- Configurable data transfer parameters
 
 ## Usage
 
-To use this tool, compile the `main.fmt` file with a FLOW-MATIC compiler and run the resulting executable. Ensure that your input data file is formatted according to the specifications provided in the code comments.
+Run the main script with:
 
-## Dependencies
+```bash
+flow-matic run ./flow_matic_tool/main.fmt
+```
 
-- FLOW-MATIC Compiler
+## Configuration
 
-## License
+Edit the main.fmt file to configure API endpoints, data filters, and transfer settings.
 
-This project is open source and available under the MIT License.
+## Notes
+
+Flow-MATIC is a historical language that influenced the development of COBOL. This implementation simulates its natural-language style while providing functional data handling capabilities.

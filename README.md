@@ -45,3 +45,5 @@ MIT License
 - Created/Updated module: `gj_tool` (See `gj_tool/README.md` for details)
 
 - Created/Updated module: `./lingo_data_security_tool` (See `./lingo_data_security_tool/README.md` for details)
+
+- Created/Updated module: `aimms_advanced_optimizer_tool` (See `aimms_advanced_optimizer_tool/README.md` for details)

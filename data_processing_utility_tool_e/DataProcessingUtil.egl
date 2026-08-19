@@ -1,0 +1,25 @@
+// DataProcessingUtil.egl
+// Main EGL file for Data Processing Utility
+
+namespace dataproccessing
+
+service DataProcessingService
+end
+
+type DataProcessorType extends ServiceType
+	operation process(data : String) : String;
+end
+
+handler DataProcessingHandler
+	type DataProcessingUtil extends DataProcessorType
+		start
+			// Initialize the data processor
+		end;
+
+		onOperation request : HttpRequest in, response : HttpResponse out
+			var dataToProcess : String := request.getBody().toString();
+			var result : String := "Processed: " + dataToProcess;
+			response.setBody(result);
+		end;
+	end;
+end

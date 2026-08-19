@@ -417,3 +417,5 @@ MIT License
 - Created/Updated module: `peoplecode_business_logic_tool` (See `peoplecode_business_logic_tool/README.md` for details)
 
 - Created/Updated module: `comal_algorithmic_processor_tool` (See `comal_algorithmic_processor_tool/README.md` for details)
+
+- Created/Updated module: `autoit_system_config_tool` (See `autoit_system_config_tool/README.md` for details)

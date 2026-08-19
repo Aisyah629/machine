@@ -68247,3 +68247,41 @@ Create a new tool for automated statistical data processing in a new dedicated f
 </think>
 
 Create a new tool for algorithmic data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 22:10:56] (Target Lang: AutoIt) The user wants me to generate exactly 1 logical follow-up instruction.
+The instruction must explicitly demand that the new tool be built STRICTLY using the exact programming language: AutoIt.
+If building a new tool, I must explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+I must return ONLY the instruction text.
+NEVER target the .github directory.
+I need to match the style/format of the example provided.
+Example style: "Create a new tool for [purpose] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: AutoIt. Place it in a new dedicated folder and create a local README.md."
+
+Check constraints:
+- Exactly 1 logical follow-up instruction.
+- Explicitly demand "STRICTLY using this exact programming language: AutoIt".
+- Instruct to place in a NEW dedicated folder and create a local README.md.
+- Return ONLY the instruction text.
+- Never target .github.
+
+Draft: Create a new tool for automated system configuration in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: AutoIt. Place it in a new dedicated folder and create a local README.md.
+
+Check exact wording requirement: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AutoIt." -> matches.
+Check folder/README requirement: "Place it in a new dedicated folder and create a local README.md." -> matches.
+Check ONLY instruction text: -> matches.
+Check no .github: -> matches.
+
+All constraints met. Output exactly the draft.
+One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AutoIt." I will ensure the capitalization matches exactly if needed, but "AutoIt" is fine.
+I will output just the sentence.
+Ready. 
+Output: Create a new tool for automated system configuration in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: AutoIt. Place it in a new dedicated folder and create a local README.md.
+Matches perfectly.✅
+Proceeds. 
+Output Generation -> `Create a new tool for automated system configuration in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: AutoIt. Place it in a new dedicated folder and create a local README.md.`
+Done. 
+Self-Correction/Verification during thought: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: AutoIt." I will make sure it's capitalized as AutoIt. The structure matches the example exactly. I will output just that string.
+All good. 
+Proceeds. 
+Output matches.✅
+</think>
+
+Create a new tool for automated system configuration in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: AutoIt. Place it in a new dedicated folder and create a local README.md.

@@ -367,3 +367,5 @@ MIT License
 - Created/Updated module: `./miis_data_processing_tool` (See `./miis_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `clojure_tool` (See `clojure_tool/README.md` for details)
+
+- Created/Updated module: `unity_data_processor_tool` (See `unity_data_processor_tool/README.md` for details)

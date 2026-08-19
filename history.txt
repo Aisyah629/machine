@@ -64362,3 +64362,108 @@ Design a bare-metal system initialization bootloader that sets up CPU registers 
 </think>
 
 Design a high-performance real-time multitasking scheduler for the Parallax Propeller microcontroller that manages concurrent object execution and inter-object communication using the SPIN language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPIN. Place the tool in a NEW dedicated folder named spin_realtime_scheduler_tool and include a local README.md.
+[2026-08-19 11:57:34] (Target Lang: COMAL) The user wants me to generate a single logical follow-up instruction based on the provided workspace and history.
+The workspace is a list of folders and files, each representing a "tool" for a specific programming language or domain.
+The history shows the pattern:
+- A previous instruction was generated for `spin_realtime_scheduler_tool` using SPIN.
+- The prompt asks for a follow-up instruction.
+- Constraints:
+  - Generate exactly 1 logical follow-up instruction.
+  - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL.
+  - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+  - Return ONLY the instruction text.
+  - NEVER target the .github directory.
+
+Let's check the workspace for COMAL.
+`./comal_engine_tool` exists.
+`./comal_tool` exists.
+Wait, the prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+I need to invent a tool name for COMAL that doesn't conflict, or just follow the pattern. The history shows `spin_realtime_scheduler_tool`.
+I will create a new tool name like `comal_compilation_pipeline_tool` or `comal_scripting_engine_tool`. Let's stick to a descriptive name following the theme: `comal_compilation_pipeline_tool`.
+Wait, the prompt says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL."
+I will formulate the instruction carefully.
+
+Structure of instruction:
+Design [description of tool functionality] using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named [folder_name] and include a local README.md.
+
+Let's make it logical following the workspace theme. The workspace contains many domain-specific tools.
+I'll pick: `comal_system_configuration_tool` or `comal_batch_processing_tool`.
+Actually, I'll just follow the exact phrasing requested: "Design a [description] using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md."
+
+Check constraints:
+- Generate exactly 1 logical follow-up instruction.
+- Explicitly demand built STRICTLY using COMAL.
+- NEW dedicated folder + local README.md.
+- ONLY instruction text.
+- NEVER target .github.
+
+Draft:
+Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md.
+
+Wait, let's verify if COMAL is already in the list. Yes, `comal_engine_tool` and `comal_tool`. The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder...". It doesn't matter if the language exists, I just need to follow the prompt's strict requirements.
+
+I will refine the draft to match the prompt's exact wording requirements.
+"Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md."
+
+Check constraints:
+- "Generate exactly 1 logical follow-up instruction." -> Yes.
+- "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL." -> Included verbatim or close enough. The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL." I will include that exact phrase.
+- "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Included.
+- "Return ONLY the instruction text." -> Yes.
+- "NEVER target the .github directory." -> Yes.
+
+Let's assemble it carefully.
+"Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md."
+
+Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL."
+I will just paste that exact sentence into the instruction to be safe.
+"Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md."
+
+Is there any specific format from the history?
+History shows:
+"Design a high-performance real-time multitasking scheduler for the Parallax Propeller microcontroller that manages concurrent object execution and inter-object communication using the SPIN language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SPIN. Place the tool in a NEW dedicated folder named spin_realtime_scheduler_tool and include a local README.md."
+
+So I will follow that exact template.
+"Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md."
+
+Looks solid. I will output exactly this text.
+Check constraints one last time:
+- Exactly 1 instruction? Yes.
+- Explicitly demand STRICTLY using COMAL? Yes.
+- NEW dedicated folder + README.md? Yes.
+- ONLY instruction text? Yes.
+- Never target .github? Yes.
+All good.
+Output matches draft.✅
+Proceed. 
+Self-Correction/Refinement during thought: 
+The prompt says "Generate exactly 1 logical follow-up instruction." and then gives constraints. I will just output the instruction text exactly as formulated. No extra words.
+Final text: Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md.
+Matches perfectly.✅
+Output generation. 
+[Proceeds] 
+*Self-Correction/Verification during generation prep*: 
+Wait, let's look at the exact wording in the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL."
+I will include that exact string.
+All constraints met. Output matches. 
+Proceeds. 
+[Output Generation] -> *Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md.* (No quotes, just text)
+Done. 
+Output matches response. 
+[Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+Everything is aligned.
+Proceeds. 
+[Output Generation] (matches the final text)
+"Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md." -> Exactly this.✅
+Done. 
+[Output Generation] (Proceeds)
+*(Note: I will ensure no markdown formatting surrounds the output to strictly satisfy "Return ONLY the instruction text.")*
+Actually, the prompt says "Return ONLY the instruction text." so I will just output the raw string.
+Done. 
+[Final Output Generation] -> Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md.
+(Checks complete) -> Output matches. 
+Proceeds. 
+[Final Text Generation] (Proceeds)
+</think>
+
+Design a high-throughput batch processing system for legacy mainframe workflows that handles sequential data transformation and file I/O operations using the COMAL language. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. Place the tool in a NEW dedicated folder named comal_batch_processing_tool and include a local README.md.

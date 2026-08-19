@@ -1,60 +1,66 @@
-/*
- * Gödel Tool Main Program
- * Language: Gödel
- * 
- * Gödel is a logic programming language based on first-order logic.
- * This module demonstrates logical inference and constraint solving capabilities.
- */
+%% Gödel Source Code
+%% main.gd
+%% Self-Healing Logic Engine
 
-/*
- * Define a simple logical rule:
- * If X is a parent of Y, and Y is a parent of Z, then X is a grandparent of Z.
- */
+%% A purely logical, self-healing tool that detects and rectifies anomalies.
+%% It uses declarative rules to define valid states and transitions, 
+%% ensuring the system can handle edge cases and recover from errors.
 
-great_grandparent(X, Z) :-
-    parent(X, Y),
-    parent(Y, Z).
+%% --- Module Definition ---
+module self_healing_engine.
 
-/*
- * Define a constraint solver example:
- * Find integer X such that X + 2 = 5.
- */
+%% --- Imports ---
+import core_io.
+import core_logic.
 
-solve_constraint(X) :-
-    X = 3.
+%% --- Type Definitions ---
+type Status = ok | warning | error | recovering.
 
-/*
- * Main execution logic (simulated in a logic language context)
- * In Gödel, the program is often the set of rules and the query drives execution.
- * This predicate represents the successful termination of the tool.
- */
+%% --- Core Logic: Anomaly Detection ---
+predicate detect_anomaly(Data : Any, Anomaly : String, Severity : int).
 
-tool_initialized :-
-    write("Godel Tool Initialized\n"),
-    write("Declarative Logic Engine Ready\n"),
-    true.
+%% Edge case: Null input
+detect_anomaly(null, "Null input detected", 10).
 
-/*
- * Entry point for the tool's operational context.
- */
+%% Edge case: Empty data
+detect_anomaly([], "Empty data structure", 8).
 
-main :-
-    tool_initialized,
-    great_grandparent(alice, charlie) :-
-        parent(alice, bob),
-        parent(bob, charlie).
-    
-    % Logical inference demonstration
-    parent(alice, bob),
-    parent(bob, charlie).
-    
-    solve_constraint(X).
-    
-    % Output results if necessary
-    % (Note: Gödel syntax varies by implementation; this is a representative logical structure)
-    
-    true.
+%% Edge case: Invalid type (simplified)
+detect_anomaly(String, "Type mismatch in expected numeric context", 5) :- is_string(String), not is_numeric_string(String).
 
-/*
- * End of main.gd
- */
+%% Valid state
+detect_anomaly(Data, "No anomaly", 0).
+
+%% --- Core Logic: Healing Strategy ---
+predicate apply_healing(Anomaly : String, Severity : int, Action : String).
+
+%% Recover from null input
+describe_healing("Null input detected") = "Initialize default instance".
+
+%% Recover from empty data
+describe_healing("Empty data structure") = "Populate with default values".
+
+%% Handle type mismatch
+describe_healing("Type mismatch in expected numeric context") = "Attempt safe cast to default type".
+
+%% General fallback
+describe_healing(_) = "Log and abort current operation".
+
+%% --- Main Execution ---
+predicate run_self_heal(Data : Any) 
+    :- 
+    detect_anomaly(Data, Anomaly, Severity),
+    Action = describe_healing(Anomaly),
+    (Severity > 0 
+     -> println("Healing Action: " Action)
+     ; println("System Stable.")).
+
+%% Entry point
+main 
+    :- 
+    run_self_heal(null),
+    run_self_heal([]),
+    run_self_heal(123),
+    halt.
+
+end_module.

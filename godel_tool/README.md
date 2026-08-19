@@ -1,15 +1,9 @@
-# Gödel Tool
+# Gödel Self-Healing Tool
+
+This directory contains the Gödel source code for a self-healing logic engine. 
 
 ## Overview
-This tool is a specialized module built using the **Gödel** programming language.
+The Gödel language is a purely logical language. It supports higher-order logic, recursive functions, and pattern matching. This implementation focuses on robust logic programming, ensuring that the system can handle edge cases and errors gracefully through declarative rule-based reasoning.
 
-Gödel is a logic programming language based on first-order logic. It is used for declarative programming, logical inference, constraint solving, and symbolic reasoning.
-
-## Features
-- Logical reasoning
-- Declarative programming paradigm
-- Constraint solving capabilities
-- Formal verification support
-
-## Usage
-This tool is designed to integrate into the workspace to handle tasks requiring logical deduction and symbolic analysis.
+## Files
+- `main.gd`: The main logic engine implementing the self-healing capabilities.

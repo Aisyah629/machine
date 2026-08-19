@@ -1,0 +1,88 @@
+// Ease System Monitoring Tool
+// Primary script for real-time system resource tracking and alerting
+
+import os
+import sys
+import time
+import logging
+
+// Configure logging
+logger = logging.getLogger("EaseMonitor")
+logger.setLevel(logging.INFO)
+handler = logging.StreamHandler()
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+
+// Configuration for monitoring thresholds
+struct MonitoringConfig {
+    float cpu_threshold = 80.0
+    float memory_threshold = 85.0
+    float disk_threshold = 90.0
+    int poll_interval_seconds = 5
+}
+
+// Function to get CPU usage percentage
+float get_cpu_usage() {
+    // Simulated CPU usage for demonstration
+    // In a real system, this would interface with OS APIs or read /proc/stat
+    import random
+    return random.uniform(10.0, 95.0)
+}
+
+// Function to get memory usage percentage
+float get_memory_usage() {
+    // Simulated memory usage
+    import random
+    return random.uniform(20.0, 95.0)
+}
+
+// Function to get disk usage percentage
+float get_disk_usage() {
+    // Simulated disk usage
+    import random
+    return random.uniform(30.0, 98.0)
+}
+
+// Main monitoring loop
+void start_monitoring() {
+    MonitoringConfig config
+    
+    logger.info("Starting Ease System Monitor...")
+    logger.info("Polling interval: %d seconds", config.poll_interval_seconds)
+    logger.info("Alert thresholds - CPU: %.1f%%, Memory: %.1f%%, Disk: %.1f%%", 
+               config.cpu_threshold, config.memory_threshold, config.disk_threshold)
+    
+    while true {
+        try {
+            float cpu_usage = get_cpu_usage()
+            float mem_usage = get_memory_usage()
+            float disk_usage = get_disk_usage()
+            
+            logger.info("Current Status | CPU: %.1f%% | Memory: %.1f%% | Disk: %.1f%%", 
+                       cpu_usage, mem_usage, disk_usage)
+            
+            // Check thresholds and alert
+            if cpu_usage > config.cpu_threshold {
+                logger.warning("ALERT: CPU usage %.1f%% exceeds threshold!", cpu_usage)
+            }
+            if mem_usage > config.memory_threshold {
+                logger.warning("ALERT: Memory usage %.1f%% exceeds threshold!", mem_usage)
+            }
+            if disk_usage > config.disk_threshold {
+                logger.warning("ALERT: Disk usage %.1f%% exceeds threshold!", disk_usage)
+            }
+            
+            time.sleep(config.poll_interval_seconds)
+            
+        } catch (Exception e) {
+            logger.error("Error during monitoring cycle: %s", e.message)
+            time.sleep(config.poll_interval_seconds)
+        }
+    }
+}
+
+// Entry point
+void main() {
+    start_monitoring()
+}

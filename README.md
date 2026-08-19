@@ -409,3 +409,5 @@ MIT License
 - Created/Updated module: `s_lang_data_analysis_tool` (See `s_lang_data_analysis_tool/README.md` for details)
 
 - Created/Updated module: `coldc_tool` (See `coldc_tool/README.md` for details)
+
+- Created/Updated module: `ipl_symbolic_reasoning_tool` (See `ipl_symbolic_reasoning_tool/README.md` for details)

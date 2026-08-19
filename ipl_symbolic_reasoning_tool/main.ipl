@@ -1,0 +1,66 @@
+;; IPL Symbolic Reasoning Tool
+;; Demonstrates pattern matching, rule-based inference, and semantic network processing
+
+;; Define the knowledge base
+;; Semantic Network Representation
+;; Nodes are represented as symbols, links as predicates
+
+(defrule match-pattern
+  ?fact <- (is-a ?subject ?type)
+  (is-a ?type superclass-of ?parent-type)
+  =>
+  (print "Pattern matched: " ?subject " is a " ?parent-type)
+  (assert (is-a ?subject ?parent-type)))
+
+(defrule inherit-property
+  ?fact <- (property-of ?object ?property ?value)
+  (is-a ?object ?type)
+  (property-of ?type ?property ?inherited-value)
+  (not (property-of ?object ?property ?inherited-value))
+  =>
+  (print "Inheriting property: " ?object " inherits " ?property " = " ?inherited-value)
+  (assert (property-of ?object ?property ?inherited-value)))
+
+(defrule chain-reasoning
+  ?fact <- (related-to ?a ?b :type)
+  (related-to ?b ?c :type)
+  =>
+  (print "Chain reasoning: " ?a " is related to " ?c " via " ?b)
+  (assert (related-to ?a ?c :type)))
+
+;; Initialize the knowledge base
+(assert (is-a dog mammal))
+(assert (is-a mammal animal))
+(assert (is-a animal living))
+(assert (property-of dog has-fur t))
+(assert (property-of mammal has-spine t))
+(assert (property-of animal needs-food t))
+(assert (related-to dog chases cat))
+(assert (related-to cat chases mouse))
+
+;; Query examples
+(print "Query: What is dog a superclass of?")
+(for (fact :is-a dog ?type)
+  (print "Found: " ?type))
+
+(print "\nQuery: What properties does dog have?")
+(for (fact :property-of dog ?prop ?val)
+  (print "Found: " ?prop " = " ?val))
+
+;; Run inference rules
+(print "\nRunning inference rules...")
+(for (rule :match-pattern)
+  (rule))
+
+(for (rule :inherit-property)
+  (rule))
+
+(for (rule :chain-reasoning)
+  (rule))
+
+;; Display results
+(print "\nFinal knowledge state:")
+(for (fact)
+  (print fact))
+
+(print "\nSymbolic reasoning complete.")

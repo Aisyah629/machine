@@ -1,0 +1,113 @@
+scratch 3.0
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "dataList": "[]",
+        "processedData": "[]"
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "back1",
+          "md5ext": "bdbdbdadf441cbe32bfd4f2384b43120.svg",
+          "dataFormat": "svg",
+          "assetTag": "back1"
+        }
+      ],
+      "sounds": [
+        {
+          "name": "looped",
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+          "dataFormat": "wav",
+          "assetTag": "83a9787d4cb6f3b7632b4ddfebf74367"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeech": false
+    },
+    {
+      "isStage": false,
+      "name": "Data Processor",
+      "variables": {
+        "tempItem": "",
+        "sortedList": "[]",
+        "filterCondition": "is greater than 0",
+        "processingStatus": "idle"
+      },
+      "lists": {
+        "inputList": "[]"
+      },
+      "broadcasts": {},
+      "blocks": {
+        "0": "when green flag clicked",
+        "1": "set [tempItem v] to (join [Processing: ] (length of [inputList v]))",
+        "2": "say [Processing Data] for (2) seconds",
+        "3": "set [processingStatus v] to [processing]",
+        "4": "run custom block: SortList",
+        "5": "run custom block: FilterList",
+        "6": "set [processedData v] to (copy of [sortedList v])",
+        "7": "say [Processing Complete] for (2) seconds",
+        "8": "set [processingStatus v] to [complete]",
+        "9": "define SortList",
+        "10": "set [sortedList v] to (copy of [inputList v])",
+        "11": "repeat (length of [sortedList v] - (1))",
+        "12": "set [i v] to (1)",
+        "13": "repeat (length of [sortedList v] - (i))",
+        "14": "if <(item (i) of [sortedList v]) > (item ((i) + (1)) of [sortedList v])> then",
+        "15": "set [tempItem v] to (item (i) of [sortedList v])",
+        "16": "replace item (i) of [sortedList v] with (item ((i) + (1)) of [sortedList v])",
+        "17": "replace item ((i) + (1)) of [sortedList v] with (tempItem v)",
+        "18": "end",
+        "19": "change [i v] by (1)",
+        "20": "end",
+        "21": "change [i v] by (1)",
+        "22": "end",
+        "23": "define FilterList",
+        "24": "set [filteredList v] to []",
+        "25": "repeat (length of [sortedList v])",
+        "26": "if <(item (i) of [sortedList v]) (filterCondition v)> then",
+        "27": "add (item (i) of [sortedList v]) to [filteredList v]",
+        "28": "end",
+        "29": "end",
+        "30": "set [sortedList v] to (copy of [filteredList v])"
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "costume1",
+          "md5ext": "18f7e8d5a5a2f1e5d5d5d5d5d5d5d5d5.png",
+          "dataFormat": "png",
+          "assetTag": "costume1"
+        }
+      ],
+      "sounds": [
+        {
+          "name": "pop",
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+          "dataFormat": "wav",
+          "assetTag": "83a9787d4cb6f3b7632b4ddfebf74367"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1
+    }
+  ],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "1.0.0",
+    "agent": "Scratch Data Processor Tool"
+  }
+}

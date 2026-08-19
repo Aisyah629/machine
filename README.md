@@ -283,3 +283,5 @@ MIT License
 - Created/Updated module: `cpl_data_processing_tool` (See `cpl_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `./roop_dataset_cleaner_tool` (See `./roop_dataset_cleaner_tool/README.md` for details)
+
+- Created/Updated module: `./scratch_data_processor_tool` (See `./scratch_data_processor_tool/README.md` for details)

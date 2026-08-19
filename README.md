@@ -295,3 +295,5 @@ MIT License
 - Created/Updated module: `./able_interactive_diagnostic_tool` (See `./able_interactive_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `data_transform_processor_tool` (See `data_transform_processor_tool/README.md` for details)
+
+- Created/Updated module: `maxima_data_pipeline_tool` (See `maxima_data_pipeline_tool/README.md` for details)

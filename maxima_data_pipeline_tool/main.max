@@ -1,0 +1,42 @@
+/*
+ * Maxima Data Pipeline Tool
+ * 
+ * This script provides basic data processing functions in Maxima.
+ */
+
+/* Load necessary packages */
+load("stat")$ /* For statistical analysis */
+
+/* Function to clean data by removing outliers */
+clean_data(data) := (
+  if length(data) = 0 then return([]),
+  if not listp(data) then return([data]),
+  /* Calculate mean and standard deviation */
+  mu : mean(data)$
+  sigma : sqrt(variance(data))$
+  /* Filter data to remove outliers */
+  filter(lambda([x], abs(x - mu) <= 3 * sigma), data)
+)$
+
+/* Function to transform data by applying a function to each element */
+transform_data(data, func) := (
+  if not listp(data) then return(func(data)),
+  map(func, data)
+)$
+
+/* Function to analyze data */
+analyze_data(data) := (
+  if not listp(data) then return(["Input must be a list or a single number."]),
+  ["Mean", mean(data)],
+  ["Median", median(data)],
+  ["Variance", variance(data)],
+  ["Standard Deviation", sqrt(variance(data))]
+)$
+
+/* Example usage */
+/* Uncomment the following lines to test the functions */
+/* data : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; */
+/* cleaned_data : clean_data(data); */
+/* transformed_data : transform_data(data, lambda([x], x^2)); */
+/* analysis : analyze_data(data); */
+/* display(analysis); */

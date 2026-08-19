@@ -1,0 +1,163 @@
+-- occam-pi Text Formatting and Dataset Cleaning Tool
+
+-- Define constants for buffer size and record length
+PRIMESIZE VAL 1024
+RECLEN VAL 200
+
+-- Import standard I/O library
+FROM inchannel OCCAM
+FROM outchannel OCCAM
+
+-- Function to trim whitespace from a string
+TRIM STRONG PROC (BYTE buffer[:], INT len, OUT BYTE trimmed[:], OUT INT tlen)
+    INT start, end
+    start := 0
+    WHILE start < len AND (buffer[start] = 32 OR buffer[start] = 10 OR buffer[start] = 9)
+        start := start + 1
+    END WHILE
+    
+    end := len - 1
+    WHILE end >= 0 AND (buffer[end] = 32 OR buffer[end] = 10 OR buffer[end] = 9 OR buffer[end] = 13)
+        end := end - 1
+    END WHILE
+    
+    tlen := end - start + 1
+    IF tlen > 0 THEN
+        INT i
+        i := 0
+        WHILE i < tlen
+            trimmed[i] := buffer[start + i]
+            i := i + 1
+        END WHILE
+    ELSE
+        tlen := 0
+    END IF
+END PROC
+
+-- Function to convert string to uppercase
+TO_UPPER INPUT BYTE src[:], INT sLen, OUT BYTE dest[:]
+    INT i
+    i := 0
+    WHILE i < sLen
+        BYTE c
+        c := src[i]
+        IF c >= 97 AND c <= 122 THEN
+            dest[i] := c - 32
+        ELSE
+            dest[i] := c
+        END IF
+        i := i + 1
+    END WHILE
+END PROC
+
+-- Function to clean a single record
+-- Removes leading/trailing whitespace, normalizes internal spaces
+CLEAN_RECORD PROC (BYTE inputBuf[:], INT inLen, OUT BYTE outputBuf[:], OUT INT outLen)
+    BYTE trimmed[:RECLEN]
+    INT tLen
+    
+    TRIM(inputBuf, inLen, trimmed, tLen)
+    
+    IF tLen = 0 THEN
+        outLen := 0
+    ELSE
+        INT i, j, spaceFlag
+        j := 0
+        i := 0
+        WHILE i < tLen
+            BYTE char
+            char := trimmed[i]
+            IF char = 32 THEN -- Space
+                -- Skip multiple spaces, keep one
+                spaceFlag := TRUE
+                WHILE i < tLen AND trimmed[i] = 32
+                    i := i + 1
+                END WHILE
+                IF i < tLen THEN
+                    outputBuf[j] := 32
+                    j := j + 1
+                END IF
+            ELSE
+                outputBuf[j] := char
+                j := j + 1
+                spaceFlag := FALSE
+                i := i + 1
+            END IF
+        END WHILE
+        outLen := j
+    END IF
+END PROC
+
+-- Main Process
+PROC main()
+    -- Channels for communication between processes
+    IN BYTE inChan :
+    OUT BYTE outChan :
+    INT recordNum
+    INT bytesRead
+    BYTE rawBuf[:RECLEN]
+    BYTE cleanBuf[:RECLEN]
+    INT cleanLen
+    
+    -- Setup simulated input channel (using standard input in a real scenario, 
+    -- but here we assume data is piped in or read from a file via shell redirection)
+    -- For this tool, we use standard input channel inChan
+    
+    PRINT "occam-pi Text Formatter & Dataset Cleaner Tool\n"
+    PRINT "Ready for input stream. Press Ctrl+D to finish.\n"
+    
+    -- Process records in a loop
+    WHILE TRUE
+        -- Read a line from standard input
+        bytesRead := 0
+        WHILE bytesRead < RECLEN
+            BYTE char
+            TRY
+                char := inChan
+            CATCH
+                -- End of input
+                GOTO end_of_input
+            END TRY
+            
+            IF char = 10 THEN -- Newline
+                EXIT WHILE
+            END IF
+            
+            rawBuf[bytesRead] := char
+            bytesRead := bytesRead + 1
+        END WHILE
+        
+        IF bytesRead = 0 AND inChan AT EOF THEN
+            GOTO end_of_input
+        END IF
+        
+        IF bytesRead > 0 THEN
+            CLEAN_RECORD(rawBuf, bytesRead, cleanBuf, cleanLen)
+            
+            IF cleanLen > 0 THEN
+                INT i
+                i := 0
+                WHILE i < cleanLen
+                    outChan := cleanBuf[i]
+                    i := i + 1
+                END WHILE
+                outChan := 10 -- Print newline
+                PRINT "Cleaned Record: "
+                i := 0
+                WHILE i < cleanLen
+                    PRINT cleanBuf[i]
+                    i := i + 1
+                END WHILE
+                PRINT "\n"
+            ELSE
+                PRINT "Empty or blank record skipped.\n"
+            END IF
+        END IF
+    END WHILE
+    
+    :end_of_input
+    PRINT "Input finished. Cleaning complete.\n"
+    
+    -- Terminate channel to signal downstream processes
+    outChan AT EOF
+END PROC

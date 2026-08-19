@@ -1,0 +1,301 @@
+define_public_procedure start_spatial_engine() !void
+  local
+    engine_instance :: object
+    graph_manager :: object
+  
+  ! Initialize the main spatial analytics engine instance
+  engine_instance << Spatial_Analytics_Engine.create()
+  
+  ! Set up the graph manager for handling property graphs
+  graph_manager << Graph_Manager.create()
+  
+  ! Attach the graph manager to the engine
+  engine_instance._graph_manager << graph_manager
+  
+  ! Log initialization
+  debug_print("[SPATIAL_ENGINE] Initialized successfully.")
+  debug_print("[SPATIAL_ENGINE] Ready to process spatial graphs.")
+  
+  return(engine_instance)
+end
+
+define class Spatial_Analytics_Engine
+  variable engine_id :: string
+  variable _graph_manager :: object
+  variable _coordinate_transformer :: object
+  variable _memory_pool :: object
+
+  define constant constructor create()
+    super.create()
+    self.engine_id << "SPATIAL_ENGINE_001"
+    self._coordinate_transformer << Coord_Transformer.create()
+    self._memory_pool << Memory_Pool.create(1024) ! Allocate 1024 blocks
+    debug_print("[ENGINE] Spatial_Analytics_Engine instance created.")
+  end
+
+  define method load_graph_file(filename :: string)
+    local
+      graph_data :: object
+      parsed_nodes :: list
+      parsed_edges :: list
+    
+    ! Simulate reading and parsing a graph file
+    graph_data << Graph_Reader.parse(filename)
+    parsed_nodes << graph_data.get_nodes()
+    parsed_edges << graph_data.get_edges()
+    
+    ! Load nodes and edges into the graph manager
+    self._graph_manager.load_nodes(parsed_nodes)
+    self._graph_manager.load_edges(parsed_edges)
+    
+    debug_print("[ENGINE] Loaded graph from '" + filename + "'.")
+    return(self._graph_manager.get_graph())
+  end
+
+  define method execute_recursive_spatial_query(query_type :: string, start_node :: object)
+    local
+      traversal_results :: list
+      visited_nodes :: set
+    
+    visited_nodes << set.create()
+    traversal_results << self._graph_manager.depth_first_search(start_node, visited_nodes)
+    
+    debug_print("[ENGINE] Executed recursive spatial query: '" + query_type + "'.")
+    debug_print("[ENGINE] Found " + traversal_results.size().to_string() + " results.")
+    
+    return(traversal_results)
+  end
+
+  define method transform_coordinates(points :: list, target_crs :: string)
+    local
+      transformed_points :: list
+    
+    transformed_points << self._coordinate_transformer.apply(points, target_crs)
+    
+    debug_print("[ENGINE] Transformed coordinates to CRS: '" + target_crs + "'.")
+    return(transformed_points)
+  end
+
+  define method shutdown()
+    self._memory_pool.release_all()
+    self._graph_manager.clear()
+    debug_print("[ENGINE] Spatial_Analytics_Engine shut down successfully.")
+  end
+end
+
+! Supporting Data Structures
+class Graph_Reader
+  define constant constructor create()
+    super.create()
+  end
+
+  define method parse(filename :: string)
+    ! Mock implementation: returns a mock graph object
+    local
+      mock_graph :: object
+    
+    mock_graph << Mock_Graph.create()
+    return(mock_graph)
+  end
+end
+
+class Mock_Graph
+  define constant constructor create()
+    super.create()
+  end
+
+  define method get_nodes()
+    local
+      nodes :: list
+    
+    nodes << list.create()
+    nodes.add(Node.create("A", {lat: 50.0, lon: 5.0}))
+    nodes.add(Node.create("B", {lat: 50.5, lon: 5.5}))
+    nodes.add(Node.create("C", {lat: 51.0, lon: 6.0}))
+    return(nodes)
+  end
+
+  define method get_edges()
+    local
+      edges :: list
+    
+    edges << list.create()
+    edges.add(Edge.create("A", "B", {type: "spatial_relationship", weight: 1.0}))
+    edges.add(Edge.create("B", "C", {type: "spatial_relationship", weight: 1.5}))
+    return(edges)
+  end
+end
+
+class Node
+  define variable _id :: string
+  define variable _attributes :: table
+  
+  define constant constructor create(id :: string, attrs :: table)
+    super.create()
+    self._id << id
+    self._attributes << attrs
+  end
+
+  define method get_id()
+    return(self._id)
+  end
+
+  define method get_attributes()
+    return(self._attributes)
+  end
+end
+
+class Edge
+  define variable _from :: string
+  define variable _to :: string
+  define variable _attributes :: table
+
+  define constant constructor create(from :: string, to :: string, attrs :: table)
+    super.create()
+    self._from << from
+    self._to << to
+    self._attributes << attrs
+  end
+
+  define method get_from()
+    return(self._from)
+  end
+
+  define method get_to()
+    return(self._to)
+  end
+
+  define method get_attributes()
+    return(self._attributes)
+  end
+end
+
+class Graph_Manager
+  define variable _nodes :: set
+  define variable _edges :: set
+  define variable _adjacency_list :: table
+
+  define constant constructor create()
+    super.create()
+    self._nodes << set.create()
+    self._edges << set.create()
+    self._adjacency_list << table.create()
+  end
+
+  define method load_nodes(nodes :: list)
+    for each node :: object in nodes
+      self._nodes.add(node)
+      self._adjacency_list._set(node.get_id(), list.create())
+    end
+    debug_print("[GRAPH] Loaded " + nodes.size().to_string() + " nodes.")
+  end
+
+  define method load_edges(edges :: list)
+    for each edge :: object in edges
+      self._edges.add(edge)
+      local
+        neighbors :: list
+      
+      neighbors << self._adjacency_list._get(edge.get_from())
+      if neighbors.nil?
+        neighbors << list.create()
+        self._adjacency_list._set(edge.get_from(), neighbors)
+      end
+      neighbors.add(edge.get_to())
+      self._adjacency_list._set(edge.get_from(), neighbors)
+    end
+    debug_print("[GRAPH] Loaded " + edges.size().to_string() + " edges.")
+  end
+
+  define method depth_first_search(start_node :: object, visited :: set)
+    local
+      results :: list
+      stack :: stack
+    
+    results << list.create()
+    stack << stack.create()
+    stack.push(start_node)
+    
+    while not stack.is_empty()
+      local
+        current_node :: object
+        current_id :: string
+      
+      current_node << stack.pop()
+      current_id << current_node.get_id()
+      
+      if not visited.contains(current_id)
+        visited.add(current_id)
+        results.add(current_node)
+        
+        local
+          neighbors :: list
+        
+        neighbors << self._adjacency_list._get(current_id)
+        if not neighbors.nil?
+          for each neighbor_id :: string in neighbors
+            ! In a real scenario, we would resolve neighbor_id to a Node object
+            ! Here we mock it for demonstration
+            if not visited.contains(neighbor_id)
+              stack.push(Node.create(neighbor_id, {})) ! Mock node creation
+            end
+          end
+        end
+      end
+    end
+    
+    return(results)
+  end
+
+  define method clear()
+    self._nodes.clear()
+    self._edges.clear()
+    self._adjacency_list.clear()
+    debug_print("[GRAPH] Graph cleared.")
+  end
+
+  define method get_graph()
+    return("Graph Instance with " + self._nodes.size().to_string() + " nodes and " + self._edges.size().to_string() + " edges.")
+  end
+end
+
+class Coord_Transformer
+  define method apply(points :: list, target_crs :: string)
+    local
+      transformed :: list
+    
+    transformed << list.create()
+    for each point :: object in points
+      local
+        new_lat :: float
+        new_lon :: float
+      
+      ! Simple mock transformation: scale by 1.1
+      new_lat << point.get_attributes()["lat"] * 1.1
+      new_lon << point.get_attributes()["lon"] * 1.1
+      
+      transformed.add(Node.create(point.get_id(), {lat: new_lat, lon: new_lon}))
+    end
+    return(transformed)
+  end
+end
+
+class Memory_Pool
+  define variable _pool_size :: integer
+  define variable _allocated :: integer
+
+  define constant constructor create(size :: integer)
+    super.create()
+    self._pool_size << size
+    self._allocated << 0
+    debug_print("[MEMORY] Pool created with size: " + size.to_string())
+  end
+
+  define method release_all()
+    self._allocated << 0
+    debug_print("[MEMORY] All memory released.")
+  end
+end
+
+! Execution Flow
+start_spatial_engine().load_graph_file("geodata_graph.magik").execute_recursive_spatial_query("spatial_traversal", Node.create("A", {lat: 50.0, lon: 5.0})).transform_coordinates(list.create(Node.create("A", {lat: 50.0, lon: 5.0}), Node.create("B", {lat: 50.5, lon: 5.5})), "EPSG:4326")

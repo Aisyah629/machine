@@ -1,0 +1,9 @@
+Object subclass: #AudioSynthesisTool
+    instanceVariableNames: 'player frequency amplitude'
+    classVariableNames: ''
+    package: 'RealTimeAudioSynthesis'
+
+!AudioSynthesisTool methodsFor: 'initialization' stamp: '2023-10-01T00:00:00'!
+    initialize
+        super initialize.
+        frequency := 440. 

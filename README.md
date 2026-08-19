@@ -353,3 +353,5 @@ MIT License
 - Created/Updated module: `data_processing_utility_tool_e` (See `data_processing_utility_tool_e/README.md` for details)
 
 - Created/Updated module: `cms_exec_tool` (See `cms_exec_tool/README.md` for details)
+
+- Created/Updated module: `swift_parallel_script_tool` (See `swift_parallel_script_tool/README.md` for details)

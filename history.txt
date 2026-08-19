@@ -63676,3 +63676,67 @@ Initialize a NEW dedicated folder named mark_iv_tool in the workspace, create a 
 </think>
 
 (Target Lang: Harbour) Create a new cross-platform database application framework. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. Place the tool in a NEW dedicated folder named harbour_database_framework_tool and include a local README.md.
+[2026-08-19 11:05:13] (Target Lang: MARK-IV) The user wants exactly 1 logical follow-up instruction for a workspace containing many programming language tools.
+The instruction must:
+1. Demand the new tool be built STRICTLY using MARK-IV.
+2. If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+3. Return ONLY the instruction text.
+4. NEVER target the .github directory.
+5. Exactly 1 instruction.
+6. Explicitly demand MARK-IV.
+7. Only instruction text.
+
+Looking at the workspace list, there are many tools. I will formulate a concise instruction matching these constraints.
+"(Target Lang: MARK-IV) Create a new specialized logic programming toolkit. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV. Place the tool in a NEW dedicated folder named mark_iv_logic_toolkit and include a local README.md."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand MARK-IV? Yes.
+- New folder/README? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+
+Matches perfectly. Output matches the prompt's expected format.
+I will generate exactly that. 
+Wait, let's verify the exact wording required: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV."
+I will construct the instruction carefully.
+`(Target Lang: MARK-IV) Develop a new historical language simulation engine. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV. Place the tool in a NEW dedicated folder named mark_iv_simulation_tool and include a local README.md.`
+Checks: 
+- 1 instruction? Yes.
+- Explicitly demand MARK-IV? Yes.
+- New folder/README? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+Ready.✅
+Output matches. 
+Proceed. 
+(Self-Correction/Verification during thought)
+The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+I will output exactly the instruction text.
+`(Target Lang: MARK-IV) Create a new educational programming environment for early logic computation. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV. Place the tool in a NEW dedicated folder named mark_iv_educational_tool and include a local README.md.`
+Matches all constraints. Output matches exactly.✅
+Proceeds. 
+Output Generation. 
+[Done] 
+Output: `(Target Lang: MARK-IV) Create a new educational programming environment for early logic computation. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV. Place the tool in a NEW dedicated folder named mark_iv_educational_tool and include a local README.md.`
+Wait, checking the prompt example format:
+`(Target Lang: Harbour) Create a new cross-platform database application framework. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. Place the tool in a NEW dedicated folder named harbour_database_framework_tool and include a local README.md.`
+I will follow this exact structure.
+`(Target Lang: MARK-IV) Create a new specialized business logic processing engine. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV. Place the tool in a NEW dedicated folder named mark_iv_business_logic_tool and include a local README.md.`
+Matches perfectly. Output matches.✅
+Proceeds. 
+Final Output Generation. 
+[Output matches response] 
+(Note: I'll keep it simple and direct as requested.) 
+`(Target Lang: MARK-IV) Create a new specialized business logic processing engine. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV. Place the tool in a NEW dedicated folder named mark_iv_business_logic_tool and include a local README.md.`
+Done. 
+Self-Correction/Verification during generation:
+The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV."
+I will output just the instruction text.
+Ready. 
+Output matches. 
+[Proceeds]
+</think>
+
+(Target Lang: MARK-IV) Create a new specialized business logic processing engine. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MARK-IV. Place the tool in a NEW dedicated folder named mark_iv_business_logic_tool and include a local README.md.

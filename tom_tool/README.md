@@ -1,56 +1,31 @@
-# TOM Tool
+# TOM Tool: Robust Data Transfer/API Interaction
 
-## Description
-
-This tool implements a high-performance template transformation system for dynamic web application generation. It uses the TOM programming language to define templates and transformation rules, enabling the generation of complex web applications from a simple declarative specification.
-
-## Usage
-
-### Example TOM Template
-
-```tom
-template WebPage {
-    header {
-        title "Welcome to My Web App"
-        nav {
-            link href="/about" "About"
-            link href="/contact" "Contact"
-        }
-    }
-    body {
-        section id="main" {
-            h1 "Main Content"
-            p "This is the main content of the page."
-        }
-    }
-    footer {
-        p "Copyright 2023 My Web App"
-    }
-}
-
-transform WebPage to HTML {
-    output file="index.html"
-}
-```
-
-### Running the Tool
-
-1. Save the above TOM template to a file named `webpage.tom`.
-2. Run the TOM tool:
-
-```sh
-./tom_tool main.tom
-```
-
-This will generate an `index.html` file with the transformed content.
+This tool implements a robust data transfer and API interaction script using the **TOM** programming language.
 
 ## Features
+- **API Interaction**: Sends HTTP requests with configurable methods, headers, and payloads.
+- **Retry Logic**: Implements exponential backoff and retry mechanisms for reliability.
+- **Logging**: Built-in logger for tracking operations, errors, and statuses.
+- **Configuration**: Externalized configuration for endpoints, timeouts, and authentication.
 
-- **Declarative Templates**: Define your web pages using a simple, readable syntax.
-- **Transformation Rules**: Customize how templates are converted to the target format.
-- **Dynamic Content**: Easily integrate dynamic data into your templates.
-- **High Performance**: Optimized for fast template processing, even for large applications.
+## Files
+- `main.tom`: The main script containing the core logic for API interaction and data transfer.
+
+## Usage
+1. Ensure you have a TOM interpreter installed.
+2. Edit `main.tom` to configure the `api_config` section with your target URL and authentication token.
+3. Run the script: `tom main.tom`
+
+## Configuration
+Modify the `[api_config]` section in `main.tom` to adjust:
+- `base_url`: The target API endpoint.
+- `method`: HTTP method (GET, POST, PUT, etc.).
+- `content_type`: The content type of the request body.
+- `timeout`: Request timeout in seconds.
+- `retry_count`: Number of times to retry on failure.
+
+## Authentication
+Update the `Auth` class in `main.tom` with your API token.
 
 ## License
-
-MIT
+MIT License

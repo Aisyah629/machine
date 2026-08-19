@@ -339,3 +339,5 @@ MIT License
 - Created/Updated module: `magik_spatial_analytics_engine` (See `magik_spatial_analytics_engine/README.md` for details)
 
 - Created/Updated module: `./lisa_tool` (See `./lisa_tool/README.md` for details)
+
+- Created/Updated module: `object_pascal_data_processor_tool` (See `object_pascal_data_processor_tool/README.md` for details)

@@ -275,3 +275,5 @@ MIT License
 - Created/Updated module: `maple_data_processing_tool` (See `maple_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `lyapas_data_transformer_tool` (See `lyapas_data_transformer_tool/README.md` for details)
+
+- Created/Updated module: `amiga_e_visual_diagnostics_tool` (See `amiga_e_visual_diagnostics_tool/README.md` for details)

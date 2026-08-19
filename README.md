@@ -327,3 +327,5 @@ MIT License
 - Created/Updated module: `subtext_interactive_documentation_tool` (See `subtext_interactive_documentation_tool/README.md` for details)
 
 - Created/Updated module: `newtonscript_application_compiler_tool` (See `newtonscript_application_compiler_tool/README.md` for details)
+
+- Created/Updated module: `a_plus_plus_numerical_engine_tool` (See `a_plus_plus_numerical_engine_tool/README.md` for details)

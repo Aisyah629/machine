@@ -65821,3 +65821,60 @@ Design a robust database administration and legacy data migration utility capabl
 </think>
 
 Design a high-performance XML data validation and transformation pipeline capable of parsing complex nested XML structures, enforcing strict schema constraints, performing batch data migrations, and outputting comprehensive audit logs for compliance tracking. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: CDuce. Place the tool in a NEW dedicated folder named cduce_xml_processor_tool and create a local README.md.
+[2026-08-19 15:00:50] (Target Lang: SequenceL) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built using `SequenceL`.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target `.github`.
+    *   Context: The user provided a list of workspace files/folders and a "History" section showing a previous instruction about CDuce and XML. The previous instruction ended with a checkmark and the final text. The current task is to generate the *next* instruction based on the "History" pattern (which implies a sequence of tool creation/design instructions).
+    *   "Logic" check: The previous instruction was about XML validation/transformation with CDuce. A logical follow-up might be related to data processing, logic rules, or another aspect of the pipeline, or just a distinct but related tool in the SequenceL language. SequenceL is a data-parallel functional programming language, often used for complex data transformations and rule-based logic.
+
+2.  **Drafting the Instruction:**
+    *   *Topic:* SequenceL is good for declarative data processing and rule-based systems. Let's design a tool related to the previous context but distinct, or a general powerful SequenceL tool.
+    *   *Functionality:* Maybe a "SequenceL-based complex event processing engine" or a "SequenceL-driven data rule enforcement engine".
+    *   *Language:* SequenceL.
+    *   *Folder Name:* `sequencel_rule_engine_tool` or `sequencel_event_processor_tool`. Let's go with `sequencel_rule_processing_tool`.
+    *   *README:* Create local README.md.
+
+    *   *Draft 1:* Design a rule-based data processing engine capable of evaluating complex business rules against structured datasets, applying sequential transformations, and generating structured error reports for downstream systems. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. Place the tool in a NEW dedicated folder named sequencel_rule_processing_tool and create a local README.md.
+
+    *   *Refinement:* The user asked for "exactly 1 logical follow-up instruction".
+    *   "Logical" implies connection. The previous tool was an XML pipeline. SequenceL is great for pattern matching and data parallelism. A "SequenceL-based XML-to-JSON schema migration engine" would be very logical. Or a "SequenceL-driven anomaly detection pipeline".
+    *   Let's stick to the structure of the previous instruction: [Functionality description]. [Language demand]. [Folder/Readme instruction].
+    *   *Revised Draft:* Design a declarative data transformation engine capable of applying complex pattern-matching rules to streaming data sources, enforcing type safety across heterogeneous inputs, and optimizing execution paths for parallel processing efficiency. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. Place the tool in a NEW dedicated folder named sequencel_data_flow_engine and create a local README.md.
+
+    *   *Constraint Check:*
+        *   Exactly 1 instruction? Yes.
+        *   Explicitly demand SequenceL? Yes ("...built STRICTLY using this exact programming language: SequenceL.").
+        *   New folder? Yes ("...folder named sequencel_data_flow_engine...").
+        *   Local README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   No `.github`? Yes.
+
+3.  **Final Polish:**
+    *   Text: Design a declarative data transformation engine capable of applying complex pattern-matching rules to streaming data sources, enforcing type safety across heterogeneous inputs, and optimizing execution paths for parallel processing efficiency. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. Place the tool in a NEW dedicated folder named sequencel_data_flow_engine and create a local README.md.
+
+4.  **Output Generation:**
+    *   Result matches the draft.
+
+5.  **Sanity Check against "History" in prompt:**
+    *   The history shows the model outputting the text directly.
+    *   The prompt asks to "Generate exactly 1 logical follow-up instruction."
+    *   The output should be just the text.
+
+    *   *Result:* "Design a declarative data transformation engine capable of applying complex pattern-matching rules to streaming data sources, enforcing type safety across heterogeneous inputs, and optimizing execution paths for parallel processing efficiency. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. Place the tool in a NEW dedicated folder named sequencel_data_flow_engine and create a local README.md."
+
+    *   *Wait, check the folder name convention:* The workspace has folders like `cduce_tool`, `cduce_xml_engine_tool`. `sequencel_data_flow_engine` seems appropriate.
+
+    *   *Final Text:* Design a declarative data transformation engine capable of applying complex pattern-matching rules to streaming data sources, enforcing type safety across heterogeneous inputs, and optimizing execution paths for parallel processing efficiency. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. Place the tool in a NEW dedicated folder named sequencel_data_flow_engine and create a local README.md.
+
+    *   *Length:* Concise, matches style.
+
+    *   *Action:* Output text.
+
+Design a declarative data transformation engine capable of applying complex pattern-matching rules to streaming data sources, enforcing type safety across heterogeneous inputs, and optimizing execution paths for parallel processing efficiency. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. Place the tool in a NEW dedicated folder named sequencel_data_flow_engine and create a local README.md.
+</think>
+
+Design a declarative data transformation engine capable of applying complex pattern-matching rules to streaming data sources, enforcing type safety across heterogeneous inputs, and optimizing execution paths for parallel processing efficiency. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. Place the tool in a NEW dedicated folder named sequencel_data_flow_engine and create a local README.md.

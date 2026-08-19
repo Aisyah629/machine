@@ -273,3 +273,5 @@ MIT License
 - Created/Updated module: `./lucid_data_processor_tool` (See `./lucid_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `maple_data_processing_tool` (See `maple_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `lyapas_data_transformer_tool` (See `lyapas_data_transformer_tool/README.md` for details)

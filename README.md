@@ -379,3 +379,5 @@ MIT License
 - Created/Updated module: `seed7_data_processor_tool` (See `seed7_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `gnu_e_data_processor_tool` (See `gnu_e_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `ease_system_monitoring_tool` (See `ease_system_monitoring_tool/README.md` for details)

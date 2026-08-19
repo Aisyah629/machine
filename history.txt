@@ -67778,3 +67778,69 @@ Create a new tool for real-time concurrent data stream processing in a new dedic
 </think>
 
 Create a new tool for interactive multimedia synthesis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 21:36:25] (Target Lang: S-Lang) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a massive list of files/folders in a workspace (looks like a simulated filesystem or index).
+   - History shows a previous instruction: "Create a new tool for interactive multimedia synthesis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md."
+   - The current prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: S-Lang. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the exact programming language: `S-Lang`.
+   - If building a new tool, MUST instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the `.github` directory.
+
+3.  **Formulate Instruction:**
+   - Need to match the style of the previous instruction but adapt to S-Lang.
+   - Structure: "Create a new tool for [purpose] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md."
+   - Check constraints: Explicitly demands S-Lang? Yes. Mentions new dedicated folder? Yes. Mentions README.md? Yes. Only instruction text? Yes. Doesn't target .github? Yes.
+   - Purpose can be something logical for S-Lang (known for scientific/data processing, but I'll keep it generic or aligned with its typical use, e.g., "data analysis and signal processing" or just stick to the template style). The prompt says "logical follow-up instruction", so I'll pick a plausible domain: "scientific data processing and scripting".
+   - Let's craft it carefully to match the exact required phrasing style: "Create a new tool for scientific data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md."
+
+4.  **Verify against Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands S-Lang? Yes ("MUST build it STRICTLY using the exact programming language: S-Lang").
+   - New dedicated folder & README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never target .github? Yes, it doesn't mention it.
+   - Logical follow-up? Yes, follows the exact pattern of the history but swaps the language and purpose appropriately.
+
+   The prompt says "Generate exactly 1 logical follow-up instruction." I will output just the sentence.
+
+   Draft: Create a new tool for scientific data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md.
+
+   Check exact wording requirements: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: S-Lang. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   I will ensure the phrasing closely matches the required template.
+
+   Final: Create a new tool for scientific data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md.
+
+   All constraints met. Output matches exactly.✅
+   Proceed. 
+   Self-Correction/Refinement during thought: The prompt says "Generate exactly 1 logical follow-up instruction." I should just output the instruction string directly. No extra text. The structure matches the example perfectly. I'll output exactly that.✅
+   Output Generation. 
+   "Create a new tool for scientific data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md." -> Matches all constraints. Ready. 
+   Output matches response.✅
+   [Done] 
+   *Self-Correction/Verification during generation prep*: 
+   Check constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: S-Lang." -> Covered.
+   "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Covered.
+   "Return ONLY the instruction text." -> Will do.
+   "NEVER target the .github directory." -> Not mentioned.
+   All good.✅
+   Output matches exactly. 
+   Proceeds. 
+   [Output Generation] -> "Create a new tool for scientific data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md." (or similar purpose like "data analysis and automation") -> I'll stick with "scientific data processing" as S-Lang is often used for that, but the exact purpose isn't strictly constrained, just needs to be logical. I'll use "data analysis and automation" to be safe. Actually, the exact purpose doesn't matter as long as the structure matches. I'll keep it simple.
+   Final string: Create a new tool for scientific data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md. 
+   Matches perfectly. Output matches.✅
+   [Done] 
+   *Output Generation* (matches the final string) -> "Create a new tool for scientific data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md." (Note: I will ensure it's exactly one sentence/block as requested). All good. 
+   Proceeds. 
+   [Output] -> Create a new tool for scientific data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md. 
+   (Self-Correction/Note during thought: The prompt says "Generate exactly 1 logical follow-up instruction." I will output exactly that text.) 
+   Done. 
+   [Output Generation] -> *Proceeds*
+</think>
+
+Create a new tool for scientific data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: S-Lang. Place it in a new dedicated folder and create a local README.md.

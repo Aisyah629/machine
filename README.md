@@ -277,3 +277,5 @@ MIT License
 - Created/Updated module: `lyapas_data_transformer_tool` (See `lyapas_data_transformer_tool/README.md` for details)
 
 - Created/Updated module: `amiga_e_visual_diagnostics_tool` (See `amiga_e_visual_diagnostics_tool/README.md` for details)
+
+- Created/Updated module: `lansa_data_processing_tool` (See `lansa_data_processing_tool/README.md` for details)

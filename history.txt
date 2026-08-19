@@ -65657,3 +65657,51 @@ Output matches the draft.✅
 </think>
 
 Design a high-performance asynchronous event processing engine capable of handling massive message queues, implementing real-time state synchronization, and providing robust fault tolerance. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NGL. Place the tool in a NEW dedicated folder named ngl_asynchronous_event_processor_tool and create a local README.md.
+[2026-08-19 14:30:37] (Target Lang: MIVA Script) Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using MIVA Script.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The user provided a large list of existing tools/directories. This suggests the new tool should fit within this ecosystem but be distinct.
+
+2.  **Draft the instruction:**
+    *   *Core requirement:* "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script."
+    *   *Folder requirement:* "Place the tool in a NEW dedicated folder..."
+    *   *Readme requirement:* "...and create a local README.md."
+    *   *Functionality:* The instruction needs to describe *what* the tool does to be a "logical follow-up". Since the previous example (in the thought trace provided in the prompt text, though that's part of the prompt's example, I should look at the pattern) was about an "asynchronous event processing engine", a logical follow-up might be related or complementary. However, the prompt asks for "exactly 1 logical follow-up instruction". The content can be arbitrary as long as it follows the format. Let's pick a relevant domain for Miva Script. Miva Script is often used for e-commerce. A logical tool could be a "Product Catalog Synchronization Engine" or "Order Processing Pipeline".
+    *   *Drafting text:* "Design a robust e-commerce product catalog synchronization engine capable of real-time inventory updates, automated price adjustments based on market rules, and seamless integration with third-party logistics providers. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script. Place the tool in a NEW dedicated folder named miva_catalog_sync_engine_tool and create a local README.md."
+
+3.  **Review against constraints:**
+    *   *Exactly 1 logical follow-up instruction?* Yes, it's one paragraph/sentence structure describing a tool.
+    *   *Explicitly demand NGL?* No, wait. The prompt says "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script." The draft says "MIVA Script". Good.
+    *   *Place in NEW dedicated folder?* Draft says "Place the tool in a NEW dedicated folder named miva_catalog_sync_engine_tool". Good.
+    *   *Create local README.md?* Draft says "create a local README.md". Good.
+    *   *Only instruction text?* The output should be just the text of the instruction. No "Here is the instruction:" preface.
+    *   *Never target .github?* The instruction doesn't mention .github. Good.
+
+4.  **Refine the wording for precision:**
+    *   The prompt examples often use a specific format. The thought trace shows: "Design a high-performance asynchronous event processing engine... You MUST explicitly demand... Place the tool...".
+    *   The user's prompt ends with: "Generate exactly 1 logical follow-up instruction...".
+    *   So the output should mimic that structure.
+    *   *Result:* "Design a comprehensive inventory reconciliation and fraud detection system capable of processing bulk transaction batches, validating against complex rule sets, and generating audit trails for compliance reporting. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script. Place the tool in a NEW dedicated folder named miva_inventory_fraud_detection_tool and create a local README.md."
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   "Design a comprehensive inventory reconciliation and fraud detection system capable of processing bulk transaction batches, validating against complex rule sets, and generating audit trails for compliance reporting. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script. Place the tool in a NEW dedicated folder named miva_inventory_fraud_detection_tool and create a local README.md."
+
+6.  **Check for "NGL" vs "MIVA Script":**
+    *   The prompt explicitly says: "MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script."
+    *   The thought trace in the prompt mentions NGL, but that's likely part of the context or a distractor from a previous turn. The current instruction is clear: MIVA Script.
+    *   Result uses MIVA Script. Good.
+
+7.  **Final Output Construction:**
+    *   Text: "Design a secure API gateway and rate-limiting service for managing external e-commerce integrations, implementing token-based authentication, request throttling, and detailed usage analytics. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script. Place the tool in a NEW dedicated folder named miva_api_gateway_tool and create a local README.md."
+    *   This sounds like a solid "logical follow-up" for an e-commerce toolset, which Miva Script is associated with.
+    *   Result matches all constraints.
+    *   Output: "Design a secure API gateway and rate-limiting service for managing external e-commerce integrations, implementing token-based authentication, request throttling, and detailed usage analytics. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script. Place the tool in a NEW dedicated folder named miva_api_gateway_tool and create a local README.md."
+</think>
+
+Design a secure API gateway and rate-limiting service for managing external e-commerce integrations, implementing token-based authentication, request throttling, and detailed usage analytics. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script. Place the tool in a NEW dedicated folder named miva_api_gateway_tool and create a local README.md.

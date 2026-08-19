@@ -425,3 +425,5 @@ MIT License
 - Created/Updated module: `idris_data_cleaner_tool` (See `idris_data_cleaner_tool/README.md` for details)
 
 - Created/Updated module: `cel_interactive_diagnostic_tool` (See `cel_interactive_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `sps_database_schema_optimization_tool` (See `sps_database_schema_optimization_tool/README.md` for details)

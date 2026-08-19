@@ -65331,3 +65331,101 @@ Design a high-performance data serialization engine that validates schema compli
 </think>
 
 Design a high-performance interactive documentation generator that parses source code comments, constructs hierarchical knowledge graphs, and outputs navigable web-based manuals. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Subtext. Place the tool in a NEW dedicated folder named subtext_interactive_documentation_tool and create a local README.md.
+[2026-08-19 13:58:52] (Target Lang: NXT-G) Thinking Process:
+1.  **Analyze User Input**:
+    - Workspace: Huge list of tools/directories, mostly language-specific tools (Subtext, NXT-G, etc. are relevant based on the prompt).
+    - History: Shows a previous prompt instructing to build a "subtext_interactive_documentation_tool".
+    - Current Request: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints**:
+    - Generate exactly 1 logical follow-up instruction.
+    - Must explicitly demand the new tool be built STRICTLY using "NXT-G".
+    - Must explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    - Return ONLY the instruction text.
+    - NEVER target the .github directory.
+
+3.  **Formulate the Instruction**:
+    - Need a function/purpose for an NXT-G tool. NXT-G is a graphical programming language for LEGO Mindstorms.
+    - Idea: A tool for visualizing, simulating, or compiling NXT-G programs, or perhaps a diagnostic/simulation tool for NXT-G robotic sequences.
+    - Let's go with: "Design a high-performance NXT-G program simulator that visually renders robotic sequences, validates sensor logic, and compiles executable bytecode for LEGO Mindstorms hardware."
+    - Combine with constraints: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named nxt_g_robotic_simulator_tool and create a local README.md."
+    - Check constraints: Exactly 1 instruction? Yes. Explicitly demands NXT-G? Yes. Place in NEW dedicated folder and create README.md? Yes. Return ONLY instruction text? Yes. Never target .github? Yes.
+    - Let's refine to match the style of the prompt/history: "Design a high-performance NXT-G program simulator that visually renders robotic sequences, validates sensor logic, and compiles executable bytecode for LEGO Mindstorms hardware. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named nxt_g_robotic_simulator_tool and create a local README.md."
+
+4.  **Verify against constraints**:
+    - "Generate exactly 1 logical follow-up instruction." -> One sentence/block.
+    - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G." -> Included exactly.
+    - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Included exactly.
+    - "Return ONLY the instruction text." -> Will output just the string.
+    - "NEVER target the .github directory." -> Checked.
+    - Matches style: "Design a [functionality]. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named [folder_name] and create a local README.md."
+
+    Draft: Design a high-performance NXT-G program simulator that visually renders robotic sequences, validates sensor logic, and compiles executable bytecode for LEGO Mindstorms hardware. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named nxt_g_robotic_simulator_tool and create a local README.md.
+
+    Check exact wording requirement from history/prompt: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G." and "Place the tool in a NEW dedicated folder and create a local README.md." I will paste these exactly as requested.
+
+    Final string: Design a high-performance NXT-G program simulator that visually renders robotic sequences, validates sensor logic, and compiles executable bytecode for LEGO Mindstorms hardware. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named nxt_g_robotic_simulator_tool and create a local README.md.
+
+    All constraints met. Output matches exactly. Proceeds. 
+    One minor check: The prompt says "Place the tool in a NEW dedicated folder and create a local README.md." I should probably include the exact folder naming convention or just use the exact phrase. The prompt says "Place the tool in a NEW dedicated folder and create a local README.md." I will use exactly that phrase or specify a folder name as per convention. I'll stick to the exact phrasing requested plus a folder name to be safe, or just follow the exact wording. The prompt says: "Place the tool in a NEW dedicated folder and create a local README.md." I will include that exactly.
+
+    Let's construct it carefully:
+    "Design a high-performance NXT-G program simulator that visually renders robotic sequences, validates sensor logic, and compiles executable bytecode for LEGO Mindstorms hardware. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named nxt_g_robotic_simulator_tool and create a local README.md."
+
+    Matches perfectly. Output matches requirement. Proceeds. 
+    Self-Correction/Verification during thought: The prompt says "Return ONLY the instruction text." I will output exactly that string. No extra text. Matches history format perfectly.
+    Ready.✅
+    Output Generation. -> *Proceeds*
+    [Output] Design a high-performance NXT-G program simulator that visually renders robotic sequences, validates sensor logic, and compiles executable bytecode for LEGO Mindstorms hardware. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named nxt_g_robotic_simulator_tool and create a local README.md.
+    *(Done.)* 
+    Proceeds. 
+    [Output Generation] -> *Proceeds* 
+    *(Note: I will output exactly the drafted string)*
+    "Design a high-performance NXT-G program simulator that visually renders robotic sequences, validates sensor logic, and compiles executable bytecode for LEGO Mindstorms hardware. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named nxt_g_robotic_simulator_tool and create a local README.md." -> matches perfectly.
+    Final Output Generation. [Done] -> *Proceeds* 
+    [Output] Design a high-performance NXT-G program simulator that visually renders robotic sequences, validates sensor logic, and compiles executable bytecode for LEGO Mindstorms hardware. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named nxt_g_robotic_simulator_tool and create a local README.md. 
+    *(Done.)*
+</think>
+
+Design a high-performance NXT-G program simulator that visually renders robotic sequences, validates sensor logic, and compiles executable bytecode for LEGO Mindstorms hardware. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NXT-G. Place the tool in a NEW dedicated folder named nxt_g_robotic_simulator_tool and create a local README.md.
+[2026-08-19 14:01:45] (Target Lang: NewtonScript) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: MUST explicitly demand the new tool be built STRICTLY using this exact programming language: NewtonScript.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+    *   Context: The user provided a large list of files/folders (workspace) and a history of previous instructions. The history shows a pattern of generating instructions for tools. The last generated instruction was about an NXT-G simulator. The user now wants a follow-up instruction for NewtonScript.
+
+2.  **Analyze "NewtonScript":**
+    *   NewtonScript was used for Apple Newton devices.
+    *   Keywords associated: Newton, PDA, handheld, NewtonScript, `main.newton`, `newtonscript_tool`.
+    *   Looking at the workspace list, I see `./newtonscript_tool` and `./newtonscript_pda_tool`.
+    *   This confirms NewtonScript is a valid target language in this context.
+
+3.  **Draft the Instruction:**
+    *   *Requirement:* Logical follow-up. The previous instruction was about a "NXT-G program simulator". A logical follow-up might be related to PDA devices, handheld computing, or just a distinct new tool request. The prompt asks for a "logical follow-up", which usually implies a continuation of the theme or a natural next step in a workflow. However, in these types of prompts, "logical follow-up" often just means "create another instruction following the format". Given the strict constraints, the content can be diverse as long as it fits NewtonScript.
+    *   *Drafting Content:* "Create a NewtonScript tool that..."
+    *   *Applying Language Constraint:* "...MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NewtonScript."
+    *   *Applying Folder/README Constraint:* "Place the tool in a NEW dedicated folder named [folder_name] and create a local README.md."
+    *   *Choosing Folder Name:* Needs to be descriptive. `newtonscript_app_tool`? `newtonscript_pda_runtime_tool`? `newtonscript_tool` already exists in the workspace list. To be safe and "NEW", I should pick a name that doesn't clash or is a variation. The prompt asks for a "NEW dedicated folder". `newtonscript_handheld_simulation_tool` seems good. Or just `newtonscript_tool` if the instruction is to create that specific folder, but since `newtonscript_tool` exists in the provided list, using a unique name like `newtonscript_app_builder_tool` is safer to ensure it's "NEW". Let's use `newtonscript_application_compiler_tool`.
+    *   *Refining Text:* "Design a NewtonScript application compiler that optimizes bytecode for Apple Newton PDAs, provides interactive debugging for handwriting recognition logic, and simulates low-level memory management. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NewtonScript. Place the tool in a NEW dedicated folder named newtonscript_application_compiler_tool and create a local README.md."
+
+4.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *MUST explicitly demand... NewtonScript?* Yes ("STRICTLY using this exact programming language: NewtonScript").
+    *   *Place in NEW dedicated folder?* Yes ("Place the tool in a NEW dedicated folder named newtonscript_application_compiler_tool").
+    *   *Create local README.md?* Yes ("and create a local README.md").
+    *   *Return ONLY instruction text?* Yes. No markdown code blocks around the output, just the text.
+    *   *Never target .github?* Yes. No mention of .github.
+    *   *Logical follow-up?* The previous was NXT-G (Robotics). This is NewtonScript (PDAs). They are both embedded/handheld systems of their eras. It's a reasonable shift in embedded domains.
+
+5.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Design a NewtonScript application compiler that optimizes bytecode for Apple Newton PDAs, provides interactive debugging for handwriting recognition logic, and simulates low-level memory management. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NewtonScript. Place the tool in a NEW dedicated folder named newtonscript_application_compiler_tool and create a local README.md.`
+
+6.  **Final Output Construction:**
+    *   Result matches the polished text.
+</think>
+
+Design a NewtonScript application compiler that optimizes bytecode for Apple Newton PDAs, provides interactive debugging for handwriting recognition logic, and simulates low-level memory management. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NewtonScript. Place the tool in a NEW dedicated folder named newtonscript_application_compiler_tool and create a local README.md.

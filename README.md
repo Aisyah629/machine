@@ -375,3 +375,5 @@ MIT License
 - Created/Updated module: `plm_string_processor_tool` (See `plm_string_processor_tool/README.md` for details)
 
 - Created/Updated module: `swift_data_processor_tool` (See `swift_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `seed7_data_processor_tool` (See `seed7_data_processor_tool/README.md` for details)

@@ -67162,3 +67162,78 @@ Create a new tool for automated text macro processing in a new dedicated folder.
 </think>
 
 Create a new tool for automated network packet analysis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: REBOL. Include a local README.md.
+[2026-08-19 20:47:11] (Target Lang: Obol) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context/Workspace:** A long list of directories/files representing various tools (programming languages, frameworks, utilities, etc.). This sets the scene but isn't directly actionable for the prompt itself, except as context for the type of output expected (technical/tool-building instructions).
+   - **History:** Shows a pattern of generating instructions for creating new tools in new folders using specific languages (REBOL in the history). The history ends with a specific instruction format.
+   - **Current Request:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Obol. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using Obol.
+   - MUST instruct to place it in a NEW dedicated folder.
+   - MUST instruct to create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Format should match the style of the history (concise, direct instruction).
+
+3.  **Draft Construction (Mental):**
+   "Create a new tool for [specific function] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md."
+   I need to make it logical and follow the pattern. The history used "automated network packet analysis". I'll pick a different logical function for Obol, or keep it general but precise. Let's go with "automated data serialization and validation".
+   Draft: "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md."
+
+4.  **Check Constraints:**
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand strictly Obol? Yes.
+   - Instruct to place in NEW dedicated folder? Yes.
+   - Instruct to create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Checked, not mentioned.
+   - Logical follow-up? Yes, fits the pattern of tool creation.
+
+   Let's refine it to exactly match the requested phrasing style from the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Obol. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   I will craft it carefully to ensure all constraints are met verbatim or functionally equivalent as requested.
+
+   "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md."
+
+   Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Obol."
+   I'll make it direct: "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md."
+
+   Let's verify against the exact wording requested: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   I'll adjust to exactly match the constraint phrasing if needed, but the prompt says "Return ONLY the instruction text."
+   I will output: "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md."
+
+   Check constraint: "Generate exactly 1 logical follow-up instruction." -> Yes.
+   Check constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Obol." -> Yes.
+   Check constraint: "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Yes.
+   Check constraint: "Return ONLY the instruction text." -> Yes.
+   Check constraint: "NEVER target the .github directory." -> Yes.
+
+   All constraints satisfied. Output matches exactly. Proceeds. 
+   One minor adjustment to strictly match the prompt's phrasing for safety: "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md." This is fine. I'll output exactly that.✅
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Obol. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will generate exactly that string.✅
+   Output: Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md. 
+   Wait, the prompt says "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I'll make sure the wording closely matches: "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Create a local README.md." 
+   Actually, the prompt's history shows: "Create a new tool for automated network packet analysis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: REBOL. Include a local README.md."
+   I'll stick to that structure. It's consistent.
+   Ready.✅
+   Output matches constraints. Proceeds. 
+   [Output Generation] -> `Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md.` (or similar exact phrasing)
+   I will output exactly: Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md. 
+   All good. 
+   Self-Correction/Verification during thought: The prompt says "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I'll make sure the instruction text literally contains those directives. 
+   "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Place it in a new dedicated folder and create a local README.md." -> A bit redundant with "new dedicated folder" twice. 
+   I'll stick to: "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Create a local README.md."
+   Actually, the prompt says "explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I will just output exactly that phrasing to be safe: "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Place it in a new dedicated folder and create a local README.md."
+   Let's just use the clean version that matches the history style but includes all constraints: "Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md." This is fine.
+   I will output exactly that.✅
+   Proceeds. 
+   [Final Output Generation] -> Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md. 
+   (Note: I'll make sure it's just one line, exactly as requested.) 
+   All constraints met. Output matches.✅
+   Proceeds.✅
+</think>
+
+Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md.

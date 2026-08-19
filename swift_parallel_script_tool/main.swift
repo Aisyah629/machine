@@ -1,93 +1,32 @@
 import Foundation
+import Dispatch
 
-// Actor Model Implementation
-actor NetworkActor {
-    var connectionCount = 0
-    
-    func registerConnection() {
-        connectionCount += 1
-    }
-    
-    func unregisterConnection() {
-        if connectionCount > 0 {
-            connectionCount -= 1
-        }
-    }
-    
-    func getConnectionCount() -> Int {
-        return connectionCount
-    }
+struct CleanTask: Sendable {
+    let name: String
+    let operation: (String) -> String
 }
 
-// Non-blocking I/O
-struct IOHandler {
-    let inputStream: InputStream
-    let outputStream: OutputStream
-    
-    init(inputStream: InputStream, outputStream: OutputStream) {
-        self.inputStream = inputStream
-        self.outputStream = outputStream
+// Parallel Cleaning Pipeline
+let tasks: [CleanTask] = [
+    CleanTask(name: "Remove Duplicates") { text in
+        // Logic to remove duplicates
+        return text
+    },
+    CleanTask(name: "Trim Whitespace") { text in
+        return text.trimmingCharacters(in: .whitespacesAndNewlines)
     }
-    
-    func readData() -> Data? {
-        var buffer = [UInt8](repeating: 0, count: 1024)
-        guard let stream = inputStream else { return nil }
-        let bytesRead = stream.read(&buffer, maxLength: buffer.count)
-        if bytesRead > 0 {
-            return Data(buffer[..<bytesRead])
-        }
-        return nil
+]
+
+// Function to process the dataset
+func processDataset(dataset: [String], tasks: [CleanTask]) -> [String] {
+    var cleanDataset = dataset
+    for task in tasks {
+        cleanDataset = cleanDataset.map { task.operation($0) }
     }
-    
-    func writeData(_ data: Data) {
-        guard let stream = outputStream else { return }
-        _ = stream.write(Data.makeBytes, maxLength: data.count)
-    }
+    return cleanDataset
 }
 
-// Distributed Service
-class DistributedService {
-    private let actors: [String: NetworkActor]
-    
-    init() {
-        actors = [:]
-    }
-    
-    func addActor(name: String) {
-        actors[name] = NetworkActor()
-    }
-    
-    func removeActor(name: String) {
-        actors.removeValue(forKey: name)
-    }
-    
-    func getActorCount() -> Int {
-        return actors.count
-    }
-}
-
-// Main Entry Point
-func main() {
-    let service = DistributedService()
-    service.addActor(name: "actor1")
-    service.addActor(name: "actor2")
-    
-    print("Service initialized with \(service.getActorCount()) actors")
-    
-    let inputStream = InputStream(fileAtPath: "/dev/null")!
-    let outputStream = OutputStream(toFileAtPath: "/dev/null", append: false)!
-    inputStream.open()
-    outputStream.open()
-    
-    let handler = IOHandler(inputStream: inputStream, outputStream: outputStream)
-    print("IO Handler initialized")
-    
-    let actor = NetworkActor()
-    actor.registerConnection()
-    actor.registerConnection()
-    actor.registerConnection()
-    actor.unregisterConnection()
-    print("Actor connection count: \(actor.getConnectionCount())")
-}
-
-main()
+// Main execution
+let inputDataset = ["  Hello World  ", "  Hello World  ", "Goodbye World"]
+let output = processDataset(dataset: inputDataset, tasks: tasks)
+print("Cleaned Dataset: \(output)")

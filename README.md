@@ -337,3 +337,5 @@ MIT License
 - Created/Updated module: `sequencel_data_flow_engine` (See `sequencel_data_flow_engine/README.md` for details)
 
 - Created/Updated module: `magik_spatial_analytics_engine` (See `magik_spatial_analytics_engine/README.md` for details)
+
+- Created/Updated module: `./lisa_tool` (See `./lisa_tool/README.md` for details)

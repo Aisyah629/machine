@@ -67534,3 +67534,59 @@ Create a new tool for formal verification and dependent type theory in a new ded
 </think>
 
 Create a new tool for educational robotics simulation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Karel. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 21:06:56] (Target Lang: Opal) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a large workspace listing (directories and files) and a conversation history showing a previous interaction where an instruction was generated.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Opal. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using Opal.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Identify Key Requirements:**
+   - Language: Opal
+   - Action: Build a new tool
+   - Location: NEW dedicated folder
+   - Files: Include a local README.md
+   - Output format: ONLY the instruction text, exactly one sentence/instruction.
+   - Constraint check: Do not mention .github.
+
+3.  **Draft Construction (Mental):**
+   Create a new tool for [specific purpose] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Opal. Place it in a new dedicated folder and create a local README.md.
+
+   Let's refine it to match the exact phrasing style from the history but adapted for "Opal":
+   "Create a new tool for educational robotics simulation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Opal. Place it in a new dedicated folder and create a local README.md."
+
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction." It doesn't specify the tool's purpose, just that it must use Opal. I'll keep it general but functional:
+   "Create a new tool for dynamic web application rendering in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Opal. Place it in a new dedicated folder and create a local README.md."
+
+   Let's check the exact wording requirement: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Opal."
+   I will follow the pattern exactly.
+
+   Draft: "Create a new tool for advanced script execution in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Opal. Place it in a new dedicated folder and create a local README.md."
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand Opal? Yes.
+   - Instruct to place in NEW dedicated folder? Yes.
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes, not mentioned.
+
+   The draft matches all constraints perfectly. I will output just the instruction text.
+   One minor adjustment to make it flow better as a single instruction block if needed, but the prompt history shows it's fine as a short paragraph. I'll stick to the exact phrasing style requested.
+
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Opal. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+   I will generate: "Create a new tool for advanced scripting in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Opal. Place it in a new dedicated folder and create a local README.md."
+
+   This strictly satisfies all conditions. Output matches exactly.✅
+   Proceeds.✅
+   [Output Generation] -> *Proceeds* ✅
+   *(Done.)*
+</think>
+
+Create a new tool for advanced scripting in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Opal. Place it in a new dedicated folder and create a local README.md.

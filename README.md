@@ -281,3 +281,5 @@ MIT License
 - Created/Updated module: `lansa_data_processing_tool` (See `lansa_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `cpl_data_processing_tool` (See `cpl_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./roop_dataset_cleaner_tool` (See `./roop_dataset_cleaner_tool/README.md` for details)

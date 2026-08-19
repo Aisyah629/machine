@@ -1,0 +1,206 @@
+
+PROGRAM roop_dataset_cleaner
+
+  // Configuration Variables
+  INPUT_FILE        STRING
+  OUTPUT_FILE       STRING
+  DELIMITER         STRING
+  FIELD_KEYS        LIST OF STRING
+  NULL_VALUE        STRING
+  NORMALIZE_CASE    BOOLEAN
+
+  // Data Structures
+  DATA_BUFFER       LIST OF LIST OF STRING
+  UNIQUE_RECORDS    LIST OF LIST OF STRING
+  PROCESSED_COUNT   INTEGER
+  ERROR_COUNT       INTEGER
+
+BEGIN
+
+  // Initialize System
+  CALL initialize_system
+
+  // Load Input Data
+  INPUT_FILE = "input_data.csv"
+  OUTPUT_FILE = "cleaned_output.csv"
+  DELIMITER = ","
+  NULL_VALUE = "NA"
+  NORMALIZE_CASE = TRUE
+  FIELD_KEYS = ["ID", "NAME"]
+
+  TRY
+    CALL load_dataset
+  CATCH error_code
+    PRINT "Error loading dataset: " + error_code
+    INCREMENT ERROR_COUNT
+  END TRY
+
+  // Process and Clean Data
+  IF LENGTH(DATA_BUFFER) > 0 THEN
+    CALL process_and_clean_data
+  ELSE
+    PRINT "No data to process."
+  END IF
+
+  // Output Results
+  IF PROCESSED_COUNT > 0 OR ERROR_COUNT = 0 THEN
+    CALL save_cleaned_data
+  END IF
+
+  // Report Statistics
+  PRINT "Processing complete."
+  PRINT "Clean Records: " + PROCESSED_COUNT
+  PRINT "Errors/Skips: " + ERROR_COUNT
+
+END PROGRAM
+
+
+PROCEDURE load_dataset
+  // Reads the raw CSV into DATA_BUFFER
+  // Parses based on DELIMITER
+  // Converts rows to lists of strings
+  LOCAL line_buffer STRING
+  LOCAL field LIST OF STRING
+
+  OPEN INPUT_FILE FOR READING AS file_handle
+  IF file_handle IS INVALID THEN
+    RAISE "FILE_OPEN_ERROR"
+  END IF
+
+  READ file_handle TO line_buffer
+  WHILE NOT EOF(file_handle) DO
+    field = SPLIT(line_buffer, DELIMITER)
+    APPEND field TO DATA_BUFFER
+    READ file_handle TO line_buffer
+  END WHILE
+  CLOSE file_handle
+
+END PROCEDURE
+
+
+PROCEDURE process_and_clean_data
+  // Iterates through DATA_BUFFER
+  // Applies cleaning rules
+  // Filters duplicates
+  LOCAL current_row LIST OF STRING
+  LOCAL is_duplicate BOOLEAN
+  LOCAL clean_key STRING
+  LOCAL i INTEGER
+
+  INITIALIZE UNIQUE_RECORDS AS EMPTY LIST
+  INITIALIZE PROCESSED_COUNT AS 0
+  INITIALIZE ERROR_COUNT AS 0
+
+  FOR i FROM 0 TO LENGTH(DATA_BUFFER) - 1
+    current_row = DATA_BUFFER[i]
+    is_duplicate = FALSE
+
+    TRY
+      // 1. Handle Nulls and Empties
+      IF IS_VALID_ROW(current_row, NULL_VALUE) THEN
+        // 2. Normalize Case if enabled
+        IF NORMALIZE_CASE THEN
+          current_row = APPLY_CASE_NORMALIZATION(current_row)
+        END IF
+
+        // 3. Strip Whitespace
+        current_row = STRIP_WHITESPACE(current_row)
+
+        // 4. Check for Duplicates
+        clean_key = GENERATE_HASH_KEY(current_row, FIELD_KEYS)
+        IF clean_key IS IN UNIQUE_RECORDS THEN
+          is_duplicate = TRUE
+        END IF
+
+        IF NOT is_duplicate THEN
+          APPEND current_row TO UNIQUE_RECORDS
+          INCREMENT PROCESSED_COUNT
+        END IF
+
+      ELSE
+        INCREMENT ERROR_COUNT
+      END IF
+
+    CATCH error_code
+      INCREMENT ERROR_COUNT
+    END TRY
+  END FOR
+
+  // Update Global Data Buffer with cleaned results
+  DATA_BUFFER = UNIQUE_RECORDS
+
+END PROCEDURE
+
+
+FUNCTION IS_VALID_ROW(row LIST OF STRING, null_val STRING)
+  // Returns TRUE if row has data and no required fields are null_val
+  LOCAL idx INTEGER
+  LOCAL val STRING
+  FOR idx FROM 0 TO LENGTH(row) - 1
+    val = row[idx]
+    IF val IS NULL OR val = null_val OR val = "" THEN
+      RETURN FALSE
+    END IF
+  END FOR
+  RETURN TRUE
+END FUNCTION
+
+
+FUNCTION APPLY_CASE_NORMALIZATION(row LIST OF STRING)
+  // Converts all strings in row to lowercase
+  LOCAL idx INTEGER
+  LOCAL normalized_row LIST OF STRING
+  INITIALIZE normalized_row AS EMPTY LIST
+  FOR idx FROM 0 TO LENGTH(row) - 1
+    APPEND TOLOWER(row[idx]) TO normalized_row
+  END FOR
+  RETURN normalized_row
+END FUNCTION
+
+
+FUNCTION STRIP_WHITESPACE(row LIST OF STRING)
+  // Removes leading/trailing whitespace from all fields
+  LOCAL idx INTEGER
+  LOCAL stripped_row LIST OF STRING
+  INITIALIZE stripped_row AS EMPTY LIST
+  FOR idx FROM 0 TO LENGTH(row) - 1
+    APPEND LTRIM(RTRIM(row[idx])) TO stripped_row
+  END FOR
+  RETURN stripped_row
+END FUNCTION
+
+
+FUNCTION GENERATE_HASH_KEY(row LIST OF STRING, keys LIST OF STRING)
+  // Creates a unique identifier for duplicate checking
+  LOCAL key_builder STRING
+  LOCAL key_field STRING
+  LOCAL idx INTEGER
+  INITIALIZE key_builder AS ""
+  // Simplified key generation: just concat values for this implementation
+  FOR idx FROM 0 TO LENGTH(row) - 1
+    key_builder = key_builder + row[idx] + DELIMITER
+  END FOR
+  RETURN key_builder
+END FUNCTION
+
+
+FUNCTION SAVE_CLEANED_DATA
+  // Writes cleaned DATA_BUFFER to OUTPUT_FILE
+  LOCAL row LIST OF STRING
+  LOCAL line STRING
+  LOCAL i INTEGER
+
+  OPEN OUTPUT_FILE FOR WRITING AS out_handle
+  IF out_handle IS INVALID THEN
+    RAISE "FILE_WRITE_ERROR"
+  END IF
+
+  FOR i FROM 0 TO LENGTH(DATA_BUFFER) - 1
+    row = DATA_BUFFER[i]
+    line = JOIN(row, DELIMITER)
+    WRITE line TO out_handle
+  END FOR
+
+  CLOSE out_handle
+
+END FUNCTION

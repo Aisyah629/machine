@@ -365,3 +365,5 @@ MIT License
 - Created/Updated module: `nekodata_tool` (See `nekodata_tool/README.md` for details)
 
 - Created/Updated module: `./miis_data_processing_tool` (See `./miis_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `clojure_tool` (See `clojure_tool/README.md` for details)

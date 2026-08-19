@@ -305,3 +305,5 @@ MIT License
 - Created/Updated module: `./godel_tool` (See `./godel_tool/README.md` for details)
 
 - Created/Updated module: `datatrieve_transaction_processor_tool` (See `datatrieve_transaction_processor_tool/README.md` for details)
+
+- Created/Updated module: `nsis_package_deployment_tool` (See `nsis_package_deployment_tool/README.md` for details)

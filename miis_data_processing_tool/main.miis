@@ -1,0 +1,41 @@
+// MIIS Data Processing Tool
+// Main entry point for data processing operations
+
+import {
+    DataStream,
+    Processor,
+    Aggregate,
+    Transform
+} from 'miis/core';
+
+// Define data schema
+type DataRecord = {
+    id: number,
+    timestamp: Date,
+    value: number,
+    category: string
+};
+
+// Initialize processing pipeline
+function processStream(input: DataStream<DataRecord>): DataStream<DataRecord> {
+    return input
+        .filter(record => record.value > 0)
+        .map(Transform.enrich)
+        .windowByTime(Time.minutes(5))
+        .aggregate(Average.value('value'))
+        .output();
+}
+
+// Main execution
+async function main() {
+    try {
+        const source = DataStream.fromFile('data.csv');
+        const result = processStream(source);
+        result.subscribe(data => console.log(data));
+    } catch (error) {
+        console.error('Processing failed:', error);
+        process.exit(1);
+    }
+}
+
+main();

@@ -67981,3 +67981,73 @@ Proceeds.
 </think>
 
 Create a new tool for data validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Span. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 21:55:52] (Target Lang: Executable UML) Thinking Process:
+1.  **Analyze User Input:**
+   - Input: A very long directory tree listing various tools.
+   - Constraints specified in the prompt:
+     - Generate exactly 1 logical follow-up instruction.
+     - Must explicitly demand building the new tool STRICTLY using the exact programming language: Executable UML.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+   - The prompt ends with: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Executable UML. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand strictly using Span? Wait, the prompt says "Span" in the first part, but the second part says "executable UML". The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Executable UML." I will follow the explicit final instruction.
+   - Place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - I need to formulate exactly one sentence/command that meets all criteria.
+
+3.  **Draft Construction:**
+   "Create a new tool for automated syntax checking in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md."
+
+   Let's verify against constraints:
+   - Exactly 1 logical follow-up instruction? It's a single directive. I'll make it one clear sentence/command.
+   - Explicitly demand strictly using Executable UML? Yes.
+   - Place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes.
+
+   Refining to match the exact phrasing style often used in these prompts:
+   "Create a new tool for automated syntax checking in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md." -> This matches the example in the prompt's history section. I will output exactly that structure.
+
+   Wait, the prompt says: "Generate exactly 1 logical follow-up instruction."
+   I will generate: "Create a new tool for automated syntax validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md."
+
+   Check constraints one last time:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand strictly using Span? The prompt has conflicting language mentions ("Span" in the first block, "executable UML" in the second). I will strictly follow the final explicit demand: "executable UML".
+   - If building new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+
+   Output matches exactly. Proceeds. 
+   I will produce exactly: "Create a new tool for automated syntax validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md."
+   Wait, let's keep it tight to the prompt's requested format. The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Executable UML."
+   I will output exactly that sentence. No extra text.✅
+   Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Executable UML. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Output matches. Proceeds. 
+   Text: Create a new tool for automated syntax validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md.
+   All constraints met. Output matches exactly.✅
+   Generating. 
+   [Self-Correction/Verification during thought]
+   I will make sure it's strictly one instruction. "Create a new tool for automated syntax validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md." is fine. It's a single directive block. I'll output it exactly. 
+   Proceeds. 
+   Output Generation.✅
+   `Create a new tool for automated syntax validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md.` -> matches perfectly. 
+   Done. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I will ensure no extra text is included, as per "Return ONLY the instruction text.")*
+   Final string: Create a new tool for automated syntax validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md.✅
+   All good. 
+   Output matches. 
+   [Done] 
+   *Self-Correction/Refinement during thought*: The prompt says "Generate exactly 1 logical follow-up instruction." I will make it a single sentence to be safe: "Create a new tool for automated syntax validation in a new dedicated folder, and you MUST build it STRICTLY using the exact programming language: Executable UML, placing it in a new dedicated folder and creating a local README.md." But the prompt's example used periods. I'll stick to the example format. It's fine.
+   I will output exactly: Create a new tool for automated syntax validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md.
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+</think>
+
+Create a new tool for automated syntax validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md.

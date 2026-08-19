@@ -1,0 +1,76 @@
+// Executable UML Syntax Validator Tool
+// This module implements a parser and validator for xUML model files.
+
+import 'xuml_parser.xuml';
+import 'xuml_rules.xuml';
+import 'xuml_error_reporter.xuml';
+
+main() {
+    // Initialize the validator engine
+    let validator := new SyntaxValidator();
+    
+    // Parse command line arguments
+    let files := getArgs();
+    
+    // Iterate through each file and validate
+    for file in files {
+        try {
+            let model := parseModel(file);
+            validateSyntax(model);
+            let report := generateReport(model);
+            printReport(report);
+        } catch (SyntaxError e) {
+            printError(e.message, e.line);
+        } catch (ParseError e) {
+            printError("Parse failed: " + e.message, e.line);
+        }
+    }
+    
+    // Clean up resources
+    validator.dispose();
+}
+
+parseModel(filename: String) -> Model {
+    // Simulate file reading and parsing
+    let content := readFile(filename);
+    let tokens := tokenize(content);
+    let model := buildModelFromTokens(tokens);
+    return model;
+}
+
+validateSyntax(model: Model) -> Boolean {
+    // Apply xUML grammar rules
+    let rules := getGrammarRules();
+    for rule in rules {
+        if (!rule.matches(model)) {
+            throw new SyntaxError("Rule violation: " + rule.name, rule.line);
+        }
+    }
+    return true;
+}
+
+generateReport(model: Model) -> Report {
+    // Construct a validation report
+    let report := new Report();
+    report.status := "Valid";
+    report.file := model.filename;
+    report.errors := model.errors;
+    report.warnings := model.warnings;
+    return report;
+}
+
+printReport(report: Report) {
+    // Output the report to stdout
+    print("File: " + report.file);
+    print("Status: " + report.status);
+    for error in report.errors {
+        print("Error: " + error.message + " at line " + error.line);
+    }
+    for warning in report.warnings {
+        print("Warning: " + warning.message + " at line " + warning.line);
+    }
+}
+
+printError(message: String, line: Integer) {
+    print("Error at line " + line + ": " + message);
+}

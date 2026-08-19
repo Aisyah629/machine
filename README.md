@@ -399,3 +399,5 @@ MIT License
 - Created/Updated module: `karel_edu_sim_tool` (See `karel_edu_sim_tool/README.md` for details)
 
 - Created/Updated module: `opal_dynamic_scripting_engine_tool` (See `opal_dynamic_scripting_engine_tool/README.md` for details)
+
+- Created/Updated module: `./miis_data_processing_tool` (See `./miis_data_processing_tool/README.md` for details)

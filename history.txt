@@ -66362,3 +66362,69 @@ Create a new utility for data processing in a new folder. You MUST build it STRI
 </think>
 
 Create a new utility for data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: PL/M. Include a local README.md.
+[2026-08-19 19:54:36] (Target Lang: Swift (Apple programming language)) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of directories/files representing various tools/languages (looks like a massive repository of programming language implementations/tools).
+   - **History:** Shows a pattern of generating exactly 1 logical follow-up instruction with specific constraints (new folder, exact language, local README.md, never target .github).
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Swift (Apple programming language). If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - Language: Swift (Apple programming language).
+   - Must explicitly demand the new tool be built STRICTLY using Swift.
+   - Must instruct to place it in a NEW dedicated folder.
+   - Must instruct to create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target .github.
+
+3.  **Formulate Instruction:**
+   I need to craft a single sentence/paragraph that matches the pattern from the history and strictly adheres to the constraints.
+   Pattern from history: "Create a new [purpose] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: [Language]. Include a local README.md."
+   Applying constraints:
+   "Create a new utility for data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Swift. Include a local README.md."
+   Wait, the prompt says "Swift (Apple programming language)". I should probably just use "Swift" as the language name, or include the clarification if needed, but usually just "Swift" is fine. I'll stick to the exact phrasing pattern: "Create a new utility for data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Swift. Include a local README.md."
+   Let's verify constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand new tool built STRICTLY using Swift? Yes.
+   - Place in NEW dedicated folder? Yes.
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes, not mentioned.
+
+   I will craft it precisely to match the requested format.
+   "Create a new utility for data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Swift. Include a local README.md."
+
+   Double-checking the exact wording from the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Swift (Apple programming language)."
+   I'll incorporate "Swift" clearly.
+   Final string: `Create a new utility for data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Swift. Include a local README.md.`
+
+   Matches all constraints. Ready.✅
+   Output matches exactly. No extra text. Proceeds. 
+   One minor thing: The prompt says "Swift (Apple programming language)". I'll just use "Swift" as the language name, as is standard. If I want to be super safe, I'll write "Swift". The prompt says "exact programming language: Swift (Apple programming language)", so I'll just say "Swift".
+   I will output exactly the instruction.✅
+   Final Output Generation.✅
+   `Create a new utility for data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Swift. Include a local README.md.` -> matches constraints.✅
+   Proceeds. 
+   Output matches.✅
+   [Done] 
+   Self-Correction/Verification during thought: The prompt says "Return ONLY the instruction text." I will strictly output just that string. No markdown, no extra words.
+   Text: `Create a new utility for data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Swift. Include a local README.md.`
+   All constraints met.✅
+   Proceeds. 
+   [Output Generation] -> `Create a new utility for data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Swift. Include a local README.md.` (Done)✅
+   Final Check: 
+   - 1 logical follow-up? Yes.
+   - Explicitly demand STRICTLY Swift? Yes.
+   - NEW dedicated folder? Yes.
+   - local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER .github? Yes.
+   All good.✅
+   Output matches.✅
+   Proceeds. 
+   [Output Generation] (Done)
+</think>
+
+Create a new utility for data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Swift. Include a local README.md.

@@ -66893,3 +66893,38 @@ Create a new tool for system monitoring in a new dedicated folder. You MUST buil
 </think>
 
 Create a new tool for automated log analysis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Alef. Include a local README.md.
+[2026-08-19 20:15:50] (Target Lang: JAL) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the tool be built STRICTLY using the exact programming language: JAL.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The user provides a list of existing tools/directories in the workspace, ending with `./zopl_tool ./zopl_tool/README.md`. The previous turn was about Alef, but now the language is JAL. JAL is a programming language (often associated with Java-like syntax for microcontrollers or specific educational/embedded contexts, or potentially a typo for Java, but I must follow the prompt's explicit language: "JAL").
+    *   Logic: I need to invent a tool purpose that fits a "JAL" context (likely microcontroller/embedded/system level or generic tooling) or just pick a generic tool purpose that makes sense in a software toolset, but strictly use "JAL". A "JAL" tool often relates to microcontrollers (JAL is a language for microcontrollers). A logical tool could be a "microcontroller configuration generator" or "firmware boilerplate tool". Or simply a generic tool like "system monitoring" or "file parser". Let's go with "microcontroller firmware boilerplate generator" or "embedded system utility" to align with JAL's typical use case, or just "file analysis tool" if keeping it generic. Let's pick a generic but plausible tool: "file validation and syntax checking tool". Or better, "embedded system configuration parser". Let's stick to a generic but safe tool name like "data validation tool" or "system health monitor". Let's choose "microcontroller configuration parser" to nod to JAL's nature, or just "system utility". Let's use "system health monitoring tool".
+    *   Drafting the instruction: "Create a new tool for system health monitoring in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: JAL. Include a local README.md."
+    *   Review against constraints:
+        *   1 instruction? Yes.
+        *   Strictly JAL? Yes.
+        *   New dedicated folder? Yes.
+        *   Local README.md? Yes.
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+    *   Refinement: Ensure the phrasing matches the requested style or is clear. "Create a new tool for embedded system configuration parsing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: JAL. Include a local README.md." This sounds logical for JAL.
+    *   Final Polish: "Create a new tool for embedded system configuration parsing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: JAL. Include a local README.md."
+    *   Check: Does it return *only* the instruction text? Yes.
+    *   Result: `Create a new tool for embedded system configuration parsing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: JAL. Include a local README.md.`
+    *   Wait, let me double-check the "JAL" definition. JAL is indeed a language for microcontrollers (Just Another Language). So "embedded system" is a very logical fit.
+    *   Final output generation.
+    *   Text: Create a new tool for embedded system configuration parsing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: JAL. Include a local README.md.
+    *   Wait, is "embedded system configuration parsing" too specific? The prompt examples often use generic terms like "log analysis". "Log analysis" worked for Alef. For JAL, "firmware generation tool" or "microcontroller simulation tool" might be better. Let's use "microcontroller simulation tool".
+    *   Text: Create a new tool for microcontroller simulation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: JAL. Include a local README.md.
+    *   This is solid.
+    *   One more check: "Return ONLY the instruction text." -> No quotes, no preamble.
+    *   Result: Create a new tool for microcontroller simulation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: JAL. Include a local README.md.
+    *   Wait, JAL can also be a typo for Java in some contexts, but the prompt says "JAL". I must use "JAL". The tool description "microcontroller simulation" is consistent with JAL the language.
+    *   Result looks good.
+</think>
+
+Create a new tool for microcontroller simulation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: JAL. Include a local README.md.

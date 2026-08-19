@@ -429,3 +429,5 @@ MIT License
 - Created/Updated module: `sps_database_schema_optimization_tool` (See `sps_database_schema_optimization_tool/README.md` for details)
 
 - Created/Updated module: `./ease_automated_diagnostic_tool` (See `./ease_automated_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `cowsel_diagnostics_tool` (See `cowsel_diagnostics_tool/README.md` for details)

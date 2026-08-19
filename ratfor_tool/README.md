@@ -1,35 +1,16 @@
-# Ratfor Tool
+# Ratfor API Interaction Tool
 
-## Description
-This is a Ratfor (Rational Fortran) tool designed for scientific calculation and data analysis.
-Ratfor is an extension of Fortran that provides rational arithmetic and preprocessing capabilities.
+This tool provides a robust implementation for data transfer and API interaction using Ratfor (Rational Fortran).
 
 ## Features
-- Linear regression analysis
-- Rational arithmetic support
-- Scientific data processing
+- API endpoint configuration
+- Data payload construction
+- Error handling and logging
+- Result parsing and processing
 
 ## Usage
-1. Ensure a Ratfor compiler/preprocessor is installed.
-2. Compile the `main.ratfor` file:
-   ```bash
-   ratfor main.ratfor -o main
-   ```
-3. Run the program:
-   ```bash
-   ./main
-   ```
+Compile with a standard Fortran compiler that supports Ratfor extensions:
+`f77 -o api_tool main.ratfor`
 
-## Input Format
-- Number of data points
-- Pairs of (X, Y) values
-
-## Output
-- Mean values
-- Regression slope and intercept
-
-## Dependencies
-- Ratfor compiler
-
-## License
-Proprietary / Internal Use Only
+## Configuration
+Edit the constants at the top of the code to match your API endpoint.

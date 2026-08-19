@@ -309,3 +309,5 @@ MIT License
 - Created/Updated module: `nsis_package_deployment_tool` (See `nsis_package_deployment_tool/README.md` for details)
 
 - Created/Updated module: `bare_metal_bootloader_tool` (See `bare_metal_bootloader_tool/README.md` for details)
+
+- Created/Updated module: `spin_realtime_scheduler_tool` (See `spin_realtime_scheduler_tool/README.md` for details)

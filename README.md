@@ -407,3 +407,5 @@ MIT License
 - Created/Updated module: `max_multimedia_synthesis_tool` (See `max_multimedia_synthesis_tool/README.md` for details)
 
 - Created/Updated module: `s_lang_data_analysis_tool` (See `s_lang_data_analysis_tool/README.md` for details)
+
+- Created/Updated module: `coldc_tool` (See `coldc_tool/README.md` for details)

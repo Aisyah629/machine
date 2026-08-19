@@ -319,3 +319,5 @@ MIT License
 - Created/Updated module: `chef_recipe_execution_engine_tool` (See `chef_recipe_execution_engine_tool/README.md` for details)
 
 - Created/Updated module: `gnu_e_tool` (See `gnu_e_tool/README.md` for details)
+
+- Created/Updated module: `pearl_avionics_control_tool` (See `pearl_avionics_control_tool/README.md` for details)

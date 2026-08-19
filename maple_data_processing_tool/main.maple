@@ -1,0 +1,73 @@
+restart:
+with(LinearAlgebra):
+with(Statistics):
+
+# Utility: Normalize a list of numeric values to the range [0, 1]
+NormalizeData := proc(data :: list(numeric))
+    local min_val, max_val, range_val;
+    if nops(data) = 0 then
+        error "Data list cannot be empty";
+    end if;
+    
+    min_val := Min(data);
+    max_val := Max(data);
+    range_val := max_val - min_val;
+    
+    if range_val = 0 then
+        return [seq(1/nops(data), i = 1 .. nops(data))];
+    else
+        return [(data[i] - min_val)/range_val $ i = 1 .. nops(data)];
+    end if;
+end proc:
+
+# Utility: Compute symbolic mean of a list
+SymbolicMean := proc(expr_list :: list(expression))
+    local sum_expr, count;
+    sum_expr := add(expr_list);
+    count := nops(expr_list);
+    
+    if count = 0 then
+        error "Cannot compute mean of an empty list";
+    end if;
+    
+    return simplify(sum_expr / count);
+end proc:
+
+# Utility: Flatten nested lists
+FlattenList := proc(L :: list(anything)) :: list(anything):
+    local result;
+    result := convert(L, list);
+    return result;
+end proc:
+
+# --- Main Execution Block ---
+# Example usage demonstration
+
+main := proc()
+    local raw_data, normalized, symbolic_expressions, mean_val, flat_data;
+    
+    # 1. Numeric Data Processing
+    print("Processing numeric data...");
+    raw_data := [10, 20, 30, 40, 50];
+    normalized := NormalizeData(raw_data);
+    print("Raw Data:", raw_data);
+    print("Normalized Data:", normalized);
+    
+    # 2. Symbolic Data Processing
+    print("Processing symbolic data...");
+    symbolic_expressions := [a+b, 2*a-b, a^2];
+    mean_val := SymbolicMean(symbolic_expressions);
+    print("Symbolic Expressions:", symbolic_expressions);
+    print("Symbolic Mean:", mean_val);
+    
+    # 3. Structure Processing
+    print("Flattening nested structure...");
+    flat_data := FlattenList([[1, 2], [3, [4, 5]], 6]);
+    print("Nested Data:", [[1, 2], [3, [4, 5]], 6]);
+    print("Flattened Data:", flat_data);
+    
+    print("Data processing complete.");
+end proc:
+
+# Run the main routine
+main();

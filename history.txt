@@ -67237,3 +67237,31 @@ Create a new tool for automated network packet analysis in a new dedicated folde
 </think>
 
 Create a new tool for automated data serialization and validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Obol. Include a local README.md.
+[2026-08-19 20:47:56] (Target Lang: Haskell) The user wants exactly 1 logical follow-up instruction.
+The instruction must explicitly demand building a new tool STRICTLY using the exact programming language: Haskell.
+If building a new tool, explicitly instruct to place it in a new dedicated folder and create a local README.md.
+Return ONLY the instruction text.
+Never target the .github directory.
+
+Looking at the history, the prompt asks for a follow-up instruction. I will generate exactly one instruction following the constraints.
+Constraint check:
+- Exactly 1 logical follow-up instruction.
+- Must explicitly demand building strictly using Haskell.
+- If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+- Return ONLY the instruction text.
+- NEVER target the .github directory.
+
+Draft: Create a new tool for advanced functional programming and code optimization in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Haskell. Place it in a new dedicated folder and create a local README.md.
+
+Check constraints:
+- 1 instruction? Yes.
+- Strictly Haskell? Yes.
+- New folder + README.md? Yes.
+- Only instruction text? Yes.
+- No .github? Yes.
+
+Matches perfectly. Output matches requirement.
+I will generate exactly that string.✅
+</think>
+
+Create a new tool for advanced functional programming and code optimization in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Haskell. Place it in a new dedicated folder and create a local README.md.

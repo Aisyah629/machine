@@ -1,0 +1,45 @@
+LANSA
+DEFINE FIELD(#DATA_RECORD) TYPE(*CHAR) LENGTH(255)
+DEFINE FIELD(#PROCESSING_STATUS) TYPE(*CHAR) LENGTH(50)
+DEFINE FIELD(#OUTPUT_LOG) TYPE(*CHAR) LENGTH(1024)
+
+* Main Entry Point
+ROUTINE NAME(StartDataProcessing)
+
+  * Initialize processing
+  CHANGE FIELD(#PROCESSING_STATUS) TO('Processing started...')
+  OUTPUT MESSAGE(#PROCESSING_STATUS)
+
+  * Fetch data
+  INVOKE  METHODNAME=FetchData
+  * Transform data
+  INVOKE  METHODNAME=TransformData
+  * Load data
+  INVOKE  METHODNAME=LoadData
+
+  * Finalize processing
+  CHANGE FIELD(#PROCESSING_STATUS) TO('Processing complete.')
+  OUTPUT MESSAGE(#PROCESSING_STATUS)
+
+ROUTINE
+
+* Fetch Data Method
+METHOD NAME(FetchData)
+  * Simulate fetching data from a source
+  CHANGE FIELD(#DATA_RECORD) TO('Sample data record 1')
+END_METHOD
+
+* Transform Data Method
+METHOD NAME(TransformData)
+  * Simulate transformation logic
+  CHANGE FIELD(#DATA_RECORD) TO(Upper(#DATA_RECORD))
+END_METHOD
+
+* Load Data Method
+METHOD NAME(LoadData)
+  * Simulate loading data to target
+  CHANGE FIELD(#OUTPUT_LOG) TO('Data loaded successfully: ' + #DATA_RECORD)
+  OUTPUT MESSAGE(#OUTPUT_LOG)
+END_METHOD
+
+ROUTINE

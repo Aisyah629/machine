@@ -65483,3 +65483,43 @@ Done.
 </think>
 
 Design a high-performance numerical computation and matrix manipulation engine that leverages A++ for advanced linear algebra operations, SIMD optimization, and parallel array processing. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: A++. Place the tool in a NEW dedicated folder named a_plus_plus_numerical_engine_tool and create a local README.md.
+[2026-08-19 14:23:58] (Target Lang: ColdFusion) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: MUST explicitly demand the new tool be built STRICTLY using ColdFusion.
+    *   Constraint: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a workspace list (implicitly) and a history. Looking at the history provided in the prompt, the last instruction was about creating an `a_plus_plus_numerical_engine_tool` using `A++`. The workspace list shows `./a_plus_plus_numerical_engine_tool` exists.
+    *   "Logical follow-up": The previous tool was numerical/linear algebra. A logical follow-up might be data transformation, web services (ColdFusion is great for this), or data extraction. ColdFusion is a server-side scripting language often used for web apps and data processing. A "Data Transformation" or "Web API Gateway" tool fits well. Or perhaps a "Data Cleaning" tool. Given the pattern of previous tools (often specific domains like "simulation", "validation", "pipeline"), a "Data Processing" or "Workflow" engine in ColdFusion makes sense.
+
+2.  **Drafting the Instruction Content:**
+    *   *Topic:* Needs to be logical after numerical engine. Maybe "Data Transformation" or "Web-based Data Exchange". ColdFusion handles XML, JSON, and databases well. A "ColdFusion Data Transformation and Validation Engine" sounds professional.
+    *   *Language Demand:* Must include "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ColdFusion."
+    *   *Folder/README:* Must include "Place the tool in a NEW dedicated folder named [folder_name] and create a local README.md."
+    *   *Folder Name:* Needs to be descriptive. `coldfusion_data_transformation_tool`? `coldfusion_workflow_engine_tool`? Let's go with `coldfusion_data_transformation_tool` or `coldfusion_xml_data_processor_tool`. Since the previous one was `a_plus_plus_numerical_engine_tool`, a pattern like `coldfusion_data_transformation_engine_tool` seems consistent. Let's use `coldfusion_data_transformation_engine_tool`.
+
+3.  **Refining the Text:**
+    *   *Draft 1:* Design a robust data transformation and validation engine that leverages ColdFusion for XML/JSON processing, database connectivity, and web service orchestration. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ColdFusion. Place the tool in a NEW dedicated folder named coldfusion_data_transformation_engine_tool and create a local README.md.
+    *   *Check Constraints:*
+        *   "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ColdFusion." -> Present.
+        *   "Place the tool in a NEW dedicated folder named coldfusion_data_transformation_engine_tool and create a local README.md." -> Present.
+        *   Logical follow-up? Yes, numerical data often needs transformation and integration; CF is good for this.
+        *   ONLY instruction text? Yes.
+        *   No .github? Yes.
+        *   Exactly 1 instruction? Yes.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   "Design a robust data transformation and validation engine that leverages ColdFusion for high-throughput XML/JSON processing, secure database connectivity, and API orchestration. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ColdFusion. Place the tool in a NEW dedicated folder named coldfusion_data_transformation_engine_tool and create a local README.md."
+
+5.  **Review against "Explicit Demand":**
+    *   The prompt asks to "explicitly demand". The draft contains the phrase "You MUST explicitly demand...". This is the standard format seen in the history example. The output should match this structure.
+
+6.  **Final Output Construction:**
+    *   Result: Design a robust data transformation and validation engine that leverages ColdFusion for high-throughput XML/JSON processing, secure database connectivity, and API orchestration. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ColdFusion. Place the tool in a NEW dedicated folder named coldfusion_data_transformation_engine_tool and create a local README.md.
+
+This looks solid.
+</think>
+
+Design a robust data transformation and validation engine that leverages ColdFusion for high-throughput XML/JSON processing, secure database connectivity, and API orchestration. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ColdFusion. Place the tool in a NEW dedicated folder named coldfusion_data_transformation_engine_tool and create a local README.md.

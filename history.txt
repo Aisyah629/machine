@@ -64575,3 +64575,81 @@ This matches all constraints.
 </think>
 
 Design a robust mainframe text processing and data extraction engine that automatically parses legacy system logs and generates structured analytical reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TAL. Place the tool in a NEW dedicated folder named tal_text_processing_engine_tool and create a local README.md.
+[2026-08-19 12:18:20] (Target Lang: Pure) The user wants a logical follow-up instruction based on the provided history and workspace.
+The history shows a previous instruction: `Design a robust mainframe text processing and data extraction engine that automatically parses legacy system logs and generates structured analytical reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TAL. Place the tool in a NEW dedicated folder named tal_text_processing_engine_tool and create a local README.md.`
+Wait, the history block says:
+`History: 3. **Check Constraints:** ... 4. **Final Polish (Mental Representation of Output):** ... 5. **Final Output Construction:** ... Result: Design a robust mainframe text processing and data extraction engine that automatically parses legacy system logs and generates structured analytical reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TAL. Place the tool in a NEW dedicated folder named tal_text_processing_engine_tool and create a local README.md.`
+
+Now I need to generate exactly 1 logical follow-up instruction.
+Constraints for the new instruction:
+- Explicitly demand the new tool be built STRICTLY using this exact programming language: Pure.
+- If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+- Return ONLY the instruction text.
+- NEVER target the .github directory.
+- Logical follow-up.
+
+What is "Pure"? Pure is a purely functional programming language.
+I should design a tool/task that fits Pure's characteristics (functional programming, symbolic computation, rewriting systems).
+Maybe a symbolic algebra system, a term rewriting engine, or a mathematical proof assistant component.
+Let's go with a symbolic term rewriting and evaluation engine.
+Folder name: `pure_symbolic_rewriting_engine_tool`
+Language: Pure
+Task: Design a symbolic term rewriting and evaluation engine that automatically normalizes complex mathematical expressions and applies custom rewrite rules to optimize computational workflows. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. Place the tool in a NEW dedicated folder named pure_symbolic_rewriting_engine_tool and create a local README.md.
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand Pure? Yes.
+- New dedicated folder? Yes.
+- Local README.md? Yes.
+- Return ONLY instruction text? Yes.
+- NEVER target .github? Yes.
+
+Let's refine it to match the style of the previous instruction.
+"Design a symbolic term rewriting and evaluation engine that automatically normalizes complex mathematical expressions and applies custom rewrite rules to optimize computational workflows. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. Place the tool in a NEW dedicated folder named pure_symbolic_rewriting_engine_tool and create a local README.md."
+
+Is it logical following a TAL mainframe text processor? TAL is old, Pure is functional/symbolic. Both are specialized/academic/legacy or niche languages. It fits the theme of expanding the toolset with diverse programming languages.
+
+Let's verify the exact wording required: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure."
+I will include that exact phrase.
+
+Final check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+I will construct the instruction carefully.
+"Design a purely functional symbolic term rewriting engine that automatically normalizes complex mathematical expressions and applies user-defined rules for computational optimization. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. Place the tool in a NEW dedicated folder named pure_symbolic_rewriting_engine_tool and create a local README.md."
+
+Matches all constraints. Output only this text.
+Proceed. 
+One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure." I will paste that exactly.
+All good. 
+Output matches exactly. 
+Proceeds. 
+Self-Correction/Verification during thought: 
+Check workspace list to see if `pure_symbolic_rewriting_engine_tool` exists? It's not in the list. That's fine, the instruction creates it.
+The instruction format matches the example.
+Ready. 
+Output generation. 
+`Design a purely functional symbolic term rewriting engine that automatically normalizes complex mathematical expressions and applies user-defined rules for computational optimization. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. Place the tool in a NEW dedicated folder named pure_symbolic_rewriting_engine_tool and create a local README.md.`
+Matches perfectly.✅
+Output matches request.✅
+Done. 
+Proceeds. 
+[Output Generation] -> *Proceeds*
+(Note: I'll make sure there's absolutely no extra text.) 
+"Design a purely functional symbolic term rewriting engine that automatically normalizes complex mathematical expressions and applies user-defined rules for computational optimization. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. Place the tool in a NEW dedicated folder named pure_symbolic_rewriting_engine_tool and create a local README.md." -> This is exactly 1 sentence/paragraph as requested. All constraints met. 
+Final Output Generation. 
+(Self-Correction/Refinement during thought: I should ensure the phrasing "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure." is included verbatim as requested. It is.)
+All good. 
+Output matches. 
+Proceeds. 
+[Done] 
+`Design a purely functional symbolic term rewriting engine that automatically normalizes complex mathematical expressions and applies user-defined rules for computational optimization. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. Place the tool in a NEW dedicated folder named pure_symbolic_rewriting_engine_tool and create a local README.md.`
+Matches exactly. 
+Proceeds. 
+[Final Check of the Prompt] "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+Everything is aligned.
+Output matches.
+Done. 
+[Output Generation] -> *Proceeds*
+</think>
+
+Design a purely functional symbolic term rewriting engine that automatically normalizes complex mathematical expressions and applies user-defined rules for computational optimization. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Pure. Place the tool in a NEW dedicated folder named pure_symbolic_rewriting_engine_tool and create a local README.md.

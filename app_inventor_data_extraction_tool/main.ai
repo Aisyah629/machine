@@ -1,0 +1,20 @@
+// App Inventor Data Extraction Tool - Main Logic
+// This represents the logic for data extraction in App Inventor using blocks
+
+// Pseudo-blocks representation for data extraction
+
+// On Button1.Click:
+// 1. Get Text from TextInput1
+// 2. Use 'Text' block to split by delimiter (e.g., comma)
+// 3. Use 'List' block to handle the resulting list
+// 4. Loop through the list and extract specific items
+// 5. Join the extracted items and display in Label1
+
+// Example Logic:
+// Button1.Click -> 
+//   set TextInput1.Text to "John Doe, 30, New York"
+//   set List1 to split TextInput1.Text by ","
+//   set ExtractedName to Item 1 of List1
+//   set ExtractedAge to Item 2 of List1
+//   set ExtractedCity to Item 3 of List1
+//   set Label1.Text to join ExtractedName with ", Age: " and ExtractedAge and ", City: " and ExtractedCity

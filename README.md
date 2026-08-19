@@ -299,3 +299,5 @@ MIT License
 - Created/Updated module: `maxima_data_pipeline_tool` (See `maxima_data_pipeline_tool/README.md` for details)
 
 - Created/Updated module: `agora_text_formatter_tool` (See `agora_text_formatter_tool/README.md` for details)
+
+- Created/Updated module: `axum_framework_tool/axum_data_pipeline_processor_tool` (See `axum_framework_tool/axum_data_pipeline_processor_tool/README.md` for details)

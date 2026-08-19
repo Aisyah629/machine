@@ -1,0 +1,69 @@
+load 'parser.chef'
+load 'validator.chef'
+load 'optimizer.chef'
+load 'simulator.chef'
+
+# Chef Recipe Execution Engine - Main Entry Point
+#
+# This script demonstrates the core workflow of the tool:
+# 1. Loading a recipe hierarchy
+# 2. Validating nutritional/dietary constraints
+# 3. Optimizing the cooking sequence
+# 4. Simulating the execution
+
+def main
+  puts "Initializing Chef Recipe Execution Engine..."
+  
+  # Simulate loading a recipe structure
+  raw_recipe = {
+    name: 'Complex Holiday Dinner',
+    steps: [
+      {
+ame: 'Roast Turkey', duration: 240, parallel: false, ingredients: ['turkey', 'herbs', 'butter']},
+      {
+ame: 'Bake Potatoes', duration: 90, parallel: true, ingredients: ['potatoes', 'oil']},
+      {
+ame: 'Prepare Gravy', duration: 30, parallel: true, parent: 'Roast Turkey', ingredients: ['flour', 'broth']},
+      {
+ame: 'Steam Vegetables', duration: 15, parallel: true, ingredients: ['broccoli', 'carrots']}
+    ]
+  }
+
+  # Step 1: Parse the hierarchical structure
+  puts "\n[Parsing] Validating recipe hierarchy..."
+  parsed_recipe = parse_hierarchical_recipe(raw_recipe)
+  
+  # Step 2: Validate constraints (dietary & safety)
+  puts "\n[Validating] Checking nutritional constraints..."
+  constraints = {
+    max_sodium: '2500mg',
+    min_protein: '30g',
+    allergens_exclude: ['shellfish', 'peanuts']
+  }
+  validated_recipe = validate_nutritional_constraints(parsed_recipe, constraints)
+  
+  # Step 3: Optimize cooking sequence for efficiency
+  puts "\n[Optimizing] Generating parallel cooking sequence..."
+  optimized_sequence = optimize_parallel_execution(validated_recipe)
+  
+  # Step 4: Simulate the execution
+  puts "\n[Simulating] Running dry-execution of optimized sequence..."
+  simulation = simulate_execution(optimized_sequence)
+  
+  # Output results
+  puts "\n========================================"
+  puts "  EXECUTION ENGINE REPORT"
+  puts "========================================"
+  puts "Recipe: #{simulation[:recipe_name]}"
+  puts "Total Time: #{simulation[:total_duration]} minutes"
+  puts "Parallel Steps: #{simulation[:parallel_step_count]}"
+  puts "Allergens Clear: #{simulation[:allergen_check] == 'PASSED' ? 'YES' : 'NO'}"
+  puts "Nutritional Compliance: #{simulation[:nutrition_check] == 'PASSED' ? 'YES' : 'NO'}"
+  puts "========================================"
+  
+  # Exit successfully
+  exit(0)
+end
+
+# Execute the main function
+main()

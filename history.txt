@@ -65964,3 +65964,58 @@ Proceeds.
 
 Design a high-performance spatial data processing engine capable of managing complex graph-based geographic datasets, executing recursive spatial queries on property graphs, and optimizing memory layout for large-scale coordinate transformations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. Place the tool in a NEW dedicated folder named magik_spatial_analytics_engine and create a local README.md.
 [2026-08-19 15:05:23] (Target Lang: Legoscript) Create a new utility for data processing in a new folder. You MUST write it strictly in Legoscript. Include a local README.md.
+[2026-08-19 15:06:20] (Target Lang: NetLogo) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraints:
+        *   MUST explicitly demand the new tool be built STRICTLY using `NetLogo`.
+        *   If building a new tool, place it in a NEW dedicated folder.
+        *   Create a local README.md.
+        *   Return ONLY the instruction text.
+        *   NEVER target the `.github` directory.
+        *   Context implies this is part of a sequence (Workspace list shows `./legoscript_tool`, etc., and history mentions a previous step about NetLogo).
+
+2.  **Analyze Context & Logic:**
+    *   The user provided a workspace listing and a history.
+    *   History shows a previous interaction: `[2026-08-19 15:05:23] (Target Lang: Legoscript) Create a new utility...`.
+    *   The current request asks for a follow-up.
+    *   The follow-up must be about `NetLogo`.
+    *   "Logical follow-up" usually implies a progression or a related task. Since the previous task was Legoscript (a language often used for educational/block-based logic, though here it might be treated as a script language in this synthetic context), a logical follow-up could be building a simulation agent model in NetLogo, which is NetLogo's primary use case. Or perhaps a tool to validate/interact with NetLogo models.
+    *   The workspace listing includes `./starlogo_tool`, `./scratch_tool`, etc., suggesting a pattern of creating tools for various languages.
+    *   I need to craft a prompt that a user would give to an AI to generate this NetLogo tool.
+    *   Structure of the output instruction:
+        *   Action: Design/Create/Build...
+        *   Capability: Simulation, Agent-based modeling, Network analysis, etc.
+        *   Mandatory Sentence: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NetLogo."
+        *   Folder/Docs: "Place the tool in a NEW dedicated folder named [folder_name] and create a local README.md."
+        *   Constraint Check: No `.github`.
+
+3.  **Drafting the Instruction:**
+    *   *Draft 1:* Design an agent-based simulation framework capable of modeling complex flocking behaviors, validating network connectivity on grid topologies, and optimizing tick-loop performance for large-scale agent populations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NetLogo. Place the tool in a NEW dedicated folder named netlogo_flocking_simulator and create a local README.md.
+    *   *Refinement:* The folder name should be descriptive. `netlogo_flocking_simulator` works. The capabilities match NetLogo strengths. The mandatory sentence is included verbatim.
+    *   *Check against constraints:*
+        *   "Design..." -> Yes.
+        *   "STRICTLY using... NetLogo" -> Yes.
+        *   "NEW dedicated folder" -> Yes (`netlogo_flocking_simulator`).
+        *   "local README.md" -> Yes.
+        *   "Return ONLY the instruction text" -> Yes.
+        *   "NEVER target .github" -> Yes.
+        *   "Exactly 1 logical follow-up" -> Yes, this is one instruction.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   "Design an agent-based simulation framework capable of modeling complex flocking behaviors, validating network connectivity on grid topologies, and optimizing tick-loop performance for large-scale agent populations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NetLogo. Place the tool in a NEW dedicated folder named netlogo_flocking_simulator and create a local README.md."
+
+5.  **Final Verification:**
+    *   Does the output contain the mandatory sentence exactly? "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NetLogo." -> Yes.
+    *   Does it mention a new folder? "netlogo_flocking_simulator" -> Yes.
+    *   Does it mention README.md? Yes.
+    *   Is it only the text? Yes.
+    *   No `.github`? Yes.
+    *   Result looks solid.
+
+6.  **Construct Response:**
+    *   Output: `Design an agent-based simulation framework capable of modeling complex flocking behaviors, validating network connectivity on grid topologies, and optimizing tick-loop performance for large-scale agent populations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NetLogo. Place the tool in a NEW dedicated folder named netlogo_flocking_simulator and create a local README.md.`
+</think>
+
+Design an agent-based simulation framework capable of modeling complex flocking behaviors, validating network connectivity on grid topologies, and optimizing tick-loop performance for large-scale agent populations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NetLogo. Place the tool in a NEW dedicated folder named netlogo_flocking_simulator and create a local README.md.

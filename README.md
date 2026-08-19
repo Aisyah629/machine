@@ -373,3 +373,5 @@ MIT License
 - Created/Updated module: `scilab_data_processing_tool` (See `scilab_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `plm_string_processor_tool` (See `plm_string_processor_tool/README.md` for details)
+
+- Created/Updated module: `swift_data_processor_tool` (See `swift_data_processor_tool/README.md` for details)

@@ -67590,3 +67590,49 @@ Create a new tool for educational robotics simulation in a new dedicated folder.
 </think>
 
 Create a new tool for advanced scripting in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Opal. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 21:08:16] (Target Lang: Visual Objects) Thinking Process:
+1.  **Analyze the Request**:
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built STRICTLY using the exact programming language: Visual Objects.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The user provided a massive list of existing tools (workspace contents) and a history of previous interactions (which seem to be about Opal, but the current request is for Visual Objects). The list shows an `xharbour_tool` exists, but no `visual_objects_tool` yet in the root list (though there is a `visual_objects_tool` in the list provided: `./visual_objects_tool/`). Wait, looking closely at the list:
+        *   `./visual_objects_tool` exists.
+        *   `./visualfoxpro_tool` exists.
+        *   However, the instruction says "If building a new tool...". The prompt usually implies creating a *new* tool based on the persona/instruction set. The constraint "If building a new tool" suggests I should formulate the instruction assuming a new tool is being requested, even if the folder exists, or just follow the pattern of the prompt history which creates new tools. The safest approach is to follow the positive constraints: "Create a new tool...".
+        *   Result: The instruction must ask to create a new tool using Visual Objects, in a new folder, with a README.
+
+2.  **Drafting the Instruction**:
+    *   *Language*: Visual Objects.
+    *   *Action*: Create a new tool.
+    *   *Location*: New dedicated folder.
+    *   *Artifact*: Local README.md.
+    *   *Negative*: No `.github`.
+    *   *Text*: "Create a new tool for [purpose] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Visual Objects. Place it in a new dedicated folder and create a local README.md."
+    *   *Refinement*: Keep it concise and aligned with the style of the example in the history.
+    *   *Draft*: "Create a new tool for database management in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Visual Objects. Place it in a new dedicated folder and create a local README.md."
+    *   *Check against constraints*:
+        *   Exactly 1 instruction? Yes.
+        *   Strictly Visual Objects? Yes.
+        *   New dedicated folder? Yes.
+        *   Local README.md? Yes.
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+
+3.  **Final Polish**:
+    *   "Create a new tool for database management in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Visual Objects. Place it in a new dedicated folder and create a local README.md."
+    *   This matches the pattern of the "Opal" example in the history.
+
+4.  **Output**:
+    *   Just the text string.
+
+Result: "Create a new tool for database management in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Visual Objects. Place it in a new dedicated folder and create a local README.md."
+
+Wait, let me double-check the "If building a new tool" part. The instruction *is* the follow-up instruction. The follow-up instruction tells the AI to build the tool. So the text must contain the command to build. The text "Place it in a new dedicated folder" is part of the instruction text being generated. Yes.
+
+Final text: Create a new tool for database management in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Visual Objects. Place it in a new dedicated folder and create a local README.md.
+</think>
+
+Create a new tool for database management in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Visual Objects. Place it in a new dedicated folder and create a local README.md.

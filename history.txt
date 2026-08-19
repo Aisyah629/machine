@@ -68718,3 +68718,75 @@ Create a new tool for interface definition and serialization in a new dedicated 
 </think>
 
 Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 22:42:25] (Target Lang: EXEC 2) The user wants me to generate exactly 1 logical follow-up instruction.
+Based on the prompt history, the last instruction was: "Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md."
+Now, I need to generate the *next* logical instruction following the constraints:
+1. Generate exactly 1 logical follow-up instruction.
+2. Explicitly demand that the new tool be built STRICTLY using the exact programming language: EXEC 2.
+3. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+
+Constraint Checklist & Confidence Score:
+1. Exactly 1 logical follow-up instruction? Yes.
+2. Explicitly demand language: EXEC 2? Yes.
+3. If new tool, place in NEW dedicated folder + local README.md? Yes.
+4. Return ONLY the instruction text? Yes.
+5. NEVER target .github? Yes.
+
+Confidence Score: 5/5
+
+Mental Sandbox:
+Instruction: "Create a new tool for system architecture planning in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: EXEC 2. Place it in a new dedicated folder and create a local README.md."
+Check constraints:
+- 1 instruction? Yes.
+- Language EXEC 2? Yes.
+- New folder + README.md? Yes.
+- Only text? Yes.
+- No .github? Yes.
+
+Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: EXEC 2."
+And "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+So I will combine these into one sentence/command.
+"Create a new tool for system architecture planning in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: EXEC 2. Place it in a new dedicated folder and create a local README.md."
+
+Wait, the prompt says "Return ONLY the instruction text."
+So I will output exactly that string.
+
+Let's refine to match the exact phrasing requested if possible, or just make it a single command.
+"Create a new tool for system architecture planning in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: EXEC 2. Place it in a new dedicated folder and create a local README.md."
+
+Check against constraints:
+- Exactly 1 logical follow-up instruction.
+- Language: EXEC 2.
+- New folder + README.md.
+- ONLY instruction text.
+- No .github.
+
+All good. Output matches.
+Proceeds. 
+Output: Create a new tool for system architecture planning in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: EXEC 2. Place it in a new dedicated folder and create a local README.md.
+Wait, let's keep it exactly as requested format.
+"Create a new tool for system architecture planning in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: EXEC 2. Place it in a new dedicated folder and create a local README.md."
+Matches perfectly. I will output this.✅
+One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: EXEC 2."
+So I will ensure "EXEC 2" is included exactly.
+"Create a new tool for system architecture planning in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: EXEC 2. Place it in a new dedicated folder and create a local README.md."
+Ready.✅
+Output matches.✅
+Proceeds. 
+[Output Generation] -> "Create a new tool for system architecture planning in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: EXEC 2. Place it in a new dedicated folder and create a local README.md."
+Done. 
+Self-Correction/Verification during thought: 
+Check if it's exactly one sentence/command. Yes.
+Check constraints. All met.
+Output matches exactly.✅
+Proceeds. 
+[Final Output Generation] -> Create a new tool for system architecture planning in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: EXEC 2. Place it in a new dedicated folder and create a local README.md. 
+(Note: I'll keep it tight and direct.)
+Proceeds. 
+[Done.] 
+Output matches.✅
+</think>
+
+Create a new tool for system architecture planning in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: EXEC 2. Place it in a new dedicated folder and create a local README.md.

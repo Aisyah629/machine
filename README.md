@@ -393,3 +393,5 @@ MIT License
 - Created/Updated module: `deesel_symbolic_engine_tool` (See `deesel_symbolic_engine_tool/README.md` for details)
 
 - Created/Updated module: `nasm_lowlevel_sim_tool` (See `nasm_lowlevel_sim_tool/README.md` for details)
+
+- Created/Updated module: `agda_formal_verification_tool` (See `agda_formal_verification_tool/README.md` for details)

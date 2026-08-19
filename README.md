@@ -287,3 +287,5 @@ MIT License
 - Created/Updated module: `./scratch_data_processor_tool` (See `./scratch_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./tom_tool` (See `./tom_tool/README.md` for details)
+
+- Created/Updated module: `xpl_data_processor_tool` (See `xpl_data_processor_tool/README.md` for details)

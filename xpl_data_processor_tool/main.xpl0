@@ -1,0 +1,63 @@
+; XPL0 Data Processor Tool
+; Provides basic data stream processing capabilities
+
+IntXPL0;
+IntLib(1);
+
+Code ReadLine = [1050];
+Code Print = [1016];
+Code ChrOut = [1015];
+Code CrLf = [1014];
+Code Open = [1040];
+Code Close = [1041];
+Code Eof = [1042];
+Code Scan = [1043];
+Code StrOut = [1018];
+
+Global
+    InFile := 0;
+    LineBuffer := 0;
+    LineLen := 0;
+
+Proc ProcessLine(Line; Length);
+    Int Line, Length;
+Begin
+    ; Process each line of input data
+    ; Example: simple validation and formatting
+    If Length > 0 Then
+    Begin
+        ; Output processed line
+        StrOut(Line);
+        ChrOut(13);
+        ChrOut(10);
+    End;
+End ProcessLine;
+
+Proc Main();
+    Int Ch, Status, LinePtr;
+    Char Buf[80];
+Begin
+    ; Open standard input or file
+    If CmdC(1) > 0 Then
+        InFile := Open(CmdS(1))
+    Else
+        InFile := 0; ; Standard input
+
+    Status := 1;
+    Loop
+    Begin
+        ; Read a line from input
+        LinePtr := ReadLine(InFile, Buf, 80, Status);
+        If Status # 0 Then Leave;
+        
+        ; Process the line
+        ProcessLine(Buf, LinePtr);
+    End;
+
+    ; Close file if opened
+    If InFile > 0 Then Close(InFile);
+    
+    CrLf;
+End Main;
+
+Main();

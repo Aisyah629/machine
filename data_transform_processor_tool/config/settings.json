@@ -1,0 +1,13 @@
+{
+  "defaultDateFormat": "yyyy-mm-dd",
+  "defaultTimeFormat": "HH:nn:ss",
+  "loggingEnabled": true,
+  "maxRetries": 3,
+  "allowedFields": [
+    "id",
+    "name",
+    "email",
+    "status",
+    "created_at"
+  ]
+}

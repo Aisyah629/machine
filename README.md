@@ -387,3 +387,5 @@ MIT License
 - Created/Updated module: `jal_microcontroller_simulation_tool` (See `jal_microcontroller_simulation_tool/README.md` for details)
 
 - Created/Updated module: `object_pascal_desktop_framework_tool` (See `object_pascal_desktop_framework_tool/README.md` for details)
+
+- Created/Updated module: `cyclone_safe_systems_tool` (See `cyclone_safe_systems_tool/README.md` for details)

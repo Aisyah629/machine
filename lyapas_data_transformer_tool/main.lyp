@@ -1,0 +1,37 @@
+PROCEDURE MAIN
+    ; Define a sample dataset
+    DATA DATASET
+        ("Alice", 28, "Engineer"),
+        ("Bob", 34, "Manager"),
+        ("Charlie", 22, "Intern")
+    END_DATA
+
+    ; Display original data
+    DISPLAY "Original Dataset:"
+    DISPLAY DATASET
+
+    ; Transform: Filter out Interns
+    DATA FILTERED_DATASET
+        FOR EACH PERSON IN DATASET
+            IF PERSON.AGE > 25 THEN
+                RETURN PERSON
+            END_IF
+        END_FOR
+    END_DATA
+
+    ; Transform: Convert names to uppercase
+    DATA UPPER_CASE_NAMES
+        FOR EACH RECORD IN FILTERED_DATASET
+            CONCATENATE(
+                UPPER(STRING(RECORD.NAME)),
+                " | ",
+                STRING(RECORD.AGE),
+                " | ",
+                RECORD.ROLE
+            )
+        END_FOR
+    END_DATA
+
+    DISPLAY "Transformed Dataset:"
+    DISPLAY UPPER_CASE_NAMES
+END_PROCEDURE

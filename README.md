@@ -271,3 +271,5 @@ MIT License
 - Created/Updated module: `./mimic_simulation_tool` (See `./mimic_simulation_tool/README.md` for details)
 
 - Created/Updated module: `./lucid_data_processor_tool` (See `./lucid_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `maple_data_processing_tool` (See `maple_data_processing_tool/README.md` for details)

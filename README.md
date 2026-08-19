@@ -423,3 +423,5 @@ MIT License
 - Created/Updated module: `data_validator_tool` (See `data_validator_tool/README.md` for details)
 
 - Created/Updated module: `idris_data_cleaner_tool` (See `idris_data_cleaner_tool/README.md` for details)
+
+- Created/Updated module: `cel_interactive_diagnostic_tool` (See `cel_interactive_diagnostic_tool/README.md` for details)

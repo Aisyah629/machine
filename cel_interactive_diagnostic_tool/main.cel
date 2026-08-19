@@ -1,0 +1,120 @@
+module cel_interactive_diagnostic_tool
+
+defaults
+  output_format = "text"
+  debug_mode = false
+
+struct DiagnosticResult
+  status: string  // "valid", "error", "warning"
+  message: string
+  line_number: int
+  suggestion: string
+end
+
+struct ExpressionTree
+  type: string
+  value: any
+  children: list of ExpressionTree
+end
+
+def parse_expression(expr: string) -> DiagnosticResult
+  /*
+    Parses a Cel expression and returns diagnostic results.
+    Validates syntax and structure.
+  */
+  let tokens = tokenize(expr)
+  let result = { status: "valid", message: "", line_number: 0, suggestion: "" }
+  
+  if length(tokens) == 0 then
+    result.status = "warning"
+    result.message = "Empty expression"
+    return result
+  end if
+  
+  // Simple syntax validation for common Cel constructs
+  let open_brackets = count tokens for char in tokens if char == "["
+  let close_brackets = count tokens for char in tokens if char == "]"
+  
+  if open_brackets != close_brackets then
+    result.status = "error"
+    result.message = "Mismatched brackets"
+    result.suggestion = "Check for missing or extra brackets"
+    return result
+  end if
+  
+  let open_parens = count tokens for char in tokens if char == "("
+  let close_parens = count tokens for char in tokens if char == ")"
+  
+  if open_parens != close_parens then
+    result.status = "error"
+    result.message = "Mismatched parentheses"
+    result.suggestion = "Check for missing or extra parentheses"
+    return result
+  end if
+  
+  result.message = "Expression validated successfully"
+  return result
+end
+
+def analyze_expression(expr: string) -> ExpressionTree
+  /*
+    Analyzes a Cel expression and builds an expression tree.
+  */
+  let tokens = tokenize(expr)
+  let root = { type: "root", value: null, children: [] }
+  
+  for token in tokens do
+    let node = { type: "token", value: token, children: [] }
+    add_child(root, node)
+  end for
+  
+  return root
+end
+
+def visualize_expression_tree(tree: ExpressionTree, indent: int = 0) -> string
+  /*
+    Visualizes an expression tree in a text-based format.
+  */
+  let prefix = repeat "  " indent
+  let result = prefix + tree.type + ": " + toString(tree.value)
+  
+  for child in tree.children do
+    result = result + "\n" + visualize_expression_tree(child, indent + 1)
+  end for
+  
+  return result
+end
+
+def run_diagnostic_tool() -> void
+  /*
+    Main loop for the interactive diagnostic tool.
+  */
+  print("Cel Interactive Diagnostic Tool")
+  print("Enter expressions to analyze (type 'quit' to exit)")
+  
+  loop do
+    print("> ")
+    let input = read_line()
+    
+    if input == "quit" then
+      break
+    end if
+    
+    let diagnostics = parse_expression(input)
+    
+    if diagnostics.status == "error" then
+      print("Error: " + diagnostics.message)
+      print("Suggestion: " + diagnostics.suggestion)
+    else if diagnostics.status == "warning" then
+      print("Warning: " + diagnostics.message)
+    else
+      print("Valid: " + diagnostics.message)
+      let tree = analyze_expression(input)
+      print("Expression Tree:")
+      print(visualize_expression_tree(tree))
+    end if
+  end loop
+end
+
+// Entry point
+run_diagnostic_tool()

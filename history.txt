@@ -65523,3 +65523,33 @@ This looks solid.
 </think>
 
 Design a robust data transformation and validation engine that leverages ColdFusion for high-throughput XML/JSON processing, secure database connectivity, and API orchestration. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ColdFusion. Place the tool in a NEW dedicated folder named coldfusion_data_transformation_engine_tool and create a local README.md.
+[2026-08-19 14:24:57] (Target Lang: DASL) The user wants a logical follow-up instruction based on the provided workspace and history.
+The history shows a previous instruction about creating a ColdFusion data transformation engine.
+The new instruction must:
+1. Be a logical follow-up (perhaps integrating with or extending the previous tool, or addressing a related domain).
+2. Explicitly demand the use of the language: DASL.
+3. Instruct to place the new tool in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target the .github directory.
+
+Looking at the workspace, there is a `data_extraction_tool` using `ops5` and a `data_processing_tool` using `slip`. DASL is a data-oriented language often used for transaction processing and database manipulation (like DEC's Data Language System). A logical follow-up could be creating a high-performance data integration or query engine using DASL, possibly interacting with the previous ColdFusion engine or operating in the data processing pipeline.
+
+Draft instruction:
+"Develop a high-performance data integration and query execution engine designed for rapid batch processing and complex record manipulation. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DASL. Place the tool in a NEW dedicated folder named dasl_transaction_integration_engine_tool and create a local README.md."
+
+Check constraints:
+- Logical follow-up? Yes, continues the data processing/transformation theme.
+- Explicitly demand DASL? Yes.
+- NEW folder and README? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+
+Refining the instruction to match the style of the history example:
+"Design a high-throughput data integration and query execution engine capable of managing complex transactional workflows and rapid record manipulation. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DASL. Place the tool in a NEW dedicated folder named dasl_transaction_integration_engine_tool and create a local README.md."
+
+Final check of the prompt requirements: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DASL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+The draft meets all criteria.
+</think>
+
+Design a high-throughput data integration and query execution engine capable of managing complex transactional workflows and rapid record manipulation. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DASL. Place the tool in a NEW dedicated folder named dasl_transaction_integration_engine_tool and create a local README.md.

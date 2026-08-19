@@ -63637,3 +63637,42 @@ Initialize a NEW dedicated folder named mark_iv_tool in the workspace, create a 
 </think>
 
 (Target Lang: Agilent VEE) Create a new automated test and measurement utility. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Agilent VEE. Place the tool in a NEW dedicated folder named agilent_vee_measurement_tool and include a local README.md.
+[2026-08-19 11:04:02] (Target Lang: Harbour) Thinking Process:
+1.  **Analyze the Request:**
+    *   Input: A list of workspace files/directories (mostly tool folders with READMEs and main source files), a history section showing a pattern of generating tool instructions, and a final instruction block.
+    *   Final Instruction: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+    *   Key Constraints:
+        *   Output exactly 1 instruction.
+        *   Language: Harbour.
+        *   Format: New tool in a NEW dedicated folder with a local README.md.
+        *   Output ONLY the instruction text.
+        *   No .github targeting.
+
+2.  **Formulate the Instruction:**
+    *   Subject: Create a new tool.
+    *   Language: Harbour.
+    *   Action: Explicitly demand "STRICTLY using this exact programming language: Harbour".
+    *   Location: NEW dedicated folder.
+    *   Folder Name: Needs to be descriptive based on the language, e.g., `harbour_automation_tool` or similar. Let's use `harbour_development_framework` or just `harbour_tool` if not taken, but the prompt asks for a NEW folder. Looking at the workspace, there is `harbour_tool` already (`./harbour_tool/...`). To be safe and "logical", I should probably suggest a specific sub-purpose or a distinct name. However, the prompt just says "Place the tool in a NEW dedicated folder". I can choose a name. Let's use `harbour_business_logic_tool` to be distinct. Or just follow the pattern of the history which uses names like `..._tool`.
+    *   Structure: `(Target Lang: Harbour) Create a new [description]. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. Place the tool in a NEW dedicated folder named [name] and include a local README.md.`
+    *   Drafting text: `(Target Lang: Harbour) Create a new database-driven application framework. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. Place the tool in a NEW dedicated folder named harbour_app_framework_tool and include a local README.md.`
+    *   Check constraints:
+        *   Exactly 1 instruction? Yes.
+        *   Explicitly demand Harbour? Yes.
+        *   New folder/README? Yes.
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+
+3.  **Refinement:**
+    *   The prompt asks for a "logical follow-up". Given the list contains many tools, adding a Harbour tool makes sense.
+    *   Result: `(Target Lang: Harbour) Create a new cross-platform database application framework. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. Place the tool in a NEW dedicated folder named harbour_database_framework_tool and include a local README.md.`
+
+4.  **Final Polish:**
+    *   `(Target Lang: Harbour) Create a new cross-platform database application framework. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. Place the tool in a NEW dedicated folder named harbour_database_framework_tool and include a local README.md.`
+    *   Verify "STRICTLY using this exact programming language: Harbour" is present. Yes.
+    *   Verify output is ONLY the instruction text. Yes.
+
+    Result matches all criteria.
+</think>
+
+(Target Lang: Harbour) Create a new cross-platform database application framework. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Harbour. Place the tool in a NEW dedicated folder named harbour_database_framework_tool and include a local README.md.

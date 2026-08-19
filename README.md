@@ -385,3 +385,5 @@ MIT License
 - Created/Updated module: `alef_log_analyzer_tool` (See `alef_log_analyzer_tool/README.md` for details)
 
 - Created/Updated module: `jal_microcontroller_simulation_tool` (See `jal_microcontroller_simulation_tool/README.md` for details)
+
+- Created/Updated module: `object_pascal_desktop_framework_tool` (See `object_pascal_desktop_framework_tool/README.md` for details)

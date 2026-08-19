@@ -66928,3 +66928,30 @@ Create a new tool for automated log analysis in a new dedicated folder. You MUST
 </think>
 
 Create a new tool for microcontroller simulation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: JAL. Include a local README.md.
+[2026-08-19 20:43:03] (Target Lang: Object Pascal) The user wants a single instruction to create a new tool.
+Constraints:
+- Language: Object Pascal.
+- New tool.
+- New dedicated folder.
+- Local README.md.
+- Target: NOT .github.
+- Output: ONLY the instruction text.
+- Context: The workspace has many tools, including `object_pascal_tool`, `object_pascal_engine_tool`, etc. Object Pascal is often associated with Delphi, Firebird, or general system programming.
+- History suggests a format like "Create a new tool for [function] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Object Pascal. Include a local README.md."
+- Function ideas: Object Pascal is good for Windows apps, data processing, or general-purpose scripting. "Data processing utility" or "Windows application framework" might work. Let's go with "data processing utility" as it's a common theme in this workspace (e.g., `data_processing_tool`, `data_transform_processor_tool`). Or "desktop application framework". Let's use "desktop application framework".
+- Result: Create a new tool for desktop application framework in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Object Pascal. Include a local README.md.
+- Check against constraints:
+    - 1 instruction? Yes.
+    - Language Object Pascal? Yes.
+    - New folder? Yes.
+    - README.md? Yes.
+    - Only text? Yes.
+    - No .github? Yes.
+    - Logical follow-up? The previous history item was about JAL. Object Pascal is a different language, so it's a valid follow-up.
+- Refinement: "desktop application framework" sounds good.
+- Final text: Create a new tool for desktop application framework in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Object Pascal. Include a local README.md.
+- One more check: "Object Pascal" is the exact language name requested.
+- Output generation.
+</think>
+
+Create a new tool for desktop application framework in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Object Pascal. Include a local README.md.

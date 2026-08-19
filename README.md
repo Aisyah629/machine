@@ -359,3 +359,5 @@ MIT License
 - Created/Updated module: `./ratfor_tool` (See `./ratfor_tool/README.md` for details)
 
 - Created/Updated module: `./occampi_text_formatter_cleaner_tool` (See `./occampi_text_formatter_cleaner_tool/README.md` for details)
+
+- Created/Updated module: `./data_processing_factor_tool` (See `./data_processing_factor_tool/README.md` for details)

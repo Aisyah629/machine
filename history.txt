@@ -67718,3 +67718,63 @@ Proceeds.
 </think>
 
 Create a new tool for real-time concurrent data stream processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Stackless Python. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 21:35:25] (Target Lang: Max) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Context:** The user is interacting with an "Autonomous AI" that manages a workspace full of tools (mostly programming languages, compilers, and specific domain tools).
+    *   **Input History:** Shows a previous successful generation where the AI created a "stackless_python_stream_processor_tool" based on a specific prompt structure.
+    *   **Current Task:** Generate exactly 1 logical follow-up instruction.
+    *   **Constraints:**
+        *   Must explicitly demand building a new tool using the exact programming language: **Max** (likely referring to the C API for Max/MSP, or potentially Maxima, but "Max" usually implies the visual programming environment for multimedia, often using C or C++ via the C API, or potentially a specific tool named 'max' in the list provided. Looking at the list: `./max_tool`, `./max_tool/README.md`, `./max_tool/main.max`. This confirms "Max" refers to the language/environment represented by `main.max` files in the `max_tool` directory).
+        *   If building a new tool, explicitly instruct to place it in a **NEW dedicated folder**.
+        *   Instruct to create a local **README.md**.
+        *   Return **ONLY** the instruction text.
+        *   **NEVER** target the `.github` directory.
+
+2.  **Determine the Content:**
+    *   The previous example was about "Stackless Python" for "real-time concurrent data stream processing".
+    *   The new instruction should follow a similar pattern but target the language **Max**.
+    *   What kind of tool would fit "Max"? Max is often used for multimedia, audio, video, and interactive graphics. A logical follow-up might be an "interactive multimedia synthesis tool" or "audio signal processing tool". Let's stick to a generic but fitting description like "interactive multimedia processing".
+    *   Structure: "Create a new tool for [description] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md."
+
+3.  **Refine the Instruction:**
+    *   *Draft 1:* Create a new tool for interactive multimedia synthesis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md.
+    *   *Check Constraints:*
+        *   New tool? Yes.
+        *   New dedicated folder? Yes.
+        *   Language: Max? Yes.
+        *   README.md? Yes.
+        *   Only instruction text? Yes.
+        *   No .github? Yes.
+
+4.  **Final Polish:**
+    *   The prompt asks for "exactly 1 logical follow-up instruction".
+    *   The instruction should be self-contained.
+    *   Result: "Create a new tool for interactive multimedia synthesis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md."
+
+5.  **Final Verification against the provided workspace list:**
+    *   The list contains `./max_tool`, confirming `max` is a valid target language in this context.
+
+6.  **Output Construction:**
+    *   Just the text string.
+
+    "Create a new tool for interactive multimedia synthesis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md."
+
+    Wait, looking at the history, the user provided a "Self-Correction/Note" style output in the prompt's history section, but the actual request at the end is "Generate exactly 1 logical follow-up instruction... Return ONLY the instruction text."
+
+    So I just output the text.
+
+    *Revised Instruction:* "Create a new tool for real-time audio signal processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md." (Changed "multimedia synthesis" to "audio signal processing" as it fits the 'tool' vibe well, but "interactive multimedia synthesis" is also fine. Let's stick to the structure of the previous example closely).
+
+    Previous example: "Create a new tool for real-time concurrent data stream processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Stackless Python. Place it in a new dedicated folder and create a local README.md."
+
+    New Instruction: "Create a new tool for interactive multimedia synthesis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md."
+
+    This looks correct.
+
+    One final check on "Max". The list has `./max_tool`. The extension is `.max`. This usually refers to the C/C++ API for Cycling '74 Max. It's a valid target.
+
+    Final string: Create a new tool for interactive multimedia synthesis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md.
+</think>
+
+Create a new tool for interactive multimedia synthesis in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Max. Place it in a new dedicated folder and create a local README.md.

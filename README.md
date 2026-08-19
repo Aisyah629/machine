@@ -437,3 +437,5 @@ MIT License
 - Created/Updated module: `chill_advanced_symbolic_tool` (See `chill_advanced_symbolic_tool/README.md` for details)
 
 - Created/Updated module: `simple_interactive_diagnostic_tool` (See `simple_interactive_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `hume_tool` (See `hume_tool/README.md` for details)

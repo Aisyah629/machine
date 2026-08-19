@@ -64994,3 +64994,65 @@ Design a legacy RPG asset extraction and conversion utility that processes binar
 </think>
 
 Design a robotic motion path validation and simulation engine that parses KRL trajectory data, checks for axis limit violations, and generates optimized execution logs. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: KRL. Place the tool in a NEW dedicated folder named krl_trajectory_validator_tool and create a local README.md.
+[2026-08-19 13:13:25] (Target Lang: NSIS) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provided a massive list of workspace files/directories, mostly structured as `./tool_name/README.md`, `./tool_name/main.<ext>`, etc. This indicates a repository containing many specialized programming/scripting language tools.
+   - **History:** Shows a previous interaction where the model outputted an instruction for a KRL tool. The prompt format is consistent.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using NSIS.
+   - If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target .github directory.
+
+3.  **Determine the Tool's Purpose (Logical Follow-up):**
+   - The workspace contains many specialized tools (KRL for robotics, NSIS is the Nullsoft Scriptable Install System used for creating Windows installers).
+   - A logical tool for NSIS in this context would be an installer script generator, package validator, or deployment orchestrator.
+   - Let's design: "NSIS installer script generator and validation engine that parses installation requirements, generates optimized installation sequences, and verifies package dependencies."
+
+4.  **Draft the Instruction (incorporating constraints):**
+   Design an NSIS installer script generator and validation engine that parses installation requirements, generates optimized installation sequences, and verifies package dependencies. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS. Place the tool in a NEW dedicated folder named nsis_package_deployment_tool and create a local README.md.
+
+5.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes, it's a single cohesive instruction.
+   - Explicitly demand NSIS? Yes: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS."
+   - NEW dedicated folder & local README.md? Yes: "Place the tool in a NEW dedicated folder named nsis_package_deployment_tool and create a local README.md."
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+   - Format matches previous output style? Yes.
+
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS." I will include that exact phrasing as requested.
+
+   Let's refine it to be perfectly aligned:
+   "Design a Windows installer package generation and validation engine that parses deployment manifests, generates optimized installation scripts, and verifies component dependencies. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS. Place the tool in a NEW dedicated folder named nsis_package_deployment_tool and create a local README.md."
+
+   Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS." I should just output the exact instruction string without extra fluff.
+
+   Let's verify against the exact wording in the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: KRL." was in the history/example. I will follow that pattern.
+
+   Draft: Design a Windows installer package generation and validation engine that parses deployment manifests, generates optimized installation scripts, and verifies component dependencies. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS. Place the tool in a NEW dedicated folder named nsis_package_deployment_tool and create a local README.md.
+
+   Checks:
+   - 1 instruction? Yes.
+   - Explicit NSIS demand? Yes.
+   - NEW folder + README.md? Yes.
+   - ONLY instruction text? Yes.
+   - No .github? Yes.
+
+   All constraints met. Output matches draft. Proceeds. 
+   One thing: The prompt says "Return ONLY the instruction text." I will output exactly that string. No markdown, no quotes. Just the raw text.
+   Ready.✅
+   Output Generation. 
+   "Design a Windows installer package generation and validation engine that parses deployment manifests, generates optimized installation scripts, and verifies component dependencies. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS. Place the tool in a NEW dedicated folder named nsis_package_deployment_tool and create a local README.md." -> matches perfectly. Proceeds. 
+   *(Self-Correction/Refinement during thought)*: I'll make sure the phrasing exactly matches the constraint style from the prompt's example. The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS." I will include it exactly as written. All good.
+   Output matches draft.✅ Proceeds. 
+   [Output Generation] -> *Proceeds*
+   Final string: Design a Windows installer package generation and validation engine that parses deployment manifests, generates optimized installation scripts, and verifies component dependencies. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS. Place the tool in a NEW dedicated folder named nsis_package_deployment_tool and create a local README.md. 
+   Matches all constraints. Output matches draft.✅ Proceeds. 
+   *(Done)*
+</think>
+
+Design a Windows installer package generation and validation engine that parses deployment manifests, generates optimized installation scripts, and verifies component dependencies. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: NSIS. Place the tool in a NEW dedicated folder named nsis_package_deployment_tool and create a local README.md.

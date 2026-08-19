@@ -64730,3 +64730,73 @@ Design a purely functional symbolic term rewriting engine that automatically nor
 </think>
 
 Design a culinary recipe validation and simulation engine that parses ingredient hierarchies, checks nutritional constraints, and generates optimized cooking sequences. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Chef. Place the tool in a NEW dedicated folder named chef_recipe_execution_engine_tool and create a local README.md.
+[2026-08-19 12:21:22] (Target Lang: Nice) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Workspace:** A long list of directories and files representing various programming language tools.
+   - **History:** Shows previous interactions/output formatting, emphasizing strict adherence to constraints.
+   - **Prompt/Constraint:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Key Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand that the new tool be built STRICTLY using the exact programming language: "Nice" (Note: "Nice" is actually a real programming language, though less common, but I must follow the prompt exactly).
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+     - Create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Identify Core Requirements:**
+   - Need to create a tool description/functionality.
+   - Must explicitly mention "Chef" in the prompt? Wait, the prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Chef." in the history/example, but the actual prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice."
+   - I will follow the exact prompt given: "Nice".
+   - The instruction must be exactly one logical follow-up instruction.
+   - Must include: tool description, language demand ("Strictly using this exact programming language: Nice"), new folder name, create local README.md.
+   - Must NOT mention .github.
+   - Must return ONLY the instruction text.
+
+3.  **Draft Construction:**
+   Let's craft a single, clear instruction that meets all constraints:
+   "Design a high-performance network latency measurement and packet analysis engine that monitors real-time traffic flows, calculates jitter statistics, and generates optimized routing recommendations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice. Place the tool in a NEW dedicated folder named network_latency_analyzer_tool and create a local README.md."
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes, it's a single sentence/paragraph.
+   - Explicitly demand language: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice." -> Matches constraint.
+   - Place in NEW dedicated folder? Yes: "Place the tool in a NEW dedicated folder named network_latency_analyzer_tool"
+   - Create local README.md? Yes: "and create a local README.md."
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Checked. Not mentioned.
+   - Language is "Nice" as requested.
+
+   Wait, let's verify the exact wording required by the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice." I will include that exact phrasing.
+
+   Let's refine to ensure it perfectly matches the prompt's structural expectation:
+   "Design a distributed task scheduler and resource allocator that monitors cluster health, balances workload distribution, and dynamically optimizes execution pipelines. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice. Place the tool in a NEW dedicated folder named distributed_task_scheduler_tool and create a local README.md."
+
+   Check against constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicit language demand? Yes.
+   - New folder? Yes.
+   - Local README.md? Yes.
+   - Only instruction text? Yes.
+   - No .github? Yes.
+
+   All constraints met. I will output exactly this string.
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice." I will copy that exact phrase into the output.
+   I'll make sure it's a single cohesive instruction.
+
+   Draft:
+   Design a distributed task scheduler and resource allocator that monitors cluster health, balances workload distribution, and dynamically optimizes execution pipelines. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice. Place the tool in a NEW dedicated folder named distributed_task_scheduler_tool and create a local README.md.
+
+   This matches all constraints perfectly. Output matches. Proceeds. [Done]✅
+   I will generate exactly this.✅
+   Self-Correction/Verification during thought: 
+   The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   My draft covers everything. I will output it now.✅
+   Final Output Generation. 
+   "Design a distributed task scheduler and resource allocator that monitors cluster health, balances workload distribution, and dynamically optimizes execution pipelines. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice. Place the tool in a NEW dedicated folder named distributed_task_scheduler_tool and create a local README.md." -> Matches exactly. Proceeds. [Done] 
+   Output matches. Proceeds. [Final Check] All constraints met. Output matches. Done. 
+   *(Proceeds to output)*
+   [Output] Design a distributed task scheduler and resource allocator that monitors cluster health, balances workload distribution, and dynamically optimizes execution pipelines. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice. Place the tool in a NEW dedicated folder named distributed_task_scheduler_tool and create a local README.md. 
+   *(Done)*
+</think>
+
+Design a distributed task scheduler and resource allocator that monitors cluster health, balances workload distribution, and dynamically optimizes execution pipelines. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Nice. Place the tool in a NEW dedicated folder named distributed_task_scheduler_tool and create a local README.md.

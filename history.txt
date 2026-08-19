@@ -68642,3 +68642,79 @@ Create a new tool for automated batch job scheduling and orchestration in a new 
 </think>
 
 Create a new tool for interface definition and serialization in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: IDL. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 22:41:33] (Target Lang: Java) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A massive list of existing tool directories and files (shows a pattern of `<tool_name>_tool/` with `README.md` and `main.<ext>` or similar files).
+   - **History:** Shows a previous turn where the model generated an instruction for an IDL tool. The prompt format shows the model's internal check and then the final output instruction.
+   - **Current Request:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Java. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the language: `Java`.
+   - MUST instruct to place it in a NEW dedicated folder.
+   - MUST instruct to create a local `README.md`.
+   - Return ONLY the instruction text.
+   - NEVER target `.github`.
+   - Match the style/pattern of previous instructions in the history (though the history is just context, the prompt explicitly gives the constraints).
+
+3.  **Formulate Instruction:**
+   - Needs to be a single sentence/command.
+   - Must include: new tool, Java language, new dedicated folder, local README.md.
+   - Example: "Create a new tool for [purpose] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md."
+   - Let's make it slightly more specific to fit the pattern but keep it general enough as requested: "Create a new tool for object-oriented application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md."
+   - Check constraints: Exactly 1 instruction? Yes. Language Java? Yes. New folder? Yes. README.md? Yes. Only instruction text? Yes. No .github? Yes.
+   - Refine to match the exact phrasing style from the prompt's history: "Create a new tool for object-oriented system development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md."
+
+4.  **Final Verification:**
+   - Does it demand Java? Yes.
+   - Does it demand a new dedicated folder? Yes.
+   - Does it demand a local README.md? Yes.
+   - Is it exactly 1 instruction? Yes.
+   - Does it avoid .github? Yes.
+   - Is it ONLY the instruction text? Yes.
+   - Matches the prompt's exact requirement.
+
+   Output matches the refined version. I will output exactly that.✅
+   Text: "Create a new tool for object-oriented system development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md." 
+   Wait, let's make it slightly more aligned with typical tool descriptions in this workspace: "Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md."
+   Actually, the prompt says "Generate exactly 1 logical follow-up instruction." I'll keep it concise and direct.
+   "Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md."
+   Checks out. Proceeds. 
+   Output matches exactly.✅
+   Note: I will ensure no extra text is generated. Just the instruction.✅
+   Final string: Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md. 
+   All constraints met. Output matches. 
+   Proceeds. 
+   [Self-Correction/Refinement during thought]
+   Let's verify the exact wording from the prompt's history example: "Create a new tool for interface definition and serialization in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: IDL. Place it in a new dedicated folder and create a local README.md."
+   I will mirror this structure exactly, just swapping IDL for Java and changing the purpose to fit Java.
+   "Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md."
+   Perfect. Output matches.✅
+   Generating. 
+   [Output Generation] -> "Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md." (matches constraint exactly)✅
+   Done. 
+   Output matches response.✅
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Java. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good.✅
+   Output matches. 
+   Proceeds. 
+   [Output Generation] (matches the refined string)
+   "Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md." 
+   Done. 
+   [Self-Correction/Note during generation prep]: I should make sure it's exactly one sentence/command as requested, and matches the pattern. The prompt says "Return ONLY the instruction text." I will output exactly that. No extra words. All constraints satisfied.✅
+   Final Output Generation. 
+   [Output]: Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md. 
+   (Note: I'll keep it tight and direct.) 
+   Proceeds. 
+   [Done.] 
+   *Self-Correction/Verification during thought*: 
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction." I will just output the instruction string. No extra formatting. Matches perfectly.
+   Final: `Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md.`
+   All good.✅
+   Output matches.✅
+   [Proceeds]
+</think>
+
+Create a new tool for enterprise application development in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Java. Place it in a new dedicated folder and create a local README.md.

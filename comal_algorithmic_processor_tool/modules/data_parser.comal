@@ -1,0 +1,46 @@
+
+    REM +---------------------------------------------+
+    REM | COMAL Data Parsing Module                   |
+    REM | Handles raw input stream ingestion          |
+    REM +---------------------------------------------+
+
+    PROCEDURE DataParser_Load()
+        PRINT "[MOD] DataParser initialized"
+    END PROCEDURE
+
+    FUNCTION ParseLine(line_string)
+        INTEGER delimiter_pos
+        ARRAY parsed_data[10] STRING 64
+        INTEGER count
+        count := 0
+        
+        delimiter_pos := 1
+        WHILE delimiter_pos <= LEN(line_string) AND count < 10 DO
+            REM Simple comma-separated parsing
+            parsed_data[count] := SUBSTRING(line_string, 1, COMMA)
+            count := count + 1
+            REM Advance to next delimiter
+        END WHILE
+        
+        RETURN parsed_data
+    END FUNCTION
+
+    FUNCTION LoadDataset(filepath)
+        INTEGER file_handle
+        ARRAY dataset_records[1000]
+        INTEGER record_index
+        record_index := 0
+        
+        OPEN INPUT file_handle USING filepath
+        WHILE NOT EOF(file_handle) AND record_index < 1000 DO
+            READ FROM file_handle INTO raw_line
+            dataset_records[record_index] := ParseLine(raw_line)
+            record_index := record_index + 1
+        END WHILE
+        CLOSE file_handle
+        
+        PRINT "[MOD] Parsed " & record_index & " records"
+        RETURN record_index
+    END FUNCTION
+
+END

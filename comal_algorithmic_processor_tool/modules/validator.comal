@@ -1,0 +1,33 @@
+
+    REM +---------------------------------------------+
+    REM | COMAL Validation Module                     |
+    REM | Ensures data integrity before processing    |
+    REM +---------------------------------------------+
+
+    PROCEDURE Validator_Load()
+        PRINT "[MOD] Validator initialized"
+    END PROCEDURE
+
+    FUNCTION ValidateRecord(record_array)
+        BOOLEAN is_valid
+        INTEGER i
+        is_valid := TRUE
+        
+        REM Check for null or empty fields
+        FOR i := 0 TO 9 DO
+            IF LEN(record_array[i]) = 0 THEN
+                is_valid := FALSE
+                BREAK
+            END IF
+        END FOR
+        
+        RETURN is_valid
+    END FUNCTION
+
+    FUNCTION SanitizeString(input_string)
+        STRING sanitized
+        sanitized := TRIM(input_string)
+        RETURN sanitized
+    END FUNCTION
+
+END

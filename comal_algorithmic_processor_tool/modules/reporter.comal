@@ -1,0 +1,25 @@
+
+    REM +---------------------------------------------+
+    REM | COMAL Reporting Module                      |
+    REM | Generates summary logs and output markers   |
+    REM +---------------------------------------------+
+
+    PROCEDURE Reporter_Load()
+        PRINT "[MOD] Reporter initialized"
+    END PROCEDURE
+
+    PROCEDURE GenerateReport(total_records, processed_records, failed_records)
+        PRINT "\n=== PROCESSING REPORT ==="
+        PRINT "Total Records:    " & total_records
+        PRINT "Successfully Processed: " & processed_records
+        PRINT "Failed/Invalid:   " & failed_records
+        PRINT "========================\n"
+    END PROCEDURE
+
+    PROCEDURE WriteSummaryLog(logfile, message)
+        OPEN OUTPUT log_channel USING logfile
+        PRINT TO log_channel "[SUMMARY] " & message
+        CLOSE log_channel
+    END PROCEDURE
+
+END

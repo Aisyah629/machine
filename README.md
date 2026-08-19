@@ -435,3 +435,5 @@ MIT License
 - Created/Updated module: `realtime_audio_synthesis_tool` (See `realtime_audio_synthesis_tool/README.md` for details)
 
 - Created/Updated module: `chill_advanced_symbolic_tool` (See `chill_advanced_symbolic_tool/README.md` for details)
+
+- Created/Updated module: `simple_interactive_diagnostic_tool` (See `simple_interactive_diagnostic_tool/README.md` for details)

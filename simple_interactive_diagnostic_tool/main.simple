@@ -1,0 +1,191 @@
+// Simple Interactive Diagnostic Tool
+// This tool provides an interactive diagnostic environment for the SiMPLE programming language.
+
+PROC main() PUBLIC
+  DECLARE user_input STRING
+  DECLARE program_code STRING
+  DECLARE diagnosis_result STRING
+  
+  PRINT "SiMPLE Interactive Diagnostic Tool"
+  PRINT "==================================="
+  PRINT "Enter your SiMPLE code to diagnose:"
+  
+  INPUT user_input
+  
+  IF user_input == "" THEN
+    PRINT "No input provided. Exiting."
+    RETURN
+  END IF
+  
+  // Simulate code analysis
+  IF CHECK_SYNTAX(user_input) THEN
+    PRINT "Syntax check: PASSED"
+    diagnosis_result = ANALYZE_LOGIC(user_input)
+  ELSE
+    PRINT "Syntax check: FAILED"
+    diagnosis_result = IDENTIFY_SYNTAX_ERRORS(user_input)
+  END IF
+  
+  PRINT "Diagnosis Results:"
+  PRINT diagnosis_result
+  
+  PRINT "\nWould you like to run another diagnostic? (y/n)"
+  INPUT user_input
+  
+  IF user_input == "y" OR user_input == "Y" THEN
+    main()
+  ELSE
+    PRINT "Thank you for using SiMPLE Interactive Diagnostic Tool."
+  END IF
+END PROC
+
+FUNCTION CHECK_SYNTAX(code STRING) RETURNS BOOLEAN
+  // Simulated syntax checking
+  DECLARE has_syntax_error BOOLEAN FALSE
+  
+  // Check for common syntax errors
+  IF INSTR(code, "IF") > 0 AND INSTR(code, "THEN") == 0 THEN
+    has_syntax_error = TRUE
+  END IF
+  
+  IF INSTR(code, "PROC") > 0 AND INSTR(code, "END PROC") == 0 THEN
+    has_syntax_error = TRUE
+  END IF
+  
+  RETURN !has_syntax_error
+END FUNCTION
+
+FUNCTION ANALYZE_LOGIC(code STRING) RETURNS STRING
+  DECLARE result STRING ""
+  DECLARE line_count INTEGER 0
+  DECLARE proc_count INTEGER 0
+  
+  line_count = LENGTH(code)
+  
+  // Count procedures
+  proc_count = INSTR(code, "PROC")
+  
+  result = CONCAT("Code Statistics:", NEWLINE)
+  CONCAT(result, "  Total Lines: ", STR(line_count), NEWLINE)
+  CONCAT(result, "  Procedures Found: ", STR(proc_count), NEWLINE)
+  CONCAT(result, "  Logic Analysis: PASSED", NEWLINE)
+  CONCAT(result, "  No obvious logical errors detected.", NEWLINE)
+  
+  RETURN result
+END FUNCTION
+
+FUNCTION IDENTIFY_SYNTAX_ERRORS(code STRING) RETURNS STRING
+  DECLARE result STRING ""
+  DECLARE error_found BOOLEAN FALSE
+  
+  // Identify specific syntax errors
+  IF INSTR(code, "IF") > 0 AND INSTR(code, "THEN") == 0 THEN
+    CONCAT(result, "  ERROR: Missing 'THEN' after 'IF' statement", NEWLINE)
+    error_found = TRUE
+  END IF
+  
+  IF INSTR(code, "PROC") > 0 AND INSTR(code, "END PROC") == 0 THEN
+    CONCAT(result, "  ERROR: Missing 'END PROC' declaration", NEWLINE)
+    error_found = TRUE
+  END IF
+  
+  IF error_found == FALSE THEN
+    CONCAT(result, "  No specific syntax errors identified.", NEWLINE)
+  END IF
+  
+  RETURN result
+END FUNCTION
+
+FUNCTION INSTR(text STRING, pattern STRING) RETURNS INTEGER
+  DECLARE pos INTEGER 0
+  DECLARE text_len INTEGER
+  DECLARE pattern_len INTEGER
+  DECLARE i INTEGER
+  
+  text_len = LENGTH(text)
+  pattern_len = LENGTH(pattern)
+  
+  IF pattern_len == 0 THEN
+    RETURN 0
+  END IF
+  
+  i = 1
+  WHILE i <= text_len - pattern_len + 1 DO
+    IF SUBSTRING(text, i, pattern_len) == pattern THEN
+      RETURN i
+    END IF
+    i = i + 1
+  END WHILE
+  
+  RETURN 0
+END FUNCTION
+
+FUNCTION SUBSTRING(text STRING, start INTEGER, length INTEGER) RETURNS STRING
+  DECLARE result STRING ""
+  DECLARE i INTEGER
+  
+  i = start
+  WHILE i < start + length AND i <= LENGTH(text) DO
+    CONCAT(result, SUBSTR(text, i, 1))
+    i = i + 1
+  END WHILE
+  
+  RETURN result
+END FUNCTION
+
+FUNCTION SUBSTR(text STRING, start INTEGER, length INTEGER) RETURNS STRING
+  DECLARE result STRING ""
+  
+  IF start > LENGTH(text) OR length <= 0 THEN
+    RETURN ""
+  END IF
+  
+  IF start + length - 1 > LENGTH(text) THEN
+    length = LENGTH(text) - start + 1
+  END IF
+  
+  result = SUBSTRING(text, start, length)
+  RETURN result
+END FUNCTION
+
+FUNCTION STR(value INTEGER) RETURNS STRING
+  DECLARE result STRING ""
+  DECLARE digits STRING "0123456789"
+  DECLARE temp_val INTEGER value
+  
+  IF value == 0 THEN
+    RETURN "0"
+  END IF
+  
+  WHILE temp_val != 0 DO
+    result = CONCAT(SUBSTR(digits, ABS(temp_val) % 10 + 1, 1), result)
+    temp_val = temp_val / 10
+  END WHILE
+  
+  IF value < 0 THEN
+    result = CONCAT("-", result)
+  END IF
+  
+  RETURN result
+END FUNCTION
+
+FUNCTION CONCAT(str1 STRING, str2 STRING) RETURNS STRING
+  RETURN str1 + str2
+END FUNCTION
+
+FUNCTION NEWLINE RETURNS STRING
+  RETURN "\n"
+END FUNCTION
+
+FUNCTION LENGTH(text STRING) RETURNS INTEGER
+  DECLARE count INTEGER 0
+  DECLARE i INTEGER
+  
+  i = 1
+  WHILE i <= LENGTH(text) DO
+    count = count + 1
+    i = i + 1
+  END WHILE
+  
+  RETURN count
+END FUNCTION

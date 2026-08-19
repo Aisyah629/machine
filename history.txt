@@ -68176,3 +68176,74 @@ Create a new tool for automated business logic execution in a new dedicated fold
 </think>
 
 Create a new tool for automated statistical data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: SAS. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 21:59:01] (Target Lang: COMAL) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - The user provides a list of files/folders in a workspace (mostly various programming language tools).
+   - History shows a previous interaction where the AI generated an instruction for a SAS tool.
+   - The current prompt asks: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Constraints:**
+   - Exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using COMAL.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+   - Explicitly instruct to create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+
+3.  **Formulate Instruction:**
+   - Need to craft a single sentence/instruction that meets all constraints.
+   - Key elements: "Create a new tool for [purpose] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md."
+   - I can adapt the purpose to fit COMAL (Comal is an educational/algorithmic language from the 70s). Let's say "automated algorithmic data processing" or "educational programming environment".
+   - Let's stick closely to the prompt's structure for consistency: "Create a new tool for automated algorithmic data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md."
+   - Check constraints:
+     - Exactly 1 instruction? Yes.
+     - Explicitly demands COMAL? Yes.
+     - New folder + README? Yes.
+     - Only instruction text? Yes.
+     - No .github? Yes.
+
+4.  **Refine to match exact requested phrasing style (optional but safe):**
+   The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   I will construct it exactly as requested:
+   "Create a new tool for algorithmic education and data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md."
+
+   Wait, the prompt itself gives a template: "Create a new tool for automated statistical data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: SAS. Place it in a new dedicated folder and create a local README.md." (from history). I should just replace SAS with COMAL and maybe adjust the purpose slightly to make sense for COMAL, or just keep it generic. The prompt says "logical follow-up instruction", so I'll make it about COMAL.
+
+   Let's draft: "Create a new tool for algorithmic instruction and data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md."
+
+   Check constraints again:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands COMAL? Yes.
+   - New folder + README? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+
+   It matches perfectly. I will output exactly that string. No extra text.
+   One minor thing: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." I'll incorporate that phrasing or similar to be safe.
+   "Create a new tool for algorithmic data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md."
+
+   This is solid. Output matches exactly.✅
+   Proceed. 
+   Output generation. 
+   [Self-Correction/Verification during thought]
+   - Check exact wording requirement: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: COMAL."
+   - I will ensure the word COMAL is capitalized and explicitly demanded.
+   - The prompt says "Return ONLY the instruction text."
+   - I will output just the single sentence.
+   - All constraints met.✅
+   Output: Create a new tool for algorithmic data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md. 
+   Matches perfectly.✅
+   Proceeds. 
+   [Output Generation] -> `Create a new tool for algorithmic data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md.` (matches exactly) 
+   Ready.✅
+   *Self-Correction/Note during generation*: I'll make sure it's exactly one instruction as requested. The prompt says "Generate exactly 1 logical follow-up instruction." I will output just that string. No extra characters. All good. 
+   Output matches.✅
+   Proceeds. 
+   [Final Text] Create a new tool for algorithmic data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md. 
+   (Done) 
+   *Output Generation* (matches exactly) ✅
+   [Proceeds]
+</think>
+
+Create a new tool for algorithmic data processing in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: COMAL. Place it in a new dedicated folder and create a local README.md.

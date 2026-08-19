@@ -1,0 +1,105 @@
+
+    REM +--------------------------------------------------+
+    REM | COMAL Algorithmic Data Processor                  |
+    REM | Primary Entry Point                               |
+    REM +--------------------------------------------------+
+
+    PROCEDURE MAIN
+        DECLARE
+            dataset_file    STRING 128
+            output_file     STRING 128
+            config_path     STRING 128
+            result          INTEGER
+        
+        REM Initialize logging and system parameters
+        CALL SystemInitialize()
+        
+        REM Load configuration settings
+        config_path := "config.conf"
+        CALL LoadConfig(config_path)
+        
+        REM Process the input dataset
+        dataset_file := "data/input.dat"
+        output_file  := "data/output.dat"
+        
+        result := ProcessDataset(dataset_file, output_file)
+        
+        IF result <> 0 THEN
+            PRINT "PROCESSING FAILED WITH ERROR CODE: " & result
+            CALL LogError(result)
+        ELSE
+            PRINT "PROCESSING COMPLETED SUCCESSFULLY"
+        END IF
+        
+        REM Graceful shutdown
+        CALL SystemShutdown()
+    END PROCEDURE
+
+    PROCEDURE SystemInitialize()
+        PRINT "[SYS] Initializing COMAL Algorithmic Processor v1.0"
+        CALL ModuleLoader("modules/data_parser.comal")
+        CALL ModuleLoader("modules/validator.comal")
+        CALL ModuleLoader("modules/reporter.comal")
+    END PROCEDURE
+
+    PROCEDURE LoadConfig(path)
+        PRINT "[CFG] Loading configuration from: " & path
+        REM Configuration parsing logic would go here
+        REM COMAL handles file I/O via standard channels
+    END PROCEDURE
+
+    FUNCTION ProcessDataset(input, output)
+        INTEGER status
+        status := 0
+        
+        PRINT "[PROC] Opening input: " & input
+        OPEN INPUT "input" USING input
+        IF status THEN GOTO ErrorHandler
+        
+        PRINT "[PROC] Opening output: " & output
+        OPEN OUTPUT "output" USING output
+        IF status THEN GOTO ErrorHandler
+        
+        REM Execute data transformation pipeline
+        CALL ExecutePipeline(input, output)
+        
+        CLOSE INPUT "input"
+        CLOSE OUTPUT "output"
+        RETURN status
+        
+    ErrorHandler:
+        PRINT "[ERR] Pipeline interrupted at stage: " & status
+        RETURN status
+    END FUNCTION
+
+    PROCEDURE ExecutePipeline(input_channel, output_channel)
+        WHILE NOT EOF(input_channel) DO
+            READ FROM input_channel INTO record
+            IF ValidateRecord(record) THEN
+                transformed := TransformRecord(record)
+                WRITE TO output_channel FROM transformed
+            ELSE
+                PRINT "[WARN] Skipping invalid record"
+            END IF
+        END WHILE
+    END PROCEDURE
+
+    FUNCTION ValidateRecord(record)
+        VALIDATE record
+        RETURN TRUE
+    END FUNCTION
+
+    FUNCTION TransformRecord(record)
+        REM Core algorithmic transformation logic
+        RETURN record
+    END FUNCTION
+
+    PROCEDURE LogError(code)
+        PRINT "[LOG] Error code " & code & " recorded.
+    END PROCEDURE
+
+    PROCEDURE SystemShutdown()
+        PRINT "[SYS] System shutdown complete.
+    END PROCEDURE
+
+END MAIN

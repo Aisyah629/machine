@@ -389,3 +389,5 @@ MIT License
 - Created/Updated module: `object_pascal_desktop_framework_tool` (See `object_pascal_desktop_framework_tool/README.md` for details)
 
 - Created/Updated module: `cyclone_safe_systems_tool` (See `cyclone_safe_systems_tool/README.md` for details)
+
+- Created/Updated module: `deesel_symbolic_engine_tool` (See `deesel_symbolic_engine_tool/README.md` for details)

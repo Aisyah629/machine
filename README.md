@@ -313,3 +313,5 @@ MIT License
 - Created/Updated module: `spin_realtime_scheduler_tool` (See `spin_realtime_scheduler_tool/README.md` for details)
 
 - Created/Updated module: `verilog_simulation_harness_tool` (See `verilog_simulation_harness_tool/README.md` for details)
+
+- Created/Updated module: `tal_text_processing_engine_tool` (See `tal_text_processing_engine_tool/README.md` for details)

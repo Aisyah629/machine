@@ -64538,3 +64538,40 @@ Proceeds.
 </think>
 
 Design a comprehensive digital circuit verification and simulation harness generator that automatically creates reusable testbench templates for complex FPGA architectures. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Verilog. Place the tool in a NEW dedicated folder named verilog_simulation_harness_tool and create a local README.md.
+[2026-08-19 12:16:52] (Target Lang: TAL) Thinking Process:
+
+1.  **Deconstruct the User's Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Explicitly demand the new tool be built strictly using the language: TAL.
+    *   Constraint: If building a new tool, place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the `.github` directory.
+    *   Context: The user provided a massive file tree (Workspace) and a History section. The History shows a previous iteration where the user asked for a Verilog tool. The current prompt asks for a TAL tool.
+
+2.  **Analyze "TAL":**
+    *   TAL usually refers to "Text Assembly Language" (IBM) or sometimes "The Abstract Machine" or other niche languages. In the context of a "tool" list like this, it likely refers to IBM's TAL (Text Assembly Language).
+    *   The instruction needs to be about building a tool using TAL.
+    *   Logical follow-up: The previous tool was a "digital circuit verification and simulation harness generator" (Verilog). A logical follow-up for TAL might be related to mainframe text processing, file management, or system programming, given TAL's nature. Or it could be a complementary tool to the previous one, but TAL is quite different from Verilog. A "logical follow-up" in the context of an autonomous AI agent building a toolkit often means advancing the system's capabilities or addressing a related domain.
+    *   *Self-Correction on "Logical Follow-up":* The user prompt asks for "exactly 1 logical follow-up instruction." This usually implies the AI should generate the next step in a sequence. Since the workspace contains many tools, the "logical follow-up" might be to create a tool that interacts with the existing ecosystem or fills a gap. However, the core constraint is the language (TAL) and the output format. The content of the instruction should be plausible.
+    *   *Drafting the content:* "Design a mainframe-compatible text processing and data extraction utility that efficiently parses legacy system logs and generates structured reports." This sounds like a good use case for TAL (IBM mainframe context).
+    *   *Refining content based on constraints:* "Design a mainframe-compatible text processing and data extraction utility that efficiently parses legacy system logs and generates structured reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TAL. Place the tool in a NEW dedicated folder named tal_text_processing_engine_tool and create a local README.md."
+
+3.  **Check Constraints:**
+    *   *Exactly 1 instruction?* Yes, the text is a single command.
+    *   *Explicitly demand TAL?* Yes ("STRICTLY using this exact programming language: TAL").
+    *   *New dedicated folder?* Yes ("NEW dedicated folder named tal_text_processing_engine_tool").
+    *   *Local README.md?* Yes ("create a local README.md").
+    *   *Return ONLY instruction text?* Yes.
+    *   *NEVER target .github?* Yes, the instruction doesn't mention `.github`, and the folder name is safe.
+
+4.  **Final Polish (Mental Representation of Output):**
+    *   Text: `Design a robust mainframe text processing and data extraction engine that automatically parses legacy system logs and generates structured analytical reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TAL. Place the tool in a NEW dedicated folder named tal_text_processing_engine_tool and create a local README.md.`
+    *   *Review against "Logical Follow-up":* The previous tool was Verilog (FPGA/Circuit). TAL is Mainframe. Is this logical? In the context of building a diverse set of programming language tools (as seen in the workspace list), adding a Mainframe tool is a logical expansion of the language support. The instruction itself is coherent.
+
+5.  **Final Output Construction:**
+    *   Result: `Design a robust mainframe text processing and data extraction engine that automatically parses legacy system logs and generates structured analytical reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TAL. Place the tool in a NEW dedicated folder named tal_text_processing_engine_tool and create a local README.md.`
+
+This matches all constraints.
+</think>
+
+Design a robust mainframe text processing and data extraction engine that automatically parses legacy system logs and generates structured analytical reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TAL. Place the tool in a NEW dedicated folder named tal_text_processing_engine_tool and create a local README.md.

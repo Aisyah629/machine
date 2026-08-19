@@ -65705,3 +65705,55 @@ Design a high-performance asynchronous event processing engine capable of handli
 </think>
 
 Design a secure API gateway and rate-limiting service for managing external e-commerce integrations, implementing token-based authentication, request throttling, and detailed usage analytics. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MIVA Script. Place the tool in a NEW dedicated folder named miva_api_gateway_tool and create a local README.md.
+[2026-08-19 14:58:20] (Target Lang: dBase) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: The instruction must demand the new tool be built strictly using `dBase`.
+    *   Constraint 2: If building a new tool, instruct to place it in a NEW dedicated folder and create a local `README.md`.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the `.github` directory.
+
+2.  **Analyze the Context:**
+    *   The workspace contains many tool directories, mostly with `README.md` and a main file (e.g., `main.ext`).
+    *   There is already a `dBase` related context? Let's check the list.
+    *   Scanning for "dBase" or "dbf" or "dbase":
+        *   `./data_extraction_tool`... no.
+        *   `./dbf_tool`? No.
+        *   I don't see `dBase` in the provided file list. There is `dataflex`, `datalog`, `dcl`, `delphi`, `dibol`, `drakon`, etc.
+        *   Result: `dBase` seems to be a new language tool to be created, or at least not explicitly present as a main tool in the list. This supports the instruction to create a "NEW dedicated folder".
+
+3.  **Draft the Instruction:**
+    *   *Functionality:* dBase is often associated with database management, data entry forms, reporting, legacy systems, and perhaps inventory or record-keeping.
+    *   *Idea:* A robust database administration and reporting utility, or a legacy data migration and validation tool.
+    *   *Draft 1:* Create a comprehensive database administration and legacy data migration tool capable of handling `.dbf` files, performing schema validation, generating CSV exports, and maintaining data integrity checks. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: dBase. Place the tool in a NEW dedicated folder named dbase_admin_tool and create a local README.md.
+    *   *Refinement:* Check constraints.
+        *   "Create..." -> Implies building a new tool.
+        *   "MUST explicitly demand... dBase" -> Included.
+        *   "NEW dedicated folder... dbase_admin_tool" -> Included.
+        *   "local README.md" -> Included.
+        *   "NEVER target .github" -> The instruction text doesn't mention `.github`. Good.
+        *   "Return ONLY the instruction text" -> Output should be just the string.
+
+4.  **Final Polish (Mental Representation):**
+    *   "Design a robust database administration and legacy data migration utility capable of parsing and validating `.dbf` files, executing complex relational queries, generating comprehensive statistical reports, and ensuring data integrity across legacy systems. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: dBase. Place the tool in a NEW dedicated folder named dbase_admin_tool and create a local README.md."
+
+5.  **Review against "Logical Follow-up":**
+    *   The workspace has many tools. A `dbase_admin_tool` fits the theme of specialized programming tools.
+    *   dBase is a distinct language. Asking for a tool in dBase makes sense.
+    *   The structure matches the required format.
+
+6.  **Final Output Construction:**
+    *   Text: "Design a robust database administration and legacy data migration utility capable of parsing and validating `.dbf` files, executing complex relational queries, generating comprehensive statistical reports, and ensuring data integrity across legacy systems. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: dBase. Place the tool in a NEW dedicated folder named dbase_admin_tool and create a local README.md."
+
+7.  **Final Check:**
+    *   Contains "dBase"? Yes.
+    *   Contains "NEW dedicated folder"? Yes.
+    *   Contains "local README.md"? Yes.
+    *   Contains folder name? Yes (`dbase_admin_tool`).
+    *   No `.github`? Yes.
+    *   Only instruction text? Yes.
+    *   Result looks solid.
+</think>
+
+Design a robust database administration and legacy data migration utility capable of parsing and validating `.dbf` files, executing complex relational queries, generating comprehensive statistical reports, and ensuring data integrity across legacy systems. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: dBase. Place the tool in a NEW dedicated folder named dbase_admin_tool and create a local README.md.

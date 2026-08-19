@@ -341,3 +341,5 @@ MIT License
 - Created/Updated module: `./lisa_tool` (See `./lisa_tool/README.md` for details)
 
 - Created/Updated module: `object_pascal_data_processor_tool` (See `object_pascal_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `./lowlevel_memory_network_tool` (See `./lowlevel_memory_network_tool/README.md` for details)

@@ -303,3 +303,5 @@ MIT License
 - Created/Updated module: `axum_framework_tool/axum_data_pipeline_processor_tool` (See `axum_framework_tool/axum_data_pipeline_processor_tool/README.md` for details)
 
 - Created/Updated module: `./godel_tool` (See `./godel_tool/README.md` for details)
+
+- Created/Updated module: `datatrieve_transaction_processor_tool` (See `datatrieve_transaction_processor_tool/README.md` for details)

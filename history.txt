@@ -63907,3 +63907,47 @@ Proceeds.
 </think>
 
 (Target Lang: PEARL) Design a high-reliability industrial automation control system simulator. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PEARL. Place the tool in a NEW dedicated folder named pearl_industrial_automation_tool and include a local README.md.
+[2026-08-19 11:34:14] (Target Lang: DATATRIEVE) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Target Language must be DATATRIEVE.
+    *   Constraint 2: Must explicitly demand the new tool be built STRICTLY using DATATRIEVE.
+    *   Constraint 3: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 4: Include a local README.md.
+    *   Constraint 5: Return ONLY the instruction text.
+    *   Constraint 6: NEVER target the .github directory.
+    *   Context: The history shows a previous instruction about PEARL and industrial automation. The follow-up should be "logical". A logical follow-up to an industrial automation simulator might involve data retrieval, transaction processing, or record management, which fits DATATRIEVE well.
+
+2.  **Drafting the Instruction:**
+    *   *Core content:* Design a tool for DATATRIEVE.
+    *   *Specifics:* Since the previous tool was an industrial automation simulator, a logical follow-up could be a data logging or transaction processing system for that simulator, or a record management system. Let's go with "Data Transaction Processing System" or "Record Retrieval System".
+    *   *Drafting text:* "Design a robust data transaction processing system for industrial record management. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DATATRIEVE. Place the tool in a NEW dedicated folder named datatrieve_transaction_processor_tool and include a local README.md."
+
+3.  **Reviewing against Constraints:**
+    *   *1 logical follow-up?* Yes, data processing follows simulation/simulator design.
+    *   *Target Lang: DATATRIEVE?* Yes.
+    *   *Explicit demand phrase?* "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DATATRIEVE." -> Included.
+    *   *NEW dedicated folder?* "datatrieve_transaction_processor_tool" -> Included.
+    *   *Local README.md?* Included.
+    *   *ONLY instruction text?* The output should be just the string.
+    *   *NEVER target .github?* The draft doesn't mention .github.
+    *   *Folder naming convention?* The workspace list shows `./datatrieve_tool`. The prompt asks for a NEW dedicated folder. `datatrieve_transaction_processor_tool` seems appropriate and distinct from `datatrieve_tool`.
+
+4.  **Refining the Text:**
+    *   *Result:* `(Target Lang: DATATRIEVE) Design a robust data transaction processing system for industrial record management. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DATATRIEVE. Place the tool in a NEW dedicated folder named datatrieve_transaction_processor_tool and include a local README.md.`
+    *   *Check exact phrase:* "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DATATRIEVE." -> Matches.
+    *   *Check folder name:* `datatrieve_transaction_processor_tool` is a valid folder name structure based on the workspace examples (e.g., `./datatrieve_tool`). It's new.
+    *   *Check README:* "include a local README.md" -> Included.
+
+5.  **Final Polish:**
+    *   Output: `(Target Lang: DATATRIEVE) Design a robust data transaction processing system for industrial record management. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DATATRIEVE. Place the tool in a NEW dedicated folder named datatrieve_transaction_processor_tool and include a local README.md.`
+
+6.  **Final Output Construction:**
+    *   The user asked for "Return ONLY the instruction text."
+    *   So the response is just the string derived above.
+
+`(Target Lang: DATATRIEVE) Design a robust data transaction processing system for industrial record management. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DATATRIEVE. Place the tool in a NEW dedicated folder named datatrieve_transaction_processor_tool and include a local README.md.`
+</think>
+
+(Target Lang: DATATRIEVE) Design a robust data transaction processing system for industrial record management. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DATATRIEVE. Place the tool in a NEW dedicated folder named datatrieve_transaction_processor_tool and include a local README.md.

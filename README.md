@@ -403,3 +403,5 @@ MIT License
 - Created/Updated module: `./miis_data_processing_tool` (See `./miis_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `stackless_python_stream_processor_tool` (See `stackless_python_stream_processor_tool/README.md` for details)
+
+- Created/Updated module: `max_multimedia_synthesis_tool` (See `max_multimedia_synthesis_tool/README.md` for details)

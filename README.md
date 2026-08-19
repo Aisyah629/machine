@@ -413,3 +413,5 @@ MIT License
 - Created/Updated module: `ipl_symbolic_reasoning_tool` (See `ipl_symbolic_reasoning_tool/README.md` for details)
 
 - Created/Updated module: `executable_uml_syntax_validator_tool` (See `executable_uml_syntax_validator_tool/README.md` for details)
+
+- Created/Updated module: `peoplecode_business_logic_tool` (See `peoplecode_business_logic_tool/README.md` for details)

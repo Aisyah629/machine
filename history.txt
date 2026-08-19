@@ -68051,3 +68051,62 @@ Create a new tool for data validation in a new dedicated folder. You MUST build 
 </think>
 
 Create a new tool for automated syntax validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: Executable UML. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 21:56:54] (Target Lang: PeopleCode) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a large workspace file tree listing many tools and directories.
+   - **History:** Shows a previous interaction where I generated an instruction for an "Executable UML" tool.
+   - **Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PeopleCode. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - Must explicitly demand the tool be built STRICTLY using "PeopleCode".
+     - If building a new tool, must instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Identify Key Requirements:**
+   - Single instruction.
+   - Language: PeopleCode (strictly).
+   - Location: New dedicated folder.
+   - Include: Local README.md.
+   - Output: Only the instruction string.
+   - Avoid: .github directory.
+
+3.  **Draft Construction:**
+   "Create a new tool for automated data validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: PeopleCode. Place it in a new dedicated folder and create a local README.md."
+   - Check constraints: Exactly 1 instruction? Yes, it's a single directive block (can be multiple sentences as per example, but logically one instruction).
+   - Explicitly demands PeopleCode? Yes.
+   - New dedicated folder? Yes.
+   - Local README.md? Yes.
+   - Only instruction text? Yes.
+   - No .github? Yes.
+
+   Let's refine it to match the exact style requested:
+   "Create a new tool for automated data validation in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: PeopleCode. Place it in a new dedicated folder and create a local README.md."
+
+   Wait, the prompt says "Generate exactly 1 logical follow-up instruction." I'll make it a single, clear directive. The example in the history had three sentences but was considered one logical instruction. I'll stick to that format.
+
+   Let's verify the exact wording constraint: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PeopleCode. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+
+   Draft: Create a new tool for automated business logic execution in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: PeopleCode. Place it in a new dedicated folder and create a local README.md.
+
+   Checks:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands PeopleCode? Yes.
+   - New folder + README? Yes.
+   - Only instruction text? Yes.
+   - No .github? Yes.
+
+   All constraints met. I will output exactly the drafted string. No extra text.
+   One minor thing: The prompt says "Generate exactly 1 logical follow-up instruction." I will ensure it's strictly one paragraph/block.
+   Final check of the prompt: "Return ONLY the instruction text. NEVER target the .github directory."
+   Output matches perfectly. Proceeds. 
+   Output: Create a new tool for automated business logic execution in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: PeopleCode. Place it in a new dedicated folder and create a local README.md.✅
+   (Self-Correction/Refinement during thought: I'll make it slightly more precise to match the exact phrasing requested if needed, but the draft is fine. I'll just output it exactly.)
+   Ready. 
+   Output Generation.✅
+   `Create a new tool for automated business logic execution in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: PeopleCode. Place it in a new dedicated folder and create a local README.md.` -> matches perfectly.
+   Proceeds.✅
+</think>
+
+Create a new tool for automated business logic execution in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: PeopleCode. Place it in a new dedicated folder and create a local README.md.

@@ -1,0 +1,27 @@
+/**
+ * default.pr - Default Business Rules Configuration
+ * 
+ * This file defines the default rule sets for the engine.
+ * Each rule is structured as a PeopleCode conditional block.
+ */
+
+RULE "VALIDATE_DATA_INTEGRITY"
+   WHEN (field.status = "OPEN")
+   THEN
+      IF field.amount < 0 THEN
+         ERROR "Negative amounts are not allowed";
+      END-IF;
+   END-RULE;
+
+RULE "PROCESS_APPROVAL"
+   WHEN (field.priority = "HIGH")
+   THEN
+      SET field.approver = "MANAGER_LEVEL_2";
+      SET field.workflow_step = "APPROVAL_QUEUE";
+   END-RULE;
+
+RULE "LOG_TRANSACTION"
+   ALWAYS
+   THEN
+      CALL log_transaction(&process_id, &transaction_data);
+   END-RULE;

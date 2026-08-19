@@ -1,0 +1,67 @@
+// Cyclone Safe Systems Programming Utility
+// Strictly written in Cyclone for memory-safe low-level operations
+
+#include "cyclone/cyclone.h"
+#include "cyclone/boundptr.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+// Safe pointer wrapper for system memory operations
+typedef struct {
+    char* data;
+    size_t size;
+} SafeBuffer;
+
+// Initialize a safe memory buffer with guaranteed bounds
+SafeBuffer* init_safe_buffer(size_t size) {
+    if (size == 0) return NULL;
+    SafeBuffer* buf = (SafeBuffer*)malloc(sizeof(SafeBuffer));
+    if (buf == NULL) return NULL;
+    buf->data = newptr char[size];
+    buf->size = size;
+    return buf;
+}
+
+// Safely read a byte from the buffer with bounds checking
+char safe_read(SafeBuffer* buf, size_t index) {
+    if (buf == NULL || buf->data == NULL || index >= buf->size) {
+        return '\0'; // Safe null return on out-of-bounds
+    }
+    return buf->data[index];
+}
+
+// Safely write a byte to the buffer with bounds checking
+void safe_write(SafeBuffer* buf, size_t index, char value) {
+    if (buf == NULL || buf->data == NULL || index >= buf->size) {
+        return; // Silent fail on out-of-bounds to prevent corruption
+    }
+    buf->data[index] = value;
+}
+
+// Demonstrate safe systems memory handling
+int main() {
+    size_t system_size = 64;
+    SafeBuffer* sys_mem = init_safe_buffer(system_size);
+    
+    if (sys_mem == NULL) {
+        printf("Failed to allocate safe system memory\n");
+        return 1;
+    }
+    
+    // Perform safe operations within Cyclone's bounds-checked environment
+    safe_write(sys_mem, 0, 'S');
+    safe_write(sys_mem, 1, 'A');
+    safe_write(sys_mem, 2, 'F');
+    safe_write(sys_mem, 3, 'E');
+    
+    printf("System Memory Test: ");
+    for (size_t i = 0; i < 4; i++) {
+        printf("%c", safe_read(sys_mem, i));
+    }
+    printf("\n");
+    
+    // Cyclone automatically handles cleanup for stack-allocated and managed memory
+    free(sys_mem);
+    
+    return 0;
+}

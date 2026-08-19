@@ -66232,3 +66232,45 @@ Design a high-performance concurrent data processing pipeline capable of handlin
 </think>
 
 Create a new utility for data processing in a new folder. You MUST build it STRICTLY using the exact programming language: UNITY. Include a local README.md.
+[2026-08-19 19:52:30] (Target Lang: Scilab) Thinking process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: New tool must be built STRICTLY using the exact programming language: Scilab.
+    *   Constraint 2: If building a new tool, place it in a NEW dedicated folder.
+    *   Constraint 3: Create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+    *   Context: The user provided a workspace listing that includes various tools, including `scilab_tool` and `scilab_data_tool`. The history shows a previous instruction about "UNITY", which was generated. Now I need to generate the next one based on the constraints.
+
+2.  **Drafting the Instruction:**
+    *   *Keywords to include:* Scilab, new utility/tool, data processing (or similar logical task based on context, though the constraint doesn't strictly specify the function, "data processing" is a safe logical follow-up or just "new utility"), NEW dedicated folder, README.md.
+    *   *Draft 1:* Create a new utility for data processing in a new folder. You MUST build it STRICTLY using the exact programming language: Scilab. Include a local README.md.
+    *   *Refinement:* The prompt asks to "explicitly demand... strictly using... Scilab". It also asks to "explicitly instruct to place it in a NEW dedicated folder".
+    *   *Check against constraints:*
+        *   "Create a new utility...": Implies new tool.
+        *   "...in a new folder": Matches "NEW dedicated folder".
+        *   "STRICTLY using... Scilab": Matches language constraint.
+        *   "Include a local README.md": Matches documentation constraint.
+        *   "Return ONLY the instruction text": Output format constraint.
+        *   "NEVER target .github": Content constraint (instruction text doesn't mention .github).
+
+3.  **Final Polish (Mental Representation of Output):**
+    *   Result: `Create a new utility for data processing in a new folder. You MUST build it STRICTLY using the exact programming language: Scilab. Include a local README.md.`
+    *   This looks solid. It follows the pattern of the history example (`Create a new utility...`) but swaps the language as requested and includes all structural requirements.
+
+4.  **Final Output Construction:**
+    *   Text: `Create a new utility for data processing in a new folder. You MUST build it STRICTLY using the exact programming language: Scilab. Include a local README.md.`
+
+5.  **Verification:**
+    *   Only instruction text? Yes.
+    *   Scilab mentioned? Yes.
+    *   New folder mentioned? Yes.
+    *   README.md mentioned? Yes.
+    *   No .github? Yes.
+    *   Exactly 1 instruction? Yes.
+
+This matches all criteria.
+</think>
+
+Create a new utility for data processing in a new folder. You MUST build it STRICTLY using the exact programming language: Scilab. Include a local README.md.

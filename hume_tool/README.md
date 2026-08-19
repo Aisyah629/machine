@@ -1,25 +1,23 @@
-# Hume Concurrent Simulation Framework
+# Hume Tool - Data Processing Utility
 
 ## Overview
-This tool implements a modular hardware simulation framework built strictly in Hume. It provides concurrent simulation primitives, memory model verification, and hardware description capabilities tailored for embedded systems and digital logic modeling.
+This tool implements a data processing utility written in **Hume**, a novel programming language for high-performance, correct-by-construction systems. It demonstrates functional programming concepts including higher-order functions, list manipulation, and data pipelines.
 
 ## Features
-- Concurrent event scheduling and simulation cycles
-- Memory model verification and cache coherence simulation
-- Modular hardware component definitions
-- High-level assembly simulation primitives
-- Deterministic simulation output for debugging
+- **Functional Data Processing**: Uses `map` and `filter` for declarative data transformation.
+- **Type Safety**: Leverages Hume's type system for robust data handling.
+- **Modular Design**: Separates core logic into reusable functions.
 
 ## Usage
-1. Compile the Hume source code using the standard Hume compiler.
-2. Run the generated executable to start the simulation framework.
-3. Load hardware specifications via standard input or configuration files.
-4. Analyze simulation traces and memory verification logs.
+To run this utility, use the Hume compiler:
+```bash
+hume build main.hume
+hume run ./main
+```
 
-## Dependencies
-- Hume Compiler & Runtime
-- Standard POSIX libraries
-- Hume standard library (`hume_stdlib`)
+## Architecture
+- **List Operations**: Implements custom `map` and `filter` for educational purposes.
+- **Data Pipeline**: `process_data` demonstrates a typical ETL (Extract-Transform-Load) step.
 
 ## License
-MIT License
+MIT

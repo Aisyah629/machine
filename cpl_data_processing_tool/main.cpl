@@ -1,0 +1,44 @@
+// CPL Data Processing Tool
+// Language: CPL (Combined Programming Language)
+
+BEGIN
+    // Define data structures for processing
+    DECLARE records PROCEDURE(100)
+    DECLARE data_stream TABLE OF STRING
+    DECLARE process_counter FIXED BINARY INIT(0)
+
+    // Initialize data stream with sample data
+    data_stream(1) = 'Record_001|Data_A|100'
+    data_stream(2) = 'Record_002|Data_B|200'
+    data_stream(3) = 'Record_003|Data_C|300'
+
+    // Process each record
+    DECLARE index FIXED BINARY
+    FOR index = 1 TO LENGTH(data_stream) DO
+        IF LENGTH(data_stream(index)) > 0 THEN
+            CALL process_record(data_stream(index))
+            process_counter = process_counter + 1
+        END
+    END
+
+    // Output final count
+    PUT LIST('Total records processed: ' , process_counter)
+
+    PROCEDURE process_record(record STRING)
+        DECLARE parts TABLE OF STRING
+        DECLARE split_point FIXED BINARY
+        DECLARE current_part FIXED BINARY INIT(1)
+
+        // Simple parsing simulation for pipe-delimited data
+        DECLARE key STRING
+        DECLARE value STRING
+        DECLARE count FIXED BINARY
+
+        // Simulate extraction
+        key = SUBSTR(record, 1, 10)
+        value = SUBSTR(record, 12, 10)
+
+        PUT LIST('Processing: ' , key , ' -> ' , value)
+    END process_record
+
+END

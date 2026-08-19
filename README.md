@@ -317,3 +317,5 @@ MIT License
 - Created/Updated module: `tal_text_processing_engine_tool` (See `tal_text_processing_engine_tool/README.md` for details)
 
 - Created/Updated module: `chef_recipe_execution_engine_tool` (See `chef_recipe_execution_engine_tool/README.md` for details)
+
+- Created/Updated module: `gnu_e_tool` (See `gnu_e_tool/README.md` for details)

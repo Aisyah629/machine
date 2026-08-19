@@ -1,259 +1,362 @@
-// GNU E: Concurrent Web Server Framework
-// This implementation provides asynchronous I/O handling,
-// dynamic load balancing, and secure request routing.
+#!/usr/bin/env e
+// GNU E Data Transfer & API Interaction Script
+// This script provides a robust framework for file transfers, HTTP interactions,
+// and data processing in the GNU E environment.
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <sys/types.h>
+#include <sys/stat.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <arpa/inet.h>
-#include <pthread.h>
-#include <ctype.h>
+#include <netdb.h>
+#include <errno.h>
+#include <signal.h>
 
-#define SERVER_PORT 8080
 #define BUFFER_SIZE 4096
-#define MAX_CLIENTS 100
-#define MAX_ROUTES 50
+#define MAX_URL_LENGTH 2048
+#define MAX_FILE_PATH 1024
 
-typedef struct {
-    char method[10];
-    char path[256];
-    char version[20];
-    char headers[4096];
-    char body[8192];
-} HttpRequest;
+// Configuration structure
+struct TransferConfig {
+    char host[MAX_URL_LENGTH];
+    char path[MAX_URL_LENGTH];
+    int port;
+    int timeout;
+    char auth_token[MAX_URL_LENGTH];
+    int verbose;
+};
 
-typedef struct {
+// Logging levels
+enum LogLevel {
+    LOG_ERROR = 0,
+    LOG_WARN = 1,
+    LOG_INFO = 2,
+    LOG_DEBUG = 3
+};
+
+void log_message(LogLevel level, const char *fmt, ...) {
+    const char *level_str;
+    va_list args;
+    
+    switch (level) {
+        case LOG_ERROR:   level_str = "ERROR"; break;
+        case LOG_WARN:    level_str = "WARN"; break;
+        case LOG_INFO:    level_str = "INFO"; break;
+        case LOG_DEBUG:   level_str = "DEBUG"; break;
+        default:          level_str = "UNKNOWN"; break;
+    }
+    
+    printf("[%s] ", level_str);
+    va_start(args, fmt);
+    vprintf(fmt, args);
+    va_end(args);
+    printf("\n");
+}
+
+int parse_url(const char *url, struct TransferConfig *config) {
+    char url_copy[MAX_URL_LENGTH];
+    char *proto, *host, *path, *port_str, *auth;
+    
+    if (url == NULL || config == NULL) {
+        log_message(LOG_ERROR, "Invalid URL or config parameter");
+        return -1;
+    }
+    
+    strncpy(url_copy, url, MAX_URL_LENGTH - 1);
+    url_copy[MAX_URL_LENGTH - 1] = '\0';
+    
+    // Simple URL parsing - remove protocol
+    proto = strstr(url_copy, "://");
+    if (proto) {
+        *proto = '\0';
+        host = proto + 3;
+    } else {
+        host = url_copy;
+    }
+    
+    // Parse host and path
+    path = strchr(host, '/');
+    if (path) {
+        *path = '\0';
+        path++;
+    } else {
+        path = "/";
+    }
+    
+    // Parse port (if present)
+    port_str = strchr(host, ':');
+    if (port_str) {
+        *port_str = '\0';
+        config->port = atoi(port_str + 1);
+    } else {
+        config->port = 80; // Default HTTP port
+    }
+    
+    // Parse auth token (if present in URL as query parameter)
+    auth = strstr(url, "token=");
+    if (auth) {
+        auth += 6; // Skip "token="
+        strncpy(config->auth_token, auth, MAX_URL_LENGTH - 1);
+        // Remove any query parameters after token
+        char *query = strchr(config->auth_token, '&');
+        if (query) *query = '\0';
+    } else {
+        config->auth_token[0] = '\0';
+    }
+    
+    strncpy(config->host, host, MAX_URL_LENGTH - 1);
+    strncpy(config->path, path, MAX_URL_LENGTH - 1);
+    config->timeout = 30; // Default timeout
+    config->verbose = 0;
+    
+    return 0;
+}
+
+int connect_to_server(const char *host, int port) {
+    struct sockaddr_in serv_addr;
+    struct hostent *server;
+    int sockfd;
+    
+    sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    if (sockfd < 0) {
+        log_message(LOG_ERROR, "ERROR opening socket: %s", strerror(errno));
+        return -1;
+    }
+    
+    server = gethostbyname(host);
+    if (server == NULL) {
+        log_message(LOG_ERROR, "ERROR, no such host: %s", host);
+        close(sockfd);
+        return -1;
+    }
+    
+    memset(&serv_addr, 0, sizeof(serv_addr));
+    serv_addr.sin_family = AF_INET;
+    bcopy((char *)server->h_addr,
+          (char *)&serv_addr.sin_addr.s_addr,
+          server->h_length);
+    serv_addr.sin_port = htons(port);
+    
+    if (connect(sockfd, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) {
+        log_message(LOG_ERROR, "ERROR connecting: %s", strerror(errno));
+        close(sockfd);
+        return -1;
+    }
+    
+    return sockfd;
+}
+
+int send_http_request(int sockfd, const char *method, const char *host, const char *path, 
+                      const char *auth_token, const char *body, int body_length) {
+    char request[BUFFER_SIZE * 4];
+    int request_len;
+    int bytes_sent;
+    int total_sent = 0;
+    
+    if (auth_token && auth_token[0] != '\0') {
+        request_len = snprintf(request, sizeof(request),
+            "%s %s HTTP/1.1\r\n"
+            "Host: %s\r\n"
+            "Authorization: Bearer %s\r\n"
+            "Content-Type: application/json\r\n"
+            "Content-Length: %d\r\n"
+            "Connection: close\r\n"
+            "\r\n"
+            "%s",
+            method, path, host, auth_token, body_length, body ? body : "");
+    } else {
+        request_len = snprintf(request, sizeof(request),
+            "%s %s HTTP/1.1\r\n"
+            "Host: %s\r\n"
+            "Content-Type: application/json\r\n"
+            "Content-Length: %d\r\n"
+            "Connection: close\r\n"
+            "\r\n"
+            "%s",
+            method, path, host, body_length, body ? body : "");
+    }
+    
+    if (request_len < 0 || request_len >= sizeof(request)) {
+        log_message(LOG_ERROR, "Request buffer overflow");
+        return -1;
+    }
+    
+    // Send request in chunks
+    while (total_sent < request_len) {
+        bytes_sent = send(sockfd, request + total_sent, request_len - total_sent, 0);
+        if (bytes_sent < 0) {
+            log_message(LOG_ERROR, "ERROR sending request: %s", strerror(errno));
+            return -1;
+        }
+        total_sent += bytes_sent;
+    }
+    
+    log_message(LOG_INFO, "HTTP request sent successfully");
+    return 0;
+}
+
+char *read_http_response(int sockfd, int *status_code) {
+    char buffer[BUFFER_SIZE * 8];
+    int bytes_read;
+    int total_read = 0;
+    char *response;
+    char *status_line;
+    char *code_str;
+    
+    memset(buffer, 0, sizeof(buffer));
+    
+    // Read response headers and body
+    while ((bytes_read = recv(sockfd, buffer + total_read, sizeof(buffer) - total_read - 1, 0)) > 0) {
+        total_read += bytes_read;
+        buffer[total_read] = '\0';
+        
+        // Check if we've received the complete response (headers + body)
+        if (strstr(buffer, "\r\n\r\n")) {
+            break;
+        }
+    }
+    
+    if (bytes_read < 0) {
+        log_message(LOG_ERROR, "ERROR receiving response: %s", strerror(errno));
+        return NULL;
+    }
+    
+    // Extract status code
+    status_line = strstr(buffer, "HTTP/");
+    if (status_line) {
+        code_str = status_line + 9; // Skip "HTTP/1.1 "
+        *status_code = atoi(code_str);
+    } else {
+        *status_code = 0;
+    }
+    
+    // Find body start
+    char *body_start = strstr(buffer, "\r\n\r\n");
+    if (body_start) {
+        body_start += 4; // Skip "\r\n\r\n"
+        response = strdup(body_start);
+    } else {
+        response = strdup(buffer);
+    }
+    
+    return response;
+}
+
+int transfer_file_local(const char *src_path, const char *dst_path) {
+    FILE *src_file, *dst_file;
+    char buffer[BUFFER_SIZE];
+    size_t bytes_read, bytes_written;
+    
+    src_file = fopen(src_path, "rb");
+    if (src_file == NULL) {
+        log_message(LOG_ERROR, "Cannot open source file: %s", src_path);
+        return -1;
+    }
+    
+    dst_file = fopen(dst_path, "wb");
+    if (dst_file == NULL) {
+        log_message(LOG_ERROR, "Cannot open destination file: %s", dst_path);
+        fclose(src_file);
+        return -1;
+    }
+    
+    while ((bytes_read = fread(buffer, 1, BUFFER_SIZE, src_file)) > 0) {
+        bytes_written = fwrite(buffer, 1, bytes_read, dst_file);
+        if (bytes_written != bytes_read) {
+            log_message(LOG_ERROR, "Error writing to destination file");
+            fclose(src_file);
+            fclose(dst_file);
+            return -1;
+        }
+    }
+    
+    fclose(src_file);
+    fclose(dst_file);
+    log_message(LOG_INFO, "File transfer completed: %s -> %s", src_path, dst_path);
+    return 0;
+}
+
+int api_interaction(const char *url, const char *method, const char *payload) {
+    struct TransferConfig config;
+    int sockfd;
+    char *response;
     int status_code;
-    char status_message[50];
-    char content_type[50];
-    char headers[2048];
-    char body[16384];
-} HttpResponse;
-
-typedef struct {
-    char pattern[256];
-    int (*handler)(HttpRequest*, HttpResponse*);
-    struct RouteNode* next;
-} RouteNode;
-
-typedef struct {
-    int client_socket;
-    int client_id;
-    pthread_t thread_id;
-} ClientInfo;
-
-typedef struct {
-    RouteNode* head;
-    int count;
-    pthread_mutex_t lock;
-} RouteRegistry;
-
-typedef struct {
-    int active_connections;
-    int total_requests;
-    int failed_requests;
-    pthread_mutex_t lock;
-} ServerStats;
-
-static RouteRegistry registry = {.head = NULL, .count = 0, .lock = PTHREAD_MUTEX_INITIALIZER};
-static ServerStats stats = {.active_connections = 0, .total_requests = 0, .failed_requests = 0, .lock = PTHREAD_MUTEX_INITIALIZER};
-static int client_counter = 0;
-
-void parse_request(const char* raw_request, HttpRequest* req) {
-    char line[BUFFER_SIZE];
-    const char* p = raw_request;
+    int result = -1;
     
-    // Parse first line
-    sscanf(p, "%s %s %s", req->method, req->path, req->version);
-    
-    // Parse headers and body
-    p += strlen(req->method) + strlen(req->path) + strlen(req->version) + 3;
-    strcpy(req->headers, "");
-    strcpy(req->body, "");
-    
-    while (*p != '\r' && *p != '\n') {
-        char header_line[BUFFER_SIZE];
-        int len = strcspn(p, "\r\n");
-        strncpy(header_line, p, len);
-        header_line[len] = '\0';
-        if (strlen(req->headers) > 0) strcat(req->headers, "\n");
-        strcat(req->headers, header_line);
-        p += len + 2;
+    if (parse_url(url, &config) != 0) {
+        return -1;
     }
     
-    // Read body if content-length is present
-    char* cl = strstr(req->headers, "content-length:");
-    if (cl) {
-        int length = atoi(cl + 15);
-        strncpy(req->body, p, length);
-        req->body[length] = '\0';
+    log_message(LOG_INFO, "Connecting to %s:%d", config.host, config.port);
+    sockfd = connect_to_server(config.host, config.port);
+    if (sockfd < 0) {
+        return -1;
     }
-}
-
-void create_response(HttpResponse* resp, int status, const char* content_type, const char* body) {
-    resp->status_code = status;
-    switch(status) {
-        case 200: strcpy(resp->status_message, "OK"); break;
-        case 404: strcpy(resp->status_message, "Not Found"); break;
-        case 500: strcpy(resp->status_message, "Internal Server Error"); break;
-        default: strcpy(resp->status_message, "Unknown"); break;
+    
+    log_message(LOG_INFO, "Sending %s request to %s", method, config.path);
+    if (send_http_request(sockfd, method, config.host, config.path, 
+                         config.auth_token, payload, payload ? strlen(payload) : 0) != 0) {
+        close(sockfd);
+        return -1;
     }
-    strcpy(resp->content_type, content_type);
-    strcpy(resp->headers, "");
-    strcpy(resp->body, body);
+    
+    response = read_http_response(sockfd, &status_code);
+    if (response == NULL) {
+        close(sockfd);
+        return -1;
+    }
+    
+    log_message(LOG_INFO, "HTTP Response Status: %d", status_code);
+    log_message(LOG_INFO, "Response Body: %s", response);
+    
+    if (status_code >= 200 && status_code < 300) {
+        result = 0; // Success
+    }
+    
+    free(response);
+    close(sockfd);
+    return result;
 }
 
-void build_response_string(HttpResponse* resp, char* output) {
-    char status_line[100];
-    sprintf(status_line, "HTTP/1.1 %d %s\r\n", resp->status_code, resp->status_message);
-    sprintf(output, "%s" "Content-Type: %s\r\n" "Content-Length: %d\r\n" "Connection: close\r\n" "Server: GNU-E/1.0\r\n\r\n" "%s",
-            status_line, resp->content_type, strlen(resp->body), resp->body);
-}
-
-int route_handler_home(HttpRequest* req, HttpResponse* resp) {
-    char body[1024];
-    sprintf(body, "<h1>Welcome to GNU E Server</h1><p>Path: %s</p>", req->path);
-    create_response(resp, 200, "text/html", body);
-    return 0;
-}
-
-int route_handler_api(HttpRequest* req, HttpResponse* resp) {
-    char body[1024];
-    sprintf(body, "{\"status\": \"ok\", \"method\": \"%s\", \"path\": \"%s\"}", req->method, req->path);
-    create_response(resp, 200, "application/json", body);
-    return 0;
-}
-
-void add_route(const char* pattern, int (*handler)(HttpRequest*, HttpResponse*)) {
-    pthread_mutex_lock(&registry.lock);
-    RouteNode* node = (RouteNode*)malloc(sizeof(RouteNode));
-    strncpy(node->pattern, pattern, 255);
-    node->handler = handler;
-    node->next = registry.head;
-    registry.head = node;
-    registry.count++;
-    pthread_mutex_unlock(&registry.lock);
-}
-
-int find_route(const char* path, int (*handler_out)(HttpRequest*, HttpResponse*)) {
-    pthread_mutex_lock(&registry.lock);
-    RouteNode* current = registry.head;
-    while (current != NULL) {
-        if (strcmp(current->pattern, path) == 0) {
-            *handler_out = current->handler;
-            pthread_mutex_unlock(&registry.lock);
+int main(int argc, char *argv[]) {
+    int i;
+    
+    if (argc < 2) {
+        printf("GNU E Data Transfer & API Interaction Script\n");
+        printf("Usage:\n");
+        printf("  %s <local_file> <destination_path>\n", argv[0]);
+        printf("  %s <api_url> [method] [payload]\n", argv[0]);
+        printf("\nExamples:\n");
+        printf("  %s data.txt /backup/data.txt\n", argv[0]);
+        printf("  %s https://api.example.com/upload POST '{\"file\":\"data.txt\"}'\n", argv[0]);
+        printf("  %s https://api.example.com/data GET\n", argv[0]);
+        return 1;
+    }
+    
+    // Detect if this is a local file transfer or API call
+    if (strstr(argv[1], "://")) {
+        // API interaction
+        const char *method = "GET";
+        const char *payload = NULL;
+        
+        if (argc >= 3) {
+            method = argv[2];
+        }
+        if (argc >= 4) {
+            payload = argv[3];
+        }
+        
+        return api_interaction(argv[1], method, payload);
+    } else {
+        // Local file transfer
+        if (argc < 3) {
+            log_message(LOG_ERROR, "Local transfer requires source and destination paths");
             return 1;
         }
-        current = current->next;
-    }
-    pthread_mutex_unlock(&registry.lock);
-    return 0;
-}
-
-void* client_handler(void* arg) {
-    ClientInfo* info = (ClientInfo*)arg;
-    char buffer[BUFFER_SIZE];
-    ssize_t bytes_read = recv(info->client_socket, buffer, BUFFER_SIZE - 1, 0);
-    
-    if (bytes_read > 0) {
-        buffer[bytes_read] = '\0';
-        HttpRequest req;
-        memset(&req, 0, sizeof(req));
-        parse_request(buffer, &req);
-        
-        HttpResponse resp;
-        memset(&resp, 0, sizeof(resp));
-        
-        int (*handler)(HttpRequest*, HttpResponse*) = NULL;
-        if (find_route(req.path, handler)) {
-            handler(&req, &resp);
-        } else {
-            create_response(&resp, 404, "text/html", "<h1>404 Not Found</h1>");
-        }
-        
-        char response_str[16384];
-        build_response_string(&resp, response_str);
-        send(info->client_socket, response_str, strlen(response_str), 0);
-        
-        pthread_mutex_lock(&stats.lock);
-        stats.total_requests++;
-        pthread_mutex_unlock(&stats.lock);
+        return transfer_file_local(argv[1], argv[2]);
     }
     
-    close(info->client_socket);
-    pthread_mutex_lock(&stats.lock);
-    stats.active_connections--;
-    pthread_mutex_unlock(&stats.lock);
-    
-    free(info);
-    return NULL;
-}
-
-int main() {
-    printf("GNU E Concurrent Web Server Starting on Port %d...\n", SERVER_PORT);
-    
-    add_route("/", route_handler_home);
-    add_route("/api/status", route_handler_api);
-    
-    int server_fd, new_socket;
-    struct sockaddr_in address;
-    int opt = 1;
-    int addrlen = sizeof(address);
-    
-    if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
-        perror("socket failed");
-        exit(EXIT_FAILURE);
-    }
-    
-    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR | SO_REUSEPORT, &opt, sizeof(opt));
-    address.sin_family = AF_INET;
-    address.sin_addr.s_addr = INADDR_ANY;
-    address.sin_port = htons(SERVER_PORT);
-    
-    if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) {
-        perror("bind failed");
-        exit(EXIT_FAILURE);
-    }
-    
-    if (listen(server_fd, MAX_CLIENTS) < 0) {
-        perror("listen");
-        exit(EXIT_FAILURE);
-    }
-    
-    printf("Listening for connections on port %d...\n", SERVER_PORT);
-    
-    while (1) {
-        if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen)) < 0) {
-            perror("accept");
-            continue;
-        }
-        
-        pthread_mutex_lock(&stats.lock);
-        stats.active_connections++;
-        pthread_mutex_unlock(&stats.lock);
-        
-        ClientInfo* info = (ClientInfo*)malloc(sizeof(ClientInfo));
-        info->client_socket = new_socket;
-        info->client_id = ++client_counter;
-        info->thread_id = 0;
-        
-        pthread_t tid;
-        if (pthread_create(&tid, NULL, client_handler, (void*)info) != 0) {
-            perror("pthread_create");
-            close(new_socket);
-            free(info);
-            continue;
-        }
-        info->thread_id = tid;
-        pthread_detach(tid);
-        
-        printf("Client #%d connected. Active: %d\n", info->client_id, stats.active_connections);
-    }
-    
-    close(server_fd);
     return 0;
 }

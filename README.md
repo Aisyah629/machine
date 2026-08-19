@@ -291,3 +291,5 @@ MIT License
 - Created/Updated module: `xpl_data_processor_tool` (See `xpl_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./mapper_data_processing_tool` (See `./mapper_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./able_interactive_diagnostic_tool` (See `./able_interactive_diagnostic_tool/README.md` for details)

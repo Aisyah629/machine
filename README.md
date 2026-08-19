@@ -431,3 +431,5 @@ MIT License
 - Created/Updated module: `./ease_automated_diagnostic_tool` (See `./ease_automated_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `cowsel_diagnostics_tool` (See `cowsel_diagnostics_tool/README.md` for details)
+
+- Created/Updated module: `realtime_audio_synthesis_tool` (See `realtime_audio_synthesis_tool/README.md` for details)

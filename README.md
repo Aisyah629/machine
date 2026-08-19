@@ -383,3 +383,5 @@ MIT License
 - Created/Updated module: `ease_system_monitoring_tool` (See `ease_system_monitoring_tool/README.md` for details)
 
 - Created/Updated module: `alef_log_analyzer_tool` (See `alef_log_analyzer_tool/README.md` for details)
+
+- Created/Updated module: `jal_microcontroller_simulation_tool` (See `jal_microcontroller_simulation_tool/README.md` for details)

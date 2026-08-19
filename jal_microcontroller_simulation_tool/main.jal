@@ -1,0 +1,137 @@
+-- JAL Microcontroller Simulation Tool
+-- This script simulates basic microcontroller operations.
+
+use io
+use stdio
+use string
+
+-- Configuration
+constant clock_speed := 8000000 -- 8 MHz
+constant ram_size := 512
+constant rom_size := 8192
+
+-- Global Variables
+variable ram := word_array(ram_size) -- RAM simulation
+variable rom := byte_array(rom_size) -- ROM simulation
+variable program_counter := 0
+variable accumulator := 0
+variable status_register := 0
+
+-- Function: Load Firmware
+function load_firmware(filename: string) : boolean
+    -- Simulates loading a .jal firmware file into ROM
+    -- In a real implementation, this would parse the file
+    -- and populate the rom array.
+    declare file_handle : file
+    declare line : string
+    
+    file_open(file_handle, filename, read)
+    if file_handle <> null then
+        while not file_eof(file_handle) do
+            file_readln(file_handle, line)
+            -- Parse instruction (simplified)
+            if line != "" then
+                -- Simulate storing instruction in ROM
+                -- rom[program_counter] := parse_instruction(line)
+                -- program_counter := program_counter + 1
+                -- In this simulation, we just print the loaded line
+                print("Loaded instruction: ", line)
+            end if
+        end while
+        file_close(file_handle)
+        return true
+    end if
+    return false
+end function
+
+-- Function: Execute Instruction
+function execute_next_instruction() : boolean
+    -- Simulates fetching and executing an instruction
+    declare instruction : byte
+    declare operand : word
+    
+    if program_counter >= rom_size then
+        print("Program Counter exceeded ROM size. Halting.")
+        return false
+    end if
+    
+    instruction := rom[program_counter]
+    program_counter := program_counter + 1
+    
+    -- Simple switch-case for instruction decoding
+    case instruction of
+        0x00: -- NOP
+            print("Executing: NOP")
+        0x01: -- LDA (Load Accumulator)
+            operand := rom[program_counter] * 256 + rom[program_counter + 1]
+            program_counter := program_counter + 2
+            accumulator := operand
+            print("Executing: LDA ", operand)
+        0x02: -- ADD (Add to Accumulator)
+            operand := rom[program_counter] * 256 + rom[program_counter + 1]
+            program_counter := program_counter + 2
+            accumulator := accumulator + operand
+            print("Executing: ADD ", operand)
+        0x03: -- STA (Store Accumulator)
+            operand := rom[program_counter] * 256 + rom[program_counter + 1]
+            program_counter := program_counter + 2
+            ram[operand] := accumulator
+            print("Executing: STA ", operand)
+        0x04: -- HALT
+            print("Executing: HALT")
+            return false
+        otherwise:
+            print("Unknown instruction: ", instruction)
+    end case
+    
+    return true
+end function
+
+-- Function: Run Simulation Loop
+function run_simulation() : void
+    declare running : boolean := true
+    
+    print("Microcontroller Simulation Started")
+    print("Clock Speed: ", clock_speed, " Hz")
+    print("RAM Size: ", ram_size, " bytes")
+    print("ROM Size: ", rom_size, " bytes")
+    
+    while running do
+        running := execute_next_instruction()
+    end while
+    
+    print("Simulation Finished")
+    print("Final Accumulator: ", accumulator)
+end function
+
+-- Main Program
+procedure main() : void
+    declare firmware_file : string
+    
+    print("JAL Microcontroller Simulation Tool")
+    print("-----------------------------------")
+    
+    -- Default firmware file
+    firmware_file := "code/firmware.jal"
+    
+    -- Try to load firmware
+    if load_firmware(firmware_file) then
+        print("Firmware loaded successfully.")
+        run_simulation()
+    else
+        print("Error: Could not load firmware. Using default test program.")
+        -- Simulate a simple test program in ROM
+        rom[0] := 0x01 -- LDA
+        rom[1] := 0x00
+        rom[2] := 0x0A
+        rom[3] := 0x02 -- ADD
+        rom[4] := 0x00
+        rom[5] := 0x05
+        rom[6] := 0x04 -- HALT
+        
+        run_simulation()
+    end if
+end procedure
+
+-- Run the main procedure
+main()

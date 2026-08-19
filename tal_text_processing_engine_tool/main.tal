@@ -1,0 +1,28 @@
+      ENTRY MAIN
+      MACRO
+START   GETTEXT INPUTBUF,LEN
+        IF LEN=0
+          EOJ
+        ENDIF
+        CALL PROCESS
+      MEND
+
+MAIN    EQU   *
+        OPEN  FILE=INPUT,STATUS=INPUT
+        OPEN  FILE=OUTPUT,STATUS=OUTPUT
+
+LOOP    GETTEXT INPUTBUF,LEN
+        IF LEN=0
+          CLOSE FILE=INPUT
+          CLOSE FILE=OUTPUT
+          EOJ
+        ENDIF
+        CALL PROCESS
+        BR   LOOP
+
+PROCESS EQU  *
+        * Parse INPUTBUF
+        * Extract fields
+        * Write to OUTPUT
+        RET
+      END MAIN

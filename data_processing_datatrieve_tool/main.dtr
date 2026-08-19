@@ -1,0 +1,39 @@
+DATATRIEVE
+
+! DATATRIEVE is a command language used for retrieving, updating, and manipulating data from databases and other information sources.
+
+! Initialize DATATRIEVE environment
+INIT DATATRIEVE
+
+! Define data structures and relationships
+DEFINE TABLE employees
+  employee_id INT PRIMARY KEY,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  department VARCHAR(50),
+  salary DECIMAL(10, 2)
+END TABLE
+
+DEFINE TABLE departments
+  department_id INT PRIMARY KEY,
+  department_name VARCHAR(50)
+END TABLE
+
+! Data extraction
+SELECT employee_id, first_name, last_name, department, salary
+FROM employees
+WHERE department = 'Engineering'
+
+! Data transformation
+UPDATE employees
+SET salary = salary * 1.10
+WHERE department = 'Engineering'
+
+! Data validation
+CHECK CONSTRAINT employees.employee_id IS NOT NULL
+CHECK CONSTRAINT employees.department IS NOT NULL
+
+! Report generation
+SELECT department, AVG(salary) AS average_salary
+FROM employees
+GROUP BY department

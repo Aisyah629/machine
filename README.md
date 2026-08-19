@@ -439,3 +439,5 @@ MIT License
 - Created/Updated module: `simple_interactive_diagnostic_tool` (See `simple_interactive_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `hume_tool` (See `hume_tool/README.md` for details)
+
+- Created/Updated module: `data_processing_datatrieve_tool` (See `data_processing_datatrieve_tool/README.md` for details)

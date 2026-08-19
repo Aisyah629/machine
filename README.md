@@ -269,3 +269,5 @@ MIT License
 - Created/Updated module: `cg_data_extraction_tool` (See `cg_data_extraction_tool/README.md` for details)
 
 - Created/Updated module: `./mimic_simulation_tool` (See `./mimic_simulation_tool/README.md` for details)
+
+- Created/Updated module: `./lucid_data_processor_tool` (See `./lucid_data_processor_tool/README.md` for details)

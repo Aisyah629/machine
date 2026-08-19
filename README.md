@@ -325,3 +325,5 @@ MIT License
 - Created/Updated module: `salsa_data_serialization_tool` (See `salsa_data_serialization_tool/README.md` for details)
 
 - Created/Updated module: `subtext_interactive_documentation_tool` (See `subtext_interactive_documentation_tool/README.md` for details)
+
+- Created/Updated module: `newtonscript_application_compiler_tool` (See `newtonscript_application_compiler_tool/README.md` for details)

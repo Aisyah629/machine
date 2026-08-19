@@ -351,3 +351,5 @@ MIT License
 - Created/Updated module: `app_inventor_data_extraction_tool` (See `app_inventor_data_extraction_tool/README.md` for details)
 
 - Created/Updated module: `data_processing_utility_tool_e` (See `data_processing_utility_tool_e/README.md` for details)
+
+- Created/Updated module: `cms_exec_tool` (See `cms_exec_tool/README.md` for details)

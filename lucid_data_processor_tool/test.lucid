@@ -1,0 +1,56 @@
+// Test file for Lucid Data Processor Tool
+
+const { processData } = require('./main.lucid');
+
+// Test data
+const testData = {
+    records: [
+        {
+            id: 1,
+            timestamp: '2023-01-01T00:00:00Z',
+            value: '  hello  '
+        },
+        {
+            id: 2,
+            timestamp: '2023-01-02T00:00:00Z',
+            value: 'world'
+        }
+    ]
+};
+
+// Test with default configuration
+const result1 = processData(testData);
+console.log('Test 1 - Default config:');
+console.log(JSON.stringify(result1, null, 2));
+
+// Test with custom configuration
+const customConfig = {
+    validate: true,
+    transform: false,
+    clean: true
+};
+
+const result2 = processData(testData, customConfig);
+console.log('Test 2 - Custom config:');
+console.log(JSON.stringify(result2, null, 2));
+
+// Test with invalid data
+const invalidData = {
+    records: [
+        {
+            timestamp: '2023-01-01T00:00:00Z',
+            value: 'missing id'
+        }
+    ]
+};
+
+try {
+    const result3 = processData(invalidData);
+    console.log('Test 3 - Invalid data:');
+    console.log(JSON.stringify(result3, null, 2));
+} catch (error) {
+    console.log('Test 3 - Invalid data caught error:');
+    console.log(error.message);
+}
+
+console.log('All tests completed.');

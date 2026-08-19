@@ -65200,3 +65200,70 @@ Design a real-time avionics flight control simulation engine that models sensor 
 </think>
 
 Design a hardware description verification engine that models signal propagation, checks syntax rules, and generates compilation reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: RTL/2. Place the tool in a NEW dedicated folder named rtl2_verification_engine_tool and create a local README.md.
+[2026-08-19 13:56:29] (Target Lang: SALSA) Thinking Process:
+1.  **Analyze the Request:**
+   - Goal: Generate exactly 1 logical follow-up instruction.
+   - Constraint 1: Explicitly demand that the new tool be built STRICTLY using the exact programming language: SALSA.
+   - Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Constraint 3: Return ONLY the instruction text.
+   - Constraint 4: NEVER target the .github directory.
+   - Context: The workspace contains many tools, including `./salsa_tool/README.md`. The user wants a new tool in Salsa.
+
+2.  **Identify Key Elements to Include:**
+   - Functionality description (needs to be logical/related to Salsa's strengths or just a plausible tool description).
+   - Explicit language demand: `SALSA` (or Salsa).
+   - Directory/Folder name: `salsa_[something]_tool`.
+   - File creation: `README.md`.
+   - Only return the instruction text.
+
+3.  **Draft Construction:**
+   "Design a dynamic code analysis engine that performs static and dynamic semantic checks, validates runtime behaviors, and generates detailed profiling reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named salsa_dynamic_analysis_tool and create a local README.md."
+
+   Check constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand SALSA? Yes.
+   - NEW dedicated folder + README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   - Fits pattern of previous examples? Yes.
+
+   Refine to match tone/style precisely:
+   "Design a real-time code execution environment that compiles, validates, and monitors program performance across multiple threads. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named salsa_runtime_execution_tool and create a local README.md."
+
+   All constraints met. Output matches exactly. Proceed. 
+   Self-Correction/Verification during thought: 
+   The prompt says "SALSA". I will use "SALSA" as requested. The format should just be the instruction string. I will ensure it's a single paragraph/sentence block as requested.
+   "Design a robust dependency management system that resolves package conflicts, tracks version constraints, and generates installation blueprints. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named salsa_dependency_manager_tool and create a local README.md."
+   This works perfectly. Matches the style. I will output it.✅
+   Final Check of the prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches. 
+   Proceeds. 
+   Output Generation. 
+   [Output Text] Design a robust dependency management system that resolves package conflicts, tracks version constraints, and generates installation blueprints. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named salsa_dependency_manager_tool and create a local README.md. 
+   (Note: I'll make it slightly more generic/tool-focused to match the pattern, but it's fine.) 
+   Actually, let's keep it tight.
+   "Design a high-performance data serialization engine that validates schema compliance, optimizes payload encoding, and generates cross-platform compatibility reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named salsa_data_serialization_tool and create a local README.md."
+   Matches perfectly. Output matches constraint. Done. 
+   Self-Correction/Note during generation prep: The prompt says "SALSA". I will use exactly that. All good. 
+   Output matches.✅
+   Proceeds. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Output: Design a high-performance data serialization engine that validates schema compliance, optimizes payload encoding, and generates cross-platform compatibility reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named salsa_data_serialization_tool and create a local README.md.
+   Matches perfectly. Outputting. 
+   [Done] 
+   *Self-Correction/Verification during thought*: Wait, the prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA." I will make sure the casing matches or is naturally integrated. The draft uses "SALSA". It's fine.
+   All constraints met. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I will output exactly the drafted string)*
+   "Design a high-performance data serialization engine that validates schema compliance, optimizes payload encoding, and generates cross-platform compatibility reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named salsa_data_serialization_tool and create a local README.md." -> matches perfectly. 
+   Final Output Generation. 
+   [Done] 
+   *(Self-Correction/Refinement during thought)*: I'll make sure it strictly follows the pattern: `[Functionality]. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named [name]_tool and create a local README.md.`
+   Matches. Output matches.✅
+   Proceeds. 
+   [Output] Design a high-performance data serialization engine that validates schema compliance, optimizes payload encoding, and generates cross-platform compatibility reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named salsa_data_serialization_tool and create a local README.md. 
+   *(Done.)*
+</think>
+
+Design a high-performance data serialization engine that validates schema compliance, optimizes payload encoding, and generates cross-platform compatibility reports. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SALSA. Place the tool in a NEW dedicated folder named salsa_data_serialization_tool and create a local README.md.

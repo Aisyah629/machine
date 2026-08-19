@@ -68608,3 +68608,37 @@ Output matches.✅ Proceeds.✅
 </think>
 
 Create a new tool for automated batch job scheduling and orchestration in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: MSL. Place it in a new dedicated folder and create a local README.md.
+[2026-08-19 22:40:33] (Target Lang: IDL) Thinking (Debugging/Analysis):
+1.  **Analyze User Input**: The user provides a workspace listing, a history section (which seems to be the model's internal monologue or previous interaction log), and then a prompt at the end: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: IDL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+2.  **Identify Constraints**:
+    *   Generate exactly 1 logical follow-up instruction.
+    *   Demand build using language: IDL.
+    *   Instruct to place in a NEW dedicated folder.
+    *   Instruct to create a local `README.md`.
+    *   Return ONLY the instruction text.
+    *   NEVER target `.github`.
+3.  **Formulate Response**:
+    *   The response must be the instruction itself.
+    *   Content: "Create a new tool for [functionality] in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: IDL. Place it in a new dedicated folder and create a local README.md."
+    *   Refinement: The prompt asks to "Generate exactly 1 logical follow-up instruction." based on the context. The context implies a tool ecosystem. A logical follow-up might be related to data interchange or interface definition, which IDL is good for. Or just a generic tool.
+    *   Draft: "Create a new tool for interface definition and serialization in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: IDL. Place it in a new dedicated folder and create a local README.md."
+    *   Check constraints:
+        *   Exactly 1 instruction? Yes.
+        *   Language IDL? Yes.
+        *   New folder? Yes.
+        *   README.md? Yes.
+        *   ONLY instruction text? Yes.
+        *   No .github? Yes.
+4.  **Final Output Construction**:
+    *   "Create a new tool for interface definition and serialization in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: IDL. Place it in a new dedicated folder and create a local README.md."
+    *   This matches the pattern of the previous turn (MSL example) and the constraints.
+    *   Wait, the "History" section in the user prompt shows the model thinking about an MSL instruction and then outputting it, and then the user asks for the IDL one. The user prompt ends with "Generate exactly 1...".
+    *   So I just output the IDL instruction.
+    *   Result: "Create a new tool for interface definition and serialization in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: IDL. Place it in a new dedicated folder and create a local README.md."
+    *   Or simpler: "Create a new tool for system interface definition in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: IDL. Place it in a new dedicated folder and create a local README.md."
+    *   The prompt asks for "exactly 1 logical follow-up instruction".
+    *   Result matches constraints.
+    *   Output generation.
+</think>
+
+Create a new tool for interface definition and serialization in a new dedicated folder. You MUST build it STRICTLY using the exact programming language: IDL. Place it in a new dedicated folder and create a local README.md.

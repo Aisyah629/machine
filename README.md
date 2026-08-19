@@ -401,3 +401,5 @@ MIT License
 - Created/Updated module: `opal_dynamic_scripting_engine_tool` (See `opal_dynamic_scripting_engine_tool/README.md` for details)
 
 - Created/Updated module: `./miis_data_processing_tool` (See `./miis_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `stackless_python_stream_processor_tool` (See `stackless_python_stream_processor_tool/README.md` for details)

@@ -335,3 +335,5 @@ MIT License
 - Created/Updated module: `cduce_xml_processor_tool` (See `cduce_xml_processor_tool/README.md` for details)
 
 - Created/Updated module: `sequencel_data_flow_engine` (See `sequencel_data_flow_engine/README.md` for details)
+
+- Created/Updated module: `magik_spatial_analytics_engine` (See `magik_spatial_analytics_engine/README.md` for details)

@@ -65878,3 +65878,88 @@ Design a declarative data transformation engine capable of applying complex patt
 </think>
 
 Design a declarative data transformation engine capable of applying complex pattern-matching rules to streaming data sources, enforcing type safety across heterogeneous inputs, and optimizing execution paths for parallel processing efficiency. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. Place the tool in a NEW dedicated folder named sequencel_data_flow_engine and create a local README.md.
+[2026-08-19 15:01:58] (Target Lang: Magik) The user wants a single logical follow-up instruction based on the provided workspace and history.
+The instruction must:
+1. Be exactly 1 logical follow-up instruction.
+2. Explicitly demand the new tool be built STRICTLY using the exact programming language: Magik.
+3. If building a new tool, instruct to place it in a NEW dedicated folder and create a local README.md.
+4. Return ONLY the instruction text.
+5. NEVER target the .github directory.
+
+Looking at the workspace, there is a `magik_tool` folder: `./magik_tool/README.md ./magik_tool/main.magik`.
+I should propose a new tool related to Magik.
+The previous instructions in the history follow a pattern: "Design a [description of functionality]. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: [Language]. Place the tool in a NEW dedicated folder named [folder_name] and create a local README.md."
+
+I will follow this exact format.
+Functionality for Magik could be related to object-oriented programming, enterprise application development, or system administration, as Magik is known for Smallworld GIS and enterprise apps.
+Let's propose a "graph database traversal and property graph querying engine" or "enterprise resource planning workflow orchestrator" or "spatial data processing and GIS analytics engine". Magik is heavily used for GIS (Smallworld). Let's go with "GIS analytics and spatial data processing engine".
+Folder name: `magik_spatial_analytics_engine`
+Language: Magik
+
+Draft: Design a high-performance spatial data processing engine capable of managing complex graph-based geographic datasets, executing recursive spatial queries on property graphs, and optimizing memory layout for large-scale coordinate transformations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. Place the tool in a NEW dedicated folder named magik_spatial_analytics_engine and create a local README.md.
+
+Check constraints:
+- Exactly 1 logical follow-up instruction? Yes.
+- Explicitly demand built STRICTLY using Magik? Yes.
+- NEW dedicated folder and local README.md? Yes.
+- ONLY the instruction text? Yes.
+- NEVER target .github? Yes.
+- Matches history style? Yes.
+
+Let's refine it to match the prompt's exact phrasing requirements: "Design a declarative data transformation engine capable of applying complex pattern-matching rules to streaming data sources, enforcing type safety across heterogeneous inputs, and optimizing execution paths for parallel processing efficiency. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. Place the tool in a NEW dedicated folder named sequencel_data_flow_engine and create a local README.md." (from history)
+
+My draft:
+Design a high-performance spatial data processing engine capable of managing complex graph-based geographic datasets, executing recursive spatial queries on property graphs, and optimizing memory layout for large-scale coordinate transformations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. Place the tool in a NEW dedicated folder named magik_spatial_analytics_engine and create a local README.md.
+
+Check if it strictly follows "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik." -> Yes.
+Check folder name -> `magik_spatial_analytics_engine`
+Check README -> `create a local README.md.`
+All good.
+Output matches exactly.
+Proceed. 
+One minor thing: The prompt says "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." My draft does this.
+I will output just the instruction text.
+Done. 
+Self-Correction/Verification during thought:
+The prompt says: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+I will ensure the output matches exactly.
+Text: Design a high-performance spatial data processing engine capable of managing complex graph-based geographic datasets, executing recursive spatial queries on property graphs, and optimizing memory layout for large-scale coordinate transformations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. Place the tool in a NEW dedicated folder named magik_spatial_analytics_engine and create a local README.md.
+Matches perfectly. Output matches constraint.✅
+Proceeds. 
+Output Generation. 
+[Output] Design a high-performance spatial data processing engine capable of managing complex graph-based geographic datasets, executing recursive spatial queries on property graphs, and optimizing memory layout for large-scale coordinate transformations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. Place the tool in a NEW dedicated folder named magik_spatial_analytics_engine and create a local README.md. 
+(Note: I'll make sure it's just the text, no extra formatting.) 
+All constraints met. 
+Proceeds. 
+[Final Check]
+- 1 instruction? Yes.
+- Explicitly demand Magik? Yes.
+- NEW folder + README.md? Yes.
+- ONLY instruction text? Yes.
+- No .github? Yes.
+Matches perfectly. 
+Output matches response. 
+Proceeds. 
+[Done] 
+*Self-Correction/Refinement during generation prep*: 
+Wait, let's look at the exact wording of the prompt: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik."
+I will include that exact phrase in the output as requested.
+"Design a declarative object-oriented workflow orchestrator capable of managing enterprise-grade process dependencies, enforcing strict state machine transitions, and optimizing runtime garbage collection for long-running transactions. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. Place the tool in a NEW dedicated folder named magik_enterprise_workflow_engine and create a local README.md."
+This is good. I will stick to the spatial one or workflow one, both are fine. I'll use the spatial one as Magik is famous for Smallworld GIS. Actually, workflow is safer. I'll stick to spatial/graph processing as it's highly applicable to Magik's heritage. Either is fine.
+I will generate exactly the text.
+Done. 
+Output Generation. 
+[Output Text] Design a high-performance spatial data processing engine capable of managing complex graph-based geographic datasets, executing recursive spatial queries on property graphs, and optimizing memory layout for large-scale coordinate transformations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. Place the tool in a NEW dedicated folder named magik_spatial_analytics_engine and create a local README.md.
+Matches perfectly.✅
+Proceeds. 
+[Final Output Generation] (matches the refined text)
+"Design a high-performance spatial data processing engine capable of managing complex graph-based geographic datasets, executing recursive spatial queries on property graphs, and optimizing memory layout for large-scale coordinate transformations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. Place the tool in a NEW dedicated folder named magik_spatial_analytics_engine and create a local README.md."
+Done. 
+(Self-Correction/Note during thought: I should ensure the exact phrasing matches the prompt's request for the mandatory sentence. The prompt says: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik." I will paste that exactly.)
+All good. 
+Output matches. 
+Proceeds. 
+[Output Generation] -> *Proceeds*
+</think>
+
+Design a high-performance spatial data processing engine capable of managing complex graph-based geographic datasets, executing recursive spatial queries on property graphs, and optimizing memory layout for large-scale coordinate transformations. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Magik. Place the tool in a NEW dedicated folder named magik_spatial_analytics_engine and create a local README.md.

@@ -65553,3 +65553,60 @@ The draft meets all criteria.
 </think>
 
 Design a high-throughput data integration and query execution engine capable of managing complex transactional workflows and rapid record manipulation. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: DASL. Place the tool in a NEW dedicated folder named dasl_transaction_integration_engine_tool and create a local README.md.
+[2026-08-19 14:26:05] (Target Lang: LiveCode) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Must explicitly demand the new tool be built STRICTLY using the language: LiveCode.
+    *   Constraint: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target the .github directory.
+    *   Context: The user provided a workspace listing and a history example. The history example shows a pattern: "Draft instruction... Check constraints... Refining... Final check... The draft meets all criteria." followed by the final instruction text. The user's actual prompt at the end is: "Generate exactly 1 logical follow-up instruction... strictly using... LiveCode... Return ONLY the instruction text..."
+
+2.  **Analyze the Workspace for "Logical Follow-up":**
+    *   The workspace contains many tools, mostly related to data processing, compilation, simulation, and specific domain languages (DASL, ABAP, Ada, etc.).
+    *   There is a `dibl_mainframe_data_processing_tool`, `data_extraction_tool`, `data_processing_tool`, `data_transform_processor_tool`, `maple_data_processing_tool`, `mapper_data_processing_tool`, `lansa_data_processing_tool`, `salsa_data_serialization_tool`, `xquery_data_query_tool`, `xquery_data_transform_tool`, `yql_query_optimizer_tool`, etc.
+    *   The theme seems to be data processing, integration, engines, and specific language tools.
+    *   A logical follow-up for a data processing engine (implied by the history draft which used DASL, though the current prompt asks for LiveCode) would be to create a tool that leverages LiveCode for a specific data-related task or an interactive UI for data management, as LiveCode is often associated with rapid application development and GUIs.
+    *   However, the prompt asks for a "logical follow-up instruction" based on the workspace. The workspace has `data_processing_tool`, `data_extraction_tool`, etc.
+    *   A good follow-up might be a "LiveCode-based data visualization and interactive analysis tool" or "LiveCode-driven automated report generator".
+    *   Since the history example used "DASL" and "transaction integration", and the new request asks for "LiveCode", I need to craft an instruction that fits the style of the workspace.
+    *   Style observation: Instructions are usually descriptive, mention capabilities, demand the language, and specify folder/README.
+    *   Example structure: "Design/Create [Description]. You MUST explicitly demand... [Language]. Place... [Folder]... README.md."
+
+3.  **Drafting the Instruction (Mental Sketch):**
+    *   *Language:* LiveCode.
+    *   *Function:* Needs to be logical. LiveCode is great for cross-platform apps, GUIs, rapid dev. Maybe a "LiveCode-powered interactive data dashboard and reporting engine"? Or "LiveCode-based cross-platform data migration utility"?
+    *   *Workspace alignment:* The workspace has `data_extraction_tool`, `data_processing_tool`. A "LiveCode data visualization dashboard" fits well as a frontend to backend processing. Or a "LiveCode GUI wrapper for data processing".
+    *   *Refinement:* "Design a cross-platform interactive data visualization and reporting dashboard engine built with LiveCode to provide intuitive management of complex datasets and real-time analytics integration."
+    *   *Constraints Check:*
+        *   "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: LiveCode." -> Add this phrase.
+        *   "Place the tool in a NEW dedicated folder named [name] and create a local README.md." -> Need a name. `livecode_data_visualization_dashboard_tool` or `livecode_cross_platform_data_dashboard_tool`. Let's use `livecode_interactive_data_dashboard_tool`.
+        *   "Return ONLY the instruction text." -> No meta-text.
+        *   "NEVER target .github." -> Safe.
+
+    *   *Draft Text:* "Design a cross-platform interactive data visualization and reporting dashboard engine capable of managing complex datasets, real-time analytics integration, and intuitive user interactions. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: LiveCode. Place the tool in a NEW dedicated folder named livecode_interactive_data_dashboard_tool and create a local README.md."
+
+4.  **Review against Constraints:**
+    *   *Exactly 1 instruction?* Yes.
+    *   *Explicitly demand LiveCode?* Yes ("STRICTLY using this exact programming language: LiveCode").
+    *   *NEW folder and README?* Yes ("NEW dedicated folder named livecode_interactive_data_dashboard_tool and create a local README.md").
+    *   *Only instruction text?* Yes.
+    *   *No .github?* Yes.
+    *   *Logical follow-up?* The workspace has data tools. A LiveCode dashboard tool is a logical extension or complementary tool to the backend processing tools. It uses a different language (LiveCode vs DASL in history, but the user is asking for LiveCode now). The "logical follow-up" aspect is subjective but usually means it fits the domain. The domain is tool creation. A LiveCode data tool fits the domain.
+
+5.  **Final Polish (Text Output):**
+    *   "Design a cross-platform interactive data visualization and reporting dashboard engine capable of managing complex datasets, real-time analytics integration, and intuitive user interactions. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: LiveCode. Place the tool in a NEW dedicated folder named livecode_interactive_data_dashboard_tool and create a local README.md."
+    *   Wait, let's check the folder naming convention in the workspace.
+    *   `data_extraction_tool`, `data_processing_tool`, `livecode_tool`? No, there is no `livecode_tool` in the list provided. There is `livecode`? Let's scan.
+    *   Scanning list... `linc_tool`, `lisa_tool`, `lisp_tool`, `livescript_tool`, `logtalk_tool`, `lpc_tool`, `lsharp_tool`, `lsl_scripting_tool`, `lucid_tool`, `lustra`? No.
+    *   Result: No `livecode_tool` exists in the list. This confirms a "NEW dedicated folder" is appropriate.
+    *   The instruction looks solid.
+
+6.  **Final Result Construction:**
+    *   Output: Design a cross-platform interactive data visualization and reporting dashboard engine capable of managing complex datasets, real-time analytics integration, and intuitive user interactions. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: LiveCode. Place the tool in a NEW dedicated folder named livecode_interactive_data_dashboard_tool and create a local README.md.
+    *   (Self-Correction on "Only instruction text": The output should be just the string.)
+    *   Result string matches the draft.
+</think>
+
+Design a cross-platform interactive data visualization and reporting dashboard engine capable of managing complex datasets, real-time analytics integration, and intuitive user interactions. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: LiveCode. Place the tool in a NEW dedicated folder named livecode_interactive_data_dashboard_tool and create a local README.md.

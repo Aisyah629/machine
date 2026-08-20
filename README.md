@@ -469,3 +469,5 @@ MIT License
 - Created/Updated module: `haxe_cross_platform_api_tool` (See `haxe_cross_platform_api_tool/README.md` for details)
 
 - Created/Updated module: `abc_data_processor_tool` (See `abc_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `data_processing_able_tool` (See `data_processing_able_tool/README.md` for details)

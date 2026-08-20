@@ -499,3 +499,5 @@ MIT License
 - Created/Updated module: `unix_shell_diag_tool` (See `unix_shell_diag_tool/README.md` for details)
 
 - Created/Updated module: `ttm_advanced_computation_tool` (See `ttm_advanced_computation_tool/README.md` for details)
+
+- Created/Updated module: `coldc_framework_engine_tool` (See `coldc_framework_engine_tool/README.md` for details)

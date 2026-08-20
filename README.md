@@ -447,3 +447,5 @@ MIT License
 - Created/Updated module: `joss_data_processing_tool` (See `joss_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `./modelica_interactive_diagnostic_tool` (See `./modelica_interactive_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `brew_interactive_diagnostic_tool` (See `brew_interactive_diagnostic_tool/README.md` for details)

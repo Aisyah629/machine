@@ -1,0 +1,96 @@
+// TTM (Type-Theory Meta-Language) Advanced Computation Tool
+// This tool demonstrates core TTM features including type inference,
+// lazy evaluation, and metaprogramming capabilities.
+
+Module AdvancedComputation;
+
+Import System.IO;
+Import System.Types;
+
+// Define a custom monad for computation tracing
+TracedM[a] = State(TraceLog) -> Result(a, Error);
+
+// Type-safe expression evaluator
+type Expr = 
+  | Val(int);
+  | Add(Expr, Expr);
+  | Mul(Expr, Expr);
+  | Div(Expr, Expr);
+
+// Pattern matching evaluator with error handling
+eval(e: Expr): TracedM[Value] {
+  return match(e) {
+    Val(n) => success(Integer(n));
+    Add(l, r) => {
+      lv = eval(l);
+      rv = eval(r);
+      match(lv, rv) {
+        Integer(a), Integer(b) => success(Integer(a + b));
+        _, _ => failure(ParseError("Invalid operands for addition"));
+      }
+    }
+    Mul(l, r) => {
+      lv = eval(l);
+      rv = eval(r);
+      match(lv, rv) {
+        Integer(a), Integer(b) => success(Integer(a * b));
+        _, _ => failure(ParseError("Invalid operands for multiplication"));
+      }
+    }
+    Div(l, r) => {
+      lv = eval(l);
+      rv = eval(r);
+      match(lv, rv) {
+        Integer(a), Integer(b) => if (b == 0) 
+        failure(ZeroDivisionError()) 
+        else 
+        success(Integer(a / b));
+        _, _ => failure(ParseError("Invalid operands for division"));
+      }
+    }
+  };
+}
+
+// Metaprogramming: Code generation via quoted expressions
+macro quote(expr: Expr): Expr {
+  return expr; // In a real TTM implementation, this would manipulate the AST
+}
+
+macro inline(expr: Expr): Expr {
+  return eval(expr) -> match(result) {
+    Integer(n) => Val(n);
+    _, _ => expr; // Fallback to runtime evaluation
+  }
+}
+
+// Higher-order function with polymorphism
+apply_twice[f](x: T): T {
+  return f(f(x));
+}
+
+// Main computation pipeline
+main() {
+  // Construct an expression tree
+  expression = Add(Mul(Val(2), Val(3)), Div(Val(10), Val(2)));
+  
+  // Evaluate with tracing
+  result = eval(expression);
+  
+  // Process result
+  match(result) {
+    Integer(n) => 
+      print("Computation result: " + n);
+    Error(e) => 
+      print("Computation failed: " + e.message);
+  }
+  
+  // Demonstrate polymorphic higher-order function
+  double = x => x * 2;
+  four = apply_twice(double)(1);
+  print("Applied twice: " + four);
+  
+  // Demonstrate macro expansion
+  // In TTM, macros run at compile time
+  computed = inline(Add(Val(5), Val(10)));
+  print("Macro expanded to: " + computed);
+}

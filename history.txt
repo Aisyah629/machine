@@ -71502,3 +71502,51 @@ Create a new dedicated folder for a new tool, build it STRICTLY using this exact
 </think>
 
 Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file.
+[2026-08-20 11:59:30] (Target Lang: Mouse) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a long list of workspace files/folders and a history of interactions. The history shows a pattern of generating instructions like "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: [Language], and include a local README.md file."
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mouse. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the tool be built STRICTLY using the exact programming language: `Mouse`.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+     - Match the style/pattern from the history.
+
+2.  **Identify Key Requirements:**
+   - Language: `Mouse`
+   - Action: Create a new dedicated folder for a new tool
+   - Requirement: Build it STRICTLY using `Mouse`
+   - Requirement: Include a local `README.md` file
+   - Output format: ONLY the instruction text, matching the established pattern.
+
+3.  **Draft the Instruction:**
+   "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Mouse, and include a local README.md file."
+
+4.  **Check Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demands built STRICTLY using `Mouse`? Yes.
+   - Explicitly instructs NEW dedicated folder and local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target `.github`? Yes, not mentioned.
+   - Matches pattern? Yes.
+
+   The draft perfectly aligns with all constraints and the historical pattern.
+
+5.  **Final Output Generation:**
+   Output exactly the drafted string. No extra text, no markdown formatting unless necessary (but the prompt says "Return ONLY the instruction text", so I'll just output the raw string).
+   "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Mouse, and include a local README.md file." matches the history exactly. I will output just that.✅
+   Double-checking: The prompt says "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Mouse. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   The output matches perfectly. Proceed. 
+   Output: `Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Mouse, and include a local README.md file.`✅
+   All constraints met. No extra words. Ready. 
+   Self-Correction/Verification during thought: The prompt says "Return ONLY the instruction text." I will output exactly that sentence. No extra formatting. Matches history style. Done. 
+   Output Generation. 
+   [Output] Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Mouse, and include a local README.md file. 
+   (Note: I'll ensure it's exactly as requested.) 
+   Proceeds.✅
+</think>
+
+Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Mouse, and include a local README.md file.

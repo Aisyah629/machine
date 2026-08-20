@@ -455,3 +455,5 @@ MIT License
 - Created/Updated module: `./data_processing_autohotkey_tool` (See `./data_processing_autohotkey_tool/README.md` for details)
 
 - Created/Updated module: `data_processing_utility_game_tool` (See `data_processing_utility_game_tool/README.md` for details)
+
+- Created/Updated module: `object_lisp_data_processing_tool` (See `object_lisp_data_processing_tool/README.md` for details)

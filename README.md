@@ -443,3 +443,5 @@ MIT License
 - Created/Updated module: `data_processing_datatrieve_tool` (See `data_processing_datatrieve_tool/README.md` for details)
 
 - Created/Updated module: `cayenne_data_processor_tool` (See `cayenne_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `joss_data_processing_tool` (See `joss_data_processing_tool/README.md` for details)

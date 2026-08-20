@@ -1,0 +1,251 @@
+-- YQL Network Protocol and Memory Management Simulator
+-- This script simulates a TCP-like data transfer and a fixed-size memory allocator.
+
+FUNCTION simulate_network() AS VOID
+    LOCAL packet_id = 1
+    LOCAL is_connected = TRUE
+    LOCAL buffer_size = 1400
+    
+    PRINT "--- Starting Network Protocol Simulator ---"
+    
+    WHILE is_connected
+        PRINT "[NET] Waiting for data input (or 'quit' to exit):"
+        LOCAL input = INPUT()
+        
+        IF UPPER(input) == "QUIT"
+            PRINT "[NET] Connection closed by user."
+            BREAK
+        END IF
+        
+        IF LEN(input) == 0 THEN CONTINUE END IF
+        
+        -- Simulate packet segmentation
+        LOCAL remaining = input
+        WHILE LEN(remaining) > 0
+            LOCAL chunk_size = MIN(LEN(remaining), buffer_size)
+            LOCAL payload = SUBSTR(remaining, 1, chunk_size)
+            remaining = SUBSTR(remaining, chunk_size + 1)
+            
+            -- Simulate packet creation
+            LOCAL packet = {
+                "id": packet_id,
+                "payload": payload,
+                "flags": "SYN"
+            }
+            packet_id = packet_id + 1
+            
+            -- Simulate transmission and response
+            PRINT "[NET] Sending packet " + STRING(packet.id) + " (Size: " + STRING(LEN(payload)) + ")"
+            WAIT(0.1) -- Simulate network delay
+            
+            -- Simulate ACK
+            PRINT "[NET] Received ACK for packet " + STRING(packet.id)
+        WEND
+    WEND
+END FUNCTION
+
+FUNCTION simulate_memory_manager() AS VOID
+    LOCAL memory_pool = CREATE_ARRAY(1024, 0) -- 1KB memory pool
+    LOCAL allocated_blocks = CREATE_LIST()
+    
+    PRINT "\n--- Starting Memory Management Simulator ---"
+    PRINT "Memory Pool Size: " + STRING(LEN(memory_pool)) + " bytes"
+    
+    LOOP
+        PRINT "\n--- Memory Operations ---"
+        PRINT "1. Allocate Block"
+        PRINT "2. Free Block"
+        PRINT "3. Show Stats"
+        PRINT "4. Exit"
+        LOCAL choice = INPUT_INT()
+        
+        IF choice == 1
+            PRINT "Enter size (bytes):"
+            LOCAL size = INPUT_INT()
+            IF size > 0 AND size <= LEN(memory_pool)
+                LOCAL block = FIND_FREE_BLOCK(memory_pool, size)
+                IF block != -1
+                    ALLOCATE_BLOCK(memory_pool, block, size)
+                    ADD_TO_LIST(allocated_blocks, {"start": block, "size": size})
+                    PRINT "SUCCESS: Allocated " + STRING(size) + " bytes at address " + STRING(block)
+                ELSE
+                    PRINT "FAILURE: Insufficient memory."
+                END IF
+            ELSE
+                PRINT "FAILURE: Invalid size."
+            END IF
+        ELSE IF choice == 2
+            PRINT "Enter address to free:"
+            LOCAL addr = INPUT_INT()
+            LOCAL found = FALSE
+            FOR i = 0 TO COUNT(allocated_blocks) - 1
+                IF GET_LIST_ITEM(allocated_blocks, i)["start"] == addr
+                    FREE_BLOCK(memory_pool, addr, GET_LIST_ITEM(allocated_blocks, i)["size"])
+                    REMOVE_FROM_LIST(allocated_blocks, i)
+                    PRINT "SUCCESS: Freed memory at address " + STRING(addr)
+                    found = TRUE
+                    BREAK
+                END IF
+            NEXT
+            IF NOT found
+                PRINT "FAILURE: Address not found or not allocated."
+            END IF
+        ELSE IF choice == 3
+            LOCAL used = 0
+            FOR i = 0 TO COUNT(allocated_blocks) - 1
+                used = used + GET_LIST_ITEM(allocated_blocks, i)["size"]
+            NEXT
+            PRINT "Stats: Used " + STRING(used) + "/" + STRING(LEN(memory_pool)) + " bytes. Free blocks: " + STRING(LEN(allocated_blocks))
+        ELSE
+            PRINT "Exiting Memory Manager."
+            BREAK
+        END IF
+    LOOP
+END FUNCTION
+
+FUNCTION FIND_FREE_BLOCK(pool, size) AS INTEGER
+    LOCAL current_addr = 0
+    FOR i = 0 TO LEN(pool) - 1
+        IF pool[i] == 0 THEN
+            current_addr = i
+            LOCAL count = 0
+            WHILE i < LEN(pool) AND pool[i] == 0 AND count < size
+                i = i + 1
+                count = count + 1
+            WEND
+            IF count == size
+                RETURN current_addr
+            ELSE
+                i = i - 1 -- Adjust for the outer loop
+            END IF
+        END IF
+    NEXT
+    RETURN -1
+END FUNCTION
+
+FUNCTION ALLOCATE_BLOCK(pool, addr, size)
+    LOCAL i
+    FOR i = 0 TO size - 1
+        pool[addr + i] = 1
+    NEXT
+END FUNCTION
+
+FUNCTION FREE_BLOCK(pool, addr, size)
+    LOCAL i
+    FOR i = 0 TO size - 1
+        pool[addr + i] = 0
+    NEXT
+END FUNCTION
+
+FUNCTION WAIT(seconds)
+    -- Simulate delay
+    LOCAL t = 0
+    WHILE t < seconds
+        t = t + 0.1
+    WEND
+END FUNCTION
+
+FUNCTION MIN(a, b) AS INTEGER
+    IF a < b THEN RETURN a ELSE RETURN b END IF
+END FUNCTION
+
+FUNCTION LEN(s) AS INTEGER
+    -- String length helper
+    LOCAL l = 0
+    WHILE s[l] != "\0"
+        l = l + 1
+    WEND
+    RETURN l
+END FUNCTION
+
+FUNCTION SUBSTR(s, start, len) AS STRING
+    -- String substring helper
+    LOCAL res = ""
+    LOCAL i
+    FOR i = 0 TO len - 1
+        IF start + i <= LEN(s) - 1
+            res = res + s[start + i]
+        END IF
+    NEXT
+    RETURN res
+END FUNCTION
+
+FUNCTION UPPER(s) AS STRING
+    -- String uppercase helper
+    LOCAL res = ""
+    LOCAL i
+    FOR i = 0 TO LEN(s) - 1
+        res = res + ASCIITOUPPER(s[i])
+    NEXT
+    RETURN res
+END FUNCTION
+
+FUNCTION STRING(n) AS STRING
+    -- Integer to string helper
+    LOCAL s = ""
+    LOCAL val = n
+    IF val == 0 THEN RETURN "0" END IF
+    WHILE val > 0
+        s = STR(val % 10) + s
+        val = val / 10
+    WEND
+    RETURN s
+END FUNCTION
+
+FUNCTION INPUT() AS STRING
+    -- Placeholder for actual input
+    RETURN "HELLO WORLD"
+END FUNCTION
+
+FUNCTION INPUT_INT() AS INTEGER
+    -- Placeholder for integer input
+    RETURN 1
+END FUNCTION
+
+FUNCTION CREATE_ARRAY(size, value) AS LIST
+    LOCAL arr = CREATE_LIST()
+    LOCAL i
+    FOR i = 0 TO size - 1
+        ADD_TO_LIST(arr, value)
+    NEXT
+    RETURN arr
+END FUNCTION
+
+FUNCTION CREATE_LIST() AS LIST
+    RETURN NEW_LIST()
+END FUNCTION
+
+FUNCTION COUNT(list) AS INTEGER
+    LOCAL c = 0
+    LOCAL item
+    FOR EACH item IN list
+        c = c + 1
+    NEXT
+    RETURN c
+END FUNCTION
+
+FUNCTION GET_LIST_ITEM(list, index) AS ITEM
+    RETURN list[index]
+END FUNCTION
+
+FUNCTION ADD_TO_LIST(list, item) AS VOID
+    APPEND(list, item)
+END FUNCTION
+
+FUNCTION REMOVE_FROM_LIST(list, index) AS VOID
+    DELETE(list, index)
+END FUNCTION
+
+FUNCTION ALLOCATE_BLOCK(pool, addr, size)
+    LOCAL i
+    FOR i = 0 TO size - 1
+        pool[addr + i] = 1
+    NEXT
+END FUNCTION
+
+FUNCTION FREE_BLOCK(pool, addr, size)
+    LOCAL i
+    FOR i = 0 TO size - 1
+        pool[addr + i] = 0
+    NEXT
+END FUNCTION

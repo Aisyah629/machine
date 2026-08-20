@@ -1,0 +1,299 @@
+/*
+ * Agora Low-Level Memory & Network Simulator
+ * Simulates virtual memory and a custom network protocol
+ */
+
+PROGRAM MemoryNetworkSimulator
+
+// ==========================================
+// CONSTANTS & DATA STRUCTURES
+// ==========================================
+
+CONST MAX_MEMORY_SIZE = 1024
+CONST MAX_NODES = 10
+CONST MAX_PACKET_SIZE = 256
+
+TYPE PacketHeader {
+    type: BYTE
+    source: BYTE
+    dest: BYTE
+    payload_len: WORD
+    seq_id: WORD
+}
+
+TYPE Packet {
+    header: PacketHeader
+    payload: ARRAY[BYTE] MAX_PACKET_SIZE
+    checksum: WORD
+}
+
+TYPE MemoryBlock {
+    start_addr: WORD
+    size: WORD
+    is_free: BOOLEAN
+}
+
+TYPE VirtualNode {
+    id: BYTE
+    connected: BOOLEAN
+    packet_buffer: ARRAY[Packet] 16
+}
+
+// ==========================================
+// GLOBAL STATE
+// ==========================================
+
+VAR memory_map: ARRAY[BYTE] MAX_MEMORY_SIZE
+VAR block_list: ARRAY[MemoryBlock] 32
+VAR node_list: ARRAY[VirtualNode] MAX_NODES
+VAR next_block_idx: INT
+VAR next_seq_id: WORD
+
+// ==========================================
+// MEMORY MANAGEMENT
+// ==========================================
+
+PROC init_memory()
+    // Initialize memory map to all zeros (free)
+    FOR i = 0 TO MAX_MEMORY_SIZE - 1
+        memory_map[i] = 0
+    NEXT
+
+    // Create initial free block
+    block_list[0].start_addr = 0
+    block_list[0].size = MAX_MEMORY_SIZE
+    block_list[0].is_free = TRUE
+    next_block_idx = 1
+END PROC
+
+PROC alloc_memory(size: WORD) RETURNS WORD
+    // First-fit allocation
+    FOR i = 0 TO next_block_idx - 1
+        IF block_list[i].is_free AND block_list[i].size >= size THEN
+            // Found a free block
+            addr = block_list[i].start_addr
+
+            IF block_list[i].size > size + 1 THEN
+                // Split the block
+                new_block_addr = addr + size
+                new_block_size = block_list[i].size - size
+
+                // Mark current block as allocated
+                block_list[i].is_free = FALSE
+                block_list[i].size = size
+
+                // Insert new free block at next_block_idx
+                // Shift blocks if necessary (simplified: just append)
+                IF next_block_idx < 32 THEN
+                    block_list[next_block_idx].start_addr = new_block_addr
+                    block_list[next_block_idx].size = new_block_size
+                    block_list[next_block_idx].is_free = TRUE
+                    next_block_idx = next_block_idx + 1
+                END IF
+            ELSE
+                // Exact fit or too small, just mark as allocated
+                block_list[i].is_free = FALSE
+            END IF
+
+            // Clear allocated memory
+            FOR j = 0 TO size - 1
+                memory_map[addr + j] = 0
+            NEXT
+
+            RETURN addr
+        END IF
+    NEXT
+
+    // Out of memory
+    RETURN 0
+END PROC
+
+PROC free_memory(addr: WORD)
+    FOR i = 0 TO next_block_idx - 1
+        IF NOT block_list[i].is_free AND block_list[i].start_addr = addr THEN
+            block_list[i].is_free = TRUE
+
+            // Merge with next block if free
+            IF i + 1 < next_block_idx THEN
+                IF block_list[i + 1].is_free AND (addr + block_list[i].size = block_list[i + 1].start_addr) THEN
+                    block_list[i].size = block_list[i].size + block_list[i + 1].size
+                    // Remove next block (simplified by shifting)
+                    FOR k = i + 1 TO next_block_idx - 2
+                        block_list[k].start_addr = block_list[k + 1].start_addr
+                        block_list[k].size = block_list[k + 1].size
+                        block_list[k].is_free = block_list[k + 1].is_free
+                    NEXT
+                    next_block_idx = next_block_idx - 1
+                END IF
+            END IF
+
+            // Merge with previous block if free
+            IF i > 0 THEN
+                IF block_list[i - 1].is_free AND (block_list[i - 1].start_addr + block_list[i - 1].size = addr) THEN
+                    block_list[i - 1].size = block_list[i - 1].size + block_list[i].size
+                    // Remove current block
+                    FOR k = i TO next_block_idx - 2
+                        block_list[k].start_addr = block_list[k + 1].start_addr
+                        block_list[k].size = block_list[k + 1].size
+                        block_list[k].is_free = block_list[k + 1].is_free
+                    NEXT
+                    next_block_idx = next_block_idx - 1
+                END IF
+            END IF
+
+            RETURN
+        END IF
+    NEXT
+END PROC
+
+PROC print_memory_stats()
+    PRINT "Memory Statistics:"
+    total_free = 0
+    total_used = 0
+    num_free_blocks = 0
+    FOR i = 0 TO next_block_idx - 1
+        IF block_list[i].is_free THEN
+            total_free = total_free + block_list[i].size
+            num_free_blocks = num_free_blocks + 1
+        ELSE
+            total_used = total_used + block_list[i].size
+        END IF
+    NEXT
+    PRINT "  Total Memory: " MAX_MEMORY_SIZE
+    PRINT "  Used: " total_used
+    PRINT "  Free: " total_free
+    PRINT "  Free Blocks: " num_free_blocks
+
+    // Calculate fragmentation index (simple: 1 - (largest_free / total_free))
+    IF total_free > 0 THEN
+        largest_free = 0
+        FOR i = 0 TO next_block_idx - 1
+            IF block_list[i].is_free AND block_list[i].size > largest_free THEN
+                largest_free = block_list[i].size
+            END IF
+        NEXT
+        fragmentation = 1.0 - (largest_free / total_free)
+        PRINT "  Fragmentation Index: " fragmentation
+    END IF
+END PROC
+
+// ==========================================
+// NETWORK SIMULATION
+// ==========================================
+
+FUNC compute_checksum(packet: Packet) RETURNS WORD
+    sum = 0
+    // Header checksum
+    sum = sum + packet.header.type
+    sum = sum + packet.header.source
+    sum = sum + packet.header.dest
+    sum = sum + packet.header.payload_len
+    sum = sum + packet.header.seq_id
+
+    // Payload checksum
+    FOR i = 0 TO packet.header.payload_len - 1
+        sum = sum + packet.payload[i]
+    NEXT
+
+    RETURN sum MOD 65536
+END FUNC
+
+PROC send_packet(node_id: BYTE, dest_id: BYTE, payload: ARRAY[BYTE], payload_len: INT)
+    // Create a new packet
+    pkt.header.type = 1 // Data packet
+    pkt.header.source = node_id
+    pkt.header.dest = dest_id
+    pkt.header.payload_len = payload_len
+    pkt.header.seq_id = next_seq_id
+    next_seq_id = next_seq_id + 1
+
+    // Copy payload
+    FOR i = 0 TO payload_len - 1
+        pkt.payload[i] = payload[i]
+    NEXT
+
+    // Compute checksum
+    pkt.checksum = compute_checksum(pkt)
+
+    // Simulate network transmission (add to node's buffer)
+    // For simplicity, we'll just print the packet
+    PRINT "Sending Packet:"
+    PRINT "  Type: " pkt.header.type
+    PRINT "  Source: " node_id
+    PRINT "  Destination: " dest_id
+    PRINT "  Payload Length: " payload_len
+    PRINT "  Sequence ID: " pkt.header.seq_id
+    PRINT "  Checksum: " pkt.checksum
+    PRINT "  Payload: "
+    FOR i = 0 TO payload_len - 1
+        PRINT "    Byte " i ": " pkt.payload[i]
+    NEXT
+END PROC
+
+PROC init_network()
+    FOR i = 0 TO MAX_NODES - 1
+        node_list[i].id = i
+        node_list[i].connected = TRUE
+        // Initialize packet buffer
+        FOR j = 0 TO 15
+            node_list[i].packet_buffer[j].header.type = 0
+        NEXT
+    NEXT
+END PROC
+
+// ==========================================
+// MAIN SIMULATION
+// ==========================================
+
+PROC main()
+    PRINT "=== Agora Memory & Network Simulator ==="
+    PRINT ""
+
+    // Initialize components
+    init_memory()
+    init_network()
+
+    PRINT "--- Memory Allocation Test ---"
+
+    // Allocate some memory
+    addr1 = alloc_memory(100)
+    addr2 = alloc_memory(200)
+    addr3 = alloc_memory(50)
+
+    PRINT "Allocated blocks at addresses: " addr1 ", " addr2 ", " addr3
+    PRINT ""
+
+    // Print stats
+    print_memory_stats()
+    PRINT ""
+
+    // Free a block
+    free_memory(addr2)
+    PRINT "Freed memory at address: " addr2
+    PRINT ""
+    print_memory_stats()
+    PRINT ""
+
+    PRINT "--- Network Packet Simulation ---"
+
+    // Simulate sending a packet
+    payload[0] = 0x48 // 'H'
+    payload[1] = 0x65 // 'e'
+    payload[2] = 0x6c // 'l'
+    payload[3] = 0x6c // 'l'
+    payload[4] = 0x6f // 'o'
+    payload_len = 5
+
+    send_packet(1, 2, payload, payload_len)
+    PRINT ""
+
+    PRINT "=== Simulation Complete ==="
+END PROC
+
+// ==========================================
+// ENTRY POINT
+// ==========================================
+
+CALL main()
+
+END PROGRAM

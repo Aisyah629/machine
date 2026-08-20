@@ -70121,3 +70121,65 @@ Create a new utility in a new dedicated folder. You MUST write it strictly in J+
 </think>
 
 Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the Go programming language. Include a local README.md.
+[2026-08-20 09:25:23] (Target Lang: SequenceL) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a large directory listing of various tools/languages (looks like a custom workspace for an AI coding assistant). There's also a "History" section showing a previous prompt: "Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the Go programming language. Include a local README.md."
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the new tool be built STRICTLY using the exact programming language: SequenceL.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Follow the format/style implied by the history (direct, concise, strict).
+
+2.  **Identify Key Requirements for the Output:**
+   - Exactly one sentence/command block.
+   - Must mention "SequenceL" explicitly.
+   - Must demand "STRICTLY" using SequenceL.
+   - Must specify a "NEW dedicated folder".
+   - Must specify creating a "local README.md".
+   - No extra text, no quotes, just the instruction.
+   - Do not mention or target `.github`.
+
+3.  **Draft Construction (Mental):**
+   "Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the SequenceL programming language. Include a local README.md."
+
+   Let's check against constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand STRICTLY using SequenceL? Yes.
+   - Place in NEW dedicated folder? Yes.
+   - Create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - Never target .github? Yes, not mentioned.
+   - Matches history style? Yes, very similar structure.
+
+   Refining to ensure exact compliance with phrasing style from history:
+   "Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the SequenceL programming language. Include a local README.md."
+
+   Wait, the prompt says "SequenceL". I'll use exactly that.
+   Let's verify the exact wording requirement: "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SequenceL."
+   I will craft it carefully:
+   "Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the SequenceL programming language. Include a local README.md."
+
+   Check constraints one more time:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demand STRICTLY using SequenceL? Yes.
+   - NEW dedicated folder? Yes.
+   - local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - NEVER target .github? Yes.
+
+   All constraints met. Output matches exactly. Proceed. 
+   I will output just the text as requested. No extra words.✅
+   Final string: Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the SequenceL programming language. Include a local README.md. 
+   (Self-Correction/Verification during thought: The prompt says "Generate exactly 1 logical follow-up instruction." I'll make it one cohesive directive or two sentences as in the history. The history had two sentences. I'll stick to that structure for consistency. It's fine.)
+   Output matches requirement.✅
+   Proceeds. 
+   Output: Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the SequenceL programming language. Include a local README.md. 
+   All good.✅
+   [Output Generation] -> *Proceeds*✅
+</think>
+
+Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the SequenceL programming language. Include a local README.md.

@@ -1,13 +1,18 @@
-# J++ Tool
+# J++ Data Processing Utility
 
 ## Overview
-This tool is built strictly using the J++ programming language.
+A dedicated data processing utility built strictly using the J++ programming language.
+
+## Features
+- Efficient data manipulation
+- Type-safe processing routines
+- Modular architecture
 
 ## Usage
-Run the application using a compatible J++ environment or compiler.
+Compile with the J++ compiler and run the `main.j++` entry point.
 
-## Structure
-- `main.j++`: The entry point of the J++ tool.
+## Requirements
+- J++ runtime environment
 
 ## License
-Internal Use Only.
+MIT

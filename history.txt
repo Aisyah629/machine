@@ -70003,3 +70003,59 @@ Create a new utility in a new dedicated folder. You MUST write it strictly in Cu
 </think>
 
 Create a new utility in a new dedicated folder. You MUST write it strictly in Strand. Include a local README.md.
+[2026-08-20 09:22:53] (Target Lang: J++) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A massive list of directories/files representing various programming language tools. I can see `./jplusplus_tool/` and `./jplusplus_tool/main.j++` in the list.
+   - **History:** Shows a previous turn where the user asked for a Strand tool, and I (or the system) generated exactly the instruction text.
+   - **Current Prompt:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: J++. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Generate exactly 1 logical follow-up instruction.
+     - Explicitly demand the new tool be built STRICTLY using J++.
+     - Instruct to place it in a NEW dedicated folder.
+     - Instruct to create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+
+2.  **Identify Key Constraints to Fulfill:**
+   - Must mention J++ explicitly.
+   - Must mention a new dedicated folder.
+   - Must mention a local README.md.
+   - Must be exactly one instruction.
+   - Must output ONLY the instruction text.
+   - Must avoid .github.
+
+3.  **Draft Construction:**
+   "Create a new utility in a new dedicated folder. You MUST write it strictly in J++. Include a local README.md."
+   Let's check against constraints:
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using J++? Yes.
+   - Instruct to place in NEW dedicated folder? Yes.
+   - Instruct to create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, not mentioned.
+
+   The prompt history shows a very specific format they expect: "Create a new utility in a new dedicated folder. You MUST write it strictly in [Language]. Include a local README.md."
+   I will match that style closely but ensure it strictly matches the current requirements.
+
+   Draft: "Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the J++ programming language. Include a local README.md."
+
+4.  **Final Verification:**
+   - "Generate exactly 1 logical follow-up instruction." -> One sentence/command.
+   - "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: J++." -> Checked.
+   - "If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md." -> Checked.
+   - "Return ONLY the instruction text." -> Checked.
+   - "NEVER target the .github directory." -> Checked.
+   - Matches workspace context? Yes, J++ exists in the workspace (`./jplusplus_tool/`), but the prompt says "NEW dedicated folder", so I'll follow that.
+   - I will output exactly the drafted instruction.
+
+   Output matches perfectly. Proceed. 
+   Text: Create a new utility in a new dedicated folder. You MUST build it STRICTLY using the J++ programming language. Include a local README.md.
+   (Self-Correction/Refinement during thought): The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: J++." I'll make it punchy and direct.
+   "Create a new utility in a new dedicated folder. You MUST write it strictly in J++. Include a local README.md." matches the history style perfectly. I'll stick with that. All constraints met. Output matches.✅
+   Proceeds.✅
+   *(Done.)*
+</think>
+
+Create a new utility in a new dedicated folder. You MUST write it strictly in J++. Include a local README.md.

@@ -477,3 +477,5 @@ MIT License
 - Created/Updated module: `data_processing_utility_code_tool` (See `data_processing_utility_code_tool/README.md` for details)
 
 - Created/Updated module: `curl_scripting_tool` (See `curl_scripting_tool/README.md` for details)
+
+- Created/Updated module: `jplusplus_tool` (See `jplusplus_tool/README.md` for details)

@@ -1,52 +1,51 @@
-// Strand Tool - Main Implementation
-// Language: Strand
-// Purpose: Core functionality for Strand-based tool operations
+# Main Strand Data Processing Utility
 
-module StrandTool;
+This script demonstrates a simple data processing pipeline using the Strand language.
 
-import System.IO;
-import System.Process;
+```strand
+import io;
+import transform;
 
-// Configuration constants
-const TOOL_NAME = "strand_tool";
-const VERSION = "1.0.0";
-const LANGUAGE = "Strand";
-
-// Main execution entry point
-public function main(): Void {
-    println("Initializing " + TOOL_NAME + " v" + VERSION);
-    println("Strict language mode: " + LANGUAGE);
-    
-    // Validate environment for Strand execution
-    if (!validateStrandEnvironment()) {
-        println("ERROR: Strand execution environment not available.");
-        halt(1);
+// Define the main processing function
+function processData(inputData) {
+  // Initialize the transformation pipeline
+  pipeline = transform.Pipeline();
+  
+  // Add transformations
+  pipeline.addStep(
+    function(data) {
+      return data.filter(function(item) {
+        return item.value > 10;
+      });
     }
-    
-    println("Environment validated. Ready for Strand operations.");
-    runCorePipeline();
-    println("Execution complete.");
+  );
+  
+  pipeline.addStep(
+    function(data) {
+      return data.map(function(item) {
+        return item.value * 2;
+      });
+    }
+  );
+  
+  // Execute the pipeline
+  result = pipeline.execute(inputData);
+  
+  return result;
 }
 
-// Validates that the runtime supports strict Strand execution
-private function validateStrandEnvironment(): Boolean {
-    // In a real Strand implementation, this would check for:
-    // - Strand compiler/interpreter availability
-    // - Language standard compliance flags
-    // - Required Strand libraries
-    return true; // Placeholder for actual validation logic
+// Main entry point
+function main() {
+  // Read input data from stdin
+  inputData = io.readAll();
+  
+  // Process the data
+  processedData = processData(inputData);
+  
+  // Output the result
+  io.write(processedData);
 }
 
-// Orchestrates the core tool pipeline
-private function runCorePipeline(): Void {
-    println("Running Strand core pipeline...");
-    // Placeholder for actual Strand-specific logic
-    // This would involve parsing, compiling, or interpreting Strand source code
-    println("Core pipeline executed successfully.");
-}
-
-// Helper to safely halt execution
-private function halt(code: Int): Void {
-    println("Terminating with exit code: " + code);
-    exit(code);
-}
+// Run the main function
+main();
+```

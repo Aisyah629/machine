@@ -70391,3 +70391,40 @@ Proceeds.✅
 </think>
 
 Create a new dedicated folder for a 3D scene automation or asset management script, build it STRICTLY using the MaxScript programming language, and include a local README.md file.
+[2026-08-20 10:16:30] (Target Lang: Cyclone) Thinking Process:
+1.  **Analyze the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Target Language: Cyclone (Strictly).
+    *   Structure: New dedicated folder, new tool, local README.md.
+    *   Constraints: Return *only* the instruction text. Never target `.github`.
+    *   Context: The workspace has many tools listed. The user prompt provides a history snippet showing a previous instruction about MaxScript. The current instruction is the "follow-up" generation step based on that history/context, or rather, the user is asking *me* to generate the instruction for *Cyclone*.
+    *   Input Format: The user provided a huge list of files and a history, then the final line: `Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Cyclone. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory.`
+
+2.  **Verify Constraints:**
+    *   Language: Cyclone. (Check: Workspace has `cyclone_safe_systems_tool` and `cyclone_tool` with `main.cyc`, but I need to create a *new* one or a specific instruction based on the prompt's demand. The prompt says "generate... instruction... build it STRICTLY using... Cyclone". It implies the instruction itself should demand Cyclone.)
+    *   New folder: "Create a new dedicated folder..."
+    *   README.md: "...and create a local README.md."
+    *   Only instruction text: No extra chatter.
+    *   No `.github`: Ensure the generated text doesn't mention `.github`.
+
+3.  **Drafting the Instruction:**
+    *   "Create a new dedicated folder for a robust safety-critical systems script, build it STRICTLY using the Cyclone programming language, and include a local README.md file."
+    *   Refinement to match the style of the "MaxScript" example in the history: "Create a new dedicated folder for a [description], build it STRICTLY using the Cyclone programming language, and include a local README.md file."
+    *   Description ideas: Cyclone is known for safe memory management/C extensions. "safe memory management script" or "robust systems programming tool".
+    *   Draft: `Create a new dedicated folder for a safe memory management systems tool, build it STRICTLY using the Cyclone programming language, and include a local README.md file.`
+
+4.  **Final Polish:**
+    *   Must be strictly the instruction text.
+    *   Result: `Create a new dedicated folder for a safe memory management systems tool, build it STRICTLY using the Cyclone programming language, and include a local README.md file.`
+
+5.  **Final Check:**
+    *   Cyclone mentioned? Yes.
+    *   New folder mentioned? Yes.
+    *   README.md mentioned? Yes.
+    *   Only instruction text? Yes.
+    *   No `.github`? Yes.
+
+6.  **Output:** `Create a new dedicated folder for a safe memory management systems tool, build it STRICTLY using the Cyclone programming language, and include a local README.md file.`
+</think>
+
+Create a new dedicated folder for a safe memory management systems tool, build it STRICTLY using the Cyclone programming language, and include a local README.md file.

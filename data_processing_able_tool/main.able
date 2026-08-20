@@ -1,0 +1,128 @@
+/**
+ * ABLE Data Processing Tool
+ * 
+ * This module provides core data processing functions
+ * including parsing, filtering, and transformation.
+ */
+
+MODULE data_processing;
+
+IMPORTS stdlib;
+
+// Define data record structure
+RECORD DataRecord {
+    ID: INTEGER;
+    Name: STRING(50);
+    Value: REAL;
+    Category: STRING(20);
+}
+
+// Global data store
+GLOBAL data_store: ARRAY OF DataRecord;
+GLOBAL data_count: INTEGER;
+
+/**
+ * Initialize the data processing engine
+ */
+PROCEDURE Initialize():
+    data_store := NEW ARRAY OF DataRecord SIZE 1000;
+    data_count := 0;
+    stdlib.Log("Data Processing Engine Initialized");
+END PROCEDURE;
+
+/**
+ * Add a new data record to the store
+ */
+PROCEDURE AddRecord(id: INTEGER, name: STRING, value: REAL, category: STRING):
+    IF data_count < 1000 THEN
+        data_store[data_count].ID := id;
+        data_store[data_count].Name := name;
+        data_store[data_count].Value := value;
+        data_store[data_count].Category := category;
+        data_count := data_count + 1;
+        stdlib.Log("Record added: " + stdlib.ToString(id));
+    ELSE
+        stdlib.LogError("Data store full!");
+    END IF;
+END PROCEDURE;
+
+/**
+ * Filter records by category
+ */
+PROCEDURE FilterByCategory(category: STRING): ARRAY OF DataRecord:
+    LOCAL result: ARRAY OF DataRecord;
+    LOCAL count: INTEGER;
+    LOCAL i: INTEGER;
+    
+    result := NEW ARRAY OF DataRecord SIZE data_count;
+    count := 0;
+    
+    FOR i FROM 0 TO data_count - 1 DO
+        IF data_store[i].Category == category THEN
+            result[count] := data_store[i];
+            count := count + 1;
+        END IF;
+    END FOR;
+    
+    RETURN result;
+END PROCEDURE;
+
+/**
+ * Calculate statistics for a given category
+ */
+PROCEDURE CalculateStats(category: STRING):
+    LOCAL count: INTEGER;
+    LOCAL sum: REAL;
+    LOCAL avg: REAL;
+    LOCAL i: INTEGER;
+    
+    count := 0;
+    sum := 0.0;
+    
+    FOR i FROM 0 TO data_count - 1 DO
+        IF data_store[i].Category == category THEN
+            sum := sum + data_store[i].Value;
+            count := count + 1;
+        END IF;
+    END FOR;
+    
+    IF count > 0 THEN
+        avg := sum / count;
+        stdlib.Log("Category: " + category);
+        stdlib.Log("Count: " + stdlib.ToString(count));
+        stdlib.Log("Sum: " + stdlib.ToString(sum));
+        stdlib.Log("Average: " + stdlib.ToString(avg));
+    ELSE
+        stdlib.Log("No records found for category: " + category);
+    END IF;
+END PROCEDURE;
+
+/**
+ * Main entry point
+ */
+PROCEDURE Main():
+    Initialize();
+    
+    // Sample data insertion
+    AddRecord(1, "Item A", 10.5, "Electronics");
+    AddRecord(2, "Item B", 25.0, "Books");
+    AddRecord(3, "Item C", 15.75, "Electronics");
+    AddRecord(4, "Item D", 30.0, "Clothing");
+    AddRecord(5, "Item E", 12.25, "Books");
+    
+    // Process data
+    stdlib.Log("Processing data...");
+    
+    // Filter and display
+    LOCAL filtered: ARRAY OF DataRecord;
+    filtered := FilterByCategory("Electronics");
+    stdlib.Log("Found " + stdlib.ToString(filtered[0].ID) + " electronics items");
+    
+    // Calculate statistics
+    CalculateStats("Electronics");
+    CalculateStats("Books");
+    
+    stdlib.Log("Data processing complete.");
+END PROCEDURE;
+
+END MODULE data_processing;

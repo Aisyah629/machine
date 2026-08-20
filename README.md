@@ -535,3 +535,5 @@ MIT License
 - Created/Updated module: `./mesa_data_processing_tool` (See `./mesa_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `xpp_data_processor_tool` (See `xpp_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `m4_data_processor_tool` (See `m4_data_processor_tool/README.md` for details)

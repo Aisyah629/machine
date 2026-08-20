@@ -1,0 +1,38 @@
+""" ALGOL 58 - Legacy Batch Processing Engine """
+BEGIN
+    BOOLEAN processed;
+    INTEGER record_count, max_records;
+    REAL threshold;
+
+    PROCEDURE process_record(REAL value);
+    BEGIN
+        IF value > threshold THEN
+            processed := TRUE
+        ELSE
+            processed := FALSE
+        END;
+        record_count := record_count + 1
+    END;
+
+    PROCEDURE engine_loop;
+    BEGIN
+        REAL input_buffer;
+        processed := FALSE;
+        record_count := 0;
+        threshold := 0.75;
+
+        FOR i := 1 STEP 1 UNTIL 1000 DO
+            input_buffer := i * 0.01;
+            process_record(input_buffer)
+        END;
+
+        IF record_count = max_records THEN
+            print("Batch processing complete.")
+        ELSE
+            print("Batch processing interrupted.")
+        END
+    END;
+
+    max_records := 1000;
+    engine_loop
+END

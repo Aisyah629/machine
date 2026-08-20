@@ -547,3 +547,5 @@ MIT License
 - Created/Updated module: `limbo_data_processor_tool` (See `limbo_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./vvvv_tool` (See `./vvvv_tool/README.md` for details)
+
+- Created/Updated module: `oriel_data_processing_tool` (See `oriel_data_processing_tool/README.md` for details)

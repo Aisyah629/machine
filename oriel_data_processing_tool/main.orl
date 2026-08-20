@@ -1,0 +1,54 @@
+;; Oriel Data Processing Tool
+;; A simple tool for data processing tasks.
+
+;; Define a simple data structure for records
+define-record UserRecord (
+    name string
+    age integer
+    score float
+)
+
+;; Function to process a list of users
+;; Filters users with age >= 18 and calculates average score
+function process-users(users) {
+    def filtered-users = []
+    def sum-scores = 0.0
+    def count = 0
+
+    for each user in users do {
+        if (user.age >= 18) {
+            filtered-users.append(user)
+            sum-scores = sum-scores + user.score
+            count = count + 1
+        }
+    }
+
+    def average-score = 0.0
+    if (count > 0) {
+        average-score = sum-scores / count
+    }
+
+    return (filtered-users, average-score)
+}
+
+;; Main execution block
+function main() {
+    def users = [
+        {name: "Alice", age: 25, score: 85.5},
+        {name: "Bob", age: 17, score: 90.0},
+        {name: "Charlie", age: 30, score: 78.2},
+        {name: "Diana", age: 22, score: 92.1}
+    ]
+
+    def (filtered, avg) = process-users(users)
+    
+    print "Filtered Users:" 
+    for each u in filtered do {
+        print u.name + " - " + u.age + " - " + u.score
+    }
+    
+    print "Average Score: " + avg
+}
+
+;; Start execution
+main()

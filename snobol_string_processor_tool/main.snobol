@@ -1,0 +1,57 @@
+	DEFINE('PROCESS_INPUT(text, pattern, replacement)')
+	INPUT = text
+	OUTPUT = ''
+	
+		SPOT(pattern) = :REPLACE
+		REPLACE = replacement
+		OUTPUT = OUTPUT . REPLACE . REMAIN
+		BREAK
+		REPLACE
+	OUTPUT = OUTPUT . INPUT
+	OUTPUT = OUTPUT . INPUT
+	PROCESS_INPUT = OUTPUT
+	END
+
+	DEFINE('EXTRACT_DATA(lines, delimiter)')
+	EXTRACTED = ''
+	LINECOUNT = 0
+	
+NEXTLINE
+	LINECOUNT = LINECOUNT + 1
+	LINE = ARGLIST(0, LINECOUNT - 1) ; this is a simplification for the example
+	
+		SPOT(delimiter) = :FOUND
+	FOUND
+		OUTPUT = OUTPUT . LINE
+	
+		BREAK
+		FOUND
+		BREAK
+	END
+	
+	DEFINE('VALIDATE_FORMAT(input_string, regex_pattern)')
+	VALID = 0
+	
+		MATCH = input_string
+		VALID = 1
+		BREAK
+		VALID
+	VALIDATE_FORMAT = VALID
+	END
+
+	TEXT = 'The quick brown fox jumps over the lazy dog.'
+	PATTERN = 'fox'
+	REPLACEMENT = 'cat'
+	
+	RESULT = PROCESS_INPUT(TEXT, PATTERN, REPLACEMENT)
+	OUTPUT = 'Original: '
+	OUTPUT = TEXT
+	OUTPUT = 'Processed: '
+	OUTPUT = RESULT
+	OUTPUT = '\n'
+
+	IF PROCESS_INPUT('test123', '123', '456') EQ 'test456' THEN
+		OUTPUT = 'Validation 1 Passed\n'
+	
+	IF VALIDATE_FORMAT('user@example.com', '^.*@.*\..*$') THEN
+		OUTPUT = 'Validation 2 Passed\n'

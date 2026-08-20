@@ -70428,3 +70428,72 @@ Create a new dedicated folder for a 3D scene automation or asset management scri
 </think>
 
 Create a new dedicated folder for a safe memory management systems tool, build it STRICTLY using the Cyclone programming language, and include a local README.md file.
+[2026-08-20 10:17:39] (Target Lang: SNOBOL) Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Input: A directory listing of existing tools, a conversation history showing the user wants to create tool folders with specific languages (history mentions Cyclone), and a final instruction to create a Cyclone tool.
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Must explicitly demand the new tool be built STRICTLY using the SNOBOL programming language.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder.
+    *   Constraint 3: Explicitly instruct to create a local README.md.
+    *   Constraint 4: Return ONLY the instruction text.
+    *   Constraint 5: NEVER target the .github directory.
+
+2.  **Review Existing Tools:**
+    *   I see `snobol_tool` in the directory listing (`./snobol_tool/README.md`).
+    *   The user wants a *new* tool built strictly using SNOBOL. Even though one exists, the prompt asks to "Generate exactly 1 logical follow-up instruction" based on the history style.
+    *   The history shows a pattern: `Create a new dedicated folder for a [description], build it STRICTLY using the [Language] programming language, and include a local README.md file.`
+
+3.  **Drafting the Instruction:**
+    *   *Language:* SNOBOL.
+    *   *Folder:* New dedicated folder (e.g., `snobol_text_processing_tool`).
+    *   *Description:* SNOBOL is known for string processing/text manipulation. A logical description would be "advanced string manipulation engine" or "pattern matching and text processing tool". Let's go with "advanced string manipulation and pattern matching tool" or simply "text processing tool" to match the "safe memory management systems tool" complexity. Let's use "robust text processing tool".
+    *   *Action:* Create a new dedicated folder... build it STRICTLY using... include README.md.
+
+    *Draft 1:* Create a new dedicated folder for a robust text processing tool, build it STRICTLY using the SNOBOL programming language, and include a local README.md file.
+
+4.  **Refining based on Constraints:**
+    *   "Explicitly demand that the new tool be built STRICTLY using this exact programming language: SNOBOL." -> Included.
+    *   "Explicitly instruct to place it in a NEW dedicated folder" -> Included.
+    *   "Create a local README.md" -> Included.
+    *   "Return ONLY the instruction text" -> Yes.
+    *   "NEVER target the .github directory" -> Not targeted.
+
+5.  **Final Polish:**
+    "Create a new dedicated folder for a robust text processing tool, build it STRICTLY using the SNOBOL programming language, and include a local README.md file."
+
+    *Self-Correction on "Logical":* Since there is already a `snobol_tool`, maybe the user wants a specific type of tool? The prompt history shows "safe memory management systems tool" for Cyclone (which also existed as `cyclone_safe_systems_tool`). The pattern seems to be adding specific domain tools. SNOBOL is string-oriented.
+    Let's stick to the structure.
+    Structure: `Create a new dedicated folder for a [description], build it STRICTLY using the SNOBOL programming language, and include a local README.md file.`
+    Description: "text manipulation and pattern matching tool".
+
+    *Revised Draft:* Create a new dedicated folder for a text manipulation and pattern matching tool, build it STRICTLY using the SNOBOL programming language, and include a local README.md file.
+
+6.  **Final Output Generation:**
+    `Create a new dedicated folder for a text manipulation and pattern matching tool, build it STRICTLY using the SNOBOL programming language, and include a local README.md file.`
+
+    Let's check against the "History" logic provided in the prompt's internal thought trace (which I must mimic if present, though the prompt asks me to generate the instruction based on the input). The prompt *contains* a "History" section with a thought process example that ends with "Create a new dedicated folder for a safe memory management systems tool...".
+    Wait, the prompt text provided *includes* the output of the previous step in the "History" section.
+    History: `... Create a new dedicated folder for a safe memory management systems tool, build it STRICTLY using the Cyclone programming language, and include a local README.md file.`
+
+    So I need to generate the *next* one.
+    The constraint is: `MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: SNOBOL.`
+
+    Final string: `Create a new dedicated folder for a text manipulation and pattern matching tool, build it STRICTLY using the SNOBOL programming language, and include a local README.md file.`
+
+    Let's verify "text manipulation" fits SNOBOL. Yes.
+    Let's verify "STRICTLY using... SNOBOL". Yes.
+    Let's verify "NEW dedicated folder". Yes.
+    Let's verify "local README.md". Yes.
+
+    Result looks good.
+
+    *Alternative Description:* SNOBOL is a string-oriented language. "string processing" is a good descriptor.
+    "Create a new dedicated folder for a string processing tool, build it STRICTLY using the SNOBOL programming language, and include a local README.md file." -> Simple and accurate.
+
+    Let's go with "advanced string processing tool".
+
+    Final selection: `Create a new dedicated folder for an advanced string processing tool, build it STRICTLY using the SNOBOL programming language, and include a local README.md file.`
+</think>
+
+Create a new dedicated folder for an advanced string processing tool, build it STRICTLY using the SNOBOL programming language, and include a local README.md file.

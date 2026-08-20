@@ -539,3 +539,5 @@ MIT License
 - Created/Updated module: `m4_data_processor_tool` (See `m4_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `snowball_interactive_diagnostic_tool` (See `snowball_interactive_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `./graph_talk_data_processor_tool` (See `./graph_talk_data_processor_tool/README.md` for details)

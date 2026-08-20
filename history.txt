@@ -71269,3 +71269,60 @@ Create a new dedicated folder for a new tool, build it STRICTLY using this exact
 </think>
 
 Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Timber, and include a local README.md file.
+[2026-08-20 11:40:33] (Target Lang: TIE) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a large list of existing tool directories/files (workspace structure) and a history of a previous instruction.
+   - **Previous Instruction in History:** "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Stateflow, and include a local README.md file."
+   - **Task:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TIE. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - **Constraints:**
+     - Exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the tool be built STRICTLY using TIE.
+     - MUST explicitly instruct to place it in a NEW dedicated folder.
+     - MUST explicitly instruct to create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target the .github directory.
+     - Match the style/format of the history example.
+
+2.  **Deconstruct Requirements for the Output:**
+   - Format: Single sentence/instruction.
+   - Key phrases required: "new dedicated folder", "STRICTLY using this exact programming language: TIE", "local README.md".
+   - No extra text, no greetings, no markdown formatting unless necessary (but the prompt says "Return ONLY the instruction text.").
+   - Check against constraints: Exactly 1? Yes. Targets TIE? Yes. New folder? Yes. Local README.md? Yes. No .github? Yes.
+
+3.  **Draft Generation:**
+   Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: TIE, and include a local README.md file.
+
+4.  **Verify against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using TIE? Yes.
+   - Instruct to place in NEW dedicated folder? Yes.
+   - Instruct to create local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes.
+   - Matches style? Yes.
+
+   The draft perfectly matches the requirements. I will output exactly that. No extra words.✅
+   Output: `Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: TIE, and include a local README.md file.`
+   All constraints met. Proceed. 
+   Self-Correction/Refinement during thought: The prompt says "Return ONLY the instruction text." I will ensure absolutely no extra characters or formatting surround it. The draft is ready.✅
+   Output matches exactly.👇🏼
+   "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: TIE, and include a local README.md file." -> matches perfectly.✅
+   Proceeds. 
+   Output Generation. 
+   [Done] 
+   *Self-Correction/Verification during generation prep*: 
+   Check exact wording from prompt: "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: TIE, and include a local README.md file."
+   Matches perfectly. No extra text. Ready. 
+   Output matches response.✅
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TIE. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   All good. Output matches.✅
+   Proceeds. 
+   [Output Generation] -> `Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: TIE, and include a local README.md file.` (exactly as requested)
+   *Note*: I will output just the text as instructed. No markdown, no extra words. Just the raw string.✅
+   Done. 
+   [Output Generation] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: TIE, and include a local README.md file. 
+   *(Proceeds)*
+</think>
+
+Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: TIE, and include a local README.md file.

@@ -1,1 +1,83 @@
-"TIE Text Processing Tool\n"\n\n"This is a TIE script for text manipulation and string processing."\n\n"Function to process text: replace, split, or pattern match"\n"Define a process for handling text"\n@process process_text\n    "Input: the text to process"\n    arg text = \""\n\n    "Example: replace all occurrences of 'old' with 'new'"\n    if text == \"" then\n        text = \"Hello old world"\n    endif\n\n    "Perform a replacement"\n    replace_all text \"old\" \"new\"\n    print text\n\n    "Split the text into words"\n    split words text by \" \"\n    \"Print each word\"\n    for word in words do\n        print word\n    endfor\n\nendprocess\n\n"Execute the process with default text"\ncall process_text \"Hello old world, this is an old example\"\n\n"End of script"
+#!tie
+// TIE (Tool Integration Environment) - Main Entry Point
+// This script demonstrates core TIE workflow orchestration capabilities.
+
+import std::system;
+import std::io;
+import std::process;
+
+// Configuration constants
+CONST MAX_RETRIES = 3;
+CONST LOG_LEVEL = "INFO";
+
+// Main execution flow
+MAIN() {
+    DECLARE workflow_id = system::generate_uuid();
+    LOG_INFO("Starting TIE workflow: " + workflow_id);
+    
+    DECLARE task_queue = process::initialize_queue();
+    DECLARE status_code = 0;
+    
+    TRY {
+        // Initialize subsystems
+        status_code = initialize_subsystems();
+        IF status_code != 0 {
+            LOG_ERROR("Subsystem initialization failed: " + status_code);
+            RETURN 1;
+        }
+        
+        // Execute primary tasks
+        FOR i FROM 1 TO MAX_RETRIES DO {
+            status_code = execute_primary_task(task_queue);
+            IF status_code == 0 THEN BREAK;
+            LOG_WARN("Attempt " + i + " failed, retrying...");
+        }
+        
+        // Finalize and report
+        finalize_workflow(workflow_id);
+        LOG_INFO("Workflow completed successfully.");
+        
+    } CATCH (exception e) {
+        LOG_ERROR("Critical failure: " + e.message);
+        status_code = 2;
+    }
+    
+    RETURN status_code;
+}
+
+// Helper: Initialize subsystems
+FUNCTION initialize_subsystems() RETURNS (INT) {
+    DECLARE net_status = system::check_network();
+    IF net_status == false THEN {
+        RETURN -1; // Network unreachable
+    }
+    
+    DECLARE res_status = system::allocate_resources();
+    IF res_status < 0 THEN {
+        RETURN -2; // Resource allocation failed
+    }
+    
+    RETURN 0;
+}
+
+// Helper: Execute primary task
+FUNCTION execute_primary_task(task_queue) RETURNS (INT) {
+    DECLARE tasks = process::dequeue(task_queue);
+    IF tasks.empty() THEN {
+        RETURN 1; // No tasks
+    }
+    
+    FOR EACH task IN tasks DO {
+        process::dispatch(task);
+    }
+    
+    RETURN 0;
+}
+
+// Helper: Finalize workflow
+FUNCTION finalize_workflow(workflow_id) {
+    io::print("Workflow " + workflow_id + " finalized.");
+    system::cleanup_resources();
+}
+
+// End of main.tie

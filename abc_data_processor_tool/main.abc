@@ -1,0 +1,26 @@
+/ Main module for data processing
+/ Define the interface
+INTERFACE
+    process(data::LIST) -> processed::LIST
+    end process
+END INTERFACE
+
+/ Implementation
+define process(data)
+    let processed = empty list
+    for item in data
+        / Perform basic cleaning and formatting
+        let cleaned = trim(item)
+        if cleaned is not empty
+            put cleaned into processed
+        end if
+    end for
+    return processed
+end define
+
+/ Example usage
+main:
+    let my_data = ["  apple  ", "banana", "  cherry ", ""]
+    let result = process(my_data)
+    put result
+end main

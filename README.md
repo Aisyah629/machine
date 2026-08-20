@@ -467,3 +467,5 @@ MIT License
 - Created/Updated module: `./hugo_text_formatter_tool` (See `./hugo_text_formatter_tool/README.md` for details)
 
 - Created/Updated module: `haxe_cross_platform_api_tool` (See `haxe_cross_platform_api_tool/README.md` for details)
+
+- Created/Updated module: `abc_data_processor_tool` (See `abc_data_processor_tool/README.md` for details)

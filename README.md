@@ -491,3 +491,5 @@ MIT License
 - Created/Updated module: `cyclone_safe_memory_manager_tool` (See `cyclone_safe_memory_manager_tool/README.md` for details)
 
 - Created/Updated module: `snobol_string_processor_tool` (See `snobol_string_processor_tool/README.md` for details)
+
+- Created/Updated module: `janus_concurrent_protocol_verifier_tool` (See `janus_concurrent_protocol_verifier_tool/README.md` for details)

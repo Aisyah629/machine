@@ -493,3 +493,5 @@ MIT License
 - Created/Updated module: `snobol_string_processor_tool` (See `snobol_string_processor_tool/README.md` for details)
 
 - Created/Updated module: `janus_concurrent_protocol_verifier_tool` (See `janus_concurrent_protocol_verifier_tool/README.md` for details)
+
+- Created/Updated module: `legacy_batch_processing_engine` (See `legacy_batch_processing_engine/README.md` for details)

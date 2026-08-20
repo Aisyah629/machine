@@ -453,3 +453,5 @@ MIT License
 - Created/Updated module: `franz_lisp_data_processor_tool` (See `franz_lisp_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./data_processing_autohotkey_tool` (See `./data_processing_autohotkey_tool/README.md` for details)
+
+- Created/Updated module: `data_processing_utility_game_tool` (See `data_processing_utility_game_tool/README.md` for details)

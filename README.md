@@ -463,3 +463,5 @@ MIT License
 - Created/Updated module: `scheme_symbolic_computation_tool` (See `scheme_symbolic_computation_tool/README.md` for details)
 
 - Created/Updated module: `csound_synthesis_engine_tool` (See `csound_synthesis_engine_tool/README.md` for details)
+
+- Created/Updated module: `./hugo_text_formatter_tool` (See `./hugo_text_formatter_tool/README.md` for details)

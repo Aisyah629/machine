@@ -527,3 +527,5 @@ MIT License
 - Created/Updated module: `./parasail_new_tool` (See `./parasail_new_tool/README.md` for details)
 
 - Created/Updated module: `clu_data_processing_tool` (See `clu_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `starlogo_data_processor_tool` (See `starlogo_data_processor_tool/README.md` for details)

@@ -519,3 +519,5 @@ MIT License
 - Created/Updated module: `tie_tool` (See `tie_tool/README.md` for details)
 
 - Created/Updated module: `./self_healing_tool` (See `./self_healing_tool/README.md` for details)
+
+- Created/Updated module: `span_tool` (See `span_tool/README.md` for details)

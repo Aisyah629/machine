@@ -1,0 +1,116 @@
+// Cayenne Data Processor Tool
+// Main source file
+
+import System.IO;
+import System.Collections;
+
+module Main {
+
+    // Define a record structure for data records
+    record DataRecord {
+        String id;
+        String name;
+        Integer value;
+        String category;
+    }
+
+    // Function to parse a line of CSV data
+    Function ParseCSVLine(line: String): DataRecord {
+        Let parts = line.Split(",");
+        If parts.Length >= 4 Then {
+            Return DataRecord(
+                id: parts[0].Trim(),
+                name: parts[1].Trim(),
+                value: Integer.Parse(parts[2].Trim()),
+                category: parts[3].Trim()
+            );
+        } Else {
+            Return DataRecord(
+                id: "",
+                name: "",
+                value: 0,
+                category: ""
+            );
+        }
+    }
+
+    // Function to filter records by category
+    Function FilterByCategory(records: List<DataRecord>, category: String): List<DataRecord> {
+        Let filteredRecords = new List<DataRecord>();
+        For record In records {
+            If record.category == category Then {
+                filteredRecords.Add(record);
+            }
+        }
+        Return filteredRecords;
+    }
+
+    // Function to aggregate values by category
+    Function AggregateByCategory(records: List<DataRecord>): Map<String, Integer> {
+        Let aggregated = new Map<String, Integer>();
+        For record In records {
+            Let currentSum = If aggregated.ContainsKey(record.category) Then aggregated[record.category] Else 0;
+            aggregated[record.category] = currentSum + record.value;
+        }
+        Return aggregated;
+    }
+
+    // Function to process data from a file
+    Function ProcessDataFile(filePath: String): List<DataRecord> {
+        Let fileContent = File.ReadAllText(filePath);
+        Let lines = fileContent.Split("\n");
+        Let dataRecords = new List<DataRecord>();
+
+        // Skip header line
+        For i = 1; i < lines.Length; i++ {
+            Let record = ParseCSVLine(lines[i]);
+            If record.id != "" Then {
+                dataRecords.Add(record);
+            }
+        }
+        Return dataRecords;
+    }
+
+    // Main entry point
+    Function Main(): Integer {
+        Let args = Environment.GetCommandLineArgs();
+        If args.Length < 2 Then {
+            System.Console.WriteLine("Usage: DataProcessor <input_file> [category]");
+            Return 1;
+        }
+
+        Let inputFile = args[1];
+        Let categoryFilter = If args.Length > 2 Then args[2] Else "";
+
+        Try {
+            Let records = ProcessDataFile(inputFile);
+
+            If categoryFilter != "" Then {
+                Let filtered = FilterByCategory(records, categoryFilter);
+                System.Console.WriteLine($"Records in category '{categoryFilter}':");
+                For record In filtered {
+                    System.Console.WriteLine($"  {record.id}: {record.name} - {record.value}");
+                }
+                Let aggregated = AggregateByCategory(filtered);
+                System.Console.WriteLine("Aggregated Values:");
+                For Each kvp In aggregated {
+                    System.Console.WriteLine($"  {kvp.Key}: {kvp.Value}");
+                }
+            } Else {
+                System.Console.WriteLine("All Records:");
+                For record In records {
+                    System.Console.WriteLine($"  {record.id}: {record.name} - {record.value} ({record.category})");
+                }
+                Let aggregated = AggregateByCategory(records);
+                System.Console.WriteLine("Aggregated Values:");
+                For Each kvp In aggregated {
+                    System.Console.WriteLine($"  {kvp.Key}: {kvp.Value}");
+                }
+            }
+            Return 0;
+        } Catch e: Exception {
+            System.Console.WriteLine($"Error processing file: {e.Message}");
+            Return 1;
+        }
+    }
+}

@@ -545,3 +545,5 @@ MIT License
 - Created/Updated module: `./xquery_diagnostic_tool` (See `./xquery_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `limbo_data_processor_tool` (See `limbo_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `./vvvv_tool` (See `./vvvv_tool/README.md` for details)

@@ -1,0 +1,87 @@
+MESO_DATA_PROCESSING_PROGRAM
+
+USES
+    INTG
+FROM STREAMS IMPORT
+    Get_Line, Put_Line, New_Text_File, Open_File
+FROM SORTED_INT_VECTOR_IMPORTS_IMPORT
+    New_Vector, Put, Length, Get
+FROM PRINTING_IMPORTS_IMPORT
+    Print_String, Print_Ln
+
+DATA_PROCESSING_TOPOLOGY
+BEGIN
+
+    -- Define a simple data record structure
+    Data_Record = RECORD
+        id: INTG;
+        value: INTG;
+    END;
+
+    Data_Vector = REF ARRAY OF Data_Record;
+
+    -- Function to initialize data
+    Initialize_Data: PROCEDURE (count: INTG): Data_Vector
+    BEGIN
+        result ← New_Vector<Data_Record>(count);
+        FOR i: INTG ← 1 TO count DO
+            result[i] ← Data_Record(id: i, value: i * 10);
+        END;
+        RETURN result;
+    END;
+
+    -- Function to filter data (keep even values)
+    Filter_Data: PROCEDURE (data: Data_Vector, filter_predicate: PROCEDURE (val: Data_Record): BOOL): Data_Vector
+    BEGIN
+        count ← 0;
+        FOR i: INTG ← 1 TO Length(data) DO
+            IF filter_predicate(data[i]) THEN
+                count ← count + 1;
+            END;
+        END;
+
+        result ← New_Vector<Data_Record>(count);
+        index ← 1;
+        FOR i: INTG ← 1 TO Length(data) DO
+            IF filter_predicate(data[i]) THEN
+                result[index] ← data[i];
+                index ← index + 1;
+            END;
+        END;
+        RETURN result;
+    END;
+
+    -- Function to aggregate data (sum of values)
+    Aggregate_Data: PROCEDURE (data: Data_Vector): INTG
+    BEGIN
+        sum ← 0;
+        FOR i: INTG ← 1 TO Length(data) DO
+            sum ← sum + data[i].value;
+        END;
+        RETURN sum;
+    END;
+
+BEGIN
+    -- Main execution
+    Put_Ln("Starting Data Processing...");
+    
+    -- Initialize
+    raw_data ← Initialize_Data(10);
+    Put_Ln("Initialized 10 records.");
+    
+    -- Filter: Keep records where value is divisible by 20
+    even_twenty_filter: PROCEDURE (rec: Data_Record): BOOL
+    BEGIN
+        RETURN (rec.value MOD 20) = 0;
+    END;
+    
+    filtered_data ← Filter_Data(raw_data, even_twenty_filter);
+    Put_Ln("Filtered records.");
+    
+    -- Aggregate
+    total ← Aggregate_Data(filtered_data);
+    Print_String("Total Sum of filtered values: ");
+    Print_Ln(total);
+    
+    Put_Ln("Data Processing Complete.");
+END DATA_PROCESSING_TOPOLOGY.

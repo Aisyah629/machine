@@ -549,3 +549,5 @@ MIT License
 - Created/Updated module: `./vvvv_tool` (See `./vvvv_tool/README.md` for details)
 
 - Created/Updated module: `oriel_data_processing_tool` (See `oriel_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./visual_basic_data_processor_tool` (See `./visual_basic_data_processor_tool/README.md` for details)

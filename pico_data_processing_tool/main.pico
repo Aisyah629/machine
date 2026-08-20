@@ -1,0 +1,15 @@
+begin
+  integer n;
+  real array x[10];
+
+  read(n);
+  for i from 1 step 1 until n do
+    read(x[i]);
+  endfor;
+
+  sort(x, n);
+  write(n);
+  for i from 1 step 1 until n do
+    write(x[i]);
+  endfor;
+end

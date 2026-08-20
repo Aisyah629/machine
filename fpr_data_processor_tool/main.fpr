@@ -1,0 +1,128 @@
+/* FPr Data Processor Tool - main.fpr */
+
+// Define the FPr runtime configuration
+FPR_CONFIG {
+    VERSION: "1.0.0",
+    MODE: "STANDARD",
+    DEBUG: FALSE,
+    LOG_LEVEL: "INFO"
+}
+
+// Define input schema for data validation
+INPUT_SCHEMA {
+    ID: INTEGER,
+    NAME: STRING,
+    VALUE: FLOAT,
+    TIMESTAMP: DATETIME
+}
+
+// Define output schema for processed results
+OUTPUT_SCHEMA {
+    PROCESSED_ID: INTEGER,
+    NORMALIZED_VALUE: FLOAT,
+    CATEGORY: STRING,
+    PROCESS_TIME: DATETIME
+}
+
+// Main processing function
+FUNCTION processDataStream(data: ARRAY<INPUT_SCHEMA>) : ARRAY<OUTPUT_SCHEMA> {
+    DECLARE results AS ARRAY<OUTPUT_SCHEMA>
+    DECLARE current_timestamp AS DATETIME
+    
+    // Get current system time for processing log
+    current_timestamp = GET_SYSTEM_TIMESTAMP()
+    
+    // Iterate through each record in the input stream
+    FOR EACH record IN data {
+        DECLARE result_item AS OUTPUT_SCHEMA
+        
+        // Validate input record
+        IF NOT IS_VALID(record) THEN
+            LOG "Invalid record skipped: ID=" + record.ID
+            CONTINUE
+        END IF
+        
+        // Apply data transformation logic
+        // Normalize value between 0 and 1 based on a simple heuristic
+        DECLARE normalized_val AS FLOAT
+        IF record.VALUE > 0 THEN
+            normalized_val = MIN(record.VALUE / 1000.0, 1.0)
+        ELSE
+            normalized_val = 0.0
+        END IF
+        
+        // Determine category based on value thresholds
+        DECLARE category AS STRING
+        IF normalized_val > 0.8 THEN
+            category = "HIGH"
+        ELSE IF normalized_val > 0.5 THEN
+            category = "MEDIUM"
+        ELSE
+            category = "LOW"
+        END IF
+        
+        // Populate output schema
+        result_item.PROCESSED_ID = record.ID
+        result_item.NORMALIZED_VALUE = normalized_val
+        result_item.CATEGORY = category
+        result_item.PROCESS_TIME = current_timestamp
+        
+        // Add to results array
+        APPEND results, result_item
+    }
+    
+    RETURN results
+}
+
+// Data validation helper function
+FUNCTION IS_VALID(record: INPUT_SCHEMA) : BOOLEAN {
+    IF record.ID == NULL THEN
+        RETURN FALSE
+    END IF
+    IF record.NAME == NULL OR LENGTH(record.NAME) == 0 THEN
+        RETURN FALSE
+    END IF
+    IF IS_NUMERIC(record.VALUE) == FALSE THEN
+        RETURN FALSE
+    END IF
+    RETURN TRUE
+}
+
+// System initialization
+INITIALIZATION {
+    LOG "FPr Data Processor Tool initialized."
+    LOG "Ready to process data streams."
+}
+
+// Execution entry point
+ENTRY_POINT {
+    DECLARE input_data AS ARRAY<INPUT_SCHEMA>
+    DECLARE output_data AS ARRAY<OUTPUT_SCHEMA>
+    
+    // Simulate data ingestion (In a real scenario, this would come from a file/source)
+    input_data = LOAD_SAMPLE_DATA()
+    
+    // Process the data
+    output_data = processDataStream(input_data)
+    
+    // Output results
+    FOR EACH result IN output_data {
+        PRINT "Processed ID: " + result.PROCESSED_ID + \
+              " | Category: " + result.CATEGORY + \
+              " | Normalized: " + result.NORMALIZED_VALUE
+    }
+    
+    LOG "Processing complete. Records processed: " + LENGTH(output_data)
+}
+
+// Helper to load sample data for demonstration
+FUNCTION LOAD_SAMPLE_DATA() : ARRAY<INPUT_SCHEMA> {
+    DECLARE sample AS ARRAY<INPUT_SCHEMA>
+    
+    APPEND sample, {ID: 101, NAME: "Alpha", VALUE: 150.5, TIMESTAMP: CURRENT_TIME}
+    APPEND sample, {ID: 102, NAME: "Beta", VALUE: 950.2, TIMESTAMP: CURRENT_TIME}
+    APPEND sample, {ID: 103, NAME: "Gamma", VALUE: 45.0, TIMESTAMP: CURRENT_TIME}
+    APPEND sample, {ID: 104, NAME: "Delta", VALUE: 1200.0, TIMESTAMP: CURRENT_TIME}
+    
+    RETURN sample
+}

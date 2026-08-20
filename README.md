@@ -523,3 +523,5 @@ MIT License
 - Created/Updated module: `span_tool` (See `span_tool/README.md` for details)
 
 - Created/Updated module: `plb_system_automation_tool` (See `plb_system_automation_tool/README.md` for details)
+
+- Created/Updated module: `./parasail_new_tool` (See `./parasail_new_tool/README.md` for details)

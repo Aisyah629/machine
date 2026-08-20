@@ -533,3 +533,5 @@ MIT License
 - Created/Updated module: `cool_data_processor_tool` (See `cool_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./mesa_data_processing_tool` (See `./mesa_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `xpp_data_processor_tool` (See `xpp_data_processor_tool/README.md` for details)

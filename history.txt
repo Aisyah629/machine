@@ -70837,3 +70837,58 @@ Create a new dedicated folder for a new formal logic tool, build it STRICTLY usi
 </think>
 
 Create a new dedicated folder for a new tool, build it STRICTLY using the NetLogo programming language, and include a local README.md file.
+[2026-08-20 10:51:19] (Target Lang: TTM) Thinking Process:
+1.  **Analyze User Input:**
+   - Context: Workspace list of various programming/tool folders (`.git`, `.github`, various language-specific tools like `c_tool`, `python_ml_tool`, etc.)
+   - History: Shows a pattern of generating instructions for new tools in dedicated folders with `README.md`, specifically mentioning NetLogo in previous turns.
+   - User Prompt: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TTM. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   - Constraints:
+     - Exactly 1 logical follow-up instruction.
+     - MUST explicitly demand the tool be built STRICTLY using TTM.
+     - If building a new tool, place it in a NEW dedicated folder.
+     - Create a local README.md.
+     - Return ONLY the instruction text.
+     - NEVER target `.github`.
+
+2.  **Identify Key Requirements for Output:**
+   - Must be a single instruction sentence/paragraph.
+   - Must mention: "new dedicated folder", "STRICTLY using TTM", "local README.md".
+   - Must not mention `.github`.
+   - Format: Just the instruction text.
+
+3.  **Draft Construction:**
+   Create a new dedicated folder for a new tool, build it STRICTLY using the TTM programming language, and include a local README.md file.
+
+4.  **Check against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand new tool built STRICTLY using TTM? Yes.
+   - Explicitly instruct to place in a NEW dedicated folder? Yes.
+   - Create a local README.md? Yes.
+   - Return ONLY the instruction text? Yes.
+   - NEVER target .github? Yes, doesn't mention it.
+   - Matches history style? Yes, very similar to previous outputs.
+
+   Draft: `Create a new dedicated folder for a new tool, build it STRICTLY using the TTM programming language, and include a local README.md file.`
+
+   Let's verify the exact wording requested: "Create a new dedicated folder for a new tool, build it STRICTLY using the NetLogo programming language, and include a local README.md file." was in history. I will adapt it to TTM.
+   "Create a new dedicated folder for a new tool, build it STRICTLY using the TTM programming language, and include a local README.md file."
+
+   All constraints met. Output matches exactly. Proceeds. 
+   One minor thing: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: TTM."
+   I will output exactly that instruction. No extra text.✅
+   Output Generation.✅
+   Text: `Create a new dedicated folder for a new tool, build it STRICTLY using the TTM programming language, and include a local README.md file.` -> Matches perfectly.✅
+   Ready. 
+   Self-Correction/Verification during thought: 
+   Does it need to mention file extension? The prompt doesn't strictly require it, but the workspace uses extensions like `.ttm` maybe? Not necessary. I'll stick to the exact phrasing requested.
+   "Create a new dedicated folder for a new tool, build it STRICTLY using the TTM programming language, and include a local README.md file." is perfect.
+   Output matches constraints. Proceeds. 
+   Output Generation.✅
+   [Final Check] Matches all constraints. Returns only the instruction. Explicitly mentions TTM, new folder, README.md. Never targets .github. Correct.✅
+   Output: `Create a new dedicated folder for a new tool, build it STRICTLY using the TTM programming language, and include a local README.md file.` -> Done. 
+   Proceeds. 
+   [Output Generation] `Create a new dedicated folder for a new tool, build it STRICTLY using the TTM programming language, and include a local README.md file.` -> This is exactly what's needed.✅
+   I will output this.✅
+</think>
+
+Create a new dedicated folder for a new tool, build it STRICTLY using the TTM programming language, and include a local README.md file.

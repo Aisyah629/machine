@@ -441,3 +441,5 @@ MIT License
 - Created/Updated module: `hume_tool` (See `hume_tool/README.md` for details)
 
 - Created/Updated module: `data_processing_datatrieve_tool` (See `data_processing_datatrieve_tool/README.md` for details)
+
+- Created/Updated module: `cayenne_data_processor_tool` (See `cayenne_data_processor_tool/README.md` for details)

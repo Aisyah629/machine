@@ -1,0 +1,127 @@
+;; StarLogo NG - Data Processing Utility
+;; Author: Autonomous AI Polyglot Software Engineer
+;; Purpose: Advanced data processing and transformation for agent-based models
+
+;; Global Variables for Data Handling
+turtles-own [
+  data-value       ; Stores numeric data
+  data-label       ; Stores textual labels
+  processed        ; Boolean flag indicating if data has been processed
+  category         ; Category for grouping
+]
+
+turtles-own [
+  buffer-1         ; Temporary storage for processing
+  buffer-2         ; Temporary storage for processing
+]
+
+;; Setup Procedure
+to setup
+  clear-all
+  setup-turtles
+  setup-constants
+  create-display
+  reset-ticks
+end
+
+;; Initialize Turtles/Data Agents
+to setup-turtles
+  create-turtles 100 [
+    set data-value (random-float 100)
+    set data-label (word "Data-" who)
+    set processed false
+    set category (random 5)
+    setxy (random world-width) (random world-height)
+  ]
+end
+
+;; Constants and Configuration
+to setup-constants
+  ;; Define thresholds, weights, and parameters here
+  ;; These can be exposed as sliders in the interface
+end
+
+;; Create Visual Representation
+to create-display
+  ;; Set up colors based on categories
+  ask turtles [
+    if category = 0 [ set color red ]
+    if category = 1 [ set color blue ]
+    if category = 2 [ set color green ]
+    if category = 3 [ set color yellow ]
+    if category = 4 [ set color orange ]
+  ]
+end
+
+;; Main Data Processing Pipeline
+to do-data-processing
+  normalize-data
+  filter-data
+  aggregate-data
+  mark-processed
+end
+
+;; Normalization: Scale data to a 0-1 range
+to normalize-data
+  let min-val [min [data-value] of turtles]
+  let max-val [max [data-value] of turtles]
+  ask turtles [
+    ifelse (max-val - min-val) != 0 [
+      set data-value ((data-value - min-val) / (max-val - min-val))
+    ] [
+      set data-value 0
+    ]
+  ]
+end
+
+;; Filtering: Remove outliers based on standard deviation
+to filter-data
+  let mean-val mean [data-value] of turtles
+  let std-dev std-dev [data-value] of turtles
+  let threshold 2 ;; Standard deviations
+  ask turtles [
+    if abs (data-value - mean-val) > (threshold * std-dev) [
+      set processed true
+      set color black ;; Mark outliers
+    ]
+  ]
+end
+
+;; Aggregation: Calculate averages per category
+to aggregate-data
+  ask turtles with [not processed] [
+    let cat-avg [mean [data-value] of turtles with [category = [category] of myself]]
+    set buffer-1 cat-avg
+    ;; In a real scenario, you might update a report or global variable here
+  ]
+end
+
+;; Mark all as processed for the current cycle
+to mark-processed
+  ask turtles [
+    set processed true
+  ]
+end
+
+;; Step Procedure for Animation
+to go
+  if ticks > 100 [stop]
+  do-data-processing
+  visualize-results
+  tick
+end
+
+;; Visualization Updates
+to visualize-results
+  ask turtles [
+    ;; Scale size based on data value for visualization
+    set size (1 + data-value * 2)
+    ;; Move towards category center (clustering effect)
+    let target-x (mean [xcor] of turtles with [category = [category] of myself])
+    let target-y (mean [ycor] of turtles with [category = [category] of myself])
+    if distancexy target-x target-y > 1 [
+      face target-x target-y
+      fd 1
+    ]
+  ]
+end

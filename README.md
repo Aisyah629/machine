@@ -525,3 +525,5 @@ MIT License
 - Created/Updated module: `plb_system_automation_tool` (See `plb_system_automation_tool/README.md` for details)
 
 - Created/Updated module: `./parasail_new_tool` (See `./parasail_new_tool/README.md` for details)
+
+- Created/Updated module: `clu_data_processing_tool` (See `clu_data_processing_tool/README.md` for details)

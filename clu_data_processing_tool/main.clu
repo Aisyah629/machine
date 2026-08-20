@@ -1,0 +1,14 @@
+; CLU Data Processing Tool
+
+procedure
+main() =
+    begin
+        cluster
+        data_stream = data.iter
+
+        stream = data_stream:make([])
+        for item in stream:iterate() do
+            stdout:putl("Processing: " || data_stream:to_string(item))
+        end
+    end
+main

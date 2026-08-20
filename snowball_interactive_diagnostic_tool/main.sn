@@ -1,0 +1,75 @@
+#!/usr/bin/env snb
+
+module SnowballDiagnostic
+
+procedure Main
+  print "Snowball Interactive Diagnostic Tool v1.0"
+  print "------------------------------------------"
+  print "Starting diagnostic session..."
+  
+  initializeDiagnostic()
+  
+  loop
+    print "\nDiagnostic Commands:"
+    print "  status     - Show current execution status"
+    print "  vars       - List all variables"
+    print "  step       - Step through code"
+    print "  quit       - Exit diagnostic mode"
+    print "> "
+    
+    input command
+    
+    if command == "status" then
+      showStatus()
+    else if command == "vars" then
+      showVariables()
+    else if command == "step" then
+      stepExecution()
+    else if command == "quit" then
+      print "Exiting diagnostic session..."
+      break
+    else
+      print "Unknown command: " command
+    end if
+  end loop
+  
+  cleanupDiagnostic()
+  print "Diagnostic session ended."
+end procedure
+
+procedure initializeDiagnostic
+  set global diagnosticMode to true
+  set global executionStep to 0
+  set global currentFile to ""
+  set global errorCount to 0
+  print "Diagnostic engine initialized."
+end procedure
+
+procedure cleanupDiagnostic
+  set global diagnosticMode to false
+  print "Diagnostic engine cleaned up."
+end procedure
+
+procedure showStatus
+  print "Current Execution Status:"
+  print "  Mode: " diagnosticMode
+  print "  Step: " executionStep
+  print "  Errors: " errorCount
+  print "  File: " currentFile
+end procedure
+
+procedure showVariables
+  print "Current Variables:"
+  print "  diagnosticMode: " diagnosticMode
+  print "  executionStep: " executionStep
+  print "  errorCount: " errorCount
+  print "  currentFile: " currentFile
+end procedure
+
+procedure stepExecution
+  set executionStep to executionStep + 1
+  print "Stepped to instruction " executionStep
+  print "Current instruction: [placeholder for actual instruction]"
+end procedure
+
+end module

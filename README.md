@@ -513,3 +513,5 @@ MIT License
 - Created/Updated module: `./agora_memory_network_simulator_tool` (See `./agora_memory_network_simulator_tool/README.md` for details)
 
 - Created/Updated module: `stateflow_modeling_tool` (See `stateflow_modeling_tool/README.md` for details)
+
+- Created/Updated module: `timber_tool` (See `timber_tool/README.md` for details)

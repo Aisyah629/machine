@@ -1,0 +1,23 @@
+// Timber Tool Main Script
+// This script demonstrates the capabilities of the Timber tool.
+
+template Greeting {
+    name: String
+    age: Number
+}
+
+fn main() {
+    let user = {
+        name: "Alice",
+        age: 30
+    }
+    
+    log "Hello, {user.name}! You are {user.age} years old."
+    
+    let result = add(5, 10)
+    log "5 + 10 = {result}"
+}
+
+fn add(a: Number, b: Number) -> Number {
+    return a + b
+}

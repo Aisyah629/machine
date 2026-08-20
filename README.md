@@ -481,3 +481,5 @@ MIT License
 - Created/Updated module: `jplusplus_tool` (See `jplusplus_tool/README.md` for details)
 
 - Created/Updated module: `./go_advanced_tool` (See `./go_advanced_tool/README.md` for details)
+
+- Created/Updated module: `latex_interactive_tool` (See `latex_interactive_tool/README.md` for details)

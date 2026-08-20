@@ -503,3 +503,5 @@ MIT License
 - Created/Updated module: `coldc_framework_engine_tool` (See `coldc_framework_engine_tool/README.md` for details)
 
 - Created/Updated module: `mathematica_symbolic_computation_tool` (See `mathematica_symbolic_computation_tool/README.md` for details)
+
+- Created/Updated module: `planner_decision_engine_tool` (See `planner_decision_engine_tool/README.md` for details)

@@ -1,0 +1,31 @@
+;; Planner Decision Engine Tool
+;; File: main.pln
+
+(DEFINE (MAKE-DECISION-RULE ASSERTION PROCEDURE)
+    (ASSERT ASSERTION)
+    (PROCEDURE))
+
+(DEFINE (EXECUTE-DECISION ENGINE-RULES)
+    (LOOP FOR rule IN ENGINE-RULES
+        DO (IF (CHECK-CONDITION rule)
+            THEN (APPLY-CONSEQUENCE rule))))
+
+(DEFINE (CHECK-CONDITION RULE)
+    ;; Logic to evaluate if a rule's condition is met
+    ;; Planner supports forward/backward chaining here
+    (ASSERT (EVAL (GET-CONDITION RULE))))
+
+(DEFINE (APPLY-CONSEQUENCE RULE)
+    ;; Logic to apply the consequence of the rule
+    (PRINT (GET-CONSEQUENCE RULE)))
+
+;; Initial Assertions
+(DEFINE *DECISION-ENGINE* (LIST 
+    (MAKE-DECISION-RULE 'HIGH-PRIORITY-RISK 'REVIEW-MANUALLY)
+    (MAKE-DECISION-RULE 'LOW-PRIORITY-RISK 'AUTO-APPROVE)
+    (MAKE-DECISION-RULE 'SYSTEM-ERROR 'HALT-PROCESS)))
+
+;; Start the decision process
+(PRINT "Initializing Planner Decision Engine...")
+(EXECUTE-DECISION *DECISION-ENGINE*)
+(PRINT "Decision Engine Execution Complete.")

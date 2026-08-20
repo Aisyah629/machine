@@ -509,3 +509,5 @@ MIT License
 - Created/Updated module: `./telcomp_tool` (See `./telcomp_tool/README.md` for details)
 
 - Created/Updated module: `visual_basic_tool` (See `visual_basic_tool/README.md` for details)
+
+- Created/Updated module: `./agora_memory_network_simulator_tool` (See `./agora_memory_network_simulator_tool/README.md` for details)

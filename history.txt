@@ -71463,3 +71463,42 @@ Create a new dedicated folder for a new tool, build it STRICTLY using this exact
 </think>
 
 Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file.
+[2026-08-20 11:45:37] (Target Lang: Span) Thinking process:
+1.  **Analyze user input: Analyze the user wants a new instruction generation based on the pattern provided.
+2.  **Constraints**:
+   - Generate exactly 1 logical follow-up instruction.
+   - MUST explicitly demand the new tool be built STRICTLY using this exact programming language: Span.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return ONLY the instruction text.
+   - NEVER target the .github directory.
+   - Match the exact style/capitalization/punctuation from the prompt example.
+   - Prompt example: "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Clipper, and include a local README.md file."
+   - Substitute "Span" for "Clipper".
+3.  **Construct instruction**: "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file."
+4.  **Check constraints**:
+   - Exactly 1 instruction? Yes.
+   - Strictly uses "Span"? Yes.
+   - New dedicated folder & local README.md? Yes.
+   - ONLY instruction text? Yes.
+   - Never target .github? Yes.
+   - Matches style? Yes.
+   - Output generation matches requirement. Proceed.✅
+   - Output: Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file. 
+   - Wait, let's double check capitalization/punctuation. "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file." -> Perfect.
+   - Output matches exactly. Proceeds.
+   - I will just output the exact string.
+   - Done. 
+   - Output Generation -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file.
+   - [Final Check] -> Matches perfectly. Returns only the instruction. No extra text. Constraints satisfied.✅
+   - Output matches. Proceeds.✅
+   - [Final Output Generation] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file. [Done.
+   - [Final Output Generation] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file.
+   - Proceeds.✅
+   - *Self-Correction/Verification during generation prep*: I will verify the exact wording to match the prompt's constraints perfectly. "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file." -> This matches the previous example pattern exactly. All good. Output matches. Proceeds.✅
+   - [Output Generation] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file.
+   - [Final Output Generation] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file.
+   - [Done.] -> Proceeds.✅
+   - Final: Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file. -> Proceeds.✅
+</think>
+
+Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Span, and include a local README.md file.

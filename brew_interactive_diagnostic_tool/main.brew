@@ -1,0 +1,19 @@
+import "brew_diagnostic.brew"
+import "brew_visualizer.brew"
+
+fun main() {
+    let diagnostics = BrewDiagnostic.new()
+    let visualizer = BrewVisualizer.new(diagnostics)
+    
+    println("Starting Brew Interactive Diagnostic Tool...")
+    println("Monitoring brewing process...")
+    
+    while true {
+        let data = diagnostics.collect()
+        visualizer.update(data)
+        
+        if diagnostics.has_alert() {
+            println("ALERT: " + diagnostics.get_alert())
+        }
+    }
+}

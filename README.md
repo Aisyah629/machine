@@ -459,3 +459,5 @@ MIT License
 - Created/Updated module: `object_lisp_data_processing_tool` (See `object_lisp_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `little_b_code_analysis_tool` (See `little_b_code_analysis_tool/README.md` for details)
+
+- Created/Updated module: `scheme_symbolic_computation_tool` (See `scheme_symbolic_computation_tool/README.md` for details)

@@ -71697,3 +71697,60 @@ Proceeds.✅
 </think>
 
 Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Jako, and include a local README.md file.
+[2026-08-20 12:03:00] (Target Lang: ISLISP) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Autonomous AI
+   - **Workspace:** A long list of files/directories representing various programming language tools.
+   - **History:** Shows a previous instruction: "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Jako, and include a local README.md file."
+   - **Current Request:** "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ISLISP. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+2.  **Identify Key Constraints:**
+   - Generate *exactly 1* logical follow-up instruction.
+   - MUST explicitly demand the tool be built STRICTLY using the exact programming language: `ISLISP`.
+   - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+   - Return *ONLY* the instruction text.
+   - NEVER target `.github`.
+   - Follow the pattern/style of the history input.
+
+3.  **Formulate Instruction:**
+   Based on the constraints, I need to craft a single sentence/instruction that matches the required format.
+   Draft: Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: ISLISP, and include a local README.md file.
+   Check constraints:
+   - Exactly 1 instruction? Yes.
+   - Explicitly demands ISLISP? Yes.
+   - Mentions NEW dedicated folder and local README.md? Yes.
+   - Returns ONLY the instruction text? Yes.
+   - Never targets .github? Yes.
+   - Matches style? Yes.
+
+4.  **Final Output Generation:**
+   Just output the drafted instruction exactly as requested. No extra text. Ensure capitalization matches "ISLISP". Ensure structure matches the prompt's demand.
+
+   "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: ISLISP, and include a local README.md file."
+
+   Double-check: The prompt says "You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ISLISP. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+   My draft covers all points perfectly. I will output exactly that string.✅
+   Proceed. 
+   Output matches exactly.✅
+   [Done]
+   Output: Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: ISLISP, and include a local README.md file. 
+   (Self-Correction/Verification during thought): The prompt says "Return ONLY the instruction text." I will strictly output just that sentence. No extra words. All constraints met.✅
+   Proceeds. 
+   Output Generation. 
+   `Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: ISLISP, and include a local README.md file.` -> matches perfectly. 
+   Ready. 
+   [Output] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: ISLISP, and include a local README.md file. 
+   (Note: I will output exactly this string without markdown formatting if possible, or just plain text as requested. The prompt says "Return ONLY the instruction text.")
+   All good.✅
+   Proceeds. 
+   [Final Check of the Prompt]: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: ISLISP. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+   Matches perfectly. Output matches draft.✅
+   Proceeds. 
+   [Output Generation] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: ISLISP, and include a local README.md file. 
+   (Done.) 
+   [Final Output Generation] (matches exactly)✅
+   *(Proceeds to output)*
+</think>
+
+Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: ISLISP, and include a local README.md file.

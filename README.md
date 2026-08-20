@@ -449,3 +449,5 @@ MIT License
 - Created/Updated module: `./modelica_interactive_diagnostic_tool` (See `./modelica_interactive_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `brew_interactive_diagnostic_tool` (See `brew_interactive_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `franz_lisp_data_processor_tool` (See `franz_lisp_data_processor_tool/README.md` for details)

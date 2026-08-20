@@ -1,9 +1,22 @@
-using System;
+// J++ Source Code for Data Processing Utility
+import j++.core.*;
+import j++.math.*;
+import j++.text.*;
 
-namespace JPlusPlus {
-    public class Program {
-        public static void Main(string[] args) {
-            Console.WriteLine("Hello from J++!");
+public class DataProcessingUtility {
+    public static void main(String[] args) {
+        try {
+            DataProcessor processor = new DataProcessor();
+            processor.run();
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
         }
+    }
+}
+
+class DataProcessor {
+    public void run() {
+        System.out.println("J++ Data Processing Utility initialized.");
+        // Core processing logic here
     }
 }

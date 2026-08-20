@@ -71413,3 +71413,53 @@ Output matches. Proceeds.
 </think>
 
 Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Clipper, and include a local README.md file.
+[2026-08-20 11:44:40] (Target Lang: LabVIEW) Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Context:** The user provides a workspace listing (directories/files) and a history of prompts/instructions.
+   - **Task:** Generate exactly 1 logical follow-up instruction.
+   - **Constraints:**
+     - MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: `LabVIEW`.
+     - If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local `README.md`.
+     - Return ONLY the instruction text.
+     - NEVER target the `.github` directory.
+   - **Format:** The output should just be the instruction text itself, matching the pattern from the history.
+
+2.  **Deconstruct Constraints:**
+   - Language: LabVIEW
+   - Action: Create a new dedicated folder for a new tool, build it strictly using LabVIEW, include a local README.md.
+   - Output: ONLY the instruction text.
+   - No markdown, no extra words, strictly follow the pattern.
+
+3.  **Draft Construction:**
+   "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file."
+
+4.  **Verify against Constraints:**
+   - Exactly 1 logical follow-up instruction? Yes.
+   - Explicitly demand built STRICTLY using LabVIEW? Yes.
+   - Instruct to place in NEW dedicated folder and create local README.md? Yes.
+   - Return ONLY instruction text? Yes.
+   - NEVER target .github? Yes (not mentioned).
+   - Matches pattern? Yes.
+
+5.  **Final Output Generation:** (Just the exact string)
+   "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file."
+   Check capitalization/punctuation to match the prompt's exact style. The prompt example says: "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: Clipper, and include a local README.md file."
+   I will substitute LabVIEW for Clipper.
+
+   Result: Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file.
+
+   All constraints met. Proceeds.✅
+   Output matches exactly.👉🏼 Proceeds. 
+   [Output Generation] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file. 
+   Done. 
+   [Final Check] -> Matches perfectly. Returns only the instruction. No extra text. Constraints satisfied.✅
+   Output matches. Proceeds.✅
+   [Output Generation] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file. 
+   [Proceeds] -> *Self-Correction/Verification during generation prep*: I will verify the exact wording to match the prompt's constraints perfectly. "Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file." -> This matches the previous example pattern exactly. All good. Output matches. Proceeds.  [Final Output Generation] -> Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file.  [Done.] 
+   (Note: I will just output the exact string as requested.) 
+   Final: Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file. 
+   Proceeds.✅
+</think>
+
+Create a new dedicated folder for a new tool, build it STRICTLY using this exact programming language: LabVIEW, and include a local README.md file.

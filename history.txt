@@ -70970,3 +70970,38 @@ Create a new dedicated folder for a new tool, build it STRICTLY using the TTM pr
 </think>
 
 Create a new dedicated folder for a new tool, build it STRICTLY using the ColdC programming language, and include a local README.md file.
+[2026-08-20 10:53:39] (Target Lang: Mathematica) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint: Build strictly using `Mathematica`.
+    *   Constraint: Place in a NEW dedicated folder.
+    *   Constraint: Include a local `README.md`.
+    *   Constraint: Return ONLY the instruction text.
+    *   Constraint: NEVER target `.github`.
+    *   Context: The user provided a massive list of files/folders, likely a workspace listing. The history shows previous interactions where similar instructions were generated. The current prompt asks for a follow-up to the previous output (which was about ColdC), but now the user explicitly demands `Mathematica`.
+
+2.  **Draft the Instruction:**
+    *   *Draft 1:* Create a new dedicated folder for a new tool, build it STRICTLY using the Mathematica programming language, and include a local README.md file.
+    *   *Check against constraints:*
+        *   Exactly 1 instruction? Yes.
+        *   Strictly Mathematica? Yes.
+        *   New dedicated folder? Yes ("new dedicated folder").
+        *   Local README.md? Yes.
+        *   Only instruction text? Yes.
+        *   No `.github`? Yes.
+
+3.  **Refine based on "Logical Follow-up":**
+    *   The prompt asks for a "logical follow-up instruction". Usually, in these types of prompts, the "follow-up" implies continuing the pattern of creating tools. The structure `Create a new dedicated folder...` matches the previous pattern seen in the history snippet (`Create a new dedicated folder...`).
+    *   The output should be the raw instruction text.
+
+4.  **Final Polish:**
+    *   Result: `Create a new dedicated folder for a new tool, build it STRICTLY using the Mathematica programming language, and include a local README.md file.`
+
+5.  **Final Output Generation:**
+    *   Output matches the refined draft.
+    *   No markdown code blocks? The prompt says "Return ONLY the instruction text." Usually, this means raw text or text within the response body without conversational filler.
+    *   Result: `Create a new dedicated folder for a new tool, build it STRICTLY using the Mathematica programming language, and include a local README.md file.`
+</think>
+
+Create a new dedicated folder for a new tool, build it STRICTLY using the Mathematica programming language, and include a local README.md file.

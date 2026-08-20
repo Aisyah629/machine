@@ -70339,3 +70339,55 @@ Proceeds.✅
 </think>
 
 Create a new dedicated folder for a robust data processing or batch handling script, build it STRICTLY using the TPU programming language, and include a local README.md file.
+[2026-08-20 09:58:16] (Target Lang: MaxScript) The user wants me to generate exactly one instruction.
+The instruction must:
+1. Demand STRICTLY using MaxScript for a new tool.
+2. Instruct to place it in a NEW dedicated folder.
+3. Instruct to create a local README.md.
+4. Return ONLY the instruction text.
+5. Never target the .github directory.
+
+Looking at the existing directory structure, there are already folders like `./max_multimedia_synthesis_tool`, `./max_tool`, `./maxima_data_pipeline_tool`, `./maxscript_tool`.
+The constraint says: "explicitly demand that the new tool be built STRICTLY using this exact programming language: MaxScript."
+I need to craft a sentence that matches the style: "Create a new dedicated folder for a [purpose], build it STRICTLY using the MaxScript programming language, and include a local README.md file."
+
+Check constraints:
+- Exactly 1 instruction? Yes.
+- Explicitly demand STRICTLY using MaxScript? Yes.
+- NEW dedicated folder and local README.md? Yes.
+- Return ONLY the instruction text? Yes.
+- NEVER target .github? Yes.
+
+Draft: Create a new dedicated folder for a 3D scene automation or asset management script, build it STRICTLY using the MaxScript programming language, and include a local README.md file.
+
+Refining to match the exact phrasing pattern from the prompt's example style: "Create a new dedicated folder for a [function/purpose] script, build it STRICTLY using the MaxScript programming language, and include a local README.md file."
+
+Let's stick closely to the requested format: "Create a new dedicated folder for a 3D animation pipeline or scene manipulation script, build it STRICTLY using the MaxScript programming language, and include a local README.md file."
+
+Check constraints again: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: MaxScript. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+
+Output should just be the instruction string.
+"Create a new dedicated folder for a 3D scene automation or asset management script, build it STRICTLY using the MaxScript programming language, and include a local README.md file."
+
+Matches perfectly. Proceeds.✅
+Output matches requirement.✅ Final Output Generation.✅
+"Create a new dedicated folder for a 3D scene automation or asset management script, build it STRICTLY using the MaxScript programming language, and include a local README.md file."
+Wait, checking the exact wording of the prompt: "Create a new dedicated folder for a robust data pipeline or batch processing script, build it STRICTLY using the TPU programming language, and include a local README.md file."
+I will mimic this structure.
+"Create a new dedicated folder for a 3D scene automation or asset management script, build it STRICTLY using the MaxScript programming language, and include a local README.md file."
+All constraints met. Proceeds.✅
+Output matches requirement.✅ Final Output Generation.✅
+Done. 
+Let's output exactly that. 
+Self-Correction/Verification during thought: 
+The prompt says "Generate exactly 1 logical follow-up instruction." 
+It also says "Return ONLY the instruction text." 
+I will provide exactly the string. 
+"Create a new dedicated folder for a 3D scene automation or asset management script, build it STRICTLY using the MaxScript programming language, and include a local README.md file." 
+Matches all constraints. Ready. 
+Output Generation. 
+[Done] 
+Proceeds.✅
+</think>
+
+Create a new dedicated folder for a 3D scene automation or asset management script, build it STRICTLY using the MaxScript programming language, and include a local README.md file.

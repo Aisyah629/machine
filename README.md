@@ -485,3 +485,5 @@ MIT License
 - Created/Updated module: `latex_interactive_tool` (See `latex_interactive_tool/README.md` for details)
 
 - Created/Updated module: `tpu_data_processing_tool` (See `tpu_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `maxscript_3d_automation_tool` (See `maxscript_3d_automation_tool/README.md` for details)

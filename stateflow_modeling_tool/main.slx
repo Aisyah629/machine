@@ -1,0 +1,39 @@
+statechart MySystemStatechart
+    initial -> StateA;
+    StateA -> StateB when (input_event == 1);
+    StateB -> StateC when (input_event == 0);
+    StateC -> StateA when (reset == 1);
+    
+    entry StateA
+        action1();
+    end
+    
+    entry StateB
+        action2();
+    end
+    
+    entry StateC
+        action3();
+    end
+    
+    output output_signal;
+    
+    StateA:
+        output_signal = 1;
+        if (input_event == 1)
+            transition(StateB);
+        end
+        
+    StateB:
+        output_signal = 2;
+        if (input_event == 0)
+            transition(StateC);
+        end
+        
+    StateC:
+        output_signal = 3;
+        if (reset == 1)
+            transition(StateA);
+        end
+        
+end

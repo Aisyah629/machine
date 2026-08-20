@@ -465,3 +465,5 @@ MIT License
 - Created/Updated module: `csound_synthesis_engine_tool` (See `csound_synthesis_engine_tool/README.md` for details)
 
 - Created/Updated module: `./hugo_text_formatter_tool` (See `./hugo_text_formatter_tool/README.md` for details)
+
+- Created/Updated module: `haxe_cross_platform_api_tool` (See `haxe_cross_platform_api_tool/README.md` for details)

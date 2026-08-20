@@ -69754,3 +69754,47 @@ Output matches requirement.✅
 </think>
 
 [2026-08-21 10:15:00] (Target Lang: Haxe) Develop a new cross-platform web API client and data serialization tool. You MUST build this tool STRICTLY using Haxe. Explicitly place the implementation in a NEW dedicated folder and create a local README.md.
+[2026-08-20 06:44:50] (Target Lang: Subtext) Thinking Process:
+1.  **Analyze the Request**:
+    *   Input: A large list of existing tool directories and files, a history log (which suggests a previous tool generation), and a specific instruction: "Generate exactly 1 logical follow-up instruction. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Subtext. If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md. Return ONLY the instruction text. NEVER target the .github directory."
+    *   Output constraint: "Return ONLY the instruction text. NEVER target the .github directory." and the format from history examples (though the history example is just text, the prompt asks for a specific format: "Return ONLY the instruction text." usually implying just the string, maybe with the timestamp format if mimicking history, but the prompt says "Generate exactly 1 logical follow-up instruction... Return ONLY the instruction text." The previous output in history was `[2026-08-21 10:15:00] (Target Lang: Haxe) ...`. I should follow this pattern: `[Timestamp] (Target Lang: Language) Instruction.`.
+    *   Language constraint: Subtext.
+    *   Action: Build a new tool.
+    *   Folder/README constraint: NEW dedicated folder, local README.md.
+    *   Negative constraint: NEVER target .github.
+
+2.  **Determine the Tool Purpose**:
+    *   Language: Subtext. Subtext is a graph-based programming language/tool for modeling and generating code.
+    *   Logical follow-up context: Looking at the history, the last tool was a "cross-platform web API client and data serialization tool" in Haxe.
+    *   Subtext context: Subtext is often used for complex logic modeling, code generation, or visual programming environments. A "Visual Code Generation Engine" or "Graph-based Logic Modeling Tool" fits well.
+    *   Idea: A "Graph-based Visual Logic Modeling and Code Generation Tool".
+
+3.  **Draft the Instruction**:
+    *   *Draft 1:* `[2026-08-21 10:16:00] (Target Lang: Subtext) Develop a new graph-based visual logic modeling and code generation tool. You MUST build this tool STRICTLY using Subtext. Explicitly place the implementation in a NEW dedicated folder and create a local README.md.`
+    *   *Check constraints:*
+        *   Follow-up? Yes.
+        *   Language: Subtext? Yes.
+        *   Strictly built using Subtext? Yes.
+        *   New dedicated folder? Yes.
+        *   Local README.md? Yes.
+        *   Return ONLY instruction text? Yes.
+        *   Never target .github? Yes.
+
+4.  **Refine**:
+    *   The prompt asks for "exactly 1 logical follow-up instruction".
+    *   The format should match the style: `[Date Time] (Target Lang: Lang) Description.`
+    *   The description must enforce the constraints.
+
+    *   *Revised Draft:* `[2026-08-21 10:20:00] (Target Lang: Subtext) Create a new graph-based visual logic modeling and code generation tool. You MUST build this tool STRICTLY using Subtext. Explicitly place the implementation in a NEW dedicated folder and create a local README.md.`
+
+5.  **Final Verification**:
+    *   Does it return ONLY the instruction text? Yes.
+    *   Does it demand Subtext? Yes.
+    *   Does it demand new folder/README? Yes.
+    *   Does it avoid .github? Yes.
+
+6.  **Final Output Construction**:
+    `[2026-08-21 10:20:00] (Target Lang: Subtext) Create a new graph-based visual logic modeling and code generation tool. You MUST build this tool STRICTLY using Subtext. Explicitly place the implementation in a NEW dedicated folder and create a local README.md.`
+</think>
+
+[2026-08-21 10:20:00] (Target Lang: Subtext) Create a new graph-based visual logic modeling and code generation tool. You MUST build this tool STRICTLY using Subtext. Explicitly place the implementation in a NEW dedicated folder and create a local README.md.

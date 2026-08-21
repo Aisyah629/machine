@@ -1,51 +1,15 @@
-// Starlogo TNG Main Simulation Script
+;; StarLogo Data Extraction Tool
+;; This extension extracts data from running StarLogo models.
 
-;; Global Variables
-turtles-own [
-  energy
-  speed
-  color-tint
-]
-patches-own [
-  fertility
-  resource-level
-]
+extensions []
 
-;; Setup Procedure
-to setup
-  clear-all
-  create-turtles 100 [
-    setxy random-xcor random-ycor
-    set energy 100
-    set speed 1
-    set color-tint blue
-  ]
-  ask patches [
-    set fertility random 10
-    set resource-level 5
-  ]
-  reset-ticks
+;; Global variables for data storage
+cglobals
+  data-log []
+  data-format "csv"
+  output-file ""
 end
 
-;; Go Procedure
-to go
-  ask turtles [
-    rt random 360
-    fd speed
-    set energy energy - 1
-    if energy <= 0 [
-      die
-      create-turtles 1 [ ;; reproduction logic
-        setxy xcor ycor
-        set energy 50
-      ]
-    ]
-  ]
-  tick
-end
-
-;; Observer Commands
-ask patches [
-  set resource-level resource-level + (fertility / 10)
-  if resource-level > 10 [ set resource-level 10 ]
-]
+;; Agent properties to track
+agents-own
+  [ agent-type ;; "turtles", "patches", or 

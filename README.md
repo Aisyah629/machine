@@ -565,3 +565,5 @@ MIT License
 - Created/Updated module: `pico_data_processing_tool` (See `pico_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `sequencel_data_processor_tool` (See `sequencel_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `converge_tool/converge_data_extration_tool` (See `converge_tool/converge_data_extration_tool/README.md` for details)

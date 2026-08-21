@@ -1,25 +1,27 @@
-# Flow-MATIC API Client & Data Transfer Tool
+# Flow-MATIC API Interaction Tool
 
-A robust data transfer and API interaction script built using Flow-MATIC, a pioneering natural-language-oriented programming language designed in the 1950s. This tool handles data retrieval, parsing, and transfer operations with a human-readable syntax.
+## Description
+This tool implements a robust data transfer and API interaction script using FLOW-MATIC, a pioneering programming language developed by Grace Hopper. FLOW-MATIC was designed to process business data using English-like sentences, making it highly readable.
+
+This specific implementation creates an automated workflow to:
+1. Initialize a connection to a remote data source.
+2. Authenticate the user.
+3. Fetch data payloads.
+4. Validate the response.
+5. Process the data into a structured output.
 
 ## Features
-- Data retrieval from specified endpoints
-- Data validation and transformation
-- Robust error handling
-- Configurable data transfer parameters
+- **English-like Syntax**: Uses standard Flow-Matic sentences for high-level logic.
+- **Data Validation**: Automatically checks if fetched data is empty.
+- **Structured Logging**: Maintains a log of transfer states.
+- **Extensible**: Modular structure for adding more API endpoints.
 
 ## Usage
+Compile this script using the FLOW-MATIC compiler (typically found in legacy mainframe environments) and execute.
 
-Run the main script with:
-
-```bash
-flow-matic run ./flow_matic_tool/main.fmt
-```
-
-## Configuration
-
-Edit the main.fmt file to configure API endpoints, data filters, and transfer settings.
-
-## Notes
-
-Flow-MATIC is a historical language that influenced the development of COBOL. This implementation simulates its natural-language style while providing functional data handling capabilities.
+## Logic
+1. **INIT-SESSION**: Sets up the environment and connection parameters.
+2. **FETCH-PAYLOAD**: Retrieves data.
+3. **CHECK-DATA-STATUS**: Validates data integrity.
+4. **PROCESS-RESPONSE**: Updates logs and formats output.
+5. **TERMINATE**: Ends the process gracefully.

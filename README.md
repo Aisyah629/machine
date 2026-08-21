@@ -625,3 +625,5 @@ MIT License
 - Created/Updated module: `./starlogo_tool` (See `./starlogo_tool/README.md` for details)
 
 - Created/Updated module: `ops5_interactive_diagnostic_tool` (See `ops5_interactive_diagnostic_tool/README.md` for details)
+
+- Created/Updated module: `processing_js_data_processor_tool` (See `processing_js_data_processor_tool/README.md` for details)

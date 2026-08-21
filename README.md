@@ -615,3 +615,5 @@ MIT License
 - Created/Updated module: `./nekodata_tool` (See `./nekodata_tool/README.md` for details)
 
 - Created/Updated module: `ksh_data_processor_tool` (See `ksh_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `curry_data_processor_tool` (See `curry_data_processor_tool/README.md` for details)

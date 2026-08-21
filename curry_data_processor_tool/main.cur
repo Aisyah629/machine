@@ -1,0 +1,59 @@
+-- Curry Data Processor Tool
+-- main.cur
+-- Demonstrates functional data processing using Curry's logical capabilities.
+
+module main where
+
+import List
+import Maybe
+import Control (nonDetIf)
+
+-- | A simple data record type
+data Record = Record { id :: Int, name :: String, score :: Int }
+    deriving (Show, Eq)
+
+-- | A collection of records
+type Dataset = [Record]
+
+-- | Example dataset
+dataset :: Dataset
+dataset = [
+    Record 1 "Alice" 85,
+    Record 2 "Bob" 92,
+    Record 3 "Charlie" 78,
+    Record 4 "Diana" 95
+    ]
+
+-- | Filter records with a score above a threshold
+filterByScore :: Int -> Dataset -> [Record]
+filterByScore threshold = filter (\r -> score r > threshold)
+
+-- | Transform records by adding a grade based on score
+addGrade :: Dataset -> [Record]
+addGrade = map transformRecord
+    where
+        transformRecord r = r { name = name r ++ " [" ++ determineGrade (score r) ++ "]" }
+        determineGrade s
+            | s >= 90 = "A"
+            | s >= 80 = "B"
+            | s >= 70 = "C"
+            | otherwise = "D"
+
+-- | Find all valid records based on logical constraints
+findValidRecords :: Dataset -> [Record]
+findValidRecords ds = 
+    [ r | r <- ds, isValid r ]
+    where
+        isValid r = score r > 70 && name r /= ""
+
+-- | Main function demonstrating the processor
+main :: IO ()
+main = do
+    let processed = addGrade dataset
+    let valid = findValidRecords dataset
+    putStrLn "=== Curry Data Processor ==="
+    putStrLn "\nProcessed Dataset:"
+    mapM_ (\r -> putStrLn $ "ID: " ++ show (id r) ++ ", Name: " ++ name r ++ ", Score: " ++ show (score r)) processed
+    putStrLn "\nValid Records:"
+    mapM_ (\r -> putStrLn $ "ID: " ++ show (id r) ++ ", Name: " ++ name r) valid
+    putStrLn "\nProcessing complete."

@@ -1,0 +1,28 @@
+-- KRC Data Processing Tool
+-- This script demonstrates basic data processing capabilities in KRC.
+
+-- Import necessary modules (simulated for this context)
+
+-- Define a data record type
+data Record = Record {
+    id: Int,
+    value: Float,
+    tag: String
+}
+
+-- Process a list of records
+processData :: [Record] -> [Record]
+processData records = 
+    let filtered = filter (">", value, 10.0) records
+        transformed = map (
+            \record -> let Record id val tag = record
+                       in Record id (val * 2.0) tag
+        ) filtered
+    in transformed
+
+-- Main execution
+main :: IO ()
+main = 
+    let sampleData = [Record 1 5.0 "A", Record 2 15.0 "B", Record 3 8.0 "C"]
+        result = processData sampleData
+    in putStrLn ("Processed " ++ (show (length result)) ++ " records")

@@ -591,3 +591,5 @@ MIT License
 - Created/Updated module: `self_healing_natural_tool` (See `self_healing_natural_tool/README.md` for details)
 
 - Created/Updated module: `objectlogo_data_processing_tool` (See `objectlogo_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `krc_data_processing_tool` (See `krc_data_processing_tool/README.md` for details)

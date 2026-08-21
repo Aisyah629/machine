@@ -647,3 +647,5 @@ MIT License
 - Created/Updated module: `csharp_framework_tool` (See `csharp_framework_tool/README.md` for details)
 
 - Created/Updated module: `./bliss_tool` (See `./bliss_tool/README.md` for details)
+
+- Created/Updated module: `visual_j_data_parser_tool` (See `visual_j_data_parser_tool/README.md` for details)

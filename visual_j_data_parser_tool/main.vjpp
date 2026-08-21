@@ -1,0 +1,111 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * DataParser is a utility class designed to parse structured text data
+ * such as CSV, TSV, or custom delimited formats.
+ * This implementation is compatible with Visual J++ (vjp) environments.
+ */
+public class DataParser {
+
+    /**
+     * Parses a CSV formatted string into a 2D array of strings.
+     * 
+     * @param csvData The raw CSV string to parse.
+     * @return A 2D array representing the parsed data.
+     * @throws Exception If parsing fails due to invalid format or null input.
+     */
+    public String[][] parseCSV(String csvData) throws Exception {
+        if (csvData == null || csvData.isEmpty()) {
+            throw new Exception("CSV data cannot be null or empty.");
+        }
+        
+        List<String[]> rows = new ArrayList<>();
+        String[] lines = csvData.split("\n");
+        
+        for (String line : lines) {
+            if (line.trim().isEmpty()) {
+                continue;
+            }
+            String[] columns = line.split(",", -1);
+            rows.add(columns);
+        }
+        
+        // Convert List<String[]> to String[][]
+        String[][] result = new String[rows.size()][];
+        for (int i = 0; i < rows.size(); i++) {
+            result[i] = rows.get(i);
+        }
+        
+        return result;
+    }
+
+    /**
+     * Parses a TSV (Tab-Separated Values) formatted string into a 2D array of strings.
+     * 
+     * @param tsvData The raw TSV string to parse.
+     * @return A 2D array representing the parsed data.
+     * @throws Exception If parsing fails due to invalid format or null input.
+     */
+    public String[][] parseTSV(String tsvData) throws Exception {
+        if (tsvData == null || tsvData.isEmpty()) {
+            throw new Exception("TSV data cannot be null or empty.");
+        }
+        
+        List<String[]> rows = new ArrayList<>();
+        String[] lines = tsvData.split("\n");
+        
+        for (String line : lines) {
+            if (line.trim().isEmpty()) {
+                continue;
+            }
+            String[] columns = line.split("\t", -1);
+            rows.add(columns);
+        }
+        
+        // Convert List<String[]> to String[][]
+        String[][] result = new String[rows.size()][];
+        for (int i = 0; i < rows.size(); i++) {
+            result[i] = rows.get(i);
+        }
+        
+        return result;
+    }
+
+    /**
+     * Parses a custom delimited string into a 2D array of strings.
+     * 
+     * @param data The raw data string to parse.
+     * @param delimiter The delimiter character used to separate columns.
+     * @return A 2D array representing the parsed data.
+     * @throws Exception If parsing fails due to invalid format or null input.
+     */
+    public String[][] parseDelimited(String data, String delimiter) throws Exception {
+        if (data == null || data.isEmpty()) {
+            throw new Exception("Data cannot be null or empty.");
+        }
+        if (delimiter == null || delimiter.isEmpty()) {
+            throw new Exception("Delimiter cannot be null or empty.");
+        }
+        
+        List<String[]> rows = new ArrayList<>();
+        String[] lines = data.split("\n");
+        
+        for (String line : lines) {
+            if (line.trim().isEmpty()) {
+                continue;
+            }
+            String[] columns = line.split(java.util.regex.Pattern.quote(delimiter), -1);
+            rows.add(columns);
+        }
+        
+        // Convert List<String[]> to String[][]
+        String[][] result = new String[rows.size()][];
+        for (int i = 0; i < rows.size(); i++) {
+            result[i] = rows.get(i);
+        }
+        
+        return result;
+    }
+}

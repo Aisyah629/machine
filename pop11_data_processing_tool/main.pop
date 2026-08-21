@@ -1,0 +1,113 @@
+
+define: method process_data(data_list) -> processed_list;
+    /*
+      Main processing method
+      Takes a list of data items and applies transformations
+    */
+    lvars item, result_list = [];
+    
+    /* Filter out null or empty items */
+    for item in data_list do
+        if item <> false and item <> [] and item <> '' then
+            /* Apply standard data cleaning */
+            lvars cleaned_item = clean_item(item);
+            lvars transformed = transform_item(cleaned_item);
+            add_last(transformed, result_list);
+        endif;
+    endfor;
+    
+    return result_list;
+enddefine;
+
+define: clean_item(item) -> cleaned;
+    lvars temp_item = item;
+    
+    /* Handle strings: trim whitespace */
+    if type(temp_item) = 'string' then
+        lvars len = length(temp_item);
+        lvars start = 1;
+        lvars end_pos = len;
+        
+        /* Skip leading whitespace */
+        while start <= len and element(temp_item, start) matches /[ 	
+]/ do
+            start := start + 1;
+        endwhile;
+        
+        /* Skip trailing whitespace */
+        while end_pos >= start and element(temp_item, end_pos) matches /[ 	
+]/ do
+            end_pos := end_pos - 1;
+        endwhile;
+        
+        if start > end_pos then
+            return '';
+        else
+            return substring(temp_item, start, end_pos - start + 1);
+        endif;
+    else
+        return temp_item;
+    endif;
+enddefine;
+
+define: transform_item(item) -> transformed;
+    /*
+      Generic transformation stub.
+      Can be extended to apply specific business logic
+    */
+    lvars new_item = item;
+    
+    /* Example: Convert to uppercase if it is a string */
+    if type(new_item) = 'string' then
+        lvars new_str = '';
+        lvars i;
+        for i from 1 to length(new_item) do
+            lvars char = element(new_item, i);
+            if char matches /[a-z]/ then
+                lvars code = char_to_int(char);
+                lvars upper_code = code - 32;
+                lvars upper_char = int_to_char(upper_code);
+                lvars new_str = new_str ^ upper_char;
+            else
+                lvars new_str = new_str ^ char;
+            endif;
+        endfor;
+        return new_str;
+    endif;
+    
+    /* Return numeric value if it's a number */
+    if type(new_item) = 'integer' or type(new_item) = 'float' then
+        /* Example: Scale by 1.1 */
+        return new_item * 1.1;
+    endif;
+    
+    return new_item;
+enddefine;
+
+define: char_to_int(char) -> code;
+    /* Convert a character to its integer ASCII code */
+    lvars string = char;
+    return element(string, 1);
+enddefine;
+
+define: int_to_char(code) -> char;
+    /* Convert an integer ASCII code to a character */
+    lvars string = string();
+    element(string, 1) := code;
+    return string;
+enddefine;
+
+define: string() -> s;
+    /* Allocate an empty string of length 1 */
+    lvars s = '';
+    return s;
+enddefine;
+
+/* Initialization routine */
+define: init_pop11_data_processing();
+    print('POP-11 Data Processing Tool initialized.');
+    print('Type: process_data(data_list) to process a list of items.');
+enddefine;
+
+/* Run initialization */
+init_pop11_data_processing();

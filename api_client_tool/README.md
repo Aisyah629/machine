@@ -1,3 +1,3 @@
 # API Client Tool
 
-This tool provides functionality to interact with APIs, handle data transfers, and process responses in an RPG-based environment.
+A robust Mercury-based API interaction script for making HTTP requests, handling responses, and processing data.

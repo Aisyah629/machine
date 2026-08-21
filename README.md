@@ -607,3 +607,5 @@ MIT License
 - Created/Updated module: `godel_data_processor_tool` (See `godel_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `st_data_processing_utility_tool` (See `st_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `sympl_advanced_data_processor_tool` (See `sympl_advanced_data_processor_tool/README.md` for details)

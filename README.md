@@ -651,3 +651,5 @@ MIT License
 - Created/Updated module: `visual_j_data_parser_tool` (See `visual_j_data_parser_tool/README.md` for details)
 
 - Created/Updated module: `./euphoria_data_extractor_tool` (See `./euphoria_data_extractor_tool/README.md` for details)
+
+- Created/Updated module: `fl_data_processor_tool` (See `fl_data_processor_tool/README.md` for details)

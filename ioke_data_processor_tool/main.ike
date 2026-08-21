@@ -1,0 +1,137 @@
+;; Ioke Data Processing Utility
+;; Purpose: General-purpose data transformation and filtering
+
+;; Define the DataProcessor object
+DataProcessor = Object clone
+
+;; Initialize the processor with default settings
+DataProcessor init = method(
+  @records = List new
+  @filters = List new
+  @transformations = List new
+  println("DataProcessor initialized.")
+  self
+)
+
+;; Add a record to the dataset
+DataProcessor addRecord = method(
+  record = Message currentArgument(1)
+  @records add(record)
+  self
+)
+
+;; Add a filter criteria
+DataProcessor addFilter = method(
+  fieldName = Message currentArgument(1)
+  condition = Message currentArgument(2)
+  value = Message currentArgument(3)
+  
+  filter = Map clone
+  filter atPut(:field, fieldName)
+  filter atPut(:operator, condition)
+  filter atPut(:value, value)
+  
+  @filters add(filter)
+  self
+)
+
+;; Add a transformation function
+DataProcessor addTransformation = method(
+  fieldName = Message currentArgument(1)
+  func = Message currentArgument(2)
+  
+  transformation = Map clone
+  transformation atPut(:field, fieldName)
+  transformation atPut(:func, func)
+  
+  @transformations add(transformation)
+  self
+)
+
+;; Execute filters on the dataset
+DataProcessor applyFilters = method(
+  result = List clone
+  @records each(record, 
+    include = true
+    @filters each(filter, 
+      field = filter at(:field)
+      operator = filter at(:operator)
+      value = filter at(:value)
+      
+      actualValue = record at(field) ifNil(nil)
+      
+      match = case(operator)
+        "==" actualValue == value
+        "!=" actualValue != value
+        ">" actualValue > value
+        "<" actualValue < value
+        ">=" actualValue >= value
+        "<=" actualValue <= value
+        else true
+      end
+      
+      include = include and(match)
+    )
+    if(include, result add(record))
+  )
+  result
+)
+
+;; Execute transformations on the dataset
+DataProcessor applyTransformations = method(
+  dataset = Message currentArgument(1)
+  result = List clone
+  
+  dataset each(record, 
+    newRecord = Map clone
+    record each(key, value, newRecord atPut(key, value))
+    
+    @transformations each(t, 
+      field = t at(:field)
+      func = t at(:func)
+      if(newRecord includesKey(field), 
+        newValue = func invoke(newRecord at(field))
+        newRecord atPut(field, newValue)
+      )
+    )
+    result add(newRecord)
+  )
+  result
+)
+
+;; Main processing pipeline
+DataProcessor process = method(
+  println("Starting data processing pipeline...")
+  
+  ;; Apply filters
+  filteredData = self applyFilters
+  println("Records after filtering: #{filteredData size}")
+  
+  ;; Apply transformations
+  transformedData = self applyTransformations(filteredData)
+  println("Records after transformation: #{transformedData size}")
+  
+  println("Data processing complete.")
+  transformedData
+)
+
+;; Example usage and demonstration
+println("--- Ioke Data Processor Demo ---")
+
+proc = DataProcessor init
+
+;; Add sample data
+proc addRecord(Map clone atPut(:name, "Alice") atPut(:age, 25) atPut(:city, "New York"))
+proc addRecord(Map clone atPut(:name, "Bob") atPut(:age, 30) atPut(:city, "London"))
+proc addRecord(Map clone atPut(:name, "Charlie") atPut(:age, 22) atPut(:city, "New York"))
+proc addRecord(Map clone atPut(:name, "David") atPut(:age, 35) atPut(:city, "Paris"))
+
+;; Add filter: Age > 23
+proc addFilter(:age, ">", 23)
+
+;; Add transformation: Convert name to uppercase
+proc addTransformation(:name, method(val, val upper))
+
+;; Run processing
+result = proc process
+println("Final Results: #{result}")

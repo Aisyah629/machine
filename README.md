@@ -633,3 +633,5 @@ MIT License
 - Created/Updated module: `jscript_dotnet_data_processor_tool` (See `jscript_dotnet_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./faust_data_processing_tool` (See `./faust_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `xl_data_processing_tool` (See `xl_data_processing_tool/README.md` for details)

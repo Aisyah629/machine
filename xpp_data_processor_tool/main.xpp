@@ -1,80 +1,160 @@
-/*****************************************************************************
- * X++ Data Processor Tool
- * 
- * A robust utility for processing, validating, and transforming data records
- * within the Microsoft Dynamics 365 Finance & Operations (AX) framework.
- * This tool demonstrates standard X++ patterns for data manipulation using
- * Table buffers, Query classes, and Data Set patterns.
- *****************************************************************************/
+/*
+   X++ Data Processor Tool
+   Language: Visual Objects
 
-class XppDataProcessorTool
-{
-    /// <summary>
-    /// Main entry point for the data processing utility.
-    /// Simulates a data pipeline by reading a data set, cleaning records,
-    /// transforming formats, and generating a summary.
-    /// </summary>
-    public static void main(Args _args)
-    {
-        
-        // 1. Initialize the processor
-        XppDataProcessorTool processor = new XppDataProcessorTool();
-        
-        // 2. Load simulated data
-        // In a real scenario, this would query a physical table or DataEntity.
-        // For this standalone utility demonstration, we instantiate a Data Set.
-        
-        // 3. Process Data
-        // This step would typically involve: Filtering, Cleaning, Transforming
-        processor.processData();
-        
-        // 4. Output Results
-        processor.outputResults();
-        
-        info("Data processing complete. Refer to output logs.");
-    }
+   This program demonstrates a basic data processing utility in Visual Objects.
+   It reads a simple text-based data file, processes the data, and writes
+   the result to a new file.
+*/
 
-    /// <summary>
-    /// Simulates the core data processing pipeline.
-    /// </summary>
-    private void processData()
-    {
-        // Demonstrate standard X++ buffer manipulation patterns
-        info("Starting data processing pipeline...");
-        
-        // Simulate reading records
-        // In a real app: while select myTable where myTable.Recid > 0
-        {
-            info("Iterating through data set...");
-        }
+CLASS DataProcessor
 
-        // Simulate transformation logic
-        // Pattern: Map values, calculate derived fields, validate constraints
-        info("Applying transformation rules...");
-        
-        // Simulate validation
-        info("Validating record integrity...");
-    }
+  // Properties for input and output file paths
+  PROPERTY cInputFile   AS String   DEFAULT ""
+  PROPERTY cOutputFile  AS String   DEFAULT ""
+  PROPERTY aData        AS Array    DEFAULT {}
 
-    /// <summary>
-    /// Outputs the processing results to the Infolog.
-    /// </summary>
-    private void outputResults()
-    {
-        info("Generating summary report...");
-        
-        // Example of formatting a string for output
-        str summary = strFmt("Records Processed: %1", this.estimateRecordCount());
-        info(summary);
-    }
+  // Method to initialize the processor
+  METHOD New() CONSTRUCTOR
+    ::aData = {} // Initialize empty array
+  ENDMETHOD
 
-    /// <summary>
-    /// Helper to estimate or count records processed.
-    /// </summary>
-    /// <returns>Integer count of processed records.</returns>
-    private int estimateRecordCount()
-    {
-        // Placeholder for actual counting logic
-        return 1000;
-    }
-}
+  // Method to set the input file path
+  METHOD SetInputFile(cPath AS String) AS VOID
+    ::cInputFile = cPath
+  ENDMETHOD
+
+  // Method to set the output file path
+  METHOD SetOutputFile(cPath AS String) AS VOID
+    ::cOutputFile = cPath
+  ENDMETHOD
+
+  // Method to read and parse the input data
+  METHOD ReadData() AS Boolean
+    LOCAL fHandle   AS Integer
+    LOCAL cLine     AS String
+    LOCAL aFields   AS Array
+    LOCAL i         AS Integer
+
+    // Check if input file is set
+    IF Empty(::cInputFile)
+      ? "Error: Input file path is not set."
+      RETURN .F.
+    ENDIF
+
+    // Open the input file for reading
+    fHandle = Fopen(::cInputFile, FO_READ)
+    IF fHandle == FERR_FILE_NOT_FOUND
+      ? "Error: Input file not found."
+      RETURN .F.
+    ENDIF
+
+    // Initialize data array
+    ::aData = {}
+
+    // Read each line of the file
+    DO WHILE ! FEOF(fHandle)
+      cLine = Fgets(fHandle)
+      // Basic parsing: split by comma (CSV format)
+      aFields = StrParse(cLine, ",")
+      // Add processed line to data array
+      AAdd(::aData, aFields)
+    ENDDO
+
+    // Close the input file
+    Fclose(fHandle)
+    RETURN .T.
+  ENDMETHOD
+
+  // Method to process the data
+  METHOD ProcessData() AS Boolean
+    LOCAL i     AS Integer
+    LOCAL j     AS Integer
+    LOCAL aLine AS Array
+    LOCAL aNewLine AS Array
+    LOCAL cOutput AS String
+
+    // Check if data is loaded
+    IF Empty(::aData)
+      ? "Error: No data loaded for processing."
+      RETURN .F.
+    ENDIF
+
+    // Simple processing: Transform data (e.g., uppercase text fields)
+    FOR i = 1 TO Len(::aData)
+      aLine = ::aData[i]
+      aNewLine = {}
+      FOR j = 1 TO Len(aLine)
+        IF Type(aLine[j]) == "C"
+          AAdd(aNewLine, Upper(aLine[j]))
+        ELSE
+          AAdd(aNewLine, aLine[j])
+        ENDIF
+      ENDDO
+      ::aData[i] = aNewLine
+    ENDDO
+
+    // Convert processed data back to string format
+    cOutput = ""
+    FOR i = 1 TO Len(::aData)
+      aLine = ::aData[i]
+      FOR j = 1 To Len(aLine)
+        cOutput += Str(aLine[j])
+        IF j < Len(aLine)
+          cOutput += ","
+        ENDIF
+      ENDDO
+      cOutput += ""
+    ENDDO
+
+    // Write to output file
+    RETURN ::WriteOutput(cOutput)
+  ENDMETHOD
+
+  // Method to write processed data to the output file
+  METHOD WriteOutput(cData AS String) AS Boolean
+    LOCAL fHandle AS Integer
+
+    // Check if output file is set
+    IF Empty(::cOutputFile)
+      ? "Error: Output file path is not set."
+      RETURN .F.
+    ENDIF
+
+    // Open the output file for writing
+    fHandle = Fopen(::cOutputFile, FO_WRITE + FO_CREATE)
+    IF fHandle == FERR_FILE_NOT_FOUND
+      ? "Error: Cannot create output file."
+      RETURN .F.
+    ENDIF
+
+    // Write data to the file
+    Fwrite(fHandle, cData)
+    Fclose(fHandle)
+    ? "Data processing complete. Output written to: " + ::cOutputFile
+    RETURN .T.
+  ENDMETHOD
+
+ENDCLASS
+
+// Main program execution
+PROCEDURE Main
+  LOCAL oProcessor AS DataProcessor
+
+  // Create a new instance of the DataProcessor
+  oProcessor = DataProcessor():New()
+
+  // Set input and output file paths
+  oProcessor:SetInputFile("data_input.txt")
+  oProcessor:SetOutputFile("data_output.txt")
+
+  // Execute the data processing pipeline
+  IF oProcessor:ReadData() .AND. oProcessor:ProcessData()
+    ? "Success!"
+  ELSE
+    ? "Processing failed. Check for errors."
+  ENDIF
+
+  // Clean up
+  oProcessor = NIL
+ENDPROC

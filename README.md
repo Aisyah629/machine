@@ -575,3 +575,5 @@ MIT License
 - Created/Updated module: `./aspectj_data_processor_tool` (See `./aspectj_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `hop_text_formatter_tool` (See `hop_text_formatter_tool/README.md` for details)
+
+- Created/Updated module: `xpp_data_processor_tool` (See `xpp_data_processor_tool/README.md` for details)

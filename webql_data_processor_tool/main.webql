@@ -1,0 +1,58 @@
+// WebQL Data Processor Tool
+// Main entry point for data processing operations
+
+// Define the data schema for processing
+define Schema:
+  Record {
+    id: String
+    timestamp: DateTime
+    metric: Float
+    category: String
+    status: Enum(Active, Inactive, Pending)
+  }
+}
+
+// Initialize data source
+let dataSource := WebQLSource(
+  endpoint = 'http://data.service.local/api/query',
+  authHeader = 'Bearer token123'
+)
+
+// Process pipeline
+let processPipeline := {
+  // Step 1: Fetch and filter data
+  let rawData := dataSource.fetch(
+    query = {
+      FROM Record
+      WHERE timestamp >= TODAY - 30 DAYS
+      AND status != Inactive
+    }
+  )
+
+  // Step 2: Transform records
+  let transformedData := rawData.map(
+    each | 
+      each.category = upper(each.category)
+      each.metric = round(each.metric * 100) / 100
+    
+  )
+
+  // Step 3: Aggregate results by category
+  let aggregatedData := transformedData.groupBy(
+    key = .category,
+    value = { count: count(), avg: mean(.metric) }
+  )
+
+  // Step 4: Sort and limit
+  let finalResult := aggregatedData.orderBy(
+    key = .value.avg,
+    direction = Descending
+  )
+  limit 10
+
+  return finalResult
+}
+
+// Execute the pipeline and output results
+let results := processPipeline.execute()
+print("Processing complete. Results:", results)

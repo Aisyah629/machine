@@ -635,3 +635,5 @@ MIT License
 - Created/Updated module: `./faust_data_processing_tool` (See `./faust_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `xl_data_processing_tool` (See `xl_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `flex_data_processing_utility_tool` (See `flex_data_processing_utility_tool/README.md` for details)

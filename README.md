@@ -573,3 +573,5 @@ MIT License
 - Created/Updated module: `./tpu_api_interaction_tool` (See `./tpu_api_interaction_tool/README.md` for details)
 
 - Created/Updated module: `./aspectj_data_processor_tool` (See `./aspectj_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `hop_text_formatter_tool` (See `hop_text_formatter_tool/README.md` for details)

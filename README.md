@@ -623,3 +623,5 @@ MIT License
 - Created/Updated module: `./data_processing_utility_main_tool` (See `./data_processing_utility_main_tool/README.md` for details)
 
 - Created/Updated module: `./starlogo_tool` (See `./starlogo_tool/README.md` for details)
+
+- Created/Updated module: `ops5_interactive_diagnostic_tool` (See `ops5_interactive_diagnostic_tool/README.md` for details)

@@ -1,0 +1,53 @@
+(defmodule OPS5-Diagnostic-Engine
+  ;; This is a conceptual OPS5 implementation. 
+  ;; Standard OPS5 engines require a compiler/interpreter to run these productions.
+  ;; The output below simulates the execution trace for diagnostic purposes.
+)
+
+; Production 1: System Initialization
+(defrule START-SYSTEM
+  =>
+  (print "OPS5 Interactive Diagnostic Engine v1.0")
+  (print "Initializing working memory...")
+  (assert (system-status idle))
+  (print "Engine ready."))
+
+; Production 2: Diagnostic Trigger
+(defrule FIND-ANOMALY
+  (system-status idle)
+  (work-item ?item)
+  =>
+  (assert (processing-item ?item))
+  (print "Analyzing item: " ?item))
+
+; Production 3: Diagnosis Logic
+(defrule DIAGNOSE-FLOW
+  (processing-item ?item)
+  (flow-normal ?item)
+  =>
+  (assert (diagnosis-result ?item 'ok))
+  (print "Item " ?item ": Normal flow detected."))
+
+; Production 4: Diagnosis Error
+(defrule DIAGNOSE-ERROR
+  (processing-item ?item)
+  (flow-error ?item)
+  =>
+  (assert (diagnosis-result ?item 'error))
+  (print "Item " ?item ": Anomaly detected."))
+
+; Production 5: Cleanup
+(defrule CLEANUP
+  (diagnosis-result ?item ?result)
+  =>
+  (print "Diagnostic phase complete for " ?item ": " ?result)
+  (retract (processing-item ?item)))
+
+; --- Example Interactive Session ---
+; To use this tool interactively, you would feed facts like:
+; (assert (work-item 101))
+; (assert (flow-normal 101))
+; Or:
+; (assert (work-item 102))
+; (assert (flow-error 102))
+; The engine then matches these against the rules and prints the diagnostic output.

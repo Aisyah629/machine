@@ -72702,3 +72702,48 @@ Output Generation.
 </think>
 
 Create a new data processing utility. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: Flex. Explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+[2026-08-21 20:16:04] (Target Lang: PROTEL) Thinking Process:
+
+1.  **Deconstruct the Request:**
+    *   Goal: Generate exactly 1 logical follow-up instruction.
+    *   Constraint 1: Explicitly demand the new tool be built strictly using PROTEL.
+    *   Constraint 2: If building a new tool, explicitly instruct to place it in a NEW dedicated folder and create a local README.md.
+    *   Constraint 3: Return ONLY the instruction text.
+    *   Constraint 4: NEVER target the .github directory.
+
+2.  **Draft the Instruction:**
+    *   *Attempt 1:* Create a new logic gate simulator tool using PROTEL. Place it in a new folder `protel_logic_simulator` and create a README.md.
+    *   *Review against constraints:*
+        *   "Create a new..." -> Implies a new tool. Good.
+        *   "...using PROTEL..." -> Explicit language demand. Good.
+        *   "...Place it in a new folder..." -> Explicit folder demand. Good.
+        *   "...create a README.md" -> Explicit README demand. Good.
+        *   "Return ONLY..." -> The output should just be the text.
+        *   "NEVER target .github" -> The draft doesn't mention .github. Good.
+
+3.  **Refine the Wording (Style Matching):**
+    *   The user's prompt example shows a pattern: "Create a new [tool type] utility/tool... You MUST explicitly demand... language: [LANG]. Explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+    *   The user wants *me* to output the instruction text following this pattern but replacing "Flex" with "PROTEL" and potentially changing the tool type slightly to be "logical follow-up" based on the previous context, or just a valid instruction.
+    *   The prompt asks for a "logical follow-up instruction".
+    *   Previous instruction was about a "data processing utility" with "Flex".
+    *   A logical follow-up could be related to the same domain or a different tool in the workspace context. Looking at the workspace list, there are tools like `protel_tool` mentioned (`./protel_tool/README.md`).
+    *   A logical follow-up might be extending the workspace with a PROTEL tool, perhaps for PCB design simulation or something related, since Protel is a CAD tool for PCBs.
+    *   However, the instruction just needs to be a valid text generation.
+    *   *Refined Draft:* "Create a new PCB schematic capture and simulation tool. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PROTEL. Explicitly instruct to place it in a NEW dedicated folder and create a local README.md."
+    *   *Check constraints:*
+        *   PROTEL mentioned? Yes.
+        *   New folder? Yes.
+        *   README.md? Yes.
+        *   No .github? Yes.
+        *   Only instruction text? Yes.
+
+4.  **Final Polish:**
+    *   Result: `Create a new PCB schematic capture and simulation tool. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PROTEL. Explicitly instruct to place it in a NEW dedicated folder and create a local README.md.`
+    *   This looks solid. It follows the structure of the example provided in the prompt (`Create a new data processing utility...`), adapts the language to PROTEL, and keeps the structural constraints.
+
+5.  **Output Generation:**
+    *   Output the refined text string.
+    *   `Create a new PCB schematic capture and simulation tool. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PROTEL. Explicitly instruct to place it in a NEW dedicated folder and create a local README.md.`
+</think>
+
+Create a new PCB schematic capture and simulation tool. You MUST explicitly demand that the new tool be built STRICTLY using this exact programming language: PROTEL. Explicitly instruct to place it in a NEW dedicated folder and create a local README.md.

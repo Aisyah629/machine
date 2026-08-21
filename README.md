@@ -597,3 +597,5 @@ MIT License
 - Created/Updated module: `data_processing_utility_s3_tool` (See `data_processing_utility_s3_tool/README.md` for details)
 
 - Created/Updated module: `./flow_matic_tool` (See `./flow_matic_tool/README.md` for details)
+
+- Created/Updated module: `focal_data_processor_tool` (See `focal_data_processor_tool/README.md` for details)

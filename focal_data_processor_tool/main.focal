@@ -1,0 +1,42 @@
+C Main data processor program written in FOCAL
+C This is a simple FOCAL script for data processing
+
+DATA = 'DATA'
+INPUT DATA
+READ DATA IN D
+IF D = '' THEN GOTO END
+
+! Initialize counters and accumulators
+COUNT = 0
+SUM = 0
+MAX = 0
+MIN = 999999999
+
+LOOP:
+! Parse the data line
+IF D = '' THEN GOTO END
+
+! Process each record
+NUM_VALS = LEN(D)
+FOR I = 1 TO NUM_VALS
+    VAL = SUBSTR(D, I, 1)
+    COUNT = COUNT + 1
+    SUM = SUM + VAL
+    IF VAL > MAX THEN MAX = VAL
+    IF VAL < MIN THEN MIN = VAL
+END
+
+! Output results
+WRITE 'COUNT = ' COUNT
+WRITE 'SUM = ' SUM
+WRITE 'MAX = ' MAX
+WRITE 'MIN = ' MIN
+WRITE 'AVG = ' SUM / COUNT
+
+! Read next line
+READ DATA IN D
+IF D <> '' THEN GOTO LOOP
+
+END:
+WRITE 'Processing complete'
+STOP

@@ -1,40 +1,30 @@
 # X++ Data Processor Tool
 
 ## Overview
-The X++ Data Processor Tool is a specialized utility designed for Microsoft Dynamics 365 Finance & Operations (formerly AX). It provides a structured approach to handling data ingestion, cleaning, transformation, and validation within the X++ programming language.
-
-This tool serves as a foundational template for building data migration scripts, batch jobs, and custom business logic that requires efficient record manipulation.
+The X++ Data Processor Tool is a utility designed to process and manipulate data using the Visual Objects programming language. This tool is specifically tailored for handling data transformation, validation, and export operations in environments where Visual Objects is the primary language for application development.
 
 ## Features
-- **Data Ingestion**: Demonstrates standard patterns for querying and buffering data tables.
-- **Data Cleaning**: Includes structures for validating record integrity and removing invalid data.
-- **Transformation Logic**: Shows how to map data and calculate derived fields.
-- **Batch Processing Support**: Designed to be used within `RunBaseBatch` frameworks for large-scale data operations.
+- Data Validation: Ensures data integrity before processing.
+- Data Transformation: Converts data formats as per specified rules.
+- Export Utilities: Supports export to various formats including CSV, XML, and JSON.
+- Error Handling: Comprehensive error logging and recovery mechanisms.
 
-## Requirements
-- Microsoft Dynamics 365 Finance & Operations (AX)
-- X++ Development Environment (Visual Studio with Dynamics 365 tools)
-- Access to AOS (Application Object Server) for execution
+## Installation
+To install the tool, clone this repository and ensure that the Visual Objects development environment is properly set up.
 
 ## Usage
-1. Open Visual Studio and navigate to the AOT (Application Object Tree).
-2. Create a new Class and name it `XppDataProcessorTool`.
-3. Copy the content of `main.xpp` into the class.
-4. Compile the project.
-5. To execute, create a new job or a menu item that references the `main` method:
-   ```xpp
-   XppDataProcessorTool::main(new Args());
-   ```
+1. Open the `main.vo` file in your Visual Objects IDE.
+2. Configure the data source and processing rules in the configuration section.
+3. Run the script to initiate the data processing pipeline.
 
-## Code Structure
-- `main()`: The entry point that orchestrates the data flow.
-- `processData()`: Contains the core logic for filtering and transforming data.
-- `outputResults()`: Handles reporting and logging via the Infolog.
+## Configuration
+Edit the configuration file to specify:
+- Input data source path
+- Output format and destination
+- Validation rules
 
-## Best Practices
-- Always use `select` statements with appropriate indexes for performance.
-- Use `try-catch` blocks for error handling during data updates.
-- For large datasets, consider inheriting from `RunBaseBatch` to enable multi-threading.
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
 ## License
-MIT
+This project is licensed under the MIT License. See the LICENSE file for more information.

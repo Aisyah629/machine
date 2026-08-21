@@ -653,3 +653,5 @@ MIT License
 - Created/Updated module: `./euphoria_data_extractor_tool` (See `./euphoria_data_extractor_tool/README.md` for details)
 
 - Created/Updated module: `fl_data_processor_tool` (See `fl_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `combined_data_processing_utility_tool` (See `combined_data_processing_utility_tool/README.md` for details)

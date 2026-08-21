@@ -1,0 +1,157 @@
+/**
+ * Cilk Data Processing Utility
+ * 
+ * This program demonstrates parallel data processing using Cilk's 
+ * parallel_for construct. It processes a dataset by applying a 
+ * transformation function in parallel across chunks of data.
+ * 
+ * Compile with: cilkcc -o main main.cilk -lm
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <cilk/cilk.h>
+#include <cilk/reducer.h>
+
+#define CHUNK_SIZE 1024
+#define MAX_LINE_LENGTH 1024
+
+typedef struct {
+    double value;
+    int id;
+} DataPoint;
+
+// Reducer for summing results
+cilk_add_reducer_type(double, sum_reducer);
+
+/**
+ * Process a chunk of data in parallel.
+ */
+cilk void process_chunk(DataPoint* data, int start_index, int end_index, sum_reducer* total_sum, sum_reducer* total_count, sum_reducer* max_val, sum_reducer* min_val) {
+    for (int i = start_index; i < end_index; ++i) {
+        double val = data[i].value;
+        
+        // Apply transformation: normalize by square root of ID + 1
+        double transformed = val / sqrt(data[i].id + 1.0);
+        
+        // Update reducers
+        *total_sum += transformed;
+        *total_count += 1;
+        
+        if (i == start_index) {
+            *max_val = transformed;
+            *min_val = transformed;
+        } else {
+            if (transformed > *max_val) {
+                *max_val = transformed;
+            }
+            if (transformed < *min_val) {
+                *min_val = transformed;
+            }
+        }
+    }
+}
+
+/**
+ * Main entry point
+ */
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        fprintf(stderr, "Usage: %s <data_file>\n", argv[0]);
+        return 1;
+    }
+
+    FILE* fp = fopen(argv[1], "r");
+    if (fp == NULL) {
+        fprintf(stderr, "Error: Cannot open file %s\n", argv[1]);
+        return 1;
+    }
+
+    // Allocate initial buffer
+    int capacity = 10000;
+    DataPoint* data = (DataPoint*)malloc(capacity * sizeof(DataPoint));
+    if (data == NULL) {
+        fprintf(stderr, "Error: Memory allocation failed\n");
+        fclose(fp);
+        return 1;
+    }
+
+    int count = 0;
+    char line[MAX_LINE_LENGTH];
+    
+    // Read data (Format: id value)
+    while (fgets(line, MAX_LINE_LENGTH, fp) != NULL) {
+        if (count >= capacity) {
+            capacity *= 2;
+            DataPoint* temp = (DataPoint*)realloc(data, capacity * sizeof(DataPoint));
+            if (temp == NULL) {
+                fprintf(stderr, "Error: Memory reallocation failed\n");
+                free(data);
+                fclose(fp);
+                return 1;
+            }
+            data = temp;
+        }
+        
+        if (sscanf(line, "%d %lf", &data[count].id, &data[count].value) == 2) {
+            count++;
+        }
+    }
+    
+    fclose(fp);
+    
+    if (count == 0) {
+        fprintf(stderr, "Error: No data found in file\n");
+        free(data);
+        return 1;
+    }
+
+    printf("Processing %d data points...\n", count);
+
+    // Initialize reducers
+    sum_reducer total_sum, total_count, max_val, min_val;
+    cilk_reducer_init(&total_sum);
+    cilk_reducer_init(&total_count);
+    cilk_reducer_init(&max_val);
+    cilk_reducer_init(&min_val);
+
+    // Parallel processing
+    int num_chunks = (count + CHUNK_SIZE - 1) / CHUNK_SIZE;
+    
+    cilk_for (int i = 0; i < num_chunks; ++i) {
+        int start = i * CHUNK_SIZE;
+        int end = start + CHUNK_SIZE;
+        if (end > count) {
+            end = count;
+        }
+        process_chunk(data, start, end, &total_sum, &total_count, &max_val, &min_val);
+    }
+
+    // Retrieve results
+    double sum = cilk_reducer_deref(&total_sum);
+    double cnt = cilk_reducer_deref(&total_count);
+    double max = cilk_reducer_deref(&max_val);
+    double min = cilk_reducer_deref(&min_val);
+
+    double mean = (cnt > 0) ? (sum / cnt) : 0.0;
+
+    // Output results
+    printf("--- Processing Results ---\n");
+    printf("Data Points Processed: %.0f\n", cnt);
+    printf("Sum of Transformed Values: %.4f\n", sum);
+    printf("Mean of Transformed Values: %.4f\n", mean);
+    printf("Max Transformed Value: %.4f\n", max);
+    printf("Min Transformed Value: %.4f\n", min);
+    printf("--------------------------\n");
+
+    // Cleanup
+    free(data);
+    cilk_reducer_cleanup(&total_sum);
+    cilk_reducer_cleanup(&total_count);
+    cilk_reducer_cleanup(&max_val);
+    cilk_reducer_cleanup(&min_val);
+
+    return 0;
+}

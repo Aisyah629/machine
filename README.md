@@ -581,3 +581,5 @@ MIT License
 - Created/Updated module: `litec_interactive_diagnostic_tool` (See `litec_interactive_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `cecil_data_processor_tool` (See `cecil_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `falcon_data_processor_tool` (See `falcon_data_processor_tool/README.md` for details)

@@ -1,0 +1,172 @@
+// Falcon Data Processor Utility
+// Handles JSON parsing, data transformation, and output generation
+
+import std.net.http;
+import std.net.url;
+import std.io;
+import std.sys;
+import json;
+
+// Configuration class
+class Config {
+  var inputPath;
+  var outputPath;
+  var filterExpression;
+  var format;
+  
+  function Config( input, output, filter, fmt ) {
+    this.inputPath = input;
+    this.outputPath = output;
+    this.filterExpression = filter;
+    this.format = fmt;
+  }
+}
+
+// Data Processor Class
+class DataProcessor {
+  var config;
+  var rawData;
+  var processedData;
+  
+  function DataProcessor( cfg ) {
+    this.config = cfg;
+    this.rawData = null;
+    this.processedData = null;
+  }
+  
+  // Load data from source (File or URL)
+  function loadData( source ) {
+    std.out << "Loading data from: " << source << 
+    
+    var content = "";
+    try {
+      var isFile = std.fs.exists( source );
+      if ( isFile ) {
+        content = std.io.readFile( source );
+      } else {
+        var response = std.net.http.get( source );
+        content = response.body;
+      }
+    } catch ( Exception e ) {
+      std.err << "Error loading data: " << e.message << 
+      return false;
+    }
+    
+    // Parse JSON
+    try {
+      this.rawData = std.json.parse( content );
+    } catch ( Exception e ) {
+      std.err << "Error parsing JSON: " << e.message << 
+      return false;
+    }
+    
+    std.out << "Data loaded successfully." << 
+    return true;
+  }
+  
+  // Apply filter expression (simple subset extraction for this example)
+  function applyFilter( filterExp ) {
+    std.out << "Applying filter: " << filterExp << 
+    if ( !this.rawData ) {
+      std.err << "No data to filter." << 
+      return null;
+    }
+    
+    // Placeholder for complex filtering logic
+    // In a real implementation, this would parse the filter expression
+    // For now, we just clone the data structure
+    this.processedData = std.json.deepClone( this.rawData );
+    
+    std.out << "Filter applied." << 
+    return this.processedData;
+  }
+  
+  // Process the data
+  function process() {
+    std.out << "Processing data..." << 
+    if ( !this.rawData ) {
+      std.err << "No data to process." << 
+      return false;
+    }
+    
+    // Example processing: Normalize numeric fields
+    this.processedData = this.rawData;
+    
+    std.out << "Data processing complete." << 
+    return true;
+  }
+  
+  // Save data to destination
+  function save() {
+    std.out << "Saving data to: " << this.config.outputPath << 
+    if ( !this.processedData ) {
+      std.err << "No processed data to save." << 
+      return false;
+    }
+    
+    var outputContent;
+    if ( this.config.format == "json" ) {
+      outputContent = std.json.toString( this.processedData, true ); // Pretty print
+    } else {
+      std.err << "Unsupported format: " << this.config.format << 
+      return false;
+    }
+    
+    try {
+      std.io.writeFile( this.config.outputPath, outputContent );
+    } catch ( Exception e ) {
+      std.err << "Error saving data: " << e.message << 
+      return false;
+    }
+    
+    std.out << "Data saved successfully." << 
+    return true;
+  }
+  
+  // Main execution method
+  function run() {
+    std.out << "--- Falcon Data Processor Starting ---" << 
+    
+    if ( !this.loadData( this.config.inputPath ) ) {
+      return false;
+    }
+    
+    if ( !this.applyFilter( this.config.filterExpression ) ) {
+      return false;
+    }
+    
+    if ( !this.process() ) {
+      return false;
+    }
+    
+    if ( !this.save() ) {
+      return false;
+    }
+    
+    std.out << "--- Falcon Data Processor Finished ---" << 
+    return true;
+  }
+}
+
+// Main Execution
+function main() {
+  // Default configuration
+  var cfg = new Config( "input.json", "output.json", "all", "json" );
+  
+  // Check command line arguments
+  var args = std.os.argv;
+  if ( args.size() >= 3 ) {
+    cfg.inputPath = args[1];
+    cfg.outputPath = args[2];
+  }
+  if ( args.size() >= 4 ) {
+    cfg.filterExpression = args[3];
+  }
+  
+  var processor = new DataProcessor( cfg );
+  var success = processor.run();
+  
+  return success ? 0 : 1;
+}
+
+main();

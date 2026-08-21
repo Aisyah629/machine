@@ -571,3 +571,5 @@ MIT License
 - Created/Updated module: `./api_client_tool` (See `./api_client_tool/README.md` for details)
 
 - Created/Updated module: `./tpu_api_interaction_tool` (See `./tpu_api_interaction_tool/README.md` for details)
+
+- Created/Updated module: `./aspectj_data_processor_tool` (See `./aspectj_data_processor_tool/README.md` for details)

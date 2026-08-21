@@ -639,3 +639,5 @@ MIT License
 - Created/Updated module: `flex_data_processing_utility_tool` (See `flex_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `api_client_tool` (See `api_client_tool/README.md` for details)
+
+- Created/Updated module: `kojo_interactive_education_tool` (See `kojo_interactive_education_tool/README.md` for details)

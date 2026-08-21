@@ -613,3 +613,5 @@ MIT License
 - Created/Updated module: `esterel_data_transformer_tool` (See `esterel_data_transformer_tool/README.md` for details)
 
 - Created/Updated module: `./nekodata_tool` (See `./nekodata_tool/README.md` for details)
+
+- Created/Updated module: `ksh_data_processor_tool` (See `ksh_data_processor_tool/README.md` for details)

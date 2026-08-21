@@ -599,3 +599,5 @@ MIT License
 - Created/Updated module: `./flow_matic_tool` (See `./flow_matic_tool/README.md` for details)
 
 - Created/Updated module: `focal_data_processor_tool` (See `focal_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `executable_uml_data_processor_tool` (See `executable_uml_data_processor_tool/README.md` for details)

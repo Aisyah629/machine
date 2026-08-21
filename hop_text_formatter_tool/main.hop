@@ -1,0 +1,98 @@
+;; Hop Text Formatting and Dataset Cleaning Tool
+
+;; ==========================================
+;; Configuration & Constants
+;; ==========================================
+(define-constant MAX_LINE_LENGTH 120)
+(define-constant DEFAULT_ENCODING "utf-8")
+
+;; ==========================================
+;; Utility Functions
+;; ==========================================
+;; Check if input exists and is a string
+(check-input
+ (lambda (input)
+   (if (not (string? input))
+       (error "Invalid input: Expected a string."))))
+
+;; Validate and load configuration
+(load-config
+ (lambda (config-path)
+   (if (file-exists? config-path)
+       (read-file config-path)
+       (error "Configuration file not found at: " config-path))))
+
+;; ==========================================
+;; Data Cleaning Functions
+;; ==========================================
+;; Remove leading and trailing whitespace
+(clean-whitespace
+ (lambda (text)
+   (check-input text)
+   (string-trim text)))
+
+;; Remove duplicate lines while preserving order
+clean-duplicates
+  (lambda (text)
+    (check-input text)
+    (string-unique (string-split text "\n")))
+
+;; Remove empty lines
+remove-empty-lines
+  (lambda (text)
+    (check-input text)
+    (filter (lambda (line)
+              (not (string-empty? (string-trim line))))
+            (string-split text "\n")))
+
+;; Convert all text to lowercase
+convert-to-lowercase
+  (lambda (text)
+    (check-input text)
+    (string-downcase text)))
+
+;; Convert all text to uppercase
+convert-to-uppercase
+  (lambda (text)
+    (check-input text)
+    (string-upcase text)))
+
+;; ==========================================
+;; Text Formatting Functions
+;; ==========================================
+;; Format text to a specified line length
+capitalize-words
+  (lambda (text)
+    (check-input text)
+    (string-map (lambda (line)
+                  (string-concatenate (string-join (map string-capitalize (string-split line " ")) " ")))
+                (string-split text "\n")))
+
+;; ==========================================
+;; Pipeline Orchestrator
+;; ==========================================
+;; Combine cleaning and formatting into a single pipeline
+run-pipeline
+  (lambda (input-text)
+    (let ((cleaned-text (clean-whitespace input-text)))
+      (let ((deduped-text (clean-duplicates cleaned-text)))
+        (let ((no-empty-lines (remove-empty-lines deduped-text)))
+          (let ((formatted-text (format-lines no-empty-lines MAX_LINE_LENGTH)))
+            (let ((capitalized-text (capitalize-words formatted-text)))
+              (string-join capitalized-text "\n")))))))
+
+;; ==========================================
+;; CLI Interface
+;; ==========================================
+;; Main entry point for the CLI
+main
+  (lambda (args)
+    (let ((input-file (car args))
+          (output-file (cadr args)))
+      (let ((input-text (read-file input-file)))
+        (let ((processed-text (run-pipeline input-text)))
+          (write-file output-file processed-text)
+          (display "Processing complete. Output written to: " output-file)))))
+
+;; Execute the CLI entry point
+(main (command-line-args))

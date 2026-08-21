@@ -1,17 +1,19 @@
 # Neko Data Processing Tool
 
-This tool is a data processing utility written in Neko.
+## Overview
+The Nekodata Tool is a utility built in Neko designed for efficient data processing. It leverages Neko's lightweight nature and high-performance bytecode execution to handle various data transformation, parsing, and manipulation tasks.
 
 ## Features
-- Reads and processes data files
-- Performs transformations
-- Outputs processed data
+- Lightweight and fast execution.
+- Support for common data formats.
+- Modular architecture for easy extension.
+- Built-in error handling and logging.
+
+## Installation
+To use this tool, ensure you have the Neko environment installed.
 
 ## Usage
-
-Run the tool using the Neko interpreter:
-
-```bash
-nekoc main.neko
-nekodata_tool
+Run the main script with the Neko interpreter:
+```
+nekodata_tool/main.neko
 ```

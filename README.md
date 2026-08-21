@@ -649,3 +649,5 @@ MIT License
 - Created/Updated module: `./bliss_tool` (See `./bliss_tool/README.md` for details)
 
 - Created/Updated module: `visual_j_data_parser_tool` (See `visual_j_data_parser_tool/README.md` for details)
+
+- Created/Updated module: `./euphoria_data_extractor_tool` (See `./euphoria_data_extractor_tool/README.md` for details)

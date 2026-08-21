@@ -1,0 +1,73 @@
+ObjectLOGO - ObjectLOGO Data Processing Tool
+
+This program demonstrates a basic data processing workflow using ObjectLOGO.
+It defines data structures, performs data transformations, and outputs results.
+
+Class DataProcessor
+    Field dataBuffer: Array
+    Field recordCount: Integer
+
+    Constructor(initialSize: Integer)
+        dataBuffer := Array:new(initialSize)
+        recordCount := 0
+    End Constructor
+
+    Method addRecord(record: String)
+        If recordCount < dataBuffer.length Then
+            dataBuffer[recordCount] := record
+            recordCount := recordCount + 1
+        End If
+    End Method
+
+    Method processRecords()
+        Local cleanedData: Array
+        cleanedData := Array:new(recordCount)
+        Local i: Integer
+        i := 0
+        While i < recordCount Do
+            cleanedData[i] := self.cleanString(dataBuffer[i])
+            i := i + 1
+        End While
+        Return cleanedData
+    End Method
+
+    Method cleanString(input: String)
+        // Trim whitespace and convert to uppercase
+        Local trimmed: String
+        trimmed := input.trim()
+        Return trimmed.toUpperCase()
+    End Method
+
+    Method displayData(records: Array)
+        Local i: Integer
+        i := 0
+        While i < records.length Do
+            Print(records[i])
+            i := i + 1
+        End While
+    End Method
+End Class
+
+Main
+    Local processor: DataProcessor
+    Local results: Array
+    Local dummyData: Array
+    Local i: Integer
+
+    // Initialize processor with a buffer size of 10
+    processor := DataProcessor:new(10)
+
+    // Simulate data ingestion
+    dummyData := ["  hello world  ", "  Data Processing  ", "  objectlogo  "  ]
+    i := 0
+    While i < dummyData.length Do
+        processor.addRecord(dummyData[i])
+        i := i + 1
+    End While
+
+    // Process data
+    results := processor.processRecords()
+
+    // Display results
+    processor.displayData(results)
+End Main

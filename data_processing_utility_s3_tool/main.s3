@@ -1,0 +1,104 @@
+Object subclass: #DataProcessor
+  instanceVariableNames: 'dataList'
+  classVariableNames: ''
+  package: 'DataProcessing'
+
+!DataProcessor methodsFor: 'initialization'! 
+
+initialize
+  super initialize.
+  dataList := OrderedCollection new.
+
+! !
+
+!DataProcessor methodsFor: 'accessing'! 
+
+addData: anItem
+  "Add a single item to the data list"
+  dataList add: anItem.
+
+addDataCollection: aCollection
+  "Add multiple items from a collection to the data list"
+  aCollection do: [ :item | dataList add: item ].
+
+dataList
+  ^ dataList
+
+! !
+
+!DataProcessor methodsFor: 'processing'! 
+
+filter: aBlock
+  "Filter the data based on a block condition"
+  ^ dataList select: aBlock
+
+transform: aBlock
+  "Transform each element in the data list"
+  ^ dataList collect: aBlock
+
+sort: aBlock
+  "Sort the data using a comparison block"
+  ^ (dataList asOrderedCollection) sort: aBlock
+
+count
+  "Return the count of data items"
+  ^ dataList size
+
+sum
+  "Sum the numeric data items"
+  ^ dataList inject: 0 into: [ :sum :item | sum + item ]
+
+! !
+
+!DataProcessor class methodsFor: 'utilities'! 
+
+generateSampleData
+  "Generate some sample data for demonstration"
+  ^ (1 to: 10) collect: [ :i | i * 2 ]
+
+! !
+
+Object subclass: #DataPipeline
+  instanceVariableNames: 'processors'
+  classVariableNames: ''
+  package: 'DataProcessing'
+
+!DataPipeline methodsFor: 'initialization'! 
+
+initialize
+  super initialize.
+  processors := OrderedCollection new.
+
+! !
+
+!DataPipeline methodsFor: 'adding processors'! 
+
+addProcessor: aProcessor
+  "Add a processor to the pipeline"
+  processors add: aProcessor.
+
+! !
+
+!DataPipeline methodsFor: 'executing'! 
+
+executeOn: data
+  "Execute all processors in the pipeline on the provided data"
+  ^ processors inject: data into: [ :currentData :processor | 
+      processor execute: currentData ]
+
+! !
+
+!DataPipeline methodsFor: 'running'! 
+
+run
+  "Run the pipeline with sample data"
+  | sampleData | 
+  sampleData := DataProcessor generateSampleData.
+  ^ self executeOn: sampleData
+
+! !
+
+DataProcessor
+  initialize.
+  DataPipeline
+    initialize.

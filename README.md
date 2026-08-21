@@ -593,3 +593,5 @@ MIT License
 - Created/Updated module: `objectlogo_data_processing_tool` (See `objectlogo_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `krc_data_processing_tool` (See `krc_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `data_processing_utility_s3_tool` (See `data_processing_utility_s3_tool/README.md` for details)

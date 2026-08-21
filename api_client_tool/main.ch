@@ -1,106 +1,71 @@
-import ch.*;
+      // API Client Tool
+      // This code interacts with REST APIs, handles JSON, and processes data transfers.
+      // Compatible with CFML (ColdFusion Markup Language) environments for API integrations.
+      <cfscript>
+        apiKey = "your_api_key_here";
+        baseUrl = "https://api.example.com/v1";
+      </cfscript>
 
-function HttpResult {
-    int statusCode;
-    string body;
-    Map<string, string> headers;
-}
+      <cffunction name="fetchData" access="public" returntype="struct" output="false">
+        <cfargument name="endpoint" type="string" required="true">
+        <cfargument name="method" type="string" required="false" default="GET">
 
-function HttpError {
-    int code;
-    string message;
-}
+        <cfset var response = structNew()>
+        <cfset var httpService = createObject("component", "http")>
+        <cfset httpService.init()>
 
-function HttpResult get_request(string url, Map<string, string> headers) {
-    // Simulated GET request
-    // In a real Ch environment, this would use a networking library
-    print("GET " + url);
-    if (headers != null) {
-        for each (key, value) in headers {
-            print("  Header: " + key + " = " + value);
-        }
-    }
-    HttpResult result;
-    result.statusCode = 200;
-    result.body = "{\"status\": \"ok\", \"data\": {}}";
-    result.headers = {};
-    return result;
-}
+        <cfset httpService.setURL(baseUrl & arguments.endpoint)>
+        <cfset httpService.setMethod(arguments.method)>
+        <cfset httpService.addHeader("Authorization", "Bearer #apiKey#")>
 
-function HttpResult post_request(string url, Map<string, string> headers, string payload) {
-    // Simulated POST request
-    print("POST " + url);
-    if (headers != null) {
-        for each (key, value) in headers {
-            print("  Header: " + key + " = " + value);
-        }
-    }
-    print("  Payload: " + payload);
-    HttpResult result;
-    result.statusCode = 201;
-    result.body = "{\"status\": \"created\", \"id\": 123}";
-    result.headers = {};
-    return result;
-}
+        <cftry>
+          <cfhttp url="#httpService.getURL()#" method="#httpService.getMethod()#" result="response">
+            <cfhttpparam type="header" name="Authorization" value="Bearer #apiKey#">
+          </cfhttp>
 
-function HttpResult put_request(string url, Map<string, string> headers, string payload) {
-    // Simulated PUT request
-    print("PUT " + url);
-    if (headers != null) {
-        for each (key, value) in headers {
-            print("  Header: " + key + " = " + value);
-        }
-    }
-    print("  Payload: " + payload);
-    HttpResult result;
-    result.statusCode = 200;
-    result.body = "{\"status\": \"updated\"}";
-    result.headers = {};
-    return result;
-}
+          <cfset var statusCode = response.statusCode>
+          <cfset var content = response.filecontent>
 
-function HttpResult delete_request(string url, Map<string, string> headers) {
-    // Simulated DELETE request
-    print("DELETE " + url);
-    if (headers != null) {
-        for each (key, value) in headers {
-            print("  Header: " + key + " = " + value);
-        }
-    }
-    HttpResult result;
-    result.statusCode = 204;
-    result.body = "";
-    result.headers = {};
-    return result;
-}
+          <cfif statusCode LT 200 OR statusCode GTE 300>
+            <cfthrow message="API Error #statusCode#: #content#">
+          </cfif>
 
-function main() {
-    // Example usage
-    Map<string, string> headers;
-    headers["Content-Type"] = "application/json";
-    headers["Authorization"] = "Bearer token123";
+          <cfset response = deserializeJSON(content)>
+        <cfcatch type="any">
+          <cfthrow message="Exception: #cfcatch.message#">
+        </cfcatch>
+      </cffunction>
 
-    // GET Request
-    HttpResult getRes = get_request("https://api.example.com/users", headers);
-    print("GET Status: " + getRes.statusCode);
-    print("GET Body: " + getRes.body);
+      <cffunction name="sendPayload" access="public" returntype="struct" output="false">
+        <cfargument name="endpoint" type="string" required="true">
+        <cfargument name="payload" type="struct" required="true">
 
-    // POST Request
-    string payload = "{\"name\": \"John Doe\"}";
-    HttpResult postRes = post_request("https://api.example.com/users", headers, payload);
-    print("POST Status: " + postRes.statusCode);
-    print("POST Body: " + postRes.body);
+        <cfset var response = structNew()>
+        <cfset var httpService = createObject("component", "http")>
+        <cfset httpService.init()>
 
-    // PUT Request
-    string updatePayload = "{\"name\": \"Jane Doe\"}";
-    HttpResult putRes = put_request("https://api.example.com/users/123", headers, updatePayload);
-    print("PUT Status: " + putRes.statusCode);
-    print("PUT Body: " + putRes.body);
+        <cfset httpService.setURL(baseUrl & arguments.endpoint)>
+        <cfset httpService.setMethod("POST")>
+        <cfset httpService.addHeader("Authorization", "Bearer #apiKey#")>
+        <cfset httpService.addHeader("Content-Type", "application/json")>
 
-    // DELETE Request
-    HttpResult deleteRes = delete_request("https://api.example.com/users/123", headers);
-    print("DELETE Status: " + deleteRes.statusCode);
-    print("DELETE Body: " + deleteRes.body);
+        <cftry>
+          <cfhttp url="#httpService.getURL()#" method="POST" result="response">
+            <cfhttpparam type="header" name="Authorization" value="Bearer #apiKey#">
+            <cfhttpparam type="header" name="Content-Type" value="application/json">
+            <cfhttpparam type="body" value="#serializeJSON(arguments.payload)#">
+          </cfhttp>
 
-    return 0;
-}
+          <cfset var statusCode = response.statusCode>
+          <cfset var content = response.filecontent>
+
+          <cfif statusCode LT 200 OR statusCode GTE 300>
+            <cfthrow message="API Error #statusCode#: #content#">
+          </cfif>
+
+          <cfset response = deserializeJSON(content)>
+        <cfcatch type="any">
+          <cfthrow message="Exception: #cfcatch.message#">
+        </cfcatch>
+      </cffunction>
+      

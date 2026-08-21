@@ -1,27 +1,49 @@
-* SNOBOL API Client Tool
-* Handles HTTP requests and data transfer
+* API Client Tool
+* This code interacts with REST APIs, handles JSON, and processes data transfers.
+* Compatible with SNOBOL for API integrations.
 
-INPUT = 'GET http://api.example.com/data'
+        api_key = 'your_api_key_here'
+        base_url = 'https://api.example.com/v1'
 
-DEFINE('send_request(method,url)'):(END_SEND)
-method = METHOD
-url = URL
+FETCH_DATA(ENDPOINT, METHOD) :
+        http_init = 'http_init'
+        http_method = 'http_method'
+        http_header = 'http_header'
+        http_url = 'http_url'
+        http_status_code = 'http_status_code'
+        http_response = 'http_response'
 
-* Simulate HTTP request
-OUTPUT = 'Sending ' METHOD ' request to ' URL
+        http_init(base_url)
+        http_method(http_url, METHOD)
+        http_header(http_header, api_key)
+        http_response = http_get(http_url, http_method, http_header)
+        http_status_code = http_status(http_response)
+        http_body = http_body(http_response)
 
-* Check method
-IF METHOD EQ 'GET' THEN GOTO handle_get
-IF METHOD EQ 'POST' THEN GOTO handle_post
+        if http_status_code < 200 .or. http_status_code >= 300 then
+          print('API Error: ' http_status_code ' ' http_body)
+        else
+          print('Success: ' http_body)
 
-END_SEND
-OUTPUT = 'Invalid method'
-STOP
+SEND_PAYLOAD(ENDPOINT, PAYLOAD) :
+        http_init = 'http_init'
+        http_method = 'http_method'
+        http_header = 'http_header'
+        http_url = 'http_url'
+        http_status_code = 'http_status_code'
+        http_response = 'http_response'
 
-handle_get
-OUTPUT = 'GET request handled'
-RETURN
+        http_init(base_url)
+        http_method(http_url, 'POST')
+        http_header(http_header, api_key)
+        http_body = http_body(PAYLOAD)
+        http_response = http_post(http_url, http_method, http_header, http_body)
+        http_status_code = http_status(http_response)
+        http_body = http_body(http_response)
 
-handle_post
-OUTPUT = 'POST request handled'
-RETURN
+        if http_status_code < 200 .or. http_status_code >= 300 then
+          print('API Error: ' http_status_code ' ' http_body)
+        else
+          print('Success: ' http_body)
+
+END

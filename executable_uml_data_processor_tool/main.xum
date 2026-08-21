@@ -1,0 +1,68 @@
+// Executable UML Data Processor Tool
+// File: main.xum
+// Purpose: Process and transform data structures using Executable UML.
+
+namespace data_processor
+
+// Define the data structure to be processed
+class DataSet {
+  attributes:
+    records: Sequence<Record>
+  
+  operations:
+    processData(): Boolean {
+      // Logic to process the data records
+      for record in self.records {
+        self.transformRecord(record)
+      }
+      return true
+    }
+    
+    transformRecord(record: Record): void {
+      // Apply transformation rules to each record
+      if record != null {
+        record.value = record.value * 2  // Example transformation
+      }
+    }
+  
+  constructor(records: Sequence<Record>) {
+    self.records = records
+  }
+}
+
+// Define the record structure
+class Record {
+  attributes:
+    id: Integer
+    value: Integer
+  
+  constructor(id: Integer, value: Integer) {
+    self.id = id
+    self.value = value
+  }
+}
+
+// Main function to run the data processor
+operation main(): void {
+  // Create sample records
+  records: Sequence<Record> = Sequence<Record>()
+  records.add(Record(1, 10))
+  records.add(Record(2, 20))
+  records.add(Record(3, 30))
+  
+  // Create the data set
+  data_set: DataSet = DataSet(records)
+  
+  // Process the data
+  if data_set.processData() then
+    // Output the transformed records
+    for record in data_set.records {
+      System.out.print("Record " + record.id + ": " + record.value + "\n")
+    }
+  else
+    System.out.print("Data processing failed.\n")
+  end
+}
+
+// Execute the main function
+main()

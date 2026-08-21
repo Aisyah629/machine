@@ -617,3 +617,5 @@ MIT License
 - Created/Updated module: `ksh_data_processor_tool` (See `ksh_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `curry_data_processor_tool` (See `curry_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `cilk_data_processing_tool` (See `cilk_data_processing_tool/README.md` for details)

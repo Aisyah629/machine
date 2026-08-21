@@ -1,0 +1,97 @@
+%% Sympl Advanced Data Processor Test Suite
+%% This file contains tests to validate the data processing logic.
+
+%% Load necessary modules
+IMPORT main.
+IMPORT test_framework.
+
+%% Test: Validate Configuration Load
+PROCEDURE test_load_config
+    DECLARE config_file : STRING;
+    DECLARE result : BOOLEAN;
+
+    SET config_file = "config.json";
+    SET result = load_config(config_file, config);
+
+    IF result
+        THEN
+            PRINT "Test test_load_config PASSED.";
+        ELSE
+            PRINT "Test test_load_config FAILED.";
+        END IF;
+END PROCEDURE;
+
+%% Test: Validate Data
+PROCEDURE test_validate_data
+    DECLARE sample_data : LIST;
+    DECLARE valid_data : LIST;
+    DECLARE errors : LIST;
+
+    SET sample_data = [
+        {"id": 1, "name": "Alice", "age": 30},
+        {"id": 2, "name": "Bob", "age": NULL},
+        {"id": 3, "name": "Charlie", "age": 25}
+    ];
+
+    SET valid_data = validate(sample_data, config.rules);
+    SET errors = global_errors;
+
+    IF LENGTH(valid_data) = 3 AND LENGTH(errors) = 0
+        THEN
+            PRINT "Test test_validate_data PASSED.";
+        ELSE
+            PRINT "Test test_validate_data FAILED.";
+        END IF;
+END PROCEDURE;
+
+%% Test: Clean Nulls
+PROCEDURE test_clean_nulls
+    DECLARE sample_data : LIST;
+    DECLARE cleaned_data : LIST;
+
+    SET sample_data = [
+        {"id": 1, "name": "Alice", "age": 30},
+        {"id": 2, "name": NULL, "age": 25},
+        {"id": 3, "name": "Charlie", "age": NULL}
+    ];
+
+    SET cleaned_data = clean_nulls(sample_data);
+
+    IF LENGTH(cleaned_data) = 3
+        THEN
+            PRINT "Test test_clean_nulls PASSED.";
+        ELSE
+            PRINT "Test test_clean_nulls FAILED.";
+        END IF;
+END PROCEDURE;
+
+%% Test: Transform Types
+PROCEDURE test_transform_types
+    DECLARE sample_data : LIST;
+    DECLARE transformed_data : LIST;
+
+    SET sample_data = [
+        {"id": "1", "name": "Alice", "age": "30"},
+        {"id": "2", "name": "Bob", "age": "25"}
+    ];
+
+    SET transformed_data = transform_types(sample_data, config.settings);
+
+    IF LENGTH(transformed_data) = 2
+        THEN
+            PRINT "Test test_transform_types PASSED.";
+        ELSE
+            PRINT "Test test_transform_types FAILED.";
+        END IF;
+END PROCEDURE;
+
+%% Run all tests
+PROCEDURE run_tests
+    test_load_config;
+    test_validate_data;
+    test_clean_nulls;
+    test_transform_types;
+END PROCEDURE;
+
+%% Entry point for tests
+run_tests;

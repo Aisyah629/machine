@@ -1,0 +1,18 @@
+{
+  "processor_name": "Sympl Advanced Data Processor",
+  "version": "1.0.0",
+  "settings": {
+    "max_records": 10000,
+    "batch_size": 100,
+    "error_handling": "strict"
+  },
+  "rules": {
+    "validate_data": true,
+    "clean_nulls": true,
+    "transform_types": true
+  },
+  "output": {
+    "format": "json",
+    "destination": "output/processed_data.json"
+  }
+}

@@ -1,0 +1,49 @@
+// SequenceL Data Processing Utility
+// This tool demonstrates core SequenceL features: polymorphic functions,
+// pattern matching, and list processing for data ingestion and transformation.
+
+// Definition: A generic data record type
+// In SequenceL, we typically use polymorphic lists and functions rather than explicit classes.
+
+// Process a single data record
+// Handles different types of data (text, numeric, or structured lists)
+process_record(data) = 
+    let result = 
+        case 
+            when typeof(data) == "list" then
+                // If it's a list, process each element recursively
+                map(process_record, data)
+            when typeof(data) == "number" then
+                // For numbers, perform a basic mathematical transformation
+                data * 2 + 10
+            when typeof(data) == "string" then
+                // For strings, return the length
+                length(data)
+            otherwise
+                // Default fallback
+                "unknown"
+        end;
+    result
+;
+
+// Ingest and validate a list of records
+// Returns a list of processed records, filtering out invalid types if necessary
+ingest_data(input_data_list) = 
+    let valid_data = filter(not is_empty, input_data_list);
+    map(process_record, valid_data)
+;
+
+// Main execution block
+// Simulates a batch of raw data processing
+let raw_data = [
+    "hello",
+    5,
+    [1, 2, 3],
+    "world",
+    10
+];
+
+let processed = ingest_data(raw_data);
+
+// Output the results
+processed

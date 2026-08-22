@@ -1,0 +1,52 @@
+procedure main(args)
+    write("Unicon Data Processor Tool initialized.")
+    process_data()
+end
+
+procedure process_data()
+    local data, result
+    data := read_data("input.data")
+    if data then
+        result := transform_data(data)
+        write("Data processed successfully.")
+        display_results(result)
+    else
+        write("Failed to read data.")
+    end
+end
+
+procedure read_data(filename)
+    local file, lines, data
+    file := open(filename, "r")
+    if file then
+        lines := read(file, "!*")
+        close(file)
+        return split_lines(lines)
+    end
+    return 0
+end
+
+procedure split_lines(lines)
+    local i, data
+    data := []
+    every i := 1 to *lines do
+        data ||:= [split(lines[i], "|")]
+    return data
+end
+
+procedure transform_data(data)
+    local transformed_data
+    transformed_data := []
+    every record := !data do
+        transformed_data ||:= [transform_record(record)]
+    return transformed_data
+end
+
+procedure transform_record(record)
+    return [record[1] | upper(record[2]) | record[3]]
+end
+
+procedure display_results(results)
+    every record := !results do
+        write("|", record[1], "|", record[2], "|", record[3], "|")
+end

@@ -735,3 +735,5 @@ MIT License
 - Created/Updated module: `moo_data_processor_tool` (See `moo_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `comit_data_processing_utility_tool` (See `comit_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `dibol_data_processor_tool` (See `dibol_data_processor_tool/README.md` for details)

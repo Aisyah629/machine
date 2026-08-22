@@ -1,0 +1,88 @@
+BEGIN
+
+  -- Pico Data Processing Utility
+  -- Purpose: Ingest, transform, and format data
+
+  VAR
+    inputData : STRING;
+    transformedData : STRING;
+    delimiter : CHARACTER;
+    recordCount : INTEGER;
+    i : INTEGER;
+    currentToken : STRING;
+    processedLine : STRING;
+
+  PROCEDURE ReadInput(INOUT input : STRING)
+    BEGIN
+      -- In a real environment, this would read from a file or stdin
+      -- For this utility, we simulate reading a CSV-like string
+      input := "Alice,25,Engineer\nBob,30,Designer\nCharlie,22,Intern";
+    END ReadInput;
+
+  PROCEDURE ProcessData(IN data : STRING, OUT result : STRING)
+    BEGIN
+      result := "";
+      recordCount := 0;
+
+      -- Simple line-by-line processing
+      -- In Pico, string manipulation is basic. 
+      -- We iterate through the string to find newlines.
+      
+      i := 1;
+      WHILE i <= LENGTH(data) DO
+        currentToken := "";
+        WHILE (i <= LENGTH(data)) AND (data[i] != '\n') DO
+          currentToken := currentToken + data[i];
+          i := i + 1;
+        END WHILE;
+        
+        -- Process each line (record)
+        IF currentToken != "" THEN
+          recordCount := recordCount + 1;
+          -- Transformation: Uppercase the name and add a header indicator
+          -- We assume the first field is a name for this simple utility
+          PROCEDURE TransformRecord(rec : STRING) : STRING
+            VAR
+              j : INTEGER;
+              tempName : STRING;
+              restOfLine : STRING;
+              commaPos : INTEGER;
+            BEGIN
+              commaPos := 1;
+              WHILE (commaPos <= LENGTH(rec)) AND (rec[commaPos] != ',') DO
+                commaPos := commaPos + 1;
+              END WHILE;
+              
+              IF commaPos > 1 THEN
+                tempName := UPPER(SUBSTRING(rec, 1, commaPos - 1));
+                restOfLine := SUBSTRING(rec, commaPos);
+                RETURN tempName + restOfLine;
+              ELSE
+                RETURN rec;
+              END IF;
+            END TransformRecord;
+          
+          processedLine := TransformRecord(currentToken);
+          result := result + processedLine + "\n";
+        END IF;
+        
+        i := i + 1; -- Skip newline
+      END WHILE;
+    END ProcessData;
+
+  PROCEDURE OutputResult(result : STRING, count : INTEGER)
+    BEGIN
+      -- Output the processed data
+      PRINT("Processed Records: " + TO_STRING(count));
+      PRINT("-----------------------------------");
+      PRINT(result);
+      PRINT("-----------------------------------");
+    END OutputResult;
+
+BEGIN
+  -- Main Execution Flow
+  ReadInput(inputData);
+  ProcessData(inputData, transformedData);
+  OutputResult(transformedData, recordCount);
+
+END

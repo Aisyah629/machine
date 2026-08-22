@@ -1,0 +1,56 @@
+
+Package DataProcessingEngine;
+
+In
+  data_stream := Stream.of(DataRecord);
+  validation_schema := Schema.load("data_schema.def");
+
+Out
+  processed_results := Stream.of(TransformedRecord);
+  error_log := File.open("error_log.txt", append);
+
+Do
+  RecordTransformer := Procedure
+    (record: DataRecord) -> TransformedRecord
+    Begin
+      If record Is Null Then
+        Error.log("Null record encountered.");
+        Return Null;
+      End;
+      
+      If Not validation_schema.Validate(record) Then
+        Error.log("Validation failed for record: " + record.id);
+        Return Null;
+      End;
+      
+      Var transformed := TransformedRecord();
+      transformed.timestamp := Current.Time;
+      transformed.value := record.value * 1.1; -- Simple transformation
+      transformed.source := record.source;
+      
+      Return transformed;
+    End;
+
+  DataPipeline := Procedure
+    Begin
+      For Each record In data_stream Do
+        Var result := RecordTransformer(record);
+        If result Is Not Null Then
+          processed_results.Send(result);
+        End;
+      End;
+      
+      DataProcessingComplete.Signal();
+    End;
+
+  DataProcessingComplete := Condition();
+
+  -- Start the pipeline
+  Spawn DataPipeline;
+
+  -- Wait for completion
+  Do
+    Wait DataProcessingComplete;
+  End;
+
+End DataProcessingEngine;

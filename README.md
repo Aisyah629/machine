@@ -697,3 +697,5 @@ MIT License
 - Created/Updated module: `nice_data_processing_tool` (See `nice_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `./spark_data_processor_tool` (See `./spark_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `data_processing_tool` (See `data_processing_tool/README.md` for details)

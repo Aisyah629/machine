@@ -731,3 +731,5 @@ MIT License
 - Created/Updated module: `tads_data_processor_tool` (See `tads_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `rune_script_data_processor_tool` (See `rune_script_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `moo_data_processor_tool` (See `moo_data_processor_tool/README.md` for details)

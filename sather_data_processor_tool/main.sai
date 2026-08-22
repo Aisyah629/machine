@@ -1,0 +1,130 @@
+CLASS Main
+
+   ATTR
+      data_processor: DataProcessor;
+
+   CREATE
+      make;
+
+   FEATURE
+      initialize
+         -- Initialize the data processor and prepare data
+      do
+         data_processor ::= DataProcessor.make;
+         data_processor.load_data("input_data.dat");
+      end;
+
+      process
+         -- Process the loaded data
+      do
+         data_processor.validate;
+         data_processor.transform;
+      end;
+
+      output
+         -- Output the processed data
+      do
+         data_processor.save_output("output_data.dat");
+      end;
+
+      main
+         -- Main entry point
+      do
+         -- Instantiate and run the main logic
+         a_main ::= new; 
+         a_main.initialize;
+         a_main.process;
+         a_main.output;
+      end;
+
+END;
+
+CLASS DataProcessor
+
+   ATTR
+      records: ARRAY(String);
+      validation_status: BOOLEAN;
+
+   CREATE
+      make;
+
+   FEATURE
+      initialize
+         -- Initialize empty records
+      do
+         records ::= ARRAY(String).make(100);
+         validation_status := false;
+      end;
+
+      load_data(file_name: STRING)
+         -- Load data from a file
+      local
+         fh: FILE_INPUT;
+         line: STRING;
+         index: INT;
+      do
+         fh ::= FILE_INPUT.open(file_name);
+         index := 0;
+         loop
+            line ::= fh.readline;
+            if line.is_empty then break end;
+            records.put(line, index);
+            index += 1;
+         end;
+         fh.close;
+      end;
+
+      validate
+         -- Validate data records
+      local
+         i: INT;
+         rec: STRING;
+      do
+         validation_status := true;
+         i := 0;
+         loop
+            exit when i >= records.size;
+            rec ::= records.get(i);
+            -- Basic validation: check if line is not empty
+            if rec.is_empty then 
+               validation_status := false;
+            end;
+            i += 1;
+         end;
+      end;
+
+      transform
+         -- Transform data records (e.g., uppercase)
+      local
+         i: INT;
+         rec: STRING;
+      do
+         i := 0;
+         loop
+            exit when i >= records.size;
+            rec ::= records.get(i);
+            if not rec.is_empty then
+               records.put(rec.to_upper, i);
+            end;
+            i += 1;
+         end;
+      end;
+
+      save_output(file_name: STRING)
+         -- Save processed data to a file
+      local
+         fh: FILE_OUTPUT;
+         i: INT;
+      do
+         fh ::= FILE_OUTPUT.open(file_name);
+         i := 0;
+         loop
+            exit when i >= records.size;
+            fh.writeline(records.get(i));
+            i += 1;
+         end;
+         fh.close;
+         print("Output saved to " + file_name + EN);
+      end;
+
+END;

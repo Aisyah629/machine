@@ -677,3 +677,5 @@ MIT License
 - Created/Updated module: `jean_data_processor_tool` (See `jean_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `salsa_data_processing_utility_tool` (See `salsa_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `sather_data_processor_tool` (See `sather_data_processor_tool/README.md` for details)

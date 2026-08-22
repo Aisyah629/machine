@@ -703,3 +703,5 @@ MIT License
 - Created/Updated module: `./visual_j_data_processing_tool` (See `./visual_j_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `xq_data_processing_tool` (See `xq_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./onx_data_processing_utility_tool` (See `./onx_data_processing_utility_tool/README.md` for details)

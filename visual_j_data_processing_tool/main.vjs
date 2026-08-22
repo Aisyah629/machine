@@ -1,0 +1,126 @@
+import System;
+import System.IO;
+import System.Collections;
+import System.Collections.Generic;
+
+namespace VisualJDataProcessingTool
+{
+    public class Program
+    {
+        public static void Main(String[] args)
+        {
+            if (args == null || args.Length < 2)
+            {
+                Console.WriteLine("Usage: VisualJDataProcessor <input_file> <output_file> [delimiter] [filter_column] [filter_value]");
+                Console.WriteLine("Example: VisualJDataProcessor input.csv output.csv ',' 2 active");
+                return;
+            }
+
+            String inputFile = args[0];
+            String outputFile = args[1];
+            String delimiter = ",";
+            String filterColumn = null;
+            String filterValue = null;
+
+            if (args.Length >= 3)
+            {
+                delimiter = args[2];
+            }
+
+            if (args.Length >= 5)
+            {
+                filterColumn = args[3];
+                filterValue = args[4];
+            }
+
+            try
+            {
+                // Read the input file
+                String[] lines = File.ReadAllLines(inputFile);
+                if (lines.Length == 0)
+                {
+                    Console.WriteLine("Error: Input file is empty.");
+                    return;
+                }
+
+                // Identify the delimiter length
+                int delimLength = delimiter.Length;
+                
+                // Parse the header
+                String[] headers = SplitLine(lines[0], delimiter);
+                List<String[]> dataRows = new List<String[]>();
+
+                // Parse data rows
+                for (int i = 1; i < lines.Length; i++)
+                {
+                    String[] row = SplitLine(lines[i], delimiter);
+                    
+                    // Apply filter if specified
+                    if (filterColumn != null && filterValue != null)
+                    {
+                        int colIndex = GetColumnIndex(headers, filterColumn);
+                        if (colIndex != -1 && colIndex < row.Length)
+                        {
+                            if (!row[colIndex].Trim().Equals(filterValue.Trim()))
+                            {
+                                continue;
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Warning: Filter column '" + filterColumn + "' not found in header. Filtering ignored.");
+                        }
+                    }
+
+                    dataRows.Add(row);
+                }
+
+                // Write to output file
+                using (StreamWriter writer = new StreamWriter(outputFile))
+                {
+                    // Write header
+                    writer.WriteLine(lines[0]);
+                    
+                    // Write processed rows
+                    foreach (String[] row in dataRows)
+                    {
+                        writer.WriteLine(String.Join(delimiter, row));
+                    }
+                }
+
+                Console.WriteLine("Processing complete. " + dataRows.Count + " rows written to " + outputFile);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+        }
+
+        private static String[] SplitLine(String line, String delimiter)
+        {
+            if (line == null)
+            {
+                return new String[0];
+            }
+            // Simple split for demonstration. A robust CSV parser would handle quotes and escaped delimiters.
+            // For this utility, we use a basic split assuming no complex quoting.
+            return line.Split(delimiter.ToCharArray());
+        }
+
+        private static int GetColumnIndex(String[] headers, String columnName)
+        {
+            if (headers == null)
+            {
+                return -1;
+            }
+            for (int i = 0; i < headers.Length; i++)
+            {
+                if (headers[i].Trim().Equals(columnName.Trim()))
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+    }
+}

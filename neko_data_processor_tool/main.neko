@@ -1,0 +1,57 @@
+/**
+ * Neko Data Processor Tool
+ * 
+ * This script demonstrates how to process data in Neko.
+ * It reads a JSON file, processes the data, and writes the result to a new JSON file.
+ */
+
+var fs = $loader.loadmod("fs");
+var json = $loader.loadmod("json");
+
+/**
+ * Process each record in the dataset.
+ * In this example, we just return the record as-is, but you can add custom logic here.
+ */
+function processRecord(record) {
+    // Example: Add a new field to each record
+    record["processed"] = true;
+    return record;
+}
+
+/**
+ * Main function
+ */
+function main() {
+    // Define input and output file paths
+    var inputFile = "data.json";
+    var outputFile = "processed_data.json";
+
+    // Read the input file
+    try {
+        var fileContent = fs.read(inputFile);
+        var data = json.parse(fileContent);
+
+        // Ensure data is an array
+        if (!data.is_array()) {
+        System.print("Error: Input data is not an array.");
+        return;
+    }
+
+        // Process the data
+        var processedData = data.map(function(record) {
+            return processRecord(record);
+        });
+
+        // Write the processed data to the output file
+        var outputContent = json.stringify(processedData, {indent: true});
+        fs.write(outputFile, outputContent);
+
+        System.print("Data processed successfully. Output written to " + outputFile);
+
+    } catch (e) {
+        System.print("Error: " + e);
+    }
+}
+
+// Run the main function
+main();

@@ -665,3 +665,5 @@ MIT License
 - Created/Updated module: `./g_data_processing_tool` (See `./g_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `argus_data_processing_engine_tool` (See `argus_data_processing_engine_tool/README.md` for details)
+
+- Created/Updated module: `./millscript_cryptographic_engine_tool` (See `./millscript_cryptographic_engine_tool/README.md` for details)

@@ -1,0 +1,149 @@
+// MIIS Data Processing Utility Tool
+// Main Script
+
+# Module: DataProcessor
+# Description: Handles data validation, cleaning, and transformation
+
+@model DataProcessor {
+    fields: {
+        input_data: List<Record>,
+        output_data: List<Record>,
+        config: Object
+    }
+
+    methods: {
+        init(config_path) {
+            // Load configuration from JSON
+            var config_content = read_file(config_path);
+            this.config = parse_json(config_content);
+            return this;
+        },
+
+        load_data(file_path) {
+            // Load data from CSV or JSON
+            var file_content = read_file(file_path);
+            var extension = get_extension(file_path);
+            
+            if extension == 'csv' {
+                this.input_data = parse_csv(file_content);
+            } else if extension == 'json' {
+                this.input_data = parse_json(file_content);
+            }
+            
+            return this.input_data;
+        },
+
+        validate_data() {
+            // Validate data based on configuration rules
+            var errors = [];
+            
+            for each record in this.input_data {
+                for each rule in this.config.validation_rules {
+                    if not rule.check(record) {
+                        errors.push(rule.get_error_message());
+                    }
+                }
+            }
+            
+            if errors.length > 0 {
+                throw Error('Validation failed', errors);
+            }
+            
+            return true;
+        },
+
+        clean_data() {
+            // Clean data by removing duplicates, handling missing values, etc.
+            var cleaned_data = [];
+            
+            for each record in this.input_data {
+                // Remove null or empty values
+                var cleaned_record = {};
+                for each key in record.keys() {
+                    if record[key] != null && record[key] != '' {
+                        cleaned_record[key] = record[key];
+                    }
+                }
+                
+                // Handle missing values based on configuration
+                for each key in this.config.missing_values_defaults.keys() {
+                    if not cleaned_record.has_key(key) {
+                        cleaned_record[key] = this.config.missing_values_defaults[key];
+                    }
+                }
+                
+                cleaned_data.push(cleaned_record);
+            }
+            
+            this.output_data = cleaned_data;
+            return this.output_data;
+        },
+
+        transform_data(transformation_rules) {
+            // Apply transformation rules to data
+            var transformed_data = [];
+            
+            for each record in this.output_data {
+                var new_record = {};
+                for each key in record.keys() {
+                    for each rule in transformation_rules {
+                        if rule.field == key {
+                            new_record[key] = rule.function(record[key]);
+                        } else {
+                            new_record[key] = record[key];
+                        }
+                    }
+                }
+                transformed_data.push(new_record);
+            }
+            
+            this.output_data = transformed_data;
+            return this.output_data;
+        },
+
+        generate_report() {
+            // Generate a report based on processed data
+            var report = {
+                total_records: this.output_data.length,
+                data_summary: compute_summary(this.output_data),
+                errors: []
+            };
+            
+            return report;
+        },
+
+        save_data(file_path) {
+            // Save processed data to file
+            var extension = get_extension(file_path);
+            var content;
+            
+            if extension == 'csv' {
+                content = format_csv(this.output_data);
+            } else if extension == 'json' {
+                content = format_json(this.output_data);
+            }
+            
+            write_file(file_path, content);
+        }
+    }
+}
+
+# Main Execution
+
+var processor = new DataProcessor();
+var config_path = './config.json';
+var input_file = './data.csv';
+var output_file = './output.csv';
+
+try {
+    processor.init(config_path);
+    processor.load_data(input_file);
+    processor.validate_data();
+    processor.clean_data();
+    processor.save_data(output_file);
+    
+    var report = processor.generate_report();
+    print('Processing complete. Report: ' + format_json(report));
+} catch (error) {
+    print('Error during processing: ' + error.message);
+}

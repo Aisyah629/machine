@@ -1,0 +1,35 @@
+{
+    "validation_rules": [
+        {
+            "field": "id",
+            "type": "integer",
+            "required": true,
+            "error_message": "ID must be an integer and required"
+        },
+        {
+            "field": "name",
+            "type": "string",
+            "required": true,
+            "error_message": "Name is required"
+        },
+        {
+            "field": "email",
+            "type": "email",
+            "required": true,
+            "error_message": "Valid email is required"
+        },
+        {
+            "field": "age",
+            "type": "integer",
+            "min": 18,
+            "max": 100,
+            "required": false,
+            "error_message": "Age must be between 18 and 100"
+        }
+    ],
+    "missing_values_defaults": {
+        "name": "Unknown",
+        "email": "",
+        "age": 0
+    }
+}

@@ -1,0 +1,41 @@
+Object subclass: #DataProcessor
+    instanceVariableNames: 'data'
+    classVariableNames: ''
+    poolDictionaries: ''
+    package: 'SqueakDataProcessor'.
+
+!DataProcessor methodsFor: 'initialization' stamp: 'Squeak 2024'!
+initialize
+    data := OrderedCollection new.
+! !
+
+!DataProcessor methodsFor: 'accessing' stamp: 'Squeak 2024'!
+data
+    ^ data
+
+data: anObject
+    data := anObject
+! !
+
+!DataProcessor methodsFor: 'processing' stamp: 'Squeak 2024'!
+addRecord: aRecord
+    data add: aRecord.
+
+process
+    ^ data
+        collect: [ :each | self transformRecord: each ]
+        as: OrderedCollection
+
+transformRecord: aRecord
+    "Example transformation: uppercase strings"
+    aRecord isString
+        ifTrue: [ ^ aRecord asUppercase ]
+        ifFalse: [ ^ aRecord ]
+! !
+
+DataProcessor new
+    addRecord: 'hello';
+    addRecord: 'world';
+    addRecord: 123;
+    process
+        do: [ :result | result printNl ]

@@ -659,3 +659,5 @@ MIT License
 - Created/Updated module: `webql_data_processor_tool` (See `webql_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./fpr_data_processing_utility_tool` (See `./fpr_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `./clu_math_engine_tool` (See `./clu_math_engine_tool/README.md` for details)

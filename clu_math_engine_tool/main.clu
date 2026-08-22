@@ -1,0 +1,94 @@
+-- CLU Mathematical Engine Tool
+-- Implements a Prime Sieve and Numerical Integration (Trapezoidal Rule)
+
+iter_primes = 
+    iter (): [int] 
+    -- Returns an iterator over prime numbers up to LIMIT
+    const LIMIT = 50
+    local
+        s: [int] -- Boolean sequence (0: prime, 1: composite)
+        p: int
+        i: int
+    begin
+        -- Initialize all as prime
+        s := vector[int]$fill(0, LIMIT + 1)
+        
+        -- 0 and 1 are not primes
+        if LIMIT >= 0 then s[0] := 1 end
+        if LIMIT >= 1 then s[1] := 1 end
+        
+        -- Sieve of Eratosthenes
+        p := 2
+        while p * p <= LIMIT do
+            if s[p] = 0 then
+                i := p * p
+                while i <= LIMIT do
+                    s[i] := 1
+                    i := i + p
+                end
+            end
+            p := p + 1
+        end
+        
+        -- Yield primes
+        p := 2
+        while p <= LIMIT do
+            if s[p] = 0 then yield p end
+            p := p + 1
+        end
+    end
+
+compute_integral = 
+    proc (start_val: int, end_val: int, steps: int) 
+        returns [real]
+        -- Computes integral of f(x) = x^2 + 1 using Trapezoidal Rule
+        local
+            dx: real
+            sum: real
+            x: real
+            f_x: real
+        begin
+            dx := (end_val - start_val) / real(steps)
+            sum := 0.0
+            x := real(start_val)
+            
+            -- First point
+            sum := sum + (real(start_val) * real(start_val) + 1.0)
+            
+            -- Middle points
+            while x < real(end_val) - 1e-10 do
+                x := x + dx
+                f_x := (x * x) + 1.0
+                sum := sum + 2.0 * f_x
+            end
+            
+            -- Last point
+            sum := sum + (real(end_val) * real(end_val) + 1.0)
+            
+            return dx * sum / 2.0
+        end
+    end
+
+main = 
+    proc () 
+        returns [int]
+        local
+            prim_it: iter [int]
+            p: int
+            result: real
+        begin
+            -- Part 1: Generate Primes
+            prim_it := iter_primes()
+            stdout$put_list(stdin$, vector[int]$init(prim_it), " ", 10)
+            stdout$put_line(stdin$, "Primes generated.")
+            
+            -- Part 2: Numerical Integration
+            -- Integral of x^2 + 1 from 0 to 10
+            -- Analytical solution: [x^3/3 + x] from 0 to 10 = 1000/3 + 10 = 343.33...
+            result := compute_integral(0, 10, 1000)
+            stdout$put_real(stdin$, result, 2)
+            stdout$put_line(stdin$, " is the computed integral.")
+            
+            return 0
+        end
+    end

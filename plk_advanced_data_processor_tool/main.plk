@@ -1,0 +1,75 @@
+; Plankalkül Advanced Data Processor Tool
+; File: main.plk
+
+; Define the structure for a data record
+struct DATA_RECORD {
+    field_id: INT;
+    field_name: STRING;
+    field_value: FLOAT;
+    field_status: CHAR;
+}
+
+; Function to validate data record
+FUNCTION validate_data_record(rec: DATA_RECORD): BOOL {
+    IF rec.field_id < 0 THEN RETURN FALSE END_IF;
+    IF rec.field_name.length == 0 THEN RETURN FALSE END_IF;
+    IF rec.field_status != 'A' AND rec.field_status != 'I' THEN RETURN FALSE END_IF;
+    RETURN TRUE
+}
+
+; Function to transform data record
+FUNCTION transform_data_record(rec: DATA_RECORD): DATA_RECORD {
+    IF validate_data_record(rec) THEN
+        rec.field_value = rec.field_value * 2;
+        rec.field_status = 'P';
+    ELSE
+        rec.field_status = 'E';
+    END_IF;
+    RETURN rec
+}
+
+; Function to aggregate data records
+FUNCTION aggregate_data(records: ARRAY[DATA_RECORD]): DATA_RECORD {
+    VAR total_value: FLOAT = 0.0;
+    VAR count: INT = 0;
+    VAR result: DATA_RECORD;
+
+    FOR EACH record IN records DO
+        IF validate_data_record(record) THEN
+            total_value = total_value + record.field_value;
+            count = count + 1;
+        END_IF
+    END_FOR;
+
+    IF count > 0 THEN
+        result.field_id = 0;
+        result.field_name = "AGGREGATED";
+        result.field_value = total_value / count;
+        result.field_status = 'S';
+    ELSE
+        result.field_id = -1;
+        result.field_name = "EMPTY";
+        result.field_value = 0.0;
+        result.field_status = 'E';
+    END_IF;
+
+    RETURN result
+}
+
+; Main procedure
+PROCEDURE main() {
+    VAR sample_data: ARRAY[DATA_RECORD] = [
+        {field_id: 1, field_name: "Item1", field_value: 10.5, field_status: 'A'},
+        {field_id: 2, field_name: "Item2", field_value: 20.0, field_status: 'I'},
+        {field_id: 3, field_name: "Item3", field_value: 30.5, field_status: 'A'},
+        {field_id: -4, field_name: "Invalid", field_value: 40.0, field_status: 'A'}
+    ];
+
+    VAR processed_data: ARRAY[DATA_RECORD] = [];
+    FOR EACH record IN sample_data DO
+        processed_data.append(transform_data_record(record));
+    END_FOR;
+
+    VAR aggregated_result: DATA_RECORD = aggregate_data(processed_data);
+    WRITE(aggregated_result);
+}

@@ -1,0 +1,5 @@
+public module main;
+
+@Start
+public function main () =
+  print(\"Nice Data Processing Tool Initialized\n\");

@@ -707,3 +707,5 @@ MIT License
 - Created/Updated module: `./onx_data_processing_utility_tool` (See `./onx_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `hume_data_processor_tool` (See `hume_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `squeak_data_processor_tool` (See `squeak_data_processor_tool/README.md` for details)

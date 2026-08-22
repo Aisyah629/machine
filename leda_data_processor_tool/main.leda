@@ -1,0 +1,34 @@
+import Leda::Data::Processor
+
+# Initialize the data processor
+let processor = new Data::Processor()
+
+# Define data ingestion function
+processor.on(:ingest, lambda { |data|
+  # Process incoming data
+  puts "Data ingested: #{data}"
+})
+
+# Define data transformation function
+processor.on(:transform, lambda { |data|
+  # Transform data as needed
+  transformed_data = data.reverse
+  puts "Data transformed: #{transformed_data}"
+})
+
+# Define data validation function
+processor.on(:validate, lambda { |data|
+  # Validate data integrity
+  is_valid = !data.empty?
+  puts "Data validation: #{is_valid}"
+})
+
+# Main execution
+begin
+  sample_data = ["item1", "item2", "item3"]
+  processor.ingest(sample_data)
+  processor.transform(sample_data)
+  processor.validate(sample_data)
+rescue => e
+  puts "An error occurred: #{e.message}"
+end

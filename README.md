@@ -661,3 +661,5 @@ MIT License
 - Created/Updated module: `./fpr_data_processing_utility_tool` (See `./fpr_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `./clu_math_engine_tool` (See `./clu_math_engine_tool/README.md` for details)
+
+- Created/Updated module: `./g_data_processing_tool` (See `./g_data_processing_tool/README.md` for details)

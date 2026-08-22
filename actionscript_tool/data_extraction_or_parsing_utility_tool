@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Action!</title>
+</head>
+<body>
+	<h1>Action!</h1>
+	<div>
+		<textarea id="input" rows="10" cols="50"></textarea>
+		<br>
+		<button id="process">Process</button>
+		<br>
+		<textarea id="output" rows="10" cols="50"></textarea>
+	</div>
+	<script>
+		document.getElementById('process').addEventListener('click', function() {
+			var input = document.getElementById('input').value;
+			var output = document.getElementById('output');
+			output.value = input.split('').reverse().join('');
+		});
+	</script>
+</body>
+</html>

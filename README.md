@@ -741,3 +741,5 @@ MIT License
 - Created/Updated module: `gosu_data_processing_engine_tool` (See `gosu_data_processing_engine_tool/README.md` for details)
 
 - Created/Updated module: `gosu_data_processing_engine_tool` (See `gosu_data_processing_engine_tool/README.md` for details)
+
+- Created/Updated module: `bc_math_engine_tool` (See `bc_math_engine_tool/README.md` for details)

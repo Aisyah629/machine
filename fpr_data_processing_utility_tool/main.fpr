@@ -1,0 +1,47 @@
+FPR_DATA_PROCESSING_UTILITY
+
+    IMPORT
+        DATA_IO,
+        UTIL_MATH,
+        UTIL_STRING
+    
+    SECTION
+        DATA_PROCESSOR
+    
+        PROCESS DATA_SET
+            INPUT data_stream
+            OUTPUT processed_results
+        
+            DECLARE records AS LIST OF RECORD
+            DECLARE processed AS LIST OF RECORD
+            
+            READ data_stream INTO records
+            
+            FOR EACH record IN records DO
+                record.timestamp = UTIL_MATH.NOW()
+                record.status = "PROCESSED"
+                IF record.value > 0 THEN
+                    record.category = "POSITIVE"
+                ELSE
+                    record.category = "NON-POSITIVE"
+                END IF
+                ADD record TO processed
+            END FOR
+            
+            RETURN processed
+        
+    SECTION
+        MAIN
+    
+        RUN
+            DECLARE input_data AS FILE
+            DECLARE output_data AS LIST
+            DECLARE result AS LIST
+            
+            OPEN input_data READ "input.dat"
+            result = DATA_PROCESSOR.PROCESS(input_data)
+            CLOSE input_data
+            
+            WRITE result TO "output.dat"
+            PRINT "Data processing completed."
+        

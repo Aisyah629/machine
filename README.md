@@ -757,3 +757,5 @@ MIT License
 - Created/Updated module: `alice_data_processor_tool` (See `alice_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `mdl_data_processing_tool` (See `mdl_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `leda_data_processor_tool` (See `leda_data_processor_tool/README.md` for details)

@@ -745,3 +745,5 @@ MIT License
 - Created/Updated module: `bc_math_engine_tool` (See `bc_math_engine_tool/README.md` for details)
 
 - Created/Updated module: `cython_data_processor_tool` (See `cython_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `cesil_data_processing_tool` (See `cesil_data_processing_tool/README.md` for details)

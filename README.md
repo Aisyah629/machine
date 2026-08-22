@@ -719,3 +719,5 @@ MIT License
 - Created/Updated module: `proiv_data_processor_tool` (See `proiv_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `script_dot_net_data_processor_tool` (See `script_dot_net_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `./euler_data_processor_tool` (See `./euler_data_processor_tool/README.md` for details)

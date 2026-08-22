@@ -1,0 +1,41 @@
+module OnyxDataProcessingUtility {
+
+    // Function to load data from a JSON file
+    function load(filePath: String): Dictionary<String, Any> {
+        let file = openFile(filePath, FileRead);
+        let content = readAll(file);
+        close(file);
+        return parseJSON(content);
+    }
+
+    // Function to transform data by doubling numeric values
+    function transform(data: Dictionary<String, Any>): Dictionary<String, Any> {
+        let transformedData: Dictionary<String, Any> = {};
+        for (key, value in data) {
+            if (isNumeric(value)) {
+                transformedData[key] = value * 2;
+            } else {
+                transformedData[key] = value;
+            }
+        }
+        return transformedData;
+    }
+
+    // Function to filter data by a given predicate
+    function filter(data: List<Any>, predicate: Function<Any, Bool>): List<Any> {
+        return data.filter(predicate);
+    }
+
+    // Function to map data by applying a transformation function
+    function map(data: List<Any>, transformFunction: Function<Any, Any>): List<Any> {
+        return data.map(transformFunction);
+    }
+
+    // Function to output data to a JSON file
+    function output(data: Any, filePath: String): Void {
+        let file = openFile(filePath, FileWrite);
+        writeAll(file, serializeJSON(data));
+        close(file);
+    }
+
+}

@@ -761,3 +761,5 @@ MIT License
 - Created/Updated module: `leda_data_processor_tool` (See `leda_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./mortran_data_processing_utility_tool` (See `./mortran_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `lego_data_processing_tool` (See `lego_data_processing_tool/README.md` for details)

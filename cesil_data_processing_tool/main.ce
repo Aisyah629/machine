@@ -1,0 +1,107 @@
+   * CESIL DATA PROCESSING TOOL
+   * Purpose: Read, validate, transform, and report structured data.
+
+   * INPUT FILE DEFINITIONS
+   * Define the input data format: Employee Record
+   * Fields: ID (Integer), Name (String), Salary (Float)
+   INPUT INPUT_FILE, 20, DATA_RECORD
+
+   * OUTPUT FILE DEFINITIONS
+   OUTPUT OUTPUT_FILE, 20, REPORT_LINE
+
+   * DATA STRUCTURES
+   * Internal Record Buffer
+   DECLARE DATA_RECORD, 20, TEXT
+   DECLARE EMPLOYEE_ID, 10, INTEGER
+   DECLARE EMPLOYEE_NAME, 10, TEXT
+   DECLARE EMPLOYEE_SALARY, 10, FLOAT
+
+   * Report Line
+   DECLARE REPORT_LINE, 20, TEXT
+   DECLARE HEADER_LINE, 20, TEXT
+
+   * Process Counters
+   DECLARE RECORD_COUNT, 10, INTEGER
+   DECLARE VALID_COUNT, 10, INTEGER
+   DECLARE ERROR_COUNT, 10, INTEGER
+
+   * Temporary Variables for Calculations
+   DECLARE TOTAL_SALARY, 10, FLOAT
+   DECLARE AVERAGE_SALARY, 10, FLOAT
+   DECLARE CURRENT_SALARY, 10, FLOAT
+
+   * START MAIN PROGRAM
+   PROCESS
+
+      * Initialize Counters
+      RECORD_COUNT = 0
+      VALID_COUNT = 0
+      ERROR_COUNT = 0
+      TOTAL_SALARY = 0
+
+      * Print Report Header
+      HEADER_LINE = "ID          NAME          SALARY        STATUS"
+      OUTPUT OUTPUT_FILE, HEADER_LINE
+      HEADER_LINE = "----        ----          ------        ------"
+      OUTPUT OUTPUT_FILE, HEADER_LINE
+
+      * Read First Record
+      READ INPUT_FILE, DATA_RECORD
+
+      * Loop Until End of File
+      WHILE NOT EOF(INPUT_FILE) DO
+         RECORD_COUNT = RECORD_COUNT + 1
+         ERROR_COUNT = 0
+
+         * Parse Data Record
+         * Assuming fixed width format for demonstration:
+         * ID: chars 1-10, Name: chars 11-20 (padded), Salary: chars 21-30
+         EMPLOYEE_ID = PARSE_INTEGER(DATA_RECORD, 1, 10)
+         EMPLOYEE_NAME = PARSE_TEXT(DATA_RECORD, 11, 20)
+         EMPLOYEE_SALARY = PARSE_FLOAT(DATA_RECORD, 21, 30)
+
+         * Validation Logic
+         IF EMPLOYEE_SALARY < 0 THEN
+            ERROR_COUNT = ERROR_COUNT + 1
+            REPORT_LINE = EMPLOYEE_ID || " " || EMPLOYEE_NAME || " INVALID"
+         ELSE
+            * Transformation Logic: Apply 10% raise to salary for report
+            CURRENT_SALARY = EMPLOYEE_SALARY * 1.10
+            VALID_COUNT = VALID_COUNT + 1
+            TOTAL_SALARY = TOTAL_SALARY + EMPLOYEE_SALARY
+            REPORT_LINE = EMPLOYEE_ID || " " || EMPLOYEE_NAME || " " || FORMAT_FLOAT(CURRENT_SALARY, 10, 2) || " OK"
+         END IF
+
+         * Output Report Line
+         OUTPUT OUTPUT_FILE, REPORT_LINE
+
+         * Read Next Record
+         READ INPUT_FILE, DATA_RECORD
+      END WHILE
+
+      * Calculate Average
+      IF VALID_COUNT > 0 THEN
+         AVERAGE_SALARY = TOTAL_SALARY / VALID_COUNT
+      ELSE
+         AVERAGE_SALARY = 0
+      END IF
+
+      * Print Summary Footer
+      HEADER_LINE = "TOTAL RECORDS: " || RECORD_COUNT
+      OUTPUT OUTPUT_FILE, HEADER_LINE
+      HEADER_LINE = "VALID RECORDS: " || VALID_COUNT
+      OUTPUT OUTPUT_FILE, HEADER_LINE
+      HEADER_LINE = "ERRORS:        " || ERROR_COUNT
+      OUTPUT OUTPUT_FILE, HEADER_LINE
+      HEADER_LINE = "AVG SALARY:    " || FORMAT_FLOAT(AVERAGE_SALARY, 10, 2)
+      OUTPUT OUTPUT_FILE, HEADER_LINE
+
+      * End Program
+      HALT
+
+   * END PROCESS
+
+   * HELPER FUNCTIONS (Simulated via Built-in CESIL capabilities)
+   * CESIL typically relies on built-in parsers or pre-processed data.
+   * For this utility, we assume standard CESIL input/output primitives
+   * and simple parsing logic.

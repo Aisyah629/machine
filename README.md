@@ -723,3 +723,5 @@ MIT License
 - Created/Updated module: `./euler_data_processor_tool` (See `./euler_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `unicon_data_processor_tool` (See `unicon_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `xtend_data_processor_tool` (See `xtend_data_processor_tool/README.md` for details)

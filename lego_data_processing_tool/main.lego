@@ -1,0 +1,123 @@
+; LEGOSCRIPT DATA PROCESSING TOOL
+; Description: A utility for filtering, transforming, and analyzing simulated datasets
+
+DEFINE PROCEDURE LoadData()
+    ; Simulated dataset (array of records)
+    RECORD record1
+        name: "Alice"
+        age: 28
+        department: "Engineering"
+        salary: 75000
+    END RECORD
+
+    RECORD record2
+        name: "Bob"
+        age: 35
+        department: "Marketing"
+        salary: 65000
+    END RECORD
+
+    RECORD record3
+        name: "Charlie"
+        age: 42
+        department: "Engineering"
+        salary: 85000
+    END RECORD
+
+    RECORD record4
+        name: "Diana"
+        age: 29
+        department: "Sales"
+        salary: 60000
+    END RECORD
+
+    RECORD record5
+        name: "Eve"
+        age: 31
+        department: "Engineering"
+        salary: 72000
+    END RECORD
+
+    SET dataset TO [record1, record2, record3, record4, record5]
+    RETURN dataset
+END PROCEDURE
+
+DEFINE PROCEDURE FilterByDepartment(dataset, departmentName)
+    DEFINE FILTERED_DATA AS ARRAY
+    DEFINE RECORD AS ARRAY
+    FOR EACH record IN dataset DO
+        IF record.department == departmentName THEN
+            APPEND FILTERED_DATA TO record
+        END IF
+    END FOR
+    RETURN FILTERED_DATA
+END PROCEDURE
+
+DEFINE PROCEDURE CalculateAverageSalary(dataset)
+    DEFINE TOTAL_SALARY AS NUMBER
+    DEFINE COUNT AS NUMBER
+    DEFINE AVG_SALARY AS NUMBER
+    DEFINE RECORD AS ARRAY
+
+    SET TOTAL_SALARY TO 0
+    SET COUNT TO 0
+    FOR EACH record IN dataset DO
+        SET TOTAL_SALARY TO TOTAL_SALARY + record.salary
+        SET COUNT TO COUNT + 1
+    END FOR
+    IF COUNT > 0 THEN
+        SET AVG_SALARY TO TOTAL_SALARY / COUNT
+    ELSE
+        SET AVG_SALARY TO 0
+    END IF
+    RETURN AVG_SALARY
+END PROCEDURE
+
+DEFINE PROCEDURE TransformData(dataset)
+    ; Add a calculated field 'bonus' (10% of salary)
+    DEFINE NEW_RECORD AS ARRAY
+    DEFINE RECORD AS ARRAY
+    FOR EACH record IN dataset DO
+        DEFINE RECORDED_COPY AS RECORD
+        COPY RECORD record TO RECORDED_COPY
+        SET RECORDED_COPY.bonus TO RECORDED_COPY.salary * 0.10
+        APPEND NEW_RECORD TO RECORDED_COPY
+    END FOR
+    RETURN NEW_RECORD
+END PROCEDURE
+
+MAIN
+    DEFINE RAW_DATA AS ARRAY
+    DEFINE FILTERED_DATA AS ARRAY
+    DEFINE TRANSFORMED_DATA AS ARRAY
+    DEFINE AVG_SALARY AS NUMBER
+
+    PRINT "Starting Legoscript Data Processing Tool..."
+
+    ; Load data
+    SET RAW_DATA TO LoadData()
+    PRINT "Data loaded. Total records: " + LENGTH(RAW_DATA)
+
+    ; Filter Engineering
+    SET FILTERED_DATA TO FilterByDepartment(RAW_DATA, "Engineering")
+    PRINT "Filtered Engineering employees: " + LENGTH(FILTERED_DATA)
+    PRINT "Engineering Employees:"
+    DEFINE EMPLOYEE AS ARRAY
+    FOR EACH EMPLOYEE IN FILTERED_DATA DO
+        PRINT "  - " + EMPLOYEE.name + " (Age: " + EMPLOYEE.age + ", Salary: " + EMPLOYEE.salary + ")"
+    END FOR
+
+    ; Calculate Average Salary
+    SET AVG_SALARY TO CalculateAverageSalary(RAW_DATA)
+    PRINT "Average Salary across all employees: " + AVG_SALARY
+
+    ; Transform Data
+    SET TRANSFORMED_DATA TO TransformData(RAW_DATA)
+    PRINT "Transformed Data (with bonuses):"
+    DEFINE TRANSFORMED_EMPLOYEE AS ARRAY
+    FOR EACH TRANSFORMED_EMPLOYEE IN TRANSFORMED_DATA DO
+        PRINT "  - " + TRANSFORMED_EMPLOYEE.name + ": Salary=" + TRANSFORMED_EMPLOYEE.salary + ", Bonus=" + TRANSFORMED_EMPLOYEE.bonus
+    END FOR
+
+    PRINT "Data processing complete."
+END MAIN

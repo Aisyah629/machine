@@ -1,0 +1,59 @@
+/* PROIV Main Data Processor */
+$SET MAIN
+$SET ERROR
+
+/* Define input and output files */
+FILE INPUT_FILE = 'data_in.dat'
+FILE OUTPUT_FILE = 'data_out.dat'
+FILE LOG_FILE = 'process_log.err'
+
+/* Define record structures */
+RECORD INPUT_RECORD
+  FIELD id:10
+  FIELD name:20
+  FIELD value:10.2
+  FIELD status:1
+END RECORD
+
+RECORD OUTPUT_RECORD
+  FIELD id:10
+  FIELD name:20
+  FIELD value:10.2
+  FIELD status:1
+  FIELD processed_flag:1
+END RECORD
+
+/* Main Processing Loop */
+BEGIN PROCESS_DATA
+
+  OPEN INPUT_FILE FOR INPUT
+  OPEN OUTPUT_FILE FOR OUTPUT
+  OPEN LOG_FILE FOR OUTPUT
+
+  READ INPUT_FILE INTO INPUT_RECORD
+  WHILE NOT EOF(INPUT_FILE)
+
+    /* Validation Logic */
+    IF INPUT_RECORD.value < 0 THEN
+      WRITE LOG_FILE TO 'Error: Negative value for ID ' + INPUT_RECORD.id
+      CONTINUE
+    END IF
+
+    /* Transformation Logic */
+    OUTPUT_RECORD.id = INPUT_RECORD.id
+    OUTPUT_RECORD.name = INPUT_RECORD.name
+    OUTPUT_RECORD.value = INPUT_RECORD.value * 1.1 /* Apply 10% adjustment */
+    OUTPUT_RECORD.status = INPUT_RECORD.status
+    OUTPUT_RECORD.processed_flag = 'Y'
+
+    WRITE OUTPUT_FILE FROM OUTPUT_RECORD
+    READ INPUT_FILE INTO INPUT_RECORD
+  END WHILE
+
+  CLOSE INPUT_FILE
+  CLOSE OUTPUT_FILE
+  CLOSE LOG_FILE
+
+  WRITE TO 'Processing complete.'
+
+END PROCESS_DATA

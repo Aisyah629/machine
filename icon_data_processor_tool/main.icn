@@ -1,0 +1,86 @@
+procedure main()
+    write("--- Icon Data Processor Tool ---")
+    write("Initializing data processing pipeline...")
+
+    # Sample input data (simulating a CSV line)
+    sample_data := "101,John Smith,Engineer,85000\n102,Jane Doe,Manager,95000\n103,Bob Wilson,Developer,78000\n104,Alice Brown,Designer,72000"
+
+    write("Input Data:")
+    write(sample_data)
+    write("")
+
+    # Process each record
+    records := split_lines(sample_data)
+    
+    write("Processing Records:")
+    every record := records do {
+        processed := process_record(record)
+        if processed then {
+            write("Valid Record:", processed)
+        } else {
+            write("Invalid Record:", record)
+        }
+    }
+    
+    write("")
+    write("Processing Complete.")
+end
+
+# Function to split a string into lines
+procedure split_lines(text)
+    return generator(lines(text))
+end
+
+# Function to process a single record
+procedure process_record(record)
+    # Split record by comma
+    fields := split(record, ",")
+    
+    # Validate that we have exactly 4 fields
+    if *fields < 4 then {
+        return nil
+    }
+    
+    id := fields[1]
+    name := fields[2]
+    role := fields[3]
+    salary := fields[4]
+    
+    # Validate ID is numeric
+    if not number(id) then {
+        return nil
+    }
+    
+    # Validate Salary is numeric
+    if not number(salary) then {
+        return nil
+    }
+    
+    # Format the output
+    formatted := format_record(id, name, role, salary)
+    return formatted
+end
+
+# Function to format the record
+procedure format_record(id, name, role, salary)
+    return format("ID: %s | Name: %-15s | Role: %-15s | Salary: $%s", 
+                  id, name, role, salary)
+end
+
+# Helper to split string by delimiter
+procedure split(str, delim)
+    local fields, field, pos
+    fields := list()
+    field := ""
+    
+    every pos := 1 to *str do {
+        if str[pos] == delim then {
+            put(fields, field)
+            field := ""
+        } else {
+            field ||:= str[pos]
+        }
+    }
+    put(fields, field)
+    return fields
+end

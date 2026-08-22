@@ -747,3 +747,5 @@ MIT License
 - Created/Updated module: `cython_data_processor_tool` (See `cython_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `cesil_data_processing_tool` (See `cesil_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `ampl_data_processing_utility_tool` (See `ampl_data_processing_utility_tool/README.md` for details)

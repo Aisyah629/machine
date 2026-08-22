@@ -1,0 +1,24 @@
+set ITEMS := Item1 Item2 Item3 Item4;
+
+set CATEGORIES := Electronics Furniture Clothing;
+
+param demand :=
+    Item1 100
+    Item2 150
+    Item3 200
+    Item4 50
+;
+
+param price :=
+    Item1 10
+    Item2 25
+    Item3 5
+    Item4 50
+;
+
+param category :=
+    Item1 Electronics
+    Item2 Furniture
+    Item3 Clothing
+    Item4 Electronics
+;

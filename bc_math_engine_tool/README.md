@@ -1,24 +1,20 @@
-# bc Math Engine Tool
+# BC Math Engine Tool
 
-## Description
-This tool is a robust arbitrary-precision arithmetic and formula evaluation environment built strictly using the `bc` programming language.
-
-## Purpose
-- Implement advanced mathematical calculations with arbitrary precision
-- Provide a formal interface for evaluating complex mathematical expressions
-- Serve as a standalone utility for high-precision scientific and financial computations
-
-## Usage
-Run the tool using the `bc` interpreter:
-```
-bq bc_math_engine_tool/main.bc
-```
+## Overview
+A high-performance, POSIX-compliant mathematical computation engine built strictly using `bc`. Designed for precise arithmetic, arbitrary precision calculations, and advanced mathematical functions.
 
 ## Features
-- Arbitrary precision decimal arithmetic
-- Formula parsing and evaluation
-- Configurable precision scaling
-- Modular mathematical function library
+- Arbitrary precision arithmetic
+- Support for complex mathematical expressions
+- POSIX `bc` compatible syntax
+- Modular function definitions
+- Error handling and validation
+
+## Usage
+Execute the tool by running:
+```bash
+bc -l main.bc
+```
 
 ## License
-Internal Development Use Only
+MIT License

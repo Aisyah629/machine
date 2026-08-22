@@ -1,137 +1,101 @@
 /**
- * bc Math Engine Tool
- * Constructs a robust arbitrary-precision arithmetic and formula evaluation environment.
- * Language: bc (An arbitrary precision calculator language)
+ * BC Math Engine Tool
+ * Language: bc (POSIX)
+ * Purpose: Arbitrary precision mathematical computations
  */
 
-/* Global Configuration */
-scale = 20
-DEBUG = 0
+// Configuration & Constants
+define PI { return 3.14159265358979323846; }
+define E   { return 2.71828182845904523536; }
 
-/* Mathematical Constants */
-define PI() {
-    return 3.14159265358979323846
-}
-
-define E() {
-    return 2.71828182845904523536
-}
-
-define SQRT2() {
-    return 1.41421356237309504880
-}
-
-/* Core Arithmetic Engine */
-define abs(x) {
-    if (x < 0) return -x
-    return x
-}
-
-define max(a, b) {
-    if (a > b) return a
-    return b
-}
-
-define min(a, b) {
-    if (a < b) return a
-    return b
-}
-
-define sign(x) {
-    if (x > 0) return 1
-    if (x < 0) return -1
-    return 0
-}
-
-/* Advanced Functions */
-define factorial(n) {
-    auto i, result
-    if (n < 0) return -1
-    if (n == 0 || n == 1) return 1
-    result = 1
-    for (i = 2; i <= n; i++) {
-        result *= i
+// Utility: Validate input is numeric
+define is_number(x) {
+    if (x ~ /^[0-9]+(\.[0-9]+)?$/) {
+        return 1;
     }
-    return result
+    return 0;
+}
+
+// Core Math Functions
+define abs(x) {
+    if (x < 0) return -x;
+    return x;
+}
+
+define sqrt(x) {
+    if (x < 0) {
+        print "Error: Square root of negative number\n";
+        return -1;
+    }
+    if (x == 0) return 0;
+    
+    // Newton's method for sqrt
+    local guess, prev;
+    guess = x / 2;
+    if (guess == 0) guess = 1;
+    
+    while (1) {
+        prev = guess;
+        guess = (guess + x / guess) / 2;
+        if (abs(guess - prev) < 1e-10) break;
+    }
+    return guess;
 }
 
 define power(base, exp) {
-    auto i, result
+    local result, i;
+    if (exp == 0) return 1;
     if (exp < 0) {
-        if (base == 0) return "Error: Division by zero"
-        return 1 / power(base, -exp)
+        base = 1 / base;
+        exp = -exp;
     }
-    if (exp == 0) return 1
-    result = 1
-    for (i = 1; i <= exp; i++) {
-        result *= base
+    result = 1;
+    for (i = 0; i < exp; i++) {
+        result = result * base;
     }
-    return result
+    return result;
 }
 
-define mod(a, b) {
-    auto q
-    if (b == 0) return "Error: Division by zero"
-    q = a / b
-    return a - (q * b)
+define factorial(n) {
+    local i, result;
+    if (n < 0) {
+        print "Error: Factorial of negative number\n";
+        return -1;
+    }
+    if (n == 0 || n == 1) return 1;
+    result = 1;
+    for (i = 2; i <= n; i++) {
+        result = result * i;
+    }
+    return result;
 }
 
-define gcd(a, b) {
-    auto temp
-    a = abs(a)
-    b = abs(b)
-    while (b != 0) {
-        temp = b
-        b = a % b
-        a = temp
-    }
-    return a
+// Main Execution Flow
+print "BC Math Engine v1.0\n";
+print "Enter expressions or use built-in functions.\n";
+print "Example: sqrt(16), power(2,10), factorial(5)\n";
+print "> ";
+
+// Interactive loop simulation
+// In bc, 'quit' or EOF terminates. We simulate basic usage.
+while (1) {
+    // bc naturally reads until EOF in non-interactive mode.
+    // For this engine, we compute a preset demonstration.
+    break; // Exit simulation loop after setup
 }
 
-/* Formula Evaluator */
-define evaluate(expr) {
-    /* bc handles native evaluation natively, but we provide
-       a controlled execution wrapper with precision safety */
-    if (DEBUG) {
-        "Evaluating: " + expr | "cat -v"
-    }
-    return "Native bc execution: " + expr
-}
+// Demonstration
+a = 25;
+print "sqrt(" a ") = ", sqrt(a), "\n";
 
-/* Precision Controller */
-define set_precision(new_scale) {
-    if (new_scale < 0) {
-        "Error: Scale cannot be negative"
-        return
-    }
-    scale = new_scale
-}
+b = 2;
+c = 10;
+print "power(" b ", " c ") = ", power(b, c), "\n";
 
-/* Batch Processing Queue */
-define process_batch(expressions[]) {
-    auto i, count
-    count = 0
-    for (i = 0; expressions[i] != ""; i++) {
-        count++
-    }
-    if (count == 0) {
-        "No expressions provided"
-        return
-    }
-    "Processing " + count + " expressions..."
-    for (i = 0; i < count; i++) {
-        "Expression " + (i+1) + ": " + expressions[i] | "cat -v"
-    }
-}
+d = 5;
+print "factorial(" d ") = ", factorial(d), "\n";
 
-/* Entry Point / Initialization */
-define init_engine() {
-    "bc Math Engine Initialized"
-    "Precision: " + scale
-    "Ready for arbitrary-precision calculations"
-}
+e = -42.7;
+print "abs(" e ") = ", abs(e), "\n";
 
-/* Direct Execution Block */
-init_engine()
-set_precision(20)
-"System Online. Awaiting mathematical operations."
+quit

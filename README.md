@@ -711,3 +711,5 @@ MIT License
 - Created/Updated module: `squeak_data_processor_tool` (See `squeak_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `nesl_data_processor_tool` (See `nesl_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `draco_data_processing_utility_tool` (See `draco_data_processing_utility_tool/README.md` for details)

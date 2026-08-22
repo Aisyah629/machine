@@ -753,3 +753,5 @@ MIT License
 - Created/Updated module: `bertrand_data_processing_tool` (See `bertrand_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `icon_data_processor_tool` (See `icon_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `alice_data_processor_tool` (See `alice_data_processor_tool/README.md` for details)

@@ -737,3 +737,7 @@ MIT License
 - Created/Updated module: `comit_data_processing_utility_tool` (See `comit_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `dibol_data_processor_tool` (See `dibol_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `gosu_data_processing_engine_tool` (See `gosu_data_processing_engine_tool/README.md` for details)
+
+- Created/Updated module: `gosu_data_processing_engine_tool` (See `gosu_data_processing_engine_tool/README.md` for details)

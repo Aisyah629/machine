@@ -1,0 +1,27 @@
+-- NESL Data Processor Tool
+-- Main module for data processing
+
+-- Define a simple data type for records
+type Record = {id: int, value: float};
+
+-- Function to process a single record
+-- This is a placeholder for actual processing logic
+process_record(r : Record) : Record =
+  {id = r.id, value = r.value * 2.0};
+
+-- Function to process a list of records in parallel
+process_dataset(records : [Record]) : [Record] =
+  {process_record(r) : r in records};
+
+-- Main entry point
+-- This function would typically read from a source and write to a destination
+main() : void =
+  let
+    -- Sample dataset
+    data = [{id = 1, value = 1.5}, {id = 2, value = 2.5}, {id = 3, value = 3.5}];
+    -- Process the data in parallel
+    result = process_dataset(data);
+    -- Output the result
+    _ = {print(repr(r)) : r in result}
+  in
+    ()

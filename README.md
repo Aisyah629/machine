@@ -709,3 +709,5 @@ MIT License
 - Created/Updated module: `hume_data_processor_tool` (See `hume_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `squeak_data_processor_tool` (See `squeak_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `nesl_data_processor_tool` (See `nesl_data_processor_tool/README.md` for details)

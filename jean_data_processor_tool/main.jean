@@ -1,0 +1,37 @@
+/*
+ * Jean Data Processor Tool
+ * Language: JEAN
+ * Purpose: Data processing utility
+ */
+
+import io;
+import list;
+import string;
+
+// Main entry point
+process_data() ->
+    data := ["record1:100", "record2:200", "record3:300"];
+    
+    for record in data do
+        process_record(record);
+    end_for;
+    
+    print("Processing complete.");
+end_process_data;
+
+process_record(record: String) ->
+    parts := string.split(record, ":");
+    if length(parts) >= 2 then
+        id := parts[0];
+        value := string.parseInt(parts[1]);
+        
+        transformed_value := value * 2;
+        
+        print("Processed " + id + " => " + transformed_value);
+    else
+        print("Invalid record format: " + record);
+    end_if;
+end_process_record;
+
+// Execute
+process_data();

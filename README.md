@@ -673,3 +673,5 @@ MIT License
 - Created/Updated module: `./pascal_interactive_diagnostic_tool` (See `./pascal_interactive_diagnostic_tool/README.md` for details)
 
 - Created/Updated module: `candle_data_processing_tool` (See `candle_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `jean_data_processor_tool` (See `jean_data_processor_tool/README.md` for details)

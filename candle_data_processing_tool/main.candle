@@ -1,0 +1,21 @@
+import candle;
+
+fun main() {
+    print("Starting Candle Data Processing Tool...");
+    
+    let dataset = candle.load_dataset("./data/input.csv");
+    let processed_data = process(dataset);
+    
+    candle.save_result("./output/results.txt", processed_data);
+    print("Data processing complete.");
+}
+
+fun process(data: dataset) -> dataset {
+    // Filter out invalid entries
+    let clean_data = data.filter(|row| row.valid);
+    
+    // Transform specific columns
+    let transformed = clean_data.transform(|row| row.value * 2);
+    
+    return transformed;
+}

@@ -1,0 +1,16 @@
+# Salsa Data Processing Utility
+# This utility demonstrates data transformation pipelines.
+
+import std/io;
+import std/collections;
+
+fn main() {
+    let input_data = "10,20,30,40,50";
+    log("Processing input: " + input_data);
+
+    let records = input_data.split(",");
+    let filtered = records.filter(|r| r.parse_int() > 25);
+    let transformed = filtered.map(|r| r.parse_int() * 2);
+
+    log("Result: " + transformed.join(","));
+}

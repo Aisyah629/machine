@@ -1,0 +1,68 @@
+% CHR Data Processing Utility Tool
+% This file defines constraints and rules for data processing.
+
+% -- Data Constraints --
+
+% Represents a raw data record
+raw_data(RecordId, Data).
+
+% Represents a processed data record
+processed_data(RecordId, Data).
+
+% Represents an error record
+error_record(RecordId, ErrorMsg).
+
+% -- Processing Rules --
+
+% Rule: Validate and process raw data
+% If we have raw data and it passes validation, convert it to processed data
+process_raw_data(RecordId, Data) @
+    raw_data(RecordId, Data) <=> 
+    is_valid(Data) 
+    | 
+    processed_data(RecordId, Data).
+
+% Rule: Handle invalid data
+% If raw data fails validation, create an error record
+process_invalid_data(RecordId, Data) @
+    raw_data(RecordId, Data) <=> 
+    \+ is_valid(Data) 
+    | 
+    error_record(RecordId, 'Invalid Data Format').
+
+% Rule: Normalize processed data
+% If processed data exists, normalize it
+normalize_data(RecordId, Data) @
+    processed_data(RecordId, Data) <=> 
+    normalize(Data, NormalizedData) 
+    | 
+    processed_data(RecordId, NormalizedData).
+
+% Rule: Clean up after processing
+% If processed data is handled, remove it from raw queue (if dual presence exists)
+cleanup_raw(RecordId, Data) @
+    raw_data(RecordId, Data), 
+    processed_data(RecordId, Data) 
+    <=> 
+    true 
+    | 
+    remove_constraint(raw_data(RecordId, Data)).
+
+% -- Helper Predicates (Simulated for CHR Context) --
+
+% Check if data is valid
+% In a real implementation, this would be defined in the host language (e.g., Prolog)
+is_valid(Data).
+
+% Normalize data
+% In a real implementation, this would be defined in the host language
+normalize(Data, NormalizedData).
+
+% Remove a constraint
+remove_constraint(Constraint).
+
+% -- Initialization and Execution --
+
+% Example usage within CHR:
+% ?- assertz(raw_data(1, {name: 'Alice', age: 30})),
+%    run_chrrules.

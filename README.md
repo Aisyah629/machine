@@ -681,3 +681,5 @@ MIT License
 - Created/Updated module: `sather_data_processor_tool` (See `sather_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `neko_data_processor_tool` (See `neko_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `chr_data_processing_utility_tool` (See `chr_data_processing_utility_tool/README.md` for details)

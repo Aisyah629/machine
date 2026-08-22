@@ -1,0 +1,26 @@
+BEGIN PROGRAM DataProcessing
+
+  ! --- Variable Declarations ---
+  INTEGER InputData(100)
+  INTEGER OutputData(100)
+  INTEGER i, total
+
+  ! --- Initialize total for summation ---
+  total = 0
+
+  ! --- Process Input Data ---
+  FOR i = 1 TO 100
+    InputData(i) = i * 2  ! Example processing: double the index
+    total = total + InputData(i)
+  NEXT i
+
+  ! --- Output Results ---
+  PRINT "Processed Data:"
+  FOR i = 1 TO 100
+    OutputData(i) = InputData(i)
+    PRINT OutputData(i)
+  NEXT i
+
+  PRINT "Total Sum: " total
+
+END PROGRAM DataProcessing

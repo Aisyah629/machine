@@ -1,0 +1,14 @@
+/* COMIT Data Processing Utility Main Script */
+
+/* Define data processing modules */
+DEFINE PROCESS_DATA
+  READ INPUT_FILE
+  TRANSFORM DATA
+  WRITE OUTPUT_FILE
+END DEFINE
+
+/* Initialize processing */
+PROCESS_DATA(INPUT_FILE="input.txt", OUTPUT_FILE="output.txt")
+
+/* End of script */
+HALT

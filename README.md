@@ -727,3 +727,5 @@ MIT License
 - Created/Updated module: `xtend_data_processor_tool` (See `xtend_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `pico_data_processing_utility_tool` (See `pico_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `tads_data_processor_tool` (See `tads_data_processor_tool/README.md` for details)

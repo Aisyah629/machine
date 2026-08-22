@@ -663,3 +663,5 @@ MIT License
 - Created/Updated module: `./clu_math_engine_tool` (See `./clu_math_engine_tool/README.md` for details)
 
 - Created/Updated module: `./g_data_processing_tool` (See `./g_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `argus_data_processing_engine_tool` (See `argus_data_processing_engine_tool/README.md` for details)

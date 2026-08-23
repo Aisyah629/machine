@@ -1,0 +1,23 @@
+[VI Information]
+Name=Main
+Category=Data Processing
+SubCategory=Pipeline
+Description=Main pipeline orchestrator for data processing.
+
+[Front Panel]
+[Widget: String "Input File Path"]
+[Widget: String "Output File Path"]
+[Widget: Button "Process Data"]
+[Widget: String "Status"]
+[Widget: String "Error Cluster"]
+
+[Block Diagram]
+[Control: "Input File Path" -> Data_Ingestion.vi -> "Read Data"]
+[Control: "Read Data" -> Data_Validation.vi -> "Validated Data"]
+[Control: "Validated Data" -> Data_Transform.vi -> "Transformed Data"]
+[Control: "Output File Path" -> Data_Export.vi -> Success/Error
+[Control: "Status" <- Error Status]
+[Control: "Error Cluster" -> Error Out (Data_Ingestion.vi)]
+[Control: "Error Cluster" -> Error Out (Data_Validation.vi)]
+[Control: "Error Cluster" -> Error Out (Data_Transform.vi)]
+[Control: "Error Cluster" -> Error Out (Data_Export.vi)]

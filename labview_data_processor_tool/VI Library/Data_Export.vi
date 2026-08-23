@@ -1,0 +1,21 @@
+[VI Information]
+Name=Data_Export
+Category=Data Processing
+SubCategory=Export
+Description=Writes processed data to CSV or JSON files.
+
+[Front Panel]
+[Data Type: 2D Array]
+[Widget: Enum "Format"]
+[Widget: String "Output Path"]
+[Widget: Boolean "Success"]
+[Widget: String "Error Cluster"]
+
+[Block Diagram]
+[Control: "Format" -> Case Structure
+    [Case: "csv" -> "Write CSV.vi" (with "Output Path" and "Data")]
+    [Case: "json" -> "Write JSON.vi" (with "Output Path" and "Data")]
+    [Default -> Error: "Unsupported format"]
+]
+[Control: "Success" -> Boolean Indicator]
+[Control: "Error Cluster" -> Error Out]

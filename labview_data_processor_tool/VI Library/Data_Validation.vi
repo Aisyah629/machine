@@ -1,0 +1,23 @@
+[VI Information]
+Name=Data_Validation
+Category=Data Processing
+SubCategory=Validation
+Description=Checks data for nulls, outliers, and type consistency.
+
+[Front Panel]
+[Data Type: 2D Array]
+[Widget: Boolean "Allow Nulls"]
+[Widget: Numeric "Max Outlier"]
+[Widget: Array "Validated Data"]
+[Widget: Array "Error List"]
+[Widget: String "Error Cluster"]
+
+[Block Diagram]
+[Control: "Data" -> "Check for Nulls.vi" -> Case Structure
+    [Case: "Null Found" -> Add to "Error List" -> Error Out]
+    [Case: "No Nulls" -> "Check Outliers.vi" (with "Max Outlier") -> Case Structure
+        [Case: "Outlier Found" -> Add to "Error List" -> Error Out]
+        [Case: "No Outliers" -> "Data" -> "Validated Data"]
+    ]
+]
+[Control: "Error Cluster" -> Error In (Check for Nulls.vi)]

@@ -1,0 +1,17 @@
+MODULE action_data_processor_tool
+PROC Main()
+  PRINT("Action! Data Processor")
+  PRINT("Initializing data processing engine...")
+  
+  DATA
+    INT count
+    BYTE arr[10]
+  
+  FOR count = 0 TO 9 DO
+    arr[count] = count * 2
+    PRINT(arr[count])
+  OD
+  
+  PRINT("Data processing complete.")
+  RETURN
+END

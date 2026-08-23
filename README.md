@@ -831,3 +831,5 @@ MIT License
 - Created/Updated module: `./hypermind_tool` (See `./hypermind_tool/README.md` for details)
 
 - Created/Updated module: `dbase_data_processor_tool` (See `dbase_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `ppl_data_processor_tool` (See `ppl_data_processor_tool/README.md` for details)

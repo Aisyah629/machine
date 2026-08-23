@@ -1,30 +1,18 @@
-// PPL Data Processor - main.ppl
+// PPL Data Processing Utility
+// This script processes data
 
-// Initialization
-proc main()
-    data = load_data("input.dat")
-    processed_data = process(data)
-    save_data(processed_data, "output.dat")
-    print("Processing complete.")
-endproc
-
-// Data Loading
-proc load_data(filename)
-    // Simulated data loading logic
-    return [1, 2, 3, 4, 5]
-endproc
-
-// Data Processing
-proc process(data)
-    result = []
-    for item in data do
-        result = append(result, item * 2)
-    endfor
-    return result
-endproc
-
-// Data Saving
-proc save_data(data, filename)
-    // Simulated data saving logic
-    print("Saving data to " + filename)
-endproc
+PROC main()
+  // Input data
+  DATA input_data = {1, 2, 3, 4, 5}
+  
+  // Process data
+  DATA result
+  result = []
+  FOR item IN input_data DO
+    item = item * 2
+    APPEND result, item
+  END
+  
+  // Output result
+  PRINT "Processed data: " + result
+END

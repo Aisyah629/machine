@@ -817,3 +817,5 @@ MIT License
 - Created/Updated module: `./a_sharp_dotnet_data_processor_tool` (See `./a_sharp_dotnet_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./sensescript_tool` (See `./sensescript_tool/README.md` for details)
+
+- Created/Updated module: `telcomp_data_processor_tool` (See `telcomp_data_processor_tool/README.md` for details)

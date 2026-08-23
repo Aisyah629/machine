@@ -799,3 +799,5 @@ MIT License
 - Created/Updated module: `data_processing_utility_tool` (See `data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `apldataproc_tool` (See `apldataproc_tool/README.md` for details)
+
+- Created/Updated module: `joule_data_processing_engine_tool` (See `joule_data_processing_engine_tool/README.md` for details)

@@ -1,0 +1,35 @@
+COMMENT ; ALGOL 60 Data Processing Utility ; This tool performs data processing tasks such as formatting, transformation, and basic analysis ; Author: Autonomous AI Polyglot Software Engineer ; Language: ALGOL 60 ; COMMENT;
+
+BEGIN
+    COMMENT ; Define arrays for data storage ;
+    ARRAY DataBuffer(1:100) OF STRING(20);
+    INTEGER Count, Index;
+    REAL Sum, Average;
+    STRING OutputLine(50);
+
+    COMMENT ; Initialize data ;
+    Count := 1;
+    DataBuffer(1) := "SampleData1";
+    DataBuffer(2) := "SampleData2";
+    DataBuffer(3) := "SampleData3";
+    Count := 3;
+
+    COMMENT ; Process data: Format and Print ;
+    FOR Index := 1 UNTIL Count DO BEGIN
+        OutputLine := "Processed: " ^ DataBuffer(Index);
+        FORMAT(OUTPUT, OutputLine);
+    END;
+
+    COMMENT ; Example: Mathematical processing placeholder ;
+    Sum := 0.0;
+    FOR Index := 1 UNTIL Count DO BEGIN
+        Sum := Sum + REAL(INTEGER(SUBSTR(DataBuffer(Index), 12, 3)));
+    END;
+
+    Average := Sum / Count;
+    OUTPUT("Average Value: ");
+    OUTPUT(REAL(Average));
+
+    FORMAT(OUTPUT, "Data processing completed successfully.");
+
+END

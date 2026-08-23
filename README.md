@@ -865,3 +865,5 @@ MIT License
 - Created/Updated module: `./zopl_data_processing_tool` (See `./zopl_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `dasl_tool` (See `dasl_tool/README.md` for details)
+
+- Created/Updated module: `squirrel_data_processor_tool` (See `squirrel_data_processor_tool/README.md` for details)

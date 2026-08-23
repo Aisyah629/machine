@@ -1,0 +1,106 @@
+* dBase Data Processor Tool
+* Main execution script
+* Demonstrates data processing capabilities in dBase
+
+SET TALK OFF
+SET ECHO OFF
+SET SAFETY OFF
+SET CONSOLE OFF
+
+* Define data file and processing parameters
+cDataFile := "data.dbf"
+cLogfile   := "process.log"
+cResultFile:= "results.dbf"
+
+* Initialize processing
+PROCEDURE Main
+    * Check if data file exists
+    IF FILE(cDataFile)
+        OPEN DATABASE cDataFile
+        
+        * Process records
+        DO PROCESS_DATA
+        
+        * Close database
+        CLOSE ALL
+        
+        * Display completion
+        ? "Data processing completed successfully."
+    ELSE
+        ? "Error: Data file not found.", cDataFile
+        DO LOG_ERROR
+    ENDIF
+    
+RETURN
+
+* Data processing logic
+PROCEDURE PROCESS_DATA
+    USE (cDataFile) ALIAS DataRec EXCLUSIVE
+    
+    * Create result file structure
+    IF FILE(cResultFile)
+        ERASE (cResultFile)
+    ENDIF
+    
+    CREATE (cResultFile) FIELDS (
+        ID NUMERIC(10,0),
+        ProcessedDate DATE,
+        Status C(20),
+        Notes C(100)
+    )
+    
+    * Process records
+    GO TOP
+    DO WHILE !EOF()
+        * Read current record
+        nID    := DataRec->ID
+        cName  := DataRec->Name
+        nValue := DataRec->Value
+        
+        * Validate and process
+        IF VALID_RECORD(nID, cName, nValue)
+            INSERT INTO (cResultFile) VALUE (
+                (nID),
+                DTOC(DATE()),
+                "Processed",
+                "Valid record"
+            )
+        ELSE
+            INSERT INTO (cResultFile) VALUE (
+                (nID),
+                DTOC(DATE()),
+                "Error",
+                "Invalid record data"
+            )
+            DO LOG_ERROR
+        ENDIF
+        
+        * Move to next record
+        SKIP
+    ENDDO
+    
+    CLOSE
+RETURN
+
+* Record validation function
+FUNCTION VALID_RECORD(nID, cName, nValue)
+    * Check basic constraints
+    IF EMPTY(cName) OR nValue < 0
+        RETURN .F.
+    ENDIF
+    
+    * Additional validation logic
+    IF LEN(TRANSFORM(cName)) > 50
+        RETURN .F.
+    ENDIF
+    
+RETURN .T.
+
+* Logging function
+PROCEDURE LOG_ERROR
+    USE (cLogfile) ALIAS LogRec NEW
+    APPEND BLANK
+    REPLACE LogRec->Message WITH "Error processing record ID: " + TRANSFORM(nID)
+    REPLACE LogRec->Timestamp WITH DTOC(DATE()) + " " + TIMSTR()
+    CLOSE
+RETURN

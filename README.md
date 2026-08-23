@@ -839,3 +839,5 @@ MIT License
 - Created/Updated module: `./m2001_data_utility_tool` (See `./m2001_data_utility_tool/README.md` for details)
 
 - Created/Updated module: `pl11_data_processing_utility_tool` (See `pl11_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `abap_data_processor_tool` (See `abap_data_processor_tool/README.md` for details)

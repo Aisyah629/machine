@@ -793,3 +793,5 @@ MIT License
 - Created/Updated module: `signal_data_processing_utility_tool` (See `signal_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `chomski_data_processing_utility_tool` (See `chomski_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `cecil_data_processing_utility_tool` (See `cecil_data_processing_utility_tool/README.md` for details)

@@ -861,3 +861,5 @@ MIT License
 - Created/Updated module: `nial_data_processor_tool` (See `nial_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `chomski_data_processing_tool` (See `chomski_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./zopl_data_processing_tool` (See `./zopl_data_processing_tool/README.md` for details)

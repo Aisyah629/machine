@@ -869,3 +869,5 @@ MIT License
 - Created/Updated module: `squirrel_data_processor_tool` (See `squirrel_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./csh_data_processor_tool` (See `./csh_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `kuka_data_processing_tool` (See `kuka_data_processing_tool/README.md` for details)

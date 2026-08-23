@@ -813,3 +813,5 @@ MIT License
 - Created/Updated module: `algol58_data_processor_tool` (See `algol58_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `xpp_data_processing_tool` (See `xpp_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./a_sharp_dotnet_data_processor_tool` (See `./a_sharp_dotnet_data_processor_tool/README.md` for details)

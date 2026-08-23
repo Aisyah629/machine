@@ -1,0 +1,45 @@
+# Mode
+Mode data_record =
+struct
+  (string field_one,
+   string field_two,
+   real field_three);
+
+# Format
+data_format =
+  format( "[Field1: " + string + "], [Field2: " + string + "], [Field3: " + real + "]\n" );
+
+# Procedure
+detect data_processing_tool()
+begin
+  # Sample Data Ingestion
+  [1:5] data_record sample_data :=
+  (
+    ("Alpha", "Beta", 10.5),
+    ("Gamma", "Delta", 20.3),
+    ("Epsilon", "Zeta", 30.7),
+    ("Eta", "Theta", 40.1),
+    ("Iota", "Kappa", 50.9)
+  );
+
+  # Data Transformation
+  # Normalize Field3 (divide by 10.0)
+  data_record[] normalized_data := 
+  begin
+    data_record[ low( sample_data ) : high( sample_data ) ];
+    for i from low( sample_data ) to high( sample_data ) do
+      normalized_data[ i ] :=
+      struct(
+        sample_data[i].field_one,
+        sample_data[i].field_two,
+        sample_data[i].field_three / 10.0
+      );
+    od;
+    normalized_data
+  end;
+
+  # Output Processing
+  printf( ( data_format, normalized_data ) );
+
+  print( ( "Data processing completed successfully.\n" ) )
+end;

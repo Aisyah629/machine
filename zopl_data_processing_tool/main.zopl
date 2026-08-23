@@ -1,0 +1,32 @@
+// ZOPL Data Processing Tool
+// Entry point for data transformation logic
+
+import std;
+
+function process_data(input: List[Map[String, Any]]) -> List[Map[String, Any]] {
+    let validated_data = validate(input);
+    return transform(validated_data);
+}
+
+function validate(data: List[Map[String, Any]]) -> List[Map[String, Any]] {
+    return data.filter(entry -> entry.keys.contains("id"));
+}
+
+function transform(data: List[Map[String, Any]]) -> List[Map[String, Any]] {
+    return data.map(entry -> {
+        entry.value = entry.value * 2;
+        entry
+    });
+}
+
+main() {
+    let raw_data = [
+        {id: 1, value: 10},
+        {id: 2, value: 20},
+        {id: 3, value: 30}
+    ];
+    
+    let result = process_data(raw_data);
+    print("Processed Data: ");
+    print(result);
+}

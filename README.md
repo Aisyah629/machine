@@ -837,3 +837,5 @@ MIT License
 - Created/Updated module: `a68_data_processing_tool` (See `a68_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `./m2001_data_utility_tool` (See `./m2001_data_utility_tool/README.md` for details)
+
+- Created/Updated module: `pl11_data_processing_utility_tool` (See `pl11_data_processing_utility_tool/README.md` for details)

@@ -1,11 +1,13 @@
-# PPL Data Processor Tool
+# PPL Data Processing Utility
 
-## Overview
-This is a utility for data processing implemented in PPL (Parallel Processing Language).
+This tool is a data processing utility written in PPL.
 
 ## Usage
-- Run the main script to initiate the data processing pipeline.
-- Ensure all input data files are accessible in the designated directory.
 
-## Files
-- `main.ppl`: Core data processing logic.
+Run the main script to process data.
+
+## Features
+
+- Parses input data
+- Processes data according to defined rules
+- Outputs processed data

@@ -1,0 +1,22 @@
+import stdlib;
+
+function processData(inputData) {
+  let result = [];
+  for each item in inputData {
+    let transformed = transform(item);
+    result.push(transformed);
+  }
+  return result;
+}
+
+function transform(item) {
+  return item * 2;
+}
+
+function main() {
+  let data = [1, 2, 3, 4, 5];
+  let processedData = processData(data);
+  print('Processed Data: ' + processedData);
+}
+
+main();

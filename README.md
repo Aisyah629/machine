@@ -843,3 +843,5 @@ MIT License
 - Created/Updated module: `abap_data_processor_tool` (See `abap_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `txl_data_processor_tool` (See `txl_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `k_data_processing_utility_tool` (See `k_data_processing_utility_tool/README.md` for details)

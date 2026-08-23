@@ -1,0 +1,65 @@
+/* 
+  Able Advanced Data Processing Tool
+  This script demonstrates data processing capabilities in ABLE.
+*/
+
+// Define a simple data structure
+TYPE Record = RECORD
+  Name: STRING;
+  Age: INTEGER;
+  Score: REAL;
+END;
+
+// Function to validate data
+FUNCTION ValidateRecord(r: Record): BOOLEAN
+BEGIN
+  IF r.Name = "" THEN
+    RETURN FALSE;
+  END;
+  IF r.Age < 0 OR r.Age > 150 THEN
+    RETURN FALSE;
+  END;
+  IF r.Score < 0 OR r.Score > 100 THEN
+    RETURN FALSE;
+  END;
+  RETURN TRUE;
+END;
+
+// Function to transform data
+FUNCTION TransformRecord(r: Record): STRING
+BEGIN
+  RETURN CONCAT("Name: ", r.Name, " | Age: ", ToString(r.Age), " | Score: ", ToString(r.Score));
+END;
+
+// Main procedure
+PROCEDURE Main()
+  VAR 
+    records: ARRAY[3] OF Record;
+    i: INTEGER;
+  BEGIN
+    // Initialize records
+    records[0].Name := "Alice";
+    records[0].Age := 30;
+    records[0].Score := 85.5;
+
+    records[1].Name := "Bob";
+    records[1].Age := 25;
+    records[1].Score := 92.0;
+
+    records[2].Name := "";
+    records[2].Age := 35;
+    records[2].Score := 78.0;
+
+    // Process records
+    FOR i := 0 TO 2 DO
+      IF ValidateRecord(records[i]) THEN
+        PrintLine(TransformRecord(records[i]));
+      ELSE
+        PrintLine("Invalid record at index: ", ToString(i));
+      END;
+    END;
+  END;
+END;
+
+// Start execution
+Main();

@@ -1,0 +1,48 @@
+(*
+  Beta Data Processing Utility
+  ----------------------------
+  A demonstration of BETA for data processing tasks.
+)*
+
+class DATA_PROCESSOR;
+
+  input_stream: @INPUT_STREAM;
+  output_stream: @OUTPUT_STREAM;
+
+  process: (@);
+    (* Process data items from the input stream *)
+    input_stream >> data;
+    when not input_stream.end_of_stream do
+      transform(data);
+      output_stream << data;
+      input_stream >> data;
+    end;
+  do; (* end process *)
+
+  transform: (@);
+    (* Transform the data item *)
+    putLine('Processing: ', data);
+  do; (* end transform *)
+
+end DATA_PROCESSOR;
+
+main:
+  (* Define simple stream classes for demonstration *)
+  class INPUT_STREAM;
+    line: @STRING;
+    end_of_stream: BOOLEAN;
+    >>: (@); putLine('Reading input...'); end_of_stream <- false;
+    end_of_stream: (@); end_of_stream -> true; do; end; (* Simulation logic *)
+  do; end;
+
+  class OUTPUT_STREAM;
+    <<: (@); putLine('Writing output...');
+  do; end;
+
+  (* Instantiate and run the processor *)
+  processor: DATA_PROCESSOR;
+  processor.input_stream >~> INPUT_STREAM.new;
+  processor.output_stream >~> OUTPUT_STREAM.new;
+  processor.process;
+
+putLine('Data processing utility finished successfully.');

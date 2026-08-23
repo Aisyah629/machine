@@ -849,3 +849,5 @@ MIT License
 - Created/Updated module: `./agda_data_processing_engine_tool` (See `./agda_data_processing_engine_tool/README.md` for details)
 
 - Created/Updated module: `frege_data_processing_tool` (See `frege_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `clipper_data_processing_utility_tool` (See `clipper_data_processing_utility_tool/README.md` for details)

@@ -801,3 +801,5 @@ MIT License
 - Created/Updated module: `apldataproc_tool` (See `apldataproc_tool/README.md` for details)
 
 - Created/Updated module: `joule_data_processing_engine_tool` (See `joule_data_processing_engine_tool/README.md` for details)
+
+- Created/Updated module: `txl_data_processor_tool` (See `txl_data_processor_tool/README.md` for details)

@@ -1,0 +1,48 @@
+-- Frege Data Processing Tool
+
+module DataProcessor where
+
+import frege.contrib.parallel
+import java.util.ArrayList
+import java.util.Collections
+import Data.List (sort, filter, map)
+
+-- Define a simple data record
+data Record = Record { id :: Int, value :: String, timestamp :: Double } deriving (Show, Eq)
+
+-- Function to parse raw data (simulated)
+parseData :: [String] -> [Record]
+parseData lines = map parseLine lines
+  where
+    parseLine line = Record (read (words line !! 0)) (words line !! 1) (read (words line !! 2))
+
+-- Function to validate records
+validateRecord :: Record -> Bool
+validateRecord record = id /= 0 && value /= "" && timestamp > 0
+
+-- Function to transform data
+t transformRecord record =
+  let id = id
+      value = value
+      timestamp = timestamp
+  in Record id (value ++ "_processed") timestamp
+
+-- Function to sort records by timestamp
+sortRecords :: [Record] -> [Record]
+sortRecords records = sortOn (timestamp) records
+
+-- Main function to process data
+processData :: [String] -> [Record]
+processData raw =
+  let parsed = parseData raw
+      validated = filter validateRecord parsed
+      transformed = map transformRecord validated
+      sorted = sortRecords transformed
+  in sorted
+
+-- Main entry point
+main :: IO [Record]
+main = do
+  let rawData = ["1 foo 1620000000.0", "2 bar 1620000001.0", "0 baz 1620000002.0", "3 qux 1620000003.0"]
+      result = processData rawData
+  return result

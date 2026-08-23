@@ -877,3 +877,5 @@ MIT License
 - Created/Updated module: `ace_dasl_data_processor_tool` (See `ace_dasl_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `able_advanced_data_processing_tool` (See `able_advanced_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `goal_data_processor_tool` (See `goal_data_processor_tool/README.md` for details)

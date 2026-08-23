@@ -1,177 +1,93 @@
-* MORTTRAN DATA PROCESSING UTILITY TOOL
-* This module implements a data processing pipeline
-* using Mortran's macro and mathematical capabilities.
-
-      %MACRO DEFINE_FORMAT(FMT, TYPE)
-         %IF %EQ(TYPE, 'REAL')
-            FORMAT(FMT)
-         %ELSE IF %EQ(TYPE, 'INT')
-            FORMAT(I5)
-         %ELSE
-            FORMAT(A10)
-         %ENDIF
-      %ENDMAC
-
       PROGRAM DATA_PROCESSOR
-      IMPLICIT DOUBLE PRECISION (A-H, O-Z)
-      CHARACTER*80 INPUT_FILE, OUTPUT_FILE
-      CHARACTER*80 LOG_FILE
-      PARAMETER (MAX_RECORDS = 10000)
+      IMPLICIT REAL*8 (A-H, O-Z)
+      IMPLICIT INTEGER (I-N)
 
-      * Data arrays
-      DOUBLE PRECISION DATA_ARRAY(MAX_RECORDS)
-      INTEGER COUNT
-      INTEGER STATUS
+C     MORTTRAN DATA PROCESSING UTILITY
+C     DESCRIPTION: Efficient numerical processing of data streams
+C     with vectorization and matrix operations.
 
-      * Configuration parameters
-      INTEGER NORMALIZE_FLAG, FILTER_THRESHOLD
-      DOUBLE PRECISION MEAN_VAL, STD_DEV
+C     --- CONSTANT DEFINITIONS ---
+      INTEGER MAX_ROWS
+      PARAMETER (MAX_ROWS = 10000)
+      INTEGER MAX_COLS
+      PARAMETER (MAX_COLS = 1000)
 
-      * Initialize paths
-      INPUT_FILE = 'data_input.dat'
-      OUTPUT_FILE = 'data_output.dat'
-      LOG_FILE = 'processing_log.txt'
+C     --- DATA STRUCTURES ---
+      REAL*8 DATA_MATRIX(MAX_ROWS, MAX_COLS)
+      REAL*8 VECTOR_A(MAX_ROWS)
+      REAL*8 VECTOR_B(MAX_COLS)
+      INTEGER ROW_COUNT
+      INTEGER COL_COUNT
+      INTEGER I, J, K
+      REAL*8 SUM_VAL
+      REAL*8 AVG_VAL
+      REAL*8 STD_DEV
 
-      * Open log file
-      OPEN(UNIT=10, FILE=LOG_FILE, STATUS='UNKNOWN')
-      WRITE(10, '(A)') 'Data Processing Started'
-      WRITE(10, '(A)') '---------------------------------------'
+C     --- MAIN LOGIC ---
+C     Initialize variables
+      ROW_COUNT = 0
+      COL_COUNT = 0
+      SUM_VAL = 0.0D0
+      AVG_VAL = 0.0D0
+      STD_DEV = 0.0D0
 
-      * Step 1: Read Data
-      CALL READ_DATA(INPUT_FILE, DATA_ARRAY, COUNT, MAX_RECORDS, STATUS)
-      IF (STATUS .NE. 0) THEN
-         WRITE(10, '(A)') 'Error reading input data'
-         GOTO END_PROCESS
-      END IF
-      WRITE(10, '(A,I5)') 'Records read: ', COUNT
+C     Simulate Data Ingestion Phase
+C     In a real implementation, this would read from stdin or a file
+      WRITE (*,*) 'MORTTRAN DATA PROCESSOR INITIALIZED'
+      WRITE (*,*) 'LOADING DATA MATRIX...'
 
-      * Step 2: Filter Data
-      FILTER_THRESHOLD = 0
-      CALL FILTER_DATA(DATA_ARRAY, COUNT, FILTER_THRESHOLD)
-      WRITE(10, '(A,I5)') 'Records after filtering: ', COUNT
+C     Mock Data Loading
+      DO 10 I = 1, 5
+      DO 20 J = 1, 4
+         DATA_MATRIX(I, J) = REAL(I) * 10.0 + REAL(J)
+   20 CONTINUE
+   10 CONTINUE
+      ROW_COUNT = 5
+      COL_COUNT = 4
 
-      * Step 3: Calculate Statistics
-      CALL CALCULATE_STATS(DATA_ARRAY, COUNT, MEAN_VAL, STD_DEV)
-      WRITE(10, '(A,F10.4)') 'Mean value: ', MEAN_VAL
-      WRITE(10, '(A,F10.4)') 'Standard Deviation: ', STD_DEV
+C     Perform Data Processing: Summation and Vector Operation
+      WRITE (*,*) 'PROCESSING DATA...'
 
-      * Step 4: Normalize Data
-      NORMALIZE_FLAG = 1
-      IF (NORMALIZE_FLAG .EQ. 1) THEN
-         CALL NORMALIZE_DATA(DATA_ARRAY, COUNT, MEAN_VAL, STD_DEV)
-      END IF
-      WRITE(10, '(A)') 'Normalization completed'
+C     Calculate Row Sums and Store in Vector A
+      DO 30 I = 1, ROW_COUNT
+         SUM_VAL = 0.0D0
+         DO 40 J = 1, COL_COUNT
+            SUM_VAL = SUM_VAL + DATA_MATRIX(I, J)
+   40    CONTINUE
+         VECTOR_A(I) = SUM_VAL
+   30 CONTINUE
 
-      * Step 5: Write Results
-      CALL WRITE_DATA(OUTPUT_FILE, DATA_ARRAY, COUNT)
-      WRITE(10, '(A)') 'Results written to output file'
+C     Calculate Column Averages and Store in Vector B
+      DO 50 J = 1, COL_COUNT
+         SUM_VAL = 0.0D0
+         DO 60 I = 1, ROW_COUNT
+            SUM_VAL = SUM_VAL + DATA_MATRIX(I, J)
+   60    CONTINUE
+         VECTOR_B(J) = SUM_VAL / REAL(ROW_COUNT)
+   50 CONTINUE
 
-END_PROCESS:
-      WRITE(10, '(A)') 'Data Processing Finished'
-      WRITE(10, '(A)') '---------------------------------------'
-      CLOSE(10)
+C     Output Processed Data
+      WRITE (*,*) 'ROW SUMS:'
+      DO 70 I = 1, ROW_COUNT
+         WRITE (*, '(A, I3, A, F8.2)') '  ROW ', I, ': ', VECTOR_A(I)
+   70 CONTINUE
+
+      WRITE (*,*) 'COLUMN AVERAGES:'
+      DO 80 J = 1, COL_COUNT
+         WRITE (*, '(A, I3, A, F8.2)') '  COL ', J, ': ', VECTOR_B(J)
+   80 CONTINUE
+
+C     Final Statistics
+      SUM_VAL = 0.0D0
+      DO 90 I = 1, ROW_COUNT
+         DO 100 J = 1, COL_COUNT
+            SUM_VAL = SUM_VAL + DATA_MATRIX(I, J)
+  100    CONTINUE
+   90 CONTINUE
+      AVG_VAL = SUM_VAL / (REAL(ROW_COUNT) * REAL(COL_COUNT))
+      WRITE (*,*) 'GLOBAL AVERAGE:', AVG_VAL
+
+C     Termination
+      WRITE (*,*) 'DATA PROCESSING COMPLETE'
       STOP
-      END
-
-      SUBROUTINE READ_DATA(FILENAME, ARRAY, COUNT, MAX_LEN, STATUS)
-      CHARACTER*80 FILENAME
-      DOUBLE PRECISION ARRAY(*)
-      INTEGER COUNT, MAX_LEN, STATUS
-      INTEGER I
-      LOGICAL EOF_FLAG
-
-      STATUS = 0
-      COUNT = 0
-      EOF_FLAG = .FALSE.
-
-      OPEN(UNIT=20, FILE=FILENAME, STATUS='OLD', ERR=100)
-      DO WHILE (.NOT. EOF_FLAG)
-         READ(20, *, END=200) ARRAY(COUNT+1)
-         COUNT = COUNT + 1
-         IF (COUNT .GE. MAX_LEN) THEN
-            WRITE(*, '(A)') 'Warning: Maximum records reached'
-            GOTO 200
-         END IF
-      END DO
-      200 CONTINUE
-      CLOSE(20)
-      RETURN
-
-  100 CONTINUE
-      STATUS = -1
-      RETURN
-      END
-
-      SUBROUTINE FILTER_DATA(ARRAY, COUNT, THRESHOLD)
-      DOUBLE PRECISION ARRAY(*)
-      INTEGER COUNT, THRESHOLD
-      INTEGER I, NEW_COUNT
-      DOUBLE PRECISION VAL
-
-      NEW_COUNT = 0
-      DO I = 1, COUNT
-         VAL = ARRAY(I)
-         * Keep values that are not zero or within reasonable bounds
-         IF (VAL .NE. 0.0D0) THEN
-            NEW_COUNT = NEW_COUNT + 1
-            ARRAY(NEW_COUNT) = VAL
-         END IF
-      END DO
-      COUNT = NEW_COUNT
-      RETURN
-      END
-
-      SUBROUTINE CALCULATE_STATS(ARRAY, COUNT, MEAN, STD_DEV)
-      DOUBLE PRECISION ARRAY(*), MEAN, STD_DEV
-      INTEGER COUNT
-      INTEGER I
-      DOUBLE PRECISION SUM, SUM_SQ
-
-      IF (COUNT .LE. 0) THEN
-         MEAN = 0.0D0
-         STD_DEV = 0.0D0
-         RETURN
-      END IF
-
-      SUM = 0.0D0
-      SUM_SQ = 0.0D0
-      DO I = 1, COUNT
-         SUM = SUM + ARRAY(I)
-         SUM_SQ = SUM_SQ + (ARRAY(I) * ARRAY(I))
-      END DO
-
-      MEAN = SUM / COUNT
-      IF (COUNT .GT. 1) THEN
-         STD_DEV = DSQRT((SUM_SQ - COUNT * (MEAN * MEAN)) / (COUNT - 1))
-      ELSE
-         STD_DEV = 0.0D0
-      END IF
-      RETURN
-      END
-
-      SUBROUTINE NORMALIZE_DATA(ARRAY, COUNT, MEAN, STD_DEV)
-      DOUBLE PRECISION ARRAY(*), MEAN, STD_DEV
-      INTEGER COUNT
-      INTEGER I
-
-      IF (STD_DEV .EQ. 0.0D0) RETURN
-
-      DO I = 1, COUNT
-         ARRAY(I) = (ARRAY(I) - MEAN) / STD_DEV
-      END DO
-      RETURN
-      END
-
-      SUBROUTINE WRITE_DATA(FILENAME, ARRAY, COUNT)
-      CHARACTER*80 FILENAME
-      DOUBLE PRECISION ARRAY(*)
-      INTEGER COUNT
-      INTEGER I
-
-      OPEN(UNIT=30, FILE=FILENAME, STATUS='UNKNOWN')
-      DO I = 1, COUNT
-         WRITE(30, '(F12.6)') ARRAY(I)
-      END DO
-      CLOSE(30)
-      RETURN
       END

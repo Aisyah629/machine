@@ -769,3 +769,5 @@ MIT License
 - Created/Updated module: `mad_data_processor_tool` (See `mad_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `visual_fortran_data_processing_tool` (See `visual_fortran_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `arc_data_processing_utility_tool` (See `arc_data_processing_utility_tool/README.md` for details)

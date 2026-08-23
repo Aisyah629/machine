@@ -1,0 +1,36 @@
+/*
+ * CPL Data Processing Utility Tool
+ * 
+ * A utility for processing data lists and records in CPL.
+ * This demonstrates list manipulation and standard I/O in CPL.
+ */
+
+PROCEDURE PROCESS_DATA(INPUT_LIST);
+  BEGIN
+    /* Input validation */
+    IF LENGTH(INPUT_LIST) = 0 THEN
+      PRINT('Error: Input list is empty.')
+    ELSE
+      BEGIN
+        PROCESSED_SUM := 0;
+        PRINT('Processing ' || LENGTH(INPUT_LIST) || ' items...')
+        
+        /* Process each item in the list */
+        FOR I := 1 TO LENGTH(INPUT_LIST) DO
+          BEGIN
+            ITEM := INPUT_LIST(I);
+            /* Example logic: Sum numeric values */
+            IF TYPE(ITEM) = 'NUMBER' THEN
+              PROCESS_SUM := PROCESS_SUM + ITEM;
+          END;
+              
+        PRINT('Processing complete.')
+        PRINT('Total Sum: ' || PROCESS_SUM)
+      END
+  END PROCESS_DATA;
+
+/* Main Execution Block */
+BEGIN
+  SAMPLE_DATA := [10, 20, 30, 40, 50];
+  PROCESS_DATA(SAMPLE_DATA)
+END

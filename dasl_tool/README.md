@@ -1,14 +1,11 @@
 # DASL Tool
 
-A comprehensive database querying engine built with DASL (Database Abstract Schema Language).
-
-## Features
-
-- Advanced query parsing
-- Optimization
-- Execution
-- Error Handling
+A utility for data processing using the DASL programming language.
 
 ## Usage
 
-Run the tool using the DASL interpreter.
+To run the tool, execute the main.dasl file with a DASL interpreter.
+
+```bash
+dasl main.dasl
+```

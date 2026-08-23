@@ -1,31 +1,17 @@
-/* DASL Tool - Database Querying Engine */
+MODULE DataProcessor;
 
-DEFINE DATABASE QueryEngine
-    SCHEMA Customer (
-        ID INTEGER,
-        Name STRING,
-        Email STRING
-    )
+IMPORT IO;
 
-FUNCTION ParseQuery(query_string: STRING) QUERY:
-    RETURN PARSE(query_string)
-END FUNCTION
+PROCEDURE ProcessData(inputString: STRING): STRING;
+VAR
+  result: STRING;
+BEGIN
+  result := "Processed: " & inputString;
+  RETURN result;
+END ProcessData;
 
-FUNCTION OptimizeQuery(query: QUERY): QUERY:
-    LOG("Optimizing query...")
-    RETURN query
-END FUNCTION
-
-FUNCTION ExecuteQuery(query: QUERY): RESULT_SET:
-    LOG("Executing query...")
-    LET results := FETCH FROM Customer
-    RETURN results
-END FUNCTION
-
-MAIN PROGRAM:
-    LET q_string := "SELECT * FROM Customer WHERE ID > 10"
-    LET parsed_q := ParseQuery(q_string)
-    LET optimized_q := OptimizeQuery(parsed_q)
-    LET results := ExecuteQuery(optimized_q)
-    DISPLAY results
-END PROGRAM
+BEGIN
+  VAR input: STRING;
+  INPUT input;
+  OUTPUT ProcessData(input);
+END DataProcessor.

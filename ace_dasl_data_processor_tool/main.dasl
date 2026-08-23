@@ -1,0 +1,40 @@
+/*
+ * Ace DASL Data Processor Tool
+ * Language: Ace DASL (Database Access System Language)
+ * Purpose: Demonstrate dataset iteration and field processing
+ */
+
+BEGIN
+   /* Define Data Structure for Processing */
+   DEFINE
+      record_type
+         customer_id    INTEGER,
+         customer_name  CHAR(50),
+         transaction_id INTEGER,
+         amount         FLOAT,
+         status         CHAR(10)
+      END record_type
+   
+   /* Initialize Processing */
+   SET DATABASE 'sales_database.db'
+   SET TABLE 'transactions_table'
+   
+   /* Process Records */
+   SCAN RECORD
+      /* Filter Active Transactions */
+      IF status = 'A' THEN
+         PRINT 'Processing Transaction: ', transaction_id
+         PRINT 'Customer: ', customer_name
+         PRINT 'Amount: ', amount
+         
+         /* Example Calculation: Add tax */
+         LET tax_amount = amount * 0.08
+         PRINT 'Tax Amount: ', tax_amount
+         PRINT '---'
+      END IF
+   END SCAN
+
+   /* Output Summary */
+   PRINT 'Data processing complete.'
+
+END

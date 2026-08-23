@@ -853,3 +853,5 @@ MIT License
 - Created/Updated module: `clipper_data_processing_utility_tool` (See `clipper_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `mimic_data_processor_tool` (See `mimic_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `algol60_data_processing_utility_tool` (See `algol60_data_processing_utility_tool/README.md` for details)

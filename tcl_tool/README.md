@@ -1,18 +1,15 @@
-# Tcl Tool
+# TCL Tool
 
-A powerful Tcl-based automation and configuration management tool designed for dynamic text processing and system administration.
-
-## Features
-- Cross-platform compatibility (Windows, macOS, Linux)
-- Robust string manipulation and pattern matching
-- Integrated configuration file parsing and generation
-- Modular architecture for easy extension
-
-## Installation
-No external dependencies required. Tcl is typically pre-installed on most Unix-like systems and can be easily installed on Windows via ActiveTcl or other distributions.
+A data processing utility written in Tcl.
 
 ## Usage
-Run the main script using the Tcl interpreter:
-```bash
+
+Run the script using:
+
 tclsh main.tcl
-```
+
+## Features
+
+- Processes lists of data
+- Handles integers and strings
+- Case conversion support

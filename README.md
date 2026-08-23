@@ -785,3 +785,5 @@ MIT License
 - Created/Updated module: `lisp_data_processor_tool` (See `lisp_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `labview_data_processor_tool` (See `labview_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `./portable_data_processing_tool` (See `./portable_data_processing_tool/README.md` for details)

@@ -1,0 +1,44 @@
+@ PortablE Data Processing Utility
+@ This script demonstrates basic data processing capabilities in PortablE.
+
+@ Define a sample dataset (array of strings representing records)
+DECLARE dataset STRING(50) ARRAY(10);
+DECLARE output STRING(50) ARRAY(10);
+DECLARE i INTEGER;
+DECLARE processed_count INTEGER;
+
+@ Initialize the dataset with sample data
+SET dataset(1) = "John,Doe,25";
+SET dataset(2) = "Jane,Smith,30";
+SET dataset(3) = "Bob,Johnson,22";
+SET dataset(4) = "Alice,Williams,28";
+SET dataset(5) = "Charlie,Brown,35";
+
+@ Initialize counters
+SET i = 1;
+SET processed_count = 0;
+
+@ Process the data: Extract names and ages, format output
+WHILE i <= 5 DO
+    @ Extract name (first two fields) and age (third field)
+    @ Note: PortablE's string manipulation is limited, so we use basic substring operations if available
+    @ Assuming a helper function or built-in for splitting is not available, we simulate processing
+    @ by just copying the record and marking it as processed for demonstration
+    
+    @ In a real scenario, you would use string manipulation functions to parse the CSV-like data
+    SET output(i) = "Processed: " + dataset(i);
+    SET processed_count = processed_count + 1;
+    SET i = i + 1;
+END WHILE
+
+@ Output the results
+i = 1;
+WHILE i <= 5 DO
+    PRINT output(i);
+    SET i = i + 1;
+END WHILE
+
+@ Print summary
+PRINT "Total records processed: " + processed_count;
+
+END

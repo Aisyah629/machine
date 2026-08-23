@@ -789,3 +789,5 @@ MIT License
 - Created/Updated module: `./portable_data_processing_tool` (See `./portable_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `vhdl_hardware_simulation_tool` (See `vhdl_hardware_simulation_tool/README.md` for details)
+
+- Created/Updated module: `signal_data_processing_utility_tool` (See `signal_data_processing_utility_tool/README.md` for details)

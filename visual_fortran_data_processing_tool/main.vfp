@@ -1,0 +1,62 @@
+       PROGRAM VisualFortranDataProcessor
+       IMPLICIT NONE
+
+       INTEGER :: i, n, status
+       REAL, PARAMETER :: PI = 3.14159265358979323846d0
+       REAL, DIMENSION(100) :: data_in, data_out
+
+       WRITE (*, *) 'Visual Fortran Data Processing Utility'
+       WRITE (*, *) '------------------------------------------'
+
+       DO i = 1, 100
+          data_in(i) = REAL(i) * 1.5d0
+       END DO
+
+       CALL ProcessData(data_in, data_out, 100)
+
+       WRITE (*, *) 'Processed Data (first 10 elements):'
+       DO i = 1, 10
+          WRITE (*, '(A, I3, A, F10.4)') '  data[', i, '] = ', data_out(i)
+       END DO
+
+       CALL StatisticalSummary(data_out, 100)
+
+       STOP
+       END
+
+       SUBROUTINE ProcessData(input, output, n)
+       IMPLICIT NONE
+       INTEGER, INTENT(IN) :: n
+       REAL, DIMENSION(n), INTENT(IN) :: input
+       REAL, DIMENSION(n), INTENT(OUT) :: output
+       INTEGER :: i
+
+       DO i = 1, n
+          output(i) = input(i) * 2.5d0 - 10.0d0
+       END DO
+       END
+
+       SUBROUTINE StatisticalSummary(data, n)
+       IMPLICIT NONE
+       INTEGER, INTENT(IN) :: n
+       REAL, DIMENSION(n), INTENT(IN) :: data
+       REAL :: mean, var, stddev
+       INTEGER :: i
+       REAL :: sum, sum_sq
+
+       sum = 0.0d0
+       sum_sq = 0.0d0
+
+       DO i = 1, n
+          sum = sum + data(i)
+          sum_sq = sum_sq + (data(i) ** 2)
+       END DO
+
+       mean = sum / REAL(n)
+       var = (sum_sq / REAL(n)) - (mean ** 2)
+       stddev = SQRT(ABS(var))
+
+       WRITE (*, *) 'Statistical Summary:'
+       WRITE (*, '(A, F10.4)') '  Mean: ', mean
+       WRITE (*, '(A, F10.4)') '  Std Dev: ', stddev
+       END

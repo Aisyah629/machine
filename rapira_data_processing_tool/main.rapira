@@ -1,0 +1,64 @@
+/**
+ * Rapira Data Processing Main Module
+ * 
+ * This script demonstrates the data processing capabilities of the Rapira language.
+ * It includes functions for reading data, transforming it, and outputting the results.
+ */
+
+// Import necessary modules
+import io;
+import data;
+import transform;
+import output;
+
+/**
+ * Read data from a specified source.
+ * @param source_path Path to the data source
+ * @return The read data
+ */
+function read_data(source_path) {
+    var raw_data = io.read_file(source_path);
+    var parsed_data = data.parse_csv(raw_data);
+    return parsed_data;
+}
+
+/**
+ * Transform the data according to specified rules.
+ * @param input_data The data to transform
+ * @return The transformed data
+ */
+function transform_data(input_data) {
+    var filtered_data = input_data.filter(record => record.value > 10);
+    var sorted_data = filtered_data.sort_by(record => record.value);
+    return sorted_data;
+}
+
+/**
+ * Output the processed data.
+ * @param processed_data The data to output
+ * @param dest_path Path to the output destination
+ */
+function output_data(processed_data, dest_path) {
+    var formatted_data = transform.format_to_json(processed_data);
+    io.write_file(dest_path, formatted_data);
+}
+
+/**
+ * Main function to orchestrate the data processing pipeline.
+ */
+function main() {
+    var source_path = "input_data.csv";
+    var dest_path = "output_data.json";
+
+    try {
+        var raw_data = read_data(source_path);
+        var transformed_data = transform_data(raw_data);
+        output_data(transformed_data, dest_path);
+        print("Data processing completed successfully.");
+    } catch (e) {
+        print("Error during data processing: " + e.message);
+    }
+}
+
+// Execute the main function
+main();

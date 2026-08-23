@@ -821,3 +821,5 @@ MIT License
 - Created/Updated module: `telcomp_data_processor_tool` (See `telcomp_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `amiga_e_data_processing_tool` (See `amiga_e_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `rapira_data_processing_tool` (See `rapira_data_processing_tool/README.md` for details)

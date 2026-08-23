@@ -775,3 +775,5 @@ MIT License
 - Created/Updated module: `beta_data_processing_utility_tool` (See `beta_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `pl_c_data_processor_tool` (See `pl_c_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `nice_data_processing_tool` (See `nice_data_processing_tool/README.md` for details)

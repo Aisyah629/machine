@@ -1,0 +1,45 @@
+MAD PROGRAM DATA_PROCESSOR
+   ! Data Processor Tool in MAD
+   ! Reads numeric data, processes it, and prints results
+
+   DECLARE
+      DATA_FILE          EXTERNAL
+      OUTPUT_FILE        EXTERNAL
+      NUM_RECORDS        FIXED BIN
+      BUFFER             FIXED DEC(7)
+      INDEX              FIXED BIN
+      SUM_VALUE          FIXED DEC(7)
+      AVERAGE            FIXED DEC(7)
+
+   BEGIN
+      NUM_RECORDS = 0
+      SUM_VALUE = 0
+
+      ! Open input data
+      OPEN INPUT DATA_FILE UNIT 5
+      OPEN OUTPUT OUTPUT_FILE UNIT 6
+
+      LOOP WHILE NUM_RECORDS < 100 DO
+         READ DATA_FILE FROM INPUT BUFFER
+         IF END_OF_FILE THEN
+            EXIT LOOP
+         END IF
+
+         NUM_RECORDS = NUM_RECORDS + 1
+         SUM_VALUE = SUM_VALUE + BUFFER
+
+         ! Process data (e.g., normalize or transform)
+         BUFFER = BUFFER * 2
+
+         WRITE OUTPUT_FILE TO OUTPUT BUFFER
+      END LOOP
+
+      IF NUM_RECORDS > 0 THEN
+         AVERAGE = SUM_VALUE / NUM_RECORDS
+         WRITE OUTPUT_FILE TO OUTPUT 'AVERAGE: ' AVERAGE
+      END IF
+
+      CLOSE DATA_FILE
+      CLOSE OUTPUT_FILE
+   END
+END DATA_PROCESSOR

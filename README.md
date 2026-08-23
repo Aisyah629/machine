@@ -871,3 +871,5 @@ MIT License
 - Created/Updated module: `./csh_data_processor_tool` (See `./csh_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `kuka_data_processing_tool` (See `kuka_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `argus_data_processing_tool` (See `argus_data_processing_tool/README.md` for details)

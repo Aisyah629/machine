@@ -1,0 +1,41 @@
+BEGIN
+   COMMENT ALGOL 58 DATA PROCESSING UTILITY;
+   COMMENT This routine demonstrates a static data processing pipeline; 
+   COMMENT suitable for legacy batch processing systems.
+
+   ARRAY DataBuffer(1:10) OF REAL;
+   ARRAY ProcessedBuffer(1:10) OF REAL;
+   INTEGER Count, Index;
+   REAL Factor, Tolerance;
+
+   COMMENT Initialization of Processing Parameters; 
+   Factor = 2.5; 
+   Tolerance = 0.001;
+
+   COMMENT Mock Data Ingestion (Simulating Input Stream); 
+   DataBuffer(1) := 10.5;
+   DataBuffer(2) := 20.1;
+   DataBuffer(3) := 15.0;
+   DataBuffer(4) := 33.3;
+   DataBuffer(5) := 12.7;
+   DataBuffer(6) := 45.9;
+   DataBuffer(7) := 5.2;
+   DataBuffer(8) := 99.1;
+   DataBuffer(9) := 18.8;
+   DataBuffer(10) := 22.0;
+
+   COMMENT Data Processing Loop; 
+   Count := 1;
+   WHILE Count <= 10 DO
+   BEGIN
+      IF ABS(DataBuffer(Count)) > Tolerance THEN
+      BEGIN
+         ProcessedBuffer(Count) := DataBuffer(Count) * Factor + 1.5;
+         COMMENT Output Transformed Data; 
+         WRITE(DataBuffer(Count), ProcessedBuffer(Count))
+      END;
+      Count := Count + 1
+   END;
+
+   WRITE('Data Processing Batch Complete');
+END

@@ -1,0 +1,21 @@
+[VI Information]
+Name=Data_Transform
+Category=Data Processing
+SubCategory=Transform
+Description=Applies mathematical operations to data arrays.
+
+[Front Panel]
+[Data Type: 2D Array]
+[Widget: Enum "Operation"]
+[Widget: Numeric "Multiplier"]
+[Widget: Array "Transformed Data"]
+[Widget: String "Error Cluster"]
+
+[Block Diagram]
+[Control: "Operation" -> Case Structure
+    [Case: "Scale" -> "Multiply Array.vi" (with "Multiplier") -> "Transformed Data"]
+    [Case: "Normalize" -> "Normalize Array.vi" -> "Transformed Data"]
+    [Default -> Error: "Invalid operation"]
+]
+[Control: "Error Cluster" -> Error In (Case Structure)]
+[Control: "Transformed Data" -> Output]

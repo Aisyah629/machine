@@ -1,0 +1,21 @@
+[VI Information]
+Name=Data_Ingestion
+Category=Data Processing
+SubCategory=Ingestion
+Description=Reads data from CSV or JSON files into an array.
+
+[Front Panel]
+[Data Type: 2D Array]
+[Widget: Button "Read File"]
+[Widget: String "File Path"]
+[Widget: String "Error Cluster"]
+[Widget: Array "Read Data"]
+
+[Block Diagram]
+[Control: "File Path" -> Case Structure (Select)
+    [Case: "csv" -> "Read CSV.vi" -> "Read Data"]
+    [Case: "json" -> "Read JSON.vi" -> "Read Data"]
+    [Default -> Error: "Unsupported format"]
+]
+[Control: "Error Cluster" -> Error In (Case Structure)]
+[Control: "Read Data" -> Output]

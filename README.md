@@ -857,3 +857,5 @@ MIT License
 - Created/Updated module: `algol60_data_processing_utility_tool` (See `algol60_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `mortran_data_processing_utility_tool` (See `mortran_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `nial_data_processor_tool` (See `nial_data_processor_tool/README.md` for details)

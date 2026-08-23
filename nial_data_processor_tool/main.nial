@@ -1,0 +1,27 @@
+/ Nial Data Processor Tool
+/ main.nial
+
+/ Define sample data
+MYDATA : [1 2 3; 4 5 6; 7 8 9]
+
+/ Filter function to select odd numbers
+filter_odd : WHERE {x IN MYDATA | x MOD 2 NE 0}
+
+/ Transform function to square elements
+transform_square : {x*x IN MYDATA}
+
+/ Aggregate function to compute sum
+aggregate_sum : SUM {x IN MYDATA}
+
+/ Main execution
+OUTPUT "Original Data:" 
+OUTPUT MYDATA
+
+OUTPUT "Filtered Odds:" 
+OUTPUT filter_odd
+
+OUTPUT "Squared Values:" 
+OUTPUT transform_square
+
+OUTPUT "Sum of All Elements:" 
+OUTPUT aggregate_sum

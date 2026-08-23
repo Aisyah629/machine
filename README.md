@@ -845,3 +845,5 @@ MIT License
 - Created/Updated module: `txl_data_processor_tool` (See `txl_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `k_data_processing_utility_tool` (See `k_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `./agda_data_processing_engine_tool` (See `./agda_data_processing_engine_tool/README.md` for details)

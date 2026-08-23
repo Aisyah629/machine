@@ -1,0 +1,14 @@
+C     DATA_PROCESSOR_PROGRAM
+C     PROCESSING_MODE   EQU   01
+C     RECORD_LENGTH     EQU   80
+C     OUTPUT_FILE       EQU   'OUTPUT.DAT'
+
+C                   BEGIN
+C                   IF      PROCESSING_MODE = 01
+C                             READ    INPUT_FILE, RECORD
+C                             IF      IO_STATUS = 0
+C                                       TRANSFORM   DATA
+C                                       WRITE       OUTPUT_FILE
+C                             ENDIF
+C                   ENDIF
+C                   STOP

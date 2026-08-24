@@ -885,3 +885,5 @@ MIT License
 - Created/Updated module: `factor_data_processing_tool` (See `factor_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `xmos_arch_data_processor_tool` (See `xmos_arch_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `exec2_data_processor_tool` (See `exec2_data_processor_tool/README.md` for details)

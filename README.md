@@ -935,3 +935,5 @@ MIT License
 - Created/Updated module: `datalog_data_processing_engine_tool` (See `datalog_data_processing_engine_tool/README.md` for details)
 
 - Created/Updated module: `tie_data_processing_utility_tool` (See `tie_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `hypertalk_data_processing_tool` (See `hypertalk_data_processing_tool/README.md` for details)

@@ -1,0 +1,45 @@
+on processData inputLine
+  -- Initialize variables
+  local resultString
+  local wordCount
+  
+  -- Remove leading/trailing whitespace
+  put strip(inputLine) into resultString
+  
+  -- Count words
+  put numwords(resultString) into wordCount
+  
+  -- Convert to uppercase for standardized processing
+  put uppercase(resultString) into resultString
+  
+  -- Return processed data
+  return resultString & ":" & wordCount
+end processData
+
+on startProcessing
+  -- Open the data file
+  put open file "data_input.txt" into fileHandle
+  
+  -- Check if file opened successfully
+  if fileHandle is not empty then
+    -- Loop through lines
+    repeat with i = 1 to 100 -- Max lines limit
+      get line i of file "data_input.txt"
+      if it is empty then exit repeat
+      
+      -- Process each line
+      put processData(it) into processedLine
+      
+      -- Output results
+      output processedLine
+    end repeat
+    
+    -- Close the file
+    close file "data_input.txt"
+  else
+    answer "Error: Could not open data_input.txt"
+  end if
+end startProcessing
+
+-- Main execution
+startProcessing

@@ -889,3 +889,5 @@ MIT License
 - Created/Updated module: `exec2_data_processor_tool` (See `exec2_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `inform_data_processor_tool` (See `inform_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `delphi_data_processing_tool` (See `delphi_data_processing_tool/README.md` for details)

@@ -933,3 +933,5 @@ MIT License
 - Created/Updated module: `e_data_processing_utility_tool` (See `e_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `datalog_data_processing_engine_tool` (See `datalog_data_processing_engine_tool/README.md` for details)
+
+- Created/Updated module: `tie_data_processing_utility_tool` (See `tie_data_processing_utility_tool/README.md` for details)

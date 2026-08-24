@@ -927,3 +927,5 @@ MIT License
 - Created/Updated module: `aimms_new_data_processor_tool` (See `aimms_new_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `lc3_data_processor_tool` (See `lc3_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `mark_iv_data_processing_tool` (See `mark_iv_data_processing_tool/README.md` for details)

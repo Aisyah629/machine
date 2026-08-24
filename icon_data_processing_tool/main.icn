@@ -1,0 +1,89 @@
+procedure main(args)
+    local data, result
+    
+    write("Icon Data Processing Utility")
+    write("============================")
+    write("Usage: icon_data_processing_tool/main.icn [input_file] [options]")
+    write("")
+    write("Options:")
+    write("  --sort    Sort the data")
+    write("  --filter  Filter out empty lines")
+    write("  --count   Count total lines")
+    write("  --reverse Reverse the order of lines")
+    write("")
+    
+    if ~*args then {
+        data := getLine()
+    } else {
+        data := getFile(args[1])
+    }
+    
+    if data then {
+        result := process(data, args)
+        write(result)
+    } else {
+        write("Error: Could not read input.")
+    }
+    
+    return 0
+end
+
+procedure process(data, args)
+    local lines, i, result, sorted, filtered, reversed
+    
+    sorted := 0
+    filtered := 0
+    reversed := 0
+    count := 0
+    
+    lines := list()
+    while line := data() do {
+        line := strip(line)
+        if line then {
+            put(lines, line)
+            count +:= 1
+        }
+    }
+    close(data)
+    
+    if args[1] = "--sort" then sorted := 1
+    if args[1] = "--filter" then filtered := 1
+    if args[1] = "--reverse" then reversed := 1
+    if args[1] = "--count" then return "Total lines: " || count
+    
+    if sorted then
+        lines := sortLines(lines)
+    if reversed then
+        lines := reverseLines(lines)
+        
+    result := ""
+    for i := 1 to *lines do
+        result ||:= lines[i] || "\n"
+        
+    return result
+end
+
+procedure sortLines(lines)
+    local i, j, temp
+    for i := 1 to *lines do {
+        for j := i + 1 to *lines do {
+            if lines[i] > lines[j] then {
+                temp := lines[i]
+                lines[i] := lines[j]
+                lines[j] := temp
+            }
+        }
+    }
+    return lines
+end
+
+procedure reverseLines(lines)
+    local i, j, temp
+    for i := 1 to *lines / 2 do {
+        j := *lines - i + 1
+        temp := lines[i]
+        lines[i] := lines[j]
+        lines[j] := temp
+    }
+    return lines
+end

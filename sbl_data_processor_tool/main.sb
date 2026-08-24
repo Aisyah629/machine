@@ -1,0 +1,206 @@
+'' SBL Data Processor Tool
+'' Author: Autonomous AI Polyglot Software Engineer
+'' Description: A utility for parsing, transforming, and validating data in SmallBASIC.
+
+' Configuration
+' File paths for input and output
+inputFile$ = "input_data.txt"
+outputFile$ = "output_data.csv"
+logFile$ = "processing.log"
+
+' In-memory data storage
+' We use a dynamic array of structures (simulated with parallel arrays or a simple list of strings)
+' For this basic implementation, we will process line-by-line and transform key-value pairs.
+' Format: key=value or JSON-like {key: value}
+
+sub Main()
+    print "Initializing SBL Data Processor Tool..."
+    log "Processing started."
+    
+    dim rawData$(1000)
+    dim processedData$(1000)
+    dim headers$(100)
+    lineCount = 0
+    validCount = 0
+    errorCount = 0
+    
+    ' 1. Ingest Data
+    if fileExists(inputFile$) then
+        open inputFile$ for input as #1
+        lineCount = 0
+        while not eof(1)
+            lineCount++
+            line$(lineCount) = trim$(input$(1))
+        wend
+        close #1
+        print "Read " + str$(lineCount) + " lines from " + inputFile$
+    else
+        print "Input file not found. Generating sample data..."
+        generateSampleData()
+        open inputFile$ for input as #1
+        lineCount = 0
+        while not eof(1)
+            lineCount++
+            line$(lineCount) = trim$(input$(1))
+        wend
+        close #1
+    endif
+    
+    ' 2. Process Data
+    ' Assume format: Name,Age,City
+    ' Header handling
+    if lineCount > 0 then
+        headerLine$ = line$(1)
+        parseHeader(headerLine$, headers$())
+        print "Headers detected: " + str$(countHeaders(headers$()))
+        
+        startRow = 2
+    else
+        print "No data found."
+        return
+    endif
+    
+    ' Process each record
+    for i = startRow to lineCount
+        currentLine$ = line$(i)
+        result$ = transformRecord(currentLine$)
+        
+        if result$ <> "" then
+            validCount++
+            processedData$(validCount) = result$
+        else
+            errorCount++
+            log "Error parsing line " + str$(i) + ": " + currentLine$
+        endif
+    next i
+    
+    ' 3. Output Data
+    if validCount > 0 then
+        open outputFile$ for output as #2
+        ' Write transformed header
+        print #2, "ProcessedName,Status,AgeNorm"
+        for j = 1 to validCount
+            print #2, processedData$(j)
+        next j
+        close #2
+        print "Successfully wrote " + str$(validCount) + " records to " + outputFile$
+    else
+        print "No valid records to output."
+    endif
+    
+    log "Processing finished. Valid: " + str$(validCount) + ", Errors: " + str$(errorCount)
+    print "Done."
+end sub
+
+sub parseHeader(headerLine$, headers$())
+    dim tokens$()
+    n = splitString(headerLine$, tokens$(), ",")
+    for i = 0 to n-1
+        headers$(i+1) = trim$(tokens$(i))
+    next i
+end sub
+
+function countHeaders(headers$())
+    count = 0
+    for i = 1 to 100
+        if headers$(i) <> "" then count++
+        else exit for
+        endif
+    next i
+    countHeaders = count
+end function
+
+function splitString(str$, arr$(), delimiter$)
+    ' Simple split implementation for SBL
+    dim temp$()
+    idx = 1
+    start = 1
+    len = len(str$)
+    delimLen = len(delimiter$)
+    count = 0
+    
+    while start <= len
+        pos = instr(start, str$, delimiter$)
+        if pos > 0 then
+            val$ = mid$(str$, start, pos - start)
+            count++
+            arr$(count) = val$
+            start = pos + delimLen
+        else
+            val$ = mid$(str$, start)
+            count++
+            arr$(count) = val$
+            start = len + 1
+        endif
+    wend
+    splitString = count
+end function
+
+function transformRecord(line$)
+    ' Parse CSV-like line
+    dim fields$()
+    n = splitString(line$, fields$(), ",")
+    
+    if n < 3 then
+        transformRecord = ""
+        exit function
+    endif
+    
+    name$ = trim$(fields$(1))
+    age$ = trim$(fields$(2))
+    city$ = trim$(fields$(3))
+    
+    ' Validation
+    if name$ = "" or age$ = "" then
+        transformRecord = ""
+        exit function
+    endif
+    
+    ' Transformation: Normalize Age and Format Name
+    if isNumeric(age$) then
+        ageVal = val(age$)
+        if ageVal >= 18 then status$ = "Adult"
+        else status$ = "Minor"
+        endif
+        ageNorm$ = str$(ageVal * 2) ' Dummy normalization
+    else
+        status$ = "Unknown Age"
+        ageNorm$ = "0"
+    endif
+    
+    name$ = upper$(name$) ' Transform
+    
+    transformRecord = name$ + "," + status$ + "," + ageNorm$
+end function
+
+sub generateSampleData()
+    open inputFile$ for output as #1
+    print #1, "Name,Age,City"
+    print #1, "Alice,30,New York"
+    print #1, "Bob,17,Los Angeles"
+    print #1, "Charlie,25,Chicago"
+    print #1, "Diana,40,Houston"
+    print #1, "Eve,16,Phoenix"
+    close #1
+end sub
+
+sub log(msg$)
+    open logFile$ for append as #3
+    print #3, date$() + " " + time$() + " - " + msg$
+    close #3
+end sub
+
+sub fileExists(filename$)
+    ' SmallBASIC does not have a direct fileExists, check by opening
+    on error goto FileNotExist
+    open filename$ for input as #99
+    close #99
+    fileExists = 1
+    on error goto 0
+    exit sub
+FileNotExist:
+    on error goto 0
+    fileExists = 0
+end sub
+
+Main()

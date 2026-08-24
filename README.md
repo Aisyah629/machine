@@ -909,3 +909,5 @@ MIT License
 - Created/Updated module: `icon_data_processing_tool` (See `icon_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `easy_pli_data_processor_tool` (See `easy_pli_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `newp_data_processing_tool` (See `newp_data_processing_tool/README.md` for details)

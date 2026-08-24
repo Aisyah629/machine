@@ -1,18 +1,20 @@
 # X++ Data Processing Tool
 
-## Overview
-This tool provides a robust framework for data processing operations using the X++ programming language.
-It is designed to handle data ingestion, transformation, and validation within a modular architecture.
+This tool provides a comprehensive suite of data processing utilities built within the Microsoft Dynamics AX (X++) ecosystem.
 
 ## Features
-- Data Ingestion: Handles input streams from various sources.
-- Transformation: Applies custom logic to modify data structures.
-- Validation: Ensures data integrity through predefined rules.
+
+- **Data Ingestion**: Efficiently reads data from various sources (tables, files, APIs).
+- **Data Transformation**: Applies business logic rules, formats, and transformations.
+- **Data Validation**: Ensures data integrity and compliance with business rules.
+- **Batch Processing**: Optimized for large datasets common in enterprise environments.
+
+## Installation
+
+1. Place the source files into your Dynamics AX project structure.
+2. Compile the AOT (Application Object Tree).
+3. Run the job or class as required.
 
 ## Usage
-1. Clone the repository.
-2. Compile the `main.xpp` file using the standard X++ compiler.
-3. Execute the program with the desired configuration.
 
-## License
-MIT License
+Refer to the `main.xpp` file for implementation details and example usage.

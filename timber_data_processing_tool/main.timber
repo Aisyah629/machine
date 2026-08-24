@@ -1,0 +1,59 @@
+// Timber Data Processing Main Script
+// Language: Timber
+
+import timber_engine;
+
+// Define a data record structure
+type Record {
+    id: int;
+    name: string;
+    value: float;
+    category: string;
+}
+
+// Main processing function
+function process_data(input_stream: string) -> list<Record> {
+    let records: list<Record> = [];
+    let lines = split(input_stream, "\n");
+
+    for line in lines {
+        if length(line) > 0 {
+            let fields = split(line, ",");
+            if length(fields) == 4 {
+                let new_record = Record {
+                    id = parse_int(fields[0]),
+                    name = trim(fields[1]),
+                    value = parse_float(fields[2]),
+                    category = trim(fields[3])
+                };
+                append(records, new_record);
+            }
+        }
+    }
+    return records;
+}
+
+// Utility to clean data
+function clean_data(records: list<Record>) -> list<Record> {
+    let cleaned: list<Record> = [];
+    for rec in records {
+        if rec.name != "" && rec.value >= 0 {
+            append(cleaned, rec);
+        }
+    }
+    return cleaned;
+}
+
+// Entry point
+function main() {
+    let sample_data = "1, Alice, 100.5, A\n2, Bob, -5.0, B\n3, Charlie, 200.0, A";
+    let raw_records = process_data(sample_data);
+    let valid_records = clean_data(raw_records);
+    
+    print("Processed Records:");
+    for rec in valid_records {
+        print(format("ID: %d, Name: %s, Value: %f, Category: %s", rec.id, rec.name, rec.value, rec.category));
+    }
+}
+
+main();

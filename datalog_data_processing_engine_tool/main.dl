@@ -1,0 +1,31 @@
+% Datalog Data Processing Engine
+% Supports rule-based transformation and validation
+
+% --- Schema Definitions ---
+% fact(Name, Value)
+% rule(Name, Input, Output)
+% output(Name, Value)
+
+% --- Sample Input Facts (Replace with actual data loading)
+% fact("record_1", "100")
+% fact("record_2", "200")
+% fact("record_3", "not_a_number")
+
+% --- Processing Rules ---
+
+% Rule 1: Validate that value is numeric
+numeric_val(X) :- fact(_, X), number(X).
+non_numeric_val(X) :- fact(_, X), !numeric_val(X).
+
+% Rule 2: Transform valid numbers (e.g., double them)
+doubled(X, Y) :- numeric_val(X), Y is X * 2.
+
+% Rule 3: Mark invalid records
+invalid_record(Name, Val) :- fact(Name, Val), !numeric_val(Val).
+
+% --- Output Collection ---
+
+output("valid", Y) :- doubled(_, Y).
+output("invalid", Val) :- invalid_record(_, Val).
+
+% --- End of Datalog Program ---

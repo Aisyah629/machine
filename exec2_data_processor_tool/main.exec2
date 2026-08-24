@@ -1,0 +1,42 @@
+/ EXEC 2 DATA PROCESSOR UTILITY / 
+/ Language: EXEC 2 (Executive System 2) /
+/ Purpose: General-purpose data extraction, cleaning, and transformation. /
+
+/ Configuration /
+SET INPUT_FILE = "DATA.IN"
+SET OUTPUT_FILE = "RESULT.OUT"
+SET BUFFER_SIZE = 1024
+
+/ Main Processing Loop /
+OPEN INPUT_FILE FOR READING AS UNIT 1
+OPEN OUTPUT_FILE FOR WRITING AS UNIT 2
+
+/ Check if file exists and is valid /
+IF UNIT 1 STATUS = OK THEN
+  LOOP
+    / Read a record from input /
+    READ UNIT 1 INTO BUFFER
+    IF UNIT 1 STATUS = EOF THEN EXIT LOOP END IF
+
+    / Basic Validation /
+    IF BUFFER LENGTH > 0 THEN
+      / Data Cleaning: Remove trailing spaces and convert to uppercase /
+      CLEAN_BUFFER = TRIM_RIGHT(BUFFER)
+      PROCESSED_DATA = UPPER_CASE(CLEAN_BUFFER)
+
+      / Data Transformation Example: Filter lines containing 'ERROR' /
+      IF INSTR(PROCESSED_DATA, "ERROR") = 0 THEN
+        WRITE UNIT 2 FROM PROCESSED_DATA
+      END IF
+    END IF
+  END LOOP
+
+  / Close files /
+  CLOSE UNIT 1
+  CLOSE UNIT 2
+  PRINT "Processing complete. Records written to " OUTPUT_FILE
+ELSE
+  PRINT "Error: Input file not found or access denied."
+END IF
+
+/ End of Program /

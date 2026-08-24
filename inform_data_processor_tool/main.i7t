@@ -1,0 +1,110 @@
+Inform 7 Release 6M62; 
+
+The "Data Processor Engine" is a number game.
+
+Rule for supplying a help message when asking for help:
+    say "Data Processor Engine v1.0\n";
+    say "Usage: LOAD [filename] | PROCESS | EXPORT | CLEAR\n";
+
+To decide which text is the filename from the command:
+    if the command text begins with the word "load":
+        if the command text contains the character " ":
+            decide on the text from the second word to the end of the command text;
+    decide on "".
+
+Section - Data Structures
+
+A data record is a kind of value. 
+    The data records are blank.
+
+A data field is a kind of value. 
+    The data fields are blank.
+
+A processing rule is a kind of value. 
+    The processing rules are blank.
+
+The current record is a text variable. The current record is "".
+The processed output is a text variable. The processed output is "".
+The input buffer is a text variable. The input buffer is "".
+
+Section - Input Processing
+
+Every turn when input arrives:
+    let command be the player's command;
+    if the command is empty, continue the action;
+    let filename be the filename from the command;
+    if filename is not "":
+        say "[entry bold type]Loading configuration from [filename]...[roman type]";
+        wait for a key;
+        say "[entry bold type]Data structures initialized.[roman type]";
+        wait for a key;
+        continue the action;
+    if the command is "process":
+        run processing rules;
+        continue the action;
+    if the command is "export":
+        export data;
+        continue the action;
+    if the command is "clear":
+        clear storage;
+        continue the action;
+    if the command is "quit" or "exit":
+        stop the game suddenly;
+
+Section - Data Processing Rules
+
+To run processing rules:
+    say "[entry bold type]Initiating data processing sequence...[roman type]";
+    wait for a key;
+    
+    say "[entry bold type]Phase 1: Parsing Input Buffer...[roman type]";
+    wait for a key;
+    let word count be the number of words in the input buffer;
+    say "  - Found [word count] tokens.";
+    wait for a key;
+
+    say "[entry bold type]Phase 2: Validating Fields...[roman type]";
+    wait for a key;
+    if the input buffer contains the character "@":
+        say "  - Alert: Special character detected. Escaping.";
+    else:
+        say "  - All fields standard.";
+    wait for a key;
+
+    say "[entry bold type]Phase 3: Transformation...[roman type]";
+    wait for a key;
+    replace the character "@" with "AT" in the input buffer;
+    replace the character "&" with "AND" in the input buffer;
+    replace the character "#" with "HASH" in the input buffer;
+    say "  - Transformation complete.";
+    wait for a key;
+
+    say "[entry bold type]Processing Complete.[roman type]";
+    wait for a key;
+
+Section - Export & Storage
+
+To export data:
+    say "[entry bold type]Exporting final data stream...[roman type]";
+    say "";
+    say "[entry bold type]OUTPUT START[roman type]";
+    say input buffer;
+    say "";
+    say "[entry bold type]OUTPUT END[roman type]";
+    wait for a key;
+
+To clear storage:
+    say "[entry bold type]Clearing all data buffers...[roman type]";
+    wait for a key;
+    now the input buffer is "";
+    now the processed output is "";
+    say "[entry bold type]Storage cleared.[roman type]";
+    wait for a key;
+
+Section - Initialization
+
+When play begins:
+    say "[entry bold type]Data Processor Engine Ready.[roman type]";
+    say "[entry italic type]Type 'help' for usage instructions.[roman type]";
+    say "";
+    wait for a key;

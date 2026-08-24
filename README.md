@@ -887,3 +887,5 @@ MIT License
 - Created/Updated module: `xmos_arch_data_processor_tool` (See `xmos_arch_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `exec2_data_processor_tool` (See `exec2_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `inform_data_processor_tool` (See `inform_data_processor_tool/README.md` for details)

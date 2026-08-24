@@ -1,0 +1,109 @@
+import std.io;
+import std.list;
+import std.string;
+
+// Define custom types for data processing
+struct Record {
+    id: int;
+    name: string;
+    value: float;
+    category: string;
+}
+
+struct ProcessingStats {
+    totalRecords: int;
+    processedRecords: int;
+    errorCount: int;
+}
+
+// Transformation function: Filter records based on a minimum value threshold
+function filterByValue(records: list(Record), threshold: float): list(Record) {
+    let result = list.create(Record);
+    for each record in records {
+        if record.value >= threshold {
+            list.push(result, record);
+        }
+    }
+    return result;
+}
+
+// Transformation function: Map record values to their squares
+function transformValues(records: list(Record)): list(Record) {
+    let result = list.create(Record);
+    for each record in records {
+        let newRecord: Record = record;
+        newRecord.value = record.value * record.value;
+        list.push(result, newRecord);
+    }
+    return result;
+}
+
+// Aggregation function: Calculate the average value of a category
+function aggregateByCategory(records: list(Record)): list(string) {
+    let categories = map.create(string, list(Record));
+    
+    for each record in records {
+        let existingList = map.get(categories, record.category);
+        if existingList == null {
+            existingList = list.create(Record);
+        }
+        list.push(existingList, record);
+        map.put(categories, record.category, existingList);
+    }
+
+    let results = list.create(string);
+    for each (category, recordsList) in map.entries(categories) {
+        let sum = 0.0;
+        let count = 0;
+        for each rec in recordsList {
+            sum += rec.value;
+            count += 1;
+        }
+        if count > 0 {
+            let avg = sum / count;
+            let summary = string.format("Category: %s, Avg Value: %.2f", category, avg);
+            list.push(results, summary);
+        }
+    }
+    return results;
+}
+
+// Main execution flow
+function main(): int {
+    io.println("Starting JEAN Data Processing Utility...");
+
+    // Sample Data Initialization
+    let sampleRecords = list.create(Record);
+    
+    let r1: Record = {id: 1, name: "Alpha", value: 10.5, category: "A"};
+    let r2: Record = {id: 2, name: "Beta", value: 20.3, category: "B"};
+    let r3: Record = {id: 3, name: "Gamma", value: 5.1, category: "A"};
+    let r4: Record = {id: 4, name: "Delta", value: 30.0, category: "B"};
+    let r5: Record = {id: 5, name: "Epsilon", value: 15.2, category: "A"};
+
+    list.push(sampleRecords, r1);
+    list.push(sampleRecords, r2);
+    list.push(sampleRecords, r3);
+    list.push(sampleRecords, r4);
+    list.push(sampleRecords, r5);
+
+    io.println("Loaded " + string.format("%d", list.size(sampleRecords)) + " records.");
+
+    // Step 1: Filter
+    let filteredRecords = filterByValue(sampleRecords, 10.0);
+    io.println("Filtered records (value >= 10.0): " + string.format("%d", list.size(filteredRecords)));
+
+    // Step 2: Transform
+    let transformedRecords = transformValues(filteredRecords);
+    io.println("Transformed values (squared). First record value: " + string.format("%.2f", transformedRecords[0].value));
+
+    // Step 3: Aggregate
+    let aggregatedResults = aggregateByCategory(filteredRecords);
+    io.println("Aggregation Results:");
+    for each result in aggregatedResults {
+        io.println("  " + result);
+    }
+
+    io.println("Processing complete.");
+    return 0;
+}

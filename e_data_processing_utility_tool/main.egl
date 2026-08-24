@@ -1,0 +1,50 @@
+namespace dataProcessing
+
+import java.util.Arrays
+import java.util.List
+import java.util.ArrayList
+
+/*
+ * E Data Processing Utility Tool
+ * 
+ * This utility provides core functions for parsing, cleaning, and transforming
+data structures using E's concurrency primitives and event-driven model.
+ */
+
+class DataProcessor {
+    
+    method processData(input : List : Any) : List : Any {
+        def cleaned := this.cleanData(input)
+        def processed := this.transformData(cleaned)
+        return processed
+    }
+
+    method cleanData(input : List : Any) : List : Any {
+        def filtered := []
+        for item in input {
+            if item != null {
+                filtered.add(item)
+            }
+        }
+        return filtered
+    }
+
+    method transformData(input : List : Any) : List : Any {
+        def transformed := []
+        for item in input {
+            transformed.add(item.toString().toUpperCase())
+        }
+        return transformed
+    }
+}
+
+/*
+ * Main execution entry point
+ */
+
+var processor := DataProcessor.new()
+var testData := ["hello", "world", null, "data", "processing"]
+
+def result := processor.processData(testData)
+
+System.println("Processed Data: " + result)

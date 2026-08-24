@@ -929,3 +929,5 @@ MIT License
 - Created/Updated module: `lc3_data_processor_tool` (See `lc3_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `mark_iv_data_processing_tool` (See `mark_iv_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `e_data_processing_utility_tool` (See `e_data_processing_utility_tool/README.md` for details)

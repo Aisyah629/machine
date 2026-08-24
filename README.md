@@ -895,3 +895,5 @@ MIT License
 - Created/Updated module: `high_perf_memory_manager_tool` (See `high_perf_memory_manager_tool/README.md` for details)
 
 - Created/Updated module: `autolisp_data_processor_tool` (See `autolisp_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `./hamilton_c_data_processing_tool` (See `./hamilton_c_data_processing_tool/README.md` for details)

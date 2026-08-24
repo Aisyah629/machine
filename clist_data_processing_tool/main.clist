@@ -1,41 +1,51 @@
-/* CLIST - Data Processing Utility */
+/* CLIST Data Processing Tool */
+/* Process data records and output formatted results */
 
-/* Declare variables */
-%DECLARE INDS CHAR(44) /* Input Dataset Name */
-%DECLARE OUTDS CHAR(44) /* Output Dataset Name */
-%DECLARE RECORDS NUMERIC /* Record Count */
-%DECLARE PROCESSED NUMERIC /* Processed Record Count */
+OPTIONS RESTARTS
 
-/* Set defaults */
-%IF &INDS = '' THEN %DO
-  %DISPLAY 'Error: Input Dataset Name is required'
-  %EXIT 8
-%END
+/* Initialize variables */
+PARSE VAR &ARG1 DATA_FILE_NAME
+PARSE VAR &ARG2 OUTPUT_FILE_NAME
 
-%IF &OUTDS = '' THEN %DO
-  %DISPLAY 'Error: Output Dataset Name is required'
-  %EXIT 8
-%END
+IF &DATA_FILE_NAME EQ '' THEN DO
+  SAY 'ERROR: DATA FILE NAME REQUIRED'
+  SAY 'USAGE: CLIST_DATA_PROC <INPUT_FILE> [OUTPUT_FILE]'
+  EXIT 1
+END
 
-/* Display header */
-%DISPLAY '=========================================='
-%DISPLAY '   CLIST DATA PROCESSING TOOL'
-%DISPLAY '=========================================='
-%DISPLAY 'Input Dataset : &INDS'
-%DISPLAY 'Output Dataset: &OUTDS'
-%DISPLAY '=========================================='
+/* Check if input file exists */
+ALLOC FI(INPUT) DA(&DATA_FILE_NAME) SHR
+IF RC NE 0 THEN DO
+  SAY 'ERROR: CANNOT OPEN INPUT FILE &DATA_FILE_NAME'
+  EXIT 1
+END
 
-/* Simulate data processing */
-/* In a real scenario, this would interact with ISPF Edit Macros or TSO commands */
-%DISPLAY 'Loading data from &INDS...'
-%DO WHILE &RECORDS < 100 /* Simulated loop */
-  %CALC PROCESSED = &RECORDS + 1
-  /* Simulate transformation logic */
-%END
+IF &OUTPUT_FILE_NAME NE '' THEN DO
+  FREE FI(OUTPUT)
+  ALLOC FI(OUTPUT) DA(&OUTPUT_FILE_NAME) NEW
+  IF RC NE 0 THEN DO
+    SAY 'ERROR: CANNOT CREATE OUTPUT FILE &OUTPUT_FILE_NAME'
+    FREE FI(INPUT)
+    EXIT 1
+  END
+END ELSE DO
+  /* Default output to SYSOUT if not specified */
+  ALLOC FI(OUTPUT) SYSOUT
+END
 
-%DISPLAY 'Processing complete.'
-%DISPLAY 'Records processed: &RECORDS'
-%DISPLAY '=========================================='
+/* Process records */
+DO WHILE RC EQ 0
+  GET FILE(INPUT) INTO(RECORD)
+  IF RC EQ 0 THEN DO
+    /* Perform data processing logic here */
+    /* Example: Extract first 80 characters and convert to upper case */
+    PROCESSED = TRANSLATE(SUBSTR(RECORD, 1, 80))
+    SAY PROCESSED
+    PUT FILE(OUTPUT) DATA(PROCESSED)
+  END
+END
 
-/* Exit with success */
-%EXIT 0
+FREE FI(INPUT)
+IF &OUTPUT_FILE_NAME NE '' THEN FREE FI(OUTPUT)
+
+EXIT 0

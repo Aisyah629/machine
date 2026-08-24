@@ -1,0 +1,75 @@
+* GPSS Data Processing Utility Tool
+* Simulates a data processing pipeline with ingestion, processing, and storage phases.
+
+* Define Constants
+PARAMETER NUM_RECORDS, 1000
+PARAMETER BUFFER_SIZE, 50
+PARAMETER PROCESS_TIME_MIN, 0.005
+PARAMETER PROCESS_TIME_MAX, 0.020
+
+* Define Transmitters/Receivers
+DEFINE INGEST_TRANSMITTER, TRANSMITTER
+DEFINE PROCESS_TRANSMITTER, TRANSMITTER
+DEFINE STORAGE_RECEIVER, RECEIVER
+
+* Define Resources
+DEFINE DATA_BUFFER, STORAGE, BUFFER_SIZE
+DEFINE CPU, RESOURCE, 1
+
+* Simulation Start
+START NUM_RECORDS
+
+* Phase 1: Data Ingestion
+LOOP START LOOP1 NUM_RECORDS
+   GENERATE 0.01, 0.005, 0.005
+   * Record enters simulation
+   TRACE 'Record Generated'
+   
+   * Check for available buffer space
+   TEST DATA_BUFFER, 1, 1
+   * If no space, wait (optional: could drop or block)
+   BLOCK DATA_BUFFER
+   
+   * Add record to buffer
+   ADVANCE 0.002
+   
+   * Release buffer space for next record
+   RELEASE DATA_BUFFER
+LOOP1 HOLD 1
+
+* Phase 2: Data Processing
+LOOP START LOOP2 1
+   * Retrieve record from buffer
+   TRACE 'Record Sent to Processor'
+   
+   * Acquire CPU resource
+   SEIZE CPU
+   
+   * Simulate variable processing time
+   ADVANCE PROCESS_TIME_MIN, PROCESS_TIME_MAX, 0
+   
+   * Release CPU
+   RELEASE CPU
+   
+   * Store result (optional: simulate persistence)
+   TRACE 'Record Processed'
+LOOP2 HOLD 1
+
+* Phase 3: Cleanup and Termination
+LOOP START LOOP3 NUM_RECORDS
+   * Simulate post-processing delay
+   ADVANCE 0.001
+   
+   * Release resources (if any)
+   TRACE 'Record Cleaned Up'
+LOOP3 HOLD 1
+
+* Simulation End
+TERMINATE 1
+
+* Initialization of Resources
+RESOURCE CPU, 1, 1, 1, 1
+STORAGE DATA_BUFFER, BUFFER_SIZE
+
+* End of Simulation
+END

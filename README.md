@@ -897,3 +897,5 @@ MIT License
 - Created/Updated module: `autolisp_data_processor_tool` (See `autolisp_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./hamilton_c_data_processing_tool` (See `./hamilton_c_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `gpss_data_processing_utility_tool` (See `gpss_data_processing_utility_tool/README.md` for details)

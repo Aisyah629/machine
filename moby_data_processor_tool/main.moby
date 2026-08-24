@@ -1,0 +1,27 @@
+moby_data_processor_tool { 
+
+  source 'data.json' 
+  schema { 
+    name: string 
+    value: number 
+    status: enum[active, inactive] 
+  } 
+
+  pipeline { 
+    load 'raw_data.csv' 
+    transform { 
+      filter { value > 100 } 
+      map { name: lower(name) } 
+    } 
+    enrich 'lookup_table.csv' 
+    using 'id' 
+    merge 'details' 
+  } 
+
+  output 'processed.json' 
+  format 'json' 
+  compress true 
+
+  error_log 'errors.log' 
+  max_retries 3 
+}

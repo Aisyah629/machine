@@ -903,3 +903,5 @@ MIT License
 - Created/Updated module: `xpp_data_processing_tool` (See `xpp_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `jean_data_processing_tool` (See `jean_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./moby_data_processor_tool` (See `./moby_data_processor_tool/README.md` for details)

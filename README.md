@@ -963,3 +963,5 @@ MIT License
 - Created/Updated module: `./karel_data_processor_tool` (See `./karel_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./gotran_data_processing_tool` (See `./gotran_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./genie_data_processing_tool` (See `./genie_data_processing_tool/README.md` for details)

@@ -1,0 +1,30 @@
+-- OmniMark Data Processor Tool
+-- This script demonstrates a basic data processing pipeline using OmniMark.
+
+include "stdio"
+
+-- Define custom data types
+-- OmniMark does not have a traditional type system like C++, so we use rules to match patterns.
+
+-- Main rule to process input
+rule processing main-input
+  -- Example: Read a line of text
+  rule "(.+)"
+    -- Process the data
+    set processed_data to process_data(match-data)
+    -- Output the result
+    output processed_data
+  end rule
+end rule
+
+-- Rule to process data
+rule process_data(data)
+  -- Example: Convert to uppercase
+  set result to uppercase(data)
+  return result
+end rule
+
+-- Entry point
+main-input
+  from stdin
+end main-input

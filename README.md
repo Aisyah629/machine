@@ -959,3 +959,5 @@ MIT License
 - Created/Updated module: `./promela_data_processor_tool` (See `./promela_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `squirrel_data_processor_tool` (See `squirrel_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `./karel_data_processor_tool` (See `./karel_data_processor_tool/README.md` for details)

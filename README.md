@@ -997,3 +997,5 @@ MIT License
 - Created/Updated module: `smallbasic_data_processing_utility_tool` (See `smallbasic_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `./sol_data_processing_tool` (See `./sol_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `bigwig_data_processor_tool` (See `bigwig_data_processor_tool/README.md` for details)

@@ -1,0 +1,40 @@
+/* Bigwig Data Processor Tool */
+
+// Define data structures
+struct Record {
+    id: integer,
+    name: string,
+    value: float
+}
+
+// Data ingestion function
+function processData(inputData: List[Record]) -> List[Record] {
+    var outputData: List[Record] = [];
+    for record in inputData {
+        // Validate data
+        if record.id > 0 and not record.name.empty() {
+            // Transform data
+            record.value = record.value * 1.1; // Simple transformation
+            outputData.push(record);
+        }
+    }
+    return outputData;
+}
+
+// Main execution
+function main() {
+    var sampleData: List[Record] = [
+        Record(id: 1, name: "Item1", value: 100.0),
+        Record(id: -1, name: "Item2", value: 200.0), // Invalid ID
+        Record(id: 2, name: "", value: 300.0) // Empty name
+    ];
+    
+    var processedData = processData(sampleData);
+    
+    // Output results
+    for record in processedData {
+        print("Processed: " + record.name + " with value " + record.value);
+    }
+}
+
+main();

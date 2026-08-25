@@ -1,0 +1,52 @@
+%% CHR Data Processing Tool
+%% This script defines constraints for data cleaning and transformation.
+
+%% Define a constraint for data records
+record(DataId, Field1, Field2, Field3) <=> 
+    clean_record(DataId, Field1, Field2, Field3).
+
+%% Constraint for cleaning a record: if Field1 is empty, set it to 'N/A'
+clean_record(Id, '', F2, F3) <=> 
+    record(Id, 'N/A', F2, F3).
+
+%% Constraint for cleaning a record: if Field2 is empty, set it to 'N/A'
+clean_record(Id, F1, '', F3) <=> 
+    record(Id, F1, 'N/A', F3).
+
+%% Constraint for cleaning a record: if Field3 is empty, set it to 'N/A'
+clean_record(Id, F1, F2, '') <=> 
+    record(Id, F1, F2, 'N/A').
+
+%% Constraint for marking processed records
+processed(Id) <=> 
+    asserta(processed(Id)).
+
+%% Simplification rule to prevent re-processing
+processed(Id) \ processed(Id) <=> true.
+
+%% Example transformation: combine Field1 and Field2 if both are non-empty
+transform_record(Id, F1, F2, F3) <=> 
+    F1 \= '', F2 \= '' 
+    | record(Id, F1 ++ ' ' ++ F2, F3).
+
+%% Initial data loading (simulated via constraints)
+load_data(Id, 'Alice', 'Smith', 'Engineer') <=> 
+    record(Id, 'Alice', 'Smith', 'Engineer').
+
+load_data(Id, 'Bob', '', 'Doctor') <=> 
+    record(Id, 'Bob', 'N/A', 'Doctor').
+
+load_data(Id, 'Charlie', 'Jones', '') <=> 
+    record(Id, 'Charlie', 'Jones', 'N/A').
+
+%% Main processing entry point
+process_data(Id) <=> 
+    
+    %% Clean the record
+    clean_record(Id, F1, F2, F3),
+    
+    %% Apply transformation if possible
+    transform_record(Id, F1, F2, F3),
+    
+    %% Mark as processed
+    processed(Id).

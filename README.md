@@ -993,3 +993,5 @@ MIT License
 - Created/Updated module: `chapel_data_processing_utility_tool` (See `chapel_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `csound_data_processor_tool` (See `csound_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `smallbasic_data_processing_utility_tool` (See `smallbasic_data_processing_utility_tool/README.md` for details)

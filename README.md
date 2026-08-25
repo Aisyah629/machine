@@ -957,3 +957,5 @@ MIT License
 - Created/Updated module: `algol58_data_processing_engine_tool` (See `algol58_data_processing_engine_tool/README.md` for details)
 
 - Created/Updated module: `./promela_data_processor_tool` (See `./promela_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `squirrel_data_processor_tool` (See `squirrel_data_processor_tool/README.md` for details)

@@ -961,3 +961,5 @@ MIT License
 - Created/Updated module: `squirrel_data_processor_tool` (See `squirrel_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./karel_data_processor_tool` (See `./karel_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `./gotran_data_processing_tool` (See `./gotran_data_processing_tool/README.md` for details)

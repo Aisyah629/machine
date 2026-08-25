@@ -951,3 +951,5 @@ MIT License
 - Created/Updated module: `./tads_data_processing_tool` (See `./tads_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `s_sl_data_processor_tool` (See `s_sl_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `power_shell_data_processor_tool` (See `power_shell_data_processor_tool/README.md` for details)

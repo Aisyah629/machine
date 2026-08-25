@@ -971,3 +971,5 @@ MIT License
 - Created/Updated module: `rpl_data_processing_tool` (See `rpl_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `topsdata_processing_utility_tool` (See `topsdata_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `pl360_data_processor_tool` (See `pl360_data_processor_tool/README.md` for details)

@@ -1,0 +1,65 @@
+       PL360 DATA PROCESSOR TOOL
+       ENTRY POINT: MAIN
+       AUTHOR: AI ASSISTANT
+       DATE: 2023-10-27
+       DESCRIPTION: A foundational data processing utility using PL360 syntax.
+
+       * DATA SECTIONS
+       * These areas hold the input data, transformation rules, and output buffers.
+
+       DSECT   DATA_IN
+       DC      CL20'INPUT_RECORD_01'
+       DC      CL20'INPUT_RECORD_02'
+       DC      CL20'INPUT_RECORD_03'
+
+       DSECT   TRANSFORM_RULES
+       DC      CL4'ADD_10'
+       DC      CL4'SUB_05'
+       DC      CL4'MUL_02'
+
+       DSECT   OUTPUT_BUFFER
+       DC      CL40'PROCESSSED_DATA_OUTPUT'
+
+       * CONTROL SECTION
+       * Main program logic.
+
+       CSECT   PL360_PROC,AUTHOR=SYSTEM,RENT
+       USING   *,R15
+       BALR    R12,0
+       RSLE    R12,1,R15
+       USING   PL360_PROC,R12
+
+       * INITIALIZE REGISTERS
+       L       R1,=F'0'        * Initialize loop counter
+       L       R2,=F'3'        * Number of input records
+
+   PROCESS_LOOP:
+       * CHECK LOOP CONDITION
+       CMP     R1,R2
+       BHE     END_PROCESSING
+
+       * LOAD INPUT RECORD
+       LA      R3,DATA_IN(R1,20)
+       USING   DATA_IN,R3
+
+       * LOAD TRANSFORM RULE
+       LA      R4,TRANSFORM_RULES(R1,4)
+       USING   TRANSFORM_RULES,R4
+
+       * PERFORM SIMPLE TRANSFORMATION (Placeholder)
+       * In a real scenario, this would contain complex logic
+       * to interpret the rule in R4 and modify R3.
+       * For demonstration, we just copy the input to output.
+       MVCL    OUTPUT_BUFFER,R3
+
+       * INCREMENT COUNTER
+       LA      R1,1(R1)
+       B       PROCESS_LOOP
+
+   END_PROCESSING:
+       * END PROGRAM
+       XR      R15,R15
+       RETURN  RC=(15),LIST=NONE
+
+       * END OF PL360 DATA PROCESSOR TOOL
+       END

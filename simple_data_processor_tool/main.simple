@@ -1,0 +1,68 @@
+// SiMPLE Data Processor Tool
+// Language: SiMPLE
+
+program SimpleDataProcessor
+
+// Data structures
+record InputRecord
+    string name
+    float value
+    string category
+end record
+
+record OutputRecord
+    string name
+    float processed_value
+    string status
+end record
+
+// Global variables
+data input_stream
+stream input_stream
+output_stream stream output_stream
+error_code integer
+result_record OutputRecord
+input_record InputRecord
+
+// Main logic
+begin
+    open input_stream "data_input.txt" for read
+    if error_code != 0
+        print "Error opening input file"
+        exit
+    end if
+
+    open output_stream "data_output.txt" for write
+    if error_code != 0
+        print "Error opening output file"
+        close input_stream
+        exit
+    end if
+
+    read input_stream input_record
+    while input_stream is not end of file
+        // Process logic
+        call process_record
+        write output_stream result_record
+        read input_stream input_record
+    end while
+
+    close input_stream
+    close output_stream
+    print "Processing complete"
+end program
+
+// Function to process individual records
+function process_record
+    begin
+        // Example transformation: double the value
+        if input_record.value > 0
+            result_record.processed_value = input_record.value * 2.0
+            result_record.status = "Processed"
+        else
+            result_record.processed_value = 0.0
+            result_record.status = "Invalid"
+        end if
+
+        result_record.name = input_record.name
+    end function

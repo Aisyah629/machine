@@ -1,0 +1,96 @@
+Subroutine Main
+    ' Main entry point for the Small Basic Data Processing Utility
+    TextWindow.WriteLine("Small Basic Data Processing Utility")
+    TextWindow.WriteLine("===================================")
+    
+    ' Define input and output files
+    inputFile = "data_input.txt"
+    outputFile = "data_output.txt"
+    
+    ' Check if input file exists
+    If File.Exists(inputFile) Then
+        TextWindow.WriteLine("Processing file: " + inputFile)
+        ProcessData(inputFile, outputFile)
+        TextWindow.WriteLine("Output saved to: " + outputFile)
+    Else
+        TextWindow.WriteLine("Error: Input file '" + inputFile + "' not found.")
+        TextWindow.WriteLine("Please create an input file with CSV-like data.")
+    EndIf
+    
+    TextWindow.Pause()
+EndSubroutine
+
+Subroutine ProcessData(inputFile, outputFile)
+    ' Read all lines from the input file
+    dataLines = Text.GetAllLines(inputFile)
+    numLines = Array.GetItemCount(dataLines)
+    
+    If numLines = 0 Then
+        TextWindow.WriteLine("Input file is empty.")
+        Return
+    EndIf
+    
+    ' Initialize output content
+    processedContent = ""
+    headerProcessed = False
+    
+    ' Process each line
+    For i = 1 To numLines
+        line = dataLines[i]
+        
+        ' Skip empty lines
+        If Text.Length(line) > 0 Then
+            processedLine = TransformData(line)
+            If processedLine <> "" Then
+                If headerProcessed = False Then
+                    processedContent = processedContent + "[Processed] " + processedLine
+                    headerProcessed = True
+                Else
+                    processedContent = processedContent + processedLine
+                EndIf
+                processedContent = processedContent + Text.GetSubText("
+
+
+", 1, 1) ' Add newline
+            EndIf
+        EndIf
+    EndFor
+    
+    ' Write processed content to output file
+    If processedContent <> "" Then
+        File.WriteLine(outputFile, processedContent)
+    Else
+        TextWindow.WriteLine("No data to process.")
+    EndIf
+EndSubroutine
+
+Subroutine TransformData(line)
+    ' Simple data transformation example
+    ' Assuming CSV format: ID,Name,Age
+    ' Transforms to: ID | Name (Upper) | Age Years
+    
+    ' Check for delimiter (comma)
+    If Text.IndexOf(line, ",") > 0 Then
+        parts = Text.Split(line, ",")
+        numParts = Array.GetItemCount(parts)
+        
+        If numParts >= 3 Then
+            id = Text.Trim(parts[1])
+            name = Text.Trim(parts[2])
+            age = Text.Trim(parts[3])
+            
+            ' Transform name to uppercase
+            upperName = Text.ConvertToUpperCase(name)
+            
+            ' Return formatted string
+            result = id + " | " + upperName + " | " + age + " Years"
+            Return result
+        Else
+            ' If not enough parts, return original line
+            Return line
+        EndIf
+    Else
+        ' If no delimiter, return original line
+        Return line
+    EndIf
+EndSubroutine

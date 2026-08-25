@@ -955,3 +955,5 @@ MIT License
 - Created/Updated module: `power_shell_data_processor_tool` (See `power_shell_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `algol58_data_processing_engine_tool` (See `algol58_data_processing_engine_tool/README.md` for details)
+
+- Created/Updated module: `./promela_data_processor_tool` (See `./promela_data_processor_tool/README.md` for details)

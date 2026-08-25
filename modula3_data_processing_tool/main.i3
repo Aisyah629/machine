@@ -1,0 +1,1 @@
+MODULE Main; IMPORT IO, Texts, Formats, Dates; VAR reader: Texts.Reader; text: TEXT; line: TEXT; i, line_count: INTEGER; BEGIN reader := Texts.OpenReader(IO.Input); WHILE reader.next(line) DO IF line # NIL THEN FOR i := 1 TO SIZE(line) DO IF (line[i] >= '0') AND (line[i] <= '9') THEN IO.Put(line[i]); END; END; IO.PutLn(""); line_count := line_count + 1; END; END; END; END Main.

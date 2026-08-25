@@ -1,49 +1,105 @@
-COMMENT THIS IS A COMBINED PROGRAMMING LANGUAGE (CPL) UTILITY FOR DATA PROCESSING;
+;; COMBINED PROGRAMMING LANGUAGE (CPL) DATA PROCESSING UTILITY
+;; This tool demonstrates data processing capabilities using the Combined Programming Language syntax.
+;; It includes data extraction, transformation, and validation logic.
 
-DEFINE DATA_PROCESSING_UTILITY
-  PROCEDURE MAIN
-    DATA_RECORD INPUT_RECORD OUTPUT_RECORD
-    STRING DATA_BUFFER
-    BOOLEAN PROCESSING_LOOP
+;; --- CONSTANTS AND GLOBALS ---
+CONSTANT MAX_RECORDS = 1000;
+CONSTANT DELIMITER = ',';
+CONSTANT OUTPUT_FORMAT = "CSV";
 
-    INITIALIZE
-      PROCESSING_LOOP := TRUE
-      OUTPUT_RECORD = NULL
+;; --- DATA STRUCTURES ---
+TYPE Record IS RECORD
+    id : INTEGER;
+    name : STRING;
+    value : REAL;
+    status : BOOLEAN;
+END RECORD;
 
-    WHILE PROCESSING_LOOP
-      DISPLAY "Enter data to process (or 'quit' to exit):"
-      READ DATA_BUFFER
+;; --- FUNCTIONS ---
 
-      IF DATA_BUFFER == 'quit'
-        PROCESSING_LOOP := FALSE
-      ELSE
-        OUTPUT_RECORD = TRANSFORM_DATA(DATA_BUFFER)
-        DISPLAY "Processed data: " OUTPUT_RECORD
-      END IF
-    END WHILE
+;; Function to validate a record
+PROCEDURE ValidateRecord(r : Record) : BOOLEAN IS
+    BEGIN
+        IF r.id < 0 THEN
+            RETURN FALSE;
+        END IF;
+        IF Length(r.name) = 0 THEN
+            RETURN FALSE;
+        END IF;
+        RETURN TRUE;
+    END ValidateRecord;
 
-    DISPLAY "Data processing complete."
-  END PROCEDURE MAIN
+;; Function to transform a record (e.g., format for output)
+PROCEDURE TransformRecord(r : Record) : STRING IS
+    RESULT : STRING;
+    BEGIN
+        RESULT := ToString(r.id);
+        RESULT := RESULT + DELIMITER;
+        RESULT := RESULT + r.name;
+        RESULT := RESULT + DELIMITER;
+        RESULT := RESULT + ToString(r.value);
+        RESULT := RESULT + DELIMITER;
+        IF r.status THEN
+            RESULT := RESULT + "ACTIVE"
+        ELSE
+            RESULT := RESULT + "INACTIVE";
+        END IF;
+        RETURN RESULT;
+    END TransformRecord;
 
-  PROCEDURE TRANSFORM_DATA(IN_STRING)
-    DATA RESULT_STRING
-    DATA TEMP_VAR INTEGER
+;; Function to process a list of records
+PROCEDURE ProcessData(input : List(Record), output : List(STRING)) IS
+    i : INTEGER;
+    valid_count : INTEGER := 0;
+    BEGIN
+        FOR i := 1 TO Length(input) DO
+            IF ValidateRecord(input[i]) THEN
+                Append(output, TransformRecord(input[i]));
+                valid_count := valid_count + 1;
+            ELSE
+                WriteError("Invalid record at index " + ToString(i));
+            END IF;
+        END FOR;
+        WriteLog("Processed " + ToString(valid_count) + " valid records.");
+    END ProcessData;
 
-    COMMENT TRANSFORM INPUT STRING BY CONVERTING TO UPPERCASE AND REMOVING SPACES;
-    TEMP_VAR = LENGTH(IN_STRING)
-    RESULT_STRING = ""
+;; --- MAIN EXECUTION ---
 
-    LOOP FROM 1 TO TEMP_VAR STEP 1
-      CHARACTER CURRENT_CHAR
-      CURRENT_CHAR = SUBSTRING(IN_STRING, @I, 1)
-      IF CURRENT_CHAR != ' '
-        RESULT_STRING = RESULT_STRING + UPPERCASE(CURRENT_CHAR)
-      END IF
-    END LOOP
+PROCEDURE Main() IS
+    data : List(Record);
+    result : List(STRING);
+    rec1 : Record;
+    rec2 : Record;
+    rec3 : Record;
+    BEGIN
+        ;; Initialize sample data
+        rec1.id := 1;
+        rec1.name := "Alpha";
+        rec1.value := 10.5;
+        rec1.status := TRUE;
+        Append(data, rec1);
 
-    RETURN RESULT_STRING
-  END PROCEDURE TRANSFORM_DATA
+        rec2.id := 2;
+        rec2.name := "Beta";
+        rec2.value := 20.0;
+        rec2.status := FALSE;
+        Append(data, rec2);
 
-END DEFINE DATA_PROCESSING_UTILITY
+        ;; Invalid record for testing validation
+        rec3.id := -1;
+        rec3.name := "Gamma";
+        rec3.value := 30.0;
+        rec3.status := TRUE;
+        Append(data, rec3);
 
-CALL DATA_PROCESSING_UTILITY::MAIN
+        ;; Process data
+        ProcessData(data, result);
+
+        ;; Output results
+        FOR i := 1 TO Length(result) DO
+            WriteLine(result[i]);
+        END FOR;
+    END Main;
+
+;; Start execution
+Main()

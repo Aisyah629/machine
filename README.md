@@ -977,3 +977,5 @@ MIT License
 - Created/Updated module: `./new_ops5_data_processor_tool` (See `./new_ops5_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `natural_data_processor_tool` (See `natural_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `logtalk_data_processor_tool` (See `logtalk_data_processor_tool/README.md` for details)

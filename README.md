@@ -975,3 +975,5 @@ MIT License
 - Created/Updated module: `pl360_data_processor_tool` (See `pl360_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./new_ops5_data_processor_tool` (See `./new_ops5_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `natural_data_processor_tool` (See `natural_data_processor_tool/README.md` for details)

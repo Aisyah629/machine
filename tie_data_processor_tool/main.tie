@@ -1,0 +1,9 @@
+// TIE Data Processor Tool - main.tie
+// A simple data transformation example in TIE
+
+load_data("input.dat")
+filter_records { status == "active" }
+transform_fields { age = age + 1 }
+save_output("output.dat")
+
+// End of TIE script

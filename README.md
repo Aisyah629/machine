@@ -939,3 +939,5 @@ MIT License
 - Created/Updated module: `hypertalk_data_processing_tool` (See `hypertalk_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `./psharp_data_processor_tool` (See `./psharp_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `./tie_data_processor_tool` (See `./tie_data_processor_tool/README.md` for details)

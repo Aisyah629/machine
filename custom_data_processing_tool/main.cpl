@@ -1,0 +1,82 @@
+// Main script for Custom Data Processing Tool
+// Language: Combined Programming Language (CPL)
+
+MODULE DataProcessor;
+
+IMPORT System;
+IMPORT DataIO;
+IMPORT Transform;
+
+// Global configuration
+CONFIG DataConfig {
+    source_path = "input/data.csv";
+    target_path = "output/processed_data.csv";
+    chunk_size = 1000;
+    delimiter = ",";
+}
+
+// Define the data processing pipeline
+PROCEDURE ProcessData(input_stream, output_stream)
+    VAR line_count = 0;
+    VAR error_count = 0;
+
+    FOR line IN input_stream DO
+        BEGIN
+            TRY
+                // Parse the line
+                VAR record = ParseRecord(line, CONFIG.delimiter);
+                
+                // Apply transformations
+                VAR processed_record = Transform.Apply(record, { 
+                    "Normalize" => True,
+                    "TrimWhitespace" => True
+                });
+                
+                // Write to output
+                output_stream.WriteLine(ProcessedRecordToString(processed_record));
+                line_count = line_count + 1;
+                
+            ON ERROR e
+                LogError("Error processing line", line_count, e);
+                error_count = error_count + 1;
+            END;
+        END;
+    END;
+
+    LogSummary(line_count, error_count);
+END PROCEDURE;
+
+// Helper function to parse a record
+FUNCTION ParseRecord(line, delimiter)
+    VAR parts = line.Split(delimiter);
+    VAR record = NEW Record();
+    FOR i FROM 0 TO parts.Length - 1 DO
+        record.fields[i] = Trim(parts[i]);
+    END;
+    RETURN record;
+END FUNCTION;
+
+// Helper function to transform record
+MODULE Transform 
+    PROCEDURE Apply(record, rules)
+        IF rules."Normalize" THEN
+            NormalizeRecord(record);
+        END;
+        IF rules."TrimWhitespace" THEN
+            TrimFields(record);
+        END;
+    END PROCEDURE;
+END MODULE;
+
+// Main entry point
+PROCEDURE Main()
+    VAR input_stream = DataIO.OpenInputStream(CONFIG.source_path);
+    VAR output_stream = DataIO.OpenOutputStream(CONFIG.target_path);
+
+    LogInfo("Starting data processing pipeline...");
+    ProcessData(input_stream, output_stream);
+    LogInfo("Data processing completed.");
+END PROCEDURE;
+
+// Start the program
+Main();

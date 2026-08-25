@@ -1,0 +1,37 @@
+; New OPS5 Data Processor Tool
+; This script defines rules for data processing.
+
+; --- Production Rules ---
+
+; Rule 1: Process Raw Data
+; When raw data is present, transform it into structured format.
+(r PROCESS-RAW-DATA
+   =>
+   (modify *data*
+      (status 'transformed)
+      (format 'structured))
+   (print "Raw data has been transformed."))
+
+; Rule 2: Validate Structured Data
+; If data is in structured format, validate it.
+(r VALIDATE-DATA
+   (test (equal (getf *data* format) 'structured))
+   =>
+   (modify *data*
+      (status 'validated))
+   (print "Data validation complete."))
+
+; Rule 3: Analyze Validated Data
+; If data is validated, perform analysis.
+(r ANALYZE-DATA
+   (test (equal (getf *data* status) 'validated))
+   =>
+   (modify *data*
+      (status 'analyzed)
+      (results (list 'analysis 'complete)))
+   (print "Data analysis complete."))
+
+; --- Data Initialization ---
+
+; Initialize the data buffer
+(defglobal *data* = (list 'status 'unprocessed 'format 'raw 'results ()))

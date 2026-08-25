@@ -1005,3 +1005,5 @@ MIT License
 - Created/Updated module: `combined_data_processing_utility_tool` (See `combined_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `gdl_data_processor_tool` (See `gdl_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `fantom_data_processor_tool` (See `fantom_data_processor_tool/README.md` for details)

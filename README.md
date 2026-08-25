@@ -941,3 +941,5 @@ MIT License
 - Created/Updated module: `./psharp_data_processor_tool` (See `./psharp_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./tie_data_processor_tool` (See `./tie_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `omnimark_data_processor_tool` (See `omnimark_data_processor_tool/README.md` for details)

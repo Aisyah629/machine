@@ -983,3 +983,5 @@ MIT License
 - Created/Updated module: `modula3_data_processing_tool` (See `modula3_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `./t_tool` (See `./t_tool/README.md` for details)
+
+- Created/Updated module: `ipl_data_processing_tool` (See `ipl_data_processing_tool/README.md` for details)

@@ -1,0 +1,119 @@
+;; =============================================
+;; IPL Data Processing Tool
+;; Language: Interactive Problem Language (IPL)
+;; Purpose: Data ingestion, processing, and output
+;; =============================================
+
+;; Initialization
+(define (init)
+    (setq *input-data* nil)
+    (setq *output-data* nil)
+    (setq *processing-step* 'idle)
+    (println "IPL Data Processor Initialized.")
+)
+
+;; Data Ingestion Function
+;; Parses a simple text format into IPL lists
+;; Format: "ITEM|VALUE" per line
+(define (ingest-data stream)
+    (setq *input-data* nil)
+    (let (line)
+        (while (setq line (read-line stream))
+            (let (parts)
+                (setq parts (split line "|"))
+                (if (and (not (null parts)) (>= (length parts) 2))
+                    (setq *input-data* (cons (list (car parts) (cadr parts)) *input-data*))
+                )
+            )
+        )
+    )
+    (println (length *input-data*) " records ingested.")
+)
+
+;; Data Transformation: Filter out empty or invalid entries
+(define (clean-data list)
+    (let (result nil)
+        (dolist (item list)
+            (if (and (listp item) (>= (length item) 2) 
+                     (not (equal (car item) "")) 
+                     (not (equal (cadr item) "")))
+                (setq result (cons item result))
+            )
+        )
+    )
+    (nreverse result)
+)
+
+;; Data Transformation: Map values to uppercase
+(define (format-data list)
+    (let (result nil)
+        (dolist (item list)
+            (setq result (cons (list (uppercase (car item)) 
+                                    (uppercase (cadr item))) result))
+        )
+    )
+    (nreverse result)
+)
+
+;; Aggregation: Count occurrences of unique keys
+(define (aggregate-data list)
+    (let (aggregated nil)
+        (dolist (item list)
+            (let (key (car item) value (cadr item))
+                (let (existing (assoc key aggregated))
+                    (if existing
+                        (setq (cadr existing) (+ (cadr existing) value))
+                        (setq aggregated (cons (list key value) aggregated))
+                    )
+                )
+            )
+        )
+    )
+    aggregated
+)
+
+;; Output Generation
+(define (output-data list)
+    (println "\n--- Output Results ---")
+    (dolist (item list)
+        (if (listp item)
+            (println (car item) ":" (cadr item))
+            (println item)
+        )
+    )
+    (println "--- End Output ---")
+)
+
+;; Main Execution Flow
+(define (main)
+    (init)
+    
+    ;; Simulated Input Data
+    (setq simulated-input '(("Sales" "100") ("Inventory" "50") ("Sales" "200") ("Marketing" "75") ("Sales" "150") ("" "0")))
+    
+    ;; 1. Ingest/Assign Data
+    (setq *input-data* simulated-input)
+    (println "Original Data:")
+    (output-data *input-data*)
+    
+    ;; 2. Clean Data
+    (setq *input-data* (clean-data *input-data*))
+    (println "\nCleaned Data:")
+    (output-data *input-data*)
+    
+    ;; 3. Format Data
+    (setq *output-data* (format-data *input-data*))
+    (println "\nFormatted Data:")
+    (output-data *output-data*)
+    
+    ;; 4. Aggregate Data
+    (setq *output-data* (aggregate-data *output-data*))
+    (println "\nAggregated Data:")
+    (output-data *output-data*)
+    
+    (setq *processing-step* 'completed)
+    (println "\nProcessing Completed Successfully.")
+)
+
+;; Execute Main
+(main)

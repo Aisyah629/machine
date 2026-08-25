@@ -943,3 +943,5 @@ MIT License
 - Created/Updated module: `./tie_data_processor_tool` (See `./tie_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `omnimark_data_processor_tool` (See `omnimark_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `genie_data_processor_tool` (See `genie_data_processor_tool/README.md` for details)

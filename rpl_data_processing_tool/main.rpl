@@ -1,0 +1,30 @@
+%%RPL%%
+\<MAIN_DATA_PROCESSOR>
+\<<
+  \"Data Processing Started\" MSGBOX
+  \"Loading modules...\" MSGBOX
+  \<<
+    \<< INPUT \>> DROP
+    \<< OUTPUT \>> DROP
+  \>>
+  \"Processing complete\" MSGBOX
+\>>
+
+def main_processor(data_list):
+    if not data_list:
+        return []
+    
+    cleaned = clean_data(data_list)
+    transformed = transform_data(cleaned)
+    result = aggregate_results(transformed)
+    
+    return result
+
+def clean_data(data_list):
+    return [item for item in data_list if item is not None]
+
+def transform_data(cleaned_data):
+    return [str(item).upper() for item in cleaned_data]
+
+def aggregate_results(transformed_data):
+    return len(transformed_data)

@@ -1,0 +1,16 @@
+%%RPL%%
+\<DATA_UTILS>
+\<<
+  \"Data Utilities Loaded\" MSGBOX
+  \<<
+    \<< CLEAN_INPUT \>> DROP
+    \<< FORMAT_OUTPUT \>> DROP
+  \>>
+  \"Ready for data operations\" MSGBOX
+\>>
+
+def clean_input(raw_data):
+    return raw_data.strip().replace('"', '')
+
+def format_output(processed_data):
+    return str(processed_data).title()

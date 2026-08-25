@@ -1,0 +1,25 @@
+%%RPL%%
+\<STATS_MODULE>
+\<<
+  \"Statistical Analysis Loaded\" MSGBOX
+  \<<
+    \<< CALC_MEAN \>> DROP
+    \<< CALC_MEDIAN \>> DROP
+  \>>
+  \"Statistics tools available\" MSGBOX
+\>>
+
+def calculate_mean(data):
+    if not data:
+        return 0
+    return sum(data) / len(data)
+
+def calculate_median(data):
+    if not data:
+        return 0
+    sorted_data = sorted(data)
+    n = len(sorted_data)
+    if n % 2 == 0:
+        return (sorted_data[n//2 - 1] + sorted_data[n//2]) / 2
+    else:
+        return sorted_data[n//2]

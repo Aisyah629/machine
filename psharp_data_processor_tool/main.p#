@@ -1,0 +1,78 @@
+// P# Data Processor Tool
+// Version 1.0.0
+// This script demonstrates a basic data processing pipeline in P#.
+
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace PSharpDataProcessor
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            try
+            {
+                Console.WriteLine("[INFO] P# Data Processor Initialized");
+                
+                string input = string.Join(" ", args);
+                if (string.IsNullOrEmpty(input))
+                {
+                    Console.WriteLine("[WARN] No input provided. Reading from stdin...");
+                    input = Console.ReadLine();
+                }
+
+                if (string.IsNullOrEmpty(input))
+                {
+                    Console.WriteLine("[ERROR] Empty input stream.");
+                    return;
+                }
+
+                // Simulate data parsing
+                var records = ParseData(input);
+                Console.WriteLine($"[INFO] Parsed {records.Count} records.");
+
+                // Simulate validation
+                var validRecords = ValidateData(records);
+                Console.WriteLine($"[INFO] Validated {validRecords.Count} records.");
+
+                // Simulate transformation
+                var transformed = TransformData(validRecords);
+                Console.WriteLine("[INFO] Data transformation complete.");
+
+                // Output results
+                Console.WriteLine("--- OUTPUT START ---");
+                foreach (var record in transformed)
+                {
+                    Console.WriteLine(record);
+                }
+                Console.WriteLine("--- OUTPUT END ---");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[ERROR] Fatal error: {ex.Message}");
+            }
+        }
+
+        private static List<string> ParseData(string rawData)
+        {
+            // Simple split by comma for demonstration
+            var parts = rawData.Split(',');
+            return parts.Select(p => p.Trim()).ToList();
+        }
+
+        private static List<string> ValidateData(List<string> records)
+        {
+            // Remove empty entries as a basic validation step
+            return records.Where(r => !string.IsNullOrEmpty(r)).ToList();
+        }
+
+        private static List<string> TransformData(List<string> records)
+        {
+            // Convert all records to uppercase as a basic transformation
+            return records.Select(r => r.ToUpperInvariant()).ToList();
+        }
+    }
+}

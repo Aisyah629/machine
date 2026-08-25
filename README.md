@@ -987,3 +987,5 @@ MIT License
 - Created/Updated module: `ipl_data_processing_tool` (See `ipl_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `livecode_data_processing_engine_tool` (See `livecode_data_processing_engine_tool/README.md` for details)
+
+- Created/Updated module: `chr_data_processing_tool` (See `chr_data_processing_tool/README.md` for details)

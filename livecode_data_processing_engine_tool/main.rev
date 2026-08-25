@@ -1,0 +1,17 @@
+on mouseUp
+  -- Data Processing Engine
+  -- Reads data, processes it, and outputs results.
+
+  put "Input Data" into inputData
+  put "Processing..." into statusLabel
+  set the text of btn "Status" to statusLabel
+
+  -- Example Processing Step: Reverse lines
+  reverse lines of inputData
+
+  -- Example Processing Step: Uppercase
+  convert to uppercase of inputData
+
+  set the text of fld "Output" to inputData
+  set the text of btn "Status" to "Done"
+end mouseUp

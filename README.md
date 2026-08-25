@@ -1007,3 +1007,5 @@ MIT License
 - Created/Updated module: `gdl_data_processor_tool` (See `gdl_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `fantom_data_processor_tool` (See `fantom_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `./orc_data_processing_tool` (See `./orc_data_processing_tool/README.md` for details)

@@ -969,3 +969,5 @@ MIT License
 - Created/Updated module: `s_sl_data_processing_tool` (See `s_sl_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `rpl_data_processing_tool` (See `rpl_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `topsdata_processing_utility_tool` (See `topsdata_processing_utility_tool/README.md` for details)

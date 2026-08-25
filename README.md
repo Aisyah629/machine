@@ -949,3 +949,5 @@ MIT License
 - Created/Updated module: `lua_data_processor_tool` (See `lua_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `./tads_data_processing_tool` (See `./tads_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `s_sl_data_processor_tool` (See `s_sl_data_processor_tool/README.md` for details)

@@ -1,0 +1,83 @@
+// Strand Data Processor - Main Entry Point
+// Language: Strand
+// Purpose: General-purpose data processing utility
+
+import System;
+import Data;
+import Pipeline;
+
+// Configuration structure
+class Config {
+    var input_path : String;
+    var output_path : String;
+    var log_level : LogLevel;
+    
+    func init() -> void {
+        input_path := "input/data.csv";
+        output_path := "output/processed_data.csv";
+        log_level := LogLevel.Info;
+    }
+}
+
+// Data Processor Core
+class DataProcessor {
+    private config : Config;
+    private logger : Logger;
+    private pipeline : DataPipeline;
+    
+    func init(config : Config) -> void {
+        self.config := config;
+        logger := Logger.get_instance(config.log_level);
+        pipeline := DataPipeline.new_instance();
+        logger.log("DataProcessor initialized.");
+    }
+    
+    func run() -> Result {
+        logger.log("Starting data processing pipeline...");
+        
+        var source : DataSource := DataSource.from_file(config.input_path);
+        if not source.is_valid() {
+            logger.log_error("Failed to load source data from: " + config.input_path);
+            return Result.Failure;
+        }
+        
+        var transformed_data : DataBlock := Data.empty();
+        
+        // Execute pipeline stages
+        try {
+            transformed_data := pipeline.process(source);
+        } catch (PipelineException e) {
+            logger.log_error("Pipeline execution failed: " + e.message);
+            return Result.Failure;
+        }
+        
+        // Write output
+        var success := DataSource.to_file(transformed_data, config.output_path);
+        if success {
+            logger.log("Data processing completed successfully. Output written to: " + config.output_path);
+            return Result.Success;
+        } else {
+            logger.log_error("Failed to write output to: " + config.output_path);
+            return Result.Failure;
+        }
+    }
+}
+
+// Main Execution
+func main() -> int {
+    var config := Config.new();
+    
+    // Attempt to load configuration from file if exists
+    try {
+        config := Config.load("config.json");
+    } catch (FileNotFoundError) {
+        // Use defaults
+    }
+    
+    var processor := DataProcessor.new_instance();
+    processor.init(config);
+    
+    var result := processor.run();
+    
+    return (result == Result.Success) ? 0 : 1;
+}

@@ -1027,3 +1027,5 @@ MIT License
 - Created/Updated module: `sabretalk_data_processing_utility_tool` (See `sabretalk_data_processing_utility_tool/README.md` for details)
 
 - Created/Updated module: `strand_data_processor_tool` (See `strand_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `umple_data_processor_tool` (See `umple_data_processor_tool/README.md` for details)

@@ -1,0 +1,115 @@
+/*
+ * Umple Data Processor Tool
+ * Main Model Definition
+ */
+
+namespace com.umple.dataprocessor;
+
+using java.util.List;
+using java.util.ArrayList;
+
+/**
+ * Represents the main data processor component.
+ * Handles ingestion, validation, and transformation of data records.
+ */
+class DataProcessor {
+  <<singleton>>
+  
+  private List<DataRecord> records;
+  
+  /**
+   * Initializes the processor with an empty record list.
+   */
+  do {
+    records = new ArrayList<DataRecord>();
+  }
+  
+  /**
+   * Adds a new data record to the processing queue.
+   */
+  addRecord(String id, String type, String value) {
+    var newRecord = new DataRecord();
+    newRecord.setId(id);
+    newRecord.setType(type);
+    newRecord.setValue(value);
+    records.add(newRecord);
+  }
+  
+  /**
+   * Validates all current records.
+   * @return true if all records are valid, false otherwise.
+   */
+  validateAll() {
+    for (var record in records) {
+      if (!record.isValid()) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  /**
+   * Returns the list of records.
+   */
+  getRecords() {
+    return records;
+  }
+}
+
+/**
+ * Represents a single data record with an ID, type, and value.
+ */
+class DataRecord {
+  private String id;
+  private String type;
+  private String value;
+  
+  /**
+   * Sets the ID of the record.
+   */
+  setId(String newId) {
+    this.id = newId;
+  }
+  
+  /**
+   * Returns the ID of the record.
+   */
+  getId() {
+    return this.id;
+  }
+  
+  /**
+   * Sets the type of the record.
+   */
+  setType(String newType) {
+    this.type = newType;
+  }
+  
+  /**
+   * Returns the type of the record.
+   */
+  getType() {
+    return this.type;
+  }
+  
+  /**
+   * Sets the value of the record.
+   */
+  setValue(String newValue) {
+    this.value = newValue;
+  }
+  
+  /**
+   * Returns the value of the record.
+   */
+  getValue() {
+    return this.value;
+  }
+  
+  /**
+   * Checks if the record is valid (non-empty ID and value).
+   */
+  isValid() {
+    return !this.id.isEmpty() && !this.value.isEmpty();
+  }
+}

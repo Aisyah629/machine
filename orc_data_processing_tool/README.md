@@ -1,7 +1,12 @@
 # Orc Data Processing Tool
 
-A data processing utility written in the Orc programming language.
+This tool provides utilities for processing data using the Orc programming language. Orc is a high-level, functional programming language designed for data processing and manipulation.
+
+## Features
+- Data ingestion
+- Data transformation
+- Data validation
+- Data output
 
 ## Usage
-
-Place the `main.orc` file in your Orc runtime environment and execute it to process data streams.
+To use this tool, simply call the main Orc script with the desired data processing configuration.

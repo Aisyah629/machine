@@ -1,19 +1,20 @@
 # SETL Data Processing Tool
 
-A utility for processing and manipulating data using the SETL programming language.
+A comprehensive data processing utility written in SETL (Set Language). This tool is designed to handle data ingestion, validation, transformation, and analysis using SETL's powerful set-theoretic primitives.
 
 ## Features
-- Load and parse data structures
-- Transform and filter sets
-- Perform basic statistical operations
-- Output processed data
+- Data Ingestion: Handles flat-file data ingestion
+- Data Validation: Schema and type validation
+- Data Transformation: Record mapping and transformation
+- Statistical Analysis: Basic statistical computations
 
 ## Usage
-
-Run the tool with:
-```
-setl main.setl [input_file]
+```bash
+setl setl_data_processing_tool/main.setl
 ```
 
-## Configuration
-No external configuration files are required.
+## Dependencies
+- SETL Interpreter
+
+## License
+MIT

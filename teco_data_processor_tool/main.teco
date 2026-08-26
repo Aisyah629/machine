@@ -1,0 +1,34 @@
+TECO DATA PROCESSING MACRO
+
+; Initialize the environment
+M $INIT
+; Set up a buffer for data processing
+$NEWBUF
+; Define a sample input string (data)
+G ^J
+^J
+; This is a comment in TECO macro context
+; Process the data: Remove leading spaces
+G ^J
+^J
+; Perform basic data validation (simple check)
+; If the input is empty, exit gracefully
+M $EXIT
+; Output the result
+$WRITE
+; Clean up
+$CLOSEBUF
+$END
+
+; NOTE: TECO commands are mixed with literal text.
+; The above is a conceptual representation.
+; In a real TECO macro file, you would see commands like
+; ^A, ^B, ^C etc., and substitutions using ^X, ^Y etc.
+
+; Example of a practical TECO data extraction snippet:
+; Search for the first comma
+S , R^A 1 ^Y
+; Replace the first comma with a newline
+S , ^R ^J
+; Display the result
+^X

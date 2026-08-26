@@ -1041,3 +1041,5 @@ MIT License
 - Created/Updated module: `orc_data_processing_tool` (See `orc_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `lc3_data_processing_utility_tool` (See `lc3_data_processing_utility_tool/README.md` for details)
+
+- Created/Updated module: `nu_data_processing_tool` (See `nu_data_processing_tool/README.md` for details)

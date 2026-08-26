@@ -1,105 +1,69 @@
+REM *** COMAL Algorithmic Processor Tool ***
+REM *** Main Entry Point ***
 
-    REM +--------------------------------------------------+
-    REM | COMAL Algorithmic Data Processor                  |
-    REM | Primary Entry Point                               |
-    REM +--------------------------------------------------+
+INCLUDE "config.conf"
+INCLUDE "modules/data_parser.comal"
+INCLUDE "modules/validator.comal"
+INCLUDE "modules/reporter.comal"
 
-    PROCEDURE MAIN
-        DECLARE
-            dataset_file    STRING 128
-            output_file     STRING 128
-            config_path     STRING 128
-            result          INTEGER
-        
-        REM Initialize logging and system parameters
-        CALL SystemInitialize()
-        
-        REM Load configuration settings
-        config_path := "config.conf"
-        CALL LoadConfig(config_path)
-        
-        REM Process the input dataset
-        dataset_file := "data/input.dat"
-        output_file  := "data/output.dat"
-        
-        result := ProcessDataset(dataset_file, output_file)
-        
-        IF result <> 0 THEN
-            PRINT "PROCESSING FAILED WITH ERROR CODE: " & result
-            CALL LogError(result)
-        ELSE
-            PRINT "PROCESSING COMPLETED SUCCESSFULLY"
-        END IF
-        
-        REM Graceful shutdown
-        CALL SystemShutdown()
-    END PROCEDURE
+REM Global Variables
+DATA_BUFFER STRING ARRAY[1000]
+RECORD_COUNT INTEGER
+PROCESS_STATUS STRING
 
-    PROCEDURE SystemInitialize()
-        PRINT "[SYS] Initializing COMAL Algorithmic Processor v1.0"
-        CALL ModuleLoader("modules/data_parser.comal")
-        CALL ModuleLoader("modules/validator.comal")
-        CALL ModuleLoader("modules/reporter.comal")
-    END PROCEDURE
+MAIN PROGRAM
+  PROCESS_STATUS := "INITIALIZING"
+  PRINT("Starting COMAL Algorithmic Processor...")
+  
+  REM Initialize Data Parser
+  CALL InitParser
+  
+  REM Process Data Files
+  CALL ProcessDataFiles
+  
+  REM Validate Results
+  CALL ValidateResults
+  
+  REM Generate Report
+  CALL GenerateReport
+  
+  PROCESS_STATUS := "COMPLETE"
+  PRINT("Processing completed successfully.")
+END PROGRAM
 
-    PROCEDURE LoadConfig(path)
-        PRINT "[CFG] Loading configuration from: " & path
-        REM Configuration parsing logic would go here
-        REM COMAL handles file I/O via standard channels
-    END PROCEDURE
+REM Subroutine: Initialize Parser
+SUBROUTINE InitParser
+  RECORD_COUNT := 0
+  PRINT("Data parser initialized.")
+END SUBROUTINE
 
-    FUNCTION ProcessDataset(input, output)
-        INTEGER status
-        status := 0
-        
-        PRINT "[PROC] Opening input: " & input
-        OPEN INPUT "input" USING input
-        IF status THEN GOTO ErrorHandler
-        
-        PRINT "[PROC] Opening output: " & output
-        OPEN OUTPUT "output" USING output
-        IF status THEN GOTO ErrorHandler
-        
-        REM Execute data transformation pipeline
-        CALL ExecutePipeline(input, output)
-        
-        CLOSE INPUT "input"
-        CLOSE OUTPUT "output"
-        RETURN status
-        
-    ErrorHandler:
-        PRINT "[ERR] Pipeline interrupted at stage: " & status
-        RETURN status
-    END FUNCTION
+REM Subroutine: Process Data Files
+SUBROUTINE ProcessDataFiles
+  OPEN INPUT "data.dat"
+  WHILE NOT EOF(1)
+    LINE INPUT 1, DATA_BUFFER[RECORD_COUNT]
+    CALL TransformRecord(RECORD_COUNT)
+    RECORD_COUNT := RECORD_COUNT + 1
+  END WHILE
+  CLOSE 1
+  PRINT("Processed " + STR$(RECORD_COUNT) + " records.")
+END SUBROUTINE
 
-    PROCEDURE ExecutePipeline(input_channel, output_channel)
-        WHILE NOT EOF(input_channel) DO
-            READ FROM input_channel INTO record
-            IF ValidateRecord(record) THEN
-                transformed := TransformRecord(record)
-                WRITE TO output_channel FROM transformed
-            ELSE
-                PRINT "[WARN] Skipping invalid record"
-            END IF
-        END WHILE
-    END PROCEDURE
+REM Subroutine: Transform Record
+SUBROUTINE TransformRecord(index)
+  REM Placeholder for transformation logic
+  PRINT("Transforming record: " + STR$(index))
+END SUBROUTINE
 
-    FUNCTION ValidateRecord(record)
-        VALIDATE record
-        RETURN TRUE
-    END FUNCTION
+REM Subroutine: Validate Results
+SUBROUTINE ValidateResults
+  PRINT("Validating processed data...")
+  REM Validation logic would go here
+END SUBROUTINE
 
-    FUNCTION TransformRecord(record)
-        REM Core algorithmic transformation logic
-        RETURN record
-    END FUNCTION
-
-    PROCEDURE LogError(code)
-        PRINT "[LOG] Error code " & code & " recorded.
-    END PROCEDURE
-
-    PROCEDURE SystemShutdown()
-        PRINT "[SYS] System shutdown complete.
-    END PROCEDURE
-
-END MAIN
+REM Subroutine: Generate Report
+SUBROUTINE GenerateReport
+  PRINT("Generating final report...")
+  PRINT("Total records processed: " + STR$(RECORD_COUNT))
+  PRINT("Status: " + PROCESS_STATUS)
+END SUBROUTINE

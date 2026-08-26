@@ -1,33 +1,32 @@
+REM *** Validator Module ***
+REM *** Handles data validation routines ***
 
-    REM +---------------------------------------------+
-    REM | COMAL Validation Module                     |
-    REM | Ensures data integrity before processing    |
-    REM +---------------------------------------------+
+SUBROUTINE ValidateRecord(index)
+  REM Validate data integrity
+  valid := TRUE
+  
+  IF PARSED_DATA[index] = "" THEN
+    PRINT("Error: Empty field at index " + STR$(index))
+    valid := FALSE
+  END IF
+  
+  IF NOT IsNumeric(PARSED_DATA[index]) THEN
+    PRINT("Error: Non-numeric value at index " + STR$(index))
+    valid := FALSE
+  END IF
+  
+  RETURN valid
+END SUBROUTINE
 
-    PROCEDURE Validator_Load()
-        PRINT "[MOD] Validator initialized"
-    END PROCEDURE
-
-    FUNCTION ValidateRecord(record_array)
-        BOOLEAN is_valid
-        INTEGER i
-        is_valid := TRUE
-        
-        REM Check for null or empty fields
-        FOR i := 0 TO 9 DO
-            IF LEN(record_array[i]) = 0 THEN
-                is_valid := FALSE
-                BREAK
-            END IF
-        END FOR
-        
-        RETURN is_valid
-    END FUNCTION
-
-    FUNCTION SanitizeString(input_string)
-        STRING sanitized
-        sanitized := TRIM(input_string)
-        RETURN sanitized
-    END FUNCTION
-
-END
+FUNCTION IsNumeric(value)
+  REM Check if string is numeric
+  FOR i := 1 TO LEN(value)
+    c := MID(value, i, 1)
+    IF c < "0" OR c > "9" THEN
+      IF c <> "." AND c <> "-" THEN
+        RETURN FALSE
+      END IF
+    END IF
+  END FOR
+  RETURN TRUE
+END FUNCTION

@@ -1039,3 +1039,5 @@ MIT License
 - Created/Updated module: `javafx_script_data_processor_tool` (See `javafx_script_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `orc_data_processing_tool` (See `orc_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `lc3_data_processing_utility_tool` (See `lc3_data_processing_utility_tool/README.md` for details)

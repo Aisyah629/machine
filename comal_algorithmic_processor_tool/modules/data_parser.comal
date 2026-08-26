@@ -1,46 +1,35 @@
+REM *** Data Parser Module ***
+REM *** Handles data ingestion and parsing ***
 
-    REM +---------------------------------------------+
-    REM | COMAL Data Parsing Module                   |
-    REM | Handles raw input stream ingestion          |
-    REM +---------------------------------------------+
+SUBROUTINE ParseDataLine(line)
+  REM Parse comma-separated values
+  POSITION := 0
+  FIELD_COUNT := 0
+  
+  WHILE POSITION <= LEN(line)
+    FIELD := EXTRACT_FIELD(line, POSITION)
+    STORE_FIELD(FIELD_COUNT, FIELD)
+    FIELD_COUNT := FIELD_COUNT + 1
+    POSITION := POSITION + LENGTH(FIELD) + 1
+  END WHILE
+  
+  RETURN FIELD_COUNT
+END SUBROUTINE
 
-    PROCEDURE DataParser_Load()
-        PRINT "[MOD] DataParser initialized"
-    END PROCEDURE
+FUNCTION EXTRACT_FIELD(text, pos)
+  REM Extract next field from text string
+  field := ""
+  WHILE pos <= LEN(text)
+    IF MID(text, pos, 1) = "," THEN
+      EXIT WHILE
+    END IF
+    field := field + MID(text, pos, 1)
+    pos := pos + 1
+  END WHILE
+  RETURN field
+END FUNCTION
 
-    FUNCTION ParseLine(line_string)
-        INTEGER delimiter_pos
-        ARRAY parsed_data[10] STRING 64
-        INTEGER count
-        count := 0
-        
-        delimiter_pos := 1
-        WHILE delimiter_pos <= LEN(line_string) AND count < 10 DO
-            REM Simple comma-separated parsing
-            parsed_data[count] := SUBSTRING(line_string, 1, COMMA)
-            count := count + 1
-            REM Advance to next delimiter
-        END WHILE
-        
-        RETURN parsed_data
-    END FUNCTION
-
-    FUNCTION LoadDataset(filepath)
-        INTEGER file_handle
-        ARRAY dataset_records[1000]
-        INTEGER record_index
-        record_index := 0
-        
-        OPEN INPUT file_handle USING filepath
-        WHILE NOT EOF(file_handle) AND record_index < 1000 DO
-            READ FROM file_handle INTO raw_line
-            dataset_records[record_index] := ParseLine(raw_line)
-            record_index := record_index + 1
-        END WHILE
-        CLOSE file_handle
-        
-        PRINT "[MOD] Parsed " & record_index & " records"
-        RETURN record_index
-    END FUNCTION
-
-END
+SUBROUTINE STORE_FIELD(index, field)
+  REM Store parsed field in array
+  PARSED_DATA[index] := field
+END SUBROUTINE

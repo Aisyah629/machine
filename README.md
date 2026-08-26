@@ -1023,3 +1023,5 @@ MIT License
 - Created/Updated module: `ferite_data_processor_tool` (See `ferite_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `teco_data_processing_tool` (See `teco_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `sabretalk_data_processing_utility_tool` (See `sabretalk_data_processing_utility_tool/README.md` for details)

@@ -1011,3 +1011,5 @@ MIT License
 - Created/Updated module: `./orc_data_processing_tool` (See `./orc_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `custom_data_processing_tool` (See `custom_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./karelpp_data_processing_tool` (See `./karelpp_data_processing_tool/README.md` for details)

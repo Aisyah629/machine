@@ -1035,3 +1035,5 @@ MIT License
 - Created/Updated module: `xharbour_data_processor_tool` (See `xharbour_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `setl_data_processing_tool` (See `setl_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `javafx_script_data_processor_tool` (See `javafx_script_data_processor_tool/README.md` for details)

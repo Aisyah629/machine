@@ -1045,3 +1045,5 @@ MIT License
 - Created/Updated module: `nu_data_processing_tool` (See `nu_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `./cms2_data_processing_tool` (See `./cms2_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./snobol_data_processor_tool` (See `./snobol_data_processor_tool/README.md` for details)

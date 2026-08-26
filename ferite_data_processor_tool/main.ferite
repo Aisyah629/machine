@@ -1,0 +1,108 @@
+// Ferite Data Processor Tool
+// main.ferite
+// 
+// This script demonstrates a basic data processing utility in Ferite.
+// It reads a simulated dataset, processes the records, and outputs the results.
+
+import System;
+import System.IO;
+import System.Collections;
+
+// Define a class for a data record
+class DataRecord {
+    public String id;
+    public String name;
+    public Double value;
+    public String category;
+
+    public DataRecord(String id, String name, Double value, String category) {
+        this.id = id;
+        this.name = name;
+        this.value = value;
+        this.category = category;
+    }
+
+    public String toString() {
+        return sprintf("ID: %s, Name: %s, Value: %.2f, Category: %s", id, name, value, category);
+    }
+}
+
+// Class to handle data processing
+class DataProcessor {
+    private ArrayList records;
+
+    public DataProcessor() {
+        records = new ArrayList();
+    }
+
+    // Method to add a record
+    public void addRecord(String id, String name, Double value, String category) {
+        records.add(new DataRecord(id, name, value, category));
+    }
+
+    // Method to process records (e.g., filter by category)
+    public ArrayList filterByCategory(String category) {
+        ArrayList filtered = new ArrayList();
+        Iterator it = records.iterator();
+        while (it.hasNext()) {
+            DataRecord rec = it.next();
+            if (rec.category == category) {
+                filtered.add(rec);
+            }
+        }
+        return filtered;
+    }
+
+    // Method to calculate average value
+    public Double calculateAverage() {
+        if (records.size() == 0) return 0.0;
+        Double sum = 0.0;
+        Iterator it = records.iterator();
+        while (it.hasNext()) {
+            DataRecord rec = it.next();
+            sum += rec.value;
+        }
+        return sum / records.size();
+    }
+
+    // Method to print all records
+    public void printRecords() {
+        Console.out.println("All Records:");
+        Iterator it = records.iterator();
+        while (it.hasNext()) {
+            DataRecord rec = it.next();
+            Console.out.println(rec.toString());
+        }
+    }
+}
+
+// Main execution block
+Function main() {
+    DataProcessor processor = new DataProcessor();
+
+    // Simulate adding data
+    processor.addRecord("1", "Item A", 10.5, "Electronics");
+    processor.addRecord("2", "Item B", 20.0, "Clothing");
+    processor.addRecord("3", "Item C", 15.75, "Electronics");
+    processor.addRecord("4", "Item D", 30.2, "Food");
+    processor.addRecord("5", "Item E", 12.1, "Clothing");
+
+    // Print all records
+    processor.printRecords();
+
+    // Calculate and print average
+    Double avg = processor.calculateAverage();
+    Console.out.printf("\nAverage Value: %.2f\n", avg);
+
+    // Filter and print records by category
+    Console.out.println("\nFiltered Records (Electronics):");
+    ArrayList electronics = processor.filterByCategory("Electronics");
+    Iterator it = electronics.iterator();
+    while (it.hasNext()) {
+        DataRecord rec = it.next();
+        Console.out.println(rec.toString());
+    }
+}
+
+// Run the main function
+main();

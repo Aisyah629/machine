@@ -1029,3 +1029,5 @@ MIT License
 - Created/Updated module: `strand_data_processor_tool` (See `strand_data_processor_tool/README.md` for details)
 
 - Created/Updated module: `umple_data_processor_tool` (See `umple_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `spark_data_processing_engine_tool` (See `spark_data_processing_engine_tool/README.md` for details)

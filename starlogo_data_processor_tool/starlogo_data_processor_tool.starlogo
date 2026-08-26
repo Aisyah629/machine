@@ -1,0 +1,103 @@
+globals [
+  data-dump-file
+  summary-results
+]
+
+turtles-own [
+  data-value
+  data-category
+  is-processed
+]
+
+patches-own [
+  grid-value
+  processed-count
+]
+
+default-create-turtles 100
+turtles-own [data-value]
+
+to setup
+  clear-all
+  reset-ticks
+  
+  ; Initialize global variables
+  set data-dump-file "starlogo_data_output.txt"
+  set summary-results []
+  
+  ; Initialize turtles with random data values
+  ask turtles [
+    set data-value random-float 100
+    set data-category random 5
+    set is-processed false
+  ]
+  
+  ; Initialize patches
+  ask patches [
+    set grid-value 0
+    set processed-count 0
+  ]
+end
+
+to process-data
+  ; Process all turtles
+  ask turtles [
+    if not is-processed [
+      ; Example transformation: normalize value
+      let normalized-value data-value / 100.0
+      set data-value normalized-value
+      
+      ; Assign to a patch based on category
+      let target-patch one-of patches with [grid-value < processed-count] or [processed-count < count turtles]
+      if target-patch != nobody [
+        ask target-patch [
+          set processed-count processed-count + 1
+        ]
+      ]
+      
+      set is-processed true
+    ]
+  ]
+  
+  ; Calculate summary statistics
+  calculate-summary
+end
+
+to calculate-summary
+  ; Calculate mean
+  let mean-value mean [data-value] of turtles
+  
+  ; Calculate median
+  let sorted-values sort [data-value] of turtles
+  let median-value median-of-list sorted-values
+  
+  ; Store results
+  set summary-results (list mean-value median-value)
+  
+  ; Output to log
+  print (word "Mean: " mean-value)
+  print (word "Median: " median-value)
+end
+
+to export-data
+  ; Export turtle data to a text file (simulated via print)
+  ask turtles [
+    print (word "Turtle " who " - Value: " data-value " - Category: " data-category)
+  ]
+end
+
+; Helper procedure to calculate median of a list
+to median-of-list [num-list]
+  let len length num-list
+  if len = 0 [stop]
+  if len = 1 [output first num-list]
+  if (len mod 2) = 0 [
+    let mid1 item ((len / 2) - 1) num-list
+    let mid2 item (len / 2) num-list
+    output (mid1 + mid2) / 2
+  ]
+  if (len mod 2) != 0 [
+    let mid item ((len / 2)) num-list
+    output mid
+  ]
+end

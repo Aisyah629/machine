@@ -1,0 +1,70 @@
+      PROGRAM DATA_PROCESSING_TOOL
+      IMPLICIT NONE
+
+      CHARACTER(LEN=50) :: INPUT_FILE, OUTPUT_FILE
+      INTEGER :: I, FILE_ID, STATUS
+      CHARACTER(LEN=100) :: LINE
+      CHARACTER(LEN=100) :: PROCESSED_LINE
+
+      ! Initialize data processing tool
+      PRINT *, 'CMS-2 Data Processing Tool'
+      PRINT *, '========================='
+
+      ! Get input and output file names
+      INPUT_FILE = 'input.dat'
+      OUTPUT_FILE = 'output.dat'
+
+      ! Open input file for reading
+      OPEN(UNIT=1, FILE=INPUT_FILE, STATUS='OLD', ERR=900)
+
+      ! Open output file for writing
+      OPEN(UNIT=2, FILE=OUTPUT_FILE, STATUS='REPLACE', ERR=901)
+
+      ! Read and process data line by line
+      DO
+        READ(UNIT=1, FMT='(A)', END=100) LINE
+        PROCESSED_LINE = PROCESS_LINE(LINE)
+        WRITE(UNIT=2, FMT='(A)') PROCESSED_LINE
+      END DO
+
+  100 CONTINUE
+      CLOSE(UNIT=1)
+      CLOSE(UNIT=2)
+      PRINT *, 'Data processing completed successfully.'
+      STOP
+
+  900 CONTINUE
+      PRINT *, 'Error: Could not open input file.'
+      STOP
+
+  901 CONTINUE
+      PRINT *, 'Error: Could not open output file.'
+      STOP
+
+      CONTAINS
+
+      FUNCTION PROCESS_LINE(LINE) RESULT(PROCESSED_LINE)
+        CHARACTER(LEN=*), INTENT(IN) :: LINE
+        CHARACTER(LEN=100) :: PROCESSED_LINE
+
+        ! Example processing: Convert line to uppercase
+        PROCESSED_LINE = CHAR_CODE_TO_UPPER(LINE)
+      END FUNCTION PROCESS_LINE
+
+      FUNCTION CHAR_CODE_TO_UPPER(LINE)
+        CHARACTER(LEN=*), INTENT(IN) :: LINE
+        CHARACTER(LEN=100) :: CHAR_CODE_TO_UPPER
+        INTEGER :: I, LEN_LINE
+
+        LEN_LINE = LEN(TRIM(LINE))
+        DO I = 1, LEN_LINE
+          IF (LINE(I:I) >= 'a' .AND. LINE(I:I) <= 'z') THEN
+            CHAR_CODE_TO_UPPER(I:I) = CHAR(ICHAR(LINE(I:I)) - 32)
+          ELSE
+            CHAR_CODE_TO_UPPER(I:I) = LINE(I:I)
+          END IF
+        END DO
+        CHAR_CODE_TO_UPPER(LEN_LINE+1:) = ''
+      END FUNCTION CHAR_CODE_TO_UPPER
+
+      END PROGRAM DATA_PROCESSING_TOOL

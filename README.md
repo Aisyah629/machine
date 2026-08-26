@@ -1019,3 +1019,5 @@ MIT License
 - Created/Updated module: `./comal_algorithmic_processor_tool` (See `./comal_algorithmic_processor_tool/README.md` for details)
 
 - Created/Updated module: `teco_data_processor_tool` (See `teco_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `ferite_data_processor_tool` (See `ferite_data_processor_tool/README.md` for details)

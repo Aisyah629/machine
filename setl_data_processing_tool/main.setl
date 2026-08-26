@@ -1,104 +1,183 @@
--- SETL Data Processing Tool
--- main.setl
--- Purpose: General utility for data manipulation and processing in SETL
+-- setl_data_processing_tool/main.setl
+-- SETL Data Processing Utility
 
--- Initialize global variables
-data_store := {}; -- To hold the processed data
-report_log := []; -- To log processing steps
-
--- Function: log_message
--- Purpose: Helper to log events to the report_log
-model log_message := procedure(msg)
-    append(report_log, msg);
-end;
-
--- Function: load_data
--- Purpose: Simulate loading data from a source (file or structure)
--- In a real scenario, this would read from stdin or a file
-model load_data := procedure(input_source)
-    log_message("Loading data from: " || input_source);
+procedure main();
+    print("SETL Data Processing Tool Initialized");
     
-    -- Simulated data ingestion
-    -- In a full implementation, one might use get_line or file reading
-    local_sample_data := {
-        {id: 1, value: 10, category: "A"},
-        {id: 2, value: 15, category: "B"},
-        {id: 3, value: 10, category: "A"},
-        {id: 4, value: 25, category: "C"},
-        {id: 5, value: 30, category: "B"}
+    -- Sample data processing pipeline
+    process_pipeline();
+    
+    print("Processing complete.");
+end main;
+
+procedure process_pipeline();
+    -- Simulate data ingestion
+    let raw_data := ingest_data();
+    
+    -- Validate data
+    let validated_data := validate_data(raw_data);
+    
+    -- Transform data
+    let transformed_data := transform_data(validated_data);
+    
+    -- Analyze data
+    let statistics := analyze_data(transformed_data);
+    
+    -- Output results
+    output_results(statistics);
+end process_pipeline;
+
+procedure ingest_data();
+    -- Simulate data ingestion
+    -- In a real implementation, this would read from files or databases
+    let records := {
+        {id: 1, name: "Alice", score: 85.5, category: "A"},
+        {id: 2, name: "Bob", score: 92.3, category: "B"},
+        {id: 3, name: "Charlie", score: 78.9, category: "A"},
+        {id: 4, name: "Diana", score: 95.1, category: "C"},
+        {id: 5, name: "Eve", score: 88.7, category: "A"}
     };
     
-    data_store := local_sample_data;
-    log_message("Loaded " || card(data_store) || " records.");
-end;
+    print("Data ingested: 5 records");
+    return records;
+end ingest_data;
 
--- Function: filter_data
--- Purpose: Filter records based on a condition
-model filter_data := procedure(condition_func)
-    log_message("Filtering data with condition: condition_func");
-    data_store := {x in data_store | condition_func(x)};
-    log_message("Filtered records remaining: " || card(data_store));
-end;
+procedure validate_data(records); 
+    -- Validate data integrity
+    let valid_records := {
+        r \ records | 
+        r.id > 0 and 
+        r.name /= "" and 
+        r.score >= 0 and 
+        r.category in {"A", "B", "C"}
+    };
+    
+    let invalid_count := size(records) - size(valid_records);
+    print("Validation complete: " + integer_string(size(valid_records)) + " valid, " + integer_string(invalid_count) + " invalid");
+    
+    return valid_records;
+end validate_data;
 
--- Function: transform_data
--- Purpose: Apply a transformation function to each record
-model transform_data := procedure(transform_func)
-    log_message("Transforming data...");
-    data_store := [transform_func(x) | x in data_store];
-end;
+procedure transform_data(records);
+    -- Transform data: add computed fields
+    let transformed := {
+        extend r, {
+            grade: compute_grade(r.score),
+            is_high_performer: r.score > 90
+        }
+        \ records
+    };
+    
+    print("Transformation complete: added computed fields");
+    return transformed;
+end transform_data;
 
--- Function: aggregate_data
--- Purpose: Perform statistical aggregation
-model aggregate_data := procedure(field)
-    log_message("Aggregating field: " || field);
-    local sum := 0;
-    local count := 0;
-    for rec in data_store do
-        sum := sum + rec(field);
-        count := count + 1;
-    end;
-    if count > 0 then
-        log_message("Average of " || field || ": " || (sum / count));
-        return sum / count;
+procedure compute_grade(score);
+    -- Compute letter grade based on score
+    if score >= 90 then
+        return "A";
+    elif score >= 80 then
+        return "B";
+    elif score >= 70 then
+        return "C";
     else
-        log_message("No data to aggregate.");
-        return 0;
-    end;
-end;
+        return "D";
+    end if;
+end compute_grade;
 
--- Function: display_results
--- Purpose: Output the current state of data_store
-model display_results := procedure
-    log_message("Current Data State:");
-    for rec in data_store do
-        log_message("  " || rec);
-    end;
-end;
+procedure analyze_data(records);
+    -- Perform statistical analysis
+    let scores := {r.score | r in records};
+    
+    let mean_score := sum(scores) / card(scores);
+    let min_score := min(scores);
+    let max_score := max(scores);
+    
+    let category_counts := {
+        c: card({r | r in records & r.category = c})
+        \ {"A", "B", "C"}
+    };
+    
+    print("Analysis complete:");
+    print("Mean Score: " + float_string(mean_score, 2));
+    print("Min Score: " + float_string(min_score, 2));
+    print("Max Score: " + float_string(max_score, 2));
+    print("Category Counts: " + set_string(category_counts));
+    
+    return {
+        mean: mean_score,
+        min: min_score,
+        max: max_score,
+        category_distribution: category_counts
+    };
+end analyze_data;
 
--- Main Execution Flow
-model main := procedure
-    log_message("SETL Data Processing Tool Started");
-    
-    -- 1. Load Data
-    load_data("input_source");
-    
-    -- 2. Filter Data (e.g., keep only category "A" and "B")
-    filter_data(x -> x.category = "A" or x.category = "B");
-    
-    -- 3. Transform Data (e.g., double the value)
-    transform_data(x -> {id: x.id, value: x.value * 2, category: x.category});
-    
-    -- 4. Aggregate Data (e.g., calculate average value)
-    aggregate_data("value");
-    
-    -- 5. Display Results
-    display_results();
-    
-    log_message("SETL Data Processing Tool Finished");
-    
-    -- Output the log as the final result
-    return report_log;
-end;
+procedure output_results(statistics);
+    -- Output final results
+    print("\n=== Final Report ===");
+    print("Mean Score: " + float_string(statistics.mean, 2));
+    print("Score Range: " + float_string(statistics.min, 2) + " - " + float_string(statistics.max, 2));
+    print("Category Distribution:");
+    for c in statistics.category_distribution do
+        print("  " + c + ": " + integer_string(statistics.category_distribution(c)) + " records");
+    end for;
+    print("==================");
+end output_results;
 
--- Run main
-main();
+-- Utility functions for string formatting
+procedure integer_string(n);
+    -- Convert integer to string
+    if n = 0 then
+        return "0";
+    end if;
+    let sign := "";
+    let num := n;
+    if n < 0 then
+        sign := "-";
+        num := -n;
+    end if;
+    let digits := "";
+    while num > 0 do
+        digits := integer_string(num mod 10) + digits;
+        num := floor(num / 10);
+    end while;
+    return sign + digits;
+end integer_string;
+
+procedure float_string(f, precision);
+    -- Convert float to string with precision
+    if precision < 0 then
+        precision := 0;
+    end if;
+    let multiplier := 1;
+    for i := 1 to precision do
+        multiplier := multiplier * 10;
+    end for;
+    let rounded := round(f * multiplier) / multiplier;
+    let int_part := floor(rounded);
+    let frac_part := rounded - int_part;
+    let int_str := integer_string(int_part);
+    let frac_str := "";
+    if precision > 0 then
+        let frac_int := round(frac_part * multiplier);
+        for i := 1 to precision do
+            frac_str := frac_str + integer_string(frac_int mod 10);
+            frac_int := floor(frac_int / 10);
+        end for;
+        frac_str := reverse(frac_str);
+    end if;
+    if precision > 0 then
+        return int_str + "." + frac_str;
+    else
+        return int_str;
+    end if;
+end float_string;
+
+procedure reverse(s);
+    -- Reverse a string
+    if s = "" then
+        return "";
+    else
+        return reverse(s(2..)) + s(1);
+    end if;
+end reverse;

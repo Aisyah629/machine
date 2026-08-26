@@ -1033,3 +1033,5 @@ MIT License
 - Created/Updated module: `spark_data_processing_engine_tool` (See `spark_data_processing_engine_tool/README.md` for details)
 
 - Created/Updated module: `xharbour_data_processor_tool` (See `xharbour_data_processor_tool/README.md` for details)
+
+- Created/Updated module: `setl_data_processing_tool` (See `setl_data_processing_tool/README.md` for details)

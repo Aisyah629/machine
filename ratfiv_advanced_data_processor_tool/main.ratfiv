@@ -1,0 +1,51 @@
+! Ratfiv Advanced Data Processor
+! Version: 1.0
+! Purpose: Data validation, transformation, and statistical analysis
+
+DATA LIST RECORD
+  ID = 1A4,
+  Name = 20A,
+  Value = 10.2
+END RECORD
+
+! Load data
+OPEN DATASET 'data.dat' FOR INPUT AS 'DS'
+READ DS INTO RECORD
+
+! Initialize counters
+TotalRecords = 0
+SumValues = 0
+MaxValue = 0
+MinValue = 999999
+
+PROCESS_LOOP:
+  IF EOF(DS) THEN GOTO END_PROCESS
+
+  TotalRecords = TotalRecords + 1
+  SumValues = SumValues + Record.Value
+
+  IF Record.Value > MaxValue THEN MaxValue = Record.Value
+  IF Record.Value < MinValue THEN MinValue = Record.Value
+
+  READ DS INTO RECORD
+  GOTO PROCESS_LOOP
+
+END_PROCESS:
+  CLOSE DS
+
+! Calculate average
+IF TotalRecords > 0 THEN
+  AverageValue = SumValues / TotalRecords
+ELSE
+  AverageValue = 0
+END IF
+
+! Print results
+PRINT 'Total Records: ' TotalRecords
+PRINT 'Sum: ' SumValues
+PRINT 'Average: ' AverageValue
+PRINT 'Max: ' MaxValue
+PRINT 'Min: ' MinValue
+
+! Exit
+STOP

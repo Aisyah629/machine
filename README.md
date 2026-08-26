@@ -1013,3 +1013,5 @@ MIT License
 - Created/Updated module: `custom_data_processing_tool` (See `custom_data_processing_tool/README.md` for details)
 
 - Created/Updated module: `./karelpp_data_processing_tool` (See `./karelpp_data_processing_tool/README.md` for details)
+
+- Created/Updated module: `./ratfiv_advanced_data_processor_tool` (See `./ratfiv_advanced_data_processor_tool/README.md` for details)

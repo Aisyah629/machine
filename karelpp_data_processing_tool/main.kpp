@@ -1,0 +1,62 @@
+/**
+ * Karel++ Data Processing Tool
+ * 
+ * This program demonstrates data processing capabilities using Karel++.
+ * It reads lines of text, filters empty lines, and prints data rows.
+ * 
+ * Syntax notes:
+ * - Karel++ uses Pascal-like syntax.
+ * - Variables must be declared.
+ * - Files are handled via standard file I/O procedures.
+ */
+
+program KarelDataProcessor(input, output);
+
+const
+  MaxBufferSize = 255;
+
+var
+  DataFile   : file of string;
+  LineBuffer : string;
+  IsDataValid : boolean;
+
+procedure ProcessLine(Line : string; var IsValid : boolean);
+{
+  // Strip leading and trailing whitespace
+  while (Length(Line) > 0) and (Line[1] = ' ') do
+    Delete(Line, 1, 1);
+  while (Length(Line) > 0) and (Line[Length(Line)] = ' ') do
+    Delete(Line, Length(Line), 1);
+
+  // Check if line is empty or a comment
+  if Length(Line) = 0 then
+    IsValid := False
+  else if Line[1] = '#' then
+    IsValid := False
+  else
+    IsValid := True;
+}
+
+begin
+  // Assign the input file (in a real Karel++ runtime, this might be stdin or a specific path)
+  // Assuming standard input stream for this utility context
+  Assign(Input, 'data_input.txt');
+  Reset(Input);
+
+  WriteLn(Output, '--- Data Processing Started ---');
+
+  while not Eof(Input) do
+  begin
+    ReadLn(Input, LineBuffer);
+    ProcessLine(LineBuffer, IsDataValid);
+
+    if IsDataValid then
+    begin
+      WriteLn(Output, '>> ', LineBuffer);
+    end;
+  end;
+
+  WriteLn(Output, '--- Data Processing Complete ---');
+  Close(Input);
+
+end.
